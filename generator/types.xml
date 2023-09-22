@@ -1,0 +1,44 @@
+<types>
+
+  <manual>
+  </manual>
+
+  <primitive>
+  </primitive>
+
+  <shared_ptr_no_copy>
+  </shared_ptr_no_copy>
+
+  <wrapped>
+    <type>RVector</type>
+  </wrapped>
+
+  <wrapped_ptr>
+  </wrapped_ptr>
+
+  <wrapped_qobject_ptr>
+  </wrapped_qobject_ptr>
+
+  <qlist>
+    <type>QList&lt;RVector&gt;</type>
+  </qlist>
+
+  <qlist_ptr>
+  </qlist_ptr>
+
+  <qset>
+  </qset>
+
+  <qmap>
+  </qmap>
+
+  <qpair>
+  </qpair>
+
+  <dummy>
+  </dummy>
+
+  <dummy_ptr>
+  </dummy_ptr>
+
+</types>

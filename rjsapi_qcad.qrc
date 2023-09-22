@@ -1,0 +1,5 @@
+<!DOCTYPE RCC><RCC version="1.0">
+  <qresource>
+    <file alias="generator/js/RVector.js">generator/js/RVector.js</file>
+  </qresource>
+</RCC>

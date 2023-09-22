@@ -1,0 +1,7 @@
+# Automatically generated, do not edit
+target_sources(rjsapi_qcad PUBLIC
+    generator/cpp/rvector_base.h
+    generator/cpp/rvector_wrapper.h
+    generator/cpp/rvector_base.cpp
+    generator/cpp/rvector_wrapper.cpp
+)

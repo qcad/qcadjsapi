@@ -1,0 +1,2 @@
+#ifndef HEADER_QCAD_CPP_H
+#define HEADER_QCAD_CPP_H

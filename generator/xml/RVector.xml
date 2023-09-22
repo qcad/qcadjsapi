@@ -1,0 +1,881 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RVector.h">
+  <!--
+  <class_decl name="RMatrix" />
+  <class_decl name="RBox" />
+  <class_decl name="RLine" />
+  <class_decl name="RPolyline" />
+  -->
+  <class name="RVector">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="vx" />
+          <parameter const="false" type="double" modifier="" name="vy" />
+          <parameter const="false" type="double" modifier="" name="vz" default="0.0" />
+          <parameter const="false" type="bool" modifier="" name="valid_in" default="true" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QList&lt;double&gt;" modifier="&amp;" name="tuples" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="double" name="x" read="getX" write="setX" />
+    <property type="double" name="y" read="getY" write="setY" />
+    <property type="double" name="z" read="getZ" write="setZ" />
+    <property type="bool" name="valid" read="isValid" />
+    <function name="set">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="vx" />
+          <parameter const="false" type="double" modifier="" name="vy" />
+          <parameter const="false" type="double" modifier="" name="vz" default="0.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPolar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="radius" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="get2D">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isZero">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSane">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isNaN">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="isInside">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="equalsFuzzy">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equalsFuzzy2D">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDistanceTo">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDistanceTo2D">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAngleToPlaneXY">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAngleTo">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMagnitude2D">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMagnitude">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSquaredMagnitude">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMagnitude2D">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLerp">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+          <parameter const="false" type="double" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getUnitVector">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setX">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getX">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setY">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getY">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setZ">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="z" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getZ">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isInWindow">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="firstCorner" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="secondCorner" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveList" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+        </parameters>
+      </variant>
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRotated">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="rotate3D">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+          <parameter const="false" type="double" modifier="" name="rotation" />
+        </parameters>
+      </variant>
+      < ! - -
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="QQuaternion" modifier="&amp;" name="quaternion" />
+        </parameters>
+      </variant>
+      - - >
+    </function>
+    -->
+    <function name="rotateList" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="double" modifier="" name="rotation" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="factor" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="factors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScaled">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="factors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaleList" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="double" modifier="" name="factor" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="factors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="mirror">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="axis1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="axis2" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="getMirrored">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="flipHorizontal">
+      <variant return-type="RVector" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flipVertical">
+      <variant return-type="RVector" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="stretch">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="area" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="isoProject">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="false" type="RS::IsoProjectionType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="axonometricProjection">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="false" type="RS::IsoProjectionType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="obliqueProjection">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="false" type="RS::IsoProjectionType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="transform">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="transform2DM">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="transform2D">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getTransformed">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="getTransformed2DM">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="getTransformed2D">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDividedComponents">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMultipliedComponents">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClosest">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClosest2D">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClosestDistance">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="int" modifier="" name="counts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClosestIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="bool" modifier="" name="ignoreZ" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClosestIndex2D">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_add" call="operator+">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_subtract" call="operator-">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_multiply" call="operator*">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_divide" call="operator/">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNegated">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAbsolute">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dot">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="normalize">
+      <variant return-type="RVector" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getNormalized">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="operator_add_assign" call="operator+=">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_subtract_assign" call="operator-=">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_multiply_assign" call="operator*=">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_divide_assign" call="operator/=">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_unequal" call="operator!=">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFloor">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCeil">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lteXY">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="gteXY">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_VERSION&gt;=0x060000" />
+    <function name="copy">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    <function name="containsFuzzy" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="findFirstFuzzy" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMinimum" static="true">
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMaximum" static="true">
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMinimumX" static="true">
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMaximumX" static="true">
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMinimumY" static="true">
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMaximumY" static="true">
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAverage" static="true">
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getUnion" static="true">
+      <variant return-type="QList&lt;RVector&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectorsA" />
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectorsB" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getUnique" static="true">
+      <variant return-type="QList&lt;RVector&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getXList" static="true">
+      <variant return-type="QList&lt;double&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getYList" static="true">
+      <variant return-type="QList&lt;double&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getZList" static="true">
+      <variant return-type="QList&lt;double&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectors" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCrossProduct" static="true">
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDotProduct" static="true">
+      <variant return-type="double" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createPolar" static="true">
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="radius" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lessThanX" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="greaterThanX" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lessThanY" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="greaterThanY" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lessThanEqualXY" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="greaterThanEqualXY" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSortedByDistance" static="true">
+      <variant return-type="QList&lt;RVector&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <class name="RVectorDistanceSort">
+      <function name="lessThan" static="true">
+        <variant return-type="bool" static="true" access="public">
+          <parameters>
+            <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+            <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+          </parameters>
+        </variant>
+      </function>
+    </class>
+    -->
+    <function name="getSortedLeftRightTopBottom" static="true">
+      <variant return-type="QList&lt;RVector&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <class name="RVectorLeftRightTopBottomSort">
+      <function name="lessThan" static="true">
+        <variant return-type="bool" static="true" access="public">
+          <parameters>
+            <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+            <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+          </parameters>
+        </variant>
+      </function>
+    </class>
+    -->
+    <function name="getSortedByAngle" static="true">
+      <variant return-type="QList&lt;RVector&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <class name="RVectorAngleSort">
+      <function name="lessThan" static="true">
+        <variant return-type="bool" static="true" access="public">
+          <parameters>
+            <parameter const="true" type="RVector" modifier="&amp;" name="v1" />
+            <parameter const="true" type="RVector" modifier="&amp;" name="v2" />
+          </parameters>
+        </variant>
+      </function>
+    </class>
+    -->
+    <property static="true" type="RVector" name="invalid" />
+    <property static="true" type="RVector" name="nullVector" />
+    <property static="true" type="RVector" name="nanVector" />
+  </class>
+</unit>

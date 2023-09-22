@@ -1,0 +1,6 @@
+<!--
+    List of classes that can be used as based classes for JS classes.
+    These classes are instantiated as Class_Base when created from JS.
+ -->
+<inheritable-class>
+</inheritable-class>
