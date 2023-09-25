@@ -1,0 +1,719 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RGraphicsView.h">
+  <class_decl name="RAction" />
+  <class_decl name="RDocumentInterface" />
+  <class_decl name="RGraphicsScene" />
+  <class_decl name="RLine" />
+  <class_decl name="RMouseEvent" />
+  <class_decl name="RTabletEvent" />
+  <class_decl name="RWheelEvent" />
+  <class name="RGraphicsView" ownership="cpp">
+    <!--
+    <super_list>
+      <super name="RNonCopyable" />
+    </super_list>
+    -->
+    <enum name="ColorMode">
+      <key>FullColor</key>
+      <key>GrayScale</key>
+      <key>BlackWhite</key>
+    </enum>
+    <function name="setViewportNumber">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getViewportNumber">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearCaches">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDisplayOnlyCurrentUcs">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setScene">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsScene" modifier="*" name="scene" />
+          <parameter const="false" type="bool" modifier="" name="regen" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScene">
+      <variant return-type="RGraphicsScene*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocument">
+      <variant return-type="RDocument*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocumentInterface">
+      <variant return-type="RDocumentInterface*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mapFromView">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+          <parameter const="false" type="double" modifier="" name="z" default="0.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapToView">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapDistanceFromView">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapDistanceToView">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapCornersFromView">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBox">
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMinimum">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMaximum">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="handleTerminateEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RTerminateEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleKeyPressEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleKeyReleaseEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="simulateMouseMoveEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="handleMouseMoveEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleMousePressEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleMouseReleaseEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleMouseDoubleClickEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleWheelEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RWheelEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleTabletEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RTabletEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleSwipeGestureEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSwipeGesture" modifier="&amp;" name="gesture" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handlePanGestureEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPanGesture" modifier="&amp;" name="gesture" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handlePinchGestureEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPinchGesture" modifier="&amp;" name="gesture" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="giveFocus">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasFocus">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="removeFocus">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="viewportChangeEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="saveViewport">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="restoreViewport">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="zoomIn">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="double" modifier="" name="factor" default="1.2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="zoomOut">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="double" modifier="" name="factor" default="1.2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="zoom">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="double" modifier="" name="factor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="zoomTo">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="window" />
+          <parameter const="false" type="int" modifier="" name="margin" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="zoomPrevious">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="autoZoom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="margin" default="RDEFAULT_MIN1" />
+          <parameter const="false" type="bool" modifier="" name="ignoreEmpty" default="false" />
+          <parameter const="false" type="bool" modifier="" name="ignoreLineweight" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="zoomToSelection">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="margin" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="zoomToEntities">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QSet&lt;REntity::Id&gt;" modifier="&amp;" name="ids" />
+          <parameter const="false" type="int" modifier="" name="margin" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="centerToPoint">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="centerToBox">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pan">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="delta" />
+          <parameter const="false" type="bool" modifier="" name="regen" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startPan">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFactor">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="includeStepFactor" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFactor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+          <parameter const="false" type="bool" modifier="" name="regen" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOffset">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="includeStepOffset" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+          <parameter const="false" type="bool" modifier="" name="regen" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="regenerate">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="force" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="&amp;" name="affectedEntities" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="repaintView">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getWidth">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHeight">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isActive">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSignalsBlocked">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSignalsBlocked">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNavigationAction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGrid">
+      <variant return-type="RGrid*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGrid">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RGrid" modifier="*" name="g" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGridVisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isGridVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintGridPoint">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintGridLine">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCursor">
+      <variant return-type="QCursor" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCursor">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::CursorShape" modifier="" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QCursor" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClosestReferencePoint">
+      <variant return-type="RRefPoint" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="screenPosition" />
+          <parameter const="false" type="int" modifier="" name="range" />
+        </parameters>
+      </variant>
+      <variant return-type="RRefPoint" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="screenPosition" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClosestEntity">
+      <variant return-type="REntity::Id" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="screenPosition" />
+          <parameter const="false" type="int" modifier="" name="range" />
+          <parameter const="false" type="int" modifier="" name="strictRange" />
+          <parameter const="false" type="bool" modifier="" name="includeLockedLayers" default="true" />
+          <parameter const="false" type="bool" modifier="" name="selectedOnly" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBackgroundColor">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="col" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBackgroundColor">
+      <variant return-type="QColor" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMargin">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMargin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setExporting">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isExporting">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPrintingOrExporting">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrinting">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isPrinting">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrintPreview">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isPrintPreview">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrintPointSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColorMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsView::ColorMode" modifier="" name="cm" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColorMode">
+      <variant return-type="RGraphicsView::ColorMode" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHairlineMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getHairlineMode">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHairlineMinimumMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getHairlineMinimumMode">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTextLabels">
+      <variant return-type="QList&lt;RTextLabel&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearTextLabels">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addTextLabel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RTextLabel" modifier="&amp;" name="textLabel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLastKnownMousePosition">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCurrentStepScaleFactor">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentStepScaleFactor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentStepOffset">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentStepOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTextHeightThresholdOverride">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTextHeightThresholdOverride">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateTextHeightThreshold">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPathVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAntialiasing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAntialiasing">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDevicePixelRatio">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isShared">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="registerForFocus">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getWidget">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

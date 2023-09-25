@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RKeyListener.h">
+  <class_decl name="QKeyEvent" />
+  <class name="RKeyListener" ownership="cpp">
+    <function name="keyPressed">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

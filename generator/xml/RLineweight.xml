@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLineweight.h">
+  <class name="RLineweight">
+    <enum name="Lineweight">
+      <key>Weight000</key>
+      <key>Weight005</key>
+      <key>Weight009</key>
+      <key>Weight013</key>
+      <key>Weight015</key>
+      <key>Weight018</key>
+      <key>Weight020</key>
+      <key>Weight025</key>
+      <key>Weight030</key>
+      <key>Weight035</key>
+      <key>Weight040</key>
+      <key>Weight050</key>
+      <key>Weight053</key>
+      <key>Weight060</key>
+      <key>Weight070</key>
+      <key>Weight080</key>
+      <key>Weight090</key>
+      <key>Weight100</key>
+      <key>Weight106</key>
+      <key>Weight120</key>
+      <key>Weight140</key>
+      <key>Weight158</key>
+      <key>Weight200</key>
+      <key>Weight211</key>
+      <key>WeightByLayer</key>
+      <key>WeightByBlock</key>
+      <key>WeightByLwDefault</key>
+      <key>WeightInvalid</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <!--
+    <function name="getList" static="true">
+      <variant return-type="QList&lt;QPair&lt;QString,RLineweight::Lineweight&gt;&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="onlyFixed" />
+          <parameter const="false" type="bool" modifier="" name="noDefault" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="getIcon" static="true">
+      <variant return-type="QIcon" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLineweight::Lineweight" modifier="" name="color" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" default="RDEFAULT_QSIZE_ICON" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLineweight::Lineweight" modifier="" name="lineweight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClosestMatch" static="true">
+      <variant return-type="RLineweight::Lineweight" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="lw" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="init" static="true" />
+  </class>
+</unit>

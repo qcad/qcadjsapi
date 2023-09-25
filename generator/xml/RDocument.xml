@@ -1,0 +1,1624 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDocument.h">
+  <class_decl name="RVector" />
+  <class_decl name="RStorage" />
+  <class name="RDocument" ownership="cpp">
+    <!--
+    <super_list>
+      <super name="RRequireHeap" />
+      <super name="RNonCopyable" />
+    </super_list>
+    -->
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RStorage" modifier="&amp;" name="storage" />
+          <parameter const="false" type="RSpatialIndex" modifier="&amp;" name="spatialIndex" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="beforeLoad" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initLinetypes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDefaultLinetypes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RObject&gt;&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStorage">
+      <variant return-type="RStorage&amp;" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RStorage&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="getSpatialIndex">
+      <variant return-type="RSpatialIndex&amp;" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RSpatialIndex&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="getSpatialIndexForBlock">
+      <variant return-type="RSpatialIndex*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSpatialIndexForCurrentBlock">
+      <variant return-type="RSpatialIndex*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTransactionStack">
+      <variant return-type="RTransactionStack&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="beforeLoad" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryClosestXY">
+      <variant return-type="REntity::Id" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="wcsPosition" />
+          <parameter const="false" type="double" modifier="" name="range" />
+          <parameter const="false" type="bool" modifier="" name="draft" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+          <parameter const="false" type="bool" modifier="" name="includeLockedLayers" default="true" />
+          <parameter const="false" type="bool" modifier="" name="selectedOnly" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="REntity::Id" access="public">
+        <parameters>
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="&amp;" name="candidates" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="wcsPosition" />
+          <parameter const="false" type="double" modifier="" name="range" />
+          <parameter const="false" type="bool" modifier="" name="draft" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="queryClosestXYWithIndices">
+      <variant return-type="QPair&lt;REntity::Id,QSet&lt;int&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="wcsPosition" />
+          <parameter const="false" type="double" modifier="" name="range" />
+          <parameter const="false" type="bool" modifier="" name="draft" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+          <parameter const="false" type="bool" modifier="" name="includeLockedLayers" default="true" />
+          <parameter const="false" type="bool" modifier="" name="selectedOnly" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="QPair&lt;REntity::Id,QSet&lt;int&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="QMap&lt;REntity::Id,QSet&lt;int&gt;&gt;" modifier="&amp;" name="candidates" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="wcsPosition" />
+          <parameter const="false" type="double" modifier="" name="range" />
+          <parameter const="false" type="bool" modifier="" name="draft" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="queryAllObjects">
+      <variant return-type="QSet&lt;RObject::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="querySelectedLayers">
+      <variant return-type="QSet&lt;RObject::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllVisibleEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="undone" default="false" />
+          <parameter const="false" type="bool" modifier="" name="allBlocks" default="false" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="type" default="RS::EntityAll" />
+        </parameters>
+      </variant>
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="undone" />
+          <parameter const="false" type="bool" modifier="" name="allBlocks" />
+          <parameter const="false" type="QList&lt;RS::EntityType&gt;" modifier="" name="types" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryWorkingSetEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllUcs">
+      <variant return-type="QSet&lt;RUcs::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllLayers">
+      <variant return-type="QSet&lt;RLayer::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllLayerStates">
+      <variant return-type="QSet&lt;RLayerState::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllBlocks">
+      <variant return-type="QSet&lt;RBlock::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllLayoutBlocks">
+      <variant return-type="QSet&lt;RBlock::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="includeModelSpace" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryAllLayouts">
+      <variant return-type="QSet&lt;RBlock::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllViews">
+      <variant return-type="QSet&lt;RView::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllLinetypes">
+      <variant return-type="QSet&lt;RLinetype::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryLayerEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+          <parameter const="false" type="bool" modifier="" name="allBlocks" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="querySelectedLayerEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+          <parameter const="false" type="bool" modifier="" name="allBlocks" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasBlockEntities">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryBlockEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryLayerBlockEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryChildEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="parentId" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="type" default="RS::EntityAll" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasChildEntities">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="parentId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryBlockReferences">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryAllBlockReferences">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryAllViewports">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryContainedEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryInfiniteEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryIntersectedEntitiesXYFast">
+      <variant return-type="QSet&lt;REntity::Id&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryIntersectedShapesXYFast">
+      <variant return-type="QSet&lt;REntity::Id&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+          <parameter const="false" type="bool" modifier="" name="noInfiniteEntities" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryIntersectedEntitiesXY">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+          <parameter const="false" type="bool" modifier="" name="checkBoundingBoxOnly" default="false" />
+          <parameter const="false" type="bool" modifier="" name="includeLockedLayers" default="true" />
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" default="RBlock::INVALID_ID" />
+          <parameter const="true" type="QList&lt;RS::EntityType&gt;" modifier="&amp;" name="filter"
+          default="RDEFAULT_QLIST_RS_ENTITYTYPE" />
+          <parameter const="false" type="bool" modifier="" name="selectedOnly" default="false" />
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" default="RLayer::INVALID_ID" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="queryIntersectedEntitiesXYWithIndex">
+      <variant return-type="QMap&lt;REntity::Id,QSet&lt;int&gt;&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+          <parameter const="false" type="bool" modifier="" name="checkBoundingBoxOnly" default="false" />
+          <parameter const="false" type="bool" modifier="" name="includeLockedLayers" default="true" />
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" default="RBlock::INVALID_ID" />
+          <parameter const="true" type="QList&lt;RS::EntityType&gt;" modifier="&amp;" name="filter"
+          default="RDEFAULT_QLIST_RS_ENTITYTYPE" />
+          <parameter const="false" type="bool" modifier="" name="selectedOnly" default="false" />
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" default="RLayer::INVALID_ID" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryIntersectedShapesXY">
+      <variant return-type="QMap&lt;REntity::Id,QSet&lt;int&gt;&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+          <parameter const="false" type="bool" modifier="" name="checkBoundingBoxOnly" default="false" />
+          <parameter const="false" type="bool" modifier="" name="includeLockedLayers" default="true" />
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" default="RBlock::INVALID_ID" />
+          <parameter const="true" type="QList&lt;RS::EntityType&gt;" modifier="&amp;" name="filter"
+          default="RDEFAULT_QLIST_RS_ENTITYTYPE" />
+          <parameter const="false" type="bool" modifier="" name="selectedOnly" default="false" />
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" default="RLayer::INVALID_ID" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="queryContainedEntitiesXY">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="querySelectedEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryConnectedEntities">
+      <variant return-type="QSet&lt;REntity::Id&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::PointTolerance" />
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" default="RLayer::INVALID_ID" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryPropertyEditorObjects">
+      <variant return-type="QSet&lt;RObject::Id&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryDocumentVariables">
+      <variant return-type="QSharedPointer&lt;RDocumentVariables&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryDocumentVariablesDirect">
+      <variant return-type="QSharedPointer&lt;RDocumentVariables&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryDimStyle">
+      <variant return-type="QSharedPointer&lt;RDimStyle&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryDimStyleDirect">
+      <variant return-type="QSharedPointer&lt;RDimStyle&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryObject">
+      <variant return-type="QSharedPointer&lt;RObject&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="objectId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryObjectDirect">
+      <variant return-type="QSharedPointer&lt;RObject&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="objectId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryObjectCC">
+      <variant return-type="RObject*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="objectId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryObjectByHandle">
+      <variant return-type="QSharedPointer&lt;RObject&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Handle" modifier="" name="objectHandle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryEntity">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryEntityDirect">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryVisibleEntityDirect">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryUcs">
+      <variant return-type="QSharedPointer&lt;RUcs&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RUcs::Id" modifier="" name="ucsId" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;RUcs&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ucsName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryLayer">
+      <variant return-type="QSharedPointer&lt;RLayer&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;RLayer&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryLayerDirect">
+      <variant return-type="QSharedPointer&lt;RLayer&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryLayerState">
+      <variant return-type="QSharedPointer&lt;RLayerState&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayerState::Id" modifier="" name="layerStateId" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;RLayerState&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerStateName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryLayerStateDirect">
+      <variant return-type="QSharedPointer&lt;RLayerState&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayerState::Id" modifier="" name="layerStateId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryLayout">
+      <variant return-type="QSharedPointer&lt;RLayout&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayout::Id" modifier="" name="layoutId" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;RLayout&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layoutName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryLayoutDirect">
+      <variant return-type="QSharedPointer&lt;RLayout&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayout::Id" modifier="" name="layoutId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryBlock">
+      <variant return-type="QSharedPointer&lt;RBlock&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;RBlock&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryBlockDirect">
+      <variant return-type="QSharedPointer&lt;RBlock&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;RBlock&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryView">
+      <variant return-type="QSharedPointer&lt;RView&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RView::Id" modifier="" name="viewId" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;RView&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="viewName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryLinetype">
+      <variant return-type="QSharedPointer&lt;RLinetype&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="linetypeId" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;RLinetype&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="linetypeName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="countSelectedEntities">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearSelection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <!--
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="*" name="affectedEntities" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectAllEntities">
+      <variant return-type="void" access="public">
+        <parameters>
+          <!--
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="*" name="affectedEntities" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectEntity">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+          <parameter const="false" type="bool" modifier="" name="add" default="false" />
+          <!--
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="*" name="affectedEntities" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="deselectEntity">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+          <!--
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="*" name="affectedEntities" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectEntities">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QSet&lt;REntity::Id&gt;" modifier="&amp;" name="entityId" />
+          <parameter const="false" type="bool" modifier="" name="add" default="false" />
+          <!--
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="*" name="affectedEntities" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="deselectEntities">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QSet&lt;REntity::Id&gt;" modifier="&amp;" name="entityId" />
+          <!--
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="*" name="affectedEntities" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSelected">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSelectedWorkingSet">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLayerLocked">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isParentLayerLocked">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEntity">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="objectId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEntityEditable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLayerOff">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLayerOffOrFrozen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLayerFrozen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLayerPlottable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLayerSnappable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isParentLayerFrozen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isBlockFrozen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLayoutBlock">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEntityLayerFrozen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEntityVisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" default="RBlock::INVALID_ID" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isParentLayerSnappable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isParentLayerPlottable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="layer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasSelection">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ignoreHiddenLayers" default="true" />
+          <parameter const="false" type="bool" modifier="" name="ignoreEmpty" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSelectionBox">
+      <variant return-type="RBox" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEntitiesBox">
+      <variant return-type="RBox" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="&amp;" name="ids" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearSpatialIndices">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rebuildSpatialIndex">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addToSpatialIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="" name="entity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="blockContainsReferences">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+          <parameter const="false" type="RBlock::Id" modifier="" name="referencedBlockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeBlockFromSpatialIndex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addBlockToSpatialIndex">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+          <parameter const="false" type="RObject::Id" modifier="" name="ignoreBlockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeFromSpatialIndex">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="" name="entity" />
+          <parameter const="true" type="QList&lt;RBox&gt;" modifier="&amp;" name="boundingBoxes"
+          default="RDEFAULT_QLIST_RBOX" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateAllEntities">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="undo">
+      <variant return-type="QList&lt;RTransaction&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="redo">
+      <variant return-type="QList&lt;RTransaction&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUndoAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRedoAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="startTransactionGroup">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTransactionGroup">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoTransactionGroup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAutoTransactionGroup">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resetTransactionStack">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFileName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fn" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFileVersion">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fv" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFileVersion">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryCurrentLayer">
+      <variant return-type="QSharedPointer&lt;RLayer&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentLayer">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentLayerId">
+      <variant return-type="RLayer::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCurrentLayerName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentColor">
+      <variant return-type="RColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentLineweight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLineweight::Lineweight" modifier="" name="lw" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentLineweight">
+      <variant return-type="RLineweight::Lineweight" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentLinetype">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="ltId" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentLinetypePattern">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RLinetypePattern" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentLinetypeId">
+      <variant return-type="RLinetype::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCurrentLinetypePattern">
+      <variant return-type="RLinetypePattern" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryCurrentBlock">
+      <variant return-type="QSharedPointer&lt;RBlock&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentBlock">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentBlockId">
+      <variant return-type="RBlock::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCurrentBlockName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentViewport">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="viewportId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentViewportId">
+      <variant return-type="RObject::Id" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasCurrentViewport">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="unsetCurrentViewport">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="queryCurrentView">
+      <variant return-type="QSharedPointer&lt;RView&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentView">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RView::Id" modifier="" name="viewId" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="viewName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentViewId">
+      <variant return-type="RView::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTempBlockName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBlockName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBlockNameFromHandle">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Handle" modifier="" name="blockHandle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBlockNameFromLayout">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layoutName" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayout::Id" modifier="" name="layoutId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBlockNames">
+      <variant return-type="QSet&lt;QString&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="rxStr" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sortBlocks">
+      <variant return-type="QList&lt;RBlock::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RBlock::Id&gt;" modifier="&amp;" name="blockIds" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sortLayers">
+      <variant return-type="QList&lt;RLayer::Id&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RLayer::Id&gt;" modifier="&amp;" name="layerIds" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLayerName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLayerNames">
+      <variant return-type="QSet&lt;QString&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="rxStr" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLayerStateName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayerState::Id" modifier="" name="layerStateId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLayerStateNames">
+      <variant return-type="QSet&lt;QString&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="rxStr" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLayoutName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayout::Id" modifier="" name="layoutId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getViewNames">
+      <variant return-type="QSet&lt;QString&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasLayer">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasLayerStates">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasLayerState">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerStateName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasBlock">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasLayout">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layoutName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasView">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="viewName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasLinetype">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="linetypeName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLayerId">
+      <variant return-type="RLayer::Id" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLayer0Id">
+      <variant return-type="RLayer::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLayerStateId">
+      <variant return-type="RLayerState::Id" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerStateName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBlockId">
+      <variant return-type="RBlock::Id" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBlockIdAuto">
+      <variant return-type="RBlock::Id" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="blockLayoutName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getModelSpaceBlockId">
+      <variant return-type="RBlock::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLinetypeId">
+      <variant return-type="RLinetype::Id" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="linetypeName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypeByLayerId">
+      <variant return-type="RLinetype::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLinetypeByBlockId">
+      <variant return-type="RLinetype::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLinetypeName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="linetypeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypeDescription">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="linetypeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypeLabel">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="linetypeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypeNames">
+      <variant return-type="QSet&lt;QString&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLinetypePatterns">
+      <variant return-type="QList&lt;RLinetypePattern&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isByLayer">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="linetypeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isByBlock">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="linetypeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMaxLineweight">
+      <variant return-type="RLineweight::Lineweight" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVariables">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVariable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="bool" modifier="" name="overwrite" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVariable">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="defaultValue" default="RDEFAULT_QVARIANT" />
+          <parameter const="false" type="bool" modifier="" name="useSettings" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasVariable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeVariable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setKnownVariable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getKnownVariable">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="defaultValue" default="RDEFAULT_QVARIANT" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setUnit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getUnit">
+      <variant return-type="RS::Unit" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMeasurement">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::Measurement" modifier="" name="m" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMeasurement">
+      <variant return-type="RS::Measurement" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isMetric">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimensionFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="f" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimensionFont">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLinetypeScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypeScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="formatLinear">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formatAngle">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLinearFormat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::LinearFormat" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinearFormat">
+      <variant return-type="RS::LinearFormat" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLinearPrecision">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showLeadingZeroes">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showTrailingZeroes">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showLeadingZeroesAngle">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showTrailingZeroesAngle">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAngleFormat">
+      <variant return-type="RS::AngleFormat" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAnglePrecision">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDecimalSeparator">
+      <variant return-type="char" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isModified">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLastModifiedDateTime">
+      <variant return-type="QDateTime" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLastModified">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setModified">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyVariablesFrom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RDocument" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addAutoVariable">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAutoVariables">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="substituteAutoVariables">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="expression" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="eval">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="expression" />
+          <!--
+          <parameter const="false" type="bool" modifier="*" name="ok" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEditingWorkingSet">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIgnoreWorkingSet">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNotifyListeners">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNotifyListeners">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getClipboard" static="true">
+      <variant return-type="RDocument&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dump">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

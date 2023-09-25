@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDockWidget.h">
+  <class name="RDockWidget" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QDockWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="NULL" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="RDEFAULT_QT_WINDOWFLAGS" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="NULL" />
+          <parameter const="false" type="Qt::WindowFlags" modifier="" name="flags" default="RDEFAULT_QT_WINDOWFLAGS" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="shown">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hidden">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showEvent" />
+    <function name="hideEvent" />
+    <preproc plain="#ifdef Q_OS_MAC" />
+    <preproc plain="#if (QT_VERSION&gt;=0x050601&amp;&amp;QT_VERSION&lt;=0x050602)||QT_VERSION&gt;=0x050F00" />
+    <function name="closeEvent" />
+    <preproc plain="#endif" />
+    <preproc plain="#endif" />
+    <function name="actionEvent" />
+    <function name="event" />
+  </class>
+</unit>

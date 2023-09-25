@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RColor.h">
+  <class name="RColor">
+    <super_list>
+      <super name="QColor" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="r" />
+          <parameter const="false" type="int" modifier="" name="g" />
+          <parameter const="false" type="int" modifier="" name="b" />
+          <parameter const="false" type="int" modifier="" name="a" default="255" />
+          <parameter const="false" type="RColor::Mode" modifier="" name="mode" default="RColor::Fixed" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RColor::Mode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="RColor::Mode" modifier="" name="mode" default="RColor::Fixed" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="Qt::GlobalColor" modifier="" name="color" />
+          <parameter const="false" type="RColor::Mode" modifier="" name="mode" default="RColor::Fixed" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="color" />
+          <parameter const="false" type="RColor::Mode" modifier="" name="mode" default="RColor::Fixed" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <enum name="Mode">
+      <key>ByLayer</key>
+      <key>ByBlock</key>
+      <key>Fixed</key>
+    </enum>
+    <function name="getCustomColorCode">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getColorIndex">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="removeColor" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="cn" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addColor" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="cn" />
+          <parameter const="true" type="RColor" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createFromCadIndex" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="code" />
+        </parameters>
+      </variant>
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="code" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createFromCadCustom" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="code" />
+        </parameters>
+      </variant>
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="code" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createFromName" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getList" static="true">
+      <variant return-type="QList&lt;QPair&lt;QString,RColor&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="onlyFixed" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="getNameList" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="onlyFixed" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColorList" static="true">
+      <variant return-type="QList&lt;RColor&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="onlyFixed" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIcon" static="true">
+      <variant return-type="QIcon" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="color" />
+          <parameter const="true" type="QSize" modifier="&amp;" name="size" default="RDEFAULT_QSIZE_ICON" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getHash">
+      <variant return-type="unsigned long long" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isByLayer">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isByBlock">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isFixed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toCompat">
+      <variant return-type="QColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCompat">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="col" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getHighlighted" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="color" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="bgColor" />
+          <parameter const="false" type="int" modifier="" name="minDist" default="75" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFaded" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="color" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="bgColor" />
+          <parameter const="false" type="double" modifier="" name="factor" default="1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="reinit" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="equals" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

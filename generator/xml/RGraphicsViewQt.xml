@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RGraphicsViewQt.h">
+  <class_decl name="RAction" />
+  <class_decl name="RDocument" />
+  <class_decl name="RDocumentInterface" />
+  <class_decl name="RFocusFrame" />
+  <class_decl name="RGraphicsSceneQt" />
+  <class_decl name="RLine" />
+  <class_decl name="RSnap" />
+  <class_decl name="RSnapRestriction" />
+  <class name="RGraphicsViewQt" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="NULL" />
+          <parameter const="false" type="bool" modifier="" name="showFocus" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setImageView">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsViewImage" modifier="*" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getImageView">
+      <variant return-type="RGraphicsViewImage*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="disableGestures">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="removeFocus">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getWidth">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHeight">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRect">
+      <variant return-type="QRect" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSignalsBlocked">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSignalsBlocked">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCursor">
+      <variant return-type="QCursor" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCursor">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::CursorShape" modifier="" name="cursorShape" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QCursor" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFocusFrameWidget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFrame" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="viewportChangeEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="emitUpdateSnapInfo">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RSnap" modifier="*" name="snap" />
+          <parameter const="false" type="RSnapRestriction" modifier="*" name="restriction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="emitUpdateTextLabel">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RTextLabel" modifier="&amp;" name="textLabel" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="simulateMouseMoveEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getDevicePixelRatio">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="registerForFocus">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="drop">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDropEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragEnter">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDragEnterEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" overridable="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="event" />
+    <function name="gestureEvent" />
+    <function name="focusInEvent" />
+    <function name="focusOutEvent" />
+    <function name="tabletEvent" />
+    -->
+    <!--
+    <function name="mousePressEvent" />
+    <function name="mouseReleaseEvent" />
+    <function name="mouseDoubleClickEvent" />
+    <function name="wheelEvent" />
+    -->
+    <!--
+    <function name="keyPressEvent" />
+    <function name="keyReleaseEvent" />
+    <function name="dragEnterEvent" />
+    <function name="dropEvent" />
+    -->
+  </class>
+</unit>

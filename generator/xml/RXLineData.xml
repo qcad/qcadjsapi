@@ -1,0 +1,136 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RXLineData.h">
+  <class name="RXLineData">
+    <super_list>
+      <super name="REntityData" />
+      <super name="RXLine" />
+    </super_list>
+    <class_decl name="RXLineEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RXLine" modifier="&amp;" name="line" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="basePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="dir" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getXLine">
+      <variant return-type="RXLine" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBasePoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDirectionVector">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasFixedAngle">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFixedAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="reverse">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTrimEnd">
+      <variant return-type="RS::Ending" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trimStartPoint">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" default="RVector::invalid" />
+          <parameter const="false" type="bool" modifier="" name="extend" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trimEndPoint">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" default="RVector::invalid" />
+          <parameter const="false" type="bool" modifier="" name="extend" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSideOfPoint">
+      <variant return-type="RS::Side" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint"
+          default="RS::RenderTop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveReferencePoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers"
+          default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="castToShape">
+      <variant return-type="RShape*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getShapes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="queryBox" default="RDEFAULT_RBOX" />
+          <parameter const="false" type="bool" modifier="" name="ignoreComplex" default="false" />
+          <parameter const="false" type="bool" modifier="" name="segment" default="false" />
+          <!--
+          <parameter const="false" type="QList&lt;RObject::Id&gt;" modifier="*" name="entityIds" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

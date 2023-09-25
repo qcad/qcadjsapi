@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RFileImporterRegistry.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RFileImporter" />
+  <class_decl name="RFileImporterFactory" />
+  <class_decl name="RMessageHandler" />
+  <class_decl name="RProgressHandler" />
+  <class name="RFileImporterRegistry">
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="registerFileImporter" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RFileImporterFactory" modifier="*" name="factory" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unregisterFileImporter" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RFileImporterFactory" modifier="*" name="factory" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFileImporter" static="true">
+      <variant return-type="RFileImporter*" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="nameFilter" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <!--
+          <parameter const="false" type="RMessageHandler" modifier="*" name="messageHandler" default="NULL" />
+          <parameter const="false" type="RProgressHandler" modifier="*" name="progressHandler" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFilterStrings" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasFileImporter" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="nameFilter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFilterExtensions" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFilterExtensionPatterns" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

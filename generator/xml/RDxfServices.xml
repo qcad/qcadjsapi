@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDxfServices.h">
+  <class_decl name="RDocument" />
+  <class name="RDxfServices">
+    <enum name="Type">
+      <key>Unknown</key>
+      <key>String</key>
+      <key>Int</key>
+      <key>Float</key>
+      <key>Vector</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSafeBlockName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixBlockName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixLayerName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixFontName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fontName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixVersion2String">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixDimensionLabel">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="QString" modifier="&amp;" name="uTol" />
+          <parameter const="false" type="QString" modifier="&amp;" name="lTol" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="detectVersion2Format">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasDIMZIN">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasDIMAZIN">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasInvalidEllipse">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVersion2Compatibility">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVersion3_1Compatibility">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMajorVersion">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMinorVersion">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPatchVersion">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVersion2LayerName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVersionBlockName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVersion2Font">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="handle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVersion2DimensionLabel">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="handle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="collectVersion2Info">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVersion2PatternAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="true" type="QString" modifier="&amp;" name="patternName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVersion2PatternScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="scale" />
+          <parameter const="true" type="QString" modifier="&amp;" name="patternName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVersion2PatternName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="patternName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixVersion2HatchData">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QString" modifier="&amp;" name="patternName" />
+          <parameter const="false" type="double" modifier="&amp;" name="angle" />
+          <parameter const="false" type="double" modifier="&amp;" name="scale" />
+          <parameter const="false" type="bool" modifier="" name="solid" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_VERSION&gt;=0x060000" />
+    <function name="getCodec">
+      <variant return-type="QStringDecoder*" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="QTextCodec*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCodec">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QStringDecoder" modifier="*" name="codec" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextCodec" modifier="*" name="codec" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+    -->
+    <!--
+    <function name="attributesToColor" static="true">
+      <variant return-type="RColor" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="color" />
+          <parameter const="false" type="int" modifier="" name="color24" />
+          <parameter const="true" type="double" modifier="" name="" />
+          <parameter const="false" type="bool" modifier="" name="forLayer" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="numberToColor" static="true">
+      <variant return-type="RColor" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="num" />
+          <parameter const="true" type="double" modifier="" name="" />
+          <parameter const="false" type="bool" modifier="" name="comp" default="false" />
+          <parameter const="false" type="bool" modifier="" name="forLayer" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="numberToColor24" static="true">
+      <variant return-type="RColor" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="num" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="numberToWeight" static="true">
+      <variant return-type="RLineweight::Lineweight" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="num" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="widthToNumber" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLineweight::Lineweight" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="colorToNumber24" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="col" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="colorToNumber" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="col" />
+          <parameter const="true" type="double" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="stringToVariable" static="true">
+      <variant return-type="RS::KnownVariable" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="variableToString" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCodeForVariable" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTypeForVariable" static="true">
+      <variant return-type="RDxfServices::Type" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isVariable2D" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="escapeUnicode" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="parseUnicode" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoFixLinetypePattern" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetypePattern" modifier="&amp;" name="pattern" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFileQCADVersion" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RDocument" modifier="&amp;" name="doc" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initAci" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAci" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="col" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getColor" static="true">
+      <variant return-type="RColor" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="unsigned int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <preproc plain="#if QT_VERSION&gt;=0x060000" />
+    <preproc plain="#else" />
+    <preproc plain="#endif" />
+  </class>
+</unit>

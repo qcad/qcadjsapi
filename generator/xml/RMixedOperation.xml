@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMixedOperation.h">
+  <class_decl name="RObject" />
+  <class name="RMixedOperation" ownership="cpp">
+    <super_list>
+      <super name="ROperation" />
+    </super_list>
+    <enum name="Mode">
+      <key>NoMode</key>
+      <key>UseCurrentAttributes</key>
+      <key>Delete</key>
+      <key>ForceNew</key>
+      <key>EndCycle</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="undoable" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="addObject">
+      <variant return-type="QSharedPointer&lt;RObject&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QSharedPointer&lt;RObject&gt;" modifier="&amp;" name="obj" />
+          <parameter const="false" type="bool" modifier="" name="useCurrentAttributes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="forceNew" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="deleteObject">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSharedPointer&lt;RObject&gt;" modifier="&amp;" name="obj" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endCycle">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="apply">
+      <variant return-type="RTransaction" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMode" />
+    <function name="getMode" />
+  </class>
+</unit>

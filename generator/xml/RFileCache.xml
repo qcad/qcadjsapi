@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RFileCache.h">
+  <class name="RFileCache">
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="getContents" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="false" type="bool" modifier="" name="forceReload" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBuffer" static="true">
+      <variant return-type="QBuffer*" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="false" type="bool" modifier="" name="forceReload" default="false" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

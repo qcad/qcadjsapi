@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RCadToolBar.h">
+  <class name="RCadToolBar" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QToolBar" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getPanel">
+      <variant return-type="RCadToolBarPanel*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="objectName" />
+          <parameter const="false" type="bool" modifier="" name="hasBackButton" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentPanelName">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCurrentPanel">
+      <variant return-type="RCadToolBarPanel*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showPanel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="bool" modifier="" name="isBack" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateIconSize">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="back">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toggleVerticalWhenFloating">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contextMenuEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QContextMenuEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

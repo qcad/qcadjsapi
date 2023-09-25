@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnapFree.h">
+  <class_decl name="RGraphicsView" />
+  <class_decl name="RMouseEvent" />
+  <class name="RSnapFree" ownership="cpp">
+    <super_list>
+      <super name="RSnap" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="snap">
+      <variant return-type="RVector" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="view" />
+          <parameter const="false" type="double" modifier="" name="range" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

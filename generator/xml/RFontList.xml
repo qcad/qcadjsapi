@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RFontList.h">
+  <class name="RFontList">
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="initSubstitutions" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="uninit" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getNames" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSubName" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="resName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="get" static="true">
+      <variant return-type="RFont*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="resName" />
+          <parameter const="false" type="bool" modifier="" name="substitute" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isCadFont" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fontName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fontFile" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

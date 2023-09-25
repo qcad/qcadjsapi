@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDimAngularEntity.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="RDimAngularEntity" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+      <super name="REntity" />
+      <super name="RDimensionEntity" />
+    </super_list>
+    <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyProtected" />
+    <property static="true" type="RPropertyTypeId" name="PropertyWorkingSet" />
+    <property static="true" type="RPropertyTypeId" name="PropertyType" />
+    <property static="true" type="RPropertyTypeId" name="PropertyBlock" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLayer" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetype" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetypeScale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLineweight" />
+    <property static="true" type="RPropertyTypeId" name="PropertyColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDisplayedColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDrawOrder" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyText" />
+    <property static="true" type="RPropertyTypeId" name="PropertyUpperTolerance" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLowerTolerance" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMeasuredValue" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimscale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtxt" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimgap" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimasz" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimexe" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimexo" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtad" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtih" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtsz" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimdsep" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimaunit" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimadec" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimazin" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArchTick" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimclrt" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimBlockName" />
+    <property static="true" type="RPropertyTypeId" name="PropertyAutoTextPos" />
+    <property static="true" type="RPropertyTypeId" name="PropertyFontName" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArrow1Flipped" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArrow2Flipped" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtLineFix" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtLineFixLength" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine1EndX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine1EndY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine1EndZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine2EndX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine2EndY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine2EndZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimArcPositionX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimArcPositionY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimArcPositionZ" />
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getData">
+      <variant return-type="RDimAngularData&amp;" virtual="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RDimAngularData&amp;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="setExtensionLine1End">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExtensionLine1End">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setExtensionLine2End">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExtensionLine2End">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimArcPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimArcPosition">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDimensionArc">
+      <variant return-type="RArc" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>

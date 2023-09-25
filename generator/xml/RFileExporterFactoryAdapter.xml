@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RFileExporterFactoryAdapter.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RMessageHandler" />
+  <class_decl name="RProgressHandler" />
+  <class name="RFileExporterFactoryAdapter" ownership="cpp">
+    <super_list>
+      <super name="RFileExporterFactory" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="getFilterStrings">
+      <variant return-type="QStringList" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="canExport">
+      <variant return-type="int" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="nameFilter" default="&quot;&quot;" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="instantiate">
+      <variant return-type="RFileExporter*" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <!--
+          <parameter const="false" type="RMessageHandler" modifier="*" name="messageHandler" default="NULL" />
+          <parameter const="false" type="RProgressHandler" modifier="*" name="progressHandler" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

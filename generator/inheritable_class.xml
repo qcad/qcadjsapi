@@ -3,4 +3,25 @@
     These classes are instantiated as Class_Base when created from JS.
  -->
 <inheritable-class>
+  <class name="RActionAdapter" />
+  <class name="RColorCombo" />
+  <class name="RCommandLine" />
+  <class name="RDockWidget" />
+  <class name="RFlowLayout" />
+  <class name="RFontChooserWidget" />
+  <class name="RGraphicsViewQt" />
+  <class name="RLinetypeCombo" />
+  <class name="RLineweightCombo" />
+  <class name="RMainWindowQt" />
+  <class name="RMathComboBox" />
+  <class name="RMathLineEdit" />
+  <class name="RMdiArea" />
+  <class name="RMdiChildQt" />
+  <class name="RRulerQt" />
+  <class name="RSingleApplication" />
+  <class name="RToolButton" />
+  <class name="RTreeWidget" />
+  <class name="RWidget" />
+  <class name="RFileImporterFactoryAdapter" />
+  <class name="RFileImporterAdapter" />
 </inheritable-class>

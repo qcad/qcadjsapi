@@ -1,0 +1,214 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RToleranceData.h">
+  <class name="RToleranceData">
+    <super_list>
+      <super name="REntityData" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="castToShape">
+      <variant return-type="RShape*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLocation">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLocation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="l" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDirection">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDirection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getFields">
+      <variant return-type="QList&lt;QStringList&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="getText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimtxt">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="scale" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDimtxt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimscale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimscale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaleVisualProperties">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="scaleFactor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCorners">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMiddels">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint" default="RS::RenderTop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveReferencePoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirror">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="flipHorizontal">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flipVertical">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getExploded">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="segments" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="queryBox" default="RDEFAULT_RBOX" />
+          <parameter const="false" type="bool" modifier="" name="ignoreComplex" default="false" />
+          <parameter const="false" type="bool" modifier="" name="segment" default="false" />
+          <!--
+          <parameter const="false" type="QList&lt;RObject::Id&gt;" modifier="*" name="entityIds" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="update">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTextLabels">
+      <variant return-type="QList&lt;RTextData&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFrame">
+      <variant return-type="QList&lt;RLine&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRows">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPointOnEntity">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearStyleOverrides">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

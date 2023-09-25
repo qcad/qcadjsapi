@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RViewportEntity.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="RViewportEntity" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+      <super name="REntity" />
+    </super_list>
+    <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyType" />
+    <property static="true" type="RPropertyTypeId" name="PropertyBlock" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLayer" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetype" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetypeScale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLineweight" />
+    <property static="true" type="RPropertyTypeId" name="PropertyColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDisplayedColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDrawOrder" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyWidth" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHeight" />
+    <property static="true" type="RPropertyTypeId" name="PropertyScale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyRotation" />
+    <property static="true" type="RPropertyTypeId" name="PropertyOn" />
+    <property static="true" type="RPropertyTypeId" name="PropertyViewCenterX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyViewCenterY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyViewTargetX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyViewTargetY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyViewTargetZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyOverall" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="true" type="RViewportData" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStaticPropertyTypeIds" static="true">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RViewportEntity*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportEntity">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RExporter" modifier="&amp;" name="e" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getData">
+      <variant return-type="RViewportData&amp;" virtual="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RViewportData&amp;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RViewportData" modifier="&amp;" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getViewportId">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setViewportId">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getStatus">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStatus">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCenter">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getViewCenter">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setViewCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getViewTarget">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setViewTarget">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getWidth">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getHeight">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRotation">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRotation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isOverall">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOverall">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isOff">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOff">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getViewOffset">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPosition">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>

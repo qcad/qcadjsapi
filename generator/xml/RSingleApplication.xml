@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSingleApplication.h">
+  <class_decl name="RLocalPeer" />
+  <class name="RSingleApplication" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QCoreApplication" />
+      <super name="QGuiApplication" />
+      <super name="QApplication" />
+    </super_list>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="&amp;" name="argc" />
+          <parameter const="false" type="char" modifier="**" name="argv" />
+          <parameter const="false" type="bool" modifier="" name="GUIenabled" default="true" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+          <parameter const="false" type="int" modifier="&amp;" name="argc" />
+          <parameter const="false" type="char" modifier="**" name="argv" />
+          <parameter const="false" type="bool" modifier="" name="GUIenabled" default="true" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Display" modifier="*" name="dpy" />
+          <parameter const="false" type="Qt::HANDLE" modifier="" name="visual" default="0" />
+          <parameter const="false" type="Qt::HANDLE" modifier="" name="colormap" default="0" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Display" modifier="*" name="dpy" />
+          <parameter const="false" type="int" modifier="&amp;" name="argc" />
+          <parameter const="false" type="char" modifier="**" name="argv" />
+          <parameter const="false" type="Qt::HANDLE" modifier="" name="visual" default="0" />
+          <parameter const="false" type="Qt::HANDLE" modifier="" name="cmap" default="0" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="Display" modifier="*" name="dpy" />
+          <parameter const="true" type="QString" modifier="&amp;" name="appId" />
+          <parameter const="false" type="int" modifier="" name="argc" />
+          <parameter const="false" type="char" modifier="**" name="argv" />
+          <parameter const="false" type="Qt::HANDLE" modifier="" name="visual" default="0" />
+          <parameter const="false" type="Qt::HANDLE" modifier="" name="colormap" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <preproc plain="#if defined(Q_OS_X11)" />
+    <preproc plain="#endif" />
+    <function name="getInstance" static="true">
+      <variant return-type="RSingleApplication*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRunning">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="id">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setActivationWindow">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="aw" />
+          <parameter const="false" type="bool" modifier="" name="activateOnMessage" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activationWindow">
+      <variant return-type="QWidget*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="sendMessage">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="int" modifier="" name="timeout" default="5000" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activateWindow">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="messageReceived">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fileOpenRequestReceived">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

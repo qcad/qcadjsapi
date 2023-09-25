@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPatternList.h">
+  <class name="RPatternList">
+    <!--
+    <function name="init" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="metric" />
+          <parameter const="false" type="RResourceList&lt;RPattern&gt;" modifier="&amp;" name="res" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

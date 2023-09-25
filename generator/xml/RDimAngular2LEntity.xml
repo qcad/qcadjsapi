@@ -1,0 +1,165 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RDimAngular2LEntity.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="RDimAngular2LEntity" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+      <super name="REntity" />
+      <super name="RDimensionEntity" />
+      <super name="RDimAngularEntity" />
+    </super_list>
+    <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyProtected" />
+    <property static="true" type="RPropertyTypeId" name="PropertyWorkingSet" />
+    <property static="true" type="RPropertyTypeId" name="PropertyType" />
+    <property static="true" type="RPropertyTypeId" name="PropertyBlock" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLayer" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetype" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetypeScale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLineweight" />
+    <property static="true" type="RPropertyTypeId" name="PropertyColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDisplayedColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDrawOrder" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyText" />
+    <property static="true" type="RPropertyTypeId" name="PropertyUpperTolerance" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLowerTolerance" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMeasuredValue" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimscale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtxt" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimgap" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimasz" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimexe" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimexo" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtad" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtih" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtsz" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimdsep" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimaunit" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimadec" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimazin" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArchTick" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimclrt" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimBlockName" />
+    <property static="true" type="RPropertyTypeId" name="PropertyAutoTextPos" />
+    <property static="true" type="RPropertyTypeId" name="PropertyFontName" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArrow1Flipped" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArrow2Flipped" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtLineFix" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtLineFixLength" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine1StartX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine1StartY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine1StartZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine1EndX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine1EndY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine1EndZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine2StartX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine2StartY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine2StartZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine2EndX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine2EndY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtensionLine2EndZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimArcPositionX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimArcPositionY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimArcPositionZ" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="true" type="RDimAngular2LData" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStaticPropertyTypeIds" static="true">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RDimAngular2LEntity*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getData">
+      <variant return-type="RDimAngular2LData&amp;" virtual="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RDimAngular2LData&amp;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDimAngular2LData" modifier="&amp;" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setExtensionLine1Start">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExtensionLine1Start">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setExtensionLine2Start">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExtensionLine2Start">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCenter">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>

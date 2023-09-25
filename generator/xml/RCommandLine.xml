@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RCommandLine.h">
+  <class name="RCommandLine" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QLineEdit" />
+    </super_list>
+    <function name="clearHistory">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="commandConfirmed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="command" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="completeCommand">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="command" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="escape">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getLastCommand">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="appendCommand">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="cmd" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getHistory">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHistory">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QStringList" modifier="&amp;" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="triggerCommand">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="cmd" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paste">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RFileImporterAdapter.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RMessageHandler" />
+  <class_decl name="RProgressHandler" />
+  <class name="RFileImporterAdapter" ownership="cpp">
+    <super_list>
+      <super name="RImporter" />
+      <super name="RFileImporter" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="RMessageHandler" modifier="*" name="messageHandler" default="NULL" />
+          <parameter const="false" type="RProgressHandler" modifier="*" name="progressHandler" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="importFile">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="nameFilter" />
+          <parameter const="true" type="QVariantMap" modifier="&amp;" name="params" default="RDEFAULT_QVARIANTMAP" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

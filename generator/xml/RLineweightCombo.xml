@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLineweightCombo.h">
+  <class name="RLineweightCombo" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QComboBox" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLineweight">
+      <variant return-type="RLineweight::Lineweight" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineweight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLineweight::Lineweight" modifier="" name="lw" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOnlyFixed">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOnlyFixed">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="onlyFixed" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNoDefault">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNoDefault">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="noDefault" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="valueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RLineweight::Lineweight" modifier="" name="lw" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineweightChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

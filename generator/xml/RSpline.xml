@@ -1,0 +1,759 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSpline.h">
+  <class_decl name="RLine" />
+  <class name="RSpline" sharedpointer="true">
+    <super_list>
+      <super name="RShape" />
+      <super name="RExplodable" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RSpline" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="controlPoints" />
+          <parameter const="false" type="int" modifier="" name="degree" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getShapeType">
+      <variant return-type="RShape::Type" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RSpline*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDirected">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="copySpline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RSpline" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createSplinesFromArc" static="true">
+      <variant return-type="QList&lt;RSpline&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createBezierFromSmallArc" static="true">
+      <variant return-type="RSpline" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="r" />
+          <parameter const="false" type="double" modifier="" name="a1" />
+          <parameter const="false" type="double" modifier="" name="a2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setZ">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="z" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVectorProperties">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getIntProperties">
+      <variant return-type="QList&lt;int&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDoubleProperties">
+      <variant return-type="QList&lt;double&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoolProperties">
+      <variant return-type="QList&lt;bool&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isInterpolated">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="appendControlPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="appendControlPoints">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="points" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeLastControlPoint">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setControlPoints">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="points" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getControlPoints">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getControlPointsWrapped">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="countControlPoints">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getControlPointAt">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="appendFitPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="prependFitPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertFitPointAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="t" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeFitPointAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeFirstFitPoint">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="removeLastFitPoint">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFitPoints">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="points" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFitPoints">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="countFitPoints">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasFitPoints">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFitPointAt">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getKnotVector">
+      <variant return-type="QList&lt;double&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getActualKnotVector">
+      <variant return-type="QList&lt;double&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setKnotVector">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;double&gt;" modifier="&amp;" name="knots" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="appendKnot">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="k" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getWeights">
+      <variant return-type="QList&lt;double&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWeights">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;double&gt;" modifier="&amp;" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDegree">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDegree">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getOrder">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPeriodic">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isClosed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isGeometricallyClosed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isPeriodic">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDirection1">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDirection2">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSideOfPoint">
+      <variant return-type="RS::Side" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getStartPoint">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEndPoint">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStartPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEndPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTangents">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="start" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="end" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unsetTangents">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTangentAtStart">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTangentAtStart">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="unsetTangentAtStart">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTangentAtEnd">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTangentAtEnd">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="unsetTangentAtEnd">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateTangentsPeriodic">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLength">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPointAt">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPointAtDistance">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngleAt">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+          <parameter const="false" type="RS::From" modifier="" name="from" default="RS::FromStart" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getEndPoints">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMiddlePoint">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMiddlePoints">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCenterPoints">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPointsWithDistanceToEnd">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+          <parameter const="false" type="int" modifier="" name="from" default="RS::FromAny" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPointCloud">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="segmentLength" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVectorTo">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isOnShape">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RDEFAULT_TOLERANCE_1E_MIN4" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirror">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="flipHorizontal">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flipVertical">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reverse">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="stretch">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="area" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTransformed">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="transform" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTrimEnd">
+      <variant return-type="RS::Ending" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trimStartPoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" default="RVector::invalid" />
+          <parameter const="false" type="bool" modifier="" name="extend" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="trimDist" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trimEndPoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" default="RVector::invalid" />
+          <parameter const="false" type="bool" modifier="" name="extend" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="trimDist" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDistanceFromStart">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="splitAtPoints">
+      <variant return-type="QList&lt;RSpline&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="points" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="splitAtParams">
+      <variant return-type="QList&lt;RSpline&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;double&gt;" modifier="&amp;" name="params" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toPolyline">
+      <variant return-type="RPolyline" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="segments" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="approximateWithArcs">
+      <variant return-type="RPolyline" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="tolerance" />
+          <parameter const="false" type="double" modifier="" name="radiusLimit" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExploded">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="segments" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExplodedBezier">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="segments" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExplodedWithSegmentLength">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="segmentLength" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBezierSegments">
+      <variant return-type="QList&lt;RSpline&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="queryBox" default="RDEFAULT_RBOX" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTDelta">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTMin">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTMax">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTAtPoint">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTAtDistance">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDistanceAtT">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSegments">
+      <variant return-type="QList&lt;RSpline&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="points" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDiscontinuities">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="simplify">
+      <variant return-type="RSpline" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="tolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateFromControlPoints">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateFromFitPoints">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="update">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="splitAt">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="points" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDirty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSelfIntersectionPoints">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasProxy" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setSplineProxy" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RSplineProxy" modifier="*" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSplineProxy" static="true">
+      <variant return-type="RSplineProxy*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="appendToExploded" />
+    <function name="invalidate" />
+    <function name="updateInternal" />
+    <function name="updateBoundingBox" />
+    <function name="print" />
+    <preproc plain="#ifndef R_NO_OPENNURBS" />
+    <preproc plain="#endif" />
+    <preproc plain="#if QT_VERSION&gt;=0x060000" />
+    <function name="copy">
+      <variant return-type="RSpline" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+  </class>
+</unit>

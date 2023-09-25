@@ -1,0 +1,356 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RBlockReferenceData.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="RBlockReferenceData">
+    <super_list>
+      <super name="REntityData" />
+    </super_list>
+    <class_decl name="RBlockReferenceEntity" />
+    <class_decl name="RViewportEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="referencedBlockId" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="false" type="int" modifier="" name="columnCount" default="1" />
+          <parameter const="false" type="int" modifier="" name="rowCount" default="1" />
+          <parameter const="false" type="double" modifier="" name="columnSpacing" default="0" />
+          <parameter const="false" type="double" modifier="" name="rowSpacing" default="0" />
+          <parameter const="false" type="double" modifier="" name="visualPropertiesScale" default="1.0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPointType">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoundingBoxes">
+      <variant return-type="QList&lt;RBox&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ignoreEmpty" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ignoreEmpty" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="to2D">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPointOnEntity">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getInternalReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint"
+          default="RS::RenderTop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint"
+          default="RS::RenderTop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVectorTo">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDistanceTo">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="range" default="0.0" />
+          <parameter const="false" type="bool" modifier="" name="draft" default="false" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getQueryBoxInBlockCoordinates">
+      <variant return-type="RBox" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="queryBox" default="RDEFAULT_RBOX" />
+          <parameter const="false" type="bool" modifier="" name="ignoreComplex" default="false" />
+          <parameter const="false" type="bool" modifier="" name="segment" default="false" />
+          <!--
+          <parameter const="false" type="QList&lt;RObject::Id&gt;" modifier="*" name="entityIds" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveReferencePoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirror">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaleVisualProperties">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="scaleFactor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setReferencedBlockId">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="groundReferencedBlockId">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getReferencedBlockId">
+      <variant return-type="RBlock::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setReferencedBlockName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getReferencedBlockName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPosition">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScaleFactors">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScaleFactors">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="sf" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRotation">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRotation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColumnCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColumnCount">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRowCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRowCount">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColumnSpacing">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColumnSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRowSpacing">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRowSpacing">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="update">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="queryEntity">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+          <parameter const="false" type="bool" modifier="" name="transform" default="false" />
+          <parameter const="false" type="bool" modifier="" name="ignoreAttDef" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="applyTransformationTo">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="&amp;" name="entity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTransform">
+      <variant return-type="RTransform" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getColumnRowOffset">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="col" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="bool" modifier="" name="rotated" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="applyColumnRowOffsetTo">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="int" modifier="" name="col" />
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="bool" modifier="" name="rotated" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapToBlock">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isPixelUnit">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="copy">
+      <variant return-type="RBlockReferenceData" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

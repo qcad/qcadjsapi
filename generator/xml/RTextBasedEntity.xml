@@ -1,0 +1,369 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTextBasedEntity.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="RTextBasedEntity" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+      <super name="REntity" />
+    </super_list>
+    <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyType" />
+    <property static="true" type="RPropertyTypeId" name="PropertyBlock" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLayer" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetype" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetypeScale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLineweight" />
+    <property static="true" type="RPropertyTypeId" name="PropertyColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDisplayedColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDrawOrder" />
+    <property static="true" type="RPropertyTypeId" name="PropertySimple" />
+    <property static="true" type="RPropertyTypeId" name="PropertyPositionX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyPositionY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyPositionZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyText" />
+    <property static="true" type="RPropertyTypeId" name="PropertyPlainText" />
+    <property static="true" type="RPropertyTypeId" name="PropertyFontName" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHeight" />
+    <property static="true" type="RPropertyTypeId" name="PropertyWidth" />
+    <property static="true" type="RPropertyTypeId" name="PropertyAngle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyXScale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyBold" />
+    <property static="true" type="RPropertyTypeId" name="PropertyItalic" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLineSpacingFactor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHAlign" />
+    <property static="true" type="RPropertyTypeId" name="PropertyVAlign" />
+    <property static="true" type="RPropertyTypeId" name="PropertyBackward" />
+    <property static="true" type="RPropertyTypeId" name="PropertyUpsideDown" />
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStaticPropertyTypeIds" static="true">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getData">
+      <variant return-type="RTextBasedData&amp;" virtual="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RTextBasedData&amp;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportEntity">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RExporter" modifier="&amp;" name="e" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaleNonUniform">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPainterPaths">
+      <variant return-type="QList&lt;RPainterPath&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="draft" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="queryBox" default="RDEFAULT_RBOX" />
+          <parameter const="false" type="bool" modifier="" name="ignoreComplex" default="false" />
+          <parameter const="false" type="bool" modifier="" name="segment" default="false" />
+          <!--
+          <parameter const="false" type="QList&lt;RObject::Id&gt;" modifier="*" name="entityIds" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExploded">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTextData">
+      <variant return-type="RTextBasedData&amp;" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isBold">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBold">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isItalic">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setItalic">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isBackward">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBackward">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isUpsideDown">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUpsideDown">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPosition">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAlignmentPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlignmentPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="alignmentPoint" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTextHeight">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTextHeight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTextWidth">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getWidth">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHeight">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVAlign">
+      <variant return-type="RS::VAlign" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVAlign">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::VAlign" modifier="" name="va" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getHAlign">
+      <variant return-type="RS::HAlign" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHAlign">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::HAlign" modifier="" name="ha" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFontName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fontName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFontFile">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDrawingDirection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::TextDrawingDirection" modifier="" name="drawingDirection" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDrawingDirection">
+      <variant return-type="RS::TextDrawingDirection" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineSpacingStyle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::TextLineSpacingStyle" modifier="" name="lineSpacingStyle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLineSpacingStyle">
+      <variant return-type="RS::TextLineSpacingStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineSpacingFactor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="lineSpacingFactor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLineSpacingFactor">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setXScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="xScale" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getXScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSimple">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSimple">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEscapedText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="escapeUnicode" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPlainText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sync">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RTextBasedEntity" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSimpleTextBlocks">
+      <variant return-type="QList&lt;RTextBasedData&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>

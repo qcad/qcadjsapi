@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RViewFocusListenerAdapter.h">
+  <class_decl name="RGraphicsView" />
+  <class name="RViewFocusListenerAdapter" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="RViewFocusListener" />
+    </super_list>
+
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+
+    <function name="updateFocus">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsView" modifier="*" name="view" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

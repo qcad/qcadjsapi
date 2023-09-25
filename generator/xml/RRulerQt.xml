@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RRulerQt.h">
+  <class_decl name="RGraphicsView" />
+  <class_decl name="RDocumentInterface" />
+  <class name="RRulerQt" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="RRuler" />
+      <super name="RCoordinateListener" />
+      <super name="RPaletteListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setOrientation">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintTick">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+          <parameter const="false" type="bool" modifier="" name="major" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFont">
+      <variant return-type="QFont" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateViewport">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateCoordinate">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updatePalette">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

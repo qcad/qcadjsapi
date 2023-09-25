@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RBox.h">
+  <class_decl name="RLine" />
+  <class_decl name="RTriangle" />
+  <class_decl name="RPolyline" />
+  <class name="RBox">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x1" />
+          <parameter const="false" type="double" modifier="" name="y1" />
+          <parameter const="false" type="double" modifier="" name="x2" />
+          <parameter const="false" type="double" modifier="" name="y2" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="c1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="c2" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="double" modifier="" name="range" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="double" modifier="" name="width" />
+          <parameter const="false" type="double" modifier="" name="height" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="RVector" name="c1" read="getCorner1" write="setCorner1" />
+    <property type="RVector" name="c2" read="getCorner2" write="setCorner2" />
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSane">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="equalsFuzzy">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="b" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="equalsFuzzy2D">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="b" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="get2D">
+      <variant return-type="RBox" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getWidth">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHeight">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSize">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getArea">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCenter">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMinimum">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMaximum">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isOutside">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isOutsideXY">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contains">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="containsBox">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="containsPoint">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersects">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersectsWith">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="shape" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="growToInclude">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="growToIncludeBoxes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RBox&gt;" modifier="&amp;" name="others" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="growToIncludeBox">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="growToIncludePoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCorner1">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCorner1">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCorner2">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCorner2">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCorners">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCorners2d">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLines2d">
+      <variant return-type="QList&lt;RLine&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPolyline2d">
+      <variant return-type="RPolyline" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTriangles">
+      <variant return-type="QList&lt;RTriangle&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="grow">
+      <variant return-type="RBox&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="growXY">
+      <variant return-type="RBox&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="offset" />
+        </parameters>
+      </variant>
+      <variant return-type="RBox&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="offsetX" />
+          <parameter const="false" type="double" modifier="" name="offsetY" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaleByReference">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="bool" modifier="" name="keepAspectRatio" default="false" />
+          <parameter const="false" type="bool" modifier="" name="fromCenter" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toQRectF">
+      <variant return-type="QRectF" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transform">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTransform" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#if QT_VERSION&gt;=0x060000" />
+    <function name="copy">
+      <variant return-type="RBox" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+  </class>
+</unit>

@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPatternLine.h">
+  <class name="RPatternLine">
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="getPainterPath">
+      <variant return-type="RPainterPath" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasDots">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLines">
+      <variant return-type="QList&lt;RLine&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="includeDashes" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLength">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getOffset">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBasePoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDashes">
+      <variant return-type="QList&lt;double&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

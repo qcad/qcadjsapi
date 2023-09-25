@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMathComboBox.h">
+  <class name="RMathComboBox" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QComboBox" />
+    </super_list>
+    <property type="bool" name="integer" read="isInteger" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getMathLineEdit">
+      <variant return-type="RMathLineEdit*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAngle">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isScale">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isInteger">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInteger">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setValue">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+          <parameter const="false" type="int" modifier="" name="precision" default="6" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getValue">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getError">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearError">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSane">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="slotTextChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="slotValueChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+          <parameter const="true" type="QString" modifier="&amp;" name="error" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="valueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+          <parameter const="true" type="QString" modifier="&amp;" name="error" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

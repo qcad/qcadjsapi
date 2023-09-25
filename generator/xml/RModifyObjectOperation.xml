@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RModifyObjectOperation.h">
+  <class name="RModifyObjectOperation" ownership="cpp">
+    <super_list>
+      <super name="ROperation" />
+      <super name="RAddObjectOperation" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RObject&gt;" modifier="" name="object" />
+          <parameter const="false" type="bool" modifier="" name="undoable" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+</unit>

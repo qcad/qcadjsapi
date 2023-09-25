@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLayer.h">
+  <class_decl name="RDocument" />
+  <class name="RLayer" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="false" type="bool" modifier="" name="frozen" default="false" />
+          <parameter const="false" type="bool" modifier="" name="locked" default="false" />
+          <parameter const="true" type="RColor" modifier="&amp;" name="color" default="Qt::black" />
+          <parameter const="false" type="RLinetype::Id" modifier="" name="linetypeId"
+          default="RLinetype::INVALID_ID" />
+          <parameter const="false" type="RLineweight::Lineweight" modifier="" name="lineweight"
+          default="RLineweight::Weight000" />
+          <parameter const="false" type="bool" modifier="" name="off" default="false" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RLayer" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RLayer*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getParentLayerId">
+      <variant return-type="RLayer::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isOffOrFrozen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isOff">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOff">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFrozen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFrozen">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLocked">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLocked">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isCollapsed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCollapsed">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isPlottable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPlottable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSnappable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSnappable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isOffIsFreeze">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOffIsFreeze">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColor">
+      <variant return-type="RColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypeId">
+      <variant return-type="RLinetype::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLinetypeId">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="lt" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLineweight">
+      <variant return-type="RLineweight::Lineweight" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLineweight">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLineweight::Lineweight" modifier="" name="lw" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasChildLayers">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getChildLayerNames">
+      <variant return-type="QList&lt;QString&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="recursive" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getParentLayerName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getShortLayerName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLayerNameHierarchy">
+      <variant return-type="QList&lt;QString&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isChildLayerOf">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getHierarchySeparator" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasChildLayersStatic" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RDocument" modifier="*" name="doc" />
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getChildLayerNamesStatic" static="true">
+      <variant return-type="QList&lt;QString&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RDocument" modifier="*" name="doc" />
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+          <parameter const="false" type="bool" modifier="" name="recursive" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getParentLayerNameStatic" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShortLayerNameStatic" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLayerNameHierarchyStatic" static="true">
+      <variant return-type="QList&lt;QString&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isChildLayerOfStatic" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="parentLayerName" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

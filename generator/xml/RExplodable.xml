@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RExplodable.h">
+  <class name="RExplodable">
+    <!--
+    <function name="getExploded">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="segments" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

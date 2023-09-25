@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDebug.h">
+  <class name="RDebug">
+    <function name="printBacktrace" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startTimer" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stopTimer" static="true">
+      <variant return-type="uint" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+          <parameter const="true" type="QString" modifier="&amp;" name="msg" />
+          <parameter const="false" type="uint" modifier="" name="msThreshold" default="0" />
+        </parameters>
+      </variant>
+      <variant return-type="uint" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="msg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="timeStamp" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hexDump" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="incCounter" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="decCounter" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCounter" static="true">
+      <variant return-type="int" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="printCounter" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="printCounters" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrefix" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPrefix" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDeleteObjectOperation.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class_decl name="RObject" />
+  <class name="RDeleteObjectOperation" ownership="cpp">
+    <super_list>
+      <super name="ROperation" />
+      <super name="RDeleteObjectsOperation" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RObject&gt;" modifier="" name="object" />
+          <parameter const="false" type="bool" modifier="" name="undoable" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+</unit>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="REventFilter.h">
+  <class name="REventFilter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" default="QEvent::None" />
+          <parameter const="false" type="bool" modifier="" name="forward" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="eventFilter" />
+  </class>
+</unit>

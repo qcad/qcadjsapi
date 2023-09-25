@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RWidget.h">
+  <class name="RWidget">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="removeAction">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addAction">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertAction">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="before" />
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="actionAdded" />
+  </class>
+</unit>

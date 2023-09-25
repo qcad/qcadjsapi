@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPreferencesListenerAdapter.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RPreferencesListenerAdapter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RPreferencesListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="updatePreferences">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="di" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="preferencesUpdated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="di" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

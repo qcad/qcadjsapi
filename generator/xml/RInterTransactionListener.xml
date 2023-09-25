@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RInterTransactionListener.h">
+  <class_decl name="RDocument" />
+  <class_decl name="REntity" />
+  <class_decl name="RTransaction" />
+  <class name="RInterTransactionListener" ownership="cpp">
+    <function name="updateInterTransactionListener">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

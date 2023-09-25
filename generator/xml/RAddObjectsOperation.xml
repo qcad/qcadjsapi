@@ -1,0 +1,185 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RAddObjectsOperation.h">
+  <class_decl name="RObject" />
+  <class name="RAddObjectsOperation" ownership="cpp">
+    <super_list>
+      <super name="ROperation" />
+    </super_list>
+    <enum name="Flag">
+      <key>NoFlags</key>
+      <key>UseAttributes</key>
+      <key>ForceNew</key>
+      <key>GeometryOnly</key>
+      <key>Delete</key>
+    </enum>
+    <class name="RModifiedObjects">
+      <constructor>
+        <variant>
+          <parameters />
+        </variant>
+        <variant>
+          <parameters>
+            <parameter const="false" type="QSharedPointer&lt;RObject&gt;" modifier="" name="object" />
+          </parameters>
+        </variant>
+        <variant>
+          <parameters>
+            <parameter const="false" type="QSharedPointer&lt;RObject&gt;" modifier="" name="object" />
+            <parameter const="false" type="bool" modifier="" name="useCurrentAttributes" />
+            <parameter const="false" type="bool" modifier="" name="forceNew" />
+          </parameters>
+        </variant>
+        <variant>
+          <parameters>
+            <parameter const="false" type="QSharedPointer&lt;RObject&gt;" modifier="" name="object" />
+            <parameter const="false" type="RAddObjectsOperation::Flags" modifier="" name="flags" />
+          </parameters>
+        </variant>
+      </constructor>
+      <function name="setUseAttributes">
+        <variant return-type="void" access="public">
+          <parameters>
+            <parameter const="false" type="bool" modifier="" name="on" />
+          </parameters>
+        </variant>
+      </function>
+      <function name="getUseAttributes">
+        <variant return-type="bool" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+      <function name="setForceNew">
+        <variant return-type="void" access="public">
+          <parameters>
+            <parameter const="false" type="bool" modifier="" name="on" />
+          </parameters>
+        </variant>
+      </function>
+      <function name="getForceNew">
+        <variant return-type="bool" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+      <function name="setGeometryOnly">
+        <variant return-type="void" access="public">
+          <parameters>
+            <parameter const="false" type="bool" modifier="" name="on" />
+          </parameters>
+        </variant>
+      </function>
+      <function name="getGeometryOnly">
+        <variant return-type="bool" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+      <function name="setDelete">
+        <variant return-type="void" access="public">
+          <parameters>
+            <parameter const="false" type="bool" modifier="" name="on" />
+          </parameters>
+        </variant>
+      </function>
+      <function name="getDelete">
+        <variant return-type="bool" const="true" access="public">
+          <parameters />
+        </variant>
+      </function>
+      <function name="setFlag">
+        <variant return-type="void" access="public">
+          <parameters>
+            <parameter const="false" type="RAddObjectsOperation::Flag" modifier="" name="flag" />
+            <parameter const="false" type="bool" modifier="" name="on" />
+          </parameters>
+        </variant>
+      </function>
+      <function name="getFlag">
+        <variant return-type="bool" const="true" access="public">
+          <parameters>
+            <parameter const="false" type="RAddObjectsOperation::Flag" modifier="" name="flag" />
+          </parameters>
+        </variant>
+      </function>
+    </class>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="undoable" default="true" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QList&lt;QSharedPointer&lt;RObject&gt;&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="bool" modifier="" name="useCurrentAttributes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="undoable" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="replaceObject">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSharedPointer&lt;RObject&gt;" modifier="&amp;" name="object" />
+          <parameter const="false" type="bool" modifier="" name="useCurrentAttributes" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getObject">
+      <variant return-type="QSharedPointer&lt;RObject&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endCycle">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addObject">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSharedPointer&lt;RObject&gt;" modifier="&amp;" name="object" />
+          <parameter const="false" type="bool" modifier="" name="useCurrentAttributes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="forceNew" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSharedPointer&lt;RObject&gt;" modifier="&amp;" name="object" />
+          <parameter const="false" type="RAddObjectsOperation::Flags" modifier="" name="flags" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="deleteObject">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSharedPointer&lt;RObject&gt;" modifier="&amp;" name="object" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="apply">
+      <variant return-type="RTransaction" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPreviewCounter">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLimitPreview">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

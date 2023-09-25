@@ -1,0 +1,349 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLayout.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RTransaction" />
+  <class name="RLayout" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RLayout*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTabOrder">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTabOrder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="to" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMinLimits">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="minLimits" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMinLimits">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaxLimits">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="maxLimits" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMaxLimits">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInsertionBase">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="insertionBase" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getInsertionBase">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMinExtents">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="minExtents" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMinExtents">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMaxExtents">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="maxExtents" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMaxExtents">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPlotPaperMarginLeftMM">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotPaperMarginBottomMM">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotPaperMarginRightMM">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotPaperMarginTopMM">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotPaperSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotOrigin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotWindowAreaMin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotWindowAreaMax">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNumeratorCustomScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDenominatorCustomScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotPaperUnits">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLayout::PlotPaperUnits" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotRotation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLayout::PlotRotation" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPlotType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLayout::PlotType" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setUseStandardScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStandardScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStandardScaleType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLayout::StandardScaleType" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCanonicalMediaName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPlotPaperMarginLeftMM">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotPaperMarginBottomMM">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotPaperMarginRightMM">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotPaperMarginTopMM">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotPaperSize">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotOrigin">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotWindowAreaMin">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotWindowAreaMax">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getNumeratorCustomScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDenominatorCustomScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotPaperUnits">
+      <variant return-type="RLayout::PlotPaperUnits" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotRotation">
+      <variant return-type="RLayout::PlotRotation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPlotType">
+      <variant return-type="RLayout::PlotType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getUseStandardScale">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStandardScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStandardScaleType">
+      <variant return-type="RLayout::StandardScaleType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCanonicalMediaName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>

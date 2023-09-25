@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RExportListener.h">
+  <class_decl name="RDocumentInterface" />
+  <class_decl name="RExporter" />
+  <class name="RExportListener">
+    <function name="preExportEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postExportEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endOfExportEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RExporter" modifier="*" name="exporter" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

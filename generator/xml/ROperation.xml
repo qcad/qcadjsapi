@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="ROperation.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="ROperation" ownership="cpp">
+    <!--
+    <super_list>
+      <super name="RRequireHeap" />
+      <super name="RNonCopyable" />
+    </super_list>
+    -->
+    <function name="apply">
+      <variant return-type="RTransaction" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getEntityTypeFilter">
+      <variant return-type="RS::EntityType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRecordAffectedObjects">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSpatialIndexDisabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAllowInvisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAllowAll">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setKeepChildren">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTransactionGroup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="g" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTransactionGroup">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTransactionTypes">
+      <variant return-type="RTransaction::Types" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTransactionType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RTransaction::Type" modifier="" name="t" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTransactionType">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RTransaction::Type" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

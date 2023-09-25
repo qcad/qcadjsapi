@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPropertyListenerAdapter.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RPropertyListenerAdapter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RPropertyListener" />
+    </super_list>
+    <function name="updateFromDocument">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="bool" modifier="" name="onlyChanges" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="entityTypeFilter" default="RS::EntityAll" />
+          <parameter const="false" type="bool" modifier="" name="manual" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateFromObject">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject" modifier="*" name="object" />
+          <parameter const="false" type="RDocument" modifier="*" name="document" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearEditor">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updatedFromDocument">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="bool" modifier="" name="onlyChanges" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="entityTypeFilter" />
+          <parameter const="false" type="bool" modifier="" name="manual" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updatedFromObject">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RObject" modifier="*" name="object" />
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearedEditor">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

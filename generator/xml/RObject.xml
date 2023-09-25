@@ -1,0 +1,345 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RObject.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RTransaction" />
+  <class name="RObject" ownership="cpp" sharedpointer="true">
+
+    <!--
+    <constant name="INVALID_ID" type="RObject::Id" value="RObject::INVALID_ID" />
+    -->
+
+    <property static="true" type="RObject::Id" name="INVALID_ID" />
+    <property static="true" type="RObject::Handle" name="INVALID_HANDLE" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
+    <property static="true" type="RPropertyTypeId" name="PropertyType" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyProtected" />
+    <property static="true" type="RPropertyTypeId" name="PropertyWorkingSet" />
+    <property static="true" type="RPropertyTypeId" name="PropertySelected" />
+    <property static="true" type="RPropertyTypeId" name="PropertyInvisible" />
+
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RObject*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mustAlwaysClone">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocument">
+      <variant return-type="RDocument*" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RDocument*" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="setDocument">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFlag">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="flag" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFlag">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="flag" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getId">
+      <variant return-type="RObject::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHandle">
+      <variant return-type="RObject::Handle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isProtected">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProtected">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isInvisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInvisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSelected">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSelected">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isUndone">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isWorkingSet">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWorkingSet">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPropertyTypeIds">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyAttributes::Option" modifier="" name="option"
+          default="RPropertyAttributes::NoOptions" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCustomPropertyTypeIds">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasPropertyType">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasCustomProperties">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasCustomProperty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QRegExp" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="getCustomProperty">
+      <variant return-type="QVariant" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="defaultValue" default="RDEFAULT_QVARIANT" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCustomDoubleProperty">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="false" type="double" modifier="" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCustomIntProperty">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="false" type="int" modifier="" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCustomBoolProperty">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="false" type="bool" modifier="" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCustomProperty">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setCustomProperties">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RQMapQStringQString" modifier="&amp;" name="properties" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="removeCustomProperty">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCustomPropertyTitles">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCustomPropertyKeys">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyCustomPropertiesFrom">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RObject" modifier="*" name="other" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" default="RDEFAULT_QSTRING" />
+          <parameter const="false" type="bool" modifier="" name="overwrite" default="false" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="ignoreList"
+          default="RDEFAULT_QSTRINGLIST" />
+          <parameter const="true" type="QString" modifier="&amp;" name="mapKeyFrom" default="RDEFAULT_QSTRING" />
+          <parameter const="true" type="QString" modifier="&amp;" name="mapKeyTo" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCustomPropertyAttributes" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="RPropertyAttributes" modifier="&amp;" name="att" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCustomPropertyAttributes" static="true">
+      <variant return-type="RPropertyAttributes" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getCustomProperties">
+      <variant return-type="QMap&lt;QString,QVariantMap&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="getComplexity">
+      <variant return-type="int" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoUpdatesBlocked">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dump">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="validate">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="print" />
+    <function name="setUndone" />
+    <function name="setId" />
+    <function name="setHandle" />
+    <function name="setMember" static="true" />
+    <function name="setMemberFlag" />
+    <function name="setMemberX" static="true" />
+    <function name="setMemberY" static="true" />
+    <function name="setMemberZ" static="true" />
+    <function name="setMemberVector" static="true" />
+  </class>
+</unit>

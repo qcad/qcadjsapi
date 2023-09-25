@@ -1,0 +1,170 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RRefPoint.h">
+  <class name="RRefPoint">
+    <super_list>
+      <super name="RVector" />
+    </super_list>
+    <function name="toVectorList" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RRefPoint&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toRefPointList" static="true">
+      <variant return-type="QList&lt;RRefPoint&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="RRefPoint::Flags" modifier="" name="flags" default="RRefPoint::NoFlags" />
+        </parameters>
+      </variant>
+    </function>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+          <parameter const="false" type="RRefPoint::Flags" modifier="" name="f" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="vx" />
+          <parameter const="false" type="double" modifier="" name="vy" />
+          <parameter const="false" type="double" modifier="" name="vz" default="0.0" />
+          <parameter const="false" type="bool" modifier="" name="valid_in" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isSecondary">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSecondary">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTertiary">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTertiary">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isIgnore">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIgnore">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isCenter">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isStart">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStart">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEnd">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEnd">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isArrow">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setArrow">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSelected">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSelected">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFlag">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RRefPoint::Flag" modifier="" name="flag" />
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFlag">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RRefPoint::Flag" modifier="" name="flag" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFlags">
+      <variant return-type="RRefPoint::Flags" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFlags">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RRefPoint::Flags" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

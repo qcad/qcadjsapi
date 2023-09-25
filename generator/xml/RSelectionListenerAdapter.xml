@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RSelectionListenerAdapter.h">
+  <class name="RSelectionListenerAdapter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RSelectionListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="updateSelectionListener">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

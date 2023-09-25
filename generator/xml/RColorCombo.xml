@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RColorCombo.h">
+  <class name="RColorCombo" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QComboBox" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <property type="bool" name="showAlphaChannel" read="getShowAlphaChannel" write="setShowAlphaChannel" />
+    <property type="QColor" name="color" read="getColor" />
+    <function name="getColor">
+      <variant return-type="RColor" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="col" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="init">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getOnlyFixed">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOnlyFixed">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="onlyFixed" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShowAlphaChannel">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShowAlphaChannel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="showAlphaChannel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="valueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dialogRunning">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="isRunning" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="colorChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

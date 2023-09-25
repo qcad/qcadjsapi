@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnapRestriction.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RSnapRestriction" ownership="cpp" inheritable="true">
+    <function name="restrictSnap">
+      <variant return-type="RVector" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="relativeZero" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="showUiOptions">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hideUiOptions">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLastSnap">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

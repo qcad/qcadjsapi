@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RLayerListenerAdapter.h">
+  <class name="RLayerListenerAdapter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RLayerListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="updateLayers">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+          <parameter const="false" type="QList&lt;RLayer::Id&gt;" modifier="&amp;" name="layerIds" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentLayer">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+          <parameter const="false" type="RLayer::Id" modifier="" name="previousLayerId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearLayers">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="layersUpdated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+          <parameter const="false" type="QList&lt;int&gt;" modifier="" name="layerIds" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentLayerSet">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+          <parameter const="false" type="int" modifier="" name="previousLayerId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="layersCleared">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

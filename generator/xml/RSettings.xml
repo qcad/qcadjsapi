@@ -1,0 +1,915 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSettings.h">
+  <class name="RSettings">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="uninit" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNoWrite" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAppId" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDevicePixelRatio" static="true">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLocale" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="loadTranslations" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="module" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="dirs" default="RDEFAULT_QSTRINGLIST" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="context" />
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOriginalArguments" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOriginalArguments" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getArgument" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="args" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="longFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="def" default="RDEFAULT_QSTRING" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getArguments" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="args" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="longFlag" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntArgument" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="args" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="longFlag" />
+          <parameter const="false" type="int" modifier="" name="def" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntListArgument" static="true">
+      <variant return-type="QList&lt;int&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="args" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="longFlag" />
+          <parameter const="false" type="QList&lt;int&gt;" modifier="" name="def" default="RDEFAULT_QLISTINT" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFloatArgument" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="args" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="longFlag" />
+          <parameter const="false" type="double" modifier="" name="def" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColorArgument" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="args" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="longFlag" />
+          <parameter const="true" type="RColor" modifier="&amp;" name="def" default="RDEFAULT_RCOLOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVectorArgument" static="true">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="args" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="longFlag" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="def" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoxArgument" static="true">
+      <variant return-type="RBox" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="args" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="longFlag" />
+          <parameter const="true" type="RBox" modifier="&amp;" name="def" default="RDEFAULT_RBOX" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="testArgument" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="args" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortFlag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="longFlag" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDeployed" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getApplicationPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPluginPaths" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPluginPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getThemePath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStandardLocation" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="sl" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCacheLocation" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDataLocation" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTempLocation" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDesktopLocation" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocumentsLocation" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHomeLocation" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isGuiEnabled" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDebuggerEnabled" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasQuitFlag" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setQuitFlag" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFileName" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLaunchPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLaunchPath" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="launchPath" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRulerFont" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRulerFont" static="true">
+      <variant return-type="QFont" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSnapLabelFont" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSnapLabelFont" static="true">
+      <variant return-type="QFont" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getInfoLabelFont" static="true">
+      <variant return-type="QFont" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStatusBarFont" static="true">
+      <variant return-type="QFont" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSelectionColor" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getReferencePointColor" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStartReferencePointColor" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEndReferencePointColor" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSecondaryReferencePointColor" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTertiaryReferencePointColor" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHighResolutionGraphicsView" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAutoScaleGrid" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAutoScaleMetaGrid" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAutoScalePatterns" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAutoZoomOnLoad" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getColorCorrection" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getColorCorrectionDisableForPrinting" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getColorThreshold" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFadingFactor" static="true">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTextHeightThreshold" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getArcAngleLengthThreshold" static="true">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMinArcAngleStep" static="true">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDashThreshold" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getQtVersion" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getQtVersionString" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isQt" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="majorVersion" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCompilerVersion" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getOSVersion" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getReleaseDate" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVersionString" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getNumericalVersionString" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMajorVersion" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMinorVersion" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRevisionVersion" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBuildVersion" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRevisionString" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFirstStart" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFirstStart" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNewVersion" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNewVersion" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPreviousVersion" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pv" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentVersion" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPreviousVersion" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUpdated" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="versionCheck" default="-1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSnapRange" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPickRange" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getZeroWeightWeight" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPreviewEntities" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLimitZoomAndScroll" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getShowCrosshair" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShowCrosshair" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShowLargeCrosshair" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShowLargeCrosshair" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShowLargeOriginAxis" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShowLargeOriginAxis" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getConcurrentDrawing" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setConcurrentDrawing" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNumberLocale" static="true">
+      <variant return-type="QLocale" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="initRecentFiles" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addRecentFile" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeRecentFile" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRecentFiles" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearRecentFiles" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getColor" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="RColor" modifier="&amp;" name="defaultValue" default="RDEFAULT_RCOLOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasValue" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getValue" static="true">
+      <variant return-type="QVariant" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="defaultValue" default="RDEFAULT_QVARIANT" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColorValue" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="RColor" modifier="&amp;" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoolValue" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="false" type="bool" modifier="" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDoubleValue" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="false" type="double" modifier="" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntValue" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="false" type="int" modifier="" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getStringValue" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QString" modifier="&amp;" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getStringListValue" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCharValue" static="true">
+      <variant return-type="QChar" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QChar" modifier="&amp;" name="defaultValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setValue" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="bool" modifier="" name="overwrite" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeValue" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setApplicationNameOverride" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getApplicationNameOverride" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasApplicationNameOverride" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAllKeys" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="group" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getQSettings" static="true">
+      <variant return-type="QSettings*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resetCache" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setXDataEnabled" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isXDataEnabled" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNextVersionEnabled" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNextVersionEnabled" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAutoScaleLinetypePatterns" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getApplyLineweightToPoints" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getUseSecondarySelectionColor" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getUseSolidLineSelection" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMouseThreshold" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPositionByMousePress" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAllowMouseMoveInterruptions" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isTextRenderedAsText" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isLayer0CompatibilityOn" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSelectBlockWithAttribute" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHideAttributeWithBlock" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getImportRecomputedDimBlocks" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getIgnoreBlockReferencePoint" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getIgnoreAllReferencePoints" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getReferencePointSize" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getReferencePointShape" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMaxReferencePointEntities" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMaxReferencePointEntitiesDisplay" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPropertyEditorShowOnRequest" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSimpleTextAlignLeft" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPolarCoordinateSeparator" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCartesianCoordinateSeparator" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRelativeCoordinatePrefix" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDarkMode" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasDarkGuiBackground" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasCustomStyleSheet" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPrinterNames" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDefaultPrinterName" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="appendOpenGLMessage" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="msg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOpenGLMessages" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isInitialized" static="true" />
+    <function name="shortenRecentFiles" static="true" />
+  </class>
+</unit>

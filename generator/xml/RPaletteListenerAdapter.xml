@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RPaletteListenerAdapter.h">
+  <class name="RPaletteListenerAdapter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RPaletteListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="updatePalette">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paletteChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

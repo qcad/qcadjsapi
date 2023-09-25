@@ -1,0 +1,230 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RGraphicsSceneDrawable.h">
+  <class name="RGraphicsSceneDrawable">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RGraphicsSceneDrawable" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="pp" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="os" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RImageData" modifier="&amp;" name="img" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="os" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RTextBasedData" modifier="&amp;" name="txt" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="os" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RTransform" modifier="&amp;" name="tf" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="os" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QEvent::Type" modifier="&amp;" name="t" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="os" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+    <enum name="Type">
+      <key>Invalid</key>
+      <key>PainterPath</key>
+      <key>PainterPathRay</key>
+      <key>PainterPathXLine</key>
+      <key>Image</key>
+      <key>Text</key>
+      <key>Transform</key>
+      <key>EndTransform</key>
+    </enum>
+    <enum name="Mode">
+      <key>NoMode</key>
+      <key>NoPlot</key>
+      <key>PixelUnit</key>
+      <key>WorkingSet</key>
+    </enum>
+    <function name="createFromPainterPath" static="true">
+      <variant return-type="RGraphicsSceneDrawable" access="public">
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="pp" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createFromImage" static="true">
+      <variant return-type="RGraphicsSceneDrawable" access="public">
+        <parameters>
+          <parameter const="true" type="RImageData" modifier="&amp;" name="img" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createFromText" static="true">
+      <variant return-type="RGraphicsSceneDrawable" access="public">
+        <parameters>
+          <parameter const="true" type="RTextBasedData" modifier="&amp;" name="txt" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createFromTransform" static="true">
+      <variant return-type="RGraphicsSceneDrawable" access="public">
+        <parameters>
+          <parameter const="true" type="RTransform" modifier="&amp;" name="transform" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createEndTransform" static="true">
+      <variant return-type="RGraphicsSceneDrawable" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="uninit">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getType">
+      <variant return-type="RGraphicsSceneDrawable::Type" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPainterPath">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isText">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isImage">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsSceneDrawable::Mode" modifier="" name="mode" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsSceneDrawable::Mode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNoPlot">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNoPlot">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPixelUnit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPixelUnit">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWorkingSet">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isWorkingSet">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPainterPath">
+      <variant return-type="RPainterPath&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getImage">
+      <variant return-type="RImageData&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getText">
+      <variant return-type="RTextBasedData&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTransform">
+      <variant return-type="RTransform&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getOffset">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDocument">
+      <variant return-type="RDocument*" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSelected">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHighlighted">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

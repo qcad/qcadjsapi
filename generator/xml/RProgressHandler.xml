@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RProgressHandler.h">
+  <class name="RProgressHandler" ownership="cpp">
+    <!--
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    -->
+    <function name="setProgress">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProgressEnd">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProgressText">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="&quot;&quot;" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProgressEnabled">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

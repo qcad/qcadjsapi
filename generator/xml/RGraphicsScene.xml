@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RGraphicsScene.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RGraphicsScene" ownership="cpp">
+    <super_list>
+      <super name="RExporter" />
+    </super_list>
+    <function name="getDocumentInterface">
+      <variant return-type="RDocumentInterface&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getGraphicsViews">
+      <variant return-type="QList&lt;RGraphicsView*&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportDocumentSettings">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="regenerate">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="undone" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="&amp;" name="affectedEntities" />
+          <parameter const="false" type="bool" modifier="" name="updateViews" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateSelectionStatus">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="&amp;" name="affectedEntities" />
+          <parameter const="false" type="bool" modifier="" name="updateViews" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="regenerateViews">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="force" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSet&lt;RObject::Id&gt;" modifier="&amp;" name="affectedEntities" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="repaintViews">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCursor">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QCursor" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleTerminateEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RTerminateEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleKeyPressEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleKeyReleaseEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleMouseMoveEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleMousePressEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleMouseReleaseEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleMouseDoubleClickEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleWheelEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RWheelEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleTabletEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RTabletEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleSwipeGestureEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSwipeGesture" modifier="&amp;" name="gesture" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handlePanGestureEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPanGesture" modifier="&amp;" name="gesture" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handlePinchGestureEvent">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPinchGesture" modifier="&amp;" name="gesture" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="registerView">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsView" modifier="*" name="view" />
+          <parameter const="false" type="bool" modifier="" name="regen" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unregisterView">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsView" modifier="*" name="view" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="beginPreview">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endPreview">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearPreview">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPreviewEmpty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addToPreview">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+          <parameter const="false" type="QList&lt;RGraphicsSceneDrawable&gt;" modifier="&amp;" name="drawables" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+          <parameter const="false" type="RGraphicsSceneDrawable" modifier="&amp;" name="drawable" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="beginNoColorMode">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endNoColorMode">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getNoColorMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHighlightedReferencePoint">
+      <variant return-type="RRefPoint" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="highlightEntity">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="highlightReferencePoint">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RRefPoint" modifier="&amp;" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectReferencePoints">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+          <parameter const="false" type="bool" modifier="" name="add" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportCurrentEntity">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unexportEntity">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="countReferencePoints">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getReferencePoints">
+      <variant return-type="QMap&lt;REntity::Id,QList&lt;RRefPoint&gt;&gt;&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="hasSelectedReferencePoints">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dump">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportReferencePoints" />
+  </class>
+</unit>

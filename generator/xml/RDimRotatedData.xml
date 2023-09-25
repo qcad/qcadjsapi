@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDimRotatedData.h">
+  <class name="RDimRotatedData">
+    <super_list>
+      <super name="REntityData" />
+      <super name="RDimensionData" />
+      <super name="RDimLinearData" />
+    </super_list>
+    <class_decl name="RDimRotatedEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RDimensionData" modifier="&amp;" name="dimData" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="extensionPoint1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="extensionPoint2" />
+          <parameter const="false" type="double" modifier="" name="rotation" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ignoreEmpty" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSane">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRotation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRotation">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint"
+          default="RS::RenderTop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveReferencePoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers"
+          default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimPoints">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="recomputeDefinitionPoint">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="oldExtPoint1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="oldExtPoint2" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="newExtPoint1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="newExtPoint2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirror">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMeasuredValue">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAutoLabel">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

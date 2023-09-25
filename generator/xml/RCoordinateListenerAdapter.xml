@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RCoordinateListenerAdapter.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RCoordinateListenerAdapter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RCoordinateListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="updateCoordinate">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="coordinateUpdated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

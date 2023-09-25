@@ -1,0 +1,96 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnap.h">
+  <class_decl name="RGraphicsView" />
+  <class name="RSnap" ownership="cpp" inheritable="true">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <enum name="Status">
+      <key>Unknown</key>
+      <key>Free</key>
+      <key>Grid</key>
+      <key>Endpoint</key>
+      <key>OnEntity</key>
+      <key>Center</key>
+      <key>Middle</key>
+      <key>Distance</key>
+      <key>Intersection</key>
+      <key>IntersectionManual</key>
+      <key>Reference</key>
+      <key>Perpendicular</key>
+      <key>Tangential</key>
+      <key>Coordinate</key>
+      <key>CoordinatePolar</key>
+    </enum>
+    <function name="snap">
+      <variant return-type="RVector" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="view" />
+          <parameter const="false" type="double" modifier="" name="range" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+      <variant return-type="RVector" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="showUiOptions">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hideUiOptions">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="suspendEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="finishEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEntityIds">
+      <variant return-type="QList&lt;REntity::Id&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStatus">
+      <variant return-type="RSnap::Status" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStatus">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RSnap::Status" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLastSnap">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLastSnap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RUcs.h">
+  <class_decl name="RDocument" />
+  <class name="RUcs" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="origin" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="xAxisDirection" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="yAxisDirection" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RUcs*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOrigin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="o" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setXAxisDirection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="x" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setYAxisDirection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getZAxisDirection">
+      <variant return-type="RVector" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mapFromUcs">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="positionUcs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapToUcs">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="positionWcs" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

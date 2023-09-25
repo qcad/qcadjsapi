@@ -1,0 +1,272 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMatrix.h">
+  <class name="RMatrix">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="r" />
+          <parameter const="false" type="int" modifier="" name="c" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="createIdentity2x2" static="true">
+      <variant return-type="RMatrix" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="createIdentity3x3" static="true">
+      <variant return-type="RMatrix" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="createIdentity" static="true">
+      <variant return-type="RMatrix" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="size" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createRotation" static="true">
+      <variant return-type="RMatrix" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="create2x2" static="true">
+      <variant return-type="RMatrix" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a11" />
+          <parameter const="false" type="double" modifier="" name="a12" />
+          <parameter const="false" type="double" modifier="" name="a21" />
+          <parameter const="false" type="double" modifier="" name="a22" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="create3x3" static="true">
+      <variant return-type="RMatrix" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a11" />
+          <parameter const="false" type="double" modifier="" name="a12" />
+          <parameter const="false" type="double" modifier="" name="a13" />
+          <parameter const="false" type="double" modifier="" name="a21" />
+          <parameter const="false" type="double" modifier="" name="a22" />
+          <parameter const="false" type="double" modifier="" name="a23" />
+          <parameter const="false" type="double" modifier="" name="a31" />
+          <parameter const="false" type="double" modifier="" name="a32" />
+          <parameter const="false" type="double" modifier="" name="a33" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="create3x1" static="true">
+      <variant return-type="RMatrix" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a11" />
+          <parameter const="false" type="double" modifier="" name="a21" />
+          <parameter const="false" type="double" modifier="" name="a31" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="create2x3" static="true">
+      <variant return-type="RMatrix" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a11" />
+          <parameter const="false" type="double" modifier="" name="a12" />
+          <parameter const="false" type="double" modifier="" name="a13" />
+          <parameter const="false" type="double" modifier="" name="a21" />
+          <parameter const="false" type="double" modifier="" name="a22" />
+          <parameter const="false" type="double" modifier="" name="a23" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_assign" call="operator=">
+      <variant return-type="RMatrix&amp;" access="public">
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_equal" call="operator==">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_multiply" call="operator*">
+      <variant return-type="RMatrix" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_multiply_assign" call="operator*=">
+      <variant return-type="RMatrix" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="operator_multiply" call="operator*">
+      <variant return-type="RMatrix" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="multiplyWith">
+      <variant return-type="RMatrix" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="w" />
+        </parameters>
+      </variant>
+      <variant return-type="RMatrix" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="w" />
+        </parameters>
+      </variant>
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="init">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="r" />
+          <parameter const="false" type="int" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="set3x3">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a11" />
+          <parameter const="false" type="double" modifier="" name="a12" />
+          <parameter const="false" type="double" modifier="" name="a13" />
+          <parameter const="false" type="double" modifier="" name="a21" />
+          <parameter const="false" type="double" modifier="" name="a22" />
+          <parameter const="false" type="double" modifier="" name="a23" />
+          <parameter const="false" type="double" modifier="" name="a31" />
+          <parameter const="false" type="double" modifier="" name="a32" />
+          <parameter const="false" type="double" modifier="" name="a33" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="set3x1">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a11" />
+          <parameter const="false" type="double" modifier="" name="a21" />
+          <parameter const="false" type="double" modifier="" name="a31" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="set2x3">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a11" />
+          <parameter const="false" type="double" modifier="" name="a12" />
+          <parameter const="false" type="double" modifier="" name="a13" />
+          <parameter const="false" type="double" modifier="" name="a21" />
+          <parameter const="false" type="double" modifier="" name="a22" />
+          <parameter const="false" type="double" modifier="" name="a23" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="set">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="r" />
+          <parameter const="false" type="int" modifier="" name="c" />
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="get">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="r" />
+          <parameter const="false" type="int" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRows">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCols">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rref">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getInverse">
+      <variant return-type="RMatrix" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTransposed">
+      <variant return-type="RMatrix" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAppended">
+      <variant return-type="RMatrix" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RMatrix" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isRotationAndUniformScale">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getUniformScaleFactor">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRotationAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="ref" />
+    <function name="multiplyRow" />
+    <function name="addRow" />
+    <function name="swapRows" />
+    <function name="getPivotRow" />
+    <function name="getPivotCol" />
+  </class>
+</unit>

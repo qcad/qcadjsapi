@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDimAlignedData.h">
+  <class name="RDimAlignedData">
+    <super_list>
+      <super name="REntityData" />
+      <super name="RDimensionData" />
+      <super name="RDimLinearData" />
+    </super_list>
+    <class_decl name="RDimAlignedEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RDimensionData" modifier="&amp;" name="dimData" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="extensionPoint1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="extensionPoint2" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ignoreEmpty" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint"
+          default="RS::RenderTop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveReferencePoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers"
+          default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="recomputeDefinitionPoint">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="oldExtPoint1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="oldExtPoint2" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="newExtPoint1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="newExtPoint2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMeasuredValue">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAutoLabel">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateRefDefinitionPoint1">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateRefDefinitionPoint2">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="to2D">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

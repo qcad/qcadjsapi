@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMdiArea.h">
+  <class_decl name="QToolButton" />
+  <class_decl name="RMdiChildQt" />
+  <class name="RMdiArea" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <!--
+      <super name="QAbstractScrollArea" />
+      -->
+      <super name="QMdiArea" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getAddTabButton">
+      <variant return-type="QToolButton*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateTabBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RMdiChildQt" modifier="*" name="child" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateTabBarSize">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateAddButtonLocation">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="closeTab">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="activateTab">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addTabClicked" />
+    <!--
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyPressEvent" />
+    -->
+  </class>
+</unit>

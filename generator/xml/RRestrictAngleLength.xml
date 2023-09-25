@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RRestrictAngleLength.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RRestrictAngleLength" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="RSnapRestriction" />
+    </super_list>
+    <enum name="AngleLengthMode">
+      <key>None</key>
+      <key>Angle</key>
+      <key>Length</key>
+      <key>AngleLength</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" default="NULL" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+          <parameter const="false" type="double" modifier="" name="baseAngle" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="false" type="double" modifier="" name="baseLength" />
+          <parameter const="false" type="double" modifier="" name="length" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="restrictSnap">
+      <variant return-type="RVector" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="relativeZero" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBaseAngle">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAngle">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBaseLength">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="l" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLength">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="l" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRestrictAngle">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRestrictLength">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPropertyEditor.h">
+  <class name="RPropertyEditor" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="RPropertyListener" />
+      <super name="RLayerListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="getInstance" static="true">
+      <variant return-type="RPropertyEditor*" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateFromDocument">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="bool" modifier="" name="onlyChanges" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="filter" default="RS::EntityUnknown" />
+          <parameter const="false" type="bool" modifier="" name="manual" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateFromObject">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject" modifier="*" name="object" />
+          <parameter const="false" type="RDocument" modifier="*" name="document" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearEditor">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFixedCustomPropertyNames">
+      <variant return-type="QStringList" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RS::EntityType&gt;" modifier="&amp;" name="objectTypes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateLayers">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+          <parameter const="false" type="QList&lt;RLayer::Id&gt;" modifier="&amp;" name="layerIds" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentLayer">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+          <parameter const="false" type="RLayer::Id" modifier="" name="previousLayerId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearLayers">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="propertyChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="false" type="QVariant" modifier="" name="propertyValue" />
+          <parameter const="false" type="RS::MetaType" modifier="" name="typeHint" default="RS::UnknownType" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="listPropertyChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QVariant" modifier="" name="propertyValue" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGroupTitles">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPropertyTitles">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="group" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPropertyValue">
+      <variant return-type="QVariant" access="public">
+        <parameters>
+          <parameter const="true" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+        </parameters>
+      </variant>
+      <variant return-type="QVariant" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="group" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPropertyAttributes">
+      <variant return-type="RPropertyAttributes" access="public">
+        <parameters>
+          <parameter const="true" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+        </parameters>
+      </variant>
+      <variant return-type="RPropertyAttributes" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="group" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCustomPropertyAttributes">
+      <variant return-type="RPropertyAttributes" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="group" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTypes">
+      <variant return-type="QList&lt;RS::EntityType&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTypeCount">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="RS::EntityType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEntityTypeFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::EntityType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getEntityTypeFilter">
+      <variant return-type="RS::EntityType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAppProperties">
+      <variant return-type="QStringList" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="checkType" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::EntityType" modifier="" name="type" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="filter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="makeReadOnly" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="control" />
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateEditor">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="RObject" modifier="&amp;" name="object" />
+          <parameter const="true" type="QList&lt;RPropertyTypeId&gt;" modifier="&amp;" name="propertyTypeIds" />
+          <parameter const="false" type="bool" modifier="" name="doUpdateGui" />
+          <parameter const="false" type="RDocument" modifier="*" name="document" default="NULL" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateGui">
+      <variant return-type="void" virtual="true" overridable="true" access="protected">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="onlyChanges" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateProperty">
+      <variant return-type="void" access="protected">
+        <parameters>
+          <parameter const="true" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="RObject" modifier="&amp;" name="object" />
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="showCustomAppProperties">
+      <variant return-type="bool" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="RPropertyAttributes::Option" modifier="" name="opt" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="computePropertyValue" static="true">
+      <variant return-type="void" static="true" access="protected">
+        <parameters>
+          <parameter const="false" type="RProperty" modifier="&amp;" name="property" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

@@ -1,0 +1,393 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RHatchData.h">
+  <class name="RHatchData">
+    <super_list>
+      <super name="REntityData" />
+      <!--
+      <super name="RPainterPathSource" />
+      -->
+    </super_list>
+    <class_decl name="RHatchEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RHatchData" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="solid" />
+          <parameter const="false" type="double" modifier="" name="scaleFactor" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="true" type="QString" modifier="&amp;" name="patternName" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearBoundary">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasCustomPattern">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCustomPattern">
+      <variant return-type="RPattern" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCustomPattern">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RPattern" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cloneOnChange">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ignoreEmpty" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPointOnEntity">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDistanceTo">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="range" default="0.0" />
+          <parameter const="false" type="bool" modifier="" name="draft" default="false" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersectsWith">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="shape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint"
+          default="RS::RenderTop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveReferencePoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers"
+          default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirror">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stretch">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="area" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="castToShape">
+      <variant return-type="RShape*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getShapes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="queryBox" default="RDEFAULT_RBOX" />
+          <parameter const="false" type="bool" modifier="" name="ignoreComplex" default="false" />
+          <parameter const="false" type="bool" modifier="" name="segment" default="false" />
+          <!--
+          <parameter const="false" type="QList&lt;RObject::Id&gt;" modifier="*" name="entityIds" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExploded">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSolid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSolid">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOriginPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOriginPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="op" />
+          <parameter const="false" type="bool" modifier="" name="clearCustom" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPatternName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPatternName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTransparency">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTransparency">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearCustomPattern">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="newLoop">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cancelLoop">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addBoundary">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape" />
+          <parameter const="false" type="bool" modifier="" name="addAutoLoops" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addBoundaryShape">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape" />
+          <parameter const="false" type="int" modifier="" name="loop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoundaryPath">
+      <variant return-type="RPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="pixelSizeHint" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPainterPaths">
+      <variant return-type="QList&lt;RPainterPath&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="draft" default="false" />
+          <parameter const="false" type="double" modifier="" name="pixelSizeHint" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getBoundary">
+      <variant return-type="QList&lt;QList&lt;QSharedPointer&lt;RShape&gt;&gt;&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="getBoundaryElementsAt">
+      <variant return-type="QPair&lt;QSharedPointer&lt;RShape&gt;,QSharedPointer&lt;RShape&gt;&gt;" const="true"
+      access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="int" modifier="&amp;" name="internalIndex" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="update">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="order">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLoopCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLoopBoundary">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoundaryAsPolylines">
+      <variant return-type="QList&lt;RPolyline&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="segmentLength" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="autoCloseLoops">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getComplexity">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPattern">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RPattern" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColor">
+      <variant return-type="RColor" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="RColor" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="unresolvedColor" />
+          <parameter const="true" type="QStack&lt;REntity*&gt;" modifier="&amp;" name="blockRefStack" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="RColor" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="resolve" />
+          <parameter const="true" type="QStack&lt;REntity*&gt;" modifier="&amp;" name="blockRefStack" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="hasProxy" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setHatchProxy" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RHatchProxy" modifier="*" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getHatchProxy" static="true">
+      <variant return-type="RHatchProxy*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

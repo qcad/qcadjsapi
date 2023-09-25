@@ -1,0 +1,200 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RUnit.h">
+  <class_decl name="RDocument" />
+  <class name="RUnit">
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="formatLinear" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="length" />
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+          <parameter const="false" type="RS::LinearFormat" modifier="" name="format" />
+          <parameter const="false" type="int" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showUnit" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="onlyPreciseResult" default="false" />
+          <parameter const="false" type="char" modifier="" name="decimalSeparator" default="RDEFAULT_DOT" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formatScientific" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="length" />
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+          <parameter const="false" type="int" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showUnit" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="onlyPreciseResult" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formatDecimal" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="length" />
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+          <parameter const="false" type="int" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showUnit" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="onlyPreciseResult" default="false" />
+          <parameter const="false" type="char" modifier="" name="decimalSeparator" default="RDEFAULT_DOT" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formatEngineering" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="length" />
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+          <parameter const="false" type="int" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showUnit" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="onlyPreciseResult" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formatArchitectural" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="length" />
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+          <parameter const="false" type="int" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showUnit" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="onlyPreciseResult" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formatFractional" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="length" />
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+          <parameter const="false" type="int" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showUnit" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="onlyPreciseResult" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formatAngle" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="false" type="RS::AngleFormat" modifier="" name="format" />
+          <parameter const="false" type="int" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="char" modifier="" name="decimalSeparator" default="RDEFAULT_DOT" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isMetric" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="convert" static="true">
+      <variant return-type="double" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+          <parameter const="false" type="RS::Unit" modifier="" name="source" />
+          <parameter const="false" type="RS::Unit" modifier="" name="dest" />
+        </parameters>
+      </variant>
+      <variant return-type="RVector" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="value" />
+          <parameter const="false" type="RS::Unit" modifier="" name="source" />
+          <parameter const="false" type="RS::Unit" modifier="" name="dest" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFactorToM" static="true">
+      <variant return-type="double" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="parseUnit" static="true">
+      <variant return-type="RS::Unit" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unitToSymbol" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+          <parameter const="false" type="bool" modifier="" name="asText" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unitToName" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::Unit" modifier="" name="unit" />
+          <parameter const="false" type="bool" modifier="" name="tr" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLabel" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="int" modifier="" name="precisionOverride" default="RDEFAULT_MIN1" />
+          <parameter const="false" type="bool" modifier="" name="forceSuppressTrailingZeroes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="onlyPreciseResult" default="false" />
+          <parameter const="false" type="char" modifier="" name="decimalSeparator" default="RDEFAULT_DOT" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleToString" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+          <parameter const="false" type="double" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="char" modifier="" name="decimalSeparator" default="RDEFAULT_DOT" />
+        </parameters>
+      </variant>
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+          <parameter const="false" type="int" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="char" modifier="" name="decimalSeparator" default="RDEFAULT_DOT" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="doubleToStringDec" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+          <parameter const="false" type="int" modifier="" name="prec" />
+          <parameter const="false" type="bool" modifier="" name="showLeadingZeroes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="showTrailingZeroes" default="false" />
+          <parameter const="false" type="char" modifier="" name="decimalSeparator" default="RDEFAULT_DOT" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

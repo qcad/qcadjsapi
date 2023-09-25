@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RTransactionListener.h">
+  <class_decl name="RDocument" />
+  <class_decl name="REntity" />
+  <class_decl name="RTransaction" />
+  <class name="RTransactionListener" ownership="cpp">
+    <function name="updateTransactionListener">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentBlock">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

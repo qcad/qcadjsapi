@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTraceData.h">
+  <class name="RTraceData">
+    <super_list>
+      <super name="RSolidData" />
+    </super_list>
+    <class_decl name="RTraceEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p2" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p3" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p4" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

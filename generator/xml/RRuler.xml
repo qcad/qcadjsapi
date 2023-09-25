@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RRuler.h">
+  <class_decl name="QFont" />
+  <class_decl name="RGraphicsView" />
+  <class name="RRuler" ownership="cpp">
+    <!--
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    -->
+    <function name="setGraphicsView">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsView" modifier="*" name="view" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOrientation">
+      <variant return-type="Qt::Orientation" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOrientation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintTick">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="pos" />
+          <parameter const="false" type="bool" modifier="" name="major" />
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFont">
+      <variant return-type="QFont" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateViewport">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

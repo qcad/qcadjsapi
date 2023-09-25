@@ -1,0 +1,502 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMainWindowQt.h">
+  <class_decl name="QMdiArea" />
+  <class_decl name="QMdiSubWindow" />
+  <class_decl name="RBlockListener" />
+  <class_decl name="RCoordinateListener" />
+  <class_decl name="RDocument" />
+  <class_decl name="RDocumentInterface" />
+  <class_decl name="RFocusListener" />
+  <class_decl name="RGraphicsView" />
+  <class_decl name="RKeyListener" />
+  <class_decl name="RLayerListener" />
+  <class_decl name="RMdiArea" />
+  <class_decl name="RMdiChildQt" />
+  <class_decl name="RNewDocumentListener" />
+  <class_decl name="RPaletteListener" />
+  <class_decl name="RPenListener" />
+  <class_decl name="RPreferencesListener" />
+  <class_decl name="RPropertyListener" />
+  <class_decl name="RSelectionListener" />
+  <class_decl name="RSnapListener" />
+  <class_decl name="RUcsListener" />
+  <class_decl name="RViewFocusListener" />
+  <class_decl name="RViewListener" />
+  <class name="RMainWindowQt" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QMainWindow" />
+      <super name="RMainWindow" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+          <parameter const="false" type="bool" modifier="" name="hasMdiArea" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getMainWindow" static="true">
+      <variant return-type="RMainWindowQt*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getWidth">
+      <variant return-type="int" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHeight">
+      <variant return-type="int" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPositionX">
+      <variant return-type="int" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPositionY">
+      <variant return-type="int" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resize">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="width" />
+          <parameter const="false" type="int" modifier="" name="height" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="disable">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="enable">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocument">
+      <variant return-type="RDocument*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocumentInterface">
+      <variant return-type="RDocumentInterface*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="handleUserMessage">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="escape" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleUserInfo">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="escape" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleUserWarning">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="messageBox" default="false" />
+          <parameter const="false" type="bool" modifier="" name="escape" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleUserCommand">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="escape" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postSelectionChangedEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="postTransactionEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="t" />
+          <parameter const="false" type="bool" modifier="" name="onlyChanges" default="false" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="entityTypeFilter" default="RS::EntityAll" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postPropertyEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="entityTypeFilter" default="RS::EntityAll" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postCloseEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMdiChild">
+      <variant return-type="RMdiChildQt*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTabBar">
+      <variant return-type="QTabBar*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMdiArea">
+      <variant return-type="RMdiArea*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cancelProgress">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProgress">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProgressEnd">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProgressText">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="&quot;&quot;" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCommandPrompt">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="&quot;&quot;" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLeftMouseTip">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="&quot;&quot;" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRightMouseTip">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" default="&quot;&quot;" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="showContextMenu">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="entityId" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="escapeEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGraphicsViewCursor">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QCursor" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="readSettings">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="writeSettings">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="createPopupMenu">
+      <variant return-type="QMenu*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getChildWidget">
+      <variant return-type="QWidget*" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDockWidgets">
+      <variant return-type="QList&lt;QDockWidget*&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getToolBars">
+      <variant return-type="QList&lt;QToolBar*&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearKeyLog">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getKeyLog">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="quit">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="currentTabChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="subWindowActivated">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiSubWindow" modifier="*" name="sw" />
+        </parameters>
+      </variant>
+    </function>
+
+
+
+    <function name="commandPrompt">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="leftMouseTip">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rightMouseTip">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="progress">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="progressEnd">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="progressText">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="label" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="progressCanceled">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="userMessage">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="escape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="userInfo">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="escape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="userWarning">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="messageBox" />
+          <parameter const="false" type="bool" modifier="" name="escape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="userCommand">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="escape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contextMenu">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="entityId" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="escape">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="drop">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDropEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragEnter">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDragEnterEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resumedTab">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RMdiChildQt" modifier="*" name="mdiChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="closeRequested">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="enterPressed">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    <function name="toolBarContextMenu">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QMenu" modifier="*" name="menu" />
+        </parameters>
+      </variant>
+    </function>
+
+
+
+
+    <function name="closeEvent" />
+    <function name="dropEvent" />
+    <function name="dragEnterEvent" />
+    <function name="event" />
+
+
+    <function name="updateGuiActions">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiSubWindow" modifier="*" name="mdiChild" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initGuiActions">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateScenes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiSubWindow" modifier="*" name="mdiChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="notifyListenersSlot">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiSubWindow" modifier="*" name="mdiChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="suspendAndResume">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMdiSubWindow" modifier="*" name="mdiChild" />
+        </parameters>
+      </variant>
+    </function>
+
+
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

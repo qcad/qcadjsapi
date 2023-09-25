@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RImporter.h">
+  <class_decl name="RDocument" />
+  <class_decl name="REntity" />
+  <class_decl name="RVector" />
+  <class_decl name="RMessageHandler" />
+  <class_decl name="RProgressHandler" />
+  <class name="RImporter" ownership="cpp">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <!--
+          <parameter const="false" type="RMessageHandler" modifier="*" name="messageHandler" default="NULL" />
+          <parameter const="false" type="RProgressHandler" modifier="*" name="progressHandler" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="startImport">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endImport">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="importObjectP">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RObject&gt;" modifier="" name="object" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="importObject">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject" modifier="*" name="object" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentBlockId">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentBlockId">
+      <variant return-type="RBlock::Id" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocument">
+      <variant return-type="RDocument&amp;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDocument">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setKnownVariable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

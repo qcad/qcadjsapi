@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSpatialIndex.h">
+  <class name="RSpatialIndex" ownership="cpp">
+    <!--
+    <super_list>
+      <super name="RRequireHeap" />
+    </super_list>
+    -->
+    <!--
+    <downcasts>
+      <class name="RSpatialIndexPro" type="40000" />
+    </downcasts>
+    -->
+    <function name="getSIId" static="true">
+      <variant return-type="qint64" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+          <parameter const="false" type="int" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getId" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="siid" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPos" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="qint64" modifier="" name="siid" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="create">
+      <variant return-type="RSpatialIndex*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="bulkLoad">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="ids" />
+          <parameter const="true" type="QList&lt;QList&lt;RBox&gt;&gt;" modifier="&amp;" name="bbs" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="bulkLoadSimple">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="ids" />
+          <parameter const="true" type="QList&lt;RBox&gt;" modifier="&amp;" name="bbs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addToIndex">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+          <parameter const="false" type="int" modifier="" name="pos" />
+          <parameter const="false" type="double" modifier="" name="x1" />
+          <parameter const="false" type="double" modifier="" name="y1" />
+          <parameter const="false" type="double" modifier="" name="z1" />
+          <parameter const="false" type="double" modifier="" name="x2" />
+          <parameter const="false" type="double" modifier="" name="y2" />
+          <parameter const="false" type="double" modifier="" name="z2" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+          <parameter const="false" type="int" modifier="" name="pos" />
+          <parameter const="true" type="RBox" modifier="&amp;" name="bb" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+          <parameter const="true" type="QList&lt;RBox&gt;" modifier="&amp;" name="bbs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeFromIndex">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+          <parameter const="false" type="int" modifier="" name="pos" />
+          <parameter const="false" type="double" modifier="" name="x1" />
+          <parameter const="false" type="double" modifier="" name="y1" />
+          <parameter const="false" type="double" modifier="" name="z1" />
+          <parameter const="false" type="double" modifier="" name="x2" />
+          <parameter const="false" type="double" modifier="" name="y2" />
+          <parameter const="false" type="double" modifier="" name="z2" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+          <parameter const="false" type="int" modifier="" name="pos" />
+          <parameter const="true" type="RBox" modifier="&amp;" name="bb" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+          <parameter const="true" type="QList&lt;RBox&gt;" modifier="&amp;" name="bb" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="queryIntersected">
+      <variant return-type="QMap&lt;int,QSet&lt;int&gt;&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x1" />
+          <parameter const="false" type="double" modifier="" name="y1" />
+          <parameter const="false" type="double" modifier="" name="z1" />
+          <parameter const="false" type="double" modifier="" name="x2" />
+          <parameter const="false" type="double" modifier="" name="y2" />
+          <parameter const="false" type="double" modifier="" name="z2" />
+          <parameter const="false" type="RSpatialIndexVisitor" modifier="*" name="dataVisitor" default="NULL" />
+        </parameters>
+      </variant>
+      <variant return-type="QMap&lt;int,QSet&lt;int&gt;&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="b" />
+          <parameter const="false" type="RSpatialIndexVisitor" modifier="*" name="dataVisitor" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="queryContained">
+      <variant return-type="QMap&lt;int,QSet&lt;int&gt;&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x1" />
+          <parameter const="false" type="double" modifier="" name="y1" />
+          <parameter const="false" type="double" modifier="" name="z1" />
+          <parameter const="false" type="double" modifier="" name="x2" />
+          <parameter const="false" type="double" modifier="" name="y2" />
+          <parameter const="false" type="double" modifier="" name="z2" />
+          <parameter const="false" type="RSpatialIndexVisitor" modifier="*" name="dataVisitor" default="NULL" />
+        </parameters>
+      </variant>
+      <variant return-type="QMap&lt;int,QSet&lt;int&gt;&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="b" />
+          <parameter const="false" type="RSpatialIndexVisitor" modifier="*" name="dataVisitor" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="queryContainedIds">
+      <variant return-type="QList&lt;int&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x1" />
+          <parameter const="false" type="double" modifier="" name="y1" />
+          <parameter const="false" type="double" modifier="" name="z1" />
+          <parameter const="false" type="double" modifier="" name="x2" />
+          <parameter const="false" type="double" modifier="" name="y2" />
+          <parameter const="false" type="double" modifier="" name="z2" />
+          <!--
+          <parameter const="false" type="RSpatialIndexVisitor" modifier="*" name="dataVisitor" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="queryNearestNeighbor">
+      <variant return-type="QMap&lt;int,QSet&lt;int&gt;&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="unsigned int" modifier="" name="k" />
+          <parameter const="false" type="double" modifier="" name="x" />
+          <parameter const="false" type="double" modifier="" name="y" />
+          <parameter const="false" type="double" modifier="" name="z" />
+          <parameter const="false" type="RSpatialIndexVisitor" modifier="*" name="dataVisitor" default="NULL" />
+        </parameters>
+      </variant>
+      <variant return-type="QPair&lt;int,int&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x" />
+          <parameter const="false" type="double" modifier="" name="y" />
+          <parameter const="false" type="double" modifier="" name="z" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

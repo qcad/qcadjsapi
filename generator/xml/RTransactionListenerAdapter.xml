@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTransactionListenerAdapter.h">
+  <class name="RTransactionListenerAdapter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RTransactionListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="updateTransactionListener">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentBlock">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transactionUpdated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentBlockSet">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

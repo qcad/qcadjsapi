@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RMouseCoordinateListener.h">
+  <class_decl name="RVector" />
+  <class name="RMouseCoordinateListener" ownership="cpp">
+    <function name="setCoordinate">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="wcsPosition" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="ucsPosition" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

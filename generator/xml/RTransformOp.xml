@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTransformOp.h">
+  <class name="RTransformOp" ownership="cpp">
+    <enum name="Type">
+      <key>Translation</key>
+      <key>Scale</key>
+      <key>Rotation</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <property type="RTransformOp::Type" name="type" read="getType" />
+    <property type="double" name="d1" read="getD1" />
+    <property type="double" name="d2" read="getD2" />
+    <function name="createTranslation" static="true">
+      <variant return-type="RTransformOp" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createScale" static="true">
+      <variant return-type="RTransformOp" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="sx" />
+          <parameter const="false" type="qreal" modifier="" name="sy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createRotation" static="true">
+      <variant return-type="RTransformOp" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getType">
+      <variant return-type="RTransformOp::Type" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getD1">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getD2">
+      <variant return-type="qreal" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

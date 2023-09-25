@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RToolMatrixItemDelegate.h">
+  <class name="RToolMatrixItemDelegate" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QAbstractItemDelegate" />
+      <super name="QItemDelegate" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QTreeView" modifier="*" name="view" />
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="paint">
+      <variant return-type="void" const="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="option" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QStyleOptionViewItem" modifier="&amp;" name="opt" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

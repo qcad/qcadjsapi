@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPasteOperation.h">
+  <class name="RPasteOperation" ownership="cpp">
+    <super_list>
+      <super name="ROperation" />
+      <super name="RClipboardOperation" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="sourceDocument" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setOffsets">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="offsets" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRotations">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;double&gt;" modifier="&amp;" name="rotations" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCenters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="centers" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOffset">
+      <variant return-type="RVector" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="scale" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScale">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRotation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRotation">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCenter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="centers" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCenter">
+      <variant return-type="RVector" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFlipHorizontal">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="flipHorizontal" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFlipHorizontal">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFlipVertical">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="flipVertical" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFlipVertical">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setToCurrentLayer">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="toCurrentLayer" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getToCurrentLayer">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOverwriteLayers">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="overwriteLayers" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOverwriteLayers">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOverwriteBlocks">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="overwriteBlocks" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOverwriteBlocks">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBlockName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBlockName">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLayerName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLayerName">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAttribute">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBlockProperty">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="apply">
+      <variant return-type="RTransaction" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoundary">
+      <variant return-type="RPolyline" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="unitFactor" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,280 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RArcEntity.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="RArcEntity" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+      <super name="REntity" />
+    </super_list>
+    <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyProtected" />
+    <property static="true" type="RPropertyTypeId" name="PropertyWorkingSet" />
+    <property static="true" type="RPropertyTypeId" name="PropertyType" />
+    <property static="true" type="RPropertyTypeId" name="PropertyBlock" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLayer" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetype" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetypeScale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLineweight" />
+    <property static="true" type="RPropertyTypeId" name="PropertyColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDisplayedColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDrawOrder" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddlePointX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddlePointY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddlePointZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyRadius" />
+    <property static="true" type="RPropertyTypeId" name="PropertyStartAngle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyEndAngle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyReversed" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDiameter" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLength" />
+    <property static="true" type="RPropertyTypeId" name="PropertyTotalLength" />
+    <property static="true" type="RPropertyTypeId" name="PropertySweepAngle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArea" />
+    <property static="true" type="RPropertyTypeId" name="PropertyTotalArea" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="true" type="RArcData" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RArcEntity" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStaticPropertyTypeIds" static="true">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RArcEntity*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShape">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportEntity">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RExporter" modifier="&amp;" name="e" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaleNonUniform">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+      <variant return-type="QSharedPointer&lt;REntity&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getData">
+      <variant return-type="RArcData&amp;" virtual="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RArcData&amp;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="getCenter">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRadius">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRadius">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="radius" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBulge">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStartAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setStartAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getEndAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setEndAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isReversed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setReversed">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="reversed" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDirection1">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDirection2">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStartPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEndPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMiddlePoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reverse">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSideOfPoint">
+      <variant return-type="RS::Side" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSweep">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTrimEnd">
+      <variant return-type="RS::Ending" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trimStartPoint">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" default="RVector::invalid" />
+          <parameter const="false" type="bool" modifier="" name="extend" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trimEndPoint">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" default="RVector::invalid" />
+          <parameter const="false" type="bool" modifier="" name="extend" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLength">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAngleLength">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="allowForZeroLength" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngleAt">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+          <parameter const="false" type="RS::From" modifier="" name="from" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>

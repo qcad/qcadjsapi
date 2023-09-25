@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RAttributeData.h">
+  <class_decl name="RAttributeDefinitionData" />
+  <class name="RAttributeData">
+    <super_list>
+      <super name="REntityData" />
+      <super name="RTextBasedData" />
+    </super_list>
+    <class_decl name="RAttributeEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RTextBasedData" modifier="&amp;" name="textData" />
+          <parameter const="false" type="RBlockReferenceEntity::Id" modifier="" name="blockReferenceId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="tag" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRenderedText">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="escUnicode" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTag">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTag">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isInvisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInvisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypeId">
+      <variant return-type="RLinetype::Id" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="RLinetype::Id" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="resolve" />
+          <parameter const="true" type="QStack&lt;REntity*&gt;" modifier="&amp;" name="blockRefStack" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="getLineweight">
+      <variant return-type="RLineweight::Lineweight" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="RLineweight::Lineweight" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="resolve" />
+          <parameter const="true" type="QStack&lt;REntity*&gt;" modifier="&amp;" name="blockRefStack" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="getColor">
+      <variant return-type="RColor" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="RColor" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="resolve" />
+          <parameter const="true" type="QStack&lt;REntity*&gt;" modifier="&amp;" name="blockRefStack" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="getReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

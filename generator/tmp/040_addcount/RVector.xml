@@ -1,11 +1,9 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RVector.h">
-  <!--
   <class_decl name="RMatrix" />
   <class_decl name="RBox" />
   <class_decl name="RLine" />
   <class_decl name="RPolyline" />
-  -->
   <class name="RVector">
     <constructor>
       <variant count="4">
@@ -71,15 +69,13 @@
         <parameters />
       </variant>
     </function>
-    <!--
     <function name="isInside">
-      <variant return-type="bool" const="true" access="public">
+      <variant count="1" return-type="bool" const="true" access="public">
         <parameters>
           <parameter const="true" type="RBox" modifier="&amp;" name="b" />
         </parameters>
       </variant>
     </function>
-    -->
     <function name="equalsFuzzy">
       <variant count="2" return-type="bool" const="true" access="public">
         <parameters>
@@ -249,23 +245,14 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="rotate3D">
-      <variant return-type="RVector" access="public">
+      <variant count="2" return-type="RVector" access="public">
         <parameters>
           <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
           <parameter const="false" type="double" modifier="" name="rotation" />
         </parameters>
       </variant>
-      < ! - -
-      <variant return-type="RVector" access="public">
-        <parameters>
-          <parameter const="true" type="QQuaternion" modifier="&amp;" name="quaternion" />
-        </parameters>
-      </variant>
-      - - >
     </function>
-    -->
     <function name="rotateList" static="true">
       <variant count="3" return-type="void" static="true" access="public">
         <parameters>
@@ -319,30 +306,26 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="mirror">
-      <variant return-type="RVector" access="public">
-        <parameters>
-          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
-        </parameters>
-      </variant>
-      <variant return-type="RVector" access="public">
+      <variant count="2" return-type="RVector" access="public">
         <parameters>
           <parameter const="true" type="RVector" modifier="&amp;" name="axis1" />
           <parameter const="true" type="RVector" modifier="&amp;" name="axis2" />
         </parameters>
       </variant>
-    </function>
-    -->
-    <!--
-    <function name="getMirrored">
-      <variant return-type="RVector" const="true" access="public">
+      <variant count="1" return-type="RVector" access="public">
         <parameters>
           <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
         </parameters>
       </variant>
     </function>
-    -->
+    <function name="getMirrored">
+      <variant count="1" return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
     <function name="flipHorizontal">
       <variant count="0" return-type="RVector" access="public">
         <parameters />
@@ -353,61 +336,49 @@
         <parameters />
       </variant>
     </function>
-    <!--
     <function name="stretch">
-      <variant return-type="RVector" access="public">
+      <variant count="2" return-type="RVector" access="public">
         <parameters>
           <parameter const="true" type="RPolyline" modifier="&amp;" name="area" />
           <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="isoProject">
-      <variant return-type="RVector" access="public">
+      <variant count="1" return-type="RVector" access="public">
         <parameters>
           <parameter const="false" type="RS::IsoProjectionType" modifier="" name="type" />
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="axonometricProjection">
-      <variant return-type="RVector" access="public">
+      <variant count="1" return-type="RVector" access="public">
         <parameters>
           <parameter const="false" type="RS::IsoProjectionType" modifier="" name="type" />
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="obliqueProjection">
-      <variant return-type="RVector" access="public">
+      <variant count="1" return-type="RVector" access="public">
         <parameters>
           <parameter const="false" type="RS::IsoProjectionType" modifier="" name="type" />
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="transform">
-      <variant return-type="RVector" access="public">
+      <variant count="1" return-type="RVector" access="public">
         <parameters>
           <parameter const="true" type="RMatrix" modifier="&amp;" name="m" />
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="transform2DM">
-      <variant return-type="RVector" access="public">
+      <variant count="1" return-type="RVector" access="public">
         <parameters>
           <parameter const="true" type="RMatrix" modifier="&amp;" name="m" />
         </parameters>
       </variant>
     </function>
-    -->
     <function name="transform2D">
       <variant count="1" return-type="RVector" access="public">
         <parameters>
@@ -415,24 +386,20 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="getTransformed">
-      <variant return-type="RVector" const="true" access="public">
+      <variant count="1" return-type="RVector" const="true" access="public">
         <parameters>
           <parameter const="true" type="RMatrix" modifier="&amp;" name="m" />
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="getTransformed2DM">
-      <variant return-type="RVector" const="true" access="public">
+      <variant count="1" return-type="RVector" const="true" access="public">
         <parameters>
           <parameter const="true" type="RMatrix" modifier="&amp;" name="m" />
         </parameters>
       </variant>
     </function>
-    -->
     <function name="getTransformed2D">
       <variant count="1" return-type="RVector" const="true" access="public">
         <parameters>

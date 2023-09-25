@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RFileSystemModel.h">
+  <class name="RFileSystemModel" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QAbstractItemModel" />
+      <super name="QFileSystemModel" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setRootPath">
+      <variant return-type="QModelIndex" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="newPath" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rootPath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pathIndex">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="path" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="index">
+      <variant return-type="QModelIndex" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="false" type="int" modifier="" name="column" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="RDEFAULT_QMODELINDEX" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDir::Filters" modifier="" name="filters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDir">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHeaderData">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="section" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::EditRole" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="section" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orientation" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::EditRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rowCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="RDEFAULT_QMODELINDEX" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setIconProvider">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QFileIconProvider" modifier="*" name="provider" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNameFilter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNameFilters">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="filters" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setNameFilterDisables">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="enable" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setItemData">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="true" type="QMap&lt;int,QVariant&gt;" modifier="&amp;" name="roles" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="Qt::ItemDataRole" modifier="" name="role" />
+          <parameter const="true" type="QString" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="Qt::ItemDataRole" modifier="" name="role" />
+          <parameter const="true" type="QColor" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="itemData">
+      <variant return-type="QMap&lt;int,QVariant&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="canFetchMore">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fetchMore">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="data">
+      <variant return-type="QVariant" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="index" />
+          <parameter const="false" type="int" modifier="" name="role" default="Qt::DisplayRole" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeRow">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="row" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="parent" default="QModelIndex()" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

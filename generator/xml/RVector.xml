@@ -1,11 +1,9 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RVector.h">
-  <!--
   <class_decl name="RMatrix" />
   <class_decl name="RBox" />
   <class_decl name="RLine" />
   <class_decl name="RPolyline" />
-  -->
   <class name="RVector">
     <constructor>
       <variant>
@@ -71,7 +69,6 @@
         <parameters />
       </variant>
     </function>
-    <!--
     <function name="isInside">
       <variant return-type="bool" const="true" access="public">
         <parameters>
@@ -79,7 +76,6 @@
         </parameters>
       </variant>
     </function>
-    -->
     <function name="equalsFuzzy">
       <variant return-type="bool" const="true" access="public">
         <parameters>
@@ -249,7 +245,6 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="rotate3D">
       <variant return-type="RVector" access="public">
         <parameters>
@@ -257,15 +252,14 @@
           <parameter const="false" type="double" modifier="" name="rotation" />
         </parameters>
       </variant>
-      < ! - -
+      <!--
       <variant return-type="RVector" access="public">
         <parameters>
           <parameter const="true" type="QQuaternion" modifier="&amp;" name="quaternion" />
         </parameters>
       </variant>
-      - - >
+      -->
     </function>
-    -->
     <function name="rotateList" static="true">
       <variant return-type="void" static="true" access="public">
         <parameters>
@@ -319,7 +313,6 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="mirror">
       <variant return-type="RVector" access="public">
         <parameters>
@@ -333,8 +326,6 @@
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="getMirrored">
       <variant return-type="RVector" const="true" access="public">
         <parameters>
@@ -342,7 +333,6 @@
         </parameters>
       </variant>
     </function>
-    -->
     <function name="flipHorizontal">
       <variant return-type="RVector" access="public">
         <parameters />
@@ -353,7 +343,6 @@
         <parameters />
       </variant>
     </function>
-    <!--
     <function name="stretch">
       <variant return-type="RVector" access="public">
         <parameters>
@@ -362,8 +351,6 @@
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="isoProject">
       <variant return-type="RVector" access="public">
         <parameters>
@@ -371,8 +358,6 @@
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="axonometricProjection">
       <variant return-type="RVector" access="public">
         <parameters>
@@ -380,8 +365,6 @@
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="obliqueProjection">
       <variant return-type="RVector" access="public">
         <parameters>
@@ -389,8 +372,6 @@
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="transform">
       <variant return-type="RVector" access="public">
         <parameters>
@@ -398,8 +379,6 @@
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="transform2DM">
       <variant return-type="RVector" access="public">
         <parameters>
@@ -407,7 +386,6 @@
         </parameters>
       </variant>
     </function>
-    -->
     <function name="transform2D">
       <variant return-type="RVector" access="public">
         <parameters>
@@ -415,7 +393,6 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="getTransformed">
       <variant return-type="RVector" const="true" access="public">
         <parameters>
@@ -423,8 +400,6 @@
         </parameters>
       </variant>
     </function>
-    -->
-    <!--
     <function name="getTransformed2DM">
       <variant return-type="RVector" const="true" access="public">
         <parameters>
@@ -432,7 +407,6 @@
         </parameters>
       </variant>
     </function>
-    -->
     <function name="getTransformed2D">
       <variant return-type="RVector" const="true" access="public">
         <parameters>

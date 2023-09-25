@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnapListener.h">
+  <class_decl name="RDocumentInterface" />
+  <class_decl name="REntity" />
+  <class name="RSnapListener" ownership="cpp">
+    <function name="updateSnap">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="di" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

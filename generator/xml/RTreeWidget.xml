@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTreeWidget.h">
+  <class name="RTreeWidget">
+    <super_list>
+      <super name="QObject" />
+      <super name="QPaintDevice" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+      <super name="QAbstractItemView" />
+      <super name="QTreeView" />
+      <super name="QTreeWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setSelectableColumn">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIndex">
+      <variant return-type="QModelIndex" access="public">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getActiveItem">
+      <variant return-type="QTreeWidgetItem*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="contextMenuEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QContextMenuEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent">
+      <variant return-type="void" virtual="true" overridable="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent">
+      <variant return-type="void" virtual="true" overridable="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" overridable="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" overridable="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="itemColumnClicked">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contextMenuRequested">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QTreeWidgetItem" modifier="*" name="item" />
+          <parameter const="false" type="int" modifier="" name="column" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

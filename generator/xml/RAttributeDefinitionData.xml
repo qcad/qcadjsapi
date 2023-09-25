@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RAttributeDefinitionData.h">
+  <class name="RAttributeDefinitionData">
+    <super_list>
+      <super name="RTextBasedData" />
+    </super_list>
+    <class_decl name="RAttributeDefinitionEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RTextBasedData" modifier="&amp;" name="textData" />
+          <parameter const="true" type="QString" modifier="&amp;" name="tag" />
+          <parameter const="true" type="QString" modifier="&amp;" name="prompt" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTag">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTag">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPrompt">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPrompt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isInvisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInvisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRenderedText">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="escUnicode" default="false" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,690 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RGuiAction.h">
+  <class_decl name="QToolBar" />
+  <class_decl name="RDocument" />
+  <class_decl name="RDocumentInterface" />
+  <class name="RGuiAction" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RFocusListener" />
+      <super name="RTransactionListener" />
+      <super name="RSelectionListener" />
+      <super name="QAction" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="oriText" />
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="oriText" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initTexts">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="init">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="formatToolTip" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="oriText" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortcut" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getToolTip">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="oriText" />
+          <parameter const="true" type="QString" modifier="&amp;" name="shortcut" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addShortcut">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="shortcut" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeShortcuts">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShortcut">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="shortcut" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDefaultShortcut">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QKeySequence" modifier="&amp;" name="shortcut" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setShortcuts">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QKeySequence&gt;" modifier="&amp;" name="shortcuts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setShortcutsFromStrings">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="shortcuts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShortcuts">
+      <variant return-type="QList&lt;QKeySequence&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultShortcuts">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QKeySequence&gt;" modifier="&amp;" name="shortcuts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDefaultShortcuts">
+      <variant return-type="QList&lt;QKeySequence&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShortcutText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="oriText" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShortcutText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getShortcutsString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="separator" default="&quot;,&quot;" />
+          <parameter const="false" type="QKeySequence::SequenceFormat" modifier="" name="format"
+          default="QKeySequence::PortableText" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGroupSortOrderStatic" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+          <parameter const="false" type="int" modifier="" name="sortOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGroupSortOrderOverrideStatic" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+          <parameter const="true" type="QString" modifier="&amp;" name="widgetName" />
+          <parameter const="false" type="int" modifier="" name="sortOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGroupSortOrderStatic" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QAction" modifier="*" name="a" />
+          <parameter const="true" type="QWidget" modifier="*" name="w" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSortOrderStatic" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+          <parameter const="false" type="int" modifier="" name="sortOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSortOrderOverrideStatic" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+          <parameter const="true" type="QString" modifier="&amp;" name="widgetName" />
+          <parameter const="false" type="int" modifier="" name="sortOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSortOrderStatic" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QAction" modifier="*" name="a" />
+          <parameter const="true" type="QWidget" modifier="*" name="w" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGroupSortOrder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="sortOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGroupSortOrderOverride">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="widgetName" />
+          <parameter const="false" type="int" modifier="" name="sortOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGroupSortOrder">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QWidget" modifier="*" name="w" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSortOrder">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="sortOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSortOrderOverride">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="widgetName" />
+          <parameter const="false" type="int" modifier="" name="sortOrder" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSortOrder">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QWidget" modifier="*" name="w" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addToMenu">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QMenu" modifier="*" name="menu" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addToToolBar">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QToolBar" modifier="*" name="tb" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fixSeparators" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addSeparatorToWidget" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addToWidget" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeFromWidget" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+          <parameter const="false" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateIcons" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateIcon">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIcon">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="iconFile" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="disableIcon">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isIconDisabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setToolTip">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tip" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStatusTip">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="tip" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEnabled">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEnabledOverride">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+          <parameter const="false" type="int" modifier="" name="override" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setChecked">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="triggerGroupDefault" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="group" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="triggerGroupDefaults" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isChecked">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setForceGlobal">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getForceGlobal">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRequiresDocument">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRequiresDocument">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRequiresSelection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRequiresSelection">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRequiresUndoableTransaction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRequiresUndoableTransaction">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setRequiresRedoableTransaction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRequiresRedoableTransaction">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOverride">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isOverride">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAllowInterrupt">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAllowInterrupt">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNoState">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="checkable" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasNoState">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setToggleable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isToggleable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUniqueGroup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ug" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getUniqueGroup">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMainCommand">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCommands">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDefaultCommands">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefaultCommands">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="cmds" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCommands">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="cmds" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setScriptFile">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="sf" />
+          <parameter const="false" type="bool" modifier="" name="isSecondary" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScriptFile">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getScriptClass">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGroup">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGroup">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGroupDefault">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isGroupDefault">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getActions" static="true">
+      <variant return-type="QList&lt;RGuiAction*&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="triggerByCommand" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="cmd" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="triggerByShortcut" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="sc" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getByScriptFile" static="true">
+      <variant return-type="RGuiAction*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="scriptFile" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getByClassName" static="true">
+      <variant return-type="RGuiAction*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="className" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getByCommand" static="true">
+      <variant return-type="RGuiAction*" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="command" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="triggerByScriptFile" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="scriptFile" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAvailableCommands" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="primaryOnly" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="start" />
+          <parameter const="false" type="bool" modifier="" name="primaryOnly" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateTransactionListener">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentBlock">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateSelectionListener">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateFocus">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addArgument">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="arg" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getArguments">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearArguments">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWidgetNamesStatic" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="a" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="widgetNames" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getWidgetNamesStatic" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QAction" modifier="*" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setWidgetNames">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="widgetNames" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getWidgetNames">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="slotTrigger">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="command" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postTriggered">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

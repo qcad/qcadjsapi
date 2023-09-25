@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTextData.h">
+  <class name="RTextData">
+    <super_list>
+      <super name="REntityData" />
+      <super name="RTextBasedData" />
+    </super_list>
+    <class_decl name="RTextEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RTextBasedData" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="alignmentPoint" />
+          <parameter const="false" type="double" modifier="" name="textHeight" />
+          <parameter const="false" type="double" modifier="" name="textWidth" />
+          <parameter const="false" type="RS::VAlign" modifier="" name="verticalAlignment" />
+          <parameter const="false" type="RS::HAlign" modifier="" name="horizontalAlignment" />
+          <parameter const="false" type="RS::TextDrawingDirection" modifier="" name="drawingDirection" />
+          <parameter const="false" type="RS::TextLineSpacingStyle" modifier="" name="lineSpacingStyle" />
+          <parameter const="false" type="double" modifier="" name="lineSpacingFactor" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fontName" />
+          <parameter const="false" type="bool" modifier="" name="bold" />
+          <parameter const="false" type="bool" modifier="" name="italic" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="false" type="bool" modifier="" name="simple" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

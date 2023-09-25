@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPluginInterface.h">
+  <class_decl name="QString" />
+  <class name="RPluginInterface">
+    <enum name="InitStatus">
+      <key>GotSplashWindow</key>
+      <key>AddOnsInitialized</key>
+      <key>ActionsAdded</key>
+      <key>GotMainWindowBeforeShow</key>
+      <key>GotMainWindow</key>
+      <key>LoadedFiles</key>
+      <key>ScriptsExecuted</key>
+      <key>AllDone</key>
+    </enum>
+  </class>
+</unit>

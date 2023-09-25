@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTerminateEvent.h">
+  <class name="RTerminateEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+  </class>
+</unit>

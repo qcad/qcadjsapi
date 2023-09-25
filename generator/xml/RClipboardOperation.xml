@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RClipboardOperation.h">
+  <class name="RClipboardOperation" ownership="cpp">
+    <super_list>
+      <super name="ROperation" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="apply">
+      <variant return-type="RTransaction" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copy">
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+          <parameter const="false" type="double" modifier="" name="scale" />
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="bool" modifier="" name="flipHorizontal" />
+          <parameter const="false" type="bool" modifier="" name="flipVertical" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentLayer" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentBlock" />
+          <parameter const="false" type="bool" modifier="" name="overwriteLayers" />
+          <parameter const="false" type="bool" modifier="" name="overwriteBlocks" />
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+          <parameter const="false" type="bool" modifier="" name="selectionOnly" />
+          <parameter const="false" type="bool" modifier="" name="clear" />
+          <parameter const="false" type="bool" modifier="" name="toModelSpaceBlock" />
+          <parameter const="false" type="bool" modifier="" name="preview" />
+        </parameters>
+      </variant>
+      -->
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+          <parameter const="false" type="double" modifier="" name="scale" />
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="bool" modifier="" name="flipHorizontal" />
+          <parameter const="false" type="bool" modifier="" name="flipVertical" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentLayer" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentBlock" />
+          <parameter const="false" type="bool" modifier="" name="overwriteLayers" />
+          <parameter const="false" type="bool" modifier="" name="overwriteBlocks" />
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+          <parameter const="false" type="bool" modifier="" name="selectionOnly" />
+          <parameter const="false" type="bool" modifier="" name="clear" />
+          <parameter const="false" type="bool" modifier="" name="toModelSpaceBlock" />
+          <parameter const="false" type="bool" modifier="" name="preview" />
+          <parameter const="true" type="RQMapQStringQString" modifier="&amp;" name="attributes" />
+          <parameter const="true" type="RQMapQStringQString" modifier="&amp;" name="properties" />
+          <parameter const="true" type="RQMapQStringQString" modifier="&amp;" name="blockProperties" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="copyEntity">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+          <parameter const="false" type="double" modifier="" name="scale" />
+          <parameter const="false" type="double" modifier="" name="unitScale" />
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="bool" modifier="" name="flipHorizontal" />
+          <parameter const="false" type="bool" modifier="" name="flipVertical" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentLayer" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentBlock" />
+          <parameter const="false" type="bool" modifier="" name="overwriteLayers" />
+          <parameter const="false" type="bool" modifier="" name="overwriteBlocks" />
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+          <parameter const="false" type="bool" modifier="" name="toModelSpaceBlock" />
+        </parameters>
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+          <parameter const="false" type="double" modifier="" name="scale" />
+          <parameter const="false" type="double" modifier="" name="unitScale" />
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+          <parameter const="false" type="bool" modifier="" name="flipHorizontal" />
+          <parameter const="false" type="bool" modifier="" name="flipVertical" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentLayer" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentBlock" />
+          <parameter const="false" type="bool" modifier="" name="overwriteLayers" />
+          <parameter const="false" type="bool" modifier="" name="overwriteBlocks" />
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="layerName" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+          <parameter const="false" type="bool" modifier="" name="toModelSpaceBlock" />
+          <parameter const="true" type="RQMapQStringQString" modifier="&amp;" name="attributes" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="copyEntityBlock">
+      <variant return-type="QSharedPointer&lt;RBlock&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="false" type="bool" modifier="" name="overwriteBlocks" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentBlock" />
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyBlock">
+      <variant return-type="QSharedPointer&lt;RBlock&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="false" type="bool" modifier="" name="overwriteBlocks" />
+          <parameter const="false" type="bool" modifier="" name="toCurrentBlock" />
+          <parameter const="true" type="QString" modifier="&amp;" name="blockName" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyEntityLayer">
+      <variant return-type="QSharedPointer&lt;RLayer&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="false" type="bool" modifier="" name="overwriteLayers" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyLayer">
+      <variant return-type="QSharedPointer&lt;RLayer&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="false" type="bool" modifier="" name="overwriteLayers" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyEntityLinetype">
+      <variant return-type="QSharedPointer&lt;RLinetype&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="false" type="bool" modifier="" name="overwriteLinetypes" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copyLinetype">
+      <variant return-type="QSharedPointer&lt;RLinetype&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="linetypeId" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="src" />
+          <parameter const="false" type="RDocument" modifier="&amp;" name="dest" />
+          <parameter const="false" type="bool" modifier="" name="overwriteLinetypes" />
+          <parameter const="false" type="RTransaction" modifier="&amp;" name="transaction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCopyEmptyBlocks">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCopyAllLayers">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setKeepSelection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

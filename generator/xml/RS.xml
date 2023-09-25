@@ -1,0 +1,796 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RS.h">
+  <class_decl name="RVector" />
+  <class_decl name="RPropertyAttributes" />
+  <class name="RS">
+    <property static="true" type="double" name="PointTolerance" />
+    <property static="true" type="double" name="AngleTolerance" />
+    <property static="true" type="QPageLayout::Orientation" name="Portrait" />
+    <property static="true" type="QPageLayout::Orientation" name="Landscape" />
+    <enum name="MetaType">
+      <key>Bool</key>
+      <key>Char</key>
+      <key>Char16</key>
+      <key>Char32</key>
+      <key>Double</key>
+      <key>Float</key>
+      <key>Int</key>
+      <key>Long</key>
+      <key>LongLong</key>
+      <key>Nullptr</key>
+      <key>BitArray</key>
+      <key>Bitmap</key>
+      <key>Brush</key>
+      <key>ByteArray</key>
+      <key>ByteArrayList</key>
+      <key>CborArray</key>
+      <key>CborMap</key>
+      <key>CborSimpleType</key>
+      <key>CborValue</key>
+      <key>Color</key>
+      <key>ColorSpace</key>
+      <key>Cursor</key>
+      <key>Date</key>
+      <key>DateTime</key>
+      <key>EasingCurve</key>
+      <key>Font</key>
+      <key>Icon</key>
+      <key>Image</key>
+      <key>JsonArray</key>
+      <key>JsonDocument</key>
+      <key>JsonObject</key>
+      <key>JsonValue</key>
+      <key>KeySequence</key>
+      <key>Line</key>
+      <key>LineF</key>
+      <key>Locale</key>
+      <key>Matrix4x4</key>
+      <key>ModelIndex</key>
+      <key>ObjectStar</key>
+      <key>Palette</key>
+      <key>Pen</key>
+      <key>PersistentModelIndex</key>
+      <key>Pixmap</key>
+      <key>Point</key>
+      <key>PointF</key>
+      <key>Polygon</key>
+      <key>PolygonF</key>
+      <key>Quaternion</key>
+      <key>Rect</key>
+      <key>RectF</key>
+      <key>Region</key>
+      <key>RegularExpression</key>
+      <key>Size</key>
+      <key>SizeF</key>
+      <key>SizePolicy</key>
+      <key>String</key>
+      <key>StringList</key>
+      <key>TextFormat</key>
+      <key>TextLength</key>
+      <key>Time</key>
+      <key>Transform</key>
+      <key>Url</key>
+      <key>Uuid</key>
+      <key>Variant</key>
+      <key>VariantHash</key>
+      <key>VariantList</key>
+      <key>VariantMap</key>
+      <key>Vector2D</key>
+      <key>Vector3D</key>
+      <key>Vector4D</key>
+      <key>SChar</key>
+      <key>Short</key>
+      <key>UChar</key>
+      <key>UInt</key>
+      <key>ULong</key>
+      <key>ULongLong</key>
+      <key>UShort</key>
+      <key>UnknownType</key>
+      <key>UserType</key>
+      <key>VoidStar</key>
+    </enum>
+    <enum name="MessageType">
+      <key>Print</key>
+      <key>Debug</key>
+      <key>Warning</key>
+      <key>Critical</key>
+      <key>Command</key>
+    </enum>
+    <enum name="EntityType">
+      <key>ObjectAll</key>
+      <key>ObjectUnknown</key>
+      <key>ObjectLinetype</key>
+      <key>ObjectLayer</key>
+      <key>ObjectBlock</key>
+      <key>ObjectLayout</key>
+      <key>ObjectLayerState</key>
+      <key>ObjectView</key>
+      <key>ObjectUcs</key>
+      <key>ObjectDocumentVariable</key>
+      <key>ObjectDimStyle</key>
+      <key>EntityAll</key>
+      <key>EntityUnknown</key>
+      <key>EntityAttribute</key>
+      <key>EntityAttributeDefinition</key>
+      <key>EntityBlockRef</key>
+      <key>EntityBlockRefAttr</key>
+      <key>EntityPoint</key>
+      <key>EntityLine</key>
+      <key>EntityXLine</key>
+      <key>EntityRay</key>
+      <key>EntityPolyline</key>
+      <key>EntityArc</key>
+      <key>EntityCircle</key>
+      <key>EntityEllipse</key>
+      <key>EntitySolid</key>
+      <key>Entity3dFace</key>
+      <key>EntityTextBased</key>
+      <key>EntityText</key>
+      <key>EntityTrace</key>
+      <key>EntityFace</key>
+      <key>EntityDimension</key>
+      <key>EntityDimLinear</key>
+      <key>EntityDimAligned</key>
+      <key>EntityDimRotated</key>
+      <key>EntityDimRadial</key>
+      <key>EntityDimDiametric</key>
+      <key>EntityDimAngular</key>
+      <key>EntityDimAngular2L</key>
+      <key>EntityDimAngular3P</key>
+      <key>EntityDimArcLength</key>
+      <key>EntityDimOrdinate</key>
+      <key>EntityHatch</key>
+      <key>EntityImage</key>
+      <key>EntityLeader</key>
+      <key>EntitySpline</key>
+      <key>EntityViewport</key>
+      <key>EntityTolerance</key>
+      <key>EntityUser</key>
+    </enum>
+    <enum name="ProjectionRenderingHint">
+      <key>RenderTop</key>
+      <key>RenderSide</key>
+      <key>RenderFront</key>
+      <key>RenderThreeD</key>
+    </enum>
+    <enum name="OrthoMode">
+      <key>OrthoVertical</key>
+      <key>OrthoHorizonal</key>
+      <key>Orthogonal</key>
+    </enum>
+    <enum name="Side">
+      <key>NoSide</key>
+      <key>LeftHand</key>
+      <key>RightHand</key>
+      <key>BothSides</key>
+    </enum>
+    <enum name="Ending">
+      <key>EndingStart</key>
+      <key>EndingEnd</key>
+      <key>EndingNone</key>
+    </enum>
+    <enum name="VAlign">
+      <key>VAlignTop</key>
+      <key>VAlignMiddle</key>
+      <key>VAlignBase</key>
+      <key>VAlignBottom</key>
+    </enum>
+    <enum name="HAlign">
+      <key>HAlignLeft</key>
+      <key>HAlignCenter</key>
+      <key>HAlignRight</key>
+      <key>HAlignAlign</key>
+      <key>HAlignMid</key>
+      <key>HAlignFit</key>
+    </enum>
+    <enum name="TextDrawingDirection">
+      <key>LeftToRight</key>
+      <key>TopToBottom</key>
+      <key>ByStyle</key>
+    </enum>
+    <enum name="TextLineSpacingStyle">
+      <key>AtLeast</key>
+      <key>Exact</key>
+    </enum>
+    <enum name="From">
+      <key>FromStart</key>
+      <key>FromEnd</key>
+      <key>FromAny</key>
+      <key>AlongPolyline</key>
+    </enum>
+    <enum name="IsoProjectionType">
+      <key>NoProjection</key>
+      <key>Top</key>
+      <key>Bottom</key>
+      <key>Left</key>
+      <key>LeftBack</key>
+      <key>Right</key>
+      <key>RightBack</key>
+      <key>Isometric</key>
+      <key>IsometricTrue</key>
+      <key>Planometric</key>
+      <key>Dimetric</key>
+      <key>Cabinet</key>
+      <key>Cabinet30</key>
+      <key>Cavalier</key>
+      <key>User1</key>
+      <key>User2</key>
+      <key>User3</key>
+      <key>User4</key>
+      <key>IsoTop</key>
+      <key>IsoBottom</key>
+      <key>IsoLeft</key>
+      <key>IsoLeftBack</key>
+      <key>IsoRight</key>
+      <key>IsoRightBack</key>
+    </enum>
+    <enum name="Measurement">
+      <key>UnknownMeasurement</key>
+      <key>Imperial</key>
+      <key>Metric</key>
+    </enum>
+    <enum name="Unit">
+      <key>None</key>
+      <key>Inch</key>
+      <key>Foot</key>
+      <key>Mile</key>
+      <key>Millimeter</key>
+      <key>Centimeter</key>
+      <key>Meter</key>
+      <key>Kilometer</key>
+      <key>Microinch</key>
+      <key>Mil</key>
+      <key>Yard</key>
+      <key>Angstrom</key>
+      <key>Nanometer</key>
+      <key>Micron</key>
+      <key>Decimeter</key>
+      <key>Decameter</key>
+      <key>Hectometer</key>
+      <key>Gigameter</key>
+      <key>Astro</key>
+      <key>Lightyear</key>
+      <key>Parsec</key>
+      <key>MaxUnit</key>
+    </enum>
+    <enum name="AngleFormat">
+      <key>DegreesDecimal</key>
+      <key>DegreesMinutesSeconds</key>
+      <key>Gradians</key>
+      <key>Radians</key>
+      <key>Surveyors</key>
+    </enum>
+    <enum name="LinearFormat">
+      <key>Scientific</key>
+      <key>Decimal</key>
+      <key>Engineering</key>
+      <key>ArchitecturalStacked</key>
+      <key>FractionalStacked</key>
+      <key>Architectural</key>
+      <key>Fractional</key>
+      <key>WindowsDesktop</key>
+    </enum>
+    <enum name="AngleUnit">
+      <key>Deg</key>
+      <key>Rad</key>
+      <key>Gra</key>
+    </enum>
+    <enum name="KnownVariable">
+      <key>ANGBASE</key>
+      <key>ANGDIR</key>
+      <key>ATTMODE</key>
+      <key>AUNITS</key>
+      <key>AUPREC</key>
+      <key>CECOLOR</key>
+      <key>CELTSCALE</key>
+      <key>CHAMFERA</key>
+      <key>CHAMFERB</key>
+      <key>CHAMFERC</key>
+      <key>CHAMFERD</key>
+      <key>CLAYER</key>
+      <key>CMLJUST</key>
+      <key>CMLSCALE</key>
+      <key>DIMADEC</key>
+      <key>DIMALT</key>
+      <key>DIMALTD</key>
+      <key>DIMALTF</key>
+      <key>DIMALTRND</key>
+      <key>DIMALTTD</key>
+      <key>DIMALTTZ</key>
+      <key>DIMALTU</key>
+      <key>DIMALTZ</key>
+      <key>DIMAPOST</key>
+      <key>DIMASZ</key>
+      <key>DIMATFIT</key>
+      <key>DIMAUNIT</key>
+      <key>DIMAZIN</key>
+      <key>DIMBLK</key>
+      <key>DIMBLK1</key>
+      <key>DIMBLK2</key>
+      <key>DIMCEN</key>
+      <key>DIMCLRD</key>
+      <key>DIMCLRE</key>
+      <key>DIMCLRT</key>
+      <key>DIMDEC</key>
+      <key>DIMDLE</key>
+      <key>DIMDLI</key>
+      <key>DIMDSEP</key>
+      <key>DIMEXE</key>
+      <key>DIMEXO</key>
+      <key>DIMFRAC</key>
+      <key>DIMGAP</key>
+      <key>DIMJUST</key>
+      <key>DIMLDRBLK</key>
+      <key>DIMLFAC</key>
+      <key>DIMLIM</key>
+      <key>DIMLUNIT</key>
+      <key>DIMLWD</key>
+      <key>DIMLWE</key>
+      <key>DIMPOST</key>
+      <key>DIMRND</key>
+      <key>DIMSAH</key>
+      <key>DIMSCALE</key>
+      <key>DIMSD1</key>
+      <key>DIMSD2</key>
+      <key>DIMSE1</key>
+      <key>DIMSE2</key>
+      <key>DIMSOXD</key>
+      <key>DIMTAD</key>
+      <key>DIMTDEC</key>
+      <key>DIMTFAC</key>
+      <key>DIMTIH</key>
+      <key>DIMTIX</key>
+      <key>DIMTM</key>
+      <key>DIMTOFL</key>
+      <key>DIMTOH</key>
+      <key>DIMTOL</key>
+      <key>DIMTOLJ</key>
+      <key>DIMTP</key>
+      <key>DIMTSZ</key>
+      <key>DIMTVP</key>
+      <key>DIMTXSTY</key>
+      <key>DIMTXT</key>
+      <key>DIMTZIN</key>
+      <key>DIMUPT</key>
+      <key>DIMZIN</key>
+      <key>DISPSILH</key>
+      <key>DWGCODEPAGE</key>
+      <key>DRAWORDERCTL</key>
+      <key>ELEVATION</key>
+      <key>EXTMAX</key>
+      <key>EXTMIN</key>
+      <key>FACETRES</key>
+      <key>FILLETRAD</key>
+      <key>FILLMODE</key>
+      <key>INSBASE</key>
+      <key>INSUNITS</key>
+      <key>ISOLINES</key>
+      <key>LIMCHECK</key>
+      <key>LIMMAX</key>
+      <key>LIMMIN</key>
+      <key>LTSCALE</key>
+      <key>LUNITS</key>
+      <key>LUPREC</key>
+      <key>MAXACTVP</key>
+      <key>MEASUREMENT</key>
+      <key>MIRRTEXT</key>
+      <key>ORTHOMODE</key>
+      <key>PDMODE</key>
+      <key>PDSIZE</key>
+      <key>PELEVATION</key>
+      <key>PELLIPSE</key>
+      <key>PEXTMAX</key>
+      <key>PEXTMIN</key>
+      <key>PINSBASE</key>
+      <key>PLIMCHECK</key>
+      <key>PLIMMAX</key>
+      <key>PLIMMIN</key>
+      <key>PLINEGEN</key>
+      <key>PLINEWID</key>
+      <key>PROXYGRAPHICS</key>
+      <key>PSLTSCALE</key>
+      <key>PUCSNAME</key>
+      <key>PUCSORG</key>
+      <key>PUCSXDIR</key>
+      <key>PUCSYDIR</key>
+      <key>QTEXTMODE</key>
+      <key>REGENMODE</key>
+      <key>SHADEDGE</key>
+      <key>SHADEDIF</key>
+      <key>SKETCHINC</key>
+      <key>SKPOLY</key>
+      <key>SPLFRAME</key>
+      <key>SPLINESEGS</key>
+      <key>SPLINETYPE</key>
+      <key>SURFTAB1</key>
+      <key>SURFTAB2</key>
+      <key>SURFTYPE</key>
+      <key>SURFU</key>
+      <key>SURFV</key>
+      <key>TEXTQLTY</key>
+      <key>TEXTSIZE</key>
+      <key>TEXTSTYLE</key>
+      <key>THICKNESS</key>
+      <key>TILEMODE</key>
+      <key>TRACEWID</key>
+      <key>TREEDEPTH</key>
+      <key>UCSNAME</key>
+      <key>UCSORG</key>
+      <key>UCSXDIR</key>
+      <key>UCSYDIR</key>
+      <key>UNITMODE</key>
+      <key>USERI1</key>
+      <key>USERI2</key>
+      <key>USERI3</key>
+      <key>USERI4</key>
+      <key>USERI5</key>
+      <key>USERR1</key>
+      <key>USERR2</key>
+      <key>USERR3</key>
+      <key>USERR4</key>
+      <key>USERR5</key>
+      <key>USRTIMER</key>
+      <key>VISRETAIN</key>
+      <key>WORLDVIEW</key>
+      <key>MaxKnownVariable</key>
+      <key>INVALID</key>
+    </enum>
+    <enum name="KnownVariableType">
+      <key>VarTypeBool</key>
+      <key>VarTypeInt</key>
+      <key>VarTypeDouble</key>
+      <key>VarTypeColor</key>
+      <key>VarTypeUnknown</key>
+    </enum>
+    <enum name="BooleanOperation">
+      <key>Intersection</key>
+      <key>Union</key>
+      <key>Difference</key>
+      <key>Xor</key>
+    </enum>
+    <enum name="FillType">
+      <key>EvenOdd</key>
+      <key>NonZero</key>
+      <key>Positive</key>
+      <key>Negative</key>
+    </enum>
+    <enum name="Orientation">
+      <key>UnknownOrientation</key>
+      <key>Any</key>
+      <key>CW</key>
+      <key>CCW</key>
+    </enum>
+    <enum name="JoinType">
+      <key>JoinBevel</key>
+      <key>JoinRound</key>
+      <key>JoinMiter</key>
+    </enum>
+    <enum name="EndType">
+      <key>EndClosedPolygon</key>
+      <key>EndClosedLine</key>
+      <key>EndOpenButt</key>
+      <key>EndOpenSquare</key>
+      <key>EndOpenRound</key>
+      <key>EndOpenSingle</key>
+    </enum>
+    <enum name="Easing">
+      <key>Linear</key>
+      <key>InQuad</key>
+      <key>OutQuad</key>
+      <key>InOutQuad</key>
+      <key>OutInQuad</key>
+      <key>InCubic</key>
+      <key>OutCubic</key>
+      <key>InOutCubic</key>
+      <key>OutInCubic</key>
+      <key>InQuart</key>
+      <key>OutQuart</key>
+      <key>InOutQuart</key>
+      <key>OutInQuart</key>
+      <key>InQuint</key>
+      <key>OutQuint</key>
+      <key>InOutQuint</key>
+      <key>OutInQuint</key>
+      <key>InSine</key>
+      <key>OutSine</key>
+      <key>InOutSine</key>
+      <key>OutInSine</key>
+      <key>InExpo</key>
+      <key>OutExpo</key>
+      <key>InOutExpo</key>
+      <key>OutInExpo</key>
+      <key>InCirc</key>
+      <key>OutCirc</key>
+      <key>InOutCirc</key>
+      <key>OutInCirc</key>
+      <key>InElastic</key>
+      <key>OutElastic</key>
+      <key>InOutElastic</key>
+      <key>OutInElastic</key>
+      <key>InBack</key>
+      <key>OutBack</key>
+      <key>InOutBack</key>
+      <key>OutInBack</key>
+      <key>InBounce</key>
+      <key>OutBounce</key>
+      <key>InOutBounce</key>
+      <key>OutInBounce</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="compare" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QVariant" modifier="&amp;" name="v1" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="v2" />
+          <parameter const="false" type="bool" modifier="" name="noTolerance" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QPair&lt;QVariant,RPropertyAttributes&gt;" modifier="&amp;" name="p1" />
+          <parameter const="true" type="QPair&lt;QVariant,RPropertyAttributes&gt;" modifier="&amp;" name="p2" />
+          <parameter const="false" type="bool" modifier="" name="noTolerance" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCpuCores" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getIdealThreadCount" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBuildCpuArchitecture" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHostId" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSystemId" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getWindowManagerId" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="showInFileManager" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="filePaths" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDirectoryList" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="subDirectory" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFileList" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="subDirectory" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fileExtension" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFontList" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPatternList" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="metric" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypeList" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="metric" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="mapContainsCaseInsensitive" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QMap&lt;QString,T&gt;" modifier="&amp;" name="map" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mapValueCaseInsensitive" static="true">
+      <variant return-type="T" access="public">
+        <parameters>
+          <parameter const="true" type="QMap&lt;QString,T&gt;" modifier="&amp;" name="map" />
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="sortAlphanumerical" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QStringList" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="compareChunkify" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="compareAlphanumerical" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s1" />
+          <parameter const="true" type="QString" modifier="&amp;" name="s2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lessThanAlphanumerical" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s1" />
+          <parameter const="true" type="QString" modifier="&amp;" name="s2" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="unique" static="true">
+      <variant return-type="QList&lt;T&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;T&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toSet" static="true">
+      <variant return-type="QSet&lt;T&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;T&gt;" modifier="&amp;" name="list" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toList" static="true">
+      <variant return-type="QList&lt;T&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QSet&lt;T&gt;" modifier="&amp;" name="set" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="getFontFamily" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextCharFormat" modifier="&amp;" name="format" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPageSizeId" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPageSize" static="true">
+      <variant return-type="QSizeF" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="exactMatch" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="rx" />
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="rx" />
+          <parameter const="false" type="QRegularExpressionMatch" modifier="&amp;" name="match" />
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="rxStr" />
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexIn" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="rx" />
+          <parameter const="false" type="QRegularExpressionMatch" modifier="&amp;" name="match" />
+          <parameter const="true" type="QString" modifier="&amp;" name="string" />
+          <parameter const="false" type="int" modifier="" name="from" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="captured" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="rx" />
+          <parameter const="true" type="QRegularExpressionMatch" modifier="&amp;" name="match" />
+          <parameter const="false" type="int" modifier="" name="nth" default="0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="matchedLength" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QRegularExpression" modifier="&amp;" name="rx" />
+          <parameter const="true" type="QRegularExpressionMatch" modifier="&amp;" name="match" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createRegEpCI" static="true">
+      <variant return-type="QRegularExpression" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="str" />
+          <parameter const="false" type="bool" modifier="" name="regExp2" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setUtf8Codec" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QTextStream" modifier="&amp;" name="ts" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="escape" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="plain" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScreenCount" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAvailableGeometry" static="true">
+      <variant return-type="QSize" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="screen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="convert" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="str" />
+          <parameter const="true" type="QString" modifier="&amp;" name="codecName" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

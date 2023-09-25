@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPluginLoader.h">
+  <class name="RPluginLoader">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="getPluginSuffix" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPluginFiles" static="true">
+      <variant return-type="QStringList" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="loadPlugins" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="init" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unloadPlugins" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="loadPlugin" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="plugin" />
+          <parameter const="false" type="bool" modifier="" name="init" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" default="QString()" />
+          <parameter const="true" type="QString" modifier="&amp;" name="errorString" default="QString()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unloadPlugin" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="false" type="bool" modifier="" name="remove" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QObject" modifier="*" name="plugin" />
+          <parameter const="false" type="bool" modifier="" name="remove" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postInitPlugins" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RPluginInterface::InitStatus" modifier="" name="status" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postInitPlugin" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="plugin" />
+          <parameter const="false" type="RPluginInterface::InitStatus" modifier="" name="status" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <preproc plain="#if QT_VERSION&lt;0x060000" />
+    <function name="initScriptExtensions" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QScriptEngine" modifier="&amp;" name="engine" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="plugin" />
+          <parameter const="false" type="QScriptEngine" modifier="&amp;" name="engine" />
+        </parameters>
+      </variant>
+    </function>
+    <preproc plain="#endif" />
+    -->
+    <function name="initTranslations" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="plugin" />
+        </parameters>
+      </variant>
+      -->
+    </function>
+    <function name="countPlugins" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPluginInfo" static="true">
+      <variant return-type="RPluginInfo" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+      <variant return-type="RPluginInfo" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPluginsPath" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasPlugin" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="checkPluginLicenses" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="checkPluginLicense" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="plugin" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLayerListener.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RLayerListener" ownership="cpp">
+    <function name="updateLayers">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+          <parameter const="false" type="QList&lt;RLayer::Id&gt;" modifier="&amp;" name="layerIds" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCurrentLayer">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+          <parameter const="false" type="RLayer::Id" modifier="" name="previousLayerId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearLayers">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

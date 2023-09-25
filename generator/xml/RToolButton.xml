@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RToolButton.h">
+  <class name="RToolButton">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QToolButton" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+</unit>

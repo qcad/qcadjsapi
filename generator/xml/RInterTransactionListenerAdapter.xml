@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RInterTransactionListenerAdapter.h">
+  <class name="RInterTransactionListenerAdapter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RInterTransactionListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="updateInterTransactionListener">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="doc" default="NULL" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="transactionInProgress">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="doc" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

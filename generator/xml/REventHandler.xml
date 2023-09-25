@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="REventHandler.h">
+  <class_decl name="QScrollBar" />
+  <class_decl name="QUrl" />
+  <class_decl name="QWidget" />
+  <class_decl name="QPainter" />
+  <class_decl name="QMimeData" />
+  <class_decl name="QDragEnterEvent" />
+  <class_decl name="RDocumentInterface" />
+  <class_decl name="RGraphicsView" />
+  <class_decl name="RRulerQt" />
+  <class_decl name="RSnap" />
+  <class_decl name="RVector" />
+  <class_decl name="RTextLabel" />
+  <class_decl name="RSnapRestriction" />
+  <class name="REventHandler" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" default="NULL" />
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isUrl" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="urlString" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getUrlsFromMimeData" static="true">
+      <variant return-type="QList&lt;QUrl&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="QMimeData" modifier="*" name="mimeData" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawInfoLabel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="RTextLabel" modifier="&amp;" name="textLabel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawSnapLabel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="posRestriction" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragEnter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QDragEnterEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateTextLabel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="true" type="RTextLabel" modifier="&amp;" name="textLabel" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateSnapInfo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="false" type="RSnap" modifier="*" name="snap" />
+          <parameter const="false" type="RSnapRestriction" modifier="*" name="restriction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="viewportChanged">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="horizontalScrolled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="verticalScrolled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

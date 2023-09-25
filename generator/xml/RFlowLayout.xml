@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RFlowLayout.h">
+  <class name="RFlowLayout" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QLayoutItem" />
+      <super name="QLayout" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" />
+          <parameter const="false" type="int" modifier="" name="margin" default="RDEFAULT_MIN1" />
+          <parameter const="false" type="int" modifier="" name="hSpacing" default="RDEFAULT_MIN1" />
+          <parameter const="false" type="int" modifier="" name="vSpacing" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="margin" default="RDEFAULT_MIN1" />
+          <parameter const="false" type="int" modifier="" name="hSpacing" default="RDEFAULT_MIN1" />
+          <parameter const="false" type="int" modifier="" name="vSpacing" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setIconSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setListViewMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addItem">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QLayoutItem" modifier="*" name="item" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="horizontalSpacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="verticalSpacing">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="expandingDirections">
+      <variant return-type="Qt::Orientations" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasHeightForWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="heightForWidth">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="count">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="itemAt">
+      <variant return-type="QLayoutItem*" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="minimumSize">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGeometry">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRect" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="sizeHint">
+      <variant return-type="QSize" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="takeAt">
+      <variant return-type="QLayoutItem*" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="insertAction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="indexOf">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="widget" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="invalidate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="doLayout" />
+    <function name="smartSpacing" />
+  </class>
+</unit>

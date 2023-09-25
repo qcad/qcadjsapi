@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTransaction.h">
+  <class_decl name="RStorage" />
+  <class_decl name="RExporter" />
+  <class name="RTransaction">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RStorage" modifier="&amp;" name="storage" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="false" type="RStorage" modifier="&amp;" name="storage" />
+          <parameter const="false" type="int" modifier="" name="transactionId" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QList&lt;RObject::Id&gt;" modifier="&amp;" name="affectedObjectIds" />
+          <parameter const="true" type="QMap&lt;RObject::Id,QList&lt;RPropertyChange&gt;&gt;" modifier="&amp;"
+          name="propertyChanges" />
+        </parameters>
+      </variant>
+      -->
+      <variant>
+        <parameters>
+          <parameter const="false" type="RStorage" modifier="&amp;" name="storage" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="false" type="bool" modifier="" name="undoable" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <enum name="Type">
+      <key>Generic</key>
+      <key>CurrentLayerChange</key>
+      <key>CurrentLayerSelectionChange</key>
+      <key>LayerLockStatusChange</key>
+      <key>LayerVisibilityStatusChange</key>
+      <key>SaveWorkingSet</key>
+      <key>ChangeDocumentSetting</key>
+      <key>Undo</key>
+      <key>Redo</key>
+    </enum>
+    <function name="setRecordAffectedObjects">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAllowAll">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setAllowInvisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setSpatialIndexDisabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setExistingBlockDetectionDisabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setExistingLayerDetectionDisabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setExistingLinetypeDetectionDisabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBlockRecursionDetectionDisabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setKeepHandles">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setKeepChildren">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isUndoing">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRedoing">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUndoable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isFailed">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="redo">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="undo">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="end">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateAffectedBlockReferences">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setId">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getId">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGroup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="group" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGroup">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="overwriteBlock">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RBlock&gt;" modifier="" name="block" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addObject">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RObject&gt;" modifier="" name="obj" />
+          <parameter const="false" type="bool" modifier="" name="useCurrentAttributes" default="true" />
+          <parameter const="false" type="bool" modifier="" name="forceNew" default="false" />
+          <parameter const="true" type="QSet&lt;RPropertyTypeId&gt;" modifier="&amp;" name="modifiedPropertyTypeIds"
+          default="RDEFAULT_QSET_RPROPERTYTYPEID" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addAffectedObject">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="objectId" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RObject&gt;" modifier="" name="object" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addAffectedObjects">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSet&lt;RObject::Id&gt;" modifier="&amp;" name="objectIds" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="deleteObject">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="objectId" />
+          <parameter const="false" type="bool" modifier="" name="force" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RObject&gt;" modifier="" name="object" />
+          <parameter const="false" type="bool" modifier="" name="force" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAffectedObjects">
+      <variant return-type="QList&lt;RObject::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStatusChanges">
+      <variant return-type="QSet&lt;RObject::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasStatusChange">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPropertyChanges">
+      <!--
+      <variant return-type="QMap&lt;RObject::Id,QList&lt;RPropertyChange&gt;&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+      <variant return-type="QList&lt;RPropertyChange&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasOnlyChanges">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="fail">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endCycle">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPreview">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTypes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RTransaction::Types" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTypes">
+      <variant return-type="RTransaction::Types" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RTransaction::Type" modifier="" name="type" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isType">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RTransaction::Type" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPropertyChange" />
+    <function name="commit" />
+    <function name="rollback" />
+  </class>
+</unit>

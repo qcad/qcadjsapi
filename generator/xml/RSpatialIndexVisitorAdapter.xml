@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSpatialIndexVisitorAdapter.h">
+  <class name="RSpatialIndexVisitorAdapter" ownership="cpp">
+    <super_list>
+      <super name="RSpatialIndexVisitor" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="visitData">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+          <parameter const="false" type="int" modifier="" name="pos" />
+          <parameter const="false" type="double" modifier="" name="x1" />
+          <parameter const="false" type="double" modifier="" name="y1" />
+          <parameter const="false" type="double" modifier="" name="z1" />
+          <parameter const="false" type="double" modifier="" name="x2" />
+          <parameter const="false" type="double" modifier="" name="y2" />
+          <parameter const="false" type="double" modifier="" name="z2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="visitNode">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x1" />
+          <parameter const="false" type="double" modifier="" name="y1" />
+          <parameter const="false" type="double" modifier="" name="z1" />
+          <parameter const="false" type="double" modifier="" name="x2" />
+          <parameter const="false" type="double" modifier="" name="y2" />
+          <parameter const="false" type="double" modifier="" name="z2" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

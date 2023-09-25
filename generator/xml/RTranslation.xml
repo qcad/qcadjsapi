@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTranslation.h">
+  <class name="RTranslation">
+    <super_list>
+      <super name="RTransformation" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+          <parameter const="false" type="double" modifier="" name="rotationAngle" default="0.0" />
+          <parameter const="false" type="double" modifier="" name="scaleFactor" default="1.0" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+</unit>

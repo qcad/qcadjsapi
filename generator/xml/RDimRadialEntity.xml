@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDimRadialEntity.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="RDimRadialEntity" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+      <super name="REntity" />
+      <super name="RDimensionEntity" />
+    </super_list>
+    <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyProtected" />
+    <property static="true" type="RPropertyTypeId" name="PropertyWorkingSet" />
+    <property static="true" type="RPropertyTypeId" name="PropertyType" />
+    <property static="true" type="RPropertyTypeId" name="PropertyBlock" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLayer" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetype" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetypeScale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLineweight" />
+    <property static="true" type="RPropertyTypeId" name="PropertyColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDisplayedColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDrawOrder" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyText" />
+    <property static="true" type="RPropertyTypeId" name="PropertyUpperTolerance" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLowerTolerance" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMeasuredValue" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimscale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimlfac" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtxt" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimgap" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimasz" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimexe" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimexo" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtad" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtih" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimtsz" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimlunit" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimdec" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimdsep" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimzin" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArchTick" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimclrt" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimBlockName" />
+    <property static="true" type="RPropertyTypeId" name="PropertyAutoTextPos" />
+    <property static="true" type="RPropertyTypeId" name="PropertyFontName" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArrow1Flipped" />
+    <property static="true" type="RPropertyTypeId" name="PropertyArrow2Flipped" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtLineFix" />
+    <property static="true" type="RPropertyTypeId" name="PropertyExtLineFixLength" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterPointX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterPointY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyCenterPointZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyChordPointX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyChordPointY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyChordPointZ" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="true" type="RDimRadialData" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStaticPropertyTypeIds" static="true">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RDimRadialEntity*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getData">
+      <variant return-type="RDimRadialData&amp;" virtual="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RDimRadialData&amp;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDimRadialData" modifier="&amp;" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setChordPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getChordPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>

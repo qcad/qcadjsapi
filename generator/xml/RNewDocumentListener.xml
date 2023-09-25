@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RNewDocumentListener.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RTransaction" />
+  <class name="RNewDocumentListener" ownership="cpp">
+    <function name="updateNewDocumentListener">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" />
+          <parameter const="false" type="bool" modifier="" name="beforeLoad" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

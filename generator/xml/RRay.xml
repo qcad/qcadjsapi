@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RRay.h">
+  <class_decl name="RBox" />
+  <class_decl name="RPolyline" />
+  <class name="RRay" sharedpointer="true">
+    <super_list>
+      <super name="RShape" />
+      <super name="RXLine" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="basePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="directionVector" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="basePoint" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="false" type="double" modifier="" name="distance" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getShapeType">
+      <variant return-type="RShape::Type" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RRay*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVectorProperties">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="trimEndPoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" default="RVector::invalid" />
+          <parameter const="false" type="bool" modifier="" name="extend" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPointsWithDistanceToEnd">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+          <parameter const="false" type="int" modifier="" name="from" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="reverse">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getClippedLine">
+      <variant return-type="RLine" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVectorTo">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="stretch">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="area" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="splitAt">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="points" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPropertyTypeId.h">
+  <class name="RPropertyTypeId">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="customPropertyTitle" />
+          <parameter const="true" type="QString" modifier="&amp;" name="customPropertyName" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="customPropertyName" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RPropertyTypeId" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" default="RObject::INVALID_ID" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getId">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setId">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCustomPropertyTitle">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCustomPropertyTitle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCustomPropertyName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCustomPropertyName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCustom">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="generateId">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::EntityType" modifier="" name="type" />
+          <parameter const="true" type="QString" modifier="&amp;" name="groupTitle" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="false" type="bool" modifier="" name="forceNew" default="false" />
+          <parameter const="false" type="RPropertyAttributes::Options" modifier="" name="options"
+          default="RPropertyAttributes::NoOptions" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::EntityType" modifier="" name="type" />
+          <parameter const="true" type="RPropertyTypeId" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPropertyTypeIds" static="true">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="RS::EntityType" modifier="" name="type" />
+          <parameter const="false" type="RPropertyAttributes::Option" modifier="" name=""
+          default="RPropertyAttributes::NoOptions" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasPropertyType" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="RS::EntityType" modifier="" name="type" />
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPropertyGroupTitle">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPropertyTitle">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPropertyTypeId" static="true">
+      <variant return-type="RPropertyTypeId" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="groupTitle" />
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

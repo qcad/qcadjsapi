@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RModifyObjectsOperation.h">
+  <class name="RModifyObjectsOperation" ownership="cpp">
+    <super_list>
+      <super name="ROperation" />
+      <super name="RAddObjectsOperation" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="undoable" default="true" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QList&lt;QSharedPointer&lt;RObject&gt;&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="bool" modifier="" name="undoable" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="transformSelection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RTransformation" modifier="*" name="transformation" />
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="di" />
+          <parameter const="false" type="int" modifier="" name="copies" />
+          <parameter const="false" type="bool" modifier="" name="preview" />
+          <parameter const="false" type="bool" modifier="" name="selectResult" />
+          <parameter const="false" type="bool" modifier="" name="useCurrentAttributes" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

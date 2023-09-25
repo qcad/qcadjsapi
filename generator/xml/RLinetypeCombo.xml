@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLinetypeCombo.h">
+  <class name="RLinetypeCombo" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QComboBox" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="doc" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="reinit">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLinetypePattern">
+      <variant return-type="RLinetypePattern" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLinetypePatternAt">
+      <variant return-type="RLinetypePattern" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLinetypePattern">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RLinetypePattern" modifier="&amp;" name="linetypePattern" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOnlyFixed">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOnlyFixed">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="onlyFixed" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="valueChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="RLinetypePattern" modifier="&amp;" name="linetypePattern" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="linetypePatternChanged">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

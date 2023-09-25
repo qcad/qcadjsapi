@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMessageHandler.h">
+  <class name="RMessageHandler" ownership="cpp">
+    <function name="handleUserMessage">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="escape" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleUserInfo">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="escape" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleUserWarning">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="messageBox" default="false" />
+          <parameter const="false" type="bool" modifier="" name="escape" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="handleUserCommand">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="message" />
+          <parameter const="false" type="bool" modifier="" name="escape" default="true" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

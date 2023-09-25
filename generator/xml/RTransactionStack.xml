@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTransactionStack.h">
+  <class name="RTransactionStack" ownership="cpp">
+    <!--
+    <super_list>
+      <super name="RNonCopyable" />
+    </super_list>
+    -->
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RStorage" modifier="&amp;" name="storage" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="reset">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="undo">
+      <variant return-type="QList&lt;RTransaction&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="redo">
+      <variant return-type="QList&lt;RTransaction&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isUndoAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isRedoAvailable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getUndoableTransactionText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRedoableTransactionText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

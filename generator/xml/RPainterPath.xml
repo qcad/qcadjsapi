@@ -1,0 +1,659 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPainterPath.h">
+  <class_decl name="RArc" />
+  <class_decl name="RLine" />
+  <class_decl name="RShape" />
+  <class_decl name="RSpline" />
+  <class name="RPainterPath">
+    <super_list>
+      <super name="QPainterPath" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCurrentPosition">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAtPosition">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveToOrNop">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="lineTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="x" />
+          <parameter const="false" type="qreal" modifier="" name="y" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="quadTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="cp" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="ctrlPtx" />
+          <parameter const="false" type="qreal" modifier="" name="ctrlPty" />
+          <parameter const="false" type="qreal" modifier="" name="endPtx" />
+          <parameter const="false" type="qreal" modifier="" name="endPty" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="cubicTo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="cp1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="cp2" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="ctrlPt1x" />
+          <parameter const="false" type="qreal" modifier="" name="ctrlPt1y" />
+          <parameter const="false" type="qreal" modifier="" name="ctrlPt2x" />
+          <parameter const="false" type="qreal" modifier="" name="ctrlPt2y" />
+          <parameter const="false" type="qreal" modifier="" name="endPtx" />
+          <parameter const="false" type="qreal" modifier="" name="endPty" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="closeSubpath">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="containsPoint">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPolyline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="pl" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="appendPath">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addLine">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addArc">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addSpline">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addRect">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x1" />
+          <parameter const="false" type="double" modifier="" name="y1" />
+          <parameter const="false" type="double" modifier="" name="x2" />
+          <parameter const="false" type="double" modifier="" name="y2" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addBox">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStartPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEndPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setValid">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSane">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getZLevel">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setZLevel">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="zl" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPen">
+      <variant return-type="QPen" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPen">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPen" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBrush">
+      <variant return-type="QBrush" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBrush">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RPainterPath::Mode" modifier="" name="mode" />
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPainterPath::Mode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setHighlighted">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isHighlighted">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSelected">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSelected">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFixedPenColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFixedPenColor">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFixedBrushColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFixedBrushColor">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAutoRegen">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAutoRegen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAlwaysRegen">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAlwaysRegen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setInheritPen">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getInheritPen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPixelUnit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPixelUnit">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNoClipping">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNoClipping">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNoColorMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNoColorMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSimplePointDisplay">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSimplePointDisplay">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPolylineGen">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPolylineGen">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNoPattern">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNoPattern">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScreenBasedLinetype">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScreenBasedLinetype">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPixelWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPixelWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFeatureSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFeatureSize">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPixelSizeHint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPixelSizeHint">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDistanceTo">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasPoints">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPoints">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPoints">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="transform">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="fx" />
+          <parameter const="false" type="double" modifier="" name="fy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getElementCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getXAt">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getYAt">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTypeAt">
+      <variant return-type="QPainterPath::ElementType" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEmpty">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="addShape">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addOriginalShape">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasOriginalShapes">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="countOriginalShapes">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getOriginalShape">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="copy">
+      <variant return-type="RPainterPath" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="rotateList" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RPainterPath&gt;" modifier="&amp;" name="pps" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translateList" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RPainterPath&gt;" modifier="&amp;" name="pps" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaleList" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RPainterPath&gt;" modifier="&amp;" name="pps" />
+          <parameter const="false" type="double" modifier="" name="fx" />
+          <parameter const="false" type="double" modifier="" name="fy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMinList" static="true">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RPainterPath&gt;" modifier="&amp;" name="pps" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMaxList" static="true">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RPainterPath&gt;" modifier="&amp;" name="pps" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

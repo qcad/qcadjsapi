@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RWheelEvent.h">
+  <class_decl name="RGraphicsView" />
+  <class_decl name="RGraphicsScene" />
+  <class name="RWheelEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QInputEvent" />
+      <super name="QPointerEvent" />
+      <super name="QSinglePointEvent" />
+      <super name="QWheelEvent" />
+      <super name="RInputEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="false" type="int" modifier="" name="delta" />
+          <parameter const="false" type="Qt::MouseButtons" modifier="" name="buttons" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+          <parameter const="false" type="Qt::Orientation" modifier="" name="orient" />
+          <parameter const="false" type="RGraphicsScene" modifier="&amp;" name="s" />
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <!--
+      <variant>
+        <parameters>
+          <parameter const="true" type="QWheelEvent" modifier="&amp;" name="wheelEvent" />
+          <parameter const="false" type="RGraphicsScene" modifier="&amp;" name="s" />
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="v" />
+          <parameter const="false" type="qreal" modifier="" name="devicePixelRatio" default="1.0" />
+        </parameters>
+      </variant>
+      -->
+    </constructor>
+  </class>
+</unit>

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RFileExporterAdapter.h">
+  <class_decl name="RArc" />
+  <class_decl name="RCircle" />
+  <class_decl name="RDocument" />
+  <class_decl name="REllipse" />
+  <class_decl name="RImageData" />
+  <class_decl name="RLine" />
+  <class_decl name="RLinetype" />
+  <class_decl name="RLinetypePattern" />
+  <class_decl name="RMessageHandler" />
+  <class_decl name="RPoint" />
+  <class_decl name="RPolyline" />
+  <class_decl name="RProgressHandler" />
+  <class_decl name="RRay" />
+  <class_decl name="RSpline" />
+  <class_decl name="RTriangle" />
+  <class_decl name="RVector" />
+  <class_decl name="RXLine" />
+  <class name="RFileExporterAdapter" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="RExporter" />
+      <super name="RFileExporter" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="RMessageHandler" modifier="*" name="messageHandler" default="NULL" />
+          <parameter const="false" type="RProgressHandler" modifier="*" name="progressHandler" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getCorrectedFileName">
+      <variant return-type="QString" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="nameFilter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportFile">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="nameFilter" />
+          <parameter const="false" type="bool" modifier="" name="setFileName" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportPoint">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPoint" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportArcSegment">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="" />
+          <parameter const="false" type="bool" modifier="" name="" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportLineSegment">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="" />
+          <parameter const="false" type="double" modifier="" name="" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportTriangle">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RTriangle" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportXLine">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RXLine" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLineTypePatternScale">
+      <variant return-type="double" virtual="true" const="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLinetypePattern" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

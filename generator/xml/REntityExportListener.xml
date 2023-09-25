@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="REntityExportListener.h">
+  <class_decl name="RExporter" />
+  <class name="REntityExportListener" ownership="cpp">
+    <function name="registerCustomProperty">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="title" />
+          <parameter const="true" type="QString" modifier="&amp;" name="regExp" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="checkCustomProperty">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportEntity">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RExporter" modifier="*" name="exporter" />
+          <parameter const="false" type="REntity" modifier="*" name="entity" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

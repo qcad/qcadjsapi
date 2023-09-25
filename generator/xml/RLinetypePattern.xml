@@ -1,0 +1,388 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLinetypePattern.h">
+  <class name="RLinetypePattern">
+    <class_decl name="RLinetype" />
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="metric" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="description" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="metric" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="description" />
+          <parameter const="true" type="QList&lt;double&gt;" modifier="&amp;" name="dashes" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="set">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;double&gt;" modifier="&amp;" name="dashes" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="loadAllFrom" static="true">
+      <variant return-type="QList&lt;QPair&lt;QString,RLinetypePattern*&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="metric" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getNumDashes">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDescription">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDescription">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getScreenScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScreenScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNoOffset">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNoOffset">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLabel">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isMetric">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMetric">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setPatternString">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="patternString" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPatternString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPattern">
+      <variant return-type="QList&lt;double&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPatternLength">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDashLengthAt">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDashOffsetAt">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;double&gt;" modifier="&amp;" name="dashes" />
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasShapeNumberAt">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeNumberAt">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setShapeNumberAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="false" type="int" modifier="" name="num" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasShapeScaleAt">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeScaleAt">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setShapeScaleAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasShapeRotationAt">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeRotationAt">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setShapeRotationAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="false" type="double" modifier="" name="r" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasShapeOffsetAt">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeOffsetAt">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setShapeOffsetAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasShapeTextAt">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeTextAt">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setShapeTextAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasShapeTextStyleAt">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeTextStyleAt">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setShapeTextStyleAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeIndices">
+      <variant return-type="QList&lt;int&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasShapes">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasShapeAt">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeAt">
+      <variant return-type="QList&lt;RPainterPath&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateShapes">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLargestGap">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasDashAt">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDelta">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPatternOffset">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="length" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSymmetries">
+      <variant return-type="QList&lt;double&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getPatternOffsetAt">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="length" />
+          <parameter const="false" type="double" modifier="" name="symmetryPos" />
+          <parameter const="false" type="double" modifier="*" name="gap" default="NULL" />
+          <parameter const="false" type="bool" modifier="" name="end" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="scale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="factor" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getScreenBasedLinetype">
+      <variant return-type="QVector&lt;qreal&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="isLoaded">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="load">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="initNameMap" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

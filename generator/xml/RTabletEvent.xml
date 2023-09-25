@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTabletEvent.h">
+  <class_decl name="RGraphicsScene" />
+  <class_decl name="RGraphicsView" />
+  <class name="RTabletEvent" ownership="cpp">
+    <!--
+    <super_list>
+      <super name="QTabletEvent" />
+    </super_list>
+    -->
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QTabletEvent" modifier="&amp;" name="tabletEvent" />
+          <parameter const="false" type="RGraphicsScene" modifier="&amp;" name="s" />
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <function name="getModelPosition">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getUcsPosition">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getScreenPosition">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getGraphicsView">
+      <variant return-type="RGraphicsView&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getGraphicsScene">
+      <variant return-type="RGraphicsScene&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

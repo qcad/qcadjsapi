@@ -3206,6 +3206,80 @@ double a2_cpp;
               }
             
     // Class: RVector
+    // Function: isInside
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::isInside
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RBox(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: b (RBox)
+  
+RBox a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RBox(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                bool res = 
+                    
+                w->isInside(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isInside";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
     // Function: equalsFuzzy
     // Source: 
     // Static: false
@@ -4904,6 +4978,90 @@ RVector a2_cpp;
               }
             
     // Class: RVector
+    // Function: rotate3D
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::rotate3D
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper::is_double(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: axis (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: rotation (double)
+  
+double a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_double(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->rotate3D(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for rotate3D";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
     // Function: scale
     // Source: 
     // Static: false
@@ -5149,6 +5307,213 @@ RVector a2_cpp;
               }
             
     // Class: RVector
+    // Function: mirror
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::mirror
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: axis1 (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: axis2 (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->mirror(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: axis (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->mirror(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for mirror";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
+    // Function: getMirrored
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::getMirrored
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: axis (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->getMirrored(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getMirrored";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
     // Function: flipHorizontal
     // Source: 
     // Static: false
@@ -5259,6 +5624,450 @@ RVector a2_cpp;
               }
             
     // Class: RVector
+    // Function: stretch
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::stretch
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RPolyline(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: area (RPolyline)
+  
+RPolyline a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RPolyline(handler, a1);
+        
+  // convert js parameter to cpp: offset (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->stretch(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for stretch";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
+    // Function: isoProject
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::isoProject
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RS_IsoProjectionType(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: type (RS::IsoProjectionType)
+  
+RS::IsoProjectionType a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RS_IsoProjectionType(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->isoProject(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isoProject";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
+    // Function: axonometricProjection
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::axonometricProjection
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RS_IsoProjectionType(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: type (RS::IsoProjectionType)
+  
+RS::IsoProjectionType a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RS_IsoProjectionType(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->axonometricProjection(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for axonometricProjection";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
+    // Function: obliqueProjection
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::obliqueProjection
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RS_IsoProjectionType(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: type (RS::IsoProjectionType)
+  
+RS::IsoProjectionType a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RS_IsoProjectionType(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->obliqueProjection(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for obliqueProjection";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
+    // Function: transform
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::transform
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RMatrix(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: m (RMatrix)
+  
+RMatrix a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RMatrix(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->transform(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for transform";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
+    // Function: transform2DM
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::transform2DM
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RMatrix(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: m (RMatrix)
+  
+RMatrix a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RMatrix(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->transform2DM(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for transform2DM";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
     // Function: transform2D
     // Source: 
     // Static: false
@@ -5325,6 +6134,154 @@ QTransform a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for transform2D";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
+    // Function: getTransformed
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::getTransformed
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RMatrix(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: m (RMatrix)
+  
+RMatrix a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RMatrix(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->getTransformed(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getTransformed";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RVector
+    // Function: getTransformed2DM
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RVector_Wrapper::getTransformed2DM
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RMatrix(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: m (RMatrix)
+  
+RMatrix a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RMatrix(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RVector* w = getWrapped();
+                RVector res = 
+                    
+                w->getTransformed2DM(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getTransformed2DM";
                   handler.trace();
                   return QJSValue();
                 

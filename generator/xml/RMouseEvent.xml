@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMouseEvent.h">
+  <class_decl name="RGraphicsScene" />
+  <class_decl name="RGraphicsView" />
+  <class name="RMouseEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+      <super name="QInputEvent" />
+      <super name="QPointerEvent" />
+      <super name="QSinglePointEvent" />
+      <super name="QMouseEvent" />
+      <super name="RInputEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QEvent::Type" modifier="" name="type" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="false" type="Qt::MouseButton" modifier="" name="button" />
+          <parameter const="false" type="Qt::MouseButtons" modifier="" name="buttons" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+          <parameter const="false" type="RGraphicsScene" modifier="&amp;" name="s" />
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QMouseEvent" modifier="&amp;" name="mouseEvent" />
+          <parameter const="false" type="RGraphicsScene" modifier="&amp;" name="s" />
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="v" />
+          <parameter const="false" type="qreal" modifier="" name="devicePixelRatio" default="1.0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="hasMouseMoved" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resetOriginalMousePos" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOriginalMousePos" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QPoint" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

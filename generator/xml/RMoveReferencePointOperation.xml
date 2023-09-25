@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RMoveReferencePointOperation.h">
+  <class_decl name="REntity" />
+  <class name="RMoveReferencePointOperation" ownership="cpp">
+    <super_list>
+      <super name="ROperation" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="apply">
+      <variant return-type="RTransaction" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setGraphicsScene">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsScene" modifier="*" name="s" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

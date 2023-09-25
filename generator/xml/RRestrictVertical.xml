@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RRestrictVertical.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RRestrictVertical" ownership="cpp">
+    <super_list>
+      <super name="RSnapRestriction" />
+      <super name="RRestrictOrthogonal" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </constructor>
+  </class>
+</unit>

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDimOrdinateEntity.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RExporter" />
+  <class name="RDimOrdinateEntity" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+      <super name="REntity" />
+      <super name="RDimensionEntity" />
+    </super_list>
+    <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
+    <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
+    <property static="true" type="RPropertyTypeId" name="PropertyProtected" />
+    <property static="true" type="RPropertyTypeId" name="PropertyWorkingSet" />
+    <property static="true" type="RPropertyTypeId" name="PropertyType" />
+    <property static="true" type="RPropertyTypeId" name="PropertyBlock" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLayer" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetype" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLinetypeScale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLineweight" />
+    <property static="true" type="RPropertyTypeId" name="PropertyColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDisplayedColor" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDrawOrder" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMiddleOfTextZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyText" />
+    <property static="true" type="RPropertyTypeId" name="PropertyUpperTolerance" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLowerTolerance" />
+    <property static="true" type="RPropertyTypeId" name="PropertyMeasuredValue" />
+    <property static="true" type="RPropertyTypeId" name="PropertyFontName" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimscale" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimlfac" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDimBlockName" />
+    <property static="true" type="RPropertyTypeId" name="PropertyOriginX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyOriginY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyOriginZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyOrdinate" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLeaderEndPointX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLeaderEndPointY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyLeaderEndPointZ" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDefiningPointX" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDefiningPointY" />
+    <property static="true" type="RPropertyTypeId" name="PropertyDefiningPointZ" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="true" type="RDimOrdinateData" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStaticPropertyTypeIds" static="true">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RDimOrdinateEntity*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getData">
+      <variant return-type="RDimOrdinateData&amp;" virtual="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const RDimOrdinateData&amp;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="setData">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDimOrdinateData" modifier="&amp;" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLeaderEndPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLeaderEndPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefiningPoint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDefiningPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMeasuringXAxis">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMeasuringYAxis">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isMeasuringXAxis">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>

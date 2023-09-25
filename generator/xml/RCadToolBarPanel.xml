@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RCadToolBarPanel.h">
+  <class_decl name="RCadToolBar" />
+  <class name="RCadToolBarPanel" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="RWidget" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RCadToolBar" modifier="*" name="parent" default="0" />
+          <parameter const="false" type="bool" modifier="" name="hasBackButton" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setBackMenuName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getButtonName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeAction">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QAction" modifier="*" name="action" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

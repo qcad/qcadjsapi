@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPropertyEvent.h">
+  <class name="RPropertyEvent" ownership="cpp">
+    <super_list>
+      <super name="QEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="entityTypeFilter" default="RS::EntityAll" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getPropertyTypeId">
+      <variant return-type="RPropertyTypeId" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getValue">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEntityTypeFilter">
+      <variant return-type="RS::EntityType" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

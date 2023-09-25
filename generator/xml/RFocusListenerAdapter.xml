@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
+filename="RFocusListenerAdapter.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RFocusListenerAdapter" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="RFocusListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="updateFocus">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="di" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="focusUpdated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="di" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

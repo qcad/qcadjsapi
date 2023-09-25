@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RAutoLoadJs.h">
+  <class name="RAutoLoadJs">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="addAutoLoadFile" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="file" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAutoLoadFiles" static="true">
+      <variant return-type="QStringList" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

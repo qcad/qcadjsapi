@@ -1,0 +1,196 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTextRenderer.h">
+  <class name="RTextRenderer">
+    <enum name="Target">
+      <key>PainterPaths</key>
+      <key>RichText</key>
+    </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RTextBasedData" modifier="&amp;" name="textData" />
+          <parameter const="false" type="bool" modifier="" name="draft" />
+          <parameter const="false" type="RTextRenderer::Target" modifier="" name="target" />
+          <parameter const="false" type="double" modifier="" name="fontHeightFactor" default="1.0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="renderSimple">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="render">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPainterPaths">
+      <variant return-type="QList&lt;RPainterPath&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTextLayouts">
+      <variant return-type="QList&lt;RTextLayout&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHeight">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getWidth">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRichText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="lockForDrawing" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="unlockForDrawing" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPainterPathsForBlock" />
+    <function name="getPainterPathsForBlockTtf" />
+    <function name="getPainterPathsForBlockCad" />
+    <function name="preparePath" />
+    <function name="preparePathColor" />
+    <function name="preparePathTransform" />
+    <function name="getCharacterRect" />
+    <function name="getRichTextForBlock" />
+    <function name="setBlockFont" />
+    <function name="getBlockFont" />
+    <function name="setBlockFontFile" />
+    <function name="getBlockFontFile" />
+    <function name="setUseCadFont" />
+    <function name="getUseCadFont" />
+    <function name="setBlockBold" />
+    <function name="getBlockBold" />
+    <function name="setBlockItalic" />
+    <function name="getBlockItalic" />
+    <function name="setBlockUnderline" />
+    <function name="getBlockUnderline" />
+    <function name="setBlockHeight" />
+    <function name="getBlockHeight" />
+    <function name="setCurrentFormat" />
+    <function name="getCurrentFormat" />
+    <property static="true" type="QString" name="rxLineFeedStr" />
+    <property static="true" type="QRegularExpression" name="rxLineFeed" />
+    <property static="true" type="QString" name="rxAlignmentLeftStr" />
+    <property static="true" type="QRegularExpression" name="rxAlignmentLeft" />
+    <property static="true" type="QString" name="rxAlignmentCenterStr" />
+    <property static="true" type="QRegularExpression" name="rxAlignmentCenter" />
+    <property static="true" type="QString" name="rxAlignmentRightStr" />
+    <property static="true" type="QRegularExpression" name="rxAlignmentRight" />
+    <property static="true" type="QString" name="rxXAlignmentLeftStr" />
+    <property static="true" type="QRegularExpression" name="rxXAlignmentLeft" />
+    <property static="true" type="QString" name="rxXAlignmentCenterStr" />
+    <property static="true" type="QRegularExpression" name="rxXAlignmentCenter" />
+    <property static="true" type="QString" name="rxXAlignmentRightStr" />
+    <property static="true" type="QRegularExpression" name="rxXAlignmentRight" />
+    <property static="true" type="QString" name="rxXSpaceMTextStr" />
+    <property static="true" type="QRegularExpression" name="rxXSpaceMText" />
+    <property static="true" type="QString" name="rxTabMMStr" />
+    <property static="true" type="QRegularExpression" name="rxTabMM" />
+    <property static="true" type="QString" name="rxTabINStr" />
+    <property static="true" type="QRegularExpression" name="rxTabIN" />
+    <property static="true" type="QString" name="rxParagraphFeedStr" />
+    <property static="true" type="QRegularExpression" name="rxParagraphFeed" />
+    <property static="true" type="QString" name="rxXFeedStr" />
+    <property static="true" type="QRegularExpression" name="rxXFeed" />
+    <property static="true" type="QString" name="rxHeightChangeStr" />
+    <property static="true" type="QRegularExpression" name="rxHeightChange" />
+    <property static="true" type="QString" name="rxUnderlineChangeStr" />
+    <property static="true" type="QRegularExpression" name="rxUnderlineChange" />
+    <property static="true" type="QString" name="rxStackedTextStr" />
+    <property static="true" type="QRegularExpression" name="rxStackedText" />
+    <property static="true" type="QString" name="rxColorChangeIndexStr" />
+    <property static="true" type="QRegularExpression" name="rxColorChangeIndex" />
+    <property static="true" type="QString" name="rxColorChangeCustomStr" />
+    <property static="true" type="QRegularExpression" name="rxColorChangeCustom" />
+    <property static="true" type="QString" name="rxNonBreakingSpaceStr" />
+    <property static="true" type="QRegularExpression" name="rxNonBreakingSpace" />
+    <property static="true" type="QString" name="rxOverlineOnStr" />
+    <property static="true" type="QRegularExpression" name="rxOverlineOn" />
+    <property static="true" type="QString" name="rxOverlineOffStr" />
+    <property static="true" type="QRegularExpression" name="rxOverlineOff" />
+    <property static="true" type="QString" name="rxUnderlineOnStr" />
+    <property static="true" type="QRegularExpression" name="rxUnderlineOn" />
+    <property static="true" type="QString" name="rxUnderlineOffStr" />
+    <property static="true" type="QRegularExpression" name="rxUnderlineOff" />
+    <property static="true" type="QString" name="rxStrikethroughOnStr" />
+    <property static="true" type="QRegularExpression" name="rxStrikethroughOn" />
+    <property static="true" type="QString" name="rxStrikethroughOffStr" />
+    <property static="true" type="QRegularExpression" name="rxStrikethroughOff" />
+    <property static="true" type="QString" name="rxWidthChangeStr" />
+    <property static="true" type="QRegularExpression" name="rxWidthChange" />
+    <property static="true" type="QString" name="rxObliqueAngleChangeStr" />
+    <property static="true" type="QRegularExpression" name="rxObliqueAngleChange" />
+    <property static="true" type="QString" name="rxTrackChangeStr" />
+    <property static="true" type="QRegularExpression" name="rxTrackChange" />
+    <property static="true" type="QString" name="rxAlignmentChangeStr" />
+    <property static="true" type="QRegularExpression" name="rxAlignmentChange" />
+    <property static="true" type="QString" name="rxFontChangeCadStr" />
+    <property static="true" type="QRegularExpression" name="rxFontChangeCad" />
+    <property static="true" type="QString" name="rxFontChangeTtfStr" />
+    <property static="true" type="QRegularExpression" name="rxFontChangeTtf" />
+    <property static="true" type="QString" name="rxBeginBlockStr" />
+    <property static="true" type="QRegularExpression" name="rxBeginBlock" />
+    <property static="true" type="QString" name="rxEndBlockStr" />
+    <property static="true" type="QRegularExpression" name="rxEndBlock" />
+    <property static="true" type="QString" name="rxBackslashStr" />
+    <property static="true" type="QRegularExpression" name="rxBackslash" />
+    <property static="true" type="QString" name="rxCurlyOpenStr" />
+    <property static="true" type="QRegularExpression" name="rxCurlyOpen" />
+    <property static="true" type="QString" name="rxCurlyCloseStr" />
+    <property static="true" type="QRegularExpression" name="rxCurlyClose" />
+    <property static="true" type="QString" name="rxDegreeStr" />
+    <property static="true" type="QRegularExpression" name="rxDegree" />
+    <property static="true" type="QString" name="escDegreeStr" />
+    <property static="true" type="QRegularExpression" name="escDegree" />
+    <property static="true" type="QString" name="rxPlusMinusStr" />
+    <property static="true" type="QRegularExpression" name="rxPlusMinus" />
+    <property static="true" type="QString" name="escPlusMinusStr" />
+    <property static="true" type="QRegularExpression" name="escPlusMinus" />
+    <property static="true" type="QString" name="rxDiameterStr" />
+    <property static="true" type="QRegularExpression" name="rxDiameter" />
+    <property static="true" type="QString" name="escDiameterStr" />
+    <property static="true" type="QRegularExpression" name="escDiameter" />
+    <property static="true" type="QString" name="rxUnderlineStr" />
+    <property static="true" type="QRegularExpression" name="rxUnderline" />
+    <property static="true" type="QString" name="escUnderlineStr" />
+    <property static="true" type="QRegularExpression" name="escUnderline" />
+    <property static="true" type="QString" name="rxNoOpStr" />
+    <property static="true" type="QRegularExpression" name="rxNoOp" />
+    <property static="true" type="QString" name="rxNoOpEndStr" />
+    <property static="true" type="QRegularExpression" name="rxNoOpEnd" />
+    <property static="true" type="QString" name="escNoOpStr" />
+    <property static="true" type="QRegularExpression" name="escNoOp" />
+    <property static="true" type="QString" name="rxUnicodeStr" />
+    <property static="true" type="QRegularExpression" name="rxUnicode" />
+    <property static="true" type="QString" name="rxOptionalBreakStr" />
+    <property static="true" type="QRegularExpression" name="rxOptionalBreak" />
+    <property static="true" type="QString" name="rxAllStr" />
+    <property static="true" type="QString" name="rxAllBreakStr" />
+    <property static="true" type="QRegularExpression" name="rxAll" />
+    <property static="true" type="QRegularExpression" name="rxAllBreak" />
+    <property static="true" type="QChar" name="chDegree" />
+    <property static="true" type="QChar" name="chPlusMinus" />
+    <property static="true" type="QChar" name="chDiameter" />
+  </class>
+</unit>

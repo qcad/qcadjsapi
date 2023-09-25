@@ -13,6 +13,14 @@
 
     #include "RJSWrapperObj.h"
   
+        #include "RMatrix.h"
+      
+        #include "RBox.h"
+      
+        #include "RLine.h"
+      
+        #include "RPolyline.h"
+      
     #include <QQmlEngine>
     
         #include "RJSType_qcad.h"
@@ -918,6 +926,10 @@
           
           // check if pointer points to derrived type:
           
+            if (t==RJSType_RRefPoint::getIdStatic()) {
+              return (RVector*)(RRefPoint*)vp;
+            }
+            
 
           // pointer to desired type:
           if (t==RJSType_RVector::getIdStatic()) {
@@ -1171,6 +1183,31 @@
               (
 
                 
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RVector
+    // Function: isInside
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isInside
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
               )
               
                 const
@@ -1744,6 +1781,33 @@
               ;
             
     // Class: RVector
+    // Function: rotate3D
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  rotate3D
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RVector
     // Function: scale
     // Source: 
     // Static: false
@@ -1800,6 +1864,58 @@
               ;
             
     // Class: RVector
+    // Function: mirror
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  mirror
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RVector
+    // Function: getMirrored
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getMirrored
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RVector
     // Function: flipHorizontal
     // Source: 
     // Static: false
@@ -1838,6 +1954,148 @@
               ;
             
     // Class: RVector
+    // Function: stretch
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  stretch
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RVector
+    // Function: isoProject
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isoProject
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RVector
+    // Function: axonometricProjection
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  axonometricProjection
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RVector
+    // Function: obliqueProjection
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  obliqueProjection
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RVector
+    // Function: transform
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  transform
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RVector
+    // Function: transform2DM
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  transform2DM
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RVector
     // Function: transform2D
     // Source: 
     // Static: false
@@ -1857,6 +2115,56 @@
       = QJSValue()
     
               )
+              
+              ;
+            
+    // Class: RVector
+    // Function: getTransformed
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getTransformed
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RVector
+    // Function: getTransformed2DM
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getTransformed2DM
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
               
               ;
             

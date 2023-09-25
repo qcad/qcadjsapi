@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RAction.h">
+  <class_decl name="RPropertyEvent" />
+  <class_decl name="RGraphicsScene" />
+  <class_decl name="RGraphicsView" />
+  <class_decl name="RDocumentInterface" />
+  <class_decl name="RCommandEvent" />
+  <class_decl name="RCoordinateEvent" />
+  <class_decl name="RDocument" />
+  <class_decl name="REntityPickEvent" />
+  <class_decl name="RMouseEvent" />
+  <class_decl name="RWheelEvent" />
+  <class_decl name="RGuiAction" />
+  <class_decl name="RStorage" />
+  <class_decl name="RTabletEvent" />
+  <class_decl name="ROperation" />
+  <class name="RAction" ownership="cpp">
+    <enum name="ClickMode">
+      <key>PickCoordinate</key>
+      <key>PickCoordinateNoSnap</key>
+      <key>PickEntity</key>
+      <key>PickingDisabled</key>
+    </enum>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RGuiAction" modifier="*" name="guiAction" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <function name="terminate">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isTerminated">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOverride">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isOverride">
+      <variant return-type="bool" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setNoState">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasNoState">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUniqueGroup">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="ug" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getUniqueGroup">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOverrideBase">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RAction" modifier="*" name="base" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOverrideBase">
+      <variant return-type="RAction*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getGuiAction">
+      <variant return-type="RGuiAction*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGuiAction">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RGuiAction" modifier="*" name="guiAction" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGraphicsScenes">
+      <variant return-type="QList&lt;RGraphicsScene*&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocument">
+      <variant return-type="RDocument*" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocumentInterface">
+      <variant return-type="RDocumentInterface*" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStorage">
+      <variant return-type="RStorage*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDocumentInterface">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="di" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setClickMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RAction::ClickMode" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClickMode">
+      <variant return-type="RAction::ClickMode" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="beginEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGraphicsView">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsView" modifier="*" name="view" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="finishEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="enterEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="suspendEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="resumeEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="escapeEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="keyPressEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyReleaseEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseDoubleClickEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="wheelEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RWheelEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="tabletEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RTabletEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="swipeGestureEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSwipeGesture" modifier="&amp;" name="gesture" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="panGestureEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPanGesture" modifier="&amp;" name="gesture" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pinchGestureEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPinchGesture" modifier="&amp;" name="gesture" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="commandEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RCommandEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="commandEventPreview">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RCommandEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="coordinateEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RCoordinateEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="coordinateEventPreview">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RCoordinateEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="entityPickEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntityPickEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="entityPickEventPreview">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntityPickEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="propertyChangeEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyEvent" modifier="&amp;" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="zoomChangeEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="view" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updatePreview">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="applyOperation">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="snap">
+      <variant return-type="RVector" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RMouseEvent" modifier="&amp;" name="event" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

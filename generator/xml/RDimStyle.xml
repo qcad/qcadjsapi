@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDimStyle.h">
+  <class_decl name="RDocument" />
+  <class_decl name="REntityData" />
+  <class_decl name="RExporter" />
+  <class name="RDimStyle" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+      <super name="RDimStyleData" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="initDimX" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="var" />
+          <parameter const="false" type="RS::KnownVariableType" modifier="" name="type" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RDimStyle*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateDocumentVariables">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateFromDocumentVariables">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="render">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="REntityData" modifier="&amp;" name="entityData" />
+          <parameter const="false" type="bool" modifier="" name="preview" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="hasProxy" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="setDimStyleProxy" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDimStyleProxy" modifier="*" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimStyleProxy" static="true">
+      <variant return-type="RDimStyleProxy*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMdiChildQt.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RDocumentInterface" />
+  <class_decl name="RGraphicsViewQt" />
+  <class name="RMdiChildQt" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="RModifiedListener" />
+      <super name="QMdiSubWindow" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="setDocumentInterface">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="di" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDocumentInterface">
+      <variant return-type="RDocumentInterface*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDocument">
+      <variant return-type="RDocument*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLastKnownViewWithFocus">
+      <variant return-type="RGraphicsViewQt*" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateModifiedListener">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RStorage" modifier="*" name="storage" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCloseEventRejected">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCloseEventAccepted">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isCloseEventAccepted">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="closeRequested">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RMdiChildQt" modifier="*" name="mdiChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="closeAccepted">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RMdiChildQt" modifier="*" name="mdiChild" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="modifiedStatusChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RMdiChildQt" modifier="*" name="mdiChild" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="closeEvent" />
+    -->
+    <function name="sizeHint">
+      <variant return-type="QSize" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="resizeEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QResizeEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

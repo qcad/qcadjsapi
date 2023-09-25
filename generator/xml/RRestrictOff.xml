@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RRestrictOff.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RRestrictOff" ownership="cpp">
+    <super_list>
+      <super name="RSnapRestriction" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="restrictSnap">
+      <variant return-type="RVector" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="relativeZero" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

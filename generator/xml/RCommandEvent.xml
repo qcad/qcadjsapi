@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RCommandEvent.h">
+  <class name="RCommandEvent" ownership="cpp">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="cmd" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getCommand">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="accept">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isAccepted">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

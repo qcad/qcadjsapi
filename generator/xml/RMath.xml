@@ -1,0 +1,330 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMath.h">
+  <class name="RMath">
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="uninit" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="mround" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trunc" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="pow" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x" />
+          <parameter const="false" type="double" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNormal" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isNaN" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isInf" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSane" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="eval" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="expression" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getError" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasError" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="angleToString" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trimTrailingZeroes" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rad2deg" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="deg2rad" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rad2gra" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="gra2deg" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isBetween" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+          <parameter const="false" type="double" modifier="" name="limit1" />
+          <parameter const="false" type="double" modifier="" name="limit2" />
+          <parameter const="false" type="bool" modifier="" name="inclusive" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGcd" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="a" />
+          <parameter const="false" type="int" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isAngleBetween" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+          <parameter const="false" type="double" modifier="" name="a1" />
+          <parameter const="false" type="double" modifier="" name="a2" />
+          <parameter const="false" type="bool" modifier="" name="reversed" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getNormalizedAngle" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getRelativeAngle" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+          <parameter const="false" type="double" modifier="" name="baseAngle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngleDifference" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a1" />
+          <parameter const="false" type="double" modifier="" name="a2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngleDifference180" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a1" />
+          <parameter const="false" type="double" modifier="" name="a2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="makeAngleReadable" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="false" type="bool" modifier="" name="readable" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isAngleReadable" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="0.01" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSameDirection" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="dir1" />
+          <parameter const="false" type="double" modifier="" name="dir2" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::AngleTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="absmod" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="a" />
+          <parameter const="false" type="int" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toFractionString" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+          <parameter const="false" type="int" modifier="" name="maxDenominator" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toFraction" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+          <parameter const="false" type="int" modifier="" name="maxDenominator" />
+          <parameter const="false" type="int" modifier="&amp;" name="number" />
+          <parameter const="false" type="int" modifier="&amp;" name="numerator" />
+          <parameter const="false" type="int" modifier="&amp;" name="denominator" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="simplify" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="numerator" />
+          <parameter const="false" type="int" modifier="" name="denominator" />
+          <parameter const="false" type="int" modifier="&amp;" name="numeratorRes" />
+          <parameter const="false" type="int" modifier="&amp;" name="denominatorRes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fuzzyCompare" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v1" />
+          <parameter const="false" type="double" modifier="" name="v2" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fuzzyAngleCompare" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v1" />
+          <parameter const="false" type="double" modifier="" name="v2" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::AngleTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="containsFuzzy" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;double&gt;" modifier="&amp;" name="values" />
+          <parameter const="false" type="double" modifier="" name="v" />
+          <parameter const="false" type="double" modifier="" name="tol" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="parseScale" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="scaleString" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="parseCoordinate" static="true">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="coordinateString" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="relativeZero" default="RVector::nullVector" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMd5Hash" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="data" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="getQuadRoots" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+          <parameter const="false" type="double" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="getCubicRoots" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+          <parameter const="false" type="double" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <!--
+    <function name="getBiQuadRoots" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="" />
+          <parameter const="false" type="double" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

@@ -1,0 +1,827 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDimensionData.h">
+  <class name="RDimensionData" ownership="cpp">
+    <super_list>
+      <super name="REntityData" />
+    </super_list>
+    <class_decl name="RDimensionEntity" />
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" default="NULL" />
+        </parameters>
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="definitionPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="textPositionCenter" />
+          <parameter const="false" type="RS::VAlign" modifier="" name="valign" />
+          <parameter const="false" type="RS::HAlign" modifier="" name="halign" />
+          <parameter const="false" type="RS::TextLineSpacingStyle" modifier="" name="lineSpacingStyle" />
+          <parameter const="false" type="double" modifier="" name="lineSpacingFactor" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+          <parameter const="true" type="QString" modifier="&amp;" name="fontName" />
+          <parameter const="false" type="double" modifier="" name="textAngle" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ignoreEmpty" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="render">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateBoundingBox">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateTextPositionCenter">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateTextPositionSide">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateTextData">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RTextData" modifier="&amp;" name="d" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateShapes">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateArrowPos1">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateArrowPos2">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearStyleOverrides">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getShapes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="queryBox" default="RDEFAULT_RBOX" />
+          <parameter const="false" type="bool" modifier="" name="ignoreComplex" default="false" />
+          <parameter const="false" type="bool" modifier="" name="segment" default="false" />
+          <!--
+          <parameter const="false" type="QList&lt;RObject::Id&gt;" modifier="*" name="entityIds" default="NULL" />
+          -->
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPointOnEntity">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSane">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDefinitionPoint">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDefinitionPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setText">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getText">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUpperTolerance">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLowerTolerance">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setTextPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTextPosition">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFontName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fn" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFontName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimBlockName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="bn" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimBlockName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasOverrides">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasOverride">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOverrides">
+      <variant return-type="RDimStyleData" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimXVariant">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDimXDouble">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDimXInt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="false" type="int" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDimXBool">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="false" type="bool" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDimXColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="RColor" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimXVariant">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVariantOverride">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimXDouble">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDoubleOverride">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimXInt">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntOverride">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimXBool">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoolOverride">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimXColor">
+      <variant return-type="RColor" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColorOverride">
+      <variant return-type="RColor" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimlfac">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimlfac">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinearFactor">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLinearFactor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimscale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimscale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isArrow1Flipped">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setArrow1Flipped">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isArrow2Flipped">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setArrow2Flipped">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isExtLineFix">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setExtLineFix">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExtLineFixLength">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setExtLineFixLength">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="adjustExtensionLineFixLength">
+      <variant return-type="void" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLine" modifier="&amp;" name="extLine1" />
+          <parameter const="false" type="RLine" modifier="&amp;" name="extLine2" />
+          <parameter const="false" type="bool" modifier="" name="addDimExe" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasSpaceForArrows">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDistanceTo">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="range" default="0.0" />
+          <parameter const="false" type="bool" modifier="" name="draft" default="false" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersectsWith">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="shape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint"
+          default="RS::RenderTop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clickReferencePoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveReferencePoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers"
+          default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaleVisualProperties">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="scaleFactor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirror">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimexo">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimexo">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimexe">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimexe">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimasz">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimasz">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimdli">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimdli">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimgap">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimgap">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimtxt">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimtxt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimlunit">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimlunit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="l" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimjust">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDimtad">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimtad">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimtih">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimtih">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimtsz">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimtsz">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimzin">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimzin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimaunit">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimaunit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimadec">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimadec">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimdec">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimdec">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimazin">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimazin">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimdsep">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimdsep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimclrt">
+      <variant return-type="RColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimclrt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="useArchTick">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDimblk">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDimblkName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isDimXScaled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="var" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasCustomTextPosition">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCustomTextPosition">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLineSpacingStyle">
+      <variant return-type="RS::TextLineSpacingStyle" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLineSpacingFactor">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTextAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTextData">
+      <variant return-type="RTextData&amp;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="noRender" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initTextData">
+      <variant return-type="RTextData&amp;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMeasurement">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="resolveAutoMeasurement" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMeasuredValue">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAutoLabel">
+      <variant return-type="QString" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="formatLabel">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="formatAngleLabel">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="textAngle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="update">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDimensionBlockReference">
+      <variant return-type="QSharedPointer&lt;RBlockReferenceEntity&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasDimensionBlockReference">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="to2D">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

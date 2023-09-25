@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RListView.h">
+  <class name="RListView" ownership="cpp" inheritable="true">
+    <super_list>
+      <super name="QObject" />
+      <super name="QWidget" />
+      <super name="QFrame" />
+      <super name="QAbstractScrollArea" />
+      <super name="QAbstractItemView" />
+      <super name="QListView" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="0" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="signalContextMenuEvent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QContextMenuEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalMouseMoveEvent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalMousePressEvent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalMouseReleaseEvent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalDragEnterEvent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDragEnterEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalDragMoveEvent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDragMoveEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalDropEvent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QDropEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalStartDrag">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="Qt::DropActions" modifier="" name="supportedActions" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalSelectionChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="selected" />
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="deselected" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalCurrentChanged">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="current" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="previous" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="signalToolTipRequested">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QHelpEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="contextMenuEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QContextMenuEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mousePressEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseReleaseEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mouseMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QMouseEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragEnterEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragEnterEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dragMoveEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QDragMoveEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="dropEvent">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QDropEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startDrag">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="Qt::DropActions" modifier="" name="supportedActions" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="selectionChanged">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="selected" />
+          <parameter const="true" type="QItemSelection" modifier="&amp;" name="deselected" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="currentChanged">
+      <variant return-type="void" virtual="true" access="protected">
+        <parameters>
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="current" />
+          <parameter const="true" type="QModelIndex" modifier="&amp;" name="previous" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="event">
+      <variant return-type="bool" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

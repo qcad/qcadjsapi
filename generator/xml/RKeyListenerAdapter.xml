@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RKeyListenerAdapter.h">
+  <class_decl name="RDocumentInterface" />
+  <class name="RKeyListenerAdapter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <super name="RKeyListener" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters/>
+      </variant>
+    </constructor>
+    <function name="keyPressed">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="keyPressEvent">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="QKeyEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPaletteListener.h">
+  <class name="RPaletteListener" ownership="cpp">
+    <function name="updatePalette">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

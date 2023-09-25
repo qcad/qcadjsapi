@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="REntityPickEvent.h">
+  <class_decl name="RGraphicsView" />
+  <class_decl name="RGraphicsScene" />
+  <class name="REntityPickEvent" ownership="cpp">
+    <super_list>
+      <super name="RInputEvent" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="false" type="RGraphicsScene" modifier="&amp;" name="s" />
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getEntityId">
+      <variant return-type="REntity::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setModifiers">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getModifiers">
+      <variant return-type="Qt::KeyboardModifiers" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

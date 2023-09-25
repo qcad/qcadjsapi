@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnapEnd.h">
+  <class_decl name="RMouseEvent" />
+  <class name="RSnapEnd" ownership="cpp">
+    <super_list>
+      <super name="RSnap" />
+      <super name="RSnapEntityBase" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <!--
+    <function name="snapEntity">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="" name="entity" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="true" type="RBox" modifier="&amp;" name="queryBox" />
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="view" />
+          <parameter const="false" type="QList&lt;REntity::Id&gt;" modifier="*" name="subEntityIds" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

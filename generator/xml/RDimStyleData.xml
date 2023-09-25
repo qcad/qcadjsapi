@@ -1,0 +1,189 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDimStyleData.h">
+  <class name="RDimStyleData">
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="override" default="false" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="initDefaults" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVariantDefault" static="true">
+      <variant return-type="QVariant" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDoubleDefault" static="true">
+      <variant return-type="double" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntDefault" static="true">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoolDefault" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColorDefault" static="true">
+      <variant return-type="RColor" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="initFromSettings">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasOverride">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVariableType" static="true">
+      <variant return-type="RS::KnownVariableType" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVariant">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVariant">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDouble">
+      <variant return-type="double" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDouble">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="false" type="double" modifier="" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeDouble">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getInt">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setInt">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="false" type="int" modifier="" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeInt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBool">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBool">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="false" type="bool" modifier="" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeBool">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getColor">
+      <variant return-type="RColor" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setColor">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="RColor" modifier="&amp;" name="val" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeColor">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

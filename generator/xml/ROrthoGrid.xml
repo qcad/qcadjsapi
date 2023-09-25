@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="ROrthoGrid.h">
+  <class_decl name="RGraphicsView" />
+  <class_decl name="RRuler" />
+  <class name="ROrthoGrid" ownership="cpp">
+    <super_list>
+      <super name="RGrid" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="view" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="clearCache">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="snapToGrid">
+      <variant return-type="RVector" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="positionUcs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="update">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="force" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paint">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintMetaGrid">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paintGridLines">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="space" />
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+          <parameter const="false" type="bool" modifier="" name="meta" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintGridPoints">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="space" />
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintCursor">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintRuler">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RRuler" modifier="&amp;" name="ruler" />
+          <parameter const="false" type="qreal" modifier="" name="devicePixelRatio" default="1.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getInfoText">
+      <variant return-type="QString" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getIdealSpacing">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="minPixelSpacing" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="minSpacing" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="minMetaSpacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isIsometric">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setIsometric">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getProjection">
+      <variant return-type="RS::IsoProjectionType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProjection">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::IsoProjectionType" modifier="" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIdealGridSpacing" static="true">
+      <variant return-type="QList&lt;RVector&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsView" modifier="&amp;" name="view" />
+          <parameter const="false" type="int" modifier="" name="minPixelSpacing" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="minSpacing" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="minMetaSpacing" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFractionalFormat" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::LinearFormat" modifier="" name="linearFormat" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="inchAutoscale" static="true" />
+  </class>
+</unit>

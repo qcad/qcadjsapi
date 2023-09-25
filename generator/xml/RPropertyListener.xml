@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPropertyListener.h">
+  <class_decl name="RDocument" />
+  <class_decl name="REntity" />
+  <class_decl name="RDocument" />
+  <class_decl name="RObject" />
+  <class name="RPropertyListener" ownership="cpp">
+    <function name="updateFromDocument">
+      <variant return-type="void" virtual="true" access="public" overridable="true">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="bool" modifier="" name="onlyChanges" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="entityTypeFilter" default="RS::EntityAll" />
+          <parameter const="false" type="bool" modifier="" name="manual" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateFromObject">
+      <variant return-type="void" virtual="true" access="public" overridable="true">
+        <parameters>
+          <parameter const="false" type="RObject" modifier="*" name="object" />
+          <parameter const="false" type="RDocument" modifier="*" name="document" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clearEditor">
+      <variant return-type="void" virtual="true" access="public" overridable="true">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

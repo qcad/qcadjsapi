@@ -1,0 +1,180 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDocumentVariables.h">
+  <class_decl name="RDocument" />
+  <class name="RDocumentVariables" ownership="cpp" sharedpointer="true">
+    <super_list>
+      <super name="RObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="init" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getRtti" static="true">
+      <variant return-type="RS::EntityType" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RDocumentVariables*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getProperty">
+      <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setProperty">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCustomPropertyTypeIds">
+      <variant return-type="QSet&lt;RPropertyTypeId&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setKnownVariable">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="RColor" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getKnownVariable">
+      <variant return-type="QVariant" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasKnownVariable">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::KnownVariable" modifier="" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getCurrentLayerId">
+      <variant return-type="RLayer::Id" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setCurrentLayerId">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="id" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getUnit">
+      <variant return-type="RS::Unit" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setUnit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::Unit" modifier="" name="u" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMeasurement">
+      <variant return-type="RS::Measurement" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setMeasurement">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::Measurement" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypeScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLinetypeScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDimensionFont">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDimensionFont">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addAutoVariable">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAutoVariables">
+      <variant return-type="QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="print">
+      <variant return-type="void" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QDebug" modifier="" name="dbg" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

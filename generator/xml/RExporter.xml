@@ -1,0 +1,845 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RExporter.h">
+  <class_decl name="RArc" />
+  <class_decl name="RCircle" />
+  <class_decl name="RDocument" />
+  <class_decl name="REllipse" />
+  <class_decl name="RLine" />
+  <class_decl name="RLinetype" />
+  <class_decl name="RLinetypePattern" />
+  <class_decl name="RMessageHandler" />
+  <class_decl name="RPainterPathSource" />
+  <class_decl name="RPoint" />
+  <class_decl name="RPolyline" />
+  <class_decl name="RProgressHandler" />
+  <class_decl name="RRay" />
+  <class_decl name="RSpline" />
+  <class_decl name="RTriangle" />
+  <class_decl name="RVector" />
+  <class_decl name="RXLine" />
+  <class name="RExporter" ownership="cpp">
+    <!--
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="RMessageHandler" modifier="*" name="messageHandler" default="NULL" />
+          <parameter const="false" type="RProgressHandler" modifier="*" name="progressHandler" default="NULL" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <function name="init" />
+    <function name="getErrorMessage">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setLayerSource">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="ls" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBlockSource">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="bs" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDocument">
+      <variant return-type="RDocument&amp;" const="true" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setProjectionRenderingHint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getProjectionRenderingHint">
+      <variant return-type="RS::ProjectionRenderingHint" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setClipping">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClipping">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPen">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPen" modifier="&amp;" name="pen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPen">
+      <variant return-type="QPen" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+      <variant return-type="QPen" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setBrush">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBrush">
+      <variant return-type="QBrush" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+      <variant return-type="QBrush" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getColor">
+      <variant return-type="RColor" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="unresolvedColor" />
+        </parameters>
+      </variant>
+      <variant return-type="RColor" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="resolve" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEntityAttributes">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setStyle">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::PenStyle" modifier="" name="penStyle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBrushStyle">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="Qt::BrushStyle" modifier="" name="brushStyle" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="setDashPattern">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QVector&lt;qreal&gt;" modifier="&amp;" name="dashes" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="setColor">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="float" modifier="" name="r" />
+          <parameter const="false" type="float" modifier="" name="g" />
+          <parameter const="false" type="float" modifier="" name="b" />
+          <parameter const="false" type="float" modifier="" name="a" default="1.0f" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="color" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLineweight">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLineweight::Lineweight" modifier="" name="weight" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLinetypeId">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype::Id" modifier="" name="ltId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setLinetypePattern">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLinetypePattern" modifier="&amp;" name="ltPattern" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinetypePattern">
+      <variant return-type="RLinetypePattern" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBlockRefOrEntity">
+      <variant return-type="REntity*" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBlockRefOrEntityId">
+      <variant return-type="REntity::Id" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEntity">
+      <variant return-type="REntity*" virtual="true" access="public">
+        <parameters />
+      </variant>
+      <!--
+      <variant return-type="const REntity*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+      -->
+    </function>
+    <function name="getCurrentBlockRef">
+      <variant return-type="REntity*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCurrentViewport">
+      <variant return-type="RViewportEntity*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getBlockRefViewportStack">
+      <variant return-type="QStack&lt;REntity*&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="isEntitySelected">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPatternContinuous">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLinetypePattern" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startExport">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="endExport">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportDocument">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportDocumentSettings">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportDocumentSetting">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+          <parameter const="true" type="QString" modifier="&amp;" name="dictionaryName"
+          default="&quot;QCAD_OBJECTS&quot;" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="exportIntListWithName">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="dictionaryName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+          <parameter const="true" type="QString" modifier="&amp;" name="listName" />
+          <parameter const="false" type="QList&lt;int64_t&gt;" modifier="&amp;" name="values" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="exportLayers">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportLayerStates">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportBlocks">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportViews">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportLinetypes">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportLayer">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayer::Id" modifier="" name="layerId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportLayerState">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLayerState" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportBlock">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock::Id" modifier="" name="blockId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportView">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RView" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RView::Id" modifier="" name="viewId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportLinetype">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RLinetype" modifier="&amp;" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportEntities">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="allBlocks" default="true" />
+          <parameter const="false" type="bool" modifier="" name="undone" default="false" />
+          <parameter const="false" type="bool" modifier="" name="invisible" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSet&lt;REntity::Id&gt;" modifier="&amp;" name="entityIds" />
+          <parameter const="false" type="bool" modifier="" name="allBlocks" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportEntity">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+          <parameter const="false" type="bool" modifier="" name="allBlocks" default="true" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+          <parameter const="false" type="bool" modifier="" name="allBlocks" default="true" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getEntityLayer">
+      <variant return-type="QSharedPointer&lt;RLayer&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isVisible">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="startEntity">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endEntity">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportCurrentEntity">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="unexportEntity">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="REntity::Id" modifier="" name="entityId" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportShapes">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" modifier="&amp;" name="shapes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportShape">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportShapeSegment">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportLine">
+      <variant return-type="double" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line" />
+          <parameter const="false" type="double" modifier="" name="offset" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportLinetypeShape">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;RPainterPath&gt;" modifier="&amp;" name="pps" />
+          <parameter const="true" type="RLine" modifier="&amp;" name="line" />
+          <parameter const="false" type="double" modifier="" name="total" />
+          <parameter const="false" type="double" modifier="" name="length" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="cursor" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportLineSegment">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line" />
+          <parameter const="false" type="double" modifier="" name="angle" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportXLine">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RXLine" modifier="&amp;" name="xLine" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportRay">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RRay" modifier="&amp;" name="ray" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportPoint">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPoint" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportCircle">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RCircle" modifier="&amp;" name="circle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportArc">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc" />
+          <parameter const="false" type="double" modifier="" name="offset" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportArcSegment">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc" />
+          <parameter const="false" type="bool" modifier="" name="allowForZeroLength" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportEllipse">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse" />
+          <parameter const="false" type="double" modifier="" name="offset" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportPolyline">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="polyline" />
+          <parameter const="false" type="bool" modifier="" name="polylineGen" default="true" />
+          <parameter const="false" type="double" modifier="" name="offset" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportSpline">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline" />
+          <parameter const="false" type="double" modifier="" name="offset" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportSplineSegment">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportExplodable">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RExplodable" modifier="&amp;" name="explodable" />
+          <parameter const="false" type="double" modifier="" name="offset" default="RNANDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="exportPainterPathSource">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPainterPathSource" modifier="&amp;" name="pathSource" />
+          <parameter const="false" type="double" modifier="" name="z" default="0.0" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="exportPainterPaths">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RPainterPath&gt;" modifier="&amp;" name="paths" />
+          <parameter const="false" type="double" modifier="" name="z" default="0.0" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RPainterPath&gt;" modifier="&amp;" name="paths" />
+          <parameter const="false" type="double" modifier="" name="angle" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportBoundingBoxPaths">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RPainterPath&gt;" modifier="&amp;" name="paths" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportImage">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RImageData" modifier="&amp;" name="image" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportText">
+      <variant return-type="QList&lt;RPainterPath&gt;" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RTextBasedData" modifier="&amp;" name="text" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportClipRectangle">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="clipRectangle" />
+          <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportTransform">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RTransform" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportEndTransform">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="exportThickPolyline">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="polyline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportQuad">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p2" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p3" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p4" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportVerticalQuad">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p2" />
+          <parameter const="false" type="double" modifier="" name="height" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportBox">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="box" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportTriangle">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RTriangle" modifier="&amp;" name="triangle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="exportRectangle">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLineTypePatternScale">
+      <variant return-type="double" virtual="true" const="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLinetypePattern" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTextRenderedAsText">
+      <variant return-type="bool" virtual="true" const="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getEntityStack">
+      <variant return-type="QStack&lt;REntity*&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="pushEntity">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="REntity" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="popEntity">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDraftMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toggleDraftMode">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDraftMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTwoColorSelectedMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTwoColorSelectedMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setScreenBasedLinetypes">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="toggleScreenBasedLinetypes">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getScreenBasedLinetypes">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isVisualExporter">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVisualExporter">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getExportInvisible">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setExportInvisible">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPixelSizeHint">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCurrentPixelSizeHint">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPixelSizeHint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPixelUnit">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPixelUnit">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPixelWidth">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPixelWidth">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEnablePatterns">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

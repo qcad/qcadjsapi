@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RFont.h">
+  <class name="RFont">
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="isValid">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEncoding">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getNames">
+      <variant return-type="const QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAuthors">
+      <variant return-type="const QStringList" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLetterSpacing">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getWordSpacing">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getLineSpacingFactor">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAuxLinePositions">
+      <variant return-type="QList&lt;double&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getAuxLinePositionsString">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="load">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isLoaded">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <!--
+    <function name="getGlyphMap">
+      <variant return-type="QMap&lt;QChar,RPainterPath&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    -->
+    <function name="getGlyphNames">
+      <variant return-type="QList&lt;QChar&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getGlyph">
+      <variant return-type="RPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QChar" modifier="&amp;" name="ch" />
+          <parameter const="false" type="bool" modifier="" name="draft" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeNames">
+      <variant return-type="QList&lt;QString&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getShape">
+      <variant return-type="RPainterPath" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="name" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapeName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QChar" modifier="&amp;" name="ch" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

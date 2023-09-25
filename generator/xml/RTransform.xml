@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTransform.h">
+  <class name="RTransform">
+    <super_list>
+      <super name="QTransform" nodowncast="true" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="translate">
+      <variant return-type="RTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="dx" />
+          <parameter const="false" type="qreal" modifier="" name="dy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="RTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="sx" />
+          <parameter const="false" type="qreal" modifier="" name="sy" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotateRadians">
+      <variant return-type="RTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="angle" />
+          <parameter const="false" type="Qt::Axis" modifier="" name="axis" default="Qt::ZAxis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="RTransform&amp;" access="public">
+        <parameters>
+          <parameter const="false" type="qreal" modifier="" name="angle" />
+          <parameter const="false" type="Qt::Axis" modifier="" name="axis" default="Qt::ZAxis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOps">
+      <variant return-type="QList&lt;RTransformOp&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

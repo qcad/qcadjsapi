@@ -1,0 +1,950 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RShape.h">
+  <class_decl name="RArc" />
+  <class_decl name="RBox" />
+  <class_decl name="RCircle" />
+  <class_decl name="REllipse" />
+  <class_decl name="RExplodable" />
+  <class_decl name="RLine" />
+  <class_decl name="RPolyline" />
+  <class_decl name="RSpline" />
+  <class_decl name="RTriangle" />
+  <!--
+  <class name="RShapeTransformation">
+    <function name="transform">
+      <variant return-type="RVector" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  <class name="RShapeTransformationScale">
+    <super_list>
+      <super name="RShapeTransformation" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="factors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="transform">
+      <variant return-type="RVector" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+  -->
+  <class name="RShape" ownership="cpp" sharedpointer="true">
+    <enum name="Type">
+      <key>Unknown</key>
+      <key>Point</key>
+      <key>Line</key>
+      <key>Arc</key>
+      <key>Circle</key>
+      <key>Ellipse</key>
+      <key>Polyline</key>
+      <key>Spline</key>
+      <key>Triangle</key>
+      <key>XLine</key>
+      <key>Ray</key>
+    </enum>
+    <function name="isValid">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getShapeType">
+      <variant return-type="RShape::Type" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isPointShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isLineShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isArcShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isCircleShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEllipseShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isFullEllipseShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isPolylineShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isSplineShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTriangleShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isXLineShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isRayShape" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="clone">
+      <variant return-type="RShape*" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cloneToSharedPointer">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isInterpolated">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getClosestPointOnShape">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="to2D">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setZ">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="z" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLength">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="equals">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="other" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVectorProperties">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getIntProperties">
+      <variant return-type="QList&lt;int&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDoubleProperties">
+      <variant return-type="QList&lt;double&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getBoolProperties">
+      <variant return-type="QList&lt;bool&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVectorTo">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDistanceTo">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getMaxDistanceTo">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="points" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isOnShape">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RDEFAULT_TOLERANCE_1E_MIN4" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="filterOnShape">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="pointList" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RDEFAULT_TOLERANCE_1E_MIN4" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getVectorFromEndpointTo">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getEndPoints">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMiddlePoints">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getCenterPoints">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getArcReferencePoints">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPointOnShape">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPointCloud">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="segmentLength" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPointsWithDistanceToEnd">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+          <parameter const="false" type="int" modifier="" name="from" default="RS::FromAny" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPointWithDistanceToStart">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPointWithDistanceToEnd">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngleAt">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+          <parameter const="false" type="RS::From" modifier="" name="from" default="RS::FromStart" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngleAtPoint">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPointAtPercent">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getAngleAtPercent">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="intersectsWith">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="other" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPoints">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="other" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="bool" modifier="" name="same" default="false" />
+          <parameter const="false" type="bool" modifier="" name="force" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="shape1" />
+          <parameter const="true" type="RShape" modifier="&amp;" name="shape2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="bool" modifier="" name="same" default="false" />
+          <parameter const="false" type="bool" modifier="" name="force" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getSelfIntersectionPoints">
+      <variant return-type="QList&lt;RVector&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isDirected">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDirection1">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getDirection2">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getSideOfPoint">
+      <variant return-type="RS::Side" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getStartPoint">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEndPoint">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getMiddlePoint">
+      <variant return-type="RVector" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="reverse">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="trimStartPoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" default="RVector::invalid" />
+          <parameter const="false" type="bool" modifier="" name="extend" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="trimDist" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trimEndPoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" default="RVector::invalid" />
+          <parameter const="false" type="bool" modifier="" name="extend" default="false" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="trimDist" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTrimEnd">
+      <variant return-type="RS::Ending" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimPoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPoint" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDistanceFromStart">
+      <variant return-type="double" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDistancesFromStart">
+      <variant return-type="QList&lt;double&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="scaleFactor" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RVector()" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RVector()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirror">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="flipHorizontal">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flipVertical">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="stretch">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="area" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="area" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTransformed">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="transform" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOrderedShapes" static="true">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" modifier="&amp;" name="shapes" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="order" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;QList&lt;QSharedPointer&lt;RShape&gt;&gt;&gt;" modifier="&amp;"
+          name="boundary" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="getIntersectionPointsLL" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="RLine" modifier="&amp;" name="line2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="RLine" modifier="&amp;" name="line2" />
+          <parameter const="false" type="bool" modifier="" name="limited1" />
+          <parameter const="false" type="bool" modifier="" name="limited2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsLA" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc2" />
+          <parameter const="false" type="bool" modifier="" name="limited1" />
+          <parameter const="false" type="bool" modifier="" name="limited2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsLC" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="RCircle" modifier="&amp;" name="circle2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsLE" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse2" />
+          <parameter const="false" type="bool" modifier="" name="limited1" />
+          <parameter const="false" type="bool" modifier="" name="limited2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsLT" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="RTriangle" modifier="&amp;" name="triangle2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="RTriangle" modifier="&amp;" name="triangle2" />
+          <parameter const="false" type="bool" modifier="" name="limited1" />
+          <parameter const="false" type="bool" modifier="" name="limited2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsLS" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsLX" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="line1" />
+          <parameter const="true" type="RExplodable" modifier="&amp;" name="explodable2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsAA" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc1" />
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsAC" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc1" />
+          <parameter const="true" type="RCircle" modifier="&amp;" name="circle2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsAE" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc1" />
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsAT" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc1" />
+          <parameter const="true" type="RTriangle" modifier="&amp;" name="triangle2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsAS" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc1" />
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsAX" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RArc" modifier="&amp;" name="arc1" />
+          <parameter const="true" type="RExplodable" modifier="&amp;" name="explodable2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsCC" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RCircle" modifier="&amp;" name="circle1" />
+          <parameter const="true" type="RCircle" modifier="&amp;" name="circle2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsCE" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RCircle" modifier="&amp;" name="circle1" />
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse2" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsCS" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RCircle" modifier="&amp;" name="circle1" />
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsCX" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RCircle" modifier="&amp;" name="circle1" />
+          <parameter const="true" type="RExplodable" modifier="&amp;" name="explodable2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsEE" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse1" />
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse2" />
+        </parameters>
+      </variant>
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse1" />
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse2" />
+          <parameter const="false" type="bool" modifier="" name="limited" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsES" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse1" />
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsEX" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse1" />
+          <parameter const="true" type="RExplodable" modifier="&amp;" name="explodable2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsSX" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline1" />
+          <parameter const="true" type="RExplodable" modifier="&amp;" name="explodable2" />
+          <parameter const="false" type="bool" modifier="" name="limited" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsSS" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline1" />
+          <parameter const="true" type="RSpline" modifier="&amp;" name="spline2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="bool" modifier="" name="same" default="false" />
+          <parameter const="false" type="double" modifier="" name="tolerance" default="RS::PointTolerance" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getIntersectionPointsXX" static="true">
+      <variant return-type="QList&lt;RVector&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RExplodable" modifier="&amp;" name="explodable1" />
+          <parameter const="true" type="RExplodable" modifier="&amp;" name="explodable2" />
+          <parameter const="false" type="bool" modifier="" name="limited" default="true" />
+          <parameter const="false" type="bool" modifier="" name="same" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="castToExplodable" static="true">
+      <variant return-type="const RExplodable*" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="*" name="shape" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="getOffsetShapes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="distance" />
+          <parameter const="false" type="int" modifier="" name="number" />
+          <parameter const="false" type="RS::Side" modifier="" name="side" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" default="RVector::invalid" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOffsetLines" static="true">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="shape" />
+          <parameter const="false" type="double" modifier="" name="distance" />
+          <parameter const="false" type="int" modifier="" name="number" />
+          <parameter const="false" type="RS::Side" modifier="" name="side" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" default="RVector::invalid" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getOffsetArcs" static="true">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="shape" />
+          <parameter const="false" type="double" modifier="" name="distance" />
+          <parameter const="false" type="int" modifier="" name="number" />
+          <parameter const="false" type="RS::Side" modifier="" name="side" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" default="RVector::invalid" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getReversedShapeList" static="true">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" modifier="&amp;" name="shapes" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="splitAt">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="points" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="trim" static="true">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="trimShape" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="trimClickPos" />
+          <parameter const="true" type="RShape" modifier="&amp;" name="limitingShape" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="limitingClickPos" />
+          <parameter const="false" type="bool" modifier="" name="trimBoth" />
+          <parameter const="false" type="bool" modifier="" name="samePolyline" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="roundCorners" static="true">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" modifier="&amp;" name="shapes" />
+          <parameter const="false" type="double" modifier="" name="radius" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="roundShapes" static="true">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPos1" />
+          <parameter const="true" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape2" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="clickPos2" />
+          <parameter const="false" type="bool" modifier="" name="trim" />
+          <parameter const="false" type="bool" modifier="" name="samePolyline" />
+          <parameter const="false" type="double" modifier="" name="radius" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="xLineToRay" static="true">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rayToLine" static="true">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;RShape&gt;" modifier="" name="shape" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scaleArc" static="true">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="shape" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <!--
+    <function name="transformArc" static="true">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="RShape" modifier="&amp;" name="shape" />
+          <parameter const="false" type="RShapeTransformation" modifier="&amp;" name="transformation" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+    <function name="ellipseToArcCircleEllipse" static="true">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" access="public">
+        <parameters>
+          <parameter const="true" type="REllipse" modifier="&amp;" name="ellipse" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getErrorCode" static="true">
+      <variant return-type="int" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="dump">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="print" />
+  </class>
+</unit>
