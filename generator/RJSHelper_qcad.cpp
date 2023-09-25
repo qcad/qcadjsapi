@@ -8,6 +8,17 @@
         void RJSHelper_qcad::registerDowncasters() {
 
           
+            // downcasters from QEvent to ...
+            
+              // downcasters from QEvent to RCloseCurrentEvent
+              RJSHelper::registerDowncaster_QEvent(new RJSDowncaster_QEvent_RCloseCurrentEvent());
+            
+              // downcasters from QEvent to RPropertyEvent
+              RJSHelper::registerDowncaster_QEvent(new RJSDowncaster_QEvent_RPropertyEvent());
+            
+              // downcasters from QEvent to RTerminateEvent
+              RJSHelper::registerDowncaster_QEvent(new RJSDowncaster_QEvent_RTerminateEvent());
+            
             // downcasters from QWidget to ...
             
               // downcasters from QWidget to RCharacterWidget

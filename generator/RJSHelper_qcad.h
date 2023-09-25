@@ -2118,60 +2118,103 @@
 
 
       
-        // downcasters from QWidget to ...
-        
 
-          // downcasters from QWidget to RCharacterWidget
-          class RJSDowncaster_QWidget_RCharacterWidget : public RJSDowncaster_QWidget {
-              QJSValue downcast(RJSApi& handler, QWidget* o) {
-                  RCharacterWidget* c = qobject_cast<RCharacterWidget*>(o);
-                  if (c!=nullptr) {
-                      return RJSHelper_qcad::cpp2js_RCharacterWidget(handler, c);
-                  }
-                  return QJSValue();
-              }
-          };
+          // downcasters from QEvent to ...
+          
 
-        
+            // downcasters from QEvent to RCloseCurrentEvent
+            class RJSDowncaster_QEvent_RCloseCurrentEvent : public RJSDowncaster_QEvent {
+                QJSValue downcast(RJSApi& handler, QEvent* o) {
+                    RCloseCurrentEvent* c = dynamic_cast<RCloseCurrentEvent*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RCloseCurrentEvent(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
 
-          // downcasters from QWidget to RFontChooserWidget
-          class RJSDowncaster_QWidget_RFontChooserWidget : public RJSDowncaster_QWidget {
-              QJSValue downcast(RJSApi& handler, QWidget* o) {
-                  RFontChooserWidget* c = qobject_cast<RFontChooserWidget*>(o);
-                  if (c!=nullptr) {
-                      return RJSHelper_qcad::cpp2js_RFontChooserWidget(handler, c);
-                  }
-                  return QJSValue();
-              }
-          };
+          
 
-        
+            // downcasters from QEvent to RPropertyEvent
+            class RJSDowncaster_QEvent_RPropertyEvent : public RJSDowncaster_QEvent {
+                QJSValue downcast(RJSApi& handler, QEvent* o) {
+                    RPropertyEvent* c = dynamic_cast<RPropertyEvent*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RPropertyEvent(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
 
-          // downcasters from QWidget to RGraphicsViewQt
-          class RJSDowncaster_QWidget_RGraphicsViewQt : public RJSDowncaster_QWidget {
-              QJSValue downcast(RJSApi& handler, QWidget* o) {
-                  RGraphicsViewQt* c = qobject_cast<RGraphicsViewQt*>(o);
-                  if (c!=nullptr) {
-                      return RJSHelper_qcad::cpp2js_RGraphicsViewQt(handler, c);
-                  }
-                  return QJSValue();
-              }
-          };
+          
 
-        
+            // downcasters from QEvent to RTerminateEvent
+            class RJSDowncaster_QEvent_RTerminateEvent : public RJSDowncaster_QEvent {
+                QJSValue downcast(RJSApi& handler, QEvent* o) {
+                    RTerminateEvent* c = dynamic_cast<RTerminateEvent*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RTerminateEvent(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
 
-          // downcasters from QWidget to RWidget
-          class RJSDowncaster_QWidget_RWidget : public RJSDowncaster_QWidget {
-              QJSValue downcast(RJSApi& handler, QWidget* o) {
-                  RWidget* c = qobject_cast<RWidget*>(o);
-                  if (c!=nullptr) {
-                      return RJSHelper_qcad::cpp2js_RWidget(handler, c);
-                  }
-                  return QJSValue();
-              }
-          };
+          
 
-        
+          // downcasters from QWidget to ...
+          
+
+            // downcasters from QWidget to RCharacterWidget
+            class RJSDowncaster_QWidget_RCharacterWidget : public RJSDowncaster_QWidget {
+                QJSValue downcast(RJSApi& handler, QWidget* o) {
+                    RCharacterWidget* c = dynamic_cast<RCharacterWidget*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RCharacterWidget(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+            // downcasters from QWidget to RFontChooserWidget
+            class RJSDowncaster_QWidget_RFontChooserWidget : public RJSDowncaster_QWidget {
+                QJSValue downcast(RJSApi& handler, QWidget* o) {
+                    RFontChooserWidget* c = dynamic_cast<RFontChooserWidget*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RFontChooserWidget(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+            // downcasters from QWidget to RGraphicsViewQt
+            class RJSDowncaster_QWidget_RGraphicsViewQt : public RJSDowncaster_QWidget {
+                QJSValue downcast(RJSApi& handler, QWidget* o) {
+                    RGraphicsViewQt* c = dynamic_cast<RGraphicsViewQt*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RGraphicsViewQt(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+            // downcasters from QWidget to RWidget
+            class RJSDowncaster_QWidget_RWidget : public RJSDowncaster_QWidget {
+                QJSValue downcast(RJSApi& handler, QWidget* o) {
+                    RWidget* c = dynamic_cast<RWidget*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RWidget(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
 
 
 

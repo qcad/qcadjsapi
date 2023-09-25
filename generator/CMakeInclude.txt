@@ -1,5 +1,5 @@
 # Automatically generated, do not edit
-target_sources(rjsapi_qcad PUBLIC
+target_sources(qcadjsapi PUBLIC
     generator/cpp/raction_base.h
     generator/cpp/raction_wrapper.h
     generator/cpp/ractionadapter_base.h

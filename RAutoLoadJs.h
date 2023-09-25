@@ -20,7 +20,7 @@
 #ifndef RAUTOLOADJS_H
 #define RAUTOLOADJS_H
 
-#include "rjsapi_qcad_global.h"
+#include "qcadjsapi_global.h"
 
 #include <QMetaType>
 #include <QString>
@@ -30,7 +30,7 @@
  * \scriptable
  * \ingroup js
  */
-class RJSAPI_QCAD_EXPORT RAutoLoadJs {
+class QCADJSAPI_EXPORT RAutoLoadJs {
 public:
     static void addAutoLoadFile(const QString& file);
     static QStringList getAutoLoadFiles();
