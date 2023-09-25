@@ -5,6 +5,25 @@
         
           #include "header_qcad_cpp.h"
         
+        void RJSHelper_qcad::registerDowncasters() {
+
+          
+            // downcasters from QWidget to ...
+            
+              // downcasters from QWidget to RCharacterWidget
+              RJSHelper::registerDowncaster_QWidget(new RJSDowncaster_QWidget_RCharacterWidget());
+            
+              // downcasters from QWidget to RFontChooserWidget
+              RJSHelper::registerDowncaster_QWidget(new RJSDowncaster_QWidget_RFontChooserWidget());
+            
+              // downcasters from QWidget to RGraphicsViewQt
+              RJSHelper::registerDowncaster_QWidget(new RJSDowncaster_QWidget_RGraphicsViewQt());
+            
+              // downcasters from QWidget to RWidget
+              RJSHelper::registerDowncaster_QWidget(new RJSDowncaster_QWidget_RWidget());
+            
+        }
+      
   // ----------------
   // primitive types:
   // ----------------

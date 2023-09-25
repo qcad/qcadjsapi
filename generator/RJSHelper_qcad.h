@@ -23,10 +23,13 @@
 
       
 
+
+
       class RJSHelper_qcad {
 
       public:
-
+        
+          static void registerDowncasters();
         
   // ----------------
   // primitive types:
@@ -2110,6 +2113,67 @@
   // --------------------
   
       };
+
+
+
+
+      
+        // downcasters from QWidget to ...
+        
+
+          // downcasters from QWidget to RCharacterWidget
+          class RJSDowncaster_QWidget_RCharacterWidget : public RJSDowncaster_QWidget {
+              QJSValue downcast(RJSApi& handler, QWidget* o) {
+                  RCharacterWidget* c = qobject_cast<RCharacterWidget*>(o);
+                  if (c!=nullptr) {
+                      return RJSHelper_qcad::cpp2js_RCharacterWidget(handler, c);
+                  }
+                  return QJSValue();
+              }
+          };
+
+        
+
+          // downcasters from QWidget to RFontChooserWidget
+          class RJSDowncaster_QWidget_RFontChooserWidget : public RJSDowncaster_QWidget {
+              QJSValue downcast(RJSApi& handler, QWidget* o) {
+                  RFontChooserWidget* c = qobject_cast<RFontChooserWidget*>(o);
+                  if (c!=nullptr) {
+                      return RJSHelper_qcad::cpp2js_RFontChooserWidget(handler, c);
+                  }
+                  return QJSValue();
+              }
+          };
+
+        
+
+          // downcasters from QWidget to RGraphicsViewQt
+          class RJSDowncaster_QWidget_RGraphicsViewQt : public RJSDowncaster_QWidget {
+              QJSValue downcast(RJSApi& handler, QWidget* o) {
+                  RGraphicsViewQt* c = qobject_cast<RGraphicsViewQt*>(o);
+                  if (c!=nullptr) {
+                      return RJSHelper_qcad::cpp2js_RGraphicsViewQt(handler, c);
+                  }
+                  return QJSValue();
+              }
+          };
+
+        
+
+          // downcasters from QWidget to RWidget
+          class RJSDowncaster_QWidget_RWidget : public RJSDowncaster_QWidget {
+              QJSValue downcast(RJSApi& handler, QWidget* o) {
+                  RWidget* c = qobject_cast<RWidget*>(o);
+                  if (c!=nullptr) {
+                      return RJSHelper_qcad::cpp2js_RWidget(handler, c);
+                  }
+                  return QJSValue();
+              }
+          };
+
+        
+
+
 
       #endif
     
