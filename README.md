@@ -1,2 +1,2 @@
 # qcadjsapi
-Qt 6 Script Bindings for QCAD
+QJSEngine bindings for QCAD
