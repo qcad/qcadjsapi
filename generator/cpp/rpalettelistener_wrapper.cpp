@@ -8,6 +8,9 @@
     #include "rpalettelistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPaletteListener*> RPaletteListener_Wrapper::basecasters_RPaletteListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RPaletteListener_Wrapper::init(RJSApi& handler) {

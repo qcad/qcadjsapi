@@ -8,6 +8,9 @@
     #include "rgraphicsscenedrawable_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RGraphicsSceneDrawable*> RGraphicsSceneDrawable_Wrapper::basecasters_RGraphicsSceneDrawable;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RGraphicsSceneDrawable

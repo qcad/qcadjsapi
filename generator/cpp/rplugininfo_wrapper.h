@@ -40,13 +40,22 @@
       
         static RPluginInfo* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RPluginInfo.length(); i++) {
+            RJSBasecaster_RPluginInfo* basecaster = basecasters_RPluginInfo[i];
+            RPluginInfo* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RPluginInfo::getIdStatic()) {
             return (RPluginInfo*)vp;
           }
+
+          qWarning() << "RPluginInfo::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -288,6 +297,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RPluginInfo*> basecasters_RPluginInfo;
+
+      public:
+        static void registerBasecaster_RPluginInfo(RJSBasecaster_RPluginInfo* bc) {
+          basecasters_RPluginInfo.append(bc);
+        }
       
     };
 

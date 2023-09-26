@@ -8,6 +8,9 @@
     #include "rpropertytypeid_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPropertyTypeId*> RPropertyTypeId_Wrapper::basecasters_RPropertyTypeId;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RPropertyTypeId

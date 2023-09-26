@@ -8,6 +8,9 @@
     #include "rray_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RRay*> RRay_Wrapper::basecasters_RRay;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RRay

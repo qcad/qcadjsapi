@@ -8,6 +8,9 @@
     #include "rs_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RS*> RS_Wrapper::basecasters_RS;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RS

@@ -8,6 +8,9 @@
     #include "rchangepropertyoperation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RChangePropertyOperation*> RChangePropertyOperation_Wrapper::basecasters_RChangePropertyOperation;
+    
     // static functions implementation in singleton wrapper:
     
     void RChangePropertyOperation_Wrapper::init(RJSApi& handler) {

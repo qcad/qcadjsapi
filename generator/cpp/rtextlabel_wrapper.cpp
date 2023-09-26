@@ -8,6 +8,9 @@
     #include "rtextlabel_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RTextLabel*> RTextLabel_Wrapper::basecasters_RTextLabel;
+    
     // static functions implementation in singleton wrapper:
     
     void RTextLabel_Wrapper::init(RJSApi& handler) {

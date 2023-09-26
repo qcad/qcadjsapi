@@ -139,6 +139,35 @@
       // static functions:
       
 
+        // static function 
+        RPenListenerAdapter.tr = function() 
+          
+        {
+          //print("JS: RPenListenerAdapter.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RPenListenerAdapter_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RPenListenerAdapter);
+  }
+
+  
+  else {
+    
+        print("RPenListenerAdapter.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

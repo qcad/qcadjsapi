@@ -87,6 +87,10 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["windowStateChanged(Qt::WindowStates,Qt::WindowStates)"] = Object.getPrototypeOf(this).windowStateChanged;
+  
     this["closeRequested(RMdiChildQt*)"] = Object.getPrototypeOf(this).closeRequested;
   
     this["closeAccepted(RMdiChildQt*)"] = Object.getPrototypeOf(this).closeAccepted;
@@ -147,8 +151,152 @@
 
       // functions:
       
+        // function 
+        RMdiChildQt.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RMdiChildQt.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiChildQt);
+  }
+
+  
+  else {
+    
+        print("RMdiChildQt.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RMdiChildQt.tr = function() 
+          
+        {
+          //print("JS: RMdiChildQt.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RMdiChildQt_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiChildQt);
+  }
+
+  
+  else {
+    
+        print("RMdiChildQt.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMdiChildQt.setTabOrder = function() 
+          
+        {
+          //print("JS: RMdiChildQt.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RMdiChildQt_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiChildQt);
+  }
+
+  
+  else {
+    
+        print("RMdiChildQt.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMdiChildQt.mouseGrabber = function() 
+          
+        {
+          //print("JS: RMdiChildQt.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMdiChildQt_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiChildQt);
+  }
+
+  
+  else {
+    
+        print("RMdiChildQt.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMdiChildQt.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RMdiChildQt.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMdiChildQt_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiChildQt);
+  }
+
+  
+  else {
+    
+        print("RMdiChildQt.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

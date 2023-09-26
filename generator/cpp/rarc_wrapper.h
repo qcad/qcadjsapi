@@ -42,8 +42,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1547,7 +1546,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1600,17 +1598,22 @@
       
         static RArc* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RArcData::getIdStatic()) {
-              return (RArc*)(RArcData*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RArc.length(); i++) {
+            RJSBasecaster_RArc* basecaster = basecasters_RArc[i];
+            RArc* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RArc::getIdStatic()) {
             return (RArc*)vp;
           }
+
+          qWarning() << "RArc::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4115,6 +4118,15 @@ Ray = RArc::Ray,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RArc*> basecasters_RArc;
+
+      public:
+        static void registerBasecaster_RArc(RJSBasecaster_RArc* bc) {
+          basecasters_RArc.append(bc);
+        }
       
     };
 

@@ -54,8 +54,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1419,7 +1418,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1442,53 +1440,22 @@
       
         static RShape* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RArc::getIdStatic()) {
-              return (RShape*)(RArc*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RShape.length(); i++) {
+            RJSBasecaster_RShape* basecaster = basecasters_RShape[i];
+            RShape* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RCircle::getIdStatic()) {
-              return (RShape*)(RCircle*)vp;
-            }
-            
-            if (t==RJSType_REllipse::getIdStatic()) {
-              return (RShape*)(REllipse*)vp;
-            }
-            
-            if (t==RJSType_RLine::getIdStatic()) {
-              return (RShape*)(RLine*)vp;
-            }
-            
-            if (t==RJSType_RPoint::getIdStatic()) {
-              return (RShape*)(RPoint*)vp;
-            }
-            
-            if (t==RJSType_RPolyline::getIdStatic()) {
-              return (RShape*)(RPolyline*)vp;
-            }
-            
-            if (t==RJSType_RRay::getIdStatic()) {
-              return (RShape*)(RRay*)vp;
-            }
-            
-            if (t==RJSType_RSpline::getIdStatic()) {
-              return (RShape*)(RSpline*)vp;
-            }
-            
-            if (t==RJSType_RTriangle::getIdStatic()) {
-              return (RShape*)(RTriangle*)vp;
-            }
-            
-            if (t==RJSType_RXLine::getIdStatic()) {
-              return (RShape*)(RXLine*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RShape::getIdStatic()) {
             return (RShape*)vp;
           }
+
+          qWarning() << "RShape::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3218,6 +3185,15 @@ Ray = RShape::Ray,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RShape*> basecasters_RShape;
+
+      public:
+        static void registerBasecaster_RShape(RJSBasecaster_RShape* bc) {
+          basecasters_RShape.append(bc);
+        }
       
     };
 

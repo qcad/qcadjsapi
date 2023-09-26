@@ -8,6 +8,9 @@
     #include "rtransformation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RTransformation*> RTransformation_Wrapper::basecasters_RTransformation;
+    
     // static functions implementation in singleton wrapper:
     
     void RTransformation_Wrapper::init(RJSApi& handler) {

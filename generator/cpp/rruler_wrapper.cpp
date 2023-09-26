@@ -8,6 +8,9 @@
     #include "rruler_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RRuler*> RRuler_Wrapper::basecasters_RRuler;
+    
     // static functions implementation in singleton wrapper:
     
     void RRuler_Wrapper::init(RJSApi& handler) {

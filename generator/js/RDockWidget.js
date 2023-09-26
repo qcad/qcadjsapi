@@ -114,6 +114,18 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["featuresChanged(QDockWidget::DockWidgetFeatures)"] = Object.getPrototypeOf(this).featuresChanged;
+  
+    this["topLevelChanged(bool)"] = Object.getPrototypeOf(this).topLevelChanged;
+  
+    this["allowedAreasChanged(Qt::DockWidgetAreas)"] = Object.getPrototypeOf(this).allowedAreasChanged;
+  
+    this["visibilityChanged(bool)"] = Object.getPrototypeOf(this).visibilityChanged;
+  
+    this["dockLocationChanged(Qt::DockWidgetArea)"] = Object.getPrototypeOf(this).dockLocationChanged;
+  
           }
         }
       }
@@ -161,11 +173,133 @@
 
       // enum values:
       
+  // enum: DockWidgetFeature
+RDockWidget.DockWidgetClosable = RDockWidget_Wrapper.DockWidgetClosable;
+RDockWidget.DockWidgetMovable = RDockWidget_Wrapper.DockWidgetMovable;
+RDockWidget.DockWidgetFloatable = RDockWidget_Wrapper.DockWidgetFloatable;
+RDockWidget.DockWidgetVerticalTitleBar = RDockWidget_Wrapper.DockWidgetVerticalTitleBar;
+RDockWidget.DockWidgetFeatureMask = RDockWidget_Wrapper.DockWidgetFeatureMask;
+RDockWidget.NoDockWidgetFeatures = RDockWidget_Wrapper.NoDockWidgetFeatures;
+RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
+
 
       // functions:
       
 
       // static functions:
+      
+
+        // static function 
+        RDockWidget.tr = function() 
+          
+        {
+          //print("JS: RDockWidget.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RDockWidget_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RDockWidget);
+  }
+
+  
+  else {
+    
+        print("RDockWidget.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RDockWidget.setTabOrder = function() 
+          
+        {
+          //print("JS: RDockWidget.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RDockWidget_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RDockWidget);
+  }
+
+  
+  else {
+    
+        print("RDockWidget.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RDockWidget.mouseGrabber = function() 
+          
+        {
+          //print("JS: RDockWidget.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RDockWidget_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RDockWidget);
+  }
+
+  
+  else {
+    
+        print("RDockWidget.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RDockWidget.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RDockWidget.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RDockWidget_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RDockWidget);
+  }
+
+  
+  else {
+    
+        print("RDockWidget.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

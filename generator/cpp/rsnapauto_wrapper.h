@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -590,7 +589,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -613,13 +611,22 @@
       
         static RSnapAuto* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSnapAuto.length(); i++) {
+            RJSBasecaster_RSnapAuto* basecaster = basecasters_RSnapAuto[i];
+            RSnapAuto* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSnapAuto::getIdStatic()) {
             return (RSnapAuto*)vp;
           }
+
+          qWarning() << "RSnapAuto::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1072,6 +1079,15 @@ FreePositioning = RSnapAuto::FreePositioning,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSnapAuto*> basecasters_RSnapAuto;
+
+      public:
+        static void registerBasecaster_RSnapAuto(RJSBasecaster_RSnapAuto* bc) {
+          basecasters_RSnapAuto.append(bc);
+        }
       
     };
 

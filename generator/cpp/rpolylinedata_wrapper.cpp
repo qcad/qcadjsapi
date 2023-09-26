@@ -8,6 +8,9 @@
     #include "rpolylinedata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPolylineData*> RPolylineData_Wrapper::basecasters_RPolylineData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RPolylineData

@@ -22,6 +22,69 @@
       // wrapped object is RToolMatrixItemDelegate_Base class if new object is created: 
       #include "rtoolmatrixitemdelegate_base.h"
     
+      // singleton class wrapper for static functions:
+      class RToolMatrixItemDelegate_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      RToolMatrixItemDelegate_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {}
+
+      
+
+      // static functions:
+      
+    // Class: RToolMatrixItemDelegate
+    // Function: tr
+    // Source: QObject
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tr
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static RToolMatrixItemDelegate_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RToolMatrixItemDelegate
@@ -31,6 +94,12 @@
       Q_OBJECT
       QML_INTERFACE
     
+  Q_PROPERTY(
+    
+    QJSValue
+     objectName READ objectName WRITE setObjectName
+  )
+
 
     private:
       // disable copy constructor:
@@ -43,13 +112,22 @@
       
         static RToolMatrixItemDelegate* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RToolMatrixItemDelegate.length(); i++) {
+            RJSBasecaster_RToolMatrixItemDelegate* basecaster = basecasters_RToolMatrixItemDelegate[i];
+            RToolMatrixItemDelegate* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RToolMatrixItemDelegate::getIdStatic()) {
             return (RToolMatrixItemDelegate*)vp;
           }
+
+          qWarning() << "RToolMatrixItemDelegate::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -69,6 +147,18 @@
           return ret;
         }
       
+        // enums:
+        
+  enum EndEditHint {
+    NoHint = RToolMatrixItemDelegate::NoHint,
+EditNextItem = RToolMatrixItemDelegate::EditNextItem,
+EditPreviousItem = RToolMatrixItemDelegate::EditPreviousItem,
+SubmitModelCache = RToolMatrixItemDelegate::SubmitModelCache,
+RevertModelCache = RToolMatrixItemDelegate::RevertModelCache,
+
+  };
+  Q_ENUM(EndEditHint)
+
     /*
     // special constructor used as prototype:
     
@@ -129,6 +219,627 @@
 
     // non-static functions:
     
+    // Class: RToolMatrixItemDelegate
+    // Function: objectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  objectName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: setObjectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setObjectName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: isWidgetType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWidgetType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: isWindowType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWindowType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: signalsBlocked
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  signalsBlocked
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: blockSignals
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  blockSignals
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: findChild
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  findChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: children
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  children
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: setParent
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setParent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: installEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  installEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: removeEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: dumpObjectTree
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectTree
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: dumpObjectInfo
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectInfo
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: setProperty
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setProperty
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: property
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  property
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: dynamicPropertyNames
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dynamicPropertyNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: parent
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  parent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: deleteLater
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  deleteLater
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: destroyEditor
+    // Source: QAbstractItemDelegate
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  destroyEditor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: paintingRoles
+    // Source: QAbstractItemDelegate
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintingRoles
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: commitData
+    // Source: QAbstractItemDelegate
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void commitData(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void commitDataEmitter(
+                QWidget* editor
+              );
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: closeEditor
+    // Source: QAbstractItemDelegate
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void closeEditor(
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void closeEditorEmitter(
+                QWidget* editor, QAbstractItemDelegate::EndEditHint hint=QAbstractItemDelegate::NoHint
+              );
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: sizeHintChanged
+    // Source: QAbstractItemDelegate
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void sizeHintChanged(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void sizeHintChangedEmitter(
+                const QModelIndex& a1
+              );
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: hasClipping
+    // Source: QItemDelegate
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  hasClipping
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: setClipping
+    // Source: QItemDelegate
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setClipping
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: setEditorData
+    // Source: QItemDelegate
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setEditorData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToolMatrixItemDelegate
+    // Function: setModelData
+    // Source: QItemDelegate
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setModelData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             if (wrapped!=nullptr) {
@@ -253,6 +964,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RToolMatrixItemDelegate*> basecasters_RToolMatrixItemDelegate;
+
+      public:
+        static void registerBasecaster_RToolMatrixItemDelegate(RJSBasecaster_RToolMatrixItemDelegate* bc) {
+          basecasters_RToolMatrixItemDelegate.append(bc);
+        }
       
     };
 

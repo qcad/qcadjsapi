@@ -87,6 +87,8 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
           }
         }
       }
@@ -133,8 +135,152 @@
 
       // functions:
       
+        // function 
+        RWidget.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RWidget.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RWidget);
+  }
+
+  
+  else {
+    
+        print("RWidget.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RWidget.tr = function() 
+          
+        {
+          //print("JS: RWidget.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RWidget_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RWidget);
+  }
+
+  
+  else {
+    
+        print("RWidget.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RWidget.setTabOrder = function() 
+          
+        {
+          //print("JS: RWidget.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RWidget_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RWidget);
+  }
+
+  
+  else {
+    
+        print("RWidget.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RWidget.mouseGrabber = function() 
+          
+        {
+          //print("JS: RWidget.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RWidget_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RWidget);
+  }
+
+  
+  else {
+    
+        print("RWidget.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RWidget.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RWidget.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RWidget_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RWidget);
+  }
+
+  
+  else {
+    
+        print("RWidget.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

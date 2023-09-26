@@ -8,6 +8,9 @@
     #include "rmessagehandler_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RMessageHandler*> RMessageHandler_Wrapper::basecasters_RMessageHandler;
+    
     // static functions implementation in singleton wrapper:
     
     void RMessageHandler_Wrapper::init(RJSApi& handler) {

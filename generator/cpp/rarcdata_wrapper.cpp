@@ -8,6 +8,9 @@
     #include "rarcdata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RArcData*> RArcData_Wrapper::basecasters_RArcData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RArcData

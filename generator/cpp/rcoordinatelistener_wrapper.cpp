@@ -8,6 +8,9 @@
     #include "rcoordinatelistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RCoordinateListener*> RCoordinateListener_Wrapper::basecasters_RCoordinateListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RCoordinateListener_Wrapper::init(RJSApi& handler) {

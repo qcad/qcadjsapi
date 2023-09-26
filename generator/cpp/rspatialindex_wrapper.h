@@ -36,8 +36,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -124,7 +123,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -147,21 +145,22 @@
       
         static RSpatialIndex* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RSpatialIndexNavel::getIdStatic()) {
-              return (RSpatialIndex*)(RSpatialIndexNavel*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSpatialIndex.length(); i++) {
+            RJSBasecaster_RSpatialIndex* basecaster = basecasters_RSpatialIndex[i];
+            RSpatialIndex* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RSpatialIndexSimple::getIdStatic()) {
-              return (RSpatialIndex*)(RSpatialIndexSimple*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSpatialIndex::getIdStatic()) {
             return (RSpatialIndex*)vp;
           }
+
+          qWarning() << "RSpatialIndex::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -526,6 +525,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSpatialIndex*> basecasters_RSpatialIndex;
+
+      public:
+        static void registerBasecaster_RSpatialIndex(RJSBasecaster_RSpatialIndex* bc) {
+          basecasters_RSpatialIndex.append(bc);
+        }
       
     };
 

@@ -19,6 +19,69 @@
       
         #include "RTransactionListenerAdapter.h"
       
+      // singleton class wrapper for static functions:
+      class RTransactionListenerAdapter_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      RTransactionListenerAdapter_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {}
+
+      
+
+      // static functions:
+      
+    // Class: RTransactionListenerAdapter
+    // Function: tr
+    // Source: QObject
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tr
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static RTransactionListenerAdapter_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RTransactionListenerAdapter
@@ -28,6 +91,12 @@
       Q_OBJECT
       QML_INTERFACE
     
+  Q_PROPERTY(
+    
+    QJSValue
+     objectName READ objectName WRITE setObjectName
+  )
+
 
     private:
       // disable copy constructor:
@@ -40,13 +109,22 @@
       
         static RTransactionListenerAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RTransactionListenerAdapter.length(); i++) {
+            RJSBasecaster_RTransactionListenerAdapter* basecaster = basecasters_RTransactionListenerAdapter[i];
+            RTransactionListenerAdapter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RTransactionListenerAdapter::getIdStatic()) {
             return (RTransactionListenerAdapter*)vp;
           }
+
+          qWarning() << "RTransactionListenerAdapter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -116,6 +194,406 @@
 
     // non-static functions:
     
+    // Class: RTransactionListenerAdapter
+    // Function: objectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  objectName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: setObjectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setObjectName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: isWidgetType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWidgetType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: isWindowType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWindowType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: signalsBlocked
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  signalsBlocked
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: blockSignals
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  blockSignals
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: findChild
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  findChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: children
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  children
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: setParent
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setParent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: installEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  installEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: removeEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: dumpObjectTree
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectTree
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: dumpObjectInfo
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectInfo
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: setProperty
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setProperty
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: property
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  property
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: dynamicPropertyNames
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dynamicPropertyNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: parent
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  parent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransactionListenerAdapter
+    // Function: deleteLater
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  deleteLater
+              (
+
+                
+              )
+              
+              ;
+            
     // Class: RTransactionListenerAdapter
     // Function: updateTransactionListener
     // Source: 
@@ -316,6 +794,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RTransactionListenerAdapter*> basecasters_RTransactionListenerAdapter;
+
+      public:
+        static void registerBasecaster_RTransactionListenerAdapter(RJSBasecaster_RTransactionListenerAdapter* bc) {
+          basecasters_RTransactionListenerAdapter.append(bc);
+        }
       
     };
 

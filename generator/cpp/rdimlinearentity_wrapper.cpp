@@ -8,6 +8,9 @@
     #include "rdimlinearentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimLinearEntity*> RDimLinearEntity_Wrapper::basecasters_RDimLinearEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimLinearEntity

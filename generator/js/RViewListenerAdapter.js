@@ -139,6 +139,35 @@
       // static functions:
       
 
+        // static function 
+        RViewListenerAdapter.tr = function() 
+          
+        {
+          //print("JS: RViewListenerAdapter.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RViewListenerAdapter_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RViewListenerAdapter);
+  }
+
+  
+  else {
+    
+        print("RViewListenerAdapter.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

@@ -21,6 +21,69 @@
       
         #include "RKeyListenerAdapter.h"
       
+      // singleton class wrapper for static functions:
+      class RKeyListenerAdapter_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      RKeyListenerAdapter_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {}
+
+      
+
+      // static functions:
+      
+    // Class: RKeyListenerAdapter
+    // Function: tr
+    // Source: QObject
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tr
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static RKeyListenerAdapter_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RKeyListenerAdapter
@@ -30,6 +93,12 @@
       Q_OBJECT
       QML_INTERFACE
     
+  Q_PROPERTY(
+    
+    QJSValue
+     objectName READ objectName WRITE setObjectName
+  )
+
 
     private:
       // disable copy constructor:
@@ -42,13 +111,22 @@
       
         static RKeyListenerAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RKeyListenerAdapter.length(); i++) {
+            RJSBasecaster_RKeyListenerAdapter* basecaster = basecasters_RKeyListenerAdapter[i];
+            RKeyListenerAdapter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RKeyListenerAdapter::getIdStatic()) {
             return (RKeyListenerAdapter*)vp;
           }
+
+          qWarning() << "RKeyListenerAdapter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -118,6 +196,406 @@
 
     // non-static functions:
     
+    // Class: RKeyListenerAdapter
+    // Function: objectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  objectName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: setObjectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setObjectName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: isWidgetType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWidgetType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: isWindowType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWindowType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: signalsBlocked
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  signalsBlocked
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: blockSignals
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  blockSignals
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: findChild
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  findChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: children
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  children
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: setParent
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setParent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: installEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  installEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: removeEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: dumpObjectTree
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectTree
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: dumpObjectInfo
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectInfo
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: setProperty
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setProperty
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: property
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  property
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: dynamicPropertyNames
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dynamicPropertyNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: parent
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  parent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RKeyListenerAdapter
+    // Function: deleteLater
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  deleteLater
+              (
+
+                
+              )
+              
+              ;
+            
     // Class: RKeyListenerAdapter
     // Function: keyPressed
     // Source: 
@@ -268,6 +746,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RKeyListenerAdapter*> basecasters_RKeyListenerAdapter;
+
+      public:
+        static void registerBasecaster_RKeyListenerAdapter(RJSBasecaster_RKeyListenerAdapter* bc) {
+          basecasters_RKeyListenerAdapter.append(bc);
+        }
       
     };
 

@@ -87,6 +87,10 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["headerDataChanged(Qt::Orientation,int,int)"] = Object.getPrototypeOf(this).headerDataChanged;
+  
+    this["rowsInserted(QModelIndex,int,int)"] = Object.getPrototypeOf(this).rowsInserted;
+  
           }
         }
       }
@@ -134,11 +138,56 @@
 
       // enum values:
       
+  // enum: LayoutChangeHint
+RFileSystemModel.NoLayoutChangeHint = RFileSystemModel_Wrapper.NoLayoutChangeHint;
+RFileSystemModel.VerticalSortHint = RFileSystemModel_Wrapper.VerticalSortHint;
+RFileSystemModel.HorizontalSortHint = RFileSystemModel_Wrapper.HorizontalSortHint;
+
+  // enum: Roles
+RFileSystemModel.FileIconRole = RFileSystemModel_Wrapper.FileIconRole;
+RFileSystemModel.FilePathRole = RFileSystemModel_Wrapper.FilePathRole;
+RFileSystemModel.FileNameRole = RFileSystemModel_Wrapper.FileNameRole;
+RFileSystemModel.FilePermissions = RFileSystemModel_Wrapper.FilePermissions;
+
+  // enum: Option
+RFileSystemModel.DontWatchForChanges = RFileSystemModel_Wrapper.DontWatchForChanges;
+RFileSystemModel.DontResolveSymlinks = RFileSystemModel_Wrapper.DontResolveSymlinks;
+RFileSystemModel.DontUseCustomDirectoryIcons = RFileSystemModel_Wrapper.DontUseCustomDirectoryIcons;
+
 
       // functions:
       
 
       // static functions:
+      
+
+        // static function 
+        RFileSystemModel.tr = function() 
+          
+        {
+          //print("JS: RFileSystemModel.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RFileSystemModel_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RFileSystemModel);
+  }
+
+  
+  else {
+    
+        print("RFileSystemModel.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

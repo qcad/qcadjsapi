@@ -138,6 +138,35 @@
       // static functions:
       
 
+        // static function 
+        RKeyListenerAdapter.tr = function() 
+          
+        {
+          //print("JS: RKeyListenerAdapter.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RKeyListenerAdapter_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RKeyListenerAdapter);
+  }
+
+  
+  else {
+    
+        print("RKeyListenerAdapter.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

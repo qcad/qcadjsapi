@@ -141,6 +141,35 @@
       // static functions:
       
 
+        // static function 
+        RLayerListenerAdapter.tr = function() 
+          
+        {
+          //print("JS: RLayerListenerAdapter.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RLayerListenerAdapter_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RLayerListenerAdapter);
+  }
+
+  
+  else {
+    
+        print("RLayerListenerAdapter.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

@@ -4511,6 +4511,40 @@
     
 
   
+      class RJSType_RPainterPathSource : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_RPainterPathSource::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "RPainterPathSource";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_RPainterPathSource();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_RPainterPathSource());
+              }
+              return id;
+          }
+
+
+      private:
+          static int id;
+      };
+    
       class RJSType_RAction : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE

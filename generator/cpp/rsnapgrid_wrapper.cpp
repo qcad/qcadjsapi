@@ -8,6 +8,9 @@
     #include "rsnapgrid_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSnapGrid*> RSnapGrid_Wrapper::basecasters_RSnapGrid;
+    
     // static functions implementation in singleton wrapper:
     
     void RSnapGrid_Wrapper::init(RJSApi& handler) {

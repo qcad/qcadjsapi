@@ -72,8 +72,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property PointTolerance:
@@ -674,7 +673,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -697,13 +695,22 @@
       
         static RS* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RS.length(); i++) {
+            RJSBasecaster_RS* basecaster = basecasters_RS[i];
+            RS* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RS::getIdStatic()) {
             return (RS*)vp;
           }
+
+          qWarning() << "RS::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1457,6 +1464,15 @@ OutInBounce = RS::OutInBounce,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RS*> basecasters_RS;
+
+      public:
+        static void registerBasecaster_RS(RJSBasecaster_RS* bc) {
+          basecasters_RS.append(bc);
+        }
       
     };
 

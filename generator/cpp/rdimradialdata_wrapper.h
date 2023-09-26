@@ -36,8 +36,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -70,7 +69,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -93,13 +91,22 @@
       
         static RDimRadialData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDimRadialData.length(); i++) {
+            RJSBasecaster_RDimRadialData* basecaster = basecasters_RDimRadialData[i];
+            RDimRadialData* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDimRadialData::getIdStatic()) {
             return (RDimRadialData*)vp;
           }
+
+          qWarning() << "RDimRadialData::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4549,6 +4556,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDimRadialData*> basecasters_RDimRadialData;
+
+      public:
+        static void registerBasecaster_RDimRadialData(RJSBasecaster_RDimRadialData* bc) {
+          basecasters_RDimRadialData.append(bc);
+        }
       
     };
 

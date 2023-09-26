@@ -8,6 +8,9 @@
     #include "rprogresshandler_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RProgressHandler*> RProgressHandler_Wrapper::basecasters_RProgressHandler;
+    
     // static functions implementation in singleton wrapper:
     
     void RProgressHandler_Wrapper::init(RJSApi& handler) {

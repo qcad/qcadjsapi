@@ -326,6 +326,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rorthogrid_wrapper.h
     generator/cpp/rpainterpath_base.h
     generator/cpp/rpainterpath_wrapper.h
+    generator/cpp/rpainterpathsource_base.h
+    generator/cpp/rpainterpathsource_wrapper.h
     generator/cpp/rpalettelistener_base.h
     generator/cpp/rpalettelistener_wrapper.h
     generator/cpp/rpalettelisteneradapter_base.h
@@ -884,6 +886,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rorthogrid_wrapper.cpp
     generator/cpp/rpainterpath_base.cpp
     generator/cpp/rpainterpath_wrapper.cpp
+    generator/cpp/rpainterpathsource_base.cpp
+    generator/cpp/rpainterpathsource_wrapper.cpp
     generator/cpp/rpalettelistener_base.cpp
     generator/cpp/rpalettelistener_wrapper.cpp
     generator/cpp/rpalettelisteneradapter_base.cpp

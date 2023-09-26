@@ -8,8 +8,82 @@
     #include "rclosecurrentevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RCloseCurrentEvent*> RCloseCurrentEvent_Wrapper::basecasters_RCloseCurrentEvent;
+    
     // static functions implementation in singleton wrapper:
     
+    // Class: RCloseCurrentEvent
+    // Function: registerEventType
+    // Source: QEvent
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_WrapperSingleton::registerEventType
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: hint (int)
+  
+int a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = -1;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            int res = 
+                
+                // call static member function:
+                QEvent::registerEventType(
+              a1_cpp
+    
+            );
+          
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for registerEventType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     void RCloseCurrentEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RCloseCurrentEvent_Wrapper>("org.qcad", 1, 0, "RCloseCurrentEvent_Wrapper");
@@ -38,6 +112,15 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RCloseCurrentEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RCloseCurrentEvent_BaseJs", mob);
+      
+        // singleton wrapper:
+        QJSValue mos = engine->newQMetaObject(&RCloseCurrentEvent_WrapperSingleton::staticMetaObject);
+        engine->globalObject().setProperty("RCloseCurrentEvent_WrapperSingleton", mos);
+
+        // create instance of singleton wrapper for static functions:
+        RCloseCurrentEvent_WrapperSingleton * s = new RCloseCurrentEvent_WrapperSingleton(handler);
+        engine->globalObject().setProperty("RCloseCurrentEvent_WrapperSingletonInstance", engine->newQObject(s));
+        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RCloseCurrentEvent.js";
       QFile scriptFile(fileName);
@@ -185,6 +268,563 @@ RCloseCurrentEvent_Wrapper::RCloseCurrentEvent_Wrapper
 
     // non-static functions:
     
+    // Class: RCloseCurrentEvent
+    // Function: type
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::type
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                QEvent::Type res = 
+                    
+                w->type(
+                  
+                );
+              
+            // return type: QEvent::Type
+
+            return RJSHelper::cpp2js_QEvent_Type(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for type";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCloseCurrentEvent
+    // Function: spontaneous
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::spontaneous
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                bool res = 
+                    
+                w->spontaneous(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for spontaneous";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCloseCurrentEvent
+    // Function: setAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::setAccepted
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: accepted (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                
+                w->setAccepted(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setAccepted";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCloseCurrentEvent
+    // Function: isAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::isAccepted
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isAccepted(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isAccepted";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCloseCurrentEvent
+    // Function: accept
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::accept
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                
+                w->accept(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for accept";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCloseCurrentEvent
+    // Function: ignore
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::ignore
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                
+                w->ignore(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for ignore";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCloseCurrentEvent
+    // Function: isInputEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::isInputEvent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isInputEvent(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isInputEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCloseCurrentEvent
+    // Function: isPointerEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::isPointerEvent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isPointerEvent(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isPointerEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCloseCurrentEvent
+    // Function: isSinglePointEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::isSinglePointEvent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isSinglePointEvent(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isSinglePointEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCloseCurrentEvent
+    // Function: clone
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCloseCurrentEvent_Wrapper::clone
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCloseCurrentEvent* w = getWrapped();
+                QEvent* res = 
+                    
+                w->clone(
+                  
+                );
+              
+            // return type: QEvent*
+
+            return RJSHelper::cpp2js_QEvent(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for clone";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
 
   // member functions for static properties, forward to static function
   

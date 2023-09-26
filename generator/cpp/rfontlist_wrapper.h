@@ -36,8 +36,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -204,7 +203,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -227,13 +225,22 @@
       
         static RFontList* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RFontList.length(); i++) {
+            RJSBasecaster_RFontList* basecaster = basecasters_RFontList[i];
+            RFontList* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RFontList::getIdStatic()) {
             return (RFontList*)vp;
           }
+
+          qWarning() << "RFontList::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -398,6 +405,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RFontList*> basecasters_RFontList;
+
+      public:
+        static void registerBasecaster_RFontList(RJSBasecaster_RFontList* bc) {
+          basecasters_RFontList.append(bc);
+        }
       
     };
 

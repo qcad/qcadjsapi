@@ -87,6 +87,10 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["subWindowActivated(QMdiSubWindow*)"] = Object.getPrototypeOf(this).subWindowActivated;
+  
           }
         }
       }
@@ -134,11 +138,167 @@
 
       // enum values:
       
+  // enum: AreaOption
+RMdiArea.DontMaximizeSubWindowOnActivation = RMdiArea_Wrapper.DontMaximizeSubWindowOnActivation;
+
+  // enum: WindowOrder
+RMdiArea.CreationOrder = RMdiArea_Wrapper.CreationOrder;
+RMdiArea.StackingOrder = RMdiArea_Wrapper.StackingOrder;
+RMdiArea.ActivationHistoryOrder = RMdiArea_Wrapper.ActivationHistoryOrder;
+
+  // enum: ViewMode
+RMdiArea.SubWindowView = RMdiArea_Wrapper.SubWindowView;
+RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
+
 
       // functions:
       
+        // function 
+        RMdiArea.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RMdiArea.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiArea);
+  }
+
+  
+  else {
+    
+        print("RMdiArea.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RMdiArea.tr = function() 
+          
+        {
+          //print("JS: RMdiArea.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RMdiArea_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiArea);
+  }
+
+  
+  else {
+    
+        print("RMdiArea.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMdiArea.setTabOrder = function() 
+          
+        {
+          //print("JS: RMdiArea.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RMdiArea_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiArea);
+  }
+
+  
+  else {
+    
+        print("RMdiArea.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMdiArea.mouseGrabber = function() 
+          
+        {
+          //print("JS: RMdiArea.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMdiArea_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiArea);
+  }
+
+  
+  else {
+    
+        print("RMdiArea.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMdiArea.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RMdiArea.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMdiArea_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMdiArea);
+  }
+
+  
+  else {
+    
+        print("RMdiArea.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

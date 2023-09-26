@@ -8,6 +8,9 @@
     #include "rfaceentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RFaceEntity*> RFaceEntity_Wrapper::basecasters_RFaceEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RFaceEntity

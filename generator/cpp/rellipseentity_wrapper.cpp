@@ -8,6 +8,9 @@
     #include "rellipseentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_REllipseEntity*> REllipseEntity_Wrapper::basecasters_REllipseEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: REllipseEntity

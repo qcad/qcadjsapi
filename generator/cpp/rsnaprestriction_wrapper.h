@@ -45,33 +45,22 @@
       
         static RSnapRestriction* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RRestrictAngleLength::getIdStatic()) {
-              return (RSnapRestriction*)(RRestrictAngleLength*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSnapRestriction.length(); i++) {
+            RJSBasecaster_RSnapRestriction* basecaster = basecasters_RSnapRestriction[i];
+            RSnapRestriction* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RRestrictHorizontal::getIdStatic()) {
-              return (RSnapRestriction*)(RRestrictHorizontal*)vp;
-            }
-            
-            if (t==RJSType_RRestrictOff::getIdStatic()) {
-              return (RSnapRestriction*)(RRestrictOff*)vp;
-            }
-            
-            if (t==RJSType_RRestrictOrthogonal::getIdStatic()) {
-              return (RSnapRestriction*)(RRestrictOrthogonal*)vp;
-            }
-            
-            if (t==RJSType_RRestrictVertical::getIdStatic()) {
-              return (RSnapRestriction*)(RRestrictVertical*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSnapRestriction::getIdStatic()) {
             return (RSnapRestriction*)vp;
           }
+
+          qWarning() << "RSnapRestriction::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -311,6 +300,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSnapRestriction*> basecasters_RSnapRestriction;
+
+      public:
+        static void registerBasecaster_RSnapRestriction(RJSBasecaster_RSnapRestriction* bc) {
+          basecasters_RSnapRestriction.append(bc);
+        }
       
     };
 

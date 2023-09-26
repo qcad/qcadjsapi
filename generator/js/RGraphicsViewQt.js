@@ -87,6 +87,8 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
     this["drop(QDropEvent*)"] = Object.getPrototypeOf(this).drop;
   
     this["dragEnter(QDragEnterEvent*)"] = Object.getPrototypeOf(this).dragEnter;
@@ -138,6 +140,37 @@
       // functions:
       
         // function 
+        RGraphicsViewQt.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RGraphicsViewQt.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RGraphicsViewQt);
+  }
+
+  
+  else {
+    
+        print("RGraphicsViewQt.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+        // function 
         RGraphicsViewQt.prototype.resizeEvent = function() 
           
         {
@@ -170,6 +203,119 @@
       
 
       // static functions:
+      
+
+        // static function 
+        RGraphicsViewQt.tr = function() 
+          
+        {
+          //print("JS: RGraphicsViewQt.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RGraphicsViewQt_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RGraphicsViewQt);
+  }
+
+  
+  else {
+    
+        print("RGraphicsViewQt.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RGraphicsViewQt.setTabOrder = function() 
+          
+        {
+          //print("JS: RGraphicsViewQt.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RGraphicsViewQt_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RGraphicsViewQt);
+  }
+
+  
+  else {
+    
+        print("RGraphicsViewQt.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RGraphicsViewQt.mouseGrabber = function() 
+          
+        {
+          //print("JS: RGraphicsViewQt.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RGraphicsViewQt_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RGraphicsViewQt);
+  }
+
+  
+  else {
+    
+        print("RGraphicsViewQt.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RGraphicsViewQt.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RGraphicsViewQt.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RGraphicsViewQt_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RGraphicsViewQt);
+  }
+
+  
+  else {
+    
+        print("RGraphicsViewQt.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

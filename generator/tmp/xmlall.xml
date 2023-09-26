@@ -29359,6 +29359,7 @@
       </variant>
     </function>
   </class>
+  <class name="RPainterPathSource" ownership="cpp"></class>
   <class name="RPaletteListener" ownership="cpp">
     <function name="updatePalette">
       <variant return-type="void" virtual="true" access="public">

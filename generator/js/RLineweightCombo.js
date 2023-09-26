@@ -87,6 +87,22 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["editTextChanged(QString)"] = Object.getPrototypeOf(this).editTextChanged;
+  
+    this["activated(int)"] = Object.getPrototypeOf(this).activated;
+  
+    this["textActivated(QString)"] = Object.getPrototypeOf(this).textActivated;
+  
+    this["highlighted(int)"] = Object.getPrototypeOf(this).highlighted;
+  
+    this["textHighlighted(QString)"] = Object.getPrototypeOf(this).textHighlighted;
+  
+    this["currentIndexChanged(int)"] = Object.getPrototypeOf(this).currentIndexChanged;
+  
+    this["currentTextChanged(QString)"] = Object.getPrototypeOf(this).currentTextChanged;
+  
     this["valueChanged(RLineweight::Lineweight)"] = Object.getPrototypeOf(this).valueChanged;
   
           }
@@ -136,11 +152,169 @@
 
       // enum values:
       
+  // enum: InsertPolicy
+RLineweightCombo.NoInsert = RLineweightCombo_Wrapper.NoInsert;
+RLineweightCombo.InsertAtTop = RLineweightCombo_Wrapper.InsertAtTop;
+RLineweightCombo.InsertAtCurrent = RLineweightCombo_Wrapper.InsertAtCurrent;
+RLineweightCombo.InsertAtBottom = RLineweightCombo_Wrapper.InsertAtBottom;
+RLineweightCombo.InsertAfterCurrent = RLineweightCombo_Wrapper.InsertAfterCurrent;
+RLineweightCombo.InsertBeforeCurrent = RLineweightCombo_Wrapper.InsertBeforeCurrent;
+RLineweightCombo.InsertAlphabetically = RLineweightCombo_Wrapper.InsertAlphabetically;
+
+  // enum: SizeAdjustPolicy
+RLineweightCombo.AdjustToContents = RLineweightCombo_Wrapper.AdjustToContents;
+RLineweightCombo.AdjustToContentsOnFirstShow = RLineweightCombo_Wrapper.AdjustToContentsOnFirstShow;
+RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrapper.AdjustToMinimumContentsLengthWithIcon;
+
 
       // functions:
       
+        // function 
+        RLineweightCombo.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RLineweightCombo.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RLineweightCombo);
+  }
+
+  
+  else {
+    
+        print("RLineweightCombo.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RLineweightCombo.tr = function() 
+          
+        {
+          //print("JS: RLineweightCombo.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RLineweightCombo_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RLineweightCombo);
+  }
+
+  
+  else {
+    
+        print("RLineweightCombo.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RLineweightCombo.setTabOrder = function() 
+          
+        {
+          //print("JS: RLineweightCombo.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RLineweightCombo_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RLineweightCombo);
+  }
+
+  
+  else {
+    
+        print("RLineweightCombo.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RLineweightCombo.mouseGrabber = function() 
+          
+        {
+          //print("JS: RLineweightCombo.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RLineweightCombo_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RLineweightCombo);
+  }
+
+  
+  else {
+    
+        print("RLineweightCombo.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RLineweightCombo.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RLineweightCombo.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RLineweightCombo_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RLineweightCombo);
+  }
+
+  
+  else {
+    
+        print("RLineweightCombo.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

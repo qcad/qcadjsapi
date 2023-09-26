@@ -8,6 +8,9 @@
     #include "rspatialindexvisitor_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSpatialIndexVisitor*> RSpatialIndexVisitor_Wrapper::basecasters_RSpatialIndexVisitor;
+    
     // static functions implementation in singleton wrapper:
     
     void RSpatialIndexVisitor_Wrapper::init(RJSApi& handler) {

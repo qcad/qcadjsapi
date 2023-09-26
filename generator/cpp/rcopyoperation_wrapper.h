@@ -40,13 +40,22 @@
       
         static RCopyOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RCopyOperation.length(); i++) {
+            RJSBasecaster_RCopyOperation* basecaster = basecasters_RCopyOperation[i];
+            RCopyOperation* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RCopyOperation::getIdStatic()) {
             return (RCopyOperation*)vp;
           }
+
+          qWarning() << "RCopyOperation::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -989,6 +998,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RCopyOperation*> basecasters_RCopyOperation;
+
+      public:
+        static void registerBasecaster_RCopyOperation(RJSBasecaster_RCopyOperation* bc) {
+          basecasters_RCopyOperation.append(bc);
+        }
       
     };
 

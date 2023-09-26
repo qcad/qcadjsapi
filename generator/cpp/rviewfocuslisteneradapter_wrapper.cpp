@@ -8,6 +8,9 @@
     #include "rviewfocuslisteneradapter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RViewFocusListenerAdapter*> RViewFocusListenerAdapter_Wrapper::basecasters_RViewFocusListenerAdapter;
+    
     // static functions implementation in singleton wrapper:
     
     void RViewFocusListenerAdapter_Wrapper::init(RJSApi& handler) {

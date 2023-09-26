@@ -40,13 +40,22 @@
       
         static RFont* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RFont.length(); i++) {
+            RJSBasecaster_RFont* basecaster = basecasters_RFont[i];
+            RFont* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RFont::getIdStatic()) {
             return (RFont*)vp;
           }
+
+          qWarning() << "RFont::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -588,6 +597,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RFont*> basecasters_RFont;
+
+      public:
+        static void registerBasecaster_RFont(RJSBasecaster_RFont* bc) {
+          basecasters_RFont.append(bc);
+        }
       
     };
 

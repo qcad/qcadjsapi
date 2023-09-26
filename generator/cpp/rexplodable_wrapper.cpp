@@ -8,6 +8,9 @@
     #include "rexplodable_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RExplodable*> RExplodable_Wrapper::basecasters_RExplodable;
+    
     // static functions implementation in singleton wrapper:
     
     void RExplodable_Wrapper::init(RJSApi& handler) {

@@ -87,6 +87,14 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["textChanged(QString)"] = Object.getPrototypeOf(this).textChanged;
+  
+    this["textEdited(QString)"] = Object.getPrototypeOf(this).textEdited;
+  
+    this["cursorPositionChanged(int,int)"] = Object.getPrototypeOf(this).cursorPositionChanged;
+  
     this["valueChanged(double,QString)"] = Object.getPrototypeOf(this).valueChanged;
   
           }
@@ -136,11 +144,165 @@
 
       // enum values:
       
+  // enum: ActionPosition
+RMathLineEdit.LeadingPosition = RMathLineEdit_Wrapper.LeadingPosition;
+RMathLineEdit.TrailingPosition = RMathLineEdit_Wrapper.TrailingPosition;
+
+  // enum: EchoMode
+RMathLineEdit.Normal = RMathLineEdit_Wrapper.Normal;
+RMathLineEdit.NoEcho = RMathLineEdit_Wrapper.NoEcho;
+RMathLineEdit.Password = RMathLineEdit_Wrapper.Password;
+RMathLineEdit.PasswordEchoOnEdit = RMathLineEdit_Wrapper.PasswordEchoOnEdit;
+
 
       // functions:
       
+        // function 
+        RMathLineEdit.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RMathLineEdit.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RMathLineEdit);
+  }
+
+  
+  else {
+    
+        print("RMathLineEdit.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RMathLineEdit.tr = function() 
+          
+        {
+          //print("JS: RMathLineEdit.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RMathLineEdit_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RMathLineEdit);
+  }
+
+  
+  else {
+    
+        print("RMathLineEdit.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMathLineEdit.setTabOrder = function() 
+          
+        {
+          //print("JS: RMathLineEdit.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RMathLineEdit_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RMathLineEdit);
+  }
+
+  
+  else {
+    
+        print("RMathLineEdit.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMathLineEdit.mouseGrabber = function() 
+          
+        {
+          //print("JS: RMathLineEdit.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMathLineEdit_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMathLineEdit);
+  }
+
+  
+  else {
+    
+        print("RMathLineEdit.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMathLineEdit.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RMathLineEdit.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMathLineEdit_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMathLineEdit);
+  }
+
+  
+  else {
+    
+        print("RMathLineEdit.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

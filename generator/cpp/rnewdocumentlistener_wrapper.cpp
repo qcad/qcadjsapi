@@ -8,6 +8,9 @@
     #include "rnewdocumentlistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RNewDocumentListener*> RNewDocumentListener_Wrapper::basecasters_RNewDocumentListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RNewDocumentListener_Wrapper::init(RJSApi& handler) {

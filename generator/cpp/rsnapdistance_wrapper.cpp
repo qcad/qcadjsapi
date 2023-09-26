@@ -8,6 +8,9 @@
     #include "rsnapdistance_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSnapDistance*> RSnapDistance_Wrapper::basecasters_RSnapDistance;
+    
     // static functions implementation in singleton wrapper:
     
     void RSnapDistance_Wrapper::init(RJSApi& handler) {

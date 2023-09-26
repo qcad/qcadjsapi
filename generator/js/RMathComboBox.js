@@ -87,6 +87,22 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["editTextChanged(QString)"] = Object.getPrototypeOf(this).editTextChanged;
+  
+    this["activated(int)"] = Object.getPrototypeOf(this).activated;
+  
+    this["textActivated(QString)"] = Object.getPrototypeOf(this).textActivated;
+  
+    this["highlighted(int)"] = Object.getPrototypeOf(this).highlighted;
+  
+    this["textHighlighted(QString)"] = Object.getPrototypeOf(this).textHighlighted;
+  
+    this["currentIndexChanged(int)"] = Object.getPrototypeOf(this).currentIndexChanged;
+  
+    this["currentTextChanged(QString)"] = Object.getPrototypeOf(this).currentTextChanged;
+  
     this["valueChanged(double,QString)"] = Object.getPrototypeOf(this).valueChanged;
   
           }
@@ -136,11 +152,169 @@
 
       // enum values:
       
+  // enum: InsertPolicy
+RMathComboBox.NoInsert = RMathComboBox_Wrapper.NoInsert;
+RMathComboBox.InsertAtTop = RMathComboBox_Wrapper.InsertAtTop;
+RMathComboBox.InsertAtCurrent = RMathComboBox_Wrapper.InsertAtCurrent;
+RMathComboBox.InsertAtBottom = RMathComboBox_Wrapper.InsertAtBottom;
+RMathComboBox.InsertAfterCurrent = RMathComboBox_Wrapper.InsertAfterCurrent;
+RMathComboBox.InsertBeforeCurrent = RMathComboBox_Wrapper.InsertBeforeCurrent;
+RMathComboBox.InsertAlphabetically = RMathComboBox_Wrapper.InsertAlphabetically;
+
+  // enum: SizeAdjustPolicy
+RMathComboBox.AdjustToContents = RMathComboBox_Wrapper.AdjustToContents;
+RMathComboBox.AdjustToContentsOnFirstShow = RMathComboBox_Wrapper.AdjustToContentsOnFirstShow;
+RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.AdjustToMinimumContentsLengthWithIcon;
+
 
       // functions:
       
+        // function 
+        RMathComboBox.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RMathComboBox.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RMathComboBox);
+  }
+
+  
+  else {
+    
+        print("RMathComboBox.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RMathComboBox.tr = function() 
+          
+        {
+          //print("JS: RMathComboBox.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RMathComboBox_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RMathComboBox);
+  }
+
+  
+  else {
+    
+        print("RMathComboBox.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMathComboBox.setTabOrder = function() 
+          
+        {
+          //print("JS: RMathComboBox.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RMathComboBox_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RMathComboBox);
+  }
+
+  
+  else {
+    
+        print("RMathComboBox.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMathComboBox.mouseGrabber = function() 
+          
+        {
+          //print("JS: RMathComboBox.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMathComboBox_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMathComboBox);
+  }
+
+  
+  else {
+    
+        print("RMathComboBox.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMathComboBox.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RMathComboBox.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMathComboBox_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMathComboBox);
+  }
+
+  
+  else {
+    
+        print("RMathComboBox.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

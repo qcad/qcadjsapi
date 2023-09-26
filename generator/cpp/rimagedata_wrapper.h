@@ -36,8 +36,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -70,7 +69,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -93,13 +91,22 @@
       
         static RImageData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RImageData.length(); i++) {
+            RJSBasecaster_RImageData* basecaster = basecasters_RImageData[i];
+            RImageData* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RImageData::getIdStatic()) {
             return (RImageData*)vp;
           }
+
+          qWarning() << "RImageData::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2721,6 +2728,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RImageData*> basecasters_RImageData;
+
+      public:
+        static void registerBasecaster_RImageData(RJSBasecaster_RImageData* bc) {
+          basecasters_RImageData.append(bc);
+        }
       
     };
 

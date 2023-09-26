@@ -138,6 +138,35 @@
       // static functions:
       
 
+        // static function 
+        RPreferencesListenerAdapter.tr = function() 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RPreferencesListenerAdapter_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RPreferencesListenerAdapter);
+  }
+
+  
+  else {
+    
+        print("RPreferencesListenerAdapter.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

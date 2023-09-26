@@ -64,6 +64,120 @@ RWidget_Base
     
       // protected overwritten functions / events and their public invokable counterparts:
       
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void mousePressEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void mousePressEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "RWidget_Base::mousePressEventPublic()";
+      RWidget::mousePressEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void mouseReleaseEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void mouseReleaseEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "RWidget_Base::mouseReleaseEventPublic()";
+      RWidget::mouseReleaseEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void mouseMoveEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void mouseMoveEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "RWidget_Base::mouseMoveEventPublic()";
+      RWidget::mouseMoveEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void paintEvent(
+      QPaintEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void paintEventPublic(
+      QPaintEvent* event
+    ) {
+      //qDebug() << "RWidget_Base::paintEventPublic()";
+      RWidget::paintEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void resizeEvent(
+      QResizeEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void resizeEventPublic(
+      QResizeEvent* event
+    ) {
+      //qDebug() << "RWidget_Base::resizeEventPublic()";
+      RWidget::resizeEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void actionEvent(
+      QActionEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void actionEventPublic(
+      QActionEvent* event
+    ) {
+      //qDebug() << "RWidget_Base::actionEventPublic()";
+      RWidget::actionEvent(
+        event
+      );
+    }
+  
 
       // public virtual overwritten functions / events:
       

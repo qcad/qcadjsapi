@@ -139,6 +139,35 @@
       // static functions:
       
 
+        // static function 
+        RCoordinateListenerAdapter.tr = function() 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RCoordinateListenerAdapter_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RCoordinateListenerAdapter);
+  }
+
+  
+  else {
+    
+        print("RCoordinateListenerAdapter.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

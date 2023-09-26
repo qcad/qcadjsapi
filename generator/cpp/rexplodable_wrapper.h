@@ -40,25 +40,22 @@
       
         static RExplodable* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RPolyline::getIdStatic()) {
-              return (RExplodable*)(RPolyline*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RExplodable.length(); i++) {
+            RJSBasecaster_RExplodable* basecaster = basecasters_RExplodable[i];
+            RExplodable* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RSpline::getIdStatic()) {
-              return (RExplodable*)(RSpline*)vp;
-            }
-            
-            if (t==RJSType_RTriangle::getIdStatic()) {
-              return (RExplodable*)(RTriangle*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RExplodable::getIdStatic()) {
             return (RExplodable*)vp;
           }
+
+          qWarning() << "RExplodable::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -213,6 +210,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RExplodable*> basecasters_RExplodable;
+
+      public:
+        static void registerBasecaster_RExplodable(RJSBasecaster_RExplodable* bc) {
+          basecasters_RExplodable.append(bc);
+        }
       
     };
 

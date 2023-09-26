@@ -8,6 +8,9 @@
     #include "rgraphicssceneqt_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RGraphicsSceneQt*> RGraphicsSceneQt_Wrapper::basecasters_RGraphicsSceneQt;
+    
     // static functions implementation in singleton wrapper:
     
     void RGraphicsSceneQt_Wrapper::init(RJSApi& handler) {

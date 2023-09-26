@@ -8,6 +8,9 @@
     #include "rentityexportlistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_REntityExportListener*> REntityExportListener_Wrapper::basecasters_REntityExportListener;
+    
     // static functions implementation in singleton wrapper:
     
     void REntityExportListener_Wrapper::init(RJSApi& handler) {

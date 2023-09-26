@@ -19,6 +19,177 @@
       
         #include "RTransform.h"
       
+      // singleton class wrapper for static functions:
+      class RTransform_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      RTransform_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {}
+
+      
+
+      // static functions:
+      
+    // Class: RTransform
+    // Function: squareToQuad
+    // Source: QTransform
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  squareToQuad
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransform
+    // Function: quadToSquare
+    // Source: QTransform
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  quadToSquare
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransform
+    // Function: quadToQuad
+    // Source: QTransform
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  quadToQuad
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransform
+    // Function: fromTranslate
+    // Source: QTransform
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  fromTranslate
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransform
+    // Function: fromScale
+    // Source: QTransform
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  fromScale
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static RTransform_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RTransform
@@ -40,13 +211,22 @@
       
         static RTransform* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RTransform.length(); i++) {
+            RJSBasecaster_RTransform* basecaster = basecasters_RTransform[i];
+            RTransform* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RTransform::getIdStatic()) {
             return (RTransform*)vp;
           }
+
+          qWarning() << "RTransform::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -116,6 +296,667 @@
 
     // non-static functions:
     
+    // Class: RTransform
+    // Function: isAffine
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isAffine
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: isIdentity
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isIdentity
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: isInvertible
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isInvertible
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: isScaling
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isScaling
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: isRotating
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isRotating
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: isTranslating
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isTranslating
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: type
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  type
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: determinant
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  determinant
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: m11
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  m11
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: m12
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  m12
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: m13
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  m13
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: m21
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  m21
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: m22
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  m22
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: m23
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  m23
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: m31
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  m31
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: m32
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  m32
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: m33
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  m33
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: dx
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dx
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: dy
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dy
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: setMatrix
+    // Source: QTransform
+    // Static: false
+    // Parameters: 9
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setMatrix
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a6
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a7
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a8
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a9
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransform
+    // Function: inverted
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  inverted
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: adjoint
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  adjoint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: transposed
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  transposed
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: shear
+    // Source: QTransform
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  shear
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTransform
+    // Function: reset
+    // Source: QTransform
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  reset
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RTransform
+    // Function: map
+    // Source: QTransform
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  map
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: mapToPolygon
+    // Source: QTransform
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  mapToPolygon
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: mapRect
+    // Source: QTransform
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  mapRect
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransform
+    // Function: operator_multiply_assign
+    // Source: QTransform
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  operator_multiply_assign
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
     // Class: RTransform
     // Function: translate
     // Source: 
@@ -338,6 +1179,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RTransform*> basecasters_RTransform;
+
+      public:
+        static void registerBasecaster_RTransform(RJSBasecaster_RTransform* bc) {
+          basecasters_RTransform.append(bc);
+        }
       
     };
 

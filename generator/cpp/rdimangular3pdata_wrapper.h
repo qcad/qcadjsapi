@@ -36,8 +36,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -70,7 +69,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -93,13 +91,22 @@
       
         static RDimAngular3PData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDimAngular3PData.length(); i++) {
+            RJSBasecaster_RDimAngular3PData* basecaster = basecasters_RDimAngular3PData[i];
+            RDimAngular3PData* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDimAngular3PData::getIdStatic()) {
             return (RDimAngular3PData*)vp;
           }
+
+          qWarning() << "RDimAngular3PData::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4726,6 +4733,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDimAngular3PData*> basecasters_RDimAngular3PData;
+
+      public:
+        static void registerBasecaster_RDimAngular3PData(RJSBasecaster_RDimAngular3PData* bc) {
+          basecasters_RDimAngular3PData.append(bc);
+        }
       
     };
 

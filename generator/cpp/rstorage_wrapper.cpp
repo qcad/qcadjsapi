@@ -8,6 +8,9 @@
     #include "rstorage_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RStorage*> RStorage_Wrapper::basecasters_RStorage;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RStorage

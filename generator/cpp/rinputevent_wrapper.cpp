@@ -8,6 +8,9 @@
     #include "rinputevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RInputEvent*> RInputEvent_Wrapper::basecasters_RInputEvent;
+    
     // static functions implementation in singleton wrapper:
     
     void RInputEvent_Wrapper::init(RJSApi& handler) {

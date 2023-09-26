@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -423,7 +422,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -446,13 +444,22 @@
       
         static RDxfServices* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDxfServices.length(); i++) {
+            RJSBasecaster_RDxfServices* basecaster = basecasters_RDxfServices[i];
+            RDxfServices* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDxfServices::getIdStatic()) {
             return (RDxfServices*)vp;
           }
+
+          qWarning() << "RDxfServices::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1223,6 +1230,15 @@ Vector = RDxfServices::Vector,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDxfServices*> basecasters_RDxfServices;
+
+      public:
+        static void registerBasecaster_RDxfServices(RJSBasecaster_RDxfServices* bc) {
+          basecasters_RDxfServices.append(bc);
+        }
       
     };
 

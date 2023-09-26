@@ -21,6 +21,69 @@
       
         #include "RCoordinateListenerAdapter.h"
       
+      // singleton class wrapper for static functions:
+      class RCoordinateListenerAdapter_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      RCoordinateListenerAdapter_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {}
+
+      
+
+      // static functions:
+      
+    // Class: RCoordinateListenerAdapter
+    // Function: tr
+    // Source: QObject
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tr
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static RCoordinateListenerAdapter_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RCoordinateListenerAdapter
@@ -30,6 +93,12 @@
       Q_OBJECT
       QML_INTERFACE
     
+  Q_PROPERTY(
+    
+    QJSValue
+     objectName READ objectName WRITE setObjectName
+  )
+
 
     private:
       // disable copy constructor:
@@ -42,13 +111,22 @@
       
         static RCoordinateListenerAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RCoordinateListenerAdapter.length(); i++) {
+            RJSBasecaster_RCoordinateListenerAdapter* basecaster = basecasters_RCoordinateListenerAdapter[i];
+            RCoordinateListenerAdapter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RCoordinateListenerAdapter::getIdStatic()) {
             return (RCoordinateListenerAdapter*)vp;
           }
+
+          qWarning() << "RCoordinateListenerAdapter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -124,6 +202,406 @@
 
     // non-static functions:
     
+    // Class: RCoordinateListenerAdapter
+    // Function: objectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  objectName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: setObjectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setObjectName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: isWidgetType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWidgetType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: isWindowType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWindowType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: signalsBlocked
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  signalsBlocked
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: blockSignals
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  blockSignals
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: findChild
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  findChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: children
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  children
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: setParent
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setParent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: installEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  installEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: removeEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: dumpObjectTree
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectTree
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: dumpObjectInfo
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectInfo
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: setProperty
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setProperty
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: property
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  property
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: dynamicPropertyNames
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dynamicPropertyNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: parent
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  parent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateListenerAdapter
+    // Function: deleteLater
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  deleteLater
+              (
+
+                
+              )
+              
+              ;
+            
     // Class: RCoordinateListenerAdapter
     // Function: updateCoordinate
     // Source: 
@@ -274,6 +752,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RCoordinateListenerAdapter*> basecasters_RCoordinateListenerAdapter;
+
+      public:
+        static void registerBasecaster_RCoordinateListenerAdapter(RJSBasecaster_RCoordinateListenerAdapter* bc) {
+          basecasters_RCoordinateListenerAdapter.append(bc);
+        }
       
     };
 

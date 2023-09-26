@@ -8,6 +8,9 @@
     #include "rmainwindow_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RMainWindow*> RMainWindow_Wrapper::basecasters_RMainWindow;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RMainWindow

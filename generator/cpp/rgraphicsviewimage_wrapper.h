@@ -35,6 +35,69 @@
       
         #include "RGraphicsViewImage.h"
       
+      // singleton class wrapper for static functions:
+      class RGraphicsViewImage_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      RGraphicsViewImage_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {}
+
+      
+
+      // static functions:
+      
+    // Class: RGraphicsViewImage
+    // Function: tr
+    // Source: QObject
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tr
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static RGraphicsViewImage_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RGraphicsViewImage
@@ -44,6 +107,12 @@
       Q_OBJECT
       QML_INTERFACE
     
+  Q_PROPERTY(
+    
+    QJSValue
+     objectName READ objectName WRITE setObjectName
+  )
+
 
     private:
       // disable copy constructor:
@@ -56,13 +125,22 @@
       
         static RGraphicsViewImage* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RGraphicsViewImage.length(); i++) {
+            RJSBasecaster_RGraphicsViewImage* basecaster = basecasters_RGraphicsViewImage[i];
+            RGraphicsViewImage* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RGraphicsViewImage::getIdStatic()) {
             return (RGraphicsViewImage*)vp;
           }
+
+          qWarning() << "RGraphicsViewImage::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -148,6 +226,406 @@ BlackWhite = RGraphicsViewImage::BlackWhite,
 
     // non-static functions:
     
+    // Class: RGraphicsViewImage
+    // Function: objectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  objectName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: setObjectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setObjectName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: isWidgetType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWidgetType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: isWindowType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWindowType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: signalsBlocked
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  signalsBlocked
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: blockSignals
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  blockSignals
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: findChild
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  findChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: children
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  children
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: setParent
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setParent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: installEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  installEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: removeEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: dumpObjectTree
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectTree
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: dumpObjectInfo
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectInfo
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: setProperty
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setProperty
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: property
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  property
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: dynamicPropertyNames
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dynamicPropertyNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: parent
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  parent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: deleteLater
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  deleteLater
+              (
+
+                
+              )
+              
+              ;
+            
     // Class: RGraphicsViewImage
     // Function: clearCaches
     // Source: RGraphicsView
@@ -3457,6 +3935,15 @@ BlackWhite = RGraphicsViewImage::BlackWhite,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RGraphicsViewImage*> basecasters_RGraphicsViewImage;
+
+      public:
+        static void registerBasecaster_RGraphicsViewImage(RJSBasecaster_RGraphicsViewImage* bc) {
+          basecasters_RGraphicsViewImage.append(bc);
+        }
       
     };
 

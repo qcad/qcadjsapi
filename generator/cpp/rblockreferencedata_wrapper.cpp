@@ -8,6 +8,9 @@
     #include "rblockreferencedata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RBlockReferenceData*> RBlockReferenceData_Wrapper::basecasters_RBlockReferenceData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RBlockReferenceData

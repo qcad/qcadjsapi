@@ -80,8 +80,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -171,7 +170,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -194,17 +192,22 @@
       
         static RMainWindow* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RMainWindowQt::getIdStatic()) {
-              return (RMainWindow*)(RMainWindowQt*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RMainWindow.length(); i++) {
+            RJSBasecaster_RMainWindow* basecaster = basecasters_RMainWindow[i];
+            RMainWindow* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RMainWindow::getIdStatic()) {
             return (RMainWindow*)vp;
           }
+
+          qWarning() << "RMainWindow::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2553,6 +2556,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RMainWindow*> basecasters_RMainWindow;
+
+      public:
+        static void registerBasecaster_RMainWindow(RJSBasecaster_RMainWindow* bc) {
+          basecasters_RMainWindow.append(bc);
+        }
       
     };
 

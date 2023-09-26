@@ -8,6 +8,9 @@
     #include "rsnaplistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSnapListener*> RSnapListener_Wrapper::basecasters_RSnapListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RSnapListener_Wrapper::init(RJSApi& handler) {

@@ -8,6 +8,9 @@
     #include "raddobjectsoperation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RAddObjectsOperation*> RAddObjectsOperation_Wrapper::basecasters_RAddObjectsOperation;
+    
     // static functions implementation in singleton wrapper:
     
     void RAddObjectsOperation_Wrapper::init(RJSApi& handler) {

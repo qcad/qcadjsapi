@@ -137,6 +137,35 @@
       // static functions:
       
 
+        // static function 
+        RPaletteListenerAdapter.tr = function() 
+          
+        {
+          //print("JS: RPaletteListenerAdapter.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RPaletteListenerAdapter_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RPaletteListenerAdapter);
+  }
+
+  
+  else {
+    
+        print("RPaletteListenerAdapter.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

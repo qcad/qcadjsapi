@@ -269,6 +269,7 @@
   </wrapped>
 
   <wrapped_ptr>
+    <type>RPainterPathSource</type>
     <type>RShape</type>
     <type>RAction</type>
     <type>RActionAdapter</type>

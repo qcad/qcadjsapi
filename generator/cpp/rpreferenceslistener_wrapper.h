@@ -42,17 +42,22 @@
       
         static RPreferencesListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RPreferencesListenerAdapter::getIdStatic()) {
-              return (RPreferencesListener*)(RPreferencesListenerAdapter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RPreferencesListener.length(); i++) {
+            RJSBasecaster_RPreferencesListener* basecaster = basecasters_RPreferencesListener[i];
+            RPreferencesListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RPreferencesListener::getIdStatic()) {
             return (RPreferencesListener*)vp;
           }
+
+          qWarning() << "RPreferencesListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -230,6 +235,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RPreferencesListener*> basecasters_RPreferencesListener;
+
+      public:
+        static void registerBasecaster_RPreferencesListener(RJSBasecaster_RPreferencesListener* bc) {
+          basecasters_RPreferencesListener.append(bc);
+        }
       
     };
 

@@ -8,6 +8,9 @@
     #include "rfileexporterregistry_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RFileExporterRegistry*> RFileExporterRegistry_Wrapper::basecasters_RFileExporterRegistry;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RFileExporterRegistry

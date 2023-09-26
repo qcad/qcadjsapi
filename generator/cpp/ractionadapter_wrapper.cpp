@@ -8,6 +8,9 @@
     #include "ractionadapter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RActionAdapter*> RActionAdapter_Wrapper::basecasters_RActionAdapter;
+    
     // static functions implementation in singleton wrapper:
     
     void RActionAdapter_Wrapper::init(RJSApi& handler) {

@@ -8,6 +8,9 @@
     #include "rviewlistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RViewListener*> RViewListener_Wrapper::basecasters_RViewListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RViewListener_Wrapper::init(RJSApi& handler) {

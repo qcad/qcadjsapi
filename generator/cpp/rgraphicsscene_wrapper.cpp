@@ -8,6 +8,9 @@
     #include "rgraphicsscene_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RGraphicsScene*> RGraphicsScene_Wrapper::basecasters_RGraphicsScene;
+    
     // static functions implementation in singleton wrapper:
     
     void RGraphicsScene_Wrapper::init(RJSApi& handler) {

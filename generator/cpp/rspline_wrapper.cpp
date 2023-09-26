@@ -8,6 +8,9 @@
     #include "rspline_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSpline*> RSpline_Wrapper::basecasters_RSpline;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RSpline

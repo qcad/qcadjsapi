@@ -112,8 +112,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property INVALID_ID:
@@ -268,7 +267,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -291,185 +289,22 @@
       
         static RObject* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RArcEntity::getIdStatic()) {
-              return (RObject*)(RArcEntity*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RObject.length(); i++) {
+            RJSBasecaster_RObject* basecaster = basecasters_RObject[i];
+            RObject* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RAttributeDefinitionEntity::getIdStatic()) {
-              return (RObject*)(RAttributeDefinitionEntity*)vp;
-            }
-            
-            if (t==RJSType_RAttributeEntity::getIdStatic()) {
-              return (RObject*)(RAttributeEntity*)vp;
-            }
-            
-            if (t==RJSType_RBlock::getIdStatic()) {
-              return (RObject*)(RBlock*)vp;
-            }
-            
-            if (t==RJSType_RBlockReferenceEntity::getIdStatic()) {
-              return (RObject*)(RBlockReferenceEntity*)vp;
-            }
-            
-            if (t==RJSType_RCircleEntity::getIdStatic()) {
-              return (RObject*)(RCircleEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
-              return (RObject*)(RDimAlignedEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
-              return (RObject*)(RDimAngular2LEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
-              return (RObject*)(RDimAngular3PEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAngularEntity::getIdStatic()) {
-              return (RObject*)(RDimAngularEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
-              return (RObject*)(RDimArcLengthEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimDiametricEntity::getIdStatic()) {
-              return (RObject*)(RDimDiametricEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimLinearEntity::getIdStatic()) {
-              return (RObject*)(RDimLinearEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimOrdinateEntity::getIdStatic()) {
-              return (RObject*)(RDimOrdinateEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimRadialEntity::getIdStatic()) {
-              return (RObject*)(RDimRadialEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
-              return (RObject*)(RDimRotatedEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimStyle::getIdStatic()) {
-              return (RObject*)(RDimStyle*)vp;
-            }
-            
-            if (t==RJSType_RDimensionEntity::getIdStatic()) {
-              return (RObject*)(RDimensionEntity*)vp;
-            }
-            
-            if (t==RJSType_RDocumentVariables::getIdStatic()) {
-              return (RObject*)(RDocumentVariables*)vp;
-            }
-            
-            if (t==RJSType_REllipseEntity::getIdStatic()) {
-              return (RObject*)(REllipseEntity*)vp;
-            }
-            
-            if (t==RJSType_REntity::getIdStatic()) {
-              return (RObject*)(REntity*)vp;
-            }
-            
-            if (t==RJSType_RFaceEntity::getIdStatic()) {
-              return (RObject*)(RFaceEntity*)vp;
-            }
-            
-            if (t==RJSType_RHatchEntity::getIdStatic()) {
-              return (RObject*)(RHatchEntity*)vp;
-            }
-            
-            if (t==RJSType_RImageEntity::getIdStatic()) {
-              return (RObject*)(RImageEntity*)vp;
-            }
-            
-            if (t==RJSType_RLayer::getIdStatic()) {
-              return (RObject*)(RLayer*)vp;
-            }
-            
-            if (t==RJSType_RLayerState::getIdStatic()) {
-              return (RObject*)(RLayerState*)vp;
-            }
-            
-            if (t==RJSType_RLayout::getIdStatic()) {
-              return (RObject*)(RLayout*)vp;
-            }
-            
-            if (t==RJSType_RLeaderEntity::getIdStatic()) {
-              return (RObject*)(RLeaderEntity*)vp;
-            }
-            
-            if (t==RJSType_RLineEntity::getIdStatic()) {
-              return (RObject*)(RLineEntity*)vp;
-            }
-            
-            if (t==RJSType_RLinetype::getIdStatic()) {
-              return (RObject*)(RLinetype*)vp;
-            }
-            
-            if (t==RJSType_RPointEntity::getIdStatic()) {
-              return (RObject*)(RPointEntity*)vp;
-            }
-            
-            if (t==RJSType_RPolylineEntity::getIdStatic()) {
-              return (RObject*)(RPolylineEntity*)vp;
-            }
-            
-            if (t==RJSType_RRayEntity::getIdStatic()) {
-              return (RObject*)(RRayEntity*)vp;
-            }
-            
-            if (t==RJSType_RSolidEntity::getIdStatic()) {
-              return (RObject*)(RSolidEntity*)vp;
-            }
-            
-            if (t==RJSType_RSplineEntity::getIdStatic()) {
-              return (RObject*)(RSplineEntity*)vp;
-            }
-            
-            if (t==RJSType_RTextBasedEntity::getIdStatic()) {
-              return (RObject*)(RTextBasedEntity*)vp;
-            }
-            
-            if (t==RJSType_RTextEntity::getIdStatic()) {
-              return (RObject*)(RTextEntity*)vp;
-            }
-            
-            if (t==RJSType_RToleranceEntity::getIdStatic()) {
-              return (RObject*)(RToleranceEntity*)vp;
-            }
-            
-            if (t==RJSType_RTraceEntity::getIdStatic()) {
-              return (RObject*)(RTraceEntity*)vp;
-            }
-            
-            if (t==RJSType_RUcs::getIdStatic()) {
-              return (RObject*)(RUcs*)vp;
-            }
-            
-            if (t==RJSType_RView::getIdStatic()) {
-              return (RObject*)(RView*)vp;
-            }
-            
-            if (t==RJSType_RViewportEntity::getIdStatic()) {
-              return (RObject*)(RViewportEntity*)vp;
-            }
-            
-            if (t==RJSType_RXLineEntity::getIdStatic()) {
-              return (RObject*)(RXLineEntity*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RObject::getIdStatic()) {
             return (RObject*)vp;
           }
+
+          qWarning() << "RObject::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1614,6 +1449,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RObject*> basecasters_RObject;
+
+      public:
+        static void registerBasecaster_RObject(RJSBasecaster_RObject* bc) {
+          basecasters_RObject.append(bc);
+        }
       
     };
 

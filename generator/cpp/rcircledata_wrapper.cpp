@@ -8,6 +8,9 @@
     #include "rcircledata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RCircleData*> RCircleData_Wrapper::basecasters_RCircleData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RCircleData

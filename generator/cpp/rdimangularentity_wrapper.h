@@ -624,8 +624,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property INVALID_ID:
@@ -1250,7 +1249,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1273,25 +1271,22 @@
       
         static RDimAngularEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
-              return (RDimAngularEntity*)(RDimAngular2LEntity*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDimAngularEntity.length(); i++) {
+            RJSBasecaster_RDimAngularEntity* basecaster = basecasters_RDimAngularEntity[i];
+            RDimAngularEntity* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
-              return (RDimAngularEntity*)(RDimAngular3PEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
-              return (RDimAngularEntity*)(RDimArcLengthEntity*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDimAngularEntity::getIdStatic()) {
             return (RDimAngularEntity*)vp;
           }
+
+          qWarning() << "RDimAngularEntity::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -5188,6 +5183,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDimAngularEntity*> basecasters_RDimAngularEntity;
+
+      public:
+        static void registerBasecaster_RDimAngularEntity(RJSBasecaster_RDimAngularEntity* bc) {
+          basecasters_RDimAngularEntity.append(bc);
+        }
       
     };
 

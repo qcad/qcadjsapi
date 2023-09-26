@@ -8,6 +8,9 @@
     #include "rsnaprestriction_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSnapRestriction*> RSnapRestriction_Wrapper::basecasters_RSnapRestriction;
+    
     // static functions implementation in singleton wrapper:
     
     void RSnapRestriction_Wrapper::init(RJSApi& handler) {

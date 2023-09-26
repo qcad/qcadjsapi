@@ -87,6 +87,8 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
     this["valueChanged(QFont)"] = Object.getPrototypeOf(this).valueChanged;
   
           }
@@ -135,8 +137,152 @@
 
       // functions:
       
+        // function 
+        RFontChooserWidget.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RFontChooserWidget.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RFontChooserWidget);
+  }
+
+  
+  else {
+    
+        print("RFontChooserWidget.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RFontChooserWidget.tr = function() 
+          
+        {
+          //print("JS: RFontChooserWidget.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RFontChooserWidget_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RFontChooserWidget);
+  }
+
+  
+  else {
+    
+        print("RFontChooserWidget.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RFontChooserWidget.setTabOrder = function() 
+          
+        {
+          //print("JS: RFontChooserWidget.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RFontChooserWidget_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RFontChooserWidget);
+  }
+
+  
+  else {
+    
+        print("RFontChooserWidget.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RFontChooserWidget.mouseGrabber = function() 
+          
+        {
+          //print("JS: RFontChooserWidget.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RFontChooserWidget_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RFontChooserWidget);
+  }
+
+  
+  else {
+    
+        print("RFontChooserWidget.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RFontChooserWidget.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RFontChooserWidget.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RFontChooserWidget_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RFontChooserWidget);
+  }
+
+  
+  else {
+    
+        print("RFontChooserWidget.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

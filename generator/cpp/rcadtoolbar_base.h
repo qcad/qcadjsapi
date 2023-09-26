@@ -67,6 +67,120 @@ RCadToolBar_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
+    virtual void mousePressEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void mousePressEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "RCadToolBar_Base::mousePressEventPublic()";
+      RCadToolBar::mousePressEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void mouseReleaseEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void mouseReleaseEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "RCadToolBar_Base::mouseReleaseEventPublic()";
+      RCadToolBar::mouseReleaseEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void actionEvent(
+      QActionEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void actionEventPublic(
+      QActionEvent* event
+    ) {
+      //qDebug() << "RCadToolBar_Base::actionEventPublic()";
+      RCadToolBar::actionEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void paintEvent(
+      QPaintEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void paintEventPublic(
+      QPaintEvent* event
+    ) {
+      //qDebug() << "RCadToolBar_Base::paintEventPublic()";
+      RCadToolBar::paintEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void mouseMoveEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void mouseMoveEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "RCadToolBar_Base::mouseMoveEventPublic()";
+      RCadToolBar::mouseMoveEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void resizeEvent(
+      QResizeEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void resizeEventPublic(
+      QResizeEvent* event
+    ) {
+      //qDebug() << "RCadToolBar_Base::resizeEventPublic()";
+      RCadToolBar::resizeEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
     virtual void contextMenuEvent(
       QContextMenuEvent* event
     );

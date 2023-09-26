@@ -8,6 +8,9 @@
     #include "rimageentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RImageEntity*> RImageEntity_Wrapper::basecasters_RImageEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RImageEntity

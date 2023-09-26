@@ -44,17 +44,22 @@
       
         static RGrid* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_ROrthoGrid::getIdStatic()) {
-              return (RGrid*)(ROrthoGrid*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RGrid.length(); i++) {
+            RJSBasecaster_RGrid* basecaster = basecasters_RGrid[i];
+            RGrid* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RGrid::getIdStatic()) {
             return (RGrid*)vp;
           }
+
+          qWarning() << "RGrid::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -509,6 +514,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RGrid*> basecasters_RGrid;
+
+      public:
+        static void registerBasecaster_RGrid(RJSBasecaster_RGrid* bc) {
+          basecasters_RGrid.append(bc);
+        }
       
     };
 

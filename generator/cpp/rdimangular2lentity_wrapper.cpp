@@ -8,6 +8,9 @@
     #include "rdimangular2lentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimAngular2LEntity*> RDimAngular2LEntity_Wrapper::basecasters_RDimAngular2LEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimAngular2LEntity

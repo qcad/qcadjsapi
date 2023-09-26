@@ -42,17 +42,22 @@
       
         static RDeleteObjectsOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RDeleteObjectOperation::getIdStatic()) {
-              return (RDeleteObjectsOperation*)(RDeleteObjectOperation*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDeleteObjectsOperation.length(); i++) {
+            RJSBasecaster_RDeleteObjectsOperation* basecaster = basecasters_RDeleteObjectsOperation[i];
+            RDeleteObjectsOperation* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDeleteObjectsOperation::getIdStatic()) {
             return (RDeleteObjectsOperation*)vp;
           }
+
+          qWarning() << "RDeleteObjectsOperation::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -585,6 +590,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDeleteObjectsOperation*> basecasters_RDeleteObjectsOperation;
+
+      public:
+        static void registerBasecaster_RDeleteObjectsOperation(RJSBasecaster_RDeleteObjectsOperation* bc) {
+          basecasters_RDeleteObjectsOperation.append(bc);
+        }
       
     };
 

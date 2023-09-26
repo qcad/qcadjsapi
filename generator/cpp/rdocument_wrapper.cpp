@@ -8,6 +8,9 @@
     #include "rdocument_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDocument*> RDocument_Wrapper::basecasters_RDocument;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDocument

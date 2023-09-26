@@ -8,6 +8,9 @@
     #include "rorthogrid_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_ROrthoGrid*> ROrthoGrid_Wrapper::basecasters_ROrthoGrid;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: ROrthoGrid

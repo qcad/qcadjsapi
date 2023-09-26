@@ -133,6 +133,35 @@
       // static functions:
       
 
+        // static function 
+        REventFilter.tr = function() 
+          
+        {
+          //print("JS: REventFilter.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return REventFilter_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, REventFilter);
+  }
+
+  
+  else {
+    
+        print("REventFilter.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

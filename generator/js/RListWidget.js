@@ -87,6 +87,38 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
+  
+    this["clicked(QModelIndex)"] = Object.getPrototypeOf(this).clicked;
+  
+    this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
+  
+    this["activated(QModelIndex)"] = Object.getPrototypeOf(this).activated;
+  
+    this["entered(QModelIndex)"] = Object.getPrototypeOf(this).entered;
+  
+    this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
+  
+    this["itemPressed(QListWidgetItem*)"] = Object.getPrototypeOf(this).itemPressed;
+  
+    this["itemClicked(QListWidgetItem*)"] = Object.getPrototypeOf(this).itemClicked;
+  
+    this["itemDoubleClicked(QListWidgetItem*)"] = Object.getPrototypeOf(this).itemDoubleClicked;
+  
+    this["itemActivated(QListWidgetItem*)"] = Object.getPrototypeOf(this).itemActivated;
+  
+    this["itemEntered(QListWidgetItem*)"] = Object.getPrototypeOf(this).itemEntered;
+  
+    this["itemChanged(QListWidgetItem*)"] = Object.getPrototypeOf(this).itemChanged;
+  
+    this["currentItemChanged(QListWidgetItem*,QListWidgetItem*)"] = Object.getPrototypeOf(this).currentItemChanged;
+  
+    this["currentTextChanged(QString)"] = Object.getPrototypeOf(this).currentTextChanged;
+  
+    this["currentRowChanged(int)"] = Object.getPrototypeOf(this).currentRowChanged;
+  
     this["iconClicked(int,QListWidgetItem*)"] = Object.getPrototypeOf(this).iconClicked;
   
           }
@@ -152,8 +184,103 @@
 
       // enum values:
       
+  // enum: SizeAdjustPolicy
+RListWidget.AdjustIgnored = RListWidget_Wrapper.AdjustIgnored;
+RListWidget.AdjustToContentsOnFirstShow = RListWidget_Wrapper.AdjustToContentsOnFirstShow;
+RListWidget.AdjustToContents = RListWidget_Wrapper.AdjustToContents;
+
+  // enum: SelectionMode
+RListWidget.NoSelection = RListWidget_Wrapper.NoSelection;
+RListWidget.SingleSelection = RListWidget_Wrapper.SingleSelection;
+RListWidget.MultiSelection = RListWidget_Wrapper.MultiSelection;
+RListWidget.ExtendedSelection = RListWidget_Wrapper.ExtendedSelection;
+RListWidget.ContiguousSelection = RListWidget_Wrapper.ContiguousSelection;
+
+  // enum: SelectionBehavior
+RListWidget.SelectItems = RListWidget_Wrapper.SelectItems;
+RListWidget.SelectRows = RListWidget_Wrapper.SelectRows;
+RListWidget.SelectColumns = RListWidget_Wrapper.SelectColumns;
+
+  // enum: ScrollHint
+RListWidget.EnsureVisible = RListWidget_Wrapper.EnsureVisible;
+RListWidget.PositionAtTop = RListWidget_Wrapper.PositionAtTop;
+RListWidget.PositionAtBottom = RListWidget_Wrapper.PositionAtBottom;
+RListWidget.PositionAtCenter = RListWidget_Wrapper.PositionAtCenter;
+
+  // enum: EditTrigger
+RListWidget.NoEditTriggers = RListWidget_Wrapper.NoEditTriggers;
+RListWidget.CurrentChanged = RListWidget_Wrapper.CurrentChanged;
+RListWidget.DoubleClicked = RListWidget_Wrapper.DoubleClicked;
+RListWidget.SelectedClicked = RListWidget_Wrapper.SelectedClicked;
+RListWidget.EditKeyPressed = RListWidget_Wrapper.EditKeyPressed;
+RListWidget.AnyKeyPressed = RListWidget_Wrapper.AnyKeyPressed;
+RListWidget.AllEditTriggers = RListWidget_Wrapper.AllEditTriggers;
+
+  // enum: ScrollMode
+RListWidget.ScrollPerItem = RListWidget_Wrapper.ScrollPerItem;
+RListWidget.ScrollPerPixel = RListWidget_Wrapper.ScrollPerPixel;
+
+  // enum: DragDropMode
+RListWidget.NoDragDrop = RListWidget_Wrapper.NoDragDrop;
+RListWidget.DragOnly = RListWidget_Wrapper.DragOnly;
+RListWidget.DropOnly = RListWidget_Wrapper.DropOnly;
+RListWidget.DragDrop = RListWidget_Wrapper.DragDrop;
+RListWidget.InternalMove = RListWidget_Wrapper.InternalMove;
+
+  // enum: Movement
+RListWidget.Static = RListWidget_Wrapper.Static;
+RListWidget.Free = RListWidget_Wrapper.Free;
+RListWidget.Snap = RListWidget_Wrapper.Snap;
+
+  // enum: Flow
+RListWidget.LeftToRight = RListWidget_Wrapper.LeftToRight;
+RListWidget.TopToBottom = RListWidget_Wrapper.TopToBottom;
+
+  // enum: ResizeMode
+RListWidget.Fixed = RListWidget_Wrapper.Fixed;
+RListWidget.Adjust = RListWidget_Wrapper.Adjust;
+
+  // enum: LayoutMode
+RListWidget.SinglePass = RListWidget_Wrapper.SinglePass;
+RListWidget.Batched = RListWidget_Wrapper.Batched;
+
+  // enum: ViewMode
+RListWidget.ListMode = RListWidget_Wrapper.ListMode;
+RListWidget.IconMode = RListWidget_Wrapper.IconMode;
+
 
       // functions:
+      
+        // function 
+        RListWidget.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RListWidget.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RListWidget);
+  }
+
+  
+  else {
+    
+        print("RListWidget.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
         // function 
         RListWidget.prototype.contextMenuEvent = function() 
@@ -188,6 +315,119 @@
       
 
       // static functions:
+      
+
+        // static function 
+        RListWidget.tr = function() 
+          
+        {
+          //print("JS: RListWidget.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RListWidget_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RListWidget);
+  }
+
+  
+  else {
+    
+        print("RListWidget.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RListWidget.setTabOrder = function() 
+          
+        {
+          //print("JS: RListWidget.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RListWidget_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RListWidget);
+  }
+
+  
+  else {
+    
+        print("RListWidget.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RListWidget.mouseGrabber = function() 
+          
+        {
+          //print("JS: RListWidget.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RListWidget_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RListWidget);
+  }
+
+  
+  else {
+    
+        print("RListWidget.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RListWidget.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RListWidget.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RListWidget_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RListWidget);
+  }
+
+  
+  else {
+    
+        print("RListWidget.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

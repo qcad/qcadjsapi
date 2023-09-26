@@ -8,6 +8,9 @@
     #include "rdimaligneddata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimAlignedData*> RDimAlignedData_Wrapper::basecasters_RDimAlignedData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimAlignedData

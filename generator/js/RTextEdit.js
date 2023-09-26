@@ -86,6 +86,26 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["undoAvailable(bool)"] = Object.getPrototypeOf(this).undoAvailable;
+  
+    this["redoAvailable(bool)"] = Object.getPrototypeOf(this).redoAvailable;
+  
+    this["currentCharFormatChanged(QTextCharFormat)"] = Object.getPrototypeOf(this).currentCharFormatChanged;
+  
+    this["copyAvailable(bool)"] = Object.getPrototypeOf(this).copyAvailable;
+  
+    this["backwardAvailable(bool)"] = Object.getPrototypeOf(this).backwardAvailable;
+  
+    this["forwardAvailable(bool)"] = Object.getPrototypeOf(this).forwardAvailable;
+  
+    this["sourceChanged(QUrl)"] = Object.getPrototypeOf(this).sourceChanged;
+  
+    this["highlighted(QUrl)"] = Object.getPrototypeOf(this).highlighted;
+  
+    this["anchorClicked(QUrl)"] = Object.getPrototypeOf(this).anchorClicked;
+  
           }
         }
       }
@@ -145,11 +165,171 @@
 
       // enum values:
       
+  // enum: SizeAdjustPolicy
+RTextEdit.AdjustIgnored = RTextEdit_Wrapper.AdjustIgnored;
+RTextEdit.AdjustToContentsOnFirstShow = RTextEdit_Wrapper.AdjustToContentsOnFirstShow;
+RTextEdit.AdjustToContents = RTextEdit_Wrapper.AdjustToContents;
+
+  // enum: LineWrapMode
+RTextEdit.NoWrap = RTextEdit_Wrapper.NoWrap;
+RTextEdit.WidgetWidth = RTextEdit_Wrapper.WidgetWidth;
+RTextEdit.FixedPixelWidth = RTextEdit_Wrapper.FixedPixelWidth;
+RTextEdit.FixedColumnWidth = RTextEdit_Wrapper.FixedColumnWidth;
+
+  // enum: AutoFormattingFlag
+RTextEdit.AutoNone = RTextEdit_Wrapper.AutoNone;
+RTextEdit.AutoBulletList = RTextEdit_Wrapper.AutoBulletList;
+RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
+
 
       // functions:
       
+        // function 
+        RTextEdit.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RTextEdit.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RTextEdit);
+  }
+
+  
+  else {
+    
+        print("RTextEdit.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RTextEdit.tr = function() 
+          
+        {
+          //print("JS: RTextEdit.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RTextEdit_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RTextEdit);
+  }
+
+  
+  else {
+    
+        print("RTextEdit.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RTextEdit.setTabOrder = function() 
+          
+        {
+          //print("JS: RTextEdit.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RTextEdit_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RTextEdit);
+  }
+
+  
+  else {
+    
+        print("RTextEdit.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RTextEdit.mouseGrabber = function() 
+          
+        {
+          //print("JS: RTextEdit.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RTextEdit_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RTextEdit);
+  }
+
+  
+  else {
+    
+        print("RTextEdit.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RTextEdit.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RTextEdit.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RTextEdit_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RTextEdit);
+  }
+
+  
+  else {
+    
+        print("RTextEdit.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

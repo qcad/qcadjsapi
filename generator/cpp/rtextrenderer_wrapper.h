@@ -860,8 +860,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property rxLineFeedStr:
@@ -1428,7 +1427,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1451,13 +1449,22 @@
       
         static RTextRenderer* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RTextRenderer.length(); i++) {
+            RJSBasecaster_RTextRenderer* basecaster = basecasters_RTextRenderer[i];
+            RTextRenderer* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RTextRenderer::getIdStatic()) {
             return (RTextRenderer*)vp;
           }
+
+          qWarning() << "RTextRenderer::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1813,6 +1820,15 @@ RichText = RTextRenderer::RichText,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RTextRenderer*> basecasters_RTextRenderer;
+
+      public:
+        static void registerBasecaster_RTextRenderer(RJSBasecaster_RTextRenderer* bc) {
+          basecasters_RTextRenderer.append(bc);
+        }
       
     };
 

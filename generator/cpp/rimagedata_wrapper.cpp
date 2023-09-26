@@ -8,6 +8,9 @@
     #include "rimagedata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RImageData*> RImageData_Wrapper::basecasters_RImageData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RImageData

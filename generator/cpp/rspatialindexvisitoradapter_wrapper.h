@@ -40,13 +40,22 @@
       
         static RSpatialIndexVisitorAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSpatialIndexVisitorAdapter.length(); i++) {
+            RJSBasecaster_RSpatialIndexVisitorAdapter* basecaster = basecasters_RSpatialIndexVisitorAdapter[i];
+            RSpatialIndexVisitorAdapter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSpatialIndexVisitorAdapter::getIdStatic()) {
             return (RSpatialIndexVisitorAdapter*)vp;
           }
+
+          qWarning() << "RSpatialIndexVisitorAdapter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -322,6 +331,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSpatialIndexVisitorAdapter*> basecasters_RSpatialIndexVisitorAdapter;
+
+      public:
+        static void registerBasecaster_RSpatialIndexVisitorAdapter(RJSBasecaster_RSpatialIndexVisitorAdapter* bc) {
+          basecasters_RSpatialIndexVisitorAdapter.append(bc);
+        }
       
     };
 

@@ -134,6 +134,35 @@
       
 
         // static function 
+        REventHandler.tr = function() 
+          
+        {
+          //print("JS: REventHandler.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return REventHandler_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, REventHandler);
+  }
+
+  
+  else {
+    
+        print("REventHandler.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         REventHandler.isUrl = function() 
           
         {

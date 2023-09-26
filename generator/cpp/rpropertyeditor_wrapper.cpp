@@ -8,6 +8,9 @@
     #include "rpropertyeditor_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPropertyEditor*> RPropertyEditor_Wrapper::basecasters_RPropertyEditor;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RPropertyEditor

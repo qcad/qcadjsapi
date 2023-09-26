@@ -8,6 +8,9 @@
     #include "rtraceentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RTraceEntity*> RTraceEntity_Wrapper::basecasters_RTraceEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RTraceEntity

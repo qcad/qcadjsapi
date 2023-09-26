@@ -8,6 +8,9 @@
     #include "rattributeentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RAttributeEntity*> RAttributeEntity_Wrapper::basecasters_RAttributeEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RAttributeEntity

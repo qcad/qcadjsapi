@@ -8,6 +8,9 @@
     #include "rrestrictorthogonal_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RRestrictOrthogonal*> RRestrictOrthogonal_Wrapper::basecasters_RRestrictOrthogonal;
+    
     // static functions implementation in singleton wrapper:
     
     void RRestrictOrthogonal_Wrapper::init(RJSApi& handler) {

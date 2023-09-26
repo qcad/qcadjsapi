@@ -46,17 +46,22 @@
       
         static RInterTransactionListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RInterTransactionListenerAdapter::getIdStatic()) {
-              return (RInterTransactionListener*)(RInterTransactionListenerAdapter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RInterTransactionListener.length(); i++) {
+            RJSBasecaster_RInterTransactionListener* basecaster = basecasters_RInterTransactionListener[i];
+            RInterTransactionListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RInterTransactionListener::getIdStatic()) {
             return (RInterTransactionListener*)vp;
           }
+
+          qWarning() << "RInterTransactionListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -238,6 +243,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RInterTransactionListener*> basecasters_RInterTransactionListener;
+
+      public:
+        static void registerBasecaster_RInterTransactionListener(RJSBasecaster_RInterTransactionListener* bc) {
+          basecasters_RInterTransactionListener.append(bc);
+        }
       
     };
 

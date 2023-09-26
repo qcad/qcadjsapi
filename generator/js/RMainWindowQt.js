@@ -87,6 +87,14 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
+  
+    this["toolButtonStyleChanged(Qt::ToolButtonStyle)"] = Object.getPrototypeOf(this).toolButtonStyleChanged;
+  
+    this["tabifiedDockWidgetActivated(QDockWidget*)"] = Object.getPrototypeOf(this).tabifiedDockWidgetActivated;
+  
     this["commandPrompt(QString)"] = Object.getPrototypeOf(this).commandPrompt;
   
     this["leftMouseTip(QString)"] = Object.getPrototypeOf(this).leftMouseTip;
@@ -166,11 +174,163 @@
 
       // enum values:
       
+  // enum: DockOption
+RMainWindowQt.AnimatedDocks = RMainWindowQt_Wrapper.AnimatedDocks;
+RMainWindowQt.AllowNestedDocks = RMainWindowQt_Wrapper.AllowNestedDocks;
+RMainWindowQt.AllowTabbedDocks = RMainWindowQt_Wrapper.AllowTabbedDocks;
+RMainWindowQt.ForceTabbedDocks = RMainWindowQt_Wrapper.ForceTabbedDocks;
+RMainWindowQt.VerticalTabs = RMainWindowQt_Wrapper.VerticalTabs;
+RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
+
 
       // functions:
       
+        // function 
+        RMainWindowQt.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RMainWindowQt.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RMainWindowQt);
+  }
+
+  
+  else {
+    
+        print("RMainWindowQt.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RMainWindowQt.tr = function() 
+          
+        {
+          //print("JS: RMainWindowQt.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RMainWindowQt_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RMainWindowQt);
+  }
+
+  
+  else {
+    
+        print("RMainWindowQt.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMainWindowQt.setTabOrder = function() 
+          
+        {
+          //print("JS: RMainWindowQt.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RMainWindowQt_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RMainWindowQt);
+  }
+
+  
+  else {
+    
+        print("RMainWindowQt.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMainWindowQt.mouseGrabber = function() 
+          
+        {
+          //print("JS: RMainWindowQt.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMainWindowQt_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMainWindowQt);
+  }
+
+  
+  else {
+    
+        print("RMainWindowQt.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RMainWindowQt.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RMainWindowQt.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RMainWindowQt_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RMainWindowQt);
+  }
+
+  
+  else {
+    
+        print("RMainWindowQt.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
         // static function 

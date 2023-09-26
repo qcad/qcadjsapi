@@ -8,6 +8,9 @@
     #include "rpenlistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPenListener*> RPenListener_Wrapper::basecasters_RPenListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RPenListener_Wrapper::init(RJSApi& handler) {

@@ -8,6 +8,9 @@
     #include "rdimradialdata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimRadialData*> RDimRadialData_Wrapper::basecasters_RDimRadialData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimRadialData

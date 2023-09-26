@@ -40,13 +40,22 @@
       
         static RChangePropertyOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RChangePropertyOperation.length(); i++) {
+            RJSBasecaster_RChangePropertyOperation* basecaster = basecasters_RChangePropertyOperation[i];
+            RChangePropertyOperation* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RChangePropertyOperation::getIdStatic()) {
             return (RChangePropertyOperation*)vp;
           }
+
+          qWarning() << "RChangePropertyOperation::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -564,6 +573,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RChangePropertyOperation*> basecasters_RChangePropertyOperation;
+
+      public:
+        static void registerBasecaster_RChangePropertyOperation(RJSBasecaster_RChangePropertyOperation* bc) {
+          basecasters_RChangePropertyOperation.append(bc);
+        }
       
     };
 

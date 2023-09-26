@@ -8,6 +8,9 @@
     #include "rucs_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RUcs*> RUcs_Wrapper::basecasters_RUcs;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RUcs

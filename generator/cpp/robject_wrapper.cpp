@@ -8,6 +8,9 @@
     #include "robject_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RObject*> RObject_Wrapper::basecasters_RObject;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RObject

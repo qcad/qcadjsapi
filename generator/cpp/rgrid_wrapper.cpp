@@ -8,6 +8,9 @@
     #include "rgrid_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RGrid*> RGrid_Wrapper::basecasters_RGrid;
+    
     // static functions implementation in singleton wrapper:
     
     void RGrid_Wrapper::init(RJSApi& handler) {

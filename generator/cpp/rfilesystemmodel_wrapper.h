@@ -19,6 +19,69 @@
       
         #include "RFileSystemModel.h"
       
+      // singleton class wrapper for static functions:
+      class RFileSystemModel_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      RFileSystemModel_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {}
+
+      
+
+      // static functions:
+      
+    // Class: RFileSystemModel
+    // Function: tr
+    // Source: QObject
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tr
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static RFileSystemModel_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RFileSystemModel
@@ -28,6 +91,30 @@
       Q_OBJECT
       QML_INTERFACE
     
+  Q_PROPERTY(
+    
+    QJSValue
+     objectName READ objectName WRITE setObjectName
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     readOnly READ isReadOnly WRITE setReadOnly
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     nameFilterDisables READ nameFilterDisables WRITE setNameFilterDisables
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     options READ options WRITE setOptions
+  )
+
 
     private:
       // disable copy constructor:
@@ -40,13 +127,22 @@
       
         static RFileSystemModel* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RFileSystemModel.length(); i++) {
+            RJSBasecaster_RFileSystemModel* basecaster = basecasters_RFileSystemModel[i];
+            RFileSystemModel* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RFileSystemModel::getIdStatic()) {
             return (RFileSystemModel*)vp;
           }
+
+          qWarning() << "RFileSystemModel::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -66,6 +162,33 @@
           return ret;
         }
       
+        // enums:
+        
+  enum LayoutChangeHint {
+    NoLayoutChangeHint = RFileSystemModel::NoLayoutChangeHint,
+VerticalSortHint = RFileSystemModel::VerticalSortHint,
+HorizontalSortHint = RFileSystemModel::HorizontalSortHint,
+
+  };
+  Q_ENUM(LayoutChangeHint)
+
+  enum Roles {
+    FileIconRole = RFileSystemModel::FileIconRole,
+FilePathRole = RFileSystemModel::FilePathRole,
+FileNameRole = RFileSystemModel::FileNameRole,
+FilePermissions = RFileSystemModel::FilePermissions,
+
+  };
+  Q_ENUM(Roles)
+
+  enum Option {
+    DontWatchForChanges = RFileSystemModel::DontWatchForChanges,
+DontResolveSymlinks = RFileSystemModel::DontResolveSymlinks,
+DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
+
+  };
+  Q_ENUM(Option)
+
     /*
     // special constructor used as prototype:
     
@@ -122,6 +245,1820 @@
 
     // non-static functions:
     
+    // Class: RFileSystemModel
+    // Function: objectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  objectName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: setObjectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setObjectName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: isWidgetType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWidgetType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: isWindowType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWindowType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: signalsBlocked
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  signalsBlocked
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: blockSignals
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  blockSignals
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: findChild
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  findChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: children
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  children
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: setParent
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setParent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: installEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  installEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: removeEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: dumpObjectTree
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectTree
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: dumpObjectInfo
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectInfo
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: setProperty
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setProperty
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: property
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  property
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: dynamicPropertyNames
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dynamicPropertyNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: deleteLater
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  deleteLater
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: hasIndex
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  hasIndex
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: clearItemData
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clearItemData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: supportedDragActions
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  supportedDragActions
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: insertRows
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertRows
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: insertColumns
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertColumns
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: removeRows
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeRows
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: removeColumns
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeColumns
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: moveRows
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 5
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  moveRows
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: moveColumns
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 5
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  moveColumns
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: insertRow
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertRow
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: insertColumn
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertColumn
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: removeColumn
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeColumn
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: moveRow
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  moveRow
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: moveColumn
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  moveColumn
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: buddy
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  buddy
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: span
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  span
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: headerDataChanged
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void headerDataChanged(
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void headerDataChangedEmitter(
+                Qt::Orientation orientation, int first, int last
+              );
+            
+    // Class: RFileSystemModel
+    // Function: rowsInserted
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void rowsInserted(
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void rowsInsertedEmitter(
+                const QModelIndex& parent, int first, int last
+              );
+            
+    // Class: RFileSystemModel
+    // Function: submit
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  submit
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: revert
+    // Source: QAbstractItemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  revert
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: parent
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  parent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: sibling
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  sibling
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: hasChildren
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  hasChildren
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: columnCount
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  columnCount
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: myComputer
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  myComputer
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: setData
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: headerData
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  headerData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: flags
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  flags
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: sort
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  sort
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: mimeTypes
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  mimeTypes
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: dropMimeData
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 5
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dropMimeData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: supportedDropActions
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  supportedDropActions
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: rootDirectory
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  rootDirectory
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: iconProvider
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  iconProvider
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: filter
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  filter
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: setResolveSymlinks
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setResolveSymlinks
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: resolveSymlinks
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  resolveSymlinks
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: setReadOnly
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setReadOnly
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: isReadOnly
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isReadOnly
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: nameFilterDisables
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  nameFilterDisables
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: nameFilters
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  nameFilters
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: setOption
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setOption
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: testOption
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  testOption
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: setOptions
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setOptions
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: options
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  options
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: size
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  size
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: type
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  type
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: lastModified
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  lastModified
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: mkdir
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  mkdir
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: rmdir
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  rmdir
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: fileName
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  fileName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: fileIcon
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  fileIcon
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: permissions
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  permissions
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: fileInfo
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  fileInfo
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RFileSystemModel
+    // Function: remove
+    // Source: QFileSystemModel
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  remove
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
     // Class: RFileSystemModel
     // Function: setRootPath
     // Source: 
@@ -663,6 +2600,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RFileSystemModel*> basecasters_RFileSystemModel;
+
+      public:
+        static void registerBasecaster_RFileSystemModel(RJSBasecaster_RFileSystemModel* bc) {
+          basecasters_RFileSystemModel.append(bc);
+        }
       
     };
 

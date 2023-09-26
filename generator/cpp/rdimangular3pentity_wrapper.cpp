@@ -8,6 +8,9 @@
     #include "rdimangular3pentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimAngular3PEntity*> RDimAngular3PEntity_Wrapper::basecasters_RDimAngular3PEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimAngular3PEntity

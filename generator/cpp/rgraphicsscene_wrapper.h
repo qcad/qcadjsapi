@@ -42,17 +42,22 @@
       
         static RGraphicsScene* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RGraphicsSceneQt::getIdStatic()) {
-              return (RGraphicsScene*)(RGraphicsSceneQt*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RGraphicsScene.length(); i++) {
+            RJSBasecaster_RGraphicsScene* basecaster = basecasters_RGraphicsScene[i];
+            RGraphicsScene* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RGraphicsScene::getIdStatic()) {
             return (RGraphicsScene*)vp;
           }
+
+          qWarning() << "RGraphicsScene::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2837,6 +2842,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RGraphicsScene*> basecasters_RGraphicsScene;
+
+      public:
+        static void registerBasecaster_RGraphicsScene(RJSBasecaster_RGraphicsScene* bc) {
+          basecasters_RGraphicsScene.append(bc);
+        }
       
     };
 

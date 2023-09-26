@@ -8,6 +8,9 @@
     #include "rmousecoordinatelistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RMouseCoordinateListener*> RMouseCoordinateListener_Wrapper::basecasters_RMouseCoordinateListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RMouseCoordinateListener_Wrapper::init(RJSApi& handler) {

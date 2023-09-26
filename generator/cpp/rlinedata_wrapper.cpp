@@ -8,6 +8,9 @@
     #include "rlinedata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RLineData*> RLineData_Wrapper::basecasters_RLineData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RLineData

@@ -44,29 +44,22 @@
       
         static RInputEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RCoordinateEvent::getIdStatic()) {
-              return (RInputEvent*)(RCoordinateEvent*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RInputEvent.length(); i++) {
+            RJSBasecaster_RInputEvent* basecaster = basecasters_RInputEvent[i];
+            RInputEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_REntityPickEvent::getIdStatic()) {
-              return (RInputEvent*)(REntityPickEvent*)vp;
-            }
-            
-            if (t==RJSType_RMouseEvent::getIdStatic()) {
-              return (RInputEvent*)(RMouseEvent*)vp;
-            }
-            
-            if (t==RJSType_RWheelEvent::getIdStatic()) {
-              return (RInputEvent*)(RWheelEvent*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RInputEvent::getIdStatic()) {
             return (RInputEvent*)vp;
           }
+
+          qWarning() << "RInputEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -455,6 +448,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RInputEvent*> basecasters_RInputEvent;
+
+      public:
+        static void registerBasecaster_RInputEvent(RJSBasecaster_RInputEvent* bc) {
+          basecasters_RInputEvent.append(bc);
+        }
       
     };
 

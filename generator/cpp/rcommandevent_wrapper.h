@@ -40,13 +40,22 @@
       
         static RCommandEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RCommandEvent.length(); i++) {
+            RJSBasecaster_RCommandEvent* basecaster = basecasters_RCommandEvent[i];
+            RCommandEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RCommandEvent::getIdStatic()) {
             return (RCommandEvent*)vp;
           }
+
+          qWarning() << "RCommandEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -285,6 +294,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RCommandEvent*> basecasters_RCommandEvent;
+
+      public:
+        static void registerBasecaster_RCommandEvent(RJSBasecaster_RCommandEvent* bc) {
+          basecasters_RCommandEvent.append(bc);
+        }
       
     };
 

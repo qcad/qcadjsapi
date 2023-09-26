@@ -58,6 +58,7 @@ include(generator/CMakeInclude.txt)
 target_include_directories(qcadjsapi PRIVATE
     ../rjsapi
     ../rjsapi/generator
+    ../rjsapi/generator/cpp
     ../qcad/src/3rdparty
     ../qcad/src/3rdparty/opennurbs
     ../qcad/src/3rdparty/spatialindexnavel
@@ -80,6 +81,7 @@ target_include_directories(qcadjsapi PRIVATE
     ../qcad/src/spatialindex
     ../qcad/src/stemmer
     generator
+    generator/cpp
     generator/adapters
     .
 )

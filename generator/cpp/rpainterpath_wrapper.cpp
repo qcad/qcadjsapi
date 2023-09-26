@@ -8,6 +8,9 @@
     #include "rpainterpath_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPainterPath*> RPainterPath_Wrapper::basecasters_RPainterPath;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RPainterPath
@@ -623,6 +626,3283 @@ RPainterPath a1_cpp;
 
     // non-static functions:
     
+    // Class: RPainterPath
+    // Function: swap
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::swap
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPainterPath(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: other (QPainterPath)
+  
+QPainterPath a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPainterPath(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->swap(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for swap";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: clear
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::clear
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->clear(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for clear";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: reserve
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::reserve
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: size (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->reserve(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for reserve";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: capacity
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::capacity
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                int res = 
+                    
+                w->capacity(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for capacity";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: arcMoveTo
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 5
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::arcMoveTo
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+   && RJSHelper::is_qreal(handler, a3
+  )
+
+   && RJSHelper::is_qreal(handler, a4
+  )
+
+   && RJSHelper::is_qreal(handler, a5
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: x (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+  // convert js parameter to cpp: y (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+  // convert js parameter to cpp: w (qreal)
+  
+qreal a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
+        
+  // convert js parameter to cpp: h (qreal)
+  
+qreal a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
+        
+  // convert js parameter to cpp: angle (qreal)
+  
+qreal a5_cpp;
+
+      a5_cpp = RJSHelper::js2cpp_qreal(handler, a5);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->arcMoveTo(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QRectF(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: rect (QRectF)
+  
+QRectF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
+        
+  // convert js parameter to cpp: angle (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->arcMoveTo(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for arcMoveTo";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: arcTo
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 6
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::arcTo
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5, 
+  const QJSValue& 
+  a6
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+   && RJSHelper::is_qreal(handler, a3
+  )
+
+   && RJSHelper::is_qreal(handler, a4
+  )
+
+   && RJSHelper::is_qreal(handler, a5
+  )
+
+   && RJSHelper::is_qreal(handler, a6
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: x (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+  // convert js parameter to cpp: y (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+  // convert js parameter to cpp: w (qreal)
+  
+qreal a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
+        
+  // convert js parameter to cpp: h (qreal)
+  
+qreal a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
+        
+  // convert js parameter to cpp: startAngle (qreal)
+  
+qreal a5_cpp;
+
+      a5_cpp = RJSHelper::js2cpp_qreal(handler, a5);
+        
+  // convert js parameter to cpp: arcLength (qreal)
+  
+qreal a6_cpp;
+
+      a6_cpp = RJSHelper::js2cpp_qreal(handler, a6);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->arcTo(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    , a6_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QRectF(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+   && RJSHelper::is_qreal(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: rect (QRectF)
+  
+QRectF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
+        
+  // convert js parameter to cpp: startAngle (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+  // convert js parameter to cpp: arcLength (qreal)
+  
+qreal a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->arcTo(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for arcTo";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: currentPosition
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::currentPosition
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPointF res = 
+                    
+                w->currentPosition(
+                  
+                );
+              
+            // return type: QPointF
+
+            return RJSHelper::cpp2js_QPointF(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for currentPosition";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: addEllipse
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::addEllipse
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+   && RJSHelper::is_qreal(handler, a3
+  )
+
+   && RJSHelper::is_qreal(handler, a4
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: x (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+  // convert js parameter to cpp: y (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+  // convert js parameter to cpp: w (qreal)
+  
+qreal a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
+        
+  // convert js parameter to cpp: h (qreal)
+  
+qreal a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->addEllipse(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QPointF(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+   && RJSHelper::is_qreal(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: center (QPointF)
+  
+QPointF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
+        
+  // convert js parameter to cpp: rx (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+  // convert js parameter to cpp: ry (qreal)
+  
+qreal a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->addEllipse(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QRectF(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: rect (QRectF)
+  
+QRectF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->addEllipse(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for addEllipse";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: addPolygon
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::addPolygon
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPolygonF(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: polygon (QPolygonF)
+  
+QPolygonF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPolygonF(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->addPolygon(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for addPolygon";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: addText
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::addText
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+   && RJSHelper::is_QFont(handler, a3
+  )
+
+   && RJSHelper::is_QString(handler, a4
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: x (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+  // convert js parameter to cpp: y (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+  // convert js parameter to cpp: f (QFont)
+  
+QFont a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QFont(handler, a3);
+        
+  // convert js parameter to cpp: text (QString)
+  
+QString a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_QString(handler, a4);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->addText(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QPointF(handler, a1
+  )
+
+   && RJSHelper::is_QFont(handler, a2
+  )
+
+   && RJSHelper::is_QString(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: point (QPointF)
+  
+QPointF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
+        
+  // convert js parameter to cpp: f (QFont)
+  
+QFont a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QFont(handler, a2);
+        
+  // convert js parameter to cpp: text (QString)
+  
+QString a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QString(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->addText(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for addText";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: addRegion
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::addRegion
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QRegion(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: region (QRegion)
+  
+QRegion a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QRegion(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->addRegion(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for addRegion";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: addRoundedRect
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 7
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::addRoundedRect
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5, 
+  const QJSValue& 
+  a6, 
+  const QJSValue& 
+  a7
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+   && RJSHelper::is_qreal(handler, a3
+  )
+
+   && RJSHelper::is_qreal(handler, a4
+  )
+
+   && RJSHelper::is_qreal(handler, a5
+  )
+
+   && RJSHelper::is_qreal(handler, a6
+  )
+
+   && RJSHelper::is_Qt_SizeMode(handler, a7
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: x (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+  // convert js parameter to cpp: y (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+  // convert js parameter to cpp: w (qreal)
+  
+qreal a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
+        
+  // convert js parameter to cpp: h (qreal)
+  
+qreal a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_qreal(handler, a4);
+        
+  // convert js parameter to cpp: xRadius (qreal)
+  
+qreal a5_cpp;
+
+      a5_cpp = RJSHelper::js2cpp_qreal(handler, a5);
+        
+  // convert js parameter to cpp: yRadius (qreal)
+  
+qreal a6_cpp;
+
+      a6_cpp = RJSHelper::js2cpp_qreal(handler, a6);
+        
+  // convert js parameter to cpp: mode (Qt::SizeMode)
+  
+Qt::SizeMode a7_cpp;
+
+      
+          if (a7.isUndefined()) {
+            a7_cpp = Qt::AbsoluteSize;
+          }
+          else {
+            a7_cpp = RJSHelper::js2cpp_Qt_SizeMode(handler, a7);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->addRoundedRect(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    , a6_cpp
+    , a7_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QRectF(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+   && RJSHelper::is_qreal(handler, a3
+  )
+
+   && RJSHelper::is_Qt_SizeMode(handler, a4
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: rect (QRectF)
+  
+QRectF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
+        
+  // convert js parameter to cpp: xRadius (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+  // convert js parameter to cpp: yRadius (qreal)
+  
+qreal a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
+        
+  // convert js parameter to cpp: mode (Qt::SizeMode)
+  
+Qt::SizeMode a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = Qt::AbsoluteSize;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_Qt_SizeMode(handler, a4);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->addRoundedRect(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for addRoundedRect";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: connectPath
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::connectPath
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPainterPath(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: path (QPainterPath)
+  
+QPainterPath a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPainterPath(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->connectPath(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for connectPath";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: contains
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::contains
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPointF(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: pt (QPointF)
+  
+QPointF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                bool res = 
+                    
+                w->contains(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QRectF(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: rect (QRectF)
+  
+QRectF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                bool res = 
+                    
+                w->contains(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QPainterPath(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: p (QPainterPath)
+  
+QPainterPath a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPainterPath(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                bool res = 
+                    
+                w->contains(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for contains";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: intersects
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::intersects
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QRectF(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: rect (QRectF)
+  
+QRectF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                bool res = 
+                    
+                w->intersects(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QPainterPath(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: p (QPainterPath)
+  
+QPainterPath a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPainterPath(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                bool res = 
+                    
+                w->intersects(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for intersects";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: translate
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::translate
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: dx (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+  // convert js parameter to cpp: dy (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->translate(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QPointF(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: offset (QPointF)
+  
+QPointF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->translate(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for translate";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: translated
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::translated
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: dx (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+  // convert js parameter to cpp: dy (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPainterPath res = 
+                    
+                w->translated(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QPainterPath
+
+            return RJSHelper::cpp2js_QPainterPath(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QPointF(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: offset (QPointF)
+  
+QPointF a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPainterPath res = 
+                    
+                w->translated(
+                  a1_cpp
+    
+                );
+              
+            // return type: QPainterPath
+
+            return RJSHelper::cpp2js_QPainterPath(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for translated";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: boundingRect
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::boundingRect
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QRectF res = 
+                    
+                w->boundingRect(
+                  
+                );
+              
+            // return type: QRectF
+
+            return RJSHelper::cpp2js_QRectF(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for boundingRect";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: controlPointRect
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::controlPointRect
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QRectF res = 
+                    
+                w->controlPointRect(
+                  
+                );
+              
+            // return type: QRectF
+
+            return RJSHelper::cpp2js_QRectF(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for controlPointRect";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: fillRule
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::fillRule
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                Qt::FillRule res = 
+                    
+                w->fillRule(
+                  
+                );
+              
+            // return type: Qt::FillRule
+
+            return RJSHelper::cpp2js_Qt_FillRule(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for fillRule";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: setFillRule
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::setFillRule
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_FillRule(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: fillRule (Qt::FillRule)
+  
+Qt::FillRule a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_Qt_FillRule(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->setFillRule(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setFillRule";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: toReversed
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::toReversed
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPainterPath res = 
+                    
+                w->toReversed(
+                  
+                );
+              
+            // return type: QPainterPath
+
+            return RJSHelper::cpp2js_QPainterPath(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toReversed";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: toSubpathPolygons
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::toSubpathPolygons
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QTransform(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: matrix (QTransform)
+  
+QTransform a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QTransform();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QTransform(handler, a1);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QList<QPolygonF> res = 
+                    
+                w->toSubpathPolygons(
+                  a1_cpp
+    
+                );
+              
+            // return type: QList<QPolygonF>
+
+            return RJSHelper::cpp2js_QList_QPolygonF(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toSubpathPolygons";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: toFillPolygons
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::toFillPolygons
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QTransform(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: matrix (QTransform)
+  
+QTransform a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QTransform();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QTransform(handler, a1);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QList<QPolygonF> res = 
+                    
+                w->toFillPolygons(
+                  a1_cpp
+    
+                );
+              
+            // return type: QList<QPolygonF>
+
+            return RJSHelper::cpp2js_QList_QPolygonF(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toFillPolygons";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: toFillPolygon
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::toFillPolygon
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QTransform(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: matrix (QTransform)
+  
+QTransform a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QTransform();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QTransform(handler, a1);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPolygonF res = 
+                    
+                w->toFillPolygon(
+                  a1_cpp
+    
+                );
+              
+            // return type: QPolygonF
+
+            return RJSHelper::cpp2js_QPolygonF(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toFillPolygon";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: elementCount
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::elementCount
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                int res = 
+                    
+                w->elementCount(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for elementCount";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: setElementPositionAt
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::setElementPositionAt
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+   && RJSHelper::is_qreal(handler, a2
+  )
+
+   && RJSHelper::is_qreal(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: i (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+  // convert js parameter to cpp: x (qreal)
+  
+qreal a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_qreal(handler, a2);
+        
+  // convert js parameter to cpp: y (qreal)
+  
+qreal a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_qreal(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                
+                w->setElementPositionAt(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setElementPositionAt";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: length
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::length
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                qreal res = 
+                    
+                w->length(
+                  
+                );
+              
+            // return type: qreal
+
+            return RJSHelper::cpp2js_qreal(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for length";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: percentAtLength
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::percentAtLength
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: t (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                qreal res = 
+                    
+                w->percentAtLength(
+                  a1_cpp
+    
+                );
+              
+            // return type: qreal
+
+            return RJSHelper::cpp2js_qreal(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for percentAtLength";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: pointAtPercent
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::pointAtPercent
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: t (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPointF res = 
+                    
+                w->pointAtPercent(
+                  a1_cpp
+    
+                );
+              
+            // return type: QPointF
+
+            return RJSHelper::cpp2js_QPointF(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for pointAtPercent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: angleAtPercent
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::angleAtPercent
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: t (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                qreal res = 
+                    
+                w->angleAtPercent(
+                  a1_cpp
+    
+                );
+              
+            // return type: qreal
+
+            return RJSHelper::cpp2js_qreal(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for angleAtPercent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: slopeAtPercent
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::slopeAtPercent
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_qreal(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: t (qreal)
+  
+qreal a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_qreal(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                qreal res = 
+                    
+                w->slopeAtPercent(
+                  a1_cpp
+    
+                );
+              
+            // return type: qreal
+
+            return RJSHelper::cpp2js_qreal(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for slopeAtPercent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: united
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::united
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPainterPath(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: r (QPainterPath)
+  
+QPainterPath a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPainterPath(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPainterPath res = 
+                    
+                w->united(
+                  a1_cpp
+    
+                );
+              
+            // return type: QPainterPath
+
+            return RJSHelper::cpp2js_QPainterPath(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for united";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: intersected
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::intersected
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPainterPath(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: r (QPainterPath)
+  
+QPainterPath a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPainterPath(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPainterPath res = 
+                    
+                w->intersected(
+                  a1_cpp
+    
+                );
+              
+            // return type: QPainterPath
+
+            return RJSHelper::cpp2js_QPainterPath(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for intersected";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: subtracted
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::subtracted
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPainterPath(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: r (QPainterPath)
+  
+QPainterPath a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPainterPath(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPainterPath res = 
+                    
+                w->subtracted(
+                  a1_cpp
+    
+                );
+              
+            // return type: QPainterPath
+
+            return RJSHelper::cpp2js_QPainterPath(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for subtracted";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPainterPath
+    // Function: simplified
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPainterPath_Wrapper::simplified
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPainterPath* w = getWrapped();
+                QPainterPath res = 
+                    
+                w->simplified(
+                  
+                );
+              
+            // return type: QPainterPath
+
+            return RJSHelper::cpp2js_QPainterPath(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for simplified";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     // Class: RPainterPath
     // Function: setPath
     // Source: 

@@ -8,6 +8,9 @@
     #include "rpropertylistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPropertyListener*> RPropertyListener_Wrapper::basecasters_RPropertyListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RPropertyListener_Wrapper::init(RJSApi& handler) {

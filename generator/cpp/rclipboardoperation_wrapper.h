@@ -40,25 +40,22 @@
       
         static RClipboardOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RCopyOperation::getIdStatic()) {
-              return (RClipboardOperation*)(RCopyOperation*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RClipboardOperation.length(); i++) {
+            RJSBasecaster_RClipboardOperation* basecaster = basecasters_RClipboardOperation[i];
+            RClipboardOperation* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RDeleteSelectionOperation::getIdStatic()) {
-              return (RClipboardOperation*)(RDeleteSelectionOperation*)vp;
-            }
-            
-            if (t==RJSType_RPasteOperation::getIdStatic()) {
-              return (RClipboardOperation*)(RPasteOperation*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RClipboardOperation::getIdStatic()) {
             return (RClipboardOperation*)vp;
           }
+
+          qWarning() << "RClipboardOperation::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -968,6 +965,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RClipboardOperation*> basecasters_RClipboardOperation;
+
+      public:
+        static void registerBasecaster_RClipboardOperation(RJSBasecaster_RClipboardOperation* bc) {
+          basecasters_RClipboardOperation.append(bc);
+        }
       
     };
 

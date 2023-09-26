@@ -528,8 +528,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property INVALID_ID:
@@ -1094,7 +1093,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1117,53 +1115,22 @@
       
         static RDimensionEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimAlignedEntity*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDimensionEntity.length(); i++) {
+            RJSBasecaster_RDimensionEntity* basecaster = basecasters_RDimensionEntity[i];
+            RDimensionEntity* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimAngular2LEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimAngular3PEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAngularEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimAngularEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimArcLengthEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimDiametricEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimDiametricEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimLinearEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimLinearEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimOrdinateEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimOrdinateEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimRadialEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimRadialEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
-              return (RDimensionEntity*)(RDimRotatedEntity*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDimensionEntity::getIdStatic()) {
             return (RDimensionEntity*)vp;
           }
+
+          qWarning() << "RDimensionEntity::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4907,6 +4874,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDimensionEntity*> basecasters_RDimensionEntity;
+
+      public:
+        static void registerBasecaster_RDimensionEntity(RJSBasecaster_RDimensionEntity* bc) {
+          basecasters_RDimensionEntity.append(bc);
+        }
       
     };
 

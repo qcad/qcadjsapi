@@ -110,8 +110,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property INVALID_ID:
@@ -266,7 +265,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -289,13 +287,22 @@
       
         static RDocumentVariables* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDocumentVariables.length(); i++) {
+            RJSBasecaster_RDocumentVariables* basecaster = basecasters_RDocumentVariables[i];
+            RDocumentVariables* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDocumentVariables::getIdStatic()) {
             return (RDocumentVariables*)vp;
           }
+
+          qWarning() << "RDocumentVariables::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1827,6 +1834,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDocumentVariables*> basecasters_RDocumentVariables;
+
+      public:
+        static void registerBasecaster_RDocumentVariables(RJSBasecaster_RDocumentVariables* bc) {
+          basecasters_RDocumentVariables.append(bc);
+        }
       
     };
 

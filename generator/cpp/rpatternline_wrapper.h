@@ -40,13 +40,22 @@
       
         static RPatternLine* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RPatternLine.length(); i++) {
+            RJSBasecaster_RPatternLine* basecaster = basecasters_RPatternLine[i];
+            RPatternLine* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RPatternLine::getIdStatic()) {
             return (RPatternLine*)vp;
           }
+
+          qWarning() << "RPatternLine::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -429,6 +438,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RPatternLine*> basecasters_RPatternLine;
+
+      public:
+        static void registerBasecaster_RPatternLine(RJSBasecaster_RPatternLine* bc) {
+          basecasters_RPatternLine.append(bc);
+        }
       
     };
 

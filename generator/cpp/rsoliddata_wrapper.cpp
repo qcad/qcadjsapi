@@ -8,6 +8,9 @@
     #include "rsoliddata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSolidData*> RSolidData_Wrapper::basecasters_RSolidData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RSolidData

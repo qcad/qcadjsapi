@@ -8,6 +8,9 @@
     #include "rdebug_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDebug*> RDebug_Wrapper::basecasters_RDebug;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDebug

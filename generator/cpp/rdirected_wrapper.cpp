@@ -8,6 +8,9 @@
     #include "rdirected_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDirected*> RDirected_Wrapper::basecasters_RDirected;
+    
     // static functions implementation in singleton wrapper:
     
     void RDirected_Wrapper::init(RJSApi& handler) {

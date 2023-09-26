@@ -40,21 +40,22 @@
       
         static RPaletteListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RPaletteListenerAdapter::getIdStatic()) {
-              return (RPaletteListener*)(RPaletteListenerAdapter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RPaletteListener.length(); i++) {
+            RJSBasecaster_RPaletteListener* basecaster = basecasters_RPaletteListener[i];
+            RPaletteListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RRulerQt::getIdStatic()) {
-              return (RPaletteListener*)(RRulerQt*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RPaletteListener::getIdStatic()) {
             return (RPaletteListener*)vp;
           }
+
+          qWarning() << "RPaletteListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -228,6 +229,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RPaletteListener*> basecasters_RPaletteListener;
+
+      public:
+        static void registerBasecaster_RPaletteListener(RJSBasecaster_RPaletteListener* bc) {
+          basecasters_RPaletteListener.append(bc);
+        }
       
     };
 

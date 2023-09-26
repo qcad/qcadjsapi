@@ -40,13 +40,22 @@
       
         static RDirected* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDirected.length(); i++) {
+            RJSBasecaster_RDirected* basecaster = basecasters_RDirected[i];
+            RDirected* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDirected::getIdStatic()) {
             return (RDirected*)vp;
           }
+
+          qWarning() << "RDirected::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -201,6 +210,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDirected*> basecasters_RDirected;
+
+      public:
+        static void registerBasecaster_RDirected(RJSBasecaster_RDirected* bc) {
+          basecasters_RDirected.append(bc);
+        }
       
     };
 

@@ -87,6 +87,8 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
     this["characterSelected(QString)"] = Object.getPrototypeOf(this).characterSelected;
   
           }
@@ -135,8 +137,152 @@
 
       // functions:
       
+        // function 
+        RCharacterWidget.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RCharacterWidget.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RCharacterWidget);
+  }
+
+  
+  else {
+    
+        print("RCharacterWidget.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RCharacterWidget.tr = function() 
+          
+        {
+          //print("JS: RCharacterWidget.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RCharacterWidget_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RCharacterWidget);
+  }
+
+  
+  else {
+    
+        print("RCharacterWidget.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCharacterWidget.setTabOrder = function() 
+          
+        {
+          //print("JS: RCharacterWidget.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RCharacterWidget_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RCharacterWidget);
+  }
+
+  
+  else {
+    
+        print("RCharacterWidget.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCharacterWidget.mouseGrabber = function() 
+          
+        {
+          //print("JS: RCharacterWidget.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RCharacterWidget_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RCharacterWidget);
+  }
+
+  
+  else {
+    
+        print("RCharacterWidget.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCharacterWidget.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RCharacterWidget.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RCharacterWidget_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RCharacterWidget);
+  }
+
+  
+  else {
+    
+        print("RCharacterWidget.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

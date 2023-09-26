@@ -19,7 +19,166 @@
   // preceding Parameters: -1
 
       // protected overwritten functions / events and their public invokable counterparts:
-      void RCharacterWidget_Base::mouseMoveEvent(
+      void RCharacterWidget_Base::mouseReleaseEvent(
+      QMouseEvent* event
+    ) {
+
+      //qDebug() << "RCharacterWidget_Base::mouseReleaseEvent()";
+
+      //QJSValue f = self.prototype().property("mouseReleaseEvent");
+      QJSValue f = self.property("mouseReleaseEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QMouseEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.mouseReleaseEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        RCharacterWidget::mouseReleaseEvent(
+          event
+        );
+      }
+    }
+
+  void RCharacterWidget_Base::resizeEvent(
+      QResizeEvent* event
+    ) {
+
+      //qDebug() << "RCharacterWidget_Base::resizeEvent()";
+
+      //QJSValue f = self.prototype().property("resizeEvent");
+      QJSValue f = self.property("resizeEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QResizeEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.resizeEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        RCharacterWidget::resizeEvent(
+          event
+        );
+      }
+    }
+
+  void RCharacterWidget_Base::actionEvent(
+      QActionEvent* event
+    ) {
+
+      //qDebug() << "RCharacterWidget_Base::actionEvent()";
+
+      //QJSValue f = self.prototype().property("actionEvent");
+      QJSValue f = self.property("actionEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QActionEvent(
+    handler, 
+    // non-copyable: false
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.actionEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        RCharacterWidget::actionEvent(
+          event
+        );
+      }
+    }
+
+  void RCharacterWidget_Base::mouseMoveEvent(
       QMouseEvent* event
     ) {
 

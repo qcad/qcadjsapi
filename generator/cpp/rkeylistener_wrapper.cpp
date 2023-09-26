@@ -8,6 +8,9 @@
     #include "rkeylistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RKeyListener*> RKeyListener_Wrapper::basecasters_RKeyListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RKeyListener_Wrapper::init(RJSApi& handler) {

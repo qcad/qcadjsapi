@@ -8,6 +8,9 @@
     #include "rlinetypepattern_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RLinetypePattern*> RLinetypePattern_Wrapper::basecasters_RLinetypePattern;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RLinetypePattern

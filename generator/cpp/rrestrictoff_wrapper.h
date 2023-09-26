@@ -42,13 +42,22 @@
       
         static RRestrictOff* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RRestrictOff.length(); i++) {
+            RJSBasecaster_RRestrictOff* basecaster = basecasters_RRestrictOff[i];
+            RRestrictOff* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RRestrictOff::getIdStatic()) {
             return (RRestrictOff*)vp;
           }
+
+          qWarning() << "RRestrictOff::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -341,6 +350,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RRestrictOff*> basecasters_RRestrictOff;
+
+      public:
+        static void registerBasecaster_RRestrictOff(RJSBasecaster_RRestrictOff* bc) {
+          basecasters_RRestrictOff.append(bc);
+        }
       
     };
 

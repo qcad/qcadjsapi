@@ -8,6 +8,9 @@
     #include "rrefpoint_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RRefPoint*> RRefPoint_Wrapper::basecasters_RRefPoint;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RRefPoint

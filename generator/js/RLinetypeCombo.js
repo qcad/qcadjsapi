@@ -87,6 +87,22 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["editTextChanged(QString)"] = Object.getPrototypeOf(this).editTextChanged;
+  
+    this["activated(int)"] = Object.getPrototypeOf(this).activated;
+  
+    this["textActivated(QString)"] = Object.getPrototypeOf(this).textActivated;
+  
+    this["highlighted(int)"] = Object.getPrototypeOf(this).highlighted;
+  
+    this["textHighlighted(QString)"] = Object.getPrototypeOf(this).textHighlighted;
+  
+    this["currentIndexChanged(int)"] = Object.getPrototypeOf(this).currentIndexChanged;
+  
+    this["currentTextChanged(QString)"] = Object.getPrototypeOf(this).currentTextChanged;
+  
     this["valueChanged(RLinetypePattern)"] = Object.getPrototypeOf(this).valueChanged;
   
           }
@@ -136,11 +152,169 @@
 
       // enum values:
       
+  // enum: InsertPolicy
+RLinetypeCombo.NoInsert = RLinetypeCombo_Wrapper.NoInsert;
+RLinetypeCombo.InsertAtTop = RLinetypeCombo_Wrapper.InsertAtTop;
+RLinetypeCombo.InsertAtCurrent = RLinetypeCombo_Wrapper.InsertAtCurrent;
+RLinetypeCombo.InsertAtBottom = RLinetypeCombo_Wrapper.InsertAtBottom;
+RLinetypeCombo.InsertAfterCurrent = RLinetypeCombo_Wrapper.InsertAfterCurrent;
+RLinetypeCombo.InsertBeforeCurrent = RLinetypeCombo_Wrapper.InsertBeforeCurrent;
+RLinetypeCombo.InsertAlphabetically = RLinetypeCombo_Wrapper.InsertAlphabetically;
+
+  // enum: SizeAdjustPolicy
+RLinetypeCombo.AdjustToContents = RLinetypeCombo_Wrapper.AdjustToContents;
+RLinetypeCombo.AdjustToContentsOnFirstShow = RLinetypeCombo_Wrapper.AdjustToContentsOnFirstShow;
+RLinetypeCombo.AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo_Wrapper.AdjustToMinimumContentsLengthWithIcon;
+
 
       // functions:
       
+        // function 
+        RLinetypeCombo.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RLinetypeCombo.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RLinetypeCombo);
+  }
+
+  
+  else {
+    
+        print("RLinetypeCombo.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RLinetypeCombo.tr = function() 
+          
+        {
+          //print("JS: RLinetypeCombo.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RLinetypeCombo_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RLinetypeCombo);
+  }
+
+  
+  else {
+    
+        print("RLinetypeCombo.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RLinetypeCombo.setTabOrder = function() 
+          
+        {
+          //print("JS: RLinetypeCombo.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RLinetypeCombo_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RLinetypeCombo);
+  }
+
+  
+  else {
+    
+        print("RLinetypeCombo.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RLinetypeCombo.mouseGrabber = function() 
+          
+        {
+          //print("JS: RLinetypeCombo.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RLinetypeCombo_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RLinetypeCombo);
+  }
+
+  
+  else {
+    
+        print("RLinetypeCombo.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RLinetypeCombo.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RLinetypeCombo.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RLinetypeCombo_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RLinetypeCombo);
+  }
+
+  
+  else {
+    
+        print("RLinetypeCombo.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

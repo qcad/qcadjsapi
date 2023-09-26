@@ -8,6 +8,9 @@
     #include "rdimangular3pdata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimAngular3PData*> RDimAngular3PData_Wrapper::basecasters_RDimAngular3PData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimAngular3PData

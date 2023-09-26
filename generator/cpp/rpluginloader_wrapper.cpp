@@ -8,6 +8,9 @@
     #include "rpluginloader_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPluginLoader*> RPluginLoader_Wrapper::basecasters_RPluginLoader;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RPluginLoader

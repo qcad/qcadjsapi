@@ -45,13 +45,22 @@
       
         static RViewFocusListenerAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RViewFocusListenerAdapter.length(); i++) {
+            RJSBasecaster_RViewFocusListenerAdapter* basecaster = basecasters_RViewFocusListenerAdapter[i];
+            RViewFocusListenerAdapter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RViewFocusListenerAdapter::getIdStatic()) {
             return (RViewFocusListenerAdapter*)vp;
           }
+
+          qWarning() << "RViewFocusListenerAdapter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -271,6 +280,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RViewFocusListenerAdapter*> basecasters_RViewFocusListenerAdapter;
+
+      public:
+        static void registerBasecaster_RViewFocusListenerAdapter(RJSBasecaster_RViewFocusListenerAdapter* bc) {
+          basecasters_RViewFocusListenerAdapter.append(bc);
+        }
       
     };
 

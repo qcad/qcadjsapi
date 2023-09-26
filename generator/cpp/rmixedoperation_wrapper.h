@@ -42,13 +42,22 @@
       
         static RMixedOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RMixedOperation.length(); i++) {
+            RJSBasecaster_RMixedOperation* basecaster = basecasters_RMixedOperation[i];
+            RMixedOperation* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RMixedOperation::getIdStatic()) {
             return (RMixedOperation*)vp;
           }
+
+          qWarning() << "RMixedOperation::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -639,6 +648,15 @@ EndCycle = RMixedOperation::EndCycle,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RMixedOperation*> basecasters_RMixedOperation;
+
+      public:
+        static void registerBasecaster_RMixedOperation(RJSBasecaster_RMixedOperation* bc) {
+          basecasters_RMixedOperation.append(bc);
+        }
       
     };
 

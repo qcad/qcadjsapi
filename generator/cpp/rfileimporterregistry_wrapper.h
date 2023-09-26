@@ -46,8 +46,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -222,7 +221,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -245,13 +243,22 @@
       
         static RFileImporterRegistry* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RFileImporterRegistry.length(); i++) {
+            RJSBasecaster_RFileImporterRegistry* basecaster = basecasters_RFileImporterRegistry[i];
+            RFileImporterRegistry* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RFileImporterRegistry::getIdStatic()) {
             return (RFileImporterRegistry*)vp;
           }
+
+          qWarning() << "RFileImporterRegistry::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -416,6 +423,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RFileImporterRegistry*> basecasters_RFileImporterRegistry;
+
+      public:
+        static void registerBasecaster_RFileImporterRegistry(RJSBasecaster_RFileImporterRegistry* bc) {
+          basecasters_RFileImporterRegistry.append(bc);
+        }
       
     };
 

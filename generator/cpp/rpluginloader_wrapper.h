@@ -36,8 +36,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -388,7 +387,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -411,13 +409,22 @@
       
         static RPluginLoader* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RPluginLoader.length(); i++) {
+            RJSBasecaster_RPluginLoader* basecaster = basecasters_RPluginLoader[i];
+            RPluginLoader* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RPluginLoader::getIdStatic()) {
             return (RPluginLoader*)vp;
           }
+
+          qWarning() << "RPluginLoader::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -582,6 +589,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RPluginLoader*> basecasters_RPluginLoader;
+
+      public:
+        static void registerBasecaster_RPluginLoader(RJSBasecaster_RPluginLoader* bc) {
+          basecasters_RPluginLoader.append(bc);
+        }
       
     };
 

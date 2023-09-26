@@ -44,13 +44,22 @@
       
         static REntityPickEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_REntityPickEvent.length(); i++) {
+            RJSBasecaster_REntityPickEvent* basecaster = basecasters_REntityPickEvent[i];
+            REntityPickEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_REntityPickEvent::getIdStatic()) {
             return (REntityPickEvent*)vp;
           }
+
+          qWarning() << "REntityPickEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -504,6 +513,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_REntityPickEvent*> basecasters_REntityPickEvent;
+
+      public:
+        static void registerBasecaster_REntityPickEvent(RJSBasecaster_REntityPickEvent* bc) {
+          basecasters_REntityPickEvent.append(bc);
+        }
       
     };
 

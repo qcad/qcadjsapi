@@ -110,8 +110,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property INVALID_ID:
@@ -266,7 +265,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -289,13 +287,22 @@
       
         static RView* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RView.length(); i++) {
+            RJSBasecaster_RView* basecaster = basecasters_RView[i];
+            RView* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RView::getIdStatic()) {
             return (RView*)vp;
           }
+
+          qWarning() << "RView::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1701,6 +1708,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RView*> basecasters_RView;
+
+      public:
+        static void registerBasecaster_RView(RJSBasecaster_RView* bc) {
+          basecasters_RView.append(bc);
+        }
       
     };
 

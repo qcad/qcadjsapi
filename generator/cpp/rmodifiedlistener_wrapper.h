@@ -42,17 +42,22 @@
       
         static RModifiedListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RMdiChildQt::getIdStatic()) {
-              return (RModifiedListener*)(RMdiChildQt*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RModifiedListener.length(); i++) {
+            RJSBasecaster_RModifiedListener* basecaster = basecasters_RModifiedListener[i];
+            RModifiedListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RModifiedListener::getIdStatic()) {
             return (RModifiedListener*)vp;
           }
+
+          qWarning() << "RModifiedListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -230,6 +235,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RModifiedListener*> basecasters_RModifiedListener;
+
+      public:
+        static void registerBasecaster_RModifiedListener(RJSBasecaster_RModifiedListener* bc) {
+          basecasters_RModifiedListener.append(bc);
+        }
       
     };
 

@@ -87,6 +87,8 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
           }
         }
       }
@@ -137,8 +139,152 @@
 
       // functions:
       
+        // function 
+        RCadToolBarPanel.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RCadToolBarPanel.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBarPanel);
+  }
+
+  
+  else {
+    
+        print("RCadToolBarPanel.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RCadToolBarPanel.tr = function() 
+          
+        {
+          //print("JS: RCadToolBarPanel.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RCadToolBarPanel_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBarPanel);
+  }
+
+  
+  else {
+    
+        print("RCadToolBarPanel.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCadToolBarPanel.setTabOrder = function() 
+          
+        {
+          //print("JS: RCadToolBarPanel.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RCadToolBarPanel_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBarPanel);
+  }
+
+  
+  else {
+    
+        print("RCadToolBarPanel.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCadToolBarPanel.mouseGrabber = function() 
+          
+        {
+          //print("JS: RCadToolBarPanel.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RCadToolBarPanel_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBarPanel);
+  }
+
+  
+  else {
+    
+        print("RCadToolBarPanel.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCadToolBarPanel.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RCadToolBarPanel.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RCadToolBarPanel_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBarPanel);
+  }
+
+  
+  else {
+    
+        print("RCadToolBarPanel.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

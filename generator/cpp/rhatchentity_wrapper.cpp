@@ -8,6 +8,9 @@
     #include "rhatchentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RHatchEntity*> RHatchEntity_Wrapper::basecasters_RHatchEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RHatchEntity

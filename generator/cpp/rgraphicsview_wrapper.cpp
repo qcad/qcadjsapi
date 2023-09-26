@@ -8,6 +8,9 @@
     #include "rgraphicsview_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RGraphicsView*> RGraphicsView_Wrapper::basecasters_RGraphicsView;
+    
     // static functions implementation in singleton wrapper:
     
     void RGraphicsView_Wrapper::init(RJSApi& handler) {

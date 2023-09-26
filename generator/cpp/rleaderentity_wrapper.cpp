@@ -8,6 +8,9 @@
     #include "rleaderentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RLeaderEntity*> RLeaderEntity_Wrapper::basecasters_RLeaderEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RLeaderEntity

@@ -8,6 +8,9 @@
     #include "rmoveselectionoperation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RMoveSelectionOperation*> RMoveSelectionOperation_Wrapper::basecasters_RMoveSelectionOperation;
+    
     // static functions implementation in singleton wrapper:
     
     void RMoveSelectionOperation_Wrapper::init(RJSApi& handler) {

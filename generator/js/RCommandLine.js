@@ -87,6 +87,14 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["textChanged(QString)"] = Object.getPrototypeOf(this).textChanged;
+  
+    this["textEdited(QString)"] = Object.getPrototypeOf(this).textEdited;
+  
+    this["cursorPositionChanged(int,int)"] = Object.getPrototypeOf(this).cursorPositionChanged;
+  
     this["commandConfirmed(QString)"] = Object.getPrototypeOf(this).commandConfirmed;
   
     this["completeCommand(QString)"] = Object.getPrototypeOf(this).completeCommand;
@@ -138,11 +146,165 @@
 
       // enum values:
       
+  // enum: ActionPosition
+RCommandLine.LeadingPosition = RCommandLine_Wrapper.LeadingPosition;
+RCommandLine.TrailingPosition = RCommandLine_Wrapper.TrailingPosition;
+
+  // enum: EchoMode
+RCommandLine.Normal = RCommandLine_Wrapper.Normal;
+RCommandLine.NoEcho = RCommandLine_Wrapper.NoEcho;
+RCommandLine.Password = RCommandLine_Wrapper.Password;
+RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
+
 
       // functions:
       
+        // function 
+        RCommandLine.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RCommandLine.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RCommandLine);
+  }
+
+  
+  else {
+    
+        print("RCommandLine.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RCommandLine.tr = function() 
+          
+        {
+          //print("JS: RCommandLine.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RCommandLine_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RCommandLine);
+  }
+
+  
+  else {
+    
+        print("RCommandLine.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCommandLine.setTabOrder = function() 
+          
+        {
+          //print("JS: RCommandLine.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RCommandLine_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RCommandLine);
+  }
+
+  
+  else {
+    
+        print("RCommandLine.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCommandLine.mouseGrabber = function() 
+          
+        {
+          //print("JS: RCommandLine.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RCommandLine_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RCommandLine);
+  }
+
+  
+  else {
+    
+        print("RCommandLine.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCommandLine.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RCommandLine.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RCommandLine_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RCommandLine);
+  }
+
+  
+  else {
+    
+        print("RCommandLine.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

@@ -8,6 +8,9 @@
     #include "rlayerlistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RLayerListener*> RLayerListener_Wrapper::basecasters_RLayerListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RLayerListener_Wrapper::init(RJSApi& handler) {

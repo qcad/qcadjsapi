@@ -8,6 +8,9 @@
     #include "rtextlayout_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RTextLayout*> RTextLayout_Wrapper::basecasters_RTextLayout;
+    
     // static functions implementation in singleton wrapper:
     
     void RTextLayout_Wrapper::init(RJSApi& handler) {

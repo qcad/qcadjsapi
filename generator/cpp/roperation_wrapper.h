@@ -44,81 +44,22 @@
       
         static ROperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RAddObjectOperation::getIdStatic()) {
-              return (ROperation*)(RAddObjectOperation*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_ROperation.length(); i++) {
+            RJSBasecaster_ROperation* basecaster = basecasters_ROperation[i];
+            ROperation* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RAddObjectsOperation::getIdStatic()) {
-              return (ROperation*)(RAddObjectsOperation*)vp;
-            }
-            
-            if (t==RJSType_RChangePropertyOperation::getIdStatic()) {
-              return (ROperation*)(RChangePropertyOperation*)vp;
-            }
-            
-            if (t==RJSType_RClickReferencePointOperation::getIdStatic()) {
-              return (ROperation*)(RClickReferencePointOperation*)vp;
-            }
-            
-            if (t==RJSType_RClipboardOperation::getIdStatic()) {
-              return (ROperation*)(RClipboardOperation*)vp;
-            }
-            
-            if (t==RJSType_RCopyOperation::getIdStatic()) {
-              return (ROperation*)(RCopyOperation*)vp;
-            }
-            
-            if (t==RJSType_RDeleteAllEntitiesOperation::getIdStatic()) {
-              return (ROperation*)(RDeleteAllEntitiesOperation*)vp;
-            }
-            
-            if (t==RJSType_RDeleteObjectOperation::getIdStatic()) {
-              return (ROperation*)(RDeleteObjectOperation*)vp;
-            }
-            
-            if (t==RJSType_RDeleteObjectsOperation::getIdStatic()) {
-              return (ROperation*)(RDeleteObjectsOperation*)vp;
-            }
-            
-            if (t==RJSType_RDeleteSelectionOperation::getIdStatic()) {
-              return (ROperation*)(RDeleteSelectionOperation*)vp;
-            }
-            
-            if (t==RJSType_RMixedOperation::getIdStatic()) {
-              return (ROperation*)(RMixedOperation*)vp;
-            }
-            
-            if (t==RJSType_RModifyObjectOperation::getIdStatic()) {
-              return (ROperation*)(RModifyObjectOperation*)vp;
-            }
-            
-            if (t==RJSType_RModifyObjectsOperation::getIdStatic()) {
-              return (ROperation*)(RModifyObjectsOperation*)vp;
-            }
-            
-            if (t==RJSType_RMoveReferencePointOperation::getIdStatic()) {
-              return (ROperation*)(RMoveReferencePointOperation*)vp;
-            }
-            
-            if (t==RJSType_RMoveSelectionOperation::getIdStatic()) {
-              return (ROperation*)(RMoveSelectionOperation*)vp;
-            }
-            
-            if (t==RJSType_RPasteOperation::getIdStatic()) {
-              return (ROperation*)(RPasteOperation*)vp;
-            }
-            
-            if (t==RJSType_RScaleSelectionOperation::getIdStatic()) {
-              return (ROperation*)(RScaleSelectionOperation*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_ROperation::getIdStatic()) {
             return (ROperation*)vp;
           }
+
+          qWarning() << "ROperation::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -597,6 +538,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_ROperation*> basecasters_ROperation;
+
+      public:
+        static void registerBasecaster_ROperation(RJSBasecaster_ROperation* bc) {
+          basecasters_ROperation.append(bc);
+        }
       
     };
 

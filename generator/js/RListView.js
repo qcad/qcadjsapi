@@ -87,6 +87,20 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
+  
+    this["clicked(QModelIndex)"] = Object.getPrototypeOf(this).clicked;
+  
+    this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
+  
+    this["activated(QModelIndex)"] = Object.getPrototypeOf(this).activated;
+  
+    this["entered(QModelIndex)"] = Object.getPrototypeOf(this).entered;
+  
+    this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
+  
     this["signalContextMenuEvent(QContextMenuEvent*)"] = Object.getPrototypeOf(this).signalContextMenuEvent;
   
     this["signalMouseMoveEvent(QMouseEvent*)"] = Object.getPrototypeOf(this).signalMouseMoveEvent;
@@ -168,11 +182,219 @@
 
       // enum values:
       
+  // enum: SizeAdjustPolicy
+RListView.AdjustIgnored = RListView_Wrapper.AdjustIgnored;
+RListView.AdjustToContentsOnFirstShow = RListView_Wrapper.AdjustToContentsOnFirstShow;
+RListView.AdjustToContents = RListView_Wrapper.AdjustToContents;
+
+  // enum: SelectionMode
+RListView.NoSelection = RListView_Wrapper.NoSelection;
+RListView.SingleSelection = RListView_Wrapper.SingleSelection;
+RListView.MultiSelection = RListView_Wrapper.MultiSelection;
+RListView.ExtendedSelection = RListView_Wrapper.ExtendedSelection;
+RListView.ContiguousSelection = RListView_Wrapper.ContiguousSelection;
+
+  // enum: SelectionBehavior
+RListView.SelectItems = RListView_Wrapper.SelectItems;
+RListView.SelectRows = RListView_Wrapper.SelectRows;
+RListView.SelectColumns = RListView_Wrapper.SelectColumns;
+
+  // enum: ScrollHint
+RListView.EnsureVisible = RListView_Wrapper.EnsureVisible;
+RListView.PositionAtTop = RListView_Wrapper.PositionAtTop;
+RListView.PositionAtBottom = RListView_Wrapper.PositionAtBottom;
+RListView.PositionAtCenter = RListView_Wrapper.PositionAtCenter;
+
+  // enum: EditTrigger
+RListView.NoEditTriggers = RListView_Wrapper.NoEditTriggers;
+RListView.CurrentChanged = RListView_Wrapper.CurrentChanged;
+RListView.DoubleClicked = RListView_Wrapper.DoubleClicked;
+RListView.SelectedClicked = RListView_Wrapper.SelectedClicked;
+RListView.EditKeyPressed = RListView_Wrapper.EditKeyPressed;
+RListView.AnyKeyPressed = RListView_Wrapper.AnyKeyPressed;
+RListView.AllEditTriggers = RListView_Wrapper.AllEditTriggers;
+
+  // enum: ScrollMode
+RListView.ScrollPerItem = RListView_Wrapper.ScrollPerItem;
+RListView.ScrollPerPixel = RListView_Wrapper.ScrollPerPixel;
+
+  // enum: DragDropMode
+RListView.NoDragDrop = RListView_Wrapper.NoDragDrop;
+RListView.DragOnly = RListView_Wrapper.DragOnly;
+RListView.DropOnly = RListView_Wrapper.DropOnly;
+RListView.DragDrop = RListView_Wrapper.DragDrop;
+RListView.InternalMove = RListView_Wrapper.InternalMove;
+
+  // enum: Movement
+RListView.Static = RListView_Wrapper.Static;
+RListView.Free = RListView_Wrapper.Free;
+RListView.Snap = RListView_Wrapper.Snap;
+
+  // enum: Flow
+RListView.LeftToRight = RListView_Wrapper.LeftToRight;
+RListView.TopToBottom = RListView_Wrapper.TopToBottom;
+
+  // enum: ResizeMode
+RListView.Fixed = RListView_Wrapper.Fixed;
+RListView.Adjust = RListView_Wrapper.Adjust;
+
+  // enum: LayoutMode
+RListView.SinglePass = RListView_Wrapper.SinglePass;
+RListView.Batched = RListView_Wrapper.Batched;
+
+  // enum: ViewMode
+RListView.ListMode = RListView_Wrapper.ListMode;
+RListView.IconMode = RListView_Wrapper.IconMode;
+
 
       // functions:
       
+        // function 
+        RListView.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RListView.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RListView);
+  }
+
+  
+  else {
+    
+        print("RListView.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RListView.tr = function() 
+          
+        {
+          //print("JS: RListView.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RListView_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RListView);
+  }
+
+  
+  else {
+    
+        print("RListView.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RListView.setTabOrder = function() 
+          
+        {
+          //print("JS: RListView.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RListView_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RListView);
+  }
+
+  
+  else {
+    
+        print("RListView.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RListView.mouseGrabber = function() 
+          
+        {
+          //print("JS: RListView.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RListView_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RListView);
+  }
+
+  
+  else {
+    
+        print("RListView.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RListView.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RListView.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RListView_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RListView);
+  }
+
+  
+  else {
+    
+        print("RListView.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

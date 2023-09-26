@@ -8,6 +8,9 @@
     #include "rhatchdata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RHatchData*> RHatchData_Wrapper::basecasters_RHatchData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RHatchData

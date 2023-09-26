@@ -42,13 +42,22 @@
       
         static RUcsListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RUcsListener.length(); i++) {
+            RJSBasecaster_RUcsListener* basecaster = basecasters_RUcsListener[i];
+            RUcsListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RUcsListener::getIdStatic()) {
             return (RUcsListener*)vp;
           }
+
+          qWarning() << "RUcsListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -245,6 +254,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RUcsListener*> basecasters_RUcsListener;
+
+      public:
+        static void registerBasecaster_RUcsListener(RJSBasecaster_RUcsListener* bc) {
+          basecasters_RUcsListener.append(bc);
+        }
       
     };
 

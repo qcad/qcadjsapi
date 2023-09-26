@@ -8,6 +8,9 @@
     #include "rdimarclengthentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimArcLengthEntity*> RDimArcLengthEntity_Wrapper::basecasters_RDimArcLengthEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimArcLengthEntity

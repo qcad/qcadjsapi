@@ -8,6 +8,9 @@
     #include "rdocumentvariables_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDocumentVariables*> RDocumentVariables_Wrapper::basecasters_RDocumentVariables;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDocumentVariables

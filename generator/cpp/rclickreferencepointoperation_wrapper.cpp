@@ -8,6 +8,9 @@
     #include "rclickreferencepointoperation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RClickReferencePointOperation*> RClickReferencePointOperation_Wrapper::basecasters_RClickReferencePointOperation;
+    
     // static functions implementation in singleton wrapper:
     
     void RClickReferencePointOperation_Wrapper::init(RJSApi& handler) {

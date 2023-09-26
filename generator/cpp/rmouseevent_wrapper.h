@@ -40,13 +40,35 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
       // static functions:
       
+    // Class: RMouseEvent
+    // Function: registerEventType
+    // Source: QEvent
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  registerEventType
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
     // Class: RMouseEvent
     // Function: hasMouseMoved
     // Source: 
@@ -116,7 +138,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -139,13 +160,22 @@
       
         static RMouseEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RMouseEvent.length(); i++) {
+            RJSBasecaster_RMouseEvent* basecaster = basecasters_RMouseEvent[i];
+            RMouseEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RMouseEvent::getIdStatic()) {
             return (RMouseEvent*)vp;
           }
+
+          qWarning() << "RMouseEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -165,6 +195,185 @@
           return ret;
         }
       
+        // enums:
+        
+  enum Type {
+    None = RMouseEvent::None,
+Timer = RMouseEvent::Timer,
+MouseButtonPress = RMouseEvent::MouseButtonPress,
+MouseButtonRelease = RMouseEvent::MouseButtonRelease,
+MouseButtonDblClick = RMouseEvent::MouseButtonDblClick,
+MouseMove = RMouseEvent::MouseMove,
+KeyPress = RMouseEvent::KeyPress,
+KeyRelease = RMouseEvent::KeyRelease,
+FocusIn = RMouseEvent::FocusIn,
+FocusOut = RMouseEvent::FocusOut,
+FocusAboutToChange = RMouseEvent::FocusAboutToChange,
+Enter = RMouseEvent::Enter,
+Leave = RMouseEvent::Leave,
+Paint = RMouseEvent::Paint,
+Move = RMouseEvent::Move,
+Resize = RMouseEvent::Resize,
+Create = RMouseEvent::Create,
+Destroy = RMouseEvent::Destroy,
+Show = RMouseEvent::Show,
+Hide = RMouseEvent::Hide,
+Close = RMouseEvent::Close,
+Quit = RMouseEvent::Quit,
+ParentChange = RMouseEvent::ParentChange,
+ParentAboutToChange = RMouseEvent::ParentAboutToChange,
+ThreadChange = RMouseEvent::ThreadChange,
+WindowActivate = RMouseEvent::WindowActivate,
+WindowDeactivate = RMouseEvent::WindowDeactivate,
+ShowToParent = RMouseEvent::ShowToParent,
+HideToParent = RMouseEvent::HideToParent,
+Wheel = RMouseEvent::Wheel,
+WindowTitleChange = RMouseEvent::WindowTitleChange,
+WindowIconChange = RMouseEvent::WindowIconChange,
+ApplicationWindowIconChange = RMouseEvent::ApplicationWindowIconChange,
+ApplicationFontChange = RMouseEvent::ApplicationFontChange,
+ApplicationLayoutDirectionChange = RMouseEvent::ApplicationLayoutDirectionChange,
+ApplicationPaletteChange = RMouseEvent::ApplicationPaletteChange,
+PaletteChange = RMouseEvent::PaletteChange,
+Clipboard = RMouseEvent::Clipboard,
+Speech = RMouseEvent::Speech,
+MetaCall = RMouseEvent::MetaCall,
+SockAct = RMouseEvent::SockAct,
+WinEventAct = RMouseEvent::WinEventAct,
+DeferredDelete = RMouseEvent::DeferredDelete,
+DragEnter = RMouseEvent::DragEnter,
+DragMove = RMouseEvent::DragMove,
+DragLeave = RMouseEvent::DragLeave,
+Drop = RMouseEvent::Drop,
+DragResponse = RMouseEvent::DragResponse,
+ChildAdded = RMouseEvent::ChildAdded,
+ChildPolished = RMouseEvent::ChildPolished,
+ChildRemoved = RMouseEvent::ChildRemoved,
+ShowWindowRequest = RMouseEvent::ShowWindowRequest,
+PolishRequest = RMouseEvent::PolishRequest,
+Polish = RMouseEvent::Polish,
+LayoutRequest = RMouseEvent::LayoutRequest,
+UpdateRequest = RMouseEvent::UpdateRequest,
+UpdateLater = RMouseEvent::UpdateLater,
+EmbeddingControl = RMouseEvent::EmbeddingControl,
+ActivateControl = RMouseEvent::ActivateControl,
+DeactivateControl = RMouseEvent::DeactivateControl,
+ContextMenu = RMouseEvent::ContextMenu,
+InputMethod = RMouseEvent::InputMethod,
+TabletMove = RMouseEvent::TabletMove,
+LocaleChange = RMouseEvent::LocaleChange,
+LanguageChange = RMouseEvent::LanguageChange,
+LayoutDirectionChange = RMouseEvent::LayoutDirectionChange,
+Style = RMouseEvent::Style,
+TabletPress = RMouseEvent::TabletPress,
+TabletRelease = RMouseEvent::TabletRelease,
+OkRequest = RMouseEvent::OkRequest,
+HelpRequest = RMouseEvent::HelpRequest,
+IconDrag = RMouseEvent::IconDrag,
+FontChange = RMouseEvent::FontChange,
+EnabledChange = RMouseEvent::EnabledChange,
+ActivationChange = RMouseEvent::ActivationChange,
+StyleChange = RMouseEvent::StyleChange,
+IconTextChange = RMouseEvent::IconTextChange,
+ModifiedChange = RMouseEvent::ModifiedChange,
+MouseTrackingChange = RMouseEvent::MouseTrackingChange,
+WindowBlocked = RMouseEvent::WindowBlocked,
+WindowUnblocked = RMouseEvent::WindowUnblocked,
+WindowStateChange = RMouseEvent::WindowStateChange,
+ReadOnlyChange = RMouseEvent::ReadOnlyChange,
+ToolTip = RMouseEvent::ToolTip,
+WhatsThis = RMouseEvent::WhatsThis,
+StatusTip = RMouseEvent::StatusTip,
+ActionChanged = RMouseEvent::ActionChanged,
+ActionAdded = RMouseEvent::ActionAdded,
+ActionRemoved = RMouseEvent::ActionRemoved,
+FileOpen = RMouseEvent::FileOpen,
+Shortcut = RMouseEvent::Shortcut,
+ShortcutOverride = RMouseEvent::ShortcutOverride,
+WhatsThisClicked = RMouseEvent::WhatsThisClicked,
+ToolBarChange = RMouseEvent::ToolBarChange,
+ApplicationActivate = RMouseEvent::ApplicationActivate,
+ApplicationActivated = RMouseEvent::ApplicationActivated,
+ApplicationDeactivate = RMouseEvent::ApplicationDeactivate,
+ApplicationDeactivated = RMouseEvent::ApplicationDeactivated,
+QueryWhatsThis = RMouseEvent::QueryWhatsThis,
+EnterWhatsThisMode = RMouseEvent::EnterWhatsThisMode,
+LeaveWhatsThisMode = RMouseEvent::LeaveWhatsThisMode,
+ZOrderChange = RMouseEvent::ZOrderChange,
+HoverEnter = RMouseEvent::HoverEnter,
+HoverLeave = RMouseEvent::HoverLeave,
+HoverMove = RMouseEvent::HoverMove,
+AcceptDropsChange = RMouseEvent::AcceptDropsChange,
+ZeroTimerEvent = RMouseEvent::ZeroTimerEvent,
+GraphicsSceneMouseMove = RMouseEvent::GraphicsSceneMouseMove,
+GraphicsSceneMousePress = RMouseEvent::GraphicsSceneMousePress,
+GraphicsSceneMouseRelease = RMouseEvent::GraphicsSceneMouseRelease,
+GraphicsSceneMouseDoubleClick = RMouseEvent::GraphicsSceneMouseDoubleClick,
+GraphicsSceneContextMenu = RMouseEvent::GraphicsSceneContextMenu,
+GraphicsSceneHoverEnter = RMouseEvent::GraphicsSceneHoverEnter,
+GraphicsSceneHoverMove = RMouseEvent::GraphicsSceneHoverMove,
+GraphicsSceneHoverLeave = RMouseEvent::GraphicsSceneHoverLeave,
+GraphicsSceneHelp = RMouseEvent::GraphicsSceneHelp,
+GraphicsSceneDragEnter = RMouseEvent::GraphicsSceneDragEnter,
+GraphicsSceneDragMove = RMouseEvent::GraphicsSceneDragMove,
+GraphicsSceneDragLeave = RMouseEvent::GraphicsSceneDragLeave,
+GraphicsSceneDrop = RMouseEvent::GraphicsSceneDrop,
+GraphicsSceneWheel = RMouseEvent::GraphicsSceneWheel,
+GraphicsSceneLeave = RMouseEvent::GraphicsSceneLeave,
+KeyboardLayoutChange = RMouseEvent::KeyboardLayoutChange,
+DynamicPropertyChange = RMouseEvent::DynamicPropertyChange,
+TabletEnterProximity = RMouseEvent::TabletEnterProximity,
+TabletLeaveProximity = RMouseEvent::TabletLeaveProximity,
+NonClientAreaMouseMove = RMouseEvent::NonClientAreaMouseMove,
+NonClientAreaMouseButtonPress = RMouseEvent::NonClientAreaMouseButtonPress,
+NonClientAreaMouseButtonRelease = RMouseEvent::NonClientAreaMouseButtonRelease,
+NonClientAreaMouseButtonDblClick = RMouseEvent::NonClientAreaMouseButtonDblClick,
+MacSizeChange = RMouseEvent::MacSizeChange,
+ContentsRectChange = RMouseEvent::ContentsRectChange,
+MacGLWindowChange = RMouseEvent::MacGLWindowChange,
+FutureCallOut = RMouseEvent::FutureCallOut,
+GraphicsSceneResize = RMouseEvent::GraphicsSceneResize,
+GraphicsSceneMove = RMouseEvent::GraphicsSceneMove,
+CursorChange = RMouseEvent::CursorChange,
+ToolTipChange = RMouseEvent::ToolTipChange,
+NetworkReplyUpdated = RMouseEvent::NetworkReplyUpdated,
+GrabMouse = RMouseEvent::GrabMouse,
+UngrabMouse = RMouseEvent::UngrabMouse,
+GrabKeyboard = RMouseEvent::GrabKeyboard,
+UngrabKeyboard = RMouseEvent::UngrabKeyboard,
+StateMachineSignal = RMouseEvent::StateMachineSignal,
+StateMachineWrapped = RMouseEvent::StateMachineWrapped,
+TouchBegin = RMouseEvent::TouchBegin,
+TouchUpdate = RMouseEvent::TouchUpdate,
+TouchEnd = RMouseEvent::TouchEnd,
+NativeGesture = RMouseEvent::NativeGesture,
+RequestSoftwareInputPanel = RMouseEvent::RequestSoftwareInputPanel,
+CloseSoftwareInputPanel = RMouseEvent::CloseSoftwareInputPanel,
+WinIdChange = RMouseEvent::WinIdChange,
+Gesture = RMouseEvent::Gesture,
+GestureOverride = RMouseEvent::GestureOverride,
+ScrollPrepare = RMouseEvent::ScrollPrepare,
+Scroll = RMouseEvent::Scroll,
+Expose = RMouseEvent::Expose,
+InputMethodQuery = RMouseEvent::InputMethodQuery,
+OrientationChange = RMouseEvent::OrientationChange,
+TouchCancel = RMouseEvent::TouchCancel,
+ThemeChange = RMouseEvent::ThemeChange,
+SockClose = RMouseEvent::SockClose,
+PlatformPanel = RMouseEvent::PlatformPanel,
+StyleAnimationUpdate = RMouseEvent::StyleAnimationUpdate,
+ApplicationStateChange = RMouseEvent::ApplicationStateChange,
+WindowChangeInternal = RMouseEvent::WindowChangeInternal,
+ScreenChangeInternal = RMouseEvent::ScreenChangeInternal,
+PlatformSurface = RMouseEvent::PlatformSurface,
+Pointer = RMouseEvent::Pointer,
+TabletTrackingChange = RMouseEvent::TabletTrackingChange,
+User = RMouseEvent::User,
+MaxUser = RMouseEvent::MaxUser,
+
+  };
+  Q_ENUM(Type)
+
     /*
     // special constructor used as prototype:
     
@@ -245,6 +454,815 @@
 
     // non-static functions:
     
+    // Class: RMouseEvent
+    // Function: type
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  type
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: spontaneous
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  spontaneous
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: isAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isAccepted
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: accept
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  accept
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: ignore
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  ignore
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: isInputEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isInputEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: isPointerEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isPointerEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: isSinglePointEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSinglePointEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: modifiers
+    // Source: QInputEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  modifiers
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: setModifiers
+    // Source: QInputEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setModifiers
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: timestamp
+    // Source: QInputEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  timestamp
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: setTimestamp
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setTimestamp
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: pointCount
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  pointCount
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: point
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  point
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: pointById
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  pointById
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: allPointsGrabbed
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  allPointsGrabbed
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: allPointsAccepted
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  allPointsAccepted
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: setAccepted
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setAccepted
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: exclusiveGrabber
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  exclusiveGrabber
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: setExclusiveGrabber
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setExclusiveGrabber
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: clearPassiveGrabbers
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clearPassiveGrabbers
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: addPassiveGrabber
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addPassiveGrabber
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: removePassiveGrabber
+    // Source: QPointerEvent
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removePassiveGrabber
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: position
+    // Source: QSinglePointEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  position
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: scenePosition
+    // Source: QSinglePointEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  scenePosition
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: globalPosition
+    // Source: QSinglePointEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  globalPosition
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: isBeginEvent
+    // Source: QSinglePointEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isBeginEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: isUpdateEvent
+    // Source: QSinglePointEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isUpdateEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: isEndEvent
+    // Source: QSinglePointEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isEndEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: exclusivePointGrabber
+    // Source: QSinglePointEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  exclusivePointGrabber
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: setExclusivePointGrabber
+    // Source: QSinglePointEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setExclusivePointGrabber
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: clone
+    // Source: QSinglePointEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clone
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: pos
+    // Source: QMouseEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  pos
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: button
+    // Source: QMouseEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  button
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: buttons
+    // Source: QMouseEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  buttons
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: source
+    // Source: QMouseEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  source
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMouseEvent
+    // Function: flags
+    // Source: QMouseEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  flags
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
     // Class: RMouseEvent
     // Function: getModelPosition
     // Source: RInputEvent
@@ -546,6 +1564,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RMouseEvent*> basecasters_RMouseEvent;
+
+      public:
+        static void registerBasecaster_RMouseEvent(RJSBasecaster_RMouseEvent* bc) {
+          basecasters_RMouseEvent.append(bc);
+        }
       
     };
 

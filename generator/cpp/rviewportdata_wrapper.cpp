@@ -8,6 +8,9 @@
     #include "rviewportdata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RViewportData*> RViewportData_Wrapper::basecasters_RViewportData;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RViewportData

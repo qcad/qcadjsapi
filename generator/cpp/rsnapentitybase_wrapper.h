@@ -42,45 +42,22 @@
       
         static RSnapEntityBase* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RSnapCenter::getIdStatic()) {
-              return (RSnapEntityBase*)(RSnapCenter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSnapEntityBase.length(); i++) {
+            RJSBasecaster_RSnapEntityBase* basecaster = basecasters_RSnapEntityBase[i];
+            RSnapEntityBase* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RSnapDistance::getIdStatic()) {
-              return (RSnapEntityBase*)(RSnapDistance*)vp;
-            }
-            
-            if (t==RJSType_RSnapEnd::getIdStatic()) {
-              return (RSnapEntityBase*)(RSnapEnd*)vp;
-            }
-            
-            if (t==RJSType_RSnapMiddle::getIdStatic()) {
-              return (RSnapEntityBase*)(RSnapMiddle*)vp;
-            }
-            
-            if (t==RJSType_RSnapOnEntity::getIdStatic()) {
-              return (RSnapEntityBase*)(RSnapOnEntity*)vp;
-            }
-            
-            if (t==RJSType_RSnapPerpendicular::getIdStatic()) {
-              return (RSnapEntityBase*)(RSnapPerpendicular*)vp;
-            }
-            
-            if (t==RJSType_RSnapReference::getIdStatic()) {
-              return (RSnapEntityBase*)(RSnapReference*)vp;
-            }
-            
-            if (t==RJSType_RSnapTangential::getIdStatic()) {
-              return (RSnapEntityBase*)(RSnapTangential*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSnapEntityBase::getIdStatic()) {
             return (RSnapEntityBase*)vp;
           }
+
+          qWarning() << "RSnapEntityBase::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -456,6 +433,15 @@ CoordinatePolar = RSnapEntityBase::CoordinatePolar,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSnapEntityBase*> basecasters_RSnapEntityBase;
+
+      public:
+        static void registerBasecaster_RSnapEntityBase(RJSBasecaster_RSnapEntityBase* bc) {
+          basecasters_RSnapEntityBase.append(bc);
+        }
       
     };
 

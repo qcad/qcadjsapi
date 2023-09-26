@@ -38,8 +38,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -199,7 +198,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -222,25 +220,22 @@
       
         static RTextBasedData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RAttributeData::getIdStatic()) {
-              return (RTextBasedData*)(RAttributeData*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RTextBasedData.length(); i++) {
+            RJSBasecaster_RTextBasedData* basecaster = basecasters_RTextBasedData[i];
+            RTextBasedData* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RAttributeDefinitionData::getIdStatic()) {
-              return (RTextBasedData*)(RAttributeDefinitionData*)vp;
-            }
-            
-            if (t==RJSType_RTextData::getIdStatic()) {
-              return (RTextBasedData*)(RTextData*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RTextBasedData::getIdStatic()) {
             return (RTextBasedData*)vp;
           }
+
+          qWarning() << "RTextBasedData::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3453,6 +3448,15 @@ UpsideDown = RTextBasedData::UpsideDown,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RTextBasedData*> basecasters_RTextBasedData;
+
+      public:
+        static void registerBasecaster_RTextBasedData(RJSBasecaster_RTextBasedData* bc) {
+          basecasters_RTextBasedData.append(bc);
+        }
       
     };
 

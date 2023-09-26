@@ -8,8 +8,192 @@
     #include "rflowlayout_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RFlowLayout*> RFlowLayout_Wrapper::basecasters_RFlowLayout;
+    
     // static functions implementation in singleton wrapper:
     
+    // Class: RFlowLayout
+    // Function: tr
+    // Source: QObject
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_WrapperSingleton::tr
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_char_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_char_ptr(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_int(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: sourceText (char)
+  
+
+      // char pointer string:
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      const char* a1_cpp = a1_ba.constData();
+    
+  // convert js parameter to cpp:  (char)
+  
+
+      // char pointer string:
+      QByteArray a2_ba = RJSHelper::js2cpp_char_ptr(handler, a2).toLocal8Bit();
+      const char* a2_cpp = a2_ba.constData();
+    
+  // convert js parameter to cpp:  (int)
+  
+int a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = -1;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_int(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QString res = 
+                
+                // call static member function:
+                QObject::tr(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for tr";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: closestAcceptableSize
+    // Source: QLayout
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_WrapperSingleton::closestAcceptableSize
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QSize(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: w (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: s (QSize)
+  
+QSize a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QSize(handler, a2);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QSize res = 
+                
+                // call static member function:
+                QLayout::closestAcceptableSize(
+              a1_cpp
+    , a2_cpp
+    
+            );
+          
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for closestAcceptableSize";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     void RFlowLayout_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RFlowLayout_Wrapper>("org.qcad", 1, 0, "RFlowLayout_Wrapper");
@@ -38,6 +222,15 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RFlowLayout_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RFlowLayout_BaseJs", mob);
+      
+        // singleton wrapper:
+        QJSValue mos = engine->newQMetaObject(&RFlowLayout_WrapperSingleton::staticMetaObject);
+        engine->globalObject().setProperty("RFlowLayout_WrapperSingleton", mos);
+
+        // create instance of singleton wrapper for static functions:
+        RFlowLayout_WrapperSingleton * s = new RFlowLayout_WrapperSingleton(handler);
+        engine->globalObject().setProperty("RFlowLayout_WrapperSingletonInstance", engine->newQObject(s));
+        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RFlowLayout.js";
       QFile scriptFile(fileName);
@@ -401,6 +594,3385 @@ int a3_cpp;
 
     // non-static functions:
     
+    // Class: RFlowLayout
+    // Function: objectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::objectName
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QString res = 
+                    
+                w->objectName(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for objectName";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: setObjectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::setObjectName
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: name (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->setObjectName(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setObjectName";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: isWidgetType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::isWidgetType
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->isWidgetType(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isWidgetType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: isWindowType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::isWindowType
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->isWindowType(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isWindowType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: signalsBlocked
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::signalsBlocked
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->signalsBlocked(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for signalsBlocked";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: blockSignals
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::blockSignals
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: b (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->blockSignals(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for blockSignals";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: findChild
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::findChild
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_Qt_FindChildOptions(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: aName (QString)
+  
+QString a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QString();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+          }
+        
+  // convert js parameter to cpp: options (Qt::FindChildOptions)
+  
+Qt::FindChildOptions a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = Qt::FindChildrenRecursively;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_Qt_FindChildOptions(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QObject* res = 
+                    
+                w->findChild<QObject*>(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QObject*
+
+            return RJSHelper::cpp2js_QObject(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for findChild";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: children
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::children
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                      // return type is reference:
+                      // use pointer instead 3:
+                      const QObjectList* res =
+                    &
+                w->children(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: const QObjectList&
+
+            return RJSHelper::cpp2js_QObjectList(
+              handler, 
+              // non-copyable: false
+                  // return type is reference, type is copyable:
+                  // convert pointer back to reference:
+                  *res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for children";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: setParent
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::setParent
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: parent (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->setParent(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setParent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: installEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::installEventFilter
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: filterObj (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->installEventFilter(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for installEventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: removeEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::removeEventFilter
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: obj (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->removeEventFilter(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for removeEventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: dumpObjectTree
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::dumpObjectTree
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->dumpObjectTree(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->dumpObjectTree(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for dumpObjectTree";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: dumpObjectInfo
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::dumpObjectInfo
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->dumpObjectInfo(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->dumpObjectInfo(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for dumpObjectInfo";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: setProperty
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::setProperty
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_char_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QVariant(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: name (char)
+  
+
+      // char pointer string:
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      const char* a1_cpp = a1_ba.constData();
+    
+  // convert js parameter to cpp: value (QVariant)
+  
+QVariant a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QVariant(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->setProperty(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for setProperty";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: property
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::property
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_char_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: name (char)
+  
+
+      // char pointer string:
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      const char* a1_cpp = a1_ba.constData();
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QVariant res = 
+                    
+                w->property(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QVariant
+
+            return RJSHelper::cpp2js_QVariant(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for property";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: dynamicPropertyNames
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::dynamicPropertyNames
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QList<QByteArray> res = 
+                    
+                w->dynamicPropertyNames(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QList<QByteArray>
+
+            return RJSHelper::cpp2js_QList_QByteArray(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for dynamicPropertyNames";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: parent
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::parent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QObject* res = 
+                    
+                w->parent(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QObject*
+
+            return RJSHelper::cpp2js_QObject(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for parent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: deleteLater
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::deleteLater
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->deleteLater(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for deleteLater";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: minimumHeightForWidth
+    // Source: QLayoutItem
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::minimumHeightForWidth
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                int res = 
+                    
+                w->minimumHeightForWidth(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for minimumHeightForWidth";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: widget
+    // Source: QLayoutItem
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::widget
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QWidget* res = 
+                    
+                w->widget(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QWidget*
+
+            return RJSHelper::cpp2js_QWidget(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for widget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: spacerItem
+    // Source: QLayoutItem
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::spacerItem
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QSpacerItem* res = 
+                    
+                w->spacerItem(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QSpacerItem*
+
+            return RJSHelper::cpp2js_QSpacerItem(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for spacerItem";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: alignment
+    // Source: QLayoutItem
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::alignment
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                Qt::Alignment res = 
+                    
+                w->alignment(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: Qt::Alignment
+
+            return RJSHelper::cpp2js_Qt_Alignment(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for alignment";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: spacing
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::spacing
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                int res = 
+                    
+                w->spacing(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for spacing";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: setSpacing
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::setSpacing
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->setSpacing(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setSpacing";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: setContentsMargins
+    // Source: QLayout
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::setContentsMargins
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+   && RJSHelper::is_int(handler, a2
+  )
+
+   && RJSHelper::is_int(handler, a3
+  )
+
+   && RJSHelper::is_int(handler, a4
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: left (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+  // convert js parameter to cpp: top (int)
+  
+int a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
+        
+  // convert js parameter to cpp: right (int)
+  
+int a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
+        
+  // convert js parameter to cpp: bottom (int)
+  
+int a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_int(handler, a4);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->setContentsMargins(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QMargins(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: margins (QMargins)
+  
+QMargins a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QMargins(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->setContentsMargins(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setContentsMargins";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: contentsMargins
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::contentsMargins
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QMargins res = 
+                    
+                w->contentsMargins(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QMargins
+
+            return RJSHelper::cpp2js_QMargins(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for contentsMargins";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: contentsRect
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::contentsRect
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QRect res = 
+                    
+                w->contentsRect(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QRect
+
+            return RJSHelper::cpp2js_QRect(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for contentsRect";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: setAlignment
+    // Source: QLayout
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::setAlignment
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_Qt_Alignment(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: w (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: alignment (Qt::Alignment)
+  
+Qt::Alignment a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_Qt_Alignment(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->setAlignment(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QLayout_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_Qt_Alignment(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: l (QLayout)
+  
+
+          // pointer:
+          QLayout*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QLayout_ptr(handler, a1);
+        
+  // convert js parameter to cpp: alignment (Qt::Alignment)
+  
+Qt::Alignment a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_Qt_Alignment(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->setAlignment(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for setAlignment";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: setSizeConstraint
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::setSizeConstraint
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QLayout_SizeConstraint(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (QLayout::SizeConstraint)
+  
+QLayout::SizeConstraint a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QLayout_SizeConstraint(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->setSizeConstraint(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setSizeConstraint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: sizeConstraint
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::sizeConstraint
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QLayout::SizeConstraint res = 
+                    
+                w->sizeConstraint(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QLayout::SizeConstraint
+
+            return RJSHelper::cpp2js_QLayout_SizeConstraint(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for sizeConstraint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: setMenuBar
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::setMenuBar
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: w (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->setMenuBar(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setMenuBar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: menuBar
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::menuBar
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QWidget* res = 
+                    
+                w->menuBar(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QWidget*
+
+            return RJSHelper::cpp2js_QWidget(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for menuBar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: parentWidget
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::parentWidget
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QWidget* res = 
+                    
+                w->parentWidget(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QWidget*
+
+            return RJSHelper::cpp2js_QWidget(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for parentWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: geometry
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::geometry
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QRect res = 
+                    
+                w->geometry(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QRect
+
+            return RJSHelper::cpp2js_QRect(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for geometry";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: activate
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::activate
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->activate(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for activate";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: update
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::update
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->update(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for update";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: addWidget
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::addWidget
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: w (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->addWidget(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for addWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: removeWidget
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::removeWidget
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: w (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->removeWidget(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for removeWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: maximumSize
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::maximumSize
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QSize res = 
+                    
+                w->maximumSize(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for maximumSize";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: isEmpty
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::isEmpty
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->isEmpty(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isEmpty";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: controlTypes
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::controlTypes
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QSizePolicy::ControlTypes res = 
+                    
+                w->controlTypes(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QSizePolicy::ControlTypes
+
+            return RJSHelper::cpp2js_QSizePolicy_ControlTypes(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for controlTypes";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: totalHeightForWidth
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::totalHeightForWidth
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: w (int)
+  
+int a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                int res = 
+                    
+                w->totalHeightForWidth(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for totalHeightForWidth";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: totalMinimumSize
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::totalMinimumSize
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QSize res = 
+                    
+                w->totalMinimumSize(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for totalMinimumSize";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: totalMaximumSize
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::totalMaximumSize
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QSize res = 
+                    
+                w->totalMaximumSize(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for totalMaximumSize";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: totalSizeHint
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::totalSizeHint
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QSize res = 
+                    
+                w->totalSizeHint(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for totalSizeHint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: layout
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::layout
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                QLayout* res = 
+                    
+                w->layout(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QLayout*
+
+            return RJSHelper::cpp2js_QLayout(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for layout";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: setEnabled
+    // Source: QLayout
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::setEnabled
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                
+                w->setEnabled(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setEnabled";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RFlowLayout
+    // Function: isEnabled
+    // Source: QLayout
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RFlowLayout_Wrapper::isEnabled
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RFlowLayout* w = getWrapped();
+                bool res = 
+                    
+                w->isEnabled(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isEnabled";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     // Class: RFlowLayout
     // Function: setIconSize
     // Source: 

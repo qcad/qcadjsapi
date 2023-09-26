@@ -19,7 +19,272 @@
   // preceding Parameters: -1
 
       // protected overwritten functions / events and their public invokable counterparts:
-      void RFontChooserWidget_Base::resizeEvent(
+      void RFontChooserWidget_Base::mousePressEvent(
+      QMouseEvent* event
+    ) {
+
+      //qDebug() << "RFontChooserWidget_Base::mousePressEvent()";
+
+      //QJSValue f = self.prototype().property("mousePressEvent");
+      QJSValue f = self.property("mousePressEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QMouseEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.mousePressEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        RFontChooserWidget::mousePressEvent(
+          event
+        );
+      }
+    }
+
+  void RFontChooserWidget_Base::mouseReleaseEvent(
+      QMouseEvent* event
+    ) {
+
+      //qDebug() << "RFontChooserWidget_Base::mouseReleaseEvent()";
+
+      //QJSValue f = self.prototype().property("mouseReleaseEvent");
+      QJSValue f = self.property("mouseReleaseEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QMouseEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.mouseReleaseEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        RFontChooserWidget::mouseReleaseEvent(
+          event
+        );
+      }
+    }
+
+  void RFontChooserWidget_Base::mouseMoveEvent(
+      QMouseEvent* event
+    ) {
+
+      //qDebug() << "RFontChooserWidget_Base::mouseMoveEvent()";
+
+      //QJSValue f = self.prototype().property("mouseMoveEvent");
+      QJSValue f = self.property("mouseMoveEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QMouseEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.mouseMoveEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        RFontChooserWidget::mouseMoveEvent(
+          event
+        );
+      }
+    }
+
+  void RFontChooserWidget_Base::paintEvent(
+      QPaintEvent* event
+    ) {
+
+      //qDebug() << "RFontChooserWidget_Base::paintEvent()";
+
+      //QJSValue f = self.prototype().property("paintEvent");
+      QJSValue f = self.property("paintEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QPaintEvent(
+    handler, 
+    // non-copyable: true
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.paintEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        RFontChooserWidget::paintEvent(
+          event
+        );
+      }
+    }
+
+  void RFontChooserWidget_Base::actionEvent(
+      QActionEvent* event
+    ) {
+
+      //qDebug() << "RFontChooserWidget_Base::actionEvent()";
+
+      //QJSValue f = self.prototype().property("actionEvent");
+      QJSValue f = self.property("actionEvent");
+      if (f.isCallable() /*&& !recFlag*/) {
+        
+
+
+        QJSEngine* engine = handler.getEngine();
+
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_QActionEvent(
+    handler, 
+    // non-copyable: false
+event
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.actionEvent.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+
+        
+            return;
+          
+      }
+      else {
+        RFontChooserWidget::actionEvent(
+          event
+        );
+      }
+    }
+
+  void RFontChooserWidget_Base::resizeEvent(
       QResizeEvent* event
     ) {
 

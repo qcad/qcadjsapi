@@ -42,13 +42,22 @@
       
         static RSnapPerpendicular* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSnapPerpendicular.length(); i++) {
+            RJSBasecaster_RSnapPerpendicular* basecaster = basecasters_RSnapPerpendicular[i];
+            RSnapPerpendicular* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSnapPerpendicular::getIdStatic()) {
             return (RSnapPerpendicular*)vp;
           }
+
+          qWarning() << "RSnapPerpendicular::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -489,6 +498,15 @@ CoordinatePolar = RSnapPerpendicular::CoordinatePolar,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSnapPerpendicular*> basecasters_RSnapPerpendicular;
+
+      public:
+        static void registerBasecaster_RSnapPerpendicular(RJSBasecaster_RSnapPerpendicular* bc) {
+          basecasters_RSnapPerpendicular.append(bc);
+        }
       
     };
 

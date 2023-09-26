@@ -672,8 +672,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property INVALID_ID:
@@ -1328,7 +1327,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1351,13 +1349,22 @@
       
         static RDimAngular2LEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDimAngular2LEntity.length(); i++) {
+            RJSBasecaster_RDimAngular2LEntity* basecaster = basecasters_RDimAngular2LEntity[i];
+            RDimAngular2LEntity* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
             return (RDimAngular2LEntity*)vp;
           }
+
+          qWarning() << "RDimAngular2LEntity::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -5417,6 +5424,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDimAngular2LEntity*> basecasters_RDimAngular2LEntity;
+
+      public:
+        static void registerBasecaster_RDimAngular2LEntity(RJSBasecaster_RDimAngular2LEntity* bc) {
+          basecasters_RDimAngular2LEntity.append(bc);
+        }
       
     };
 

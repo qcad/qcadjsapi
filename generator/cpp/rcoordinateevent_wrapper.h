@@ -23,6 +23,61 @@
       
         #include "RCoordinateEvent.h"
       
+      // singleton class wrapper for static functions:
+      class RCoordinateEvent_WrapperSingleton: public QObject {
+      Q_OBJECT
+      QML_INTERFACE
+
+      // constants:
+      
+
+      // static properties:
+      
+
+      public:
+      //Q_INVOKABLE 
+      RCoordinateEvent_WrapperSingleton(RJSApi& h) 
+        : QObject(), 
+          handler(h)
+          
+          {}
+
+      
+
+      // static functions:
+      
+    // Class: RCoordinateEvent
+    // Function: registerEventType
+    // Source: QEvent
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  registerEventType
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+
+      private:
+          RJSApi& handler;
+          //static RCoordinateEvent_WrapperSingleton* _singleInstance;
+
+          // constants:
+          
+      };
+    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RCoordinateEvent
@@ -44,13 +99,22 @@
       
         static RCoordinateEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RCoordinateEvent.length(); i++) {
+            RJSBasecaster_RCoordinateEvent* basecaster = basecasters_RCoordinateEvent[i];
+            RCoordinateEvent* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RCoordinateEvent::getIdStatic()) {
             return (RCoordinateEvent*)vp;
           }
+
+          qWarning() << "RCoordinateEvent::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -70,6 +134,185 @@
           return ret;
         }
       
+        // enums:
+        
+  enum Type {
+    None = RCoordinateEvent::None,
+Timer = RCoordinateEvent::Timer,
+MouseButtonPress = RCoordinateEvent::MouseButtonPress,
+MouseButtonRelease = RCoordinateEvent::MouseButtonRelease,
+MouseButtonDblClick = RCoordinateEvent::MouseButtonDblClick,
+MouseMove = RCoordinateEvent::MouseMove,
+KeyPress = RCoordinateEvent::KeyPress,
+KeyRelease = RCoordinateEvent::KeyRelease,
+FocusIn = RCoordinateEvent::FocusIn,
+FocusOut = RCoordinateEvent::FocusOut,
+FocusAboutToChange = RCoordinateEvent::FocusAboutToChange,
+Enter = RCoordinateEvent::Enter,
+Leave = RCoordinateEvent::Leave,
+Paint = RCoordinateEvent::Paint,
+Move = RCoordinateEvent::Move,
+Resize = RCoordinateEvent::Resize,
+Create = RCoordinateEvent::Create,
+Destroy = RCoordinateEvent::Destroy,
+Show = RCoordinateEvent::Show,
+Hide = RCoordinateEvent::Hide,
+Close = RCoordinateEvent::Close,
+Quit = RCoordinateEvent::Quit,
+ParentChange = RCoordinateEvent::ParentChange,
+ParentAboutToChange = RCoordinateEvent::ParentAboutToChange,
+ThreadChange = RCoordinateEvent::ThreadChange,
+WindowActivate = RCoordinateEvent::WindowActivate,
+WindowDeactivate = RCoordinateEvent::WindowDeactivate,
+ShowToParent = RCoordinateEvent::ShowToParent,
+HideToParent = RCoordinateEvent::HideToParent,
+Wheel = RCoordinateEvent::Wheel,
+WindowTitleChange = RCoordinateEvent::WindowTitleChange,
+WindowIconChange = RCoordinateEvent::WindowIconChange,
+ApplicationWindowIconChange = RCoordinateEvent::ApplicationWindowIconChange,
+ApplicationFontChange = RCoordinateEvent::ApplicationFontChange,
+ApplicationLayoutDirectionChange = RCoordinateEvent::ApplicationLayoutDirectionChange,
+ApplicationPaletteChange = RCoordinateEvent::ApplicationPaletteChange,
+PaletteChange = RCoordinateEvent::PaletteChange,
+Clipboard = RCoordinateEvent::Clipboard,
+Speech = RCoordinateEvent::Speech,
+MetaCall = RCoordinateEvent::MetaCall,
+SockAct = RCoordinateEvent::SockAct,
+WinEventAct = RCoordinateEvent::WinEventAct,
+DeferredDelete = RCoordinateEvent::DeferredDelete,
+DragEnter = RCoordinateEvent::DragEnter,
+DragMove = RCoordinateEvent::DragMove,
+DragLeave = RCoordinateEvent::DragLeave,
+Drop = RCoordinateEvent::Drop,
+DragResponse = RCoordinateEvent::DragResponse,
+ChildAdded = RCoordinateEvent::ChildAdded,
+ChildPolished = RCoordinateEvent::ChildPolished,
+ChildRemoved = RCoordinateEvent::ChildRemoved,
+ShowWindowRequest = RCoordinateEvent::ShowWindowRequest,
+PolishRequest = RCoordinateEvent::PolishRequest,
+Polish = RCoordinateEvent::Polish,
+LayoutRequest = RCoordinateEvent::LayoutRequest,
+UpdateRequest = RCoordinateEvent::UpdateRequest,
+UpdateLater = RCoordinateEvent::UpdateLater,
+EmbeddingControl = RCoordinateEvent::EmbeddingControl,
+ActivateControl = RCoordinateEvent::ActivateControl,
+DeactivateControl = RCoordinateEvent::DeactivateControl,
+ContextMenu = RCoordinateEvent::ContextMenu,
+InputMethod = RCoordinateEvent::InputMethod,
+TabletMove = RCoordinateEvent::TabletMove,
+LocaleChange = RCoordinateEvent::LocaleChange,
+LanguageChange = RCoordinateEvent::LanguageChange,
+LayoutDirectionChange = RCoordinateEvent::LayoutDirectionChange,
+Style = RCoordinateEvent::Style,
+TabletPress = RCoordinateEvent::TabletPress,
+TabletRelease = RCoordinateEvent::TabletRelease,
+OkRequest = RCoordinateEvent::OkRequest,
+HelpRequest = RCoordinateEvent::HelpRequest,
+IconDrag = RCoordinateEvent::IconDrag,
+FontChange = RCoordinateEvent::FontChange,
+EnabledChange = RCoordinateEvent::EnabledChange,
+ActivationChange = RCoordinateEvent::ActivationChange,
+StyleChange = RCoordinateEvent::StyleChange,
+IconTextChange = RCoordinateEvent::IconTextChange,
+ModifiedChange = RCoordinateEvent::ModifiedChange,
+MouseTrackingChange = RCoordinateEvent::MouseTrackingChange,
+WindowBlocked = RCoordinateEvent::WindowBlocked,
+WindowUnblocked = RCoordinateEvent::WindowUnblocked,
+WindowStateChange = RCoordinateEvent::WindowStateChange,
+ReadOnlyChange = RCoordinateEvent::ReadOnlyChange,
+ToolTip = RCoordinateEvent::ToolTip,
+WhatsThis = RCoordinateEvent::WhatsThis,
+StatusTip = RCoordinateEvent::StatusTip,
+ActionChanged = RCoordinateEvent::ActionChanged,
+ActionAdded = RCoordinateEvent::ActionAdded,
+ActionRemoved = RCoordinateEvent::ActionRemoved,
+FileOpen = RCoordinateEvent::FileOpen,
+Shortcut = RCoordinateEvent::Shortcut,
+ShortcutOverride = RCoordinateEvent::ShortcutOverride,
+WhatsThisClicked = RCoordinateEvent::WhatsThisClicked,
+ToolBarChange = RCoordinateEvent::ToolBarChange,
+ApplicationActivate = RCoordinateEvent::ApplicationActivate,
+ApplicationActivated = RCoordinateEvent::ApplicationActivated,
+ApplicationDeactivate = RCoordinateEvent::ApplicationDeactivate,
+ApplicationDeactivated = RCoordinateEvent::ApplicationDeactivated,
+QueryWhatsThis = RCoordinateEvent::QueryWhatsThis,
+EnterWhatsThisMode = RCoordinateEvent::EnterWhatsThisMode,
+LeaveWhatsThisMode = RCoordinateEvent::LeaveWhatsThisMode,
+ZOrderChange = RCoordinateEvent::ZOrderChange,
+HoverEnter = RCoordinateEvent::HoverEnter,
+HoverLeave = RCoordinateEvent::HoverLeave,
+HoverMove = RCoordinateEvent::HoverMove,
+AcceptDropsChange = RCoordinateEvent::AcceptDropsChange,
+ZeroTimerEvent = RCoordinateEvent::ZeroTimerEvent,
+GraphicsSceneMouseMove = RCoordinateEvent::GraphicsSceneMouseMove,
+GraphicsSceneMousePress = RCoordinateEvent::GraphicsSceneMousePress,
+GraphicsSceneMouseRelease = RCoordinateEvent::GraphicsSceneMouseRelease,
+GraphicsSceneMouseDoubleClick = RCoordinateEvent::GraphicsSceneMouseDoubleClick,
+GraphicsSceneContextMenu = RCoordinateEvent::GraphicsSceneContextMenu,
+GraphicsSceneHoverEnter = RCoordinateEvent::GraphicsSceneHoverEnter,
+GraphicsSceneHoverMove = RCoordinateEvent::GraphicsSceneHoverMove,
+GraphicsSceneHoverLeave = RCoordinateEvent::GraphicsSceneHoverLeave,
+GraphicsSceneHelp = RCoordinateEvent::GraphicsSceneHelp,
+GraphicsSceneDragEnter = RCoordinateEvent::GraphicsSceneDragEnter,
+GraphicsSceneDragMove = RCoordinateEvent::GraphicsSceneDragMove,
+GraphicsSceneDragLeave = RCoordinateEvent::GraphicsSceneDragLeave,
+GraphicsSceneDrop = RCoordinateEvent::GraphicsSceneDrop,
+GraphicsSceneWheel = RCoordinateEvent::GraphicsSceneWheel,
+GraphicsSceneLeave = RCoordinateEvent::GraphicsSceneLeave,
+KeyboardLayoutChange = RCoordinateEvent::KeyboardLayoutChange,
+DynamicPropertyChange = RCoordinateEvent::DynamicPropertyChange,
+TabletEnterProximity = RCoordinateEvent::TabletEnterProximity,
+TabletLeaveProximity = RCoordinateEvent::TabletLeaveProximity,
+NonClientAreaMouseMove = RCoordinateEvent::NonClientAreaMouseMove,
+NonClientAreaMouseButtonPress = RCoordinateEvent::NonClientAreaMouseButtonPress,
+NonClientAreaMouseButtonRelease = RCoordinateEvent::NonClientAreaMouseButtonRelease,
+NonClientAreaMouseButtonDblClick = RCoordinateEvent::NonClientAreaMouseButtonDblClick,
+MacSizeChange = RCoordinateEvent::MacSizeChange,
+ContentsRectChange = RCoordinateEvent::ContentsRectChange,
+MacGLWindowChange = RCoordinateEvent::MacGLWindowChange,
+FutureCallOut = RCoordinateEvent::FutureCallOut,
+GraphicsSceneResize = RCoordinateEvent::GraphicsSceneResize,
+GraphicsSceneMove = RCoordinateEvent::GraphicsSceneMove,
+CursorChange = RCoordinateEvent::CursorChange,
+ToolTipChange = RCoordinateEvent::ToolTipChange,
+NetworkReplyUpdated = RCoordinateEvent::NetworkReplyUpdated,
+GrabMouse = RCoordinateEvent::GrabMouse,
+UngrabMouse = RCoordinateEvent::UngrabMouse,
+GrabKeyboard = RCoordinateEvent::GrabKeyboard,
+UngrabKeyboard = RCoordinateEvent::UngrabKeyboard,
+StateMachineSignal = RCoordinateEvent::StateMachineSignal,
+StateMachineWrapped = RCoordinateEvent::StateMachineWrapped,
+TouchBegin = RCoordinateEvent::TouchBegin,
+TouchUpdate = RCoordinateEvent::TouchUpdate,
+TouchEnd = RCoordinateEvent::TouchEnd,
+NativeGesture = RCoordinateEvent::NativeGesture,
+RequestSoftwareInputPanel = RCoordinateEvent::RequestSoftwareInputPanel,
+CloseSoftwareInputPanel = RCoordinateEvent::CloseSoftwareInputPanel,
+WinIdChange = RCoordinateEvent::WinIdChange,
+Gesture = RCoordinateEvent::Gesture,
+GestureOverride = RCoordinateEvent::GestureOverride,
+ScrollPrepare = RCoordinateEvent::ScrollPrepare,
+Scroll = RCoordinateEvent::Scroll,
+Expose = RCoordinateEvent::Expose,
+InputMethodQuery = RCoordinateEvent::InputMethodQuery,
+OrientationChange = RCoordinateEvent::OrientationChange,
+TouchCancel = RCoordinateEvent::TouchCancel,
+ThemeChange = RCoordinateEvent::ThemeChange,
+SockClose = RCoordinateEvent::SockClose,
+PlatformPanel = RCoordinateEvent::PlatformPanel,
+StyleAnimationUpdate = RCoordinateEvent::StyleAnimationUpdate,
+ApplicationStateChange = RCoordinateEvent::ApplicationStateChange,
+WindowChangeInternal = RCoordinateEvent::WindowChangeInternal,
+ScreenChangeInternal = RCoordinateEvent::ScreenChangeInternal,
+PlatformSurface = RCoordinateEvent::PlatformSurface,
+Pointer = RCoordinateEvent::Pointer,
+TabletTrackingChange = RCoordinateEvent::TabletTrackingChange,
+User = RCoordinateEvent::User,
+MaxUser = RCoordinateEvent::MaxUser,
+
+  };
+  Q_ENUM(Type)
+
     /*
     // special constructor used as prototype:
     
@@ -134,6 +377,214 @@
 
     // non-static functions:
     
+    // Class: RCoordinateEvent
+    // Function: type
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  type
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateEvent
+    // Function: spontaneous
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  spontaneous
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateEvent
+    // Function: setAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setAccepted
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RCoordinateEvent
+    // Function: isAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isAccepted
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateEvent
+    // Function: accept
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  accept
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RCoordinateEvent
+    // Function: ignore
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  ignore
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RCoordinateEvent
+    // Function: isInputEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isInputEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateEvent
+    // Function: isPointerEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isPointerEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateEvent
+    // Function: isSinglePointEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSinglePointEvent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RCoordinateEvent
+    // Function: clone
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clone
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
     // Class: RCoordinateEvent
     // Function: getModelPosition
     // Source: RInputEvent
@@ -479,6 +930,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RCoordinateEvent*> basecasters_RCoordinateEvent;
+
+      public:
+        static void registerBasecaster_RCoordinateEvent(RJSBasecaster_RCoordinateEvent* bc) {
+          basecasters_RCoordinateEvent.append(bc);
+        }
       
     };
 

@@ -87,6 +87,24 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
+    this["actionTriggered(QAction*)"] = Object.getPrototypeOf(this).actionTriggered;
+  
+    this["movableChanged(bool)"] = Object.getPrototypeOf(this).movableChanged;
+  
+    this["allowedAreasChanged(Qt::ToolBarAreas)"] = Object.getPrototypeOf(this).allowedAreasChanged;
+  
+    this["orientationChanged(Qt::Orientation)"] = Object.getPrototypeOf(this).orientationChanged;
+  
+    this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
+  
+    this["toolButtonStyleChanged(Qt::ToolButtonStyle)"] = Object.getPrototypeOf(this).toolButtonStyleChanged;
+  
+    this["topLevelChanged(bool)"] = Object.getPrototypeOf(this).topLevelChanged;
+  
+    this["visibilityChanged(bool)"] = Object.getPrototypeOf(this).visibilityChanged;
+  
           }
         }
       }
@@ -137,8 +155,152 @@
 
       // functions:
       
+        // function 
+        RCadToolBar.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RCadToolBar.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBar);
+  }
+
+  
+  else {
+    
+        print("RCadToolBar.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RCadToolBar.tr = function() 
+          
+        {
+          //print("JS: RCadToolBar.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RCadToolBar_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBar);
+  }
+
+  
+  else {
+    
+        print("RCadToolBar.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCadToolBar.setTabOrder = function() 
+          
+        {
+          //print("JS: RCadToolBar.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RCadToolBar_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBar);
+  }
+
+  
+  else {
+    
+        print("RCadToolBar.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCadToolBar.mouseGrabber = function() 
+          
+        {
+          //print("JS: RCadToolBar.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RCadToolBar_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBar);
+  }
+
+  
+  else {
+    
+        print("RCadToolBar.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RCadToolBar.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RCadToolBar.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RCadToolBar_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RCadToolBar);
+  }
+
+  
+  else {
+    
+        print("RCadToolBar.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

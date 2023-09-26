@@ -8,6 +8,9 @@
     #include "rmodifiedlistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RModifiedListener*> RModifiedListener_Wrapper::basecasters_RModifiedListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RModifiedListener_Wrapper::init(RJSApi& handler) {

@@ -8,6 +8,9 @@
     #include "rsnapperpendicular_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSnapPerpendicular*> RSnapPerpendicular_Wrapper::basecasters_RSnapPerpendicular;
+    
     // static functions implementation in singleton wrapper:
     
     void RSnapPerpendicular_Wrapper::init(RJSApi& handler) {

@@ -8,6 +8,9 @@
     #include "rpatternlist_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPatternList*> RPatternList_Wrapper::basecasters_RPatternList;
+    
     // static functions implementation in singleton wrapper:
     
     void RPatternList_Wrapper::init(RJSApi& handler) {

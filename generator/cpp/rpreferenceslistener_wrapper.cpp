@@ -8,6 +8,9 @@
     #include "rpreferenceslistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPreferencesListener*> RPreferencesListener_Wrapper::basecasters_RPreferencesListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RPreferencesListener_Wrapper::init(RJSApi& handler) {

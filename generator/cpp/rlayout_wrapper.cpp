@@ -8,6 +8,9 @@
     #include "rlayout_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RLayout*> RLayout_Wrapper::basecasters_RLayout;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RLayout

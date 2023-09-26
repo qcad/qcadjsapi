@@ -8,6 +8,9 @@
     #include "rrestrictvertical_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RRestrictVertical*> RRestrictVertical_Wrapper::basecasters_RRestrictVertical;
+    
     // static functions implementation in singleton wrapper:
     
     void RRestrictVertical_Wrapper::init(RJSApi& handler) {

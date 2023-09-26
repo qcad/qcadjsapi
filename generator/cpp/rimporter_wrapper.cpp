@@ -8,6 +8,9 @@
     #include "rimporter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RImporter*> RImporter_Wrapper::basecasters_RImporter;
+    
     // static functions implementation in singleton wrapper:
     
     void RImporter_Wrapper::init(RJSApi& handler) {

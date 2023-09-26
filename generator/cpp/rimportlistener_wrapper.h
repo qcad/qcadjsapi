@@ -42,13 +42,22 @@
       
         static RImportListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RImportListener.length(); i++) {
+            RJSBasecaster_RImportListener* basecaster = basecasters_RImportListener[i];
+            RImportListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RImportListener::getIdStatic()) {
             return (RImportListener*)vp;
           }
+
+          qWarning() << "RImportListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -249,6 +258,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RImportListener*> basecasters_RImportListener;
+
+      public:
+        static void registerBasecaster_RImportListener(RJSBasecaster_RImportListener* bc) {
+          basecasters_RImportListener.append(bc);
+        }
       
     };
 

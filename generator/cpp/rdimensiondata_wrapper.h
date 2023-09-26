@@ -36,8 +36,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -70,7 +69,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -93,53 +91,22 @@
       
         static RDimensionData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RDimAlignedData::getIdStatic()) {
-              return (RDimensionData*)(RDimAlignedData*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RDimensionData.length(); i++) {
+            RJSBasecaster_RDimensionData* basecaster = basecasters_RDimensionData[i];
+            RDimensionData* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RDimAngular2LData::getIdStatic()) {
-              return (RDimensionData*)(RDimAngular2LData*)vp;
-            }
-            
-            if (t==RJSType_RDimAngular3PData::getIdStatic()) {
-              return (RDimensionData*)(RDimAngular3PData*)vp;
-            }
-            
-            if (t==RJSType_RDimAngularData::getIdStatic()) {
-              return (RDimensionData*)(RDimAngularData*)vp;
-            }
-            
-            if (t==RJSType_RDimArcLengthData::getIdStatic()) {
-              return (RDimensionData*)(RDimArcLengthData*)vp;
-            }
-            
-            if (t==RJSType_RDimDiametricData::getIdStatic()) {
-              return (RDimensionData*)(RDimDiametricData*)vp;
-            }
-            
-            if (t==RJSType_RDimLinearData::getIdStatic()) {
-              return (RDimensionData*)(RDimLinearData*)vp;
-            }
-            
-            if (t==RJSType_RDimOrdinateData::getIdStatic()) {
-              return (RDimensionData*)(RDimOrdinateData*)vp;
-            }
-            
-            if (t==RJSType_RDimRadialData::getIdStatic()) {
-              return (RDimensionData*)(RDimRadialData*)vp;
-            }
-            
-            if (t==RJSType_RDimRotatedData::getIdStatic()) {
-              return (RDimensionData*)(RDimRotatedData*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RDimensionData::getIdStatic()) {
             return (RDimensionData*)vp;
           }
+
+          qWarning() << "RDimensionData::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4540,6 +4507,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RDimensionData*> basecasters_RDimensionData;
+
+      public:
+        static void registerBasecaster_RDimensionData(RJSBasecaster_RDimensionData* bc) {
+          basecasters_RDimensionData.append(bc);
+        }
       
     };
 

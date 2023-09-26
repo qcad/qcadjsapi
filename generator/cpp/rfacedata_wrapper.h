@@ -40,13 +40,22 @@
       
         static RFaceData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RFaceData.length(); i++) {
+            RJSBasecaster_RFaceData* basecaster = basecasters_RFaceData[i];
+            RFaceData* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RFaceData::getIdStatic()) {
             return (RFaceData*)vp;
           }
+
+          qWarning() << "RFaceData::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1145,6 +1154,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RFaceData*> basecasters_RFaceData;
+
+      public:
+        static void registerBasecaster_RFaceData(RJSBasecaster_RFaceData* bc) {
+          basecasters_RFaceData.append(bc);
+        }
       
     };
 

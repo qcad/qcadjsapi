@@ -8,6 +8,9 @@
     #include "rview_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RView*> RView_Wrapper::basecasters_RView;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RView

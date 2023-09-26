@@ -8,6 +8,9 @@
     #include "rdimdiametricentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimDiametricEntity*> RDimDiametricEntity_Wrapper::basecasters_RDimDiametricEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimDiametricEntity

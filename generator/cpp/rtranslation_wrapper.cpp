@@ -8,6 +8,9 @@
     #include "rtranslation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RTranslation*> RTranslation_Wrapper::basecasters_RTranslation;
+    
     // static functions implementation in singleton wrapper:
     
     void RTranslation_Wrapper::init(RJSApi& handler) {

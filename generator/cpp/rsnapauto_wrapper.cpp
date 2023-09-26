@@ -8,6 +8,9 @@
     #include "rsnapauto_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSnapAuto*> RSnapAuto_Wrapper::basecasters_RSnapAuto;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RSnapAuto

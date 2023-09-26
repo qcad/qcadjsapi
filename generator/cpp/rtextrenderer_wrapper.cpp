@@ -8,6 +8,9 @@
     #include "rtextrenderer_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RTextRenderer*> RTextRenderer_Wrapper::basecasters_RTextRenderer;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RTextRenderer

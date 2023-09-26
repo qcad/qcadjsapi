@@ -279,6 +279,8 @@
     
 
   
+      int RJSType_RPainterPathSource::id = -1;
+    
       int RJSType_RAction::id = -1;
     
       int RJSType_RActionAdapter::id = -1;

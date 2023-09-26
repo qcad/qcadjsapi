@@ -8,8 +8,82 @@
     #include "rcoordinateevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RCoordinateEvent*> RCoordinateEvent_Wrapper::basecasters_RCoordinateEvent;
+    
     // static functions implementation in singleton wrapper:
     
+    // Class: RCoordinateEvent
+    // Function: registerEventType
+    // Source: QEvent
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_WrapperSingleton::registerEventType
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: hint (int)
+  
+int a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = -1;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            int res = 
+                
+                // call static member function:
+                QEvent::registerEventType(
+              a1_cpp
+    
+            );
+          
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for registerEventType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     void RCoordinateEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RCoordinateEvent_Wrapper>("org.qcad", 1, 0, "RCoordinateEvent_Wrapper");
@@ -38,6 +112,15 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RCoordinateEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RCoordinateEvent_BaseJs", mob);
+      
+        // singleton wrapper:
+        QJSValue mos = engine->newQMetaObject(&RCoordinateEvent_WrapperSingleton::staticMetaObject);
+        engine->globalObject().setProperty("RCoordinateEvent_WrapperSingleton", mos);
+
+        // create instance of singleton wrapper for static functions:
+        RCoordinateEvent_WrapperSingleton * s = new RCoordinateEvent_WrapperSingleton(handler);
+        engine->globalObject().setProperty("RCoordinateEvent_WrapperSingletonInstance", engine->newQObject(s));
+        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RCoordinateEvent.js";
       QFile scriptFile(fileName);
@@ -245,6 +328,563 @@ RVector a1_cpp;
 
     // non-static functions:
     
+    // Class: RCoordinateEvent
+    // Function: type
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::type
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                QEvent::Type res = 
+                    
+                w->type(
+                  
+                );
+              
+            // return type: QEvent::Type
+
+            return RJSHelper::cpp2js_QEvent_Type(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for type";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCoordinateEvent
+    // Function: spontaneous
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::spontaneous
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                bool res = 
+                    
+                w->spontaneous(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for spontaneous";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCoordinateEvent
+    // Function: setAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::setAccepted
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: accepted (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                
+                w->setAccepted(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setAccepted";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCoordinateEvent
+    // Function: isAccepted
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::isAccepted
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isAccepted(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isAccepted";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCoordinateEvent
+    // Function: accept
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::accept
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                
+                w->accept(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for accept";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCoordinateEvent
+    // Function: ignore
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::ignore
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                
+                w->ignore(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for ignore";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCoordinateEvent
+    // Function: isInputEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::isInputEvent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isInputEvent(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isInputEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCoordinateEvent
+    // Function: isPointerEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::isPointerEvent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isPointerEvent(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isPointerEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCoordinateEvent
+    // Function: isSinglePointEvent
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::isSinglePointEvent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                bool res = 
+                    
+                w->isSinglePointEvent(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isSinglePointEvent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCoordinateEvent
+    // Function: clone
+    // Source: QEvent
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCoordinateEvent_Wrapper::clone
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RCoordinateEvent* w = getWrapped();
+                QEvent* res = 
+                    
+                w->clone(
+                  
+                );
+              
+            // return type: QEvent*
+
+            return RJSHelper::cpp2js_QEvent(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for clone";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     // Class: RCoordinateEvent
     // Function: getModelPosition
     // Source: RInputEvent

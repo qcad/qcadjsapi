@@ -206,6 +206,35 @@
       // static functions:
       
 
+        // static function 
+        RPropertyListenerAdapter.tr = function() 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RPropertyListenerAdapter_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RPropertyListenerAdapter);
+  }
+
+  
+  else {
+    
+        print("RPropertyListenerAdapter.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

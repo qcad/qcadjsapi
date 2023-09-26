@@ -8,6 +8,9 @@
     #include "rlayerstate_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RLayerState*> RLayerState_Wrapper::basecasters_RLayerState;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RLayerState

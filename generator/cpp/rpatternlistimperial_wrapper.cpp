@@ -8,6 +8,9 @@
     #include "rpatternlistimperial_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPatternListImperial*> RPatternListImperial_Wrapper::basecasters_RPatternListImperial;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RPatternListImperial

@@ -8,6 +8,9 @@
     #include "rrestrictanglelength_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RRestrictAngleLength*> RRestrictAngleLength_Wrapper::basecasters_RRestrictAngleLength;
+    
     // static functions implementation in singleton wrapper:
     
     void RRestrictAngleLength_Wrapper::init(RJSApi& handler) {

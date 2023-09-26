@@ -8,6 +8,9 @@
     #include "rdimensionentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimensionEntity*> RDimensionEntity_Wrapper::basecasters_RDimensionEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimensionEntity

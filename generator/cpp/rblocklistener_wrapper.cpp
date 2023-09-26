@@ -8,6 +8,9 @@
     #include "rblocklistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RBlockListener*> RBlockListener_Wrapper::basecasters_RBlockListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RBlockListener_Wrapper::init(RJSApi& handler) {

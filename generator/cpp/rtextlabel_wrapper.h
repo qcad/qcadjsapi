@@ -46,13 +46,22 @@
       
         static RTextLabel* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RTextLabel.length(); i++) {
+            RJSBasecaster_RTextLabel* basecaster = basecasters_RTextLabel[i];
+            RTextLabel* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RTextLabel::getIdStatic()) {
             return (RTextLabel*)vp;
           }
+
+          qWarning() << "RTextLabel::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -808,6 +817,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RTextLabel*> basecasters_RTextLabel;
+
+      public:
+        static void registerBasecaster_RTextLabel(RJSBasecaster_RTextLabel* bc) {
+          basecasters_RTextLabel.append(bc);
+        }
       
     };
 

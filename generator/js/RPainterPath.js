@@ -177,6 +177,12 @@
 
       // enum values:
       
+  // enum: ElementType
+RPainterPath.MoveToElement = RPainterPath_Wrapper.MoveToElement;
+RPainterPath.LineToElement = RPainterPath_Wrapper.LineToElement;
+RPainterPath.CurveToElement = RPainterPath_Wrapper.CurveToElement;
+RPainterPath.CurveToDataElement = RPainterPath_Wrapper.CurveToDataElement;
+
 
       // functions:
       

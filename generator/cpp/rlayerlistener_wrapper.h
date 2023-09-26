@@ -42,21 +42,22 @@
       
         static RLayerListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RLayerListenerAdapter::getIdStatic()) {
-              return (RLayerListener*)(RLayerListenerAdapter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RLayerListener.length(); i++) {
+            RJSBasecaster_RLayerListener* basecaster = basecasters_RLayerListener[i];
+            RLayerListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RPropertyEditor::getIdStatic()) {
-              return (RLayerListener*)(RPropertyEditor*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RLayerListener::getIdStatic()) {
             return (RLayerListener*)vp;
           }
+
+          qWarning() << "RLayerListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -284,6 +285,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RLayerListener*> basecasters_RLayerListener;
+
+      public:
+        static void registerBasecaster_RLayerListener(RJSBasecaster_RLayerListener* bc) {
+          basecasters_RLayerListener.append(bc);
+        }
       
     };
 

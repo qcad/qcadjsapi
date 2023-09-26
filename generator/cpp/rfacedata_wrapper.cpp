@@ -8,6 +8,9 @@
     #include "rfacedata_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RFaceData*> RFaceData_Wrapper::basecasters_RFaceData;
+    
     // static functions implementation in singleton wrapper:
     
     void RFaceData_Wrapper::init(RJSApi& handler) {

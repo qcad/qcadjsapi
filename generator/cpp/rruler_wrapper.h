@@ -44,17 +44,22 @@
       
         static RRuler* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RRulerQt::getIdStatic()) {
-              return (RRuler*)(RRulerQt*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RRuler.length(); i++) {
+            RJSBasecaster_RRuler* basecaster = basecasters_RRuler[i];
+            RRuler* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RRuler::getIdStatic()) {
             return (RRuler*)vp;
           }
+
+          qWarning() << "RRuler::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -347,6 +352,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RRuler*> basecasters_RRuler;
+
+      public:
+        static void registerBasecaster_RRuler(RJSBasecaster_RRuler* bc) {
+          basecasters_RRuler.append(bc);
+        }
       
     };
 

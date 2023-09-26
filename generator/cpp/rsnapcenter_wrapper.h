@@ -42,13 +42,22 @@
       
         static RSnapCenter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSnapCenter.length(); i++) {
+            RJSBasecaster_RSnapCenter* basecaster = basecasters_RSnapCenter[i];
+            RSnapCenter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSnapCenter::getIdStatic()) {
             return (RSnapCenter*)vp;
           }
+
+          qWarning() << "RSnapCenter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -489,6 +498,15 @@ CoordinatePolar = RSnapCenter::CoordinatePolar,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSnapCenter*> basecasters_RSnapCenter;
+
+      public:
+        static void registerBasecaster_RSnapCenter(RJSBasecaster_RSnapCenter* bc) {
+          basecasters_RSnapCenter.append(bc);
+        }
       
     };
 

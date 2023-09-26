@@ -42,21 +42,22 @@
       
         static RCoordinateListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RCoordinateListenerAdapter::getIdStatic()) {
-              return (RCoordinateListener*)(RCoordinateListenerAdapter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RCoordinateListener.length(); i++) {
+            RJSBasecaster_RCoordinateListener* basecaster = basecasters_RCoordinateListener[i];
+            RCoordinateListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RRulerQt::getIdStatic()) {
-              return (RCoordinateListener*)(RRulerQt*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RCoordinateListener::getIdStatic()) {
             return (RCoordinateListener*)vp;
           }
+
+          qWarning() << "RCoordinateListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -234,6 +235,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RCoordinateListener*> basecasters_RCoordinateListener;
+
+      public:
+        static void registerBasecaster_RCoordinateListener(RJSBasecaster_RCoordinateListener* bc) {
+          basecasters_RCoordinateListener.append(bc);
+        }
       
     };
 

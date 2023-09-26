@@ -42,17 +42,22 @@
       
         static RViewListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RViewListenerAdapter::getIdStatic()) {
-              return (RViewListener*)(RViewListenerAdapter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RViewListener.length(); i++) {
+            RJSBasecaster_RViewListener* basecaster = basecasters_RViewListener[i];
+            RViewListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RViewListener::getIdStatic()) {
             return (RViewListener*)vp;
           }
+
+          qWarning() << "RViewListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -238,6 +243,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RViewListener*> basecasters_RViewListener;
+
+      public:
+        static void registerBasecaster_RViewListener(RJSBasecaster_RViewListener* bc) {
+          basecasters_RViewListener.append(bc);
+        }
       
     };
 

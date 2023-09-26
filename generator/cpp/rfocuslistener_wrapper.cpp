@@ -8,6 +8,9 @@
     #include "rfocuslistener_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RFocusListener*> RFocusListener_Wrapper::basecasters_RFocusListener;
+    
     // static functions implementation in singleton wrapper:
     
     void RFocusListener_Wrapper::init(RJSApi& handler) {

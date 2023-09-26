@@ -8,6 +8,9 @@
     #include "rdeleteallentitiesoperation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDeleteAllEntitiesOperation*> RDeleteAllEntitiesOperation_Wrapper::basecasters_RDeleteAllEntitiesOperation;
+    
     // static functions implementation in singleton wrapper:
     
     void RDeleteAllEntitiesOperation_Wrapper::init(RJSApi& handler) {

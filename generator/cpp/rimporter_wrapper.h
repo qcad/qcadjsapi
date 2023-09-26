@@ -50,21 +50,22 @@
       
         static RImporter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RFileImporter::getIdStatic()) {
-              return (RImporter*)(RFileImporter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RImporter.length(); i++) {
+            RJSBasecaster_RImporter* basecaster = basecasters_RImporter[i];
+            RImporter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RFileImporterAdapter::getIdStatic()) {
-              return (RImporter*)(RFileImporterAdapter*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RImporter::getIdStatic()) {
             return (RImporter*)vp;
           }
+
+          qWarning() << "RImporter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -441,6 +442,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RImporter*> basecasters_RImporter;
+
+      public:
+        static void registerBasecaster_RImporter(RJSBasecaster_RImporter* bc) {
+          basecasters_RImporter.append(bc);
+        }
       
     };
 

@@ -8,6 +8,9 @@
     #include "rdimstyle_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDimStyle*> RDimStyle_Wrapper::basecasters_RDimStyle;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDimStyle

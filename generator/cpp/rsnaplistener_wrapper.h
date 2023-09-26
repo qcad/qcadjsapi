@@ -44,13 +44,22 @@
       
         static RSnapListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSnapListener.length(); i++) {
+            RJSBasecaster_RSnapListener* basecaster = basecasters_RSnapListener[i];
+            RSnapListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSnapListener::getIdStatic()) {
             return (RSnapListener*)vp;
           }
+
+          qWarning() << "RSnapListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -228,6 +237,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSnapListener*> basecasters_RSnapListener;
+
+      public:
+        static void registerBasecaster_RSnapListener(RJSBasecaster_RSnapListener* bc) {
+          basecasters_RSnapListener.append(bc);
+        }
       
     };
 

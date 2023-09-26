@@ -8,6 +8,9 @@
     #include "rmodifyobjectoperation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RModifyObjectOperation*> RModifyObjectOperation_Wrapper::basecasters_RModifyObjectOperation;
+    
     // static functions implementation in singleton wrapper:
     
     void RModifyObjectOperation_Wrapper::init(RJSApi& handler) {

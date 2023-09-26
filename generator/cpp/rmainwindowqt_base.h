@@ -71,6 +71,82 @@ RMainWindowQt_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
+    virtual void mousePressEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void mousePressEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "RMainWindowQt_Base::mousePressEventPublic()";
+      RMainWindowQt::mousePressEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void mouseReleaseEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void mouseReleaseEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "RMainWindowQt_Base::mouseReleaseEventPublic()";
+      RMainWindowQt::mouseReleaseEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void actionEvent(
+      QActionEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void actionEventPublic(
+      QActionEvent* event
+    ) {
+      //qDebug() << "RMainWindowQt_Base::actionEventPublic()";
+      RMainWindowQt::actionEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void contextMenuEvent(
+      QContextMenuEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void contextMenuEventPublic(
+      QContextMenuEvent* event
+    ) {
+      //qDebug() << "RMainWindowQt_Base::contextMenuEventPublic()";
+      RMainWindowQt::contextMenuEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
     virtual void paintEvent(
       QPaintEvent* event
     );

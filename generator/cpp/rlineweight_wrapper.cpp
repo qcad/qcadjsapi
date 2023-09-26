@@ -8,6 +8,9 @@
     #include "rlineweight_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RLineweight*> RLineweight_Wrapper::basecasters_RLineweight;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RLineweight

@@ -40,8 +40,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -1451,7 +1450,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -1474,25 +1472,22 @@
       
         static RPolyline* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RLeaderData::getIdStatic()) {
-              return (RPolyline*)(RLeaderData*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RPolyline.length(); i++) {
+            RJSBasecaster_RPolyline* basecaster = basecasters_RPolyline[i];
+            RPolyline* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RPolylineData::getIdStatic()) {
-              return (RPolyline*)(RPolylineData*)vp;
-            }
-            
-            if (t==RJSType_RSolidData::getIdStatic()) {
-              return (RPolyline*)(RSolidData*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RPolyline::getIdStatic()) {
             return (RPolyline*)vp;
           }
+
+          qWarning() << "RPolyline::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -5647,6 +5642,15 @@ Ray = RPolyline::Ray,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RPolyline*> basecasters_RPolyline;
+
+      public:
+        static void registerBasecaster_RPolyline(RJSBasecaster_RPolyline* bc) {
+          basecasters_RPolyline.append(bc);
+        }
       
     };
 

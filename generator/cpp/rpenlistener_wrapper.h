@@ -42,17 +42,22 @@
       
         static RPenListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RPenListenerAdapter::getIdStatic()) {
-              return (RPenListener*)(RPenListenerAdapter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RPenListener.length(); i++) {
+            RJSBasecaster_RPenListener* basecaster = basecasters_RPenListener[i];
+            RPenListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RPenListener::getIdStatic()) {
             return (RPenListener*)vp;
           }
+
+          qWarning() << "RPenListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -249,6 +254,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RPenListener*> basecasters_RPenListener;
+
+      public:
+        static void registerBasecaster_RPenListener(RJSBasecaster_RPenListener* bc) {
+          basecasters_RPenListener.append(bc);
+        }
       
     };
 

@@ -42,21 +42,22 @@
       
         static RSelectionListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RGuiAction::getIdStatic()) {
-              return (RSelectionListener*)(RGuiAction*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSelectionListener.length(); i++) {
+            RJSBasecaster_RSelectionListener* basecaster = basecasters_RSelectionListener[i];
+            RSelectionListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RSelectionListenerAdapter::getIdStatic()) {
-              return (RSelectionListener*)(RSelectionListenerAdapter*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSelectionListener::getIdStatic()) {
             return (RSelectionListener*)vp;
           }
+
+          qWarning() << "RSelectionListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -234,6 +235,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSelectionListener*> basecasters_RSelectionListener;
+
+      public:
+        static void registerBasecaster_RSelectionListener(RJSBasecaster_RSelectionListener* bc) {
+          basecasters_RSelectionListener.append(bc);
+        }
       
     };
 

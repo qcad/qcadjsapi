@@ -45,13 +45,22 @@
       
         static RRestrictAngleLength* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RRestrictAngleLength.length(); i++) {
+            RJSBasecaster_RRestrictAngleLength* basecaster = basecasters_RRestrictAngleLength[i];
+            RRestrictAngleLength* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RRestrictAngleLength::getIdStatic()) {
             return (RRestrictAngleLength*)vp;
           }
+
+          qWarning() << "RRestrictAngleLength::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -527,6 +536,15 @@ AngleLength = RRestrictAngleLength::AngleLength,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RRestrictAngleLength*> basecasters_RRestrictAngleLength;
+
+      public:
+        static void registerBasecaster_RRestrictAngleLength(RJSBasecaster_RRestrictAngleLength* bc) {
+          basecasters_RRestrictAngleLength.append(bc);
+        }
       
     };
 

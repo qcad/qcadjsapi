@@ -506,13 +506,14 @@ void RScriptHandlerJs::deleteWrapper(RJSWrapperObj* wrapper) {
 void RScriptHandlerJs::init() {
     //static int counter = 0;
 
-    qDebug() << "RScriptHandlerJs::RScriptHandlerJs";
+    qDebug() << "RScriptHandlerJs::init";
 
     // TODO: use QQmlApplicationEngine to allow mixing QML / JS:
     engine = new QJSEngine();
     //engine->setObjectName(QString("E%1").arg(counter++));
 
     rjsapi = new RJSApi(engine);
+    tools = rjsapi->getTools();
 
     qDebug() << "script engine:" << engine->objectName();
 
@@ -1025,7 +1026,8 @@ void RScriptHandlerJs::init() {
     //RHelpBrowser_Wrapper::init(*rjsapi);
 
     // init downcasts:
-    //RJSHelper_qcad::initDowncasts();
+    RJSHelper_qcad::registerDowncasters();
+    RJSHelper_qcad::registerBasecasters();
 
     // give plugins a chance to initialize their script extensions:
     RPluginLoader::initScriptExtensions(*this);
@@ -1049,6 +1051,8 @@ void RScriptHandlerJs::init() {
     }
     */
 
+    //QWidget_Wrapper::registerBasecaster_QWidget(bc);
+
     // eval auto load scripts:
     QStringList files = RAutoLoadJs::getAutoLoadFiles();
     qDebug() << "auto load files:" << files;
@@ -1067,7 +1071,9 @@ void RScriptHandlerJs::init() {
 }
 
 RScriptHandler* RScriptHandlerJs::factory() {
-    return new RScriptHandlerJs();
+    RScriptHandlerJs* ret = new RScriptHandlerJs();
+    //ret->init();
+    return ret;
 }
 
 QList<QString> RScriptHandlerJs::getSupportedFileExtensionsStatic() {

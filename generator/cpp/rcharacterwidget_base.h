@@ -71,6 +71,63 @@ RCharacterWidget_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
+    virtual void mouseReleaseEvent(
+      QMouseEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void mouseReleaseEventPublic(
+      QMouseEvent* event
+    ) {
+      //qDebug() << "RCharacterWidget_Base::mouseReleaseEventPublic()";
+      RCharacterWidget::mouseReleaseEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void resizeEvent(
+      QResizeEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void resizeEventPublic(
+      QResizeEvent* event
+    ) {
+      //qDebug() << "RCharacterWidget_Base::resizeEventPublic()";
+      RCharacterWidget::resizeEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void actionEvent(
+      QActionEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void actionEventPublic(
+      QActionEvent* event
+    ) {
+      //qDebug() << "RCharacterWidget_Base::actionEventPublic()";
+      RCharacterWidget::actionEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
     void mouseMoveEvent(
       QMouseEvent* event
     );

@@ -8,6 +8,9 @@
     #include "rrestrictoff_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RRestrictOff*> RRestrictOff_Wrapper::basecasters_RRestrictOff;
+    
     // static functions implementation in singleton wrapper:
     
     void RRestrictOff_Wrapper::init(RJSApi& handler) {

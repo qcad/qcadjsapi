@@ -8,6 +8,9 @@
     #include "rbox_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RBox*> RBox_Wrapper::basecasters_RBox;
+    
     // static functions implementation in singleton wrapper:
     
 #if QT_VERSION>=0x060000

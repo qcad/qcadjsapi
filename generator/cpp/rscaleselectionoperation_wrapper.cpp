@@ -8,6 +8,9 @@
     #include "rscaleselectionoperation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RScaleSelectionOperation*> RScaleSelectionOperation_Wrapper::basecasters_RScaleSelectionOperation;
+    
     // static functions implementation in singleton wrapper:
     
     void RScaleSelectionOperation_Wrapper::init(RJSApi& handler) {

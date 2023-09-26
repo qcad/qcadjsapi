@@ -327,6 +327,8 @@
 #include "generator/cpp/rorthogrid_wrapper.h"
 #include "generator/cpp/rpainterpath_base.h"
 #include "generator/cpp/rpainterpath_wrapper.h"
+#include "generator/cpp/rpainterpathsource_base.h"
+#include "generator/cpp/rpainterpathsource_wrapper.h"
 #include "generator/cpp/rpalettelistener_base.h"
 #include "generator/cpp/rpalettelistener_wrapper.h"
 #include "generator/cpp/rpalettelisteneradapter_base.h"

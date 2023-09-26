@@ -40,13 +40,22 @@
       
         static RMoveSelectionOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RMoveSelectionOperation.length(); i++) {
+            RJSBasecaster_RMoveSelectionOperation* basecaster = basecasters_RMoveSelectionOperation[i];
+            RMoveSelectionOperation* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RMoveSelectionOperation::getIdStatic()) {
             return (RMoveSelectionOperation*)vp;
           }
+
+          qWarning() << "RMoveSelectionOperation::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -556,6 +565,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RMoveSelectionOperation*> basecasters_RMoveSelectionOperation;
+
+      public:
+        static void registerBasecaster_RMoveSelectionOperation(RJSBasecaster_RMoveSelectionOperation* bc) {
+          basecasters_RMoveSelectionOperation.append(bc);
+        }
       
     };
 

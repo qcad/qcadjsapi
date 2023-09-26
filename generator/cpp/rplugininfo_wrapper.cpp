@@ -8,6 +8,9 @@
     #include "rplugininfo_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPluginInfo*> RPluginInfo_Wrapper::basecasters_RPluginInfo;
+    
     // static functions implementation in singleton wrapper:
     
     void RPluginInfo_Wrapper::init(RJSApi& handler) {

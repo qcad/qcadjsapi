@@ -132,6 +132,146 @@
       // static functions:
       
 
+        // static function 
+        RTransform.squareToQuad = function() 
+          
+        {
+          //print("JS: RTransform.squareToQuad");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RTransform_WrapperSingletonInstance.squareToQuad(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RTransform);
+  }
+
+  
+  else {
+    
+        print("RTransform.squareToQuad(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RTransform.quadToSquare = function() 
+          
+        {
+          //print("JS: RTransform.quadToSquare");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RTransform_WrapperSingletonInstance.quadToSquare(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RTransform);
+  }
+
+  
+  else {
+    
+        print("RTransform.quadToSquare(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RTransform.quadToQuad = function() 
+          
+        {
+          //print("JS: RTransform.quadToQuad");
+          
+      if (arguments.length == 3) {
+    
+                // calling static wrapper:
+                return RTransform_WrapperSingletonInstance.quadToQuad(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RTransform);
+  }
+
+  
+  else {
+    
+        print("RTransform.quadToQuad(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RTransform.fromTranslate = function() 
+          
+        {
+          //print("JS: RTransform.fromTranslate");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RTransform_WrapperSingletonInstance.fromTranslate(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RTransform);
+  }
+
+  
+  else {
+    
+        print("RTransform.fromTranslate(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RTransform.fromScale = function() 
+          
+        {
+          //print("JS: RTransform.fromScale");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RTransform_WrapperSingletonInstance.fromScale(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RTransform);
+  }
+
+  
+  else {
+    
+        print("RTransform.fromScale(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

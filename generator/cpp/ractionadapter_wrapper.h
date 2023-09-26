@@ -69,13 +69,22 @@
       
         static RActionAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RActionAdapter.length(); i++) {
+            RJSBasecaster_RActionAdapter* basecaster = basecasters_RActionAdapter[i];
+            RActionAdapter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RActionAdapter::getIdStatic()) {
             return (RActionAdapter*)vp;
           }
+
+          qWarning() << "RActionAdapter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -1406,6 +1415,15 @@ PickingDisabled = RActionAdapter::PickingDisabled,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RActionAdapter*> basecasters_RActionAdapter;
+
+      public:
+        static void registerBasecaster_RActionAdapter(RJSBasecaster_RActionAdapter* bc) {
+          basecasters_RActionAdapter.append(bc);
+        }
       
     };
 

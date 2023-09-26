@@ -44,8 +44,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
@@ -190,7 +189,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -213,13 +211,22 @@
       
         static RPainterPath* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RPainterPath.length(); i++) {
+            RJSBasecaster_RPainterPath* basecaster = basecasters_RPainterPath[i];
+            RPainterPath* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RPainterPath::getIdStatic()) {
             return (RPainterPath*)vp;
           }
+
+          qWarning() << "RPainterPath::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -239,6 +246,17 @@
           return ret;
         }
       
+        // enums:
+        
+  enum ElementType {
+    MoveToElement = RPainterPath::MoveToElement,
+LineToElement = RPainterPath::LineToElement,
+CurveToElement = RPainterPath::CurveToElement,
+CurveToDataElement = RPainterPath::CurveToDataElement,
+
+  };
+  Q_ENUM(ElementType)
+
     /*
     // special constructor used as prototype:
     
@@ -295,6 +313,938 @@
 
     // non-static functions:
     
+    // Class: RPainterPath
+    // Function: swap
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  swap
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: clear
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clear
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: reserve
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  reserve
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: capacity
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  capacity
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: arcMoveTo
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 5
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  arcMoveTo
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: arcTo
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 6
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  arcTo
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a6
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: currentPosition
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  currentPosition
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: addEllipse
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addEllipse
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: addPolygon
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addPolygon
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: addText
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: addRegion
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addRegion
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: addRoundedRect
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 7
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addRoundedRect
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a6
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a7
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: connectPath
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  connectPath
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: contains
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  contains
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: intersects
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  intersects
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: translate
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  translate
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: translated
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  translated
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: boundingRect
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  boundingRect
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: controlPointRect
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  controlPointRect
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: fillRule
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  fillRule
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: setFillRule
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setFillRule
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: toReversed
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toReversed
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: toSubpathPolygons
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toSubpathPolygons
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: toFillPolygons
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toFillPolygons
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: toFillPolygon
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toFillPolygon
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: elementCount
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  elementCount
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: setElementPositionAt
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setElementPositionAt
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: length
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  length
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: percentAtLength
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  percentAtLength
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: pointAtPercent
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  pointAtPercent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: angleAtPercent
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  angleAtPercent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: slopeAtPercent
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  slopeAtPercent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: united
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  united
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: intersected
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  intersected
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: subtracted
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  subtracted
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPainterPath
+    // Function: simplified
+    // Source: QPainterPath
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  simplified
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
     // Class: RPainterPath
     // Function: setPath
     // Source: 
@@ -2397,6 +3347,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RPainterPath*> basecasters_RPainterPath;
+
+      public:
+        static void registerBasecaster_RPainterPath(RJSBasecaster_RPainterPath* bc) {
+          basecasters_RPainterPath.append(bc);
+        }
       
     };
 

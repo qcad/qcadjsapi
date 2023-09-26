@@ -8,6 +8,9 @@
     #include "rsnapintersection_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSnapIntersection*> RSnapIntersection_Wrapper::basecasters_RSnapIntersection;
+    
     // static functions implementation in singleton wrapper:
     
     void RSnapIntersection_Wrapper::init(RJSApi& handler) {

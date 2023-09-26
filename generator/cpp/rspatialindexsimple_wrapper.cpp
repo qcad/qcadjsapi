@@ -8,6 +8,9 @@
     #include "rspatialindexsimple_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSpatialIndexSimple*> RSpatialIndexSimple_Wrapper::basecasters_RSpatialIndexSimple;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RSpatialIndexSimple

@@ -8,6 +8,9 @@
     #include "rvector_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RVector*> RVector_Wrapper::basecasters_RVector;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RVector

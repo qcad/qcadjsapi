@@ -8,6 +8,9 @@
     #include "rfont_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RFont*> RFont_Wrapper::basecasters_RFont;
+    
     // static functions implementation in singleton wrapper:
     
     void RFont_Wrapper::init(RJSApi& handler) {

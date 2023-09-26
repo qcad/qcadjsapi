@@ -8,6 +8,9 @@
     #include "rdeleteobjectsoperation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDeleteObjectsOperation*> RDeleteObjectsOperation_Wrapper::basecasters_RDeleteObjectsOperation;
+    
     // static functions implementation in singleton wrapper:
     
     void RDeleteObjectsOperation_Wrapper::init(RJSApi& handler) {

@@ -8,6 +8,9 @@
     #include "rpointentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPointEntity*> RPointEntity_Wrapper::basecasters_RPointEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RPointEntity

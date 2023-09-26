@@ -8,6 +8,9 @@
     #include "rsnaptangential_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RSnapTangential*> RSnapTangential_Wrapper::basecasters_RSnapTangential;
+    
     // static functions implementation in singleton wrapper:
     
     void RSnapTangential_Wrapper::init(RJSApi& handler) {

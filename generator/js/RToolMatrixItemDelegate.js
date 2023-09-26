@@ -86,6 +86,12 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["commitData(QWidget*)"] = Object.getPrototypeOf(this).commitData;
+  
+    this["closeEditor(QWidget*,QAbstractItemDelegate::EndEditHint)"] = Object.getPrototypeOf(this).closeEditor;
+  
+    this["sizeHintChanged(QModelIndex)"] = Object.getPrototypeOf(this).sizeHintChanged;
+  
           }
         }
       }
@@ -133,11 +139,47 @@
 
       // enum values:
       
+  // enum: EndEditHint
+RToolMatrixItemDelegate.NoHint = RToolMatrixItemDelegate_Wrapper.NoHint;
+RToolMatrixItemDelegate.EditNextItem = RToolMatrixItemDelegate_Wrapper.EditNextItem;
+RToolMatrixItemDelegate.EditPreviousItem = RToolMatrixItemDelegate_Wrapper.EditPreviousItem;
+RToolMatrixItemDelegate.SubmitModelCache = RToolMatrixItemDelegate_Wrapper.SubmitModelCache;
+RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.RevertModelCache;
+
 
       // functions:
       
 
       // static functions:
+      
+
+        // static function 
+        RToolMatrixItemDelegate.tr = function() 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RToolMatrixItemDelegate_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RToolMatrixItemDelegate);
+  }
+
+  
+  else {
+    
+        print("RToolMatrixItemDelegate.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

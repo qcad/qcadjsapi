@@ -45,65 +45,22 @@
       
         static RSnap* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RSnapAuto::getIdStatic()) {
-              return (RSnap*)(RSnapAuto*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RSnap.length(); i++) {
+            RJSBasecaster_RSnap* basecaster = basecasters_RSnap[i];
+            RSnap* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RSnapCenter::getIdStatic()) {
-              return (RSnap*)(RSnapCenter*)vp;
-            }
-            
-            if (t==RJSType_RSnapDistance::getIdStatic()) {
-              return (RSnap*)(RSnapDistance*)vp;
-            }
-            
-            if (t==RJSType_RSnapEnd::getIdStatic()) {
-              return (RSnap*)(RSnapEnd*)vp;
-            }
-            
-            if (t==RJSType_RSnapEntityBase::getIdStatic()) {
-              return (RSnap*)(RSnapEntityBase*)vp;
-            }
-            
-            if (t==RJSType_RSnapFree::getIdStatic()) {
-              return (RSnap*)(RSnapFree*)vp;
-            }
-            
-            if (t==RJSType_RSnapGrid::getIdStatic()) {
-              return (RSnap*)(RSnapGrid*)vp;
-            }
-            
-            if (t==RJSType_RSnapIntersection::getIdStatic()) {
-              return (RSnap*)(RSnapIntersection*)vp;
-            }
-            
-            if (t==RJSType_RSnapMiddle::getIdStatic()) {
-              return (RSnap*)(RSnapMiddle*)vp;
-            }
-            
-            if (t==RJSType_RSnapOnEntity::getIdStatic()) {
-              return (RSnap*)(RSnapOnEntity*)vp;
-            }
-            
-            if (t==RJSType_RSnapPerpendicular::getIdStatic()) {
-              return (RSnap*)(RSnapPerpendicular*)vp;
-            }
-            
-            if (t==RJSType_RSnapReference::getIdStatic()) {
-              return (RSnap*)(RSnapReference*)vp;
-            }
-            
-            if (t==RJSType_RSnapTangential::getIdStatic()) {
-              return (RSnap*)(RSnapTangential*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RSnap::getIdStatic()) {
             return (RSnap*)vp;
           }
+
+          qWarning() << "RSnap::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -561,6 +518,15 @@ CoordinatePolar = RSnap::CoordinatePolar,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RSnap*> basecasters_RSnap;
+
+      public:
+        static void registerBasecaster_RSnap(RJSBasecaster_RSnap* bc) {
+          basecasters_RSnap.append(bc);
+        }
       
     };
 

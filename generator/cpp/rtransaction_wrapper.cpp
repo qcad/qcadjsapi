@@ -8,6 +8,9 @@
     #include "rtransaction_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RTransaction*> RTransaction_Wrapper::basecasters_RTransaction;
+    
     // static functions implementation in singleton wrapper:
     
     void RTransaction_Wrapper::init(RJSApi& handler) {

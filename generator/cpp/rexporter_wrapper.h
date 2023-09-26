@@ -74,29 +74,22 @@
       
         static RExporter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RFileExporter::getIdStatic()) {
-              return (RExporter*)(RFileExporter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RExporter.length(); i++) {
+            RJSBasecaster_RExporter* basecaster = basecasters_RExporter[i];
+            RExporter* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RFileExporterAdapter::getIdStatic()) {
-              return (RExporter*)(RFileExporterAdapter*)vp;
-            }
-            
-            if (t==RJSType_RGraphicsScene::getIdStatic()) {
-              return (RExporter*)(RGraphicsScene*)vp;
-            }
-            
-            if (t==RJSType_RGraphicsSceneQt::getIdStatic()) {
-              return (RExporter*)(RGraphicsSceneQt*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RExporter::getIdStatic()) {
             return (RExporter*)vp;
           }
+
+          qWarning() << "RExporter::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2062,6 +2055,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RExporter*> basecasters_RExporter;
+
+      public:
+        static void registerBasecaster_RExporter(RJSBasecaster_RExporter* bc) {
+          basecasters_RExporter.append(bc);
+        }
       
     };
 

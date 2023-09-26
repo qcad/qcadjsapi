@@ -54,17 +54,22 @@
       
         static RGraphicsView* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RGraphicsViewImage::getIdStatic()) {
-              return (RGraphicsView*)(RGraphicsViewImage*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RGraphicsView.length(); i++) {
+            RJSBasecaster_RGraphicsView* basecaster = basecasters_RGraphicsView[i];
+            RGraphicsView* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RGraphicsView::getIdStatic()) {
             return (RGraphicsView*)vp;
           }
+
+          qWarning() << "RGraphicsView::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2632,6 +2637,15 @@ BlackWhite = RGraphicsView::BlackWhite,
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RGraphicsView*> basecasters_RGraphicsView;
+
+      public:
+        static void registerBasecaster_RGraphicsView(RJSBasecaster_RGraphicsView* bc) {
+          basecasters_RGraphicsView.append(bc);
+        }
       
     };
 

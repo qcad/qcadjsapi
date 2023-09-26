@@ -8,6 +8,9 @@
     #include "rpropertyattributes_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RPropertyAttributes*> RPropertyAttributes_Wrapper::basecasters_RPropertyAttributes;
+    
     // static functions implementation in singleton wrapper:
     
     void RPropertyAttributes_Wrapper::init(RJSApi& handler) {

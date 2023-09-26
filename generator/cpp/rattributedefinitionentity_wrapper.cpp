@@ -8,6 +8,9 @@
     #include "rattributedefinitionentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RAttributeDefinitionEntity*> RAttributeDefinitionEntity_Wrapper::basecasters_RAttributeDefinitionEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RAttributeDefinitionEntity

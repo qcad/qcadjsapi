@@ -42,17 +42,22 @@
       
         static RBlockListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RBlockListenerAdapter::getIdStatic()) {
-              return (RBlockListener*)(RBlockListenerAdapter*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RBlockListener.length(); i++) {
+            RJSBasecaster_RBlockListener* basecaster = basecasters_RBlockListener[i];
+            RBlockListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RBlockListener::getIdStatic()) {
             return (RBlockListener*)vp;
           }
+
+          qWarning() << "RBlockListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -272,6 +277,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RBlockListener*> basecasters_RBlockListener;
+
+      public:
+        static void registerBasecaster_RBlockListener(RJSBasecaster_RBlockListener* bc) {
+          basecasters_RBlockListener.append(bc);
+        }
       
     };
 

@@ -44,13 +44,22 @@
       
         static RNewDocumentListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RNewDocumentListener.length(); i++) {
+            RJSBasecaster_RNewDocumentListener* basecaster = basecasters_RNewDocumentListener[i];
+            RNewDocumentListener* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RNewDocumentListener::getIdStatic()) {
             return (RNewDocumentListener*)vp;
           }
+
+          qWarning() << "RNewDocumentListener::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -236,6 +245,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RNewDocumentListener*> basecasters_RNewDocumentListener;
+
+      public:
+        static void registerBasecaster_RNewDocumentListener(RJSBasecaster_RNewDocumentListener* bc) {
+          basecasters_RNewDocumentListener.append(bc);
+        }
       
     };
 

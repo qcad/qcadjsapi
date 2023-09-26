@@ -42,21 +42,22 @@
       
         static RRestrictOrthogonal* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RRestrictHorizontal::getIdStatic()) {
-              return (RRestrictOrthogonal*)(RRestrictHorizontal*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RRestrictOrthogonal.length(); i++) {
+            RJSBasecaster_RRestrictOrthogonal* basecaster = basecasters_RRestrictOrthogonal[i];
+            RRestrictOrthogonal* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RRestrictVertical::getIdStatic()) {
-              return (RRestrictOrthogonal*)(RRestrictVertical*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RRestrictOrthogonal::getIdStatic()) {
             return (RRestrictOrthogonal*)vp;
           }
+
+          qWarning() << "RRestrictOrthogonal::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -349,6 +350,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RRestrictOrthogonal*> basecasters_RRestrictOrthogonal;
+
+      public:
+        static void registerBasecaster_RRestrictOrthogonal(RJSBasecaster_RRestrictOrthogonal* bc) {
+          basecasters_RRestrictOrthogonal.append(bc);
+        }
       
     };
 

@@ -376,8 +376,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property INVALID_ID:
@@ -785,7 +784,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -808,25 +806,22 @@
       
         static RTextBasedEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RAttributeDefinitionEntity::getIdStatic()) {
-              return (RTextBasedEntity*)(RAttributeDefinitionEntity*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RTextBasedEntity.length(); i++) {
+            RJSBasecaster_RTextBasedEntity* basecaster = basecasters_RTextBasedEntity[i];
+            RTextBasedEntity* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RAttributeEntity::getIdStatic()) {
-              return (RTextBasedEntity*)(RAttributeEntity*)vp;
-            }
-            
-            if (t==RJSType_RTextEntity::getIdStatic()) {
-              return (RTextBasedEntity*)(RTextEntity*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RTextBasedEntity::getIdStatic()) {
             return (RTextBasedEntity*)vp;
           }
+
+          qWarning() << "RTextBasedEntity::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -4755,6 +4750,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RTextBasedEntity*> basecasters_RTextBasedEntity;
+
+      public:
+        static void registerBasecaster_RTextBasedEntity(RJSBasecaster_RTextBasedEntity* bc) {
+          basecasters_RTextBasedEntity.append(bc);
+        }
       
     };
 

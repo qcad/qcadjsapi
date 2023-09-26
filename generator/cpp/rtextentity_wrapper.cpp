@@ -8,6 +8,9 @@
     #include "rtextentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RTextEntity*> RTextEntity_Wrapper::basecasters_RTextEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RTextEntity

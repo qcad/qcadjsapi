@@ -8,6 +8,9 @@
     #include "rfileimporterfactoryadapter_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RFileImporterFactoryAdapter*> RFileImporterFactoryAdapter_Wrapper::basecasters_RFileImporterFactoryAdapter;
+    
     // static functions implementation in singleton wrapper:
     
     void RFileImporterFactoryAdapter_Wrapper::init(RJSApi& handler) {

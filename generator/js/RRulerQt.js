@@ -87,6 +87,8 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+  
           }
         }
       }
@@ -149,8 +151,152 @@
 
       // functions:
       
+        // function 
+        RRulerQt.prototype.actionEvent = function() 
+          
+        {
+          //print("JS: RRulerQt.prototype.actionEvent");
+          
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.actionEvent(
+                // call highest level JS implementation:
+                //return this.actionEventBase(
+                return this.actionEventSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RRulerQt);
+  }
+
+  
+  else {
+    
+        print("RRulerQt.actionEvent(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
 
       // static functions:
+      
+
+        // static function 
+        RRulerQt.tr = function() 
+          
+        {
+          //print("JS: RRulerQt.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RRulerQt_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RRulerQt);
+  }
+
+  
+  else {
+    
+        print("RRulerQt.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RRulerQt.setTabOrder = function() 
+          
+        {
+          //print("JS: RRulerQt.setTabOrder");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RRulerQt_WrapperSingletonInstance.setTabOrder(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RRulerQt);
+  }
+
+  
+  else {
+    
+        print("RRulerQt.setTabOrder(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RRulerQt.mouseGrabber = function() 
+          
+        {
+          //print("JS: RRulerQt.mouseGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RRulerQt_WrapperSingletonInstance.mouseGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RRulerQt);
+  }
+
+  
+  else {
+    
+        print("RRulerQt.mouseGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RRulerQt.keyboardGrabber = function() 
+          
+        {
+          //print("JS: RRulerQt.keyboardGrabber");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RRulerQt_WrapperSingletonInstance.keyboardGrabber(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RRulerQt);
+  }
+
+  
+  else {
+    
+        print("RRulerQt.keyboardGrabber(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
       // constants:

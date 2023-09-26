@@ -8,6 +8,9 @@
     #include "rdxfservices_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RDxfServices*> RDxfServices_Wrapper::basecasters_RDxfServices;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RDxfServices

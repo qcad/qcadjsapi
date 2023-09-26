@@ -68,8 +68,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property invalid:
@@ -877,7 +876,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -924,17 +922,22 @@
       
         static RVector* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RRefPoint::getIdStatic()) {
-              return (RVector*)(RRefPoint*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RVector.length(); i++) {
+            RJSBasecaster_RVector* basecaster = basecasters_RVector[i];
+            RVector* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_RVector::getIdStatic()) {
             return (RVector*)vp;
           }
+
+          qWarning() << "RVector::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -2935,6 +2938,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RVector*> basecasters_RVector;
+
+      public:
+        static void registerBasecaster_RVector(RJSBasecaster_RVector* bc) {
+          basecasters_RVector.append(bc);
+        }
       
     };
 

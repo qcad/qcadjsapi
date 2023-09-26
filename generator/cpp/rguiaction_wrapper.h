@@ -42,13 +42,43 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
 
       // static functions:
       
+    // Class: RGuiAction
+    // Function: tr
+    // Source: QObject
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tr
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
     // Class: RGuiAction
     // Function: formatToolTip
     // Source: 
@@ -672,7 +702,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -683,6 +712,120 @@
       Q_OBJECT
       QML_INTERFACE
     
+  Q_PROPERTY(
+    
+    QJSValue
+     objectName READ objectName WRITE setObjectName
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     checkable READ isCheckable WRITE setCheckable
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     checked READ isChecked WRITE setChecked
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     enabled READ isEnabled WRITE setEnabled
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     icon READ icon WRITE setIcon
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     text READ text WRITE setText
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     iconText READ iconText WRITE setIconText
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     toolTip READ toolTip WRITE setToolTip
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     statusTip READ statusTip WRITE setStatusTip
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     whatsThis READ whatsThis WRITE setWhatsThis
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     font READ font WRITE setFont
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     shortcut READ shortcut WRITE setShortcut
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     shortcutContext READ shortcutContext WRITE setShortcutContext
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     autoRepeat READ autoRepeat WRITE setAutoRepeat
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     visible READ isVisible WRITE setVisible
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     menuRole READ menuRole WRITE setMenuRole
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     iconVisibleInMenu READ isIconVisibleInMenu WRITE setIconVisibleInMenu
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     shortcutVisibleInContextMenu READ isShortcutVisibleInContextMenu WRITE setShortcutVisibleInContextMenu
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     priority READ priority WRITE setPriority
+  )
+
 
     private:
       // disable copy constructor:
@@ -695,13 +838,22 @@
       
         static RGuiAction* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_RGuiAction.length(); i++) {
+            RJSBasecaster_RGuiAction* basecaster = basecasters_RGuiAction[i];
+            RGuiAction* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
+            }
+          }
 
           // pointer to desired type:
           if (t==RJSType_RGuiAction::getIdStatic()) {
             return (RGuiAction*)vp;
           }
+
+          qWarning() << "RGuiAction::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -721,6 +873,28 @@
           return ret;
         }
       
+        // enums:
+        
+  enum MenuRole {
+    NoRole = RGuiAction::NoRole,
+TextHeuristicRole = RGuiAction::TextHeuristicRole,
+ApplicationSpecificRole = RGuiAction::ApplicationSpecificRole,
+AboutQtRole = RGuiAction::AboutQtRole,
+AboutRole = RGuiAction::AboutRole,
+PreferencesRole = RGuiAction::PreferencesRole,
+QuitRole = RGuiAction::QuitRole,
+
+  };
+  Q_ENUM(MenuRole)
+
+  enum Priority {
+    LowPriority = RGuiAction::LowPriority,
+NormalPriority = RGuiAction::NormalPriority,
+HighPriority = RGuiAction::HighPriority,
+
+  };
+  Q_ENUM(Priority)
+
     /*
     // special constructor used as prototype:
     
@@ -781,6 +955,1373 @@
 
     // non-static functions:
     
+    // Class: RGuiAction
+    // Function: objectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  objectName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setObjectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setObjectName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: isWidgetType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWidgetType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: isWindowType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWindowType
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: signalsBlocked
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  signalsBlocked
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: blockSignals
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  blockSignals
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: findChild
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  findChild
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: children
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  children
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setParent
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setParent
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: installEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  installEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: removeEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeEventFilter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: dumpObjectTree
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectTree
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: dumpObjectInfo
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dumpObjectInfo
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setProperty
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setProperty
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: property
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  property
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: dynamicPropertyNames
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dynamicPropertyNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: parent
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  parent
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: deleteLater
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  deleteLater
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: associatedObjects
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  associatedObjects
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: icon
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  icon
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: text
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  text
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setIconText
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setIconText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: iconText
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  iconText
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: toolTip
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toolTip
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: statusTip
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  statusTip
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setWhatsThis
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setWhatsThis
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: whatsThis
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  whatsThis
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setPriority
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setPriority
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: priority
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  priority
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: menu
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  menu
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setMenu
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setMenu
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setSeparator
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setSeparator
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: isSeparator
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSeparator
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: shortcut
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  shortcut
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: shortcuts
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  shortcuts
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setShortcutContext
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setShortcutContext
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: shortcutContext
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  shortcutContext
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setAutoRepeat
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setAutoRepeat
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: autoRepeat
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  autoRepeat
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setFont
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setFont
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: font
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  font
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setCheckable
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCheckable
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: isCheckable
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isCheckable
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: data
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  data
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setData
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: isEnabled
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isEnabled
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: isVisible
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isVisible
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: showStatusText
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  showStatusText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setMenuRole
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setMenuRole
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: menuRole
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  menuRole
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setIconVisibleInMenu
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setIconVisibleInMenu
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: isIconVisibleInMenu
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isIconVisibleInMenu
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setShortcutVisibleInContextMenu
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setShortcutVisibleInContextMenu
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: isShortcutVisibleInContextMenu
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isShortcutVisibleInContextMenu
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: trigger
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  trigger
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: hover
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  hover
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: toggle
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toggle
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setDisabled
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDisabled
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: setVisible
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setVisible
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGuiAction
+    // Function: changed
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void changed(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void changedEmitter(
+                
+              );
+            
+    // Class: RGuiAction
+    // Function: triggered
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void triggered(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void triggeredEmitter(
+                bool checked=false
+              );
+            
+    // Class: RGuiAction
+    // Function: hovered
+    // Source: QAction
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void hovered(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void hoveredEmitter(
+                
+              );
+            
+    // Class: RGuiAction
+    // Function: toggled
+    // Source: QAction
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void toggled(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void toggledEmitter(
+                bool a1
+              );
+            
     // Class: RGuiAction
     // Function: setText
     // Source: 
@@ -2598,6 +4139,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_RGuiAction*> basecasters_RGuiAction;
+
+      public:
+        static void registerBasecaster_RGuiAction(RJSBasecaster_RGuiAction* bc) {
+          basecasters_RGuiAction.append(bc);
+        }
       
     };
 

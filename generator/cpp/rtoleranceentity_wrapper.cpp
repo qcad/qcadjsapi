@@ -8,6 +8,9 @@
     #include "rtoleranceentity_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RToleranceEntity*> RToleranceEntity_Wrapper::basecasters_RToleranceEntity;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: RToleranceEntity

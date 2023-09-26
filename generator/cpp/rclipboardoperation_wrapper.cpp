@@ -8,6 +8,9 @@
     #include "rclipboardoperation_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RClipboardOperation*> RClipboardOperation_Wrapper::basecasters_RClipboardOperation;
+    
     // static functions implementation in singleton wrapper:
     
     void RClipboardOperation_Wrapper::init(RJSApi& handler) {

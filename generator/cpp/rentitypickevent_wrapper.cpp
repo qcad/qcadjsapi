@@ -8,6 +8,9 @@
     #include "rentitypickevent_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_REntityPickEvent*> REntityPickEvent_Wrapper::basecasters_REntityPickEvent;
+    
     // static functions implementation in singleton wrapper:
     
     void REntityPickEvent_Wrapper::init(RJSApi& handler) {

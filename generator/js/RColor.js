@@ -218,6 +218,303 @@ RColor.Fixed = RColor_Wrapper.Fixed;
       
 
         // static function 
+        RColor.colorNames = function() 
+          
+        {
+          //print("JS: RColor.colorNames");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.colorNames(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.colorNames(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.fromRgb = function() 
+          
+        {
+          //print("JS: RColor.fromRgb");
+          
+      if (arguments.length >= 3 &&
+          arguments.length <= 4) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.fromRgb(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.fromRgb(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.fromRgbF = function() 
+          
+        {
+          //print("JS: RColor.fromRgbF");
+          
+      if (arguments.length >= 3 &&
+          arguments.length <= 4) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.fromRgbF(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.fromRgbF(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.fromHsv = function() 
+          
+        {
+          //print("JS: RColor.fromHsv");
+          
+      if (arguments.length >= 3 &&
+          arguments.length <= 4) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.fromHsv(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.fromHsv(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.fromHsvF = function() 
+          
+        {
+          //print("JS: RColor.fromHsvF");
+          
+      if (arguments.length >= 3 &&
+          arguments.length <= 4) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.fromHsvF(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.fromHsvF(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.fromCmyk = function() 
+          
+        {
+          //print("JS: RColor.fromCmyk");
+          
+      if (arguments.length >= 4 &&
+          arguments.length <= 5) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.fromCmyk(
+                  arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.fromCmyk(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.fromCmykF = function() 
+          
+        {
+          //print("JS: RColor.fromCmykF");
+          
+      if (arguments.length >= 4 &&
+          arguments.length <= 5) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.fromCmykF(
+                  arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.fromCmykF(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.fromHsl = function() 
+          
+        {
+          //print("JS: RColor.fromHsl");
+          
+      if (arguments.length >= 3 &&
+          arguments.length <= 4) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.fromHsl(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.fromHsl(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.fromHslF = function() 
+          
+        {
+          //print("JS: RColor.fromHslF");
+          
+      if (arguments.length >= 3 &&
+          arguments.length <= 4) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.fromHslF(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.fromHslF(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.isValidColor = function() 
+          
+        {
+          //print("JS: RColor.isValidColor");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RColor_WrapperSingletonInstance.isValidColor(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RColor);
+  }
+
+  
+  else {
+    
+        print("RColor.isValidColor(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RColor.isRgbaValid = function() 
+          
+        {
+          //print("JS: RColor.isRgbaValid");
+          
+        };
+      
+
+        // static function 
         RColor.removeColor = function() 
           
         {

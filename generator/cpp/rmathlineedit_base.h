@@ -64,6 +64,82 @@ RMathLineEdit_Base
     
       // protected overwritten functions / events and their public invokable counterparts:
       
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void resizeEvent(
+      QResizeEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void resizeEventPublic(
+      QResizeEvent* event
+    ) {
+      //qDebug() << "RMathLineEdit_Base::resizeEventPublic()";
+      RMathLineEdit::resizeEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual void actionEvent(
+      QActionEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual void actionEventPublic(
+      QActionEvent* event
+    ) {
+      //qDebug() << "RMathLineEdit_Base::actionEventPublic()";
+      RMathLineEdit::actionEvent(
+        event
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void mouseMoveEvent(
+      QMouseEvent* a1
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void mouseMoveEventPublic(
+      QMouseEvent* a1
+    ) {
+      //qDebug() << "RMathLineEdit_Base::mouseMoveEventPublic()";
+      RMathLineEdit::mouseMoveEvent(
+        a1
+      );
+    }
+  
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    void paintEvent(
+      QPaintEvent* a1
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE void paintEventPublic(
+      QPaintEvent* a1
+    ) {
+      //qDebug() << "RMathLineEdit_Base::paintEventPublic()";
+      RMathLineEdit::paintEvent(
+        a1
+      );
+    }
+  
 
       // public virtual overwritten functions / events:
       

@@ -238,8 +238,7 @@
         : QObject(), 
           handler(h)
           
-          {
-      }
+          {}
 
       
   // auto generated read function for public static property INVALID_ID:
@@ -557,7 +556,6 @@
           // constants:
           
       };
-
     
     // static functions implementation in singleton wrapper:
     
@@ -580,145 +578,22 @@
       
         static REntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
-          // check if pointer points to derrived type:
-          
-            if (t==RJSType_RArcEntity::getIdStatic()) {
-              return (REntity*)(RArcEntity*)vp;
+
+          // hook for modules to cast to other base types:
+          for (int i=0; i<basecasters_REntity.length(); i++) {
+            RJSBasecaster_REntity* basecaster = basecasters_REntity[i];
+            REntity* ret = basecaster->castToBase(t, vp);
+            if (ret!=nullptr) {
+              return ret;
             }
-            
-            if (t==RJSType_RAttributeDefinitionEntity::getIdStatic()) {
-              return (REntity*)(RAttributeDefinitionEntity*)vp;
-            }
-            
-            if (t==RJSType_RAttributeEntity::getIdStatic()) {
-              return (REntity*)(RAttributeEntity*)vp;
-            }
-            
-            if (t==RJSType_RBlockReferenceEntity::getIdStatic()) {
-              return (REntity*)(RBlockReferenceEntity*)vp;
-            }
-            
-            if (t==RJSType_RCircleEntity::getIdStatic()) {
-              return (REntity*)(RCircleEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
-              return (REntity*)(RDimAlignedEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
-              return (REntity*)(RDimAngular2LEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
-              return (REntity*)(RDimAngular3PEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimAngularEntity::getIdStatic()) {
-              return (REntity*)(RDimAngularEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
-              return (REntity*)(RDimArcLengthEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimDiametricEntity::getIdStatic()) {
-              return (REntity*)(RDimDiametricEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimLinearEntity::getIdStatic()) {
-              return (REntity*)(RDimLinearEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimOrdinateEntity::getIdStatic()) {
-              return (REntity*)(RDimOrdinateEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimRadialEntity::getIdStatic()) {
-              return (REntity*)(RDimRadialEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
-              return (REntity*)(RDimRotatedEntity*)vp;
-            }
-            
-            if (t==RJSType_RDimensionEntity::getIdStatic()) {
-              return (REntity*)(RDimensionEntity*)vp;
-            }
-            
-            if (t==RJSType_REllipseEntity::getIdStatic()) {
-              return (REntity*)(REllipseEntity*)vp;
-            }
-            
-            if (t==RJSType_RFaceEntity::getIdStatic()) {
-              return (REntity*)(RFaceEntity*)vp;
-            }
-            
-            if (t==RJSType_RHatchEntity::getIdStatic()) {
-              return (REntity*)(RHatchEntity*)vp;
-            }
-            
-            if (t==RJSType_RImageEntity::getIdStatic()) {
-              return (REntity*)(RImageEntity*)vp;
-            }
-            
-            if (t==RJSType_RLeaderEntity::getIdStatic()) {
-              return (REntity*)(RLeaderEntity*)vp;
-            }
-            
-            if (t==RJSType_RLineEntity::getIdStatic()) {
-              return (REntity*)(RLineEntity*)vp;
-            }
-            
-            if (t==RJSType_RPointEntity::getIdStatic()) {
-              return (REntity*)(RPointEntity*)vp;
-            }
-            
-            if (t==RJSType_RPolylineEntity::getIdStatic()) {
-              return (REntity*)(RPolylineEntity*)vp;
-            }
-            
-            if (t==RJSType_RRayEntity::getIdStatic()) {
-              return (REntity*)(RRayEntity*)vp;
-            }
-            
-            if (t==RJSType_RSolidEntity::getIdStatic()) {
-              return (REntity*)(RSolidEntity*)vp;
-            }
-            
-            if (t==RJSType_RSplineEntity::getIdStatic()) {
-              return (REntity*)(RSplineEntity*)vp;
-            }
-            
-            if (t==RJSType_RTextBasedEntity::getIdStatic()) {
-              return (REntity*)(RTextBasedEntity*)vp;
-            }
-            
-            if (t==RJSType_RTextEntity::getIdStatic()) {
-              return (REntity*)(RTextEntity*)vp;
-            }
-            
-            if (t==RJSType_RToleranceEntity::getIdStatic()) {
-              return (REntity*)(RToleranceEntity*)vp;
-            }
-            
-            if (t==RJSType_RTraceEntity::getIdStatic()) {
-              return (REntity*)(RTraceEntity*)vp;
-            }
-            
-            if (t==RJSType_RViewportEntity::getIdStatic()) {
-              return (REntity*)(RViewportEntity*)vp;
-            }
-            
-            if (t==RJSType_RXLineEntity::getIdStatic()) {
-              return (REntity*)(RXLineEntity*)vp;
-            }
-            
+          }
 
           // pointer to desired type:
           if (t==RJSType_REntity::getIdStatic()) {
             return (REntity*)vp;
           }
+
+          qWarning() << "REntity::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
@@ -3683,6 +3558,15 @@
         
 
         bool wrappedCreated;
+      
+      private:
+        // list of registered base casters for this wrapper class:
+        static QList<RJSBasecaster_REntity*> basecasters_REntity;
+
+      public:
+        static void registerBasecaster_REntity(RJSBasecaster_REntity* bc) {
+          basecasters_REntity.append(bc);
+        }
       
     };
 

@@ -8,6 +8,9 @@
     #include "roperationutils_wrapper.h"
 
   
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_ROperationUtils*> ROperationUtils_Wrapper::basecasters_ROperationUtils;
+    
     // static functions implementation in singleton wrapper:
     
     // Class: ROperationUtils

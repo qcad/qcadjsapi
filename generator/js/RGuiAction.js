@@ -87,6 +87,10 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
+    this["triggered(bool)"] = Object.getPrototypeOf(this).triggered;
+  
+    this["toggled(bool)"] = Object.getPrototypeOf(this).toggled;
+  
           }
         }
       }
@@ -142,11 +146,54 @@
 
       // enum values:
       
+  // enum: MenuRole
+RGuiAction.NoRole = RGuiAction_Wrapper.NoRole;
+RGuiAction.TextHeuristicRole = RGuiAction_Wrapper.TextHeuristicRole;
+RGuiAction.ApplicationSpecificRole = RGuiAction_Wrapper.ApplicationSpecificRole;
+RGuiAction.AboutQtRole = RGuiAction_Wrapper.AboutQtRole;
+RGuiAction.AboutRole = RGuiAction_Wrapper.AboutRole;
+RGuiAction.PreferencesRole = RGuiAction_Wrapper.PreferencesRole;
+RGuiAction.QuitRole = RGuiAction_Wrapper.QuitRole;
+
+  // enum: Priority
+RGuiAction.LowPriority = RGuiAction_Wrapper.LowPriority;
+RGuiAction.NormalPriority = RGuiAction_Wrapper.NormalPriority;
+RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
+
 
       // functions:
       
 
       // static functions:
+      
+
+        // static function 
+        RGuiAction.tr = function() 
+          
+        {
+          //print("JS: RGuiAction.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RGuiAction_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RGuiAction);
+  }
+
+  
+  else {
+    
+        print("RGuiAction.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
         // static function 
