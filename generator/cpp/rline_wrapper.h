@@ -1457,7 +1457,7 @@
             return (RLine*)vp;
           }
 
-          qWarning() << "RLine::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLine_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -55,7 +55,7 @@
             return (RPatternLine*)vp;
           }
 
-          qWarning() << "RPatternLine::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPatternLine_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -112,7 +112,7 @@
             return (RStorage*)vp;
           }
 
-          qWarning() << "RStorage::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RStorage_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -666,7 +666,7 @@
             return (RMathLineEdit*)vp;
           }
 
-          qWarning() << "RMathLineEdit::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMathLineEdit_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

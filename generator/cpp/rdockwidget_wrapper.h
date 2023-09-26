@@ -566,7 +566,7 @@
             return (RDockWidget*)vp;
           }
 
-          qWarning() << "RDockWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDockWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

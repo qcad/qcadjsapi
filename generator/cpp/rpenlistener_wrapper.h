@@ -57,7 +57,7 @@
             return (RPenListener*)vp;
           }
 
-          qWarning() << "RPenListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPenListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

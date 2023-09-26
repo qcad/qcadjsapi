@@ -57,7 +57,7 @@
             return (RLayerListener*)vp;
           }
 
-          qWarning() << "RLayerListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLayerListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

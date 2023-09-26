@@ -150,7 +150,7 @@
             return (RSolidData*)vp;
           }
 
-          qWarning() << "RSolidData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSolidData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

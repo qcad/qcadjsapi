@@ -57,7 +57,7 @@
             return (RMoveReferencePointOperation*)vp;
           }
 
-          qWarning() << "RMoveReferencePointOperation::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMoveReferencePointOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

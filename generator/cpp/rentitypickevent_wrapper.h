@@ -59,7 +59,7 @@
             return (REntityPickEvent*)vp;
           }
 
-          qWarning() << "REntityPickEvent::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "REntityPickEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

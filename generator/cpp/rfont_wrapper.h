@@ -55,7 +55,7 @@
             return (RFont*)vp;
           }
 
-          qWarning() << "RFont::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFont_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

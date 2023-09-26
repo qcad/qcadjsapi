@@ -110,7 +110,7 @@
             return (RTerminateEvent*)vp;
           }
 
-          qWarning() << "RTerminateEvent::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTerminateEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

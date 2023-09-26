@@ -546,7 +546,7 @@
             return (RWidget*)vp;
           }
 
-          qWarning() << "RWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -55,7 +55,7 @@
             return (RChangePropertyOperation*)vp;
           }
 
-          qWarning() << "RChangePropertyOperation::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RChangePropertyOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

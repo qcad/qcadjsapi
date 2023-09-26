@@ -160,7 +160,7 @@
             return (RLineweight*)vp;
           }
 
-          qWarning() << "RLineweight::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLineweight_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

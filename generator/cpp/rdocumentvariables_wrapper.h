@@ -302,7 +302,7 @@
             return (RDocumentVariables*)vp;
           }
 
-          qWarning() << "RDocumentVariables::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDocumentVariables_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

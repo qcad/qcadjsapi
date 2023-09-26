@@ -61,7 +61,7 @@
             return (RInterTransactionListener*)vp;
           }
 
-          qWarning() << "RInterTransactionListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RInterTransactionListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

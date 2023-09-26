@@ -129,7 +129,7 @@
             return (RAutoLoadJs*)vp;
           }
 
-          qWarning() << "RAutoLoadJs::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RAutoLoadJs_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

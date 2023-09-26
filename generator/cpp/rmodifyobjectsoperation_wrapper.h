@@ -55,7 +55,7 @@
             return (RModifyObjectsOperation*)vp;
           }
 
-          qWarning() << "RModifyObjectsOperation::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RModifyObjectsOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

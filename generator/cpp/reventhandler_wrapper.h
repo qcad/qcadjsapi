@@ -196,7 +196,7 @@
             return (REventHandler*)vp;
           }
 
-          qWarning() << "REventHandler::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "REventHandler_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -106,7 +106,7 @@
             return (RDimLinearData*)vp;
           }
 
-          qWarning() << "RDimLinearData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimLinearData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -110,7 +110,7 @@
             return (RDocument*)vp;
           }
 
-          qWarning() << "RDocument::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDocument_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

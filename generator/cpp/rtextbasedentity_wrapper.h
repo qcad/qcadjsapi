@@ -821,7 +821,7 @@
             return (RTextBasedEntity*)vp;
           }
 
-          qWarning() << "RTextBasedEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTextBasedEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

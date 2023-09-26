@@ -1476,7 +1476,7 @@
             return (RTriangle*)vp;
           }
 
-          qWarning() << "RTriangle::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTriangle_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

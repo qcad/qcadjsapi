@@ -124,7 +124,7 @@
             return (RPaletteListenerAdapter*)vp;
           }
 
-          qWarning() << "RPaletteListenerAdapter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPaletteListenerAdapter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

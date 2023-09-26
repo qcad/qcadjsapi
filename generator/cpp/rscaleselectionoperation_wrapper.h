@@ -55,7 +55,7 @@
             return (RScaleSelectionOperation*)vp;
           }
 
-          qWarning() << "RScaleSelectionOperation::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RScaleSelectionOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -1299,7 +1299,7 @@
             return (RDimArcLengthEntity*)vp;
           }
 
-          qWarning() << "RDimArcLengthEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimArcLengthEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

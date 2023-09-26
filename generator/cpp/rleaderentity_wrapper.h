@@ -691,7 +691,7 @@
             return (RLeaderEntity*)vp;
           }
 
-          qWarning() << "RLeaderEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLeaderEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

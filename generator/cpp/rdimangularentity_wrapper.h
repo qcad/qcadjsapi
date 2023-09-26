@@ -1286,7 +1286,7 @@
             return (RDimAngularEntity*)vp;
           }
 
-          qWarning() << "RDimAngularEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimAngularEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

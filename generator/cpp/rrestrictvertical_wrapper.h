@@ -57,7 +57,7 @@
             return (RRestrictVertical*)vp;
           }
 
-          qWarning() << "RRestrictVertical::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRestrictVertical_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -59,7 +59,7 @@
             return (RExportListener*)vp;
           }
 
-          qWarning() << "RExportListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RExportListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

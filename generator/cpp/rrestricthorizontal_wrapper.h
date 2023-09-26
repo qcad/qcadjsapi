@@ -57,7 +57,7 @@
             return (RRestrictHorizontal*)vp;
           }
 
-          qWarning() << "RRestrictHorizontal::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRestrictHorizontal_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

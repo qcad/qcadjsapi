@@ -160,7 +160,7 @@
             return (RSpatialIndexSimple*)vp;
           }
 
-          qWarning() << "RSpatialIndexSimple::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSpatialIndexSimple_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

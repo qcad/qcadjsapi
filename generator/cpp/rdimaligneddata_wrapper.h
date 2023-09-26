@@ -106,7 +106,7 @@
             return (RDimAlignedData*)vp;
           }
 
-          qWarning() << "RDimAlignedData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimAlignedData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

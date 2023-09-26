@@ -126,7 +126,7 @@
             return (RCoordinateListenerAdapter*)vp;
           }
 
-          qWarning() << "RCoordinateListenerAdapter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCoordinateListenerAdapter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

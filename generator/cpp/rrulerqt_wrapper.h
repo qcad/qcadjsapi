@@ -550,7 +550,7 @@
             return (RRulerQt*)vp;
           }
 
-          qWarning() << "RRulerQt::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRulerQt_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

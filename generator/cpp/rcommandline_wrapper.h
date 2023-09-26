@@ -654,7 +654,7 @@
             return (RCommandLine*)vp;
           }
 
-          qWarning() << "RCommandLine::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCommandLine_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

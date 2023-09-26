@@ -834,7 +834,7 @@
             return (REllipseEntity*)vp;
           }
 
-          qWarning() << "REllipseEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "REllipseEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

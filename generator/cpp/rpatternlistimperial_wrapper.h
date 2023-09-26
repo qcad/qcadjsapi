@@ -167,7 +167,7 @@
             return (RPatternListImperial*)vp;
           }
 
-          qWarning() << "RPatternListImperial::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPatternListImperial_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

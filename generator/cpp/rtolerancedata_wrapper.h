@@ -106,7 +106,7 @@
             return (RToleranceData*)vp;
           }
 
-          qWarning() << "RToleranceData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RToleranceData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

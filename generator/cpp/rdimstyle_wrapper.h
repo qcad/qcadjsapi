@@ -513,7 +513,7 @@
             return (RDimStyle*)vp;
           }
 
-          qWarning() << "RDimStyle::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimStyle_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

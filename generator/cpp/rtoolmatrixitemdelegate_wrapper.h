@@ -127,7 +127,7 @@
             return (RToolMatrixItemDelegate*)vp;
           }
 
-          qWarning() << "RToolMatrixItemDelegate::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RToolMatrixItemDelegate_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

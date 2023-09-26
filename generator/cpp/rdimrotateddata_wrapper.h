@@ -106,7 +106,7 @@
             return (RDimRotatedData*)vp;
           }
 
-          qWarning() << "RDimRotatedData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimRotatedData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

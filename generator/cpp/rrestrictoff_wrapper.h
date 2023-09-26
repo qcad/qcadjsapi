@@ -57,7 +57,7 @@
             return (RRestrictOff*)vp;
           }
 
-          qWarning() << "RRestrictOff::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRestrictOff_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

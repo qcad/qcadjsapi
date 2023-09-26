@@ -179,7 +179,7 @@
             return (RSplineData*)vp;
           }
 
-          qWarning() << "RSplineData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSplineData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

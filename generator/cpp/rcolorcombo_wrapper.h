@@ -648,7 +648,7 @@
             return (RColorCombo*)vp;
           }
 
-          qWarning() << "RColorCombo::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RColorCombo_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

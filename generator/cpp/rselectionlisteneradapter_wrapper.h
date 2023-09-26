@@ -124,7 +124,7 @@
             return (RSelectionListenerAdapter*)vp;
           }
 
-          qWarning() << "RSelectionListenerAdapter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSelectionListenerAdapter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

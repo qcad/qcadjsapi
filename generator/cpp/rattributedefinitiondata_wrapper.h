@@ -214,7 +214,7 @@
             return (RAttributeDefinitionData*)vp;
           }
 
-          qWarning() << "RAttributeDefinitionData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RAttributeDefinitionData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

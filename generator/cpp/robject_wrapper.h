@@ -304,7 +304,7 @@
             return (RObject*)vp;
           }
 
-          qWarning() << "RObject::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RObject_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

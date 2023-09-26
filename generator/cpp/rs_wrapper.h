@@ -710,7 +710,7 @@
             return (RS*)vp;
           }
 
-          qWarning() << "RS::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RS_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

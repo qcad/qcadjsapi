@@ -168,7 +168,7 @@
             return (RPropertyTypeId*)vp;
           }
 
-          qWarning() << "RPropertyTypeId::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPropertyTypeId_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

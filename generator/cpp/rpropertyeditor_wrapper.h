@@ -163,7 +163,7 @@
             return (RPropertyEditor*)vp;
           }
 
-          qWarning() << "RPropertyEditor::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPropertyEditor_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

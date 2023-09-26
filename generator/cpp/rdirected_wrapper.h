@@ -55,7 +55,7 @@
             return (RDirected*)vp;
           }
 
-          qWarning() << "RDirected::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDirected_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -1130,7 +1130,7 @@
             return (RDimensionEntity*)vp;
           }
 
-          qWarning() << "RDimensionEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimensionEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

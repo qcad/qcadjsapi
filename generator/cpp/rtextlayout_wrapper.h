@@ -55,7 +55,7 @@
             return (RTextLayout*)vp;
           }
 
-          qWarning() << "RTextLayout::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTextLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

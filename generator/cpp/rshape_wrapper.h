@@ -1455,7 +1455,7 @@
             return (RShape*)vp;
           }
 
-          qWarning() << "RShape::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RShape_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

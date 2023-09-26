@@ -819,6 +819,19 @@
               // downcasters from QEvent to RTerminateEvent
               RJSHelper::registerDowncaster_QEvent(new RJSDowncaster_QEvent_RTerminateEvent());
             
+            // downcasters from QObject to ...
+            
+              // downcasters from QObject to REventFilter
+              RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_REventFilter());
+            
+              // downcasters from QObject to REventHandler
+              RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_REventHandler());
+            
+            // downcasters from QToolBar to ...
+            
+              // downcasters from QToolBar to RCadToolBar
+              RJSHelper::registerDowncaster_QToolBar(new RJSDowncaster_QToolBar_RCadToolBar());
+            
             // downcasters from QWidget to ...
             
               // downcasters from QWidget to RCharacterWidget

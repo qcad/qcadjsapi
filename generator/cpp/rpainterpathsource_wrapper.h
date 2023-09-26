@@ -55,7 +55,7 @@
             return (RPainterPathSource*)vp;
           }
 
-          qWarning() << "RPainterPathSource::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPainterPathSource_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -642,7 +642,7 @@
             return (RMathComboBox*)vp;
           }
 
-          qWarning() << "RMathComboBox::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMathComboBox_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -690,7 +690,7 @@
             return (RColor*)vp;
           }
 
-          qWarning() << "RColor::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RColor_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

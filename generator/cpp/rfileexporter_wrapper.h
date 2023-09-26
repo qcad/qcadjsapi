@@ -59,7 +59,7 @@
             return (RFileExporter*)vp;
           }
 
-          qWarning() << "RFileExporter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFileExporter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -167,7 +167,7 @@
             return (RPatternListMetric*)vp;
           }
 
-          qWarning() << "RPatternListMetric::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPatternListMetric_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

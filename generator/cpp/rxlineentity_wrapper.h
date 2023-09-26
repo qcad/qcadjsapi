@@ -730,7 +730,7 @@
             return (RXLineEntity*)vp;
           }
 
-          qWarning() << "RXLineEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RXLineEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

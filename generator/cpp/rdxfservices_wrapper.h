@@ -459,7 +459,7 @@
             return (RDxfServices*)vp;
           }
 
-          qWarning() << "RDxfServices::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDxfServices_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

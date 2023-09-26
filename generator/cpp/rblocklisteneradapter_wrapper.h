@@ -124,7 +124,7 @@
             return (RBlockListenerAdapter*)vp;
           }
 
-          qWarning() << "RBlockListenerAdapter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RBlockListenerAdapter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

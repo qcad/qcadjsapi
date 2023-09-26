@@ -853,7 +853,7 @@
             return (RGuiAction*)vp;
           }
 
-          qWarning() << "RGuiAction::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RGuiAction_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

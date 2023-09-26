@@ -57,7 +57,7 @@
             return (RSnapEntityBase*)vp;
           }
 
-          qWarning() << "RSnapEntityBase::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapEntityBase_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -59,7 +59,7 @@
             return (RInputEvent*)vp;
           }
 
-          qWarning() << "RInputEvent::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RInputEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

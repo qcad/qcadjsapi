@@ -562,7 +562,7 @@
             return (RGraphicsViewQt*)vp;
           }
 
-          qWarning() << "RGraphicsViewQt::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RGraphicsViewQt_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

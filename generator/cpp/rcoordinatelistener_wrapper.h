@@ -57,7 +57,7 @@
             return (RCoordinateListener*)vp;
           }
 
-          qWarning() << "RCoordinateListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCoordinateListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

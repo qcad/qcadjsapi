@@ -112,7 +112,7 @@
             return (RPointData*)vp;
           }
 
-          qWarning() << "RPointData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPointData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

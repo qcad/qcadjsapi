@@ -57,7 +57,7 @@
             return (RRestrictOrthogonal*)vp;
           }
 
-          qWarning() << "RRestrictOrthogonal::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRestrictOrthogonal_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

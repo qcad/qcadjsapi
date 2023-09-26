@@ -129,7 +129,7 @@
             return (RFocusListenerAdapter*)vp;
           }
 
-          qWarning() << "RFocusListenerAdapter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFocusListenerAdapter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -60,7 +60,7 @@
             return (RRestrictAngleLength*)vp;
           }
 
-          qWarning() << "RRestrictAngleLength::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRestrictAngleLength_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

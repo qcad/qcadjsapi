@@ -59,7 +59,7 @@
             return (RNewDocumentListener*)vp;
           }
 
-          qWarning() << "RNewDocumentListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RNewDocumentListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

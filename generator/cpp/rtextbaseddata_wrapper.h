@@ -235,7 +235,7 @@
             return (RTextBasedData*)vp;
           }
 
-          qWarning() << "RTextBasedData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTextBasedData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

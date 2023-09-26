@@ -61,7 +61,7 @@
             return (RTransactionListener*)vp;
           }
 
-          qWarning() << "RTransactionListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTransactionListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

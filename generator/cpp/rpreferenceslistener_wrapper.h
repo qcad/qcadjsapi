@@ -57,7 +57,7 @@
             return (RPreferencesListener*)vp;
           }
 
-          qWarning() << "RPreferencesListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPreferencesListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -55,7 +55,7 @@
             return (RExplodable*)vp;
           }
 
-          qWarning() << "RExplodable::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RExplodable_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -258,7 +258,7 @@
             return (RFileImporterRegistry*)vp;
           }
 
-          qWarning() << "RFileImporterRegistry::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFileImporterRegistry_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

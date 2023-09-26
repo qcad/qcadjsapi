@@ -142,7 +142,7 @@
             return (RFileSystemModel*)vp;
           }
 
-          qWarning() << "RFileSystemModel::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFileSystemModel_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -57,7 +57,7 @@
             return (RMouseCoordinateListener*)vp;
           }
 
-          qWarning() << "RMouseCoordinateListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMouseCoordinateListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

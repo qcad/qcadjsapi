@@ -106,7 +106,7 @@
             return (RDimArcLengthData*)vp;
           }
 
-          qWarning() << "RDimArcLengthData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimArcLengthData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

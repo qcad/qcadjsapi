@@ -59,7 +59,7 @@
             return (RGrid*)vp;
           }
 
-          qWarning() << "RGrid::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RGrid_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

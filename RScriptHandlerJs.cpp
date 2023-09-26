@@ -443,6 +443,25 @@
 */
 
 
+class RJSQVariantConverter_RColor : public RJSQVariantConverter {
+public:
+    virtual QJSValue fromVariant(RJSApi& handler, const QVariant& v) {
+        qDebug() << "calling QVariant converer for RColor...";
+        if (v.canConvert<RColor>()) {
+            return RJSHelper_qcad::cpp2js_RColor(handler, v.value<RColor>());
+        }
+        return QJSValue();
+    }
+
+    virtual QJSValue toVariant(RJSApi& handler, const QJSValue& v) {
+        if (t==RJSType_RColor::getIdStatic()) {
+            return QVariant(RJSHelper_qcad::js2cpp_RColor(handler, v));
+        }
+        return QVariant();
+    }
+};
+
+
 RScriptHandlerJs::RScriptHandlerJs() : rjsapi(NULL), engine(NULL) {
 
 }
@@ -1028,6 +1047,7 @@ void RScriptHandlerJs::init() {
     // init downcasts:
     RJSHelper_qcad::registerDowncasters();
     RJSHelper_qcad::registerBasecasters();
+    RJSHelper::registerQVariantConverter(new RJSQVariantConverter_RColor());
 
     // give plugins a chance to initialize their script extensions:
     RPluginLoader::initScriptExtensions(*this);

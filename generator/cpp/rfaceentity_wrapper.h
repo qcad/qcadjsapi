@@ -769,7 +769,7 @@
             return (RFaceEntity*)vp;
           }
 
-          qWarning() << "RFaceEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFaceEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

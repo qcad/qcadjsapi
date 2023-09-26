@@ -175,7 +175,7 @@
             return (RMouseEvent*)vp;
           }
 
-          qWarning() << "RMouseEvent::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMouseEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

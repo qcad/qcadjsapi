@@ -110,7 +110,7 @@
             return (RPropertyEvent*)vp;
           }
 
-          qWarning() << "RPropertyEvent::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPropertyEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -106,7 +106,7 @@
             return (RDimDiametricData*)vp;
           }
 
-          qWarning() << "RDimDiametricData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimDiametricData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

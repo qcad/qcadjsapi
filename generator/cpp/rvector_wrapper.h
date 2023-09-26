@@ -937,7 +937,7 @@
             return (RVector*)vp;
           }
 
-          qWarning() << "RVector::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RVector_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

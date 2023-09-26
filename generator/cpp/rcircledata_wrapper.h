@@ -176,7 +176,7 @@
             return (RCircleData*)vp;
           }
 
-          qWarning() << "RCircleData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCircleData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

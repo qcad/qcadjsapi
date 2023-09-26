@@ -62,7 +62,7 @@
             return (RSnapDistance*)vp;
           }
 
-          qWarning() << "RSnapDistance::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapDistance_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

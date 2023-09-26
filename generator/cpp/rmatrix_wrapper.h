@@ -335,7 +335,7 @@
             return (RMatrix*)vp;
           }
 
-          qWarning() << "RMatrix::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMatrix_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

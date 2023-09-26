@@ -57,7 +57,7 @@
             return (REntityExportListener*)vp;
           }
 
-          qWarning() << "REntityExportListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "REntityExportListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

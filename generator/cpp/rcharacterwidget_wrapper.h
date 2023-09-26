@@ -550,7 +550,7 @@
             return (RCharacterWidget*)vp;
           }
 
-          qWarning() << "RCharacterWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCharacterWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -114,7 +114,7 @@
             return (RCoordinateEvent*)vp;
           }
 
-          qWarning() << "RCoordinateEvent::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCoordinateEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

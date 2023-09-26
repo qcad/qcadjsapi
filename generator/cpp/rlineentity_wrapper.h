@@ -743,7 +743,7 @@
             return (RLineEntity*)vp;
           }
 
-          qWarning() << "RLineEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLineEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

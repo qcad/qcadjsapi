@@ -57,7 +57,7 @@
             return (RSnapPerpendicular*)vp;
           }
 
-          qWarning() << "RSnapPerpendicular::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapPerpendicular_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

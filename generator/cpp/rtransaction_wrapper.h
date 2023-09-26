@@ -59,7 +59,7 @@
             return (RTransaction*)vp;
           }
 
-          qWarning() << "RTransaction::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTransaction_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

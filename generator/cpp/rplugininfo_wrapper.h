@@ -55,7 +55,7 @@
             return (RPluginInfo*)vp;
           }
 
-          qWarning() << "RPluginInfo::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPluginInfo_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

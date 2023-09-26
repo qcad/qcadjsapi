@@ -1441,7 +1441,7 @@
             return (RRay*)vp;
           }
 
-          qWarning() << "RRay::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRay_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

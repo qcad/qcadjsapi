@@ -182,7 +182,7 @@
             return (RTransformOp*)vp;
           }
 
-          qWarning() << "RTransformOp::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTransformOp_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

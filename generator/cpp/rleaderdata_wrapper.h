@@ -148,7 +148,7 @@
             return (RLeaderData*)vp;
           }
 
-          qWarning() << "RLeaderData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLeaderData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

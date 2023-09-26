@@ -554,7 +554,7 @@
             return (RFontChooserWidget*)vp;
           }
 
-          qWarning() << "RFontChooserWidget::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFontChooserWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

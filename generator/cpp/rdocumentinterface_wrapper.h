@@ -145,7 +145,7 @@
             return (RDocumentInterface*)vp;
           }
 
-          qWarning() << "RDocumentInterface::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDocumentInterface_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -57,7 +57,7 @@
             return (RSnapCenter*)vp;
           }
 
-          qWarning() << "RSnapCenter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapCenter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

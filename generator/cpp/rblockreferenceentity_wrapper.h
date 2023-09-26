@@ -743,7 +743,7 @@
             return (RBlockReferenceEntity*)vp;
           }
 
-          qWarning() << "RBlockReferenceEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RBlockReferenceEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

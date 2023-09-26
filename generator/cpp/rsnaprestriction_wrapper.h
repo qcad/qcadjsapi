@@ -60,7 +60,7 @@
             return (RSnapRestriction*)vp;
           }
 
-          qWarning() << "RSnapRestriction::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapRestriction_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

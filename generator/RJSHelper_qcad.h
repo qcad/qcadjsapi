@@ -7606,6 +7606,51 @@
 
           
 
+          // downcasters from QObject to ...
+          
+
+            // downcasters from QObject to REventFilter
+            class RJSDowncaster_QObject_REventFilter : public RJSDowncaster_QObject {
+                QJSValue downcast(RJSApi& handler, QObject* o) {
+                    REventFilter* c = dynamic_cast<REventFilter*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_REventFilter(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+            // downcasters from QObject to REventHandler
+            class RJSDowncaster_QObject_REventHandler : public RJSDowncaster_QObject {
+                QJSValue downcast(RJSApi& handler, QObject* o) {
+                    REventHandler* c = dynamic_cast<REventHandler*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_REventHandler(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QToolBar to ...
+          
+
+            // downcasters from QToolBar to RCadToolBar
+            class RJSDowncaster_QToolBar_RCadToolBar : public RJSDowncaster_QToolBar {
+                QJSValue downcast(RJSApi& handler, QToolBar* o) {
+                    RCadToolBar* c = dynamic_cast<RCadToolBar*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RCadToolBar(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
           // downcasters from QWidget to ...
           
 

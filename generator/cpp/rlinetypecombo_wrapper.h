@@ -636,7 +636,7 @@
             return (RLinetypeCombo*)vp;
           }
 
-          qWarning() << "RLinetypeCombo::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLinetypeCombo_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

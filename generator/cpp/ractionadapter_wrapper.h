@@ -84,7 +84,7 @@
             return (RActionAdapter*)vp;
           }
 
-          qWarning() << "RActionAdapter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RActionAdapter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

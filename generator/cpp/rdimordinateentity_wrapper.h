@@ -1260,7 +1260,7 @@
             return (RDimOrdinateEntity*)vp;
           }
 
-          qWarning() << "RDimOrdinateEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimOrdinateEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -106,7 +106,7 @@
             return (RDimOrdinateData*)vp;
           }
 
-          qWarning() << "RDimOrdinateData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimOrdinateData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

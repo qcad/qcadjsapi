@@ -57,7 +57,7 @@
             return (RKeyListener*)vp;
           }
 
-          qWarning() << "RKeyListener::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RKeyListener_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

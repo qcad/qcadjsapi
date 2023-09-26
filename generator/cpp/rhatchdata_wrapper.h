@@ -125,7 +125,7 @@
             return (RHatchData*)vp;
           }
 
-          qWarning() << "RHatchData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RHatchData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

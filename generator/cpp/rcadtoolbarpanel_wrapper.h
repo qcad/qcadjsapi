@@ -548,7 +548,7 @@
             return (RCadToolBarPanel*)vp;
           }
 
-          qWarning() << "RCadToolBarPanel::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCadToolBarPanel_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

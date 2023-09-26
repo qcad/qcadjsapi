@@ -302,7 +302,7 @@
             return (RView*)vp;
           }
 
-          qWarning() << "RView::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RView_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

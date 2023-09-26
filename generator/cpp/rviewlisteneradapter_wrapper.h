@@ -124,7 +124,7 @@
             return (RViewListenerAdapter*)vp;
           }
 
-          qWarning() << "RViewListenerAdapter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RViewListenerAdapter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -124,7 +124,7 @@
             return (REventFilter*)vp;
           }
 
-          qWarning() << "REventFilter::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "REventFilter_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

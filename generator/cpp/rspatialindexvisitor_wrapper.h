@@ -55,7 +55,7 @@
             return (RSpatialIndexVisitor*)vp;
           }
 
-          qWarning() << "RSpatialIndexVisitor::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSpatialIndexVisitor_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

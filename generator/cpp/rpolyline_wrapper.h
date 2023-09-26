@@ -1487,7 +1487,7 @@
             return (RPolyline*)vp;
           }
 
-          qWarning() << "RPolyline::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPolyline_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

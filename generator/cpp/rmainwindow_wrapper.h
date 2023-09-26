@@ -207,7 +207,7 @@
             return (RMainWindow*)vp;
           }
 
-          qWarning() << "RMainWindow::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMainWindow_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

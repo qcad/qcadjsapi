@@ -1613,7 +1613,7 @@
             return (RArc*)vp;
           }
 
-          qWarning() << "RArc::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RArc_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -1208,7 +1208,7 @@
             return (RDimRadialEntity*)vp;
           }
 
-          qWarning() << "RDimRadialEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimRadialEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

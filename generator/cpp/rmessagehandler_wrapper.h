@@ -55,7 +55,7 @@
             return (RMessageHandler*)vp;
           }
 
-          qWarning() << "RMessageHandler::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMessageHandler_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

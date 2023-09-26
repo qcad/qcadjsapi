@@ -59,7 +59,7 @@
             return (RSnapGrid*)vp;
           }
 
-          qWarning() << "RSnapGrid::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapGrid_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

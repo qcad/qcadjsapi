@@ -129,7 +129,7 @@
             return (RBlockReferenceData*)vp;
           }
 
-          qWarning() << "RBlockReferenceData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RBlockReferenceData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

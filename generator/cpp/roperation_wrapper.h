@@ -59,7 +59,7 @@
             return (ROperation*)vp;
           }
 
-          qWarning() << "ROperation::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "ROperation_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

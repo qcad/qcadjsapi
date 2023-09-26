@@ -106,7 +106,7 @@
             return (RDimensionData*)vp;
           }
 
-          qWarning() << "RDimensionData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimensionData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

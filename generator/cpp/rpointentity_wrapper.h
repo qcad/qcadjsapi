@@ -626,7 +626,7 @@
             return (RPointEntity*)vp;
           }
 
-          qWarning() << "RPointEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPointEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

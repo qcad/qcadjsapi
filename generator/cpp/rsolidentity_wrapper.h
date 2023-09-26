@@ -769,7 +769,7 @@
             return (RSolidEntity*)vp;
           }
 
-          qWarning() << "RSolidEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSolidEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

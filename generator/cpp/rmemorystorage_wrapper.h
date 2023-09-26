@@ -110,7 +110,7 @@
             return (RMemoryStorage*)vp;
           }
 
-          qWarning() << "RMemoryStorage::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMemoryStorage_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

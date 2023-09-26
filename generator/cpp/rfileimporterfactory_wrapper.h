@@ -63,7 +63,7 @@
             return (RFileImporterFactory*)vp;
           }
 
-          qWarning() << "RFileImporterFactory::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFileImporterFactory_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

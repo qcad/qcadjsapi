@@ -112,7 +112,7 @@
             return (RViewportData*)vp;
           }
 
-          qWarning() << "RViewportData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RViewportData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

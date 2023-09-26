@@ -55,7 +55,7 @@
             return (RCommandEvent*)vp;
           }
 
-          qWarning() << "RCommandEvent::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCommandEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

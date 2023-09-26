@@ -138,7 +138,7 @@
             return (RWheelEvent*)vp;
           }
 
-          qWarning() << "RWheelEvent::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RWheelEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

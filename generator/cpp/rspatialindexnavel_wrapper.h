@@ -160,7 +160,7 @@
             return (RSpatialIndexNavel*)vp;
           }
 
-          qWarning() << "RSpatialIndexNavel::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSpatialIndexNavel_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

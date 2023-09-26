@@ -114,7 +114,7 @@
             return (REntityData*)vp;
           }
 
-          qWarning() << "REntityData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "REntityData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

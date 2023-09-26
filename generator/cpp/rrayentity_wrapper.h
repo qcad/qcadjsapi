@@ -730,7 +730,7 @@
             return (RRayEntity*)vp;
           }
 
-          qWarning() << "RRayEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRayEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

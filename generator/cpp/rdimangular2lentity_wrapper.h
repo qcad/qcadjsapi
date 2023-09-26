@@ -1364,7 +1364,7 @@
             return (RDimAngular2LEntity*)vp;
           }
 
-          qWarning() << "RDimAngular2LEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimAngular2LEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

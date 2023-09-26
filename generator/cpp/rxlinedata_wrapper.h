@@ -106,7 +106,7 @@
             return (RXLineData*)vp;
           }
 
-          qWarning() << "RXLineData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RXLineData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

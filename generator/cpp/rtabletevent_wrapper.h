@@ -59,7 +59,7 @@
             return (RTabletEvent*)vp;
           }
 
-          qWarning() << "RTabletEvent::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTabletEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

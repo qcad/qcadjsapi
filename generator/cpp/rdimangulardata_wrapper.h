@@ -106,7 +106,7 @@
             return (RDimAngularData*)vp;
           }
 
-          qWarning() << "RDimAngularData::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimAngularData_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

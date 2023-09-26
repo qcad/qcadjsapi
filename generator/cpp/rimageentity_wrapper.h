@@ -769,7 +769,7 @@
             return (RImageEntity*)vp;
           }
 
-          qWarning() << "RImageEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RImageEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

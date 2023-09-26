@@ -1464,7 +1464,7 @@
             return (RTextRenderer*)vp;
           }
 
-          qWarning() << "RTextRenderer::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTextRenderer_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

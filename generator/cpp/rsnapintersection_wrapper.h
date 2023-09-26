@@ -59,7 +59,7 @@
             return (RSnapIntersection*)vp;
           }
 
-          qWarning() << "RSnapIntersection::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapIntersection_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

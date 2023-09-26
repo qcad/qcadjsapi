@@ -57,7 +57,7 @@
             return (RAddObjectOperation*)vp;
           }
 
-          qWarning() << "RAddObjectOperation::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RAddObjectOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

@@ -3364,7 +3364,7 @@
             return (RSettings*)vp;
           }
 
-          qWarning() << "RSettings::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSettings_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

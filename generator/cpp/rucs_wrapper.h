@@ -302,7 +302,7 @@
             return (RUcs*)vp;
           }
 
-          qWarning() << "RUcs::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RUcs_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

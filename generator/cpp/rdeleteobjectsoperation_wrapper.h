@@ -57,7 +57,7 @@
             return (RDeleteObjectsOperation*)vp;
           }
 
-          qWarning() << "RDeleteObjectsOperation::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDeleteObjectsOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           

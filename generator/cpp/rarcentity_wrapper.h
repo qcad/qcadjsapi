@@ -795,7 +795,7 @@
             return (RArcEntity*)vp;
           }
 
-          qWarning() << "RArcEntity::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RArcEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
 
           return nullptr;
           
