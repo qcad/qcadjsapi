@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl">
-  <class name="RAction" ownership="cpp">
+  <class name="RAction" ownership="cpp" variant-conversion="true">
     <enum name="ClickMode">
       <key>PickCoordinate</key>
       <key>PickCoordinateNoSnap</key>
@@ -312,7 +312,7 @@
       </variant>
     </function>
   </class>
-  <class name="RActionAdapter" inheritable="true" ownership="cpp">
+  <class name="RActionAdapter" inheritable="true" ownership="cpp" variant-conversion="true">
     <super_list>
       <super name="RAction" />
     </super_list>
@@ -21939,7 +21939,7 @@
       </variant>
     </function>
   </class>
-  <class name="RLayerListenerAdapter" ownership="cpp">
+  <class name="RLayerListenerAdapter" ownership="cpp" variant-conversion="true">
     <super_list>
       <super name="QObject" />
       <super name="RLayerListener" />
@@ -33401,7 +33401,7 @@
       </variant>
     </function>
   </class>
-  <class name="RPropertyTypeId">
+  <class name="RPropertyTypeId" variant-conversion="true">
     <constructor>
       <variant>
         <parameters>
@@ -45464,7 +45464,7 @@
       </variant>
     </function>
   </class>
-  <class name="RVector">
+  <class name="RVector" variant-conversion="true">
     <constructor>
       <variant>
         <parameters>

@@ -13,7 +13,7 @@
   <class_decl name="RStorage" />
   <class_decl name="RTabletEvent" />
   <class_decl name="ROperation" />
-  <class name="RActionAdapter" inheritable="true" ownership="cpp">
+  <class name="RActionAdapter" inheritable="true" ownership="cpp" variant-conversion="true">
     <super_list>
       <super name="RAction" />
     </super_list>

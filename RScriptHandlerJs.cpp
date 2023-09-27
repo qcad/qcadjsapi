@@ -443,31 +443,86 @@
 */
 
 
-/*
-class RJSQVariantConverter_RColor : public RJSQVariantConverter {
+class RJSQVariantConverter_qcad : public RJSQVariantConverter {
 public:
     virtual QJSValue fromVariant(RJSApi& handler, const QVariant& v) {
-        qDebug() << "calling QVariant converer for RColor...";
+        /*
+        bool ok;
+        int i = v.toInt(&ok);
+        if (ok) {
+            return QJSValue(i);
+        }
+        return QJSValue();
+        */
+        if (v.canConvert<RLayerListenerAdapter*>()) {
+            return RJSHelper_qcad::cpp2js_RLayerListenerAdapter(handler, v.value<RLayerListenerAdapter*>());
+        }
+        if (v.canConvert<RAction*>()) {
+            return RJSHelper_qcad::cpp2js_RAction(handler, v.value<RAction*>());
+        }
+        if (v.canConvert<RActionAdapter*>()) {
+            return RJSHelper_qcad::cpp2js_RActionAdapter(handler, v.value<RActionAdapter*>());
+        }
         if (v.canConvert<RColor>()) {
             return RJSHelper_qcad::cpp2js_RColor(handler, v.value<RColor>());
         }
+        if (v.canConvert<RVector>()) {
+            return RJSHelper_qcad::cpp2js_RVector(handler, v.value<RVector>());
+        }
+        if (v.canConvert<RLineweight::Lineweight>()) {
+            return RJSHelper_qcad::cpp2js_RLineweight_Lineweight(handler, v.value<RLineweight::Lineweight>());
+        }
+        if (v.canConvert<RPropertyTypeId>()) {
+            return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, v.value<RPropertyTypeId>());
+        }
+
         return QJSValue();
     }
 
     virtual QVariant toVariant(RJSApi& handler, const QJSValue& v) {
+        /*
+        if (v.isNumber()) {
+            return QVariant(v.toInt());
+        }
+        return QVariant();
+        */
+
         RJSWrapper* wrapper = getWrapperRJSWrapper(v);
         if (wrapper==nullptr) {
-            qWarning() << "RJSQVariantConverter_RColor::toVariant: no wrapper";
+            qWarning() << "js2cpp_QVariant: no wrapper";
             return QVariant();
         }
+
         int t = wrapper->getWrappedType();
-        if (t==RJSType_RColor::getIdStatic()) {
-            return QVariant(RJSHelper_qcad::js2cpp_RColor(handler, v));
+
+        if (t==RJSType_RMainWindowQt::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper_qcad::js2cpp_RMainWindowQt_ptr(handler, v));
         }
+        if (t==RJSType_RAction::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper_qcad::js2cpp_RAction_ptr(handler, v));
+        }
+        if (t==RJSType_RActionAdapter::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper_qcad::js2cpp_RActionAdapter_ptr(handler, v));
+        }
+        if (t==RJSType_RLayerListenerAdapter::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper_qcad::js2cpp_RLayerListenerAdapter_ptr(handler, v));
+        }
+        if (t==RJSType_RVector::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper_qcad::js2cpp_RVector(handler, v));
+        }
+        if (t==RJSType_RColor::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper_qcad::js2cpp_RColor(handler, v));
+        }
+        if (t==RJSType_RPropertyTypeId::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper_qcad::js2cpp_RPropertyTypeId(handler, v));
+        }
+        if (t==RJSType_RLinetypePattern::getIdStatic()) {
+            return QVariant::fromValue(RJSHelper_qcad::js2cpp_RLinetypePattern(handler, v));
+        }
+
         return QVariant();
     }
 };
-*/
 
 
 RScriptHandlerJs::RScriptHandlerJs() : rjsapi(NULL), engine(NULL) {
@@ -1055,9 +1110,10 @@ void RScriptHandlerJs::init() {
     // init downcasts:
     RJSHelper_qcad::registerDowncasters();
     RJSHelper_qcad::registerBasecasters();
-    RJSHelper_qcad::registerQVariantConverters();
+    //RJSHelper_qcad::registerQVariantConverters();
 
     //RJSHelper::registerQVariantConverter(new RJSQVariantConverter_RColor());
+    RJSHelper::registerQVariantConverter(new RJSQVariantConverter_qcad());
 
     // give plugins a chance to initialize their script extensions:
     RPluginLoader::initScriptExtensions(*this);

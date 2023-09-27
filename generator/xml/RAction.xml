@@ -14,7 +14,7 @@
   <class_decl name="RStorage" />
   <class_decl name="RTabletEvent" />
   <class_decl name="ROperation" />
-  <class name="RAction" ownership="cpp">
+  <class name="RAction" ownership="cpp" variant-conversion="true">
     <enum name="ClickMode">
       <key>PickCoordinate</key>
       <key>PickCoordinateNoSnap</key>

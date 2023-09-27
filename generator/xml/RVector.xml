@@ -4,7 +4,7 @@
   <class_decl name="RBox" />
   <class_decl name="RLine" />
   <class_decl name="RPolyline" />
-  <class name="RVector">
+  <class name="RVector" variant-conversion="true">
     <constructor>
       <variant>
         <parameters />
