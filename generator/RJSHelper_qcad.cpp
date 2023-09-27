@@ -805,6 +805,26 @@
         
           #include "rentity_wrapper.h"
         
+          QJSValue RJSQVariantConverter_RColor::fromVariant(RJSApi& handler, const QVariant& v) {
+              if (v.canConvert<RColor>()) {
+                  return RJSHelper_qcad::cpp2js_RColor(handler, v.value<RColor>());
+              }
+              return QJSValue();
+          }
+
+          QVariant RJSQVariantConverter_RColor::toVariant(RJSApi& handler, const QJSValue& v) {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              if (wrapper==nullptr) {
+                  qWarning() << "RJSQVariantConverter_RColor::toVariant: no wrapper";
+                  return QVariant();
+              }
+              int t = wrapper->getWrappedType();
+              if (t==RJSType_RColor::getIdStatic()) {
+                  return QVariant(RJSHelper_qcad::js2cpp_RColor(handler, v));
+              }
+              return QVariant();
+          }
+        
         void RJSHelper_qcad::registerDowncasters() {
 
           
@@ -2610,6 +2630,12 @@
               // registration of base casters that casts RXLineEntity to REntity:
               REntity_Wrapper::registerBasecaster_REntity(new RJSBasecaster_RXLineEntity_REntity());
             
+        }
+
+        void RJSHelper_qcad::registerQVariantConverters() {
+          
+            RJSHelper::registerQVariantConverter(new RJSQVariantConverter_RColor());
+          
         }
       
   // ----------------

@@ -443,6 +443,7 @@
 */
 
 
+/*
 class RJSQVariantConverter_RColor : public RJSQVariantConverter {
 public:
     virtual QJSValue fromVariant(RJSApi& handler, const QVariant& v) {
@@ -466,6 +467,7 @@ public:
         return QVariant();
     }
 };
+*/
 
 
 RScriptHandlerJs::RScriptHandlerJs() : rjsapi(NULL), engine(NULL) {
@@ -1053,7 +1055,9 @@ void RScriptHandlerJs::init() {
     // init downcasts:
     RJSHelper_qcad::registerDowncasters();
     RJSHelper_qcad::registerBasecasters();
-    RJSHelper::registerQVariantConverter(new RJSQVariantConverter_RColor());
+    RJSHelper_qcad::registerQVariantConverters();
+
+    //RJSHelper::registerQVariantConverter(new RJSQVariantConverter_RColor());
 
     // give plugins a chance to initialize their script extensions:
     RPluginLoader::initScriptExtensions(*this);

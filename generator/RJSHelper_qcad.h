@@ -1702,6 +1702,12 @@
           virtual RXLineEntity* castToBase(int t, void* vp) = 0;
         };
       
+          class RJSQVariantConverter_RColor : public RJSQVariantConverter {
+          public:
+              virtual QJSValue fromVariant(RJSApi& handler, const QVariant& v);
+              virtual QVariant toVariant(RJSApi& handler, const QJSValue& v);
+          };
+        
           // implementation of base casters that cast RAction to base classes:
           
           // implementation of base casters that cast RActionAdapter to base classes:
@@ -5471,6 +5477,7 @@
         
           static void registerDowncasters();
           static void registerBasecasters();
+          static void registerQVariantConverters();
         
   // ----------------
   // primitive types:

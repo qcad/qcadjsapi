@@ -4434,7 +4434,7 @@
       </variant>
     </constructor>
   </class>
-  <class name="RColor">
+  <class name="RColor" variant-conversion="true">
     <super_list>
       <super name="QColor" />
     </super_list>
