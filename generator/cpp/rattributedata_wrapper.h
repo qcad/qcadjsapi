@@ -235,7 +235,7 @@
             return (RAttributeData*)vp;
           }
 
-          qWarning() << "RAttributeData_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RAttributeData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

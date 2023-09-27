@@ -1286,7 +1286,7 @@
             return (RDimAngular3PEntity*)vp;
           }
 
-          qWarning() << "RDimAngular3PEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimAngular3PEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

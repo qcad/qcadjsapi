@@ -69,7 +69,7 @@
             return (RGraphicsView*)vp;
           }
 
-          qWarning() << "RGraphicsView_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RGraphicsView_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -55,7 +55,7 @@
             return (RTransactionStack*)vp;
           }
 
-          qWarning() << "RTransactionStack_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTransactionStack_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

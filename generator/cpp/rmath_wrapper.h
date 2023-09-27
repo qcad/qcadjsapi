@@ -1073,7 +1073,7 @@
             return (RMath*)vp;
           }
 
-          qWarning() << "RMath_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMath_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

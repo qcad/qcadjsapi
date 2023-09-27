@@ -1247,7 +1247,7 @@
             return (RDimLinearEntity*)vp;
           }
 
-          qWarning() << "RDimLinearEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimLinearEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

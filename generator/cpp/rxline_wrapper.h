@@ -1445,7 +1445,7 @@
             return (RXLine*)vp;
           }
 
-          qWarning() << "RXLine_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RXLine_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

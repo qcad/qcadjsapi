@@ -769,7 +769,7 @@
             return (RSolidEntity*)vp;
           }
 
-          qWarning() << "RSolidEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSolidEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

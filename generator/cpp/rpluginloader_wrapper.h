@@ -424,7 +424,7 @@
             return (RPluginLoader*)vp;
           }
 
-          qWarning() << "RPluginLoader_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPluginLoader_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -834,7 +834,7 @@
             return (RAttributeEntity*)vp;
           }
 
-          qWarning() << "RAttributeEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RAttributeEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

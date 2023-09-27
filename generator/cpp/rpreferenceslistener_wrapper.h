@@ -57,7 +57,7 @@
             return (RPreferencesListener*)vp;
           }
 
-          qWarning() << "RPreferencesListener_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPreferencesListener_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

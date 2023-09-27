@@ -57,7 +57,7 @@
             return (RMouseCoordinateListener*)vp;
           }
 
-          qWarning() << "RMouseCoordinateListener_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMouseCoordinateListener_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -116,7 +116,7 @@
             return (ROperationUtils*)vp;
           }
 
-          qWarning() << "ROperationUtils_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "ROperationUtils_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -1260,7 +1260,7 @@
             return (RDimRotatedEntity*)vp;
           }
 
-          qWarning() << "RDimRotatedEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimRotatedEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -57,7 +57,7 @@
             return (RDeleteAllEntitiesOperation*)vp;
           }
 
-          qWarning() << "RDeleteAllEntitiesOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDeleteAllEntitiesOperation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

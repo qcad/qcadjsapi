@@ -59,7 +59,7 @@
             return (RTabletEvent*)vp;
           }
 
-          qWarning() << "RTabletEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTabletEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

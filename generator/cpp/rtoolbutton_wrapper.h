@@ -570,7 +570,7 @@
             return (RToolButton*)vp;
           }
 
-          qWarning() << "RToolButton_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RToolButton_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

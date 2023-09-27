@@ -57,7 +57,7 @@
             return (RViewFocusListener*)vp;
           }
 
-          qWarning() << "RViewFocusListener_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RViewFocusListener_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

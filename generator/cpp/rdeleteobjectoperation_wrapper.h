@@ -61,7 +61,7 @@
             return (RDeleteObjectOperation*)vp;
           }
 
-          qWarning() << "RDeleteObjectOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDeleteObjectOperation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

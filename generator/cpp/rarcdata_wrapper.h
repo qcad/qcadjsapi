@@ -272,7 +272,7 @@
             return (RArcData*)vp;
           }
 
-          qWarning() << "RArcData_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RArcData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

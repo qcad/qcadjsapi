@@ -57,7 +57,7 @@
             return (RRestrictOff*)vp;
           }
 
-          qWarning() << "RRestrictOff_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRestrictOff_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

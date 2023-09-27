@@ -57,7 +57,7 @@
             return (RPenListener*)vp;
           }
 
-          qWarning() << "RPenListener_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPenListener_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

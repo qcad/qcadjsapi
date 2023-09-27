@@ -691,7 +691,7 @@
             return (RCircleEntity*)vp;
           }
 
-          qWarning() << "RCircleEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCircleEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

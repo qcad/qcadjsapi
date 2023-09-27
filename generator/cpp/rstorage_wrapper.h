@@ -112,7 +112,7 @@
             return (RStorage*)vp;
           }
 
-          qWarning() << "RStorage_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RStorage_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -57,7 +57,7 @@
             return (RRestrictHorizontal*)vp;
           }
 
-          qWarning() << "RRestrictHorizontal_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRestrictHorizontal_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

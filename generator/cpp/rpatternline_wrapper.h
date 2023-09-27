@@ -55,7 +55,7 @@
             return (RPatternLine*)vp;
           }
 
-          qWarning() << "RPatternLine_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPatternLine_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

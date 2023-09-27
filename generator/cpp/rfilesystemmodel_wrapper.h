@@ -142,7 +142,7 @@
             return (RFileSystemModel*)vp;
           }
 
-          qWarning() << "RFileSystemModel_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFileSystemModel_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

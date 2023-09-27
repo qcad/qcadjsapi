@@ -240,7 +240,7 @@
             return (RFontList*)vp;
           }
 
-          qWarning() << "RFontList_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFontList_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

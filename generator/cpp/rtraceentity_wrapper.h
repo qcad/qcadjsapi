@@ -769,7 +769,7 @@
             return (RTraceEntity*)vp;
           }
 
-          qWarning() << "RTraceEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTraceEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

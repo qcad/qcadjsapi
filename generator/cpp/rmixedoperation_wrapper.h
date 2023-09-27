@@ -57,7 +57,7 @@
             return (RMixedOperation*)vp;
           }
 
-          qWarning() << "RMixedOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMixedOperation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -57,7 +57,7 @@
             return (RBlockListener*)vp;
           }
 
-          qWarning() << "RBlockListener_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RBlockListener_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

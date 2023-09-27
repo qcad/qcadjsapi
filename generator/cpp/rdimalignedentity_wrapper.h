@@ -1247,7 +1247,7 @@
             return (RDimAlignedEntity*)vp;
           }
 
-          qWarning() << "RDimAlignedEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimAlignedEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

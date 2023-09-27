@@ -106,7 +106,7 @@
             return (RDimLinearData*)vp;
           }
 
-          qWarning() << "RDimLinearData_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimLinearData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

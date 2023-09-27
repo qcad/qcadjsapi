@@ -738,7 +738,7 @@
             return (RListWidget*)vp;
           }
 
-          qWarning() << "RListWidget_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RListWidget_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

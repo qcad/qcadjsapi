@@ -55,7 +55,7 @@
             return (RClipboardOperation*)vp;
           }
 
-          qWarning() << "RClipboardOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RClipboardOperation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

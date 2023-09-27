@@ -57,7 +57,7 @@
             return (RSnapEnd*)vp;
           }
 
-          qWarning() << "RSnapEnd_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapEnd_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

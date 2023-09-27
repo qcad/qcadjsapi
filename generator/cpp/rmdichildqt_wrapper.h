@@ -552,7 +552,7 @@
             return (RMdiChildQt*)vp;
           }
 
-          qWarning() << "RMdiChildQt_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMdiChildQt_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

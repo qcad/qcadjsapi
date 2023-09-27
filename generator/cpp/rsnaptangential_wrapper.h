@@ -57,7 +57,7 @@
             return (RSnapTangential*)vp;
           }
 
-          qWarning() << "RSnapTangential_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapTangential_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

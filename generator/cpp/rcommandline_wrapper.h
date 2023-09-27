@@ -654,7 +654,7 @@
             return (RCommandLine*)vp;
           }
 
-          qWarning() << "RCommandLine_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCommandLine_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

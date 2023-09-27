@@ -701,7 +701,7 @@
             return (RUnit*)vp;
           }
 
-          qWarning() << "RUnit_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RUnit_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

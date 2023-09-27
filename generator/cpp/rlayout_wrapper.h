@@ -304,7 +304,7 @@
             return (RLayout*)vp;
           }
 
-          qWarning() << "RLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLayout_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

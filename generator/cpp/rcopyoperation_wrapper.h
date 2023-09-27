@@ -55,7 +55,7 @@
             return (RCopyOperation*)vp;
           }
 
-          qWarning() << "RCopyOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCopyOperation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -55,7 +55,7 @@
             return (RFaceData*)vp;
           }
 
-          qWarning() << "RFaceData_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFaceData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

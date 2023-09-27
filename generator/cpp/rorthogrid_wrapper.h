@@ -149,7 +149,7 @@
             return (ROrthoGrid*)vp;
           }
 
-          qWarning() << "ROrthoGrid_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "ROrthoGrid_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

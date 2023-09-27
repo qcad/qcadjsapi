@@ -720,7 +720,7 @@
             return (RListView*)vp;
           }
 
-          qWarning() << "RListView_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RListView_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

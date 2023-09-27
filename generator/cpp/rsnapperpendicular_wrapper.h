@@ -57,7 +57,7 @@
             return (RSnapPerpendicular*)vp;
           }
 
-          qWarning() << "RSnapPerpendicular_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapPerpendicular_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

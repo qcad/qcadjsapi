@@ -154,7 +154,7 @@
             return (RFlowLayout*)vp;
           }
 
-          qWarning() << "RFlowLayout_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFlowLayout_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

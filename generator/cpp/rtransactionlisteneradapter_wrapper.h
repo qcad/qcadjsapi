@@ -124,7 +124,7 @@
             return (RTransactionListenerAdapter*)vp;
           }
 
-          qWarning() << "RTransactionListenerAdapter_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTransactionListenerAdapter_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

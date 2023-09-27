@@ -141,7 +141,7 @@
             return (RFileCache*)vp;
           }
 
-          qWarning() << "RFileCache_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFileCache_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

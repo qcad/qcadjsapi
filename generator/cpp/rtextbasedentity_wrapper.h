@@ -821,7 +821,7 @@
             return (RTextBasedEntity*)vp;
           }
 
-          qWarning() << "RTextBasedEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTextBasedEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

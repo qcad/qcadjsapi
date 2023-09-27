@@ -55,7 +55,7 @@
             return (RTransformation*)vp;
           }
 
-          qWarning() << "RTransformation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTransformation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

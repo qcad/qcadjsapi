@@ -64,7 +64,7 @@
             return (RFileImporterAdapter*)vp;
           }
 
-          qWarning() << "RFileImporterAdapter_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFileImporterAdapter_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

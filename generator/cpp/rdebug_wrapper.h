@@ -359,7 +359,7 @@
             return (RDebug*)vp;
           }
 
-          qWarning() << "RDebug_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDebug_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -110,7 +110,7 @@
             return (RCloseCurrentEvent*)vp;
           }
 
-          qWarning() << "RCloseCurrentEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCloseCurrentEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

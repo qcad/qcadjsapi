@@ -769,7 +769,7 @@
             return (RViewportEntity*)vp;
           }
 
-          qWarning() << "RViewportEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RViewportEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

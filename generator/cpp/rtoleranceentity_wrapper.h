@@ -704,7 +704,7 @@
             return (RToleranceEntity*)vp;
           }
 
-          qWarning() << "RToleranceEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RToleranceEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

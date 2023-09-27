@@ -148,7 +148,7 @@
             return (RLeaderData*)vp;
           }
 
-          qWarning() << "RLeaderData_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLeaderData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

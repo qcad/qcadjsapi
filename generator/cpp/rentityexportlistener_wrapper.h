@@ -57,7 +57,7 @@
             return (REntityExportListener*)vp;
           }
 
-          qWarning() << "REntityExportListener_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "REntityExportListener_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

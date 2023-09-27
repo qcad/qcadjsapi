@@ -106,7 +106,7 @@
             return (RDimAngular2LData*)vp;
           }
 
-          qWarning() << "RDimAngular2LData_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimAngular2LData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

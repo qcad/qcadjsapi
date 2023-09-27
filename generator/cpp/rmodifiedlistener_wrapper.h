@@ -57,7 +57,7 @@
             return (RModifiedListener*)vp;
           }
 
-          qWarning() << "RModifiedListener_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RModifiedListener_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

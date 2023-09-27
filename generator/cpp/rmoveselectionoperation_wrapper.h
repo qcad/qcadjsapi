@@ -55,7 +55,7 @@
             return (RMoveSelectionOperation*)vp;
           }
 
-          qWarning() << "RMoveSelectionOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMoveSelectionOperation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

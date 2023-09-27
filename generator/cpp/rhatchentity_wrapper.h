@@ -782,7 +782,7 @@
             return (RHatchEntity*)vp;
           }
 
-          qWarning() << "RHatchEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RHatchEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

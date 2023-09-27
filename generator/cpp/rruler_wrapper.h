@@ -59,7 +59,7 @@
             return (RRuler*)vp;
           }
 
-          qWarning() << "RRuler_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RRuler_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -160,7 +160,7 @@
             return (REllipseData*)vp;
           }
 
-          qWarning() << "REllipseData_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "REllipseData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

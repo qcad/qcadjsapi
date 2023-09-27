@@ -63,7 +63,7 @@
             return (RFileExporterFactory*)vp;
           }
 
-          qWarning() << "RFileExporterFactory_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RFileExporterFactory_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

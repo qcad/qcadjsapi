@@ -106,7 +106,7 @@
             return (RDimRadialData*)vp;
           }
 
-          qWarning() << "RDimRadialData_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimRadialData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

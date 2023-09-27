@@ -582,7 +582,7 @@
             return (RCadToolBar*)vp;
           }
 
-          qWarning() << "RCadToolBar_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RCadToolBar_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

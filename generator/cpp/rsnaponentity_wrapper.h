@@ -57,7 +57,7 @@
             return (RSnapOnEntity*)vp;
           }
 
-          qWarning() << "RSnapOnEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapOnEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

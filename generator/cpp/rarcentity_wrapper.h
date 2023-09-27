@@ -795,7 +795,7 @@
             return (RArcEntity*)vp;
           }
 
-          qWarning() << "RArcEntity_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RArcEntity_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

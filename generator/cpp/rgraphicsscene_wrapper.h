@@ -57,7 +57,7 @@
             return (RGraphicsScene*)vp;
           }
 
-          qWarning() << "RGraphicsScene_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RGraphicsScene_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

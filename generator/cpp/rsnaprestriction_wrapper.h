@@ -60,7 +60,7 @@
             return (RSnapRestriction*)vp;
           }
 
-          qWarning() << "RSnapRestriction_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapRestriction_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

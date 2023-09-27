@@ -513,7 +513,7 @@
             return (RDimStyle*)vp;
           }
 
-          qWarning() << "RDimStyle_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RDimStyle_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

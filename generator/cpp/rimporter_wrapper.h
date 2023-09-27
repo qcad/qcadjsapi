@@ -65,7 +65,7 @@
             return (RImporter*)vp;
           }
 
-          qWarning() << "RImporter_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RImporter_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

@@ -55,7 +55,7 @@
             return (RModifyObjectOperation*)vp;
           }
 
-          qWarning() << "RModifyObjectOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RModifyObjectOperation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

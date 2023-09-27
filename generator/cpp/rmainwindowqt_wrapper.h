@@ -708,7 +708,7 @@
             return (RMainWindowQt*)vp;
           }
 
-          qWarning() << "RMainWindowQt_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMainWindowQt_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

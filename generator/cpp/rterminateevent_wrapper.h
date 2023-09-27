@@ -110,7 +110,7 @@
             return (RTerminateEvent*)vp;
           }
 
-          qWarning() << "RTerminateEvent_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RTerminateEvent_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

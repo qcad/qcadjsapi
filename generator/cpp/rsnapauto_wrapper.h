@@ -626,7 +626,7 @@
             return (RSnapAuto*)vp;
           }
 
-          qWarning() << "RSnapAuto_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RSnapAuto_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

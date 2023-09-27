@@ -453,7 +453,13 @@ public:
         return QJSValue();
     }
 
-    virtual QJSValue toVariant(RJSApi& handler, const QJSValue& v) {
+    virtual QVariant toVariant(RJSApi& handler, const QJSValue& v) {
+        RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+        if (wrapper==nullptr) {
+            qWarning() << "RJSQVariantConverter_RColor::toVariant: no wrapper";
+            return QVariant();
+        }
+        int t = wrapper->getWrappedType();
         if (t==RJSType_RColor::getIdStatic()) {
             return QVariant(RJSHelper_qcad::js2cpp_RColor(handler, v));
         }

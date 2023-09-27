@@ -55,7 +55,7 @@
             return (RPasteOperation*)vp;
           }
 
-          qWarning() << "RPasteOperation_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RPasteOperation_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

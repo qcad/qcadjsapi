@@ -55,7 +55,7 @@
             return (RMessageHandler*)vp;
           }
 
-          qWarning() << "RMessageHandler_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RMessageHandler_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

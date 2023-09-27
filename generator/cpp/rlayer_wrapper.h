@@ -475,7 +475,7 @@
             return (RLayer*)vp;
           }
 
-          qWarning() << "RLayer_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RLayer_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

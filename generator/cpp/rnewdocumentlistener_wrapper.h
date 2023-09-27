@@ -59,7 +59,7 @@
             return (RNewDocumentListener*)vp;
           }
 
-          qWarning() << "RNewDocumentListener_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RNewDocumentListener_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           

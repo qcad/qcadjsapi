@@ -61,7 +61,7 @@
             return (RInterTransactionListener*)vp;
           }
 
-          qWarning() << "RInterTransactionListener_Wrapper::castToBase: type not found: " << getTypeName(t);
+          qWarning() << "RInterTransactionListener_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
