@@ -6,7 +6,7 @@ xmlns:qc="http://qcad.org/namespaces/xsl" filename="REllipseEntity.h">
   <class name="REllipseEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />

@@ -1272,7 +1272,7 @@
         static RDimAngular3PEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDimAngular3PEntity:
           for (int i=0; i<basecasters_RDimAngular3PEntity.length(); i++) {
             RJSBasecaster_RDimAngular3PEntity* basecaster = basecasters_RDimAngular3PEntity[i];
             RDimAngular3PEntity* ret = basecaster->castToBase(t, vp);
@@ -1281,7 +1281,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDimAngular3PEntity:
           if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
             return (RDimAngular3PEntity*)vp;
           }

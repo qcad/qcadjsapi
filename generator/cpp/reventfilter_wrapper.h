@@ -110,7 +110,7 @@
         static REventFilter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base REventFilter:
           for (int i=0; i<basecasters_REventFilter.length(); i++) {
             RJSBasecaster_REventFilter* basecaster = basecasters_REventFilter[i];
             REventFilter* ret = basecaster->castToBase(t, vp);
@@ -119,7 +119,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class REventFilter:
           if (t==RJSType_REventFilter::getIdStatic()) {
             return (REventFilter*)vp;
           }

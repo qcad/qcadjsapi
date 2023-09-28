@@ -43,7 +43,7 @@
         static RGraphicsScene* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RGraphicsScene:
           for (int i=0; i<basecasters_RGraphicsScene.length(); i++) {
             RJSBasecaster_RGraphicsScene* basecaster = basecasters_RGraphicsScene[i];
             RGraphicsScene* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RGraphicsScene:
           if (t==RJSType_RGraphicsScene::getIdStatic()) {
             return (RGraphicsScene*)vp;
           }

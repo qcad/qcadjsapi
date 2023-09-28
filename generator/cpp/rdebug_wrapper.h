@@ -345,7 +345,7 @@
         static RDebug* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDebug:
           for (int i=0; i<basecasters_RDebug.length(); i++) {
             RJSBasecaster_RDebug* basecaster = basecasters_RDebug[i];
             RDebug* ret = basecaster->castToBase(t, vp);
@@ -354,7 +354,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDebug:
           if (t==RJSType_RDebug::getIdStatic()) {
             return (RDebug*)vp;
           }

@@ -41,7 +41,7 @@
         static RPainterPathSource* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RPainterPathSource:
           for (int i=0; i<basecasters_RPainterPathSource.length(); i++) {
             RJSBasecaster_RPainterPathSource* basecaster = basecasters_RPainterPathSource[i];
             RPainterPathSource* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RPainterPathSource:
           if (t==RJSType_RPainterPathSource::getIdStatic()) {
             return (RPainterPathSource*)vp;
           }

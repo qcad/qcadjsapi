@@ -135,7 +135,7 @@
         static ROrthoGrid* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base ROrthoGrid:
           for (int i=0; i<basecasters_ROrthoGrid.length(); i++) {
             RJSBasecaster_ROrthoGrid* basecaster = basecasters_ROrthoGrid[i];
             ROrthoGrid* ret = basecaster->castToBase(t, vp);
@@ -144,7 +144,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class ROrthoGrid:
           if (t==RJSType_ROrthoGrid::getIdStatic()) {
             return (ROrthoGrid*)vp;
           }

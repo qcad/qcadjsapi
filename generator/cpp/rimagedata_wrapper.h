@@ -92,7 +92,7 @@
         static RImageData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RImageData:
           for (int i=0; i<basecasters_RImageData.length(); i++) {
             RJSBasecaster_RImageData* basecaster = basecasters_RImageData[i];
             RImageData* ret = basecaster->castToBase(t, vp);
@@ -101,7 +101,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RImageData:
           if (t==RJSType_RImageData::getIdStatic()) {
             return (RImageData*)vp;
           }

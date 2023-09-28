@@ -43,7 +43,7 @@
         static RSnapPerpendicular* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSnapPerpendicular:
           for (int i=0; i<basecasters_RSnapPerpendicular.length(); i++) {
             RJSBasecaster_RSnapPerpendicular* basecaster = basecasters_RSnapPerpendicular[i];
             RSnapPerpendicular* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSnapPerpendicular:
           if (t==RJSType_RSnapPerpendicular::getIdStatic()) {
             return (RSnapPerpendicular*)vp;
           }

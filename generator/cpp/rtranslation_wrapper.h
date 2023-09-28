@@ -41,7 +41,7 @@
         static RTranslation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RTranslation:
           for (int i=0; i<basecasters_RTranslation.length(); i++) {
             RJSBasecaster_RTranslation* basecaster = basecasters_RTranslation[i];
             RTranslation* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RTranslation:
           if (t==RJSType_RTranslation::getIdStatic()) {
             return (RTranslation*)vp;
           }

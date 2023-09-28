@@ -102,7 +102,7 @@
         static ROperationUtils* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base ROperationUtils:
           for (int i=0; i<basecasters_ROperationUtils.length(); i++) {
             RJSBasecaster_ROperationUtils* basecaster = basecasters_ROperationUtils[i];
             ROperationUtils* ret = basecaster->castToBase(t, vp);
@@ -111,7 +111,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class ROperationUtils:
           if (t==RJSType_ROperationUtils::getIdStatic()) {
             return (ROperationUtils*)vp;
           }

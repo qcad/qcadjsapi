@@ -6,10 +6,10 @@
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />
-      <super name="QFrame" />
       <super name="RRuler" />
       <super name="RCoordinateListener" />
       <super name="RPaletteListener" />
+      <super name="QFrame" />
     </super_list>
     <constructor>
       <variant>

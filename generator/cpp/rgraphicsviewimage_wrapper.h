@@ -126,7 +126,7 @@
         static RGraphicsViewImage* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RGraphicsViewImage:
           for (int i=0; i<basecasters_RGraphicsViewImage.length(); i++) {
             RJSBasecaster_RGraphicsViewImage* basecaster = basecasters_RGraphicsViewImage[i];
             RGraphicsViewImage* ret = basecaster->castToBase(t, vp);
@@ -135,7 +135,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RGraphicsViewImage:
           if (t==RJSType_RGraphicsViewImage::getIdStatic()) {
             return (RGraphicsViewImage*)vp;
           }

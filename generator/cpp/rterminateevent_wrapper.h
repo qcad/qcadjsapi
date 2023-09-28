@@ -96,7 +96,7 @@
         static RTerminateEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RTerminateEvent:
           for (int i=0; i<basecasters_RTerminateEvent.length(); i++) {
             RJSBasecaster_RTerminateEvent* basecaster = basecasters_RTerminateEvent[i];
             RTerminateEvent* ret = basecaster->castToBase(t, vp);
@@ -105,7 +105,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RTerminateEvent:
           if (t==RJSType_RTerminateEvent::getIdStatic()) {
             return (RTerminateEvent*)vp;
           }

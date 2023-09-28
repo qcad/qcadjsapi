@@ -98,7 +98,7 @@
         static RStorage* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RStorage:
           for (int i=0; i<basecasters_RStorage.length(); i++) {
             RJSBasecaster_RStorage* basecaster = basecasters_RStorage[i];
             RStorage* ret = basecaster->castToBase(t, vp);
@@ -107,7 +107,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RStorage:
           if (t==RJSType_RStorage::getIdStatic()) {
             return (RStorage*)vp;
           }

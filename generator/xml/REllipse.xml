@@ -3,7 +3,7 @@
   <class_decl name="RBox" />
   <class name="REllipse" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
     </super_list>
     <constructor>
       <variant>

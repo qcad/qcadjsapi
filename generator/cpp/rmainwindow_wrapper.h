@@ -193,7 +193,7 @@
         static RMainWindow* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RMainWindow:
           for (int i=0; i<basecasters_RMainWindow.length(); i++) {
             RJSBasecaster_RMainWindow* basecaster = basecasters_RMainWindow[i];
             RMainWindow* ret = basecaster->castToBase(t, vp);
@@ -202,7 +202,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RMainWindow:
           if (t==RJSType_RMainWindow::getIdStatic()) {
             return (RMainWindow*)vp;
           }

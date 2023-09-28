@@ -45,7 +45,7 @@
         static RSnapListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSnapListener:
           for (int i=0; i<basecasters_RSnapListener.length(); i++) {
             RJSBasecaster_RSnapListener* basecaster = basecasters_RSnapListener[i];
             RSnapListener* ret = basecaster->castToBase(t, vp);
@@ -54,7 +54,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSnapListener:
           if (t==RJSType_RSnapListener::getIdStatic()) {
             return (RSnapListener*)vp;
           }

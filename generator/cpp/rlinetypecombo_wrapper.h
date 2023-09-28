@@ -622,7 +622,7 @@
         static RLinetypeCombo* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RLinetypeCombo:
           for (int i=0; i<basecasters_RLinetypeCombo.length(); i++) {
             RJSBasecaster_RLinetypeCombo* basecaster = basecasters_RLinetypeCombo[i];
             RLinetypeCombo* ret = basecaster->castToBase(t, vp);
@@ -631,7 +631,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RLinetypeCombo:
           if (t==RJSType_RLinetypeCombo::getIdStatic()) {
             return (RLinetypeCombo*)vp;
           }

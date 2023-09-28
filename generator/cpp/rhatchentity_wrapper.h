@@ -768,7 +768,7 @@
         static RHatchEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RHatchEntity:
           for (int i=0; i<basecasters_RHatchEntity.length(); i++) {
             RJSBasecaster_RHatchEntity* basecaster = basecasters_RHatchEntity[i];
             RHatchEntity* ret = basecaster->castToBase(t, vp);
@@ -777,7 +777,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RHatchEntity:
           if (t==RJSType_RHatchEntity::getIdStatic()) {
             return (RHatchEntity*)vp;
           }

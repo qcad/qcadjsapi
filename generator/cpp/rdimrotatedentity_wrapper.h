@@ -1246,7 +1246,7 @@
         static RDimRotatedEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDimRotatedEntity:
           for (int i=0; i<basecasters_RDimRotatedEntity.length(); i++) {
             RJSBasecaster_RDimRotatedEntity* basecaster = basecasters_RDimRotatedEntity[i];
             RDimRotatedEntity* ret = basecaster->castToBase(t, vp);
@@ -1255,7 +1255,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDimRotatedEntity:
           if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
             return (RDimRotatedEntity*)vp;
           }

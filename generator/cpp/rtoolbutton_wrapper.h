@@ -556,7 +556,7 @@
         static RToolButton* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RToolButton:
           for (int i=0; i<basecasters_RToolButton.length(); i++) {
             RJSBasecaster_RToolButton* basecaster = basecasters_RToolButton[i];
             RToolButton* ret = basecaster->castToBase(t, vp);
@@ -565,7 +565,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RToolButton:
           if (t==RJSType_RToolButton::getIdStatic()) {
             return (RToolButton*)vp;
           }

@@ -43,7 +43,7 @@
         static RKeyListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RKeyListener:
           for (int i=0; i<basecasters_RKeyListener.length(); i++) {
             RJSBasecaster_RKeyListener* basecaster = basecasters_RKeyListener[i];
             RKeyListener* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RKeyListener:
           if (t==RJSType_RKeyListener::getIdStatic()) {
             return (RKeyListener*)vp;
           }

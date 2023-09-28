@@ -43,7 +43,7 @@
         static RMouseCoordinateListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RMouseCoordinateListener:
           for (int i=0; i<basecasters_RMouseCoordinateListener.length(); i++) {
             RJSBasecaster_RMouseCoordinateListener* basecaster = basecasters_RMouseCoordinateListener[i];
             RMouseCoordinateListener* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RMouseCoordinateListener:
           if (t==RJSType_RMouseCoordinateListener::getIdStatic()) {
             return (RMouseCoordinateListener*)vp;
           }

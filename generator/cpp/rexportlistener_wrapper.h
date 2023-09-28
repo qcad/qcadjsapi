@@ -45,7 +45,7 @@
         static RExportListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RExportListener:
           for (int i=0; i<basecasters_RExportListener.length(); i++) {
             RJSBasecaster_RExportListener* basecaster = basecasters_RExportListener[i];
             RExportListener* ret = basecaster->castToBase(t, vp);
@@ -54,7 +54,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RExportListener:
           if (t==RJSType_RExportListener::getIdStatic()) {
             return (RExportListener*)vp;
           }

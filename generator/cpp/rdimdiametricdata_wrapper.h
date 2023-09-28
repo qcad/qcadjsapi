@@ -92,7 +92,7 @@
         static RDimDiametricData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDimDiametricData:
           for (int i=0; i<basecasters_RDimDiametricData.length(); i++) {
             RJSBasecaster_RDimDiametricData* basecaster = basecasters_RDimDiametricData[i];
             RDimDiametricData* ret = basecaster->castToBase(t, vp);
@@ -101,7 +101,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDimDiametricData:
           if (t==RJSType_RDimDiametricData::getIdStatic()) {
             return (RDimDiametricData*)vp;
           }

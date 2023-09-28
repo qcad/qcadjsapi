@@ -46,7 +46,7 @@
         static RRestrictAngleLength* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RRestrictAngleLength:
           for (int i=0; i<basecasters_RRestrictAngleLength.length(); i++) {
             RJSBasecaster_RRestrictAngleLength* basecaster = basecasters_RRestrictAngleLength[i];
             RRestrictAngleLength* ret = basecaster->castToBase(t, vp);
@@ -55,7 +55,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RRestrictAngleLength:
           if (t==RJSType_RRestrictAngleLength::getIdStatic()) {
             return (RRestrictAngleLength*)vp;
           }

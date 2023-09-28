@@ -307,5 +307,7 @@
 #include "RSpatialIndexVisitorAdapter.h"
 //#include "RGraphicsViewSkia.h"
 
+#include "RJSType_qcad.h"
+
 #include "generator/cpp/qobject_wrapper.h"
 #include "generator/cpp/qcoreevent_wrapper.h"

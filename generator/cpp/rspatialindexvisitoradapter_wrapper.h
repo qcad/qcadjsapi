@@ -41,7 +41,7 @@
         static RSpatialIndexVisitorAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSpatialIndexVisitorAdapter:
           for (int i=0; i<basecasters_RSpatialIndexVisitorAdapter.length(); i++) {
             RJSBasecaster_RSpatialIndexVisitorAdapter* basecaster = basecasters_RSpatialIndexVisitorAdapter[i];
             RSpatialIndexVisitorAdapter* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSpatialIndexVisitorAdapter:
           if (t==RJSType_RSpatialIndexVisitorAdapter::getIdStatic()) {
             return (RSpatialIndexVisitorAdapter*)vp;
           }

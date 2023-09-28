@@ -118,6 +118,7 @@
     <type>RSpline</type>
     <type>RTriangle</type>
     <type>RXLine</type>
+    <type>RTextLabel</type>
   </shared_ptr>
 
   <shared_ptr_no_copy>
@@ -159,6 +160,7 @@
     <type>RSolidEntity</type>
     <type>RSplineEntity</type>
     <type>RTextEntity</type>
+    <type>RTextBasedEntity</type>
     <type>RToleranceEntity</type>
     <type>RTraceEntity</type>
     <type>RUcs</type>

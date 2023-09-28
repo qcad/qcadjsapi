@@ -716,7 +716,7 @@
         static RRayEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RRayEntity:
           for (int i=0; i<basecasters_RRayEntity.length(); i++) {
             RJSBasecaster_RRayEntity* basecaster = basecasters_RRayEntity[i];
             RRayEntity* ret = basecaster->castToBase(t, vp);
@@ -725,7 +725,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RRayEntity:
           if (t==RJSType_RRayEntity::getIdStatic()) {
             return (RRayEntity*)vp;
           }

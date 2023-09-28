@@ -45,7 +45,7 @@
         static REntityPickEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base REntityPickEvent:
           for (int i=0; i<basecasters_REntityPickEvent.length(); i++) {
             RJSBasecaster_REntityPickEvent* basecaster = basecasters_REntityPickEvent[i];
             REntityPickEvent* ret = basecaster->castToBase(t, vp);
@@ -54,7 +54,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class REntityPickEvent:
           if (t==RJSType_REntityPickEvent::getIdStatic()) {
             return (REntityPickEvent*)vp;
           }

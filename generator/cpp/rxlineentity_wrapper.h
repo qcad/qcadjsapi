@@ -716,7 +716,7 @@
         static RXLineEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RXLineEntity:
           for (int i=0; i<basecasters_RXLineEntity.length(); i++) {
             RJSBasecaster_RXLineEntity* basecaster = basecasters_RXLineEntity[i];
             RXLineEntity* ret = basecaster->castToBase(t, vp);
@@ -725,7 +725,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RXLineEntity:
           if (t==RJSType_RXLineEntity::getIdStatic()) {
             return (RXLineEntity*)vp;
           }

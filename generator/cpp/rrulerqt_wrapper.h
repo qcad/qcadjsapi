@@ -536,7 +536,7 @@
         static RRulerQt* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RRulerQt:
           for (int i=0; i<basecasters_RRulerQt.length(); i++) {
             RJSBasecaster_RRulerQt* basecaster = basecasters_RRulerQt[i];
             RRulerQt* ret = basecaster->castToBase(t, vp);
@@ -545,7 +545,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RRulerQt:
           if (t==RJSType_RRulerQt::getIdStatic()) {
             return (RRulerQt*)vp;
           }
@@ -5649,6 +5649,50 @@
               ;
             
     // Class: RRulerQt
+    // Function: setGraphicsView
+    // Source: RRuler
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGraphicsView
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RRulerQt
+    // Function: getOrientation
+    // Source: RRuler
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getOrientation
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RRulerQt
     // Function: frameStyle
     // Source: QFrame
     // Static: false
@@ -5982,50 +6026,6 @@
       = QJSValue()
     
               )
-              
-              ;
-            
-    // Class: RRulerQt
-    // Function: setGraphicsView
-    // Source: RRuler
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGraphicsView
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RRulerQt
-    // Function: getOrientation
-    // Source: RRuler
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getOrientation
-              (
-
-                
-              )
-              
-                const
               
               ;
             

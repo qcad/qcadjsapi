@@ -43,7 +43,7 @@
         static RViewListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RViewListener:
           for (int i=0; i<basecasters_RViewListener.length(); i++) {
             RJSBasecaster_RViewListener* basecaster = basecasters_RViewListener[i];
             RViewListener* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RViewListener:
           if (t==RJSType_RViewListener::getIdStatic()) {
             return (RViewListener*)vp;
           }

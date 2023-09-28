@@ -6,7 +6,7 @@ filename="RDimAngular2LEntity.h">
   <class name="RDimAngular2LEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
       <super name="RDimAngularEntity" />
     </super_list>

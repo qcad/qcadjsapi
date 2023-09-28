@@ -131,7 +131,7 @@
         static RDocumentInterface* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDocumentInterface:
           for (int i=0; i<basecasters_RDocumentInterface.length(); i++) {
             RJSBasecaster_RDocumentInterface* basecaster = basecasters_RDocumentInterface[i];
             RDocumentInterface* ret = basecaster->castToBase(t, vp);
@@ -140,7 +140,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDocumentInterface:
           if (t==RJSType_RDocumentInterface::getIdStatic()) {
             return (RDocumentInterface*)vp;
           }

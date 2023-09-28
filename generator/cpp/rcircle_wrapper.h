@@ -1501,7 +1501,7 @@
         static RCircle* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RCircle:
           for (int i=0; i<basecasters_RCircle.length(); i++) {
             RJSBasecaster_RCircle* basecaster = basecasters_RCircle[i];
             RCircle* ret = basecaster->castToBase(t, vp);
@@ -1510,7 +1510,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RCircle:
           if (t==RJSType_RCircle::getIdStatic()) {
             return (RCircle*)vp;
           }

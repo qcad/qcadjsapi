@@ -47,7 +47,7 @@
         static RInterTransactionListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RInterTransactionListener:
           for (int i=0; i<basecasters_RInterTransactionListener.length(); i++) {
             RJSBasecaster_RInterTransactionListener* basecaster = basecasters_RInterTransactionListener[i];
             RInterTransactionListener* ret = basecaster->castToBase(t, vp);
@@ -56,7 +56,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RInterTransactionListener:
           if (t==RJSType_RInterTransactionListener::getIdStatic()) {
             return (RInterTransactionListener*)vp;
           }

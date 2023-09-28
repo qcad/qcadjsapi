@@ -43,7 +43,7 @@
         static REntityExportListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base REntityExportListener:
           for (int i=0; i<basecasters_REntityExportListener.length(); i++) {
             RJSBasecaster_REntityExportListener* basecaster = basecasters_REntityExportListener[i];
             REntityExportListener* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class REntityExportListener:
           if (t==RJSType_REntityExportListener::getIdStatic()) {
             return (REntityExportListener*)vp;
           }

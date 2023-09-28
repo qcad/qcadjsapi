@@ -41,7 +41,7 @@
         static RPattern* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RPattern:
           for (int i=0; i<basecasters_RPattern.length(); i++) {
             RJSBasecaster_RPattern* basecaster = basecasters_RPattern[i];
             RPattern* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RPattern:
           if (t==RJSType_RPattern::getIdStatic()) {
             return (RPattern*)vp;
           }

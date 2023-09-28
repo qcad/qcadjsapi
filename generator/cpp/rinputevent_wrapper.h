@@ -45,7 +45,7 @@
         static RInputEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RInputEvent:
           for (int i=0; i<basecasters_RInputEvent.length(); i++) {
             RJSBasecaster_RInputEvent* basecaster = basecasters_RInputEvent[i];
             RInputEvent* ret = basecaster->castToBase(t, vp);
@@ -54,7 +54,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RInputEvent:
           if (t==RJSType_RInputEvent::getIdStatic()) {
             return (RInputEvent*)vp;
           }

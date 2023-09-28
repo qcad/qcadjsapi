@@ -820,7 +820,7 @@
         static RSplineEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSplineEntity:
           for (int i=0; i<basecasters_RSplineEntity.length(); i++) {
             RJSBasecaster_RSplineEntity* basecaster = basecasters_RSplineEntity[i];
             RSplineEntity* ret = basecaster->castToBase(t, vp);
@@ -829,7 +829,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSplineEntity:
           if (t==RJSType_RSplineEntity::getIdStatic()) {
             return (RSplineEntity*)vp;
           }

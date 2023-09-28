@@ -1116,7 +1116,7 @@
         static RDimensionEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDimensionEntity:
           for (int i=0; i<basecasters_RDimensionEntity.length(); i++) {
             RJSBasecaster_RDimensionEntity* basecaster = basecasters_RDimensionEntity[i];
             RDimensionEntity* ret = basecaster->castToBase(t, vp);
@@ -1125,7 +1125,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDimensionEntity:
           if (t==RJSType_RDimensionEntity::getIdStatic()) {
             return (RDimensionEntity*)vp;
           }

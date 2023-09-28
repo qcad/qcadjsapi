@@ -110,7 +110,7 @@
         static RPaletteListenerAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RPaletteListenerAdapter:
           for (int i=0; i<basecasters_RPaletteListenerAdapter.length(); i++) {
             RJSBasecaster_RPaletteListenerAdapter* basecaster = basecasters_RPaletteListenerAdapter[i];
             RPaletteListenerAdapter* ret = basecaster->castToBase(t, vp);
@@ -119,7 +119,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RPaletteListenerAdapter:
           if (t==RJSType_RPaletteListenerAdapter::getIdStatic()) {
             return (RPaletteListenerAdapter*)vp;
           }

@@ -86,6 +86,17 @@
               initConnections();
             }
           
+        // special constructor to wrap existing object from shared pointer:
+        RTextLayout_Wrapper::RTextLayout_Wrapper(RJSApi& h, QSharedPointer<RTextLayout> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+              //RDebug::incCounter(QString("RTextLayout_Wrapper_") + handler.getEngine()->objectName());
+              //RDebug::incCounter(QString("RTextLayout_Wrapper"));
+              //setObjectName("RTextLayout_Wrapper");
+              //setHandler(h);
+
+              // signal forwarding:
+              initConnections();
+            }
+          
 
       // destructor:
       RTextLayout_Wrapper::~RTextLayout_Wrapper() {

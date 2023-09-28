@@ -48,7 +48,7 @@
         static RSnapDistance* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSnapDistance:
           for (int i=0; i<basecasters_RSnapDistance.length(); i++) {
             RJSBasecaster_RSnapDistance* basecaster = basecasters_RSnapDistance[i];
             RSnapDistance* ret = basecaster->castToBase(t, vp);
@@ -57,7 +57,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSnapDistance:
           if (t==RJSType_RSnapDistance::getIdStatic()) {
             return (RSnapDistance*)vp;
           }

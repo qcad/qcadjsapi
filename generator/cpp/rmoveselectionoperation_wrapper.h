@@ -41,7 +41,7 @@
         static RMoveSelectionOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RMoveSelectionOperation:
           for (int i=0; i<basecasters_RMoveSelectionOperation.length(); i++) {
             RJSBasecaster_RMoveSelectionOperation* basecaster = basecasters_RMoveSelectionOperation[i];
             RMoveSelectionOperation* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RMoveSelectionOperation:
           if (t==RJSType_RMoveSelectionOperation::getIdStatic()) {
             return (RMoveSelectionOperation*)vp;
           }

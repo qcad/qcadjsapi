@@ -5,7 +5,7 @@
   <class name="RTextEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RTextBasedEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />

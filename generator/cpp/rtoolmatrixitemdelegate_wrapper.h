@@ -113,7 +113,7 @@
         static RToolMatrixItemDelegate* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RToolMatrixItemDelegate:
           for (int i=0; i<basecasters_RToolMatrixItemDelegate.length(); i++) {
             RJSBasecaster_RToolMatrixItemDelegate* basecaster = basecasters_RToolMatrixItemDelegate[i];
             RToolMatrixItemDelegate* ret = basecaster->castToBase(t, vp);
@@ -122,7 +122,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RToolMatrixItemDelegate:
           if (t==RJSType_RToolMatrixItemDelegate::getIdStatic()) {
             return (RToolMatrixItemDelegate*)vp;
           }

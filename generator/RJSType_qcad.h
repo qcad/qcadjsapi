@@ -425,6 +425,40 @@
           static int id;
       };
     
+      class RJSType_RTextLabel : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_RTextLabel::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "RTextLabel";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_RTextLabel();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_RTextLabel());
+              }
+              return id;
+          }
+
+
+      private:
+          static int id;
+      };
+    
 
   
       class RJSType_RObject : public RJSTypeEnum {
@@ -1710,6 +1744,40 @@
           static int getIdStatic() {
               if (id<0) {
                   id = RJSTypeEnum::reserve(new RJSType_RTextEntity());
+              }
+              return id;
+          }
+
+
+      private:
+          static int id;
+      };
+    
+      class RJSType_RTextBasedEntity : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_RTextBasedEntity::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "RTextBasedEntity";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_RTextBasedEntity();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_RTextBasedEntity());
               }
               return id;
           }
@@ -4092,40 +4160,6 @@
           static int getIdStatic() {
               if (id<0) {
                   id = RJSTypeEnum::reserve(new RJSType_RTextData());
-              }
-              return id;
-          }
-
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_RTextLabel : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextLabel::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "RTextLabel";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_RTextLabel();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextLabel());
               }
               return id;
           }
@@ -7732,40 +7766,6 @@
           static int getIdStatic() {
               if (id<0) {
                   id = RJSTypeEnum::reserve(new RJSType_RTerminateEvent());
-              }
-              return id;
-          }
-
-
-      private:
-          static int id;
-      };
-    
-      class RJSType_RTextBasedEntity : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextBasedEntity::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "RTextBasedEntity";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_RTextBasedEntity();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextBasedEntity());
               }
               return id;
           }

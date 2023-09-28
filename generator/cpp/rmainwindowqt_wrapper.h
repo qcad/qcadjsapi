@@ -694,7 +694,7 @@
         static RMainWindowQt* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RMainWindowQt:
           for (int i=0; i<basecasters_RMainWindowQt.length(); i++) {
             RJSBasecaster_RMainWindowQt* basecaster = basecasters_RMainWindowQt[i];
             RMainWindowQt* ret = basecaster->castToBase(t, vp);
@@ -703,7 +703,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RMainWindowQt:
           if (t==RJSType_RMainWindowQt::getIdStatic()) {
             return (RMainWindowQt*)vp;
           }
@@ -5791,1235 +5791,6 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
               ;
             
     // Class: RMainWindowQt
-    // Function: iconSize
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  iconSize
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setIconSize
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIconSize
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: toolButtonStyle
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolButtonStyle
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setToolButtonStyle
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolButtonStyle
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: isAnimated
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isAnimated
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: isDockNestingEnabled
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isDockNestingEnabled
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: documentMode
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  documentMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setDocumentMode
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDocumentMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: tabShape
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tabShape
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setTabShape
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabShape
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: tabPosition
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tabPosition
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setTabPosition
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabPosition
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setDockOptions
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDockOptions
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: dockOptions
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dockOptions
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: isSeparator
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSeparator
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: menuBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  menuBar
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setMenuBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMenuBar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: menuWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  menuWidget
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setMenuWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMenuWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: statusBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  statusBar
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setStatusBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStatusBar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: centralWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  centralWidget
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setCentralWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCentralWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: takeCentralWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  takeCentralWidget
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setCorner
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCorner
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: corner
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  corner
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: addToolBarBreak
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addToolBarBreak
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: insertToolBarBreak
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertToolBarBreak
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: addToolBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addToolBar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: insertToolBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertToolBar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: removeToolBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeToolBar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: removeToolBarBreak
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeToolBarBreak
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: unifiedTitleAndToolBarOnMac
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unifiedTitleAndToolBarOnMac
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: toolBarArea
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolBarArea
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: toolBarBreak
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolBarBreak
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: addDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addDockWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: splitDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  splitDockWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: tabifyDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tabifyDockWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: tabifiedDockWidgets
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tabifiedDockWidgets
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: removeDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeDockWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: restoreDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  restoreDockWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: dockWidgetArea
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dockWidgetArea
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: resizeDocks
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resizeDocks
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: saveState
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  saveState
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: restoreState
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  restoreState
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setAnimated
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAnimated
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setDockNestingEnabled
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDockNestingEnabled
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: setUnifiedTitleAndToolBarOnMac
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUnifiedTitleAndToolBarOnMac
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
-    // Function: iconSizeChanged
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void iconSizeChanged(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void iconSizeChangedEmitter(
-                const QSize& iconSize
-              );
-            
-    // Class: RMainWindowQt
-    // Function: toolButtonStyleChanged
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void toolButtonStyleChanged(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void toolButtonStyleChangedEmitter(
-                Qt::ToolButtonStyle toolButtonStyle
-              );
-            
-    // Class: RMainWindowQt
-    // Function: tabifiedDockWidgetActivated
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void tabifiedDockWidgetActivated(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void tabifiedDockWidgetActivatedEmitter(
-                QDockWidget* dockWidget
-              );
-            
-    // Class: RMainWindowQt
-    // Function: contextMenuEvent
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      contextMenuEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMainWindowQt
     // Function: notifyListeners
     // Source: RMainWindow
     // Static: false
@@ -8636,6 +7407,1235 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
     , 
   const QJSValue& 
   a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: iconSize
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  iconSize
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setIconSize
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setIconSize
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: toolButtonStyle
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toolButtonStyle
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setToolButtonStyle
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setToolButtonStyle
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: isAnimated
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isAnimated
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: isDockNestingEnabled
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isDockNestingEnabled
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: documentMode
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  documentMode
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setDocumentMode
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDocumentMode
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: tabShape
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tabShape
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setTabShape
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setTabShape
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: tabPosition
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tabPosition
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setTabPosition
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setTabPosition
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setDockOptions
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDockOptions
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: dockOptions
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dockOptions
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: isSeparator
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSeparator
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: menuBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  menuBar
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setMenuBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setMenuBar
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: menuWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  menuWidget
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setMenuWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setMenuWidget
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: statusBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  statusBar
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setStatusBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setStatusBar
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: centralWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  centralWidget
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setCentralWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCentralWidget
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: takeCentralWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  takeCentralWidget
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setCorner
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCorner
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: corner
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  corner
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: addToolBarBreak
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addToolBarBreak
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: insertToolBarBreak
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertToolBarBreak
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: addToolBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addToolBar
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: insertToolBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertToolBar
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: removeToolBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeToolBar
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: removeToolBarBreak
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeToolBarBreak
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: unifiedTitleAndToolBarOnMac
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  unifiedTitleAndToolBarOnMac
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: toolBarArea
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toolBarArea
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: toolBarBreak
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toolBarBreak
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: addDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addDockWidget
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: splitDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  splitDockWidget
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: tabifyDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tabifyDockWidget
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: tabifiedDockWidgets
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  tabifiedDockWidgets
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: removeDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeDockWidget
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: restoreDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  restoreDockWidget
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: dockWidgetArea
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  dockWidgetArea
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: resizeDocks
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  resizeDocks
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: saveState
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  saveState
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: restoreState
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  restoreState
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setAnimated
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setAnimated
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setDockNestingEnabled
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDockNestingEnabled
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: setUnifiedTitleAndToolBarOnMac
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setUnifiedTitleAndToolBarOnMac
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
+    // Function: iconSizeChanged
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void iconSizeChanged(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void iconSizeChangedEmitter(
+                const QSize& iconSize
+              );
+            
+    // Class: RMainWindowQt
+    // Function: toolButtonStyleChanged
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void toolButtonStyleChanged(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void toolButtonStyleChangedEmitter(
+                Qt::ToolButtonStyle toolButtonStyle
+              );
+            
+    // Class: RMainWindowQt
+    // Function: tabifiedDockWidgetActivated
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void tabifiedDockWidgetActivated(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void tabifiedDockWidgetActivatedEmitter(
+                QDockWidget* dockWidget
+              );
+            
+    // Class: RMainWindowQt
+    // Function: contextMenuEvent
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      contextMenuEventSuper
+                    
+              (
+
+                
+  const QJSValue& 
+  a1
       = QJSValue()
     
               )

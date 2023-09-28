@@ -5,7 +5,7 @@
   <class name="RDimAlignedEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
       <super name="RDimLinearEntity" />
     </super_list>

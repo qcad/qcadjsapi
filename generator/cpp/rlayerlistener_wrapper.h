@@ -43,7 +43,7 @@
         static RLayerListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RLayerListener:
           for (int i=0; i<basecasters_RLayerListener.length(); i++) {
             RJSBasecaster_RLayerListener* basecaster = basecasters_RLayerListener[i];
             RLayerListener* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RLayerListener:
           if (t==RJSType_RLayerListener::getIdStatic()) {
             return (RLayerListener*)vp;
           }

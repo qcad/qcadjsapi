@@ -43,7 +43,7 @@
         static RSnapTangential* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSnapTangential:
           for (int i=0; i<basecasters_RSnapTangential.length(); i++) {
             RJSBasecaster_RSnapTangential* basecaster = basecasters_RSnapTangential[i];
             RSnapTangential* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSnapTangential:
           if (t==RJSType_RSnapTangential::getIdStatic()) {
             return (RSnapTangential*)vp;
           }

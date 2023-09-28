@@ -200,7 +200,7 @@
         static RAttributeDefinitionData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RAttributeDefinitionData:
           for (int i=0; i<basecasters_RAttributeDefinitionData.length(); i++) {
             RJSBasecaster_RAttributeDefinitionData* basecaster = basecasters_RAttributeDefinitionData[i];
             RAttributeDefinitionData* ret = basecaster->castToBase(t, vp);
@@ -209,7 +209,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RAttributeDefinitionData:
           if (t==RJSType_RAttributeDefinitionData::getIdStatic()) {
             return (RAttributeDefinitionData*)vp;
           }

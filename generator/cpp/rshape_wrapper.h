@@ -1441,7 +1441,7 @@
         static RShape* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RShape:
           for (int i=0; i<basecasters_RShape.length(); i++) {
             RJSBasecaster_RShape* basecaster = basecasters_RShape[i];
             RShape* ret = basecaster->castToBase(t, vp);
@@ -1450,7 +1450,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RShape:
           if (t==RJSType_RShape::getIdStatic()) {
             return (RShape*)vp;
           }

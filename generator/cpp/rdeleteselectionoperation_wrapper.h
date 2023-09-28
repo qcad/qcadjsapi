@@ -41,7 +41,7 @@
         static RDeleteSelectionOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDeleteSelectionOperation:
           for (int i=0; i<basecasters_RDeleteSelectionOperation.length(); i++) {
             RJSBasecaster_RDeleteSelectionOperation* basecaster = basecasters_RDeleteSelectionOperation[i];
             RDeleteSelectionOperation* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDeleteSelectionOperation:
           if (t==RJSType_RDeleteSelectionOperation::getIdStatic()) {
             return (RDeleteSelectionOperation*)vp;
           }

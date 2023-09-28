@@ -43,7 +43,7 @@
         static RModifiedListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RModifiedListener:
           for (int i=0; i<basecasters_RModifiedListener.length(); i++) {
             RJSBasecaster_RModifiedListener* basecaster = basecasters_RModifiedListener[i];
             RModifiedListener* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RModifiedListener:
           if (t==RJSType_RModifiedListener::getIdStatic()) {
             return (RModifiedListener*)vp;
           }

@@ -755,7 +755,7 @@
         static RFaceEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RFaceEntity:
           for (int i=0; i<basecasters_RFaceEntity.length(); i++) {
             RJSBasecaster_RFaceEntity* basecaster = basecasters_RFaceEntity[i];
             RFaceEntity* ret = basecaster->castToBase(t, vp);
@@ -764,7 +764,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RFaceEntity:
           if (t==RJSType_RFaceEntity::getIdStatic()) {
             return (RFaceEntity*)vp;
           }

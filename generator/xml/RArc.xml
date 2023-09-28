@@ -5,7 +5,7 @@
   <class_decl name="RPolyline" />
   <class name="RArc" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
     </super_list>
     <constructor>
       <variant>

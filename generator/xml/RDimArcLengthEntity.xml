@@ -6,7 +6,7 @@ filename="RDimArcLengthEntity.h">
   <class name="RDimArcLengthEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
       <super name="RDimAngularEntity" />
     </super_list>

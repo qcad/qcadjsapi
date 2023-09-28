@@ -115,7 +115,7 @@
         static RAutoLoadJs* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RAutoLoadJs:
           for (int i=0; i<basecasters_RAutoLoadJs.length(); i++) {
             RJSBasecaster_RAutoLoadJs* basecaster = basecasters_RAutoLoadJs[i];
             RAutoLoadJs* ret = basecaster->castToBase(t, vp);
@@ -124,7 +124,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RAutoLoadJs:
           if (t==RJSType_RAutoLoadJs::getIdStatic()) {
             return (RAutoLoadJs*)vp;
           }

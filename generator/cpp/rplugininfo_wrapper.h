@@ -41,7 +41,7 @@
         static RPluginInfo* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RPluginInfo:
           for (int i=0; i<basecasters_RPluginInfo.length(); i++) {
             RJSBasecaster_RPluginInfo* basecaster = basecasters_RPluginInfo[i];
             RPluginInfo* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RPluginInfo:
           if (t==RJSType_RPluginInfo::getIdStatic()) {
             return (RPluginInfo*)vp;
           }

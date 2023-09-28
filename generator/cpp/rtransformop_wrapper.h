@@ -168,7 +168,7 @@
         static RTransformOp* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RTransformOp:
           for (int i=0; i<basecasters_RTransformOp.length(); i++) {
             RJSBasecaster_RTransformOp* basecaster = basecasters_RTransformOp[i];
             RTransformOp* ret = basecaster->castToBase(t, vp);
@@ -177,7 +177,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RTransformOp:
           if (t==RJSType_RTransformOp::getIdStatic()) {
             return (RTransformOp*)vp;
           }

@@ -41,7 +41,7 @@
         static RCommandEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RCommandEvent:
           for (int i=0; i<basecasters_RCommandEvent.length(); i++) {
             RJSBasecaster_RCommandEvent* basecaster = basecasters_RCommandEvent[i];
             RCommandEvent* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RCommandEvent:
           if (t==RJSType_RCommandEvent::getIdStatic()) {
             return (RCommandEvent*)vp;
           }

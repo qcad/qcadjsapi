@@ -96,7 +96,7 @@
         static RPropertyEvent* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RPropertyEvent:
           for (int i=0; i<basecasters_RPropertyEvent.length(); i++) {
             RJSBasecaster_RPropertyEvent* basecaster = basecasters_RPropertyEvent[i];
             RPropertyEvent* ret = basecaster->castToBase(t, vp);
@@ -105,7 +105,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RPropertyEvent:
           if (t==RJSType_RPropertyEvent::getIdStatic()) {
             return (RPropertyEvent*)vp;
           }

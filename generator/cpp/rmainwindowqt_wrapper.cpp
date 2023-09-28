@@ -16857,3879 +16857,6 @@ Qt::InputMethodHints a1_cpp;
               }
             
     // Class: RMainWindowQt
-    // Function: iconSize
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::iconSize
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QSize res = 
-                    
-                w->iconSize(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QSize
-
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for iconSize";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setIconSize
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setIconSize
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QSize(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: iconSize (QSize)
-  
-QSize a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setIconSize(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setIconSize";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: toolButtonStyle
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::toolButtonStyle
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                Qt::ToolButtonStyle res = 
-                    
-                w->toolButtonStyle(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: Qt::ToolButtonStyle
-
-            return RJSHelper::cpp2js_Qt_ToolButtonStyle(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for toolButtonStyle";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setToolButtonStyle
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setToolButtonStyle
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_ToolButtonStyle(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: toolButtonStyle (Qt::ToolButtonStyle)
-  
-Qt::ToolButtonStyle a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_ToolButtonStyle(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setToolButtonStyle(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setToolButtonStyle";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: isAnimated
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::isAnimated
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                bool res = 
-                    
-                w->isAnimated(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for isAnimated";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: isDockNestingEnabled
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::isDockNestingEnabled
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                bool res = 
-                    
-                w->isDockNestingEnabled(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for isDockNestingEnabled";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: documentMode
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::documentMode
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                bool res = 
-                    
-                w->documentMode(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for documentMode";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setDocumentMode
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setDocumentMode
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_bool(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: enabled (bool)
-  
-bool a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setDocumentMode(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setDocumentMode";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: tabShape
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::tabShape
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QTabWidget::TabShape res = 
-                    
-                w->tabShape(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QTabWidget::TabShape
-
-            return RJSHelper::cpp2js_QTabWidget_TabShape(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tabShape";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setTabShape
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setTabShape
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QTabWidget_TabShape(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: tabShape (QTabWidget::TabShape)
-  
-QTabWidget::TabShape a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QTabWidget_TabShape(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setTabShape(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setTabShape";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: tabPosition
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::tabPosition
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_DockWidgetArea(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: area (Qt::DockWidgetArea)
-  
-Qt::DockWidgetArea a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_DockWidgetArea(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QTabWidget::TabPosition res = 
-                    
-                w->tabPosition(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QTabWidget::TabPosition
-
-            return RJSHelper::cpp2js_QTabWidget_TabPosition(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tabPosition";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setTabPosition
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setTabPosition
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_DockWidgetAreas(handler, a1
-  )
-
-   && RJSHelper::is_QTabWidget_TabPosition(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: areas (Qt::DockWidgetAreas)
-  
-Qt::DockWidgetAreas a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_DockWidgetAreas(handler, a1);
-        
-  // convert js parameter to cpp: tabPosition (QTabWidget::TabPosition)
-  
-QTabWidget::TabPosition a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QTabWidget_TabPosition(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setTabPosition(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setTabPosition";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setDockOptions
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setDockOptions
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QMainWindow_DockOptions(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: options (QMainWindow::DockOptions)
-  
-QMainWindow::DockOptions a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QMainWindow_DockOptions(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setDockOptions(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setDockOptions";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: dockOptions
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::dockOptions
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QMainWindow::DockOptions res = 
-                    
-                w->dockOptions(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QMainWindow::DockOptions
-
-            return RJSHelper::cpp2js_QMainWindow_DockOptions(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for dockOptions";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: isSeparator
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::isSeparator
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QPoint(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: pos (QPoint)
-  
-QPoint a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                bool res = 
-                    
-                w->isSeparator(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for isSeparator";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: menuBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::menuBar
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QMenuBar* res = 
-                    
-                w->menuBar(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QMenuBar*
-
-            return RJSHelper::cpp2js_QMenuBar(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for menuBar";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setMenuBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setMenuBar
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QMenuBar_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: menubar (QMenuBar)
-  
-
-          // pointer:
-          QMenuBar*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QMenuBar_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setMenuBar(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setMenuBar";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: menuWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::menuWidget
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QWidget* res = 
-                    
-                w->menuWidget(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for menuWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setMenuWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setMenuWidget
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: menubar (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setMenuWidget(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setMenuWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: statusBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::statusBar
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QStatusBar* res = 
-                    
-                w->statusBar(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QStatusBar*
-
-            return RJSHelper::cpp2js_QStatusBar(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for statusBar";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setStatusBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setStatusBar
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QStatusBar_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: statusbar (QStatusBar)
-  
-
-          // pointer:
-          QStatusBar*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QStatusBar_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setStatusBar(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setStatusBar";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: centralWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::centralWidget
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QWidget* res = 
-                    
-                w->centralWidget(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for centralWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setCentralWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setCentralWidget
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWidget_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: widget (QWidget)
-  
-
-          // pointer:
-          QWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setCentralWidget(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setCentralWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: takeCentralWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::takeCentralWidget
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QWidget* res = 
-                    
-                w->takeCentralWidget(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QWidget*
-
-            return RJSHelper::cpp2js_QWidget(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for takeCentralWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setCorner
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setCorner
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_Corner(handler, a1
-  )
-
-   && RJSHelper::is_Qt_DockWidgetArea(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: corner (Qt::Corner)
-  
-Qt::Corner a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_Corner(handler, a1);
-        
-  // convert js parameter to cpp: area (Qt::DockWidgetArea)
-  
-Qt::DockWidgetArea a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_Qt_DockWidgetArea(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setCorner(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setCorner";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: corner
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::corner
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_Corner(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: corner (Qt::Corner)
-  
-Qt::Corner a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_Corner(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                Qt::DockWidgetArea res = 
-                    
-                w->corner(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: Qt::DockWidgetArea
-
-            return RJSHelper::cpp2js_Qt_DockWidgetArea(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for corner";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: addToolBarBreak
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::addToolBarBreak
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_ToolBarArea(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: area (Qt::ToolBarArea)
-  
-Qt::ToolBarArea a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = Qt::TopToolBarArea;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_Qt_ToolBarArea(handler, a1);
-          }
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->addToolBarBreak(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for addToolBarBreak";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: insertToolBarBreak
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::insertToolBarBreak
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QToolBar_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: before (QToolBar)
-  
-
-          // pointer:
-          QToolBar*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->insertToolBarBreak(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for insertToolBarBreak";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: addToolBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::addToolBar
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_ToolBarArea(handler, a1
-  )
-
-   && RJSHelper::is_QToolBar_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: area (Qt::ToolBarArea)
-  
-Qt::ToolBarArea a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_ToolBarArea(handler, a1);
-        
-  // convert js parameter to cpp: toolbar (QToolBar)
-  
-
-          // pointer:
-          QToolBar*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->addToolBar(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-      // check parameter types:
-      if (
-        RJSHelper::is_QToolBar_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: toolbar (QToolBar)
-  
-
-          // pointer:
-          QToolBar*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->addToolBar(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-      // check parameter types:
-      if (
-        RJSHelper::is_QString(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: title (QString)
-  
-QString a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QToolBar* res = 
-                    
-                w->addToolBar(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QToolBar*
-
-            return RJSHelper::cpp2js_QToolBar(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for addToolBar";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: insertToolBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::insertToolBar
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QToolBar_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QToolBar_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: before (QToolBar)
-  
-
-          // pointer:
-          QToolBar*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
-        
-  // convert js parameter to cpp: toolbar (QToolBar)
-  
-
-          // pointer:
-          QToolBar*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->insertToolBar(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for insertToolBar";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: removeToolBar
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::removeToolBar
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QToolBar_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: toolbar (QToolBar)
-  
-
-          // pointer:
-          QToolBar*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->removeToolBar(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for removeToolBar";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: removeToolBarBreak
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::removeToolBarBreak
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QToolBar_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: before (QToolBar)
-  
-
-          // pointer:
-          QToolBar*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->removeToolBarBreak(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for removeToolBarBreak";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: unifiedTitleAndToolBarOnMac
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::unifiedTitleAndToolBarOnMac
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                bool res = 
-                    
-                w->unifiedTitleAndToolBarOnMac(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for unifiedTitleAndToolBarOnMac";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: toolBarArea
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::toolBarArea
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QToolBar_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: toolbar (QToolBar)
-  
-
-          // pointer:
-          QToolBar*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                Qt::ToolBarArea res = 
-                    
-                w->toolBarArea(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: Qt::ToolBarArea
-
-            return RJSHelper::cpp2js_Qt_ToolBarArea(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for toolBarArea";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: toolBarBreak
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::toolBarBreak
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QToolBar_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: toolbar (QToolBar)
-  
-
-          // pointer:
-          QToolBar*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                bool res = 
-                    
-                w->toolBarBreak(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for toolBarBreak";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: addDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::addDockWidget
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_DockWidgetArea(handler, a1
-  )
-
-   && RJSHelper::is_QDockWidget_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_Qt_Orientation(handler, a3
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: area (Qt::DockWidgetArea)
-  
-Qt::DockWidgetArea a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_DockWidgetArea(handler, a1);
-        
-  // convert js parameter to cpp: dockwidget (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a2);
-        
-  // convert js parameter to cpp: orientation (Qt::Orientation)
-  
-Qt::Orientation a3_cpp;
-
-      a3_cpp = RJSHelper::js2cpp_Qt_Orientation(handler, a3);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->addDockWidget(
-                  a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_DockWidgetArea(handler, a1
-  )
-
-   && RJSHelper::is_QDockWidget_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: area (Qt::DockWidgetArea)
-  
-Qt::DockWidgetArea a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_DockWidgetArea(handler, a1);
-        
-  // convert js parameter to cpp: dockwidget (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->addDockWidget(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for addDockWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: splitDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::splitDockWidget
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QDockWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QDockWidget_ptr(handler, a2
-    , true
-  
-  )
-
-   && RJSHelper::is_Qt_Orientation(handler, a3
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: after (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp: dockwidget (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a2);
-        
-  // convert js parameter to cpp: orientation (Qt::Orientation)
-  
-Qt::Orientation a3_cpp;
-
-      a3_cpp = RJSHelper::js2cpp_Qt_Orientation(handler, a3);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->splitDockWidget(
-                  a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for splitDockWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: tabifyDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::tabifyDockWidget
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QDockWidget_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QDockWidget_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: first (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp: second (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->tabifyDockWidget(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for tabifyDockWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: tabifiedDockWidgets
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::tabifiedDockWidgets
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QDockWidget_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: dockwidget (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QList<QDockWidget*> res = 
-                    
-                w->tabifiedDockWidgets(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QList<QDockWidget*>
-
-            return RJSHelper::cpp2js_QList_QDockWidget_ptr(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for tabifiedDockWidgets";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: removeDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::removeDockWidget
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QDockWidget_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: dockwidget (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->removeDockWidget(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for removeDockWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: restoreDockWidget
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::restoreDockWidget
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QDockWidget_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: dockwidget (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                bool res = 
-                    
-                w->restoreDockWidget(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for restoreDockWidget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: dockWidgetArea
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::dockWidgetArea
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QDockWidget_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: dockwidget (QDockWidget)
-  
-
-          // pointer:
-          QDockWidget*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                Qt::DockWidgetArea res = 
-                    
-                w->dockWidgetArea(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: Qt::DockWidgetArea
-
-            return RJSHelper::cpp2js_Qt_DockWidgetArea(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for dockWidgetArea";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: resizeDocks
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::resizeDocks
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QList_QDockWidget_ptr(handler, a1
-  )
-
-   && RJSHelper::is_QList_int(handler, a2
-  )
-
-   && RJSHelper::is_Qt_Orientation(handler, a3
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: docks (QList<QDockWidget*>)
-  
-QList<QDockWidget*> a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QList_QDockWidget_ptr(handler, a1);
-        
-  // convert js parameter to cpp: sizes (QList<int>)
-  
-QList<int> a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QList_int(handler, a2);
-        
-  // convert js parameter to cpp: orientation (Qt::Orientation)
-  
-Qt::Orientation a3_cpp;
-
-      a3_cpp = RJSHelper::js2cpp_Qt_Orientation(handler, a3);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->resizeDocks(
-                  a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for resizeDocks";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: saveState
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::saveState
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: version (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = 0;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                QByteArray res = 
-                    
-                w->saveState(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QByteArray
-
-            return RJSHelper::cpp2js_QByteArray(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for saveState";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: restoreState
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::restoreState
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QByteArray(handler, a1
-  )
-
-   && RJSHelper::is_int(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: state (QByteArray)
-  
-QByteArray a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
-        
-  // convert js parameter to cpp: version (int)
-  
-int a2_cpp;
-
-      
-          if (a2.isUndefined()) {
-            a2_cpp = 0;
-          }
-          else {
-            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
-          }
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                bool res = 
-                    
-                w->restoreState(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for restoreState";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setAnimated
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setAnimated
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_bool(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: enabled (bool)
-  
-bool a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setAnimated(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setAnimated";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setDockNestingEnabled
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setDockNestingEnabled
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_bool(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: enabled (bool)
-  
-bool a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setDockNestingEnabled(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setDockNestingEnabled";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: setUnifiedTitleAndToolBarOnMac
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper::setUnifiedTitleAndToolBarOnMac
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_bool(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: set (bool)
-  
-bool a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RMainWindowQt* w = getWrapped();
-                
-                w->setUnifiedTitleAndToolBarOnMac(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setUnifiedTitleAndToolBarOnMac";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
-    // Function: iconSizeChanged
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RMainWindowQt_Wrapper::iconSizeChangedEmitter(
-                const QSize& iconSize
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: iconSize (QSize)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QSize(
-    handler, 
-    iconSize
-  );
-
-
-                emit iconSizeChanged(
-                  a1_js
-                );
-              }
-            
-    // Class: RMainWindowQt
-    // Function: toolButtonStyleChanged
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RMainWindowQt_Wrapper::toolButtonStyleChangedEmitter(
-                Qt::ToolButtonStyle toolButtonStyle
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: toolButtonStyle (Qt::ToolButtonStyle)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_Qt_ToolButtonStyle(
-    handler, 
-    toolButtonStyle
-  );
-
-
-                emit toolButtonStyleChanged(
-                  a1_js
-                );
-              }
-            
-    // Class: RMainWindowQt
-    // Function: tabifiedDockWidgetActivated
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RMainWindowQt_Wrapper::tabifiedDockWidgetActivatedEmitter(
-                QDockWidget* dockWidget
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: dockWidget (QDockWidget)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QDockWidget(
-    handler, 
-    dockWidget
-  );
-
-
-                emit tabifiedDockWidgetActivated(
-                  a1_js
-                );
-              }
-            
-    // Class: RMainWindowQt
-    // Function: contextMenuEvent
-    // Source: QMainWindow
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMainWindowQt_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      contextMenuEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QContextMenuEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QContextMenuEvent)
-  
-
-          // pointer:
-          QContextMenuEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QContextMenuEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of RMainWindowQt_Base class as 
-                // function has postfix inheritable class, overridable function):
-                RMainWindowQt_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "RMainWindowQt::contextMenuEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->contextMenuEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for contextMenuEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RMainWindowQt
     // Function: notifyListeners
     // Source: RMainWindow
     // Static: false
@@ -25997,6 +22124,3879 @@ QString a2_cpp;
   }
 
                   qWarning() << "no matching function variant found for eval";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: iconSize
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::iconSize
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QSize res = 
+                    
+                w->iconSize(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QSize
+
+            return RJSHelper::cpp2js_QSize(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for iconSize";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setIconSize
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setIconSize
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QSize(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: iconSize (QSize)
+  
+QSize a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setIconSize(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setIconSize";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: toolButtonStyle
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::toolButtonStyle
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                Qt::ToolButtonStyle res = 
+                    
+                w->toolButtonStyle(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: Qt::ToolButtonStyle
+
+            return RJSHelper::cpp2js_Qt_ToolButtonStyle(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toolButtonStyle";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setToolButtonStyle
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setToolButtonStyle
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_ToolButtonStyle(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: toolButtonStyle (Qt::ToolButtonStyle)
+  
+Qt::ToolButtonStyle a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_Qt_ToolButtonStyle(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setToolButtonStyle(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setToolButtonStyle";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: isAnimated
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::isAnimated
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                bool res = 
+                    
+                w->isAnimated(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isAnimated";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: isDockNestingEnabled
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::isDockNestingEnabled
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                bool res = 
+                    
+                w->isDockNestingEnabled(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isDockNestingEnabled";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: documentMode
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::documentMode
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                bool res = 
+                    
+                w->documentMode(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for documentMode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setDocumentMode
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setDocumentMode
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: enabled (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setDocumentMode(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDocumentMode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: tabShape
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::tabShape
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QTabWidget::TabShape res = 
+                    
+                w->tabShape(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QTabWidget::TabShape
+
+            return RJSHelper::cpp2js_QTabWidget_TabShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for tabShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setTabShape
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setTabShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QTabWidget_TabShape(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: tabShape (QTabWidget::TabShape)
+  
+QTabWidget::TabShape a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QTabWidget_TabShape(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setTabShape(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setTabShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: tabPosition
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::tabPosition
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_DockWidgetArea(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: area (Qt::DockWidgetArea)
+  
+Qt::DockWidgetArea a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_Qt_DockWidgetArea(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QTabWidget::TabPosition res = 
+                    
+                w->tabPosition(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QTabWidget::TabPosition
+
+            return RJSHelper::cpp2js_QTabWidget_TabPosition(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for tabPosition";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setTabPosition
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setTabPosition
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_DockWidgetAreas(handler, a1
+  )
+
+   && RJSHelper::is_QTabWidget_TabPosition(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: areas (Qt::DockWidgetAreas)
+  
+Qt::DockWidgetAreas a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_Qt_DockWidgetAreas(handler, a1);
+        
+  // convert js parameter to cpp: tabPosition (QTabWidget::TabPosition)
+  
+QTabWidget::TabPosition a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QTabWidget_TabPosition(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setTabPosition(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setTabPosition";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setDockOptions
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setDockOptions
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QMainWindow_DockOptions(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: options (QMainWindow::DockOptions)
+  
+QMainWindow::DockOptions a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QMainWindow_DockOptions(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setDockOptions(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDockOptions";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: dockOptions
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::dockOptions
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QMainWindow::DockOptions res = 
+                    
+                w->dockOptions(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QMainWindow::DockOptions
+
+            return RJSHelper::cpp2js_QMainWindow_DockOptions(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for dockOptions";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: isSeparator
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::isSeparator
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPoint(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: pos (QPoint)
+  
+QPoint a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                bool res = 
+                    
+                w->isSeparator(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isSeparator";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: menuBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::menuBar
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QMenuBar* res = 
+                    
+                w->menuBar(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QMenuBar*
+
+            return RJSHelper::cpp2js_QMenuBar(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for menuBar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setMenuBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setMenuBar
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QMenuBar_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: menubar (QMenuBar)
+  
+
+          // pointer:
+          QMenuBar*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QMenuBar_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setMenuBar(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setMenuBar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: menuWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::menuWidget
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QWidget* res = 
+                    
+                w->menuWidget(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QWidget*
+
+            return RJSHelper::cpp2js_QWidget(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for menuWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setMenuWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setMenuWidget
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: menubar (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setMenuWidget(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setMenuWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: statusBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::statusBar
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QStatusBar* res = 
+                    
+                w->statusBar(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QStatusBar*
+
+            return RJSHelper::cpp2js_QStatusBar(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for statusBar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setStatusBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setStatusBar
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QStatusBar_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: statusbar (QStatusBar)
+  
+
+          // pointer:
+          QStatusBar*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QStatusBar_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setStatusBar(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setStatusBar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: centralWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::centralWidget
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QWidget* res = 
+                    
+                w->centralWidget(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QWidget*
+
+            return RJSHelper::cpp2js_QWidget(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for centralWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setCentralWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setCentralWidget
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: widget (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setCentralWidget(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setCentralWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: takeCentralWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::takeCentralWidget
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QWidget* res = 
+                    
+                w->takeCentralWidget(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QWidget*
+
+            return RJSHelper::cpp2js_QWidget(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for takeCentralWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setCorner
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setCorner
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_Corner(handler, a1
+  )
+
+   && RJSHelper::is_Qt_DockWidgetArea(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: corner (Qt::Corner)
+  
+Qt::Corner a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_Qt_Corner(handler, a1);
+        
+  // convert js parameter to cpp: area (Qt::DockWidgetArea)
+  
+Qt::DockWidgetArea a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_Qt_DockWidgetArea(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setCorner(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setCorner";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: corner
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::corner
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_Corner(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: corner (Qt::Corner)
+  
+Qt::Corner a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_Qt_Corner(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                Qt::DockWidgetArea res = 
+                    
+                w->corner(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: Qt::DockWidgetArea
+
+            return RJSHelper::cpp2js_Qt_DockWidgetArea(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for corner";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: addToolBarBreak
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::addToolBarBreak
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_ToolBarArea(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: area (Qt::ToolBarArea)
+  
+Qt::ToolBarArea a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = Qt::TopToolBarArea;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_Qt_ToolBarArea(handler, a1);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->addToolBarBreak(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for addToolBarBreak";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: insertToolBarBreak
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::insertToolBarBreak
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QToolBar_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: before (QToolBar)
+  
+
+          // pointer:
+          QToolBar*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->insertToolBarBreak(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for insertToolBarBreak";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: addToolBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::addToolBar
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_ToolBarArea(handler, a1
+  )
+
+   && RJSHelper::is_QToolBar_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: area (Qt::ToolBarArea)
+  
+Qt::ToolBarArea a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_Qt_ToolBarArea(handler, a1);
+        
+  // convert js parameter to cpp: toolbar (QToolBar)
+  
+
+          // pointer:
+          QToolBar*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->addToolBar(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QToolBar_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: toolbar (QToolBar)
+  
+
+          // pointer:
+          QToolBar*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->addToolBar(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: title (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QToolBar* res = 
+                    
+                w->addToolBar(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QToolBar*
+
+            return RJSHelper::cpp2js_QToolBar(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for addToolBar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: insertToolBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::insertToolBar
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QToolBar_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QToolBar_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: before (QToolBar)
+  
+
+          // pointer:
+          QToolBar*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
+        
+  // convert js parameter to cpp: toolbar (QToolBar)
+  
+
+          // pointer:
+          QToolBar*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->insertToolBar(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for insertToolBar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: removeToolBar
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::removeToolBar
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QToolBar_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: toolbar (QToolBar)
+  
+
+          // pointer:
+          QToolBar*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->removeToolBar(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for removeToolBar";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: removeToolBarBreak
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::removeToolBarBreak
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QToolBar_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: before (QToolBar)
+  
+
+          // pointer:
+          QToolBar*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->removeToolBarBreak(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for removeToolBarBreak";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: unifiedTitleAndToolBarOnMac
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::unifiedTitleAndToolBarOnMac
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                bool res = 
+                    
+                w->unifiedTitleAndToolBarOnMac(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for unifiedTitleAndToolBarOnMac";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: toolBarArea
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::toolBarArea
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QToolBar_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: toolbar (QToolBar)
+  
+
+          // pointer:
+          QToolBar*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                Qt::ToolBarArea res = 
+                    
+                w->toolBarArea(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: Qt::ToolBarArea
+
+            return RJSHelper::cpp2js_Qt_ToolBarArea(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toolBarArea";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: toolBarBreak
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::toolBarBreak
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QToolBar_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: toolbar (QToolBar)
+  
+
+          // pointer:
+          QToolBar*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QToolBar_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                bool res = 
+                    
+                w->toolBarBreak(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for toolBarBreak";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: addDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::addDockWidget
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_DockWidgetArea(handler, a1
+  )
+
+   && RJSHelper::is_QDockWidget_ptr(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_Qt_Orientation(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: area (Qt::DockWidgetArea)
+  
+Qt::DockWidgetArea a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_Qt_DockWidgetArea(handler, a1);
+        
+  // convert js parameter to cpp: dockwidget (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a2);
+        
+  // convert js parameter to cpp: orientation (Qt::Orientation)
+  
+Qt::Orientation a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_Qt_Orientation(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->addDockWidget(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_Qt_DockWidgetArea(handler, a1
+  )
+
+   && RJSHelper::is_QDockWidget_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: area (Qt::DockWidgetArea)
+  
+Qt::DockWidgetArea a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_Qt_DockWidgetArea(handler, a1);
+        
+  // convert js parameter to cpp: dockwidget (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->addDockWidget(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for addDockWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: splitDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::splitDockWidget
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDockWidget_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QDockWidget_ptr(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_Qt_Orientation(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: after (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: dockwidget (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a2);
+        
+  // convert js parameter to cpp: orientation (Qt::Orientation)
+  
+Qt::Orientation a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_Qt_Orientation(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->splitDockWidget(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for splitDockWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: tabifyDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::tabifyDockWidget
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDockWidget_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QDockWidget_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: first (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: second (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->tabifyDockWidget(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for tabifyDockWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: tabifiedDockWidgets
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::tabifiedDockWidgets
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDockWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: dockwidget (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QList<QDockWidget*> res = 
+                    
+                w->tabifiedDockWidgets(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QList<QDockWidget*>
+
+            return RJSHelper::cpp2js_QList_QDockWidget_ptr(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for tabifiedDockWidgets";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: removeDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::removeDockWidget
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDockWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: dockwidget (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->removeDockWidget(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for removeDockWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: restoreDockWidget
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::restoreDockWidget
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDockWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: dockwidget (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                bool res = 
+                    
+                w->restoreDockWidget(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for restoreDockWidget";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: dockWidgetArea
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::dockWidgetArea
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QDockWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: dockwidget (QDockWidget)
+  
+
+          // pointer:
+          QDockWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QDockWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                Qt::DockWidgetArea res = 
+                    
+                w->dockWidgetArea(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: Qt::DockWidgetArea
+
+            return RJSHelper::cpp2js_Qt_DockWidgetArea(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for dockWidgetArea";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: resizeDocks
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::resizeDocks
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QList_QDockWidget_ptr(handler, a1
+  )
+
+   && RJSHelper::is_QList_int(handler, a2
+  )
+
+   && RJSHelper::is_Qt_Orientation(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: docks (QList<QDockWidget*>)
+  
+QList<QDockWidget*> a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QList_QDockWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: sizes (QList<int>)
+  
+QList<int> a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QList_int(handler, a2);
+        
+  // convert js parameter to cpp: orientation (Qt::Orientation)
+  
+Qt::Orientation a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_Qt_Orientation(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->resizeDocks(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for resizeDocks";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: saveState
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::saveState
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_int(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: version (int)
+  
+int a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = 0;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                QByteArray res = 
+                    
+                w->saveState(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QByteArray
+
+            return RJSHelper::cpp2js_QByteArray(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for saveState";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: restoreState
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::restoreState
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QByteArray(handler, a1
+  )
+
+   && RJSHelper::is_int(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: state (QByteArray)
+  
+QByteArray a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
+        
+  // convert js parameter to cpp: version (int)
+  
+int a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = 0;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_int(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                bool res = 
+                    
+                w->restoreState(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for restoreState";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setAnimated
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setAnimated
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: enabled (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setAnimated(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setAnimated";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setDockNestingEnabled
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setDockNestingEnabled
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: enabled (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setDockNestingEnabled(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDockNestingEnabled";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: setUnifiedTitleAndToolBarOnMac
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::setUnifiedTitleAndToolBarOnMac
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: set (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->setUnifiedTitleAndToolBarOnMac(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setUnifiedTitleAndToolBarOnMac";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
+    // Function: iconSizeChanged
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RMainWindowQt_Wrapper::iconSizeChangedEmitter(
+                const QSize& iconSize
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: iconSize (QSize)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QSize(
+    handler, 
+    iconSize
+  );
+
+
+                emit iconSizeChanged(
+                  a1_js
+                );
+              }
+            
+    // Class: RMainWindowQt
+    // Function: toolButtonStyleChanged
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RMainWindowQt_Wrapper::toolButtonStyleChangedEmitter(
+                Qt::ToolButtonStyle toolButtonStyle
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: toolButtonStyle (Qt::ToolButtonStyle)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_Qt_ToolButtonStyle(
+    handler, 
+    toolButtonStyle
+  );
+
+
+                emit toolButtonStyleChanged(
+                  a1_js
+                );
+              }
+            
+    // Class: RMainWindowQt
+    // Function: tabifiedDockWidgetActivated
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RMainWindowQt_Wrapper::tabifiedDockWidgetActivatedEmitter(
+                QDockWidget* dockWidget
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: dockWidget (QDockWidget)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QDockWidget(
+    handler, 
+    dockWidget
+  );
+
+
+                emit tabifiedDockWidgetActivated(
+                  a1_js
+                );
+              }
+            
+    // Class: RMainWindowQt
+    // Function: contextMenuEvent
+    // Source: QMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      contextMenuEventSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QContextMenuEvent_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: event (QContextMenuEvent)
+  
+
+          // pointer:
+          QContextMenuEvent*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QContextMenuEvent_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of RMainWindowQt_Base class as 
+                // function has postfix inheritable class, overridable function):
+                RMainWindowQt_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "RMainWindowQt::contextMenuEvent: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                
+                    wb->contextMenuEventPublic(
+                      a1_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for contextMenuEvent";
                   handler.trace();
                   return QJSValue();
                 

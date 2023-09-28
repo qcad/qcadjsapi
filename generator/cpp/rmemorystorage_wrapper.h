@@ -96,7 +96,7 @@
         static RMemoryStorage* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RMemoryStorage:
           for (int i=0; i<basecasters_RMemoryStorage.length(); i++) {
             RJSBasecaster_RMemoryStorage* basecaster = basecasters_RMemoryStorage[i];
             RMemoryStorage* ret = basecaster->castToBase(t, vp);
@@ -105,7 +105,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RMemoryStorage:
           if (t==RJSType_RMemoryStorage::getIdStatic()) {
             return (RMemoryStorage*)vp;
           }

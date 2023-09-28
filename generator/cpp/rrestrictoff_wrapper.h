@@ -43,7 +43,7 @@
         static RRestrictOff* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RRestrictOff:
           for (int i=0; i<basecasters_RRestrictOff.length(); i++) {
             RJSBasecaster_RRestrictOff* basecaster = basecasters_RRestrictOff[i];
             RRestrictOff* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RRestrictOff:
           if (t==RJSType_RRestrictOff::getIdStatic()) {
             return (RRestrictOff*)vp;
           }

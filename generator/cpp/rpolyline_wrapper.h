@@ -1473,7 +1473,7 @@
         static RPolyline* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RPolyline:
           for (int i=0; i<basecasters_RPolyline.length(); i++) {
             RJSBasecaster_RPolyline* basecaster = basecasters_RPolyline[i];
             RPolyline* ret = basecaster->castToBase(t, vp);
@@ -1482,7 +1482,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RPolyline:
           if (t==RJSType_RPolyline::getIdStatic()) {
             return (RPolyline*)vp;
           }

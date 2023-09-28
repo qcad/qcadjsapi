@@ -70,7 +70,7 @@
         static RActionAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RActionAdapter:
           for (int i=0; i<basecasters_RActionAdapter.length(); i++) {
             RJSBasecaster_RActionAdapter* basecaster = basecasters_RActionAdapter[i];
             RActionAdapter* ret = basecaster->castToBase(t, vp);
@@ -79,7 +79,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RActionAdapter:
           if (t==RJSType_RActionAdapter::getIdStatic()) {
             return (RActionAdapter*)vp;
           }

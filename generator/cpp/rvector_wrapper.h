@@ -923,7 +923,7 @@
         static RVector* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RVector:
           for (int i=0; i<basecasters_RVector.length(); i++) {
             RJSBasecaster_RVector* basecaster = basecasters_RVector[i];
             RVector* ret = basecaster->castToBase(t, vp);
@@ -932,7 +932,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RVector:
           if (t==RJSType_RVector::getIdStatic()) {
             return (RVector*)vp;
           }

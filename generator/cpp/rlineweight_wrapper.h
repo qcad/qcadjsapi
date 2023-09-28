@@ -146,7 +146,7 @@
         static RLineweight* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RLineweight:
           for (int i=0; i<basecasters_RLineweight.length(); i++) {
             RJSBasecaster_RLineweight* basecaster = basecasters_RLineweight[i];
             RLineweight* ret = basecaster->castToBase(t, vp);
@@ -155,7 +155,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RLineweight:
           if (t==RJSType_RLineweight::getIdStatic()) {
             return (RLineweight*)vp;
           }

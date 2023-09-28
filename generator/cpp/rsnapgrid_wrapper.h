@@ -45,7 +45,7 @@
         static RSnapGrid* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSnapGrid:
           for (int i=0; i<basecasters_RSnapGrid.length(); i++) {
             RJSBasecaster_RSnapGrid* basecaster = basecasters_RSnapGrid[i];
             RSnapGrid* ret = basecaster->castToBase(t, vp);
@@ -54,7 +54,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSnapGrid:
           if (t==RJSType_RSnapGrid::getIdStatic()) {
             return (RSnapGrid*)vp;
           }

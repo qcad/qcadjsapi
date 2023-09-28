@@ -226,7 +226,7 @@
         static RFontList* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RFontList:
           for (int i=0; i<basecasters_RFontList.length(); i++) {
             RJSBasecaster_RFontList* basecaster = basecasters_RFontList[i];
             RFontList* ret = basecaster->castToBase(t, vp);
@@ -235,7 +235,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RFontList:
           if (t==RJSType_RFontList::getIdStatic()) {
             return (RFontList*)vp;
           }

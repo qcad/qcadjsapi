@@ -3350,7 +3350,7 @@
         static RSettings* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSettings:
           for (int i=0; i<basecasters_RSettings.length(); i++) {
             RJSBasecaster_RSettings* basecaster = basecasters_RSettings[i];
             RSettings* ret = basecaster->castToBase(t, vp);
@@ -3359,7 +3359,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSettings:
           if (t==RJSType_RSettings::getIdStatic()) {
             return (RSettings*)vp;
           }

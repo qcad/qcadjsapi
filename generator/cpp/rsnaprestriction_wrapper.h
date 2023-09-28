@@ -46,7 +46,7 @@
         static RSnapRestriction* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSnapRestriction:
           for (int i=0; i<basecasters_RSnapRestriction.length(); i++) {
             RJSBasecaster_RSnapRestriction* basecaster = basecasters_RSnapRestriction[i];
             RSnapRestriction* ret = basecaster->castToBase(t, vp);
@@ -55,7 +55,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSnapRestriction:
           if (t==RJSType_RSnapRestriction::getIdStatic()) {
             return (RSnapRestriction*)vp;
           }

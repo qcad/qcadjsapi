@@ -92,7 +92,7 @@
         static RLinetypePattern* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RLinetypePattern:
           for (int i=0; i<basecasters_RLinetypePattern.length(); i++) {
             RJSBasecaster_RLinetypePattern* basecaster = basecasters_RLinetypePattern[i];
             RLinetypePattern* ret = basecaster->castToBase(t, vp);
@@ -101,7 +101,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RLinetypePattern:
           if (t==RJSType_RLinetypePattern::getIdStatic()) {
             return (RLinetypePattern*)vp;
           }

@@ -43,7 +43,7 @@
         static RSnapOnEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSnapOnEntity:
           for (int i=0; i<basecasters_RSnapOnEntity.length(); i++) {
             RJSBasecaster_RSnapOnEntity* basecaster = basecasters_RSnapOnEntity[i];
             RSnapOnEntity* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSnapOnEntity:
           if (t==RJSType_RSnapOnEntity::getIdStatic()) {
             return (RSnapOnEntity*)vp;
           }

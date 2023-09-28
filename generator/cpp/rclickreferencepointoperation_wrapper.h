@@ -43,7 +43,7 @@
         static RClickReferencePointOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RClickReferencePointOperation:
           for (int i=0; i<basecasters_RClickReferencePointOperation.length(); i++) {
             RJSBasecaster_RClickReferencePointOperation* basecaster = basecasters_RClickReferencePointOperation[i];
             RClickReferencePointOperation* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RClickReferencePointOperation:
           if (t==RJSType_RClickReferencePointOperation::getIdStatic()) {
             return (RClickReferencePointOperation*)vp;
           }

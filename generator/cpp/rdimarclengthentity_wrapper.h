@@ -1285,7 +1285,7 @@
         static RDimArcLengthEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDimArcLengthEntity:
           for (int i=0; i<basecasters_RDimArcLengthEntity.length(); i++) {
             RJSBasecaster_RDimArcLengthEntity* basecaster = basecasters_RDimArcLengthEntity[i];
             RDimArcLengthEntity* ret = basecaster->castToBase(t, vp);
@@ -1294,7 +1294,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDimArcLengthEntity:
           if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
             return (RDimArcLengthEntity*)vp;
           }

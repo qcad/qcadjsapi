@@ -92,7 +92,7 @@
         static RDimLinearData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDimLinearData:
           for (int i=0; i<basecasters_RDimLinearData.length(); i++) {
             RJSBasecaster_RDimLinearData* basecaster = basecasters_RDimLinearData[i];
             RDimLinearData* ret = basecaster->castToBase(t, vp);
@@ -101,7 +101,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDimLinearData:
           if (t==RJSType_RDimLinearData::getIdStatic()) {
             return (RDimLinearData*)vp;
           }

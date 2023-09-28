@@ -43,7 +43,7 @@
         static RFocusListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RFocusListener:
           for (int i=0; i<basecasters_RFocusListener.length(); i++) {
             RJSBasecaster_RFocusListener* basecaster = basecasters_RFocusListener[i];
             RFocusListener* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RFocusListener:
           if (t==RJSType_RFocusListener::getIdStatic()) {
             return (RFocusListener*)vp;
           }

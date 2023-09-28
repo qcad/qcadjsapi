@@ -136,7 +136,7 @@
         static RSolidData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSolidData:
           for (int i=0; i<basecasters_RSolidData.length(); i++) {
             RJSBasecaster_RSolidData* basecaster = basecasters_RSolidData[i];
             RSolidData* ret = basecaster->castToBase(t, vp);
@@ -145,7 +145,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSolidData:
           if (t==RJSType_RSolidData::getIdStatic()) {
             return (RSolidData*)vp;
           }

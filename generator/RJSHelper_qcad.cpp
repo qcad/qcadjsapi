@@ -439,9 +439,9 @@
         
           #include "qwidget_wrapper.h"
         
-          #include "qmainwindow_wrapper.h"
-        
           #include "rmainwindow_wrapper.h"
+        
+          #include "qmainwindow_wrapper.h"
         
           #include "qobject_wrapper.h"
         
@@ -585,13 +585,13 @@
         
           #include "qwidget_wrapper.h"
         
-          #include "qframe_wrapper.h"
-        
           #include "rruler_wrapper.h"
         
           #include "rcoordinatelistener_wrapper.h"
         
           #include "rpalettelistener_wrapper.h"
+        
+          #include "qframe_wrapper.h"
         
           #include "roperation_wrapper.h"
         
@@ -808,6 +808,93 @@
         // downcaster classes:
         
 
+          // downcasters from QAction to ...
+          
+
+            // downcasters from QAction to RGuiAction
+            class RJSDowncaster_QAction_RGuiAction : public RJSDowncaster_QAction {
+                QJSValue downcast(RJSApi& handler, QAction* o) {
+                    RGuiAction* c = dynamic_cast<RGuiAction*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RGuiAction(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QApplication to ...
+          
+
+            // downcasters from QApplication to RSingleApplication
+            class RJSDowncaster_QApplication_RSingleApplication : public RJSDowncaster_QApplication {
+                QJSValue downcast(RJSApi& handler, QApplication* o) {
+                    RSingleApplication* c = dynamic_cast<RSingleApplication*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RSingleApplication(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QComboBox to ...
+          
+
+            // downcasters from QComboBox to RColorCombo
+            class RJSDowncaster_QComboBox_RColorCombo : public RJSDowncaster_QComboBox {
+                QJSValue downcast(RJSApi& handler, QComboBox* o) {
+                    RColorCombo* c = dynamic_cast<RColorCombo*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RColorCombo(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+            // downcasters from QComboBox to RLinetypeCombo
+            class RJSDowncaster_QComboBox_RLinetypeCombo : public RJSDowncaster_QComboBox {
+                QJSValue downcast(RJSApi& handler, QComboBox* o) {
+                    RLinetypeCombo* c = dynamic_cast<RLinetypeCombo*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RLinetypeCombo(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+            // downcasters from QComboBox to RLineweightCombo
+            class RJSDowncaster_QComboBox_RLineweightCombo : public RJSDowncaster_QComboBox {
+                QJSValue downcast(RJSApi& handler, QComboBox* o) {
+                    RLineweightCombo* c = dynamic_cast<RLineweightCombo*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RLineweightCombo(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+            // downcasters from QComboBox to RMathComboBox
+            class RJSDowncaster_QComboBox_RMathComboBox : public RJSDowncaster_QComboBox {
+                QJSValue downcast(RJSApi& handler, QComboBox* o) {
+                    RMathComboBox* c = dynamic_cast<RMathComboBox*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RMathComboBox(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
           // downcasters from QEvent to ...
           
 
@@ -850,6 +937,86 @@
 
           
 
+          // downcasters from QDockWidget to ...
+          
+
+            // downcasters from QDockWidget to RDockWidget
+            class RJSDowncaster_QDockWidget_RDockWidget : public RJSDowncaster_QDockWidget {
+                QJSValue downcast(RJSApi& handler, QDockWidget* o) {
+                    RDockWidget* c = dynamic_cast<RDockWidget*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RDockWidget(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QFileSystemModel to ...
+          
+
+            // downcasters from QFileSystemModel to RFileSystemModel
+            class RJSDowncaster_QFileSystemModel_RFileSystemModel : public RJSDowncaster_QFileSystemModel {
+                QJSValue downcast(RJSApi& handler, QFileSystemModel* o) {
+                    RFileSystemModel* c = dynamic_cast<RFileSystemModel*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RFileSystemModel(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QFrame to ...
+          
+
+            // downcasters from QFrame to RRulerQt
+            class RJSDowncaster_QFrame_RRulerQt : public RJSDowncaster_QFrame {
+                QJSValue downcast(RJSApi& handler, QFrame* o) {
+                    RRulerQt* c = dynamic_cast<RRulerQt*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RRulerQt(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QItemDelegate to ...
+          
+
+            // downcasters from QItemDelegate to RToolMatrixItemDelegate
+            class RJSDowncaster_QItemDelegate_RToolMatrixItemDelegate : public RJSDowncaster_QItemDelegate {
+                QJSValue downcast(RJSApi& handler, QItemDelegate* o) {
+                    RToolMatrixItemDelegate* c = dynamic_cast<RToolMatrixItemDelegate*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RToolMatrixItemDelegate(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QLayout to ...
+          
+
+            // downcasters from QLayout to RFlowLayout
+            class RJSDowncaster_QLayout_RFlowLayout : public RJSDowncaster_QLayout {
+                QJSValue downcast(RJSApi& handler, QLayout* o) {
+                    RFlowLayout* c = dynamic_cast<RFlowLayout*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RFlowLayout(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
           // downcasters from QLineEdit to ...
           
 
@@ -872,6 +1039,86 @@
                     RMathLineEdit* c = dynamic_cast<RMathLineEdit*>(o);
                     if (c!=nullptr) {
                         return RJSHelper_qcad::cpp2js_RMathLineEdit(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QListView to ...
+          
+
+            // downcasters from QListView to RListView
+            class RJSDowncaster_QListView_RListView : public RJSDowncaster_QListView {
+                QJSValue downcast(RJSApi& handler, QListView* o) {
+                    RListView* c = dynamic_cast<RListView*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RListView(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QListWidget to ...
+          
+
+            // downcasters from QListWidget to RListWidget
+            class RJSDowncaster_QListWidget_RListWidget : public RJSDowncaster_QListWidget {
+                QJSValue downcast(RJSApi& handler, QListWidget* o) {
+                    RListWidget* c = dynamic_cast<RListWidget*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RListWidget(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QMainWindow to ...
+          
+
+            // downcasters from QMainWindow to RMainWindowQt
+            class RJSDowncaster_QMainWindow_RMainWindowQt : public RJSDowncaster_QMainWindow {
+                QJSValue downcast(RJSApi& handler, QMainWindow* o) {
+                    RMainWindowQt* c = dynamic_cast<RMainWindowQt*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RMainWindowQt(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QMdiArea to ...
+          
+
+            // downcasters from QMdiArea to RMdiArea
+            class RJSDowncaster_QMdiArea_RMdiArea : public RJSDowncaster_QMdiArea {
+                QJSValue downcast(RJSApi& handler, QMdiArea* o) {
+                    RMdiArea* c = dynamic_cast<RMdiArea*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RMdiArea(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QMdiSubWindow to ...
+          
+
+            // downcasters from QMdiSubWindow to RMdiChildQt
+            class RJSDowncaster_QMdiSubWindow_RMdiChildQt : public RJSDowncaster_QMdiSubWindow {
+                QJSValue downcast(RJSApi& handler, QMdiSubWindow* o) {
+                    RMdiChildQt* c = dynamic_cast<RMdiChildQt*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RMdiChildQt(handler, c);
                     }
                     return QJSValue();
                 }
@@ -908,6 +1155,22 @@
 
           
 
+          // downcasters from QTextBrowser to ...
+          
+
+            // downcasters from QTextBrowser to RTextEdit
+            class RJSDowncaster_QTextBrowser_RTextEdit : public RJSDowncaster_QTextBrowser {
+                QJSValue downcast(RJSApi& handler, QTextBrowser* o) {
+                    RTextEdit* c = dynamic_cast<RTextEdit*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RTextEdit(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
           // downcasters from QToolBar to ...
           
 
@@ -917,6 +1180,38 @@
                     RCadToolBar* c = dynamic_cast<RCadToolBar*>(o);
                     if (c!=nullptr) {
                         return RJSHelper_qcad::cpp2js_RCadToolBar(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QToolButton to ...
+          
+
+            // downcasters from QToolButton to RToolButton
+            class RJSDowncaster_QToolButton_RToolButton : public RJSDowncaster_QToolButton {
+                QJSValue downcast(RJSApi& handler, QToolButton* o) {
+                    RToolButton* c = dynamic_cast<RToolButton*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RToolButton(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+          // downcasters from QTreeWidget to ...
+          
+
+            // downcasters from QTreeWidget to RTreeWidget
+            class RJSDowncaster_QTreeWidget_RTreeWidget : public RJSDowncaster_QTreeWidget {
+                QJSValue downcast(RJSApi& handler, QTreeWidget* o) {
+                    RTreeWidget* c = dynamic_cast<RTreeWidget*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RTreeWidget(handler, c);
                     }
                     return QJSValue();
                 }
@@ -981,6 +1276,30 @@
         void RJSHelper_qcad::registerDowncasters() {
 
           
+            // downcasters from QAction to ...
+            
+              // downcasters from QAction to RGuiAction
+              RJSHelper::registerDowncaster_QAction(new RJSDowncaster_QAction_RGuiAction());
+            
+            // downcasters from QApplication to ...
+            
+              // downcasters from QApplication to RSingleApplication
+              RJSHelper::registerDowncaster_QApplication(new RJSDowncaster_QApplication_RSingleApplication());
+            
+            // downcasters from QComboBox to ...
+            
+              // downcasters from QComboBox to RColorCombo
+              RJSHelper::registerDowncaster_QComboBox(new RJSDowncaster_QComboBox_RColorCombo());
+            
+              // downcasters from QComboBox to RLinetypeCombo
+              RJSHelper::registerDowncaster_QComboBox(new RJSDowncaster_QComboBox_RLinetypeCombo());
+            
+              // downcasters from QComboBox to RLineweightCombo
+              RJSHelper::registerDowncaster_QComboBox(new RJSDowncaster_QComboBox_RLineweightCombo());
+            
+              // downcasters from QComboBox to RMathComboBox
+              RJSHelper::registerDowncaster_QComboBox(new RJSDowncaster_QComboBox_RMathComboBox());
+            
             // downcasters from QEvent to ...
             
               // downcasters from QEvent to RCloseCurrentEvent
@@ -992,6 +1311,31 @@
               // downcasters from QEvent to RTerminateEvent
               RJSHelper::registerDowncaster_QEvent(new RJSDowncaster_QEvent_RTerminateEvent());
             
+            // downcasters from QDockWidget to ...
+            
+              // downcasters from QDockWidget to RDockWidget
+              RJSHelper::registerDowncaster_QDockWidget(new RJSDowncaster_QDockWidget_RDockWidget());
+            
+            // downcasters from QFileSystemModel to ...
+            
+              // downcasters from QFileSystemModel to RFileSystemModel
+              RJSHelper::registerDowncaster_QFileSystemModel(new RJSDowncaster_QFileSystemModel_RFileSystemModel());
+            
+            // downcasters from QFrame to ...
+            
+              // downcasters from QFrame to RRulerQt
+              RJSHelper::registerDowncaster_QFrame(new RJSDowncaster_QFrame_RRulerQt());
+            
+            // downcasters from QItemDelegate to ...
+            
+              // downcasters from QItemDelegate to RToolMatrixItemDelegate
+              RJSHelper::registerDowncaster_QItemDelegate(new RJSDowncaster_QItemDelegate_RToolMatrixItemDelegate());
+            
+            // downcasters from QLayout to ...
+            
+              // downcasters from QLayout to RFlowLayout
+              RJSHelper::registerDowncaster_QLayout(new RJSDowncaster_QLayout_RFlowLayout());
+            
             // downcasters from QLineEdit to ...
             
               // downcasters from QLineEdit to RCommandLine
@@ -999,6 +1343,31 @@
             
               // downcasters from QLineEdit to RMathLineEdit
               RJSHelper::registerDowncaster_QLineEdit(new RJSDowncaster_QLineEdit_RMathLineEdit());
+            
+            // downcasters from QListView to ...
+            
+              // downcasters from QListView to RListView
+              RJSHelper::registerDowncaster_QListView(new RJSDowncaster_QListView_RListView());
+            
+            // downcasters from QListWidget to ...
+            
+              // downcasters from QListWidget to RListWidget
+              RJSHelper::registerDowncaster_QListWidget(new RJSDowncaster_QListWidget_RListWidget());
+            
+            // downcasters from QMainWindow to ...
+            
+              // downcasters from QMainWindow to RMainWindowQt
+              RJSHelper::registerDowncaster_QMainWindow(new RJSDowncaster_QMainWindow_RMainWindowQt());
+            
+            // downcasters from QMdiArea to ...
+            
+              // downcasters from QMdiArea to RMdiArea
+              RJSHelper::registerDowncaster_QMdiArea(new RJSDowncaster_QMdiArea_RMdiArea());
+            
+            // downcasters from QMdiSubWindow to ...
+            
+              // downcasters from QMdiSubWindow to RMdiChildQt
+              RJSHelper::registerDowncaster_QMdiSubWindow(new RJSDowncaster_QMdiSubWindow_RMdiChildQt());
             
             // downcasters from QObject to ...
             
@@ -1008,10 +1377,25 @@
               // downcasters from QObject to REventHandler
               RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_REventHandler());
             
+            // downcasters from QTextBrowser to ...
+            
+              // downcasters from QTextBrowser to RTextEdit
+              RJSHelper::registerDowncaster_QTextBrowser(new RJSDowncaster_QTextBrowser_RTextEdit());
+            
             // downcasters from QToolBar to ...
             
               // downcasters from QToolBar to RCadToolBar
               RJSHelper::registerDowncaster_QToolBar(new RJSDowncaster_QToolBar_RCadToolBar());
+            
+            // downcasters from QToolButton to ...
+            
+              // downcasters from QToolButton to RToolButton
+              RJSHelper::registerDowncaster_QToolButton(new RJSDowncaster_QToolButton_RToolButton());
+            
+            // downcasters from QTreeWidget to ...
+            
+              // downcasters from QTreeWidget to RTreeWidget
+              RJSHelper::registerDowncaster_QTreeWidget(new RJSDowncaster_QTreeWidget_RTreeWidget());
             
             // downcasters from QWidget to ...
             
@@ -1964,11 +2348,11 @@
               // registration of base casters that casts RMainWindowQt to QWidget:
               QWidget_Wrapper::registerBasecaster_QWidget(new RJSBasecaster_RMainWindowQt_QWidget());
             
-              // registration of base casters that casts RMainWindowQt to QMainWindow:
-              QMainWindow_Wrapper::registerBasecaster_QMainWindow(new RJSBasecaster_RMainWindowQt_QMainWindow());
-            
               // registration of base casters that casts RMainWindowQt to RMainWindow:
               RMainWindow_Wrapper::registerBasecaster_RMainWindow(new RJSBasecaster_RMainWindowQt_RMainWindow());
+            
+              // registration of base casters that casts RMainWindowQt to QMainWindow:
+              QMainWindow_Wrapper::registerBasecaster_QMainWindow(new RJSBasecaster_RMainWindowQt_QMainWindow());
             
             // registration of base casters that cast RMath to base classes:
             
@@ -2309,9 +2693,6 @@
               // registration of base casters that casts RRulerQt to QWidget:
               QWidget_Wrapper::registerBasecaster_QWidget(new RJSBasecaster_RRulerQt_QWidget());
             
-              // registration of base casters that casts RRulerQt to QFrame:
-              QFrame_Wrapper::registerBasecaster_QFrame(new RJSBasecaster_RRulerQt_QFrame());
-            
               // registration of base casters that casts RRulerQt to RRuler:
               RRuler_Wrapper::registerBasecaster_RRuler(new RJSBasecaster_RRulerQt_RRuler());
             
@@ -2320,6 +2701,9 @@
             
               // registration of base casters that casts RRulerQt to RPaletteListener:
               RPaletteListener_Wrapper::registerBasecaster_RPaletteListener(new RJSBasecaster_RRulerQt_RPaletteListener());
+            
+              // registration of base casters that casts RRulerQt to QFrame:
+              QFrame_Wrapper::registerBasecaster_QFrame(new RJSBasecaster_RRulerQt_QFrame());
             
             // registration of base casters that cast RS to base classes:
             
@@ -4896,6 +5280,241 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new REntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+            {
+              QSharedPointer<RArcEntity> s = v.dynamicCast<RArcEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RArcEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RAttributeDefinitionEntity> s = v.dynamicCast<RAttributeDefinitionEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RAttributeDefinitionEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RAttributeEntity> s = v.dynamicCast<RAttributeEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RAttributeEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RBlockReferenceEntity> s = v.dynamicCast<RBlockReferenceEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RBlockReferenceEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RCircleEntity> s = v.dynamicCast<RCircleEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RCircleEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimAlignedEntity> s = v.dynamicCast<RDimAlignedEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAlignedEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimAngular2LEntity> s = v.dynamicCast<RDimAngular2LEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAngular2LEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimAngular3PEntity> s = v.dynamicCast<RDimAngular3PEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAngular3PEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimAngularEntity> s = v.dynamicCast<RDimAngularEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAngularEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimArcLengthEntity> s = v.dynamicCast<RDimArcLengthEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimArcLengthEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimDiametricEntity> s = v.dynamicCast<RDimDiametricEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimDiametricEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimLinearEntity> s = v.dynamicCast<RDimLinearEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimLinearEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimOrdinateEntity> s = v.dynamicCast<RDimOrdinateEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimOrdinateEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimRadialEntity> s = v.dynamicCast<RDimRadialEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimRadialEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimRotatedEntity> s = v.dynamicCast<RDimRotatedEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimRotatedEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimensionEntity> s = v.dynamicCast<RDimensionEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimensionEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<REllipseEntity> s = v.dynamicCast<REllipseEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_REllipseEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RFaceEntity> s = v.dynamicCast<RFaceEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RFaceEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RHatchEntity> s = v.dynamicCast<RHatchEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RHatchEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RImageEntity> s = v.dynamicCast<RImageEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RImageEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RLeaderEntity> s = v.dynamicCast<RLeaderEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RLeaderEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RLineEntity> s = v.dynamicCast<RLineEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RLineEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RPointEntity> s = v.dynamicCast<RPointEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RPointEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RPolylineEntity> s = v.dynamicCast<RPolylineEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RPolylineEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RRayEntity> s = v.dynamicCast<RRayEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RRayEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RSolidEntity> s = v.dynamicCast<RSolidEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RSolidEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RSplineEntity> s = v.dynamicCast<RSplineEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RSplineEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RTextBasedEntity> s = v.dynamicCast<RTextBasedEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RTextBasedEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RTextEntity> s = v.dynamicCast<RTextEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RTextEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RToleranceEntity> s = v.dynamicCast<RToleranceEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RToleranceEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RTraceEntity> s = v.dynamicCast<RTraceEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RTraceEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RViewportEntity> s = v.dynamicCast<RViewportEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RViewportEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RXLineEntity> s = v.dynamicCast<RXLineEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RXLineEntity(handler, s);
+              }
+            }
+          
+
+
           // JS: new REntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("REntity");
           if (cl.isUndefined()) {
@@ -4909,9 +5528,153 @@
       }
 
       QSharedPointer<REntity> RJSHelper_qcad::js2cpp_QSharedPointer_REntity(RJSApi& handler, const QJSValue& v) {
+
+          
+            {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              int t = wrapper->getWrappedType();
+
+              // attempt to downcast to specific type:
+              
+                if (t==RJSType_RArcEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RArcEntity(handler, v);
+                }
+              
+                if (t==RJSType_RAttributeDefinitionEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeDefinitionEntity(handler, v);
+                }
+              
+                if (t==RJSType_RAttributeEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeEntity(handler, v);
+                }
+              
+                if (t==RJSType_RBlockReferenceEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RBlockReferenceEntity(handler, v);
+                }
+              
+                if (t==RJSType_RCircleEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RCircleEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAlignedEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular2LEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular3PEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimAngularEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngularEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimArcLengthEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimDiametricEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimDiametricEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimLinearEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimLinearEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimOrdinateEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimOrdinateEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimRadialEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRadialEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRotatedEntity(handler, v);
+                }
+              
+                if (t==RJSType_RDimensionEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimensionEntity(handler, v);
+                }
+              
+                if (t==RJSType_REllipseEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_REllipseEntity(handler, v);
+                }
+              
+                if (t==RJSType_RFaceEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RFaceEntity(handler, v);
+                }
+              
+                if (t==RJSType_RHatchEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RHatchEntity(handler, v);
+                }
+              
+                if (t==RJSType_RImageEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RImageEntity(handler, v);
+                }
+              
+                if (t==RJSType_RLeaderEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RLeaderEntity(handler, v);
+                }
+              
+                if (t==RJSType_RLineEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RLineEntity(handler, v);
+                }
+              
+                if (t==RJSType_RPointEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RPointEntity(handler, v);
+                }
+              
+                if (t==RJSType_RPolylineEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RPolylineEntity(handler, v);
+                }
+              
+                if (t==RJSType_RRayEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RRayEntity(handler, v);
+                }
+              
+                if (t==RJSType_RSolidEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RSolidEntity(handler, v);
+                }
+              
+                if (t==RJSType_RSplineEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RSplineEntity(handler, v);
+                }
+              
+                if (t==RJSType_RTextBasedEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RTextBasedEntity(handler, v);
+                }
+              
+                if (t==RJSType_RTextEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RTextEntity(handler, v);
+                }
+              
+                if (t==RJSType_RToleranceEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RToleranceEntity(handler, v);
+                }
+              
+                if (t==RJSType_RTraceEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RTraceEntity(handler, v);
+                }
+              
+                if (t==RJSType_RViewportEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RViewportEntity(handler, v);
+                }
+              
+                if (t==RJSType_RXLineEntity::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RXLineEntity(handler, v);
+                }
+              
+            }
           REntity_Wrapper* wrapper = getWrapper<REntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_REntity: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<REntity>();
           }
           //return QSharedPointer<REntity>(getWrapped_REntity(wrapper));
@@ -4947,6 +5710,80 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RShape('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+            {
+              QSharedPointer<RArc> s = v.dynamicCast<RArc>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RArc(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RCircle> s = v.dynamicCast<RCircle>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RCircle(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<REllipse> s = v.dynamicCast<REllipse>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_REllipse(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RLine> s = v.dynamicCast<RLine>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RLine(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RPoint> s = v.dynamicCast<RPoint>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RPoint(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RPolyline> s = v.dynamicCast<RPolyline>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RPolyline(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RRay> s = v.dynamicCast<RRay>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RRay(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RSpline> s = v.dynamicCast<RSpline>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RSpline(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RTriangle> s = v.dynamicCast<RTriangle>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RTriangle(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RXLine> s = v.dynamicCast<RXLine>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RXLine(handler, s);
+              }
+            }
+          
+
+
           // JS: new RShape('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RShape");
           if (cl.isUndefined()) {
@@ -4960,9 +5797,61 @@
       }
 
       QSharedPointer<RShape> RJSHelper_qcad::js2cpp_QSharedPointer_RShape(RJSApi& handler, const QJSValue& v) {
+
+          
+            {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              int t = wrapper->getWrappedType();
+
+              // attempt to downcast to specific type:
+              
+                if (t==RJSType_RArc::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RArc(handler, v);
+                }
+              
+                if (t==RJSType_RCircle::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RCircle(handler, v);
+                }
+              
+                if (t==RJSType_REllipse::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_REllipse(handler, v);
+                }
+              
+                if (t==RJSType_RLine::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RLine(handler, v);
+                }
+              
+                if (t==RJSType_RPoint::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RPoint(handler, v);
+                }
+              
+                if (t==RJSType_RPolyline::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RPolyline(handler, v);
+                }
+              
+                if (t==RJSType_RRay::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RRay(handler, v);
+                }
+              
+                if (t==RJSType_RSpline::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RSpline(handler, v);
+                }
+              
+                if (t==RJSType_RTriangle::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RTriangle(handler, v);
+                }
+              
+                if (t==RJSType_RXLine::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RXLine(handler, v);
+                }
+              
+            }
           RShape_Wrapper* wrapper = getWrapper<RShape_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RShape: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<RShape>();
           }
           //return QSharedPointer<RShape>(getWrapped_RShape(wrapper));
@@ -4998,6 +5887,10 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RArc('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+
+
           // JS: new RArc('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RArc");
           if (cl.isUndefined()) {
@@ -5011,9 +5904,13 @@
       }
 
       QSharedPointer<RArc> RJSHelper_qcad::js2cpp_QSharedPointer_RArc(RJSApi& handler, const QJSValue& v) {
+
           RArc_Wrapper* wrapper = getWrapper<RArc_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RArc: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<RArc>();
           }
           //return QSharedPointer<RArc>(getWrapped_RArc(wrapper));
@@ -5049,6 +5946,10 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RCircle('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+
+
           // JS: new RCircle('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RCircle");
           if (cl.isUndefined()) {
@@ -5062,9 +5963,13 @@
       }
 
       QSharedPointer<RCircle> RJSHelper_qcad::js2cpp_QSharedPointer_RCircle(RJSApi& handler, const QJSValue& v) {
+
           RCircle_Wrapper* wrapper = getWrapper<RCircle_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RCircle: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<RCircle>();
           }
           //return QSharedPointer<RCircle>(getWrapped_RCircle(wrapper));
@@ -5100,6 +6005,10 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new REllipse('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+
+
           // JS: new REllipse('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("REllipse");
           if (cl.isUndefined()) {
@@ -5113,9 +6022,13 @@
       }
 
       QSharedPointer<REllipse> RJSHelper_qcad::js2cpp_QSharedPointer_REllipse(RJSApi& handler, const QJSValue& v) {
+
           REllipse_Wrapper* wrapper = getWrapper<REllipse_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_REllipse: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<REllipse>();
           }
           //return QSharedPointer<REllipse>(getWrapped_REllipse(wrapper));
@@ -5151,6 +6064,10 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLine('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+
+
           // JS: new RLine('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLine");
           if (cl.isUndefined()) {
@@ -5164,9 +6081,13 @@
       }
 
       QSharedPointer<RLine> RJSHelper_qcad::js2cpp_QSharedPointer_RLine(RJSApi& handler, const QJSValue& v) {
+
           RLine_Wrapper* wrapper = getWrapper<RLine_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLine: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<RLine>();
           }
           //return QSharedPointer<RLine>(getWrapped_RLine(wrapper));
@@ -5202,6 +6123,10 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RPoint('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+
+
           // JS: new RPoint('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RPoint");
           if (cl.isUndefined()) {
@@ -5215,9 +6140,13 @@
       }
 
       QSharedPointer<RPoint> RJSHelper_qcad::js2cpp_QSharedPointer_RPoint(RJSApi& handler, const QJSValue& v) {
+
           RPoint_Wrapper* wrapper = getWrapper<RPoint_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RPoint: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<RPoint>();
           }
           //return QSharedPointer<RPoint>(getWrapped_RPoint(wrapper));
@@ -5253,6 +6182,10 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RRay('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+
+
           // JS: new RRay('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RRay");
           if (cl.isUndefined()) {
@@ -5266,9 +6199,13 @@
       }
 
       QSharedPointer<RRay> RJSHelper_qcad::js2cpp_QSharedPointer_RRay(RJSApi& handler, const QJSValue& v) {
+
           RRay_Wrapper* wrapper = getWrapper<RRay_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RRay: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<RRay>();
           }
           //return QSharedPointer<RRay>(getWrapped_RRay(wrapper));
@@ -5304,6 +6241,10 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RSpline('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+
+
           // JS: new RSpline('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RSpline");
           if (cl.isUndefined()) {
@@ -5317,9 +6258,13 @@
       }
 
       QSharedPointer<RSpline> RJSHelper_qcad::js2cpp_QSharedPointer_RSpline(RJSApi& handler, const QJSValue& v) {
+
           RSpline_Wrapper* wrapper = getWrapper<RSpline_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RSpline: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<RSpline>();
           }
           //return QSharedPointer<RSpline>(getWrapped_RSpline(wrapper));
@@ -5355,6 +6300,10 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RTriangle('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+
+
           // JS: new RTriangle('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RTriangle");
           if (cl.isUndefined()) {
@@ -5368,9 +6317,13 @@
       }
 
       QSharedPointer<RTriangle> RJSHelper_qcad::js2cpp_QSharedPointer_RTriangle(RJSApi& handler, const QJSValue& v) {
+
           RTriangle_Wrapper* wrapper = getWrapper<RTriangle_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RTriangle: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<RTriangle>();
           }
           //return QSharedPointer<RTriangle>(getWrapped_RTriangle(wrapper));
@@ -5406,6 +6359,10 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RXLine('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type:
+          
+
+
           // JS: new RXLine('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RXLine");
           if (cl.isUndefined()) {
@@ -5419,9 +6376,13 @@
       }
 
       QSharedPointer<RXLine> RJSHelper_qcad::js2cpp_QSharedPointer_RXLine(RJSApi& handler, const QJSValue& v) {
+
           RXLine_Wrapper* wrapper = getWrapper<RXLine_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RXLine: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
               return QSharedPointer<RXLine>();
           }
           //return QSharedPointer<RXLine>(getWrapped_RXLine(wrapper));
@@ -5450,6 +6411,65 @@
           return !v.isUndefined();
       }
     
+      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTextLabel(RJSApi& handler, const QSharedPointer<RTextLabel>& v) {
+          QJSEngine* engine = handler.getEngine();
+          RTextLabel_Wrapper* ret = new RTextLabel_Wrapper(handler, v);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //return engine->evaluate("new RTextLabel('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type:
+          
+
+
+          // JS: new RTextLabel('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RTextLabel");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RTextLabel is undefined. Use RTextLabel_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          return cl.callAsConstructor(args);
+      }
+
+      QSharedPointer<RTextLabel> RJSHelper_qcad::js2cpp_QSharedPointer_RTextLabel(RJSApi& handler, const QJSValue& v) {
+
+          RTextLabel_Wrapper* wrapper = getWrapper<RTextLabel_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSharedPointer_RTextLabel: no wrapper";
+              if (v.prototype().toQObject()!=nullptr) {
+                qWarning() << "class found: " << v.prototype().toQObject()->metaObject()->className();
+              }
+              return QSharedPointer<RTextLabel>();
+          }
+          //return QSharedPointer<RTextLabel>(getWrapped_RTextLabel(wrapper));
+          if (wrapper->hasWrappedSp()) {
+              return wrapper->getWrappedSp();
+          }
+          else if (wrapper->getWrapped()==nullptr) {
+              return QSharedPointer<RTextLabel>();
+          }
+          else {
+              // wrapper of normal pointer, create QSharedPointer on the fly over clone of object:
+              //return QSharedPointer<RTextLabel>(wrapper->getWrappedClone());
+              //return QSharedPointer<RTextLabel>(wrapper->getWrapped());
+              
+                  // create clone on the fly:
+                  return QSharedPointer<RTextLabel>(wrapper->getWrapped()->clone());
+                
+          }
+      }
+
+      bool RJSHelper_qcad::is_QSharedPointer_RTextLabel(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RTextLabel_Type;
+          return !v.isUndefined();
+      }
+    
   // ------------------------------------
   // QSharedPointer types (non-copyable):
   // ------------------------------------
@@ -5474,6 +6494,43 @@
       }
 
       QSharedPointer<RObject> RJSHelper_qcad::js2cpp_QSharedPointer_RObject(RJSApi& handler, const QJSValue& v) {
+
+          
+            {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              int t = wrapper->getWrappedType();
+
+              // attempt to downcast to specific type:
+              
+                if (t==RJSType_RBlock::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RBlock(handler, v);
+                }
+              
+                if (t==RJSType_RLayer::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RLayer(handler, v);
+                }
+              
+                if (t==RJSType_RLayerState::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RLayerState(handler, v);
+                }
+              
+                if (t==RJSType_RLayout::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RLayout(handler, v);
+                }
+              
+                if (t==RJSType_RLinetype::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RLinetype(handler, v);
+                }
+              
+                if (t==RJSType_RUcs::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RUcs(handler, v);
+                }
+              
+                if (t==RJSType_RView::getIdStatic()) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RView(handler, v);
+                }
+              
+            }
           RObject_Wrapper* wrapper = getWrapper<RObject_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RObject: no wrapper";
@@ -5529,6 +6586,7 @@
       }
 
       QSharedPointer<RArcEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RArcEntity(RJSApi& handler, const QJSValue& v) {
+
           RArcEntity_Wrapper* wrapper = getWrapper<RArcEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RArcEntity: no wrapper";
@@ -5584,6 +6642,7 @@
       }
 
       QSharedPointer<RAttributeDefinitionEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeDefinitionEntity(RJSApi& handler, const QJSValue& v) {
+
           RAttributeDefinitionEntity_Wrapper* wrapper = getWrapper<RAttributeDefinitionEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RAttributeDefinitionEntity: no wrapper";
@@ -5639,6 +6698,7 @@
       }
 
       QSharedPointer<RAttributeEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeEntity(RJSApi& handler, const QJSValue& v) {
+
           RAttributeEntity_Wrapper* wrapper = getWrapper<RAttributeEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RAttributeEntity: no wrapper";
@@ -5694,6 +6754,7 @@
       }
 
       QSharedPointer<RBlock> RJSHelper_qcad::js2cpp_QSharedPointer_RBlock(RJSApi& handler, const QJSValue& v) {
+
           RBlock_Wrapper* wrapper = getWrapper<RBlock_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RBlock: no wrapper";
@@ -5749,6 +6810,7 @@
       }
 
       QSharedPointer<RBlockReferenceEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RBlockReferenceEntity(RJSApi& handler, const QJSValue& v) {
+
           RBlockReferenceEntity_Wrapper* wrapper = getWrapper<RBlockReferenceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RBlockReferenceEntity: no wrapper";
@@ -5804,6 +6866,7 @@
       }
 
       QSharedPointer<RCircleEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RCircleEntity(RJSApi& handler, const QJSValue& v) {
+
           RCircleEntity_Wrapper* wrapper = getWrapper<RCircleEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RCircleEntity: no wrapper";
@@ -5859,6 +6922,7 @@
       }
 
       QSharedPointer<RDimAlignedEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAlignedEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimAlignedEntity_Wrapper* wrapper = getWrapper<RDimAlignedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAlignedEntity: no wrapper";
@@ -5914,6 +6978,7 @@
       }
 
       QSharedPointer<RDimAngular2LEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular2LEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimAngular2LEntity_Wrapper* wrapper = getWrapper<RDimAngular2LEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAngular2LEntity: no wrapper";
@@ -5969,6 +7034,7 @@
       }
 
       QSharedPointer<RDimAngular3PEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular3PEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimAngular3PEntity_Wrapper* wrapper = getWrapper<RDimAngular3PEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAngular3PEntity: no wrapper";
@@ -6024,6 +7090,7 @@
       }
 
       QSharedPointer<RDimAngularData> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngularData(RJSApi& handler, const QJSValue& v) {
+
           RDimAngularData_Wrapper* wrapper = getWrapper<RDimAngularData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAngularData: no wrapper";
@@ -6078,6 +7145,7 @@
       }
 
       QSharedPointer<RDimAngularEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngularEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimAngularEntity_Wrapper* wrapper = getWrapper<RDimAngularEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAngularEntity: no wrapper";
@@ -6133,6 +7201,7 @@
       }
 
       QSharedPointer<RDimArcLengthEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimArcLengthEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimArcLengthEntity_Wrapper* wrapper = getWrapper<RDimArcLengthEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimArcLengthEntity: no wrapper";
@@ -6188,6 +7257,7 @@
       }
 
       QSharedPointer<RDimDiametricEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimDiametricEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimDiametricEntity_Wrapper* wrapper = getWrapper<RDimDiametricEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimDiametricEntity: no wrapper";
@@ -6243,6 +7313,7 @@
       }
 
       QSharedPointer<RDimLinearEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimLinearEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimLinearEntity_Wrapper* wrapper = getWrapper<RDimLinearEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimLinearEntity: no wrapper";
@@ -6298,6 +7369,7 @@
       }
 
       QSharedPointer<RDimOrdinateEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimOrdinateEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimOrdinateEntity_Wrapper* wrapper = getWrapper<RDimOrdinateEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimOrdinateEntity: no wrapper";
@@ -6353,6 +7425,7 @@
       }
 
       QSharedPointer<RDimRadialEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimRadialEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimRadialEntity_Wrapper* wrapper = getWrapper<RDimRadialEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimRadialEntity: no wrapper";
@@ -6408,6 +7481,7 @@
       }
 
       QSharedPointer<RDimRotatedEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimRotatedEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimRotatedEntity_Wrapper* wrapper = getWrapper<RDimRotatedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimRotatedEntity: no wrapper";
@@ -6463,6 +7537,7 @@
       }
 
       QSharedPointer<RDimStyle> RJSHelper_qcad::js2cpp_QSharedPointer_RDimStyle(RJSApi& handler, const QJSValue& v) {
+
           RDimStyle_Wrapper* wrapper = getWrapper<RDimStyle_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimStyle: no wrapper";
@@ -6518,6 +7593,7 @@
       }
 
       QSharedPointer<RDimensionEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimensionEntity(RJSApi& handler, const QJSValue& v) {
+
           RDimensionEntity_Wrapper* wrapper = getWrapper<RDimensionEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimensionEntity: no wrapper";
@@ -6573,6 +7649,7 @@
       }
 
       QSharedPointer<RDocumentVariables> RJSHelper_qcad::js2cpp_QSharedPointer_RDocumentVariables(RJSApi& handler, const QJSValue& v) {
+
           RDocumentVariables_Wrapper* wrapper = getWrapper<RDocumentVariables_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDocumentVariables: no wrapper";
@@ -6628,6 +7705,7 @@
       }
 
       QSharedPointer<REllipseEntity> RJSHelper_qcad::js2cpp_QSharedPointer_REllipseEntity(RJSApi& handler, const QJSValue& v) {
+
           REllipseEntity_Wrapper* wrapper = getWrapper<REllipseEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_REllipseEntity: no wrapper";
@@ -6683,6 +7761,7 @@
       }
 
       QSharedPointer<RFaceEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RFaceEntity(RJSApi& handler, const QJSValue& v) {
+
           RFaceEntity_Wrapper* wrapper = getWrapper<RFaceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RFaceEntity: no wrapper";
@@ -6738,6 +7817,7 @@
       }
 
       QSharedPointer<RHatchEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RHatchEntity(RJSApi& handler, const QJSValue& v) {
+
           RHatchEntity_Wrapper* wrapper = getWrapper<RHatchEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RHatchEntity: no wrapper";
@@ -6793,6 +7873,7 @@
       }
 
       QSharedPointer<RImageEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RImageEntity(RJSApi& handler, const QJSValue& v) {
+
           RImageEntity_Wrapper* wrapper = getWrapper<RImageEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RImageEntity: no wrapper";
@@ -6848,6 +7929,7 @@
       }
 
       QSharedPointer<RLayer> RJSHelper_qcad::js2cpp_QSharedPointer_RLayer(RJSApi& handler, const QJSValue& v) {
+
           RLayer_Wrapper* wrapper = getWrapper<RLayer_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLayer: no wrapper";
@@ -6903,6 +7985,7 @@
       }
 
       QSharedPointer<RLayerState> RJSHelper_qcad::js2cpp_QSharedPointer_RLayerState(RJSApi& handler, const QJSValue& v) {
+
           RLayerState_Wrapper* wrapper = getWrapper<RLayerState_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLayerState: no wrapper";
@@ -6958,6 +8041,7 @@
       }
 
       QSharedPointer<RLayout> RJSHelper_qcad::js2cpp_QSharedPointer_RLayout(RJSApi& handler, const QJSValue& v) {
+
           RLayout_Wrapper* wrapper = getWrapper<RLayout_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLayout: no wrapper";
@@ -7013,6 +8097,7 @@
       }
 
       QSharedPointer<RLeaderEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RLeaderEntity(RJSApi& handler, const QJSValue& v) {
+
           RLeaderEntity_Wrapper* wrapper = getWrapper<RLeaderEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLeaderEntity: no wrapper";
@@ -7068,6 +8153,7 @@
       }
 
       QSharedPointer<RLineEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RLineEntity(RJSApi& handler, const QJSValue& v) {
+
           RLineEntity_Wrapper* wrapper = getWrapper<RLineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLineEntity: no wrapper";
@@ -7123,6 +8209,7 @@
       }
 
       QSharedPointer<RLinetype> RJSHelper_qcad::js2cpp_QSharedPointer_RLinetype(RJSApi& handler, const QJSValue& v) {
+
           RLinetype_Wrapper* wrapper = getWrapper<RLinetype_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLinetype: no wrapper";
@@ -7178,6 +8265,7 @@
       }
 
       QSharedPointer<RPointEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RPointEntity(RJSApi& handler, const QJSValue& v) {
+
           RPointEntity_Wrapper* wrapper = getWrapper<RPointEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RPointEntity: no wrapper";
@@ -7233,6 +8321,7 @@
       }
 
       QSharedPointer<RPolyline> RJSHelper_qcad::js2cpp_QSharedPointer_RPolyline(RJSApi& handler, const QJSValue& v) {
+
           RPolyline_Wrapper* wrapper = getWrapper<RPolyline_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RPolyline: no wrapper";
@@ -7288,6 +8377,7 @@
       }
 
       QSharedPointer<RPolylineEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RPolylineEntity(RJSApi& handler, const QJSValue& v) {
+
           RPolylineEntity_Wrapper* wrapper = getWrapper<RPolylineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RPolylineEntity: no wrapper";
@@ -7343,6 +8433,7 @@
       }
 
       QSharedPointer<RRayEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RRayEntity(RJSApi& handler, const QJSValue& v) {
+
           RRayEntity_Wrapper* wrapper = getWrapper<RRayEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RRayEntity: no wrapper";
@@ -7398,6 +8489,7 @@
       }
 
       QSharedPointer<RSolidEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RSolidEntity(RJSApi& handler, const QJSValue& v) {
+
           RSolidEntity_Wrapper* wrapper = getWrapper<RSolidEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RSolidEntity: no wrapper";
@@ -7453,6 +8545,7 @@
       }
 
       QSharedPointer<RSplineEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RSplineEntity(RJSApi& handler, const QJSValue& v) {
+
           RSplineEntity_Wrapper* wrapper = getWrapper<RSplineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RSplineEntity: no wrapper";
@@ -7508,6 +8601,7 @@
       }
 
       QSharedPointer<RTextEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RTextEntity(RJSApi& handler, const QJSValue& v) {
+
           RTextEntity_Wrapper* wrapper = getWrapper<RTextEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RTextEntity: no wrapper";
@@ -7543,6 +8637,62 @@
           return !v.isUndefined();
       }
     
+      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTextBasedEntity(RJSApi& handler, const QSharedPointer<RTextBasedEntity>& v) {
+          QJSEngine* engine = handler.getEngine();
+          RTextBasedEntity_Wrapper* ret = new RTextBasedEntity_Wrapper(handler, v);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //return engine->evaluate("new RTextBasedEntity('__GOT_WRAPPER__', wrapper);");
+
+          // JS: new RTextBasedEntity('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RTextBasedEntity");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RTextBasedEntity is undefined. Use RTextBasedEntity_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          return cl.callAsConstructor(args);
+      }
+
+      QSharedPointer<RTextBasedEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RTextBasedEntity(RJSApi& handler, const QJSValue& v) {
+
+          RTextBasedEntity_Wrapper* wrapper = getWrapper<RTextBasedEntity_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSharedPointer_RTextBasedEntity: no wrapper";
+              return QSharedPointer<RTextBasedEntity>();
+          }
+          //return QSharedPointer<RTextBasedEntity>(getWrapped_RTextBasedEntity(wrapper));
+          if (wrapper->hasWrappedSp()) {
+              return wrapper->getWrappedSp();
+          }
+          else if (wrapper->getWrapped()==nullptr) {
+              return QSharedPointer<RTextBasedEntity>();
+          }
+          else {
+              // wrapper of normal pointer, create QSharedPointer on the fly over clone of object:
+              //return QSharedPointer<RTextBasedEntity>(wrapper->getWrappedClone());
+              //return QSharedPointer<RTextBasedEntity>(wrapper->getWrapped()->clone());
+              //qWarning() << "js2cpp_QSharedPointer_RTextBasedEntity: object cannot be cloned";
+              //return QSharedPointer<RTextBasedEntity>();
+
+              
+                  // create clone on the fly:
+                  return QSharedPointer<RTextBasedEntity>((RTextBasedEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RTextBasedEntity>(wrapper->getWrapped()->clone());
+                
+          }
+      }
+
+      bool RJSHelper_qcad::is_QSharedPointer_RTextBasedEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RTextBasedEntity_Type;
+          return !v.isUndefined();
+      }
+    
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RToleranceEntity(RJSApi& handler, const QSharedPointer<RToleranceEntity>& v) {
           QJSEngine* engine = handler.getEngine();
           RToleranceEntity_Wrapper* ret = new RToleranceEntity_Wrapper(handler, v);
@@ -7563,6 +8713,7 @@
       }
 
       QSharedPointer<RToleranceEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RToleranceEntity(RJSApi& handler, const QJSValue& v) {
+
           RToleranceEntity_Wrapper* wrapper = getWrapper<RToleranceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RToleranceEntity: no wrapper";
@@ -7618,6 +8769,7 @@
       }
 
       QSharedPointer<RTraceEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RTraceEntity(RJSApi& handler, const QJSValue& v) {
+
           RTraceEntity_Wrapper* wrapper = getWrapper<RTraceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RTraceEntity: no wrapper";
@@ -7673,6 +8825,7 @@
       }
 
       QSharedPointer<RUcs> RJSHelper_qcad::js2cpp_QSharedPointer_RUcs(RJSApi& handler, const QJSValue& v) {
+
           RUcs_Wrapper* wrapper = getWrapper<RUcs_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RUcs: no wrapper";
@@ -7728,6 +8881,7 @@
       }
 
       QSharedPointer<RView> RJSHelper_qcad::js2cpp_QSharedPointer_RView(RJSApi& handler, const QJSValue& v) {
+
           RView_Wrapper* wrapper = getWrapper<RView_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RView: no wrapper";
@@ -7783,6 +8937,7 @@
       }
 
       QSharedPointer<RViewportEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RViewportEntity(RJSApi& handler, const QJSValue& v) {
+
           RViewportEntity_Wrapper* wrapper = getWrapper<RViewportEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RViewportEntity: no wrapper";
@@ -7838,6 +8993,7 @@
       }
 
       QSharedPointer<RXLineEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RXLineEntity(RJSApi& handler, const QJSValue& v) {
+
           RXLineEntity_Wrapper* wrapper = getWrapper<RXLineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RXLineEntity: no wrapper";
@@ -23819,14 +24975,6 @@
       QJSValue RJSHelper_qcad::cpp2js_RMainWindow(RJSApi& handler, RMainWindow* v) {
 
           
-            // downcast to RMainWindowQt:
-            {
-                RMainWindowQt* o = dynamic_cast<RMainWindowQt*>(v);
-                if (o!=nullptr) {
-                    return RJSHelper_qcad::cpp2js_RMainWindowQt(handler, o);
-                }
-            }
-          
 
           QJSEngine* engine = handler.getEngine();
           RMainWindow_Wrapper* ret = new RMainWindow_Wrapper(handler, v, false);
@@ -25079,14 +26227,6 @@
                 RPaletteListenerAdapter* o = dynamic_cast<RPaletteListenerAdapter*>(v);
                 if (o!=nullptr) {
                     return RJSHelper_qcad::cpp2js_RPaletteListenerAdapter(handler, o);
-                }
-            }
-          
-            // downcast to RRulerQt:
-            {
-                RRulerQt* o = dynamic_cast<RRulerQt*>(v);
-                if (o!=nullptr) {
-                    return RJSHelper_qcad::cpp2js_RRulerQt(handler, o);
                 }
             }
           

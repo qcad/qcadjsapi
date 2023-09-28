@@ -839,7 +839,7 @@
         static RGuiAction* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RGuiAction:
           for (int i=0; i<basecasters_RGuiAction.length(); i++) {
             RJSBasecaster_RGuiAction* basecaster = basecasters_RGuiAction[i];
             RGuiAction* ret = basecaster->castToBase(t, vp);
@@ -848,7 +848,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RGuiAction:
           if (t==RJSType_RGuiAction::getIdStatic()) {
             return (RGuiAction*)vp;
           }

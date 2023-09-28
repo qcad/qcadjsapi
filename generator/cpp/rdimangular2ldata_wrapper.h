@@ -92,7 +92,7 @@
         static RDimAngular2LData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDimAngular2LData:
           for (int i=0; i<basecasters_RDimAngular2LData.length(); i++) {
             RJSBasecaster_RDimAngular2LData* basecaster = basecasters_RDimAngular2LData[i];
             RDimAngular2LData* ret = basecaster->castToBase(t, vp);
@@ -101,7 +101,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDimAngular2LData:
           if (t==RJSType_RDimAngular2LData::getIdStatic()) {
             return (RDimAngular2LData*)vp;
           }

@@ -43,7 +43,7 @@
         static RPreferencesListener* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RPreferencesListener:
           for (int i=0; i<basecasters_RPreferencesListener.length(); i++) {
             RJSBasecaster_RPreferencesListener* basecaster = basecasters_RPreferencesListener[i];
             RPreferencesListener* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RPreferencesListener:
           if (t==RJSType_RPreferencesListener::getIdStatic()) {
             return (RPreferencesListener*)vp;
           }

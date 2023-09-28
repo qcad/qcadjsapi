@@ -41,7 +41,7 @@
         static RChangePropertyOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RChangePropertyOperation:
           for (int i=0; i<basecasters_RChangePropertyOperation.length(); i++) {
             RJSBasecaster_RChangePropertyOperation* basecaster = basecasters_RChangePropertyOperation[i];
             RChangePropertyOperation* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RChangePropertyOperation:
           if (t==RJSType_RChangePropertyOperation::getIdStatic()) {
             return (RChangePropertyOperation*)vp;
           }

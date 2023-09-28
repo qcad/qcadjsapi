@@ -110,7 +110,7 @@
         static RSelectionListenerAdapter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSelectionListenerAdapter:
           for (int i=0; i<basecasters_RSelectionListenerAdapter.length(); i++) {
             RJSBasecaster_RSelectionListenerAdapter* basecaster = basecasters_RSelectionListenerAdapter[i];
             RSelectionListenerAdapter* ret = basecaster->castToBase(t, vp);
@@ -119,7 +119,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSelectionListenerAdapter:
           if (t==RJSType_RSelectionListenerAdapter::getIdStatic()) {
             return (RSelectionListenerAdapter*)vp;
           }

@@ -43,7 +43,7 @@
         static RAddObjectsOperation* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RAddObjectsOperation:
           for (int i=0; i<basecasters_RAddObjectsOperation.length(); i++) {
             RJSBasecaster_RAddObjectsOperation* basecaster = basecasters_RAddObjectsOperation[i];
             RAddObjectsOperation* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RAddObjectsOperation:
           if (t==RJSType_RAddObjectsOperation::getIdStatic()) {
             return (RAddObjectsOperation*)vp;
           }

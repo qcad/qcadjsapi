@@ -1272,7 +1272,7 @@
         static RDimAngularEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDimAngularEntity:
           for (int i=0; i<basecasters_RDimAngularEntity.length(); i++) {
             RJSBasecaster_RDimAngularEntity* basecaster = basecasters_RDimAngularEntity[i];
             RDimAngularEntity* ret = basecaster->castToBase(t, vp);
@@ -1281,7 +1281,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDimAngularEntity:
           if (t==RJSType_RDimAngularEntity::getIdStatic()) {
             return (RDimAngularEntity*)vp;
           }

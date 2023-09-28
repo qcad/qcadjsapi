@@ -445,7 +445,7 @@
         static RDxfServices* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDxfServices:
           for (int i=0; i<basecasters_RDxfServices.length(); i++) {
             RJSBasecaster_RDxfServices* basecaster = basecasters_RDxfServices[i];
             RDxfServices* ret = basecaster->castToBase(t, vp);
@@ -454,7 +454,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDxfServices:
           if (t==RJSType_RDxfServices::getIdStatic()) {
             return (RDxfServices*)vp;
           }

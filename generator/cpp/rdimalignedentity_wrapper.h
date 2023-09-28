@@ -1233,7 +1233,7 @@
         static RDimAlignedEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RDimAlignedEntity:
           for (int i=0; i<basecasters_RDimAlignedEntity.length(); i++) {
             RJSBasecaster_RDimAlignedEntity* basecaster = basecasters_RDimAlignedEntity[i];
             RDimAlignedEntity* ret = basecaster->castToBase(t, vp);
@@ -1242,7 +1242,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RDimAlignedEntity:
           if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
             return (RDimAlignedEntity*)vp;
           }

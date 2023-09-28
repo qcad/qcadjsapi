@@ -3,7 +3,7 @@
   <class_decl name="RLine" />
   <class name="RSpline" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
       <super name="RExplodable" />
     </super_list>
     <constructor>

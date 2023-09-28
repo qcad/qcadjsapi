@@ -690,7 +690,7 @@
         static RToleranceEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RToleranceEntity:
           for (int i=0; i<basecasters_RToleranceEntity.length(); i++) {
             RJSBasecaster_RToleranceEntity* basecaster = basecasters_RToleranceEntity[i];
             RToleranceEntity* ret = basecaster->castToBase(t, vp);
@@ -699,7 +699,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RToleranceEntity:
           if (t==RJSType_RToleranceEntity::getIdStatic()) {
             return (RToleranceEntity*)vp;
           }

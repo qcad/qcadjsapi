@@ -4,7 +4,7 @@
   <class_decl name="RTransaction" />
   <class name="RLinetype" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
     </super_list>
     <constructor>
       <variant>

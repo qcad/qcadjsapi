@@ -41,7 +41,7 @@
         static RExplodable* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RExplodable:
           for (int i=0; i<basecasters_RExplodable.length(); i++) {
             RJSBasecaster_RExplodable* basecaster = basecasters_RExplodable[i];
             RExplodable* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RExplodable:
           if (t==RJSType_RExplodable::getIdStatic()) {
             return (RExplodable*)vp;
           }

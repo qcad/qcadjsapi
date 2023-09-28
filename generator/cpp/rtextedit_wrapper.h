@@ -652,7 +652,7 @@
         static RTextEdit* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RTextEdit:
           for (int i=0; i<basecasters_RTextEdit.length(); i++) {
             RJSBasecaster_RTextEdit* basecaster = basecasters_RTextEdit[i];
             RTextEdit* ret = basecaster->castToBase(t, vp);
@@ -661,7 +661,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RTextEdit:
           if (t==RJSType_RTextEdit::getIdStatic()) {
             return (RTextEdit*)vp;
           }

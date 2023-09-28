@@ -43,7 +43,7 @@
         static RSnapEnd* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RSnapEnd:
           for (int i=0; i<basecasters_RSnapEnd.length(); i++) {
             RJSBasecaster_RSnapEnd* basecaster = basecasters_RSnapEnd[i];
             RSnapEnd* ret = basecaster->castToBase(t, vp);
@@ -52,7 +52,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RSnapEnd:
           if (t==RJSType_RSnapEnd::getIdStatic()) {
             return (RSnapEnd*)vp;
           }

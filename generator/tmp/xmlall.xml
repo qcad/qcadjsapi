@@ -713,7 +713,7 @@
   </class>
   <class name="RArc" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -1548,7 +1548,7 @@
   <class name="RArcEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -1959,7 +1959,7 @@
   <class name="RAttributeDefinitionEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RTextBasedEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
@@ -2093,7 +2093,7 @@
   <class name="RAttributeEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RTextBasedEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
@@ -2249,7 +2249,7 @@
   </class>
   <class name="RBlock" ownership="cpp" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyType" />
@@ -2833,7 +2833,7 @@
   <class name="RBlockReferenceEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -3601,7 +3601,7 @@
   </class>
   <class name="RCircle" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -4149,7 +4149,7 @@
   <class name="RCircleEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -5165,7 +5165,7 @@
   <class name="RDimAlignedEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
       <super name="RDimLinearEntity" />
     </super_list>
@@ -5477,7 +5477,7 @@
   <class name="RDimAngular2LEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
       <super name="RDimAngularEntity" />
     </super_list>
@@ -5776,7 +5776,7 @@
   <class name="RDimAngular3PEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
       <super name="RDimAngularEntity" />
     </super_list>
@@ -6031,7 +6031,7 @@
   <class name="RDimAngularEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
@@ -6323,7 +6323,7 @@
   <class name="RDimArcLengthEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
       <super name="RDimAngularEntity" />
     </super_list>
@@ -6576,7 +6576,7 @@
   <class name="RDimDiametricEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
@@ -6844,7 +6844,7 @@
   <class name="RDimLinearEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
@@ -7120,7 +7120,7 @@
   <class name="RDimOrdinateEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
@@ -7377,7 +7377,7 @@
   <class name="RDimRadialEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
@@ -7615,7 +7615,7 @@
   <class name="RDimRotatedEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" />
       <super name="RDimLinearEntity" />
     </super_list>
@@ -8059,7 +8059,7 @@
       </variant>
     </function>
   </class>
-  <class name="RDimensionData" ownership="cpp">
+  <class name="RDimensionData">
     <super_list>
       <super name="REntityData" />
     </super_list>
@@ -8883,7 +8883,7 @@
   <class name="RDimensionEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -12449,7 +12449,7 @@
   </class>
   <class name="REllipse" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -13343,7 +13343,7 @@
   <class name="REllipseEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -15927,7 +15927,7 @@
   <class name="RFaceEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -20618,7 +20618,7 @@
   <class name="RHatchEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -21206,7 +21206,7 @@
   <class name="RImageEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -21625,7 +21625,7 @@
   </class>
   <class name="RLayer" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -21996,7 +21996,7 @@
   </class>
   <class name="RLayerState" ownership="cpp" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -22116,7 +22116,7 @@
   </class>
   <class name="RLayout" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -22648,7 +22648,7 @@
   <class name="RLeaderEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -22933,7 +22933,7 @@
   </class>
   <class name="RLine" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -23603,7 +23603,7 @@
   <class name="RLineEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -23802,7 +23802,7 @@
   </class>
   <class name="RLinetype" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -25496,8 +25496,8 @@
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />
-      <super name="QMainWindow" />
       <super name="RMainWindow" />
+      <super name="QMainWindow" />
     </super_list>
     <constructor>
       <variant>
@@ -30036,7 +30036,7 @@
   </class>
   <class name="RPoint" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -30445,7 +30445,7 @@
   <class name="RPointEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -30538,7 +30538,7 @@
   </class>
   <class name="RPolyline" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
       <super name="RExplodable" />
     </super_list>
     <constructor>
@@ -32070,7 +32070,7 @@
   <class name="RPolylineEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -33525,7 +33525,7 @@
   </class>
   <class name="RRay" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
       <super name="RXLine" />
     </super_list>
     <constructor>
@@ -33911,7 +33911,7 @@
   <class name="RRayEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -34474,10 +34474,10 @@
     <super_list>
       <super name="QObject" />
       <super name="QWidget" />
-      <super name="QFrame" />
       <super name="RRuler" />
       <super name="RCoordinateListener" />
       <super name="RPaletteListener" />
+      <super name="QFrame" />
     </super_list>
     <constructor>
       <variant>
@@ -38299,7 +38299,7 @@
   <class name="RSolidEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -39088,7 +39088,7 @@
   </class>
   <class name="RSpline" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
       <super name="RExplodable" />
     </super_list>
     <constructor>
@@ -40309,7 +40309,7 @@
   <class name="RSplineEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -42849,7 +42849,7 @@
   <class name="RTextBasedEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -43275,7 +43275,7 @@
   <class name="RTextEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
       <super name="RTextBasedEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
@@ -43351,7 +43351,7 @@
     </function>
     <function name="print" />
   </class>
-  <class name="RTextLabel">
+  <class name="RTextLabel" sharedpointer="true">
     <super_list>
       <super name="RPoint" />
     </super_list>
@@ -43384,7 +43384,7 @@
     </function>
     <function name="print" />
   </class>
-  <class name="RTextLayout">
+  <class name="RTextLayout" sharedpointer="true">
     <constructor>
       <variant>
         <parameters>
@@ -43876,7 +43876,7 @@
   <class name="RToleranceEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -44146,7 +44146,7 @@
   <class name="RTraceEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -44920,7 +44920,7 @@
   </class>
   <class name="RTriangle" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
       <super name="RExplodable" />
     </super_list>
     <constructor>
@@ -45158,7 +45158,7 @@
   </class>
   <class name="RUcs" ownership="cpp" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -46307,7 +46307,7 @@
   </class>
   <class name="RView" ownership="cpp" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -46901,7 +46901,7 @@
   <class name="RViewportEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -47208,7 +47208,7 @@
   </class>
   <class name="RXLine" sharedpointer="true">
     <super_list>
-      <super name="RShape" />
+      <super name="RShape" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -47668,7 +47668,7 @@
   <class name="RXLineEntity" ownership="cpp" sharedpointer="true">
     <super_list>
       <super name="RObject" />
-      <super name="REntity" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />

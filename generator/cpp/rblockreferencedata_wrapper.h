@@ -115,7 +115,7 @@
         static RBlockReferenceData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RBlockReferenceData:
           for (int i=0; i<basecasters_RBlockReferenceData.length(); i++) {
             RJSBasecaster_RBlockReferenceData* basecaster = basecasters_RBlockReferenceData[i];
             RBlockReferenceData* ret = basecaster->castToBase(t, vp);
@@ -124,7 +124,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RBlockReferenceData:
           if (t==RJSType_RBlockReferenceData::getIdStatic()) {
             return (RBlockReferenceData*)vp;
           }

@@ -221,7 +221,7 @@
         static RTextBasedData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RTextBasedData:
           for (int i=0; i<basecasters_RTextBasedData.length(); i++) {
             RJSBasecaster_RTextBasedData* basecaster = basecasters_RTextBasedData[i];
             RTextBasedData* ret = basecaster->castToBase(t, vp);
@@ -230,7 +230,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RTextBasedData:
           if (t==RJSType_RTextBasedData::getIdStatic()) {
             return (RTextBasedData*)vp;
           }

@@ -755,7 +755,7 @@
         static RViewportEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RViewportEntity:
           for (int i=0; i<basecasters_RViewportEntity.length(); i++) {
             RJSBasecaster_RViewportEntity* basecaster = basecasters_RViewportEntity[i];
             RViewportEntity* ret = basecaster->castToBase(t, vp);
@@ -764,7 +764,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RViewportEntity:
           if (t==RJSType_RViewportEntity::getIdStatic()) {
             return (RViewportEntity*)vp;
           }

@@ -41,7 +41,7 @@
         static RTextLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RTextLayout:
           for (int i=0; i<basecasters_RTextLayout.length(); i++) {
             RJSBasecaster_RTextLayout* basecaster = basecasters_RTextLayout[i];
             RTextLayout* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RTextLayout:
           if (t==RJSType_RTextLayout::getIdStatic()) {
             return (RTextLayout*)vp;
           }
@@ -88,6 +88,11 @@
       
             //Q_INVOKABLE 
             RTextLayout_Wrapper(RJSApi& h, RTextLayout* o, bool wrappedCreated);
+          
+        // special constructor to wrap existing object from shared pointer:
+        
+            //Q_INVOKABLE 
+            RTextLayout_Wrapper(RJSApi& h, QSharedPointer<RTextLayout> o);
           
 
       // destructor:
@@ -412,6 +417,22 @@
               
               ;
             
+          /*
+          // get wrapped object as clone:
+          // used to create a QSharedPointer on the fly when needed for conversion:
+          public:
+           RTextLayout* getWrappedClone() {
+            RTextLayout* w = getWrapped();
+            if (w==nullptr) {
+              qWarning() << "RTextLayout::getWrappedClone: wrapped is NULL";
+              handler.trace();
+              return nullptr;
+            }
+            // return cloned object:
+            return new RTextLayout(*w);
+          }
+          */
+        
 
         //public:
         // set engine:
@@ -448,6 +469,10 @@
             return wrapped;
           }
           
+            else if (!spWrapped.isNull()) {
+              return spWrapped.data();
+            }
+          
           return nullptr;
         }
 
@@ -456,6 +481,10 @@
           if (wrapped!=nullptr) {
             return wrapped;
           }
+          
+            else if (!spWrapped.isNull()) {
+              return spWrapped.data();
+            }
           
           return nullptr;
         }
@@ -466,13 +495,35 @@
             return wrapped;
           }
           
+            else if (!spWrapped.isNull()) {
+              return spWrapped.data();
+            }
+          
           return nullptr;
         }
 
         
+        // get wrapped object as QSharedPointer:
+        virtual QSharedPointer<RTextLayout> getWrappedSp() {
+          if (!spWrapped.isNull()) {
+            return spWrapped;
+          }
+          if (wrapped!=nullptr) {
+            qWarning() << "wrapper does not wrap a QSharedPointer<RTextLayout> but a regular pointer";
+            return QSharedPointer<RTextLayout>();
+          }
+          return QSharedPointer<RTextLayout>();
+        }
+
+        bool hasWrappedSp() const {
+          return !spWrapped.isNull() && spWrapped.data()!=nullptr;
+        }
+        
 
         bool hasWrapped() const {
           return wrapped!=nullptr 
+          
+            || (!spWrapped.isNull() && spWrapped.data()!=nullptr)
           
           ;
         }
@@ -487,6 +538,10 @@
           if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
           }
+          
+            if (!spWrapped.isNull() && spWrapped.data()!=nullptr) {
+              return (unsigned long long int)spWrapped.data();
+            }
           
           return (unsigned long long int)0;
         }
@@ -504,6 +559,9 @@
         // wrapped object:
         RTextLayout* wrapped;
 
+        
+          // wrapped object as shared pointer:
+          QSharedPointer<RTextLayout> spWrapped;
         
 
         bool wrappedCreated;

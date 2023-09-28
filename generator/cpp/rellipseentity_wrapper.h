@@ -820,7 +820,7 @@
         static REllipseEntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base REllipseEntity:
           for (int i=0; i<basecasters_REllipseEntity.length(); i++) {
             RJSBasecaster_REllipseEntity* basecaster = basecasters_REllipseEntity[i];
             REllipseEntity* ret = basecaster->castToBase(t, vp);
@@ -829,7 +829,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class REllipseEntity:
           if (t==RJSType_REllipseEntity::getIdStatic()) {
             return (REllipseEntity*)vp;
           }

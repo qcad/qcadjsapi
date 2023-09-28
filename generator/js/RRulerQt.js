@@ -123,10 +123,6 @@
             return true;
           }
         
-          if (t===RJSType_QFrame.getIdStatic()) {
-            return true;
-          }
-        
           if (t===RJSType_RRuler.getIdStatic()) {
             return true;
           }
@@ -136,6 +132,10 @@
           }
         
           if (t===RJSType_RPaletteListener.getIdStatic()) {
+            return true;
+          }
+        
+          if (t===RJSType_QFrame.getIdStatic()) {
             return true;
           }
         

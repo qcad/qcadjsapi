@@ -713,7 +713,7 @@
         static RTreeWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RTreeWidget:
           for (int i=0; i<basecasters_RTreeWidget.length(); i++) {
             RJSBasecaster_RTreeWidget* basecaster = basecasters_RTreeWidget[i];
             RTreeWidget* ret = basecaster->castToBase(t, vp);
@@ -722,7 +722,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RTreeWidget:
           if (t==RJSType_RTreeWidget::getIdStatic()) {
             return (RTreeWidget*)vp;
           }

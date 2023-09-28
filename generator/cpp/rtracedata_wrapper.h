@@ -41,7 +41,7 @@
         static RTraceData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RTraceData:
           for (int i=0; i<basecasters_RTraceData.length(); i++) {
             RJSBasecaster_RTraceData* basecaster = basecasters_RTraceData[i];
             RTraceData* ret = basecaster->castToBase(t, vp);
@@ -50,7 +50,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RTraceData:
           if (t==RJSType_RTraceData::getIdStatic()) {
             return (RTraceData*)vp;
           }

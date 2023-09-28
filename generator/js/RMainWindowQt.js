@@ -157,11 +157,11 @@
             return true;
           }
         
-          if (t===RJSType_QMainWindow.getIdStatic()) {
+          if (t===RJSType_RMainWindow.getIdStatic()) {
             return true;
           }
         
-          if (t===RJSType_RMainWindow.getIdStatic()) {
+          if (t===RJSType_QMainWindow.getIdStatic()) {
             return true;
           }
         

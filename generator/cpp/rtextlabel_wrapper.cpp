@@ -86,6 +86,17 @@
               initConnections();
             }
           
+        // special constructor to wrap existing object from shared pointer:
+        RTextLabel_Wrapper::RTextLabel_Wrapper(RJSApi& h, QSharedPointer<RTextLabel> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+              //RDebug::incCounter(QString("RTextLabel_Wrapper_") + handler.getEngine()->objectName());
+              //RDebug::incCounter(QString("RTextLabel_Wrapper"));
+              //setObjectName("RTextLabel_Wrapper");
+              //setHandler(h);
+
+              // signal forwarding:
+              initConnections();
+            }
+          
 
       // destructor:
       RTextLabel_Wrapper::~RTextLabel_Wrapper() {

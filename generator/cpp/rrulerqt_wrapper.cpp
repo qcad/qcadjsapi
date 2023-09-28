@@ -16695,6 +16695,140 @@ Qt::InputMethodHints a1_cpp;
               }
             
     // Class: RRulerQt
+    // Function: setGraphicsView
+    // Source: RRuler
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RRulerQt_Wrapper::setGraphicsView
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RGraphicsView_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: view (RGraphicsView)
+  
+
+          // pointer:
+          RGraphicsView*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RGraphicsView_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RRulerQt* w = getWrapped();
+                
+                w->setGraphicsView(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setGraphicsView";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RRulerQt
+    // Function: getOrientation
+    // Source: RRuler
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RRulerQt_Wrapper::getOrientation
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RRulerQt* w = getWrapped();
+                Qt::Orientation res = 
+                    
+                w->getOrientation(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: Qt::Orientation
+
+            return RJSHelper::cpp2js_Qt_Orientation(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getOrientation";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RRulerQt
     // Function: frameStyle
     // Source: QFrame
     // Static: false
@@ -17690,140 +17824,6 @@ QRect a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for resizeEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RRulerQt
-    // Function: setGraphicsView
-    // Source: RRuler
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RRulerQt_Wrapper::setGraphicsView
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper_qcad::is_RGraphicsView_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: view (RGraphicsView)
-  
-
-          // pointer:
-          RGraphicsView*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_RGraphicsView_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RRulerQt* w = getWrapped();
-                
-                w->setGraphicsView(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setGraphicsView";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RRulerQt
-    // Function: getOrientation
-    // Source: RRuler
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RRulerQt_Wrapper::getOrientation
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RRulerQt* w = getWrapped();
-                Qt::Orientation res = 
-                    
-                w->getOrientation(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: Qt::Orientation
-
-            return RJSHelper::cpp2js_Qt_Orientation(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getOrientation";
                   handler.trace();
                   return QJSValue();
                 

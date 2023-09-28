@@ -33,6 +33,8 @@
     
       int RJSType_RXLine::id = -1;
     
+      int RJSType_RTextLabel::id = -1;
+    
 
   
       int RJSType_RObject::id = -1;
@@ -110,6 +112,8 @@
       int RJSType_RSplineEntity::id = -1;
     
       int RJSType_RTextEntity::id = -1;
+    
+      int RJSType_RTextBasedEntity::id = -1;
     
       int RJSType_RToleranceEntity::id = -1;
     
@@ -252,8 +256,6 @@
       int RJSType_RTextBasedData::id = -1;
     
       int RJSType_RTextData::id = -1;
-    
-      int RJSType_RTextLabel::id = -1;
     
       int RJSType_RTextLayout::id = -1;
     
@@ -468,8 +470,6 @@
       int RJSType_RTabletEvent::id = -1;
     
       int RJSType_RTerminateEvent::id = -1;
-    
-      int RJSType_RTextBasedEntity::id = -1;
     
       int RJSType_RTextRenderer::id = -1;
     

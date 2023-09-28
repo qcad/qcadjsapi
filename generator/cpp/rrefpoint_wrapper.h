@@ -961,7 +961,7 @@
         static RRefPoint* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RRefPoint:
           for (int i=0; i<basecasters_RRefPoint.length(); i++) {
             RJSBasecaster_RRefPoint* basecaster = basecasters_RRefPoint[i];
             RRefPoint* ret = basecaster->castToBase(t, vp);
@@ -970,7 +970,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RRefPoint:
           if (t==RJSType_RRefPoint::getIdStatic()) {
             return (RRefPoint*)vp;
           }

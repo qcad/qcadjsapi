@@ -45,7 +45,7 @@
         static RFileExporter* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RFileExporter:
           for (int i=0; i<basecasters_RFileExporter.length(); i++) {
             RJSBasecaster_RFileExporter* basecaster = basecasters_RFileExporter[i];
             RFileExporter* ret = basecaster->castToBase(t, vp);
@@ -54,7 +54,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RFileExporter:
           if (t==RJSType_RFileExporter::getIdStatic()) {
             return (RFileExporter*)vp;
           }

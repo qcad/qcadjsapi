@@ -288,7 +288,7 @@
         static RUcs* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RUcs:
           for (int i=0; i<basecasters_RUcs.length(); i++) {
             RJSBasecaster_RUcs* basecaster = basecasters_RUcs[i];
             RUcs* ret = basecaster->castToBase(t, vp);
@@ -297,7 +297,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RUcs:
           if (t==RJSType_RUcs::getIdStatic()) {
             return (RUcs*)vp;
           }

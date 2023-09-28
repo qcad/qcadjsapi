@@ -579,7 +579,7 @@
         static REntity* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base REntity:
           for (int i=0; i<basecasters_REntity.length(); i++) {
             RJSBasecaster_REntity* basecaster = basecasters_REntity[i];
             REntity* ret = basecaster->castToBase(t, vp);
@@ -588,7 +588,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class REntity:
           if (t==RJSType_REntity::getIdStatic()) {
             return (REntity*)vp;
           }

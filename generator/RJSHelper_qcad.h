@@ -1710,7 +1710,12 @@
             class RJSBasecaster_RActionAdapter_RAction : public RJSBasecaster_RAction {
             public:
               virtual RAction* castToBase(int t, void* vp) {
-                return (RAction*)(RActionAdapter*)vp;
+                if (t==RJSType_RActionAdapter::getIdStatic()) {
+                  return (RAction*)(RActionAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1720,7 +1725,12 @@
             class RJSBasecaster_RAddObjectOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RAddObjectOperation*)vp;
+                if (t==RJSType_RAddObjectOperation::getIdStatic()) {
+                  return (ROperation*)(RAddObjectOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1728,7 +1738,12 @@
             class RJSBasecaster_RAddObjectOperation_RAddObjectsOperation : public RJSBasecaster_RAddObjectsOperation {
             public:
               virtual RAddObjectsOperation* castToBase(int t, void* vp) {
-                return (RAddObjectsOperation*)(RAddObjectOperation*)vp;
+                if (t==RJSType_RAddObjectOperation::getIdStatic()) {
+                  return (RAddObjectsOperation*)(RAddObjectOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1738,7 +1753,12 @@
             class RJSBasecaster_RAddObjectsOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RAddObjectsOperation*)vp;
+                if (t==RJSType_RAddObjectsOperation::getIdStatic()) {
+                  return (ROperation*)(RAddObjectsOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1748,7 +1768,12 @@
             class RJSBasecaster_RArc_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(RArc*)vp;
+                if (t==RJSType_RArc::getIdStatic()) {
+                  return (RShape*)(RArc*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1758,7 +1783,12 @@
             class RJSBasecaster_RArcData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RArcData*)vp;
+                if (t==RJSType_RArcData::getIdStatic()) {
+                  return (REntityData*)(RArcData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1766,7 +1796,12 @@
             class RJSBasecaster_RArcData_RArc : public RJSBasecaster_RArc {
             public:
               virtual RArc* castToBase(int t, void* vp) {
-                return (RArc*)(RArcData*)vp;
+                if (t==RJSType_RArcData::getIdStatic()) {
+                  return (RArc*)(RArcData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1776,7 +1811,12 @@
             class RJSBasecaster_RArcEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RArcEntity*)vp;
+                if (t==RJSType_RArcEntity::getIdStatic()) {
+                  return (RObject*)(RArcEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1784,7 +1824,12 @@
             class RJSBasecaster_RArcEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RArcEntity*)vp;
+                if (t==RJSType_RArcEntity::getIdStatic()) {
+                  return (REntity*)(RArcEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1794,7 +1839,12 @@
             class RJSBasecaster_RAttributeData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RAttributeData*)vp;
+                if (t==RJSType_RAttributeData::getIdStatic()) {
+                  return (REntityData*)(RAttributeData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1802,7 +1852,12 @@
             class RJSBasecaster_RAttributeData_RTextBasedData : public RJSBasecaster_RTextBasedData {
             public:
               virtual RTextBasedData* castToBase(int t, void* vp) {
-                return (RTextBasedData*)(RAttributeData*)vp;
+                if (t==RJSType_RAttributeData::getIdStatic()) {
+                  return (RTextBasedData*)(RAttributeData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1812,7 +1867,12 @@
             class RJSBasecaster_RAttributeDefinitionData_RTextBasedData : public RJSBasecaster_RTextBasedData {
             public:
               virtual RTextBasedData* castToBase(int t, void* vp) {
-                return (RTextBasedData*)(RAttributeDefinitionData*)vp;
+                if (t==RJSType_RAttributeDefinitionData::getIdStatic()) {
+                  return (RTextBasedData*)(RAttributeDefinitionData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1822,7 +1882,12 @@
             class RJSBasecaster_RAttributeDefinitionEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RAttributeDefinitionEntity*)vp;
+                if (t==RJSType_RAttributeDefinitionEntity::getIdStatic()) {
+                  return (RObject*)(RAttributeDefinitionEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1830,7 +1895,12 @@
             class RJSBasecaster_RAttributeDefinitionEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RAttributeDefinitionEntity*)vp;
+                if (t==RJSType_RAttributeDefinitionEntity::getIdStatic()) {
+                  return (REntity*)(RAttributeDefinitionEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1838,7 +1908,12 @@
             class RJSBasecaster_RAttributeDefinitionEntity_RTextBasedEntity : public RJSBasecaster_RTextBasedEntity {
             public:
               virtual RTextBasedEntity* castToBase(int t, void* vp) {
-                return (RTextBasedEntity*)(RAttributeDefinitionEntity*)vp;
+                if (t==RJSType_RAttributeDefinitionEntity::getIdStatic()) {
+                  return (RTextBasedEntity*)(RAttributeDefinitionEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1848,7 +1923,12 @@
             class RJSBasecaster_RAttributeEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RAttributeEntity*)vp;
+                if (t==RJSType_RAttributeEntity::getIdStatic()) {
+                  return (RObject*)(RAttributeEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1856,7 +1936,12 @@
             class RJSBasecaster_RAttributeEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RAttributeEntity*)vp;
+                if (t==RJSType_RAttributeEntity::getIdStatic()) {
+                  return (REntity*)(RAttributeEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1864,7 +1949,12 @@
             class RJSBasecaster_RAttributeEntity_RTextBasedEntity : public RJSBasecaster_RTextBasedEntity {
             public:
               virtual RTextBasedEntity* castToBase(int t, void* vp) {
-                return (RTextBasedEntity*)(RAttributeEntity*)vp;
+                if (t==RJSType_RAttributeEntity::getIdStatic()) {
+                  return (RTextBasedEntity*)(RAttributeEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1876,7 +1966,12 @@
             class RJSBasecaster_RBlock_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RBlock*)vp;
+                if (t==RJSType_RBlock::getIdStatic()) {
+                  return (RObject*)(RBlock*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1888,7 +1983,12 @@
             class RJSBasecaster_RBlockListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RBlockListenerAdapter*)vp;
+                if (t==RJSType_RBlockListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RBlockListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1896,7 +1996,12 @@
             class RJSBasecaster_RBlockListenerAdapter_RBlockListener : public RJSBasecaster_RBlockListener {
             public:
               virtual RBlockListener* castToBase(int t, void* vp) {
-                return (RBlockListener*)(RBlockListenerAdapter*)vp;
+                if (t==RJSType_RBlockListenerAdapter::getIdStatic()) {
+                  return (RBlockListener*)(RBlockListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1906,7 +2011,12 @@
             class RJSBasecaster_RBlockReferenceData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RBlockReferenceData*)vp;
+                if (t==RJSType_RBlockReferenceData::getIdStatic()) {
+                  return (REntityData*)(RBlockReferenceData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1916,7 +2026,12 @@
             class RJSBasecaster_RBlockReferenceEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RBlockReferenceEntity*)vp;
+                if (t==RJSType_RBlockReferenceEntity::getIdStatic()) {
+                  return (RObject*)(RBlockReferenceEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1924,7 +2039,12 @@
             class RJSBasecaster_RBlockReferenceEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RBlockReferenceEntity*)vp;
+                if (t==RJSType_RBlockReferenceEntity::getIdStatic()) {
+                  return (REntity*)(RBlockReferenceEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1936,7 +2056,12 @@
             class RJSBasecaster_RCadToolBar_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RCadToolBar*)vp;
+                if (t==RJSType_RCadToolBar::getIdStatic()) {
+                  return (QObject*)(RCadToolBar*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1944,7 +2069,12 @@
             class RJSBasecaster_RCadToolBar_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RCadToolBar*)vp;
+                if (t==RJSType_RCadToolBar::getIdStatic()) {
+                  return (QWidget*)(RCadToolBar*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1952,7 +2082,12 @@
             class RJSBasecaster_RCadToolBar_QToolBar : public RJSBasecaster_QToolBar {
             public:
               virtual QToolBar* castToBase(int t, void* vp) {
-                return (QToolBar*)(RCadToolBar*)vp;
+                if (t==RJSType_RCadToolBar::getIdStatic()) {
+                  return (QToolBar*)(RCadToolBar*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1962,7 +2097,12 @@
             class RJSBasecaster_RCadToolBarPanel_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RCadToolBarPanel*)vp;
+                if (t==RJSType_RCadToolBarPanel::getIdStatic()) {
+                  return (QObject*)(RCadToolBarPanel*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1970,7 +2110,12 @@
             class RJSBasecaster_RCadToolBarPanel_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RCadToolBarPanel*)vp;
+                if (t==RJSType_RCadToolBarPanel::getIdStatic()) {
+                  return (QWidget*)(RCadToolBarPanel*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1978,7 +2123,12 @@
             class RJSBasecaster_RCadToolBarPanel_RWidget : public RJSBasecaster_RWidget {
             public:
               virtual RWidget* castToBase(int t, void* vp) {
-                return (RWidget*)(RCadToolBarPanel*)vp;
+                if (t==RJSType_RCadToolBarPanel::getIdStatic()) {
+                  return (RWidget*)(RCadToolBarPanel*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1988,7 +2138,12 @@
             class RJSBasecaster_RChangePropertyOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RChangePropertyOperation*)vp;
+                if (t==RJSType_RChangePropertyOperation::getIdStatic()) {
+                  return (ROperation*)(RChangePropertyOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -1998,7 +2153,12 @@
             class RJSBasecaster_RCharacterWidget_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RCharacterWidget*)vp;
+                if (t==RJSType_RCharacterWidget::getIdStatic()) {
+                  return (QObject*)(RCharacterWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2006,7 +2166,12 @@
             class RJSBasecaster_RCharacterWidget_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RCharacterWidget*)vp;
+                if (t==RJSType_RCharacterWidget::getIdStatic()) {
+                  return (QWidget*)(RCharacterWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2016,7 +2181,12 @@
             class RJSBasecaster_RCircle_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(RCircle*)vp;
+                if (t==RJSType_RCircle::getIdStatic()) {
+                  return (RShape*)(RCircle*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2026,7 +2196,12 @@
             class RJSBasecaster_RCircleData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RCircleData*)vp;
+                if (t==RJSType_RCircleData::getIdStatic()) {
+                  return (REntityData*)(RCircleData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2034,7 +2209,12 @@
             class RJSBasecaster_RCircleData_RCircle : public RJSBasecaster_RCircle {
             public:
               virtual RCircle* castToBase(int t, void* vp) {
-                return (RCircle*)(RCircleData*)vp;
+                if (t==RJSType_RCircleData::getIdStatic()) {
+                  return (RCircle*)(RCircleData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2044,7 +2224,12 @@
             class RJSBasecaster_RCircleEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RCircleEntity*)vp;
+                if (t==RJSType_RCircleEntity::getIdStatic()) {
+                  return (RObject*)(RCircleEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2052,7 +2237,12 @@
             class RJSBasecaster_RCircleEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RCircleEntity*)vp;
+                if (t==RJSType_RCircleEntity::getIdStatic()) {
+                  return (REntity*)(RCircleEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2062,7 +2252,12 @@
             class RJSBasecaster_RClickReferencePointOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RClickReferencePointOperation*)vp;
+                if (t==RJSType_RClickReferencePointOperation::getIdStatic()) {
+                  return (ROperation*)(RClickReferencePointOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2072,7 +2267,12 @@
             class RJSBasecaster_RClipboardOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RClipboardOperation*)vp;
+                if (t==RJSType_RClipboardOperation::getIdStatic()) {
+                  return (ROperation*)(RClipboardOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2082,7 +2282,12 @@
             class RJSBasecaster_RCloseCurrentEvent_QEvent : public RJSBasecaster_QEvent {
             public:
               virtual QEvent* castToBase(int t, void* vp) {
-                return (QEvent*)(RCloseCurrentEvent*)vp;
+                if (t==RJSType_RCloseCurrentEvent::getIdStatic()) {
+                  return (QEvent*)(RCloseCurrentEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2092,7 +2297,12 @@
             class RJSBasecaster_RColor_QColor : public RJSBasecaster_QColor {
             public:
               virtual QColor* castToBase(int t, void* vp) {
-                return (QColor*)(RColor*)vp;
+                if (t==RJSType_RColor::getIdStatic()) {
+                  return (QColor*)(RColor*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2102,7 +2312,12 @@
             class RJSBasecaster_RColorCombo_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RColorCombo*)vp;
+                if (t==RJSType_RColorCombo::getIdStatic()) {
+                  return (QObject*)(RColorCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2110,7 +2325,12 @@
             class RJSBasecaster_RColorCombo_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RColorCombo*)vp;
+                if (t==RJSType_RColorCombo::getIdStatic()) {
+                  return (QWidget*)(RColorCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2118,7 +2338,12 @@
             class RJSBasecaster_RColorCombo_QComboBox : public RJSBasecaster_QComboBox {
             public:
               virtual QComboBox* castToBase(int t, void* vp) {
-                return (QComboBox*)(RColorCombo*)vp;
+                if (t==RJSType_RColorCombo::getIdStatic()) {
+                  return (QComboBox*)(RColorCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2130,7 +2355,12 @@
             class RJSBasecaster_RCommandLine_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RCommandLine*)vp;
+                if (t==RJSType_RCommandLine::getIdStatic()) {
+                  return (QObject*)(RCommandLine*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2138,7 +2368,12 @@
             class RJSBasecaster_RCommandLine_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RCommandLine*)vp;
+                if (t==RJSType_RCommandLine::getIdStatic()) {
+                  return (QWidget*)(RCommandLine*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2146,7 +2381,12 @@
             class RJSBasecaster_RCommandLine_QLineEdit : public RJSBasecaster_QLineEdit {
             public:
               virtual QLineEdit* castToBase(int t, void* vp) {
-                return (QLineEdit*)(RCommandLine*)vp;
+                if (t==RJSType_RCommandLine::getIdStatic()) {
+                  return (QLineEdit*)(RCommandLine*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2156,7 +2396,12 @@
             class RJSBasecaster_RCoordinateEvent_QEvent : public RJSBasecaster_QEvent {
             public:
               virtual QEvent* castToBase(int t, void* vp) {
-                return (QEvent*)(RCoordinateEvent*)vp;
+                if (t==RJSType_RCoordinateEvent::getIdStatic()) {
+                  return (QEvent*)(RCoordinateEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2164,7 +2409,12 @@
             class RJSBasecaster_RCoordinateEvent_RInputEvent : public RJSBasecaster_RInputEvent {
             public:
               virtual RInputEvent* castToBase(int t, void* vp) {
-                return (RInputEvent*)(RCoordinateEvent*)vp;
+                if (t==RJSType_RCoordinateEvent::getIdStatic()) {
+                  return (RInputEvent*)(RCoordinateEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2176,7 +2426,12 @@
             class RJSBasecaster_RCoordinateListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RCoordinateListenerAdapter*)vp;
+                if (t==RJSType_RCoordinateListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RCoordinateListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2184,7 +2439,12 @@
             class RJSBasecaster_RCoordinateListenerAdapter_RCoordinateListener : public RJSBasecaster_RCoordinateListener {
             public:
               virtual RCoordinateListener* castToBase(int t, void* vp) {
-                return (RCoordinateListener*)(RCoordinateListenerAdapter*)vp;
+                if (t==RJSType_RCoordinateListenerAdapter::getIdStatic()) {
+                  return (RCoordinateListener*)(RCoordinateListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2194,7 +2454,12 @@
             class RJSBasecaster_RCopyOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RCopyOperation*)vp;
+                if (t==RJSType_RCopyOperation::getIdStatic()) {
+                  return (ROperation*)(RCopyOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2202,7 +2467,12 @@
             class RJSBasecaster_RCopyOperation_RClipboardOperation : public RJSBasecaster_RClipboardOperation {
             public:
               virtual RClipboardOperation* castToBase(int t, void* vp) {
-                return (RClipboardOperation*)(RCopyOperation*)vp;
+                if (t==RJSType_RCopyOperation::getIdStatic()) {
+                  return (RClipboardOperation*)(RCopyOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2214,7 +2484,12 @@
             class RJSBasecaster_RDeleteAllEntitiesOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RDeleteAllEntitiesOperation*)vp;
+                if (t==RJSType_RDeleteAllEntitiesOperation::getIdStatic()) {
+                  return (ROperation*)(RDeleteAllEntitiesOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2224,7 +2499,12 @@
             class RJSBasecaster_RDeleteObjectOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RDeleteObjectOperation*)vp;
+                if (t==RJSType_RDeleteObjectOperation::getIdStatic()) {
+                  return (ROperation*)(RDeleteObjectOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2232,7 +2512,12 @@
             class RJSBasecaster_RDeleteObjectOperation_RDeleteObjectsOperation : public RJSBasecaster_RDeleteObjectsOperation {
             public:
               virtual RDeleteObjectsOperation* castToBase(int t, void* vp) {
-                return (RDeleteObjectsOperation*)(RDeleteObjectOperation*)vp;
+                if (t==RJSType_RDeleteObjectOperation::getIdStatic()) {
+                  return (RDeleteObjectsOperation*)(RDeleteObjectOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2242,7 +2527,12 @@
             class RJSBasecaster_RDeleteObjectsOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RDeleteObjectsOperation*)vp;
+                if (t==RJSType_RDeleteObjectsOperation::getIdStatic()) {
+                  return (ROperation*)(RDeleteObjectsOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2252,7 +2542,12 @@
             class RJSBasecaster_RDeleteSelectionOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RDeleteSelectionOperation*)vp;
+                if (t==RJSType_RDeleteSelectionOperation::getIdStatic()) {
+                  return (ROperation*)(RDeleteSelectionOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2260,7 +2555,12 @@
             class RJSBasecaster_RDeleteSelectionOperation_RClipboardOperation : public RJSBasecaster_RClipboardOperation {
             public:
               virtual RClipboardOperation* castToBase(int t, void* vp) {
-                return (RClipboardOperation*)(RDeleteSelectionOperation*)vp;
+                if (t==RJSType_RDeleteSelectionOperation::getIdStatic()) {
+                  return (RClipboardOperation*)(RDeleteSelectionOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2270,7 +2570,12 @@
             class RJSBasecaster_RDimAlignedData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimAlignedData*)vp;
+                if (t==RJSType_RDimAlignedData::getIdStatic()) {
+                  return (REntityData*)(RDimAlignedData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2278,7 +2583,12 @@
             class RJSBasecaster_RDimAlignedData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimAlignedData*)vp;
+                if (t==RJSType_RDimAlignedData::getIdStatic()) {
+                  return (RDimensionData*)(RDimAlignedData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2286,7 +2596,12 @@
             class RJSBasecaster_RDimAlignedData_RDimLinearData : public RJSBasecaster_RDimLinearData {
             public:
               virtual RDimLinearData* castToBase(int t, void* vp) {
-                return (RDimLinearData*)(RDimAlignedData*)vp;
+                if (t==RJSType_RDimAlignedData::getIdStatic()) {
+                  return (RDimLinearData*)(RDimAlignedData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2296,7 +2611,12 @@
             class RJSBasecaster_RDimAlignedEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimAlignedEntity*)vp;
+                if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
+                  return (RObject*)(RDimAlignedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2304,7 +2624,12 @@
             class RJSBasecaster_RDimAlignedEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimAlignedEntity*)vp;
+                if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
+                  return (REntity*)(RDimAlignedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2312,7 +2637,12 @@
             class RJSBasecaster_RDimAlignedEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimAlignedEntity*)vp;
+                if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimAlignedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2320,7 +2650,12 @@
             class RJSBasecaster_RDimAlignedEntity_RDimLinearEntity : public RJSBasecaster_RDimLinearEntity {
             public:
               virtual RDimLinearEntity* castToBase(int t, void* vp) {
-                return (RDimLinearEntity*)(RDimAlignedEntity*)vp;
+                if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
+                  return (RDimLinearEntity*)(RDimAlignedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2330,7 +2665,12 @@
             class RJSBasecaster_RDimAngular2LData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimAngular2LData*)vp;
+                if (t==RJSType_RDimAngular2LData::getIdStatic()) {
+                  return (REntityData*)(RDimAngular2LData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2338,7 +2678,12 @@
             class RJSBasecaster_RDimAngular2LData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimAngular2LData*)vp;
+                if (t==RJSType_RDimAngular2LData::getIdStatic()) {
+                  return (RDimensionData*)(RDimAngular2LData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2346,7 +2691,12 @@
             class RJSBasecaster_RDimAngular2LData_RDimAngularData : public RJSBasecaster_RDimAngularData {
             public:
               virtual RDimAngularData* castToBase(int t, void* vp) {
-                return (RDimAngularData*)(RDimAngular2LData*)vp;
+                if (t==RJSType_RDimAngular2LData::getIdStatic()) {
+                  return (RDimAngularData*)(RDimAngular2LData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2356,7 +2706,12 @@
             class RJSBasecaster_RDimAngular2LEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimAngular2LEntity*)vp;
+                if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
+                  return (RObject*)(RDimAngular2LEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2364,7 +2719,12 @@
             class RJSBasecaster_RDimAngular2LEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimAngular2LEntity*)vp;
+                if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
+                  return (REntity*)(RDimAngular2LEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2372,7 +2732,12 @@
             class RJSBasecaster_RDimAngular2LEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimAngular2LEntity*)vp;
+                if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimAngular2LEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2380,7 +2745,12 @@
             class RJSBasecaster_RDimAngular2LEntity_RDimAngularEntity : public RJSBasecaster_RDimAngularEntity {
             public:
               virtual RDimAngularEntity* castToBase(int t, void* vp) {
-                return (RDimAngularEntity*)(RDimAngular2LEntity*)vp;
+                if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
+                  return (RDimAngularEntity*)(RDimAngular2LEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2390,7 +2760,12 @@
             class RJSBasecaster_RDimAngular3PData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimAngular3PData*)vp;
+                if (t==RJSType_RDimAngular3PData::getIdStatic()) {
+                  return (REntityData*)(RDimAngular3PData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2398,7 +2773,12 @@
             class RJSBasecaster_RDimAngular3PData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimAngular3PData*)vp;
+                if (t==RJSType_RDimAngular3PData::getIdStatic()) {
+                  return (RDimensionData*)(RDimAngular3PData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2406,7 +2786,12 @@
             class RJSBasecaster_RDimAngular3PData_RDimAngularData : public RJSBasecaster_RDimAngularData {
             public:
               virtual RDimAngularData* castToBase(int t, void* vp) {
-                return (RDimAngularData*)(RDimAngular3PData*)vp;
+                if (t==RJSType_RDimAngular3PData::getIdStatic()) {
+                  return (RDimAngularData*)(RDimAngular3PData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2416,7 +2801,12 @@
             class RJSBasecaster_RDimAngular3PEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimAngular3PEntity*)vp;
+                if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
+                  return (RObject*)(RDimAngular3PEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2424,7 +2814,12 @@
             class RJSBasecaster_RDimAngular3PEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimAngular3PEntity*)vp;
+                if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
+                  return (REntity*)(RDimAngular3PEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2432,7 +2827,12 @@
             class RJSBasecaster_RDimAngular3PEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimAngular3PEntity*)vp;
+                if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimAngular3PEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2440,7 +2840,12 @@
             class RJSBasecaster_RDimAngular3PEntity_RDimAngularEntity : public RJSBasecaster_RDimAngularEntity {
             public:
               virtual RDimAngularEntity* castToBase(int t, void* vp) {
-                return (RDimAngularEntity*)(RDimAngular3PEntity*)vp;
+                if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
+                  return (RDimAngularEntity*)(RDimAngular3PEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2450,7 +2855,12 @@
             class RJSBasecaster_RDimAngularData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimAngularData*)vp;
+                if (t==RJSType_RDimAngularData::getIdStatic()) {
+                  return (REntityData*)(RDimAngularData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2458,7 +2868,12 @@
             class RJSBasecaster_RDimAngularData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimAngularData*)vp;
+                if (t==RJSType_RDimAngularData::getIdStatic()) {
+                  return (RDimensionData*)(RDimAngularData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2468,7 +2883,12 @@
             class RJSBasecaster_RDimAngularEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimAngularEntity*)vp;
+                if (t==RJSType_RDimAngularEntity::getIdStatic()) {
+                  return (RObject*)(RDimAngularEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2476,7 +2896,12 @@
             class RJSBasecaster_RDimAngularEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimAngularEntity*)vp;
+                if (t==RJSType_RDimAngularEntity::getIdStatic()) {
+                  return (REntity*)(RDimAngularEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2484,7 +2909,12 @@
             class RJSBasecaster_RDimAngularEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimAngularEntity*)vp;
+                if (t==RJSType_RDimAngularEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimAngularEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2494,7 +2924,12 @@
             class RJSBasecaster_RDimArcLengthData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimArcLengthData*)vp;
+                if (t==RJSType_RDimArcLengthData::getIdStatic()) {
+                  return (REntityData*)(RDimArcLengthData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2502,7 +2937,12 @@
             class RJSBasecaster_RDimArcLengthData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimArcLengthData*)vp;
+                if (t==RJSType_RDimArcLengthData::getIdStatic()) {
+                  return (RDimensionData*)(RDimArcLengthData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2510,7 +2950,12 @@
             class RJSBasecaster_RDimArcLengthData_RDimAngularData : public RJSBasecaster_RDimAngularData {
             public:
               virtual RDimAngularData* castToBase(int t, void* vp) {
-                return (RDimAngularData*)(RDimArcLengthData*)vp;
+                if (t==RJSType_RDimArcLengthData::getIdStatic()) {
+                  return (RDimAngularData*)(RDimArcLengthData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2520,7 +2965,12 @@
             class RJSBasecaster_RDimArcLengthEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimArcLengthEntity*)vp;
+                if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
+                  return (RObject*)(RDimArcLengthEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2528,7 +2978,12 @@
             class RJSBasecaster_RDimArcLengthEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimArcLengthEntity*)vp;
+                if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
+                  return (REntity*)(RDimArcLengthEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2536,7 +2991,12 @@
             class RJSBasecaster_RDimArcLengthEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimArcLengthEntity*)vp;
+                if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimArcLengthEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2544,7 +3004,12 @@
             class RJSBasecaster_RDimArcLengthEntity_RDimAngularEntity : public RJSBasecaster_RDimAngularEntity {
             public:
               virtual RDimAngularEntity* castToBase(int t, void* vp) {
-                return (RDimAngularEntity*)(RDimArcLengthEntity*)vp;
+                if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
+                  return (RDimAngularEntity*)(RDimArcLengthEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2554,7 +3019,12 @@
             class RJSBasecaster_RDimDiametricData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimDiametricData*)vp;
+                if (t==RJSType_RDimDiametricData::getIdStatic()) {
+                  return (REntityData*)(RDimDiametricData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2562,7 +3032,12 @@
             class RJSBasecaster_RDimDiametricData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimDiametricData*)vp;
+                if (t==RJSType_RDimDiametricData::getIdStatic()) {
+                  return (RDimensionData*)(RDimDiametricData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2572,7 +3047,12 @@
             class RJSBasecaster_RDimDiametricEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimDiametricEntity*)vp;
+                if (t==RJSType_RDimDiametricEntity::getIdStatic()) {
+                  return (RObject*)(RDimDiametricEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2580,7 +3060,12 @@
             class RJSBasecaster_RDimDiametricEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimDiametricEntity*)vp;
+                if (t==RJSType_RDimDiametricEntity::getIdStatic()) {
+                  return (REntity*)(RDimDiametricEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2588,7 +3073,12 @@
             class RJSBasecaster_RDimDiametricEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimDiametricEntity*)vp;
+                if (t==RJSType_RDimDiametricEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimDiametricEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2598,7 +3088,12 @@
             class RJSBasecaster_RDimLinearData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimLinearData*)vp;
+                if (t==RJSType_RDimLinearData::getIdStatic()) {
+                  return (REntityData*)(RDimLinearData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2606,7 +3101,12 @@
             class RJSBasecaster_RDimLinearData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimLinearData*)vp;
+                if (t==RJSType_RDimLinearData::getIdStatic()) {
+                  return (RDimensionData*)(RDimLinearData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2616,7 +3116,12 @@
             class RJSBasecaster_RDimLinearEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimLinearEntity*)vp;
+                if (t==RJSType_RDimLinearEntity::getIdStatic()) {
+                  return (RObject*)(RDimLinearEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2624,7 +3129,12 @@
             class RJSBasecaster_RDimLinearEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimLinearEntity*)vp;
+                if (t==RJSType_RDimLinearEntity::getIdStatic()) {
+                  return (REntity*)(RDimLinearEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2632,7 +3142,12 @@
             class RJSBasecaster_RDimLinearEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimLinearEntity*)vp;
+                if (t==RJSType_RDimLinearEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimLinearEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2642,7 +3157,12 @@
             class RJSBasecaster_RDimOrdinateData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimOrdinateData*)vp;
+                if (t==RJSType_RDimOrdinateData::getIdStatic()) {
+                  return (REntityData*)(RDimOrdinateData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2650,7 +3170,12 @@
             class RJSBasecaster_RDimOrdinateData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimOrdinateData*)vp;
+                if (t==RJSType_RDimOrdinateData::getIdStatic()) {
+                  return (RDimensionData*)(RDimOrdinateData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2660,7 +3185,12 @@
             class RJSBasecaster_RDimOrdinateEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimOrdinateEntity*)vp;
+                if (t==RJSType_RDimOrdinateEntity::getIdStatic()) {
+                  return (RObject*)(RDimOrdinateEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2668,7 +3198,12 @@
             class RJSBasecaster_RDimOrdinateEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimOrdinateEntity*)vp;
+                if (t==RJSType_RDimOrdinateEntity::getIdStatic()) {
+                  return (REntity*)(RDimOrdinateEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2676,7 +3211,12 @@
             class RJSBasecaster_RDimOrdinateEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimOrdinateEntity*)vp;
+                if (t==RJSType_RDimOrdinateEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimOrdinateEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2686,7 +3226,12 @@
             class RJSBasecaster_RDimRadialData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimRadialData*)vp;
+                if (t==RJSType_RDimRadialData::getIdStatic()) {
+                  return (REntityData*)(RDimRadialData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2694,7 +3239,12 @@
             class RJSBasecaster_RDimRadialData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimRadialData*)vp;
+                if (t==RJSType_RDimRadialData::getIdStatic()) {
+                  return (RDimensionData*)(RDimRadialData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2704,7 +3254,12 @@
             class RJSBasecaster_RDimRadialEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimRadialEntity*)vp;
+                if (t==RJSType_RDimRadialEntity::getIdStatic()) {
+                  return (RObject*)(RDimRadialEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2712,7 +3267,12 @@
             class RJSBasecaster_RDimRadialEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimRadialEntity*)vp;
+                if (t==RJSType_RDimRadialEntity::getIdStatic()) {
+                  return (REntity*)(RDimRadialEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2720,7 +3280,12 @@
             class RJSBasecaster_RDimRadialEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimRadialEntity*)vp;
+                if (t==RJSType_RDimRadialEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimRadialEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2730,7 +3295,12 @@
             class RJSBasecaster_RDimRotatedData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimRotatedData*)vp;
+                if (t==RJSType_RDimRotatedData::getIdStatic()) {
+                  return (REntityData*)(RDimRotatedData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2738,7 +3308,12 @@
             class RJSBasecaster_RDimRotatedData_RDimensionData : public RJSBasecaster_RDimensionData {
             public:
               virtual RDimensionData* castToBase(int t, void* vp) {
-                return (RDimensionData*)(RDimRotatedData*)vp;
+                if (t==RJSType_RDimRotatedData::getIdStatic()) {
+                  return (RDimensionData*)(RDimRotatedData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2746,7 +3321,12 @@
             class RJSBasecaster_RDimRotatedData_RDimLinearData : public RJSBasecaster_RDimLinearData {
             public:
               virtual RDimLinearData* castToBase(int t, void* vp) {
-                return (RDimLinearData*)(RDimRotatedData*)vp;
+                if (t==RJSType_RDimRotatedData::getIdStatic()) {
+                  return (RDimLinearData*)(RDimRotatedData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2756,7 +3336,12 @@
             class RJSBasecaster_RDimRotatedEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimRotatedEntity*)vp;
+                if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
+                  return (RObject*)(RDimRotatedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2764,7 +3349,12 @@
             class RJSBasecaster_RDimRotatedEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimRotatedEntity*)vp;
+                if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
+                  return (REntity*)(RDimRotatedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2772,7 +3362,12 @@
             class RJSBasecaster_RDimRotatedEntity_RDimensionEntity : public RJSBasecaster_RDimensionEntity {
             public:
               virtual RDimensionEntity* castToBase(int t, void* vp) {
-                return (RDimensionEntity*)(RDimRotatedEntity*)vp;
+                if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
+                  return (RDimensionEntity*)(RDimRotatedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2780,7 +3375,12 @@
             class RJSBasecaster_RDimRotatedEntity_RDimLinearEntity : public RJSBasecaster_RDimLinearEntity {
             public:
               virtual RDimLinearEntity* castToBase(int t, void* vp) {
-                return (RDimLinearEntity*)(RDimRotatedEntity*)vp;
+                if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
+                  return (RDimLinearEntity*)(RDimRotatedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2790,7 +3390,12 @@
             class RJSBasecaster_RDimStyle_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimStyle*)vp;
+                if (t==RJSType_RDimStyle::getIdStatic()) {
+                  return (RObject*)(RDimStyle*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2798,7 +3403,12 @@
             class RJSBasecaster_RDimStyle_RDimStyleData : public RJSBasecaster_RDimStyleData {
             public:
               virtual RDimStyleData* castToBase(int t, void* vp) {
-                return (RDimStyleData*)(RDimStyle*)vp;
+                if (t==RJSType_RDimStyle::getIdStatic()) {
+                  return (RDimStyleData*)(RDimStyle*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2810,7 +3420,12 @@
             class RJSBasecaster_RDimensionData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RDimensionData*)vp;
+                if (t==RJSType_RDimensionData::getIdStatic()) {
+                  return (REntityData*)(RDimensionData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2820,7 +3435,12 @@
             class RJSBasecaster_RDimensionEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDimensionEntity*)vp;
+                if (t==RJSType_RDimensionEntity::getIdStatic()) {
+                  return (RObject*)(RDimensionEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2828,7 +3448,12 @@
             class RJSBasecaster_RDimensionEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RDimensionEntity*)vp;
+                if (t==RJSType_RDimensionEntity::getIdStatic()) {
+                  return (REntity*)(RDimensionEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2840,7 +3465,12 @@
             class RJSBasecaster_RDockWidget_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RDockWidget*)vp;
+                if (t==RJSType_RDockWidget::getIdStatic()) {
+                  return (QObject*)(RDockWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2848,7 +3478,12 @@
             class RJSBasecaster_RDockWidget_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RDockWidget*)vp;
+                if (t==RJSType_RDockWidget::getIdStatic()) {
+                  return (QWidget*)(RDockWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2856,7 +3491,12 @@
             class RJSBasecaster_RDockWidget_QDockWidget : public RJSBasecaster_QDockWidget {
             public:
               virtual QDockWidget* castToBase(int t, void* vp) {
-                return (QDockWidget*)(RDockWidget*)vp;
+                if (t==RJSType_RDockWidget::getIdStatic()) {
+                  return (QDockWidget*)(RDockWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2870,7 +3510,12 @@
             class RJSBasecaster_RDocumentVariables_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RDocumentVariables*)vp;
+                if (t==RJSType_RDocumentVariables::getIdStatic()) {
+                  return (RObject*)(RDocumentVariables*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2882,7 +3527,12 @@
             class RJSBasecaster_REllipse_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(REllipse*)vp;
+                if (t==RJSType_REllipse::getIdStatic()) {
+                  return (RShape*)(REllipse*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2892,7 +3542,12 @@
             class RJSBasecaster_REllipseData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(REllipseData*)vp;
+                if (t==RJSType_REllipseData::getIdStatic()) {
+                  return (REntityData*)(REllipseData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2900,7 +3555,12 @@
             class RJSBasecaster_REllipseData_REllipse : public RJSBasecaster_REllipse {
             public:
               virtual REllipse* castToBase(int t, void* vp) {
-                return (REllipse*)(REllipseData*)vp;
+                if (t==RJSType_REllipseData::getIdStatic()) {
+                  return (REllipse*)(REllipseData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2910,7 +3570,12 @@
             class RJSBasecaster_REllipseEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(REllipseEntity*)vp;
+                if (t==RJSType_REllipseEntity::getIdStatic()) {
+                  return (RObject*)(REllipseEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2918,7 +3583,12 @@
             class RJSBasecaster_REllipseEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(REllipseEntity*)vp;
+                if (t==RJSType_REllipseEntity::getIdStatic()) {
+                  return (REntity*)(REllipseEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2928,7 +3598,12 @@
             class RJSBasecaster_REntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(REntity*)vp;
+                if (t==RJSType_REntity::getIdStatic()) {
+                  return (RObject*)(REntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2942,7 +3617,12 @@
             class RJSBasecaster_REntityPickEvent_RInputEvent : public RJSBasecaster_RInputEvent {
             public:
               virtual RInputEvent* castToBase(int t, void* vp) {
-                return (RInputEvent*)(REntityPickEvent*)vp;
+                if (t==RJSType_REntityPickEvent::getIdStatic()) {
+                  return (RInputEvent*)(REntityPickEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2952,7 +3632,12 @@
             class RJSBasecaster_REventFilter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(REventFilter*)vp;
+                if (t==RJSType_REventFilter::getIdStatic()) {
+                  return (QObject*)(REventFilter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2962,7 +3647,12 @@
             class RJSBasecaster_REventHandler_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(REventHandler*)vp;
+                if (t==RJSType_REventHandler::getIdStatic()) {
+                  return (QObject*)(REventHandler*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2978,7 +3668,12 @@
             class RJSBasecaster_RFaceData_RSolidData : public RJSBasecaster_RSolidData {
             public:
               virtual RSolidData* castToBase(int t, void* vp) {
-                return (RSolidData*)(RFaceData*)vp;
+                if (t==RJSType_RFaceData::getIdStatic()) {
+                  return (RSolidData*)(RFaceData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2988,7 +3683,12 @@
             class RJSBasecaster_RFaceEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RFaceEntity*)vp;
+                if (t==RJSType_RFaceEntity::getIdStatic()) {
+                  return (RObject*)(RFaceEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -2996,7 +3696,12 @@
             class RJSBasecaster_RFaceEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RFaceEntity*)vp;
+                if (t==RJSType_RFaceEntity::getIdStatic()) {
+                  return (REntity*)(RFaceEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3008,7 +3713,12 @@
             class RJSBasecaster_RFileExporter_RExporter : public RJSBasecaster_RExporter {
             public:
               virtual RExporter* castToBase(int t, void* vp) {
-                return (RExporter*)(RFileExporter*)vp;
+                if (t==RJSType_RFileExporter::getIdStatic()) {
+                  return (RExporter*)(RFileExporter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3018,7 +3728,12 @@
             class RJSBasecaster_RFileExporterAdapter_RExporter : public RJSBasecaster_RExporter {
             public:
               virtual RExporter* castToBase(int t, void* vp) {
-                return (RExporter*)(RFileExporterAdapter*)vp;
+                if (t==RJSType_RFileExporterAdapter::getIdStatic()) {
+                  return (RExporter*)(RFileExporterAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3026,7 +3741,12 @@
             class RJSBasecaster_RFileExporterAdapter_RFileExporter : public RJSBasecaster_RFileExporter {
             public:
               virtual RFileExporter* castToBase(int t, void* vp) {
-                return (RFileExporter*)(RFileExporterAdapter*)vp;
+                if (t==RJSType_RFileExporterAdapter::getIdStatic()) {
+                  return (RFileExporter*)(RFileExporterAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3038,7 +3758,12 @@
             class RJSBasecaster_RFileExporterFactoryAdapter_RFileExporterFactory : public RJSBasecaster_RFileExporterFactory {
             public:
               virtual RFileExporterFactory* castToBase(int t, void* vp) {
-                return (RFileExporterFactory*)(RFileExporterFactoryAdapter*)vp;
+                if (t==RJSType_RFileExporterFactoryAdapter::getIdStatic()) {
+                  return (RFileExporterFactory*)(RFileExporterFactoryAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3050,7 +3775,12 @@
             class RJSBasecaster_RFileImporter_RImporter : public RJSBasecaster_RImporter {
             public:
               virtual RImporter* castToBase(int t, void* vp) {
-                return (RImporter*)(RFileImporter*)vp;
+                if (t==RJSType_RFileImporter::getIdStatic()) {
+                  return (RImporter*)(RFileImporter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3060,7 +3790,12 @@
             class RJSBasecaster_RFileImporterAdapter_RImporter : public RJSBasecaster_RImporter {
             public:
               virtual RImporter* castToBase(int t, void* vp) {
-                return (RImporter*)(RFileImporterAdapter*)vp;
+                if (t==RJSType_RFileImporterAdapter::getIdStatic()) {
+                  return (RImporter*)(RFileImporterAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3068,7 +3803,12 @@
             class RJSBasecaster_RFileImporterAdapter_RFileImporter : public RJSBasecaster_RFileImporter {
             public:
               virtual RFileImporter* castToBase(int t, void* vp) {
-                return (RFileImporter*)(RFileImporterAdapter*)vp;
+                if (t==RJSType_RFileImporterAdapter::getIdStatic()) {
+                  return (RFileImporter*)(RFileImporterAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3080,7 +3820,12 @@
             class RJSBasecaster_RFileImporterFactoryAdapter_RFileImporterFactory : public RJSBasecaster_RFileImporterFactory {
             public:
               virtual RFileImporterFactory* castToBase(int t, void* vp) {
-                return (RFileImporterFactory*)(RFileImporterFactoryAdapter*)vp;
+                if (t==RJSType_RFileImporterFactoryAdapter::getIdStatic()) {
+                  return (RFileImporterFactory*)(RFileImporterFactoryAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3092,7 +3837,12 @@
             class RJSBasecaster_RFileSystemModel_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RFileSystemModel*)vp;
+                if (t==RJSType_RFileSystemModel::getIdStatic()) {
+                  return (QObject*)(RFileSystemModel*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3100,7 +3850,12 @@
             class RJSBasecaster_RFileSystemModel_QAbstractItemModel : public RJSBasecaster_QAbstractItemModel {
             public:
               virtual QAbstractItemModel* castToBase(int t, void* vp) {
-                return (QAbstractItemModel*)(RFileSystemModel*)vp;
+                if (t==RJSType_RFileSystemModel::getIdStatic()) {
+                  return (QAbstractItemModel*)(RFileSystemModel*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3108,7 +3863,12 @@
             class RJSBasecaster_RFileSystemModel_QFileSystemModel : public RJSBasecaster_QFileSystemModel {
             public:
               virtual QFileSystemModel* castToBase(int t, void* vp) {
-                return (QFileSystemModel*)(RFileSystemModel*)vp;
+                if (t==RJSType_RFileSystemModel::getIdStatic()) {
+                  return (QFileSystemModel*)(RFileSystemModel*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3118,7 +3878,12 @@
             class RJSBasecaster_RFlowLayout_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RFlowLayout*)vp;
+                if (t==RJSType_RFlowLayout::getIdStatic()) {
+                  return (QObject*)(RFlowLayout*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3126,7 +3891,12 @@
             class RJSBasecaster_RFlowLayout_QLayoutItem : public RJSBasecaster_QLayoutItem {
             public:
               virtual QLayoutItem* castToBase(int t, void* vp) {
-                return (QLayoutItem*)(RFlowLayout*)vp;
+                if (t==RJSType_RFlowLayout::getIdStatic()) {
+                  return (QLayoutItem*)(RFlowLayout*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3134,7 +3904,12 @@
             class RJSBasecaster_RFlowLayout_QLayout : public RJSBasecaster_QLayout {
             public:
               virtual QLayout* castToBase(int t, void* vp) {
-                return (QLayout*)(RFlowLayout*)vp;
+                if (t==RJSType_RFlowLayout::getIdStatic()) {
+                  return (QLayout*)(RFlowLayout*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3146,7 +3921,12 @@
             class RJSBasecaster_RFocusListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RFocusListenerAdapter*)vp;
+                if (t==RJSType_RFocusListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RFocusListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3154,7 +3934,12 @@
             class RJSBasecaster_RFocusListenerAdapter_RFocusListener : public RJSBasecaster_RFocusListener {
             public:
               virtual RFocusListener* castToBase(int t, void* vp) {
-                return (RFocusListener*)(RFocusListenerAdapter*)vp;
+                if (t==RJSType_RFocusListenerAdapter::getIdStatic()) {
+                  return (RFocusListener*)(RFocusListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3166,7 +3951,12 @@
             class RJSBasecaster_RFontChooserWidget_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RFontChooserWidget*)vp;
+                if (t==RJSType_RFontChooserWidget::getIdStatic()) {
+                  return (QObject*)(RFontChooserWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3174,7 +3964,12 @@
             class RJSBasecaster_RFontChooserWidget_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RFontChooserWidget*)vp;
+                if (t==RJSType_RFontChooserWidget::getIdStatic()) {
+                  return (QWidget*)(RFontChooserWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3186,7 +3981,12 @@
             class RJSBasecaster_RGraphicsScene_RExporter : public RJSBasecaster_RExporter {
             public:
               virtual RExporter* castToBase(int t, void* vp) {
-                return (RExporter*)(RGraphicsScene*)vp;
+                if (t==RJSType_RGraphicsScene::getIdStatic()) {
+                  return (RExporter*)(RGraphicsScene*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3198,7 +3998,12 @@
             class RJSBasecaster_RGraphicsSceneQt_RExporter : public RJSBasecaster_RExporter {
             public:
               virtual RExporter* castToBase(int t, void* vp) {
-                return (RExporter*)(RGraphicsSceneQt*)vp;
+                if (t==RJSType_RGraphicsSceneQt::getIdStatic()) {
+                  return (RExporter*)(RGraphicsSceneQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3206,7 +4011,12 @@
             class RJSBasecaster_RGraphicsSceneQt_RGraphicsScene : public RJSBasecaster_RGraphicsScene {
             public:
               virtual RGraphicsScene* castToBase(int t, void* vp) {
-                return (RGraphicsScene*)(RGraphicsSceneQt*)vp;
+                if (t==RJSType_RGraphicsSceneQt::getIdStatic()) {
+                  return (RGraphicsScene*)(RGraphicsSceneQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3218,7 +4028,12 @@
             class RJSBasecaster_RGraphicsViewImage_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RGraphicsViewImage*)vp;
+                if (t==RJSType_RGraphicsViewImage::getIdStatic()) {
+                  return (QObject*)(RGraphicsViewImage*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3226,7 +4041,12 @@
             class RJSBasecaster_RGraphicsViewImage_RGraphicsView : public RJSBasecaster_RGraphicsView {
             public:
               virtual RGraphicsView* castToBase(int t, void* vp) {
-                return (RGraphicsView*)(RGraphicsViewImage*)vp;
+                if (t==RJSType_RGraphicsViewImage::getIdStatic()) {
+                  return (RGraphicsView*)(RGraphicsViewImage*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3236,7 +4056,12 @@
             class RJSBasecaster_RGraphicsViewQt_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RGraphicsViewQt*)vp;
+                if (t==RJSType_RGraphicsViewQt::getIdStatic()) {
+                  return (QObject*)(RGraphicsViewQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3244,7 +4069,12 @@
             class RJSBasecaster_RGraphicsViewQt_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RGraphicsViewQt*)vp;
+                if (t==RJSType_RGraphicsViewQt::getIdStatic()) {
+                  return (QWidget*)(RGraphicsViewQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3256,7 +4086,12 @@
             class RJSBasecaster_RGuiAction_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RGuiAction*)vp;
+                if (t==RJSType_RGuiAction::getIdStatic()) {
+                  return (QObject*)(RGuiAction*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3264,7 +4099,12 @@
             class RJSBasecaster_RGuiAction_RFocusListener : public RJSBasecaster_RFocusListener {
             public:
               virtual RFocusListener* castToBase(int t, void* vp) {
-                return (RFocusListener*)(RGuiAction*)vp;
+                if (t==RJSType_RGuiAction::getIdStatic()) {
+                  return (RFocusListener*)(RGuiAction*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3272,7 +4112,12 @@
             class RJSBasecaster_RGuiAction_RTransactionListener : public RJSBasecaster_RTransactionListener {
             public:
               virtual RTransactionListener* castToBase(int t, void* vp) {
-                return (RTransactionListener*)(RGuiAction*)vp;
+                if (t==RJSType_RGuiAction::getIdStatic()) {
+                  return (RTransactionListener*)(RGuiAction*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3280,7 +4125,12 @@
             class RJSBasecaster_RGuiAction_RSelectionListener : public RJSBasecaster_RSelectionListener {
             public:
               virtual RSelectionListener* castToBase(int t, void* vp) {
-                return (RSelectionListener*)(RGuiAction*)vp;
+                if (t==RJSType_RGuiAction::getIdStatic()) {
+                  return (RSelectionListener*)(RGuiAction*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3288,7 +4138,12 @@
             class RJSBasecaster_RGuiAction_QAction : public RJSBasecaster_QAction {
             public:
               virtual QAction* castToBase(int t, void* vp) {
-                return (QAction*)(RGuiAction*)vp;
+                if (t==RJSType_RGuiAction::getIdStatic()) {
+                  return (QAction*)(RGuiAction*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3298,7 +4153,12 @@
             class RJSBasecaster_RHatchData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RHatchData*)vp;
+                if (t==RJSType_RHatchData::getIdStatic()) {
+                  return (REntityData*)(RHatchData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3308,7 +4168,12 @@
             class RJSBasecaster_RHatchEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RHatchEntity*)vp;
+                if (t==RJSType_RHatchEntity::getIdStatic()) {
+                  return (RObject*)(RHatchEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3316,7 +4181,12 @@
             class RJSBasecaster_RHatchEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RHatchEntity*)vp;
+                if (t==RJSType_RHatchEntity::getIdStatic()) {
+                  return (REntity*)(RHatchEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3326,7 +4196,12 @@
             class RJSBasecaster_RImageData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RImageData*)vp;
+                if (t==RJSType_RImageData::getIdStatic()) {
+                  return (REntityData*)(RImageData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3336,7 +4211,12 @@
             class RJSBasecaster_RImageEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RImageEntity*)vp;
+                if (t==RJSType_RImageEntity::getIdStatic()) {
+                  return (RObject*)(RImageEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3344,7 +4224,12 @@
             class RJSBasecaster_RImageEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RImageEntity*)vp;
+                if (t==RJSType_RImageEntity::getIdStatic()) {
+                  return (REntity*)(RImageEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3362,7 +4247,12 @@
             class RJSBasecaster_RInterTransactionListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RInterTransactionListenerAdapter*)vp;
+                if (t==RJSType_RInterTransactionListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RInterTransactionListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3370,7 +4260,12 @@
             class RJSBasecaster_RInterTransactionListenerAdapter_RInterTransactionListener : public RJSBasecaster_RInterTransactionListener {
             public:
               virtual RInterTransactionListener* castToBase(int t, void* vp) {
-                return (RInterTransactionListener*)(RInterTransactionListenerAdapter*)vp;
+                if (t==RJSType_RInterTransactionListenerAdapter::getIdStatic()) {
+                  return (RInterTransactionListener*)(RInterTransactionListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3382,7 +4277,12 @@
             class RJSBasecaster_RKeyListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RKeyListenerAdapter*)vp;
+                if (t==RJSType_RKeyListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RKeyListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3390,7 +4290,12 @@
             class RJSBasecaster_RKeyListenerAdapter_RKeyListener : public RJSBasecaster_RKeyListener {
             public:
               virtual RKeyListener* castToBase(int t, void* vp) {
-                return (RKeyListener*)(RKeyListenerAdapter*)vp;
+                if (t==RJSType_RKeyListenerAdapter::getIdStatic()) {
+                  return (RKeyListener*)(RKeyListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3400,7 +4305,12 @@
             class RJSBasecaster_RLayer_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RLayer*)vp;
+                if (t==RJSType_RLayer::getIdStatic()) {
+                  return (RObject*)(RLayer*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3412,7 +4322,12 @@
             class RJSBasecaster_RLayerListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RLayerListenerAdapter*)vp;
+                if (t==RJSType_RLayerListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RLayerListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3420,7 +4335,12 @@
             class RJSBasecaster_RLayerListenerAdapter_RLayerListener : public RJSBasecaster_RLayerListener {
             public:
               virtual RLayerListener* castToBase(int t, void* vp) {
-                return (RLayerListener*)(RLayerListenerAdapter*)vp;
+                if (t==RJSType_RLayerListenerAdapter::getIdStatic()) {
+                  return (RLayerListener*)(RLayerListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3430,7 +4350,12 @@
             class RJSBasecaster_RLayerState_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RLayerState*)vp;
+                if (t==RJSType_RLayerState::getIdStatic()) {
+                  return (RObject*)(RLayerState*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3440,7 +4365,12 @@
             class RJSBasecaster_RLayout_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RLayout*)vp;
+                if (t==RJSType_RLayout::getIdStatic()) {
+                  return (RObject*)(RLayout*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3450,7 +4380,12 @@
             class RJSBasecaster_RLeaderData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RLeaderData*)vp;
+                if (t==RJSType_RLeaderData::getIdStatic()) {
+                  return (REntityData*)(RLeaderData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3458,7 +4393,12 @@
             class RJSBasecaster_RLeaderData_RPolyline : public RJSBasecaster_RPolyline {
             public:
               virtual RPolyline* castToBase(int t, void* vp) {
-                return (RPolyline*)(RLeaderData*)vp;
+                if (t==RJSType_RLeaderData::getIdStatic()) {
+                  return (RPolyline*)(RLeaderData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3468,7 +4408,12 @@
             class RJSBasecaster_RLeaderEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RLeaderEntity*)vp;
+                if (t==RJSType_RLeaderEntity::getIdStatic()) {
+                  return (RObject*)(RLeaderEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3476,7 +4421,12 @@
             class RJSBasecaster_RLeaderEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RLeaderEntity*)vp;
+                if (t==RJSType_RLeaderEntity::getIdStatic()) {
+                  return (REntity*)(RLeaderEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3486,7 +4436,12 @@
             class RJSBasecaster_RLine_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(RLine*)vp;
+                if (t==RJSType_RLine::getIdStatic()) {
+                  return (RShape*)(RLine*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3496,7 +4451,12 @@
             class RJSBasecaster_RLineData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RLineData*)vp;
+                if (t==RJSType_RLineData::getIdStatic()) {
+                  return (REntityData*)(RLineData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3504,7 +4464,12 @@
             class RJSBasecaster_RLineData_RLine : public RJSBasecaster_RLine {
             public:
               virtual RLine* castToBase(int t, void* vp) {
-                return (RLine*)(RLineData*)vp;
+                if (t==RJSType_RLineData::getIdStatic()) {
+                  return (RLine*)(RLineData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3514,7 +4479,12 @@
             class RJSBasecaster_RLineEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RLineEntity*)vp;
+                if (t==RJSType_RLineEntity::getIdStatic()) {
+                  return (RObject*)(RLineEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3522,7 +4492,12 @@
             class RJSBasecaster_RLineEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RLineEntity*)vp;
+                if (t==RJSType_RLineEntity::getIdStatic()) {
+                  return (REntity*)(RLineEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3532,7 +4507,12 @@
             class RJSBasecaster_RLinetype_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RLinetype*)vp;
+                if (t==RJSType_RLinetype::getIdStatic()) {
+                  return (RObject*)(RLinetype*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3542,7 +4522,12 @@
             class RJSBasecaster_RLinetypeCombo_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RLinetypeCombo*)vp;
+                if (t==RJSType_RLinetypeCombo::getIdStatic()) {
+                  return (QObject*)(RLinetypeCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3550,7 +4535,12 @@
             class RJSBasecaster_RLinetypeCombo_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RLinetypeCombo*)vp;
+                if (t==RJSType_RLinetypeCombo::getIdStatic()) {
+                  return (QWidget*)(RLinetypeCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3558,7 +4548,12 @@
             class RJSBasecaster_RLinetypeCombo_QComboBox : public RJSBasecaster_QComboBox {
             public:
               virtual QComboBox* castToBase(int t, void* vp) {
-                return (QComboBox*)(RLinetypeCombo*)vp;
+                if (t==RJSType_RLinetypeCombo::getIdStatic()) {
+                  return (QComboBox*)(RLinetypeCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3572,7 +4567,12 @@
             class RJSBasecaster_RLineweightCombo_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RLineweightCombo*)vp;
+                if (t==RJSType_RLineweightCombo::getIdStatic()) {
+                  return (QObject*)(RLineweightCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3580,7 +4580,12 @@
             class RJSBasecaster_RLineweightCombo_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RLineweightCombo*)vp;
+                if (t==RJSType_RLineweightCombo::getIdStatic()) {
+                  return (QWidget*)(RLineweightCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3588,7 +4593,12 @@
             class RJSBasecaster_RLineweightCombo_QComboBox : public RJSBasecaster_QComboBox {
             public:
               virtual QComboBox* castToBase(int t, void* vp) {
-                return (QComboBox*)(RLineweightCombo*)vp;
+                if (t==RJSType_RLineweightCombo::getIdStatic()) {
+                  return (QComboBox*)(RLineweightCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3598,7 +4608,12 @@
             class RJSBasecaster_RListView_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RListView*)vp;
+                if (t==RJSType_RListView::getIdStatic()) {
+                  return (QObject*)(RListView*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3606,7 +4621,12 @@
             class RJSBasecaster_RListView_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RListView*)vp;
+                if (t==RJSType_RListView::getIdStatic()) {
+                  return (QWidget*)(RListView*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3614,7 +4634,12 @@
             class RJSBasecaster_RListView_QFrame : public RJSBasecaster_QFrame {
             public:
               virtual QFrame* castToBase(int t, void* vp) {
-                return (QFrame*)(RListView*)vp;
+                if (t==RJSType_RListView::getIdStatic()) {
+                  return (QFrame*)(RListView*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3622,7 +4647,12 @@
             class RJSBasecaster_RListView_QAbstractScrollArea : public RJSBasecaster_QAbstractScrollArea {
             public:
               virtual QAbstractScrollArea* castToBase(int t, void* vp) {
-                return (QAbstractScrollArea*)(RListView*)vp;
+                if (t==RJSType_RListView::getIdStatic()) {
+                  return (QAbstractScrollArea*)(RListView*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3630,7 +4660,12 @@
             class RJSBasecaster_RListView_QAbstractItemView : public RJSBasecaster_QAbstractItemView {
             public:
               virtual QAbstractItemView* castToBase(int t, void* vp) {
-                return (QAbstractItemView*)(RListView*)vp;
+                if (t==RJSType_RListView::getIdStatic()) {
+                  return (QAbstractItemView*)(RListView*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3638,7 +4673,12 @@
             class RJSBasecaster_RListView_QListView : public RJSBasecaster_QListView {
             public:
               virtual QListView* castToBase(int t, void* vp) {
-                return (QListView*)(RListView*)vp;
+                if (t==RJSType_RListView::getIdStatic()) {
+                  return (QListView*)(RListView*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3648,7 +4688,12 @@
             class RJSBasecaster_RListWidget_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RListWidget*)vp;
+                if (t==RJSType_RListWidget::getIdStatic()) {
+                  return (QObject*)(RListWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3656,7 +4701,12 @@
             class RJSBasecaster_RListWidget_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RListWidget*)vp;
+                if (t==RJSType_RListWidget::getIdStatic()) {
+                  return (QWidget*)(RListWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3664,7 +4714,12 @@
             class RJSBasecaster_RListWidget_QFrame : public RJSBasecaster_QFrame {
             public:
               virtual QFrame* castToBase(int t, void* vp) {
-                return (QFrame*)(RListWidget*)vp;
+                if (t==RJSType_RListWidget::getIdStatic()) {
+                  return (QFrame*)(RListWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3672,7 +4727,12 @@
             class RJSBasecaster_RListWidget_QAbstractScrollArea : public RJSBasecaster_QAbstractScrollArea {
             public:
               virtual QAbstractScrollArea* castToBase(int t, void* vp) {
-                return (QAbstractScrollArea*)(RListWidget*)vp;
+                if (t==RJSType_RListWidget::getIdStatic()) {
+                  return (QAbstractScrollArea*)(RListWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3680,7 +4740,12 @@
             class RJSBasecaster_RListWidget_QAbstractItemView : public RJSBasecaster_QAbstractItemView {
             public:
               virtual QAbstractItemView* castToBase(int t, void* vp) {
-                return (QAbstractItemView*)(RListWidget*)vp;
+                if (t==RJSType_RListWidget::getIdStatic()) {
+                  return (QAbstractItemView*)(RListWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3688,7 +4753,12 @@
             class RJSBasecaster_RListWidget_QListView : public RJSBasecaster_QListView {
             public:
               virtual QListView* castToBase(int t, void* vp) {
-                return (QListView*)(RListWidget*)vp;
+                if (t==RJSType_RListWidget::getIdStatic()) {
+                  return (QListView*)(RListWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3696,7 +4766,12 @@
             class RJSBasecaster_RListWidget_QListWidget : public RJSBasecaster_QListWidget {
             public:
               virtual QListWidget* castToBase(int t, void* vp) {
-                return (QListWidget*)(RListWidget*)vp;
+                if (t==RJSType_RListWidget::getIdStatic()) {
+                  return (QListWidget*)(RListWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3708,7 +4783,12 @@
             class RJSBasecaster_RMainWindowQt_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RMainWindowQt*)vp;
+                if (t==RJSType_RMainWindowQt::getIdStatic()) {
+                  return (QObject*)(RMainWindowQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3716,15 +4796,12 @@
             class RJSBasecaster_RMainWindowQt_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RMainWindowQt*)vp;
-              }
-            };
-          
-            // implementation of base casters that casts RMainWindowQt to QMainWindow
-            class RJSBasecaster_RMainWindowQt_QMainWindow : public RJSBasecaster_QMainWindow {
-            public:
-              virtual QMainWindow* castToBase(int t, void* vp) {
-                return (QMainWindow*)(RMainWindowQt*)vp;
+                if (t==RJSType_RMainWindowQt::getIdStatic()) {
+                  return (QWidget*)(RMainWindowQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3732,7 +4809,25 @@
             class RJSBasecaster_RMainWindowQt_RMainWindow : public RJSBasecaster_RMainWindow {
             public:
               virtual RMainWindow* castToBase(int t, void* vp) {
-                return (RMainWindow*)(RMainWindowQt*)vp;
+                if (t==RJSType_RMainWindowQt::getIdStatic()) {
+                  return (RMainWindow*)(RMainWindowQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RMainWindowQt to QMainWindow
+            class RJSBasecaster_RMainWindowQt_QMainWindow : public RJSBasecaster_QMainWindow {
+            public:
+              virtual QMainWindow* castToBase(int t, void* vp) {
+                if (t==RJSType_RMainWindowQt::getIdStatic()) {
+                  return (QMainWindow*)(RMainWindowQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3744,7 +4839,12 @@
             class RJSBasecaster_RMathComboBox_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RMathComboBox*)vp;
+                if (t==RJSType_RMathComboBox::getIdStatic()) {
+                  return (QObject*)(RMathComboBox*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3752,7 +4852,12 @@
             class RJSBasecaster_RMathComboBox_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RMathComboBox*)vp;
+                if (t==RJSType_RMathComboBox::getIdStatic()) {
+                  return (QWidget*)(RMathComboBox*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3760,7 +4865,12 @@
             class RJSBasecaster_RMathComboBox_QComboBox : public RJSBasecaster_QComboBox {
             public:
               virtual QComboBox* castToBase(int t, void* vp) {
-                return (QComboBox*)(RMathComboBox*)vp;
+                if (t==RJSType_RMathComboBox::getIdStatic()) {
+                  return (QComboBox*)(RMathComboBox*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3770,7 +4880,12 @@
             class RJSBasecaster_RMathLineEdit_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RMathLineEdit*)vp;
+                if (t==RJSType_RMathLineEdit::getIdStatic()) {
+                  return (QObject*)(RMathLineEdit*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3778,7 +4893,12 @@
             class RJSBasecaster_RMathLineEdit_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RMathLineEdit*)vp;
+                if (t==RJSType_RMathLineEdit::getIdStatic()) {
+                  return (QWidget*)(RMathLineEdit*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3786,7 +4906,12 @@
             class RJSBasecaster_RMathLineEdit_QLineEdit : public RJSBasecaster_QLineEdit {
             public:
               virtual QLineEdit* castToBase(int t, void* vp) {
-                return (QLineEdit*)(RMathLineEdit*)vp;
+                if (t==RJSType_RMathLineEdit::getIdStatic()) {
+                  return (QLineEdit*)(RMathLineEdit*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3798,7 +4923,12 @@
             class RJSBasecaster_RMdiArea_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RMdiArea*)vp;
+                if (t==RJSType_RMdiArea::getIdStatic()) {
+                  return (QObject*)(RMdiArea*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3806,7 +4936,12 @@
             class RJSBasecaster_RMdiArea_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RMdiArea*)vp;
+                if (t==RJSType_RMdiArea::getIdStatic()) {
+                  return (QWidget*)(RMdiArea*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3814,7 +4949,12 @@
             class RJSBasecaster_RMdiArea_QMdiArea : public RJSBasecaster_QMdiArea {
             public:
               virtual QMdiArea* castToBase(int t, void* vp) {
-                return (QMdiArea*)(RMdiArea*)vp;
+                if (t==RJSType_RMdiArea::getIdStatic()) {
+                  return (QMdiArea*)(RMdiArea*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3824,7 +4964,12 @@
             class RJSBasecaster_RMdiChildQt_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RMdiChildQt*)vp;
+                if (t==RJSType_RMdiChildQt::getIdStatic()) {
+                  return (QObject*)(RMdiChildQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3832,7 +4977,12 @@
             class RJSBasecaster_RMdiChildQt_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RMdiChildQt*)vp;
+                if (t==RJSType_RMdiChildQt::getIdStatic()) {
+                  return (QWidget*)(RMdiChildQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3840,7 +4990,12 @@
             class RJSBasecaster_RMdiChildQt_RModifiedListener : public RJSBasecaster_RModifiedListener {
             public:
               virtual RModifiedListener* castToBase(int t, void* vp) {
-                return (RModifiedListener*)(RMdiChildQt*)vp;
+                if (t==RJSType_RMdiChildQt::getIdStatic()) {
+                  return (RModifiedListener*)(RMdiChildQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3848,7 +5003,12 @@
             class RJSBasecaster_RMdiChildQt_QMdiSubWindow : public RJSBasecaster_QMdiSubWindow {
             public:
               virtual QMdiSubWindow* castToBase(int t, void* vp) {
-                return (QMdiSubWindow*)(RMdiChildQt*)vp;
+                if (t==RJSType_RMdiChildQt::getIdStatic()) {
+                  return (QMdiSubWindow*)(RMdiChildQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3858,7 +5018,12 @@
             class RJSBasecaster_RMemoryStorage_RStorage : public RJSBasecaster_RStorage {
             public:
               virtual RStorage* castToBase(int t, void* vp) {
-                return (RStorage*)(RMemoryStorage*)vp;
+                if (t==RJSType_RMemoryStorage::getIdStatic()) {
+                  return (RStorage*)(RMemoryStorage*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3870,7 +5035,12 @@
             class RJSBasecaster_RMixedOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RMixedOperation*)vp;
+                if (t==RJSType_RMixedOperation::getIdStatic()) {
+                  return (ROperation*)(RMixedOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3882,7 +5052,12 @@
             class RJSBasecaster_RModifyObjectOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RModifyObjectOperation*)vp;
+                if (t==RJSType_RModifyObjectOperation::getIdStatic()) {
+                  return (ROperation*)(RModifyObjectOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3890,7 +5065,12 @@
             class RJSBasecaster_RModifyObjectOperation_RAddObjectOperation : public RJSBasecaster_RAddObjectOperation {
             public:
               virtual RAddObjectOperation* castToBase(int t, void* vp) {
-                return (RAddObjectOperation*)(RModifyObjectOperation*)vp;
+                if (t==RJSType_RModifyObjectOperation::getIdStatic()) {
+                  return (RAddObjectOperation*)(RModifyObjectOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3900,7 +5080,12 @@
             class RJSBasecaster_RModifyObjectsOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RModifyObjectsOperation*)vp;
+                if (t==RJSType_RModifyObjectsOperation::getIdStatic()) {
+                  return (ROperation*)(RModifyObjectsOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3908,7 +5093,12 @@
             class RJSBasecaster_RModifyObjectsOperation_RAddObjectsOperation : public RJSBasecaster_RAddObjectsOperation {
             public:
               virtual RAddObjectsOperation* castToBase(int t, void* vp) {
-                return (RAddObjectsOperation*)(RModifyObjectsOperation*)vp;
+                if (t==RJSType_RModifyObjectsOperation::getIdStatic()) {
+                  return (RAddObjectsOperation*)(RModifyObjectsOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3920,7 +5110,12 @@
             class RJSBasecaster_RMouseEvent_QEvent : public RJSBasecaster_QEvent {
             public:
               virtual QEvent* castToBase(int t, void* vp) {
-                return (QEvent*)(RMouseEvent*)vp;
+                if (t==RJSType_RMouseEvent::getIdStatic()) {
+                  return (QEvent*)(RMouseEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3928,7 +5123,12 @@
             class RJSBasecaster_RMouseEvent_QInputEvent : public RJSBasecaster_QInputEvent {
             public:
               virtual QInputEvent* castToBase(int t, void* vp) {
-                return (QInputEvent*)(RMouseEvent*)vp;
+                if (t==RJSType_RMouseEvent::getIdStatic()) {
+                  return (QInputEvent*)(RMouseEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3936,7 +5136,12 @@
             class RJSBasecaster_RMouseEvent_QPointerEvent : public RJSBasecaster_QPointerEvent {
             public:
               virtual QPointerEvent* castToBase(int t, void* vp) {
-                return (QPointerEvent*)(RMouseEvent*)vp;
+                if (t==RJSType_RMouseEvent::getIdStatic()) {
+                  return (QPointerEvent*)(RMouseEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3944,7 +5149,12 @@
             class RJSBasecaster_RMouseEvent_QSinglePointEvent : public RJSBasecaster_QSinglePointEvent {
             public:
               virtual QSinglePointEvent* castToBase(int t, void* vp) {
-                return (QSinglePointEvent*)(RMouseEvent*)vp;
+                if (t==RJSType_RMouseEvent::getIdStatic()) {
+                  return (QSinglePointEvent*)(RMouseEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3952,7 +5162,12 @@
             class RJSBasecaster_RMouseEvent_QMouseEvent : public RJSBasecaster_QMouseEvent {
             public:
               virtual QMouseEvent* castToBase(int t, void* vp) {
-                return (QMouseEvent*)(RMouseEvent*)vp;
+                if (t==RJSType_RMouseEvent::getIdStatic()) {
+                  return (QMouseEvent*)(RMouseEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3960,7 +5175,12 @@
             class RJSBasecaster_RMouseEvent_RInputEvent : public RJSBasecaster_RInputEvent {
             public:
               virtual RInputEvent* castToBase(int t, void* vp) {
-                return (RInputEvent*)(RMouseEvent*)vp;
+                if (t==RJSType_RMouseEvent::getIdStatic()) {
+                  return (RInputEvent*)(RMouseEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3970,7 +5190,12 @@
             class RJSBasecaster_RMoveReferencePointOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RMoveReferencePointOperation*)vp;
+                if (t==RJSType_RMoveReferencePointOperation::getIdStatic()) {
+                  return (ROperation*)(RMoveReferencePointOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3980,7 +5205,12 @@
             class RJSBasecaster_RMoveSelectionOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RMoveSelectionOperation*)vp;
+                if (t==RJSType_RMoveSelectionOperation::getIdStatic()) {
+                  return (ROperation*)(RMoveSelectionOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -3998,7 +5228,12 @@
             class RJSBasecaster_ROrthoGrid_RGrid : public RJSBasecaster_RGrid {
             public:
               virtual RGrid* castToBase(int t, void* vp) {
-                return (RGrid*)(ROrthoGrid*)vp;
+                if (t==RJSType_ROrthoGrid::getIdStatic()) {
+                  return (RGrid*)(ROrthoGrid*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4008,7 +5243,12 @@
             class RJSBasecaster_RPainterPath_QPainterPath : public RJSBasecaster_QPainterPath {
             public:
               virtual QPainterPath* castToBase(int t, void* vp) {
-                return (QPainterPath*)(RPainterPath*)vp;
+                if (t==RJSType_RPainterPath::getIdStatic()) {
+                  return (QPainterPath*)(RPainterPath*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4022,7 +5262,12 @@
             class RJSBasecaster_RPaletteListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RPaletteListenerAdapter*)vp;
+                if (t==RJSType_RPaletteListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RPaletteListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4030,7 +5275,12 @@
             class RJSBasecaster_RPaletteListenerAdapter_RPaletteListener : public RJSBasecaster_RPaletteListener {
             public:
               virtual RPaletteListener* castToBase(int t, void* vp) {
-                return (RPaletteListener*)(RPaletteListenerAdapter*)vp;
+                if (t==RJSType_RPaletteListenerAdapter::getIdStatic()) {
+                  return (RPaletteListener*)(RPaletteListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4040,7 +5290,12 @@
             class RJSBasecaster_RPasteOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RPasteOperation*)vp;
+                if (t==RJSType_RPasteOperation::getIdStatic()) {
+                  return (ROperation*)(RPasteOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4048,7 +5303,12 @@
             class RJSBasecaster_RPasteOperation_RClipboardOperation : public RJSBasecaster_RClipboardOperation {
             public:
               virtual RClipboardOperation* castToBase(int t, void* vp) {
-                return (RClipboardOperation*)(RPasteOperation*)vp;
+                if (t==RJSType_RPasteOperation::getIdStatic()) {
+                  return (RClipboardOperation*)(RPasteOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4064,7 +5324,12 @@
             class RJSBasecaster_RPatternListImperial_RPatternList : public RJSBasecaster_RPatternList {
             public:
               virtual RPatternList* castToBase(int t, void* vp) {
-                return (RPatternList*)(RPatternListImperial*)vp;
+                if (t==RJSType_RPatternListImperial::getIdStatic()) {
+                  return (RPatternList*)(RPatternListImperial*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4074,7 +5339,12 @@
             class RJSBasecaster_RPatternListMetric_RPatternList : public RJSBasecaster_RPatternList {
             public:
               virtual RPatternList* castToBase(int t, void* vp) {
-                return (RPatternList*)(RPatternListMetric*)vp;
+                if (t==RJSType_RPatternListMetric::getIdStatic()) {
+                  return (RPatternList*)(RPatternListMetric*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4086,7 +5356,12 @@
             class RJSBasecaster_RPenListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RPenListenerAdapter*)vp;
+                if (t==RJSType_RPenListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RPenListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4094,7 +5369,12 @@
             class RJSBasecaster_RPenListenerAdapter_RPenListener : public RJSBasecaster_RPenListener {
             public:
               virtual RPenListener* castToBase(int t, void* vp) {
-                return (RPenListener*)(RPenListenerAdapter*)vp;
+                if (t==RJSType_RPenListenerAdapter::getIdStatic()) {
+                  return (RPenListener*)(RPenListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4110,7 +5390,12 @@
             class RJSBasecaster_RPoint_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(RPoint*)vp;
+                if (t==RJSType_RPoint::getIdStatic()) {
+                  return (RShape*)(RPoint*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4120,7 +5405,12 @@
             class RJSBasecaster_RPointData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RPointData*)vp;
+                if (t==RJSType_RPointData::getIdStatic()) {
+                  return (REntityData*)(RPointData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4128,7 +5418,12 @@
             class RJSBasecaster_RPointData_RPoint : public RJSBasecaster_RPoint {
             public:
               virtual RPoint* castToBase(int t, void* vp) {
-                return (RPoint*)(RPointData*)vp;
+                if (t==RJSType_RPointData::getIdStatic()) {
+                  return (RPoint*)(RPointData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4138,7 +5433,12 @@
             class RJSBasecaster_RPointEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RPointEntity*)vp;
+                if (t==RJSType_RPointEntity::getIdStatic()) {
+                  return (RObject*)(RPointEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4146,7 +5446,12 @@
             class RJSBasecaster_RPointEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RPointEntity*)vp;
+                if (t==RJSType_RPointEntity::getIdStatic()) {
+                  return (REntity*)(RPointEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4156,7 +5461,12 @@
             class RJSBasecaster_RPolyline_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(RPolyline*)vp;
+                if (t==RJSType_RPolyline::getIdStatic()) {
+                  return (RShape*)(RPolyline*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4164,7 +5474,12 @@
             class RJSBasecaster_RPolyline_RExplodable : public RJSBasecaster_RExplodable {
             public:
               virtual RExplodable* castToBase(int t, void* vp) {
-                return (RExplodable*)(RPolyline*)vp;
+                if (t==RJSType_RPolyline::getIdStatic()) {
+                  return (RExplodable*)(RPolyline*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4174,7 +5489,12 @@
             class RJSBasecaster_RPolylineData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RPolylineData*)vp;
+                if (t==RJSType_RPolylineData::getIdStatic()) {
+                  return (REntityData*)(RPolylineData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4182,7 +5502,12 @@
             class RJSBasecaster_RPolylineData_RPolyline : public RJSBasecaster_RPolyline {
             public:
               virtual RPolyline* castToBase(int t, void* vp) {
-                return (RPolyline*)(RPolylineData*)vp;
+                if (t==RJSType_RPolylineData::getIdStatic()) {
+                  return (RPolyline*)(RPolylineData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4192,7 +5517,12 @@
             class RJSBasecaster_RPolylineEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RPolylineEntity*)vp;
+                if (t==RJSType_RPolylineEntity::getIdStatic()) {
+                  return (RObject*)(RPolylineEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4200,7 +5530,12 @@
             class RJSBasecaster_RPolylineEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RPolylineEntity*)vp;
+                if (t==RJSType_RPolylineEntity::getIdStatic()) {
+                  return (REntity*)(RPolylineEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4212,7 +5547,12 @@
             class RJSBasecaster_RPreferencesListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RPreferencesListenerAdapter*)vp;
+                if (t==RJSType_RPreferencesListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RPreferencesListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4220,7 +5560,12 @@
             class RJSBasecaster_RPreferencesListenerAdapter_RPreferencesListener : public RJSBasecaster_RPreferencesListener {
             public:
               virtual RPreferencesListener* castToBase(int t, void* vp) {
-                return (RPreferencesListener*)(RPreferencesListenerAdapter*)vp;
+                if (t==RJSType_RPreferencesListenerAdapter::getIdStatic()) {
+                  return (RPreferencesListener*)(RPreferencesListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4236,7 +5581,12 @@
             class RJSBasecaster_RPropertyEditor_RPropertyListener : public RJSBasecaster_RPropertyListener {
             public:
               virtual RPropertyListener* castToBase(int t, void* vp) {
-                return (RPropertyListener*)(RPropertyEditor*)vp;
+                if (t==RJSType_RPropertyEditor::getIdStatic()) {
+                  return (RPropertyListener*)(RPropertyEditor*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4244,7 +5594,12 @@
             class RJSBasecaster_RPropertyEditor_RLayerListener : public RJSBasecaster_RLayerListener {
             public:
               virtual RLayerListener* castToBase(int t, void* vp) {
-                return (RLayerListener*)(RPropertyEditor*)vp;
+                if (t==RJSType_RPropertyEditor::getIdStatic()) {
+                  return (RLayerListener*)(RPropertyEditor*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4254,7 +5609,12 @@
             class RJSBasecaster_RPropertyEvent_QEvent : public RJSBasecaster_QEvent {
             public:
               virtual QEvent* castToBase(int t, void* vp) {
-                return (QEvent*)(RPropertyEvent*)vp;
+                if (t==RJSType_RPropertyEvent::getIdStatic()) {
+                  return (QEvent*)(RPropertyEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4266,7 +5626,12 @@
             class RJSBasecaster_RPropertyListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RPropertyListenerAdapter*)vp;
+                if (t==RJSType_RPropertyListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RPropertyListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4274,7 +5639,12 @@
             class RJSBasecaster_RPropertyListenerAdapter_RPropertyListener : public RJSBasecaster_RPropertyListener {
             public:
               virtual RPropertyListener* castToBase(int t, void* vp) {
-                return (RPropertyListener*)(RPropertyListenerAdapter*)vp;
+                if (t==RJSType_RPropertyListenerAdapter::getIdStatic()) {
+                  return (RPropertyListener*)(RPropertyListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4286,7 +5656,12 @@
             class RJSBasecaster_RRay_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(RRay*)vp;
+                if (t==RJSType_RRay::getIdStatic()) {
+                  return (RShape*)(RRay*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4294,7 +5669,12 @@
             class RJSBasecaster_RRay_RXLine : public RJSBasecaster_RXLine {
             public:
               virtual RXLine* castToBase(int t, void* vp) {
-                return (RXLine*)(RRay*)vp;
+                if (t==RJSType_RRay::getIdStatic()) {
+                  return (RXLine*)(RRay*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4304,7 +5684,12 @@
             class RJSBasecaster_RRayData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RRayData*)vp;
+                if (t==RJSType_RRayData::getIdStatic()) {
+                  return (REntityData*)(RRayData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4312,7 +5697,12 @@
             class RJSBasecaster_RRayData_RRay : public RJSBasecaster_RRay {
             public:
               virtual RRay* castToBase(int t, void* vp) {
-                return (RRay*)(RRayData*)vp;
+                if (t==RJSType_RRayData::getIdStatic()) {
+                  return (RRay*)(RRayData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4322,7 +5712,12 @@
             class RJSBasecaster_RRayEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RRayEntity*)vp;
+                if (t==RJSType_RRayEntity::getIdStatic()) {
+                  return (RObject*)(RRayEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4330,7 +5725,12 @@
             class RJSBasecaster_RRayEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RRayEntity*)vp;
+                if (t==RJSType_RRayEntity::getIdStatic()) {
+                  return (REntity*)(RRayEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4340,7 +5740,12 @@
             class RJSBasecaster_RRefPoint_RVector : public RJSBasecaster_RVector {
             public:
               virtual RVector* castToBase(int t, void* vp) {
-                return (RVector*)(RRefPoint*)vp;
+                if (t==RJSType_RRefPoint::getIdStatic()) {
+                  return (RVector*)(RRefPoint*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4350,7 +5755,12 @@
             class RJSBasecaster_RRestrictAngleLength_RSnapRestriction : public RJSBasecaster_RSnapRestriction {
             public:
               virtual RSnapRestriction* castToBase(int t, void* vp) {
-                return (RSnapRestriction*)(RRestrictAngleLength*)vp;
+                if (t==RJSType_RRestrictAngleLength::getIdStatic()) {
+                  return (RSnapRestriction*)(RRestrictAngleLength*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4360,7 +5770,12 @@
             class RJSBasecaster_RRestrictHorizontal_RSnapRestriction : public RJSBasecaster_RSnapRestriction {
             public:
               virtual RSnapRestriction* castToBase(int t, void* vp) {
-                return (RSnapRestriction*)(RRestrictHorizontal*)vp;
+                if (t==RJSType_RRestrictHorizontal::getIdStatic()) {
+                  return (RSnapRestriction*)(RRestrictHorizontal*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4368,7 +5783,12 @@
             class RJSBasecaster_RRestrictHorizontal_RRestrictOrthogonal : public RJSBasecaster_RRestrictOrthogonal {
             public:
               virtual RRestrictOrthogonal* castToBase(int t, void* vp) {
-                return (RRestrictOrthogonal*)(RRestrictHorizontal*)vp;
+                if (t==RJSType_RRestrictHorizontal::getIdStatic()) {
+                  return (RRestrictOrthogonal*)(RRestrictHorizontal*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4378,7 +5798,12 @@
             class RJSBasecaster_RRestrictOff_RSnapRestriction : public RJSBasecaster_RSnapRestriction {
             public:
               virtual RSnapRestriction* castToBase(int t, void* vp) {
-                return (RSnapRestriction*)(RRestrictOff*)vp;
+                if (t==RJSType_RRestrictOff::getIdStatic()) {
+                  return (RSnapRestriction*)(RRestrictOff*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4388,7 +5813,12 @@
             class RJSBasecaster_RRestrictOrthogonal_RSnapRestriction : public RJSBasecaster_RSnapRestriction {
             public:
               virtual RSnapRestriction* castToBase(int t, void* vp) {
-                return (RSnapRestriction*)(RRestrictOrthogonal*)vp;
+                if (t==RJSType_RRestrictOrthogonal::getIdStatic()) {
+                  return (RSnapRestriction*)(RRestrictOrthogonal*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4398,7 +5828,12 @@
             class RJSBasecaster_RRestrictVertical_RSnapRestriction : public RJSBasecaster_RSnapRestriction {
             public:
               virtual RSnapRestriction* castToBase(int t, void* vp) {
-                return (RSnapRestriction*)(RRestrictVertical*)vp;
+                if (t==RJSType_RRestrictVertical::getIdStatic()) {
+                  return (RSnapRestriction*)(RRestrictVertical*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4406,7 +5841,12 @@
             class RJSBasecaster_RRestrictVertical_RRestrictOrthogonal : public RJSBasecaster_RRestrictOrthogonal {
             public:
               virtual RRestrictOrthogonal* castToBase(int t, void* vp) {
-                return (RRestrictOrthogonal*)(RRestrictVertical*)vp;
+                if (t==RJSType_RRestrictVertical::getIdStatic()) {
+                  return (RRestrictOrthogonal*)(RRestrictVertical*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4418,7 +5858,12 @@
             class RJSBasecaster_RRulerQt_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RRulerQt*)vp;
+                if (t==RJSType_RRulerQt::getIdStatic()) {
+                  return (QObject*)(RRulerQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4426,15 +5871,12 @@
             class RJSBasecaster_RRulerQt_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RRulerQt*)vp;
-              }
-            };
-          
-            // implementation of base casters that casts RRulerQt to QFrame
-            class RJSBasecaster_RRulerQt_QFrame : public RJSBasecaster_QFrame {
-            public:
-              virtual QFrame* castToBase(int t, void* vp) {
-                return (QFrame*)(RRulerQt*)vp;
+                if (t==RJSType_RRulerQt::getIdStatic()) {
+                  return (QWidget*)(RRulerQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4442,7 +5884,12 @@
             class RJSBasecaster_RRulerQt_RRuler : public RJSBasecaster_RRuler {
             public:
               virtual RRuler* castToBase(int t, void* vp) {
-                return (RRuler*)(RRulerQt*)vp;
+                if (t==RJSType_RRulerQt::getIdStatic()) {
+                  return (RRuler*)(RRulerQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4450,7 +5897,12 @@
             class RJSBasecaster_RRulerQt_RCoordinateListener : public RJSBasecaster_RCoordinateListener {
             public:
               virtual RCoordinateListener* castToBase(int t, void* vp) {
-                return (RCoordinateListener*)(RRulerQt*)vp;
+                if (t==RJSType_RRulerQt::getIdStatic()) {
+                  return (RCoordinateListener*)(RRulerQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4458,7 +5910,25 @@
             class RJSBasecaster_RRulerQt_RPaletteListener : public RJSBasecaster_RPaletteListener {
             public:
               virtual RPaletteListener* castToBase(int t, void* vp) {
-                return (RPaletteListener*)(RRulerQt*)vp;
+                if (t==RJSType_RRulerQt::getIdStatic()) {
+                  return (RPaletteListener*)(RRulerQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RRulerQt to QFrame
+            class RJSBasecaster_RRulerQt_QFrame : public RJSBasecaster_QFrame {
+            public:
+              virtual QFrame* castToBase(int t, void* vp) {
+                if (t==RJSType_RRulerQt::getIdStatic()) {
+                  return (QFrame*)(RRulerQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4470,7 +5940,12 @@
             class RJSBasecaster_RScaleSelectionOperation_ROperation : public RJSBasecaster_ROperation {
             public:
               virtual ROperation* castToBase(int t, void* vp) {
-                return (ROperation*)(RScaleSelectionOperation*)vp;
+                if (t==RJSType_RScaleSelectionOperation::getIdStatic()) {
+                  return (ROperation*)(RScaleSelectionOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4482,7 +5957,12 @@
             class RJSBasecaster_RSelectionListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RSelectionListenerAdapter*)vp;
+                if (t==RJSType_RSelectionListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RSelectionListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4490,7 +5970,12 @@
             class RJSBasecaster_RSelectionListenerAdapter_RSelectionListener : public RJSBasecaster_RSelectionListener {
             public:
               virtual RSelectionListener* castToBase(int t, void* vp) {
-                return (RSelectionListener*)(RSelectionListenerAdapter*)vp;
+                if (t==RJSType_RSelectionListenerAdapter::getIdStatic()) {
+                  return (RSelectionListener*)(RSelectionListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4504,7 +5989,12 @@
             class RJSBasecaster_RSingleApplication_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RSingleApplication*)vp;
+                if (t==RJSType_RSingleApplication::getIdStatic()) {
+                  return (QObject*)(RSingleApplication*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4512,7 +6002,12 @@
             class RJSBasecaster_RSingleApplication_QCoreApplication : public RJSBasecaster_QCoreApplication {
             public:
               virtual QCoreApplication* castToBase(int t, void* vp) {
-                return (QCoreApplication*)(RSingleApplication*)vp;
+                if (t==RJSType_RSingleApplication::getIdStatic()) {
+                  return (QCoreApplication*)(RSingleApplication*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4520,7 +6015,12 @@
             class RJSBasecaster_RSingleApplication_QGuiApplication : public RJSBasecaster_QGuiApplication {
             public:
               virtual QGuiApplication* castToBase(int t, void* vp) {
-                return (QGuiApplication*)(RSingleApplication*)vp;
+                if (t==RJSType_RSingleApplication::getIdStatic()) {
+                  return (QGuiApplication*)(RSingleApplication*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4528,7 +6028,12 @@
             class RJSBasecaster_RSingleApplication_QApplication : public RJSBasecaster_QApplication {
             public:
               virtual QApplication* castToBase(int t, void* vp) {
-                return (QApplication*)(RSingleApplication*)vp;
+                if (t==RJSType_RSingleApplication::getIdStatic()) {
+                  return (QApplication*)(RSingleApplication*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4540,7 +6045,12 @@
             class RJSBasecaster_RSnapAuto_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapAuto*)vp;
+                if (t==RJSType_RSnapAuto::getIdStatic()) {
+                  return (RSnap*)(RSnapAuto*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4550,7 +6060,12 @@
             class RJSBasecaster_RSnapCenter_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapCenter*)vp;
+                if (t==RJSType_RSnapCenter::getIdStatic()) {
+                  return (RSnap*)(RSnapCenter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4558,7 +6073,12 @@
             class RJSBasecaster_RSnapCenter_RSnapEntityBase : public RJSBasecaster_RSnapEntityBase {
             public:
               virtual RSnapEntityBase* castToBase(int t, void* vp) {
-                return (RSnapEntityBase*)(RSnapCenter*)vp;
+                if (t==RJSType_RSnapCenter::getIdStatic()) {
+                  return (RSnapEntityBase*)(RSnapCenter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4568,7 +6088,12 @@
             class RJSBasecaster_RSnapDistance_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapDistance*)vp;
+                if (t==RJSType_RSnapDistance::getIdStatic()) {
+                  return (RSnap*)(RSnapDistance*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4576,7 +6101,12 @@
             class RJSBasecaster_RSnapDistance_RSnapEntityBase : public RJSBasecaster_RSnapEntityBase {
             public:
               virtual RSnapEntityBase* castToBase(int t, void* vp) {
-                return (RSnapEntityBase*)(RSnapDistance*)vp;
+                if (t==RJSType_RSnapDistance::getIdStatic()) {
+                  return (RSnapEntityBase*)(RSnapDistance*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4586,7 +6116,12 @@
             class RJSBasecaster_RSnapEnd_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapEnd*)vp;
+                if (t==RJSType_RSnapEnd::getIdStatic()) {
+                  return (RSnap*)(RSnapEnd*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4594,7 +6129,12 @@
             class RJSBasecaster_RSnapEnd_RSnapEntityBase : public RJSBasecaster_RSnapEntityBase {
             public:
               virtual RSnapEntityBase* castToBase(int t, void* vp) {
-                return (RSnapEntityBase*)(RSnapEnd*)vp;
+                if (t==RJSType_RSnapEnd::getIdStatic()) {
+                  return (RSnapEntityBase*)(RSnapEnd*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4604,7 +6144,12 @@
             class RJSBasecaster_RSnapEntityBase_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapEntityBase*)vp;
+                if (t==RJSType_RSnapEntityBase::getIdStatic()) {
+                  return (RSnap*)(RSnapEntityBase*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4614,7 +6159,12 @@
             class RJSBasecaster_RSnapFree_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapFree*)vp;
+                if (t==RJSType_RSnapFree::getIdStatic()) {
+                  return (RSnap*)(RSnapFree*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4624,7 +6174,12 @@
             class RJSBasecaster_RSnapGrid_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapGrid*)vp;
+                if (t==RJSType_RSnapGrid::getIdStatic()) {
+                  return (RSnap*)(RSnapGrid*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4634,7 +6189,12 @@
             class RJSBasecaster_RSnapIntersection_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapIntersection*)vp;
+                if (t==RJSType_RSnapIntersection::getIdStatic()) {
+                  return (RSnap*)(RSnapIntersection*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4646,7 +6206,12 @@
             class RJSBasecaster_RSnapMiddle_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapMiddle*)vp;
+                if (t==RJSType_RSnapMiddle::getIdStatic()) {
+                  return (RSnap*)(RSnapMiddle*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4654,7 +6219,12 @@
             class RJSBasecaster_RSnapMiddle_RSnapEntityBase : public RJSBasecaster_RSnapEntityBase {
             public:
               virtual RSnapEntityBase* castToBase(int t, void* vp) {
-                return (RSnapEntityBase*)(RSnapMiddle*)vp;
+                if (t==RJSType_RSnapMiddle::getIdStatic()) {
+                  return (RSnapEntityBase*)(RSnapMiddle*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4664,7 +6234,12 @@
             class RJSBasecaster_RSnapOnEntity_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapOnEntity*)vp;
+                if (t==RJSType_RSnapOnEntity::getIdStatic()) {
+                  return (RSnap*)(RSnapOnEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4672,7 +6247,12 @@
             class RJSBasecaster_RSnapOnEntity_RSnapEntityBase : public RJSBasecaster_RSnapEntityBase {
             public:
               virtual RSnapEntityBase* castToBase(int t, void* vp) {
-                return (RSnapEntityBase*)(RSnapOnEntity*)vp;
+                if (t==RJSType_RSnapOnEntity::getIdStatic()) {
+                  return (RSnapEntityBase*)(RSnapOnEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4682,7 +6262,12 @@
             class RJSBasecaster_RSnapPerpendicular_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapPerpendicular*)vp;
+                if (t==RJSType_RSnapPerpendicular::getIdStatic()) {
+                  return (RSnap*)(RSnapPerpendicular*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4690,7 +6275,12 @@
             class RJSBasecaster_RSnapPerpendicular_RSnapEntityBase : public RJSBasecaster_RSnapEntityBase {
             public:
               virtual RSnapEntityBase* castToBase(int t, void* vp) {
-                return (RSnapEntityBase*)(RSnapPerpendicular*)vp;
+                if (t==RJSType_RSnapPerpendicular::getIdStatic()) {
+                  return (RSnapEntityBase*)(RSnapPerpendicular*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4700,7 +6290,12 @@
             class RJSBasecaster_RSnapReference_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapReference*)vp;
+                if (t==RJSType_RSnapReference::getIdStatic()) {
+                  return (RSnap*)(RSnapReference*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4708,7 +6303,12 @@
             class RJSBasecaster_RSnapReference_RSnapEntityBase : public RJSBasecaster_RSnapEntityBase {
             public:
               virtual RSnapEntityBase* castToBase(int t, void* vp) {
-                return (RSnapEntityBase*)(RSnapReference*)vp;
+                if (t==RJSType_RSnapReference::getIdStatic()) {
+                  return (RSnapEntityBase*)(RSnapReference*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4720,7 +6320,12 @@
             class RJSBasecaster_RSnapTangential_RSnap : public RJSBasecaster_RSnap {
             public:
               virtual RSnap* castToBase(int t, void* vp) {
-                return (RSnap*)(RSnapTangential*)vp;
+                if (t==RJSType_RSnapTangential::getIdStatic()) {
+                  return (RSnap*)(RSnapTangential*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4728,7 +6333,12 @@
             class RJSBasecaster_RSnapTangential_RSnapEntityBase : public RJSBasecaster_RSnapEntityBase {
             public:
               virtual RSnapEntityBase* castToBase(int t, void* vp) {
-                return (RSnapEntityBase*)(RSnapTangential*)vp;
+                if (t==RJSType_RSnapTangential::getIdStatic()) {
+                  return (RSnapEntityBase*)(RSnapTangential*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4738,7 +6348,12 @@
             class RJSBasecaster_RSolidData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RSolidData*)vp;
+                if (t==RJSType_RSolidData::getIdStatic()) {
+                  return (REntityData*)(RSolidData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4746,7 +6361,12 @@
             class RJSBasecaster_RSolidData_RPolyline : public RJSBasecaster_RPolyline {
             public:
               virtual RPolyline* castToBase(int t, void* vp) {
-                return (RPolyline*)(RSolidData*)vp;
+                if (t==RJSType_RSolidData::getIdStatic()) {
+                  return (RPolyline*)(RSolidData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4756,7 +6376,12 @@
             class RJSBasecaster_RSolidEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RSolidEntity*)vp;
+                if (t==RJSType_RSolidEntity::getIdStatic()) {
+                  return (RObject*)(RSolidEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4764,7 +6389,12 @@
             class RJSBasecaster_RSolidEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RSolidEntity*)vp;
+                if (t==RJSType_RSolidEntity::getIdStatic()) {
+                  return (REntity*)(RSolidEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4776,7 +6406,12 @@
             class RJSBasecaster_RSpatialIndexNavel_RSpatialIndex : public RJSBasecaster_RSpatialIndex {
             public:
               virtual RSpatialIndex* castToBase(int t, void* vp) {
-                return (RSpatialIndex*)(RSpatialIndexNavel*)vp;
+                if (t==RJSType_RSpatialIndexNavel::getIdStatic()) {
+                  return (RSpatialIndex*)(RSpatialIndexNavel*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4786,7 +6421,12 @@
             class RJSBasecaster_RSpatialIndexSimple_RSpatialIndex : public RJSBasecaster_RSpatialIndex {
             public:
               virtual RSpatialIndex* castToBase(int t, void* vp) {
-                return (RSpatialIndex*)(RSpatialIndexSimple*)vp;
+                if (t==RJSType_RSpatialIndexSimple::getIdStatic()) {
+                  return (RSpatialIndex*)(RSpatialIndexSimple*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4798,7 +6438,12 @@
             class RJSBasecaster_RSpatialIndexVisitorAdapter_RSpatialIndexVisitor : public RJSBasecaster_RSpatialIndexVisitor {
             public:
               virtual RSpatialIndexVisitor* castToBase(int t, void* vp) {
-                return (RSpatialIndexVisitor*)(RSpatialIndexVisitorAdapter*)vp;
+                if (t==RJSType_RSpatialIndexVisitorAdapter::getIdStatic()) {
+                  return (RSpatialIndexVisitor*)(RSpatialIndexVisitorAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4808,7 +6453,12 @@
             class RJSBasecaster_RSpline_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(RSpline*)vp;
+                if (t==RJSType_RSpline::getIdStatic()) {
+                  return (RShape*)(RSpline*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4816,7 +6466,12 @@
             class RJSBasecaster_RSpline_RExplodable : public RJSBasecaster_RExplodable {
             public:
               virtual RExplodable* castToBase(int t, void* vp) {
-                return (RExplodable*)(RSpline*)vp;
+                if (t==RJSType_RSpline::getIdStatic()) {
+                  return (RExplodable*)(RSpline*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4826,7 +6481,12 @@
             class RJSBasecaster_RSplineData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RSplineData*)vp;
+                if (t==RJSType_RSplineData::getIdStatic()) {
+                  return (REntityData*)(RSplineData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4834,7 +6494,12 @@
             class RJSBasecaster_RSplineData_RSpline : public RJSBasecaster_RSpline {
             public:
               virtual RSpline* castToBase(int t, void* vp) {
-                return (RSpline*)(RSplineData*)vp;
+                if (t==RJSType_RSplineData::getIdStatic()) {
+                  return (RSpline*)(RSplineData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4844,7 +6509,12 @@
             class RJSBasecaster_RSplineEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RSplineEntity*)vp;
+                if (t==RJSType_RSplineEntity::getIdStatic()) {
+                  return (RObject*)(RSplineEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4852,7 +6522,12 @@
             class RJSBasecaster_RSplineEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RSplineEntity*)vp;
+                if (t==RJSType_RSplineEntity::getIdStatic()) {
+                  return (REntity*)(RSplineEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4866,7 +6541,12 @@
             class RJSBasecaster_RTerminateEvent_QEvent : public RJSBasecaster_QEvent {
             public:
               virtual QEvent* castToBase(int t, void* vp) {
-                return (QEvent*)(RTerminateEvent*)vp;
+                if (t==RJSType_RTerminateEvent::getIdStatic()) {
+                  return (QEvent*)(RTerminateEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4876,7 +6556,12 @@
             class RJSBasecaster_RTextBasedData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RTextBasedData*)vp;
+                if (t==RJSType_RTextBasedData::getIdStatic()) {
+                  return (REntityData*)(RTextBasedData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4884,7 +6569,12 @@
             class RJSBasecaster_RTextBasedData_RPainterPathSource : public RJSBasecaster_RPainterPathSource {
             public:
               virtual RPainterPathSource* castToBase(int t, void* vp) {
-                return (RPainterPathSource*)(RTextBasedData*)vp;
+                if (t==RJSType_RTextBasedData::getIdStatic()) {
+                  return (RPainterPathSource*)(RTextBasedData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4894,7 +6584,12 @@
             class RJSBasecaster_RTextBasedEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RTextBasedEntity*)vp;
+                if (t==RJSType_RTextBasedEntity::getIdStatic()) {
+                  return (RObject*)(RTextBasedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4902,7 +6597,12 @@
             class RJSBasecaster_RTextBasedEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RTextBasedEntity*)vp;
+                if (t==RJSType_RTextBasedEntity::getIdStatic()) {
+                  return (REntity*)(RTextBasedEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4912,7 +6612,12 @@
             class RJSBasecaster_RTextData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RTextData*)vp;
+                if (t==RJSType_RTextData::getIdStatic()) {
+                  return (REntityData*)(RTextData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4920,7 +6625,12 @@
             class RJSBasecaster_RTextData_RTextBasedData : public RJSBasecaster_RTextBasedData {
             public:
               virtual RTextBasedData* castToBase(int t, void* vp) {
-                return (RTextBasedData*)(RTextData*)vp;
+                if (t==RJSType_RTextData::getIdStatic()) {
+                  return (RTextBasedData*)(RTextData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4930,7 +6640,12 @@
             class RJSBasecaster_RTextEdit_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RTextEdit*)vp;
+                if (t==RJSType_RTextEdit::getIdStatic()) {
+                  return (QObject*)(RTextEdit*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4938,7 +6653,12 @@
             class RJSBasecaster_RTextEdit_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RTextEdit*)vp;
+                if (t==RJSType_RTextEdit::getIdStatic()) {
+                  return (QWidget*)(RTextEdit*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4946,7 +6666,12 @@
             class RJSBasecaster_RTextEdit_QFrame : public RJSBasecaster_QFrame {
             public:
               virtual QFrame* castToBase(int t, void* vp) {
-                return (QFrame*)(RTextEdit*)vp;
+                if (t==RJSType_RTextEdit::getIdStatic()) {
+                  return (QFrame*)(RTextEdit*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4954,7 +6679,12 @@
             class RJSBasecaster_RTextEdit_QAbstractScrollArea : public RJSBasecaster_QAbstractScrollArea {
             public:
               virtual QAbstractScrollArea* castToBase(int t, void* vp) {
-                return (QAbstractScrollArea*)(RTextEdit*)vp;
+                if (t==RJSType_RTextEdit::getIdStatic()) {
+                  return (QAbstractScrollArea*)(RTextEdit*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4962,7 +6692,12 @@
             class RJSBasecaster_RTextEdit_QTextEdit : public RJSBasecaster_QTextEdit {
             public:
               virtual QTextEdit* castToBase(int t, void* vp) {
-                return (QTextEdit*)(RTextEdit*)vp;
+                if (t==RJSType_RTextEdit::getIdStatic()) {
+                  return (QTextEdit*)(RTextEdit*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4970,7 +6705,12 @@
             class RJSBasecaster_RTextEdit_QTextBrowser : public RJSBasecaster_QTextBrowser {
             public:
               virtual QTextBrowser* castToBase(int t, void* vp) {
-                return (QTextBrowser*)(RTextEdit*)vp;
+                if (t==RJSType_RTextEdit::getIdStatic()) {
+                  return (QTextBrowser*)(RTextEdit*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4980,7 +6720,12 @@
             class RJSBasecaster_RTextEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RTextEntity*)vp;
+                if (t==RJSType_RTextEntity::getIdStatic()) {
+                  return (RObject*)(RTextEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4988,7 +6733,12 @@
             class RJSBasecaster_RTextEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RTextEntity*)vp;
+                if (t==RJSType_RTextEntity::getIdStatic()) {
+                  return (REntity*)(RTextEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -4996,7 +6746,12 @@
             class RJSBasecaster_RTextEntity_RTextBasedEntity : public RJSBasecaster_RTextBasedEntity {
             public:
               virtual RTextBasedEntity* castToBase(int t, void* vp) {
-                return (RTextBasedEntity*)(RTextEntity*)vp;
+                if (t==RJSType_RTextEntity::getIdStatic()) {
+                  return (RTextBasedEntity*)(RTextEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5006,7 +6761,12 @@
             class RJSBasecaster_RTextLabel_RPoint : public RJSBasecaster_RPoint {
             public:
               virtual RPoint* castToBase(int t, void* vp) {
-                return (RPoint*)(RTextLabel*)vp;
+                if (t==RJSType_RTextLabel::getIdStatic()) {
+                  return (RPoint*)(RTextLabel*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5020,7 +6780,12 @@
             class RJSBasecaster_RToleranceData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RToleranceData*)vp;
+                if (t==RJSType_RToleranceData::getIdStatic()) {
+                  return (REntityData*)(RToleranceData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5030,7 +6795,12 @@
             class RJSBasecaster_RToleranceEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RToleranceEntity*)vp;
+                if (t==RJSType_RToleranceEntity::getIdStatic()) {
+                  return (RObject*)(RToleranceEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5038,7 +6808,12 @@
             class RJSBasecaster_RToleranceEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RToleranceEntity*)vp;
+                if (t==RJSType_RToleranceEntity::getIdStatic()) {
+                  return (REntity*)(RToleranceEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5048,7 +6823,12 @@
             class RJSBasecaster_RToolButton_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RToolButton*)vp;
+                if (t==RJSType_RToolButton::getIdStatic()) {
+                  return (QObject*)(RToolButton*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5056,7 +6836,12 @@
             class RJSBasecaster_RToolButton_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RToolButton*)vp;
+                if (t==RJSType_RToolButton::getIdStatic()) {
+                  return (QWidget*)(RToolButton*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5064,7 +6849,12 @@
             class RJSBasecaster_RToolButton_QToolButton : public RJSBasecaster_QToolButton {
             public:
               virtual QToolButton* castToBase(int t, void* vp) {
-                return (QToolButton*)(RToolButton*)vp;
+                if (t==RJSType_RToolButton::getIdStatic()) {
+                  return (QToolButton*)(RToolButton*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5074,7 +6864,12 @@
             class RJSBasecaster_RToolMatrixItemDelegate_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RToolMatrixItemDelegate*)vp;
+                if (t==RJSType_RToolMatrixItemDelegate::getIdStatic()) {
+                  return (QObject*)(RToolMatrixItemDelegate*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5082,7 +6877,12 @@
             class RJSBasecaster_RToolMatrixItemDelegate_QAbstractItemDelegate : public RJSBasecaster_QAbstractItemDelegate {
             public:
               virtual QAbstractItemDelegate* castToBase(int t, void* vp) {
-                return (QAbstractItemDelegate*)(RToolMatrixItemDelegate*)vp;
+                if (t==RJSType_RToolMatrixItemDelegate::getIdStatic()) {
+                  return (QAbstractItemDelegate*)(RToolMatrixItemDelegate*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5090,7 +6890,12 @@
             class RJSBasecaster_RToolMatrixItemDelegate_QItemDelegate : public RJSBasecaster_QItemDelegate {
             public:
               virtual QItemDelegate* castToBase(int t, void* vp) {
-                return (QItemDelegate*)(RToolMatrixItemDelegate*)vp;
+                if (t==RJSType_RToolMatrixItemDelegate::getIdStatic()) {
+                  return (QItemDelegate*)(RToolMatrixItemDelegate*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5100,7 +6905,12 @@
             class RJSBasecaster_RTraceData_RSolidData : public RJSBasecaster_RSolidData {
             public:
               virtual RSolidData* castToBase(int t, void* vp) {
-                return (RSolidData*)(RTraceData*)vp;
+                if (t==RJSType_RTraceData::getIdStatic()) {
+                  return (RSolidData*)(RTraceData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5110,7 +6920,12 @@
             class RJSBasecaster_RTraceEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RTraceEntity*)vp;
+                if (t==RJSType_RTraceEntity::getIdStatic()) {
+                  return (RObject*)(RTraceEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5118,7 +6933,12 @@
             class RJSBasecaster_RTraceEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RTraceEntity*)vp;
+                if (t==RJSType_RTraceEntity::getIdStatic()) {
+                  return (REntity*)(RTraceEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5132,7 +6952,12 @@
             class RJSBasecaster_RTransactionListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RTransactionListenerAdapter*)vp;
+                if (t==RJSType_RTransactionListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RTransactionListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5140,7 +6965,12 @@
             class RJSBasecaster_RTransactionListenerAdapter_RTransactionListener : public RJSBasecaster_RTransactionListener {
             public:
               virtual RTransactionListener* castToBase(int t, void* vp) {
-                return (RTransactionListener*)(RTransactionListenerAdapter*)vp;
+                if (t==RJSType_RTransactionListenerAdapter::getIdStatic()) {
+                  return (RTransactionListener*)(RTransactionListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5152,7 +6982,12 @@
             class RJSBasecaster_RTransform_QTransform : public RJSBasecaster_QTransform {
             public:
               virtual QTransform* castToBase(int t, void* vp) {
-                return (QTransform*)(RTransform*)vp;
+                if (t==RJSType_RTransform::getIdStatic()) {
+                  return (QTransform*)(RTransform*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5166,7 +7001,12 @@
             class RJSBasecaster_RTranslation_RTransformation : public RJSBasecaster_RTransformation {
             public:
               virtual RTransformation* castToBase(int t, void* vp) {
-                return (RTransformation*)(RTranslation*)vp;
+                if (t==RJSType_RTranslation::getIdStatic()) {
+                  return (RTransformation*)(RTranslation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5176,7 +7016,12 @@
             class RJSBasecaster_RTreeWidget_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RTreeWidget*)vp;
+                if (t==RJSType_RTreeWidget::getIdStatic()) {
+                  return (QObject*)(RTreeWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5184,7 +7029,12 @@
             class RJSBasecaster_RTreeWidget_QPaintDevice : public RJSBasecaster_QPaintDevice {
             public:
               virtual QPaintDevice* castToBase(int t, void* vp) {
-                return (QPaintDevice*)(RTreeWidget*)vp;
+                if (t==RJSType_RTreeWidget::getIdStatic()) {
+                  return (QPaintDevice*)(RTreeWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5192,7 +7042,12 @@
             class RJSBasecaster_RTreeWidget_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RTreeWidget*)vp;
+                if (t==RJSType_RTreeWidget::getIdStatic()) {
+                  return (QWidget*)(RTreeWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5200,7 +7055,12 @@
             class RJSBasecaster_RTreeWidget_QFrame : public RJSBasecaster_QFrame {
             public:
               virtual QFrame* castToBase(int t, void* vp) {
-                return (QFrame*)(RTreeWidget*)vp;
+                if (t==RJSType_RTreeWidget::getIdStatic()) {
+                  return (QFrame*)(RTreeWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5208,7 +7068,12 @@
             class RJSBasecaster_RTreeWidget_QAbstractScrollArea : public RJSBasecaster_QAbstractScrollArea {
             public:
               virtual QAbstractScrollArea* castToBase(int t, void* vp) {
-                return (QAbstractScrollArea*)(RTreeWidget*)vp;
+                if (t==RJSType_RTreeWidget::getIdStatic()) {
+                  return (QAbstractScrollArea*)(RTreeWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5216,7 +7081,12 @@
             class RJSBasecaster_RTreeWidget_QAbstractItemView : public RJSBasecaster_QAbstractItemView {
             public:
               virtual QAbstractItemView* castToBase(int t, void* vp) {
-                return (QAbstractItemView*)(RTreeWidget*)vp;
+                if (t==RJSType_RTreeWidget::getIdStatic()) {
+                  return (QAbstractItemView*)(RTreeWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5224,7 +7094,12 @@
             class RJSBasecaster_RTreeWidget_QTreeView : public RJSBasecaster_QTreeView {
             public:
               virtual QTreeView* castToBase(int t, void* vp) {
-                return (QTreeView*)(RTreeWidget*)vp;
+                if (t==RJSType_RTreeWidget::getIdStatic()) {
+                  return (QTreeView*)(RTreeWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5232,7 +7107,12 @@
             class RJSBasecaster_RTreeWidget_QTreeWidget : public RJSBasecaster_QTreeWidget {
             public:
               virtual QTreeWidget* castToBase(int t, void* vp) {
-                return (QTreeWidget*)(RTreeWidget*)vp;
+                if (t==RJSType_RTreeWidget::getIdStatic()) {
+                  return (QTreeWidget*)(RTreeWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5242,7 +7122,12 @@
             class RJSBasecaster_RTriangle_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(RTriangle*)vp;
+                if (t==RJSType_RTriangle::getIdStatic()) {
+                  return (RShape*)(RTriangle*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5250,7 +7135,12 @@
             class RJSBasecaster_RTriangle_RExplodable : public RJSBasecaster_RExplodable {
             public:
               virtual RExplodable* castToBase(int t, void* vp) {
-                return (RExplodable*)(RTriangle*)vp;
+                if (t==RJSType_RTriangle::getIdStatic()) {
+                  return (RExplodable*)(RTriangle*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5260,7 +7150,12 @@
             class RJSBasecaster_RUcs_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RUcs*)vp;
+                if (t==RJSType_RUcs::getIdStatic()) {
+                  return (RObject*)(RUcs*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5276,7 +7171,12 @@
             class RJSBasecaster_RView_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RView*)vp;
+                if (t==RJSType_RView::getIdStatic()) {
+                  return (RObject*)(RView*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5288,7 +7188,12 @@
             class RJSBasecaster_RViewFocusListenerAdapter_RViewFocusListener : public RJSBasecaster_RViewFocusListener {
             public:
               virtual RViewFocusListener* castToBase(int t, void* vp) {
-                return (RViewFocusListener*)(RViewFocusListenerAdapter*)vp;
+                if (t==RJSType_RViewFocusListenerAdapter::getIdStatic()) {
+                  return (RViewFocusListener*)(RViewFocusListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5300,7 +7205,12 @@
             class RJSBasecaster_RViewListenerAdapter_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RViewListenerAdapter*)vp;
+                if (t==RJSType_RViewListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RViewListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5308,7 +7218,12 @@
             class RJSBasecaster_RViewListenerAdapter_RViewListener : public RJSBasecaster_RViewListener {
             public:
               virtual RViewListener* castToBase(int t, void* vp) {
-                return (RViewListener*)(RViewListenerAdapter*)vp;
+                if (t==RJSType_RViewListenerAdapter::getIdStatic()) {
+                  return (RViewListener*)(RViewListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5318,7 +7233,12 @@
             class RJSBasecaster_RViewportData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RViewportData*)vp;
+                if (t==RJSType_RViewportData::getIdStatic()) {
+                  return (REntityData*)(RViewportData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5326,7 +7246,12 @@
             class RJSBasecaster_RViewportData_RPoint : public RJSBasecaster_RPoint {
             public:
               virtual RPoint* castToBase(int t, void* vp) {
-                return (RPoint*)(RViewportData*)vp;
+                if (t==RJSType_RViewportData::getIdStatic()) {
+                  return (RPoint*)(RViewportData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5336,7 +7261,12 @@
             class RJSBasecaster_RViewportEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RViewportEntity*)vp;
+                if (t==RJSType_RViewportEntity::getIdStatic()) {
+                  return (RObject*)(RViewportEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5344,7 +7274,12 @@
             class RJSBasecaster_RViewportEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RViewportEntity*)vp;
+                if (t==RJSType_RViewportEntity::getIdStatic()) {
+                  return (REntity*)(RViewportEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5354,7 +7289,12 @@
             class RJSBasecaster_RWheelEvent_QEvent : public RJSBasecaster_QEvent {
             public:
               virtual QEvent* castToBase(int t, void* vp) {
-                return (QEvent*)(RWheelEvent*)vp;
+                if (t==RJSType_RWheelEvent::getIdStatic()) {
+                  return (QEvent*)(RWheelEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5362,7 +7302,12 @@
             class RJSBasecaster_RWheelEvent_QInputEvent : public RJSBasecaster_QInputEvent {
             public:
               virtual QInputEvent* castToBase(int t, void* vp) {
-                return (QInputEvent*)(RWheelEvent*)vp;
+                if (t==RJSType_RWheelEvent::getIdStatic()) {
+                  return (QInputEvent*)(RWheelEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5370,7 +7315,12 @@
             class RJSBasecaster_RWheelEvent_QPointerEvent : public RJSBasecaster_QPointerEvent {
             public:
               virtual QPointerEvent* castToBase(int t, void* vp) {
-                return (QPointerEvent*)(RWheelEvent*)vp;
+                if (t==RJSType_RWheelEvent::getIdStatic()) {
+                  return (QPointerEvent*)(RWheelEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5378,7 +7328,12 @@
             class RJSBasecaster_RWheelEvent_QSinglePointEvent : public RJSBasecaster_QSinglePointEvent {
             public:
               virtual QSinglePointEvent* castToBase(int t, void* vp) {
-                return (QSinglePointEvent*)(RWheelEvent*)vp;
+                if (t==RJSType_RWheelEvent::getIdStatic()) {
+                  return (QSinglePointEvent*)(RWheelEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5386,7 +7341,12 @@
             class RJSBasecaster_RWheelEvent_QWheelEvent : public RJSBasecaster_QWheelEvent {
             public:
               virtual QWheelEvent* castToBase(int t, void* vp) {
-                return (QWheelEvent*)(RWheelEvent*)vp;
+                if (t==RJSType_RWheelEvent::getIdStatic()) {
+                  return (QWheelEvent*)(RWheelEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5394,7 +7354,12 @@
             class RJSBasecaster_RWheelEvent_RInputEvent : public RJSBasecaster_RInputEvent {
             public:
               virtual RInputEvent* castToBase(int t, void* vp) {
-                return (RInputEvent*)(RWheelEvent*)vp;
+                if (t==RJSType_RWheelEvent::getIdStatic()) {
+                  return (RInputEvent*)(RWheelEvent*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5404,7 +7369,12 @@
             class RJSBasecaster_RWidget_QObject : public RJSBasecaster_QObject {
             public:
               virtual QObject* castToBase(int t, void* vp) {
-                return (QObject*)(RWidget*)vp;
+                if (t==RJSType_RWidget::getIdStatic()) {
+                  return (QObject*)(RWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5412,7 +7382,12 @@
             class RJSBasecaster_RWidget_QWidget : public RJSBasecaster_QWidget {
             public:
               virtual QWidget* castToBase(int t, void* vp) {
-                return (QWidget*)(RWidget*)vp;
+                if (t==RJSType_RWidget::getIdStatic()) {
+                  return (QWidget*)(RWidget*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5422,7 +7397,12 @@
             class RJSBasecaster_RXLine_RShape : public RJSBasecaster_RShape {
             public:
               virtual RShape* castToBase(int t, void* vp) {
-                return (RShape*)(RXLine*)vp;
+                if (t==RJSType_RXLine::getIdStatic()) {
+                  return (RShape*)(RXLine*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5432,7 +7412,12 @@
             class RJSBasecaster_RXLineData_REntityData : public RJSBasecaster_REntityData {
             public:
               virtual REntityData* castToBase(int t, void* vp) {
-                return (REntityData*)(RXLineData*)vp;
+                if (t==RJSType_RXLineData::getIdStatic()) {
+                  return (REntityData*)(RXLineData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5440,7 +7425,12 @@
             class RJSBasecaster_RXLineData_RXLine : public RJSBasecaster_RXLine {
             public:
               virtual RXLine* castToBase(int t, void* vp) {
-                return (RXLine*)(RXLineData*)vp;
+                if (t==RJSType_RXLineData::getIdStatic()) {
+                  return (RXLine*)(RXLineData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5450,7 +7440,12 @@
             class RJSBasecaster_RXLineEntity_RObject : public RJSBasecaster_RObject {
             public:
               virtual RObject* castToBase(int t, void* vp) {
-                return (RObject*)(RXLineEntity*)vp;
+                if (t==RJSType_RXLineEntity::getIdStatic()) {
+                  return (RObject*)(RXLineEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5458,7 +7453,12 @@
             class RJSBasecaster_RXLineEntity_REntity : public RJSBasecaster_REntity {
             public:
               virtual REntity* castToBase(int t, void* vp) {
-                return (REntity*)(RXLineEntity*)vp;
+                if (t==RJSType_RXLineEntity::getIdStatic()) {
+                  return (REntity*)(RXLineEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
               }
             };
           
@@ -5904,6 +7904,10 @@
       static QSharedPointer<RXLine> js2cpp_QSharedPointer_RXLine(RJSApi& handler, const QJSValue& v);
       static bool is_QSharedPointer_RXLine(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QSharedPointer_RTextLabel(RJSApi& handler, const QSharedPointer<RTextLabel>& v);
+      static QSharedPointer<RTextLabel> js2cpp_QSharedPointer_RTextLabel(RJSApi& handler, const QJSValue& v);
+      static bool is_QSharedPointer_RTextLabel(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
   // ------------------------------------
   // QSharedPointer types (non-copyable):
   // ------------------------------------
@@ -6059,6 +8063,10 @@
       static QJSValue cpp2js_QSharedPointer_RTextEntity(RJSApi& handler, const QSharedPointer<RTextEntity>& v);
       static QSharedPointer<RTextEntity> js2cpp_QSharedPointer_RTextEntity(RJSApi& handler, const QJSValue& v);
       static bool is_QSharedPointer_RTextEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSharedPointer_RTextBasedEntity(RJSApi& handler, const QSharedPointer<RTextBasedEntity>& v);
+      static QSharedPointer<RTextBasedEntity> js2cpp_QSharedPointer_RTextBasedEntity(RJSApi& handler, const QJSValue& v);
+      static bool is_QSharedPointer_RTextBasedEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QSharedPointer_RToleranceEntity(RJSApi& handler, const QSharedPointer<RToleranceEntity>& v);
       static QSharedPointer<RToleranceEntity> js2cpp_QSharedPointer_RToleranceEntity(RJSApi& handler, const QJSValue& v);

@@ -288,7 +288,7 @@
         static RLayerState* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast to other base types:
+          // hook for modules to cast from other types to base RLayerState:
           for (int i=0; i<basecasters_RLayerState.length(); i++) {
             RJSBasecaster_RLayerState* basecaster = basecasters_RLayerState[i];
             RLayerState* ret = basecaster->castToBase(t, vp);
@@ -297,7 +297,7 @@
             }
           }
 
-          // pointer to desired type:
+          // object is a pointer to base class RLayerState:
           if (t==RJSType_RLayerState::getIdStatic()) {
             return (RLayerState*)vp;
           }
