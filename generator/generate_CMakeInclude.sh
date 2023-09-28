@@ -1,1 +1,1 @@
-/Users/andrew/data/RibbonSoft/projects/QCAD4/rjsapi/generator/generate_CMakeInclude.sh
+../../rjsapi/generator/generate_CMakeInclude.sh

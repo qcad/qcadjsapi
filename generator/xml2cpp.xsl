@@ -1,1 +1,1 @@
-/Users/andrew/data/RibbonSoft/projects/QCAD4/rjsapi/generator/xml2cpp.xsl
+../../rjsapi/generator/xml2cpp.xsl

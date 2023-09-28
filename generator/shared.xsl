@@ -1,1 +1,1 @@
-/Users/andrew/data/RibbonSoft/projects/QCAD4/rjsapi/generator/shared.xsl
+../../rjsapi/generator/shared.xsl
