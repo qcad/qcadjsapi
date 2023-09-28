@@ -163,6 +163,7 @@
     <file alias="generator/js/ROperationUtils.js">generator/js/ROperationUtils.js</file>
     <file alias="generator/js/ROrthoGrid.js">generator/js/ROrthoGrid.js</file>
     <file alias="generator/js/RPainterPath.js">generator/js/RPainterPath.js</file>
+    <file alias="generator/js/RPainterPathSource.js">generator/js/RPainterPathSource.js</file>
     <file alias="generator/js/RPaletteListener.js">generator/js/RPaletteListener.js</file>
     <file alias="generator/js/RPaletteListenerAdapter.js">generator/js/RPaletteListenerAdapter.js</file>
     <file alias="generator/js/RPasteOperation.js">generator/js/RPasteOperation.js</file>

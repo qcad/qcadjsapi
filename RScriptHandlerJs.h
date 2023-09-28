@@ -79,6 +79,10 @@ public:
         return engine;
     }
 
+    RJSApi* getRJSApi() {
+        return rjsapi;
+    }
+
     void trace() {
         engine->evaluate("console.trace();");
     }

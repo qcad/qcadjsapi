@@ -56,10 +56,6 @@
     <type>RPainterPath::Mode</type>
     <type>RPluginInterface::InitStatus</type>
     <type>RPointEntity::Id</type>
-    <!--
-    <type>RPolygonOffset::IntersectionType</type>
-    <type>RPolygonOffset::Warnings</type>
-    -->
     <type>RPolylineEntity::Id</type>
     <type>RPropertyAttributes::Option</type>
     <type>RPropertyAttributes::Options</type>
@@ -223,14 +219,8 @@
     <type>RPluginLoader</type>
     <type>RPoint</type>
     <type>RPointData</type>
-    <!--
-    <type>RPolygonOffset</type>
-    -->
     <type>RPolyline</type>
     <type>RPolylineData</type>
-    <!--
-    <type>RProj</type>
-    -->
     <type>RPropertyAttributes</type>
     <type>RPropertyChange</type>
     <type>RPropertyEditor</type>
@@ -242,9 +232,6 @@
     <type>RSettings</type>
     <type>RSolidData</type>
     <type>RSpatialIndexNavel</type>
-    <!--
-    <type>RSpatialIndexPro</type>
-    -->
     <type>RSpatialIndexVisitorAdapter</type>
     <type>RSpline</type>
     <type>RSplineData</type>
@@ -253,9 +240,6 @@
     <type>RTextLabel</type>
     <type>RTextLayout</type>
     <type>RToleranceData</type>
-    <!--
-    <type>RTraceBitmap</type>
-    -->
     <type>RTraceData</type>
     <type>RTransaction</type>
     <type>RTransform</type>
@@ -442,17 +426,8 @@
     <type>RFontChooserWidget</type>
     <type>RGraphicsViewQt</type>
     <type>RGraphicsViewImage</type>
-    <!--
-    <type>RGraphicsViewSkia</type>
-    -->
     <type>RGuiAction</type>
-    <!--
-    <type>RHelpBrowser</type>
-    -->
     <type>RInterTransactionListenerAdapter</type>
-    <!--
-    <type>RJSType</type>
-    -->
     <type>RKeyListenerAdapter</type>
     <type>RLayerListenerAdapter</type>
     <type>RLinetypeCombo</type>
@@ -493,9 +468,6 @@
     <type>QList&lt;RObject::Id&gt;</type>
     <type>QList&lt;RPainterPath&gt;</type>
     <type>QList&lt;RPatternLine&gt;</type>
-    <!--
-    <type>QList&lt;RPolygonOffset::Warnings&gt;</type>
-    -->
     <type>QList&lt;RPolyline&gt;</type>
     <type>QList&lt;RPropertyChange&gt;</type>
     <type>QList&lt;RPropertyTypeId&gt;</type>
