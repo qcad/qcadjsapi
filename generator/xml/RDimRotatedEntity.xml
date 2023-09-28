@@ -6,8 +6,8 @@
     <super_list>
       <super name="RObject" />
       <super name="REntity" downcast="true" />
-      <super name="RDimensionEntity" />
-      <super name="RDimLinearEntity" />
+      <super name="RDimensionEntity" downcast="true" />
+      <super name="RDimLinearEntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />

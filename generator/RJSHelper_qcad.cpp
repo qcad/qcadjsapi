@@ -7318,6 +7318,22 @@
 
       QSharedPointer<RDimLinearEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimLinearEntity(RJSApi& handler, const QJSValue& v) {
 
+          
+            {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              int t = wrapper->getWrappedType();
+
+              // attempt to downcast to specific type:
+              
+                if (RJSType_RDimAlignedEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAlignedEntity(handler, v);
+                }
+              
+                if (RJSType_RDimRotatedEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRotatedEntity(handler, v);
+                }
+              
+            }
           RDimLinearEntity_Wrapper* wrapper = getWrapper<RDimLinearEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimLinearEntity: no wrapper";
@@ -7598,6 +7614,54 @@
 
       QSharedPointer<RDimensionEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimensionEntity(RJSApi& handler, const QJSValue& v) {
 
+          
+            {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              int t = wrapper->getWrappedType();
+
+              // attempt to downcast to specific type:
+              
+                if (RJSType_RDimAlignedEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAlignedEntity(handler, v);
+                }
+              
+                if (RJSType_RDimAngular2LEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular2LEntity(handler, v);
+                }
+              
+                if (RJSType_RDimAngular3PEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular3PEntity(handler, v);
+                }
+              
+                if (RJSType_RDimAngularEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngularEntity(handler, v);
+                }
+              
+                if (RJSType_RDimArcLengthEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimArcLengthEntity(handler, v);
+                }
+              
+                if (RJSType_RDimDiametricEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimDiametricEntity(handler, v);
+                }
+              
+                if (RJSType_RDimLinearEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimLinearEntity(handler, v);
+                }
+              
+                if (RJSType_RDimOrdinateEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimOrdinateEntity(handler, v);
+                }
+              
+                if (RJSType_RDimRadialEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRadialEntity(handler, v);
+                }
+              
+                if (RJSType_RDimRotatedEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRotatedEntity(handler, v);
+                }
+              
+            }
           RDimensionEntity_Wrapper* wrapper = getWrapper<RDimensionEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimensionEntity: no wrapper";
@@ -8662,6 +8726,26 @@
 
       QSharedPointer<RTextBasedEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RTextBasedEntity(RJSApi& handler, const QJSValue& v) {
 
+          
+            {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              int t = wrapper->getWrappedType();
+
+              // attempt to downcast to specific type:
+              
+                if (RJSType_RAttributeDefinitionEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeDefinitionEntity(handler, v);
+                }
+              
+                if (RJSType_RAttributeEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeEntity(handler, v);
+                }
+              
+                if (RJSType_RTextEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RTextEntity(handler, v);
+                }
+              
+            }
           RTextBasedEntity_Wrapper* wrapper = getWrapper<RTextBasedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RTextBasedEntity: no wrapper";

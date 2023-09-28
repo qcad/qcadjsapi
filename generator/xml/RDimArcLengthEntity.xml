@@ -7,7 +7,7 @@ filename="RDimArcLengthEntity.h">
     <super_list>
       <super name="RObject" />
       <super name="REntity" downcast="true" />
-      <super name="RDimensionEntity" />
+      <super name="RDimensionEntity" downcast="true" />
       <super name="RDimAngularEntity" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />

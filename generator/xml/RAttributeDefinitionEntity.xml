@@ -7,7 +7,7 @@ filename="RAttributeDefinitionEntity.h">
     <super_list>
       <super name="RObject" />
       <super name="REntity" downcast="true" />
-      <super name="RTextBasedEntity" />
+      <super name="RTextBasedEntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
