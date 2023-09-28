@@ -575,8 +575,11 @@ RScriptHandlerJs::~RScriptHandlerJs() {
     QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
     qDebug() << "collect garbage: DONE";
 
+    delete rjsapi;
+
     qDebug() << "delete engine:" << (unsigned long long int)engine << "...";
     delete engine;
+    engine = nullptr;
     qDebug() << "delete engine:" << (unsigned long long int)engine << " DONE";
 }
 
