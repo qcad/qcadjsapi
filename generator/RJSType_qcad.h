@@ -42,6 +42,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -80,6 +84,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -114,6 +122,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -148,6 +160,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -182,6 +198,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -216,6 +236,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -250,6 +274,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -284,6 +312,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -318,6 +350,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -352,6 +388,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -386,6 +426,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -420,6 +464,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -454,6 +502,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -490,6 +542,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -524,6 +580,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -558,6 +618,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -592,6 +656,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -626,6 +694,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -660,6 +732,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -694,6 +770,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -728,6 +808,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -762,6 +846,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -796,6 +884,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -830,6 +922,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -864,6 +960,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -898,6 +998,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -932,6 +1036,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -966,6 +1074,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1000,6 +1112,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1034,6 +1150,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1068,6 +1188,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1102,6 +1226,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1136,6 +1264,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1170,6 +1302,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1204,6 +1340,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1238,6 +1378,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1272,6 +1416,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1306,6 +1454,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1340,6 +1492,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1374,6 +1530,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1408,6 +1568,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1442,6 +1606,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1476,6 +1644,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1510,6 +1682,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1544,6 +1720,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1578,6 +1758,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1612,6 +1796,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1646,6 +1834,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1680,6 +1872,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1714,6 +1910,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1748,6 +1948,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1782,6 +1986,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1816,6 +2024,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1850,6 +2062,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1884,6 +2100,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1918,6 +2138,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1952,6 +2176,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -1986,6 +2214,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2022,6 +2254,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2056,6 +2292,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2090,6 +2330,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2124,6 +2368,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2158,6 +2406,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2192,6 +2444,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2226,6 +2482,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2260,6 +2520,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2294,6 +2558,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2328,6 +2596,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2362,6 +2634,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2396,6 +2672,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2430,6 +2710,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2464,6 +2748,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2498,6 +2786,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2532,6 +2824,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2566,6 +2862,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2600,6 +2900,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2634,6 +2938,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2668,6 +2976,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2702,6 +3014,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2736,6 +3052,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2770,6 +3090,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2804,6 +3128,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2838,6 +3166,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2872,6 +3204,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2906,6 +3242,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2940,6 +3280,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -2974,6 +3318,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3008,6 +3356,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3042,6 +3394,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3076,6 +3432,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3110,6 +3470,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3144,6 +3508,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3178,6 +3546,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3212,6 +3584,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3246,6 +3622,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3280,6 +3660,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3314,6 +3698,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3348,6 +3736,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3382,6 +3774,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3416,6 +3812,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3450,6 +3850,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3484,6 +3888,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3518,6 +3926,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3552,6 +3964,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3586,6 +4002,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3620,6 +4040,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3654,6 +4078,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3688,6 +4116,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3722,6 +4154,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3756,6 +4192,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3790,6 +4230,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3824,6 +4268,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3858,6 +4306,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3892,6 +4344,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3926,6 +4382,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3960,6 +4420,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -3994,6 +4458,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4028,6 +4496,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4062,6 +4534,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4096,6 +4572,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4130,6 +4610,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4164,6 +4648,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4198,6 +4686,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4232,6 +4724,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4266,6 +4762,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4300,6 +4800,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4334,6 +4838,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4368,6 +4876,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4402,6 +4914,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4436,6 +4952,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4470,6 +4990,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4504,6 +5028,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4538,6 +5066,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4574,6 +5106,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4608,6 +5144,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4642,6 +5182,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4676,6 +5220,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4710,6 +5258,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4744,6 +5296,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4778,6 +5334,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4812,6 +5372,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4846,6 +5410,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4880,6 +5448,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4914,6 +5486,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4948,6 +5524,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -4982,6 +5562,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5016,6 +5600,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5050,6 +5638,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5084,6 +5676,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5118,6 +5714,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5152,6 +5752,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5186,6 +5790,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5220,6 +5828,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5254,6 +5866,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5288,6 +5904,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5322,6 +5942,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5356,6 +5980,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5390,6 +6018,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5424,6 +6056,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5458,6 +6094,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5492,6 +6132,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5526,6 +6170,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5560,6 +6208,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5594,6 +6246,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5628,6 +6284,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5662,6 +6322,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5696,6 +6360,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5730,6 +6398,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5764,6 +6436,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5798,6 +6474,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5832,6 +6512,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5866,6 +6550,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5900,6 +6588,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5934,6 +6626,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -5968,6 +6664,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6002,6 +6702,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6036,6 +6740,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6070,6 +6778,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6104,6 +6816,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6138,6 +6854,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6172,6 +6892,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6206,6 +6930,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6240,6 +6968,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6274,6 +7006,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6308,6 +7044,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6342,6 +7082,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6376,6 +7120,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6410,6 +7158,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6444,6 +7196,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6478,6 +7234,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6512,6 +7272,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6546,6 +7310,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6580,6 +7348,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6614,6 +7386,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6648,6 +7424,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6682,6 +7462,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6716,6 +7500,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6750,6 +7538,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6784,6 +7576,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6818,6 +7614,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6852,6 +7652,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6886,6 +7690,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6920,6 +7728,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6954,6 +7766,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -6988,6 +7804,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7022,6 +7842,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7056,6 +7880,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7090,6 +7918,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7124,6 +7956,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7158,6 +7994,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7192,6 +8032,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7226,6 +8070,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7260,6 +8108,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7294,6 +8146,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7328,6 +8184,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7362,6 +8222,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7396,6 +8260,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7430,6 +8298,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7464,6 +8336,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7498,6 +8374,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7532,6 +8412,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7566,6 +8450,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7600,6 +8488,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7634,6 +8526,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7668,6 +8564,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7702,6 +8602,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7736,6 +8640,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7770,6 +8678,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7804,6 +8716,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7838,6 +8754,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7872,6 +8792,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7906,6 +8830,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7940,6 +8868,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -7974,6 +8906,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8008,6 +8944,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8042,6 +8982,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8076,6 +9020,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8112,6 +9060,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8146,6 +9098,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8180,6 +9136,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8214,6 +9174,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8248,6 +9212,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8282,6 +9250,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8316,6 +9288,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8350,6 +9326,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8384,6 +9364,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8418,6 +9402,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8452,6 +9440,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8486,6 +9478,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8520,6 +9516,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8554,6 +9554,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8588,6 +9592,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8622,6 +9630,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8656,6 +9668,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8690,6 +9706,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8724,6 +9744,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8758,6 +9782,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8792,6 +9820,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8826,6 +9858,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8860,6 +9896,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8894,6 +9934,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8928,6 +9972,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8962,6 +10010,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -8996,6 +10048,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9030,6 +10086,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9064,6 +10124,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9098,6 +10162,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9132,6 +10200,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9166,6 +10238,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9200,6 +10276,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9234,6 +10314,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9268,6 +10352,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9302,6 +10390,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9336,6 +10428,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9370,6 +10466,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9404,6 +10504,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9438,6 +10542,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9472,6 +10580,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9506,6 +10618,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;
@@ -9540,6 +10656,10 @@
               return id;
           }
 
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
 
       private:
           static int id;

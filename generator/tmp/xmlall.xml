@@ -13652,7 +13652,7 @@
   </class>
   <class name="REntity" ownership="cpp" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />

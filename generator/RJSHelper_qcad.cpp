@@ -5536,135 +5536,135 @@
 
               // attempt to downcast to specific type:
               
-                if (t==RJSType_RArcEntity::getIdStatic()) {
+                if (RJSType_RArcEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RArcEntity(handler, v);
                 }
               
-                if (t==RJSType_RAttributeDefinitionEntity::getIdStatic()) {
+                if (RJSType_RAttributeDefinitionEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeDefinitionEntity(handler, v);
                 }
               
-                if (t==RJSType_RAttributeEntity::getIdStatic()) {
+                if (RJSType_RAttributeEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeEntity(handler, v);
                 }
               
-                if (t==RJSType_RBlockReferenceEntity::getIdStatic()) {
+                if (RJSType_RBlockReferenceEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RBlockReferenceEntity(handler, v);
                 }
               
-                if (t==RJSType_RCircleEntity::getIdStatic()) {
+                if (RJSType_RCircleEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RCircleEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimAlignedEntity::getIdStatic()) {
+                if (RJSType_RDimAlignedEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAlignedEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimAngular2LEntity::getIdStatic()) {
+                if (RJSType_RDimAngular2LEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular2LEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimAngular3PEntity::getIdStatic()) {
+                if (RJSType_RDimAngular3PEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular3PEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimAngularEntity::getIdStatic()) {
+                if (RJSType_RDimAngularEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngularEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimArcLengthEntity::getIdStatic()) {
+                if (RJSType_RDimArcLengthEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimArcLengthEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimDiametricEntity::getIdStatic()) {
+                if (RJSType_RDimDiametricEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimDiametricEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimLinearEntity::getIdStatic()) {
+                if (RJSType_RDimLinearEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimLinearEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimOrdinateEntity::getIdStatic()) {
+                if (RJSType_RDimOrdinateEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimOrdinateEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimRadialEntity::getIdStatic()) {
+                if (RJSType_RDimRadialEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRadialEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimRotatedEntity::getIdStatic()) {
+                if (RJSType_RDimRotatedEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRotatedEntity(handler, v);
                 }
               
-                if (t==RJSType_RDimensionEntity::getIdStatic()) {
+                if (RJSType_RDimensionEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimensionEntity(handler, v);
                 }
               
-                if (t==RJSType_REllipseEntity::getIdStatic()) {
+                if (RJSType_REllipseEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_REllipseEntity(handler, v);
                 }
               
-                if (t==RJSType_RFaceEntity::getIdStatic()) {
+                if (RJSType_RFaceEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RFaceEntity(handler, v);
                 }
               
-                if (t==RJSType_RHatchEntity::getIdStatic()) {
+                if (RJSType_RHatchEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RHatchEntity(handler, v);
                 }
               
-                if (t==RJSType_RImageEntity::getIdStatic()) {
+                if (RJSType_RImageEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RImageEntity(handler, v);
                 }
               
-                if (t==RJSType_RLeaderEntity::getIdStatic()) {
+                if (RJSType_RLeaderEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLeaderEntity(handler, v);
                 }
               
-                if (t==RJSType_RLineEntity::getIdStatic()) {
+                if (RJSType_RLineEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLineEntity(handler, v);
                 }
               
-                if (t==RJSType_RPointEntity::getIdStatic()) {
+                if (RJSType_RPointEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RPointEntity(handler, v);
                 }
               
-                if (t==RJSType_RPolylineEntity::getIdStatic()) {
+                if (RJSType_RPolylineEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RPolylineEntity(handler, v);
                 }
               
-                if (t==RJSType_RRayEntity::getIdStatic()) {
+                if (RJSType_RRayEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RRayEntity(handler, v);
                 }
               
-                if (t==RJSType_RSolidEntity::getIdStatic()) {
+                if (RJSType_RSolidEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RSolidEntity(handler, v);
                 }
               
-                if (t==RJSType_RSplineEntity::getIdStatic()) {
+                if (RJSType_RSplineEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RSplineEntity(handler, v);
                 }
               
-                if (t==RJSType_RTextBasedEntity::getIdStatic()) {
+                if (RJSType_RTextBasedEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RTextBasedEntity(handler, v);
                 }
               
-                if (t==RJSType_RTextEntity::getIdStatic()) {
+                if (RJSType_RTextEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RTextEntity(handler, v);
                 }
               
-                if (t==RJSType_RToleranceEntity::getIdStatic()) {
+                if (RJSType_RToleranceEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RToleranceEntity(handler, v);
                 }
               
-                if (t==RJSType_RTraceEntity::getIdStatic()) {
+                if (RJSType_RTraceEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RTraceEntity(handler, v);
                 }
               
-                if (t==RJSType_RViewportEntity::getIdStatic()) {
+                if (RJSType_RViewportEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RViewportEntity(handler, v);
                 }
               
-                if (t==RJSType_RXLineEntity::getIdStatic()) {
+                if (RJSType_RXLineEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RXLineEntity(handler, v);
                 }
               
@@ -5805,43 +5805,43 @@
 
               // attempt to downcast to specific type:
               
-                if (t==RJSType_RArc::getIdStatic()) {
+                if (RJSType_RArc::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RArc(handler, v);
                 }
               
-                if (t==RJSType_RCircle::getIdStatic()) {
+                if (RJSType_RCircle::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RCircle(handler, v);
                 }
               
-                if (t==RJSType_REllipse::getIdStatic()) {
+                if (RJSType_REllipse::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_REllipse(handler, v);
                 }
               
-                if (t==RJSType_RLine::getIdStatic()) {
+                if (RJSType_RLine::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLine(handler, v);
                 }
               
-                if (t==RJSType_RPoint::getIdStatic()) {
+                if (RJSType_RPoint::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RPoint(handler, v);
                 }
               
-                if (t==RJSType_RPolyline::getIdStatic()) {
+                if (RJSType_RPolyline::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RPolyline(handler, v);
                 }
               
-                if (t==RJSType_RRay::getIdStatic()) {
+                if (RJSType_RRay::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RRay(handler, v);
                 }
               
-                if (t==RJSType_RSpline::getIdStatic()) {
+                if (RJSType_RSpline::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RSpline(handler, v);
                 }
               
-                if (t==RJSType_RTriangle::getIdStatic()) {
+                if (RJSType_RTriangle::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RTriangle(handler, v);
                 }
               
-                if (t==RJSType_RXLine::getIdStatic()) {
+                if (RJSType_RXLine::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RXLine(handler, v);
                 }
               
@@ -6502,31 +6502,35 @@
 
               // attempt to downcast to specific type:
               
-                if (t==RJSType_RBlock::getIdStatic()) {
+                if (RJSType_RBlock::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RBlock(handler, v);
                 }
               
-                if (t==RJSType_RLayer::getIdStatic()) {
+                if (RJSType_REntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_REntity(handler, v);
+                }
+              
+                if (RJSType_RLayer::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLayer(handler, v);
                 }
               
-                if (t==RJSType_RLayerState::getIdStatic()) {
+                if (RJSType_RLayerState::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLayerState(handler, v);
                 }
               
-                if (t==RJSType_RLayout::getIdStatic()) {
+                if (RJSType_RLayout::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLayout(handler, v);
                 }
               
-                if (t==RJSType_RLinetype::getIdStatic()) {
+                if (RJSType_RLinetype::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLinetype(handler, v);
                 }
               
-                if (t==RJSType_RUcs::getIdStatic()) {
+                if (RJSType_RUcs::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RUcs(handler, v);
                 }
               
-                if (t==RJSType_RView::getIdStatic()) {
+                if (RJSType_RView::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RView(handler, v);
                 }
               
