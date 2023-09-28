@@ -1,14 +1,14 @@
 #include <QtPlugin>
 
-#include "RJSPlugin.h"
+#include "RJSApiPlugin.h"
 #include "RSettings.h"
 #include "RScriptHandlerRegistry.h"
 #include "RScriptHandler.h"
 #include "RScriptHandlerJs.h"
 
-bool RJSPlugin::init() {
+bool RJSApiPlugin::init() {
 #ifdef QT_DEBUG
-    qDebug() << "RJSPlugin::init";
+    qDebug() << "RJSApiPlugin::init";
 #endif
 
     QList<QString> ext;
@@ -18,7 +18,7 @@ bool RJSPlugin::init() {
     return true;
 }
 
-RPluginInfo RJSPlugin::getPluginInfo() {
+RPluginInfo RJSApiPlugin::getPluginInfo() {
     RPluginInfo ret;
     ret.set("Version", QString("%1").arg(RSettings::getVersionString()));
     ret.set("ID", "QCADJSAPI");
@@ -31,6 +31,6 @@ RPluginInfo RJSPlugin::getPluginInfo() {
 
 #if QT_VERSION < 0x050000
 QT_BEGIN_NAMESPACE
-Q_EXPORT_PLUGIN2(qcadjs, RJSPlugin)
+Q_EXPORT_PLUGIN2(qcadjs, RJSApiPlugin)
 QT_END_NAMESPACE
 #endif

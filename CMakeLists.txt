@@ -48,7 +48,7 @@ qt_add_library(qcadjsapi SHARED
     generator/adapters/RLayerListenerAdapter.h
     generator/adapters/RViewListenerAdapter.h
     RAutoLoadJs.cpp RAutoLoadJs.h
-    RJSPlugin.cpp RJSPlugin.h
+    RJSApiPlugin.cpp RJSApiPlugin.h
     RScriptHandlerJs.cpp RScriptHandlerJs.h
     ${SOURCES}
 )

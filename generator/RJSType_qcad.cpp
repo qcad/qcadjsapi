@@ -1119,22 +1119,6 @@
           return false;
       }
     
-      int RJSType_RDimLinearData::id = -1;
-
-
-      bool RJSType_RDimLinearData::isOfType(int otherType) {
-          if (otherType==getIdStatic()) return true;
-
-          // check for derived types:
-          
-            if (otherType==RJSType_RDimAlignedData::getIdStatic()) return true;
-          
-            if (otherType==RJSType_RDimRotatedData::getIdStatic()) return true;
-          
-
-          return false;
-      }
-    
       int RJSType_RDimOrdinateData::id = -1;
 
 
@@ -2140,6 +2124,22 @@
             if (otherType==RJSType_RDimOrdinateData::getIdStatic()) return true;
           
             if (otherType==RJSType_RDimRadialData::getIdStatic()) return true;
+          
+            if (otherType==RJSType_RDimRotatedData::getIdStatic()) return true;
+          
+
+          return false;
+      }
+    
+      int RJSType_RDimLinearData::id = -1;
+
+
+      bool RJSType_RDimLinearData::isOfType(int otherType) {
+          if (otherType==getIdStatic()) return true;
+
+          // check for derived types:
+          
+            if (otherType==RJSType_RDimAlignedData::getIdStatic()) return true;
           
             if (otherType==RJSType_RDimRotatedData::getIdStatic()) return true;
           

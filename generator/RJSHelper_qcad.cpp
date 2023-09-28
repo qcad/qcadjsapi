@@ -10945,120 +10945,6 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_RDimDiametricData::getIdStatic())).toBool();
       }
     
-      QJSValue RJSHelper_qcad::cpp2js_RDimLinearData(RJSApi& handler, const RDimLinearData* v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimLinearData_Wrapper* ret;
-
-          if (v==nullptr) {
-              ret = new RDimLinearData_Wrapper(handler, nullptr, false);
-          }
-          else {
-              // wrapper takes ownership of RDimLinearData object:
-              ret = new RDimLinearData_Wrapper(handler, new RDimLinearData(*v), true);
-          }
-
-          // JS: new RDimLinearData('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimLinearData");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimLinearData is undefined. Use RDimLinearData_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new RDimLinearData('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new RDimLinearData(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper_qcad::cpp2js_RDimLinearData(RJSApi& handler, const RDimLinearData& v) {
-          QJSEngine* engine = handler.getEngine();
-          // wrapper takes ownership of the RDimLinearData object:
-          RDimLinearData_Wrapper* ret = new RDimLinearData_Wrapper(handler, new RDimLinearData(v), true);
-
-          // JS: new RDimLinearData('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimLinearData");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimLinearData is undefined. Use RDimLinearData_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new RDimLinearData('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new RDimLinearData(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      RDimLinearData RJSHelper_qcad::js2cpp_RDimLinearData(RJSApi& handler, const QJSValue& v) {
-          /*
-          RDimLinearData_Wrapper* wrapper = getWrapper<RDimLinearData_Wrapper>(v);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_RDimLinearData: no wrapper";
-              Q_ASSERT(false);
-              return RDimLinearData();
-          }
-          //return *(RDimLinearData*)wrapper->getWrappedVoid();
-          RDimLinearData* ret = wrapper->getWrapped();
-          if (ret==nullptr) {
-              qWarning() << "js2cpp_RDimLinearData: wrapped pointer is NULL";
-              return RDimLinearData();
-          }
-          return *ret;
-          */
-
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_RDimLinearData: not a QObject";
-              return RDimLinearData();
-          }
-          QObject* obj = jwrapper.toQObject();
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_RDimLinearData_ptr: no wrapper";
-              return RDimLinearData();
-          }
-          //RDimLinearData* ret = getWrapped_RDimLinearData(wrapper);
-          RDimLinearData* ret = RDimLinearData_Wrapper::getWrappedBase(wrapper);
-          if (ret==nullptr) {
-              return RDimLinearData();
-          }
-          return *ret;
-      }
-
-      bool RJSHelper_qcad::is_RDimLinearData(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper_qcad::is_RDimLinearData: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_RDimLinearData::getIdStatic())).toBool();
-      }
-    
       QJSValue RJSHelper_qcad::cpp2js_RDimOrdinateData(RJSApi& handler, const RDimOrdinateData* v) {
           QJSEngine* engine = handler.getEngine();
           RDimOrdinateData_Wrapper* ret;
@@ -21941,6 +21827,95 @@
               return false;
           }
           return fun.call(QJSValueList() << QJSValue(RJSType_RDimensionData::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper_qcad::cpp2js_RDimLinearData(RJSApi& handler, RDimLinearData* v) {
+
+          
+            // downcast to RDimAlignedData:
+            {
+                RDimAlignedData* o = dynamic_cast<RDimAlignedData*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimAlignedData(handler, o);
+                }
+            }
+          
+            // downcast to RDimRotatedData:
+            {
+                RDimRotatedData* o = dynamic_cast<RDimRotatedData*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimRotatedData(handler, o);
+                }
+            }
+          
+
+          QJSEngine* engine = handler.getEngine();
+          RDimLinearData_Wrapper* ret = new RDimLinearData_Wrapper(handler, v, false);
+
+          // JS: new RDimLinearData('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RDimLinearData");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RDimLinearData is undefined. Use RDimLinearData_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RDimLinearData('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RDimLinearData(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      RDimLinearData* RJSHelper_qcad::js2cpp_RDimLinearData_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RDimLinearData: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RDimLinearData_Wrapper* wrapper = qobject_cast<RDimLinearData_Wrapper*>(obj);
+          //RDimLinearData_Wrapper* wrapper = dynamic_cast<RDimLinearData_Wrapper*>(obj);
+          //RDimLinearData_Wrapper* wrapper = (RDimLinearData_Wrapper*)(obj);
+          //RDimLinearData_Wrapper* wrapper = getWrapper<RDimLinearData_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RDimLinearData_ptr: no wrapper";
+              return nullptr;
+          }
+          //return getWrapped_RDimLinearData(wrapper);
+          return RDimLinearData_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RDimLinearData_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RDimLinearData: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_RDimLinearData::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper_qcad::cpp2js_RDimensionEntity(RJSApi& handler, RDimensionEntity* v) {

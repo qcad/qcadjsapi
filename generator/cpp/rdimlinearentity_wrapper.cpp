@@ -9172,6 +9172,66 @@ bool a3_cpp;
               }
             
     // Class: RDimLinearEntity
+    // Function: getData
+    // Source: RDimensionEntity
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDimLinearEntity_Wrapper::getData
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDimLinearEntity* w = getWrapped();
+                
+                      // return type is reference:
+                      // use pointer instead 3:
+                      RDimensionData* res =
+                    &
+                w->getData(
+                  
+                );
+              
+            // return type: RDimensionData&
+
+            return RJSHelper_qcad::cpp2js_RDimensionData(
+              handler, 
+              // non-copyable: true
+                  // return type is reference, type is not copyable:
+                  // convert using pointer:
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getData";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDimLinearEntity
     // Function: clearStyleOverrides
     // Source: RDimensionEntity
     // Static: false
@@ -11545,66 +11605,6 @@ bool a4_cpp;
   }
 
                   qWarning() << "no matching function variant found for getProperty";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RDimLinearEntity
-    // Function: getData
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RDimLinearEntity_Wrapper::getData
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RDimLinearEntity* w = getWrapped();
-                
-                      // return type is reference:
-                      // use pointer instead 3:
-                      RDimLinearData* res =
-                    &
-                w->getData(
-                  
-                );
-              
-            // return type: RDimLinearData&
-
-            return RJSHelper_qcad::cpp2js_RDimLinearData(
-              handler, 
-              // non-copyable: false
-                  // return type is reference, type is copyable:
-                  // convert pointer back to reference:
-                  *res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getData";
                   handler.trace();
                   return QJSValue();
                 

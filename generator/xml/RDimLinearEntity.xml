@@ -87,16 +87,16 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="getData">
       <variant return-type="RDimLinearData&amp;" virtual="true" access="public">
         <parameters />
       </variant>
-      <!--
       <variant return-type="const RDimLinearData&amp;" virtual="true" const="true" access="public">
         <parameters />
       </variant>
-      -->
     </function>
+    -->
     <function name="setExtensionPoint1">
       <variant return-type="void" access="public">
         <parameters>

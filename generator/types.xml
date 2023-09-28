@@ -186,7 +186,6 @@
     <type>RDimAngular3PData</type>
     <type>RDimArcLengthData</type>
     <type>RDimDiametricData</type>
-    <type>RDimLinearData</type>
     <type>RDimOrdinateData</type>
     <type>RDimRadialData</type>
     <type>RDimRotatedData</type>
@@ -309,6 +308,7 @@
     <type>RDimRotatedEntity</type>
     <type>RDimStyle</type>
     <type>RDimensionData</type>
+    <type>RDimLinearData</type>
     <type>RDimensionEntity</type>
     <type>RDirected</type>
     <type>RDocument</type>

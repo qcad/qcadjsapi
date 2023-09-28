@@ -1,5 +1,5 @@
-#ifndef RJSPLUGIN_H
-#define RJSPLUGIN_H
+#ifndef RJSAPIPLUGIN_H
+#define RJSAPIPLUGIN_H
 
 #include <QtGlobal>
 #include <QMetaType>
@@ -13,7 +13,7 @@ class RScriptHandler;
 /**
  * \ingroup js
  */
-class RJSPlugin : public QObject, public RPluginInterface
+class RJSApiPlugin : public QObject, public RPluginInterface
 {
     Q_OBJECT
     Q_INTERFACES(RPluginInterface)

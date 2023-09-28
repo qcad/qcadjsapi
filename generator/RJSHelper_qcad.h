@@ -8176,11 +8176,6 @@
       static RDimDiametricData js2cpp_RDimDiametricData(RJSApi& handler, const QJSValue& v);
       static bool is_RDimDiametricData(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
-      static QJSValue cpp2js_RDimLinearData(RJSApi& handler, const RDimLinearData* v);
-      static QJSValue cpp2js_RDimLinearData(RJSApi& handler, const RDimLinearData& v);
-      static RDimLinearData js2cpp_RDimLinearData(RJSApi& handler, const QJSValue& v);
-      static bool is_RDimLinearData(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
       static QJSValue cpp2js_RDimOrdinateData(RJSApi& handler, const RDimOrdinateData* v);
       static QJSValue cpp2js_RDimOrdinateData(RJSApi& handler, const RDimOrdinateData& v);
       static RDimOrdinateData js2cpp_RDimOrdinateData(RJSApi& handler, const QJSValue& v);
@@ -8681,6 +8676,10 @@
       static QJSValue cpp2js_RDimensionData(RJSApi& handler, RDimensionData* v);
       static RDimensionData* js2cpp_RDimensionData_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RDimensionData_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RDimLinearData(RJSApi& handler, RDimLinearData* v);
+      static RDimLinearData* js2cpp_RDimLinearData_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RDimLinearData_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RDimensionEntity(RJSApi& handler, RDimensionEntity* v);
       static RDimensionEntity* js2cpp_RDimensionEntity_ptr(RJSApi& handler, const QJSValue& v);

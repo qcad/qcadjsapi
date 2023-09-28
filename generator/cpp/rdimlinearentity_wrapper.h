@@ -3981,6 +3981,25 @@
               ;
             
     // Class: RDimLinearEntity
+    // Function: getData
+    // Source: RDimensionEntity
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getData
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RDimLinearEntity
     // Function: clearStyleOverrides
     // Source: RDimensionEntity
     // Static: false
@@ -4821,25 +4840,6 @@
   a4
       = QJSValue()
     
-              )
-              
-              ;
-            
-    // Class: RDimLinearEntity
-    // Function: getData
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getData
-              (
-
-                
               )
               
               ;

@@ -2757,44 +2757,6 @@
           static int id;
       };
     
-      class RJSType_RDimLinearData : public RJSTypeEnum {
-          Q_OBJECT
-          QML_INTERFACE
-
-          Q_PROPERTY(int id READ getIdStatic)
-
-      public:
-          Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimLinearData::getIdStatic();
-          }
-
-          Q_INVOKABLE
-          QString getName() const {
-              return "RDimLinearData";
-          }
-
-          //RJSTypeEnum* create() {
-          //    return new RJSType_RDimLinearData();
-          //}
-
-          Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimLinearData());
-              }
-              return id;
-          }
-
-          // return true if the given type is derived from type
-          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
-          Q_INVOKABLE
-          static bool isOfType(int otherType);
-
-      private:
-          static int id;
-      };
-    
       class RJSType_RDimOrdinateData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -5786,6 +5748,44 @@
           static int getIdStatic() {
               if (id<0) {
                   id = RJSTypeEnum::reserve(new RJSType_RDimensionData());
+              }
+              return id;
+          }
+
+          // return true if the given type is derived from type
+          // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+          Q_INVOKABLE
+          static bool isOfType(int otherType);
+
+      private:
+          static int id;
+      };
+    
+      class RJSType_RDimLinearData : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const {
+              return RJSType_RDimLinearData::getIdStatic();
+          }
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "RDimLinearData";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_RDimLinearData();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic() {
+              if (id<0) {
+                  id = RJSTypeEnum::reserve(new RJSType_RDimLinearData());
               }
               return id;
           }
