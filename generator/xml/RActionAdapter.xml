@@ -15,7 +15,7 @@
   <class_decl name="ROperation" />
   <class name="RActionAdapter" inheritable="true" ownership="cpp" variant-conversion="true">
     <super_list>
-      <super name="RAction" />
+      <super name="RAction" downcast="true" />
     </super_list>
     <constructor>
       <variant>

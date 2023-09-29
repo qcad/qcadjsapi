@@ -41,6 +41,7 @@ Makefile.SimulatorRelease
 .ninja_log
 CMakeFiles
 CMakeCache.txt
+CMakeCache.txt.prev
 CMakeLists.txt.user
 cmake_install.cmake
 build.ninja
@@ -79,3 +80,4 @@ tmp
 .qtc
 .qtc_clangd
 qtcsettings.cmake
+Testing

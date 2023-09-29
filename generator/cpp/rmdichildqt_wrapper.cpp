@@ -18050,7 +18050,7 @@ int a1_cpp;
             
                 // call function of C++ class:
                 RMdiChildQt* w = getWrapped();
-                RGraphicsViewQt* res = 
+                RGraphicsViewImage* res = 
                     
                 w->getLastKnownViewWithFocus(
                   
@@ -18058,9 +18058,9 @@ int a1_cpp;
               
                 //setRecFlag(false);
               
-            // return type: RGraphicsViewQt*
+            // return type: RGraphicsViewImage*
 
-            return RJSHelper_qcad::cpp2js_RGraphicsViewQt(
+            return RJSHelper_qcad::cpp2js_RGraphicsViewImage(
               handler, 
               // non-copyable: true
                   res
