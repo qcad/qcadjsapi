@@ -1,1 +1,1 @@
-../../rjsapi/generator/xml2addcount.sh
+../../qtjsapi/generator/xml2addcount.sh

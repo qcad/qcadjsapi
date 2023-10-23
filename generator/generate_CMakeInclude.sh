@@ -1,1 +1,1 @@
-../../rjsapi/generator/generate_CMakeInclude.sh
+../../qtjsapi/generator/generate_CMakeInclude.sh

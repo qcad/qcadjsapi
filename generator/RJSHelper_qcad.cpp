@@ -331,13 +331,13 @@
         
           #include "qobject_wrapper.h"
         
-          #include "qobject_wrapper.h"
-        
           #include "rgraphicsview_wrapper.h"
         
           #include "qobject_wrapper.h"
         
           #include "qwidget_wrapper.h"
+        
+          #include "qobject_wrapper.h"
         
           #include "qobject_wrapper.h"
         
@@ -1157,12 +1157,12 @@
 
           
 
-            // downcasters from QObject to RGraphicsViewWorker
-            class RJSDowncaster_QObject_RGraphicsViewWorker : public RJSDowncaster_QObject {
+            // downcasters from QObject to RGraphicsViewImage
+            class RJSDowncaster_QObject_RGraphicsViewImage : public RJSDowncaster_QObject {
                 QJSValue downcast(RJSApi& handler, QObject* o) {
-                    RGraphicsViewWorker* c = dynamic_cast<RGraphicsViewWorker*>(o);
+                    RGraphicsViewImage* c = dynamic_cast<RGraphicsViewImage*>(o);
                     if (c!=nullptr) {
-                        return RJSHelper_qcad::cpp2js_RGraphicsViewWorker(handler, c);
+                        return RJSHelper_qcad::cpp2js_RGraphicsViewImage(handler, c);
                     }
                     return QJSValue();
                 }
@@ -1170,12 +1170,12 @@
 
           
 
-            // downcasters from QObject to RGraphicsViewImage
-            class RJSDowncaster_QObject_RGraphicsViewImage : public RJSDowncaster_QObject {
+            // downcasters from QObject to RGraphicsViewWorker
+            class RJSDowncaster_QObject_RGraphicsViewWorker : public RJSDowncaster_QObject {
                 QJSValue downcast(RJSApi& handler, QObject* o) {
-                    RGraphicsViewImage* c = dynamic_cast<RGraphicsViewImage*>(o);
+                    RGraphicsViewWorker* c = dynamic_cast<RGraphicsViewWorker*>(o);
                     if (c!=nullptr) {
-                        return RJSHelper_qcad::cpp2js_RGraphicsViewImage(handler, c);
+                        return RJSHelper_qcad::cpp2js_RGraphicsViewWorker(handler, c);
                     }
                     return QJSValue();
                 }
@@ -1405,11 +1405,11 @@
               // downcasters from QObject to REventHandler
               RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_REventHandler());
             
-              // downcasters from QObject to RGraphicsViewWorker
-              RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RGraphicsViewWorker());
-            
               // downcasters from QObject to RGraphicsViewImage
               RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RGraphicsViewImage());
+            
+              // downcasters from QObject to RGraphicsViewWorker
+              RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RGraphicsViewWorker());
             
             // downcasters from QTextBrowser to ...
             
@@ -2149,11 +2149,6 @@
             
             // registration of base casters that cast RGraphicsView to base classes:
             
-            // registration of base casters that cast RGraphicsViewWorker to base classes:
-            
-              // registration of base casters that casts RGraphicsViewWorker to QObject:
-              QObject_Wrapper::registerBasecaster_QObject(new RJSBasecaster_RGraphicsViewWorker_QObject());
-            
             // registration of base casters that cast RGraphicsViewImage to base classes:
             
               // registration of base casters that casts RGraphicsViewImage to QObject:
@@ -2169,6 +2164,11 @@
             
               // registration of base casters that casts RGraphicsViewQt to QWidget:
               QWidget_Wrapper::registerBasecaster_QWidget(new RJSBasecaster_RGraphicsViewQt_QWidget());
+            
+            // registration of base casters that cast RGraphicsViewWorker to base classes:
+            
+              // registration of base casters that casts RGraphicsViewWorker to QObject:
+              QObject_Wrapper::registerBasecaster_QObject(new RJSBasecaster_RGraphicsViewWorker_QObject());
             
             // registration of base casters that cast RGrid to base classes:
             

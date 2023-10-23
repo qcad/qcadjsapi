@@ -1,1 +1,1 @@
-../../rjsapi/generator/xml2merged.sh
+../../qtjsapi/generator/xml2merged.sh

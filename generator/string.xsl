@@ -1,1 +1,1 @@
-../../rjsapi/generator/string.xsl
+../../qtjsapi/generator/string.xsl

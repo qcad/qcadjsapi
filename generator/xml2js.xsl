@@ -1,1 +1,1 @@
-../../rjsapi/generator/xml2js.xsl
+../../qtjsapi/generator/xml2js.xsl

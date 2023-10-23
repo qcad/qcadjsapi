@@ -1,1 +1,1 @@
-../../rjsapi/generator/xml2cpp.sh
+../../qtjsapi/generator/xml2cpp.sh

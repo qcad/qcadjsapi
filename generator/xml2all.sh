@@ -1,1 +1,1 @@
-../../rjsapi/generator/xml2all.sh
+../../qtjsapi/generator/xml2all.sh

@@ -1,1 +1,1 @@
-../rjsapi/update_qrc.sh
+../qtjsapi/update_qrc.sh

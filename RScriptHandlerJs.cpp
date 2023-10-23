@@ -596,7 +596,6 @@ void RScriptHandlerJs::init() {
 
     // TODO: use QQmlApplicationEngine to allow mixing QML / JS:
     engine = new QJSEngine();
-    //engine->setObjectName(QString("E%1").arg(counter++));
 
     rjsapi = new RJSApi(engine);
     tools = rjsapi->getTools();

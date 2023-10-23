@@ -221,6 +221,7 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rgraphicsviewimage_wrapper.h
     generator/cpp/rgraphicsviewqt_base.h
     generator/cpp/rgraphicsviewqt_wrapper.h
+    generator/cpp/rgraphicsviewworker_base.h
     generator/cpp/rgraphicsviewworker_wrapper.h
     generator/cpp/rgrid_base.h
     generator/cpp/rgrid_wrapper.h
@@ -782,6 +783,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rgraphicsviewimage_wrapper.cpp
     generator/cpp/rgraphicsviewqt_base.cpp
     generator/cpp/rgraphicsviewqt_wrapper.cpp
+    generator/cpp/rgraphicsviewworker_base.cpp
+    generator/cpp/rgraphicsviewworker_wrapper.cpp
     generator/cpp/rgrid_base.cpp
     generator/cpp/rgrid_wrapper.cpp
     generator/cpp/rguiaction_base.cpp

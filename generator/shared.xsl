@@ -1,1 +1,1 @@
-../../rjsapi/generator/shared.xsl
+../../qtjsapi/generator/shared.xsl

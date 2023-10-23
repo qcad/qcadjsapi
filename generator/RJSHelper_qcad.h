@@ -664,12 +664,6 @@
           virtual RGraphicsView* castToBase(int t, void* vp) = 0;
         };
       
-        // Base class for basecasters that can cast void* to base class RGraphicsViewWorker:
-        class RJSBasecaster_RGraphicsViewWorker {
-        public:
-          virtual RGraphicsViewWorker* castToBase(int t, void* vp) = 0;
-        };
-      
         // Base class for basecasters that can cast void* to base class RGraphicsViewImage:
         class RJSBasecaster_RGraphicsViewImage {
         public:
@@ -680,6 +674,12 @@
         class RJSBasecaster_RGraphicsViewQt {
         public:
           virtual RGraphicsViewQt* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class RGraphicsViewWorker:
+        class RJSBasecaster_RGraphicsViewWorker {
+        public:
+          virtual RGraphicsViewWorker* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class RGrid:
@@ -4028,21 +4028,6 @@
           
           // implementation of base casters that cast RGraphicsView to base classes:
           
-          // implementation of base casters that cast RGraphicsViewWorker to base classes:
-          
-            // implementation of base casters that casts RGraphicsViewWorker to QObject
-            class RJSBasecaster_RGraphicsViewWorker_QObject : public RJSBasecaster_QObject {
-            public:
-              virtual QObject* castToBase(int t, void* vp) {
-                if (t==RJSType_RGraphicsViewWorker::getIdStatic()) {
-                  return (QObject*)(RGraphicsViewWorker*)vp;
-                }
-                else {
-                  return nullptr;
-                }
-              }
-            };
-          
           // implementation of base casters that cast RGraphicsViewImage to base classes:
           
             // implementation of base casters that casts RGraphicsViewImage to QObject
@@ -4092,6 +4077,21 @@
               virtual QWidget* castToBase(int t, void* vp) {
                 if (t==RJSType_RGraphicsViewQt::getIdStatic()) {
                   return (QWidget*)(RGraphicsViewQt*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+          // implementation of base casters that cast RGraphicsViewWorker to base classes:
+          
+            // implementation of base casters that casts RGraphicsViewWorker to QObject
+            class RJSBasecaster_RGraphicsViewWorker_QObject : public RJSBasecaster_QObject {
+            public:
+              virtual QObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RGraphicsViewWorker::getIdStatic()) {
+                  return (QObject*)(RGraphicsViewWorker*)vp;
                 }
                 else {
                   return nullptr;

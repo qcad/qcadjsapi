@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RGraphicsViewWorker.h">
+  <class name="RGraphicsViewWorker" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+      <!--
+      <super name="QThread" />
+      -->
+    </super_list>
+  </class>
+</unit>

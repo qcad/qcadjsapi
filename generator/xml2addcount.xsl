@@ -1,1 +1,1 @@
-../../rjsapi/generator/xml2addcount.xsl
+../../qtjsapi/generator/xml2addcount.xsl

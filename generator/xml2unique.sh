@@ -1,1 +1,1 @@
-../../rjsapi/generator/xml2unique.sh
+../../qtjsapi/generator/xml2unique.sh

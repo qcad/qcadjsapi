@@ -219,6 +219,7 @@
 #include "generator/cpp/rgraphicsviewimage_wrapper.h"
 #include "generator/cpp/rgraphicsviewqt_base.h"
 #include "generator/cpp/rgraphicsviewqt_wrapper.h"
+#include "generator/cpp/rgraphicsviewworker_base.h"
 #include "generator/cpp/rgraphicsviewworker_wrapper.h"
 #include "generator/cpp/rgrid_base.h"
 #include "generator/cpp/rgrid_wrapper.h"

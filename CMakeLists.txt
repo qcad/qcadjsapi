@@ -56,9 +56,9 @@ qt_add_library(qcadjsapi SHARED
 include(generator/CMakeInclude.txt)
 
 target_include_directories(qcadjsapi PRIVATE
-    ../rjsapi
-    ../rjsapi/generator
-    ../rjsapi/generator/cpp
+    ../qtjsapi
+    ../qtjsapi/generator
+    ../qtjsapi/generator/cpp
     ../qcad/src/3rdparty
     ../qcad/src/3rdparty/opennurbs
     ../qcad/src/3rdparty/spatialindexnavel
@@ -117,5 +117,5 @@ target_link_libraries(qcadjsapi PRIVATE
     qcadgrid
     qcadoperations
     qcadspatialindex
-    rjsapi
+    qtjsapi
 )

@@ -1,1 +1,1 @@
-../../rjsapi/generator/generate.sh
+../../qtjsapi/generator/generate.sh

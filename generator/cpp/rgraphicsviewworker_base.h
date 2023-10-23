@@ -4,8 +4,8 @@
   // Adds public versions for event handlers to be called from 
   // JS implementation of these event handlers.
   
-  #ifndef RGRAPHICSVIEWIMAGE_H_BASE
-  #define RGRAPHICSVIEWIMAGE_H_BASE
+  #ifndef RGRAPHICSVIEWWORKER_H_BASE
+  #define RGRAPHICSVIEWWORKER_H_BASE
 
   // include header:
   //#include "header_h.h"
@@ -16,7 +16,7 @@
     #include <QQmlEngine>
 
     
-        #include "RGraphicsViewImage.h"
+        #include "RGraphicsViewWorker.h"
       
   #endif
   
