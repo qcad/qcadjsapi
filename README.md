@@ -1,2 +1,2 @@
 # qcadjsapi
-QJSEngine bindings for QCAD
+QJSEngine bindings for the QCAD API
