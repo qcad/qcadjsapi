@@ -1719,192 +1719,6 @@ QVariant a2_cpp;
               }
             
     // Class: REventHandler
-    // Function: drawInfoLabel
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              REventHandler_Wrapper::drawInfoLabel
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QPainter_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper_qcad::is_RTextLabel(handler, a2
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: painter (QPainter)
-  
-
-          // pointer:
-          QPainter*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
-        
-  // convert js parameter to cpp: textLabel (RTextLabel)
-  
-RTextLabel a2_cpp;
-
-      a2_cpp = RJSHelper_qcad::js2cpp_RTextLabel(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                REventHandler* w = getWrapped();
-                
-                w->drawInfoLabel(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for drawInfoLabel";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: REventHandler
-    // Function: drawSnapLabel
-    // Source: 
-    // Static: false
-    // Parameters: 4
-    // preceding Parameters: -1
-
-                QJSValue 
-              REventHandler_Wrapper::drawSnapLabel
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3, 
-  const QJSValue& 
-  a4
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QPainter_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper_qcad::is_RVector(handler, a2
-  )
-
-   && RJSHelper_qcad::is_RVector(handler, a3
-  )
-
-   && RJSHelper::is_QString(handler, a4
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: painter (QPainter)
-  
-
-          // pointer:
-          QPainter*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
-        
-  // convert js parameter to cpp: pos (RVector)
-  
-RVector a2_cpp;
-
-      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
-        
-  // convert js parameter to cpp: posRestriction (RVector)
-  
-RVector a3_cpp;
-
-      a3_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a3);
-        
-  // convert js parameter to cpp: text (QString)
-  
-QString a4_cpp;
-
-      a4_cpp = RJSHelper::js2cpp_QString(handler, a4);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                REventHandler* w = getWrapped();
-                
-                w->drawSnapLabel(
-                  a1_cpp
-    , a2_cpp
-    , a3_cpp
-    , a4_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for drawSnapLabel";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: REventHandler
     // Function: dragEnter
     // Source: 
     // Static: false
@@ -1994,7 +1808,7 @@ QString a4_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper::is_QPainter_ptr(handler, a1
+        RJSHelper_qcad::is_RGraphicsViewWorker_ptr(handler, a1
     , true
   
   )
@@ -2007,14 +1821,14 @@ QString a4_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: painter (QPainter)
+  // convert js parameter to cpp: worker (RGraphicsViewWorker)
   
 
           // pointer:
-          QPainter*
+          RGraphicsViewWorker*
          a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_RGraphicsViewWorker_ptr(handler, a1);
         
   // convert js parameter to cpp: textLabel (RTextLabel)
   
@@ -2077,7 +1891,7 @@ RTextLabel a2_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper::is_QPainter_ptr(handler, a1
+        RJSHelper_qcad::is_RGraphicsViewWorker_ptr(handler, a1
     , true
   
   )
@@ -2097,14 +1911,14 @@ RTextLabel a2_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: painter (QPainter)
+  // convert js parameter to cpp: worker (RGraphicsViewWorker)
   
 
           // pointer:
-          QPainter*
+          RGraphicsViewWorker*
          a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_RGraphicsViewWorker_ptr(handler, a1);
         
   // convert js parameter to cpp: snap (RSnap)
   

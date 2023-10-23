@@ -100,6 +100,7 @@
     <type>RView::Id</type>
     <type>RViewportEntity::Id</type>
     <type>RXLineEntity::Id</type>
+    <type>RGraphicsViewWorker::ClearMode</type>
   </primitive>
 
   <shared_ptr>
@@ -426,6 +427,7 @@
     <type>RFontChooserWidget</type>
     <type>RGraphicsViewQt</type>
     <type>RGraphicsViewImage</type>
+    <type>RGraphicsViewWorker</type>
     <type>RGuiAction</type>
     <type>RInterTransactionListenerAdapter</type>
     <type>RKeyListenerAdapter</type>

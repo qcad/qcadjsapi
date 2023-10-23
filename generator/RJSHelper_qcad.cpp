@@ -331,6 +331,8 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
           #include "rgraphicsview_wrapper.h"
         
           #include "qobject_wrapper.h"
@@ -1155,6 +1157,32 @@
 
           
 
+            // downcasters from QObject to RGraphicsViewWorker
+            class RJSDowncaster_QObject_RGraphicsViewWorker : public RJSDowncaster_QObject {
+                QJSValue downcast(RJSApi& handler, QObject* o) {
+                    RGraphicsViewWorker* c = dynamic_cast<RGraphicsViewWorker*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RGraphicsViewWorker(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+            // downcasters from QObject to RGraphicsViewImage
+            class RJSDowncaster_QObject_RGraphicsViewImage : public RJSDowncaster_QObject {
+                QJSValue downcast(RJSApi& handler, QObject* o) {
+                    RGraphicsViewImage* c = dynamic_cast<RGraphicsViewImage*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RGraphicsViewImage(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
           // downcasters from QTextBrowser to ...
           
 
@@ -1376,6 +1404,12 @@
             
               // downcasters from QObject to REventHandler
               RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_REventHandler());
+            
+              // downcasters from QObject to RGraphicsViewWorker
+              RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RGraphicsViewWorker());
+            
+              // downcasters from QObject to RGraphicsViewImage
+              RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RGraphicsViewImage());
             
             // downcasters from QTextBrowser to ...
             
@@ -2114,6 +2148,11 @@
               RGraphicsScene_Wrapper::registerBasecaster_RGraphicsScene(new RJSBasecaster_RGraphicsSceneQt_RGraphicsScene());
             
             // registration of base casters that cast RGraphicsView to base classes:
+            
+            // registration of base casters that cast RGraphicsViewWorker to base classes:
+            
+              // registration of base casters that casts RGraphicsViewWorker to QObject:
+              QObject_Wrapper::registerBasecaster_QObject(new RJSBasecaster_RGraphicsViewWorker_QObject());
             
             // registration of base casters that cast RGraphicsViewImage to base classes:
             
@@ -5269,6 +5308,28 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper_qcad::cpp2js_RGraphicsViewWorker_ClearMode(RJSApi& handler, RGraphicsViewWorker::ClearMode v) {
+        return QJSValue(v);
+      }
+
+      RGraphicsViewWorker::ClearMode RJSHelper_qcad::js2cpp_RGraphicsViewWorker_ClearMode(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (RGraphicsViewWorker::ClearMode)0
+          ;
+        }
+        return 
+        (RGraphicsViewWorker::ClearMode)
+      v.toInt();
+      }
+
+      bool RJSHelper_qcad::is_RGraphicsViewWorker_ClearMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
   // ---------------------
   // QSharedPointer types:
   // ---------------------
@@ -6506,6 +6567,10 @@
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RBlock(handler, v);
                 }
               
+                if (RJSType_RDocumentVariables::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDocumentVariables(handler, v);
+                }
+              
                 if (RJSType_REntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_REntity(handler, v);
                 }
@@ -6538,6 +6603,7 @@
           RObject_Wrapper* wrapper = getWrapper<RObject_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RObject: no wrapper";
+              handler.trace();
               return QSharedPointer<RObject>();
           }
           //return QSharedPointer<RObject>(getWrapped_RObject(wrapper));
@@ -6594,6 +6660,7 @@
           RArcEntity_Wrapper* wrapper = getWrapper<RArcEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RArcEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RArcEntity>();
           }
           //return QSharedPointer<RArcEntity>(getWrapped_RArcEntity(wrapper));
@@ -6650,6 +6717,7 @@
           RAttributeDefinitionEntity_Wrapper* wrapper = getWrapper<RAttributeDefinitionEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RAttributeDefinitionEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RAttributeDefinitionEntity>();
           }
           //return QSharedPointer<RAttributeDefinitionEntity>(getWrapped_RAttributeDefinitionEntity(wrapper));
@@ -6706,6 +6774,7 @@
           RAttributeEntity_Wrapper* wrapper = getWrapper<RAttributeEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RAttributeEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RAttributeEntity>();
           }
           //return QSharedPointer<RAttributeEntity>(getWrapped_RAttributeEntity(wrapper));
@@ -6762,6 +6831,7 @@
           RBlock_Wrapper* wrapper = getWrapper<RBlock_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RBlock: no wrapper";
+              handler.trace();
               return QSharedPointer<RBlock>();
           }
           //return QSharedPointer<RBlock>(getWrapped_RBlock(wrapper));
@@ -6818,6 +6888,7 @@
           RBlockReferenceEntity_Wrapper* wrapper = getWrapper<RBlockReferenceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RBlockReferenceEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RBlockReferenceEntity>();
           }
           //return QSharedPointer<RBlockReferenceEntity>(getWrapped_RBlockReferenceEntity(wrapper));
@@ -6874,6 +6945,7 @@
           RCircleEntity_Wrapper* wrapper = getWrapper<RCircleEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RCircleEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RCircleEntity>();
           }
           //return QSharedPointer<RCircleEntity>(getWrapped_RCircleEntity(wrapper));
@@ -6930,6 +7002,7 @@
           RDimAlignedEntity_Wrapper* wrapper = getWrapper<RDimAlignedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAlignedEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimAlignedEntity>();
           }
           //return QSharedPointer<RDimAlignedEntity>(getWrapped_RDimAlignedEntity(wrapper));
@@ -6986,6 +7059,7 @@
           RDimAngular2LEntity_Wrapper* wrapper = getWrapper<RDimAngular2LEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAngular2LEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimAngular2LEntity>();
           }
           //return QSharedPointer<RDimAngular2LEntity>(getWrapped_RDimAngular2LEntity(wrapper));
@@ -7042,6 +7116,7 @@
           RDimAngular3PEntity_Wrapper* wrapper = getWrapper<RDimAngular3PEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAngular3PEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimAngular3PEntity>();
           }
           //return QSharedPointer<RDimAngular3PEntity>(getWrapped_RDimAngular3PEntity(wrapper));
@@ -7098,6 +7173,7 @@
           RDimAngularData_Wrapper* wrapper = getWrapper<RDimAngularData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAngularData: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimAngularData>();
           }
           //return QSharedPointer<RDimAngularData>(getWrapped_RDimAngularData(wrapper));
@@ -7153,6 +7229,7 @@
           RDimAngularEntity_Wrapper* wrapper = getWrapper<RDimAngularEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAngularEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimAngularEntity>();
           }
           //return QSharedPointer<RDimAngularEntity>(getWrapped_RDimAngularEntity(wrapper));
@@ -7209,6 +7286,7 @@
           RDimArcLengthEntity_Wrapper* wrapper = getWrapper<RDimArcLengthEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimArcLengthEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimArcLengthEntity>();
           }
           //return QSharedPointer<RDimArcLengthEntity>(getWrapped_RDimArcLengthEntity(wrapper));
@@ -7265,6 +7343,7 @@
           RDimDiametricEntity_Wrapper* wrapper = getWrapper<RDimDiametricEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimDiametricEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimDiametricEntity>();
           }
           //return QSharedPointer<RDimDiametricEntity>(getWrapped_RDimDiametricEntity(wrapper));
@@ -7337,6 +7416,7 @@
           RDimLinearEntity_Wrapper* wrapper = getWrapper<RDimLinearEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimLinearEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimLinearEntity>();
           }
           //return QSharedPointer<RDimLinearEntity>(getWrapped_RDimLinearEntity(wrapper));
@@ -7393,6 +7473,7 @@
           RDimOrdinateEntity_Wrapper* wrapper = getWrapper<RDimOrdinateEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimOrdinateEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimOrdinateEntity>();
           }
           //return QSharedPointer<RDimOrdinateEntity>(getWrapped_RDimOrdinateEntity(wrapper));
@@ -7449,6 +7530,7 @@
           RDimRadialEntity_Wrapper* wrapper = getWrapper<RDimRadialEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimRadialEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimRadialEntity>();
           }
           //return QSharedPointer<RDimRadialEntity>(getWrapped_RDimRadialEntity(wrapper));
@@ -7505,6 +7587,7 @@
           RDimRotatedEntity_Wrapper* wrapper = getWrapper<RDimRotatedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimRotatedEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimRotatedEntity>();
           }
           //return QSharedPointer<RDimRotatedEntity>(getWrapped_RDimRotatedEntity(wrapper));
@@ -7561,6 +7644,7 @@
           RDimStyle_Wrapper* wrapper = getWrapper<RDimStyle_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimStyle: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimStyle>();
           }
           //return QSharedPointer<RDimStyle>(getWrapped_RDimStyle(wrapper));
@@ -7665,6 +7749,7 @@
           RDimensionEntity_Wrapper* wrapper = getWrapper<RDimensionEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimensionEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RDimensionEntity>();
           }
           //return QSharedPointer<RDimensionEntity>(getWrapped_RDimensionEntity(wrapper));
@@ -7721,6 +7806,7 @@
           RDocumentVariables_Wrapper* wrapper = getWrapper<RDocumentVariables_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDocumentVariables: no wrapper";
+              handler.trace();
               return QSharedPointer<RDocumentVariables>();
           }
           //return QSharedPointer<RDocumentVariables>(getWrapped_RDocumentVariables(wrapper));
@@ -7777,6 +7863,7 @@
           REllipseEntity_Wrapper* wrapper = getWrapper<REllipseEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_REllipseEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<REllipseEntity>();
           }
           //return QSharedPointer<REllipseEntity>(getWrapped_REllipseEntity(wrapper));
@@ -7833,6 +7920,7 @@
           RFaceEntity_Wrapper* wrapper = getWrapper<RFaceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RFaceEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RFaceEntity>();
           }
           //return QSharedPointer<RFaceEntity>(getWrapped_RFaceEntity(wrapper));
@@ -7889,6 +7977,7 @@
           RHatchEntity_Wrapper* wrapper = getWrapper<RHatchEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RHatchEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RHatchEntity>();
           }
           //return QSharedPointer<RHatchEntity>(getWrapped_RHatchEntity(wrapper));
@@ -7945,6 +8034,7 @@
           RImageEntity_Wrapper* wrapper = getWrapper<RImageEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RImageEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RImageEntity>();
           }
           //return QSharedPointer<RImageEntity>(getWrapped_RImageEntity(wrapper));
@@ -8001,6 +8091,7 @@
           RLayer_Wrapper* wrapper = getWrapper<RLayer_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLayer: no wrapper";
+              handler.trace();
               return QSharedPointer<RLayer>();
           }
           //return QSharedPointer<RLayer>(getWrapped_RLayer(wrapper));
@@ -8057,6 +8148,7 @@
           RLayerState_Wrapper* wrapper = getWrapper<RLayerState_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLayerState: no wrapper";
+              handler.trace();
               return QSharedPointer<RLayerState>();
           }
           //return QSharedPointer<RLayerState>(getWrapped_RLayerState(wrapper));
@@ -8113,6 +8205,7 @@
           RLayout_Wrapper* wrapper = getWrapper<RLayout_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLayout: no wrapper";
+              handler.trace();
               return QSharedPointer<RLayout>();
           }
           //return QSharedPointer<RLayout>(getWrapped_RLayout(wrapper));
@@ -8169,6 +8262,7 @@
           RLeaderEntity_Wrapper* wrapper = getWrapper<RLeaderEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLeaderEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RLeaderEntity>();
           }
           //return QSharedPointer<RLeaderEntity>(getWrapped_RLeaderEntity(wrapper));
@@ -8225,6 +8319,7 @@
           RLineEntity_Wrapper* wrapper = getWrapper<RLineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLineEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RLineEntity>();
           }
           //return QSharedPointer<RLineEntity>(getWrapped_RLineEntity(wrapper));
@@ -8281,6 +8376,7 @@
           RLinetype_Wrapper* wrapper = getWrapper<RLinetype_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RLinetype: no wrapper";
+              handler.trace();
               return QSharedPointer<RLinetype>();
           }
           //return QSharedPointer<RLinetype>(getWrapped_RLinetype(wrapper));
@@ -8337,6 +8433,7 @@
           RPointEntity_Wrapper* wrapper = getWrapper<RPointEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RPointEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RPointEntity>();
           }
           //return QSharedPointer<RPointEntity>(getWrapped_RPointEntity(wrapper));
@@ -8393,6 +8490,7 @@
           RPolyline_Wrapper* wrapper = getWrapper<RPolyline_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RPolyline: no wrapper";
+              handler.trace();
               return QSharedPointer<RPolyline>();
           }
           //return QSharedPointer<RPolyline>(getWrapped_RPolyline(wrapper));
@@ -8449,6 +8547,7 @@
           RPolylineEntity_Wrapper* wrapper = getWrapper<RPolylineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RPolylineEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RPolylineEntity>();
           }
           //return QSharedPointer<RPolylineEntity>(getWrapped_RPolylineEntity(wrapper));
@@ -8505,6 +8604,7 @@
           RRayEntity_Wrapper* wrapper = getWrapper<RRayEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RRayEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RRayEntity>();
           }
           //return QSharedPointer<RRayEntity>(getWrapped_RRayEntity(wrapper));
@@ -8561,6 +8661,7 @@
           RSolidEntity_Wrapper* wrapper = getWrapper<RSolidEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RSolidEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RSolidEntity>();
           }
           //return QSharedPointer<RSolidEntity>(getWrapped_RSolidEntity(wrapper));
@@ -8617,6 +8718,7 @@
           RSplineEntity_Wrapper* wrapper = getWrapper<RSplineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RSplineEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RSplineEntity>();
           }
           //return QSharedPointer<RSplineEntity>(getWrapped_RSplineEntity(wrapper));
@@ -8673,6 +8775,7 @@
           RTextEntity_Wrapper* wrapper = getWrapper<RTextEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RTextEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RTextEntity>();
           }
           //return QSharedPointer<RTextEntity>(getWrapped_RTextEntity(wrapper));
@@ -8749,6 +8852,7 @@
           RTextBasedEntity_Wrapper* wrapper = getWrapper<RTextBasedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RTextBasedEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RTextBasedEntity>();
           }
           //return QSharedPointer<RTextBasedEntity>(getWrapped_RTextBasedEntity(wrapper));
@@ -8805,6 +8909,7 @@
           RToleranceEntity_Wrapper* wrapper = getWrapper<RToleranceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RToleranceEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RToleranceEntity>();
           }
           //return QSharedPointer<RToleranceEntity>(getWrapped_RToleranceEntity(wrapper));
@@ -8861,6 +8966,7 @@
           RTraceEntity_Wrapper* wrapper = getWrapper<RTraceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RTraceEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RTraceEntity>();
           }
           //return QSharedPointer<RTraceEntity>(getWrapped_RTraceEntity(wrapper));
@@ -8917,6 +9023,7 @@
           RUcs_Wrapper* wrapper = getWrapper<RUcs_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RUcs: no wrapper";
+              handler.trace();
               return QSharedPointer<RUcs>();
           }
           //return QSharedPointer<RUcs>(getWrapped_RUcs(wrapper));
@@ -8973,6 +9080,7 @@
           RView_Wrapper* wrapper = getWrapper<RView_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RView: no wrapper";
+              handler.trace();
               return QSharedPointer<RView>();
           }
           //return QSharedPointer<RView>(getWrapped_RView(wrapper));
@@ -9029,6 +9137,7 @@
           RViewportEntity_Wrapper* wrapper = getWrapper<RViewportEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RViewportEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RViewportEntity>();
           }
           //return QSharedPointer<RViewportEntity>(getWrapped_RViewportEntity(wrapper));
@@ -9085,6 +9194,7 @@
           RXLineEntity_Wrapper* wrapper = getWrapper<RXLineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RXLineEntity: no wrapper";
+              handler.trace();
               return QSharedPointer<RXLineEntity>();
           }
           //return QSharedPointer<RXLineEntity>(getWrapped_RXLineEntity(wrapper));
@@ -9187,6 +9297,7 @@
           RArc_Wrapper* wrapper = getWrapper<RArc_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RArc: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RArc();
           }
@@ -9208,6 +9319,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RArc_ptr: no wrapper";
+              handler.trace();
               return RArc();
           }
           //RArc* ret = getWrapped_RArc(wrapper);
@@ -9301,6 +9413,7 @@
           RArcData_Wrapper* wrapper = getWrapper<RArcData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RArcData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RArcData();
           }
@@ -9322,6 +9435,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RArcData_ptr: no wrapper";
+              handler.trace();
               return RArcData();
           }
           //RArcData* ret = getWrapped_RArcData(wrapper);
@@ -9415,6 +9529,7 @@
           RAttributeData_Wrapper* wrapper = getWrapper<RAttributeData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAttributeData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RAttributeData();
           }
@@ -9436,6 +9551,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAttributeData_ptr: no wrapper";
+              handler.trace();
               return RAttributeData();
           }
           //RAttributeData* ret = getWrapped_RAttributeData(wrapper);
@@ -9529,6 +9645,7 @@
           RAttributeDefinitionData_Wrapper* wrapper = getWrapper<RAttributeDefinitionData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAttributeDefinitionData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RAttributeDefinitionData();
           }
@@ -9550,6 +9667,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAttributeDefinitionData_ptr: no wrapper";
+              handler.trace();
               return RAttributeDefinitionData();
           }
           //RAttributeDefinitionData* ret = getWrapped_RAttributeDefinitionData(wrapper);
@@ -9643,6 +9761,7 @@
           RAutoLoadJs_Wrapper* wrapper = getWrapper<RAutoLoadJs_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAutoLoadJs: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RAutoLoadJs();
           }
@@ -9664,6 +9783,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAutoLoadJs_ptr: no wrapper";
+              handler.trace();
               return RAutoLoadJs();
           }
           //RAutoLoadJs* ret = getWrapped_RAutoLoadJs(wrapper);
@@ -9757,6 +9877,7 @@
           RBlockReferenceData_Wrapper* wrapper = getWrapper<RBlockReferenceData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RBlockReferenceData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RBlockReferenceData();
           }
@@ -9778,6 +9899,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RBlockReferenceData_ptr: no wrapper";
+              handler.trace();
               return RBlockReferenceData();
           }
           //RBlockReferenceData* ret = getWrapped_RBlockReferenceData(wrapper);
@@ -9871,6 +9993,7 @@
           RBox_Wrapper* wrapper = getWrapper<RBox_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RBox: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RBox();
           }
@@ -9892,6 +10015,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RBox_ptr: no wrapper";
+              handler.trace();
               return RBox();
           }
           //RBox* ret = getWrapped_RBox(wrapper);
@@ -9985,6 +10109,7 @@
           RCircle_Wrapper* wrapper = getWrapper<RCircle_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCircle: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RCircle();
           }
@@ -10006,6 +10131,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCircle_ptr: no wrapper";
+              handler.trace();
               return RCircle();
           }
           //RCircle* ret = getWrapped_RCircle(wrapper);
@@ -10099,6 +10225,7 @@
           RCircleData_Wrapper* wrapper = getWrapper<RCircleData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCircleData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RCircleData();
           }
@@ -10120,6 +10247,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCircleData_ptr: no wrapper";
+              handler.trace();
               return RCircleData();
           }
           //RCircleData* ret = getWrapped_RCircleData(wrapper);
@@ -10213,6 +10341,7 @@
           RColor_Wrapper* wrapper = getWrapper<RColor_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RColor: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RColor();
           }
@@ -10234,6 +10363,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RColor_ptr: no wrapper";
+              handler.trace();
               return RColor();
           }
           //RColor* ret = getWrapped_RColor(wrapper);
@@ -10327,6 +10457,7 @@
           RDebug_Wrapper* wrapper = getWrapper<RDebug_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDebug: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDebug();
           }
@@ -10348,6 +10479,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDebug_ptr: no wrapper";
+              handler.trace();
               return RDebug();
           }
           //RDebug* ret = getWrapped_RDebug(wrapper);
@@ -10441,6 +10573,7 @@
           RDimAlignedData_Wrapper* wrapper = getWrapper<RDimAlignedData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAlignedData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDimAlignedData();
           }
@@ -10462,6 +10595,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAlignedData_ptr: no wrapper";
+              handler.trace();
               return RDimAlignedData();
           }
           //RDimAlignedData* ret = getWrapped_RDimAlignedData(wrapper);
@@ -10555,6 +10689,7 @@
           RDimAngular2LData_Wrapper* wrapper = getWrapper<RDimAngular2LData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAngular2LData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDimAngular2LData();
           }
@@ -10576,6 +10711,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAngular2LData_ptr: no wrapper";
+              handler.trace();
               return RDimAngular2LData();
           }
           //RDimAngular2LData* ret = getWrapped_RDimAngular2LData(wrapper);
@@ -10669,6 +10805,7 @@
           RDimAngular3PData_Wrapper* wrapper = getWrapper<RDimAngular3PData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAngular3PData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDimAngular3PData();
           }
@@ -10690,6 +10827,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAngular3PData_ptr: no wrapper";
+              handler.trace();
               return RDimAngular3PData();
           }
           //RDimAngular3PData* ret = getWrapped_RDimAngular3PData(wrapper);
@@ -10783,6 +10921,7 @@
           RDimArcLengthData_Wrapper* wrapper = getWrapper<RDimArcLengthData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimArcLengthData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDimArcLengthData();
           }
@@ -10804,6 +10943,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimArcLengthData_ptr: no wrapper";
+              handler.trace();
               return RDimArcLengthData();
           }
           //RDimArcLengthData* ret = getWrapped_RDimArcLengthData(wrapper);
@@ -10897,6 +11037,7 @@
           RDimDiametricData_Wrapper* wrapper = getWrapper<RDimDiametricData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimDiametricData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDimDiametricData();
           }
@@ -10918,6 +11059,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimDiametricData_ptr: no wrapper";
+              handler.trace();
               return RDimDiametricData();
           }
           //RDimDiametricData* ret = getWrapped_RDimDiametricData(wrapper);
@@ -11011,6 +11153,7 @@
           RDimOrdinateData_Wrapper* wrapper = getWrapper<RDimOrdinateData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimOrdinateData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDimOrdinateData();
           }
@@ -11032,6 +11175,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimOrdinateData_ptr: no wrapper";
+              handler.trace();
               return RDimOrdinateData();
           }
           //RDimOrdinateData* ret = getWrapped_RDimOrdinateData(wrapper);
@@ -11125,6 +11269,7 @@
           RDimRadialData_Wrapper* wrapper = getWrapper<RDimRadialData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimRadialData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDimRadialData();
           }
@@ -11146,6 +11291,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimRadialData_ptr: no wrapper";
+              handler.trace();
               return RDimRadialData();
           }
           //RDimRadialData* ret = getWrapped_RDimRadialData(wrapper);
@@ -11239,6 +11385,7 @@
           RDimRotatedData_Wrapper* wrapper = getWrapper<RDimRotatedData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimRotatedData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDimRotatedData();
           }
@@ -11260,6 +11407,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimRotatedData_ptr: no wrapper";
+              handler.trace();
               return RDimRotatedData();
           }
           //RDimRotatedData* ret = getWrapped_RDimRotatedData(wrapper);
@@ -11353,6 +11501,7 @@
           RDimStyleData_Wrapper* wrapper = getWrapper<RDimStyleData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimStyleData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDimStyleData();
           }
@@ -11374,6 +11523,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimStyleData_ptr: no wrapper";
+              handler.trace();
               return RDimStyleData();
           }
           //RDimStyleData* ret = getWrapped_RDimStyleData(wrapper);
@@ -11467,6 +11617,7 @@
           RDxfServices_Wrapper* wrapper = getWrapper<RDxfServices_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDxfServices: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RDxfServices();
           }
@@ -11488,6 +11639,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDxfServices_ptr: no wrapper";
+              handler.trace();
               return RDxfServices();
           }
           //RDxfServices* ret = getWrapped_RDxfServices(wrapper);
@@ -11581,6 +11733,7 @@
           REllipse_Wrapper* wrapper = getWrapper<REllipse_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REllipse: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return REllipse();
           }
@@ -11602,6 +11755,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REllipse_ptr: no wrapper";
+              handler.trace();
               return REllipse();
           }
           //REllipse* ret = getWrapped_REllipse(wrapper);
@@ -11695,6 +11849,7 @@
           REllipseData_Wrapper* wrapper = getWrapper<REllipseData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REllipseData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return REllipseData();
           }
@@ -11716,6 +11871,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REllipseData_ptr: no wrapper";
+              handler.trace();
               return REllipseData();
           }
           //REllipseData* ret = getWrapped_REllipseData(wrapper);
@@ -11809,6 +11965,7 @@
           RFaceData_Wrapper* wrapper = getWrapper<RFaceData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFaceData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFaceData();
           }
@@ -11830,6 +11987,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFaceData_ptr: no wrapper";
+              handler.trace();
               return RFaceData();
           }
           //RFaceData* ret = getWrapped_RFaceData(wrapper);
@@ -11923,6 +12081,7 @@
           RFileCache_Wrapper* wrapper = getWrapper<RFileCache_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileCache: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFileCache();
           }
@@ -11944,6 +12103,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileCache_ptr: no wrapper";
+              handler.trace();
               return RFileCache();
           }
           //RFileCache* ret = getWrapped_RFileCache(wrapper);
@@ -12037,6 +12197,7 @@
           RFileExporterAdapter_Wrapper* wrapper = getWrapper<RFileExporterAdapter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileExporterAdapter: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFileExporterAdapter();
           }
@@ -12058,6 +12219,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileExporterAdapter_ptr: no wrapper";
+              handler.trace();
               return RFileExporterAdapter();
           }
           //RFileExporterAdapter* ret = getWrapped_RFileExporterAdapter(wrapper);
@@ -12151,6 +12313,7 @@
           RFileExporterFactoryAdapter_Wrapper* wrapper = getWrapper<RFileExporterFactoryAdapter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileExporterFactoryAdapter: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFileExporterFactoryAdapter();
           }
@@ -12172,6 +12335,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileExporterFactoryAdapter_ptr: no wrapper";
+              handler.trace();
               return RFileExporterFactoryAdapter();
           }
           //RFileExporterFactoryAdapter* ret = getWrapped_RFileExporterFactoryAdapter(wrapper);
@@ -12265,6 +12429,7 @@
           RFileExporterRegistry_Wrapper* wrapper = getWrapper<RFileExporterRegistry_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileExporterRegistry: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFileExporterRegistry();
           }
@@ -12286,6 +12451,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileExporterRegistry_ptr: no wrapper";
+              handler.trace();
               return RFileExporterRegistry();
           }
           //RFileExporterRegistry* ret = getWrapped_RFileExporterRegistry(wrapper);
@@ -12379,6 +12545,7 @@
           RFileImporterAdapter_Wrapper* wrapper = getWrapper<RFileImporterAdapter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileImporterAdapter: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFileImporterAdapter();
           }
@@ -12400,6 +12567,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileImporterAdapter_ptr: no wrapper";
+              handler.trace();
               return RFileImporterAdapter();
           }
           //RFileImporterAdapter* ret = getWrapped_RFileImporterAdapter(wrapper);
@@ -12493,6 +12661,7 @@
           RFileImporterFactoryAdapter_Wrapper* wrapper = getWrapper<RFileImporterFactoryAdapter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileImporterFactoryAdapter: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFileImporterFactoryAdapter();
           }
@@ -12514,6 +12683,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileImporterFactoryAdapter_ptr: no wrapper";
+              handler.trace();
               return RFileImporterFactoryAdapter();
           }
           //RFileImporterFactoryAdapter* ret = getWrapped_RFileImporterFactoryAdapter(wrapper);
@@ -12607,6 +12777,7 @@
           RFileImporterRegistry_Wrapper* wrapper = getWrapper<RFileImporterRegistry_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileImporterRegistry: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFileImporterRegistry();
           }
@@ -12628,6 +12799,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileImporterRegistry_ptr: no wrapper";
+              handler.trace();
               return RFileImporterRegistry();
           }
           //RFileImporterRegistry* ret = getWrapped_RFileImporterRegistry(wrapper);
@@ -12721,6 +12893,7 @@
           RFont_Wrapper* wrapper = getWrapper<RFont_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFont: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFont();
           }
@@ -12742,6 +12915,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFont_ptr: no wrapper";
+              handler.trace();
               return RFont();
           }
           //RFont* ret = getWrapped_RFont(wrapper);
@@ -12835,6 +13009,7 @@
           RFontList_Wrapper* wrapper = getWrapper<RFontList_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFontList: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RFontList();
           }
@@ -12856,6 +13031,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFontList_ptr: no wrapper";
+              handler.trace();
               return RFontList();
           }
           //RFontList* ret = getWrapped_RFontList(wrapper);
@@ -12949,6 +13125,7 @@
           RGraphicsSceneDrawable_Wrapper* wrapper = getWrapper<RGraphicsSceneDrawable_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RGraphicsSceneDrawable: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RGraphicsSceneDrawable();
           }
@@ -12970,6 +13147,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RGraphicsSceneDrawable_ptr: no wrapper";
+              handler.trace();
               return RGraphicsSceneDrawable();
           }
           //RGraphicsSceneDrawable* ret = getWrapped_RGraphicsSceneDrawable(wrapper);
@@ -13063,6 +13241,7 @@
           RHatchData_Wrapper* wrapper = getWrapper<RHatchData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RHatchData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RHatchData();
           }
@@ -13084,6 +13263,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RHatchData_ptr: no wrapper";
+              handler.trace();
               return RHatchData();
           }
           //RHatchData* ret = getWrapped_RHatchData(wrapper);
@@ -13177,6 +13357,7 @@
           RImageData_Wrapper* wrapper = getWrapper<RImageData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RImageData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RImageData();
           }
@@ -13198,6 +13379,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RImageData_ptr: no wrapper";
+              handler.trace();
               return RImageData();
           }
           //RImageData* ret = getWrapped_RImageData(wrapper);
@@ -13291,6 +13473,7 @@
           RLeaderData_Wrapper* wrapper = getWrapper<RLeaderData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLeaderData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RLeaderData();
           }
@@ -13312,6 +13495,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLeaderData_ptr: no wrapper";
+              handler.trace();
               return RLeaderData();
           }
           //RLeaderData* ret = getWrapped_RLeaderData(wrapper);
@@ -13405,6 +13589,7 @@
           RLine_Wrapper* wrapper = getWrapper<RLine_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLine: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RLine();
           }
@@ -13426,6 +13611,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLine_ptr: no wrapper";
+              handler.trace();
               return RLine();
           }
           //RLine* ret = getWrapped_RLine(wrapper);
@@ -13519,6 +13705,7 @@
           RLineData_Wrapper* wrapper = getWrapper<RLineData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLineData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RLineData();
           }
@@ -13540,6 +13727,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLineData_ptr: no wrapper";
+              handler.trace();
               return RLineData();
           }
           //RLineData* ret = getWrapped_RLineData(wrapper);
@@ -13633,6 +13821,7 @@
           RLinetypePattern_Wrapper* wrapper = getWrapper<RLinetypePattern_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLinetypePattern: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RLinetypePattern();
           }
@@ -13654,6 +13843,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLinetypePattern_ptr: no wrapper";
+              handler.trace();
               return RLinetypePattern();
           }
           //RLinetypePattern* ret = getWrapped_RLinetypePattern(wrapper);
@@ -13747,6 +13937,7 @@
           RLineweight_Wrapper* wrapper = getWrapper<RLineweight_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLineweight: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RLineweight();
           }
@@ -13768,6 +13959,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLineweight_ptr: no wrapper";
+              handler.trace();
               return RLineweight();
           }
           //RLineweight* ret = getWrapped_RLineweight(wrapper);
@@ -13861,6 +14053,7 @@
           RMath_Wrapper* wrapper = getWrapper<RMath_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMath: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RMath();
           }
@@ -13882,6 +14075,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMath_ptr: no wrapper";
+              handler.trace();
               return RMath();
           }
           //RMath* ret = getWrapped_RMath(wrapper);
@@ -13975,6 +14169,7 @@
           RMatrix_Wrapper* wrapper = getWrapper<RMatrix_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMatrix: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RMatrix();
           }
@@ -13996,6 +14191,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMatrix_ptr: no wrapper";
+              handler.trace();
               return RMatrix();
           }
           //RMatrix* ret = getWrapped_RMatrix(wrapper);
@@ -14089,6 +14285,7 @@
           RPainterPath_Wrapper* wrapper = getWrapper<RPainterPath_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPainterPath: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPainterPath();
           }
@@ -14110,6 +14307,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPainterPath_ptr: no wrapper";
+              handler.trace();
               return RPainterPath();
           }
           //RPainterPath* ret = getWrapped_RPainterPath(wrapper);
@@ -14203,6 +14401,7 @@
           RPattern_Wrapper* wrapper = getWrapper<RPattern_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPattern: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPattern();
           }
@@ -14224,6 +14423,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPattern_ptr: no wrapper";
+              handler.trace();
               return RPattern();
           }
           //RPattern* ret = getWrapped_RPattern(wrapper);
@@ -14317,6 +14517,7 @@
           RPatternLine_Wrapper* wrapper = getWrapper<RPatternLine_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPatternLine: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPatternLine();
           }
@@ -14338,6 +14539,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPatternLine_ptr: no wrapper";
+              handler.trace();
               return RPatternLine();
           }
           //RPatternLine* ret = getWrapped_RPatternLine(wrapper);
@@ -14431,6 +14633,7 @@
           RPatternList_Wrapper* wrapper = getWrapper<RPatternList_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPatternList: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPatternList();
           }
@@ -14452,6 +14655,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPatternList_ptr: no wrapper";
+              handler.trace();
               return RPatternList();
           }
           //RPatternList* ret = getWrapped_RPatternList(wrapper);
@@ -14545,6 +14749,7 @@
           RPatternListImperial_Wrapper* wrapper = getWrapper<RPatternListImperial_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPatternListImperial: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPatternListImperial();
           }
@@ -14566,6 +14771,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPatternListImperial_ptr: no wrapper";
+              handler.trace();
               return RPatternListImperial();
           }
           //RPatternListImperial* ret = getWrapped_RPatternListImperial(wrapper);
@@ -14659,6 +14865,7 @@
           RPatternListMetric_Wrapper* wrapper = getWrapper<RPatternListMetric_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPatternListMetric: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPatternListMetric();
           }
@@ -14680,6 +14887,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPatternListMetric_ptr: no wrapper";
+              handler.trace();
               return RPatternListMetric();
           }
           //RPatternListMetric* ret = getWrapped_RPatternListMetric(wrapper);
@@ -14773,6 +14981,7 @@
           RPluginInfo_Wrapper* wrapper = getWrapper<RPluginInfo_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPluginInfo: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPluginInfo();
           }
@@ -14794,6 +15003,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPluginInfo_ptr: no wrapper";
+              handler.trace();
               return RPluginInfo();
           }
           //RPluginInfo* ret = getWrapped_RPluginInfo(wrapper);
@@ -14887,6 +15097,7 @@
           RPluginLoader_Wrapper* wrapper = getWrapper<RPluginLoader_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPluginLoader: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPluginLoader();
           }
@@ -14908,6 +15119,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPluginLoader_ptr: no wrapper";
+              handler.trace();
               return RPluginLoader();
           }
           //RPluginLoader* ret = getWrapped_RPluginLoader(wrapper);
@@ -15001,6 +15213,7 @@
           RPoint_Wrapper* wrapper = getWrapper<RPoint_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPoint: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPoint();
           }
@@ -15022,6 +15235,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPoint_ptr: no wrapper";
+              handler.trace();
               return RPoint();
           }
           //RPoint* ret = getWrapped_RPoint(wrapper);
@@ -15115,6 +15329,7 @@
           RPointData_Wrapper* wrapper = getWrapper<RPointData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPointData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPointData();
           }
@@ -15136,6 +15351,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPointData_ptr: no wrapper";
+              handler.trace();
               return RPointData();
           }
           //RPointData* ret = getWrapped_RPointData(wrapper);
@@ -15229,6 +15445,7 @@
           RPolyline_Wrapper* wrapper = getWrapper<RPolyline_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPolyline: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPolyline();
           }
@@ -15250,6 +15467,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPolyline_ptr: no wrapper";
+              handler.trace();
               return RPolyline();
           }
           //RPolyline* ret = getWrapped_RPolyline(wrapper);
@@ -15343,6 +15561,7 @@
           RPolylineData_Wrapper* wrapper = getWrapper<RPolylineData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPolylineData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPolylineData();
           }
@@ -15364,6 +15583,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPolylineData_ptr: no wrapper";
+              handler.trace();
               return RPolylineData();
           }
           //RPolylineData* ret = getWrapped_RPolylineData(wrapper);
@@ -15457,6 +15677,7 @@
           RPropertyAttributes_Wrapper* wrapper = getWrapper<RPropertyAttributes_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyAttributes: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPropertyAttributes();
           }
@@ -15478,6 +15699,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyAttributes_ptr: no wrapper";
+              handler.trace();
               return RPropertyAttributes();
           }
           //RPropertyAttributes* ret = getWrapped_RPropertyAttributes(wrapper);
@@ -15571,6 +15793,7 @@
           RPropertyChange_Wrapper* wrapper = getWrapper<RPropertyChange_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyChange: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPropertyChange();
           }
@@ -15592,6 +15815,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyChange_ptr: no wrapper";
+              handler.trace();
               return RPropertyChange();
           }
           //RPropertyChange* ret = getWrapped_RPropertyChange(wrapper);
@@ -15685,6 +15909,7 @@
           RPropertyEditor_Wrapper* wrapper = getWrapper<RPropertyEditor_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyEditor: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPropertyEditor();
           }
@@ -15706,6 +15931,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyEditor_ptr: no wrapper";
+              handler.trace();
               return RPropertyEditor();
           }
           //RPropertyEditor* ret = getWrapped_RPropertyEditor(wrapper);
@@ -15799,6 +16025,7 @@
           RPropertyTypeId_Wrapper* wrapper = getWrapper<RPropertyTypeId_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyTypeId: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RPropertyTypeId();
           }
@@ -15820,6 +16047,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyTypeId_ptr: no wrapper";
+              handler.trace();
               return RPropertyTypeId();
           }
           //RPropertyTypeId* ret = getWrapped_RPropertyTypeId(wrapper);
@@ -15913,6 +16141,7 @@
           RRay_Wrapper* wrapper = getWrapper<RRay_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRay: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RRay();
           }
@@ -15934,6 +16163,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRay_ptr: no wrapper";
+              handler.trace();
               return RRay();
           }
           //RRay* ret = getWrapped_RRay(wrapper);
@@ -16027,6 +16257,7 @@
           RRayData_Wrapper* wrapper = getWrapper<RRayData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRayData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RRayData();
           }
@@ -16048,6 +16279,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRayData_ptr: no wrapper";
+              handler.trace();
               return RRayData();
           }
           //RRayData* ret = getWrapped_RRayData(wrapper);
@@ -16141,6 +16373,7 @@
           RRefPoint_Wrapper* wrapper = getWrapper<RRefPoint_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRefPoint: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RRefPoint();
           }
@@ -16162,6 +16395,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRefPoint_ptr: no wrapper";
+              handler.trace();
               return RRefPoint();
           }
           //RRefPoint* ret = getWrapped_RRefPoint(wrapper);
@@ -16255,6 +16489,7 @@
           RS_Wrapper* wrapper = getWrapper<RS_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RS: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RS();
           }
@@ -16276,6 +16511,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RS_ptr: no wrapper";
+              handler.trace();
               return RS();
           }
           //RS* ret = getWrapped_RS(wrapper);
@@ -16369,6 +16605,7 @@
           RSettings_Wrapper* wrapper = getWrapper<RSettings_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSettings: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RSettings();
           }
@@ -16390,6 +16627,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSettings_ptr: no wrapper";
+              handler.trace();
               return RSettings();
           }
           //RSettings* ret = getWrapped_RSettings(wrapper);
@@ -16483,6 +16721,7 @@
           RSolidData_Wrapper* wrapper = getWrapper<RSolidData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSolidData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RSolidData();
           }
@@ -16504,6 +16743,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSolidData_ptr: no wrapper";
+              handler.trace();
               return RSolidData();
           }
           //RSolidData* ret = getWrapped_RSolidData(wrapper);
@@ -16597,6 +16837,7 @@
           RSpatialIndexNavel_Wrapper* wrapper = getWrapper<RSpatialIndexNavel_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSpatialIndexNavel: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RSpatialIndexNavel();
           }
@@ -16618,6 +16859,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSpatialIndexNavel_ptr: no wrapper";
+              handler.trace();
               return RSpatialIndexNavel();
           }
           //RSpatialIndexNavel* ret = getWrapped_RSpatialIndexNavel(wrapper);
@@ -16711,6 +16953,7 @@
           RSpatialIndexVisitorAdapter_Wrapper* wrapper = getWrapper<RSpatialIndexVisitorAdapter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSpatialIndexVisitorAdapter: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RSpatialIndexVisitorAdapter();
           }
@@ -16732,6 +16975,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSpatialIndexVisitorAdapter_ptr: no wrapper";
+              handler.trace();
               return RSpatialIndexVisitorAdapter();
           }
           //RSpatialIndexVisitorAdapter* ret = getWrapped_RSpatialIndexVisitorAdapter(wrapper);
@@ -16825,6 +17069,7 @@
           RSpline_Wrapper* wrapper = getWrapper<RSpline_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSpline: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RSpline();
           }
@@ -16846,6 +17091,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSpline_ptr: no wrapper";
+              handler.trace();
               return RSpline();
           }
           //RSpline* ret = getWrapped_RSpline(wrapper);
@@ -16939,6 +17185,7 @@
           RSplineData_Wrapper* wrapper = getWrapper<RSplineData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSplineData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RSplineData();
           }
@@ -16960,6 +17207,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSplineData_ptr: no wrapper";
+              handler.trace();
               return RSplineData();
           }
           //RSplineData* ret = getWrapped_RSplineData(wrapper);
@@ -17053,6 +17301,7 @@
           RTextBasedData_Wrapper* wrapper = getWrapper<RTextBasedData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextBasedData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RTextBasedData();
           }
@@ -17074,6 +17323,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextBasedData_ptr: no wrapper";
+              handler.trace();
               return RTextBasedData();
           }
           //RTextBasedData* ret = getWrapped_RTextBasedData(wrapper);
@@ -17167,6 +17417,7 @@
           RTextData_Wrapper* wrapper = getWrapper<RTextData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RTextData();
           }
@@ -17188,6 +17439,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextData_ptr: no wrapper";
+              handler.trace();
               return RTextData();
           }
           //RTextData* ret = getWrapped_RTextData(wrapper);
@@ -17281,6 +17533,7 @@
           RTextLabel_Wrapper* wrapper = getWrapper<RTextLabel_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextLabel: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RTextLabel();
           }
@@ -17302,6 +17555,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextLabel_ptr: no wrapper";
+              handler.trace();
               return RTextLabel();
           }
           //RTextLabel* ret = getWrapped_RTextLabel(wrapper);
@@ -17395,6 +17649,7 @@
           RTextLayout_Wrapper* wrapper = getWrapper<RTextLayout_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextLayout: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RTextLayout();
           }
@@ -17416,6 +17671,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextLayout_ptr: no wrapper";
+              handler.trace();
               return RTextLayout();
           }
           //RTextLayout* ret = getWrapped_RTextLayout(wrapper);
@@ -17509,6 +17765,7 @@
           RToleranceData_Wrapper* wrapper = getWrapper<RToleranceData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RToleranceData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RToleranceData();
           }
@@ -17530,6 +17787,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RToleranceData_ptr: no wrapper";
+              handler.trace();
               return RToleranceData();
           }
           //RToleranceData* ret = getWrapped_RToleranceData(wrapper);
@@ -17623,6 +17881,7 @@
           RTraceData_Wrapper* wrapper = getWrapper<RTraceData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTraceData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RTraceData();
           }
@@ -17644,6 +17903,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTraceData_ptr: no wrapper";
+              handler.trace();
               return RTraceData();
           }
           //RTraceData* ret = getWrapped_RTraceData(wrapper);
@@ -17737,6 +17997,7 @@
           RTransaction_Wrapper* wrapper = getWrapper<RTransaction_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransaction: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RTransaction();
           }
@@ -17758,6 +18019,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransaction_ptr: no wrapper";
+              handler.trace();
               return RTransaction();
           }
           //RTransaction* ret = getWrapped_RTransaction(wrapper);
@@ -17851,6 +18113,7 @@
           RTransform_Wrapper* wrapper = getWrapper<RTransform_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransform: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RTransform();
           }
@@ -17872,6 +18135,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransform_ptr: no wrapper";
+              handler.trace();
               return RTransform();
           }
           //RTransform* ret = getWrapped_RTransform(wrapper);
@@ -17965,6 +18229,7 @@
           RTransformOp_Wrapper* wrapper = getWrapper<RTransformOp_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransformOp: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RTransformOp();
           }
@@ -17986,6 +18251,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransformOp_ptr: no wrapper";
+              handler.trace();
               return RTransformOp();
           }
           //RTransformOp* ret = getWrapped_RTransformOp(wrapper);
@@ -18079,6 +18345,7 @@
           RTriangle_Wrapper* wrapper = getWrapper<RTriangle_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTriangle: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RTriangle();
           }
@@ -18100,6 +18367,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTriangle_ptr: no wrapper";
+              handler.trace();
               return RTriangle();
           }
           //RTriangle* ret = getWrapped_RTriangle(wrapper);
@@ -18193,6 +18461,7 @@
           RUnit_Wrapper* wrapper = getWrapper<RUnit_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RUnit: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RUnit();
           }
@@ -18214,6 +18483,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RUnit_ptr: no wrapper";
+              handler.trace();
               return RUnit();
           }
           //RUnit* ret = getWrapped_RUnit(wrapper);
@@ -18307,6 +18577,7 @@
           RViewFocusListenerAdapter_Wrapper* wrapper = getWrapper<RViewFocusListenerAdapter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RViewFocusListenerAdapter: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RViewFocusListenerAdapter();
           }
@@ -18328,6 +18599,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RViewFocusListenerAdapter_ptr: no wrapper";
+              handler.trace();
               return RViewFocusListenerAdapter();
           }
           //RViewFocusListenerAdapter* ret = getWrapped_RViewFocusListenerAdapter(wrapper);
@@ -18421,6 +18693,7 @@
           RViewportData_Wrapper* wrapper = getWrapper<RViewportData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RViewportData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RViewportData();
           }
@@ -18442,6 +18715,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RViewportData_ptr: no wrapper";
+              handler.trace();
               return RViewportData();
           }
           //RViewportData* ret = getWrapped_RViewportData(wrapper);
@@ -18535,6 +18809,7 @@
           RXLine_Wrapper* wrapper = getWrapper<RXLine_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RXLine: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RXLine();
           }
@@ -18556,6 +18831,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RXLine_ptr: no wrapper";
+              handler.trace();
               return RXLine();
           }
           //RXLine* ret = getWrapped_RXLine(wrapper);
@@ -18649,6 +18925,7 @@
           RXLineData_Wrapper* wrapper = getWrapper<RXLineData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RXLineData: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RXLineData();
           }
@@ -18670,6 +18947,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RXLineData_ptr: no wrapper";
+              handler.trace();
               return RXLineData();
           }
           //RXLineData* ret = getWrapped_RXLineData(wrapper);
@@ -18763,6 +19041,7 @@
           RVector_Wrapper* wrapper = getWrapper<RVector_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RVector: no wrapper";
+              handler.trace();
               Q_ASSERT(false);
               return RVector();
           }
@@ -18784,6 +19063,7 @@
           RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RVector_ptr: no wrapper";
+              handler.trace();
               return RVector();
           }
           //RVector* ret = getWrapped_RVector(wrapper);
@@ -18872,6 +19152,7 @@
           //RPainterPathSource_Wrapper* wrapper = getWrapper<RPainterPathSource_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPainterPathSource_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPainterPathSource(wrapper);
@@ -18993,6 +19274,7 @@
           //RShape_Wrapper* wrapper = getWrapper<RShape_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RShape_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RShape(wrapper);
@@ -19074,6 +19356,7 @@
           //RAction_Wrapper* wrapper = getWrapper<RAction_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAction_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RAction(wrapper);
@@ -19147,6 +19430,7 @@
           //RActionAdapter_Wrapper* wrapper = getWrapper<RActionAdapter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RActionAdapter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RActionAdapter(wrapper);
@@ -19228,6 +19512,7 @@
           //RAddObjectOperation_Wrapper* wrapper = getWrapper<RAddObjectOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAddObjectOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RAddObjectOperation(wrapper);
@@ -19317,6 +19602,7 @@
           //RAddObjectsOperation_Wrapper* wrapper = getWrapper<RAddObjectsOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAddObjectsOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RAddObjectsOperation(wrapper);
@@ -19390,6 +19676,7 @@
           //RArcEntity_Wrapper* wrapper = getWrapper<RArcEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RArcEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RArcEntity(wrapper);
@@ -19463,6 +19750,7 @@
           //RAttributeDefinitionEntity_Wrapper* wrapper = getWrapper<RAttributeDefinitionEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAttributeDefinitionEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RAttributeDefinitionEntity(wrapper);
@@ -19536,6 +19824,7 @@
           //RAttributeEntity_Wrapper* wrapper = getWrapper<RAttributeEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RAttributeEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RAttributeEntity(wrapper);
@@ -19609,6 +19898,7 @@
           //RBlock_Wrapper* wrapper = getWrapper<RBlock_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RBlock_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RBlock(wrapper);
@@ -19690,6 +19980,7 @@
           //RBlockListener_Wrapper* wrapper = getWrapper<RBlockListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RBlockListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RBlockListener(wrapper);
@@ -19763,6 +20054,7 @@
           //RBlockReferenceEntity_Wrapper* wrapper = getWrapper<RBlockReferenceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RBlockReferenceEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RBlockReferenceEntity(wrapper);
@@ -19836,6 +20128,7 @@
           //RChangePropertyOperation_Wrapper* wrapper = getWrapper<RChangePropertyOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RChangePropertyOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RChangePropertyOperation(wrapper);
@@ -19909,6 +20202,7 @@
           //RCircleEntity_Wrapper* wrapper = getWrapper<RCircleEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCircleEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RCircleEntity(wrapper);
@@ -19982,6 +20276,7 @@
           //RClickReferencePointOperation_Wrapper* wrapper = getWrapper<RClickReferencePointOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RClickReferencePointOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RClickReferencePointOperation(wrapper);
@@ -20079,6 +20374,7 @@
           //RClipboardOperation_Wrapper* wrapper = getWrapper<RClipboardOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RClipboardOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RClipboardOperation(wrapper);
@@ -20152,6 +20448,7 @@
           //RCloseCurrentEvent_Wrapper* wrapper = getWrapper<RCloseCurrentEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCloseCurrentEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RCloseCurrentEvent(wrapper);
@@ -20225,6 +20522,7 @@
           //RCommandEvent_Wrapper* wrapper = getWrapper<RCommandEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCommandEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RCommandEvent(wrapper);
@@ -20298,6 +20596,7 @@
           //RCoordinateEvent_Wrapper* wrapper = getWrapper<RCoordinateEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCoordinateEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RCoordinateEvent(wrapper);
@@ -20379,6 +20678,7 @@
           //RCoordinateListener_Wrapper* wrapper = getWrapper<RCoordinateListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCoordinateListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RCoordinateListener(wrapper);
@@ -20452,6 +20752,7 @@
           //RCopyOperation_Wrapper* wrapper = getWrapper<RCopyOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCopyOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RCopyOperation(wrapper);
@@ -20525,6 +20826,7 @@
           //RDeleteAllEntitiesOperation_Wrapper* wrapper = getWrapper<RDeleteAllEntitiesOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDeleteAllEntitiesOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDeleteAllEntitiesOperation(wrapper);
@@ -20598,6 +20900,7 @@
           //RDeleteObjectOperation_Wrapper* wrapper = getWrapper<RDeleteObjectOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDeleteObjectOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDeleteObjectOperation(wrapper);
@@ -20679,6 +20982,7 @@
           //RDeleteObjectsOperation_Wrapper* wrapper = getWrapper<RDeleteObjectsOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDeleteObjectsOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDeleteObjectsOperation(wrapper);
@@ -20752,6 +21056,7 @@
           //RDeleteSelectionOperation_Wrapper* wrapper = getWrapper<RDeleteSelectionOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDeleteSelectionOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDeleteSelectionOperation(wrapper);
@@ -20825,6 +21130,7 @@
           //RDimAlignedEntity_Wrapper* wrapper = getWrapper<RDimAlignedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAlignedEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimAlignedEntity(wrapper);
@@ -20898,6 +21204,7 @@
           //RDimAngular2LEntity_Wrapper* wrapper = getWrapper<RDimAngular2LEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAngular2LEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimAngular2LEntity(wrapper);
@@ -20971,6 +21278,7 @@
           //RDimAngular3PEntity_Wrapper* wrapper = getWrapper<RDimAngular3PEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAngular3PEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimAngular3PEntity(wrapper);
@@ -21068,6 +21376,7 @@
           //RDimAngularData_Wrapper* wrapper = getWrapper<RDimAngularData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAngularData_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimAngularData(wrapper);
@@ -21165,6 +21474,7 @@
           //RDimAngularEntity_Wrapper* wrapper = getWrapper<RDimAngularEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimAngularEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimAngularEntity(wrapper);
@@ -21238,6 +21548,7 @@
           //RDimArcLengthEntity_Wrapper* wrapper = getWrapper<RDimArcLengthEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimArcLengthEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimArcLengthEntity(wrapper);
@@ -21311,6 +21622,7 @@
           //RDimDiametricEntity_Wrapper* wrapper = getWrapper<RDimDiametricEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimDiametricEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimDiametricEntity(wrapper);
@@ -21400,6 +21712,7 @@
           //RDimLinearEntity_Wrapper* wrapper = getWrapper<RDimLinearEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimLinearEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimLinearEntity(wrapper);
@@ -21473,6 +21786,7 @@
           //RDimOrdinateEntity_Wrapper* wrapper = getWrapper<RDimOrdinateEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimOrdinateEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimOrdinateEntity(wrapper);
@@ -21546,6 +21860,7 @@
           //RDimRadialEntity_Wrapper* wrapper = getWrapper<RDimRadialEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimRadialEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimRadialEntity(wrapper);
@@ -21619,6 +21934,7 @@
           //RDimRotatedEntity_Wrapper* wrapper = getWrapper<RDimRotatedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimRotatedEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimRotatedEntity(wrapper);
@@ -21692,6 +22008,7 @@
           //RDimStyle_Wrapper* wrapper = getWrapper<RDimStyle_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimStyle_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimStyle(wrapper);
@@ -21805,6 +22122,7 @@
           //RDimensionData_Wrapper* wrapper = getWrapper<RDimensionData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimensionData_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimensionData(wrapper);
@@ -21894,6 +22212,7 @@
           //RDimLinearData_Wrapper* wrapper = getWrapper<RDimLinearData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimLinearData_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimLinearData(wrapper);
@@ -22007,6 +22326,7 @@
           //RDimensionEntity_Wrapper* wrapper = getWrapper<RDimensionEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDimensionEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDimensionEntity(wrapper);
@@ -22080,6 +22400,7 @@
           //RDirected_Wrapper* wrapper = getWrapper<RDirected_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDirected_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDirected(wrapper);
@@ -22153,6 +22474,7 @@
           //RDocument_Wrapper* wrapper = getWrapper<RDocument_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDocument_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDocument(wrapper);
@@ -22226,6 +22548,7 @@
           //RDocumentInterface_Wrapper* wrapper = getWrapper<RDocumentInterface_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDocumentInterface_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDocumentInterface(wrapper);
@@ -22299,6 +22622,7 @@
           //RDocumentVariables_Wrapper* wrapper = getWrapper<RDocumentVariables_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDocumentVariables_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RDocumentVariables(wrapper);
@@ -22372,6 +22696,7 @@
           //REllipseEntity_Wrapper* wrapper = getWrapper<REllipseEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REllipseEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_REllipseEntity(wrapper);
@@ -22605,6 +22930,7 @@
           //REntity_Wrapper* wrapper = getWrapper<REntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_REntity(wrapper);
@@ -22718,6 +23044,7 @@
           //REntityData_Wrapper* wrapper = getWrapper<REntityData_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REntityData_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_REntityData(wrapper);
@@ -22791,6 +23118,7 @@
           //REntityExportListener_Wrapper* wrapper = getWrapper<REntityExportListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REntityExportListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_REntityExportListener(wrapper);
@@ -22864,6 +23192,7 @@
           //REntityPickEvent_Wrapper* wrapper = getWrapper<REntityPickEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REntityPickEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_REntityPickEvent(wrapper);
@@ -22961,6 +23290,7 @@
           //RExplodable_Wrapper* wrapper = getWrapper<RExplodable_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RExplodable_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RExplodable(wrapper);
@@ -23034,6 +23364,7 @@
           //RExportListener_Wrapper* wrapper = getWrapper<RExportListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RExportListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RExportListener(wrapper);
@@ -23123,6 +23454,7 @@
           //RExporter_Wrapper* wrapper = getWrapper<RExporter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RExporter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RExporter(wrapper);
@@ -23196,6 +23528,7 @@
           //RFaceEntity_Wrapper* wrapper = getWrapper<RFaceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFaceEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RFaceEntity(wrapper);
@@ -23277,6 +23610,7 @@
           //RFileExporter_Wrapper* wrapper = getWrapper<RFileExporter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileExporter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RFileExporter(wrapper);
@@ -23358,6 +23692,7 @@
           //RFileExporterFactory_Wrapper* wrapper = getWrapper<RFileExporterFactory_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileExporterFactory_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RFileExporterFactory(wrapper);
@@ -23439,6 +23774,7 @@
           //RFileImporter_Wrapper* wrapper = getWrapper<RFileImporter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileImporter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RFileImporter(wrapper);
@@ -23520,6 +23856,7 @@
           //RFileImporterFactory_Wrapper* wrapper = getWrapper<RFileImporterFactory_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileImporterFactory_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RFileImporterFactory(wrapper);
@@ -23601,6 +23938,7 @@
           //RFocusListener_Wrapper* wrapper = getWrapper<RFocusListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFocusListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RFocusListener(wrapper);
@@ -23682,6 +24020,7 @@
           //RGraphicsScene_Wrapper* wrapper = getWrapper<RGraphicsScene_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RGraphicsScene_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RGraphicsScene(wrapper);
@@ -23755,6 +24094,7 @@
           //RGraphicsSceneQt_Wrapper* wrapper = getWrapper<RGraphicsSceneQt_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RGraphicsSceneQt_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RGraphicsSceneQt(wrapper);
@@ -23836,6 +24176,7 @@
           //RGraphicsView_Wrapper* wrapper = getWrapper<RGraphicsView_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RGraphicsView_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RGraphicsView(wrapper);
@@ -23917,6 +24258,7 @@
           //RGrid_Wrapper* wrapper = getWrapper<RGrid_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RGrid_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RGrid(wrapper);
@@ -23990,6 +24332,7 @@
           //RHatchEntity_Wrapper* wrapper = getWrapper<RHatchEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RHatchEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RHatchEntity(wrapper);
@@ -24063,6 +24406,7 @@
           //RImageEntity_Wrapper* wrapper = getWrapper<RImageEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RImageEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RImageEntity(wrapper);
@@ -24136,6 +24480,7 @@
           //RImportListener_Wrapper* wrapper = getWrapper<RImportListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RImportListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RImportListener(wrapper);
@@ -24217,6 +24562,7 @@
           //RImporter_Wrapper* wrapper = getWrapper<RImporter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RImporter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RImporter(wrapper);
@@ -24322,6 +24668,7 @@
           //RInputEvent_Wrapper* wrapper = getWrapper<RInputEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RInputEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RInputEvent(wrapper);
@@ -24403,6 +24750,7 @@
           //RInterTransactionListener_Wrapper* wrapper = getWrapper<RInterTransactionListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RInterTransactionListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RInterTransactionListener(wrapper);
@@ -24484,6 +24832,7 @@
           //RKeyListener_Wrapper* wrapper = getWrapper<RKeyListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RKeyListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RKeyListener(wrapper);
@@ -24557,6 +24906,7 @@
           //RLayer_Wrapper* wrapper = getWrapper<RLayer_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLayer_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RLayer(wrapper);
@@ -24646,6 +24996,7 @@
           //RLayerListener_Wrapper* wrapper = getWrapper<RLayerListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLayerListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RLayerListener(wrapper);
@@ -24719,6 +25070,7 @@
           //RLayerState_Wrapper* wrapper = getWrapper<RLayerState_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLayerState_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RLayerState(wrapper);
@@ -24792,6 +25144,7 @@
           //RLayout_Wrapper* wrapper = getWrapper<RLayout_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLayout_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RLayout(wrapper);
@@ -24865,6 +25218,7 @@
           //RLeaderEntity_Wrapper* wrapper = getWrapper<RLeaderEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLeaderEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RLeaderEntity(wrapper);
@@ -24938,6 +25292,7 @@
           //RLineEntity_Wrapper* wrapper = getWrapper<RLineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLineEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RLineEntity(wrapper);
@@ -25011,6 +25366,7 @@
           //RLinetype_Wrapper* wrapper = getWrapper<RLinetype_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLinetype_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RLinetype(wrapper);
@@ -25084,6 +25440,7 @@
           //RMainWindow_Wrapper* wrapper = getWrapper<RMainWindow_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMainWindow_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RMainWindow(wrapper);
@@ -25157,6 +25514,7 @@
           //RMemoryStorage_Wrapper* wrapper = getWrapper<RMemoryStorage_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMemoryStorage_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RMemoryStorage(wrapper);
@@ -25230,6 +25588,7 @@
           //RMessageHandler_Wrapper* wrapper = getWrapper<RMessageHandler_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMessageHandler_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RMessageHandler(wrapper);
@@ -25303,6 +25662,7 @@
           //RMixedOperation_Wrapper* wrapper = getWrapper<RMixedOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMixedOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RMixedOperation(wrapper);
@@ -25376,6 +25736,7 @@
           //RModifiedListener_Wrapper* wrapper = getWrapper<RModifiedListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RModifiedListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RModifiedListener(wrapper);
@@ -25449,6 +25810,7 @@
           //RModifyObjectOperation_Wrapper* wrapper = getWrapper<RModifyObjectOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RModifyObjectOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RModifyObjectOperation(wrapper);
@@ -25522,6 +25884,7 @@
           //RModifyObjectsOperation_Wrapper* wrapper = getWrapper<RModifyObjectsOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RModifyObjectsOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RModifyObjectsOperation(wrapper);
@@ -25595,6 +25958,7 @@
           //RMouseEvent_Wrapper* wrapper = getWrapper<RMouseEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMouseEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RMouseEvent(wrapper);
@@ -25668,6 +26032,7 @@
           //RMoveReferencePointOperation_Wrapper* wrapper = getWrapper<RMoveReferencePointOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMoveReferencePointOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RMoveReferencePointOperation(wrapper);
@@ -25741,6 +26106,7 @@
           //RMoveSelectionOperation_Wrapper* wrapper = getWrapper<RMoveSelectionOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMoveSelectionOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RMoveSelectionOperation(wrapper);
@@ -25814,6 +26180,7 @@
           //RNewDocumentListener_Wrapper* wrapper = getWrapper<RNewDocumentListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RNewDocumentListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RNewDocumentListener(wrapper);
@@ -25959,6 +26326,7 @@
           //RObject_Wrapper* wrapper = getWrapper<RObject_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RObject_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RObject(wrapper);
@@ -26112,6 +26480,7 @@
           //ROperation_Wrapper* wrapper = getWrapper<ROperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_ROperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_ROperation(wrapper);
@@ -26185,6 +26554,7 @@
           //ROperationUtils_Wrapper* wrapper = getWrapper<ROperationUtils_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_ROperationUtils_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_ROperationUtils(wrapper);
@@ -26258,6 +26628,7 @@
           //ROrthoGrid_Wrapper* wrapper = getWrapper<ROrthoGrid_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_ROrthoGrid_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_ROrthoGrid(wrapper);
@@ -26339,6 +26710,7 @@
           //RPaletteListener_Wrapper* wrapper = getWrapper<RPaletteListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPaletteListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPaletteListener(wrapper);
@@ -26412,6 +26784,7 @@
           //RPasteOperation_Wrapper* wrapper = getWrapper<RPasteOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPasteOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPasteOperation(wrapper);
@@ -26493,6 +26866,7 @@
           //RPenListener_Wrapper* wrapper = getWrapper<RPenListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPenListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPenListener(wrapper);
@@ -26566,6 +26940,7 @@
           //RPluginInterface_Wrapper* wrapper = getWrapper<RPluginInterface_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPluginInterface_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPluginInterface(wrapper);
@@ -26639,6 +27014,7 @@
           //RPointEntity_Wrapper* wrapper = getWrapper<RPointEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPointEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPointEntity(wrapper);
@@ -26712,6 +27088,7 @@
           //RPolylineEntity_Wrapper* wrapper = getWrapper<RPolylineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPolylineEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPolylineEntity(wrapper);
@@ -26793,6 +27170,7 @@
           //RPreferencesListener_Wrapper* wrapper = getWrapper<RPreferencesListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPreferencesListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPreferencesListener(wrapper);
@@ -26866,6 +27244,7 @@
           //RProgressHandler_Wrapper* wrapper = getWrapper<RProgressHandler_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RProgressHandler_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RProgressHandler(wrapper);
@@ -26939,6 +27318,7 @@
           //RPropertyEditor_Wrapper* wrapper = getWrapper<RPropertyEditor_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyEditor_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPropertyEditor(wrapper);
@@ -27012,6 +27392,7 @@
           //RPropertyEvent_Wrapper* wrapper = getWrapper<RPropertyEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPropertyEvent(wrapper);
@@ -27093,6 +27474,7 @@
           //RPropertyListener_Wrapper* wrapper = getWrapper<RPropertyListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RPropertyListener(wrapper);
@@ -27166,6 +27548,7 @@
           //RRayEntity_Wrapper* wrapper = getWrapper<RRayEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRayEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RRayEntity(wrapper);
@@ -27239,6 +27622,7 @@
           //RRestrictAngleLength_Wrapper* wrapper = getWrapper<RRestrictAngleLength_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRestrictAngleLength_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RRestrictAngleLength(wrapper);
@@ -27312,6 +27696,7 @@
           //RRestrictHorizontal_Wrapper* wrapper = getWrapper<RRestrictHorizontal_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRestrictHorizontal_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RRestrictHorizontal(wrapper);
@@ -27385,6 +27770,7 @@
           //RRestrictOff_Wrapper* wrapper = getWrapper<RRestrictOff_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRestrictOff_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RRestrictOff(wrapper);
@@ -27474,6 +27860,7 @@
           //RRestrictOrthogonal_Wrapper* wrapper = getWrapper<RRestrictOrthogonal_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRestrictOrthogonal_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RRestrictOrthogonal(wrapper);
@@ -27547,6 +27934,7 @@
           //RRestrictVertical_Wrapper* wrapper = getWrapper<RRestrictVertical_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRestrictVertical_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RRestrictVertical(wrapper);
@@ -27620,6 +28008,7 @@
           //RRuler_Wrapper* wrapper = getWrapper<RRuler_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRuler_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RRuler(wrapper);
@@ -27693,6 +28082,7 @@
           //RScaleSelectionOperation_Wrapper* wrapper = getWrapper<RScaleSelectionOperation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RScaleSelectionOperation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RScaleSelectionOperation(wrapper);
@@ -27774,6 +28164,7 @@
           //RSelectionListener_Wrapper* wrapper = getWrapper<RSelectionListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSelectionListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSelectionListener(wrapper);
@@ -27887,6 +28278,7 @@
           //RSnap_Wrapper* wrapper = getWrapper<RSnap_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnap_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnap(wrapper);
@@ -27960,6 +28352,7 @@
           //RSnapAuto_Wrapper* wrapper = getWrapper<RSnapAuto_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapAuto_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapAuto(wrapper);
@@ -28033,6 +28426,7 @@
           //RSnapCenter_Wrapper* wrapper = getWrapper<RSnapCenter_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapCenter_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapCenter(wrapper);
@@ -28106,6 +28500,7 @@
           //RSnapDistance_Wrapper* wrapper = getWrapper<RSnapDistance_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapDistance_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapDistance(wrapper);
@@ -28179,6 +28574,7 @@
           //RSnapEnd_Wrapper* wrapper = getWrapper<RSnapEnd_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapEnd_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapEnd(wrapper);
@@ -28316,6 +28712,7 @@
           //RSnapEntityBase_Wrapper* wrapper = getWrapper<RSnapEntityBase_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapEntityBase_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapEntityBase(wrapper);
@@ -28389,6 +28786,7 @@
           //RSnapFree_Wrapper* wrapper = getWrapper<RSnapFree_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapFree_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapFree(wrapper);
@@ -28462,6 +28860,7 @@
           //RSnapGrid_Wrapper* wrapper = getWrapper<RSnapGrid_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapGrid_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapGrid(wrapper);
@@ -28535,6 +28934,7 @@
           //RSnapIntersection_Wrapper* wrapper = getWrapper<RSnapIntersection_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapIntersection_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapIntersection(wrapper);
@@ -28608,6 +29008,7 @@
           //RSnapListener_Wrapper* wrapper = getWrapper<RSnapListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapListener(wrapper);
@@ -28681,6 +29082,7 @@
           //RSnapMiddle_Wrapper* wrapper = getWrapper<RSnapMiddle_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapMiddle_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapMiddle(wrapper);
@@ -28754,6 +29156,7 @@
           //RSnapOnEntity_Wrapper* wrapper = getWrapper<RSnapOnEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapOnEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapOnEntity(wrapper);
@@ -28827,6 +29230,7 @@
           //RSnapPerpendicular_Wrapper* wrapper = getWrapper<RSnapPerpendicular_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapPerpendicular_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapPerpendicular(wrapper);
@@ -28900,6 +29304,7 @@
           //RSnapReference_Wrapper* wrapper = getWrapper<RSnapReference_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapReference_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapReference(wrapper);
@@ -28997,6 +29402,7 @@
           //RSnapRestriction_Wrapper* wrapper = getWrapper<RSnapRestriction_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapRestriction_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapRestriction(wrapper);
@@ -29070,6 +29476,7 @@
           //RSnapTangential_Wrapper* wrapper = getWrapper<RSnapTangential_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSnapTangential_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSnapTangential(wrapper);
@@ -29143,6 +29550,7 @@
           //RSolidEntity_Wrapper* wrapper = getWrapper<RSolidEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSolidEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSolidEntity(wrapper);
@@ -29232,6 +29640,7 @@
           //RSpatialIndex_Wrapper* wrapper = getWrapper<RSpatialIndex_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSpatialIndex_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSpatialIndex(wrapper);
@@ -29305,6 +29714,7 @@
           //RSpatialIndexSimple_Wrapper* wrapper = getWrapper<RSpatialIndexSimple_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSpatialIndexSimple_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSpatialIndexSimple(wrapper);
@@ -29386,6 +29796,7 @@
           //RSpatialIndexVisitor_Wrapper* wrapper = getWrapper<RSpatialIndexVisitor_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSpatialIndexVisitor_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSpatialIndexVisitor(wrapper);
@@ -29459,6 +29870,7 @@
           //RSplineEntity_Wrapper* wrapper = getWrapper<RSplineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSplineEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RSplineEntity(wrapper);
@@ -29540,6 +29952,7 @@
           //RStorage_Wrapper* wrapper = getWrapper<RStorage_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RStorage_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RStorage(wrapper);
@@ -29613,6 +30026,7 @@
           //RTabletEvent_Wrapper* wrapper = getWrapper<RTabletEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTabletEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTabletEvent(wrapper);
@@ -29686,6 +30100,7 @@
           //RTerminateEvent_Wrapper* wrapper = getWrapper<RTerminateEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTerminateEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTerminateEvent(wrapper);
@@ -29783,6 +30198,7 @@
           //RTextBasedEntity_Wrapper* wrapper = getWrapper<RTextBasedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextBasedEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTextBasedEntity(wrapper);
@@ -29856,6 +30272,7 @@
           //RTextEntity_Wrapper* wrapper = getWrapper<RTextEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTextEntity(wrapper);
@@ -29929,6 +30346,7 @@
           //RTextRenderer_Wrapper* wrapper = getWrapper<RTextRenderer_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextRenderer_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTextRenderer(wrapper);
@@ -30002,6 +30420,7 @@
           //RToleranceEntity_Wrapper* wrapper = getWrapper<RToleranceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RToleranceEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RToleranceEntity(wrapper);
@@ -30075,6 +30494,7 @@
           //RTraceEntity_Wrapper* wrapper = getWrapper<RTraceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTraceEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTraceEntity(wrapper);
@@ -30148,6 +30568,7 @@
           //RTransaction_Wrapper* wrapper = getWrapper<RTransaction_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransaction_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTransaction(wrapper);
@@ -30229,6 +30650,7 @@
           //RTransactionListener_Wrapper* wrapper = getWrapper<RTransactionListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransactionListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTransactionListener(wrapper);
@@ -30302,6 +30724,7 @@
           //RTransactionStack_Wrapper* wrapper = getWrapper<RTransactionStack_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransactionStack_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTransactionStack(wrapper);
@@ -30383,6 +30806,7 @@
           //RTransformation_Wrapper* wrapper = getWrapper<RTransformation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransformation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTransformation(wrapper);
@@ -30456,6 +30880,7 @@
           //RTranslation_Wrapper* wrapper = getWrapper<RTranslation_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTranslation_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RTranslation(wrapper);
@@ -30529,6 +30954,7 @@
           //RUcs_Wrapper* wrapper = getWrapper<RUcs_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RUcs_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RUcs(wrapper);
@@ -30602,6 +31028,7 @@
           //RUcsListener_Wrapper* wrapper = getWrapper<RUcsListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RUcsListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RUcsListener(wrapper);
@@ -30675,6 +31102,7 @@
           //RView_Wrapper* wrapper = getWrapper<RView_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RView_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RView(wrapper);
@@ -30756,6 +31184,7 @@
           //RViewFocusListener_Wrapper* wrapper = getWrapper<RViewFocusListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RViewFocusListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RViewFocusListener(wrapper);
@@ -30837,6 +31266,7 @@
           //RViewListener_Wrapper* wrapper = getWrapper<RViewListener_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RViewListener_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RViewListener(wrapper);
@@ -30910,6 +31340,7 @@
           //RViewportEntity_Wrapper* wrapper = getWrapper<RViewportEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RViewportEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RViewportEntity(wrapper);
@@ -30983,6 +31414,7 @@
           //RWheelEvent_Wrapper* wrapper = getWrapper<RWheelEvent_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RWheelEvent_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RWheelEvent(wrapper);
@@ -31056,6 +31488,7 @@
           //RXLineEntity_Wrapper* wrapper = getWrapper<RXLineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RXLineEntity_ptr: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return getWrapped_RXLineEntity(wrapper);
@@ -31159,6 +31592,7 @@
           //RBlockListenerAdapter_Wrapper* wrapper = (RBlockListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RBlockListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RBlockListenerAdapter*)wrapper->getWrappedVoid();
@@ -31263,6 +31697,7 @@
           //RCadToolBar_Wrapper* wrapper = (RCadToolBar_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCadToolBar: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RCadToolBar*)wrapper->getWrappedVoid();
@@ -31367,6 +31802,7 @@
           //RCadToolBarPanel_Wrapper* wrapper = (RCadToolBarPanel_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCadToolBarPanel: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RCadToolBarPanel*)wrapper->getWrappedVoid();
@@ -31471,6 +31907,7 @@
           //RCharacterWidget_Wrapper* wrapper = (RCharacterWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCharacterWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RCharacterWidget*)wrapper->getWrappedVoid();
@@ -31575,6 +32012,7 @@
           //RColorCombo_Wrapper* wrapper = (RColorCombo_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RColorCombo: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RColorCombo*)wrapper->getWrappedVoid();
@@ -31679,6 +32117,7 @@
           //RCommandLine_Wrapper* wrapper = (RCommandLine_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCommandLine: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RCommandLine*)wrapper->getWrappedVoid();
@@ -31783,6 +32222,7 @@
           //RCoordinateListenerAdapter_Wrapper* wrapper = (RCoordinateListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RCoordinateListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RCoordinateListenerAdapter*)wrapper->getWrappedVoid();
@@ -31887,6 +32327,7 @@
           //RDockWidget_Wrapper* wrapper = (RDockWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RDockWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RDockWidget*)wrapper->getWrappedVoid();
@@ -31991,6 +32432,7 @@
           //REventFilter_Wrapper* wrapper = (REventFilter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REventFilter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (REventFilter*)wrapper->getWrappedVoid();
@@ -32095,6 +32537,7 @@
           //REventHandler_Wrapper* wrapper = (REventHandler_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_REventHandler: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (REventHandler*)wrapper->getWrappedVoid();
@@ -32199,6 +32642,7 @@
           //RFileSystemModel_Wrapper* wrapper = (RFileSystemModel_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFileSystemModel: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RFileSystemModel*)wrapper->getWrappedVoid();
@@ -32303,6 +32747,7 @@
           //RFlowLayout_Wrapper* wrapper = (RFlowLayout_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFlowLayout: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RFlowLayout*)wrapper->getWrappedVoid();
@@ -32407,6 +32852,7 @@
           //RFocusListenerAdapter_Wrapper* wrapper = (RFocusListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFocusListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RFocusListenerAdapter*)wrapper->getWrappedVoid();
@@ -32511,6 +32957,7 @@
           //RFontChooserWidget_Wrapper* wrapper = (RFontChooserWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RFontChooserWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RFontChooserWidget*)wrapper->getWrappedVoid();
@@ -32615,6 +33062,7 @@
           //RGraphicsViewQt_Wrapper* wrapper = (RGraphicsViewQt_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RGraphicsViewQt: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RGraphicsViewQt*)wrapper->getWrappedVoid();
@@ -32719,6 +33167,7 @@
           //RGraphicsViewImage_Wrapper* wrapper = (RGraphicsViewImage_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RGraphicsViewImage: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RGraphicsViewImage*)wrapper->getWrappedVoid();
@@ -32745,6 +33194,111 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_RGraphicsViewImage::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper_qcad::cpp2js_RGraphicsViewWorker(RJSApi& handler, RGraphicsViewWorker* v) {
+          RGraphicsViewWorker_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<RGraphicsViewWorker_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper_qcad::cpp2js_RGraphicsViewWorker: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new RGraphicsViewWorker_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new RGraphicsViewWorker_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new RGraphicsViewWorker('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RGraphicsViewWorker");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RGraphicsViewWorker is undefined. Use RGraphicsViewWorker_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RGraphicsViewWorker('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RGraphicsViewWorker(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RGraphicsViewWorker(RJSApi& handler, const RGraphicsViewWorker* v) {
+          return RJSHelper_qcad::cpp2js_RGraphicsViewWorker(handler, const_cast<RGraphicsViewWorker*>(v));
+      }
+
+      RGraphicsViewWorker* RJSHelper_qcad::js2cpp_RGraphicsViewWorker_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RGraphicsViewWorker: not a QObject";
+              return nullptr;
+          }
+          //RGraphicsViewWorker_Wrapper* wrapper = getWrapper<RGraphicsViewWorker_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //RGraphicsViewWorker_Wrapper* wrapper = qobject_cast<RGraphicsViewWorker_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RGraphicsViewWorker_Wrapper* wrapper = dynamic_cast<RGraphicsViewWorker_Wrapper*>(obj);
+          //RGraphicsViewWorker_Wrapper* wrapper = (RGraphicsViewWorker_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RGraphicsViewWorker: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (RGraphicsViewWorker*)wrapper->getWrappedVoid();
+          //return getWrapped_RGraphicsViewWorker(wrapper);
+          return RGraphicsViewWorker_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RGraphicsViewWorker_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RGraphicsViewWorker: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::RGraphicsViewWorker_Type);
+          //return fun.call().toInt()==RJSType::RGraphicsViewWorker_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RGraphicsViewWorker::getIdStatic())).toBool();
       }
 
     
@@ -32823,6 +33377,7 @@
           //RGuiAction_Wrapper* wrapper = (RGuiAction_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RGuiAction: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RGuiAction*)wrapper->getWrappedVoid();
@@ -32927,6 +33482,7 @@
           //RInterTransactionListenerAdapter_Wrapper* wrapper = (RInterTransactionListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RInterTransactionListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RInterTransactionListenerAdapter*)wrapper->getWrappedVoid();
@@ -33031,6 +33587,7 @@
           //RKeyListenerAdapter_Wrapper* wrapper = (RKeyListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RKeyListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RKeyListenerAdapter*)wrapper->getWrappedVoid();
@@ -33135,6 +33692,7 @@
           //RLayerListenerAdapter_Wrapper* wrapper = (RLayerListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLayerListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RLayerListenerAdapter*)wrapper->getWrappedVoid();
@@ -33239,6 +33797,7 @@
           //RLinetypeCombo_Wrapper* wrapper = (RLinetypeCombo_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLinetypeCombo: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RLinetypeCombo*)wrapper->getWrappedVoid();
@@ -33343,6 +33902,7 @@
           //RLineweightCombo_Wrapper* wrapper = (RLineweightCombo_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RLineweightCombo: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RLineweightCombo*)wrapper->getWrappedVoid();
@@ -33447,6 +34007,7 @@
           //RListView_Wrapper* wrapper = (RListView_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RListView: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RListView*)wrapper->getWrappedVoid();
@@ -33551,6 +34112,7 @@
           //RListWidget_Wrapper* wrapper = (RListWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RListWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RListWidget*)wrapper->getWrappedVoid();
@@ -33655,6 +34217,7 @@
           //RMainWindowQt_Wrapper* wrapper = (RMainWindowQt_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMainWindowQt: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RMainWindowQt*)wrapper->getWrappedVoid();
@@ -33759,6 +34322,7 @@
           //RMathComboBox_Wrapper* wrapper = (RMathComboBox_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMathComboBox: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RMathComboBox*)wrapper->getWrappedVoid();
@@ -33863,6 +34427,7 @@
           //RMathLineEdit_Wrapper* wrapper = (RMathLineEdit_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMathLineEdit: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RMathLineEdit*)wrapper->getWrappedVoid();
@@ -33967,6 +34532,7 @@
           //RMdiArea_Wrapper* wrapper = (RMdiArea_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMdiArea: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RMdiArea*)wrapper->getWrappedVoid();
@@ -34071,6 +34637,7 @@
           //RMdiChildQt_Wrapper* wrapper = (RMdiChildQt_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RMdiChildQt: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RMdiChildQt*)wrapper->getWrappedVoid();
@@ -34175,6 +34742,7 @@
           //RPaletteListenerAdapter_Wrapper* wrapper = (RPaletteListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPaletteListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RPaletteListenerAdapter*)wrapper->getWrappedVoid();
@@ -34279,6 +34847,7 @@
           //RPenListenerAdapter_Wrapper* wrapper = (RPenListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPenListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RPenListenerAdapter*)wrapper->getWrappedVoid();
@@ -34383,6 +34952,7 @@
           //RPreferencesListenerAdapter_Wrapper* wrapper = (RPreferencesListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPreferencesListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RPreferencesListenerAdapter*)wrapper->getWrappedVoid();
@@ -34487,6 +35057,7 @@
           //RPropertyListenerAdapter_Wrapper* wrapper = (RPropertyListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RPropertyListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RPropertyListenerAdapter*)wrapper->getWrappedVoid();
@@ -34591,6 +35162,7 @@
           //RRulerQt_Wrapper* wrapper = (RRulerQt_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RRulerQt: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RRulerQt*)wrapper->getWrappedVoid();
@@ -34695,6 +35267,7 @@
           //RSelectionListenerAdapter_Wrapper* wrapper = (RSelectionListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSelectionListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RSelectionListenerAdapter*)wrapper->getWrappedVoid();
@@ -34799,6 +35372,7 @@
           //RSingleApplication_Wrapper* wrapper = (RSingleApplication_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RSingleApplication: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RSingleApplication*)wrapper->getWrappedVoid();
@@ -34903,6 +35477,7 @@
           //RTextEdit_Wrapper* wrapper = (RTextEdit_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTextEdit: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RTextEdit*)wrapper->getWrappedVoid();
@@ -35007,6 +35582,7 @@
           //RToolButton_Wrapper* wrapper = (RToolButton_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RToolButton: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RToolButton*)wrapper->getWrappedVoid();
@@ -35111,6 +35687,7 @@
           //RToolMatrixItemDelegate_Wrapper* wrapper = (RToolMatrixItemDelegate_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RToolMatrixItemDelegate: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RToolMatrixItemDelegate*)wrapper->getWrappedVoid();
@@ -35215,6 +35792,7 @@
           //RTransactionListenerAdapter_Wrapper* wrapper = (RTransactionListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTransactionListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RTransactionListenerAdapter*)wrapper->getWrappedVoid();
@@ -35319,6 +35897,7 @@
           //RTreeWidget_Wrapper* wrapper = (RTreeWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RTreeWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RTreeWidget*)wrapper->getWrappedVoid();
@@ -35423,6 +36002,7 @@
           //RViewListenerAdapter_Wrapper* wrapper = (RViewListenerAdapter_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RViewListenerAdapter: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RViewListenerAdapter*)wrapper->getWrappedVoid();
@@ -35535,6 +36115,7 @@
           //RWidget_Wrapper* wrapper = (RWidget_Wrapper*)obj;
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_RWidget: no wrapper";
+              handler.trace();
               return nullptr;
           }
           //return (RWidget*)wrapper->getWrappedVoid();

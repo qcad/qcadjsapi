@@ -1,4 +1,7 @@
 # Automatically generated, do not edit
+target_precompile_headers(qcadjsapi PUBLIC
+    generator/RJSHelper_qcad_headers.h
+)
 target_sources(qcadjsapi PUBLIC
     generator/cpp/raction_base.h
     generator/cpp/raction_wrapper.h
@@ -218,6 +221,7 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rgraphicsviewimage_wrapper.h
     generator/cpp/rgraphicsviewqt_base.h
     generator/cpp/rgraphicsviewqt_wrapper.h
+    generator/cpp/rgraphicsviewworker_wrapper.h
     generator/cpp/rgrid_base.h
     generator/cpp/rgrid_wrapper.h
     generator/cpp/rguiaction_base.h

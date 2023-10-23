@@ -39,6 +39,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="drawInfoLabel">
       <variant return-type="void" access="public">
         <parameters>
@@ -47,6 +48,8 @@
         </parameters>
       </variant>
     </function>
+    -->
+    <!--
     <function name="drawSnapLabel">
       <variant return-type="void" access="public">
         <parameters>
@@ -57,6 +60,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="dragEnter">
       <variant return-type="void" access="public">
         <parameters>
@@ -67,7 +71,7 @@
     <function name="updateTextLabel">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="false" type="RGraphicsViewWorker" modifier="*" name="worker" />
           <parameter const="true" type="RTextLabel" modifier="&amp;" name="textLabel" />
         </parameters>
       </variant>
@@ -75,7 +79,7 @@
     <function name="updateSnapInfo">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="false" type="RGraphicsViewWorker" modifier="*" name="worker" />
           <parameter const="false" type="RSnap" modifier="*" name="snap" />
           <parameter const="false" type="RSnapRestriction" modifier="*" name="restriction" />
         </parameters>

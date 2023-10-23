@@ -677,68 +677,6 @@
               ;
             
     // Class: REventHandler
-    // Function: drawInfoLabel
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  drawInfoLabel
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: REventHandler
-    // Function: drawSnapLabel
-    // Source: 
-    // Static: false
-    // Parameters: 4
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  drawSnapLabel
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: REventHandler
     // Function: dragEnter
     // Source: 
     // Static: false

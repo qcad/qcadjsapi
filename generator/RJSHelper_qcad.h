@@ -664,6 +664,12 @@
           virtual RGraphicsView* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class RGraphicsViewWorker:
+        class RJSBasecaster_RGraphicsViewWorker {
+        public:
+          virtual RGraphicsViewWorker* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class RGraphicsViewImage:
         class RJSBasecaster_RGraphicsViewImage {
         public:
@@ -4021,6 +4027,21 @@
             };
           
           // implementation of base casters that cast RGraphicsView to base classes:
+          
+          // implementation of base casters that cast RGraphicsViewWorker to base classes:
+          
+            // implementation of base casters that casts RGraphicsViewWorker to QObject
+            class RJSBasecaster_RGraphicsViewWorker_QObject : public RJSBasecaster_QObject {
+            public:
+              virtual QObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RGraphicsViewWorker::getIdStatic()) {
+                  return (QObject*)(RGraphicsViewWorker*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
           
           // implementation of base casters that cast RGraphicsViewImage to base classes:
           
@@ -7856,6 +7877,10 @@
       static RXLineEntity::Id js2cpp_RXLineEntity_Id(RJSApi& handler, const QJSValue& v);
       static bool is_RXLineEntity_Id(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_RGraphicsViewWorker_ClearMode(RJSApi& handler, RGraphicsViewWorker::ClearMode v);
+      static RGraphicsViewWorker::ClearMode js2cpp_RGraphicsViewWorker_ClearMode(RJSApi& handler, const QJSValue& v);
+      static bool is_RGraphicsViewWorker_ClearMode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
   // ---------------------
   // QSharedPointer types:
   // ---------------------
@@ -9220,6 +9245,11 @@
       static QJSValue cpp2js_RGraphicsViewImage(RJSApi& handler, const RGraphicsViewImage* v);
       static RGraphicsViewImage* js2cpp_RGraphicsViewImage_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RGraphicsViewImage_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RGraphicsViewWorker(RJSApi& handler, RGraphicsViewWorker* v);
+      static QJSValue cpp2js_RGraphicsViewWorker(RJSApi& handler, const RGraphicsViewWorker* v);
+      static RGraphicsViewWorker* js2cpp_RGraphicsViewWorker_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RGraphicsViewWorker_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RGuiAction(RJSApi& handler, RGuiAction* v);
       static QJSValue cpp2js_RGuiAction(RJSApi& handler, const RGuiAction* v);

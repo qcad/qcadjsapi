@@ -370,6 +370,7 @@
 #include "generator/cpp/rdimstyle_wrapper.h"
 #include "generator/cpp/rblock_wrapper.h"
 #include "generator/cpp/rgraphicsviewimage_wrapper.h"
+#include "generator/cpp/rgraphicsviewworker_wrapper.h"
 #include "generator/cpp/rpropertytypeid_wrapper.h"
 #include "generator/cpp/rentitypickevent_wrapper.h"
 #include "generator/cpp/rlistwidget_wrapper.h"
@@ -974,6 +975,7 @@ void RScriptHandlerJs::init() {
     RDimStyle_Wrapper::init(*rjsapi);
     RBlock_Wrapper::init(*rjsapi);
     RGraphicsViewImage_Wrapper::init(*rjsapi);
+    RGraphicsViewWorker_Wrapper::init(*rjsapi);
     REntityPickEvent_Wrapper::init(*rjsapi);
     RListWidget_Wrapper::init(*rjsapi);
     RListView_Wrapper::init(*rjsapi);

@@ -4615,6 +4615,22 @@
             return derrivedTypes.contains(otherType);
         }
       
+      int RJSType_RGraphicsViewWorker::id = -1;
+
+
+      
+        bool RJSType_RGraphicsViewWorker::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
       int RJSType_RGuiAction::id = -1;
 
 

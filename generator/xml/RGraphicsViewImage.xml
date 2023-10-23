@@ -8,10 +8,360 @@
   <class_decl name="RLine" />
   <class_decl name="RSnap" />
   <class_decl name="RSnapRestriction" />
-  <class name="RGraphicsViewImage" ownership="cpp">
+  <class name="RGraphicsViewWorker" ownership="cpp">
     <super_list>
       <super name="QObject" />
-      <super name="RGraphicsView" />
+      <!--
+      <super name="QThread" />
+      -->
+    </super_list>
+    <!--
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="RGraphicsViewImage" modifier="&amp;" name="imageView" />
+          <parameter const="false" type="int" modifier="" name="threadId" />
+        </parameters>
+      </variant>
+    </constructor>
+    -->
+    <!--
+    <enum name="ClearMode">
+      <key>NoClear</key>
+      <key>ClearToTransparent</key>
+      <key>ClearToBackground</key>
+    </enum>
+    <function name="run">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="init">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QList&lt;REntity::Id&gt;" modifier="&amp;" name="list" />
+          <parameter const="false" type="int" modifier="" name="start" />
+          <parameter const="false" type="int" modifier="" name="end" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setClearMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RGraphicsViewWorker::ClearMode" modifier="" name="m" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClearMode">
+      <variant return-type="RGraphicsViewWorker::ClearMode" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getImage">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setImage">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QImage" modifier="&amp;" name="img" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasTransforms">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getEntityTransformStack">
+      <variant return-type="QStack&lt;RTransform&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="pushTransform">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RTransform" modifier="&amp;" name="t" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="popTransform">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="paint">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="begin">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="end">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setAntialiasing">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBackground">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QColor" modifier="&amp;" name="col" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setCompositionMode">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QPainter::CompositionMode" modifier="" name="mode" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setFont">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QFont" modifier="&amp;" name="font" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="eraseRect">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setClipRect">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rect" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setClipping">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setOpacity">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="opacity" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="save">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="restore">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getTransform">
+      <variant return-type="QTransform" virtual="true" pure-virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setTransform">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="t" />
+          <parameter const="false" type="bool" modifier="" name="combine" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="translate">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x" />
+          <parameter const="false" type="double" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="x" />
+          <parameter const="false" type="double" modifier="" name="y" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getWorldTransform">
+      <variant return-type="QTransform" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWorldTransform">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTransform" modifier="&amp;" name="t" />
+          <parameter const="false" type="bool" modifier="" name="combine" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setBrush">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPen">
+      <variant return-type="QPen" virtual="true" pure-virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setPen">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPen" modifier="&amp;" name="pen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawPoint">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintImage">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RImageData" modifier="&amp;" name="img" />
+          <parameter const="false" type="bool" modifier="" name="workingSet" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawImage">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="x" />
+          <parameter const="false" type="int" modifier="" name="y" />
+          <parameter const="true" type="QImage" modifier="&amp;" name="image" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintText">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RTextBasedData" modifier="&amp;" name="text" />
+          <parameter const="false" type="bool" modifier="" name="workingSet" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawText">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rectangle" />
+          <parameter const="false" type="int" modifier="" name="flags" />
+          <parameter const="true" type="QString" modifier="&amp;" name="text" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawTextLayout">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QTextLayout" modifier="&amp;" name="textLayout" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fillPath">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="path" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawPath">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPainterPath" modifier="&amp;" name="path" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawLine">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p1" />
+          <parameter const="true" type="QPointF" modifier="&amp;" name="p2" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QLineF" modifier="&amp;" name="line" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="strokePath">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPainterPath" modifier="&amp;" name="path" />
+          <parameter const="true" type="QPen" modifier="&amp;" name="pen" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawEllipse">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QPointF" modifier="&amp;" name="center" />
+          <parameter const="false" type="double" modifier="" name="rx" />
+          <parameter const="false" type="double" modifier="" name="ry" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rectangle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="drawRect">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rectangle" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="fillRect">
+      <variant return-type="void" virtual="true" pure-virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="QRectF" modifier="&amp;" name="rectangle" />
+          <parameter const="true" type="QBrush" modifier="&amp;" name="brush" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="finished">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
+      </variant>
+    </function>
+    -->
+  </class>
+  <class name="RGraphicsViewImage" ownership="cpp">
+    <super_list>
+      <super name="QObject" downcast="true" />
+      <super name="RGraphicsView" downcast="true" />
     </super_list>
     <constructor>
       <variant>
@@ -434,6 +784,7 @@
         <parameters />
       </variant>
     </function>
+    <!--
     <function name="paintEntities">
       <variant return-type="void" virtual="true" access="public">
         <parameters>
@@ -475,6 +826,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="getBuffer">
       <variant return-type="QImage" const="true" access="public">
         <parameters />
@@ -610,7 +962,7 @@
     <function name="updateSnapInfo">
       <variant return-type="void" access="public" signal="true">
         <parameters>
-          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="false" type="RGraphicsViewWorker" modifier="*" name="painter" />
           <parameter const="false" type="RSnap" modifier="*" name="snap" />
           <parameter const="false" type="RSnapRestriction" modifier="*" name="restriction" />
         </parameters>
@@ -619,7 +971,7 @@
     <function name="updateTextLabel">
       <variant return-type="void" access="public" signal="true">
         <parameters>
-          <parameter const="false" type="QPainter" modifier="*" name="painter" />
+          <parameter const="false" type="RGraphicsViewWorker" modifier="*" name="painter" />
           <parameter const="true" type="RTextLabel" modifier="&amp;" name="textLabel" />
         </parameters>
       </variant>

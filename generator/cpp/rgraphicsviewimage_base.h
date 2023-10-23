@@ -16,6 +16,11 @@
     #include <QQmlEngine>
 
     
+        #include "RGraphicsViewWorker.h"
+      
+    #include <QQmlEngine>
+
+    
         #include "RGraphicsViewImage.h"
       
   #endif

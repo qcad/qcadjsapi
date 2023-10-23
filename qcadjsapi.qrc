@@ -109,6 +109,7 @@
     <file alias="generator/js/RGraphicsView.js">generator/js/RGraphicsView.js</file>
     <file alias="generator/js/RGraphicsViewImage.js">generator/js/RGraphicsViewImage.js</file>
     <file alias="generator/js/RGraphicsViewQt.js">generator/js/RGraphicsViewQt.js</file>
+    <file alias="generator/js/RGraphicsViewWorker.js">generator/js/RGraphicsViewWorker.js</file>
     <file alias="generator/js/RGrid.js">generator/js/RGrid.js</file>
     <file alias="generator/js/RGuiAction.js">generator/js/RGuiAction.js</file>
     <file alias="generator/js/RHatchData.js">generator/js/RHatchData.js</file>

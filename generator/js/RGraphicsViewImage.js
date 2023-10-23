@@ -87,9 +87,9 @@
           // signal aliases:
           if (Object.getPrototypeOf(this)!=null) {
             
-    this["updateSnapInfo(QPainter*,RSnap*,RSnapRestriction*)"] = Object.getPrototypeOf(this).updateSnapInfo;
+    this["updateSnapInfo(RGraphicsViewWorker*,RSnap*,RSnapRestriction*)"] = Object.getPrototypeOf(this).updateSnapInfo;
   
-    this["updateTextLabel(QPainter*,RTextLabel)"] = Object.getPrototypeOf(this).updateTextLabel;
+    this["updateTextLabel(RGraphicsViewWorker*,RTextLabel)"] = Object.getPrototypeOf(this).updateTextLabel;
   
           }
         }
