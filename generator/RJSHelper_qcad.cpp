@@ -5333,8 +5333,7 @@
   // ---------------------
   // QSharedPointer types:
   // ---------------------
-  
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_REntity(RJSApi& handler, const QSharedPointer<REntity>& v) {
+   QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_REntity(RJSApi& handler, const QSharedPointer<REntity>& v) {
           QJSEngine* engine = handler.getEngine();
           REntity_Wrapper* ret = new REntity_Wrapper(handler, v);
 
@@ -5595,7 +5594,7 @@
               RJSWrapper* wrapper = getWrapperRJSWrapper(v);
               int t = wrapper->getWrappedType();
 
-              // attempt to downcast to specific type:
+              // use conversion function of appropriate sub class:
               
                 if (RJSType_RArcEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RArcEntity(handler, v);
@@ -5763,8 +5762,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_REntity_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RShape(RJSApi& handler, const QSharedPointer<RShape>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RShape(RJSApi& handler, const QSharedPointer<RShape>& v) {
           QJSEngine* engine = handler.getEngine();
           RShape_Wrapper* ret = new RShape_Wrapper(handler, v);
 
@@ -5864,7 +5862,7 @@
               RJSWrapper* wrapper = getWrapperRJSWrapper(v);
               int t = wrapper->getWrappedType();
 
-              // attempt to downcast to specific type:
+              // use conversion function of appropriate sub class:
               
                 if (RJSType_RArc::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RArc(handler, v);
@@ -5940,8 +5938,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RShape_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RArc(RJSApi& handler, const QSharedPointer<RArc>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RArc(RJSApi& handler, const QSharedPointer<RArc>& v) {
           QJSEngine* engine = handler.getEngine();
           RArc_Wrapper* ret = new RArc_Wrapper(handler, v);
 
@@ -5999,8 +5996,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RArc_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RCircle(RJSApi& handler, const QSharedPointer<RCircle>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RCircle(RJSApi& handler, const QSharedPointer<RCircle>& v) {
           QJSEngine* engine = handler.getEngine();
           RCircle_Wrapper* ret = new RCircle_Wrapper(handler, v);
 
@@ -6058,8 +6054,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RCircle_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_REllipse(RJSApi& handler, const QSharedPointer<REllipse>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_REllipse(RJSApi& handler, const QSharedPointer<REllipse>& v) {
           QJSEngine* engine = handler.getEngine();
           REllipse_Wrapper* ret = new REllipse_Wrapper(handler, v);
 
@@ -6117,8 +6112,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_REllipse_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RLine(RJSApi& handler, const QSharedPointer<RLine>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RLine(RJSApi& handler, const QSharedPointer<RLine>& v) {
           QJSEngine* engine = handler.getEngine();
           RLine_Wrapper* ret = new RLine_Wrapper(handler, v);
 
@@ -6176,8 +6170,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RLine_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RPoint(RJSApi& handler, const QSharedPointer<RPoint>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RPoint(RJSApi& handler, const QSharedPointer<RPoint>& v) {
           QJSEngine* engine = handler.getEngine();
           RPoint_Wrapper* ret = new RPoint_Wrapper(handler, v);
 
@@ -6235,8 +6228,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RPoint_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RRay(RJSApi& handler, const QSharedPointer<RRay>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RRay(RJSApi& handler, const QSharedPointer<RRay>& v) {
           QJSEngine* engine = handler.getEngine();
           RRay_Wrapper* ret = new RRay_Wrapper(handler, v);
 
@@ -6294,8 +6286,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RRay_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RSpline(RJSApi& handler, const QSharedPointer<RSpline>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RSpline(RJSApi& handler, const QSharedPointer<RSpline>& v) {
           QJSEngine* engine = handler.getEngine();
           RSpline_Wrapper* ret = new RSpline_Wrapper(handler, v);
 
@@ -6353,8 +6344,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RSpline_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTriangle(RJSApi& handler, const QSharedPointer<RTriangle>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTriangle(RJSApi& handler, const QSharedPointer<RTriangle>& v) {
           QJSEngine* engine = handler.getEngine();
           RTriangle_Wrapper* ret = new RTriangle_Wrapper(handler, v);
 
@@ -6412,8 +6402,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RTriangle_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RXLine(RJSApi& handler, const QSharedPointer<RXLine>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RXLine(RJSApi& handler, const QSharedPointer<RXLine>& v) {
           QJSEngine* engine = handler.getEngine();
           RXLine_Wrapper* ret = new RXLine_Wrapper(handler, v);
 
@@ -6471,8 +6460,7 @@
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RXLine_Type;
           return !v.isUndefined();
       }
-    
-      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTextLabel(RJSApi& handler, const QSharedPointer<RTextLabel>& v) {
+     QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTextLabel(RJSApi& handler, const QSharedPointer<RTextLabel>& v) {
           QJSEngine* engine = handler.getEngine();
           RTextLabel_Wrapper* ret = new RTextLabel_Wrapper(handler, v);
 
@@ -6541,6 +6529,72 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RObject('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+            {
+              QSharedPointer<RBlock> s = v.dynamicCast<RBlock>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RBlock(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDocumentVariables> s = v.dynamicCast<RDocumentVariables>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDocumentVariables(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<REntity> s = v.dynamicCast<REntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_REntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RLayer> s = v.dynamicCast<RLayer>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RLayer(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RLayerState> s = v.dynamicCast<RLayerState>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RLayerState(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RLayout> s = v.dynamicCast<RLayout>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RLayout(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RLinetype> s = v.dynamicCast<RLinetype>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RLinetype(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RUcs> s = v.dynamicCast<RUcs>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RUcs(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RView> s = v.dynamicCast<RView>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RView(handler, s);
+              }
+            }
+          
 
           // JS: new RObject('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RObject");
@@ -6643,6 +6697,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RArcEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RArcEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RArcEntity");
           if (cl.isUndefined()) {
@@ -6699,6 +6756,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RAttributeDefinitionEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RAttributeDefinitionEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RAttributeDefinitionEntity");
@@ -6757,6 +6817,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RAttributeEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RAttributeEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RAttributeEntity");
           if (cl.isUndefined()) {
@@ -6813,6 +6876,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RBlock('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RBlock('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RBlock");
@@ -6871,6 +6937,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RBlockReferenceEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RBlockReferenceEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RBlockReferenceEntity");
           if (cl.isUndefined()) {
@@ -6927,6 +6996,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RCircleEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RCircleEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RCircleEntity");
@@ -6985,6 +7057,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAlignedEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RDimAlignedEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAlignedEntity");
           if (cl.isUndefined()) {
@@ -7041,6 +7116,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAngular2LEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RDimAngular2LEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAngular2LEntity");
@@ -7099,6 +7177,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAngular3PEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RDimAngular3PEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAngular3PEntity");
           if (cl.isUndefined()) {
@@ -7156,6 +7237,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAngularData('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RDimAngularData('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAngularData");
           if (cl.isUndefined()) {
@@ -7211,6 +7295,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAngularEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RDimAngularEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAngularEntity");
@@ -7269,6 +7356,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimArcLengthEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RDimArcLengthEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimArcLengthEntity");
           if (cl.isUndefined()) {
@@ -7326,6 +7416,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimDiametricEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RDimDiametricEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimDiametricEntity");
           if (cl.isUndefined()) {
@@ -7382,6 +7475,23 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimLinearEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+            {
+              QSharedPointer<RDimAlignedEntity> s = v.dynamicCast<RDimAlignedEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAlignedEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimRotatedEntity> s = v.dynamicCast<RDimRotatedEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimRotatedEntity(handler, s);
+              }
+            }
+          
 
           // JS: new RDimLinearEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimLinearEntity");
@@ -7456,6 +7566,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimOrdinateEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RDimOrdinateEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimOrdinateEntity");
           if (cl.isUndefined()) {
@@ -7512,6 +7625,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimRadialEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RDimRadialEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimRadialEntity");
@@ -7570,6 +7686,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimRotatedEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RDimRotatedEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimRotatedEntity");
           if (cl.isUndefined()) {
@@ -7627,6 +7746,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimStyle('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RDimStyle('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimStyle");
           if (cl.isUndefined()) {
@@ -7683,6 +7805,79 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimensionEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+            {
+              QSharedPointer<RDimAlignedEntity> s = v.dynamicCast<RDimAlignedEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAlignedEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimAngular2LEntity> s = v.dynamicCast<RDimAngular2LEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAngular2LEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimAngular3PEntity> s = v.dynamicCast<RDimAngular3PEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAngular3PEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimAngularEntity> s = v.dynamicCast<RDimAngularEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAngularEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimArcLengthEntity> s = v.dynamicCast<RDimArcLengthEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimArcLengthEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimDiametricEntity> s = v.dynamicCast<RDimDiametricEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimDiametricEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimLinearEntity> s = v.dynamicCast<RDimLinearEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimLinearEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimOrdinateEntity> s = v.dynamicCast<RDimOrdinateEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimOrdinateEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimRadialEntity> s = v.dynamicCast<RDimRadialEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimRadialEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimRotatedEntity> s = v.dynamicCast<RDimRotatedEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimRotatedEntity(handler, s);
+              }
+            }
+          
 
           // JS: new RDimensionEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimensionEntity");
@@ -7789,6 +7984,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDocumentVariables('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RDocumentVariables('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDocumentVariables");
           if (cl.isUndefined()) {
@@ -7845,6 +8043,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new REllipseEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new REllipseEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("REllipseEntity");
@@ -7903,6 +8104,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RFaceEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RFaceEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RFaceEntity");
           if (cl.isUndefined()) {
@@ -7959,6 +8163,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RHatchEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RHatchEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RHatchEntity");
@@ -8017,6 +8224,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RImageEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RImageEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RImageEntity");
           if (cl.isUndefined()) {
@@ -8073,6 +8283,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLayer('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RLayer('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLayer");
@@ -8131,6 +8344,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLayerState('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RLayerState('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLayerState");
           if (cl.isUndefined()) {
@@ -8187,6 +8403,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLayout('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RLayout('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLayout");
@@ -8245,6 +8464,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLeaderEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RLeaderEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLeaderEntity");
           if (cl.isUndefined()) {
@@ -8301,6 +8523,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLineEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RLineEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLineEntity");
@@ -8359,6 +8584,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLinetype('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RLinetype('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLinetype");
           if (cl.isUndefined()) {
@@ -8415,6 +8643,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RPointEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RPointEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RPointEntity");
@@ -8473,6 +8704,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RPolyline('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RPolyline('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RPolyline");
           if (cl.isUndefined()) {
@@ -8529,6 +8763,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RPolylineEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RPolylineEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RPolylineEntity");
@@ -8587,6 +8824,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RRayEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RRayEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RRayEntity");
           if (cl.isUndefined()) {
@@ -8643,6 +8883,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RSolidEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RSolidEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RSolidEntity");
@@ -8701,6 +8944,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RSplineEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RSplineEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RSplineEntity");
           if (cl.isUndefined()) {
@@ -8758,6 +9004,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RTextEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RTextEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RTextEntity");
           if (cl.isUndefined()) {
@@ -8814,6 +9063,30 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RTextBasedEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+            {
+              QSharedPointer<RAttributeDefinitionEntity> s = v.dynamicCast<RAttributeDefinitionEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RAttributeDefinitionEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RAttributeEntity> s = v.dynamicCast<RAttributeEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RAttributeEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RTextEntity> s = v.dynamicCast<RTextEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RTextEntity(handler, s);
+              }
+            }
+          
 
           // JS: new RTextBasedEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RTextBasedEntity");
@@ -8892,6 +9165,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RToleranceEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RToleranceEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RToleranceEntity");
           if (cl.isUndefined()) {
@@ -8948,6 +9224,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RTraceEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RTraceEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RTraceEntity");
@@ -9006,6 +9285,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RUcs('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RUcs('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RUcs");
           if (cl.isUndefined()) {
@@ -9062,6 +9344,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RView('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RView('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RView");
@@ -9120,6 +9405,9 @@
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RViewportEntity('__GOT_WRAPPER__', wrapper);");
 
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
           // JS: new RViewportEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RViewportEntity");
           if (cl.isUndefined()) {
@@ -9176,6 +9464,9 @@
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RXLineEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
 
           // JS: new RXLineEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RXLineEntity");
@@ -19220,6 +19511,38 @@
                 }
             }
           
+            // downcast to RPolyline:
+            {
+                RPolyline* o = dynamic_cast<RPolyline*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RPolyline(handler, o);
+                }
+            }
+          
+            // downcast to RRay:
+            {
+                RRay* o = dynamic_cast<RRay*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RRay(handler, o);
+                }
+            }
+          
+            // downcast to RSpline:
+            {
+                RSpline* o = dynamic_cast<RSpline*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RSpline(handler, o);
+                }
+            }
+          
+            // downcast to RTriangle:
+            {
+                RTriangle* o = dynamic_cast<RTriangle*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RTriangle(handler, o);
+                }
+            }
+          
             // downcast to RXLine:
             {
                 RXLine* o = dynamic_cast<RXLine*>(v);
@@ -22240,11 +22563,43 @@
       QJSValue RJSHelper_qcad::cpp2js_RDimensionEntity(RJSApi& handler, RDimensionEntity* v) {
 
           
+            // downcast to RDimAlignedEntity:
+            {
+                RDimAlignedEntity* o = dynamic_cast<RDimAlignedEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimAlignedEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimAngular2LEntity:
+            {
+                RDimAngular2LEntity* o = dynamic_cast<RDimAngular2LEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimAngular2LEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimAngular3PEntity:
+            {
+                RDimAngular3PEntity* o = dynamic_cast<RDimAngular3PEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimAngular3PEntity(handler, o);
+                }
+            }
+          
             // downcast to RDimAngularEntity:
             {
                 RDimAngularEntity* o = dynamic_cast<RDimAngularEntity*>(v);
                 if (o!=nullptr) {
                     return RJSHelper_qcad::cpp2js_RDimAngularEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimArcLengthEntity:
+            {
+                RDimArcLengthEntity* o = dynamic_cast<RDimArcLengthEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimArcLengthEntity(handler, o);
                 }
             }
           
@@ -22277,6 +22632,14 @@
                 RDimRadialEntity* o = dynamic_cast<RDimRadialEntity*>(v);
                 if (o!=nullptr) {
                     return RJSHelper_qcad::cpp2js_RDimRadialEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimRotatedEntity:
+            {
+                RDimRotatedEntity* o = dynamic_cast<RDimRotatedEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimRotatedEntity(handler, o);
                 }
             }
           
@@ -22732,6 +23095,22 @@
                 }
             }
           
+            // downcast to RAttributeDefinitionEntity:
+            {
+                RAttributeDefinitionEntity* o = dynamic_cast<RAttributeDefinitionEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RAttributeDefinitionEntity(handler, o);
+                }
+            }
+          
+            // downcast to RAttributeEntity:
+            {
+                RAttributeEntity* o = dynamic_cast<RAttributeEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RAttributeEntity(handler, o);
+                }
+            }
+          
             // downcast to RBlockReferenceEntity:
             {
                 RBlockReferenceEntity* o = dynamic_cast<RBlockReferenceEntity*>(v);
@@ -22745,6 +23124,86 @@
                 RCircleEntity* o = dynamic_cast<RCircleEntity*>(v);
                 if (o!=nullptr) {
                     return RJSHelper_qcad::cpp2js_RCircleEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimAlignedEntity:
+            {
+                RDimAlignedEntity* o = dynamic_cast<RDimAlignedEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimAlignedEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimAngular2LEntity:
+            {
+                RDimAngular2LEntity* o = dynamic_cast<RDimAngular2LEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimAngular2LEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimAngular3PEntity:
+            {
+                RDimAngular3PEntity* o = dynamic_cast<RDimAngular3PEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimAngular3PEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimAngularEntity:
+            {
+                RDimAngularEntity* o = dynamic_cast<RDimAngularEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimAngularEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimArcLengthEntity:
+            {
+                RDimArcLengthEntity* o = dynamic_cast<RDimArcLengthEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimArcLengthEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimDiametricEntity:
+            {
+                RDimDiametricEntity* o = dynamic_cast<RDimDiametricEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimDiametricEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimLinearEntity:
+            {
+                RDimLinearEntity* o = dynamic_cast<RDimLinearEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimLinearEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimOrdinateEntity:
+            {
+                RDimOrdinateEntity* o = dynamic_cast<RDimOrdinateEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimOrdinateEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimRadialEntity:
+            {
+                RDimRadialEntity* o = dynamic_cast<RDimRadialEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimRadialEntity(handler, o);
+                }
+            }
+          
+            // downcast to RDimRotatedEntity:
+            {
+                RDimRotatedEntity* o = dynamic_cast<RDimRotatedEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimRotatedEntity(handler, o);
                 }
             }
           
@@ -22849,6 +23308,14 @@
                 RTextBasedEntity* o = dynamic_cast<RTextBasedEntity*>(v);
                 if (o!=nullptr) {
                     return RJSHelper_qcad::cpp2js_RTextBasedEntity(handler, o);
+                }
+            }
+          
+            // downcast to RTextEntity:
+            {
+                RTextEntity* o = dynamic_cast<RTextEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RTextEntity(handler, o);
                 }
             }
           

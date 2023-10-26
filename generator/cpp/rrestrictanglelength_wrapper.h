@@ -412,6 +412,52 @@ AngleLength = RRestrictAngleLength::AngleLength,
               
               ;
             
+    // Class: RRestrictAngleLength
+    // Function: setRepeatAngle
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setRepeatAngle
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RRestrictAngleLength
+    // Function: setRepeatLength
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setRepeatLength
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             if (wrapped!=nullptr) {

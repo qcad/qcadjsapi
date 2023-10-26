@@ -435,7 +435,6 @@
         <parameters />
       </variant>
     </function>
-    <!--
     <function name="paintEntities">
       <variant return-type="void" virtual="true" access="public">
         <parameters>
@@ -444,6 +443,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="paintEntitiesMulti">
       <variant return-type="void" access="public">
         <parameters>
@@ -470,14 +470,11 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="paintOverlay">
       <variant return-type="void" virtual="true" access="public">
-        <parameters>
-          <parameter const="false" type="QPainter" modifier="*" name="painter" />
-        </parameters>
       </variant>
     </function>
-    -->
     <function name="getBuffer">
       <variant return-type="QImage" const="true" access="public">
         <parameters />

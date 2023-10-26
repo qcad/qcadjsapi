@@ -20829,6 +20829,8 @@ bool a3_cpp;
 
   
       ) {
+
+            qDebug() << "RMainWindowQt_Wrapper::removeLayerListener";
     
       // prepare parameters:
     

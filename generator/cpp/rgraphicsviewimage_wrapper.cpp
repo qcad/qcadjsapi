@@ -9034,6 +9034,134 @@ bool a1_cpp;
               }
             
     // Class: RGraphicsViewImage
+    // Function: paintEntities
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RGraphicsViewImage_Wrapper::paintEntities
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QPainter_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper_qcad::is_RBox(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: painter (QPainter)
+  
+
+          // pointer:
+          QPainter*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QPainter_ptr(handler, a1);
+        
+  // convert js parameter to cpp: queryBox (RBox)
+  
+RBox a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RBox(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RGraphicsViewImage* w = getWrapped();
+                
+                w->paintEntities(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for paintEntities";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RGraphicsViewImage
+    // Function: paintOverlay
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RGraphicsViewImage_Wrapper::paintOverlay
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RGraphicsViewImage* w = getWrapped();
+                
+                w->paintOverlay(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for paintOverlay";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RGraphicsViewImage
     // Function: getBuffer
     // Source: 
     // Static: false

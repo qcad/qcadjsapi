@@ -3187,6 +3187,52 @@ BlackWhite = RGraphicsViewImage::BlackWhite,
               ;
             
     // Class: RGraphicsViewImage
+    // Function: paintEntities
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintEntities
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: paintOverlay
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintOverlay
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
     // Function: getBuffer
     // Source: 
     // Static: false

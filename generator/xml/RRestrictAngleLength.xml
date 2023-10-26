@@ -77,5 +77,19 @@
         </parameters>
       </variant>
     </function>
+    <function name="setRepeatAngle">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setRepeatLength">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
   </class>
 </unit>
