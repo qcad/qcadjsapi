@@ -490,7 +490,6 @@ public:
 
         RJSWrapper* wrapper = getWrapperRJSWrapper(v);
         if (wrapper==nullptr) {
-            qWarning() << "js2cpp_QVariant: no wrapper";
             return QVariant();
         }
 
