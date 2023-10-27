@@ -8,7 +8,7 @@ filename="RDimAngular2LEntity.h">
       <super name="RObject" />
       <super name="REntity" downcast="true" />
       <super name="RDimensionEntity" downcast="true" />
-      <super name="RDimAngularEntity" />
+      <super name="RDimAngularEntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />

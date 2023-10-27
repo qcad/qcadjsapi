@@ -262,6 +262,13 @@
         </parameters>
       </variant>
     </function>
+    <function name="getNewObjectId">
+      <variant return-type="RObject::Id" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="oldId" />
+        </parameters>
+      </variant>
+    </function>
     <function name="hasOnlyChanges">
       <variant return-type="bool" const="true" access="public">
         <parameters />

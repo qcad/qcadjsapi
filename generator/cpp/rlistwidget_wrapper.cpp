@@ -1648,8 +1648,6 @@ QVariant a2_cpp;
                 );
               
                 //setRecFlag(false);
-
-                qDebug() << "res:" << res.toString();
               
             // return type: QVariant
 

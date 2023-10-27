@@ -6540,6 +6540,13 @@
             }
           
             {
+              QSharedPointer<RDimStyle> s = v.dynamicCast<RDimStyle>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimStyle(handler, s);
+              }
+            }
+          
+            {
               QSharedPointer<RDocumentVariables> s = v.dynamicCast<RDocumentVariables>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDocumentVariables(handler, s);
@@ -6619,6 +6626,10 @@
               
                 if (RJSType_RBlock::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RBlock(handler, v);
+                }
+              
+                if (RJSType_RDimStyle::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimStyle(handler, v);
                 }
               
                 if (RJSType_RDocumentVariables::isOfType(t)) {
@@ -7298,6 +7309,27 @@
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+            {
+              QSharedPointer<RDimAngular2LEntity> s = v.dynamicCast<RDimAngular2LEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAngular2LEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimAngular3PEntity> s = v.dynamicCast<RDimAngular3PEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimAngular3PEntity(handler, s);
+              }
+            }
+          
+            {
+              QSharedPointer<RDimArcLengthEntity> s = v.dynamicCast<RDimArcLengthEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimArcLengthEntity(handler, s);
+              }
+            }
+          
 
           // JS: new RDimAngularEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAngularEntity");
@@ -7313,6 +7345,26 @@
 
       QSharedPointer<RDimAngularEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngularEntity(RJSApi& handler, const QJSValue& v) {
 
+          
+            {
+              RJSWrapper* wrapper = getWrapperRJSWrapper(v);
+              int t = wrapper->getWrappedType();
+
+              // attempt to downcast to specific type:
+              
+                if (RJSType_RDimAngular2LEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular2LEntity(handler, v);
+                }
+              
+                if (RJSType_RDimAngular3PEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular3PEntity(handler, v);
+                }
+              
+                if (RJSType_RDimArcLengthEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimArcLengthEntity(handler, v);
+                }
+              
+            }
           RDimAngularEntity_Wrapper* wrapper = getWrapper<RDimAngularEntity_Wrapper>(v);
           if (wrapper==nullptr) {
               qWarning() << "js2cpp_QSharedPointer_RDimAngularEntity: no wrapper";
@@ -26680,6 +26732,14 @@
                 RBlock* o = dynamic_cast<RBlock*>(v);
                 if (o!=nullptr) {
                     return RJSHelper_qcad::cpp2js_RBlock(handler, o);
+                }
+            }
+          
+            // downcast to RDimStyle:
+            {
+                RDimStyle* o = dynamic_cast<RDimStyle*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RDimStyle(handler, o);
                 }
             }
           

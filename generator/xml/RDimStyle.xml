@@ -5,7 +5,7 @@
   <class_decl name="RExporter" />
   <class name="RDimStyle" ownership="cpp" sharedpointer="true">
     <super_list>
-      <super name="RObject" />
+      <super name="RObject" downcast="true" />
       <super name="RDimStyleData" />
     </super_list>
     <constructor>

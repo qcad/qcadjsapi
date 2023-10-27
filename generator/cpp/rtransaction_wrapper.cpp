@@ -2448,6 +2448,80 @@ RObject::Id a1_cpp;
               }
             
     // Class: RTransaction
+    // Function: getNewObjectId
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTransaction_Wrapper::getNewObjectId
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RObject_Id(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: oldId (RObject::Id)
+  
+RObject::Id a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RObject_Id(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTransaction* w = getWrapped();
+                RObject::Id res = 
+                    
+                w->getNewObjectId(
+                  a1_cpp
+    
+                );
+              
+            // return type: RObject::Id
+
+            return RJSHelper_qcad::cpp2js_RObject_Id(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getNewObjectId";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTransaction
     // Function: hasOnlyChanges
     // Source: 
     // Static: false

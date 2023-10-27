@@ -878,6 +878,31 @@ Redo = RTransaction::Redo,
               ;
             
     // Class: RTransaction
+    // Function: getNewObjectId
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getNewObjectId
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTransaction
     // Function: hasOnlyChanges
     // Source: 
     // Static: false
