@@ -61,6 +61,7 @@ public:
 
     virtual void doScript(const QString& scriptFile,const QStringList& arguments = QStringList());
     virtual QVariant eval(const QString& script, const QString& fileName = QString());
+    virtual QJSValue evalInternal(const QString& script, const QString& fileName = QString());
     virtual QVariant evalGlobal(const QString& script, const QString& fileName = QString());
     virtual RFileImporterAdapter* createFileImporter(const QString& className, RDocument& document);
 

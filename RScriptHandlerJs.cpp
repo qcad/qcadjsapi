@@ -1233,17 +1233,22 @@ void RScriptHandlerJs::doScript(const QString& scriptFile, const QStringList& ar
 }
 
 QVariant RScriptHandlerJs::eval(const QString& script, const QString& fileName) {
+    QJSValue ret = evalInternal(script, fileName);
+    return ret.toVariant();
+}
+
+QJSValue RScriptHandlerJs::evalInternal(const QString& script, const QString& fileName) {
     QStringList trace;
-    QJSValue err = engine->evaluate(script, fileName, 1, &trace);
-    if (err.isError()) {
-        qWarning() << "RScriptHandlerJs::eval: script engine exception in file" << fileName <<  ":" << err.toString();
+    QJSValue ret = engine->evaluate(script, fileName, 1, &trace);
+    if (ret.isError()) {
+        qWarning() << "RScriptHandlerJs::eval: script engine exception in file" << fileName <<  ":" << ret.toString();
         qWarning() << "RScriptHandlerJs::eval: script:" << script;
         //engine->evaluate("console.trace();");
         for (int i=0; i<trace.length(); i++) {
             qWarning() << trace[i];
         }
     }
-    return err.toVariant();
+    return ret;
 }
 
 QVariant RScriptHandlerJs::evalGlobal(const QString& script, const QString& fileName) {
@@ -1379,11 +1384,14 @@ void RScriptHandlerJs::createActionApplicationLevel(
     QJSValue globalObject = engine->globalObject();
 
     globalObject.setProperty("guiAction", RJSHelper_qcad::cpp2js_RGuiAction(*rjsapi, guiAction));
-    eval("var __a__ = new " + className + "(guiAction);");
+
+    QJSValue a = evalInternal("new " + className + "(guiAction);");
+    globalObject.setProperty("__a__", a);
     eval("if (typeof(__a__.beginEvent)===\"function\") __a__.beginEvent();");
+    globalObject.setProperty("__a__", a);
     eval("if (typeof(__a__.finishEvent)===\"function\") __a__.finishEvent();");
+    globalObject.setProperty("__a__", a);
     eval("destr(__a__);");
-        //"if (typeof(__a__.destroy)===\"function\") __a__.destroy();"
 }
 
 /**
