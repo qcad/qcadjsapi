@@ -433,6 +433,21 @@
           }
           */
         
+          // destroy function for non-copyable objects:
+          Q_INVOKABLE void destr() {
+            if (wrapped!=nullptr) {
+              
+                  delete wrapped;
+                
+              wrapped = nullptr;
+            }
+            
+              if (!spWrapped.isNull()) {
+                spWrapped = nullptr;
+              }
+            
+          }
+        
 
         //public:
         // set engine:

@@ -5,6 +5,8 @@
         #define RJSTYPE_QCAD_H
       
 
+    #include "qcadjsapi_global.h"
+
     #include <QObject>
     #include <QQmlEngine>
 
@@ -13,7 +15,8 @@
     
 
   
-      class RJSType_RMouseCoordinateListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMouseCoordinateListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -21,9 +24,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMouseCoordinateListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -35,12 +36,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMouseCoordinateListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -57,7 +53,8 @@
   
 
   
-      class RJSType_REntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_REntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -65,9 +62,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_REntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -79,12 +74,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_REntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -97,7 +87,8 @@
           static int id;
       };
     
-      class RJSType_RShape : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RShape : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -105,9 +96,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RShape::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -119,12 +108,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RShape());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -137,7 +121,8 @@
           static int id;
       };
     
-      class RJSType_RArc : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RArc : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -145,9 +130,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RArc::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -159,12 +142,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RArc());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -177,7 +155,8 @@
           static int id;
       };
     
-      class RJSType_RCircle : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCircle : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -185,9 +164,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCircle::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -199,12 +176,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCircle());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -217,7 +189,8 @@
           static int id;
       };
     
-      class RJSType_REllipse : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_REllipse : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -225,9 +198,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_REllipse::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -239,12 +210,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_REllipse());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -257,7 +223,8 @@
           static int id;
       };
     
-      class RJSType_RLine : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLine : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -265,9 +232,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLine::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -279,12 +244,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLine());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -297,7 +257,8 @@
           static int id;
       };
     
-      class RJSType_RPoint : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPoint : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -305,9 +266,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPoint::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -319,12 +278,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPoint());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -337,7 +291,8 @@
           static int id;
       };
     
-      class RJSType_RRay : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRay : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -345,9 +300,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRay::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -359,12 +312,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRay());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -377,7 +325,8 @@
           static int id;
       };
     
-      class RJSType_RSpline : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSpline : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -385,9 +334,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSpline::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -399,12 +346,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSpline());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -417,7 +359,8 @@
           static int id;
       };
     
-      class RJSType_RTriangle : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTriangle : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -425,9 +368,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTriangle::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -439,12 +380,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTriangle());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -457,7 +393,8 @@
           static int id;
       };
     
-      class RJSType_RXLine : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RXLine : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -465,9 +402,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RXLine::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -479,12 +414,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RXLine());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -497,7 +427,8 @@
           static int id;
       };
     
-      class RJSType_RTextLabel : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTextLabel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -505,9 +436,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextLabel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -519,12 +448,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextLabel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -539,7 +463,8 @@
     
 
   
-      class RJSType_RObject : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RObject : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -547,9 +472,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RObject::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -561,12 +484,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RObject());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -579,7 +497,8 @@
           static int id;
       };
     
-      class RJSType_RArcEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RArcEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -587,9 +506,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RArcEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -601,12 +518,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RArcEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -619,7 +531,8 @@
           static int id;
       };
     
-      class RJSType_RAttributeDefinitionEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RAttributeDefinitionEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -627,9 +540,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RAttributeDefinitionEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -641,12 +552,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RAttributeDefinitionEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -659,7 +565,8 @@
           static int id;
       };
     
-      class RJSType_RAttributeEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RAttributeEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -667,9 +574,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RAttributeEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -681,12 +586,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RAttributeEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -699,7 +599,8 @@
           static int id;
       };
     
-      class RJSType_RBlock : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RBlock : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -707,9 +608,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RBlock::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -721,12 +620,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RBlock());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -739,7 +633,8 @@
           static int id;
       };
     
-      class RJSType_RBlockReferenceEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RBlockReferenceEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -747,9 +642,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RBlockReferenceEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -761,12 +654,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RBlockReferenceEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -779,7 +667,8 @@
           static int id;
       };
     
-      class RJSType_RCircleEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCircleEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -787,9 +676,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCircleEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -801,12 +688,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCircleEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -819,7 +701,8 @@
           static int id;
       };
     
-      class RJSType_RDimAlignedEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimAlignedEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -827,9 +710,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimAlignedEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -841,12 +722,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimAlignedEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -859,7 +735,8 @@
           static int id;
       };
     
-      class RJSType_RDimAngular2LEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimAngular2LEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -867,9 +744,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimAngular2LEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -881,12 +756,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimAngular2LEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -899,7 +769,8 @@
           static int id;
       };
     
-      class RJSType_RDimAngular3PEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimAngular3PEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -907,9 +778,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimAngular3PEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -921,12 +790,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimAngular3PEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -939,7 +803,8 @@
           static int id;
       };
     
-      class RJSType_RDimAngularData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimAngularData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -947,9 +812,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimAngularData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -961,12 +824,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimAngularData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -979,7 +837,8 @@
           static int id;
       };
     
-      class RJSType_RDimAngularEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimAngularEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -987,9 +846,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimAngularEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1001,12 +858,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimAngularEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1019,7 +871,8 @@
           static int id;
       };
     
-      class RJSType_RDimArcLengthEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimArcLengthEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1027,9 +880,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimArcLengthEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1041,12 +892,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimArcLengthEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1059,7 +905,8 @@
           static int id;
       };
     
-      class RJSType_RDimDiametricEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimDiametricEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1067,9 +914,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimDiametricEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1081,12 +926,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimDiametricEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1099,7 +939,8 @@
           static int id;
       };
     
-      class RJSType_RDimLinearEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimLinearEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1107,9 +948,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimLinearEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1121,12 +960,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimLinearEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1139,7 +973,8 @@
           static int id;
       };
     
-      class RJSType_RDimOrdinateEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimOrdinateEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1147,9 +982,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimOrdinateEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1161,12 +994,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimOrdinateEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1179,7 +1007,8 @@
           static int id;
       };
     
-      class RJSType_RDimRadialEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimRadialEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1187,9 +1016,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimRadialEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1201,12 +1028,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimRadialEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1219,7 +1041,8 @@
           static int id;
       };
     
-      class RJSType_RDimRotatedEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimRotatedEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1227,9 +1050,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimRotatedEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1241,12 +1062,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimRotatedEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1259,7 +1075,8 @@
           static int id;
       };
     
-      class RJSType_RDimStyle : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimStyle : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1267,9 +1084,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimStyle::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1281,12 +1096,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimStyle());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1299,7 +1109,8 @@
           static int id;
       };
     
-      class RJSType_RDimensionEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimensionEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1307,9 +1118,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimensionEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1321,12 +1130,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimensionEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1339,7 +1143,8 @@
           static int id;
       };
     
-      class RJSType_RDocumentVariables : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDocumentVariables : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1347,9 +1152,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDocumentVariables::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1361,12 +1164,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDocumentVariables());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1379,7 +1177,8 @@
           static int id;
       };
     
-      class RJSType_REllipseEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_REllipseEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1387,9 +1186,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_REllipseEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1401,12 +1198,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_REllipseEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1419,7 +1211,8 @@
           static int id;
       };
     
-      class RJSType_RFaceEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFaceEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1427,9 +1220,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFaceEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1441,12 +1232,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFaceEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1459,7 +1245,8 @@
           static int id;
       };
     
-      class RJSType_RHatchEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RHatchEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1467,9 +1254,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RHatchEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1481,12 +1266,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RHatchEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1499,7 +1279,8 @@
           static int id;
       };
     
-      class RJSType_RImageEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RImageEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1507,9 +1288,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RImageEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1521,12 +1300,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RImageEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1539,7 +1313,8 @@
           static int id;
       };
     
-      class RJSType_RLayer : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLayer : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1547,9 +1322,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLayer::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1561,12 +1334,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLayer());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1579,7 +1347,8 @@
           static int id;
       };
     
-      class RJSType_RLayerState : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLayerState : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1587,9 +1356,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLayerState::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1601,12 +1368,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLayerState());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1619,7 +1381,8 @@
           static int id;
       };
     
-      class RJSType_RLayout : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1627,9 +1390,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1641,12 +1402,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1659,7 +1415,8 @@
           static int id;
       };
     
-      class RJSType_RLeaderEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLeaderEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1667,9 +1424,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLeaderEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1681,12 +1436,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLeaderEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1699,7 +1449,8 @@
           static int id;
       };
     
-      class RJSType_RLineEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLineEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1707,9 +1458,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLineEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1721,12 +1470,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLineEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1739,7 +1483,8 @@
           static int id;
       };
     
-      class RJSType_RLinetype : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLinetype : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1747,9 +1492,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLinetype::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1761,12 +1504,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLinetype());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1779,7 +1517,8 @@
           static int id;
       };
     
-      class RJSType_RPointEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPointEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1787,9 +1526,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPointEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1801,12 +1538,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPointEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1819,7 +1551,8 @@
           static int id;
       };
     
-      class RJSType_RPolyline : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPolyline : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1827,9 +1560,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPolyline::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1841,12 +1572,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPolyline());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1859,7 +1585,8 @@
           static int id;
       };
     
-      class RJSType_RPolylineEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPolylineEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1867,9 +1594,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPolylineEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1881,12 +1606,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPolylineEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1899,7 +1619,8 @@
           static int id;
       };
     
-      class RJSType_RRayEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRayEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1907,9 +1628,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRayEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1921,12 +1640,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRayEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1939,7 +1653,8 @@
           static int id;
       };
     
-      class RJSType_RSolidEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSolidEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1947,9 +1662,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSolidEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -1961,12 +1674,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSolidEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -1979,7 +1687,8 @@
           static int id;
       };
     
-      class RJSType_RSplineEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSplineEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -1987,9 +1696,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSplineEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2001,12 +1708,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSplineEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2019,7 +1721,8 @@
           static int id;
       };
     
-      class RJSType_RTextEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTextEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2027,9 +1730,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2041,12 +1742,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2059,7 +1755,8 @@
           static int id;
       };
     
-      class RJSType_RTextBasedEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTextBasedEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2067,9 +1764,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextBasedEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2081,12 +1776,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextBasedEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2099,7 +1789,8 @@
           static int id;
       };
     
-      class RJSType_RToleranceEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RToleranceEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2107,9 +1798,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RToleranceEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2121,12 +1810,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RToleranceEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2139,7 +1823,8 @@
           static int id;
       };
     
-      class RJSType_RTraceEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTraceEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2147,9 +1832,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTraceEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2161,12 +1844,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTraceEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2179,7 +1857,8 @@
           static int id;
       };
     
-      class RJSType_RUcs : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RUcs : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2187,9 +1866,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RUcs::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2201,12 +1878,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RUcs());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2219,7 +1891,8 @@
           static int id;
       };
     
-      class RJSType_RView : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2227,9 +1900,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RView::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2241,12 +1912,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RView());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2259,7 +1925,8 @@
           static int id;
       };
     
-      class RJSType_RViewportEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RViewportEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2267,9 +1934,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RViewportEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2281,12 +1946,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RViewportEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2299,7 +1959,8 @@
           static int id;
       };
     
-      class RJSType_RXLineEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RXLineEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2307,9 +1968,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RXLineEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2321,12 +1980,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RXLineEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2341,7 +1995,8 @@
     
 
   
-      class RJSType_RArcData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RArcData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2349,9 +2004,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RArcData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2363,12 +2016,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RArcData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2381,7 +2029,8 @@
           static int id;
       };
     
-      class RJSType_RAttributeData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RAttributeData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2389,9 +2038,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RAttributeData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2403,12 +2050,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RAttributeData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2421,7 +2063,8 @@
           static int id;
       };
     
-      class RJSType_RAttributeDefinitionData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RAttributeDefinitionData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2429,9 +2072,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RAttributeDefinitionData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2443,12 +2084,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RAttributeDefinitionData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2461,7 +2097,8 @@
           static int id;
       };
     
-      class RJSType_RAutoLoadJs : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RAutoLoadJs : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2469,9 +2106,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RAutoLoadJs::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2483,12 +2118,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RAutoLoadJs());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2501,7 +2131,8 @@
           static int id;
       };
     
-      class RJSType_RBlockReferenceData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RBlockReferenceData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2509,9 +2140,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RBlockReferenceData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2523,12 +2152,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RBlockReferenceData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2541,7 +2165,8 @@
           static int id;
       };
     
-      class RJSType_RBox : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2549,9 +2174,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2563,12 +2186,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2581,7 +2199,8 @@
           static int id;
       };
     
-      class RJSType_RCircleData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCircleData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2589,9 +2208,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCircleData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2603,12 +2220,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCircleData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2621,7 +2233,8 @@
           static int id;
       };
     
-      class RJSType_RColor : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RColor : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2629,9 +2242,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RColor::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2643,12 +2254,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RColor());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2661,7 +2267,8 @@
           static int id;
       };
     
-      class RJSType_RDebug : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDebug : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2669,9 +2276,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDebug::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2683,12 +2288,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDebug());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2701,7 +2301,8 @@
           static int id;
       };
     
-      class RJSType_RDimAlignedData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimAlignedData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2709,9 +2310,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimAlignedData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2723,12 +2322,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimAlignedData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2741,7 +2335,8 @@
           static int id;
       };
     
-      class RJSType_RDimAngular2LData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimAngular2LData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2749,9 +2344,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimAngular2LData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2763,12 +2356,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimAngular2LData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2781,7 +2369,8 @@
           static int id;
       };
     
-      class RJSType_RDimAngular3PData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimAngular3PData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2789,9 +2378,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimAngular3PData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2803,12 +2390,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimAngular3PData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2821,7 +2403,8 @@
           static int id;
       };
     
-      class RJSType_RDimArcLengthData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimArcLengthData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2829,9 +2412,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimArcLengthData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2843,12 +2424,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimArcLengthData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2861,7 +2437,8 @@
           static int id;
       };
     
-      class RJSType_RDimDiametricData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimDiametricData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2869,9 +2446,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimDiametricData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2883,12 +2458,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimDiametricData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2901,7 +2471,8 @@
           static int id;
       };
     
-      class RJSType_RDimOrdinateData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimOrdinateData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2909,9 +2480,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimOrdinateData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2923,12 +2492,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimOrdinateData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2941,7 +2505,8 @@
           static int id;
       };
     
-      class RJSType_RDimRadialData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimRadialData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2949,9 +2514,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimRadialData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -2963,12 +2526,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimRadialData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -2981,7 +2539,8 @@
           static int id;
       };
     
-      class RJSType_RDimRotatedData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimRotatedData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -2989,9 +2548,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimRotatedData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3003,12 +2560,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimRotatedData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3021,7 +2573,8 @@
           static int id;
       };
     
-      class RJSType_RDimStyleData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimStyleData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3029,9 +2582,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimStyleData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3043,12 +2594,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimStyleData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3061,7 +2607,8 @@
           static int id;
       };
     
-      class RJSType_RDxfServices : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDxfServices : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3069,9 +2616,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDxfServices::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3083,12 +2628,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDxfServices());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3101,7 +2641,8 @@
           static int id;
       };
     
-      class RJSType_REllipseData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_REllipseData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3109,9 +2650,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_REllipseData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3123,12 +2662,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_REllipseData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3141,7 +2675,8 @@
           static int id;
       };
     
-      class RJSType_RFaceData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFaceData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3149,9 +2684,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFaceData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3163,12 +2696,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFaceData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3181,7 +2709,8 @@
           static int id;
       };
     
-      class RJSType_RFileCache : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileCache : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3189,9 +2718,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileCache::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3203,12 +2730,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileCache());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3221,7 +2743,8 @@
           static int id;
       };
     
-      class RJSType_RFileExporterAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileExporterAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3229,9 +2752,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileExporterAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3243,12 +2764,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileExporterAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3261,7 +2777,8 @@
           static int id;
       };
     
-      class RJSType_RFileExporterFactoryAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileExporterFactoryAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3269,9 +2786,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileExporterFactoryAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3283,12 +2798,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileExporterFactoryAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3301,7 +2811,8 @@
           static int id;
       };
     
-      class RJSType_RFileExporterRegistry : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileExporterRegistry : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3309,9 +2820,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileExporterRegistry::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3323,12 +2832,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileExporterRegistry());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3341,7 +2845,8 @@
           static int id;
       };
     
-      class RJSType_RFileImporterAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileImporterAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3349,9 +2854,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileImporterAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3363,12 +2866,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileImporterAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3381,7 +2879,8 @@
           static int id;
       };
     
-      class RJSType_RFileImporterFactoryAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileImporterFactoryAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3389,9 +2888,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileImporterFactoryAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3403,12 +2900,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileImporterFactoryAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3421,7 +2913,8 @@
           static int id;
       };
     
-      class RJSType_RFileImporterRegistry : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileImporterRegistry : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3429,9 +2922,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileImporterRegistry::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3443,12 +2934,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileImporterRegistry());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3461,7 +2947,8 @@
           static int id;
       };
     
-      class RJSType_RFont : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFont : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3469,9 +2956,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFont::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3483,12 +2968,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFont());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3501,7 +2981,8 @@
           static int id;
       };
     
-      class RJSType_RFontList : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFontList : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3509,9 +2990,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFontList::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3523,12 +3002,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFontList());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3541,7 +3015,8 @@
           static int id;
       };
     
-      class RJSType_RGraphicsSceneDrawable : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RGraphicsSceneDrawable : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3549,9 +3024,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RGraphicsSceneDrawable::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3563,12 +3036,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RGraphicsSceneDrawable());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3581,7 +3049,8 @@
           static int id;
       };
     
-      class RJSType_RHatchData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RHatchData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3589,9 +3058,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RHatchData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3603,12 +3070,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RHatchData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3621,7 +3083,8 @@
           static int id;
       };
     
-      class RJSType_RImageData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RImageData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3629,9 +3092,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RImageData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3643,12 +3104,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RImageData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3661,7 +3117,8 @@
           static int id;
       };
     
-      class RJSType_RLeaderData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLeaderData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3669,9 +3126,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLeaderData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3683,12 +3138,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLeaderData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3701,7 +3151,8 @@
           static int id;
       };
     
-      class RJSType_RLineData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLineData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3709,9 +3160,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLineData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3723,12 +3172,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLineData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3741,7 +3185,8 @@
           static int id;
       };
     
-      class RJSType_RLinetypePattern : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLinetypePattern : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3749,9 +3194,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLinetypePattern::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3763,12 +3206,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLinetypePattern());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3781,7 +3219,8 @@
           static int id;
       };
     
-      class RJSType_RLineweight : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLineweight : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3789,9 +3228,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLineweight::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3803,12 +3240,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLineweight());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3821,7 +3253,8 @@
           static int id;
       };
     
-      class RJSType_RMath : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMath : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3829,9 +3262,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMath::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3843,12 +3274,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMath());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3861,7 +3287,8 @@
           static int id;
       };
     
-      class RJSType_RMatrix : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMatrix : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3869,9 +3296,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMatrix::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3883,12 +3308,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMatrix());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3901,7 +3321,8 @@
           static int id;
       };
     
-      class RJSType_RPainterPath : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPainterPath : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3909,9 +3330,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPainterPath::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3923,12 +3342,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPainterPath());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3941,7 +3355,8 @@
           static int id;
       };
     
-      class RJSType_RPattern : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPattern : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3949,9 +3364,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPattern::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -3963,12 +3376,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPattern());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -3981,7 +3389,8 @@
           static int id;
       };
     
-      class RJSType_RPatternLine : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPatternLine : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -3989,9 +3398,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPatternLine::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4003,12 +3410,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPatternLine());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4021,7 +3423,8 @@
           static int id;
       };
     
-      class RJSType_RPatternList : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPatternList : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4029,9 +3432,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPatternList::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4043,12 +3444,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPatternList());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4061,7 +3457,8 @@
           static int id;
       };
     
-      class RJSType_RPatternListImperial : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPatternListImperial : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4069,9 +3466,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPatternListImperial::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4083,12 +3478,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPatternListImperial());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4101,7 +3491,8 @@
           static int id;
       };
     
-      class RJSType_RPatternListMetric : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPatternListMetric : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4109,9 +3500,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPatternListMetric::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4123,12 +3512,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPatternListMetric());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4141,7 +3525,8 @@
           static int id;
       };
     
-      class RJSType_RPluginInfo : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPluginInfo : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4149,9 +3534,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPluginInfo::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4163,12 +3546,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPluginInfo());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4181,7 +3559,8 @@
           static int id;
       };
     
-      class RJSType_RPluginLoader : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPluginLoader : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4189,9 +3568,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPluginLoader::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4203,12 +3580,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPluginLoader());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4221,7 +3593,8 @@
           static int id;
       };
     
-      class RJSType_RPointData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPointData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4229,9 +3602,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPointData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4243,12 +3614,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPointData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4261,7 +3627,8 @@
           static int id;
       };
     
-      class RJSType_RPolylineData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPolylineData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4269,9 +3636,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPolylineData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4283,12 +3648,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPolylineData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4301,7 +3661,8 @@
           static int id;
       };
     
-      class RJSType_RPropertyAttributes : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPropertyAttributes : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4309,9 +3670,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPropertyAttributes::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4323,12 +3682,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPropertyAttributes());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4341,7 +3695,8 @@
           static int id;
       };
     
-      class RJSType_RPropertyChange : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPropertyChange : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4349,9 +3704,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPropertyChange::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4363,12 +3716,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPropertyChange());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4381,7 +3729,8 @@
           static int id;
       };
     
-      class RJSType_RPropertyEditor : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPropertyEditor : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4389,9 +3738,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPropertyEditor::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4403,12 +3750,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPropertyEditor());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4421,7 +3763,8 @@
           static int id;
       };
     
-      class RJSType_RPropertyTypeId : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPropertyTypeId : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4429,9 +3772,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPropertyTypeId::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4443,12 +3784,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPropertyTypeId());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4461,7 +3797,8 @@
           static int id;
       };
     
-      class RJSType_RRayData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRayData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4469,9 +3806,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRayData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4483,12 +3818,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRayData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4501,7 +3831,8 @@
           static int id;
       };
     
-      class RJSType_RRefPoint : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRefPoint : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4509,9 +3840,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRefPoint::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4523,12 +3852,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRefPoint());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4541,7 +3865,8 @@
           static int id;
       };
     
-      class RJSType_RS : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RS : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4549,9 +3874,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RS::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4563,12 +3886,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RS());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4581,7 +3899,8 @@
           static int id;
       };
     
-      class RJSType_RSettings : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSettings : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4589,9 +3908,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSettings::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4603,12 +3920,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSettings());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4621,7 +3933,8 @@
           static int id;
       };
     
-      class RJSType_RSolidData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSolidData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4629,9 +3942,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSolidData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4643,12 +3954,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSolidData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4661,7 +3967,8 @@
           static int id;
       };
     
-      class RJSType_RSpatialIndexNavel : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSpatialIndexNavel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4669,9 +3976,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSpatialIndexNavel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4683,12 +3988,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSpatialIndexNavel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4701,7 +4001,8 @@
           static int id;
       };
     
-      class RJSType_RSpatialIndexVisitorAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSpatialIndexVisitorAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4709,9 +4010,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSpatialIndexVisitorAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4723,12 +4022,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSpatialIndexVisitorAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4741,7 +4035,8 @@
           static int id;
       };
     
-      class RJSType_RSplineData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSplineData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4749,9 +4044,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSplineData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4763,12 +4056,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSplineData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4781,7 +4069,8 @@
           static int id;
       };
     
-      class RJSType_RTextBasedData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTextBasedData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4789,9 +4078,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextBasedData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4803,12 +4090,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextBasedData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4821,7 +4103,8 @@
           static int id;
       };
     
-      class RJSType_RTextData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTextData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4829,9 +4112,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4843,12 +4124,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4861,7 +4137,8 @@
           static int id;
       };
     
-      class RJSType_RTextLayout : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTextLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4869,9 +4146,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4883,12 +4158,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4901,7 +4171,8 @@
           static int id;
       };
     
-      class RJSType_RToleranceData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RToleranceData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4909,9 +4180,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RToleranceData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4923,12 +4192,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RToleranceData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4941,7 +4205,8 @@
           static int id;
       };
     
-      class RJSType_RTraceData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTraceData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4949,9 +4214,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTraceData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -4963,12 +4226,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTraceData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -4981,7 +4239,8 @@
           static int id;
       };
     
-      class RJSType_RTransaction : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTransaction : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -4989,9 +4248,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTransaction::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5003,12 +4260,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTransaction());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5021,7 +4273,8 @@
           static int id;
       };
     
-      class RJSType_RTransform : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTransform : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5029,9 +4282,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTransform::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5043,12 +4294,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTransform());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5061,7 +4307,8 @@
           static int id;
       };
     
-      class RJSType_RTransformOp : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTransformOp : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5069,9 +4316,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTransformOp::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5083,12 +4328,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTransformOp());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5101,7 +4341,8 @@
           static int id;
       };
     
-      class RJSType_RUnit : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RUnit : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5109,9 +4350,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RUnit::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5123,12 +4362,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RUnit());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5141,7 +4375,8 @@
           static int id;
       };
     
-      class RJSType_RViewFocusListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RViewFocusListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5149,9 +4384,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RViewFocusListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5163,12 +4396,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RViewFocusListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5181,7 +4409,8 @@
           static int id;
       };
     
-      class RJSType_RViewportData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RViewportData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5189,9 +4418,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RViewportData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5203,12 +4430,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RViewportData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5221,7 +4443,8 @@
           static int id;
       };
     
-      class RJSType_RXLineData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RXLineData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5229,9 +4452,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RXLineData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5243,12 +4464,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RXLineData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5261,7 +4477,8 @@
           static int id;
       };
     
-      class RJSType_RVector : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RVector : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5269,9 +4486,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RVector::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5283,12 +4498,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RVector());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5303,7 +4513,8 @@
     
 
   
-      class RJSType_RPainterPathSource : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPainterPathSource : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5311,9 +4522,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPainterPathSource::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5325,12 +4534,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPainterPathSource());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5343,7 +4547,8 @@
           static int id;
       };
     
-      class RJSType_RAction : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RAction : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5351,9 +4556,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RAction::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5365,12 +4568,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RAction());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5383,7 +4581,8 @@
           static int id;
       };
     
-      class RJSType_RActionAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RActionAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5391,9 +4590,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RActionAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5405,12 +4602,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RActionAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5423,7 +4615,8 @@
           static int id;
       };
     
-      class RJSType_RAddObjectOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RAddObjectOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5431,9 +4624,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RAddObjectOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5445,12 +4636,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RAddObjectOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5463,7 +4649,8 @@
           static int id;
       };
     
-      class RJSType_RAddObjectsOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RAddObjectsOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5471,9 +4658,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RAddObjectsOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5485,12 +4670,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RAddObjectsOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5503,7 +4683,8 @@
           static int id;
       };
     
-      class RJSType_RBlockListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RBlockListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5511,9 +4692,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RBlockListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5525,12 +4704,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RBlockListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5543,7 +4717,8 @@
           static int id;
       };
     
-      class RJSType_RChangePropertyOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RChangePropertyOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5551,9 +4726,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RChangePropertyOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5565,12 +4738,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RChangePropertyOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5583,7 +4751,8 @@
           static int id;
       };
     
-      class RJSType_RClickReferencePointOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RClickReferencePointOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5591,9 +4760,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RClickReferencePointOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5605,12 +4772,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RClickReferencePointOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5623,7 +4785,8 @@
           static int id;
       };
     
-      class RJSType_RClipboardOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RClipboardOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5631,9 +4794,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RClipboardOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5645,12 +4806,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RClipboardOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5663,7 +4819,8 @@
           static int id;
       };
     
-      class RJSType_RCloseCurrentEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCloseCurrentEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5671,9 +4828,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCloseCurrentEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5685,12 +4840,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCloseCurrentEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5703,7 +4853,8 @@
           static int id;
       };
     
-      class RJSType_RCommandEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCommandEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5711,9 +4862,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCommandEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5725,12 +4874,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCommandEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5743,7 +4887,8 @@
           static int id;
       };
     
-      class RJSType_RCoordinateEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCoordinateEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5751,9 +4896,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCoordinateEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5765,12 +4908,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCoordinateEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5783,7 +4921,8 @@
           static int id;
       };
     
-      class RJSType_RCoordinateListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCoordinateListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5791,9 +4930,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCoordinateListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5805,12 +4942,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCoordinateListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5823,7 +4955,8 @@
           static int id;
       };
     
-      class RJSType_RCopyOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCopyOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5831,9 +4964,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCopyOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5845,12 +4976,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCopyOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5863,7 +4989,8 @@
           static int id;
       };
     
-      class RJSType_RDeleteAllEntitiesOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDeleteAllEntitiesOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5871,9 +4998,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDeleteAllEntitiesOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5885,12 +5010,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDeleteAllEntitiesOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5903,7 +5023,8 @@
           static int id;
       };
     
-      class RJSType_RDeleteObjectOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDeleteObjectOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5911,9 +5032,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDeleteObjectOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5925,12 +5044,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDeleteObjectOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5943,7 +5057,8 @@
           static int id;
       };
     
-      class RJSType_RDeleteObjectsOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDeleteObjectsOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5951,9 +5066,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDeleteObjectsOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -5965,12 +5078,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDeleteObjectsOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -5983,7 +5091,8 @@
           static int id;
       };
     
-      class RJSType_RDeleteSelectionOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDeleteSelectionOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -5991,9 +5100,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDeleteSelectionOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6005,12 +5112,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDeleteSelectionOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6023,7 +5125,8 @@
           static int id;
       };
     
-      class RJSType_RDimensionData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimensionData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6031,9 +5134,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimensionData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6045,12 +5146,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimensionData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6063,7 +5159,8 @@
           static int id;
       };
     
-      class RJSType_RDimLinearData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDimLinearData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6071,9 +5168,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDimLinearData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6085,12 +5180,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDimLinearData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6103,7 +5193,8 @@
           static int id;
       };
     
-      class RJSType_RDirected : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDirected : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6111,9 +5202,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDirected::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6125,12 +5214,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDirected());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6143,7 +5227,8 @@
           static int id;
       };
     
-      class RJSType_RDocument : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDocument : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6151,9 +5236,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDocument::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6165,12 +5248,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDocument());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6183,7 +5261,8 @@
           static int id;
       };
     
-      class RJSType_RDocumentInterface : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDocumentInterface : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6191,9 +5270,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDocumentInterface::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6205,12 +5282,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDocumentInterface());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6223,7 +5295,8 @@
           static int id;
       };
     
-      class RJSType_REntityData : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_REntityData : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6231,9 +5304,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_REntityData::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6245,12 +5316,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_REntityData());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6263,7 +5329,8 @@
           static int id;
       };
     
-      class RJSType_REntityExportListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_REntityExportListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6271,9 +5338,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_REntityExportListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6285,12 +5350,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_REntityExportListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6303,7 +5363,8 @@
           static int id;
       };
     
-      class RJSType_REntityPickEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_REntityPickEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6311,9 +5372,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_REntityPickEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6325,12 +5384,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_REntityPickEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6343,7 +5397,8 @@
           static int id;
       };
     
-      class RJSType_RExplodable : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RExplodable : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6351,9 +5406,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RExplodable::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6365,12 +5418,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RExplodable());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6383,7 +5431,8 @@
           static int id;
       };
     
-      class RJSType_RExportListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RExportListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6391,9 +5440,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RExportListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6405,12 +5452,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RExportListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6423,7 +5465,8 @@
           static int id;
       };
     
-      class RJSType_RExporter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RExporter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6431,9 +5474,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RExporter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6445,12 +5486,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RExporter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6463,7 +5499,8 @@
           static int id;
       };
     
-      class RJSType_RFileExporter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileExporter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6471,9 +5508,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileExporter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6485,12 +5520,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileExporter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6503,7 +5533,8 @@
           static int id;
       };
     
-      class RJSType_RFileExporterFactory : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileExporterFactory : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6511,9 +5542,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileExporterFactory::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6525,12 +5554,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileExporterFactory());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6543,7 +5567,8 @@
           static int id;
       };
     
-      class RJSType_RFileImporter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileImporter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6551,9 +5576,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileImporter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6565,12 +5588,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileImporter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6583,7 +5601,8 @@
           static int id;
       };
     
-      class RJSType_RFileImporterFactory : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileImporterFactory : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6591,9 +5610,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileImporterFactory::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6605,12 +5622,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileImporterFactory());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6623,7 +5635,8 @@
           static int id;
       };
     
-      class RJSType_RFocusListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFocusListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6631,9 +5644,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFocusListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6645,12 +5656,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFocusListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6663,7 +5669,8 @@
           static int id;
       };
     
-      class RJSType_RGraphicsScene : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RGraphicsScene : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6671,9 +5678,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RGraphicsScene::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6685,12 +5690,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RGraphicsScene());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6703,7 +5703,8 @@
           static int id;
       };
     
-      class RJSType_RGraphicsSceneQt : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RGraphicsSceneQt : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6711,9 +5712,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RGraphicsSceneQt::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6725,12 +5724,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RGraphicsSceneQt());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6743,7 +5737,8 @@
           static int id;
       };
     
-      class RJSType_RGraphicsView : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RGraphicsView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6751,9 +5746,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RGraphicsView::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6765,12 +5758,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RGraphicsView());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6783,7 +5771,8 @@
           static int id;
       };
     
-      class RJSType_RGrid : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RGrid : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6791,9 +5780,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RGrid::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6805,12 +5792,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RGrid());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6823,7 +5805,8 @@
           static int id;
       };
     
-      class RJSType_RImportListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RImportListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6831,9 +5814,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RImportListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6845,12 +5826,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RImportListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6863,7 +5839,8 @@
           static int id;
       };
     
-      class RJSType_RImporter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RImporter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6871,9 +5848,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RImporter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6885,12 +5860,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RImporter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6903,7 +5873,8 @@
           static int id;
       };
     
-      class RJSType_RInputEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RInputEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6911,9 +5882,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RInputEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6925,12 +5894,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RInputEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6943,7 +5907,8 @@
           static int id;
       };
     
-      class RJSType_RInterTransactionListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RInterTransactionListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6951,9 +5916,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RInterTransactionListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -6965,12 +5928,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RInterTransactionListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -6983,7 +5941,8 @@
           static int id;
       };
     
-      class RJSType_RKeyListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RKeyListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -6991,9 +5950,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RKeyListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7005,12 +5962,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RKeyListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7023,7 +5975,8 @@
           static int id;
       };
     
-      class RJSType_RLayerListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLayerListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7031,9 +5984,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLayerListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7045,12 +5996,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLayerListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7063,7 +6009,8 @@
           static int id;
       };
     
-      class RJSType_RMainWindow : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMainWindow : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7071,9 +6018,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMainWindow::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7085,12 +6030,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMainWindow());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7103,7 +6043,8 @@
           static int id;
       };
     
-      class RJSType_RMemoryStorage : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMemoryStorage : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7111,9 +6052,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMemoryStorage::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7125,12 +6064,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMemoryStorage());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7143,7 +6077,8 @@
           static int id;
       };
     
-      class RJSType_RMessageHandler : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMessageHandler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7151,9 +6086,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMessageHandler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7165,12 +6098,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMessageHandler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7183,7 +6111,8 @@
           static int id;
       };
     
-      class RJSType_RMixedOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMixedOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7191,9 +6120,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMixedOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7205,12 +6132,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMixedOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7223,7 +6145,8 @@
           static int id;
       };
     
-      class RJSType_RModifiedListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RModifiedListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7231,9 +6154,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RModifiedListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7245,12 +6166,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RModifiedListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7263,7 +6179,8 @@
           static int id;
       };
     
-      class RJSType_RModifyObjectOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RModifyObjectOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7271,9 +6188,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RModifyObjectOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7285,12 +6200,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RModifyObjectOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7303,7 +6213,8 @@
           static int id;
       };
     
-      class RJSType_RModifyObjectsOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RModifyObjectsOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7311,9 +6222,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RModifyObjectsOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7325,12 +6234,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RModifyObjectsOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7343,7 +6247,8 @@
           static int id;
       };
     
-      class RJSType_RMouseEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMouseEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7351,9 +6256,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMouseEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7365,12 +6268,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMouseEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7383,7 +6281,8 @@
           static int id;
       };
     
-      class RJSType_RMoveReferencePointOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMoveReferencePointOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7391,9 +6290,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMoveReferencePointOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7405,12 +6302,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMoveReferencePointOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7423,7 +6315,8 @@
           static int id;
       };
     
-      class RJSType_RMoveSelectionOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMoveSelectionOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7431,9 +6324,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMoveSelectionOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7445,12 +6336,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMoveSelectionOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7463,7 +6349,8 @@
           static int id;
       };
     
-      class RJSType_RNewDocumentListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RNewDocumentListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7471,9 +6358,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RNewDocumentListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7485,12 +6370,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RNewDocumentListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7503,7 +6383,8 @@
           static int id;
       };
     
-      class RJSType_ROperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_ROperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7511,9 +6392,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_ROperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7525,12 +6404,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_ROperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7543,7 +6417,8 @@
           static int id;
       };
     
-      class RJSType_ROperationUtils : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_ROperationUtils : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7551,9 +6426,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_ROperationUtils::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7565,12 +6438,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_ROperationUtils());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7583,7 +6451,8 @@
           static int id;
       };
     
-      class RJSType_ROrthoGrid : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_ROrthoGrid : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7591,9 +6460,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_ROrthoGrid::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7605,12 +6472,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_ROrthoGrid());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7623,7 +6485,8 @@
           static int id;
       };
     
-      class RJSType_RPaletteListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPaletteListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7631,9 +6494,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPaletteListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7645,12 +6506,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPaletteListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7663,7 +6519,8 @@
           static int id;
       };
     
-      class RJSType_RPasteOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPasteOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7671,9 +6528,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPasteOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7685,12 +6540,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPasteOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7703,7 +6553,8 @@
           static int id;
       };
     
-      class RJSType_RPenListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPenListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7711,9 +6562,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPenListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7725,12 +6574,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPenListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7743,7 +6587,8 @@
           static int id;
       };
     
-      class RJSType_RPluginInterface : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPluginInterface : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7751,9 +6596,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPluginInterface::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7765,12 +6608,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPluginInterface());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7783,7 +6621,8 @@
           static int id;
       };
     
-      class RJSType_RPreferencesListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPreferencesListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7791,9 +6630,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPreferencesListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7805,12 +6642,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPreferencesListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7823,7 +6655,8 @@
           static int id;
       };
     
-      class RJSType_RProgressHandler : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RProgressHandler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7831,9 +6664,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RProgressHandler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7845,12 +6676,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RProgressHandler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7863,7 +6689,8 @@
           static int id;
       };
     
-      class RJSType_RPropertyEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPropertyEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7871,9 +6698,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPropertyEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7885,12 +6710,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPropertyEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7903,7 +6723,8 @@
           static int id;
       };
     
-      class RJSType_RPropertyListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPropertyListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7911,9 +6732,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPropertyListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7925,12 +6744,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPropertyListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7943,7 +6757,8 @@
           static int id;
       };
     
-      class RJSType_RRestrictAngleLength : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRestrictAngleLength : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7951,9 +6766,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRestrictAngleLength::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -7965,12 +6778,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRestrictAngleLength());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -7983,7 +6791,8 @@
           static int id;
       };
     
-      class RJSType_RRestrictHorizontal : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRestrictHorizontal : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -7991,9 +6800,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRestrictHorizontal::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8005,12 +6812,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRestrictHorizontal());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8023,7 +6825,8 @@
           static int id;
       };
     
-      class RJSType_RRestrictOff : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRestrictOff : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8031,9 +6834,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRestrictOff::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8045,12 +6846,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRestrictOff());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8063,7 +6859,8 @@
           static int id;
       };
     
-      class RJSType_RRestrictOrthogonal : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRestrictOrthogonal : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8071,9 +6868,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRestrictOrthogonal::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8085,12 +6880,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRestrictOrthogonal());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8103,7 +6893,8 @@
           static int id;
       };
     
-      class RJSType_RRestrictVertical : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRestrictVertical : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8111,9 +6902,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRestrictVertical::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8125,12 +6914,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRestrictVertical());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8143,7 +6927,8 @@
           static int id;
       };
     
-      class RJSType_RRuler : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRuler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8151,9 +6936,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRuler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8165,12 +6948,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRuler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8183,7 +6961,8 @@
           static int id;
       };
     
-      class RJSType_RScaleSelectionOperation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RScaleSelectionOperation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8191,9 +6970,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RScaleSelectionOperation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8205,12 +6982,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RScaleSelectionOperation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8223,7 +6995,8 @@
           static int id;
       };
     
-      class RJSType_RSelectionListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSelectionListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8231,9 +7004,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSelectionListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8245,12 +7016,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSelectionListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8263,7 +7029,8 @@
           static int id;
       };
     
-      class RJSType_RSnap : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnap : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8271,9 +7038,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnap::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8285,12 +7050,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnap());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8303,7 +7063,8 @@
           static int id;
       };
     
-      class RJSType_RSnapAuto : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapAuto : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8311,9 +7072,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapAuto::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8325,12 +7084,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapAuto());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8343,7 +7097,8 @@
           static int id;
       };
     
-      class RJSType_RSnapCenter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapCenter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8351,9 +7106,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapCenter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8365,12 +7118,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapCenter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8383,7 +7131,8 @@
           static int id;
       };
     
-      class RJSType_RSnapDistance : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapDistance : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8391,9 +7140,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapDistance::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8405,12 +7152,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapDistance());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8423,7 +7165,8 @@
           static int id;
       };
     
-      class RJSType_RSnapEnd : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapEnd : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8431,9 +7174,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapEnd::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8445,12 +7186,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapEnd());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8463,7 +7199,8 @@
           static int id;
       };
     
-      class RJSType_RSnapEntityBase : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapEntityBase : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8471,9 +7208,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapEntityBase::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8485,12 +7220,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapEntityBase());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8503,7 +7233,8 @@
           static int id;
       };
     
-      class RJSType_RSnapFree : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapFree : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8511,9 +7242,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapFree::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8525,12 +7254,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapFree());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8543,7 +7267,8 @@
           static int id;
       };
     
-      class RJSType_RSnapGrid : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapGrid : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8551,9 +7276,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapGrid::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8565,12 +7288,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapGrid());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8583,7 +7301,8 @@
           static int id;
       };
     
-      class RJSType_RSnapIntersection : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapIntersection : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8591,9 +7310,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapIntersection::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8605,12 +7322,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapIntersection());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8623,7 +7335,8 @@
           static int id;
       };
     
-      class RJSType_RSnapListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8631,9 +7344,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8645,12 +7356,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8663,7 +7369,8 @@
           static int id;
       };
     
-      class RJSType_RSnapMiddle : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapMiddle : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8671,9 +7378,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapMiddle::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8685,12 +7390,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapMiddle());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8703,7 +7403,8 @@
           static int id;
       };
     
-      class RJSType_RSnapOnEntity : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapOnEntity : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8711,9 +7412,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapOnEntity::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8725,12 +7424,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapOnEntity());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8743,7 +7437,8 @@
           static int id;
       };
     
-      class RJSType_RSnapPerpendicular : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapPerpendicular : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8751,9 +7446,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapPerpendicular::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8765,12 +7458,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapPerpendicular());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8783,7 +7471,8 @@
           static int id;
       };
     
-      class RJSType_RSnapReference : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapReference : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8791,9 +7480,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapReference::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8805,12 +7492,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapReference());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8823,7 +7505,8 @@
           static int id;
       };
     
-      class RJSType_RSnapRestriction : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapRestriction : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8831,9 +7514,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapRestriction::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8845,12 +7526,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapRestriction());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8863,7 +7539,8 @@
           static int id;
       };
     
-      class RJSType_RSnapTangential : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapTangential : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8871,9 +7548,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSnapTangential::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8885,12 +7560,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSnapTangential());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8903,7 +7573,8 @@
           static int id;
       };
     
-      class RJSType_RSpatialIndex : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSpatialIndex : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8911,9 +7582,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSpatialIndex::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8925,12 +7594,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSpatialIndex());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8943,7 +7607,8 @@
           static int id;
       };
     
-      class RJSType_RSpatialIndexSimple : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSpatialIndexSimple : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8951,9 +7616,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSpatialIndexSimple::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -8965,12 +7628,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSpatialIndexSimple());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -8983,7 +7641,8 @@
           static int id;
       };
     
-      class RJSType_RSpatialIndexVisitor : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSpatialIndexVisitor : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -8991,9 +7650,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSpatialIndexVisitor::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9005,12 +7662,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSpatialIndexVisitor());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9023,7 +7675,8 @@
           static int id;
       };
     
-      class RJSType_RStorage : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RStorage : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9031,9 +7684,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RStorage::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9045,12 +7696,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RStorage());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9063,7 +7709,8 @@
           static int id;
       };
     
-      class RJSType_RTabletEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTabletEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9071,9 +7718,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTabletEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9085,12 +7730,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTabletEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9103,7 +7743,8 @@
           static int id;
       };
     
-      class RJSType_RTerminateEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTerminateEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9111,9 +7752,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTerminateEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9125,12 +7764,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTerminateEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9143,7 +7777,8 @@
           static int id;
       };
     
-      class RJSType_RTextRenderer : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTextRenderer : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9151,9 +7786,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextRenderer::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9165,12 +7798,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextRenderer());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9183,7 +7811,8 @@
           static int id;
       };
     
-      class RJSType_RTransactionListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTransactionListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9191,9 +7820,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTransactionListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9205,12 +7832,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTransactionListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9223,7 +7845,8 @@
           static int id;
       };
     
-      class RJSType_RTransactionStack : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTransactionStack : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9231,9 +7854,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTransactionStack::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9245,12 +7866,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTransactionStack());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9263,7 +7879,8 @@
           static int id;
       };
     
-      class RJSType_RTransformation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTransformation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9271,9 +7888,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTransformation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9285,12 +7900,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTransformation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9303,7 +7913,8 @@
           static int id;
       };
     
-      class RJSType_RTranslation : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTranslation : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9311,9 +7922,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTranslation::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9325,12 +7934,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTranslation());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9343,7 +7947,8 @@
           static int id;
       };
     
-      class RJSType_RUcsListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RUcsListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9351,9 +7956,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RUcsListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9365,12 +7968,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RUcsListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9383,7 +7981,8 @@
           static int id;
       };
     
-      class RJSType_RViewFocusListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RViewFocusListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9391,9 +7990,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RViewFocusListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9405,12 +8002,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RViewFocusListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9423,7 +8015,8 @@
           static int id;
       };
     
-      class RJSType_RViewListener : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RViewListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9431,9 +8024,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RViewListener::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9445,12 +8036,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RViewListener());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9463,7 +8049,8 @@
           static int id;
       };
     
-      class RJSType_RWheelEvent : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RWheelEvent : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9471,9 +8058,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RWheelEvent::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9485,12 +8070,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RWheelEvent());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9505,7 +8085,8 @@
     
 
   
-      class RJSType_RBlockListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RBlockListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9513,9 +8094,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RBlockListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9527,12 +8106,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RBlockListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9545,7 +8119,8 @@
           static int id;
       };
     
-      class RJSType_RCadToolBar : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCadToolBar : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9553,9 +8128,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCadToolBar::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9567,12 +8140,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCadToolBar());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9585,7 +8153,8 @@
           static int id;
       };
     
-      class RJSType_RCadToolBarPanel : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCadToolBarPanel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9593,9 +8162,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCadToolBarPanel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9607,12 +8174,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCadToolBarPanel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9625,7 +8187,8 @@
           static int id;
       };
     
-      class RJSType_RCharacterWidget : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCharacterWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9633,9 +8196,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCharacterWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9647,12 +8208,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCharacterWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9665,7 +8221,8 @@
           static int id;
       };
     
-      class RJSType_RColorCombo : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RColorCombo : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9673,9 +8230,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RColorCombo::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9687,12 +8242,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RColorCombo());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9705,7 +8255,8 @@
           static int id;
       };
     
-      class RJSType_RCommandLine : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCommandLine : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9713,9 +8264,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCommandLine::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9727,12 +8276,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCommandLine());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9745,7 +8289,8 @@
           static int id;
       };
     
-      class RJSType_RCoordinateListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RCoordinateListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9753,9 +8298,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RCoordinateListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9767,12 +8310,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RCoordinateListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9785,7 +8323,8 @@
           static int id;
       };
     
-      class RJSType_RDockWidget : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RDockWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9793,9 +8332,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RDockWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9807,12 +8344,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RDockWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9825,7 +8357,8 @@
           static int id;
       };
     
-      class RJSType_REventFilter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_REventFilter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9833,9 +8366,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_REventFilter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9847,12 +8378,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_REventFilter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9865,7 +8391,8 @@
           static int id;
       };
     
-      class RJSType_REventHandler : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_REventHandler : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9873,9 +8400,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_REventHandler::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9887,12 +8412,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_REventHandler());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9905,7 +8425,8 @@
           static int id;
       };
     
-      class RJSType_RFileSystemModel : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFileSystemModel : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9913,9 +8434,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFileSystemModel::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9927,12 +8446,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFileSystemModel());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9945,7 +8459,8 @@
           static int id;
       };
     
-      class RJSType_RFlowLayout : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFlowLayout : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9953,9 +8468,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFlowLayout::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -9967,12 +8480,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFlowLayout());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -9985,7 +8493,8 @@
           static int id;
       };
     
-      class RJSType_RFocusListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFocusListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -9993,9 +8502,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFocusListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10007,12 +8514,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFocusListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10025,7 +8527,8 @@
           static int id;
       };
     
-      class RJSType_RFontChooserWidget : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RFontChooserWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10033,9 +8536,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RFontChooserWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10047,12 +8548,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RFontChooserWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10065,7 +8561,8 @@
           static int id;
       };
     
-      class RJSType_RGraphicsViewQt : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RGraphicsViewQt : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10073,9 +8570,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RGraphicsViewQt::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10087,12 +8582,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RGraphicsViewQt());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10105,7 +8595,8 @@
           static int id;
       };
     
-      class RJSType_RGraphicsViewImage : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RGraphicsViewImage : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10113,9 +8604,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RGraphicsViewImage::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10127,12 +8616,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RGraphicsViewImage());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10145,7 +8629,8 @@
           static int id;
       };
     
-      class RJSType_RGraphicsViewWorker : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RGraphicsViewWorker : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10153,9 +8638,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RGraphicsViewWorker::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10167,12 +8650,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RGraphicsViewWorker());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10185,7 +8663,8 @@
           static int id;
       };
     
-      class RJSType_RGuiAction : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RGuiAction : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10193,9 +8672,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RGuiAction::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10207,12 +8684,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RGuiAction());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10225,7 +8697,8 @@
           static int id;
       };
     
-      class RJSType_RInterTransactionListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RInterTransactionListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10233,9 +8706,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RInterTransactionListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10247,12 +8718,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RInterTransactionListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10265,7 +8731,8 @@
           static int id;
       };
     
-      class RJSType_RKeyListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RKeyListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10273,9 +8740,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RKeyListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10287,12 +8752,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RKeyListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10305,7 +8765,8 @@
           static int id;
       };
     
-      class RJSType_RLayerListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLayerListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10313,9 +8774,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLayerListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10327,12 +8786,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLayerListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10345,7 +8799,8 @@
           static int id;
       };
     
-      class RJSType_RLinetypeCombo : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLinetypeCombo : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10353,9 +8808,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLinetypeCombo::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10367,12 +8820,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLinetypeCombo());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10385,7 +8833,8 @@
           static int id;
       };
     
-      class RJSType_RLineweightCombo : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RLineweightCombo : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10393,9 +8842,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RLineweightCombo::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10407,12 +8854,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RLineweightCombo());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10425,7 +8867,8 @@
           static int id;
       };
     
-      class RJSType_RListView : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RListView : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10433,9 +8876,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RListView::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10447,12 +8888,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RListView());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10465,7 +8901,8 @@
           static int id;
       };
     
-      class RJSType_RListWidget : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RListWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10473,9 +8910,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RListWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10487,12 +8922,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RListWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10505,7 +8935,8 @@
           static int id;
       };
     
-      class RJSType_RMainWindowQt : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMainWindowQt : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10513,9 +8944,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMainWindowQt::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10527,12 +8956,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMainWindowQt());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10545,7 +8969,8 @@
           static int id;
       };
     
-      class RJSType_RMathComboBox : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMathComboBox : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10553,9 +8978,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMathComboBox::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10567,12 +8990,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMathComboBox());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10585,7 +9003,8 @@
           static int id;
       };
     
-      class RJSType_RMathLineEdit : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMathLineEdit : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10593,9 +9012,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMathLineEdit::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10607,12 +9024,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMathLineEdit());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10625,7 +9037,8 @@
           static int id;
       };
     
-      class RJSType_RMdiArea : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMdiArea : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10633,9 +9046,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMdiArea::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10647,12 +9058,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMdiArea());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10665,7 +9071,8 @@
           static int id;
       };
     
-      class RJSType_RMdiChildQt : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RMdiChildQt : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10673,9 +9080,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RMdiChildQt::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10687,12 +9092,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RMdiChildQt());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10705,7 +9105,8 @@
           static int id;
       };
     
-      class RJSType_RPaletteListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPaletteListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10713,9 +9114,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPaletteListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10727,12 +9126,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPaletteListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10745,7 +9139,8 @@
           static int id;
       };
     
-      class RJSType_RPenListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPenListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10753,9 +9148,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPenListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10767,12 +9160,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPenListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10785,7 +9173,8 @@
           static int id;
       };
     
-      class RJSType_RPreferencesListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPreferencesListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10793,9 +9182,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPreferencesListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10807,12 +9194,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPreferencesListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10825,7 +9207,8 @@
           static int id;
       };
     
-      class RJSType_RPropertyListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RPropertyListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10833,9 +9216,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RPropertyListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10847,12 +9228,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RPropertyListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10865,7 +9241,8 @@
           static int id;
       };
     
-      class RJSType_RRulerQt : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RRulerQt : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10873,9 +9250,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RRulerQt::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10887,12 +9262,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RRulerQt());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10905,7 +9275,8 @@
           static int id;
       };
     
-      class RJSType_RSelectionListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSelectionListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10913,9 +9284,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSelectionListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10927,12 +9296,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSelectionListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10945,7 +9309,8 @@
           static int id;
       };
     
-      class RJSType_RSingleApplication : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RSingleApplication : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10953,9 +9318,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RSingleApplication::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -10967,12 +9330,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RSingleApplication());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -10985,7 +9343,8 @@
           static int id;
       };
     
-      class RJSType_RTextEdit : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTextEdit : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -10993,9 +9352,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTextEdit::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -11007,12 +9364,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTextEdit());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -11025,7 +9377,8 @@
           static int id;
       };
     
-      class RJSType_RToolButton : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RToolButton : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -11033,9 +9386,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RToolButton::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -11047,12 +9398,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RToolButton());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -11065,7 +9411,8 @@
           static int id;
       };
     
-      class RJSType_RToolMatrixItemDelegate : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RToolMatrixItemDelegate : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -11073,9 +9420,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RToolMatrixItemDelegate::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -11087,12 +9432,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RToolMatrixItemDelegate());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -11105,7 +9445,8 @@
           static int id;
       };
     
-      class RJSType_RTransactionListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTransactionListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -11113,9 +9454,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTransactionListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -11127,12 +9466,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTransactionListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -11145,7 +9479,8 @@
           static int id;
       };
     
-      class RJSType_RTreeWidget : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RTreeWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -11153,9 +9488,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RTreeWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -11167,12 +9500,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RTreeWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -11185,7 +9513,8 @@
           static int id;
       };
     
-      class RJSType_RViewListenerAdapter : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RViewListenerAdapter : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -11193,9 +9522,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RViewListenerAdapter::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -11207,12 +9534,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RViewListenerAdapter());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type
@@ -11225,7 +9547,8 @@
           static int id;
       };
     
-      class RJSType_RWidget : public RJSTypeEnum {
+      class QCADJSAPI_EXPORT 
+      RJSType_RWidget : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
 
@@ -11233,9 +9556,7 @@
 
       public:
           Q_INVOKABLE
-          int getId() const {
-              return RJSType_RWidget::getIdStatic();
-          }
+          int getId() const;
 
           Q_INVOKABLE
           QString getName() const {
@@ -11247,12 +9568,7 @@
           //}
 
           Q_INVOKABLE
-          static int getIdStatic() {
-              if (id<0) {
-                  id = RJSTypeEnum::reserve(new RJSType_RWidget());
-              }
-              return id;
-          }
+          static int getIdStatic();
 
           
             // return true if the given type is derived from type

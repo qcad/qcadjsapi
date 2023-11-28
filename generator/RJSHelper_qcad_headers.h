@@ -1,3 +1,5 @@
+#include "qcadjsapi_global.h"
+
 #include "RAction.h"
 #include "RActionAdapter.h"
 #include "RAddObjectOperation.h"
