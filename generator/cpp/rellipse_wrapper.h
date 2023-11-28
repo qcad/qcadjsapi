@@ -22,7 +22,8 @@
         #include "REllipse.h"
       
       // singleton class wrapper for static functions:
-      class REllipse_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     REllipse_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1464,7 +1465,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for REllipse
-    class REllipse_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     REllipse_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -20,7 +20,8 @@
         #include "RTextRenderer.h"
       
       // singleton class wrapper for static functions:
-      class RTextRenderer_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RTextRenderer_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1431,7 +1432,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RTextRenderer
-    class RTextRenderer_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RTextRenderer_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

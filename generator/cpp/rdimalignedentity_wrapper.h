@@ -24,7 +24,8 @@
         #include "RDimAlignedEntity.h"
       
       // singleton class wrapper for static functions:
-      class RDimAlignedEntity_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RDimAlignedEntity_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1214,7 +1215,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RDimAlignedEntity
-    class RDimAlignedEntity_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RDimAlignedEntity_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

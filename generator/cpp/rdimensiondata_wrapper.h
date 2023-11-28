@@ -20,7 +20,8 @@
         #include "RDimensionData.h"
       
       // singleton class wrapper for static functions:
-      class RDimensionData_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RDimensionData_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -73,7 +74,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RDimensionData
-    class RDimensionData_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RDimensionData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

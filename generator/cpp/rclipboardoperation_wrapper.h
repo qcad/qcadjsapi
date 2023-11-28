@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RClipboardOperation
-    class RClipboardOperation_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RClipboardOperation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

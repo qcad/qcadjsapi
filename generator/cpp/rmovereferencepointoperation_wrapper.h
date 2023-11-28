@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RMoveReferencePointOperation
-    class RMoveReferencePointOperation_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RMoveReferencePointOperation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

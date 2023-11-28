@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RCommandEvent
-    class RCommandEvent_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RCommandEvent_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

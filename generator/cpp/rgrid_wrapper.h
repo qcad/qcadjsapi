@@ -26,7 +26,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RGrid
-    class RGrid_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RGrid_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

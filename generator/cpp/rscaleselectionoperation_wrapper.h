@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RScaleSelectionOperation
-    class RScaleSelectionOperation_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RScaleSelectionOperation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

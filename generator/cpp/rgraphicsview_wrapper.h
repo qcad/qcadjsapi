@@ -36,7 +36,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RGraphicsView
-    class RGraphicsView_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RGraphicsView_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

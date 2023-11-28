@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RMixedOperation
-    class RMixedOperation_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RMixedOperation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

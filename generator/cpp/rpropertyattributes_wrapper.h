@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RPropertyAttributes
-    class RPropertyAttributes_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RPropertyAttributes_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

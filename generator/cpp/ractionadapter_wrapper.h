@@ -51,7 +51,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RActionAdapter
-    class RActionAdapter_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RActionAdapter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RMouseCoordinateListener
-    class RMouseCoordinateListener_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RMouseCoordinateListener_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

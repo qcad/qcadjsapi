@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RPenListener
-    class RPenListener_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RPenListener_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

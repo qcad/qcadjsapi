@@ -20,7 +20,8 @@
         #include "RPatternListMetric.h"
       
       // singleton class wrapper for static functions:
-      class RPatternListMetric_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RPatternListMetric_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -134,7 +135,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RPatternListMetric
-    class RPatternListMetric_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RPatternListMetric_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

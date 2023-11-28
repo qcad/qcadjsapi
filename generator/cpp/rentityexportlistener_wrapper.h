@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for REntityExportListener
-    class REntityExportListener_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     REntityExportListener_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

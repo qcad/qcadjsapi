@@ -67,7 +67,8 @@
       #include "rmainwindowqt_base.h"
     
       // singleton class wrapper for static functions:
-      class RMainWindowQt_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RMainWindowQt_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -273,7 +274,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RMainWindowQt
-    class RMainWindowQt_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RMainWindowQt_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

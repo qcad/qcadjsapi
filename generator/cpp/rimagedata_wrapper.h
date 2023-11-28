@@ -20,7 +20,8 @@
         #include "RImageData.h"
       
       // singleton class wrapper for static functions:
-      class RImageData_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RImageData_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -73,7 +74,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RImageData
-    class RImageData_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RImageData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

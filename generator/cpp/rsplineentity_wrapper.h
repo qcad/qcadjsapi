@@ -24,7 +24,8 @@
         #include "RSplineEntity.h"
       
       // singleton class wrapper for static functions:
-      class RSplineEntity_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RSplineEntity_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -801,7 +802,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RSplineEntity
-    class RSplineEntity_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RSplineEntity_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

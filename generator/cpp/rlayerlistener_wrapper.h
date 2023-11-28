@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RLayerListener
-    class RLayerListener_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RLayerListener_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

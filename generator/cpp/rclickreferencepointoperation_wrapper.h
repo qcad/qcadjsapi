@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RClickReferencePointOperation
-    class RClickReferencePointOperation_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RClickReferencePointOperation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

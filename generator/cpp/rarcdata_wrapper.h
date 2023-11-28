@@ -20,7 +20,8 @@
         #include "RArcData.h"
       
       // singleton class wrapper for static functions:
-      class RArcData_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RArcData_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -209,7 +210,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RArcData
-    class RArcData_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RArcData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RPluginInfo
-    class RPluginInfo_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RPluginInfo_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

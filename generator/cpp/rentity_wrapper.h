@@ -30,7 +30,8 @@
         #include "REntity.h"
       
       // singleton class wrapper for static functions:
-      class REntity_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     REntity_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -560,7 +561,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for REntity
-    class REntity_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     REntity_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

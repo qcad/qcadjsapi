@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RRestrictVertical
-    class RRestrictVertical_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RRestrictVertical_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

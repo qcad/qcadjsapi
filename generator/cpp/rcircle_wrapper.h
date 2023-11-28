@@ -24,7 +24,8 @@
         #include "RCircle.h"
       
       // singleton class wrapper for static functions:
-      class RCircle_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RCircle_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1470,7 +1471,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RCircle
-    class RCircle_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RCircle_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

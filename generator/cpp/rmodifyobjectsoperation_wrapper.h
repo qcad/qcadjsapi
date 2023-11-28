@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RModifyObjectsOperation
-    class RModifyObjectsOperation_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RModifyObjectsOperation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

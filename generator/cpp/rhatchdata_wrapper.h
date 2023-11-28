@@ -20,7 +20,8 @@
         #include "RHatchData.h"
       
       // singleton class wrapper for static functions:
-      class RHatchData_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RHatchData_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -92,7 +93,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RHatchData
-    class RHatchData_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RHatchData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

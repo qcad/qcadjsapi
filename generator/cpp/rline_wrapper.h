@@ -24,7 +24,8 @@
         #include "RLine.h"
       
       // singleton class wrapper for static functions:
-      class RLine_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RLine_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -1412,7 +1413,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RLine
-    class RLine_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RLine_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

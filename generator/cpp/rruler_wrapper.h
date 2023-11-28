@@ -26,7 +26,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RRuler
-    class RRuler_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RRuler_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

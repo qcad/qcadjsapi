@@ -46,7 +46,8 @@
         #include "REventHandler.h"
       
       // singleton class wrapper for static functions:
-      class REventHandler_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     REventHandler_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -157,7 +158,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for REventHandler
-    class REventHandler_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     REventHandler_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

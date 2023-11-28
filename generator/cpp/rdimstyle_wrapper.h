@@ -26,7 +26,8 @@
         #include "RDimStyle.h"
       
       // singleton class wrapper for static functions:
-      class RDimStyle_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RDimStyle_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -480,7 +481,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RDimStyle
-    class RDimStyle_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RDimStyle_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
