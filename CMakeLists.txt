@@ -91,7 +91,7 @@ set_target_properties(qcadjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/plug
 set_target_properties(qcadjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/plugins)
 
 target_compile_definitions(qcadjsapi PRIVATE
-    qcadjsapi_LIBRARY
+    QCADJSAPI_LIBRARY
     QCAD_DLL
 )
 
