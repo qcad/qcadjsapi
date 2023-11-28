@@ -9,6 +9,10 @@ qt_standard_project_setup()
 
 qt_add_resources(SOURCES qcadjsapi.qrc)
 
+if(MSVC)
+    add_compile_options(/bigobj)
+endif()
+
 if(CMAKE_BUILD_TYPE STREQUAL "Release")
     link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/release)
     link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/plugins)
@@ -91,7 +95,7 @@ set_target_properties(qcadjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/plug
 set_target_properties(qcadjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/plugins)
 
 target_compile_definitions(qcadjsapi PRIVATE
-    qcadjsapi_LIBRARY
+    QCADJSAPI_LIBRARY
     QCAD_DLL
 )
 
