@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RViewFocusListener
-    class RViewFocusListener_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RViewFocusListener_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

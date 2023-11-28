@@ -20,7 +20,8 @@
         #include "RDimRotatedData.h"
       
       // singleton class wrapper for static functions:
-      class RDimRotatedData_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RDimRotatedData_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -73,7 +74,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RDimRotatedData
-    class RDimRotatedData_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RDimRotatedData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

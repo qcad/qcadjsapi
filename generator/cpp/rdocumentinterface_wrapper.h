@@ -40,7 +40,8 @@
         #include "RDocumentInterface.h"
       
       // singleton class wrapper for static functions:
-      class RDocumentInterface_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RDocumentInterface_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -112,7 +113,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RDocumentInterface
-    class RDocumentInterface_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RDocumentInterface_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

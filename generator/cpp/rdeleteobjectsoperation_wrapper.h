@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RDeleteObjectsOperation
-    class RDeleteObjectsOperation_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RDeleteObjectsOperation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

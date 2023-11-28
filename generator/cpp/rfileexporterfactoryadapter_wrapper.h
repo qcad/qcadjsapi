@@ -28,7 +28,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RFileExporterFactoryAdapter
-    class RFileExporterFactoryAdapter_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RFileExporterFactoryAdapter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

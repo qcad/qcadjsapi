@@ -24,7 +24,8 @@
         #include "RBlockReferenceEntity.h"
       
       // singleton class wrapper for static functions:
-      class RBlockReferenceEntity_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RBlockReferenceEntity_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -710,7 +711,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RBlockReferenceEntity
-    class RBlockReferenceEntity_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RBlockReferenceEntity_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -20,7 +20,8 @@
         #include "RMemoryStorage.h"
       
       // singleton class wrapper for static functions:
-      class RMemoryStorage_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RMemoryStorage_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -77,7 +78,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RMemoryStorage
-    class RMemoryStorage_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RMemoryStorage_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

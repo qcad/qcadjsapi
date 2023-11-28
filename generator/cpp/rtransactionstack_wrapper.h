@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RTransactionStack
-    class RTransactionStack_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RTransactionStack_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

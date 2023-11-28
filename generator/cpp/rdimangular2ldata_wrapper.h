@@ -20,7 +20,8 @@
         #include "RDimAngular2LData.h"
       
       // singleton class wrapper for static functions:
-      class RDimAngular2LData_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RDimAngular2LData_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -73,7 +74,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RDimAngular2LData
-    class RDimAngular2LData_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RDimAngular2LData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

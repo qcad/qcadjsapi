@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RSnapCenter
-    class RSnapCenter_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RSnapCenter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

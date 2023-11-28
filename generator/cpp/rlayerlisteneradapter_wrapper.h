@@ -20,7 +20,8 @@
         #include "RLayerListenerAdapter.h"
       
       // singleton class wrapper for static functions:
-      class RLayerListenerAdapter_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RLayerListenerAdapter_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -85,7 +86,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RLayerListenerAdapter
-    class RLayerListenerAdapter_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RLayerListenerAdapter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RSpatialIndexVisitorAdapter
-    class RSpatialIndexVisitorAdapter_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RSpatialIndexVisitorAdapter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

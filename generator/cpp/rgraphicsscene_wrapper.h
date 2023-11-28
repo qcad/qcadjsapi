@@ -24,7 +24,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RGraphicsScene
-    class RGraphicsScene_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RGraphicsScene_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

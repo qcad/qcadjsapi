@@ -22,7 +22,8 @@
         #include "RTextBasedData.h"
       
       // singleton class wrapper for static functions:
-      class RTextBasedData_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RTextBasedData_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -202,7 +203,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RTextBasedData
-    class RTextBasedData_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RTextBasedData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

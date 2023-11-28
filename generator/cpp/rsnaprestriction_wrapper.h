@@ -27,7 +27,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RSnapRestriction
-    class RSnapRestriction_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RSnapRestriction_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -27,7 +27,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RSnapReference
-    class RSnapReference_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RSnapReference_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RFont
-    class RFont_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RFont_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

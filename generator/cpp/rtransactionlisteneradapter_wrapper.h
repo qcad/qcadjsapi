@@ -20,7 +20,8 @@
         #include "RTransactionListenerAdapter.h"
       
       // singleton class wrapper for static functions:
-      class RTransactionListenerAdapter_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RTransactionListenerAdapter_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -85,7 +86,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RTransactionListenerAdapter
-    class RTransactionListenerAdapter_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RTransactionListenerAdapter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

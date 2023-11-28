@@ -20,7 +20,8 @@
         #include "RTransform.h"
       
       // singleton class wrapper for static functions:
-      class RTransform_WrapperSingleton: public QObject {
+      class QCADJSAPI_EXPORT 
+     RTransform_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -193,7 +194,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RTransform
-    class RTransform_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RTransform_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

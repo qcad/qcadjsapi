@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RChangePropertyOperation
-    class RChangePropertyOperation_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RChangePropertyOperation_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

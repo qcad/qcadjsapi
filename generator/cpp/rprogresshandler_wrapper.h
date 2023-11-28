@@ -22,7 +22,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RProgressHandler
-    class RProgressHandler_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RProgressHandler_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

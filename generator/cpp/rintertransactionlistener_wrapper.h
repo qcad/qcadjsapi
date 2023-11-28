@@ -28,7 +28,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RInterTransactionListener
-    class RInterTransactionListener_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RInterTransactionListener_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

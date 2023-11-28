@@ -28,7 +28,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RBox
-    class RBox_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RBox_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT

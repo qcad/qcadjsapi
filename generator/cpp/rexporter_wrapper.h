@@ -56,7 +56,8 @@
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RExporter
-    class RExporter_Wrapper : public RJSWrapperObj {
+    class QCADJSAPI_EXPORT 
+     RExporter_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
