@@ -118,4 +118,5 @@ target_link_libraries(qcadjsapi PRIVATE
     qcadoperations
     qcadspatialindex
     qtjsapi
+    opennurbs
 )
