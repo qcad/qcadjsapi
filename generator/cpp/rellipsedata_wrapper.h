@@ -66,7 +66,7 @@
     // Function: createInscribed
     // Source: REllipse
     // Static: true
-    // Parameters: 4
+    // Parameters: 5
     // preceding Parameters: -1
 
               public:
@@ -91,6 +91,10 @@
     , 
   const QJSValue& 
   a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
       = QJSValue()
     
               )

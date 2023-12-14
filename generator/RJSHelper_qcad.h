@@ -7486,9 +7486,8 @@
 
 
 
-      class 
-       QCADJSAPI_EXPORT 
-         RJSHelper_qcad {
+      class QCADJSAPI_EXPORT 
+     RJSHelper_qcad {
 
       public:
         

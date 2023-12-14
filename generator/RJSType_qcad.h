@@ -4,8 +4,8 @@
         #ifndef RJSTYPE_QCAD_H
         #define RJSTYPE_QCAD_H
       
-
-    #include "qcadjsapi_global.h"
+        #include "qcadjsapi_global.h"
+      
 
     #include <QObject>
     #include <QQmlEngine>

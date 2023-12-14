@@ -63,7 +63,7 @@
     // Function: createInscribed
     // Source: REllipse
     // Static: true
-    // Parameters: 4
+    // Parameters: 5
     // preceding Parameters: -1
 
                 QJSValue 
@@ -77,7 +77,9 @@
   const QJSValue& 
   a3, 
   const QJSValue& 
-  a4
+  a4, 
+  const QJSValue& 
+  a5
               ) 
               
               {
@@ -94,6 +96,11 @@
   )
 
    && RJSHelper_qcad::is_RVector(handler, a4
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a5
+    , true
+  
   )
 
   
@@ -125,6 +132,18 @@ RVector a4_cpp;
 
       a4_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a4);
         
+  // convert js parameter to cpp: centerHint (RVector)
+  
+RVector a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = RVector::invalid;
+          }
+          else {
+            a5_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a5);
+          }
+        
 
     // call function:
     
@@ -138,6 +157,7 @@ RVector a4_cpp;
     , a2_cpp
     , a3_cpp
     , a4_cpp
+    , a5_cpp
     
             );
           

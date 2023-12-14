@@ -223,11 +223,12 @@
         {
           //print("JS: REllipseData.createInscribed");
           
-      if (arguments.length == 4) {
+      if (arguments.length >= 4 &&
+          arguments.length <= 5) {
     
                 // calling static wrapper:
                 return REllipseData_WrapperSingletonInstance.createInscribed(
-                  arguments[0], arguments[1], arguments[2], arguments[3]
+                  arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
                 );
               
 
