@@ -1581,6 +1581,34 @@ REllipse.Ray = REllipse_Wrapper.Ray;
       
 
         // static function 
+        REllipse.createFrom4Points = function() 
+          
+        {
+          //print("JS: REllipse.createFrom4Points");
+          
+      if (arguments.length == 4) {
+    
+                // calling static wrapper:
+                return REllipse_WrapperSingletonInstance.createFrom4Points(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, REllipse);
+  }
+
+  
+  else {
+    
+        print("REllipse.createFrom4Points(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         REllipse.hasProxy = function() 
           
         {

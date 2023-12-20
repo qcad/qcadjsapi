@@ -179,6 +179,105 @@ RVector a5_cpp;
               }
             
     // Class: REllipseData
+    // Function: createFrom4Points
+    // Source: REllipse
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              REllipseData_WrapperSingleton::createFrom4Points
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a3
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a4
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: p1 (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: p2 (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+  // convert js parameter to cpp: p3 (RVector)
+  
+RVector a3_cpp;
+
+      a3_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a3);
+        
+  // convert js parameter to cpp: p4 (RVector)
+  
+RVector a4_cpp;
+
+      a4_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a4);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            REllipse res = 
+                
+                // call static member function:
+                REllipse::createFrom4Points(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+            );
+          
+            // return type: REllipse
+
+            return RJSHelper_qcad::cpp2js_REllipse(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for createFrom4Points";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: REllipseData
     // Function: hasProxy
     // Source: REllipse
     // Static: true

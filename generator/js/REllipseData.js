@@ -247,6 +247,34 @@
       
 
         // static function 
+        REllipseData.createFrom4Points = function() 
+          
+        {
+          //print("JS: REllipseData.createFrom4Points");
+          
+      if (arguments.length == 4) {
+    
+                // calling static wrapper:
+                return REllipseData_WrapperSingletonInstance.createFrom4Points(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, REllipseData);
+  }
+
+  
+  else {
+    
+        print("REllipseData.createFrom4Points(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         REllipseData.hasProxy = function() 
           
         {
