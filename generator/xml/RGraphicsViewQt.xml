@@ -70,6 +70,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="getCursor">
       <variant return-type="QCursor" virtual="true" access="public">
         <parameters />
@@ -87,6 +88,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="setFocusFrameWidget">
       <variant return-type="void" access="public">
         <parameters>
