@@ -1270,6 +1270,27 @@ InternalMove = RTreeWidget::InternalMove,
               ;
             
     // Class: RTreeWidget
+    // Function: paintEngine
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  paintEngine
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTreeWidget
     // Function: widthMM
     // Source: QPaintDevice
     // Static: false
@@ -5790,27 +5811,6 @@ InternalMove = RTreeWidget::InternalMove,
               ;
             
     // Class: RTreeWidget
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RTreeWidget
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -5920,32 +5920,6 @@ InternalMove = RTreeWidget::InternalMove,
               void customContextMenuRequestedEmitter(
                 const QPoint& pos
               );
-            
-    // Class: RTreeWidget
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
             
     // Class: RTreeWidget
     // Function: inputMethodHints
@@ -6686,150 +6660,6 @@ InternalMove = RTreeWidget::InternalMove,
               
                   QJSValue 
                   setSizeAdjustPolicy
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RTreeWidget
-    // Function: setViewportMargins
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 4
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setViewportMarginsSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RTreeWidget
-    // Function: viewportMargins
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      viewportMarginsSuper
-                    
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RTreeWidget
-    // Function: eventFilter
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      eventFilterSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RTreeWidget
-    // Function: wheelEvent
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      wheelEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RTreeWidget
-    // Function: dragEnterEvent
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      dragEnterEventSuper
-                    
               (
 
                 
@@ -7917,48 +7747,6 @@ InternalMove = RTreeWidget::InternalMove,
               ;
             
     // Class: RTreeWidget
-    // Function: pressed
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void pressed(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void pressedEmitter(
-                const QModelIndex& index
-              );
-            
-    // Class: RTreeWidget
-    // Function: clicked
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void clicked(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void clickedEmitter(
-                const QModelIndex& index
-              );
-            
-    // Class: RTreeWidget
     // Function: doubleClicked
     // Source: QAbstractItemView
     // Static: false
@@ -7977,88 +7765,6 @@ InternalMove = RTreeWidget::InternalMove,
               public slots:
               void doubleClickedEmitter(
                 const QModelIndex& index
-              );
-            
-    // Class: RTreeWidget
-    // Function: activated
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void activated(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void activatedEmitter(
-                const QModelIndex& index
-              );
-            
-    // Class: RTreeWidget
-    // Function: entered
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void entered(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void enteredEmitter(
-                const QModelIndex& index
-              );
-            
-    // Class: RTreeWidget
-    // Function: viewportEntered
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void viewportEntered(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void viewportEnteredEmitter(
-                
-              );
-            
-    // Class: RTreeWidget
-    // Function: iconSizeChanged
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void iconSizeChanged(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void iconSizeChangedEmitter(
-                const QSize& size
               );
             
     // Class: RTreeWidget
@@ -9500,32 +9206,6 @@ InternalMove = RTreeWidget::InternalMove,
               
                   QJSValue 
                   expandToDepth
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RTreeWidget
-    // Function: paintEvent
-    // Source: QTreeView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
               (
 
                 

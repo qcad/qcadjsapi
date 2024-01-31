@@ -89,17 +89,7 @@
             
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
-    this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
-  
-    this["clicked(QModelIndex)"] = Object.getPrototypeOf(this).clicked;
-  
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
-  
-    this["activated(QModelIndex)"] = Object.getPrototypeOf(this).activated;
-  
-    this["entered(QModelIndex)"] = Object.getPrototypeOf(this).entered;
-  
-    this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
   
     this["expanded(QModelIndex)"] = Object.getPrototypeOf(this).expanded;
   
@@ -239,37 +229,6 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
 
 
       // functions:
-      
-        // function 
-        RTreeWidget.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RTreeWidget.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RTreeWidget);
-  }
-
-  
-  else {
-    
-        print("RTreeWidget.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
         // function 
         RTreeWidget.prototype.mousePressEvent = function() 

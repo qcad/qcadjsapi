@@ -1968,6 +1968,67 @@ QVariant a2_cpp;
               }
             
     // Class: RTreeWidget
+    // Function: paintEngine
+    // Source: QPaintDevice
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTreeWidget_Wrapper::paintEngine
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTreeWidget* w = getWrapped();
+                QPaintEngine* res = 
+                    
+                w->paintEngine(
+                  
+                );
+              
+                //setRecFlag(false);
+              
+            // return type: QPaintEngine*
+
+            return RJSHelper::cpp2js_QPaintEngine(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for paintEngine";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTreeWidget
     // Function: widthMM
     // Source: QPaintDevice
     // Static: false
@@ -16421,67 +16482,6 @@ Qt::WidgetAttribute a1_cpp;
               }
             
     // Class: RTreeWidget
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RTreeWidget_Wrapper::paintEngine
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RTreeWidget* w = getWrapped();
-                QPaintEngine* res = 
-                    
-                w->paintEngine(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QPaintEngine*
-
-            return RJSHelper::cpp2js_QPaintEngine(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for paintEngine";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RTreeWidget
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -16773,89 +16773,6 @@ bool a1_cpp;
                 emit customContextMenuRequested(
                   a1_js
                 );
-              }
-            
-    // Class: RTreeWidget
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RTreeWidget_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QActionEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QActionEvent)
-  
-
-          // pointer:
-          QActionEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QActionEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of RTreeWidget_Base class as 
-                // function has postfix inheritable class, overridable function):
-                RTreeWidget_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "RTreeWidget::actionEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->actionEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for actionEvent";
-                  handler.trace();
-                  return QJSValue();
-                
               }
             
     // Class: RTreeWidget
@@ -19081,517 +18998,6 @@ QAbstractScrollArea::SizeAdjustPolicy a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for setSizeAdjustPolicy";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RTreeWidget
-    // Function: setViewportMargins
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 4
-    // preceding Parameters: -1
-
-                QJSValue 
-              RTreeWidget_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setViewportMarginsSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3, 
-  const QJSValue& 
-  a4
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-  )
-
-   && RJSHelper::is_int(handler, a2
-  )
-
-   && RJSHelper::is_int(handler, a3
-  )
-
-   && RJSHelper::is_int(handler, a4
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: left (int)
-  
-int a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
-  // convert js parameter to cpp: top (int)
-  
-int a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
-        
-  // convert js parameter to cpp: right (int)
-  
-int a3_cpp;
-
-      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
-        
-  // convert js parameter to cpp: bottom (int)
-  
-int a4_cpp;
-
-      a4_cpp = RJSHelper::js2cpp_int(handler, a4);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of RTreeWidget_Base class as 
-                // function has postfix inheritable class, overridable function):
-                RTreeWidget_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "RTreeWidget::setViewportMargins: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->setViewportMarginsPublic(
-                      a1_cpp
-    , a2_cpp
-    , a3_cpp
-    , a4_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-      // check parameter types:
-      if (
-        RJSHelper::is_QMargins(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: margins (QMargins)
-  
-QMargins a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QMargins(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of RTreeWidget_Base class as 
-                // function has postfix inheritable class, overridable function):
-                RTreeWidget_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "RTreeWidget::setViewportMargins: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->setViewportMarginsPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setViewportMargins";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RTreeWidget
-    // Function: viewportMargins
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RTreeWidget_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      viewportMarginsSuper
-                    
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of RTreeWidget_Base class as 
-                // function has postfix inheritable class, overridable function):
-                RTreeWidget_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "RTreeWidget::viewportMargins: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                QMargins res;
-                    res =
-                    wb->viewportMarginsPublic(
-                      
-                    );
-                  
-                //setRecFlag(false);
-              
-            // return type: QMargins
-
-            return RJSHelper::cpp2js_QMargins(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for viewportMargins";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RTreeWidget
-    // Function: eventFilter
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-                QJSValue 
-              RTreeWidget_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      eventFilterSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QObject_ptr(handler, a1
-    , true
-  
-  )
-
-   && RJSHelper::is_QEvent_ptr(handler, a2
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (QObject)
-  
-
-          // pointer:
-          QObject*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
-        
-  // convert js parameter to cpp:  (QEvent)
-  
-
-          // pointer:
-          QEvent*
-         a2_cpp;
-
-      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of RTreeWidget_Base class as 
-                // function has postfix inheritable class, overridable function):
-                RTreeWidget_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "RTreeWidget::eventFilter: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                bool res;
-                    res =
-                    wb->eventFilterPublic(
-                      a1_cpp
-    , a2_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for eventFilter";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RTreeWidget
-    // Function: wheelEvent
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RTreeWidget_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      wheelEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWheelEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (QWheelEvent)
-  
-
-          // pointer:
-          QWheelEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWheelEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of RTreeWidget_Base class as 
-                // function has postfix inheritable class, overridable function):
-                RTreeWidget_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "RTreeWidget::wheelEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->wheelEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for wheelEvent";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RTreeWidget
-    // Function: dragEnterEvent
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RTreeWidget_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      dragEnterEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QDragEnterEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp:  (QDragEnterEvent)
-  
-
-          // pointer:
-          QDragEnterEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QDragEnterEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of RTreeWidget_Base class as 
-                // function has postfix inheritable class, overridable function):
-                RTreeWidget_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "RTreeWidget::dragEnterEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->dragEnterEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for dragEnterEvent";
                   handler.trace();
                   return QJSValue();
                 
@@ -22752,64 +22158,6 @@ QModelIndex a1_cpp;
               }
             
     // Class: RTreeWidget
-    // Function: pressed
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RTreeWidget_Wrapper::pressedEmitter(
-                const QModelIndex& index
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: index (QModelIndex)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QModelIndex(
-    handler, 
-    index
-  );
-
-
-                emit pressed(
-                  a1_js
-                );
-              }
-            
-    // Class: RTreeWidget
-    // Function: clicked
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RTreeWidget_Wrapper::clickedEmitter(
-                const QModelIndex& index
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: index (QModelIndex)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QModelIndex(
-    handler, 
-    index
-  );
-
-
-                emit clicked(
-                  a1_js
-                );
-              }
-            
-    // Class: RTreeWidget
     // Function: doubleClicked
     // Source: QAbstractItemView
     // Static: false
@@ -22834,113 +22182,6 @@ QModelIndex a1_cpp;
 
 
                 emit doubleClicked(
-                  a1_js
-                );
-              }
-            
-    // Class: RTreeWidget
-    // Function: activated
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RTreeWidget_Wrapper::activatedEmitter(
-                const QModelIndex& index
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: index (QModelIndex)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QModelIndex(
-    handler, 
-    index
-  );
-
-
-                emit activated(
-                  a1_js
-                );
-              }
-            
-    // Class: RTreeWidget
-    // Function: entered
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RTreeWidget_Wrapper::enteredEmitter(
-                const QModelIndex& index
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: index (QModelIndex)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QModelIndex(
-    handler, 
-    index
-  );
-
-
-                emit entered(
-                  a1_js
-                );
-              }
-            
-    // Class: RTreeWidget
-    // Function: viewportEntered
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RTreeWidget_Wrapper::viewportEnteredEmitter(
-                
-              ) {
-                // convert cpp parameters to js:
-                
-
-                emit viewportEntered(
-                  
-                );
-              }
-            
-    // Class: RTreeWidget
-    // Function: iconSizeChanged
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RTreeWidget_Wrapper::iconSizeChangedEmitter(
-                const QSize& size
-              ) {
-                // convert cpp parameters to js:
-                
-  // parameter: size (QSize)
-  
-
-
-  QJSValue a1_js = RJSHelper::cpp2js_QSize(
-    handler, 
-    size
-  );
-
-
-                emit iconSizeChanged(
                   a1_js
                 );
               }
@@ -27192,89 +26433,6 @@ int a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for expandToDepth";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RTreeWidget
-    // Function: paintEvent
-    // Source: QTreeView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RTreeWidget_Wrapper:: 
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QPaintEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: event (QPaintEvent)
-  
-
-          // pointer:
-          QPaintEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QPaintEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of RTreeWidget_Base class as 
-                // function has postfix inheritable class, overridable function):
-                RTreeWidget_Base* wb = getWrappedBase();
-                if (wb==nullptr) {
-                  qWarning() << "RTreeWidget::paintEvent: using base but wrapper is not of type of base class";
-                  handler.trace();
-                  return QJSValue();
-                }
-
-                
-                    wb->paintEventPublic(
-                      a1_cpp
-    
-                    );
-                  
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for paintEvent";
                   handler.trace();
                   return QJSValue();
                 

@@ -185,37 +185,6 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
 
       // functions:
       
-        // function 
-        RMainWindowQt.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RMainWindowQt.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RMainWindowQt);
-  }
-
-  
-  else {
-    
-        print("RMainWindowQt.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

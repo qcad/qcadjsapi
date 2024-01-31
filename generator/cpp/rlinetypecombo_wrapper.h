@@ -5459,27 +5459,6 @@ AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo::AdjustToMinimumContentsL
               ;
             
     // Class: RLinetypeCombo
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RLinetypeCombo
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -5589,58 +5568,6 @@ AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo::AdjustToMinimumContentsL
               void customContextMenuRequestedEmitter(
                 const QPoint& pos
               );
-            
-    // Class: RLinetypeCombo
-    // Function: mouseMoveEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RLinetypeCombo
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
             
     // Class: RLinetypeCombo
     // Function: inputMethodHints
@@ -7140,58 +7067,6 @@ AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo::AdjustToMinimumContentsL
               void currentTextChangedEmitter(
                 const QString& a1
               );
-            
-    // Class: RLinetypeCombo
-    // Function: resizeEvent
-    // Source: QComboBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RLinetypeCombo
-    // Function: paintEvent
-    // Source: QComboBox
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
             
     // Class: RLinetypeCombo
     // Function: init

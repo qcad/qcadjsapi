@@ -171,37 +171,6 @@ RColorCombo.AdjustToMinimumContentsLengthWithIcon = RColorCombo_Wrapper.AdjustTo
 
       // functions:
       
-        // function 
-        RColorCombo.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RColorCombo.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RColorCombo);
-  }
-
-  
-  else {
-    
-        print("RColorCombo.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       
