@@ -7,9 +7,7 @@
 #include "RScriptHandlerJs.h"
 
 bool RJSApiPlugin::init() {
-#ifdef QT_DEBUG
     qDebug() << "RJSApiPlugin::init";
-#endif
 
     QList<QString> ext;
     ext.append("js");
