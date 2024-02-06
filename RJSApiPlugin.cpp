@@ -19,7 +19,7 @@ bool RJSApiPlugin::init() {
 RPluginInfo RJSApiPlugin::getPluginInfo() {
     RPluginInfo ret;
     ret.set("Version", QString("%1").arg(RSettings::getVersionString()));
-    ret.set("ID", "QCADJSAPI");
+    ret.set("ID", "JSAPI");
     ret.set("Name", "QCAD");
     ret.set("Description", "QJSEngine bindings for QCAD.");
     ret.set("License", "GPLv3");
