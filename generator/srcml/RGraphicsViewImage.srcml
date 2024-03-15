@@ -143,6 +143,42 @@ language="C++" filename="../../qcad/src/gui/RGraphicsViewImage.h">
   </type>
   <name>clear</name>
   <parameter_list>()</parameter_list>;</function_decl>
+  <function_decl>
+  <type>
+    <specifier>virtual</specifier>
+    <name>void</name>
+  </type>
+  <name>setCursor</name>
+  <parameter_list>(
+  <parameter>
+    <decl>
+      <type>
+        <name>
+          <name>Qt</name>
+          <operator>::</operator>
+          <name>CursorShape</name>
+        </name>
+      </type>
+      <name>cursorShape</name>
+    </decl>
+  </parameter>)</parameter_list>;</function_decl>
+  <function_decl>
+  <type>
+    <specifier>virtual</specifier>
+    <name>void</name>
+  </type>
+  <name>setCursor</name>
+  <parameter_list>(
+  <parameter>
+    <decl>
+      <type>
+        <specifier>const</specifier>
+        <name>QCursor</name>
+        <modifier>&amp;</modifier>
+      </type>
+      <name>cursor</name>
+    </decl>
+  </parameter>)</parameter_list>;</function_decl>
   <comment type="line">// TODO: these methods are not found in
   RGraphicsViewQt, due to the</comment>
   <comment type="line">// multiple inheritance of RGraphicsViewQt
@@ -1126,6 +1162,45 @@ language="C++" filename="../../qcad/src/gui/RGraphicsViewImage.h">
         <name>alphaEnabled</name>
         <operator>=</operator>
         <name>on</name>
+      </expr>;</expr_stmt>
+    </block_content>}</block>
+  </function>
+  <function>
+    <type>
+      <name>double</name>
+    </type>
+    <name>getDrawingScale</name>
+    <parameter_list>()</parameter_list>
+    <specifier>const</specifier>
+    <block>{
+    <block_content>
+      <return>return 
+      <expr>
+        <name>drawingScale</name>
+      </expr>;</return>
+    </block_content>}</block>
+  </function>
+  <function>
+    <type>
+      <name>void</name>
+    </type>
+    <name>setDrawingScale</name>
+    <parameter_list>(
+    <parameter>
+      <decl>
+        <type>
+          <name>double</name>
+        </type>
+        <name>s</name>
+      </decl>
+    </parameter>)</parameter_list>
+    <block>{
+    <block_content>
+      <expr_stmt>
+      <expr>
+        <name>drawingScale</name>
+        <operator>=</operator>
+        <name>s</name>
       </expr>;</expr_stmt>
     </block_content>}</block>
   </function>
