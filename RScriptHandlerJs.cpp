@@ -575,7 +575,6 @@ RScriptHandlerJs::~RScriptHandlerJs() {
     if (RSettings::isGuiEnabled()) {
         QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
     }
-    //QCoreApplication::processEvents();
     qDebug() << "collect garbage: DONE";
 
     delete rjsapi;
