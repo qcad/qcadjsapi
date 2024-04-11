@@ -572,7 +572,10 @@ RScriptHandlerJs::~RScriptHandlerJs() {
     qDebug() << "collect garbage...";
     engine->collectGarbage();
     // objects are deleted here:
-    QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
+    if (RSettings::isGuiEnabled()) {
+        QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
+    }
+    //QCoreApplication::processEvents();
     qDebug() << "collect garbage: DONE";
 
     delete rjsapi;
