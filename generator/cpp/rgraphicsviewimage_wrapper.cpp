@@ -10423,6 +10423,127 @@ bool a1_cpp;
               }
             
     // Class: RGraphicsViewImage
+    // Function: getDrawingScale
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RGraphicsViewImage_Wrapper::getDrawingScale
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RGraphicsViewImage* w = getWrapped();
+                double res = 
+                    
+                w->getDrawingScale(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getDrawingScale";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RGraphicsViewImage
+    // Function: setDrawingScale
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RGraphicsViewImage_Wrapper::setDrawingScale
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RGraphicsViewImage* w = getWrapped();
+                
+                w->setDrawingScale(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDrawingScale";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RGraphicsViewImage
     // Function: viewportChanged
     // Source: 
     // Static: false

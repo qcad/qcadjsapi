@@ -37,13 +37,14 @@
         }
         else {
           
-      if (arguments.length == 2) {
+      if (arguments.length >= 2 &&
+          arguments.length <= 3) {
     
             self = this;
             wrapper = new RDocument_Wrapper(
               // RJSApi:
               handler
-              , arguments[0], arguments[1]
+              , arguments[0], arguments[1], arguments[2]
               ////this.setWrapper(this.wrapper);
               //Object.setPrototypeOf(this, wrapper);
             );

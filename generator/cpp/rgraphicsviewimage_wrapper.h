@@ -3674,6 +3674,50 @@ BlackWhite = RGraphicsViewImage::BlackWhite,
               ;
             
     // Class: RGraphicsViewImage
+    // Function: getDrawingScale
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getDrawingScale
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: setDrawingScale
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDrawingScale
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
     // Function: viewportChanged
     // Source: 
     // Static: false
