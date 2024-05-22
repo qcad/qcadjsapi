@@ -194,11 +194,13 @@
 #include "generator/cpp/rplugininterface_wrapper.h"
 #include "generator/cpp/rfilecache_wrapper.h"
 #include "generator/cpp/rcolorcombo_wrapper.h"
+#include "generator/cpp/rcombobox_wrapper.h"
 #include "generator/cpp/rlineweight_wrapper.h"
 #include "generator/cpp/rlineweightcombo_wrapper.h"
 #include "generator/cpp/rlinetypecombo_wrapper.h"
 #include "generator/cpp/rplugininfo_wrapper.h"
 #include "generator/cpp/reventfilter_wrapper.h"
+#include "generator/cpp/rtooloptioneventfilter_wrapper.h"
 #include "generator/cpp/rsingleapplication_wrapper.h"
 #include "generator/cpp/raction_wrapper.h"
 #include "generator/cpp/ractionadapter_wrapper.h"
@@ -868,10 +870,12 @@ void RScriptHandlerJs::init() {
     RPluginInterface_Wrapper::init(*rjsapi);
     RFileCache_Wrapper::init(*rjsapi);
     RColorCombo_Wrapper::init(*rjsapi);
+    RComboBox_Wrapper::init(*rjsapi);
     RLineweightCombo_Wrapper::init(*rjsapi);
     RLinetypeCombo_Wrapper::init(*rjsapi);
     RPluginInfo_Wrapper::init(*rjsapi);
     REventFilter_Wrapper::init(*rjsapi);
+    RToolOptionEventFilter_Wrapper::init(*rjsapi);
     RSingleApplication_Wrapper::init(*rjsapi);
     RAction_Wrapper::init(*rjsapi);
     RActionAdapter_Wrapper::init(*rjsapi);

@@ -3,11 +3,11 @@
       //var self;
 
       // class constructor:
-      function RRulerQt() {
+      function RComboBox() {
         
 
-        // should be RRulerQt_BaseJs.call(this, engine):
-        //RRulerQt.prototype = new RRulerQt_BaseJs(engine);
+        // should be RComboBox_BaseJs.call(this, engine):
+        //RComboBox.prototype = new RComboBox_BaseJs(engine);
 
         var wrapper;
 
@@ -17,7 +17,7 @@
           if (arguments[2]!==undefined 
             && (arguments[2]===null || 
             (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_RRulerQt.getIdStatic()))) {
+            arguments[2].getWrappedType()===RJSType_RComboBox.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
@@ -26,11 +26,11 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RRulerQt);
+              copyProperties(this, wrapper, RComboBox);
             //}
           }
           else {
-            qWarning("RRulerQt.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
+            qWarning("RComboBox.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
           }
 
@@ -41,7 +41,7 @@
           arguments.length <= 1) {
     
             self = this;
-            wrapper = new RRulerQt_Wrapper(
+            wrapper = new RComboBox_Wrapper(
               // RJSApi:
               handler
               , arguments[0]
@@ -52,19 +52,19 @@
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
 
-        copyProperties(this, wrapper, RRulerQt);
+        copyProperties(this, wrapper, RComboBox);
 
         //this.setWrapper(this.wrapper);
 
       
 
-        //copyProperties(this, wrapper, RRulerQt);
+        //copyProperties(this, wrapper, RComboBox);
   }
 
   
   else {
     
-        print("RRulerQt(): wrong number / type of arguments");
+        print("RComboBox(): wrong number / type of arguments");
       
     console.trace();
   }
@@ -89,28 +89,42 @@
             
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
+    this["editTextChanged(QString)"] = Object.getPrototypeOf(this).editTextChanged;
+  
+    this["activated(int)"] = Object.getPrototypeOf(this).activated;
+  
+    this["textActivated(QString)"] = Object.getPrototypeOf(this).textActivated;
+  
+    this["highlighted(int)"] = Object.getPrototypeOf(this).highlighted;
+  
+    this["textHighlighted(QString)"] = Object.getPrototypeOf(this).textHighlighted;
+  
+    this["currentIndexChanged(int)"] = Object.getPrototypeOf(this).currentIndexChanged;
+  
+    this["currentTextChanged(QString)"] = Object.getPrototypeOf(this).currentTextChanged;
+  
           }
         }
       }
 
-      //RRulerQt.prototype = new RRulerQt_BaseJs(engine);
-      //RRulerQt.prototype = new RRulerQt_Wrapper(engine);
-      RRulerQt.prototype = new Object();
+      //RComboBox.prototype = new RComboBox_BaseJs(engine);
+      //RComboBox.prototype = new RComboBox_Wrapper(engine);
+      RComboBox.prototype = new Object();
 
-      RRulerQt.prototype.toString = function() {
-          //return "RRulerQt [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "RRulerQt [JS]";
+      RComboBox.prototype.toString = function() {
+          //return "RComboBox [JS] [0x" + this.getAddress().toString(16) + "]";
+          return "RComboBox [JS]";
         };
-      RRulerQt.getObjectType = function() {
-        return RJSType_RRulerQt.getIdStatic();
+      RComboBox.getObjectType = function() {
+        return RJSType_RComboBox.getIdStatic();
       };
 
-      RRulerQt.prototype.getObjectType = function() {
-        return RJSType_RRulerQt.getIdStatic();
+      RComboBox.prototype.getObjectType = function() {
+        return RJSType_RComboBox.getIdStatic();
       };
 
-      RRulerQt.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_RRulerQt.getIdStatic()) {
+      RComboBox.prototype.isOfObjectType = function(t) {
+        if (t===RJSType_RComboBox.getIdStatic()) {
           return true;
         }
 
@@ -123,19 +137,7 @@
             return true;
           }
         
-          if (t===RJSType_RRuler.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_RCoordinateListener.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_RPaletteListener.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QFrame.getIdStatic()) {
+          if (t===RJSType_QComboBox.getIdStatic()) {
             return true;
           }
         
@@ -148,23 +150,19 @@
 
       // enum values:
       
-  // enum: Shape
-RRulerQt.NoFrame = RRulerQt_Wrapper.NoFrame;
-RRulerQt.Box = RRulerQt_Wrapper.Box;
-RRulerQt.Panel = RRulerQt_Wrapper.Panel;
-RRulerQt.WinPanel = RRulerQt_Wrapper.WinPanel;
-RRulerQt.HLine = RRulerQt_Wrapper.HLine;
-RRulerQt.VLine = RRulerQt_Wrapper.VLine;
-RRulerQt.StyledPanel = RRulerQt_Wrapper.StyledPanel;
+  // enum: InsertPolicy
+RComboBox.NoInsert = RComboBox_Wrapper.NoInsert;
+RComboBox.InsertAtTop = RComboBox_Wrapper.InsertAtTop;
+RComboBox.InsertAtCurrent = RComboBox_Wrapper.InsertAtCurrent;
+RComboBox.InsertAtBottom = RComboBox_Wrapper.InsertAtBottom;
+RComboBox.InsertAfterCurrent = RComboBox_Wrapper.InsertAfterCurrent;
+RComboBox.InsertBeforeCurrent = RComboBox_Wrapper.InsertBeforeCurrent;
+RComboBox.InsertAlphabetically = RComboBox_Wrapper.InsertAlphabetically;
 
-  // enum: Shadow
-RRulerQt.Plain = RRulerQt_Wrapper.Plain;
-RRulerQt.Raised = RRulerQt_Wrapper.Raised;
-RRulerQt.Sunken = RRulerQt_Wrapper.Sunken;
-
-  // enum: StyleMask
-RRulerQt.Shadow_Mask = RRulerQt_Wrapper.Shadow_Mask;
-RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
+  // enum: SizeAdjustPolicy
+RComboBox.AdjustToContents = RComboBox_Wrapper.AdjustToContents;
+RComboBox.AdjustToContentsOnFirstShow = RComboBox_Wrapper.AdjustToContentsOnFirstShow;
+RComboBox.AdjustToMinimumContentsLengthWithIcon = RComboBox_Wrapper.AdjustToMinimumContentsLengthWithIcon;
 
 
       // functions:
@@ -174,27 +172,27 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
       
 
         // static function 
-        RRulerQt.tr = function() 
+        RComboBox.tr = function() 
           
         {
-          //print("JS: RRulerQt.tr");
+          //print("JS: RComboBox.tr");
           
       if (arguments.length >= 1 &&
           arguments.length <= 3) {
     
                 // calling static wrapper:
-                return RRulerQt_WrapperSingletonInstance.tr(
+                return RComboBox_WrapperSingletonInstance.tr(
                   arguments[0], arguments[1], arguments[2]
                 );
               
 
-        //copyProperties(this, wrapper, RRulerQt);
+        //copyProperties(this, wrapper, RComboBox);
   }
 
   
   else {
     
-        print("RRulerQt.tr(): wrong number / type of arguments");
+        print("RComboBox.tr(): wrong number / type of arguments");
       
     console.trace();
   }
@@ -203,26 +201,26 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
       
 
         // static function 
-        RRulerQt.setTabOrder = function() 
+        RComboBox.setTabOrder = function() 
           
         {
-          //print("JS: RRulerQt.setTabOrder");
+          //print("JS: RComboBox.setTabOrder");
           
       if (arguments.length == 2) {
     
                 // calling static wrapper:
-                return RRulerQt_WrapperSingletonInstance.setTabOrder(
+                return RComboBox_WrapperSingletonInstance.setTabOrder(
                   arguments[0], arguments[1]
                 );
               
 
-        //copyProperties(this, wrapper, RRulerQt);
+        //copyProperties(this, wrapper, RComboBox);
   }
 
   
   else {
     
-        print("RRulerQt.setTabOrder(): wrong number / type of arguments");
+        print("RComboBox.setTabOrder(): wrong number / type of arguments");
       
     console.trace();
   }
@@ -231,26 +229,26 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
       
 
         // static function 
-        RRulerQt.mouseGrabber = function() 
+        RComboBox.mouseGrabber = function() 
           
         {
-          //print("JS: RRulerQt.mouseGrabber");
+          //print("JS: RComboBox.mouseGrabber");
           
       if (arguments.length == 0) {
     
                 // calling static wrapper:
-                return RRulerQt_WrapperSingletonInstance.mouseGrabber(
+                return RComboBox_WrapperSingletonInstance.mouseGrabber(
                   
                 );
               
 
-        //copyProperties(this, wrapper, RRulerQt);
+        //copyProperties(this, wrapper, RComboBox);
   }
 
   
   else {
     
-        print("RRulerQt.mouseGrabber(): wrong number / type of arguments");
+        print("RComboBox.mouseGrabber(): wrong number / type of arguments");
       
     console.trace();
   }
@@ -259,26 +257,26 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
       
 
         // static function 
-        RRulerQt.keyboardGrabber = function() 
+        RComboBox.keyboardGrabber = function() 
           
         {
-          //print("JS: RRulerQt.keyboardGrabber");
+          //print("JS: RComboBox.keyboardGrabber");
           
       if (arguments.length == 0) {
     
                 // calling static wrapper:
-                return RRulerQt_WrapperSingletonInstance.keyboardGrabber(
+                return RComboBox_WrapperSingletonInstance.keyboardGrabber(
                   
                 );
               
 
-        //copyProperties(this, wrapper, RRulerQt);
+        //copyProperties(this, wrapper, RComboBox);
   }
 
   
   else {
     
-        print("RRulerQt.keyboardGrabber(): wrong number / type of arguments");
+        print("RComboBox.keyboardGrabber(): wrong number / type of arguments");
       
     console.trace();
   }
@@ -293,12 +291,12 @@ RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
       
 
       // copy function:
-      //RRulerQt.prototype.copy = function() {
+      //RComboBox.prototype.copy = function() {
       //  return this.wrapper.copy();
       //};
 
       // destroy function:
-      //RRulerQt.prototype.destr = function() {
+      //RComboBox.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
     

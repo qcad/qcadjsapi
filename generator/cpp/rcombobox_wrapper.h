@@ -1,8 +1,8 @@
 
   // Auto generated
   
-    #ifndef RLISTWIDGET_H_WRAPPER
-    #define RLISTWIDGET_H_WRAPPER
+    #ifndef RCOMBOBOX_H_WRAPPER
+    #define RCOMBOBOX_H_WRAPPER
 
     // include header:
     //#include "header_h.h"
@@ -17,14 +17,11 @@
     
         #include "RJSType_qcad.h"
       
-        #include "RListWidget.h"
+        #include "RComboBox.h"
       
-      // wrapped object is RListWidget_Base class if new object is created: 
-      #include "rlistwidget_base.h"
-    
       // singleton class wrapper for static functions:
       class QCADJSAPI_EXPORT 
-     RListWidget_WrapperSingleton: public QObject {
+     RComboBox_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -36,7 +33,7 @@
 
       public:
       //Q_INVOKABLE 
-      RListWidget_WrapperSingleton(RJSApi& h) 
+      RComboBox_WrapperSingleton(RJSApi& h) 
         : QObject(), 
           handler(h)
           
@@ -46,7 +43,7 @@
 
       // static functions:
       
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: tr
     // Source: QObject
     // Static: true
@@ -77,7 +74,7 @@
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setTabOrder
     // Source: QWidget
     // Static: true
@@ -104,7 +101,7 @@
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: mouseGrabber
     // Source: QWidget
     // Static: true
@@ -123,7 +120,7 @@
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: keyboardGrabber
     // Source: QWidget
     // Static: true
@@ -145,7 +142,7 @@
 
       private:
           RJSApi& handler;
-          //static RListWidget_WrapperSingleton* _singleInstance;
+          //static RComboBox_WrapperSingleton* _singleInstance;
 
           // constants:
           
@@ -153,9 +150,9 @@
     
     // static functions implementation in singleton wrapper:
     
-    // wrapper class for RListWidget
+    // wrapper class for RComboBox
     class QCADJSAPI_EXPORT 
-     RListWidget_Wrapper : public RJSWrapperObj {
+     RComboBox_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
@@ -524,103 +521,43 @@
   Q_PROPERTY(
     
     QJSValue
-     frameRect READ frameRect WRITE setFrameRect
+     count READ count
   )
 
   Q_PROPERTY(
     
     QJSValue
-     frameShadow READ frameShadow WRITE setFrameShadow
+     currentData READ currentData
   )
 
   Q_PROPERTY(
     
     QJSValue
-     frameShape READ frameShape WRITE setFrameShape
+     currentIndex READ currentIndex WRITE setCurrentIndex
   )
 
   Q_PROPERTY(
     
     QJSValue
-     frameWidth READ frameWidth
+     currentText READ currentText WRITE setCurrentText
   )
 
   Q_PROPERTY(
     
     QJSValue
-     lineWidth READ lineWidth WRITE setLineWidth
+     duplicatesEnabled READ duplicatesEnabled WRITE setDuplicatesEnabled
   )
 
   Q_PROPERTY(
     
     QJSValue
-     midLineWidth READ midLineWidth WRITE setMidLineWidth
+     editable READ isEditable WRITE setEditable
   )
 
   Q_PROPERTY(
     
     QJSValue
-     autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     editTriggers READ editTriggers WRITE setEditTriggers
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tabKeyNavigation READ tabKeyNavigation WRITE setTabKeyNavigation
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     showDropIndicator READ showDropIndicator WRITE setDropIndicatorShown
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     dragEnabled READ dragEnabled WRITE setDragEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     dragDropOverwriteMode READ dragDropOverwriteMode WRITE setDragDropOverwriteMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     dragDropMode READ dragDropMode WRITE setDragDropMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     defaultDropAction READ defaultDropAction WRITE setDefaultDropAction
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     alternatingRowColors READ alternatingRowColors WRITE setAlternatingRowColors
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     selectionMode READ selectionMode WRITE setSelectionMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     selectionBehavior READ selectionBehavior WRITE setSelectionBehavior
+     frame READ hasFrame WRITE setFrame
   )
 
   Q_PROPERTY(
@@ -632,61 +569,25 @@
   Q_PROPERTY(
     
     QJSValue
-     textElideMode READ textElideMode WRITE setTextElideMode
+     insertPolicy READ insertPolicy WRITE setInsertPolicy
   )
 
   Q_PROPERTY(
     
     QJSValue
-     verticalScrollMode READ verticalScrollMode WRITE setVerticalScrollMode
+     maxCount READ maxCount WRITE setMaxCount
   )
 
   Q_PROPERTY(
     
     QJSValue
-     horizontalScrollMode READ horizontalScrollMode WRITE setHorizontalScrollMode
+     maxVisibleItems READ maxVisibleItems WRITE setMaxVisibleItems
   )
 
   Q_PROPERTY(
     
     QJSValue
-     flow READ flow WRITE setFlow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     isWrapping READ isWrapping WRITE setWrapping
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     resizeMode READ resizeMode WRITE setResizeMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     layoutMode READ layoutMode WRITE setLayoutMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     spacing READ spacing WRITE setSpacing
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     gridSize READ gridSize WRITE setGridSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     viewMode READ viewMode WRITE setViewMode
+     minimumContentsLength READ minimumContentsLength WRITE setMinimumContentsLength
   )
 
   Q_PROPERTY(
@@ -698,238 +599,89 @@
   Q_PROPERTY(
     
     QJSValue
-     uniformItemSizes READ uniformItemSizes WRITE setUniformItemSizes
+     placeholderText READ placeholderText WRITE setPlaceholderText
   )
 
   Q_PROPERTY(
     
     QJSValue
-     batchSize READ batchSize WRITE setBatchSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     wordWrap READ wordWrap WRITE setWordWrap
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     selectionRectVisible READ isSelectionRectVisible WRITE setSelectionRectVisible
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     itemAlignment READ itemAlignment WRITE setItemAlignment
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     movement READ movement WRITE setMovement
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     count READ count
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     currentRow READ currentRow WRITE setCurrentRow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sortingEnabled READ isSortingEnabled WRITE setSortingEnabled
+     sizeAdjustPolicy READ sizeAdjustPolicy WRITE setSizeAdjustPolicy
   )
 
 
     private:
       // disable copy constructor:
-      RListWidget_Wrapper(const RListWidget_Wrapper&);
+      RComboBox_Wrapper(const RComboBox_Wrapper&);
 
     public:
-      // initialization of RListWidget:
+      // initialization of RComboBox:
       static void init(RJSApi& handler);
 
       
-        static RListWidget* castToBase(void* vp, /*RJSType ID*/ int t) {
+        static RComboBox* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast from other types to base RListWidget:
-          for (int i=0; i<basecasters_RListWidget.length(); i++) {
-            RJSBasecaster_RListWidget* basecaster = basecasters_RListWidget[i];
-            RListWidget* ret = basecaster->castToBase(t, vp);
+          // hook for modules to cast from other types to base RComboBox:
+          for (int i=0; i<basecasters_RComboBox.length(); i++) {
+            RJSBasecaster_RComboBox* basecaster = basecasters_RComboBox[i];
+            RComboBox* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
               return ret;
             }
           }
 
-          // object is a pointer to base class RListWidget:
-          if (t==RJSType_RListWidget::getIdStatic()) {
-            return (RListWidget*)vp;
+          // object is a pointer to base class RComboBox:
+          if (t==RJSType_RComboBox::getIdStatic()) {
+            return (RComboBox*)vp;
           }
 
-          qWarning() << "RListWidget_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
+          qWarning() << "RComboBox_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
         }
 
-        static RListWidget* getWrappedBase(RJSWrapper* wrapper) {
+        static RComboBox* getWrappedBase(RJSWrapper* wrapper) {
           int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
-              //qWarning() << "getWrapped_RListWidget*: wrapper wraps NULL";
+              //qWarning() << "getWrapped_RComboBox*: wrapper wraps NULL";
           }
 
-          RListWidget* ret = castToBase(vp, t);
+          RComboBox* ret = castToBase(vp, t);
           if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "RListWidget*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+              qWarning() << "RComboBox*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
           }
           return ret;
         }
       
         // enums:
         
-  enum Shape {
-    NoFrame = RListWidget::NoFrame,
-Box = RListWidget::Box,
-Panel = RListWidget::Panel,
-WinPanel = RListWidget::WinPanel,
-HLine = RListWidget::HLine,
-VLine = RListWidget::VLine,
-StyledPanel = RListWidget::StyledPanel,
+  enum InsertPolicy {
+    NoInsert = RComboBox::NoInsert,
+InsertAtTop = RComboBox::InsertAtTop,
+InsertAtCurrent = RComboBox::InsertAtCurrent,
+InsertAtBottom = RComboBox::InsertAtBottom,
+InsertAfterCurrent = RComboBox::InsertAfterCurrent,
+InsertBeforeCurrent = RComboBox::InsertBeforeCurrent,
+InsertAlphabetically = RComboBox::InsertAlphabetically,
 
   };
-  Q_ENUM(Shape)
-
-  enum Shadow {
-    Plain = RListWidget::Plain,
-Raised = RListWidget::Raised,
-Sunken = RListWidget::Sunken,
-
-  };
-  Q_ENUM(Shadow)
-
-  enum StyleMask {
-    Shadow_Mask = RListWidget::Shadow_Mask,
-Shape_Mask = RListWidget::Shape_Mask,
-
-  };
-  Q_ENUM(StyleMask)
+  Q_ENUM(InsertPolicy)
 
   enum SizeAdjustPolicy {
-    AdjustIgnored = RListWidget::AdjustIgnored,
-AdjustToContentsOnFirstShow = RListWidget::AdjustToContentsOnFirstShow,
-AdjustToContents = RListWidget::AdjustToContents,
+    AdjustToContents = RComboBox::AdjustToContents,
+AdjustToContentsOnFirstShow = RComboBox::AdjustToContentsOnFirstShow,
+AdjustToMinimumContentsLengthWithIcon = RComboBox::AdjustToMinimumContentsLengthWithIcon,
 
   };
   Q_ENUM(SizeAdjustPolicy)
-
-  enum SelectionMode {
-    NoSelection = RListWidget::NoSelection,
-SingleSelection = RListWidget::SingleSelection,
-MultiSelection = RListWidget::MultiSelection,
-ExtendedSelection = RListWidget::ExtendedSelection,
-ContiguousSelection = RListWidget::ContiguousSelection,
-
-  };
-  Q_ENUM(SelectionMode)
-
-  enum SelectionBehavior {
-    SelectItems = RListWidget::SelectItems,
-SelectRows = RListWidget::SelectRows,
-SelectColumns = RListWidget::SelectColumns,
-
-  };
-  Q_ENUM(SelectionBehavior)
-
-  enum ScrollHint {
-    EnsureVisible = RListWidget::EnsureVisible,
-PositionAtTop = RListWidget::PositionAtTop,
-PositionAtBottom = RListWidget::PositionAtBottom,
-PositionAtCenter = RListWidget::PositionAtCenter,
-
-  };
-  Q_ENUM(ScrollHint)
-
-  enum EditTrigger {
-    NoEditTriggers = RListWidget::NoEditTriggers,
-CurrentChanged = RListWidget::CurrentChanged,
-DoubleClicked = RListWidget::DoubleClicked,
-SelectedClicked = RListWidget::SelectedClicked,
-EditKeyPressed = RListWidget::EditKeyPressed,
-AnyKeyPressed = RListWidget::AnyKeyPressed,
-AllEditTriggers = RListWidget::AllEditTriggers,
-
-  };
-  Q_ENUM(EditTrigger)
-
-  enum ScrollMode {
-    ScrollPerItem = RListWidget::ScrollPerItem,
-ScrollPerPixel = RListWidget::ScrollPerPixel,
-
-  };
-  Q_ENUM(ScrollMode)
-
-  enum DragDropMode {
-    NoDragDrop = RListWidget::NoDragDrop,
-DragOnly = RListWidget::DragOnly,
-DropOnly = RListWidget::DropOnly,
-DragDrop = RListWidget::DragDrop,
-InternalMove = RListWidget::InternalMove,
-
-  };
-  Q_ENUM(DragDropMode)
-
-  enum Movement {
-    Static = RListWidget::Static,
-Free = RListWidget::Free,
-Snap = RListWidget::Snap,
-
-  };
-  Q_ENUM(Movement)
-
-  enum Flow {
-    LeftToRight = RListWidget::LeftToRight,
-TopToBottom = RListWidget::TopToBottom,
-
-  };
-  Q_ENUM(Flow)
-
-  enum ResizeMode {
-    Fixed = RListWidget::Fixed,
-Adjust = RListWidget::Adjust,
-
-  };
-  Q_ENUM(ResizeMode)
-
-  enum LayoutMode {
-    SinglePass = RListWidget::SinglePass,
-Batched = RListWidget::Batched,
-
-  };
-  Q_ENUM(LayoutMode)
-
-  enum ViewMode {
-    ListMode = RListWidget::ListMode,
-IconMode = RListWidget::IconMode,
-
-  };
-  Q_ENUM(ViewMode)
 
     /*
     // special constructor used as prototype:
     
           Q_INVOKABLE 
-          RListWidget_Wrapper(QJSEngine* e);
+          RComboBox_Wrapper(QJSEngine* e);
         
     */
 
@@ -937,12 +689,12 @@ IconMode = RListWidget::IconMode,
       // special constructor to wrap existing object:
       
             //Q_INVOKABLE 
-            RListWidget_Wrapper(RJSApi& h, RListWidget* o, bool wrappedCreated);
+            RComboBox_Wrapper(RJSApi& h, RComboBox* o, bool wrappedCreated);
           
 
       // destructor:
       
-          virtual ~RListWidget_Wrapper();
+          virtual ~RComboBox_Wrapper();
         
     // initialization of signal forwarding
     
@@ -951,7 +703,7 @@ IconMode = RListWidget::IconMode,
 
   // constructors:
   
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: 
     // Source: 
     // Static: false
@@ -960,7 +712,7 @@ IconMode = RListWidget::IconMode,
 
               public:
               Q_INVOKABLE 
-              RListWidget_Wrapper
+              RComboBox_Wrapper
                 
               (
 
@@ -981,7 +733,7 @@ IconMode = RListWidget::IconMode,
 
     // non-static functions:
     
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: objectName
     // Source: QObject
     // Static: false
@@ -1002,7 +754,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setObjectName
     // Source: QObject
     // Static: false
@@ -1025,7 +777,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isWidgetType
     // Source: QObject
     // Static: false
@@ -1046,7 +798,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isWindowType
     // Source: QObject
     // Static: false
@@ -1067,7 +819,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: signalsBlocked
     // Source: QObject
     // Static: false
@@ -1088,7 +840,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: blockSignals
     // Source: QObject
     // Static: false
@@ -1111,7 +863,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: findChild
     // Source: QObject
     // Static: false
@@ -1140,7 +892,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: children
     // Source: QObject
     // Static: false
@@ -1161,7 +913,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: installEventFilter
     // Source: QObject
     // Static: false
@@ -1184,7 +936,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: removeEventFilter
     // Source: QObject
     // Static: false
@@ -1207,7 +959,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: dumpObjectTree
     // Source: QObject
     // Static: false
@@ -1226,7 +978,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: dumpObjectInfo
     // Source: QObject
     // Static: false
@@ -1245,7 +997,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setProperty
     // Source: QObject
     // Static: false
@@ -1272,7 +1024,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: property
     // Source: QObject
     // Static: false
@@ -1297,7 +1049,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: dynamicPropertyNames
     // Source: QObject
     // Static: false
@@ -1318,7 +1070,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: parent
     // Source: QObject
     // Static: false
@@ -1339,7 +1091,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: deleteLater
     // Source: QObject
     // Static: false
@@ -1358,7 +1110,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: devType
     // Source: QWidget
     // Static: false
@@ -1379,7 +1131,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: createWinId
     // Source: QWidget
     // Static: false
@@ -1398,7 +1150,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isWindow
     // Source: QWidget
     // Static: false
@@ -1419,7 +1171,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isModal
     // Source: QWidget
     // Static: false
@@ -1440,7 +1192,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowModality
     // Source: QWidget
     // Static: false
@@ -1461,7 +1213,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowModality
     // Source: QWidget
     // Static: false
@@ -1484,7 +1236,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isEnabled
     // Source: QWidget
     // Static: false
@@ -1505,7 +1257,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isEnabledTo
     // Source: QWidget
     // Static: false
@@ -1530,7 +1282,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setEnabled
     // Source: QWidget
     // Static: false
@@ -1553,7 +1305,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setDisabled
     // Source: QWidget
     // Static: false
@@ -1576,7 +1328,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowModified
     // Source: QWidget
     // Static: false
@@ -1599,7 +1351,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: frameGeometry
     // Source: QWidget
     // Static: false
@@ -1620,7 +1372,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: geometry
     // Source: QWidget
     // Static: false
@@ -1641,7 +1393,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: normalGeometry
     // Source: QWidget
     // Static: false
@@ -1662,7 +1414,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: x
     // Source: QWidget
     // Static: false
@@ -1683,7 +1435,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: y
     // Source: QWidget
     // Static: false
@@ -1704,7 +1456,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: pos
     // Source: QWidget
     // Static: false
@@ -1725,7 +1477,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: frameSize
     // Source: QWidget
     // Static: false
@@ -1746,7 +1498,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: size
     // Source: QWidget
     // Static: false
@@ -1767,7 +1519,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: width
     // Source: QWidget
     // Static: false
@@ -1788,7 +1540,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: height
     // Source: QWidget
     // Static: false
@@ -1809,7 +1561,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: rect
     // Source: QWidget
     // Static: false
@@ -1830,7 +1582,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: childrenRect
     // Source: QWidget
     // Static: false
@@ -1851,7 +1603,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: childrenRegion
     // Source: QWidget
     // Static: false
@@ -1872,7 +1624,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: minimumSize
     // Source: QWidget
     // Static: false
@@ -1893,7 +1645,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: maximumSize
     // Source: QWidget
     // Static: false
@@ -1914,7 +1666,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: minimumWidth
     // Source: QWidget
     // Static: false
@@ -1935,7 +1687,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: minimumHeight
     // Source: QWidget
     // Static: false
@@ -1956,7 +1708,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: maximumWidth
     // Source: QWidget
     // Static: false
@@ -1977,7 +1729,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: maximumHeight
     // Source: QWidget
     // Static: false
@@ -1998,7 +1750,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setMinimumSize
     // Source: QWidget
     // Static: false
@@ -2025,7 +1777,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setMaximumSize
     // Source: QWidget
     // Static: false
@@ -2052,7 +1804,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setMinimumWidth
     // Source: QWidget
     // Static: false
@@ -2075,7 +1827,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setMinimumHeight
     // Source: QWidget
     // Static: false
@@ -2098,7 +1850,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setMaximumWidth
     // Source: QWidget
     // Static: false
@@ -2121,7 +1873,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setMaximumHeight
     // Source: QWidget
     // Static: false
@@ -2144,7 +1896,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: sizeIncrement
     // Source: QWidget
     // Static: false
@@ -2165,7 +1917,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setSizeIncrement
     // Source: QWidget
     // Static: false
@@ -2192,7 +1944,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: baseSize
     // Source: QWidget
     // Static: false
@@ -2213,7 +1965,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setBaseSize
     // Source: QWidget
     // Static: false
@@ -2240,7 +1992,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setFixedSize
     // Source: QWidget
     // Static: false
@@ -2267,7 +2019,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setFixedWidth
     // Source: QWidget
     // Static: false
@@ -2290,7 +2042,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setFixedHeight
     // Source: QWidget
     // Static: false
@@ -2313,7 +2065,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: mapToGlobal
     // Source: QWidget
     // Static: false
@@ -2338,7 +2090,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: mapFromGlobal
     // Source: QWidget
     // Static: false
@@ -2363,7 +2115,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: mapToParent
     // Source: QWidget
     // Static: false
@@ -2388,7 +2140,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: mapFromParent
     // Source: QWidget
     // Static: false
@@ -2413,7 +2165,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: mapTo
     // Source: QWidget
     // Static: false
@@ -2442,7 +2194,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: mapFrom
     // Source: QWidget
     // Static: false
@@ -2471,7 +2223,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: window
     // Source: QWidget
     // Static: false
@@ -2492,7 +2244,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: nativeParentWidget
     // Source: QWidget
     // Static: false
@@ -2513,7 +2265,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: topLevelWidget
     // Source: QWidget
     // Static: false
@@ -2534,7 +2286,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: palette
     // Source: QWidget
     // Static: false
@@ -2555,7 +2307,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setPalette
     // Source: QWidget
     // Static: false
@@ -2578,7 +2330,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setBackgroundRole
     // Source: QWidget
     // Static: false
@@ -2601,7 +2353,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: backgroundRole
     // Source: QWidget
     // Static: false
@@ -2622,7 +2374,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setForegroundRole
     // Source: QWidget
     // Static: false
@@ -2645,7 +2397,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: foregroundRole
     // Source: QWidget
     // Static: false
@@ -2666,7 +2418,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: font
     // Source: QWidget
     // Static: false
@@ -2687,7 +2439,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setFont
     // Source: QWidget
     // Static: false
@@ -2710,7 +2462,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: fontInfo
     // Source: QWidget
     // Static: false
@@ -2731,7 +2483,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: cursor
     // Source: QWidget
     // Static: false
@@ -2752,7 +2504,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setCursor
     // Source: QWidget
     // Static: false
@@ -2775,7 +2527,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: unsetCursor
     // Source: QWidget
     // Static: false
@@ -2794,7 +2546,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setMouseTracking
     // Source: QWidget
     // Static: false
@@ -2817,7 +2569,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: hasMouseTracking
     // Source: QWidget
     // Static: false
@@ -2838,7 +2590,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: underMouse
     // Source: QWidget
     // Static: false
@@ -2859,7 +2611,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setTabletTracking
     // Source: QWidget
     // Static: false
@@ -2882,7 +2634,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: hasTabletTracking
     // Source: QWidget
     // Static: false
@@ -2903,7 +2655,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setMask
     // Source: QWidget
     // Static: false
@@ -2926,7 +2678,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: mask
     // Source: QWidget
     // Static: false
@@ -2947,7 +2699,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: clearMask
     // Source: QWidget
     // Static: false
@@ -2966,7 +2718,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: grab
     // Source: QWidget
     // Static: false
@@ -2989,7 +2741,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: grabGesture
     // Source: QWidget
     // Static: false
@@ -3016,7 +2768,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: ungrabGesture
     // Source: QWidget
     // Static: false
@@ -3039,7 +2791,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowTitle
     // Source: QWidget
     // Static: false
@@ -3062,7 +2814,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setStyleSheet
     // Source: QWidget
     // Static: false
@@ -3085,7 +2837,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: styleSheet
     // Source: QWidget
     // Static: false
@@ -3106,7 +2858,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowTitle
     // Source: QWidget
     // Static: false
@@ -3127,7 +2879,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowIcon
     // Source: QWidget
     // Static: false
@@ -3150,7 +2902,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowIcon
     // Source: QWidget
     // Static: false
@@ -3171,7 +2923,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowIconText
     // Source: QWidget
     // Static: false
@@ -3194,7 +2946,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowIconText
     // Source: QWidget
     // Static: false
@@ -3215,7 +2967,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowRole
     // Source: QWidget
     // Static: false
@@ -3238,7 +2990,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowRole
     // Source: QWidget
     // Static: false
@@ -3259,7 +3011,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowFilePath
     // Source: QWidget
     // Static: false
@@ -3282,7 +3034,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowFilePath
     // Source: QWidget
     // Static: false
@@ -3303,7 +3055,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowOpacity
     // Source: QWidget
     // Static: false
@@ -3326,7 +3078,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowOpacity
     // Source: QWidget
     // Static: false
@@ -3347,7 +3099,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isWindowModified
     // Source: QWidget
     // Static: false
@@ -3368,7 +3120,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setToolTip
     // Source: QWidget
     // Static: false
@@ -3391,7 +3143,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: toolTip
     // Source: QWidget
     // Static: false
@@ -3412,7 +3164,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setToolTipDuration
     // Source: QWidget
     // Static: false
@@ -3435,7 +3187,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: toolTipDuration
     // Source: QWidget
     // Static: false
@@ -3456,7 +3208,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setStatusTip
     // Source: QWidget
     // Static: false
@@ -3479,7 +3231,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: statusTip
     // Source: QWidget
     // Static: false
@@ -3500,7 +3252,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWhatsThis
     // Source: QWidget
     // Static: false
@@ -3523,7 +3275,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: whatsThis
     // Source: QWidget
     // Static: false
@@ -3544,7 +3296,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: accessibleName
     // Source: QWidget
     // Static: false
@@ -3565,7 +3317,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setAccessibleName
     // Source: QWidget
     // Static: false
@@ -3588,7 +3340,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: accessibleDescription
     // Source: QWidget
     // Static: false
@@ -3609,7 +3361,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setAccessibleDescription
     // Source: QWidget
     // Static: false
@@ -3632,7 +3384,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setLayoutDirection
     // Source: QWidget
     // Static: false
@@ -3655,7 +3407,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: layoutDirection
     // Source: QWidget
     // Static: false
@@ -3676,7 +3428,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: unsetLayoutDirection
     // Source: QWidget
     // Static: false
@@ -3695,7 +3447,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setLocale
     // Source: QWidget
     // Static: false
@@ -3718,7 +3470,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: locale
     // Source: QWidget
     // Static: false
@@ -3739,7 +3491,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: unsetLocale
     // Source: QWidget
     // Static: false
@@ -3758,7 +3510,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isRightToLeft
     // Source: QWidget
     // Static: false
@@ -3779,7 +3531,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isLeftToRight
     // Source: QWidget
     // Static: false
@@ -3800,7 +3552,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isActiveWindow
     // Source: QWidget
     // Static: false
@@ -3821,7 +3573,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: activateWindow
     // Source: QWidget
     // Static: false
@@ -3840,7 +3592,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: clearFocus
     // Source: QWidget
     // Static: false
@@ -3859,7 +3611,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setFocus
     // Source: QWidget
     // Static: false
@@ -3882,7 +3634,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: focusPolicy
     // Source: QWidget
     // Static: false
@@ -3903,7 +3655,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setFocusPolicy
     // Source: QWidget
     // Static: false
@@ -3926,7 +3678,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: hasFocus
     // Source: QWidget
     // Static: false
@@ -3947,7 +3699,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setFocusProxy
     // Source: QWidget
     // Static: false
@@ -3970,7 +3722,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: focusProxy
     // Source: QWidget
     // Static: false
@@ -3991,7 +3743,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: contextMenuPolicy
     // Source: QWidget
     // Static: false
@@ -4012,7 +3764,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setContextMenuPolicy
     // Source: QWidget
     // Static: false
@@ -4035,7 +3787,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: grabMouse
     // Source: QWidget
     // Static: false
@@ -4058,7 +3810,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: releaseMouse
     // Source: QWidget
     // Static: false
@@ -4077,7 +3829,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: grabKeyboard
     // Source: QWidget
     // Static: false
@@ -4096,7 +3848,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: releaseKeyboard
     // Source: QWidget
     // Static: false
@@ -4115,7 +3867,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: grabShortcut
     // Source: QWidget
     // Static: false
@@ -4142,7 +3894,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: releaseShortcut
     // Source: QWidget
     // Static: false
@@ -4165,7 +3917,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setShortcutEnabled
     // Source: QWidget
     // Static: false
@@ -4192,7 +3944,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setShortcutAutoRepeat
     // Source: QWidget
     // Static: false
@@ -4219,7 +3971,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: updatesEnabled
     // Source: QWidget
     // Static: false
@@ -4240,7 +3992,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setUpdatesEnabled
     // Source: QWidget
     // Static: false
@@ -4263,7 +4015,42 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
+    // Function: update
+    // Source: QWidget
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  update
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
     // Function: repaint
     // Source: QWidget
     // Static: false
@@ -4298,7 +4085,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setVisible
     // Source: QWidget
     // Static: false
@@ -4321,7 +4108,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setHidden
     // Source: QWidget
     // Static: false
@@ -4344,7 +4131,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: show
     // Source: QWidget
     // Static: false
@@ -4363,7 +4150,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: hide
     // Source: QWidget
     // Static: false
@@ -4382,7 +4169,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: showMinimized
     // Source: QWidget
     // Static: false
@@ -4401,7 +4188,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: showMaximized
     // Source: QWidget
     // Static: false
@@ -4420,7 +4207,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: showFullScreen
     // Source: QWidget
     // Static: false
@@ -4439,7 +4226,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: showNormal
     // Source: QWidget
     // Static: false
@@ -4458,7 +4245,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: close
     // Source: QWidget
     // Static: false
@@ -4477,7 +4264,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: raise
     // Source: QWidget
     // Static: false
@@ -4496,7 +4283,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: lower
     // Source: QWidget
     // Static: false
@@ -4515,7 +4302,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: stackUnder
     // Source: QWidget
     // Static: false
@@ -4538,7 +4325,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: move
     // Source: QWidget
     // Static: false
@@ -4565,7 +4352,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: resize
     // Source: QWidget
     // Static: false
@@ -4592,7 +4379,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setGeometry
     // Source: QWidget
     // Static: false
@@ -4627,7 +4414,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: saveGeometry
     // Source: QWidget
     // Static: false
@@ -4648,7 +4435,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: restoreGeometry
     // Source: QWidget
     // Static: false
@@ -4671,7 +4458,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: adjustSize
     // Source: QWidget
     // Static: false
@@ -4690,7 +4477,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isVisible
     // Source: QWidget
     // Static: false
@@ -4711,7 +4498,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isVisibleTo
     // Source: QWidget
     // Static: false
@@ -4736,7 +4523,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isHidden
     // Source: QWidget
     // Static: false
@@ -4757,7 +4544,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isMinimized
     // Source: QWidget
     // Static: false
@@ -4778,7 +4565,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isMaximized
     // Source: QWidget
     // Static: false
@@ -4799,7 +4586,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isFullScreen
     // Source: QWidget
     // Static: false
@@ -4820,7 +4607,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowState
     // Source: QWidget
     // Static: false
@@ -4841,7 +4628,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowState
     // Source: QWidget
     // Static: false
@@ -4864,7 +4651,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: overrideWindowState
     // Source: QWidget
     // Static: false
@@ -4887,7 +4674,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: sizePolicy
     // Source: QWidget
     // Static: false
@@ -4908,7 +4695,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setSizePolicy
     // Source: QWidget
     // Static: false
@@ -4935,7 +4722,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: heightForWidth
     // Source: QWidget
     // Static: false
@@ -4960,7 +4747,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: hasHeightForWidth
     // Source: QWidget
     // Static: false
@@ -4981,7 +4768,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: visibleRegion
     // Source: QWidget
     // Static: false
@@ -5002,7 +4789,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setContentsMargins
     // Source: QWidget
     // Static: false
@@ -5037,7 +4824,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: contentsMargins
     // Source: QWidget
     // Static: false
@@ -5058,7 +4845,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: contentsRect
     // Source: QWidget
     // Static: false
@@ -5079,7 +4866,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: layout
     // Source: QWidget
     // Static: false
@@ -5100,7 +4887,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setLayout
     // Source: QWidget
     // Static: false
@@ -5123,7 +4910,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: updateGeometry
     // Source: QWidget
     // Static: false
@@ -5142,7 +4929,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setParent
     // Source: QWidget
     // Static: false
@@ -5169,7 +4956,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: scroll
     // Source: QWidget
     // Static: false
@@ -5200,7 +4987,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: focusWidget
     // Source: QWidget
     // Static: false
@@ -5221,7 +5008,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: nextInFocusChain
     // Source: QWidget
     // Static: false
@@ -5242,7 +5029,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: previousInFocusChain
     // Source: QWidget
     // Static: false
@@ -5263,7 +5050,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: acceptDrops
     // Source: QWidget
     // Static: false
@@ -5284,7 +5071,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setAcceptDrops
     // Source: QWidget
     // Static: false
@@ -5307,7 +5094,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: addAction
     // Source: QWidget
     // Static: false
@@ -5330,7 +5117,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: addActions
     // Source: QWidget
     // Static: false
@@ -5353,7 +5140,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: insertActions
     // Source: QWidget
     // Static: false
@@ -5380,7 +5167,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: insertAction
     // Source: QWidget
     // Static: false
@@ -5407,7 +5194,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: removeAction
     // Source: QWidget
     // Static: false
@@ -5430,7 +5217,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: actions
     // Source: QWidget
     // Static: false
@@ -5451,7 +5238,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: parentWidget
     // Source: QWidget
     // Static: false
@@ -5472,7 +5259,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowFlags
     // Source: QWidget
     // Static: false
@@ -5495,7 +5282,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowFlags
     // Source: QWidget
     // Static: false
@@ -5516,7 +5303,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setWindowFlag
     // Source: QWidget
     // Static: false
@@ -5543,7 +5330,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: overrideWindowFlags
     // Source: QWidget
     // Static: false
@@ -5566,7 +5353,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: windowType
     // Source: QWidget
     // Static: false
@@ -5587,7 +5374,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: childAt
     // Source: QWidget
     // Static: false
@@ -5616,7 +5403,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setAttribute
     // Source: QWidget
     // Static: false
@@ -5643,7 +5430,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: testAttribute
     // Source: QWidget
     // Static: false
@@ -5668,7 +5455,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -5689,7 +5476,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: isAncestorOf
     // Source: QWidget
     // Static: false
@@ -5714,7 +5501,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: autoFillBackground
     // Source: QWidget
     // Static: false
@@ -5735,7 +5522,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setAutoFillBackground
     // Source: QWidget
     // Static: false
@@ -5758,7 +5545,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: customContextMenuRequested
     // Source: QWidget
     // Static: false
@@ -5779,33 +5566,7 @@ IconMode = RListWidget::IconMode,
                 const QPoint& pos
               );
             
-    // Class: RListWidget
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: inputMethodHints
     // Source: QWidget
     // Static: false
@@ -5826,7 +5587,7 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setInputMethodHints
     // Source: QWidget
     // Static: false
@@ -5849,9 +5610,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: frameStyle
-    // Source: QFrame
+    // Class: RComboBox
+    // Function: maxVisibleItems
+    // Source: QComboBox
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5860,7 +5621,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  frameStyle
+                  maxVisibleItems
               (
 
                 
@@ -5870,9 +5631,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: setFrameStyle
-    // Source: QFrame
+    // Class: RComboBox
+    // Function: setMaxVisibleItems
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5881,7 +5642,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setFrameStyle
+                  setMaxVisibleItems
               (
 
                 
@@ -5893,9 +5654,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: frameWidth
-    // Source: QFrame
+    // Class: RComboBox
+    // Function: count
+    // Source: QComboBox
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5904,7 +5665,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  frameWidth
+                  count
               (
 
                 
@@ -5914,30 +5675,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: frameShape
-    // Source: QFrame
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameShape
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setFrameShape
-    // Source: QFrame
+    // Class: RComboBox
+    // Function: setMaxCount
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5946,7 +5686,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setFrameShape
+                  setMaxCount
               (
 
                 
@@ -5958,9 +5698,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: frameShadow
-    // Source: QFrame
+    // Class: RComboBox
+    // Function: maxCount
+    // Source: QComboBox
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -5969,7 +5709,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  frameShadow
+                  maxCount
               (
 
                 
@@ -5979,9 +5719,30 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: setFrameShadow
-    // Source: QFrame
+    // Class: RComboBox
+    // Function: duplicatesEnabled
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  duplicatesEnabled
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setDuplicatesEnabled
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -5990,7 +5751,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setFrameShadow
+                  setDuplicatesEnabled
               (
 
                 
@@ -6002,30 +5763,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: lineWidth
-    // Source: QFrame
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lineWidth
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setLineWidth
-    // Source: QFrame
+    // Class: RComboBox
+    // Function: setFrame
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6034,7 +5774,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setLineWidth
+                  setFrame
               (
 
                 
@@ -6046,9 +5786,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: midLineWidth
-    // Source: QFrame
+    // Class: RComboBox
+    // Function: hasFrame
+    // Source: QComboBox
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6057,7 +5797,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  midLineWidth
+                  hasFrame
               (
 
                 
@@ -6067,296 +5807,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: setMidLineWidth
-    // Source: QFrame
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMidLineWidth
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: frameRect
-    // Source: QFrame
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameRect
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setFrameRect
-    // Source: QFrame
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFrameRect
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: verticalScrollBarPolicy
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  verticalScrollBarPolicy
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setVerticalScrollBarPolicy
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVerticalScrollBarPolicy
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: verticalScrollBar
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  verticalScrollBar
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setVerticalScrollBar
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVerticalScrollBar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: horizontalScrollBarPolicy
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  horizontalScrollBarPolicy
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setHorizontalScrollBarPolicy
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHorizontalScrollBarPolicy
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: horizontalScrollBar
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  horizontalScrollBar
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setHorizontalScrollBar
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHorizontalScrollBar
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: cornerWidget
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cornerWidget
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setCornerWidget
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCornerWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: addScrollBarWidget
-    // Source: QAbstractScrollArea
+    // Class: RComboBox
+    // Function: findText
+    // Source: QComboBox
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -6365,7 +5818,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  addScrollBarWidget
+                  findText
               (
 
                 
@@ -6379,11 +5832,46 @@ IconMode = RListWidget::IconMode,
     
               )
               
+                const
+              
               ;
             
-    // Class: RListWidget
-    // Function: viewport
-    // Source: QAbstractScrollArea
+    // Class: RComboBox
+    // Function: findData
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  findData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: insertPolicy
+    // Source: QComboBox
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6392,7 +5880,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  viewport
+                  insertPolicy
               (
 
                 
@@ -6402,9 +5890,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: setViewport
-    // Source: QAbstractScrollArea
+    // Class: RComboBox
+    // Function: setInsertPolicy
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6413,7 +5901,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setViewport
+                  setInsertPolicy
               (
 
                 
@@ -6425,95 +5913,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: maximumViewportSize
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumViewportSize
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: minimumSizeHint
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSizeHint
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: sizeHint
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeHint
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setupViewport
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setupViewport
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: sizeAdjustPolicy
-    // Source: QAbstractScrollArea
+    // Source: QComboBox
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -6532,9 +5934,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: setSizeAdjustPolicy
-    // Source: QAbstractScrollArea
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -6555,9 +5957,561 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: setViewportMargins
-    // Source: QAbstractScrollArea
+    // Class: RComboBox
+    // Function: minimumContentsLength
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  minimumContentsLength
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setMinimumContentsLength
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setMinimumContentsLength
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: iconSize
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  iconSize
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setIconSize
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setIconSize
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setPlaceholderText
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setPlaceholderText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: placeholderText
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  placeholderText
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: isEditable
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isEditable
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setEditable
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setEditable
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setLineEdit
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setLineEdit
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: lineEdit
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  lineEdit
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setValidator
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setValidator
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setCompleter
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCompleter
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: completer
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  completer
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: model
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  model
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: modelColumn
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  modelColumn
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setModelColumn
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setModelColumn
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: currentIndex
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  currentIndex
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: currentText
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  currentText
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: currentData
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  currentData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: itemText
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  itemText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: itemIcon
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  itemIcon
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: itemData
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  itemData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: addItem
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addItem
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: addItems
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addItems
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: insertItem
+    // Source: QComboBox
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -6566,10 +6520,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setViewportMarginsSuper
-                    
+                  insertItem
               (
 
                 
@@ -6593,2831 +6544,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: viewportMargins
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      viewportMarginsSuper
-                    
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: eventFilter
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      eventFilterSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: viewportEvent
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      viewportEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: mouseDoubleClickEvent
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseDoubleClickEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: dragEnterEvent
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      dragEnterEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: keyPressEvent
-    // Source: QAbstractScrollArea
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      keyPressEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: model
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  model
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setSelectionModel
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSelectionModel
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: selectionModel
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectionModel
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setItemDelegate
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setItemDelegate
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setSelectionMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSelectionMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: selectionMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectionMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setSelectionBehavior
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSelectionBehavior
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: selectionBehavior
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectionBehavior
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: currentIndex
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentIndex
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: rootIndex
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rootIndex
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setEditTriggers
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEditTriggers
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: editTriggers
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  editTriggers
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setVerticalScrollMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVerticalScrollMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: verticalScrollMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  verticalScrollMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: resetVerticalScrollMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resetVerticalScrollMode
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setHorizontalScrollMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHorizontalScrollMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: horizontalScrollMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  horizontalScrollMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: resetHorizontalScrollMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resetHorizontalScrollMode
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setAutoScroll
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoScroll
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: hasAutoScroll
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasAutoScroll
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setAutoScrollMargin
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoScrollMargin
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: autoScrollMargin
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoScrollMargin
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setTabKeyNavigation
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabKeyNavigation
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: tabKeyNavigation
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tabKeyNavigation
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setDropIndicatorShown
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDropIndicatorShown
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: showDropIndicator
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showDropIndicator
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setDragEnabled
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDragEnabled
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: dragEnabled
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dragEnabled
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setDragDropOverwriteMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDragDropOverwriteMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: dragDropOverwriteMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dragDropOverwriteMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setDragDropMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDragDropMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: dragDropMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dragDropMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setDefaultDropAction
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDefaultDropAction
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: defaultDropAction
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultDropAction
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setAlternatingRowColors
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAlternatingRowColors
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: alternatingRowColors
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  alternatingRowColors
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setIconSize
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIconSize
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: iconSize
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  iconSize
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setTextElideMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextElideMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: textElideMode
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  textElideMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: keyboardSearch
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardSearch
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setIndexWidget
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIndexWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: indexWidget
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  indexWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: inputMethodQuery
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodQuery
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: selectAll
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectAll
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: edit
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  edit
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: clearSelection
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearSelection
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setCurrentIndex
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentIndex
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: scrollToTop
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scrollToTop
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: scrollToBottom
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scrollToBottom
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: update
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  update
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: pressed
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void pressed(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void pressedEmitter(
-                const QModelIndex& index
-              );
-            
-    // Class: RListWidget
-    // Function: clicked
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void clicked(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void clickedEmitter(
-                const QModelIndex& index
-              );
-            
-    // Class: RListWidget
-    // Function: doubleClicked
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void doubleClicked(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void doubleClickedEmitter(
-                const QModelIndex& index
-              );
-            
-    // Class: RListWidget
-    // Function: activated
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void activated(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void activatedEmitter(
-                const QModelIndex& index
-              );
-            
-    // Class: RListWidget
-    // Function: entered
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void entered(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void enteredEmitter(
-                const QModelIndex& index
-              );
-            
-    // Class: RListWidget
-    // Function: viewportEntered
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void viewportEntered(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void viewportEnteredEmitter(
-                
-              );
-            
-    // Class: RListWidget
-    // Function: iconSizeChanged
-    // Source: QAbstractItemView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void iconSizeChanged(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void iconSizeChangedEmitter(
-                const QSize& size
-              );
-            
-    // Class: RListWidget
-    // Function: setMovement
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMovement
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: movement
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  movement
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setFlow
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFlow
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: flow
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  flow
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setWrapping
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWrapping
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: isWrapping
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWrapping
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setResizeMode
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setResizeMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: resizeMode
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resizeMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setLayoutMode
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayoutMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: layoutMode
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layoutMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setSpacing
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSpacing
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: spacing
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  spacing
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setBatchSize
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBatchSize
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: batchSize
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  batchSize
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setGridSize
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGridSize
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: gridSize
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  gridSize
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setViewMode
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setViewMode
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: viewMode
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  viewMode
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: clearPropertyFlags
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearPropertyFlags
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: isRowHidden
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isRowHidden
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setRowHidden
-    // Source: QListView
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setRowHidden
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setModelColumn
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setModelColumn
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: modelColumn
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  modelColumn
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setUniformItemSizes
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUniformItemSizes
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: uniformItemSizes
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  uniformItemSizes
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setWordWrap
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWordWrap
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: wordWrap
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  wordWrap
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setSelectionRectVisible
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSelectionRectVisible
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: isSelectionRectVisible
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSelectionRectVisible
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setItemAlignment
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setItemAlignment
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: itemAlignment
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  itemAlignment
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: visualRect
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  visualRect
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: scrollTo
-    // Source: QListView
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scrollTo
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: indexAt
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  indexAt
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: doItemsLayout
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  doItemsLayout
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: reset
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  reset
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setRootIndex
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setRootIndex
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: scrollContentsBy
-    // Source: QListView
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      scrollContentsBySuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: resizeContents
-    // Source: QListView
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeContentsSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: contentsSize
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      contentsSizeSuper
-                    
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: dataChanged
-    // Source: QListView
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      dataChangedSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: rowsInserted
-    // Source: QListView
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      rowsInsertedSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: rowsAboutToBeRemoved
-    // Source: QListView
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      rowsAboutToBeRemovedSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: wheelEvent
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      wheelEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: resizeEvent
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: startDrag
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      startDragSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: paintEvent
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: horizontalOffset
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      horizontalOffsetSuper
-                    
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: verticalOffset
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      verticalOffsetSuper
-                    
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: rectForIndex
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      rectForIndexSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setPositionForIndex
-    // Source: QListView
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      setPositionForIndexSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: updateGeometries
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      updateGeometriesSuper
-                    
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: isIndexHidden
-    // Source: QListView
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      isIndexHiddenSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: currentChanged
-    // Source: QListView
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      currentChangedSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: viewportSizeHint
-    // Source: QListView
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      viewportSizeHintSuper
-                    
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: item
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  item
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: row
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  row
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: insertItem
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertItem
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: insertItems
-    // Source: QListWidget
+    // Source: QComboBox
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -9442,9 +6571,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: addItem
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: insertSeparator
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -9453,7 +6582,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  addItem
+                  insertSeparator
               (
 
                 
@@ -9465,9 +6594,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: addItems
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: removeItem
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -9476,7 +6605,7 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  addItems
+                  removeItem
               (
 
                 
@@ -9488,141 +6617,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: takeItem
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  takeItem
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: count
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  count
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: currentItem
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentItem
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setCurrentItem
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentItem
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: currentRow
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentRow
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setCurrentRow
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentRow
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: itemAt
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: setItemText
+    // Source: QComboBox
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -9631,7 +6628,172 @@ IconMode = RListWidget::IconMode,
               Q_INVOKABLE 
               
                   QJSValue 
-                  itemAt
+                  setItemText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setItemIcon
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setItemIcon
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setItemData
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setItemData
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: sizeHint
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  sizeHint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: minimumSizeHint
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  minimumSizeHint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: showPopup
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  showPopup
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: hidePopup
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  hidePopup
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: inputMethodQuery
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  inputMethodQuery
               (
 
                 
@@ -9649,422 +6811,9 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: visualItemRect
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  visualItemRect
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: sortItems
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sortItems
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setSortingEnabled
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSortingEnabled
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: isSortingEnabled
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSortingEnabled
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: editItem
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  editItem
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: openPersistentEditor
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  openPersistentEditor
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: closePersistentEditor
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  closePersistentEditor
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: isPersistentEditorOpen
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isPersistentEditorOpen
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: itemWidget
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  itemWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: setItemWidget
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setItemWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: removeItemWidget
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeItemWidget
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: selectedItems
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectedItems
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: findItems
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findItems
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: items
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  items
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: indexFromItem
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  indexFromItem
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: itemFromIndex
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  itemFromIndex
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: scrollToItem
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scrollToItem
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: clear
-    // Source: QListWidget
+    // Source: QComboBox
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -10081,16 +6830,104 @@ IconMode = RListWidget::IconMode,
               
               ;
             
-    // Class: RListWidget
-    // Function: itemPressed
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: clearEditText
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clearEditText
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setEditText
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setEditText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setCurrentIndex
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCurrentIndex
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: setCurrentText
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCurrentText
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RComboBox
+    // Function: editTextChanged
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
               // signal forwarded from wrapped class:
               signals:
-              void itemPressed(
+              void editTextChanged(
                 
   const QJSValue& 
   a1
@@ -10098,20 +6935,20 @@ IconMode = RListWidget::IconMode,
 
               // called when signal is emitted from wrapped class:
               public slots:
-              void itemPressedEmitter(
-                QListWidgetItem* item
+              void editTextChangedEmitter(
+                const QString& a1
               );
             
-    // Class: RListWidget
-    // Function: itemClicked
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: activated
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
               // signal forwarded from wrapped class:
               signals:
-              void itemClicked(
+              void activated(
                 
   const QJSValue& 
   a1
@@ -10119,20 +6956,20 @@ IconMode = RListWidget::IconMode,
 
               // called when signal is emitted from wrapped class:
               public slots:
-              void itemClickedEmitter(
-                QListWidgetItem* item
+              void activatedEmitter(
+                int index
               );
             
-    // Class: RListWidget
-    // Function: itemDoubleClicked
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: textActivated
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
               // signal forwarded from wrapped class:
               signals:
-              void itemDoubleClicked(
+              void textActivated(
                 
   const QJSValue& 
   a1
@@ -10140,20 +6977,20 @@ IconMode = RListWidget::IconMode,
 
               // called when signal is emitted from wrapped class:
               public slots:
-              void itemDoubleClickedEmitter(
-                QListWidgetItem* item
+              void textActivatedEmitter(
+                const QString& a1
               );
             
-    // Class: RListWidget
-    // Function: itemActivated
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: highlighted
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
               // signal forwarded from wrapped class:
               signals:
-              void itemActivated(
+              void highlighted(
                 
   const QJSValue& 
   a1
@@ -10161,20 +6998,20 @@ IconMode = RListWidget::IconMode,
 
               // called when signal is emitted from wrapped class:
               public slots:
-              void itemActivatedEmitter(
-                QListWidgetItem* item
+              void highlightedEmitter(
+                int index
               );
             
-    // Class: RListWidget
-    // Function: itemEntered
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: textHighlighted
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
               // signal forwarded from wrapped class:
               signals:
-              void itemEntered(
+              void textHighlighted(
                 
   const QJSValue& 
   a1
@@ -10182,20 +7019,20 @@ IconMode = RListWidget::IconMode,
 
               // called when signal is emitted from wrapped class:
               public slots:
-              void itemEnteredEmitter(
-                QListWidgetItem* item
+              void textHighlightedEmitter(
+                const QString& a1
               );
             
-    // Class: RListWidget
-    // Function: itemChanged
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: currentIndexChanged
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
               // signal forwarded from wrapped class:
               signals:
-              void itemChanged(
+              void currentIndexChanged(
                 
   const QJSValue& 
   a1
@@ -10203,36 +7040,13 @@ IconMode = RListWidget::IconMode,
 
               // called when signal is emitted from wrapped class:
               public slots:
-              void itemChangedEmitter(
-                QListWidgetItem* item
+              void currentIndexChangedEmitter(
+                int index
               );
             
-    // Class: RListWidget
-    // Function: currentItemChanged
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void currentItemChanged(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void currentItemChangedEmitter(
-                QListWidgetItem* current, QListWidgetItem* previous
-              );
-            
-    // Class: RListWidget
+    // Class: RComboBox
     // Function: currentTextChanged
-    // Source: QListWidget
+    // Source: QComboBox
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -10248,197 +7062,26 @@ IconMode = RListWidget::IconMode,
               // called when signal is emitted from wrapped class:
               public slots:
               void currentTextChangedEmitter(
-                const QString& currentText
+                const QString& a1
               );
             
-    // Class: RListWidget
-    // Function: currentRowChanged
-    // Source: QListWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void currentRowChanged(
-                
-  const QJSValue& 
-  a1
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void currentRowChangedEmitter(
-                int currentRow
-              );
-            
-    // Class: RListWidget
-    // Function: itemSelectionChanged
-    // Source: QListWidget
+    // Class: RComboBox
+    // Function: returnPressed
+    // Source: 
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
               // signal forwarded from wrapped class:
               signals:
-              void itemSelectionChanged(
+              void returnPressed(
                 
               );
 
               // called when signal is emitted from wrapped class:
               public slots:
-              void itemSelectionChangedEmitter(
+              void returnPressedEmitter(
                 
-              );
-            
-    // Class: RListWidget
-    // Function: setIconOffset
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIconOffset
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: contextMenuEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      contextMenuEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: mousePressEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mousePressEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: mouseReleaseEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseReleaseEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: mouseMoveEvent
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: iconClicked
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void iconClicked(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void iconClickedEmitter(
-                int x, QListWidgetItem* item
               );
             
           // destroy function for non-copyable objects:
@@ -10471,7 +7114,7 @@ IconMode = RListWidget::IconMode,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_RListWidget::getIdStatic();
+          return RJSType_RComboBox::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
@@ -10483,7 +7126,7 @@ IconMode = RListWidget::IconMode,
         }
 
         // get wrapped object:
-        RListWidget* getWrapped() {
+        RComboBox* getWrapped() {
           if (wrapped!=nullptr) {
             return wrapped;
           }
@@ -10492,7 +7135,7 @@ IconMode = RListWidget::IconMode,
         }
 
         // get wrapped object (const):
-        RListWidget* getWrapped() const {
+        RComboBox* getWrapped() const {
           if (wrapped!=nullptr) {
             return wrapped;
           }
@@ -10509,17 +7152,6 @@ IconMode = RListWidget::IconMode,
           return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          RListWidget_Base* getWrappedBase() {
-            RListWidget* w = getWrapped();
-            return dynamic_cast<RListWidget_Base*>(w);
-          }
-
-          RListWidget_Base* getWrappedBase() const {
-            RListWidget* w = getWrapped();
-            return dynamic_cast<RListWidget_Base*>(w);
-          }
         
 
         bool hasWrapped() const {
@@ -10550,17 +7182,10 @@ IconMode = RListWidget::IconMode,
           //}
 
         
-          //void setRecFlag(bool on) const {
-          //  RListWidget_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
         private:
         // wrapped object:
-        RListWidget* wrapped;
+        RComboBox* wrapped;
 
         
 
@@ -10568,18 +7193,18 @@ IconMode = RListWidget::IconMode,
       
       private:
         // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_RListWidget*> basecasters_RListWidget;
+        static QList<RJSBasecaster_RComboBox*> basecasters_RComboBox;
 
       public:
-        static void registerBasecaster_RListWidget(RJSBasecaster_RListWidget* bc) {
-          basecasters_RListWidget.append(bc);
+        static void registerBasecaster_RComboBox(RJSBasecaster_RComboBox* bc) {
+          basecasters_RComboBox.append(bc);
         }
       
     };
 
-    Q_DECLARE_METATYPE(RListWidget_Wrapper*)
+    Q_DECLARE_METATYPE(RComboBox_Wrapper*)
 
-    Q_DECLARE_INTERFACE(RListWidget_Wrapper, "org.qcad.RListWidget_Wrapper")
+    Q_DECLARE_INTERFACE(RComboBox_Wrapper, "org.qcad.RComboBox_Wrapper")
 
   
   #endif

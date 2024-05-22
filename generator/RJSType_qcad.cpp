@@ -7101,6 +7101,33 @@
             return derrivedTypes.contains(otherType);
         }
       
+      int RJSType_RComboBox::id = -1;
+
+      int RJSType_RComboBox::getId() const {
+          return RJSType_RComboBox::getIdStatic();
+      }
+
+      int RJSType_RComboBox::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RComboBox());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RComboBox::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
       int RJSType_RCommandLine::id = -1;
 
       int RJSType_RCommandLine::getId() const {
@@ -7198,6 +7225,33 @@
 
       
         bool RJSType_REventFilter::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
+      int RJSType_RToolOptionEventFilter::id = -1;
+
+      int RJSType_RToolOptionEventFilter::getId() const {
+          return RJSType_RToolOptionEventFilter::getIdStatic();
+      }
+
+      int RJSType_RToolOptionEventFilter::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RToolOptionEventFilter());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RToolOptionEventFilter::isOfType(int otherType) {
             // initialize list of derrived types:
             
             static QSet<int> derrivedTypes = {
