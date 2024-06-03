@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RToolOptionEventFilter.h">
+  <class name="RToolOptionEventFilter" ownership="cpp">
+    <super_list>
+      <super name="QObject" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
+    <!--
+    <function name="eventFilter">
+      <variant return-type="bool" access="protected">
+        <parameters>
+          <parameter const="false" type="QObject" modifier="*" name="obj" />
+          <parameter const="false" type="QEvent" modifier="*" name="event" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>

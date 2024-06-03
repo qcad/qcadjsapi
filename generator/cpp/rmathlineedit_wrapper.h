@@ -7574,25 +7574,6 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
                 
               );
             
-    // Class: RMathLineEdit
-    // Function: enterKeyPressed
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void enterKeyPressed(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void enterKeyPressedEmitter(
-                
-              );
-            
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             if (wrapped!=nullptr) {

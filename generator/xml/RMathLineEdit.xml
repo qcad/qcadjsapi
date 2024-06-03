@@ -137,10 +137,5 @@
         <parameters />
       </variant>
     </function>
-    <function name="enterKeyPressed">
-      <variant return-type="void" access="public" signal="true">
-        <parameters />
-      </variant>
-    </function>
   </class>
 </unit>

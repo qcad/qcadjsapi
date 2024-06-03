@@ -493,13 +493,6 @@ int a3_cpp;
     SLOT(downKeyPressedEmitter())
   );
 
-  connect(
-    getWrapped(), 
-    SIGNAL(enterKeyPressed()), 
-    this, 
-    SLOT(enterKeyPressedEmitter())
-  );
-
               /*
               connect(
                 getWrapped(),
@@ -21825,26 +21818,6 @@ QString a1_cpp;
                 
 
                 emit downKeyPressed(
-                  
-                );
-              }
-            
-    // Class: RMathLineEdit
-    // Function: enterKeyPressed
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal emitter: called when signal is emitted from wrapped object:
-              void 
-              RMathLineEdit_Wrapper::enterKeyPressedEmitter(
-                
-              ) {
-                // convert cpp parameters to js:
-                
-
-                emit enterKeyPressed(
                   
                 );
               }
