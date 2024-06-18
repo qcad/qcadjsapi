@@ -159,37 +159,6 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
 
       // functions:
       
-        // function 
-        RCommandLine.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RCommandLine.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RCommandLine);
-  }
-
-  
-  else {
-    
-        print("RCommandLine.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

@@ -2416,6 +2416,29 @@
               ;
             
     // Class: RGraphicsViewQt
+    // Function: setCursor
+    // Source: QWidget
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCursor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewQt
     // Function: unsetCursor
     // Source: QWidget
     // Static: false
@@ -5365,27 +5388,6 @@
               ;
             
     // Class: RGraphicsViewQt
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RGraphicsViewQt
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -5821,48 +5823,6 @@
               
                   QJSValue 
                   setSignalsBlocked
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RGraphicsViewQt
-    // Function: getCursor
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getCursor
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RGraphicsViewQt
-    // Function: setCursor
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCursor
               (
 
                 

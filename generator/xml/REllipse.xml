@@ -21,7 +21,18 @@
       </variant>
     </constructor>
     <function name="createInscribed" static="true">
-      <variant return-type="REllipse" access="public">
+      <variant return-type="REllipse" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="p1" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p2" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p3" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="p4" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="centerHint" default="RVector::invalid" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="createFrom4Points" static="true">
+      <variant return-type="REllipse" static="true" access="public">
         <parameters>
           <parameter const="true" type="RVector" modifier="&amp;" name="p1" />
           <parameter const="true" type="RVector" modifier="&amp;" name="p2" />

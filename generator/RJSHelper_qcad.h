@@ -202,6 +202,12 @@
           virtual RColorCombo* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class RComboBox:
+        class RJSBasecaster_RComboBox {
+        public:
+          virtual RComboBox* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class RCommandEvent:
         class RJSBasecaster_RCommandEvent {
         public:
@@ -1540,6 +1546,12 @@
           virtual RToolMatrixItemDelegate* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class RToolOptionEventFilter:
+        class RJSBasecaster_RToolOptionEventFilter {
+        public:
+          virtual RToolOptionEventFilter* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class RTraceData:
         class RJSBasecaster_RTraceData {
         public:
@@ -2346,6 +2358,47 @@
               virtual QComboBox* castToBase(int t, void* vp) {
                 if (t==RJSType_RColorCombo::getIdStatic()) {
                   return (QComboBox*)(RColorCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+          // implementation of base casters that cast RComboBox to base classes:
+          
+            // implementation of base casters that casts RComboBox to QObject
+            class RJSBasecaster_RComboBox_QObject : public RJSBasecaster_QObject {
+            public:
+              virtual QObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RComboBox::getIdStatic()) {
+                  return (QObject*)(RComboBox*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RComboBox to QWidget
+            class RJSBasecaster_RComboBox_QWidget : public RJSBasecaster_QWidget {
+            public:
+              virtual QWidget* castToBase(int t, void* vp) {
+                if (t==RJSType_RComboBox::getIdStatic()) {
+                  return (QWidget*)(RComboBox*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RComboBox to QComboBox
+            class RJSBasecaster_RComboBox_QComboBox : public RJSBasecaster_QComboBox {
+            public:
+              virtual QComboBox* castToBase(int t, void* vp) {
+                if (t==RJSType_RComboBox::getIdStatic()) {
+                  return (QComboBox*)(RComboBox*)vp;
                 }
                 else {
                   return nullptr;
@@ -6920,6 +6973,21 @@
               }
             };
           
+          // implementation of base casters that cast RToolOptionEventFilter to base classes:
+          
+            // implementation of base casters that casts RToolOptionEventFilter to QObject
+            class RJSBasecaster_RToolOptionEventFilter_QObject : public RJSBasecaster_QObject {
+            public:
+              virtual QObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RToolOptionEventFilter::getIdStatic()) {
+                  return (QObject*)(RToolOptionEventFilter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
           // implementation of base casters that cast RTraceData to base classes:
           
             // implementation of base casters that casts RTraceData to RSolidData
@@ -7486,9 +7554,8 @@
 
 
 
-      class 
-       QCADJSAPI_EXPORT 
-         RJSHelper_qcad {
+      class QCADJSAPI_EXPORT 
+     RJSHelper_qcad {
 
       public:
         
@@ -9193,6 +9260,11 @@
       static RColorCombo* js2cpp_RColorCombo_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RColorCombo_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_RComboBox(RJSApi& handler, RComboBox* v);
+      static QJSValue cpp2js_RComboBox(RJSApi& handler, const RComboBox* v);
+      static RComboBox* js2cpp_RComboBox_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RComboBox_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_RCommandLine(RJSApi& handler, RCommandLine* v);
       static QJSValue cpp2js_RCommandLine(RJSApi& handler, const RCommandLine* v);
       static RCommandLine* js2cpp_RCommandLine_ptr(RJSApi& handler, const QJSValue& v);
@@ -9212,6 +9284,11 @@
       static QJSValue cpp2js_REventFilter(RJSApi& handler, const REventFilter* v);
       static REventFilter* js2cpp_REventFilter_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_REventFilter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RToolOptionEventFilter(RJSApi& handler, RToolOptionEventFilter* v);
+      static QJSValue cpp2js_RToolOptionEventFilter(RJSApi& handler, const RToolOptionEventFilter* v);
+      static RToolOptionEventFilter* js2cpp_RToolOptionEventFilter_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RToolOptionEventFilter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_REventHandler(RJSApi& handler, REventHandler* v);
       static QJSValue cpp2js_REventHandler(RJSApi& handler, const REventHandler* v);

@@ -61,9 +61,9 @@
       <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" access="public">
         <parameters>
           <parameter const="false" type="RPropertyTypeId" modifier="&amp;" name="propertyTypeId" />
-          <parameter const="false" type="bool" modifier="" name="humanReadable" />
-          <parameter const="false" type="bool" modifier="" name="noAttributes" />
-          <parameter const="false" type="bool" modifier="" name="showOnRequest" />
+          <parameter const="false" type="bool" modifier="" name="humanReadable" default="false" />
+          <parameter const="false" type="bool" modifier="" name="noAttributes" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
         </parameters>
       </variant>
     </function>

@@ -148,39 +148,26 @@
 
       // enum values:
       
+  // enum: Shape
+RRulerQt.NoFrame = RRulerQt_Wrapper.NoFrame;
+RRulerQt.Box = RRulerQt_Wrapper.Box;
+RRulerQt.Panel = RRulerQt_Wrapper.Panel;
+RRulerQt.WinPanel = RRulerQt_Wrapper.WinPanel;
+RRulerQt.HLine = RRulerQt_Wrapper.HLine;
+RRulerQt.VLine = RRulerQt_Wrapper.VLine;
+RRulerQt.StyledPanel = RRulerQt_Wrapper.StyledPanel;
+
+  // enum: Shadow
+RRulerQt.Plain = RRulerQt_Wrapper.Plain;
+RRulerQt.Raised = RRulerQt_Wrapper.Raised;
+RRulerQt.Sunken = RRulerQt_Wrapper.Sunken;
+
+  // enum: StyleMask
+RRulerQt.Shadow_Mask = RRulerQt_Wrapper.Shadow_Mask;
+RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
+
 
       // functions:
-      
-        // function 
-        RRulerQt.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RRulerQt.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RRulerQt);
-  }
-
-  
-  else {
-    
-        print("RRulerQt.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
 
       // static functions:

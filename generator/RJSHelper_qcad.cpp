@@ -99,6 +99,12 @@
         
           #include "qwidget_wrapper.h"
         
+          #include "qcombobox_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "qwidget_wrapper.h"
+        
           #include "qlineedit_wrapper.h"
         
           #include "qevent_wrapper.h"
@@ -729,6 +735,8 @@
         
           #include "qitemdelegate_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
           #include "rsoliddata_wrapper.h"
         
           #include "robject_wrapper.h"
@@ -851,6 +859,19 @@
                     RColorCombo* c = dynamic_cast<RColorCombo*>(o);
                     if (c!=nullptr) {
                         return RJSHelper_qcad::cpp2js_RColorCombo(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
+            // downcasters from QComboBox to RComboBox
+            class RJSDowncaster_QComboBox_RComboBox : public RJSDowncaster_QComboBox {
+                QJSValue downcast(RJSApi& handler, QComboBox* o) {
+                    RComboBox* c = dynamic_cast<RComboBox*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RComboBox(handler, c);
                     }
                     return QJSValue();
                 }
@@ -1183,6 +1204,19 @@
 
           
 
+            // downcasters from QObject to RToolOptionEventFilter
+            class RJSDowncaster_QObject_RToolOptionEventFilter : public RJSDowncaster_QObject {
+                QJSValue downcast(RJSApi& handler, QObject* o) {
+                    RToolOptionEventFilter* c = dynamic_cast<RToolOptionEventFilter*>(o);
+                    if (c!=nullptr) {
+                        return RJSHelper_qcad::cpp2js_RToolOptionEventFilter(handler, c);
+                    }
+                    return QJSValue();
+                }
+            };
+
+          
+
           // downcasters from QTextBrowser to ...
           
 
@@ -1319,6 +1353,9 @@
               // downcasters from QComboBox to RColorCombo
               RJSHelper::registerDowncaster_QComboBox(new RJSDowncaster_QComboBox_RColorCombo());
             
+              // downcasters from QComboBox to RComboBox
+              RJSHelper::registerDowncaster_QComboBox(new RJSDowncaster_QComboBox_RComboBox());
+            
               // downcasters from QComboBox to RLinetypeCombo
               RJSHelper::registerDowncaster_QComboBox(new RJSDowncaster_QComboBox_RLinetypeCombo());
             
@@ -1410,6 +1447,9 @@
             
               // downcasters from QObject to RGraphicsViewWorker
               RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RGraphicsViewWorker());
+            
+              // downcasters from QObject to RToolOptionEventFilter
+              RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RToolOptionEventFilter());
             
             // downcasters from QTextBrowser to ...
             
@@ -1643,6 +1683,17 @@
             
               // registration of base casters that casts RColorCombo to QComboBox:
               QComboBox_Wrapper::registerBasecaster_QComboBox(new RJSBasecaster_RColorCombo_QComboBox());
+            
+            // registration of base casters that cast RComboBox to base classes:
+            
+              // registration of base casters that casts RComboBox to QObject:
+              QObject_Wrapper::registerBasecaster_QObject(new RJSBasecaster_RComboBox_QObject());
+            
+              // registration of base casters that casts RComboBox to QWidget:
+              QWidget_Wrapper::registerBasecaster_QWidget(new RJSBasecaster_RComboBox_QWidget());
+            
+              // registration of base casters that casts RComboBox to QComboBox:
+              QComboBox_Wrapper::registerBasecaster_QComboBox(new RJSBasecaster_RComboBox_QComboBox());
             
             // registration of base casters that cast RCommandEvent to base classes:
             
@@ -3040,6 +3091,11 @@
             
               // registration of base casters that casts RToolMatrixItemDelegate to QItemDelegate:
               QItemDelegate_Wrapper::registerBasecaster_QItemDelegate(new RJSBasecaster_RToolMatrixItemDelegate_QItemDelegate());
+            
+            // registration of base casters that cast RToolOptionEventFilter to base classes:
+            
+              // registration of base casters that casts RToolOptionEventFilter to QObject:
+              QObject_Wrapper::registerBasecaster_QObject(new RJSBasecaster_RToolOptionEventFilter_QObject());
             
             // registration of base casters that cast RTraceData to base classes:
             
@@ -32569,6 +32625,111 @@
       }
 
     
+      QJSValue RJSHelper_qcad::cpp2js_RComboBox(RJSApi& handler, RComboBox* v) {
+          RComboBox_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<RComboBox_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper_qcad::cpp2js_RComboBox: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new RComboBox_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new RComboBox_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new RComboBox('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RComboBox");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RComboBox is undefined. Use RComboBox_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RComboBox('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RComboBox(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RComboBox(RJSApi& handler, const RComboBox* v) {
+          return RJSHelper_qcad::cpp2js_RComboBox(handler, const_cast<RComboBox*>(v));
+      }
+
+      RComboBox* RJSHelper_qcad::js2cpp_RComboBox_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RComboBox: not a QObject";
+              return nullptr;
+          }
+          //RComboBox_Wrapper* wrapper = getWrapper<RComboBox_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //RComboBox_Wrapper* wrapper = qobject_cast<RComboBox_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RComboBox_Wrapper* wrapper = dynamic_cast<RComboBox_Wrapper*>(obj);
+          //RComboBox_Wrapper* wrapper = (RComboBox_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RComboBox: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (RComboBox*)wrapper->getWrappedVoid();
+          //return getWrapped_RComboBox(wrapper);
+          return RComboBox_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RComboBox_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RComboBox: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::RComboBox_Type);
+          //return fun.call().toInt()==RJSType::RComboBox_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RComboBox::getIdStatic())).toBool();
+      }
+
+    
       QJSValue RJSHelper_qcad::cpp2js_RCommandLine(RJSApi& handler, RCommandLine* v) {
           RCommandLine_Wrapper* ret = nullptr;
           bool existing = false;
@@ -32986,6 +33147,111 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_REventFilter::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper_qcad::cpp2js_RToolOptionEventFilter(RJSApi& handler, RToolOptionEventFilter* v) {
+          RToolOptionEventFilter_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<RToolOptionEventFilter_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper_qcad::cpp2js_RToolOptionEventFilter: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new RToolOptionEventFilter_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new RToolOptionEventFilter_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new RToolOptionEventFilter('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RToolOptionEventFilter");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RToolOptionEventFilter is undefined. Use RToolOptionEventFilter_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RToolOptionEventFilter('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RToolOptionEventFilter(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RToolOptionEventFilter(RJSApi& handler, const RToolOptionEventFilter* v) {
+          return RJSHelper_qcad::cpp2js_RToolOptionEventFilter(handler, const_cast<RToolOptionEventFilter*>(v));
+      }
+
+      RToolOptionEventFilter* RJSHelper_qcad::js2cpp_RToolOptionEventFilter_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RToolOptionEventFilter: not a QObject";
+              return nullptr;
+          }
+          //RToolOptionEventFilter_Wrapper* wrapper = getWrapper<RToolOptionEventFilter_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //RToolOptionEventFilter_Wrapper* wrapper = qobject_cast<RToolOptionEventFilter_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RToolOptionEventFilter_Wrapper* wrapper = dynamic_cast<RToolOptionEventFilter_Wrapper*>(obj);
+          //RToolOptionEventFilter_Wrapper* wrapper = (RToolOptionEventFilter_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RToolOptionEventFilter: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (RToolOptionEventFilter*)wrapper->getWrappedVoid();
+          //return getWrapped_RToolOptionEventFilter(wrapper);
+          return RToolOptionEventFilter_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RToolOptionEventFilter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RToolOptionEventFilter: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::RToolOptionEventFilter_Type);
+          //return fun.call().toInt()==RJSType::RToolOptionEventFilter_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RToolOptionEventFilter::getIdStatic())).toBool();
       }
 
     

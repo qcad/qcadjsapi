@@ -416,10 +416,12 @@
     <type>RCadToolBarPanel</type>
     <type>RCharacterWidget</type>
     <type>RColorCombo</type>
+    <type>RComboBox</type>
     <type>RCommandLine</type>
     <type>RCoordinateListenerAdapter</type>
     <type>RDockWidget</type>
     <type>REventFilter</type>
+    <type>RToolOptionEventFilter</type>
     <type>REventHandler</type>
     <type>RFileSystemModel</type>
     <type>RFlowLayout</type>

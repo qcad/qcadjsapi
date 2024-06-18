@@ -5450,27 +5450,6 @@ PasswordEchoOnEdit = RCommandLine::PasswordEchoOnEdit,
               ;
             
     // Class: RCommandLine
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RCommandLine
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -5580,58 +5559,6 @@ PasswordEchoOnEdit = RCommandLine::PasswordEchoOnEdit,
               void customContextMenuRequestedEmitter(
                 const QPoint& pos
               );
-            
-    // Class: RCommandLine
-    // Function: resizeEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RCommandLine
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
             
     // Class: RCommandLine
     // Function: inputMethodHints
@@ -7181,58 +7108,6 @@ PasswordEchoOnEdit = RCommandLine::PasswordEchoOnEdit,
               void inputRejectedEmitter(
                 
               );
-            
-    // Class: RCommandLine
-    // Function: mouseMoveEvent
-    // Source: QLineEdit
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RCommandLine
-    // Function: paintEvent
-    // Source: QLineEdit
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
             
     // Class: RCommandLine
     // Function: inputMethodQuery

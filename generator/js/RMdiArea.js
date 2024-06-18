@@ -153,37 +153,6 @@ RMdiArea.TabbedView = RMdiArea_Wrapper.TabbedView;
 
       // functions:
       
-        // function 
-        RMdiArea.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RMdiArea.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RMdiArea);
-  }
-
-  
-  else {
-    
-        print("RMdiArea.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

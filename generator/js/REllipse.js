@@ -1557,11 +1557,12 @@ REllipse.Ray = REllipse_Wrapper.Ray;
         {
           //print("JS: REllipse.createInscribed");
           
-      if (arguments.length == 4) {
+      if (arguments.length >= 4 &&
+          arguments.length <= 5) {
     
                 // calling static wrapper:
                 return REllipse_WrapperSingletonInstance.createInscribed(
-                  arguments[0], arguments[1], arguments[2], arguments[3]
+                  arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
                 );
               
 
@@ -1572,6 +1573,34 @@ REllipse.Ray = REllipse_Wrapper.Ray;
   else {
     
         print("REllipse.createInscribed(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        REllipse.createFrom4Points = function() 
+          
+        {
+          //print("JS: REllipse.createFrom4Points");
+          
+      if (arguments.length == 4) {
+    
+                // calling static wrapper:
+                return REllipse_WrapperSingletonInstance.createFrom4Points(
+                  arguments[0], arguments[1], arguments[2], arguments[3]
+                );
+              
+
+        //copyProperties(this, wrapper, REllipse);
+  }
+
+  
+  else {
+    
+        print("REllipse.createFrom4Points(): wrong number / type of arguments");
       
     console.trace();
   }

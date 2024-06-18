@@ -6328,6 +6328,74 @@ QFont a1_cpp;
               }
             
     // Class: RGraphicsViewQt
+    // Function: setCursor
+    // Source: QWidget
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RGraphicsViewQt_Wrapper::setCursor
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QCursor(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (QCursor)
+  
+QCursor a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QCursor(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RGraphicsViewQt* w = getWrapped();
+                
+                w->setCursor(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setCursor";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RGraphicsViewQt
     // Function: unsetCursor
     // Source: QWidget
     // Static: false
@@ -15851,67 +15919,6 @@ Qt::WidgetAttribute a1_cpp;
               }
             
     // Class: RGraphicsViewQt
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RGraphicsViewQt_Wrapper::paintEngine
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RGraphicsViewQt* w = getWrapped();
-                QPaintEngine* res = 
-                    
-                w->paintEngine(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QPaintEngine*
-
-            return RJSHelper::cpp2js_QPaintEngine(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for paintEngine";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RGraphicsViewQt
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -17204,178 +17211,6 @@ bool a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for setSignalsBlocked";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RGraphicsViewQt
-    // Function: getCursor
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RGraphicsViewQt_Wrapper::getCursor
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RGraphicsViewQt* w = getWrapped();
-                QCursor res = 
-                    
-                w->getCursor(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QCursor
-
-            return RJSHelper::cpp2js_QCursor(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getCursor";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RGraphicsViewQt
-    // Function: setCursor
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RGraphicsViewQt_Wrapper::setCursor
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_Qt_CursorShape(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: cursorShape (Qt::CursorShape)
-  
-Qt::CursorShape a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_Qt_CursorShape(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RGraphicsViewQt* w = getWrapped();
-                
-                w->setCursor(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-      // check parameter types:
-      if (
-        RJSHelper::is_QCursor(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: cursor (QCursor)
-  
-QCursor a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QCursor(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RGraphicsViewQt* w = getWrapped();
-                
-                w->setCursor(
-                  a1_cpp
-    
-                );
-              
-                //setRecFlag(false);
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setCursor";
                   handler.trace();
                   return QJSValue();
                 

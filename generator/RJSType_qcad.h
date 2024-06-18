@@ -4,8 +4,8 @@
         #ifndef RJSTYPE_QCAD_H
         #define RJSTYPE_QCAD_H
       
-
-    #include "qcadjsapi_global.h"
+        #include "qcadjsapi_global.h"
+      
 
     #include <QObject>
     #include <QQmlEngine>
@@ -8256,6 +8256,40 @@
       };
     
       class QCADJSAPI_EXPORT 
+      RJSType_RComboBox : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "RComboBox";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_RComboBox();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+            // return true if the given type is derived from type
+            // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+            Q_INVOKABLE
+            static bool isOfType(int otherType);
+          
+
+      private:
+          static int id;
+      };
+    
+      class QCADJSAPI_EXPORT 
       RJSType_RCommandLine : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -8375,6 +8409,40 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_REventFilter();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+            // return true if the given type is derived from type
+            // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+            Q_INVOKABLE
+            static bool isOfType(int otherType);
+          
+
+      private:
+          static int id;
+      };
+    
+      class QCADJSAPI_EXPORT 
+      RJSType_RToolOptionEventFilter : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "RToolOptionEventFilter";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_RToolOptionEventFilter();
           //}
 
           Q_INVOKABLE

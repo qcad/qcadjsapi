@@ -602,6 +602,18 @@
         </parameters>
       </variant>
     </function>
+    <function name="getDrawingScale">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setDrawingScale">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
     <function name="viewportChanged">
       <variant return-type="void" access="public" signal="true">
         <parameters />

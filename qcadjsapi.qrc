@@ -30,6 +30,7 @@
     <file alias="generator/js/RCloseCurrentEvent.js">generator/js/RCloseCurrentEvent.js</file>
     <file alias="generator/js/RColor.js">generator/js/RColor.js</file>
     <file alias="generator/js/RColorCombo.js">generator/js/RColorCombo.js</file>
+    <file alias="generator/js/RComboBox.js">generator/js/RComboBox.js</file>
     <file alias="generator/js/RCommandEvent.js">generator/js/RCommandEvent.js</file>
     <file alias="generator/js/RCommandLine.js">generator/js/RCommandLine.js</file>
     <file alias="generator/js/RCoordinateEvent.js">generator/js/RCoordinateEvent.js</file>
@@ -253,6 +254,7 @@
     <file alias="generator/js/RToleranceEntity.js">generator/js/RToleranceEntity.js</file>
     <file alias="generator/js/RToolButton.js">generator/js/RToolButton.js</file>
     <file alias="generator/js/RToolMatrixItemDelegate.js">generator/js/RToolMatrixItemDelegate.js</file>
+    <file alias="generator/js/RToolOptionEventFilter.js">generator/js/RToolOptionEventFilter.js</file>
     <file alias="generator/js/RTraceData.js">generator/js/RTraceData.js</file>
     <file alias="generator/js/RTraceEntity.js">generator/js/RTraceEntity.js</file>
     <file alias="generator/js/RTransaction.js">generator/js/RTransaction.js</file>

@@ -63,11 +63,130 @@
     // Function: createInscribed
     // Source: REllipse
     // Static: true
-    // Parameters: 4
+    // Parameters: 5
     // preceding Parameters: -1
 
                 QJSValue 
               REllipseData_WrapperSingleton::createInscribed
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a3
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a4
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a5
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: p1 (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: p2 (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+  // convert js parameter to cpp: p3 (RVector)
+  
+RVector a3_cpp;
+
+      a3_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a3);
+        
+  // convert js parameter to cpp: p4 (RVector)
+  
+RVector a4_cpp;
+
+      a4_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a4);
+        
+  // convert js parameter to cpp: centerHint (RVector)
+  
+RVector a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = RVector::invalid;
+          }
+          else {
+            a5_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a5);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            REllipse res = 
+                
+                // call static member function:
+                REllipse::createInscribed(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    
+            );
+          
+            // return type: REllipse
+
+            return RJSHelper_qcad::cpp2js_REllipse(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for createInscribed";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: REllipseData
+    // Function: createFrom4Points
+    // Source: REllipse
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              REllipseData_WrapperSingleton::createFrom4Points
               (
                 
   const QJSValue& 
@@ -133,7 +252,7 @@ RVector a4_cpp;
             REllipse res = 
                 
                 // call static member function:
-                REllipse::createInscribed(
+                REllipse::createFrom4Points(
               a1_cpp
     , a2_cpp
     , a3_cpp
@@ -152,7 +271,7 @@ RVector a4_cpp;
             
   }
 
-                  qWarning() << "no matching function variant found for createInscribed";
+                  qWarning() << "no matching function variant found for createFrom4Points";
                   handler.trace();
                   return QJSValue();
                 

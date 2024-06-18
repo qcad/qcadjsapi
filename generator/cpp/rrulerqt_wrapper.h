@@ -525,6 +525,42 @@
      inputMethodHints READ inputMethodHints WRITE setInputMethodHints
   )
 
+  Q_PROPERTY(
+    
+    QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
 
     private:
       // disable copy constructor:
@@ -572,6 +608,35 @@
           return ret;
         }
       
+        // enums:
+        
+  enum Shape {
+    NoFrame = RRulerQt::NoFrame,
+Box = RRulerQt::Box,
+Panel = RRulerQt::Panel,
+WinPanel = RRulerQt::WinPanel,
+HLine = RRulerQt::HLine,
+VLine = RRulerQt::VLine,
+StyledPanel = RRulerQt::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = RRulerQt::Plain,
+Raised = RRulerQt::Raised,
+Sunken = RRulerQt::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = RRulerQt::Shadow_Mask,
+Shape_Mask = RRulerQt::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
     /*
     // special constructor used as prototype:
     
@@ -5372,27 +5437,6 @@
               ;
             
     // Class: RRulerQt
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RRulerQt
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -5502,84 +5546,6 @@
               void customContextMenuRequestedEmitter(
                 const QPoint& pos
               );
-            
-    // Class: RRulerQt
-    // Function: mousePressEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mousePressEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RRulerQt
-    // Function: mouseReleaseEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseReleaseEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RRulerQt
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
             
     // Class: RRulerQt
     // Function: inputMethodQuery
@@ -5968,58 +5934,6 @@
               
                   QJSValue 
                   setFrameRect
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RRulerQt
-    // Function: mouseMoveEvent
-    // Source: QFrame
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RRulerQt
-    // Function: resizeEvent
-    // Source: QFrame
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
               (
 
                 

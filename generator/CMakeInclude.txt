@@ -63,6 +63,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rcolor_wrapper.h
     generator/cpp/rcolorcombo_base.h
     generator/cpp/rcolorcombo_wrapper.h
+    generator/cpp/rcombobox_base.h
+    generator/cpp/rcombobox_wrapper.h
     generator/cpp/rcommandevent_base.h
     generator/cpp/rcommandevent_wrapper.h
     generator/cpp/rcommandline_base.h
@@ -509,6 +511,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rtoolbutton_wrapper.h
     generator/cpp/rtoolmatrixitemdelegate_base.h
     generator/cpp/rtoolmatrixitemdelegate_wrapper.h
+    generator/cpp/rtooloptioneventfilter_base.h
+    generator/cpp/rtooloptioneventfilter_wrapper.h
     generator/cpp/rtracedata_base.h
     generator/cpp/rtracedata_wrapper.h
     generator/cpp/rtraceentity_base.h
@@ -625,6 +629,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rcolor_wrapper.cpp
     generator/cpp/rcolorcombo_base.cpp
     generator/cpp/rcolorcombo_wrapper.cpp
+    generator/cpp/rcombobox_base.cpp
+    generator/cpp/rcombobox_wrapper.cpp
     generator/cpp/rcommandevent_base.cpp
     generator/cpp/rcommandevent_wrapper.cpp
     generator/cpp/rcommandline_base.cpp
@@ -1071,6 +1077,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rtoolbutton_wrapper.cpp
     generator/cpp/rtoolmatrixitemdelegate_base.cpp
     generator/cpp/rtoolmatrixitemdelegate_wrapper.cpp
+    generator/cpp/rtooloptioneventfilter_base.cpp
+    generator/cpp/rtooloptioneventfilter_wrapper.cpp
     generator/cpp/rtracedata_base.cpp
     generator/cpp/rtracedata_wrapper.cpp
     generator/cpp/rtraceentity_base.cpp

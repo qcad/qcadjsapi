@@ -165,6 +165,24 @@
 
       // enum values:
       
+  // enum: Shape
+RTextEdit.NoFrame = RTextEdit_Wrapper.NoFrame;
+RTextEdit.Box = RTextEdit_Wrapper.Box;
+RTextEdit.Panel = RTextEdit_Wrapper.Panel;
+RTextEdit.WinPanel = RTextEdit_Wrapper.WinPanel;
+RTextEdit.HLine = RTextEdit_Wrapper.HLine;
+RTextEdit.VLine = RTextEdit_Wrapper.VLine;
+RTextEdit.StyledPanel = RTextEdit_Wrapper.StyledPanel;
+
+  // enum: Shadow
+RTextEdit.Plain = RTextEdit_Wrapper.Plain;
+RTextEdit.Raised = RTextEdit_Wrapper.Raised;
+RTextEdit.Sunken = RTextEdit_Wrapper.Sunken;
+
+  // enum: StyleMask
+RTextEdit.Shadow_Mask = RTextEdit_Wrapper.Shadow_Mask;
+RTextEdit.Shape_Mask = RTextEdit_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 RTextEdit.AdjustIgnored = RTextEdit_Wrapper.AdjustIgnored;
 RTextEdit.AdjustToContentsOnFirstShow = RTextEdit_Wrapper.AdjustToContentsOnFirstShow;

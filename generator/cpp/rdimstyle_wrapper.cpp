@@ -4948,12 +4948,18 @@ RS::KnownVariable a1_cpp;
   )
 
    && RJSHelper::is_bool(handler, a2
+    , true
+  
   )
 
    && RJSHelper::is_bool(handler, a3
+    , true
+  
   )
 
    && RJSHelper::is_bool(handler, a4
+    , true
+  
   )
 
   
@@ -4971,19 +4977,37 @@ RPropertyTypeId a1_cpp;
   
 bool a2_cpp;
 
-      a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+      
+          if (a2.isUndefined()) {
+            a2_cpp = false;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
         
   // convert js parameter to cpp: noAttributes (bool)
   
 bool a3_cpp;
 
-      a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+      
+          if (a3.isUndefined()) {
+            a3_cpp = false;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
         
   // convert js parameter to cpp: showOnRequest (bool)
   
 bool a4_cpp;
 
-      a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+      
+          if (a4.isUndefined()) {
+            a4_cpp = false;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+          }
         
 
     // call function:

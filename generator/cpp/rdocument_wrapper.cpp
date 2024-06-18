@@ -196,7 +196,7 @@
     // Function: 
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 3
     // preceding Parameters: -1
 RDocument_Wrapper::RDocument_Wrapper
                 
@@ -208,7 +208,9 @@ RDocument_Wrapper::RDocument_Wrapper
   const QJSValue& 
   a1, 
   const QJSValue& 
-  a2
+  a2, 
+  const QJSValue& 
+  a3
               ) 
               
                 : RJSWrapperObj(*(RJSApi*)h)
@@ -224,6 +226,11 @@ RDocument_Wrapper::RDocument_Wrapper
   )
 
    && RJSHelper_qcad::is_RSpatialIndex_ptr(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
   )
 
   
@@ -249,6 +256,18 @@ RDocument_Wrapper::RDocument_Wrapper
 
       a2_cpp = RJSHelper_qcad::js2cpp_RSpatialIndex_ptr(handler, a2);
         
+  // convert js parameter to cpp: beforeLoad (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = false;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
 
     // call function:
     
@@ -258,6 +277,7 @@ RDocument_Wrapper::RDocument_Wrapper
             wrapped = new RDocument(
                 *a1_cpp
     , *a2_cpp
+    , a3_cpp
     
             );
             wrappedCreated = true;
@@ -277,6 +297,7 @@ RDocument_Wrapper::RDocument_Wrapper
                     if (
                       a1.isUndefined()
    && a2.isUndefined()
+   && a3.isUndefined()
   
                       ) {
                       wrapped = nullptr;

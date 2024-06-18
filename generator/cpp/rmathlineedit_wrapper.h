@@ -5439,27 +5439,6 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
               ;
             
     // Class: RMathLineEdit
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RMathLineEdit
     // Function: ensurePolished
     // Source: QWidget
     // Static: false
@@ -5569,58 +5548,6 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
               void customContextMenuRequestedEmitter(
                 const QPoint& pos
               );
-            
-    // Class: RMathLineEdit
-    // Function: resizeEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMathLineEdit
-    // Function: actionEvent
-    // Source: QWidget
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      actionEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
             
     // Class: RMathLineEdit
     // Function: inputMethodHints
@@ -7191,58 +7118,6 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
               );
             
     // Class: RMathLineEdit
-    // Function: mouseMoveEvent
-    // Source: QLineEdit
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMathLineEdit
-    // Function: paintEvent
-    // Source: QLineEdit
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RMathLineEdit
     // Function: inputMethodQuery
     // Source: QLineEdit
     // Static: false
@@ -7696,25 +7571,6 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
               // called when signal is emitted from wrapped class:
               public slots:
               void downKeyPressedEmitter(
-                
-              );
-            
-    // Class: RMathLineEdit
-    // Function: enterKeyPressed
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void enterKeyPressed(
-                
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void enterKeyPressedEmitter(
                 
               );
             

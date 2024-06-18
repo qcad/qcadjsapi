@@ -169,37 +169,6 @@ RMathComboBox.AdjustToMinimumContentsLengthWithIcon = RMathComboBox_Wrapper.Adju
 
       // functions:
       
-        // function 
-        RMathComboBox.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RMathComboBox.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RMathComboBox);
-  }
-
-  
-  else {
-    
-        print("RMathComboBox.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
       // static functions:
       

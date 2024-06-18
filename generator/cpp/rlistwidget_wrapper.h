@@ -524,6 +524,42 @@
   Q_PROPERTY(
     
     QJSValue
+     frameRect READ frameRect WRITE setFrameRect
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShadow READ frameShadow WRITE setFrameShadow
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameShape READ frameShape WRITE setFrameShape
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     frameWidth READ frameWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     lineWidth READ lineWidth WRITE setLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     midLineWidth READ midLineWidth WRITE setMidLineWidth
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -762,6 +798,33 @@
       
         // enums:
         
+  enum Shape {
+    NoFrame = RListWidget::NoFrame,
+Box = RListWidget::Box,
+Panel = RListWidget::Panel,
+WinPanel = RListWidget::WinPanel,
+HLine = RListWidget::HLine,
+VLine = RListWidget::VLine,
+StyledPanel = RListWidget::StyledPanel,
+
+  };
+  Q_ENUM(Shape)
+
+  enum Shadow {
+    Plain = RListWidget::Plain,
+Raised = RListWidget::Raised,
+Sunken = RListWidget::Sunken,
+
+  };
+  Q_ENUM(Shadow)
+
+  enum StyleMask {
+    Shadow_Mask = RListWidget::Shadow_Mask,
+Shape_Mask = RListWidget::Shape_Mask,
+
+  };
+  Q_ENUM(StyleMask)
+
   enum SizeAdjustPolicy {
     AdjustIgnored = RListWidget::AdjustIgnored,
 AdjustToContentsOnFirstShow = RListWidget::AdjustToContentsOnFirstShow,
@@ -5599,27 +5662,6 @@ IconMode = RListWidget::IconMode,
   a1
       = QJSValue()
     
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RListWidget
-    // Function: paintEngine
-    // Source: QWidget
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
-
-                
               )
               
                 const

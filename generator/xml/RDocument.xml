@@ -14,6 +14,7 @@
         <parameters>
           <parameter const="false" type="RStorage" modifier="&amp;" name="storage" />
           <parameter const="false" type="RSpatialIndex" modifier="&amp;" name="spatialIndex" />
+          <parameter const="false" type="bool" modifier="" name="beforeLoad" default="false" />
         </parameters>
       </variant>
     </constructor>

@@ -1399,7 +1399,7 @@
     // Function: createInscribed
     // Source: 
     // Static: true
-    // Parameters: 4
+    // Parameters: 5
     // preceding Parameters: -1
 
               public:
@@ -1407,6 +1407,45 @@
               
                   QJSValue 
                   createInscribed
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a4
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a5
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: REllipse
+    // Function: createFrom4Points
+    // Source: 
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  createFrom4Points
               (
 
                 

@@ -89,17 +89,7 @@
             
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
-    this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
-  
-    this["clicked(QModelIndex)"] = Object.getPrototypeOf(this).clicked;
-  
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
-  
-    this["activated(QModelIndex)"] = Object.getPrototypeOf(this).activated;
-  
-    this["entered(QModelIndex)"] = Object.getPrototypeOf(this).entered;
-  
-    this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
   
     this["expanded(QModelIndex)"] = Object.getPrototypeOf(this).expanded;
   
@@ -194,6 +184,24 @@
 
       // enum values:
       
+  // enum: Shape
+RTreeWidget.NoFrame = RTreeWidget_Wrapper.NoFrame;
+RTreeWidget.Box = RTreeWidget_Wrapper.Box;
+RTreeWidget.Panel = RTreeWidget_Wrapper.Panel;
+RTreeWidget.WinPanel = RTreeWidget_Wrapper.WinPanel;
+RTreeWidget.HLine = RTreeWidget_Wrapper.HLine;
+RTreeWidget.VLine = RTreeWidget_Wrapper.VLine;
+RTreeWidget.StyledPanel = RTreeWidget_Wrapper.StyledPanel;
+
+  // enum: Shadow
+RTreeWidget.Plain = RTreeWidget_Wrapper.Plain;
+RTreeWidget.Raised = RTreeWidget_Wrapper.Raised;
+RTreeWidget.Sunken = RTreeWidget_Wrapper.Sunken;
+
+  // enum: StyleMask
+RTreeWidget.Shadow_Mask = RTreeWidget_Wrapper.Shadow_Mask;
+RTreeWidget.Shape_Mask = RTreeWidget_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 RTreeWidget.AdjustIgnored = RTreeWidget_Wrapper.AdjustIgnored;
 RTreeWidget.AdjustToContentsOnFirstShow = RTreeWidget_Wrapper.AdjustToContentsOnFirstShow;
@@ -239,37 +247,6 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
 
 
       // functions:
-      
-        // function 
-        RTreeWidget.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RTreeWidget.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RTreeWidget);
-  }
-
-  
-  else {
-    
-        print("RTreeWidget.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
       
         // function 
         RTreeWidget.prototype.mousePressEvent = function() 
