@@ -598,7 +598,8 @@ void RScriptHandlerJs::init() {
     qDebug() << "RScriptHandlerJs::init";
 
     // TODO: use QQmlApplicationEngine to allow mixing QML / JS:
-    engine = new QJSEngine();
+    //engine = new QJSEngine();
+    engine = new QQmlApplicationEngine();
 
     rjsapi = new RJSApi(engine);
     tools = rjsapi->getTools();
