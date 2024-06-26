@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RWipeoutData.h">
+  <class name="RWipeoutData">
+    <super_list>
+      <super name="RPolylineData" />
+      <super name="RPainterPathSource" />
+    </super_list>
+    <class_decl name="RWipeoutEntity" />
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getPainterPaths">
+      <variant return-type="QList&lt;RPainterPath&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="draft" default="false" />
+          <parameter const="false" type="double" modifier="" name="pixelSizeHint" default="RDEFAULT_MIN1" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShowFrame">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShowFame">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

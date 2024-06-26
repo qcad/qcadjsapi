@@ -145,6 +145,8 @@
       <key>EntitySpline</key>
       <key>EntityViewport</key>
       <key>EntityTolerance</key>
+      <key>EntityWipeout</key>
+      <key>EntityXRef</key>
       <key>EntityUser</key>
     </enum>
     <enum name="ProjectionRenderingHint">
