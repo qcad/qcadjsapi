@@ -6,7 +6,8 @@
   <class_decl name="RLine" />
   <class name="RWipeoutEntity" ownership="cpp" sharedpointer="true">
     <super_list>
-      <super name="REntity" />
+      <super name="RObject" />
+      <super name="REntity" downcast="true" />
     </super_list>
     <property static="true" type="RPropertyTypeId" name="PropertyCustom" />
     <property static="true" type="RPropertyTypeId" name="PropertyHandle" />
@@ -102,6 +103,55 @@
         <parameters>
           <parameter const="true" type="RPolyline" modifier="&amp;" name="l" />
         </parameters>
+      </variant>
+    </function>
+    <function name="getShowFrame">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShowFrame">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="countVertices">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="appendVertex">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="vertex" />
+          <parameter const="false" type="double" modifier="" name="bulge" default="0.0" />
+          <parameter const="false" type="double" modifier="" name="w1" default="0.0" />
+          <parameter const="false" type="double" modifier="" name="w2" default="0.0" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getEndPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStartPoint">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVertexAt">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="i" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeLastVertex">
+      <variant return-type="void" access="public">
+        <parameters />
       </variant>
     </function>
   </class>

@@ -437,6 +437,8 @@
 //#include "generator/cpp/rpolygonoffset_wrapper.h"
 #include "generator/cpp/rtoolmatrixitemdelegate_wrapper.h"
 #include "generator/cpp/rspatialindexvisitoradapter_wrapper.h"
+#include "generator/cpp/rwipeoutentity_wrapper.h"
+#include "generator/cpp/rwipeoutdata_wrapper.h"
 //#include "generator/cpp/rgraphicsviewskia_wrapper.h"
 
 /*
@@ -1058,6 +1060,8 @@ void RScriptHandlerJs::init() {
     RTraceEntity_Wrapper::init(*rjsapi);
     RViewportEntity_Wrapper::init(*rjsapi);
     RXLineEntity_Wrapper::init(*rjsapi);
+    RWipeoutEntity_Wrapper::init(*rjsapi);
+
     RArcData_Wrapper::init(*rjsapi);
     RAttributeDefinitionData_Wrapper::init(*rjsapi);
     RAttributeData_Wrapper::init(*rjsapi);
@@ -1091,17 +1095,22 @@ void RScriptHandlerJs::init() {
     RTraceData_Wrapper::init(*rjsapi);
     RViewportData_Wrapper::init(*rjsapi);
     RXLineData_Wrapper::init(*rjsapi);
+    RWipeoutData_Wrapper::init(*rjsapi);
+
+
     RLinetypePattern_Wrapper::init(*rjsapi);
     RLinetype_Wrapper::init(*rjsapi);
     RStorage_Wrapper::init(*rjsapi);
     RLayout_Wrapper::init(*rjsapi);
     RTextRenderer_Wrapper::init(*rjsapi);
     RLayerState_Wrapper::init(*rjsapi);
+
     RRestrictAngleLength_Wrapper::init(*rjsapi);
     RRestrictHorizontal_Wrapper::init(*rjsapi);
     RRestrictOff_Wrapper::init(*rjsapi);
     RRestrictOrthogonal_Wrapper::init(*rjsapi);
     RRestrictVertical_Wrapper::init(*rjsapi);
+
     RSnapAuto_Wrapper::init(*rjsapi);
     RSnapCenter_Wrapper::init(*rjsapi);
     RSnapDistance_Wrapper::init(*rjsapi);

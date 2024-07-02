@@ -563,6 +563,10 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rwheelevent_wrapper.h
     generator/cpp/rwidget_base.h
     generator/cpp/rwidget_wrapper.h
+    generator/cpp/rwipeoutdata_base.h
+    generator/cpp/rwipeoutdata_wrapper.h
+    generator/cpp/rwipeoutentity_base.h
+    generator/cpp/rwipeoutentity_wrapper.h
     generator/cpp/rxline_base.h
     generator/cpp/rxline_wrapper.h
     generator/cpp/rxlinedata_base.h
@@ -1129,6 +1133,10 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rwheelevent_wrapper.cpp
     generator/cpp/rwidget_base.cpp
     generator/cpp/rwidget_wrapper.cpp
+    generator/cpp/rwipeoutdata_base.cpp
+    generator/cpp/rwipeoutdata_wrapper.cpp
+    generator/cpp/rwipeoutentity_base.cpp
+    generator/cpp/rwipeoutentity_wrapper.cpp
     generator/cpp/rxline_base.cpp
     generator/cpp/rxline_wrapper.cpp
     generator/cpp/rxlinedata_base.cpp

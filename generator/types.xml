@@ -99,6 +99,7 @@
     <type>RUcs::Id</type>
     <type>RView::Id</type>
     <type>RViewportEntity::Id</type>
+    <type>RWipeoutEntity::Id</type>
     <type>RXLineEntity::Id</type>
     <type>RGraphicsViewWorker::ClearMode</type>
   </primitive>
@@ -163,6 +164,7 @@
     <type>RUcs</type>
     <type>RView</type>
     <type>RViewportEntity</type>
+    <type>RWipeoutEntity</type>
     <type>RXLineEntity</type>
   </shared_ptr_no_copy>
 
@@ -249,6 +251,7 @@
     <type>RUnit</type>
     <type>RViewFocusListenerAdapter</type>
     <type>RViewportData</type>
+    <type>RWipeoutData</type>
     <type>RXLine</type>
     <type>RXLineData</type>
     <type>RVector</type>
@@ -406,6 +409,7 @@
     <type>RViewFocusListener</type>
     <type>RViewListener</type>
     <type>RViewportEntity</type>
+    <type>RWipeoutEntity</type>
     <type>RWheelEvent</type>
     <type>RXLineEntity</type>
   </wrapped_ptr>

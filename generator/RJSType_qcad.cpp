@@ -121,6 +121,8 @@
                 ,
                 RJSType_RViewportEntity::getIdStatic()
                 ,
+                RJSType_RWipeoutEntity::getIdStatic()
+                ,
                 RJSType_RXLineEntity::getIdStatic()
                 
             };
@@ -574,6 +576,8 @@
                 RJSType_RView::getIdStatic()
                 ,
                 RJSType_RViewportEntity::getIdStatic()
+                ,
+                RJSType_RWipeoutEntity::getIdStatic()
                 ,
                 RJSType_RXLineEntity::getIdStatic()
                 
@@ -1781,6 +1785,33 @@
 
       
         bool RJSType_RViewportEntity::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
+      int RJSType_RWipeoutEntity::id = -1;
+
+      int RJSType_RWipeoutEntity::getId() const {
+          return RJSType_RWipeoutEntity::getIdStatic();
+      }
+
+      int RJSType_RWipeoutEntity::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RWipeoutEntity());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RWipeoutEntity::isOfType(int otherType) {
             // initialize list of derrived types:
             
             static QSet<int> derrivedTypes = {
@@ -3144,6 +3175,8 @@
             static QSet<int> derrivedTypes = {
               getIdStatic(),
               
+                RJSType_RWipeoutData::getIdStatic()
+                
             };
 
             // check for derived types:
@@ -3770,6 +3803,33 @@
 
       
         bool RJSType_RViewportData::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
+      int RJSType_RWipeoutData::id = -1;
+
+      int RJSType_RWipeoutData::getId() const {
+          return RJSType_RWipeoutData::getIdStatic();
+      }
+
+      int RJSType_RWipeoutData::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RWipeoutData());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RWipeoutData::isOfType(int otherType) {
             // initialize list of derrived types:
             
             static QSet<int> derrivedTypes = {
@@ -4586,6 +4646,8 @@
                 RJSType_RToleranceData::getIdStatic()
                 ,
                 RJSType_RViewportData::getIdStatic()
+                ,
+                RJSType_RWipeoutData::getIdStatic()
                 ,
                 RJSType_RXLineData::getIdStatic()
                 
