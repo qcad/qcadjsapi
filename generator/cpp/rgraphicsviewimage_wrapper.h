@@ -1573,6 +1573,50 @@ BlackWhite = RGraphicsViewImage::BlackWhite,
               ;
             
     // Class: RGraphicsViewImage
+    // Function: setForceTextHeightThreshold
+    // Source: RGraphicsView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setForceTextHeightThreshold
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RGraphicsViewImage
+    // Function: getForceTextHeightThreshold
+    // Source: RGraphicsView
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getForceTextHeightThreshold
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
     // Function: isPathVisible
     // Source: RGraphicsView
     // Static: false

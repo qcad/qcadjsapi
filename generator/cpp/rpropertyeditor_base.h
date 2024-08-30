@@ -169,6 +169,28 @@ RPropertyEditor_Base
     public:
     // implementation of virtual public function
     // calls JS implementation if available
+    virtual void updateFromDocumentNow(
+      RDocument* document, bool onlyChanges, RS::EntityType filter=RS::EntityUnknown, bool manual=false, bool showOnRequest=false
+    )
+    
+    ;
+
+    
+      // implementation of virtual public function
+      // always calls super implementation
+      virtual void updateFromDocumentNowSup(
+        RDocument* document, bool onlyChanges, RS::EntityType filter=RS::EntityUnknown, bool manual=false, bool showOnRequest=false
+      )
+      
+      {
+        RPropertyEditor::updateFromDocumentNow(
+          document, onlyChanges, filter, manual, showOnRequest
+        );
+      }
+    
+    public:
+    // implementation of virtual public function
+    // calls JS implementation if available
     virtual void updateFromObject(
       RObject* object, RDocument* document=NULL
     )

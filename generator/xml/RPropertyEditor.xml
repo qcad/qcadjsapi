@@ -2,6 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPropertyEditor.h">
   <class name="RPropertyEditor" ownership="cpp" inheritable="true">
     <super_list>
+      <super name="QObject" />
       <super name="RPropertyListener" />
       <super name="RLayerListener" />
     </super_list>
@@ -16,6 +17,17 @@
       </variant>
     </function>
     <function name="updateFromDocument">
+      <variant return-type="void" virtual="true" overridable="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="*" name="document" />
+          <parameter const="false" type="bool" modifier="" name="onlyChanges" />
+          <parameter const="false" type="RS::EntityType" modifier="" name="filter" default="RS::EntityUnknown" />
+          <parameter const="false" type="bool" modifier="" name="manual" default="false" />
+          <parameter const="false" type="bool" modifier="" name="showOnRequest" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="updateFromDocumentNow">
       <variant return-type="void" virtual="true" overridable="true" access="public">
         <parameters>
           <parameter const="false" type="RDocument" modifier="*" name="document" />

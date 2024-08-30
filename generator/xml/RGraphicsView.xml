@@ -669,6 +669,18 @@
         <parameters />
       </variant>
     </function>
+    <function name="setForceTextHeightThreshold">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getForceTextHeightThreshold">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="isPathVisible">
       <variant return-type="bool" const="true" access="public">
         <parameters>

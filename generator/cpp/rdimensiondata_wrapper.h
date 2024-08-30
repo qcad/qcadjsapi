@@ -4138,7 +4138,7 @@
               ;
             
     // Class: RDimensionData
-    // Function: getTextAngle
+    // Function: getTextRotation
     // Source: 
     // Static: false
     // Parameters: 0
@@ -4148,13 +4148,36 @@
               Q_INVOKABLE 
               
                   QJSValue 
-                  getTextAngle
+                  getTextRotation
               (
 
                 
               )
               
                 const
+              
+              ;
+            
+    // Class: RDimensionData
+    // Function: setTextRotation
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setTextRotation
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
               
               ;
             

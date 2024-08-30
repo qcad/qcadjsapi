@@ -3237,33 +3237,6 @@
             return derrivedTypes.contains(otherType);
         }
       
-      int RJSType_RPropertyEditor::id = -1;
-
-      int RJSType_RPropertyEditor::getId() const {
-          return RJSType_RPropertyEditor::getIdStatic();
-      }
-
-      int RJSType_RPropertyEditor::getIdStatic() {
-          if (id<0) {
-              id = RJSTypeEnum::reserve(new RJSType_RPropertyEditor());
-          }
-          return id;
-      }
-
-
-      
-        bool RJSType_RPropertyEditor::isOfType(int otherType) {
-            // initialize list of derrived types:
-            
-            static QSet<int> derrivedTypes = {
-              getIdStatic(),
-              
-            };
-
-            // check for derived types:
-            return derrivedTypes.contains(otherType);
-        }
-      
       int RJSType_RPropertyTypeId::id = -1;
 
       int RJSType_RPropertyTypeId::getId() const {
@@ -7962,6 +7935,33 @@
 
       
         bool RJSType_RPreferencesListenerAdapter::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
+      int RJSType_RPropertyEditor::id = -1;
+
+      int RJSType_RPropertyEditor::getId() const {
+          return RJSType_RPropertyEditor::getIdStatic();
+      }
+
+      int RJSType_RPropertyEditor::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RPropertyEditor());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RPropertyEditor::isOfType(int otherType) {
             // initialize list of derrived types:
             
             static QSet<int> derrivedTypes = {

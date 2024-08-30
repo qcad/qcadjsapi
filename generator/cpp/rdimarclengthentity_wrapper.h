@@ -4472,7 +4472,7 @@
               ;
             
     // Class: RDimArcLengthEntity
-    // Function: getTextAngle
+    // Function: getTextRotation
     // Source: RDimensionEntity
     // Static: false
     // Parameters: 0
@@ -4482,7 +4482,7 @@
               Q_INVOKABLE 
               
                   QJSValue 
-                  getTextAngle
+                  getTextRotation
               (
 
                 

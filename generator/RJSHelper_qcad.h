@@ -5663,6 +5663,19 @@
           
           // implementation of base casters that cast RPropertyEditor to base classes:
           
+            // implementation of base casters that casts RPropertyEditor to QObject
+            class RJSBasecaster_RPropertyEditor_QObject : public RJSBasecaster_QObject {
+            public:
+              virtual QObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RPropertyEditor::getIdStatic()) {
+                  return (QObject*)(RPropertyEditor*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
             // implementation of base casters that casts RPropertyEditor to RPropertyListener
             class RJSBasecaster_RPropertyEditor_RPropertyListener : public RJSBasecaster_RPropertyListener {
             public:
@@ -8551,11 +8564,6 @@
       static RPropertyChange js2cpp_RPropertyChange(RJSApi& handler, const QJSValue& v);
       static bool is_RPropertyChange(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
-      static QJSValue cpp2js_RPropertyEditor(RJSApi& handler, const RPropertyEditor* v);
-      static QJSValue cpp2js_RPropertyEditor(RJSApi& handler, const RPropertyEditor& v);
-      static RPropertyEditor js2cpp_RPropertyEditor(RJSApi& handler, const QJSValue& v);
-      static bool is_RPropertyEditor(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
       static QJSValue cpp2js_RPropertyTypeId(RJSApi& handler, const RPropertyTypeId* v);
       static QJSValue cpp2js_RPropertyTypeId(RJSApi& handler, const RPropertyTypeId& v);
       static RPropertyTypeId js2cpp_RPropertyTypeId(RJSApi& handler, const QJSValue& v);
@@ -9096,10 +9104,6 @@
       static RProgressHandler* js2cpp_RProgressHandler_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RProgressHandler_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
-      static QJSValue cpp2js_RPropertyEditor(RJSApi& handler, RPropertyEditor* v);
-      static RPropertyEditor* js2cpp_RPropertyEditor_ptr(RJSApi& handler, const QJSValue& v);
-      static bool is_RPropertyEditor_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
-    
       static QJSValue cpp2js_RPropertyEvent(RJSApi& handler, RPropertyEvent* v);
       static RPropertyEvent* js2cpp_RPropertyEvent_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RPropertyEvent_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -9494,6 +9498,11 @@
       static QJSValue cpp2js_RPreferencesListenerAdapter(RJSApi& handler, const RPreferencesListenerAdapter* v);
       static RPreferencesListenerAdapter* js2cpp_RPreferencesListenerAdapter_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RPreferencesListenerAdapter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RPropertyEditor(RJSApi& handler, RPropertyEditor* v);
+      static QJSValue cpp2js_RPropertyEditor(RJSApi& handler, const RPropertyEditor* v);
+      static RPropertyEditor* js2cpp_RPropertyEditor_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RPropertyEditor_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RPropertyListenerAdapter(RJSApi& handler, RPropertyListenerAdapter* v);
       static QJSValue cpp2js_RPropertyListenerAdapter(RJSApi& handler, const RPropertyListenerAdapter* v);

@@ -551,6 +551,8 @@
         
           #include "rpreferenceslistener_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
           #include "rpropertylistener_wrapper.h"
         
           #include "rlayerlistener_wrapper.h"
@@ -2707,6 +2709,9 @@
             // registration of base casters that cast RPropertyChange to base classes:
             
             // registration of base casters that cast RPropertyEditor to base classes:
+            
+              // registration of base casters that casts RPropertyEditor to QObject:
+              QObject_Wrapper::registerBasecaster_QObject(new RJSBasecaster_RPropertyEditor_QObject());
             
               // registration of base casters that casts RPropertyEditor to RPropertyListener:
               RPropertyListener_Wrapper::registerBasecaster_RPropertyListener(new RJSBasecaster_RPropertyEditor_RPropertyListener());
@@ -16369,122 +16374,6 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_RPropertyChange::getIdStatic())).toBool();
       }
     
-      QJSValue RJSHelper_qcad::cpp2js_RPropertyEditor(RJSApi& handler, const RPropertyEditor* v) {
-          QJSEngine* engine = handler.getEngine();
-          RPropertyEditor_Wrapper* ret;
-
-          if (v==nullptr) {
-              ret = new RPropertyEditor_Wrapper(handler, nullptr, false);
-          }
-          else {
-              // wrapper takes ownership of RPropertyEditor object:
-              ret = new RPropertyEditor_Wrapper(handler, new RPropertyEditor(*v), true);
-          }
-
-          // JS: new RPropertyEditor('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RPropertyEditor");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RPropertyEditor is undefined. Use RPropertyEditor_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new RPropertyEditor('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new RPropertyEditor(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      QJSValue RJSHelper_qcad::cpp2js_RPropertyEditor(RJSApi& handler, const RPropertyEditor& v) {
-          QJSEngine* engine = handler.getEngine();
-          // wrapper takes ownership of the RPropertyEditor object:
-          RPropertyEditor_Wrapper* ret = new RPropertyEditor_Wrapper(handler, new RPropertyEditor(v), true);
-
-          // JS: new RPropertyEditor('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RPropertyEditor");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RPropertyEditor is undefined. Use RPropertyEditor_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new RPropertyEditor('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new RPropertyEditor(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-      }
-
-      RPropertyEditor RJSHelper_qcad::js2cpp_RPropertyEditor(RJSApi& handler, const QJSValue& v) {
-          /*
-          RPropertyEditor_Wrapper* wrapper = getWrapper<RPropertyEditor_Wrapper>(v);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_RPropertyEditor: no wrapper";
-              handler.trace();
-              Q_ASSERT(false);
-              return RPropertyEditor();
-          }
-          //return *(RPropertyEditor*)wrapper->getWrappedVoid();
-          RPropertyEditor* ret = wrapper->getWrapped();
-          if (ret==nullptr) {
-              qWarning() << "js2cpp_RPropertyEditor: wrapped pointer is NULL";
-              return RPropertyEditor();
-          }
-          return *ret;
-          */
-
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_RPropertyEditor: not a QObject";
-              return RPropertyEditor();
-          }
-          QObject* obj = jwrapper.toQObject();
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_RPropertyEditor_ptr: no wrapper";
-              handler.trace();
-              return RPropertyEditor();
-          }
-          //RPropertyEditor* ret = getWrapped_RPropertyEditor(wrapper);
-          RPropertyEditor* ret = RPropertyEditor_Wrapper::getWrappedBase(wrapper);
-          if (ret==nullptr) {
-              return RPropertyEditor();
-          }
-          return *ret;
-      }
-
-      bool RJSHelper_qcad::is_RPropertyEditor(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          //QJSValue fun = v.property("getType");
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper_qcad::is_RPropertyEditor: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              //return v.isObject();
-              // type is for example string, number, etc.:
-              return false;
-          }
-
-          return fun.call(QJSValueList() << QJSValue(RJSType_RPropertyEditor::getIdStatic())).toBool();
-      }
-    
       QJSValue RJSHelper_qcad::cpp2js_RPropertyTypeId(RJSApi& handler, const RPropertyTypeId* v) {
           QJSEngine* engine = handler.getEngine();
           RPropertyTypeId_Wrapper* ret;
@@ -28103,80 +27992,6 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_RProgressHandler::getIdStatic())).toBool();
       }
     
-      QJSValue RJSHelper_qcad::cpp2js_RPropertyEditor(RJSApi& handler, RPropertyEditor* v) {
-
-          
-
-          QJSEngine* engine = handler.getEngine();
-          RPropertyEditor_Wrapper* ret = new RPropertyEditor_Wrapper(handler, v, false);
-
-          // JS: new RPropertyEditor('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RPropertyEditor");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RPropertyEditor is undefined. Use RPropertyEditor_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          QJSValue r = cl.callAsConstructor(args);
-
-          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
-          //QJSValue r = engine->evaluate("new RPropertyEditor('__GOT_WRAPPER__', wrapper);");
-
-          if (r.isError()) {
-              qWarning()
-                      << "Uncaught exception in new RPropertyEditor(wrapper)"
-                      << ":" << r.toString();
-          }
-          return r;
-
-          //return engine->newQObject(ret);
-      }
-
-      RPropertyEditor* RJSHelper_qcad::js2cpp_RPropertyEditor_ptr(RJSApi& handler, const QJSValue& v) {
-          QJSValue jwrapper = getWrapperQJSValue(v);
-          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
-              // 0 is allowed for pointers (null ptr):
-              return nullptr;
-          }
-          if (!jwrapper.isQObject()) {
-              //qWarning() << "js2cpp_RPropertyEditor: not a QObject";
-              return nullptr;
-          }
-          QObject* obj = jwrapper.toQObject();
-          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
-          //RPropertyEditor_Wrapper* wrapper = qobject_cast<RPropertyEditor_Wrapper*>(obj);
-          //RPropertyEditor_Wrapper* wrapper = dynamic_cast<RPropertyEditor_Wrapper*>(obj);
-          //RPropertyEditor_Wrapper* wrapper = (RPropertyEditor_Wrapper*)(obj);
-          //RPropertyEditor_Wrapper* wrapper = getWrapper<RPropertyEditor_Wrapper>(v);
-          if (wrapper==nullptr) {
-              qWarning() << "js2cpp_RPropertyEditor_ptr: no wrapper";
-              handler.trace();
-              return nullptr;
-          }
-          //return getWrapped_RPropertyEditor(wrapper);
-          return RPropertyEditor_Wrapper::getWrappedBase(wrapper);
-          //return wrapper->getWrapped();
-      }
-
-      bool RJSHelper_qcad::is_RPropertyEditor_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
-          if (v.isUndefined() || v.isNull()) {
-              return acceptUndefined;
-          }
-          if (v.isNumber()) {
-              return v.toInt()==0;
-          }
-          QJSValue fun = v.property("isOfObjectType");
-          if (fun.isUndefined() || !fun.isCallable()) {
-              //qDebug() << "RJSHelper_qcad::is_RPropertyEditor: cannot get type of JS object";
-              //engine->evaluate("console.trace()");
-              // type is for example string, number, etc.:
-              return false;
-          }
-          return fun.call(QJSValueList() << QJSValue(RJSType_RPropertyEditor::getIdStatic())).toBool();
-      }
-    
       QJSValue RJSHelper_qcad::cpp2js_RPropertyEvent(RJSApi& handler, RPropertyEvent* v) {
 
           
@@ -36097,6 +35912,111 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_RPreferencesListenerAdapter::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper_qcad::cpp2js_RPropertyEditor(RJSApi& handler, RPropertyEditor* v) {
+          RPropertyEditor_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<RPropertyEditor_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper_qcad::cpp2js_RPropertyEditor: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new RPropertyEditor_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new RPropertyEditor_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new RPropertyEditor('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RPropertyEditor");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RPropertyEditor is undefined. Use RPropertyEditor_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RPropertyEditor('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RPropertyEditor(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RPropertyEditor(RJSApi& handler, const RPropertyEditor* v) {
+          return RJSHelper_qcad::cpp2js_RPropertyEditor(handler, const_cast<RPropertyEditor*>(v));
+      }
+
+      RPropertyEditor* RJSHelper_qcad::js2cpp_RPropertyEditor_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RPropertyEditor: not a QObject";
+              return nullptr;
+          }
+          //RPropertyEditor_Wrapper* wrapper = getWrapper<RPropertyEditor_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //RPropertyEditor_Wrapper* wrapper = qobject_cast<RPropertyEditor_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RPropertyEditor_Wrapper* wrapper = dynamic_cast<RPropertyEditor_Wrapper*>(obj);
+          //RPropertyEditor_Wrapper* wrapper = (RPropertyEditor_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RPropertyEditor: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (RPropertyEditor*)wrapper->getWrappedVoid();
+          //return getWrapped_RPropertyEditor(wrapper);
+          return RPropertyEditor_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RPropertyEditor_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RPropertyEditor: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::RPropertyEditor_Type);
+          //return fun.call().toInt()==RJSType::RPropertyEditor_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RPropertyEditor::getIdStatic())).toBool();
       }
 
     

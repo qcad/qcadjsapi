@@ -10640,14 +10640,14 @@ bool a1_cpp;
               }
             
     // Class: RDimensionEntity
-    // Function: getTextAngle
+    // Function: getTextRotation
     // Source: 
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
                 QJSValue 
-              RDimensionEntity_Wrapper::getTextAngle
+              RDimensionEntity_Wrapper::getTextRotation
               (
                 
               ) 
@@ -10675,7 +10675,7 @@ bool a1_cpp;
                 RDimensionEntity* w = getWrapped();
                 double res = 
                     
-                w->getTextAngle(
+                w->getTextRotation(
                   
                 );
               
@@ -10690,7 +10690,7 @@ bool a1_cpp;
             
   }
 
-                  qWarning() << "no matching function variant found for getTextAngle";
+                  qWarning() << "no matching function variant found for getTextRotation";
                   handler.trace();
                   return QJSValue();
                 

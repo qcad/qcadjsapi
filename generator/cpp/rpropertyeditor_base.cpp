@@ -386,6 +386,104 @@ showOnRequest
         
     }
 
+  void RPropertyEditor_Base::updateFromDocumentNow(
+      RDocument* document, bool onlyChanges, RS::EntityType filter, bool manual, bool showOnRequest
+    ) 
+    
+    {
+
+      //qDebug() << "RPropertyEditor_Base::updateFromDocumentNow()";
+
+      // make sure we don't call same function (recursion):
+      // only call JS function implementation
+
+      QJSEngine* engine = handler.getEngine();
+
+      //QJSValue f = self.prototype().property("updateFromDocumentNow");
+      QJSValue f = self.property("updateFromDocumentNow");
+      if (f.isCallable() /*&& !recFlag*/) {
+        QJSValueList args;
+        
+
+  args << RJSHelper_qcad::cpp2js_RDocument(
+    handler, 
+    // non-copyable: true
+document
+  );
+
+
+  args << RJSHelper::cpp2js_bool(
+    handler, 
+    // non-copyable: false
+onlyChanges
+  );
+
+
+  args << RJSHelper_qcad::cpp2js_RS_EntityType(
+    handler, 
+    // non-copyable: false
+filter
+  );
+
+
+  args << RJSHelper::cpp2js_bool(
+    handler, 
+    // non-copyable: false
+manual
+  );
+
+
+  args << RJSHelper::cpp2js_bool(
+    handler, 
+    // non-copyable: false
+showOnRequest
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        //engine->evaluate("__self__.updateFromDocumentNow();");
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.updateFromDocumentNow.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+        // does not provide back trace in case of error:
+        //QJSValue res = f.callWithInstance(self, args);
+        //if (res.isError()) {
+        //  qWarning() << "Error while calling updateFromDocumentNow:" << res.toString();
+        //  engine->throwError("exception in: RPropertyEditor::updateFromDocumentNow:" + res.toString());
+        //}
+
+        
+            // void:
+            return;
+          
+      }
+
+      //if (!recFlag) {
+        // function not implemented in JS: exception
+        engine->throwError(QString("function not implemented in JS class: RPropertyEditor::updateFromDocumentNow"));
+      //}
+
+      
+          // call implementation of original class:
+          return RPropertyEditor::updateFromDocumentNow(
+            document, onlyChanges, filter, manual, showOnRequest
+          );
+        
+    }
+
   void RPropertyEditor_Base::updateFromObject(
       RObject* object, RDocument* document
     ) 

@@ -226,7 +226,6 @@
     <type>RPolylineData</type>
     <type>RPropertyAttributes</type>
     <type>RPropertyChange</type>
-    <type>RPropertyEditor</type>
     <type>RPropertyTypeId</type>
     <type>RRay</type>
     <type>RRayData</type>
@@ -357,7 +356,6 @@
     <type>RPolylineEntity</type>
     <type>RPreferencesListener</type>
     <type>RProgressHandler</type>
-    <type>RPropertyEditor</type>
     <type>RPropertyEvent</type>
     <type>RPropertyListener</type>
     <type>RRayEntity</type>
@@ -450,6 +448,7 @@
     <type>RPaletteListenerAdapter</type>
     <type>RPenListenerAdapter</type>
     <type>RPreferencesListenerAdapter</type>
+    <type>RPropertyEditor</type>
     <type>RPropertyListenerAdapter</type>
     <type>RRulerQt</type>
     <type>RSelectionListenerAdapter</type>
