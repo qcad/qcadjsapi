@@ -10821,14 +10821,14 @@ bool a1_cpp;
               }
             
     // Class: RDimAlignedData
-    // Function: getTextAngle
+    // Function: getTextRotation
     // Source: RDimensionData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
                 QJSValue 
-              RDimAlignedData_Wrapper::getTextAngle
+              RDimAlignedData_Wrapper::getTextRotation
               (
                 
               ) 
@@ -10856,7 +10856,7 @@ bool a1_cpp;
                 RDimAlignedData* w = getWrapped();
                 double res = 
                     
-                w->getTextAngle(
+                w->getTextRotation(
                   
                 );
               
@@ -10871,7 +10871,71 @@ bool a1_cpp;
             
   }
 
-                  qWarning() << "no matching function variant found for getTextAngle";
+                  qWarning() << "no matching function variant found for getTextRotation";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDimAlignedData
+    // Function: setTextRotation
+    // Source: RDimensionData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDimAlignedData_Wrapper::setTextRotation
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: r (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDimAlignedData* w = getWrapped();
+                
+                w->setTextRotation(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setTextRotation";
                   handler.trace();
                   return QJSValue();
                 

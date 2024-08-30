@@ -4378,7 +4378,7 @@
               ;
             
     // Class: RDimensionEntity
-    // Function: getTextAngle
+    // Function: getTextRotation
     // Source: 
     // Static: false
     // Parameters: 0
@@ -4388,7 +4388,7 @@
               Q_INVOKABLE 
               
                   QJSValue 
-                  getTextAngle
+                  getTextRotation
               (
 
                 

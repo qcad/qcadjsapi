@@ -6756,6 +6756,127 @@ int a1_cpp;
               }
             
     // Class: RGraphicsView
+    // Function: setForceTextHeightThreshold
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RGraphicsView_Wrapper::setForceTextHeightThreshold
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: on (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RGraphicsView* w = getWrapped();
+                
+                w->setForceTextHeightThreshold(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setForceTextHeightThreshold";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RGraphicsView
+    // Function: getForceTextHeightThreshold
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RGraphicsView_Wrapper::getForceTextHeightThreshold
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RGraphicsView* w = getWrapped();
+                bool res = 
+                    
+                w->getForceTextHeightThreshold(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getForceTextHeightThreshold";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RGraphicsView
     // Function: isPathVisible
     // Source: 
     // Static: false

@@ -112,6 +112,10 @@
         }
 
         
+          if (t===RJSType_QObject.getIdStatic()) {
+            return true;
+          }
+        
           if (t===RJSType_RPropertyListener.getIdStatic()) {
             return true;
           }
@@ -158,6 +162,38 @@
   else {
     
         print("RPropertyEditor.updateFromDocument(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+        // function 
+        RPropertyEditor.prototype.updateFromDocumentNow = function() 
+          
+        {
+          //print("JS: RPropertyEditor.prototype.updateFromDocumentNow");
+          
+      if (arguments.length >= 2 &&
+          arguments.length <= 5) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.updateFromDocumentNow(
+                // call highest level JS implementation:
+                //return this.updateFromDocumentNowBase(
+                return this.updateFromDocumentNowSuper(
+                  arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
+                );
+              
+
+        //copyProperties(this, wrapper, RPropertyEditor);
+  }
+
+  
+  else {
+    
+        print("RPropertyEditor.updateFromDocumentNow(): wrong number / type of arguments");
       
     console.trace();
   }
@@ -261,6 +297,35 @@
       
 
       // static functions:
+      
+
+        // static function 
+        RPropertyEditor.tr = function() 
+          
+        {
+          //print("JS: RPropertyEditor.tr");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 3) {
+    
+                // calling static wrapper:
+                return RPropertyEditor_WrapperSingletonInstance.tr(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RPropertyEditor);
+  }
+
+  
+  else {
+    
+        print("RPropertyEditor.tr(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
         // static function 

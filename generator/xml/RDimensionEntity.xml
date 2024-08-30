@@ -236,7 +236,7 @@
         <parameters />
       </variant>
     </function>
-    <function name="getTextAngle">
+    <function name="getTextRotation">
       <variant return-type="double" const="true" access="public">
         <parameters />
       </variant>

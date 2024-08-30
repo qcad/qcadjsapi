@@ -755,9 +755,16 @@
         <parameters />
       </variant>
     </function>
-    <function name="getTextAngle">
+    <function name="getTextRotation">
       <variant return-type="double" const="true" access="public">
         <parameters />
+      </variant>
+    </function>
+    <function name="setTextRotation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="r" />
+        </parameters>
       </variant>
     </function>
     <function name="getTextData">
