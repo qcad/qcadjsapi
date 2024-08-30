@@ -1702,6 +1702,18 @@
           virtual RWidget* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class RWipeoutData:
+        class RJSBasecaster_RWipeoutData {
+        public:
+          virtual RWipeoutData* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class RWipeoutEntity:
+        class RJSBasecaster_RWipeoutEntity {
+        public:
+          virtual RWipeoutEntity* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class RXLine:
         class RJSBasecaster_RXLine {
         public:
@@ -7480,6 +7492,62 @@
               }
             };
           
+          // implementation of base casters that cast RWipeoutData to base classes:
+          
+            // implementation of base casters that casts RWipeoutData to REntityData
+            class RJSBasecaster_RWipeoutData_REntityData : public RJSBasecaster_REntityData {
+            public:
+              virtual REntityData* castToBase(int t, void* vp) {
+                if (t==RJSType_RWipeoutData::getIdStatic()) {
+                  return (REntityData*)(RWipeoutData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RWipeoutData to RPolylineData
+            class RJSBasecaster_RWipeoutData_RPolylineData : public RJSBasecaster_RPolylineData {
+            public:
+              virtual RPolylineData* castToBase(int t, void* vp) {
+                if (t==RJSType_RWipeoutData::getIdStatic()) {
+                  return (RPolylineData*)(RWipeoutData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+          // implementation of base casters that cast RWipeoutEntity to base classes:
+          
+            // implementation of base casters that casts RWipeoutEntity to RObject
+            class RJSBasecaster_RWipeoutEntity_RObject : public RJSBasecaster_RObject {
+            public:
+              virtual RObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RWipeoutEntity::getIdStatic()) {
+                  return (RObject*)(RWipeoutEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RWipeoutEntity to REntity
+            class RJSBasecaster_RWipeoutEntity_REntity : public RJSBasecaster_REntity {
+            public:
+              virtual REntity* castToBase(int t, void* vp) {
+                if (t==RJSType_RWipeoutEntity::getIdStatic()) {
+                  return (REntity*)(RWipeoutEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
           // implementation of base casters that cast RXLine to base classes:
           
             // implementation of base casters that casts RXLine to RShape
@@ -7942,6 +8010,10 @@
       static RViewportEntity::Id js2cpp_RViewportEntity_Id(RJSApi& handler, const QJSValue& v);
       static bool is_RViewportEntity_Id(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_RWipeoutEntity_Id(RJSApi& handler, RWipeoutEntity::Id v);
+      static RWipeoutEntity::Id js2cpp_RWipeoutEntity_Id(RJSApi& handler, const QJSValue& v);
+      static bool is_RWipeoutEntity_Id(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_RXLineEntity_Id(RJSApi& handler, RXLineEntity::Id v);
       static RXLineEntity::Id js2cpp_RXLineEntity_Id(RJSApi& handler, const QJSValue& v);
       static bool is_RXLineEntity_Id(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -8181,6 +8253,10 @@
       static QJSValue cpp2js_QSharedPointer_RViewportEntity(RJSApi& handler, const QSharedPointer<RViewportEntity>& v);
       static QSharedPointer<RViewportEntity> js2cpp_QSharedPointer_RViewportEntity(RJSApi& handler, const QJSValue& v);
       static bool is_QSharedPointer_RViewportEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QSharedPointer_RWipeoutEntity(RJSApi& handler, const QSharedPointer<RWipeoutEntity>& v);
+      static QSharedPointer<RWipeoutEntity> js2cpp_QSharedPointer_RWipeoutEntity(RJSApi& handler, const QJSValue& v);
+      static bool is_QSharedPointer_RWipeoutEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QSharedPointer_RXLineEntity(RJSApi& handler, const QSharedPointer<RXLineEntity>& v);
       static QSharedPointer<RXLineEntity> js2cpp_QSharedPointer_RXLineEntity(RJSApi& handler, const QJSValue& v);
@@ -8599,6 +8675,11 @@
       static QJSValue cpp2js_RViewportData(RJSApi& handler, const RViewportData& v);
       static RViewportData js2cpp_RViewportData(RJSApi& handler, const QJSValue& v);
       static bool is_RViewportData(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RWipeoutData(RJSApi& handler, const RWipeoutData* v);
+      static QJSValue cpp2js_RWipeoutData(RJSApi& handler, const RWipeoutData& v);
+      static RWipeoutData js2cpp_RWipeoutData(RJSApi& handler, const QJSValue& v);
+      static bool is_RWipeoutData(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RXLine(RJSApi& handler, const RXLine* v);
       static QJSValue cpp2js_RXLine(RJSApi& handler, const RXLine& v);
@@ -9222,6 +9303,10 @@
       static QJSValue cpp2js_RViewportEntity(RJSApi& handler, RViewportEntity* v);
       static RViewportEntity* js2cpp_RViewportEntity_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RViewportEntity_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RWipeoutEntity(RJSApi& handler, RWipeoutEntity* v);
+      static RWipeoutEntity* js2cpp_RWipeoutEntity_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RWipeoutEntity_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RWheelEvent(RJSApi& handler, RWheelEvent* v);
       static RWheelEvent* js2cpp_RWheelEvent_ptr(RJSApi& handler, const QJSValue& v);

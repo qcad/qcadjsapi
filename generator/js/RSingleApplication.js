@@ -1835,6 +1835,34 @@
       
 
         // static function 
+        RSingleApplication.topLevelWidgets = function() 
+          
+        {
+          //print("JS: RSingleApplication.topLevelWidgets");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RSingleApplication_WrapperSingletonInstance.topLevelWidgets(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RSingleApplication);
+  }
+
+  
+  else {
+    
+        print("RSingleApplication.topLevelWidgets(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RSingleApplication.activePopupWidget = function() 
           
         {

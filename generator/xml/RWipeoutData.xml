@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RWipeoutData.h">
+  <class name="RWipeoutData">
+    <super_list>
+      <super name="REntityData" />
+      <super name="RPolylineData" />
+    </super_list>
+    <class_decl name="RWipeoutEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="polyline" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getShowFrame">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setShowFrame">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoundary">
+      <variant return-type="RPolyline" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+  </class>
+</unit>

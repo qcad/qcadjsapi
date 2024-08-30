@@ -878,6 +878,8 @@ EntityLeader = RS::EntityLeader,
 EntitySpline = RS::EntitySpline,
 EntityViewport = RS::EntityViewport,
 EntityTolerance = RS::EntityTolerance,
+EntityWipeout = RS::EntityWipeout,
+EntityXRef = RS::EntityXRef,
 EntityUser = RS::EntityUser,
 
   };

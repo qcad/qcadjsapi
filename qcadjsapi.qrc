@@ -280,6 +280,8 @@
     <file alias="generator/js/RViewportEntity.js">generator/js/RViewportEntity.js</file>
     <file alias="generator/js/RWheelEvent.js">generator/js/RWheelEvent.js</file>
     <file alias="generator/js/RWidget.js">generator/js/RWidget.js</file>
+    <file alias="generator/js/RWipeoutData.js">generator/js/RWipeoutData.js</file>
+    <file alias="generator/js/RWipeoutEntity.js">generator/js/RWipeoutEntity.js</file>
     <file alias="generator/js/RXLine.js">generator/js/RXLine.js</file>
     <file alias="generator/js/RXLineData.js">generator/js/RXLineData.js</file>
     <file alias="generator/js/RXLineEntity.js">generator/js/RXLineEntity.js</file>

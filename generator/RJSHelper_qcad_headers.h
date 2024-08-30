@@ -300,6 +300,8 @@
 #include "RViewListenerAdapter.h"
 #include "RViewportData.h"
 #include "RViewportEntity.h"
+#include "RWipeoutData.h"
+#include "RWipeoutEntity.h"
 #include "RWheelEvent.h"
 #include "RWidget.h"
 #include "RXLine.h"

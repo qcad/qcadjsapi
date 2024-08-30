@@ -805,6 +805,14 @@
         
           #include "qwidget_wrapper.h"
         
+          #include "rentitydata_wrapper.h"
+        
+          #include "rpolylinedata_wrapper.h"
+        
+          #include "robject_wrapper.h"
+        
+          #include "rentity_wrapper.h"
+        
           #include "rshape_wrapper.h"
         
           #include "rentitydata_wrapper.h"
@@ -1024,6 +1032,9 @@
 
           
 
+          // downcasters from QJSEngine to ...
+          
+
           // downcasters from QLayout to ...
           
 
@@ -1217,6 +1228,9 @@
 
           
 
+          // downcasters from QQmlEngine to ...
+          
+
           // downcasters from QTextBrowser to ...
           
 
@@ -1396,6 +1410,8 @@
               // downcasters from QItemDelegate to RToolMatrixItemDelegate
               RJSHelper::registerDowncaster_QItemDelegate(new RJSDowncaster_QItemDelegate_RToolMatrixItemDelegate());
             
+            // downcasters from QJSEngine to ...
+            
             // downcasters from QLayout to ...
             
               // downcasters from QLayout to RFlowLayout
@@ -1450,6 +1466,8 @@
             
               // downcasters from QObject to RToolOptionEventFilter
               RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RToolOptionEventFilter());
+            
+            // downcasters from QQmlEngine to ...
             
             // downcasters from QTextBrowser to ...
             
@@ -3248,6 +3266,22 @@
             
               // registration of base casters that casts RWidget to QWidget:
               QWidget_Wrapper::registerBasecaster_QWidget(new RJSBasecaster_RWidget_QWidget());
+            
+            // registration of base casters that cast RWipeoutData to base classes:
+            
+              // registration of base casters that casts RWipeoutData to REntityData:
+              REntityData_Wrapper::registerBasecaster_REntityData(new RJSBasecaster_RWipeoutData_REntityData());
+            
+              // registration of base casters that casts RWipeoutData to RPolylineData:
+              RPolylineData_Wrapper::registerBasecaster_RPolylineData(new RJSBasecaster_RWipeoutData_RPolylineData());
+            
+            // registration of base casters that cast RWipeoutEntity to base classes:
+            
+              // registration of base casters that casts RWipeoutEntity to RObject:
+              RObject_Wrapper::registerBasecaster_RObject(new RJSBasecaster_RWipeoutEntity_RObject());
+            
+              // registration of base casters that casts RWipeoutEntity to REntity:
+              REntity_Wrapper::registerBasecaster_REntity(new RJSBasecaster_RWipeoutEntity_REntity());
             
             // registration of base casters that cast RXLine to base classes:
             
@@ -5342,6 +5376,28 @@
         return v.isNumber();
       }
     
+      QJSValue RJSHelper_qcad::cpp2js_RWipeoutEntity_Id(RJSApi& handler, RWipeoutEntity::Id v) {
+        return QJSValue(v);
+      }
+
+      RWipeoutEntity::Id RJSHelper_qcad::js2cpp_RWipeoutEntity_Id(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (RWipeoutEntity::Id)0
+          ;
+        }
+        return 
+        (RWipeoutEntity::Id)
+      v.toInt();
+      }
+
+      bool RJSHelper_qcad::is_RWipeoutEntity_Id(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
       QJSValue RJSHelper_qcad::cpp2js_RXLineEntity_Id(RJSApi& handler, RXLineEntity::Id v) {
         return QJSValue(v);
       }
@@ -5623,6 +5679,13 @@
             }
           
             {
+              QSharedPointer<RWipeoutEntity> s = v.dynamicCast<RWipeoutEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RWipeoutEntity(handler, s);
+              }
+            }
+          
+            {
               QSharedPointer<RXLineEntity> s = v.dynamicCast<RXLineEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RXLineEntity(handler, s);
@@ -5778,6 +5841,10 @@
               
                 if (RJSType_RViewportEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RViewportEntity(handler, v);
+                }
+              
+                if (RJSType_RWipeoutEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RWipeoutEntity(handler, v);
                 }
               
                 if (RJSType_RXLineEntity::isOfType(t)) {
@@ -9563,6 +9630,66 @@
               return acceptUndefined;
           }
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RViewportEntity_Type;
+          return !v.isUndefined();
+      }
+    
+      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RWipeoutEntity(RJSApi& handler, const QSharedPointer<RWipeoutEntity>& v) {
+          QJSEngine* engine = handler.getEngine();
+          RWipeoutEntity_Wrapper* ret = new RWipeoutEntity_Wrapper(handler, v);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //return engine->evaluate("new RWipeoutEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
+          // JS: new RWipeoutEntity('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RWipeoutEntity");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RWipeoutEntity is undefined. Use RWipeoutEntity_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          return cl.callAsConstructor(args);
+      }
+
+      QSharedPointer<RWipeoutEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RWipeoutEntity(RJSApi& handler, const QJSValue& v) {
+
+          RWipeoutEntity_Wrapper* wrapper = getWrapper<RWipeoutEntity_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_QSharedPointer_RWipeoutEntity: no wrapper";
+              handler.trace();
+              return QSharedPointer<RWipeoutEntity>();
+          }
+          //return QSharedPointer<RWipeoutEntity>(getWrapped_RWipeoutEntity(wrapper));
+          if (wrapper->hasWrappedSp()) {
+              return wrapper->getWrappedSp();
+          }
+          else if (wrapper->getWrapped()==nullptr) {
+              return QSharedPointer<RWipeoutEntity>();
+          }
+          else {
+              // wrapper of normal pointer, create QSharedPointer on the fly over clone of object:
+              //return QSharedPointer<RWipeoutEntity>(wrapper->getWrappedClone());
+              //return QSharedPointer<RWipeoutEntity>(wrapper->getWrapped()->clone());
+              //qWarning() << "js2cpp_QSharedPointer_RWipeoutEntity: object cannot be cloned";
+              //return QSharedPointer<RWipeoutEntity>();
+
+              
+                  // create clone on the fly:
+                  return QSharedPointer<RWipeoutEntity>((RWipeoutEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RWipeoutEntity>(wrapper->getWrapped()->clone());
+                
+          }
+      }
+
+      bool RJSHelper_qcad::is_QSharedPointer_RWipeoutEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RWipeoutEntity_Type;
           return !v.isUndefined();
       }
     
@@ -19142,6 +19269,122 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_RViewportData::getIdStatic())).toBool();
       }
     
+      QJSValue RJSHelper_qcad::cpp2js_RWipeoutData(RJSApi& handler, const RWipeoutData* v) {
+          QJSEngine* engine = handler.getEngine();
+          RWipeoutData_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new RWipeoutData_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of RWipeoutData object:
+              ret = new RWipeoutData_Wrapper(handler, new RWipeoutData(*v), true);
+          }
+
+          // JS: new RWipeoutData('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RWipeoutData");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RWipeoutData is undefined. Use RWipeoutData_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RWipeoutData('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RWipeoutData(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RWipeoutData(RJSApi& handler, const RWipeoutData& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the RWipeoutData object:
+          RWipeoutData_Wrapper* ret = new RWipeoutData_Wrapper(handler, new RWipeoutData(v), true);
+
+          // JS: new RWipeoutData('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RWipeoutData");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RWipeoutData is undefined. Use RWipeoutData_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RWipeoutData('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RWipeoutData(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      RWipeoutData RJSHelper_qcad::js2cpp_RWipeoutData(RJSApi& handler, const QJSValue& v) {
+          /*
+          RWipeoutData_Wrapper* wrapper = getWrapper<RWipeoutData_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RWipeoutData: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return RWipeoutData();
+          }
+          //return *(RWipeoutData*)wrapper->getWrappedVoid();
+          RWipeoutData* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_RWipeoutData: wrapped pointer is NULL";
+              return RWipeoutData();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RWipeoutData: not a QObject";
+              return RWipeoutData();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RWipeoutData_ptr: no wrapper";
+              handler.trace();
+              return RWipeoutData();
+          }
+          //RWipeoutData* ret = getWrapped_RWipeoutData(wrapper);
+          RWipeoutData* ret = RWipeoutData_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return RWipeoutData();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper_qcad::is_RWipeoutData(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RWipeoutData: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RWipeoutData::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper_qcad::cpp2js_RXLine(RJSApi& handler, const RXLine* v) {
           QJSEngine* engine = handler.getEngine();
           RXLine_Wrapper* ret;
@@ -23448,6 +23691,14 @@
                 RViewportEntity* o = dynamic_cast<RViewportEntity*>(v);
                 if (o!=nullptr) {
                     return RJSHelper_qcad::cpp2js_RViewportEntity(handler, o);
+                }
+            }
+          
+            // downcast to RWipeoutEntity:
+            {
+                RWipeoutEntity* o = dynamic_cast<RWipeoutEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RWipeoutEntity(handler, o);
                 }
             }
           
@@ -31946,6 +32197,80 @@
               return false;
           }
           return fun.call(QJSValueList() << QJSValue(RJSType_RViewportEntity::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper_qcad::cpp2js_RWipeoutEntity(RJSApi& handler, RWipeoutEntity* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          RWipeoutEntity_Wrapper* ret = new RWipeoutEntity_Wrapper(handler, v, false);
+
+          // JS: new RWipeoutEntity('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RWipeoutEntity");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RWipeoutEntity is undefined. Use RWipeoutEntity_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RWipeoutEntity('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RWipeoutEntity(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      RWipeoutEntity* RJSHelper_qcad::js2cpp_RWipeoutEntity_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RWipeoutEntity: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RWipeoutEntity_Wrapper* wrapper = qobject_cast<RWipeoutEntity_Wrapper*>(obj);
+          //RWipeoutEntity_Wrapper* wrapper = dynamic_cast<RWipeoutEntity_Wrapper*>(obj);
+          //RWipeoutEntity_Wrapper* wrapper = (RWipeoutEntity_Wrapper*)(obj);
+          //RWipeoutEntity_Wrapper* wrapper = getWrapper<RWipeoutEntity_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RWipeoutEntity_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_RWipeoutEntity(wrapper);
+          return RWipeoutEntity_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RWipeoutEntity_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RWipeoutEntity: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_RWipeoutEntity::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper_qcad::cpp2js_RWheelEvent(RJSApi& handler, RWheelEvent* v) {

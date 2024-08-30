@@ -1,8 +1,8 @@
 
   // Auto generated
   
-    #ifndef RFILESYSTEMMODEL_H_WRAPPER
-    #define RFILESYSTEMMODEL_H_WRAPPER
+    #ifndef RWIPEOUTDATA_H_WRAPPER
+    #define RWIPEOUTDATA_H_WRAPPER
 
     // include header:
     //#include "header_h.h"
@@ -17,11 +17,11 @@
     
         #include "RJSType_qcad.h"
       
-        #include "RFileSystemModel.h"
+        #include "RWipeoutData.h"
       
       // singleton class wrapper for static functions:
       class QCADJSAPI_EXPORT 
-     RFileSystemModel_WrapperSingleton: public QObject {
+     RWipeoutData_WrapperSingleton: public QObject {
       Q_OBJECT
       QML_INTERFACE
 
@@ -33,7 +33,7 @@
 
       public:
       //Q_INVOKABLE 
-      RFileSystemModel_WrapperSingleton(RJSApi& h) 
+      RWipeoutData_WrapperSingleton(RJSApi& h) 
         : QObject(), 
           handler(h)
           
@@ -43,33 +43,21 @@
 
       // static functions:
       
-    // Class: RFileSystemModel
-    // Function: tr
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: getDefaultDrawOrder
+    // Source: REntityData
     // Static: true
-    // Parameters: 3
+    // Parameters: 0
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  tr
+                  getDefaultDrawOrder
               (
 
                 
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
               )
               
               ;
@@ -77,7 +65,7 @@
 
       private:
           RJSApi& handler;
-          //static RFileSystemModel_WrapperSingleton* _singleInstance;
+          //static RWipeoutData_WrapperSingleton* _singleInstance;
 
           // constants:
           
@@ -85,117 +73,66 @@
     
     // static functions implementation in singleton wrapper:
     
-    // wrapper class for RFileSystemModel
+    // wrapper class for RWipeoutData
     class QCADJSAPI_EXPORT 
-     RFileSystemModel_Wrapper : public RJSWrapperObj {
+     RWipeoutData_Wrapper : public RJSWrapperObj {
 
     
       Q_OBJECT
       QML_INTERFACE
     
-  Q_PROPERTY(
-    
-    QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     readOnly READ isReadOnly WRITE setReadOnly
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     nameFilterDisables READ nameFilterDisables WRITE setNameFilterDisables
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     options READ options WRITE setOptions
-  )
-
 
     private:
       // disable copy constructor:
-      RFileSystemModel_Wrapper(const RFileSystemModel_Wrapper&);
+      RWipeoutData_Wrapper(const RWipeoutData_Wrapper&);
 
     public:
-      // initialization of RFileSystemModel:
+      // initialization of RWipeoutData:
       static void init(RJSApi& handler);
 
       
-        static RFileSystemModel* castToBase(void* vp, /*RJSType ID*/ int t) {
+        static RWipeoutData* castToBase(void* vp, /*RJSType ID*/ int t) {
           
 
-          // hook for modules to cast from other types to base RFileSystemModel:
-          for (int i=0; i<basecasters_RFileSystemModel.length(); i++) {
-            RJSBasecaster_RFileSystemModel* basecaster = basecasters_RFileSystemModel[i];
-            RFileSystemModel* ret = basecaster->castToBase(t, vp);
+          // hook for modules to cast from other types to base RWipeoutData:
+          for (int i=0; i<basecasters_RWipeoutData.length(); i++) {
+            RJSBasecaster_RWipeoutData* basecaster = basecasters_RWipeoutData[i];
+            RWipeoutData* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
               return ret;
             }
           }
 
-          // object is a pointer to base class RFileSystemModel:
-          if (t==RJSType_RFileSystemModel::getIdStatic()) {
-            return (RFileSystemModel*)vp;
+          // object is a pointer to base class RWipeoutData:
+          if (t==RJSType_RWipeoutData::getIdStatic()) {
+            return (RWipeoutData*)vp;
           }
 
-          qWarning() << "RFileSystemModel_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
+          qWarning() << "RWipeoutData_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
           return nullptr;
           
         }
 
-        static RFileSystemModel* getWrappedBase(RJSWrapper* wrapper) {
+        static RWipeoutData* getWrappedBase(RJSWrapper* wrapper) {
           int t = wrapper->getWrappedType();
           void* vp = wrapper->getWrappedVoid();
           if (vp==nullptr) {
-              //qWarning() << "getWrapped_RFileSystemModel*: wrapper wraps NULL";
+              //qWarning() << "getWrapped_RWipeoutData*: wrapper wraps NULL";
           }
 
-          RFileSystemModel* ret = castToBase(vp, t);
+          RWipeoutData* ret = castToBase(vp, t);
           if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "RFileSystemModel*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+              qWarning() << "RWipeoutData*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
           }
           return ret;
         }
       
-        // enums:
-        
-  enum LayoutChangeHint {
-    NoLayoutChangeHint = RFileSystemModel::NoLayoutChangeHint,
-VerticalSortHint = RFileSystemModel::VerticalSortHint,
-HorizontalSortHint = RFileSystemModel::HorizontalSortHint,
-
-  };
-  Q_ENUM(LayoutChangeHint)
-
-  enum Roles {
-    FileIconRole = RFileSystemModel::FileIconRole,
-FilePathRole = RFileSystemModel::FilePathRole,
-FileNameRole = RFileSystemModel::FileNameRole,
-FilePermissions = RFileSystemModel::FilePermissions,
-
-  };
-  Q_ENUM(Roles)
-
-  enum Option {
-    DontWatchForChanges = RFileSystemModel::DontWatchForChanges,
-DontResolveSymlinks = RFileSystemModel::DontResolveSymlinks,
-DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
-
-  };
-  Q_ENUM(Option)
-
     /*
     // special constructor used as prototype:
     
           Q_INVOKABLE 
-          RFileSystemModel_Wrapper(QJSEngine* e);
+          RWipeoutData_Wrapper(QJSEngine* e);
         
     */
 
@@ -203,12 +140,12 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
       // special constructor to wrap existing object:
       
             //Q_INVOKABLE 
-            RFileSystemModel_Wrapper(RJSApi& h, RFileSystemModel* o, bool wrappedCreated);
+            RWipeoutData_Wrapper(RJSApi& h, RWipeoutData* o, bool wrappedCreated);
           
 
       // destructor:
       
-          virtual ~RFileSystemModel_Wrapper();
+          virtual ~RWipeoutData_Wrapper();
         
     // initialization of signal forwarding
     
@@ -217,7 +154,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
 
   // constructors:
   
-    // Class: RFileSystemModel
+    // Class: RWipeoutData
     // Function: 
     // Source: 
     // Static: false
@@ -226,7 +163,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
 
               public:
               Q_INVOKABLE 
-              RFileSystemModel_Wrapper
+              RWipeoutData_Wrapper
                 
               (
 
@@ -247,9 +184,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
 
     // non-static functions:
     
-    // Class: RFileSystemModel
-    // Function: objectName
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: getDocument
+    // Source: REntityData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -258,19 +195,17 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  objectName
+                  getDocument
               (
 
                 
               )
               
-                const
-              
               ;
             
-    // Class: RFileSystemModel
-    // Function: setObjectName
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: setDocument
+    // Source: REntityData
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -279,7 +214,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setObjectName
+                  setDocument
               (
 
                 
@@ -291,9 +226,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: isWidgetType
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: isPointType
+    // Source: REntityData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -302,7 +237,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  isWidgetType
+                  isPointType
               (
 
                 
@@ -312,9 +247,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: isWindowType
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: isSane
+    // Source: REntityData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -323,7 +258,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  isWindowType
+                  isSane
               (
 
                 
@@ -333,53 +268,75 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: signalsBlocked
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: getClosestSubEntityId
+    // Source: REntityData
     // Static: false
-    // Parameters: 0
+    // Parameters: 3
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  signalsBlocked
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: blockSignals
-    // Source: QObject
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
+                  getClosestSubEntityId
               (
 
                 
   const QJSValue& 
   a1
       = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
     
               )
               
+                const
+              
               ;
             
-    // Class: RFileSystemModel
-    // Function: findChild
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: getClosestShape
+    // Source: REntityData
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getClosestShape
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: copyAttributesFrom
+    // Source: REntityData
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -388,164 +345,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  findChild
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: children
-    // Source: QObject
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setParent
-    // Source: QObject
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: installEventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: removeEventFilter
-    // Source: QObject
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: dumpObjectTree
-    // Source: QObject
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: dumpObjectInfo
-    // Source: QObject
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setProperty
-    // Source: QObject
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
+                  copyAttributesFrom
               (
 
                 
@@ -561,9 +361,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: property
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: getHull
+    // Source: REntityData
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -572,7 +372,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  property
+                  getHull
               (
 
                 
@@ -586,9 +386,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: dynamicPropertyNames
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: isUpdatesEnabled
+    // Source: REntityData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -597,7 +397,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  dynamicPropertyNames
+                  isUpdatesEnabled
               (
 
                 
@@ -607,9 +407,32 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: deleteLater
-    // Source: QObject
+    // Class: RWipeoutData
+    // Function: setUpdatesEnabled
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setUpdatesEnabled
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: cloneOnChange
+    // Source: REntityData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -618,7 +441,577 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  deleteLater
+                  cloneOnChange
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: isSelected
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSelected
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setSelected
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setSelected
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: isSelectedWorkingSet
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isSelectedWorkingSet
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setSelectedWorkingSet
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setSelectedWorkingSet
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getDrawOrder
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getDrawOrder
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setDrawOrder
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setDrawOrder
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setLayerId
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setLayerId
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getLayerId
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getLayerId
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setLayerName
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setLayerName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getLayerName
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getLayerName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setBlockId
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setBlockId
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getBlockId
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getBlockId
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setParentId
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setParentId
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getParentId
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getParentId
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getBlockName
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getBlockName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setLinetypeId
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setLinetypeId
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getLinetypeId
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getLinetypeId
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setLinetypePattern
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setLinetypePattern
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getLinetypePattern
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getLinetypePattern
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setLinetypeScale
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setLinetypeScale
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getLinetypeScale
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getLinetypeScale
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getLineweight
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getLineweight
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setLineweight
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setLineweight
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setColor
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setColor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getColor
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getColor
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getDisplayColor
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getDisplayColor
               (
 
                 
@@ -626,9 +1019,55 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: hasIndex
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: getInternalReferencePoints
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getInternalReferencePoints
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getPointOnEntity
+    // Source: REntityData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getPointOnEntity
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getClosestPointOnEntity
+    // Source: REntityData
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
@@ -637,7 +1076,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  hasIndex
+                  getClosestPointOnEntity
               (
 
                 
@@ -659,9 +1098,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: clearItemData
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: isInside
+    // Source: REntityData
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -670,7 +1109,65 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  clearItemData
+                  isInside
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: isOnEntity
+    // Source: REntityData
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isOnEntity
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: clickReferencePoint
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clickReferencePoint
               (
 
                 
@@ -682,9 +1179,32 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: supportedDragActions
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: scaleVisualProperties
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  scaleVisualProperties
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: update
+    // Source: REntityData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -693,7 +1213,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  supportedDragActions
+                  update
               (
 
                 
@@ -703,9 +1223,220 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: insertRows
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: setAutoUpdatesBlocked
+    // Source: REntityData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setAutoUpdatesBlocked
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: isValid
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isValid
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getEndPoints
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getEndPoints
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setZ
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setZ
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: to2D
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  to2D
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getBoundingBox
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getBoundingBox
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getMiddlePoints
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getMiddlePoints
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getCenterPoints
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getCenterPoints
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getArcReferencePoints
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getArcReferencePoints
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getPointsWithDistanceToEnd
+    // Source: RPolylineData
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
@@ -714,7 +1445,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  insertRows
+                  getPointsWithDistanceToEnd
               (
 
                 
@@ -732,104 +1463,13 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
     
               )
               
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: insertColumns
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertColumns
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
+                const
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: removeRows
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeRows
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: removeColumns
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeColumns
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: moveRows
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: getIntersectionPoints
+    // Source: RPolylineData
     // Static: false
     // Parameters: 5
     // preceding Parameters: -1
@@ -838,7 +1478,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  moveRows
+                  getIntersectionPoints
               (
 
                 
@@ -864,11 +1504,340 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
     
               )
               
+                const
+              
               ;
             
-    // Class: RFileSystemModel
-    // Function: moveColumns
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: getVectorTo
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getVectorTo
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: intersectsWith
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  intersectsWith
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: move
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  move
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: rotate
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  rotate
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: scale
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  scale
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: mirror
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  mirror
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: flipHorizontal
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  flipHorizontal
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: flipVertical
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  flipVertical
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: stretch
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  stretch
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getBoundingBoxes
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getBoundingBoxes
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getReferencePoints
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getReferencePoints
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: moveReferencePoint
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  moveReferencePoint
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: castToShape
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  castToShape
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getDistanceTo
+    // Source: RPolylineData
     // Static: false
     // Parameters: 5
     // preceding Parameters: -1
@@ -877,7 +1846,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  moveColumns
+                  getDistanceTo
               (
 
                 
@@ -903,92 +1872,122 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
     
               )
               
+                const
+              
               ;
             
-    // Class: RFileSystemModel
-    // Function: insertRow
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: getPolylineShape
+    // Source: RPolylineData
     // Static: false
-    // Parameters: 2
+    // Parameters: 0
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  insertRow
+                  getPolylineShape
               (
 
                 
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
               )
+              
+                const
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: insertColumn
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: clear
+    // Source: RPolylineData
     // Static: false
-    // Parameters: 2
+    // Parameters: 0
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  insertColumn
+                  clear
               (
 
                 
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
               )
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: removeColumn
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: normalize
+    // Source: RPolylineData
     // Static: false
-    // Parameters: 2
+    // Parameters: 1
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  removeColumn
+                  normalize
               (
 
                 
   const QJSValue& 
   a1
       = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
     
               )
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: moveRow
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: getVertices
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getVertices
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getVertexAt
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getVertexAt
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: appendVertex
+    // Source: RPolylineData
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -997,7 +1996,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  moveRow
+                  appendVertex
               (
 
                 
@@ -1021,9 +2020,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: moveColumn
-    // Source: QAbstractItemModel
+    // Class: RWipeoutData
+    // Function: prependVertex
+    // Source: RPolylineData
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
@@ -1032,7 +2031,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  moveColumn
+                  prependVertex
               (
 
                 
@@ -1056,390 +2055,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: buddy
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  buddy
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: span
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  span
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: roleNames
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  roleNames
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: headerDataChanged
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void headerDataChanged(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void headerDataChangedEmitter(
-                Qt::Orientation orientation, int first, int last
-              );
-            
-    // Class: RFileSystemModel
-    // Function: rowsInserted
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              // signal forwarded from wrapped class:
-              signals:
-              void rowsInserted(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              );
-
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void rowsInsertedEmitter(
-                const QModelIndex& parent, int first, int last
-              );
-            
-    // Class: RFileSystemModel
-    // Function: submit
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  submit
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: revert
-    // Source: QAbstractItemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  revert
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: parent
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: sibling
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sibling
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: hasChildren
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasChildren
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: columnCount
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  columnCount
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: myComputer
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  myComputer
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setData
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setData
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: headerData
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  headerData
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: flags
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  flags
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: sort
-    // Source: QFileSystemModel
+    // Class: RWipeoutData
+    // Function: insertVertex
+    // Source: RPolylineData
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -1448,7 +2066,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  sort
+                  insertVertex
               (
 
                 
@@ -1464,9 +2082,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: mimeTypes
-    // Source: QFileSystemModel
+    // Class: RWipeoutData
+    // Function: removeLastVertex
+    // Source: RPolylineData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1475,142 +2093,17 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  mimeTypes
+                  removeLastVertex
               (
 
                 
               )
               
-                const
-              
               ;
             
-    // Class: RFileSystemModel
-    // Function: dropMimeData
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 5
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dropMimeData
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a5
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: supportedDropActions
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  supportedDropActions
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: rootDirectory
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rootDirectory
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: iconProvider
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  iconProvider
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: filter
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  filter
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setResolveSymlinks
-    // Source: QFileSystemModel
+    // Class: RWipeoutData
+    // Function: removeVertex
+    // Source: RPolylineData
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -1619,7 +2112,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setResolveSymlinks
+                  removeVertex
               (
 
                 
@@ -1631,9 +2124,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: resolveSymlinks
-    // Source: QFileSystemModel
+    // Class: RWipeoutData
+    // Function: countSegments
+    // Source: RPolylineData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -1642,7 +2135,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  resolveSymlinks
+                  countSegments
               (
 
                 
@@ -1652,9 +2145,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: setReadOnly
-    // Source: QFileSystemModel
+    // Class: RWipeoutData
+    // Function: getSegmentAt
+    // Source: RPolylineData
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -1663,7 +2156,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setReadOnly
+                  getSegmentAt
               (
 
                 
@@ -1673,74 +2166,38 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
     
               )
               
+                const
+              
               ;
             
-    // Class: RFileSystemModel
-    // Function: isReadOnly
-    // Source: QFileSystemModel
+    // Class: RWipeoutData
+    // Function: getBulgeAt
+    // Source: RPolylineData
     // Static: false
-    // Parameters: 0
+    // Parameters: 1
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  isReadOnly
+                  getBulgeAt
               (
 
                 
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
               )
               
                 const
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: nameFilterDisables
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nameFilterDisables
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: nameFilters
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nameFilters
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setOption
-    // Source: QFileSystemModel
+    // Class: RWipeoutData
+    // Function: setBulgeAt
+    // Source: RPolylineData
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -1749,7 +2206,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setOption
+                  setBulgeAt
               (
 
                 
@@ -1765,153 +2222,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: testOption
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  testOption
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setOptions
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOptions
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: options
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  options
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: size
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: type
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  type
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: lastModified
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lastModified
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: mkdir
-    // Source: QFileSystemModel
+    // Class: RWipeoutData
+    // Function: getVertexAngle
+    // Source: RPolylineData
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -1920,7 +2233,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  mkdir
+                  getVertexAngle
               (
 
                 
@@ -1934,180 +2247,13 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
     
               )
               
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: rmdir
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rmdir
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: fileName
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fileName
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
                 const
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: fileIcon
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fileIcon
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: permissions
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  permissions
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: fileInfo
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fileInfo
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: remove
-    // Source: QFileSystemModel
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  remove
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setRootPath
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setRootPath
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: rootPath
-    // Source: 
+    // Class: RWipeoutData
+    // Function: getDirection1
+    // Source: RPolylineData
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
@@ -2116,7 +2262,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  rootPath
+                  getDirection1
               (
 
                 
@@ -2126,9 +2272,292 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: pathIndex
-    // Source: 
+    // Class: RWipeoutData
+    // Function: getDirection2
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getDirection2
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: reverse
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  reverse
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getEndPoint
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getEndPoint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getStartPoint
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getStartPoint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: relocateStartPoint
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  relocateStartPoint
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setClosed
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setClosed
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: isClosed
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isClosed
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: isGeometricallyClosed
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isGeometricallyClosed
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: autoClose
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  autoClose
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: toLogicallyClosed
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toLogicallyClosed
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: toLogicallyOpen
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toLogicallyOpen
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getOrientation
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getOrientation
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setGlobalWidth
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGlobalWidth
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setStartWidthAt
+    // Source: RPolylineData
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
@@ -2137,7 +2566,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  pathIndex
+                  setStartWidthAt
               (
 
                 
@@ -2151,13 +2580,316 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
     
               )
               
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getStartWidthAt
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getStartWidthAt
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
                 const
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: index
-    // Source: 
+    // Class: RWipeoutData
+    // Function: setEndWidthAt
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setEndWidthAt
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getEndWidthAt
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getEndWidthAt
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: hasWidths
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  hasWidths
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setStartWidths
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setStartWidths
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getStartWidths
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getStartWidths
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: setEndWidths
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setEndWidths
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getEndWidths
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getEndWidths
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getExploded
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getExploded
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: toPainterPath
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  toPainterPath
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: simplify
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  simplify
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: roundAllCorners
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  roundAllCorners
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: verifyTangency
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  verifyTangency
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getShapes
+    // Source: RPolylineData
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
@@ -2166,7 +2898,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  index
+                  getShapes
               (
 
                 
@@ -2188,9 +2920,9 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: filePath
-    // Source: 
+    // Class: RWipeoutData
+    // Function: setPolylineGen
+    // Source: RPolylineData
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2199,7 +2931,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  filePath
+                  setPolylineGen
               (
 
                 
@@ -2207,15 +2939,34 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
   a1
       = QJSValue()
     
+              )
+              
+              ;
+            
+    // Class: RWipeoutData
+    // Function: getPolylineGen
+    // Source: RPolylineData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getPolylineGen
+              (
+
+                
               )
               
                 const
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: setFilter
-    // Source: 
+    // Class: RWipeoutData
+    // Function: setElevation
+    // Source: RPolylineData
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
@@ -2224,7 +2975,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  setFilter
+                  setElevation
               (
 
                 
@@ -2236,210 +2987,71 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: isDir
-    // Source: 
+    // Class: RWipeoutData
+    // Function: getElevation
+    // Source: RPolylineData
     // Static: false
-    // Parameters: 1
+    // Parameters: 0
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  isDir
+                  getElevation
               (
 
                 
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
               )
               
                 const
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: setHeaderData
+    // Class: RWipeoutData
+    // Function: getType
     // Source: 
     // Static: false
-    // Parameters: 4
+    // Parameters: 0
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  setHeaderData
+                  getType
               (
 
                 
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: rowCount
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rowCount
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
               )
               
                 const
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: setIconProvider
+    // Class: RWipeoutData
+    // Function: getShowFrame
     // Source: 
     // Static: false
-    // Parameters: 1
+    // Parameters: 0
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  setIconProvider
+                  getShowFrame
               (
 
                 
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setNameFilter
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setNameFilter
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setNameFilters
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setNameFilters
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: setNameFilterDisables
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setNameFilterDisables
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: canFetchMore
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  canFetchMore
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
               )
               
                 const
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: fetchMore
+    // Class: RWipeoutData
+    // Function: setShowFrame
     // Source: 
     // Static: false
     // Parameters: 1
@@ -2449,7 +3061,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               Q_INVOKABLE 
               
                   QJSValue 
-                  fetchMore
+                  setShowFrame
               (
 
                 
@@ -2461,59 +3073,24 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
               
               ;
             
-    // Class: RFileSystemModel
-    // Function: data
+    // Class: RWipeoutData
+    // Function: getBoundary
     // Source: 
     // Static: false
-    // Parameters: 2
+    // Parameters: 0
     // preceding Parameters: -1
 
               public:
               Q_INVOKABLE 
               
                   QJSValue 
-                  data
+                  getBoundary
               (
 
                 
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
               )
               
                 const
-              
-              ;
-            
-    // Class: RFileSystemModel
-    // Function: removeRow
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeRow
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
               
               ;
             
@@ -2547,19 +3124,19 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
         // get type of wrapped object:
         Q_INVOKABLE
         virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_RFileSystemModel::getIdStatic();
+          return RJSType_RWipeoutData::getIdStatic();
         }
 
         // return true if wrapped object is owned by C++ (not deleted):
         Q_INVOKABLE
         virtual bool isCppOwnership() const {
           
-              return true;
+              return false;
             
         }
 
         // get wrapped object:
-        RFileSystemModel* getWrapped() {
+        RWipeoutData* getWrapped() {
           if (wrapped!=nullptr) {
             return wrapped;
           }
@@ -2568,7 +3145,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
         }
 
         // get wrapped object (const):
-        RFileSystemModel* getWrapped() const {
+        RWipeoutData* getWrapped() const {
           if (wrapped!=nullptr) {
             return wrapped;
           }
@@ -2618,7 +3195,7 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
 
         private:
         // wrapped object:
-        RFileSystemModel* wrapped;
+        RWipeoutData* wrapped;
 
         
 
@@ -2626,18 +3203,18 @@ DontUseCustomDirectoryIcons = RFileSystemModel::DontUseCustomDirectoryIcons,
       
       private:
         // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_RFileSystemModel*> basecasters_RFileSystemModel;
+        static QList<RJSBasecaster_RWipeoutData*> basecasters_RWipeoutData;
 
       public:
-        static void registerBasecaster_RFileSystemModel(RJSBasecaster_RFileSystemModel* bc) {
-          basecasters_RFileSystemModel.append(bc);
+        static void registerBasecaster_RWipeoutData(RJSBasecaster_RWipeoutData* bc) {
+          basecasters_RWipeoutData.append(bc);
         }
       
     };
 
-    Q_DECLARE_METATYPE(RFileSystemModel_Wrapper*)
+    Q_DECLARE_METATYPE(RWipeoutData_Wrapper*)
 
-    Q_DECLARE_INTERFACE(RFileSystemModel_Wrapper, "org.qcad.RFileSystemModel_Wrapper")
+    Q_DECLARE_INTERFACE(RWipeoutData_Wrapper, "org.qcad.RWipeoutData_Wrapper")
 
   
   #endif

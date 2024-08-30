@@ -24,6 +24,7 @@
 
 #include <QString>
 #include <QJSEngine>
+#include <QQmlApplicationEngine>
 #include <QMainWindow>
 #include <QList>
 #include <QObject>
@@ -100,7 +101,8 @@ public slots:
 
 private:
     RJSApi* rjsapi;
-    QJSEngine* engine;
+    //QJSEngine* engine;
+    QQmlApplicationEngine* engine;
     RJSTools* tools;
 
     // list of wrappers created for this script handler:

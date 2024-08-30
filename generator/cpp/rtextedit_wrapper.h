@@ -7412,6 +7412,31 @@ AutoAll = RTextEdit::AutoAll,
               ;
             
     // Class: RTextEdit
+    // Function: cursorRect
+    // Source: QTextEdit
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  cursorRect
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTextEdit
     // Function: anchorAt
     // Source: QTextEdit
     // Static: false
@@ -7606,6 +7631,33 @@ AutoAll = RTextEdit::AutoAll,
                 
   const QJSValue& 
   a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RTextEdit
+    // Function: moveCursor
+    // Source: QTextEdit
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  moveCursor
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
       = QJSValue()
     
               )

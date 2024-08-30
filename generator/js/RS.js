@@ -259,6 +259,8 @@ RS.EntityLeader = RS_Wrapper.EntityLeader;
 RS.EntitySpline = RS_Wrapper.EntitySpline;
 RS.EntityViewport = RS_Wrapper.EntityViewport;
 RS.EntityTolerance = RS_Wrapper.EntityTolerance;
+RS.EntityWipeout = RS_Wrapper.EntityWipeout;
+RS.EntityXRef = RS_Wrapper.EntityXRef;
 RS.EntityUser = RS_Wrapper.EntityUser;
 
   // enum: ProjectionRenderingHint
