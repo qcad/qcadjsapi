@@ -7200,6 +7200,63 @@ int a1_cpp;
               }
             
     // Class: RImageData
+    // Function: getFullFilePath
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RImageData_Wrapper::getFullFilePath
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RImageData* w = getWrapped();
+                QString res = 
+                    
+                w->getFullFilePath(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getFullFilePath";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RImageData
     // Function: load
     // Source: 
     // Static: false
