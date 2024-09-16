@@ -263,6 +263,11 @@
         <parameters />
       </variant>
     </function>
+    <function name="getFullFilePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="load">
       <variant return-type="void" const="true" access="public">
         <parameters />
