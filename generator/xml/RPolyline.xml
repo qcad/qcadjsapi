@@ -895,6 +895,11 @@
         <parameters />
       </variant>
     </function>
+    <function name="getCentroid">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="splitAtDiscontinuities">
       <variant return-type="QList&lt;RPolyline&gt;" const="true" access="public">
         <parameters>

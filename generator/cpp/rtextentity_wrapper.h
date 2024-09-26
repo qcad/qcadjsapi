@@ -3474,6 +3474,27 @@
               ;
             
     // Class: RTextEntity
+    // Function: getRotatedBoundingBox
+    // Source: RTextBasedEntity
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getRotatedBoundingBox
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTextEntity
     // Function: setProperty
     // Source: RTextBasedEntity
     // Static: false

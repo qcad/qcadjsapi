@@ -56,6 +56,11 @@
       </variant>
       -->
     </function>
+    <function name="getRotatedBoundingBox">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="setProperty">
       <variant return-type="bool" virtual="true" access="public">
         <parameters>

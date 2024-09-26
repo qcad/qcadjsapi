@@ -435,6 +435,27 @@ UpsideDown = RAttributeDefinitionData::UpsideDown,
               ;
             
     // Class: RAttributeDefinitionData
+    // Function: getRotatedBoundingBox
+    // Source: RTextBasedData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getRotatedBoundingBox
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RAttributeDefinitionData
     // Function: getWidth
     // Source: RTextBasedData
     // Static: false

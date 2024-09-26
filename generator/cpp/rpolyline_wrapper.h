@@ -5218,6 +5218,27 @@ Ray = RPolyline::Ray,
               ;
             
     // Class: RPolyline
+    // Function: getCentroid
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getCentroid
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RPolyline
     // Function: splitAtDiscontinuities
     // Source: 
     // Static: false

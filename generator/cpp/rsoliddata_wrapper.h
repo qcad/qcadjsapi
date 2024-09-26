@@ -3785,6 +3785,27 @@
               ;
             
     // Class: RSolidData
+    // Function: getCentroid
+    // Source: RPolyline
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getCentroid
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RSolidData
     // Function: splitAtDiscontinuities
     // Source: RPolyline
     // Static: false

@@ -11088,6 +11088,63 @@ bool a1_cpp;
               }
             
     // Class: RSolidData
+    // Function: getCentroid
+    // Source: RPolyline
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSolidData_Wrapper::getCentroid
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RSolidData* w = getWrapped();
+                RVector res = 
+                    
+                w->getCentroid(
+                  
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getCentroid";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSolidData
     // Function: splitAtDiscontinuities
     // Source: RPolyline
     // Static: false

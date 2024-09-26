@@ -84,6 +84,11 @@
         </parameters>
       </variant>
     </function>
+    <function name="getRotatedBoundingBox">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="getWidth">
       <variant return-type="double" const="true" access="public">
         <parameters />
