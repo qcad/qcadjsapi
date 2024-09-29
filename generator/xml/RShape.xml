@@ -543,6 +543,13 @@
         </parameters>
       </variant>
     </function>
+    <function name="getPolylines" static="true">
+      <variant return-type="QList&lt;RPolyline&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" modifier="&amp;" name="shapes" />
+        </parameters>
+      </variant>
+    </function>
     <function name="getOrderedShapes" static="true">
       <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" access="public">
         <parameters>
