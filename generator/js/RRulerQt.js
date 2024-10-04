@@ -148,24 +148,6 @@
 
       // enum values:
       
-  // enum: Shape
-RRulerQt.NoFrame = RRulerQt_Wrapper.NoFrame;
-RRulerQt.Box = RRulerQt_Wrapper.Box;
-RRulerQt.Panel = RRulerQt_Wrapper.Panel;
-RRulerQt.WinPanel = RRulerQt_Wrapper.WinPanel;
-RRulerQt.HLine = RRulerQt_Wrapper.HLine;
-RRulerQt.VLine = RRulerQt_Wrapper.VLine;
-RRulerQt.StyledPanel = RRulerQt_Wrapper.StyledPanel;
-
-  // enum: Shadow
-RRulerQt.Plain = RRulerQt_Wrapper.Plain;
-RRulerQt.Raised = RRulerQt_Wrapper.Raised;
-RRulerQt.Sunken = RRulerQt_Wrapper.Sunken;
-
-  // enum: StyleMask
-RRulerQt.Shadow_Mask = RRulerQt_Wrapper.Shadow_Mask;
-RRulerQt.Shape_Mask = RRulerQt_Wrapper.Shape_Mask;
-
 
       // functions:
       

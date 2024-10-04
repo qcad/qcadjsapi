@@ -1034,9 +1034,6 @@
 
           
 
-          // downcasters from QJSEngine to ...
-          
-
           // downcasters from QLayout to ...
           
 
@@ -1230,9 +1227,6 @@
 
           
 
-          // downcasters from QQmlEngine to ...
-          
-
           // downcasters from QTextBrowser to ...
           
 
@@ -1412,8 +1406,6 @@
               // downcasters from QItemDelegate to RToolMatrixItemDelegate
               RJSHelper::registerDowncaster_QItemDelegate(new RJSDowncaster_QItemDelegate_RToolMatrixItemDelegate());
             
-            // downcasters from QJSEngine to ...
-            
             // downcasters from QLayout to ...
             
               // downcasters from QLayout to RFlowLayout
@@ -1468,8 +1460,6 @@
             
               // downcasters from QObject to RToolOptionEventFilter
               RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RToolOptionEventFilter());
-            
-            // downcasters from QQmlEngine to ...
             
             // downcasters from QTextBrowser to ...
             
@@ -38331,10 +38321,19 @@
       }
 
       QList<QSharedPointer<RShape>> RJSHelper_qcad::js2cpp_QList_QSharedPointer_RShape(RJSApi& handler, const QJSValue& v) {
-          // TODO:
-          qWarning() << "js2cpp_QList_QSharedPointer_RShape: TODO: not properly implemented";
-          QJSEngine* engine = handler.getEngine();
-          return engine->fromScriptValue<QList<QSharedPointer<RShape>>>(v);
+          QList<QSharedPointer<RShape>> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSharedPointer_RShape: value is not an array";
+              return ret;
+          }
+
+          int len = v.property("length").toInt();
+          for (int i=0; i<len; i++) {
+              ret.append(js2cpp_QSharedPointer_RShape(handler, v.property(i)));
+          }
+
+          return ret;
       }
 
       bool RJSHelper_qcad::is_QList_QSharedPointer_RShape(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {

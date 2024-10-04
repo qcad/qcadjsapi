@@ -508,6 +508,34 @@ RArc.Ray = RArc_Wrapper.Ray;
       
 
         // static function 
+        RArc.getPolylines = function() 
+          
+        {
+          //print("JS: RArc.getPolylines");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RArc_WrapperSingletonInstance.getPolylines(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RArc);
+  }
+
+  
+  else {
+    
+        print("RArc.getPolylines(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RArc.getOrderedShapes = function() 
           
         {
