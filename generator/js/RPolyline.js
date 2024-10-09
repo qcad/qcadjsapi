@@ -510,6 +510,34 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
       
 
         // static function 
+        RPolyline.getPolylines = function() 
+          
+        {
+          //print("JS: RPolyline.getPolylines");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RPolyline_WrapperSingletonInstance.getPolylines(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RPolyline);
+  }
+
+  
+  else {
+    
+        print("RPolyline.getPolylines(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RPolyline.getOrderedShapes = function() 
           
         {

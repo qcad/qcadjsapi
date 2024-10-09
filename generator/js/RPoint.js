@@ -506,6 +506,34 @@ RPoint.Ray = RPoint_Wrapper.Ray;
       
 
         // static function 
+        RPoint.getPolylines = function() 
+          
+        {
+          //print("JS: RPoint.getPolylines");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RPoint_WrapperSingletonInstance.getPolylines(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RPoint);
+  }
+
+  
+  else {
+    
+        print("RPoint.getPolylines(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RPoint.getOrderedShapes = function() 
           
         {

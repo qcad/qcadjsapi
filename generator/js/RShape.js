@@ -421,6 +421,34 @@ RShape.Ray = RShape_Wrapper.Ray;
       
 
         // static function 
+        RShape.getPolylines = function() 
+          
+        {
+          //print("JS: RShape.getPolylines");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RShape_WrapperSingletonInstance.getPolylines(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RShape);
+  }
+
+  
+  else {
+    
+        print("RShape.getPolylines(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RShape.getOrderedShapes = function() 
           
         {

@@ -543,42 +543,6 @@
   Q_PROPERTY(
     
     QJSValue
-     frameRect READ frameRect WRITE setFrameRect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameShadow READ frameShadow WRITE setFrameShadow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameShape READ frameShape WRITE setFrameShape
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameWidth READ frameWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lineWidth READ lineWidth WRITE setLineWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     midLineWidth READ midLineWidth WRITE setMidLineWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
      autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
   )
 
@@ -787,33 +751,6 @@
       
         // enums:
         
-  enum Shape {
-    NoFrame = RTreeWidget::NoFrame,
-Box = RTreeWidget::Box,
-Panel = RTreeWidget::Panel,
-WinPanel = RTreeWidget::WinPanel,
-HLine = RTreeWidget::HLine,
-VLine = RTreeWidget::VLine,
-StyledPanel = RTreeWidget::StyledPanel,
-
-  };
-  Q_ENUM(Shape)
-
-  enum Shadow {
-    Plain = RTreeWidget::Plain,
-Raised = RTreeWidget::Raised,
-Sunken = RTreeWidget::Sunken,
-
-  };
-  Q_ENUM(Shadow)
-
-  enum StyleMask {
-    Shadow_Mask = RTreeWidget::Shadow_Mask,
-Shape_Mask = RTreeWidget::Shape_Mask,
-
-  };
-  Q_ENUM(StyleMask)
-
   enum SizeAdjustPolicy {
     AdjustIgnored = RTreeWidget::AdjustIgnored,
 AdjustToContentsOnFirstShow = RTreeWidget::AdjustToContentsOnFirstShow,
