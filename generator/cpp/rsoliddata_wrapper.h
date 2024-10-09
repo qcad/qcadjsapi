@@ -65,6 +65,29 @@
               ;
             
     // Class: RSolidData
+    // Function: getPolylines
+    // Source: RPolyline
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getPolylines
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RSolidData
     // Function: isStraight
     // Source: RPolyline
     // Static: true

@@ -191,6 +191,34 @@
       
 
         // static function 
+        RPolylineData.getPolylines = function() 
+          
+        {
+          //print("JS: RPolylineData.getPolylines");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RPolylineData_WrapperSingletonInstance.getPolylines(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RPolylineData);
+  }
+
+  
+  else {
+    
+        print("RPolylineData.getPolylines(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RPolylineData.isStraight = function() 
           
         {

@@ -191,6 +191,34 @@
       
 
         // static function 
+        RLeaderData.getPolylines = function() 
+          
+        {
+          //print("JS: RLeaderData.getPolylines");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RLeaderData_WrapperSingletonInstance.getPolylines(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RLeaderData);
+  }
+
+  
+  else {
+    
+        print("RLeaderData.getPolylines(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RLeaderData.isStraight = function() 
           
         {
