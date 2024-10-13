@@ -1421,29 +1421,6 @@
               ;
             
     // Class: RPolyline
-    // Function: getPolylines
-    // Source: 
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getPolylines
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RPolyline
     // Function: isStraight
     // Source: 
     // Static: true

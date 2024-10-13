@@ -243,34 +243,6 @@
       
 
         // static function 
-        RSolidData.getPolylines = function() 
-          
-        {
-          //print("JS: RSolidData.getPolylines");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return RSolidData_WrapperSingletonInstance.getPolylines(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RSolidData);
-  }
-
-  
-  else {
-    
-        print("RSolidData.getPolylines(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         RSolidData.isStraight = function() 
           
         {
