@@ -506,6 +506,34 @@ RCircle.Ray = RCircle_Wrapper.Ray;
       
 
         // static function 
+        RCircle.getPolylines = function() 
+          
+        {
+          //print("JS: RCircle.getPolylines");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RCircle_WrapperSingletonInstance.getPolylines(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RCircle);
+  }
+
+  
+  else {
+    
+        print("RCircle.getPolylines(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RCircle.getOrderedShapes = function() 
           
         {

@@ -484,6 +484,34 @@ RTriangle.Ray = RTriangle_Wrapper.Ray;
       
 
         // static function 
+        RTriangle.getPolylines = function() 
+          
+        {
+          //print("JS: RTriangle.getPolylines");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RTriangle_WrapperSingletonInstance.getPolylines(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RTriangle);
+  }
+
+  
+  else {
+    
+        print("RTriangle.getPolylines(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RTriangle.getOrderedShapes = function() 
           
         {

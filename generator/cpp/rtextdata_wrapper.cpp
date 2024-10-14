@@ -4515,6 +4515,63 @@ bool a1_cpp;
               }
             
     // Class: RTextData
+    // Function: getRotatedBoundingBox
+    // Source: RTextBasedData
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextData_Wrapper::getRotatedBoundingBox
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextData* w = getWrapped();
+                QList<RVector> res = 
+                    
+                w->getRotatedBoundingBox(
+                  
+                );
+              
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getRotatedBoundingBox";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextData
     // Function: getWidth
     // Source: RTextBasedData
     // Static: false

@@ -740,6 +740,69 @@
               }
             
     // Class: RCircle
+    // Function: getPolylines
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCircle_WrapperSingleton::getPolylines
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QList_QSharedPointer_RShape(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shapes (QList<QSharedPointer<RShape>>)
+  
+QList<QSharedPointer<RShape>> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QList_QSharedPointer_RShape(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RPolyline> res = 
+                
+                // call static member function:
+                RShape::getPolylines(
+              a1_cpp
+    
+            );
+          
+            // return type: QList<RPolyline>
+
+            return RJSHelper_qcad::cpp2js_QList_RPolyline(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getPolylines";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCircle
     // Function: getOrderedShapes
     // Source: RShape
     // Static: true

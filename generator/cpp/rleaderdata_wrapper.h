@@ -4265,6 +4265,27 @@
               ;
             
     // Class: RLeaderData
+    // Function: getCentroid
+    // Source: RPolyline
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getCentroid
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RLeaderData
     // Function: splitAtDiscontinuities
     // Source: RPolyline
     // Static: false

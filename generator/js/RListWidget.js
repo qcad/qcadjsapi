@@ -184,24 +184,6 @@
 
       // enum values:
       
-  // enum: Shape
-RListWidget.NoFrame = RListWidget_Wrapper.NoFrame;
-RListWidget.Box = RListWidget_Wrapper.Box;
-RListWidget.Panel = RListWidget_Wrapper.Panel;
-RListWidget.WinPanel = RListWidget_Wrapper.WinPanel;
-RListWidget.HLine = RListWidget_Wrapper.HLine;
-RListWidget.VLine = RListWidget_Wrapper.VLine;
-RListWidget.StyledPanel = RListWidget_Wrapper.StyledPanel;
-
-  // enum: Shadow
-RListWidget.Plain = RListWidget_Wrapper.Plain;
-RListWidget.Raised = RListWidget_Wrapper.Raised;
-RListWidget.Sunken = RListWidget_Wrapper.Sunken;
-
-  // enum: StyleMask
-RListWidget.Shadow_Mask = RListWidget_Wrapper.Shadow_Mask;
-RListWidget.Shape_Mask = RListWidget_Wrapper.Shape_Mask;
-
   // enum: SizeAdjustPolicy
 RListWidget.AdjustIgnored = RListWidget_Wrapper.AdjustIgnored;
 RListWidget.AdjustToContentsOnFirstShow = RListWidget_Wrapper.AdjustToContentsOnFirstShow;

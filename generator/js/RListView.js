@@ -182,24 +182,6 @@
 
       // enum values:
       
-  // enum: Shape
-RListView.NoFrame = RListView_Wrapper.NoFrame;
-RListView.Box = RListView_Wrapper.Box;
-RListView.Panel = RListView_Wrapper.Panel;
-RListView.WinPanel = RListView_Wrapper.WinPanel;
-RListView.HLine = RListView_Wrapper.HLine;
-RListView.VLine = RListView_Wrapper.VLine;
-RListView.StyledPanel = RListView_Wrapper.StyledPanel;
-
-  // enum: Shadow
-RListView.Plain = RListView_Wrapper.Plain;
-RListView.Raised = RListView_Wrapper.Raised;
-RListView.Sunken = RListView_Wrapper.Sunken;
-
-  // enum: StyleMask
-RListView.Shadow_Mask = RListView_Wrapper.Shadow_Mask;
-RListView.Shape_Mask = RListView_Wrapper.Shape_Mask;
-
   // enum: SizeAdjustPolicy
 RListView.AdjustIgnored = RListView_Wrapper.AdjustIgnored;
 RListView.AdjustToContentsOnFirstShow = RListView_Wrapper.AdjustToContentsOnFirstShow;

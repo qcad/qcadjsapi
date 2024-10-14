@@ -525,42 +525,6 @@
      inputMethodHints READ inputMethodHints WRITE setInputMethodHints
   )
 
-  Q_PROPERTY(
-    
-    QJSValue
-     frameRect READ frameRect WRITE setFrameRect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameShadow READ frameShadow WRITE setFrameShadow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameShape READ frameShape WRITE setFrameShape
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameWidth READ frameWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lineWidth READ lineWidth WRITE setLineWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     midLineWidth READ midLineWidth WRITE setMidLineWidth
-  )
-
 
     private:
       // disable copy constructor:
@@ -608,35 +572,6 @@
           return ret;
         }
       
-        // enums:
-        
-  enum Shape {
-    NoFrame = RRulerQt::NoFrame,
-Box = RRulerQt::Box,
-Panel = RRulerQt::Panel,
-WinPanel = RRulerQt::WinPanel,
-HLine = RRulerQt::HLine,
-VLine = RRulerQt::VLine,
-StyledPanel = RRulerQt::StyledPanel,
-
-  };
-  Q_ENUM(Shape)
-
-  enum Shadow {
-    Plain = RRulerQt::Plain,
-Raised = RRulerQt::Raised,
-Sunken = RRulerQt::Sunken,
-
-  };
-  Q_ENUM(Shadow)
-
-  enum StyleMask {
-    Shadow_Mask = RRulerQt::Shadow_Mask,
-Shape_Mask = RRulerQt::Shape_Mask,
-
-  };
-  Q_ENUM(StyleMask)
-
     /*
     // special constructor used as prototype:
     

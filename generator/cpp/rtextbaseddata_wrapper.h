@@ -1609,6 +1609,27 @@ UpsideDown = RTextBasedData::UpsideDown,
               ;
             
     // Class: RTextBasedData
+    // Function: getRotatedBoundingBox
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getRotatedBoundingBox
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RTextBasedData
     // Function: getWidth
     // Source: 
     // Static: false

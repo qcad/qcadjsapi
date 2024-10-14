@@ -3456,6 +3456,27 @@
               ;
             
     // Class: RAttributeDefinitionEntity
+    // Function: getRotatedBoundingBox
+    // Source: RTextBasedEntity
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getRotatedBoundingBox
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RAttributeDefinitionEntity
     // Function: exportEntity
     // Source: RTextBasedEntity
     // Static: false
