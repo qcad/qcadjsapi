@@ -350,3 +350,5 @@
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rexportlistener_wrapper.cpp"
+  

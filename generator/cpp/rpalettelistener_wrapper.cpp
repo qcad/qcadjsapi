@@ -189,3 +189,5 @@
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rpalettelistener_wrapper.cpp"
+  

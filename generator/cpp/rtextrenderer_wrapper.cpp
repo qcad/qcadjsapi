@@ -792,3 +792,5 @@ double a4_cpp;
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rtextrenderer_wrapper.cpp"
+  

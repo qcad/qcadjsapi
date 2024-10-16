@@ -611,3 +611,5 @@ RTransactionStack_Wrapper::RTransactionStack_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rtransactionstack_wrapper.cpp"
+  

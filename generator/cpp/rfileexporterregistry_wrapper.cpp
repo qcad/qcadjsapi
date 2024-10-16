@@ -481,3 +481,5 @@ RFileExporterRegistry_Wrapper::RFileExporterRegistry_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rfileexporterregistry_wrapper.cpp"
+  

@@ -27,6 +27,8 @@ RPluginInfo RJSApiPlugin::getPluginInfo() {
     return ret;
 }
 
+#include "moc_RJSApiPlugin.cpp"
+
 #if QT_VERSION < 0x050000
 QT_BEGIN_NAMESPACE
 Q_EXPORT_PLUGIN2(qcadjs, RJSApiPlugin)

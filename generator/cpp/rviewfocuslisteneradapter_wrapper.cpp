@@ -303,3 +303,5 @@ RViewFocusListenerAdapter_Wrapper::RViewFocusListenerAdapter_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rviewfocuslisteneradapter_wrapper.cpp"
+  

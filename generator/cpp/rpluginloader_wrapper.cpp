@@ -1169,3 +1169,5 @@ RPluginLoader_Wrapper::RPluginLoader_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rpluginloader_wrapper.cpp"
+  
