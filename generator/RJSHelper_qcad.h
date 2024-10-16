@@ -7641,6 +7641,9 @@
 
       public:
         
+          static void registerDowncasters();
+          static void registerBasecasters();
+          
   // ----------------
   // primitive types:
   // ----------------
