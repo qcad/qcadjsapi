@@ -21,6 +21,7 @@ qt_add_library(qcadjsapi SHARED
     generator/RJSHelper_qcad.h
     generator/RJSHelper_qcad_manual.cpp
     generator/RJSHelper_qcad_primitive.cpp
+    generator/RJSHelper_qcad_shared_ptr.cpp
     generator/RJSHelper_qcad_shared_ptr_no_copy.cpp
     generator/RJSHelper_qcad_wrapped.cpp
     generator/RJSHelper_qcad_wrapped_ptr.cpp
@@ -28,6 +29,7 @@ qt_add_library(qcadjsapi SHARED
     generator/RJSHelper_qcad_wrapped_qobject_ptr.cpp
     generator/RJSHelper_qcad_qlist.cpp
     generator/RJSHelper_qcad_qlist_ptr.cpp
+    generator/RJSHelper_qcad_qlist_shared_ptr.cpp
     generator/RJSHelper_qcad_qset.cpp
     generator/RJSHelper_qcad_qmap.cpp
     generator/RJSHelper_qcad_qhash.cpp
