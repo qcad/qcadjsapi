@@ -1206,3 +1206,5 @@ double a6_cpp;
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rspatialindex_wrapper.cpp"
+  

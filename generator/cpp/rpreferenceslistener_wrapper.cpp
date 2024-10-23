@@ -211,3 +211,5 @@
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rpreferenceslistener_wrapper.cpp"
+  

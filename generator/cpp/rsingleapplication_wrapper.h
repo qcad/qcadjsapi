@@ -1307,6 +1307,25 @@
               ;
             
     // Class: RSingleApplication
+    // Function: topLevelWidgets
+    // Source: QApplication
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  topLevelWidgets
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RSingleApplication
     // Function: activePopupWidget
     // Source: QApplication
     // Static: true

@@ -628,3 +628,5 @@ RFileImporterRegistry_Wrapper::RFileImporterRegistry_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rfileimporterregistry_wrapper.cpp"
+  

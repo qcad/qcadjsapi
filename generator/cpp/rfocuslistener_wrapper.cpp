@@ -142,3 +142,5 @@
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rfocuslistener_wrapper.cpp"
+  

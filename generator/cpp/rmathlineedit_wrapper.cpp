@@ -21829,3 +21829,5 @@ QString a1_cpp;
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rmathlineedit_wrapper.cpp"
+  

@@ -414,3 +414,5 @@ RLineweight_Wrapper::RLineweight_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rlineweight_wrapper.cpp"
+  

@@ -327,3 +327,5 @@
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rblocklistener_wrapper.cpp"
+  

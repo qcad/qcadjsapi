@@ -306,3 +306,5 @@ RAutoLoadJs_Wrapper::RAutoLoadJs_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rautoloadjs_wrapper.cpp"
+  

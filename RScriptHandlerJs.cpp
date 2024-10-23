@@ -1503,3 +1503,4 @@ void RScriptHandlerJs::slotDestroyed(QObject* obj) {
     //qDebug() << "destroying QObject:" << obj << " name: " << obj->objectName() << " addr: "<< (unsigned long long int)obj;
 }
 
+#include "moc_RScriptHandlerJs.cpp"

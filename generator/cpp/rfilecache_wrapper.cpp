@@ -371,3 +371,5 @@ RFileCache_Wrapper::RFileCache_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rfilecache_wrapper.cpp"
+  

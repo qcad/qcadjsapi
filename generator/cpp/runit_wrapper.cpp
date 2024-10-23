@@ -2440,3 +2440,5 @@ RUnit_Wrapper::RUnit_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_runit_wrapper.cpp"
+  

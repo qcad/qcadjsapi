@@ -143,3 +143,5 @@
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rplugininterface_wrapper.cpp"
+  

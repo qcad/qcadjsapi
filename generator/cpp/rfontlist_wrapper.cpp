@@ -588,3 +588,5 @@ RFontList_Wrapper::RFontList_Wrapper
 
   // protected overwritten functions / events and their public invokable counterparts:
   
+    #include "moc_rfontlist_wrapper.cpp"
+  
