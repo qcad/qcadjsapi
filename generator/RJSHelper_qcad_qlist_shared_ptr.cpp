@@ -1371,10 +1371,20 @@
       }
 
       QList<QSharedPointer<RLayer>> RJSHelper_qcad::js2cpp_QList_QSharedPointer_RLayer(RJSApi& handler, const QJSValue& v) {
-          // TODO:
-          qWarning() << "js2cpp_QList_QSharedPointer_RLayer: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
-          return engine->fromScriptValue<QList<QSharedPointer<RLayer>>>(v);
+
+          QList<QSharedPointer<RLayer>> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSharedPointer_RLayer: value is not an array";
+              return ret;
+          }
+
+          int len = v.property("length").toInt();
+          for (int i=0; i<len; i++) {
+              ret.append(js2cpp_QSharedPointer_RLayer(handler, v.property(i)));
+          }
+          return ret;
       }
 
       bool RJSHelper_qcad::is_QList_QSharedPointer_RLayer(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
@@ -1400,10 +1410,20 @@
       }
 
       QList<QSharedPointer<RObject>> RJSHelper_qcad::js2cpp_QList_QSharedPointer_RObject(RJSApi& handler, const QJSValue& v) {
-          // TODO:
-          qWarning() << "js2cpp_QList_QSharedPointer_RObject: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
-          return engine->fromScriptValue<QList<QSharedPointer<RObject>>>(v);
+
+          QList<QSharedPointer<RObject>> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSharedPointer_RObject: value is not an array";
+              return ret;
+          }
+
+          int len = v.property("length").toInt();
+          for (int i=0; i<len; i++) {
+              ret.append(js2cpp_QSharedPointer_RObject(handler, v.property(i)));
+          }
+          return ret;
       }
 
       bool RJSHelper_qcad::is_QList_QSharedPointer_RObject(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
@@ -1429,10 +1449,20 @@
       }
 
       QList<QSharedPointer<RShape>> RJSHelper_qcad::js2cpp_QList_QSharedPointer_RShape(RJSApi& handler, const QJSValue& v) {
-          // TODO:
-          qWarning() << "js2cpp_QList_QSharedPointer_RShape: TODO: not properly implemented";
           QJSEngine* engine = handler.getEngine();
-          return engine->fromScriptValue<QList<QSharedPointer<RShape>>>(v);
+
+          QList<QSharedPointer<RShape>> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_QSharedPointer_RShape: value is not an array";
+              return ret;
+          }
+
+          int len = v.property("length").toInt();
+          for (int i=0; i<len; i++) {
+              ret.append(js2cpp_QSharedPointer_RShape(handler, v.property(i)));
+          }
+          return ret;
       }
 
       bool RJSHelper_qcad::is_QList_QSharedPointer_RShape(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {

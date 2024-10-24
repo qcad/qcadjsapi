@@ -299,6 +299,29 @@
               ;
             
     // Class: REllipse
+    // Function: getPolylines
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getPolylines
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: REllipse
     // Function: getOrderedShapes
     // Source: RShape
     // Static: true

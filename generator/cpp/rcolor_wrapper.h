@@ -351,29 +351,6 @@
               ;
             
     // Class: RColor
-    // Function: isValidColor
-    // Source: QColor
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isValidColor
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RColor
     // Function: removeColor
     // Source: 
     // Static: true
@@ -816,29 +793,6 @@ Fixed = RColor::Fixed,
               )
               
                 const
-              
-              ;
-            
-    // Class: RColor
-    // Function: setNamedColor
-    // Source: QColor
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setNamedColor
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
               
               ;
             

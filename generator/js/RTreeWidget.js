@@ -184,6 +184,24 @@
 
       // enum values:
       
+  // enum: Shape
+RTreeWidget.NoFrame = RTreeWidget_Wrapper.NoFrame;
+RTreeWidget.Box = RTreeWidget_Wrapper.Box;
+RTreeWidget.Panel = RTreeWidget_Wrapper.Panel;
+RTreeWidget.WinPanel = RTreeWidget_Wrapper.WinPanel;
+RTreeWidget.HLine = RTreeWidget_Wrapper.HLine;
+RTreeWidget.VLine = RTreeWidget_Wrapper.VLine;
+RTreeWidget.StyledPanel = RTreeWidget_Wrapper.StyledPanel;
+
+  // enum: Shadow
+RTreeWidget.Plain = RTreeWidget_Wrapper.Plain;
+RTreeWidget.Raised = RTreeWidget_Wrapper.Raised;
+RTreeWidget.Sunken = RTreeWidget_Wrapper.Sunken;
+
+  // enum: StyleMask
+RTreeWidget.Shadow_Mask = RTreeWidget_Wrapper.Shadow_Mask;
+RTreeWidget.Shape_Mask = RTreeWidget_Wrapper.Shape_Mask;
+
   // enum: SizeAdjustPolicy
 RTreeWidget.AdjustIgnored = RTreeWidget_Wrapper.AdjustIgnored;
 RTreeWidget.AdjustToContentsOnFirstShow = RTreeWidget_Wrapper.AdjustToContentsOnFirstShow;

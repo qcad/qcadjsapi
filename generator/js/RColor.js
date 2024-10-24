@@ -478,34 +478,6 @@ RColor.Fixed = RColor_Wrapper.Fixed;
       
 
         // static function 
-        RColor.isValidColor = function() 
-          
-        {
-          //print("JS: RColor.isValidColor");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return RColor_WrapperSingletonInstance.isValidColor(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RColor);
-  }
-
-  
-  else {
-    
-        print("RColor.isValidColor(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         RColor.isRgbaValid = function() 
           
         {
