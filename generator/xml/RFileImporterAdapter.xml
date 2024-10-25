@@ -4,7 +4,7 @@ filename="RFileImporterAdapter.h">
   <class_decl name="RDocument" />
   <class_decl name="RMessageHandler" />
   <class_decl name="RProgressHandler" />
-  <class name="RFileImporterAdapter" ownership="cpp">
+  <class name="RFileImporterAdapter" ownership="cpp" inheritable="true">
     <super_list>
       <super name="RImporter" />
       <super name="RFileImporter" />
