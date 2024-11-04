@@ -479,6 +479,8 @@
 #include "generator/cpp/rsplinedata_wrapper.h"
 #include "generator/cpp/rsplineentity_base.h"
 #include "generator/cpp/rsplineentity_wrapper.h"
+#include "generator/cpp/rstemmer_base.h"
+#include "generator/cpp/rstemmer_wrapper.h"
 #include "generator/cpp/rstorage_base.h"
 #include "generator/cpp/rstorage_wrapper.h"
 #include "generator/cpp/rtabletevent_base.h"

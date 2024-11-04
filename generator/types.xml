@@ -237,6 +237,7 @@
     <type>RSpatialIndexVisitorAdapter</type>
     <type>RSpline</type>
     <type>RSplineData</type>
+    <type>RStemmer</type>
     <type>RTextBasedData</type>
     <type>RTextData</type>
     <type>RTextLabel</type>

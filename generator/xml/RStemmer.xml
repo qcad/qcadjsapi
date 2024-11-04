@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RStemmer.h">
+  <class name="RStemmer">
+    <function name="stem" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="word" />
+          <parameter const="true" type="QString" modifier="&amp;" name="locale" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

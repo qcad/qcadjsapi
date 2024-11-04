@@ -239,6 +239,7 @@
     <file alias="generator/js/RSpline.js">generator/js/RSpline.js</file>
     <file alias="generator/js/RSplineData.js">generator/js/RSplineData.js</file>
     <file alias="generator/js/RSplineEntity.js">generator/js/RSplineEntity.js</file>
+    <file alias="generator/js/RStemmer.js">generator/js/RStemmer.js</file>
     <file alias="generator/js/RStorage.js">generator/js/RStorage.js</file>
     <file alias="generator/js/RTabletEvent.js">generator/js/RTabletEvent.js</file>
     <file alias="generator/js/RTerminateEvent.js">generator/js/RTerminateEvent.js</file>

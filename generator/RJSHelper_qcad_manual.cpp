@@ -3007,6 +3007,8 @@
               // registration of base casters that casts RSplineEntity to REntity:
               REntity_Wrapper::registerBasecaster_REntity(new RJSBasecaster_RSplineEntity_REntity());
             
+            // registration of base casters that cast RStemmer to base classes:
+            
             // registration of base casters that cast RStorage to base classes:
             
             // registration of base casters that cast RTabletEvent to base classes:

@@ -1457,6 +1457,12 @@
           virtual RSplineEntity* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class RStemmer:
+        class RJSBasecaster_RStemmer {
+        public:
+          virtual RStemmer* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class RStorage:
         class RJSBasecaster_RStorage {
         public:
@@ -6631,6 +6637,8 @@
               }
             };
           
+          // implementation of base casters that cast RStemmer to base classes:
+          
           // implementation of base casters that cast RStorage to base classes:
           
           // implementation of base casters that cast RTabletEvent to base classes:
@@ -8619,6 +8627,11 @@
       static QJSValue cpp2js_RSplineData(RJSApi& handler, const RSplineData& v);
       static RSplineData js2cpp_RSplineData(RJSApi& handler, const QJSValue& v);
       static bool is_RSplineData(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RStemmer(RJSApi& handler, const RStemmer* v);
+      static QJSValue cpp2js_RStemmer(RJSApi& handler, const RStemmer& v);
+      static RStemmer js2cpp_RStemmer(RJSApi& handler, const QJSValue& v);
+      static bool is_RStemmer(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RTextBasedData(RJSApi& handler, const RTextBasedData* v);
       static QJSValue cpp2js_RTextBasedData(RJSApi& handler, const RTextBasedData& v);

@@ -3484,6 +3484,33 @@
             return derrivedTypes.contains(otherType);
         }
       
+      int RJSType_RStemmer::id = -1;
+
+      int RJSType_RStemmer::getId() const {
+          return RJSType_RStemmer::getIdStatic();
+      }
+
+      int RJSType_RStemmer::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RStemmer());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RStemmer::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
       int RJSType_RTextBasedData::id = -1;
 
       int RJSType_RTextBasedData::getId() const {

@@ -481,6 +481,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rsplinedata_wrapper.h
     generator/cpp/rsplineentity_base.h
     generator/cpp/rsplineentity_wrapper.h
+    generator/cpp/rstemmer_base.h
+    generator/cpp/rstemmer_wrapper.h
     generator/cpp/rstorage_base.h
     generator/cpp/rstorage_wrapper.h
     generator/cpp/rtabletevent_base.h
@@ -1051,6 +1053,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rsplinedata_wrapper.cpp
     generator/cpp/rsplineentity_base.cpp
     generator/cpp/rsplineentity_wrapper.cpp
+    generator/cpp/rstemmer_base.cpp
+    generator/cpp/rstemmer_wrapper.cpp
     generator/cpp/rstorage_base.cpp
     generator/cpp/rstorage_wrapper.cpp
     generator/cpp/rtabletevent_base.cpp

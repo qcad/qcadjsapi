@@ -9243,6 +9243,122 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_RSplineData::getIdStatic())).toBool();
       }
     
+      QJSValue RJSHelper_qcad::cpp2js_RStemmer(RJSApi& handler, const RStemmer* v) {
+          QJSEngine* engine = handler.getEngine();
+          RStemmer_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new RStemmer_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of RStemmer object:
+              ret = new RStemmer_Wrapper(handler, new RStemmer(*v), true);
+          }
+
+          // JS: new RStemmer('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RStemmer");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RStemmer is undefined. Use RStemmer_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RStemmer('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RStemmer(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RStemmer(RJSApi& handler, const RStemmer& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the RStemmer object:
+          RStemmer_Wrapper* ret = new RStemmer_Wrapper(handler, new RStemmer(v), true);
+
+          // JS: new RStemmer('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RStemmer");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RStemmer is undefined. Use RStemmer_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RStemmer('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RStemmer(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      RStemmer RJSHelper_qcad::js2cpp_RStemmer(RJSApi& handler, const QJSValue& v) {
+          /*
+          RStemmer_Wrapper* wrapper = getWrapper<RStemmer_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RStemmer: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return RStemmer();
+          }
+          //return *(RStemmer*)wrapper->getWrappedVoid();
+          RStemmer* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_RStemmer: wrapped pointer is NULL";
+              return RStemmer();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RStemmer: not a QObject";
+              return RStemmer();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RStemmer_ptr: no wrapper";
+              handler.trace();
+              return RStemmer();
+          }
+          //RStemmer* ret = getWrapped_RStemmer(wrapper);
+          RStemmer* ret = RStemmer_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return RStemmer();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper_qcad::is_RStemmer(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RStemmer: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RStemmer::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper_qcad::cpp2js_RTextBasedData(RJSApi& handler, const RTextBasedData* v) {
           QJSEngine* engine = handler.getEngine();
           RTextBasedData_Wrapper* ret;

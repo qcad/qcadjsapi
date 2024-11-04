@@ -439,6 +439,7 @@
 #include "generator/cpp/rspatialindexvisitoradapter_wrapper.h"
 #include "generator/cpp/rwipeoutentity_wrapper.h"
 #include "generator/cpp/rwipeoutdata_wrapper.h"
+#include "generator/cpp/rstemmer_wrapper.h"
 //#include "generator/cpp/rgraphicsviewskia_wrapper.h"
 
 /*
@@ -1125,6 +1126,8 @@ void RScriptHandlerJs::init() {
     RSnapReference_Wrapper::init(*rjsapi);
     RSnapTangential_Wrapper::init(*rjsapi);
     //RHelpBrowser_Wrapper::init(*rjsapi);
+
+    RStemmer_Wrapper::init(*rjsapi);
 
     // init downcasts:
     RJSHelper_qcad::registerDowncasters();

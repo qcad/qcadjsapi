@@ -308,6 +308,7 @@
 #include "RXLineEntity.h"
 #include "RToolMatrixItemDelegate.h"
 #include "RSpatialIndexVisitorAdapter.h"
+#include "RStemmer.h"
 
 #include "RJSType_qcad.h"
 

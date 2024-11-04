@@ -137,6 +137,7 @@ target_link_libraries(qcadjsapi PRIVATE
     qcadgrid
     qcadoperations
     qcadspatialindex
+    qcadstemmer
     qtjsapi
     opennurbs
 )
