@@ -338,6 +338,14 @@
          READ  getPropertyOverall
   )
 
+  Q_PROPERTY(
+    
+    QJSValue
+     PropertyFrozenLayerIds
+        // auto generated read function for public static properties:
+         READ  getPropertyFrozenLayerIds
+  )
+
 
       public:
       //Q_INVOKABLE 
@@ -536,6 +544,11 @@
   // auto generated read function for public static property PropertyOverall:
   Q_INVOKABLE QJSValue getPropertyOverall() {
     return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RViewportEntity::PropertyOverall);
+  }
+
+  // auto generated read function for public static property PropertyFrozenLayerIds:
+  Q_INVOKABLE QJSValue getPropertyFrozenLayerIds() {
+    return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RViewportEntity::PropertyFrozenLayerIds);
   }
 
 
@@ -4181,6 +4194,50 @@
               
                   QJSValue 
                   setPosition
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RViewportEntity
+    // Function: getFrozenLayerIds
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getFrozenLayerIds
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RViewportEntity
+    // Function: setFrozenLayerIds
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setFrozenLayerIds
               (
 
                 

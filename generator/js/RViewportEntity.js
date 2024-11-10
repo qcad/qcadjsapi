@@ -485,6 +485,8 @@ RViewportEntity.PropertyViewTargetZ =
   RViewportEntity_WrapperSingletonInstance.PropertyViewTargetZ;
 RViewportEntity.PropertyOverall = 
   RViewportEntity_WrapperSingletonInstance.PropertyOverall;
+RViewportEntity.PropertyFrozenLayerIds = 
+  RViewportEntity_WrapperSingletonInstance.PropertyFrozenLayerIds;
 
 
       // copy function:

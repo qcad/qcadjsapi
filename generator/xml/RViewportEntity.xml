@@ -32,6 +32,7 @@
     <property static="true" type="RPropertyTypeId" name="PropertyViewTargetY" />
     <property static="true" type="RPropertyTypeId" name="PropertyViewTargetZ" />
     <property static="true" type="RPropertyTypeId" name="PropertyOverall" />
+    <property static="true" type="RPropertyTypeId" name="PropertyFrozenLayerIds" />
     <constructor>
       <variant>
         <parameters>
@@ -254,6 +255,17 @@
         </parameters>
       </variant>
     </function>
-    <function name="print" />
+    <function name="getFrozenLayerIds">
+      <variant return-type="QList&lt;RLayer::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFrozenLayerIds">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RLayer::Id&gt;" modifier="&amp;" name="ids" />
+        </parameters>
+      </variant>
+    </function>
   </class>
 </unit>

@@ -2684,6 +2684,50 @@
               
               ;
             
+    // Class: RViewportData
+    // Function: getFrozenLayerIds
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getFrozenLayerIds
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RViewportData
+    // Function: setFrozenLayerIds
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setFrozenLayerIds
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             if (wrapped!=nullptr) {

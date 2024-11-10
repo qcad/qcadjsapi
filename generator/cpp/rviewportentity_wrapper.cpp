@@ -10947,6 +10947,127 @@ RVector a1_cpp;
                 
               }
             
+    // Class: RViewportEntity
+    // Function: getFrozenLayerIds
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RViewportEntity_Wrapper::getFrozenLayerIds
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RViewportEntity* w = getWrapped();
+                QList<RLayer::Id> res = 
+                    
+                w->getFrozenLayerIds(
+                  
+                );
+              
+            // return type: QList<RLayer::Id>
+
+            return RJSHelper_qcad::cpp2js_QList_RLayer_Id(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getFrozenLayerIds";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RViewportEntity
+    // Function: setFrozenLayerIds
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RViewportEntity_Wrapper::setFrozenLayerIds
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QList_RLayer_Id(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: ids (QList<RLayer::Id>)
+  
+QList<RLayer::Id> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QList_RLayer_Id(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RViewportEntity* w = getWrapped();
+                
+                w->setFrozenLayerIds(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setFrozenLayerIds";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
 
   // member functions for static properties, forward to static function
   

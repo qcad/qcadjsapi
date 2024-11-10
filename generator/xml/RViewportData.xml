@@ -399,7 +399,17 @@
         </parameters>
       </variant>
     </function>
-    <function name="setStatusFlag" />
-    <function name="testStatusFlag" />
+    <function name="getFrozenLayerIds">
+      <variant return-type="QList&lt;RLayer::Id&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFrozenLayerIds">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RLayer::Id&gt;" modifier="&amp;" name="layerIds" />
+        </parameters>
+      </variant>
+    </function>
   </class>
 </unit>
