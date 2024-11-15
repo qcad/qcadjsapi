@@ -90,6 +90,27 @@
         </parameters>
       </variant>
     </function>
+    <function name="addBlockListener">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RBlockListener" modifier="*" name="l" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="removeBlockListener">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RBlockListener" modifier="*" name="l" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="notifyBlockListeners">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
     <function name="addTransactionListener">
       <variant return-type="int" access="public">
         <parameters>

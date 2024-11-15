@@ -968,6 +968,213 @@ QList<RLayer::Id> a1_cpp;
               }
             
     // Class: RDocumentInterface
+    // Function: addBlockListener
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDocumentInterface_Wrapper::addBlockListener
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RBlockListener_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: l (RBlockListener)
+  
+
+          // pointer:
+          RBlockListener*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RBlockListener_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocumentInterface* w = getWrapped();
+                
+                w->addBlockListener(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for addBlockListener";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDocumentInterface
+    // Function: removeBlockListener
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDocumentInterface_Wrapper::removeBlockListener
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RBlockListener_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: l (RBlockListener)
+  
+
+          // pointer:
+          RBlockListener*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RBlockListener_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocumentInterface* w = getWrapped();
+                
+                w->removeBlockListener(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for removeBlockListener";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDocumentInterface
+    // Function: notifyBlockListeners
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDocumentInterface_Wrapper::notifyBlockListeners
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RDocumentInterface_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: documentInterface (RDocumentInterface)
+  
+
+          // pointer:
+          RDocumentInterface*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RDocumentInterface_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocumentInterface* w = getWrapped();
+                
+                w->notifyBlockListeners(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for notifyBlockListeners";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDocumentInterface
     // Function: addTransactionListener
     // Source: 
     // Static: false

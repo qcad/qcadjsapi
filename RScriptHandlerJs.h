@@ -53,7 +53,7 @@ public:
 
     static void deleteWrapper(RJSWrapperObj* wrapper);
 
-    virtual void init();
+    virtual void init(bool main=false);
 
     static RScriptHandler* factory();
 
@@ -102,6 +102,7 @@ public slots:
 private:
     RJSApi* rjsapi;
     //QJSEngine* engine;
+    static QQmlApplicationEngine* mainEngine;
     QQmlApplicationEngine* engine;
     RJSTools* tools;
 

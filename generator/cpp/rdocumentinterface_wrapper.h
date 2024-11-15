@@ -463,6 +463,75 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
               ;
             
     // Class: RDocumentInterface
+    // Function: addBlockListener
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  addBlockListener
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RDocumentInterface
+    // Function: removeBlockListener
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeBlockListener
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RDocumentInterface
+    // Function: notifyBlockListeners
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  notifyBlockListeners
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RDocumentInterface
     // Function: addTransactionListener
     // Source: 
     // Static: false
