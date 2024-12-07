@@ -4765,6 +4765,8 @@
             static QSet<int> derrivedTypes = {
               getIdStatic(),
               
+                RJSType_RExportListenerAdapter::getIdStatic()
+                
             };
 
             // check for derived types:
@@ -5088,6 +5090,8 @@
             static QSet<int> derrivedTypes = {
               getIdStatic(),
               
+                RJSType_RImportListenerAdapter::getIdStatic()
+                
             };
 
             // check for derived types:
@@ -7298,6 +7302,33 @@
             return derrivedTypes.contains(otherType);
         }
       
+      int RJSType_RExportListenerAdapter::id = -1;
+
+      int RJSType_RExportListenerAdapter::getId() const {
+          return RJSType_RExportListenerAdapter::getIdStatic();
+      }
+
+      int RJSType_RExportListenerAdapter::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RExportListenerAdapter());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RExportListenerAdapter::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
       int RJSType_RToolOptionEventFilter::id = -1;
 
       int RJSType_RToolOptionEventFilter::getId() const {
@@ -7557,6 +7588,33 @@
 
       
         bool RJSType_RGuiAction::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
+      int RJSType_RImportListenerAdapter::id = -1;
+
+      int RJSType_RImportListenerAdapter::getId() const {
+          return RJSType_RImportListenerAdapter::getIdStatic();
+      }
+
+      int RJSType_RImportListenerAdapter::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RImportListenerAdapter());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RImportListenerAdapter::isOfType(int otherType) {
             // initialize list of derrived types:
             
             static QSet<int> derrivedTypes = {

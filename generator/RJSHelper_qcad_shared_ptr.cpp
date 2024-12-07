@@ -287,6 +287,10 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
+          #include "rexportlistener_wrapper.h"
+        
           #include "rsoliddata_wrapper.h"
         
           #include "robject_wrapper.h"
@@ -366,6 +370,10 @@
           #include "robject_wrapper.h"
         
           #include "rentity_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "rimportlistener_wrapper.h"
         
           #include "qobject_wrapper.h"
         

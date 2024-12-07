@@ -2065,6 +2065,50 @@
               ;
             
     // Class: RHatchData
+    // Function: isWinding
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isWinding
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: setWinding
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setWinding
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchData
     // Function: getScale
     // Source: 
     // Static: false

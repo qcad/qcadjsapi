@@ -211,6 +211,11 @@
         <parameters />
       </variant>
     </function>
+    <function name="getPluginsLocation" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="isGuiEnabled" static="true">
       <variant return-type="bool" access="public">
         <parameters />

@@ -521,6 +521,12 @@
           virtual RExportListener* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class RExportListenerAdapter:
+        class RJSBasecaster_RExportListenerAdapter {
+        public:
+          virtual RExportListenerAdapter* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class RExporter:
         class RJSBasecaster_RExporter {
         public:
@@ -729,6 +735,12 @@
         class RJSBasecaster_RImportListener {
         public:
           virtual RImportListener* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class RImportListenerAdapter:
+        class RJSBasecaster_RImportListenerAdapter {
+        public:
+          virtual RImportListenerAdapter* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class RImporter:
@@ -3738,6 +3750,34 @@
           
           // implementation of base casters that cast RExportListener to base classes:
           
+          // implementation of base casters that cast RExportListenerAdapter to base classes:
+          
+            // implementation of base casters that casts RExportListenerAdapter to QObject
+            class RJSBasecaster_RExportListenerAdapter_QObject : public RJSBasecaster_QObject {
+            public:
+              virtual QObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RExportListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RExportListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RExportListenerAdapter to RExportListener
+            class RJSBasecaster_RExportListenerAdapter_RExportListener : public RJSBasecaster_RExportListener {
+            public:
+              virtual RExportListener* castToBase(int t, void* vp) {
+                if (t==RJSType_RExportListenerAdapter::getIdStatic()) {
+                  return (RExportListener*)(RExportListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
           // implementation of base casters that cast RExporter to base classes:
           
           // implementation of base casters that cast RFaceData to base classes:
@@ -4327,6 +4367,34 @@
             };
           
           // implementation of base casters that cast RImportListener to base classes:
+          
+          // implementation of base casters that cast RImportListenerAdapter to base classes:
+          
+            // implementation of base casters that casts RImportListenerAdapter to QObject
+            class RJSBasecaster_RImportListenerAdapter_QObject : public RJSBasecaster_QObject {
+            public:
+              virtual QObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RImportListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RImportListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RImportListenerAdapter to RImportListener
+            class RJSBasecaster_RImportListenerAdapter_RImportListener : public RJSBasecaster_RImportListener {
+            public:
+              virtual RImportListener* castToBase(int t, void* vp) {
+                if (t==RJSType_RImportListenerAdapter::getIdStatic()) {
+                  return (RImportListener*)(RImportListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
           
           // implementation of base casters that cast RImporter to base classes:
           
@@ -9388,6 +9456,11 @@
       static REventFilter* js2cpp_REventFilter_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_REventFilter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_RExportListenerAdapter(RJSApi& handler, RExportListenerAdapter* v);
+      static QJSValue cpp2js_RExportListenerAdapter(RJSApi& handler, const RExportListenerAdapter* v);
+      static RExportListenerAdapter* js2cpp_RExportListenerAdapter_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RExportListenerAdapter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_RToolOptionEventFilter(RJSApi& handler, RToolOptionEventFilter* v);
       static QJSValue cpp2js_RToolOptionEventFilter(RJSApi& handler, const RToolOptionEventFilter* v);
       static RToolOptionEventFilter* js2cpp_RToolOptionEventFilter_ptr(RJSApi& handler, const QJSValue& v);
@@ -9437,6 +9510,11 @@
       static QJSValue cpp2js_RGuiAction(RJSApi& handler, const RGuiAction* v);
       static RGuiAction* js2cpp_RGuiAction_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RGuiAction_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RImportListenerAdapter(RJSApi& handler, RImportListenerAdapter* v);
+      static QJSValue cpp2js_RImportListenerAdapter(RJSApi& handler, const RImportListenerAdapter* v);
+      static RImportListenerAdapter* js2cpp_RImportListenerAdapter_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RImportListenerAdapter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RInterTransactionListenerAdapter(RJSApi& handler, RInterTransactionListenerAdapter* v);
       static QJSValue cpp2js_RInterTransactionListenerAdapter(RJSApi& handler, const RInterTransactionListenerAdapter* v);

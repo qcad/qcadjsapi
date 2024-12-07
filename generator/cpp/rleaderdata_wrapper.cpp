@@ -10501,61 +10501,6 @@ RLine a1_cpp;
               }
             
     // Class: RLeaderData
-    // Function: reverse
-    // Source: RPolyline
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RLeaderData_Wrapper::reverse
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RLeaderData* w = getWrapped();
-                bool res = 
-                    
-                w->reverse(
-                  
-                );
-              
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for reverse";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RLeaderData
     // Function: getReversed
     // Source: RPolyline
     // Static: false
@@ -13941,6 +13886,61 @@ double a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for scaleVisualProperties";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RLeaderData
+    // Function: reverse
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RLeaderData_Wrapper::reverse
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RLeaderData* w = getWrapped();
+                bool res = 
+                    
+                w->reverse(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for reverse";
                   handler.trace();
                   return QJSValue();
                 

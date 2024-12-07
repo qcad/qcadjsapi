@@ -185,6 +185,18 @@
         </parameters>
       </variant>
     </function>
+    <function name="isWinding">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setWinding">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
     <function name="getScale">
       <variant return-type="double" const="true" access="public">
         <parameters />

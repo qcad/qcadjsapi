@@ -227,6 +227,14 @@
         </parameters>
       </variant>
     </function>
+    <function name="requestResourceBlockEditing">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RObject::Id" modifier="" name="entityId" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
     <function name="escapeEvent">
       <variant return-type="void" virtual="true" access="public">
         <parameters />
@@ -382,6 +390,14 @@
       </variant>
     </function>
     <function name="contextMenu">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="entityId" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="editResourceBlock">
       <variant return-type="void" access="public" signal="true">
         <parameters>
           <parameter const="false" type="int" modifier="" name="entityId" />

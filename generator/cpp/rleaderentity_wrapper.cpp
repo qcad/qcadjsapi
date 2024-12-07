@@ -9371,6 +9371,61 @@ RLeaderData a1_cpp;
               }
             
     // Class: RLeaderEntity
+    // Function: reverse
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RLeaderEntity_Wrapper::reverse
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RLeaderEntity* w = getWrapped();
+                bool res = 
+                    
+                w->reverse(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for reverse";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RLeaderEntity
     // Function: setArrowHead
     // Source: 
     // Static: false

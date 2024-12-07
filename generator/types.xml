@@ -424,6 +424,7 @@
     <type>RCoordinateListenerAdapter</type>
     <type>RDockWidget</type>
     <type>REventFilter</type>
+    <type>RExportListenerAdapter</type>
     <type>RToolOptionEventFilter</type>
     <type>REventHandler</type>
     <type>RFileSystemModel</type>
@@ -434,6 +435,7 @@
     <type>RGraphicsViewImage</type>
     <type>RGraphicsViewWorker</type>
     <type>RGuiAction</type>
+    <type>RImportListenerAdapter</type>
     <type>RInterTransactionListenerAdapter</type>
     <type>RKeyListenerAdapter</type>
     <type>RLayerListenerAdapter</type>

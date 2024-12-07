@@ -115,6 +115,8 @@
   
     this["contextMenu(int,RVector)"] = Object.getPrototypeOf(this).contextMenu;
   
+    this["editResourceBlock(int,RVector)"] = Object.getPrototypeOf(this).editResourceBlock;
+  
     this["drop(QDropEvent*)"] = Object.getPrototypeOf(this).drop;
   
     this["dragEnter(QDragEnterEvent*)"] = Object.getPrototypeOf(this).dragEnter;

@@ -171,6 +171,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rexporter_wrapper.h
     generator/cpp/rexportlistener_base.h
     generator/cpp/rexportlistener_wrapper.h
+    generator/cpp/rexportlisteneradapter_base.h
+    generator/cpp/rexportlisteneradapter_wrapper.h
     generator/cpp/rfacedata_base.h
     generator/cpp/rfacedata_wrapper.h
     generator/cpp/rfaceentity_base.h
@@ -241,6 +243,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rimporter_wrapper.h
     generator/cpp/rimportlistener_base.h
     generator/cpp/rimportlistener_wrapper.h
+    generator/cpp/rimportlisteneradapter_base.h
+    generator/cpp/rimportlisteneradapter_wrapper.h
     generator/cpp/rinputevent_base.h
     generator/cpp/rinputevent_wrapper.h
     generator/cpp/rintertransactionlistener_base.h
@@ -743,6 +747,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rexporter_wrapper.cpp
     generator/cpp/rexportlistener_base.cpp
     generator/cpp/rexportlistener_wrapper.cpp
+    generator/cpp/rexportlisteneradapter_base.cpp
+    generator/cpp/rexportlisteneradapter_wrapper.cpp
     generator/cpp/rfacedata_base.cpp
     generator/cpp/rfacedata_wrapper.cpp
     generator/cpp/rfaceentity_base.cpp
@@ -813,6 +819,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rimporter_wrapper.cpp
     generator/cpp/rimportlistener_base.cpp
     generator/cpp/rimportlistener_wrapper.cpp
+    generator/cpp/rimportlisteneradapter_base.cpp
+    generator/cpp/rimportlisteneradapter_wrapper.cpp
     generator/cpp/rinputevent_base.cpp
     generator/cpp/rinputevent_wrapper.cpp
     generator/cpp/rintertransactionlistener_base.cpp

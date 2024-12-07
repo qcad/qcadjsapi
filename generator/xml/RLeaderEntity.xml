@@ -97,6 +97,11 @@
         </parameters>
       </variant>
     </function>
+    <function name="reverse">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="setArrowHead">
       <variant return-type="void" access="public">
         <parameters>

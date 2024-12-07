@@ -440,6 +440,8 @@
 #include "generator/cpp/rwipeoutentity_wrapper.h"
 #include "generator/cpp/rwipeoutdata_wrapper.h"
 #include "generator/cpp/rstemmer_wrapper.h"
+#include "generator/cpp/rimportlisteneradapter_wrapper.h"
+#include "generator/cpp/rexportlisteneradapter_wrapper.h"
 //#include "generator/cpp/rgraphicsviewskia_wrapper.h"
 
 /*
@@ -1033,6 +1035,8 @@ void RScriptHandlerJs::init(bool main) {
     RToolMatrixItemDelegate_Wrapper::init(*rjsapi);
     RSpatialIndexVisitorAdapter_Wrapper::init(*rjsapi);
     //RGraphicsViewSkia_Wrapper::init(*rjsapi);
+    RImportListenerAdapter_Wrapper::init(*rjsapi);
+    RExportListenerAdapter_Wrapper::init(*rjsapi);
 
 //#ifdef RNEST
 //    RNester_Wrapper::init(*rjsapi);

@@ -977,6 +977,34 @@
       
 
         // static function 
+        RSettings.getPluginsLocation = function() 
+          
+        {
+          //print("JS: RSettings.getPluginsLocation");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.getPluginsLocation(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.getPluginsLocation(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RSettings.isGuiEnabled = function() 
           
         {

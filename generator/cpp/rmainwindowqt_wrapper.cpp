@@ -706,6 +706,13 @@ int a3_cpp;
 
   connect(
     getWrapped(), 
+    SIGNAL(editResourceBlock(int, const RVector&)), 
+    this, 
+    SLOT(editResourceBlockEmitter(int, const RVector&))
+  );
+
+  connect(
+    getWrapped(), 
     SIGNAL(escape()), 
     this, 
     SLOT(escapeEmitter())
@@ -27639,6 +27646,86 @@ RVector a2_cpp;
               }
             
     // Class: RMainWindowQt
+    // Function: requestResourceBlockEditing
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::requestResourceBlockEditing
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RObject_Id(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: entityId (RObject::Id)
+  
+RObject::Id a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RObject_Id(handler, a1);
+        
+  // convert js parameter to cpp: pos (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->requestResourceBlockEditing(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for requestResourceBlockEditing";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
     // Function: escapeEvent
     // Source: 
     // Static: false
@@ -28804,6 +28891,44 @@ int a1_cpp;
 
 
                 emit contextMenu(
+                  a1_js, a2_js
+                );
+              }
+            
+    // Class: RMainWindowQt
+    // Function: editResourceBlock
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RMainWindowQt_Wrapper::editResourceBlockEmitter(
+                int entityId, const RVector& pos
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: entityId (int)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_int(
+    handler, 
+    entityId
+  );
+
+  // parameter: pos (RVector)
+  
+
+
+  QJSValue a2_js = RJSHelper_qcad::cpp2js_RVector(
+    handler, 
+    pos
+  );
+
+
+                emit editResourceBlock(
                   a1_js, a2_js
                 );
               }

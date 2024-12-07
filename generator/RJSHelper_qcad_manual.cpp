@@ -287,6 +287,10 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
+          #include "rexportlistener_wrapper.h"
+        
           #include "rsoliddata_wrapper.h"
         
           #include "robject_wrapper.h"
@@ -366,6 +370,10 @@
           #include "robject_wrapper.h"
         
           #include "rentity_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "rimportlistener_wrapper.h"
         
           #include "qobject_wrapper.h"
         
@@ -2098,6 +2106,14 @@
             
             // registration of base casters that cast RExportListener to base classes:
             
+            // registration of base casters that cast RExportListenerAdapter to base classes:
+            
+              // registration of base casters that casts RExportListenerAdapter to QObject:
+              QObject_Wrapper::registerBasecaster_QObject(new RJSBasecaster_RExportListenerAdapter_QObject());
+            
+              // registration of base casters that casts RExportListenerAdapter to RExportListener:
+              RExportListener_Wrapper::registerBasecaster_RExportListener(new RJSBasecaster_RExportListenerAdapter_RExportListener());
+            
             // registration of base casters that cast RExporter to base classes:
             
             // registration of base casters that cast RFaceData to base classes:
@@ -2287,6 +2303,14 @@
               REntity_Wrapper::registerBasecaster_REntity(new RJSBasecaster_RImageEntity_REntity());
             
             // registration of base casters that cast RImportListener to base classes:
+            
+            // registration of base casters that cast RImportListenerAdapter to base classes:
+            
+              // registration of base casters that casts RImportListenerAdapter to QObject:
+              QObject_Wrapper::registerBasecaster_QObject(new RJSBasecaster_RImportListenerAdapter_QObject());
+            
+              // registration of base casters that casts RImportListenerAdapter to RImportListener:
+              RImportListener_Wrapper::registerBasecaster_RImportListener(new RJSBasecaster_RImportListenerAdapter_RImportListener());
             
             // registration of base casters that cast RImporter to base classes:
             

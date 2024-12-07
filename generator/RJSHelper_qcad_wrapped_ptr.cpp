@@ -287,6 +287,10 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
+          #include "rexportlistener_wrapper.h"
+        
           #include "rsoliddata_wrapper.h"
         
           #include "robject_wrapper.h"
@@ -366,6 +370,10 @@
           #include "robject_wrapper.h"
         
           #include "rentity_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "rimportlistener_wrapper.h"
         
           #include "qobject_wrapper.h"
         
@@ -5762,6 +5770,14 @@
       QJSValue RJSHelper_qcad::cpp2js_RExportListener(RJSApi& handler, RExportListener* v) {
 
           
+            // downcast to RExportListenerAdapter:
+            {
+                RExportListenerAdapter* o = dynamic_cast<RExportListenerAdapter*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RExportListenerAdapter(handler, o);
+                }
+            }
+          
 
           QJSEngine* engine = handler.getEngine();
           RExportListener_Wrapper* ret = new RExportListener_Wrapper(handler, v, false);
@@ -6877,6 +6893,14 @@
     
       QJSValue RJSHelper_qcad::cpp2js_RImportListener(RJSApi& handler, RImportListener* v) {
 
+          
+            // downcast to RImportListenerAdapter:
+            {
+                RImportListenerAdapter* o = dynamic_cast<RImportListenerAdapter*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RImportListenerAdapter(handler, o);
+                }
+            }
           
 
           QJSEngine* engine = handler.getEngine();

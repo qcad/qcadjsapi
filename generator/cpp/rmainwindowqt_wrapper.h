@@ -9175,6 +9175,33 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
               ;
             
     // Class: RMainWindowQt
+    // Function: requestResourceBlockEditing
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  requestResourceBlockEditing
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
     // Function: escapeEvent
     // Source: 
     // Static: false
@@ -9696,6 +9723,29 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
               // called when signal is emitted from wrapped class:
               public slots:
               void contextMenuEmitter(
+                int entityId, const RVector& pos
+              );
+            
+    // Class: RMainWindowQt
+    // Function: editResourceBlock
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void editResourceBlock(
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void editResourceBlockEmitter(
                 int entityId, const RVector& pos
               );
             

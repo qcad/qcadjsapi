@@ -83,6 +83,7 @@
     <file alias="generator/js/REventHandler.js">generator/js/REventHandler.js</file>
     <file alias="generator/js/RExplodable.js">generator/js/RExplodable.js</file>
     <file alias="generator/js/RExportListener.js">generator/js/RExportListener.js</file>
+    <file alias="generator/js/RExportListenerAdapter.js">generator/js/RExportListenerAdapter.js</file>
     <file alias="generator/js/RExporter.js">generator/js/RExporter.js</file>
     <file alias="generator/js/RFaceData.js">generator/js/RFaceData.js</file>
     <file alias="generator/js/RFaceEntity.js">generator/js/RFaceEntity.js</file>
@@ -118,6 +119,7 @@
     <file alias="generator/js/RImageData.js">generator/js/RImageData.js</file>
     <file alias="generator/js/RImageEntity.js">generator/js/RImageEntity.js</file>
     <file alias="generator/js/RImportListener.js">generator/js/RImportListener.js</file>
+    <file alias="generator/js/RImportListenerAdapter.js">generator/js/RImportListenerAdapter.js</file>
     <file alias="generator/js/RImporter.js">generator/js/RImporter.js</file>
     <file alias="generator/js/RInputEvent.js">generator/js/RInputEvent.js</file>
     <file alias="generator/js/RInterTransactionListener.js">generator/js/RInterTransactionListener.js</file>

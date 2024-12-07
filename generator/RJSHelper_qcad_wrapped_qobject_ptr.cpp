@@ -287,6 +287,10 @@
         
           #include "qobject_wrapper.h"
         
+          #include "qobject_wrapper.h"
+        
+          #include "rexportlistener_wrapper.h"
+        
           #include "rsoliddata_wrapper.h"
         
           #include "robject_wrapper.h"
@@ -366,6 +370,10 @@
           #include "robject_wrapper.h"
         
           #include "rentity_wrapper.h"
+        
+          #include "qobject_wrapper.h"
+        
+          #include "rimportlistener_wrapper.h"
         
           #include "qobject_wrapper.h"
         
@@ -2405,6 +2413,111 @@
       }
 
     
+      QJSValue RJSHelper_qcad::cpp2js_RExportListenerAdapter(RJSApi& handler, RExportListenerAdapter* v) {
+          RExportListenerAdapter_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<RExportListenerAdapter_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper_qcad::cpp2js_RExportListenerAdapter: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new RExportListenerAdapter_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new RExportListenerAdapter_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new RExportListenerAdapter('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RExportListenerAdapter");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RExportListenerAdapter is undefined. Use RExportListenerAdapter_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RExportListenerAdapter('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RExportListenerAdapter(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RExportListenerAdapter(RJSApi& handler, const RExportListenerAdapter* v) {
+          return RJSHelper_qcad::cpp2js_RExportListenerAdapter(handler, const_cast<RExportListenerAdapter*>(v));
+      }
+
+      RExportListenerAdapter* RJSHelper_qcad::js2cpp_RExportListenerAdapter_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RExportListenerAdapter: not a QObject";
+              return nullptr;
+          }
+          //RExportListenerAdapter_Wrapper* wrapper = getWrapper<RExportListenerAdapter_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //RExportListenerAdapter_Wrapper* wrapper = qobject_cast<RExportListenerAdapter_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RExportListenerAdapter_Wrapper* wrapper = dynamic_cast<RExportListenerAdapter_Wrapper*>(obj);
+          //RExportListenerAdapter_Wrapper* wrapper = (RExportListenerAdapter_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RExportListenerAdapter: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (RExportListenerAdapter*)wrapper->getWrappedVoid();
+          //return getWrapped_RExportListenerAdapter(wrapper);
+          return RExportListenerAdapter_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RExportListenerAdapter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RExportListenerAdapter: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::RExportListenerAdapter_Type);
+          //return fun.call().toInt()==RJSType::RExportListenerAdapter_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RExportListenerAdapter::getIdStatic())).toBool();
+      }
+
+    
       QJSValue RJSHelper_qcad::cpp2js_RToolOptionEventFilter(RJSApi& handler, RToolOptionEventFilter* v) {
           RToolOptionEventFilter_Wrapper* ret = nullptr;
           bool existing = false;
@@ -3452,6 +3565,111 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_RGuiAction::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper_qcad::cpp2js_RImportListenerAdapter(RJSApi& handler, RImportListenerAdapter* v) {
+          RImportListenerAdapter_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<RImportListenerAdapter_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper_qcad::cpp2js_RImportListenerAdapter: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new RImportListenerAdapter_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new RImportListenerAdapter_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new RImportListenerAdapter('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RImportListenerAdapter");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RImportListenerAdapter is undefined. Use RImportListenerAdapter_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RImportListenerAdapter('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RImportListenerAdapter(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RImportListenerAdapter(RJSApi& handler, const RImportListenerAdapter* v) {
+          return RJSHelper_qcad::cpp2js_RImportListenerAdapter(handler, const_cast<RImportListenerAdapter*>(v));
+      }
+
+      RImportListenerAdapter* RJSHelper_qcad::js2cpp_RImportListenerAdapter_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RImportListenerAdapter: not a QObject";
+              return nullptr;
+          }
+          //RImportListenerAdapter_Wrapper* wrapper = getWrapper<RImportListenerAdapter_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //RImportListenerAdapter_Wrapper* wrapper = qobject_cast<RImportListenerAdapter_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RImportListenerAdapter_Wrapper* wrapper = dynamic_cast<RImportListenerAdapter_Wrapper*>(obj);
+          //RImportListenerAdapter_Wrapper* wrapper = (RImportListenerAdapter_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RImportListenerAdapter: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (RImportListenerAdapter*)wrapper->getWrappedVoid();
+          //return getWrapped_RImportListenerAdapter(wrapper);
+          return RImportListenerAdapter_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RImportListenerAdapter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RImportListenerAdapter: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::RImportListenerAdapter_Type);
+          //return fun.call().toInt()==RJSType::RImportListenerAdapter_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RImportListenerAdapter::getIdStatic())).toBool();
       }
 
     

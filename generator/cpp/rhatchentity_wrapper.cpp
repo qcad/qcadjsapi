@@ -10014,6 +10014,127 @@ bool a1_cpp;
               }
             
     // Class: RHatchEntity
+    // Function: isWinding
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::isWinding
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                bool res = 
+                    
+                w->isWinding(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isWinding";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: setWinding
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::setWinding
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: on (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                
+                w->setWinding(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setWinding";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
     // Function: getScale
     // Source: 
     // Static: false

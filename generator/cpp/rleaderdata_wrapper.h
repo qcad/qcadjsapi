@@ -3618,25 +3618,6 @@
               ;
             
     // Class: RLeaderData
-    // Function: reverse
-    // Source: RPolyline
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  reverse
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RLeaderData
     // Function: getReversed
     // Source: RPolyline
     // Static: false
@@ -4711,6 +4692,25 @@
   a1
       = QJSValue()
     
+              )
+              
+              ;
+            
+    // Class: RLeaderData
+    // Function: reverse
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  reverse
+              (
+
+                
               )
               
               ;

@@ -1988,6 +1988,52 @@ int a1_cpp;
               }
             
     // Class: RSettings
+    // Function: getPluginsLocation
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::getPluginsLocation
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QString res = 
+                
+                // call static member function:
+                RSettings::getPluginsLocation(
+              
+            );
+          
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getPluginsLocation";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSettings
     // Function: isGuiEnabled
     // Source: 
     // Static: true
