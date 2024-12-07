@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RImportListenerAdapter.h">
+  <class name="RImportListenerAdapter">
+    <super_list>
+      <super name="QObject" />
+      <super name="RImportListener" />
+    </super_list>
+    <function name="preImportEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postImportEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="preImport">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postImport">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>

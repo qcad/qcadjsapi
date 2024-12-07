@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RExportListenerAdapter.h">
+  <class name="RExportListenerAdapter">
+    <super_list>
+      <super name="QObject" />
+      <super name="RExportListener" />
+    </super_list>
+    <function name="preExportEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postExportEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endOfExportEvent">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RExporter" modifier="*" name="exporter" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="preExport">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="postExport">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="endOfExport">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RExporter" modifier="*" name="exporter" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>
