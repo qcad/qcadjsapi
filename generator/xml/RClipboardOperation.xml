@@ -212,5 +212,12 @@
         </parameters>
       </variant>
     </function>
+    <function name="setBlockOwnership">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
   </class>
 </unit>

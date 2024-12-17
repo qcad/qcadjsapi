@@ -2305,6 +2305,70 @@ bool a1_cpp;
               }
             
     // Class: RDeleteSelectionOperation
+    // Function: setBlockOwnership
+    // Source: RClipboardOperation
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDeleteSelectionOperation_Wrapper::setBlockOwnership
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: on (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDeleteSelectionOperation* w = getWrapped();
+                
+                w->setBlockOwnership(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setBlockOwnership";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDeleteSelectionOperation
     // Function: apply
     // Source: 
     // Static: false

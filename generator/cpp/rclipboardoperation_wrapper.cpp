@@ -2399,6 +2399,70 @@ bool a1_cpp;
                 
               }
             
+    // Class: RClipboardOperation
+    // Function: setBlockOwnership
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RClipboardOperation_Wrapper::setBlockOwnership
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: on (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RClipboardOperation* w = getWrapped();
+                
+                w->setBlockOwnership(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setBlockOwnership";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
 
   // member functions for static properties, forward to static function
   
