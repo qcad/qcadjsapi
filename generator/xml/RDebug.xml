@@ -71,7 +71,9 @@
     </function>
     <function name="printCounters" static="true">
       <variant return-type="void" static="true" access="public">
-        <parameters />
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="prefix" default="RDEFAULT_QSTRING" />
+        </parameters>
       </variant>
     </function>
     <function name="setPrefix" static="true">
