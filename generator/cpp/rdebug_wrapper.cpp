@@ -637,19 +637,43 @@ QString a1_cpp;
     // Function: printCounters
     // Source: 
     // Static: true
-    // Parameters: 0
+    // Parameters: 1
     // preceding Parameters: -1
 
                 QJSValue 
               RDebug_WrapperSingleton::printCounters
               (
                 
+  const QJSValue& 
+  a1
               ) 
               
               {
                 
-      {
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
     
+      // prepare parameters:
+    
+  // convert js parameter to cpp: prefix (QString)
+  
+QString a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = RDEFAULT_QSTRING;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+          }
+        
 
     // call function:
     
@@ -658,7 +682,8 @@ QString a1_cpp;
             
                 // call static member function:
                 RDebug::printCounters(
-              
+              a1_cpp
+    
             );
           
             return QJSValue();
