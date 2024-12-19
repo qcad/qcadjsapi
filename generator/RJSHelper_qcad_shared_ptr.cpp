@@ -1363,8 +1363,6 @@
   // QSharedPointer types:
   // ---------------------
    QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_REntity(RJSApi& handler, const QSharedPointer<REntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          REntity_Wrapper* ret = new REntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new REntity('__GOT_WRAPPER__', wrapper);");
@@ -1610,6 +1608,8 @@
             }
           
 
+          QJSEngine* engine = handler.getEngine();
+          REntity_Wrapper* ret = new REntity_Wrapper(handler, v);
 
           // JS: new REntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("REntity");
@@ -1803,8 +1803,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RShape(RJSApi& handler, const QSharedPointer<RShape>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RShape_Wrapper* ret = new RShape_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RShape('__GOT_WRAPPER__', wrapper);");
@@ -1882,6 +1880,8 @@
             }
           
 
+          QJSEngine* engine = handler.getEngine();
+          RShape_Wrapper* ret = new RShape_Wrapper(handler, v);
 
           // JS: new RShape('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RShape");
@@ -1979,8 +1979,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RArc(RJSApi& handler, const QSharedPointer<RArc>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RArc_Wrapper* ret = new RArc_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RArc('__GOT_WRAPPER__', wrapper);");
@@ -1988,6 +1986,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          RArc_Wrapper* ret = new RArc_Wrapper(handler, v);
 
           // JS: new RArc('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RArc");
@@ -2037,8 +2037,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RCircle(RJSApi& handler, const QSharedPointer<RCircle>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RCircle_Wrapper* ret = new RCircle_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RCircle('__GOT_WRAPPER__', wrapper);");
@@ -2046,6 +2044,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          RCircle_Wrapper* ret = new RCircle_Wrapper(handler, v);
 
           // JS: new RCircle('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RCircle");
@@ -2095,8 +2095,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_REllipse(RJSApi& handler, const QSharedPointer<REllipse>& v) {
-          QJSEngine* engine = handler.getEngine();
-          REllipse_Wrapper* ret = new REllipse_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new REllipse('__GOT_WRAPPER__', wrapper);");
@@ -2104,6 +2102,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          REllipse_Wrapper* ret = new REllipse_Wrapper(handler, v);
 
           // JS: new REllipse('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("REllipse");
@@ -2153,8 +2153,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RLine(RJSApi& handler, const QSharedPointer<RLine>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RLine_Wrapper* ret = new RLine_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLine('__GOT_WRAPPER__', wrapper);");
@@ -2162,6 +2160,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          RLine_Wrapper* ret = new RLine_Wrapper(handler, v);
 
           // JS: new RLine('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLine");
@@ -2211,8 +2211,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RPoint(RJSApi& handler, const QSharedPointer<RPoint>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RPoint_Wrapper* ret = new RPoint_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RPoint('__GOT_WRAPPER__', wrapper);");
@@ -2220,6 +2218,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          RPoint_Wrapper* ret = new RPoint_Wrapper(handler, v);
 
           // JS: new RPoint('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RPoint");
@@ -2269,8 +2269,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RRay(RJSApi& handler, const QSharedPointer<RRay>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RRay_Wrapper* ret = new RRay_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RRay('__GOT_WRAPPER__', wrapper);");
@@ -2278,6 +2276,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          RRay_Wrapper* ret = new RRay_Wrapper(handler, v);
 
           // JS: new RRay('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RRay");
@@ -2327,8 +2327,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RSpline(RJSApi& handler, const QSharedPointer<RSpline>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RSpline_Wrapper* ret = new RSpline_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RSpline('__GOT_WRAPPER__', wrapper);");
@@ -2336,6 +2334,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          RSpline_Wrapper* ret = new RSpline_Wrapper(handler, v);
 
           // JS: new RSpline('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RSpline");
@@ -2385,8 +2385,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTriangle(RJSApi& handler, const QSharedPointer<RTriangle>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RTriangle_Wrapper* ret = new RTriangle_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RTriangle('__GOT_WRAPPER__', wrapper);");
@@ -2394,6 +2392,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          RTriangle_Wrapper* ret = new RTriangle_Wrapper(handler, v);
 
           // JS: new RTriangle('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RTriangle");
@@ -2443,8 +2443,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RXLine(RJSApi& handler, const QSharedPointer<RXLine>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RXLine_Wrapper* ret = new RXLine_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RXLine('__GOT_WRAPPER__', wrapper);");
@@ -2452,6 +2450,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          RXLine_Wrapper* ret = new RXLine_Wrapper(handler, v);
 
           // JS: new RXLine('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RXLine");
@@ -2501,8 +2501,6 @@
           return !v.isUndefined();
       }
      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTextLabel(RJSApi& handler, const QSharedPointer<RTextLabel>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RTextLabel_Wrapper* ret = new RTextLabel_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RTextLabel('__GOT_WRAPPER__', wrapper);");
@@ -2510,6 +2508,8 @@
           // attempt to downcast to specific type:
           
 
+          QJSEngine* engine = handler.getEngine();
+          RTextLabel_Wrapper* ret = new RTextLabel_Wrapper(handler, v);
 
           // JS: new RTextLabel('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RTextLabel");
