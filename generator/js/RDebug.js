@@ -378,11 +378,12 @@
         {
           //print("JS: RDebug.printCounters");
           
-      if (arguments.length == 0) {
+      if (arguments.length >= 0 &&
+          arguments.length <= 1) {
     
                 // calling static wrapper:
                 return RDebug_WrapperSingletonInstance.printCounters(
-                  
+                  arguments[0]
                 );
               
 
