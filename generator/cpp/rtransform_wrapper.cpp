@@ -499,6 +499,7 @@ qreal a2_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTransform";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

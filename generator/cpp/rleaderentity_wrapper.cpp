@@ -8984,17 +8984,17 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 RLeaderEntity* w = getWrapped();
-                RLeaderEntity* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RLeaderEntity*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RLeaderEntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

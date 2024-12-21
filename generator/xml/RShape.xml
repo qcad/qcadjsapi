@@ -142,15 +142,17 @@
       </variant>
     </function>
     <function name="clone">
-      <variant return-type="RShape*" virtual="true" const="true" access="public">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" virtual="true" const="true" access="public">
         <parameters />
       </variant>
     </function>
+    <!--
     <function name="cloneToSharedPointer">
       <variant return-type="QSharedPointer&lt;RShape&gt;" virtual="true" const="true" access="public">
         <parameters />
       </variant>
     </function>
+    -->
     <function name="isInterpolated">
       <variant return-type="bool" virtual="true" const="true" access="public">
         <parameters />

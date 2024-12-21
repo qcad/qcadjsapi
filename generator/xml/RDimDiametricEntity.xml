@@ -82,7 +82,7 @@ filename="RDimDiametricEntity.h">
       </variant>
     </function>
     <function name="clone">
-      <variant return-type="RDimDiametricEntity*" virtual="true" const="true" access="public">
+      <variant return-type="QSharedPointer&lt;RObject&gt;" virtual="true" const="true" access="public">
         <parameters />
       </variant>
     </function>

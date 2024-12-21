@@ -103,6 +103,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPluginInfo";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

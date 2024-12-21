@@ -8943,17 +8943,17 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 RFaceEntity* w = getWrapped();
-                RFaceEntity* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RFaceEntity*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RFaceEntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

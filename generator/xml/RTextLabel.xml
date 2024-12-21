@@ -2,6 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTextLabel.h">
   <class name="RTextLabel" sharedpointer="true">
     <super_list>
+      <super name="RShape" />
       <super name="RPoint" />
     </super_list>
     <constructor>
@@ -17,7 +18,7 @@
       </variant>
     </constructor>
     <function name="clone">
-      <variant return-type="RTextLabel*" virtual="true" const="true" access="public">
+      <variant return-type="QSharedPointer&lt;RShape&gt;" virtual="true" const="true" access="public">
         <parameters />
       </variant>
     </function>

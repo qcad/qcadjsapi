@@ -4518,6 +4518,7 @@ REllipse a1_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RLine";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
@@ -4804,63 +4805,6 @@ RVector a2_cpp;
 
     // non-static functions:
     
-    // Class: RLine
-    // Function: cloneToSharedPointer
-    // Source: RShape
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RLine_Wrapper::cloneToSharedPointer
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RLine* w = getWrapped();
-                QSharedPointer<RShape> res = 
-                    
-                w->cloneToSharedPointer(
-                  
-                );
-              
-            // return type: QSharedPointer<RShape>
-
-            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for cloneToSharedPointer";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     // Class: RLine
     // Function: isInterpolated
     // Source: RShape
@@ -7010,19 +6954,17 @@ RVector a1_cpp;
             
                 // call function of C++ class:
                 RLine* w = getWrapped();
-                RLine* res = 
+                QSharedPointer<RShape> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RLine*
+            // return type: QSharedPointer<RShape>
 
-            return RJSHelper_qcad::cpp2js_RLine(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
               handler, 
               // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper_qcad::cpp2js_RLine:
                   res
                 
               );

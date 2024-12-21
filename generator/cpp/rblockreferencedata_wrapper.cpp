@@ -204,6 +204,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RBlockReferenceData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

@@ -103,6 +103,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RViewListener";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

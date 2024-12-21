@@ -566,6 +566,7 @@ RS::KnownVariable a1_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimStyleData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

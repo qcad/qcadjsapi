@@ -422,6 +422,7 @@ RVector a4_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of REllipseData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
@@ -3886,19 +3887,17 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 REllipseData* w = getWrapped();
-                REllipse* res = 
+                QSharedPointer<RShape> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: REllipse*
+            // return type: QSharedPointer<RShape>
 
-            return RJSHelper_qcad::cpp2js_REllipse(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
               handler, 
               // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper_qcad::cpp2js_REllipse:
                   res
                 
               );

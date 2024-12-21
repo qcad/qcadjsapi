@@ -114,6 +114,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTextLayout";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

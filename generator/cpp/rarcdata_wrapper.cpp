@@ -550,6 +550,7 @@ bool a5_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RArcData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
@@ -4056,19 +4057,17 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 RArcData* w = getWrapped();
-                RArc* res = 
+                QSharedPointer<RShape> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RArc*
+            // return type: QSharedPointer<RShape>
 
-            return RJSHelper_qcad::cpp2js_RArc(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
               handler, 
               // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper_qcad::cpp2js_RArc:
                   res
                 
               );

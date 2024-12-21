@@ -388,6 +388,7 @@ QString a2_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RFileExporterRegistry";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

@@ -188,6 +188,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTextRenderer";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

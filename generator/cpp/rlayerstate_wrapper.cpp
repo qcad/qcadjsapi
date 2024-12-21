@@ -2986,17 +2986,17 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 RLayerState* w = getWrapped();
-                RLayerState* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RLayerState*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RLayerState(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

@@ -1641,27 +1641,6 @@ Ray = RPolyline::Ray,
               ;
             
     // Class: RPolyline
-    // Function: cloneToSharedPointer
-    // Source: RShape
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cloneToSharedPointer
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RPolyline
     // Function: getClosestPointOnShape
     // Source: RShape
     // Static: false

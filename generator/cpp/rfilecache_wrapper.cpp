@@ -278,6 +278,7 @@ bool a2_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RFileCache";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

@@ -2659,6 +2659,7 @@ RRefPoint::Flags a2_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RRefPoint";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

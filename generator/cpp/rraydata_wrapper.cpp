@@ -158,6 +158,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RRayData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
@@ -3617,19 +3618,17 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 RRayData* w = getWrapped();
-                RRay* res = 
+                QSharedPointer<RShape> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RRay*
+            // return type: QSharedPointer<RShape>
 
-            return RJSHelper_qcad::cpp2js_RRay(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
               handler, 
               // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper_qcad::cpp2js_RRay:
                   res
                 
               );

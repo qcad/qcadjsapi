@@ -11387,17 +11387,17 @@ RS::KnownVariable a1_cpp;
             
                 // call function of C++ class:
                 RDimDiametricEntity* w = getWrapped();
-                RDimDiametricEntity* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RDimDiametricEntity*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RDimDiametricEntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

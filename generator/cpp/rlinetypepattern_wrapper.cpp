@@ -150,6 +150,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RLinetypePattern";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

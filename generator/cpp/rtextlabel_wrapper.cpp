@@ -13,6 +13,4397 @@
     
     // static functions implementation in singleton wrapper:
     
+    // Class: RTextLabel
+    // Function: isPointShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isPointShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isPointShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isPointShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isLineShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isLineShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isLineShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isLineShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isArcShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isArcShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isArcShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isArcShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isCircleShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isCircleShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isCircleShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isCircleShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isEllipseShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isEllipseShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isEllipseShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isEllipseShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isFullEllipseShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isFullEllipseShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isFullEllipseShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isFullEllipseShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isPolylineShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isPolylineShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isPolylineShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isPolylineShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isSplineShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isSplineShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isSplineShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isSplineShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isTriangleShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isTriangleShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isTriangleShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isTriangleShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isXLineShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isXLineShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isXLineShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isXLineShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isRayShape
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::isRayShape
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RShape::isRayShape(
+              *a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isRayShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getPolylines
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getPolylines
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QList_QSharedPointer_RShape(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shapes (QList<QSharedPointer<RShape>>)
+  
+QList<QSharedPointer<RShape>> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QList_QSharedPointer_RShape(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RPolyline> res = 
+                
+                // call static member function:
+                RShape::getPolylines(
+              a1_cpp
+    
+            );
+          
+            // return type: QList<RPolyline>
+
+            return RJSHelper_qcad::cpp2js_QList_RPolyline(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getPolylines";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getOrderedShapes
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getOrderedShapes
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QList_QSharedPointer_RShape(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shapes (QList<QSharedPointer<RShape>>)
+  
+QList<QSharedPointer<RShape>> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QList_QSharedPointer_RShape(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<QSharedPointer<RShape>> res = 
+                
+                // call static member function:
+                RShape::getOrderedShapes(
+              a1_cpp
+    
+            );
+          
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getOrderedShapes";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsLL
+    // Source: RShape
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsLL
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RLine(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+  )
+
+   && RJSHelper::is_bool(handler, a4
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: line2 (RLine)
+  
+RLine a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a2);
+        
+  // convert js parameter to cpp: limited1 (bool)
+  
+bool a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+        
+  // convert js parameter to cpp: limited2 (bool)
+  
+bool a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLL(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RLine(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: line2 (RLine)
+  
+RLine a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLL(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsLL";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsLA
+    // Source: RShape
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsLA
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RArc(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+  )
+
+   && RJSHelper::is_bool(handler, a4
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: arc2 (RArc)
+  
+RArc a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RArc(handler, a2);
+        
+  // convert js parameter to cpp: limited1 (bool)
+  
+bool a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+        
+  // convert js parameter to cpp: limited2 (bool)
+  
+bool a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLA(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RArc(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: arc2 (RArc)
+  
+RArc a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RArc(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLA(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsLA";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsLC
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsLC
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RCircle(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: circle2 (RCircle)
+  
+RCircle a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RCircle(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLC(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsLC";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsLE
+    // Source: RShape
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsLE
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_REllipse(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+  )
+
+   && RJSHelper::is_bool(handler, a4
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: ellipse2 (REllipse)
+  
+REllipse a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a2);
+        
+  // convert js parameter to cpp: limited1 (bool)
+  
+bool a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+        
+  // convert js parameter to cpp: limited2 (bool)
+  
+bool a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLE(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_REllipse(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: ellipse2 (REllipse)
+  
+REllipse a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLE(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsLE";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsLT
+    // Source: RShape
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsLT
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RTriangle(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+  )
+
+   && RJSHelper::is_bool(handler, a4
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: triangle2 (RTriangle)
+  
+RTriangle a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RTriangle(handler, a2);
+        
+  // convert js parameter to cpp: limited1 (bool)
+  
+bool a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+        
+  // convert js parameter to cpp: limited2 (bool)
+  
+bool a4_cpp;
+
+      a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLT(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RTriangle(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: triangle2 (RTriangle)
+  
+RTriangle a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RTriangle(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLT(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsLT";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsLS
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsLS
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RSpline(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: spline2 (RSpline)
+  
+RSpline a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RSpline(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLS(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsLS";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsLX
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsLX
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RLine(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RExplodable_ptr(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: line1 (RLine)
+  
+RLine a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RLine(handler, a1);
+        
+  // convert js parameter to cpp: explodable2 (RExplodable)
+  
+
+          // non copyable:
+          RExplodable*
+         a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RExplodable_ptr(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsLX(
+              a1_cpp
+    , *a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsLX";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsAA
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsAA
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RArc(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RArc(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: arc1 (RArc)
+  
+RArc a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RArc(handler, a1);
+        
+  // convert js parameter to cpp: arc2 (RArc)
+  
+RArc a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RArc(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsAA(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsAA";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsAC
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsAC
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RArc(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RCircle(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: arc1 (RArc)
+  
+RArc a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RArc(handler, a1);
+        
+  // convert js parameter to cpp: circle2 (RCircle)
+  
+RCircle a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RCircle(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsAC(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsAC";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsAE
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsAE
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RArc(handler, a1
+  )
+
+   && RJSHelper_qcad::is_REllipse(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: arc1 (RArc)
+  
+RArc a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RArc(handler, a1);
+        
+  // convert js parameter to cpp: ellipse2 (REllipse)
+  
+REllipse a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsAE(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsAE";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsAT
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsAT
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RArc(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RTriangle(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: arc1 (RArc)
+  
+RArc a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RArc(handler, a1);
+        
+  // convert js parameter to cpp: triangle2 (RTriangle)
+  
+RTriangle a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RTriangle(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsAT(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsAT";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsAS
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsAS
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RArc(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RSpline(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: arc1 (RArc)
+  
+RArc a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RArc(handler, a1);
+        
+  // convert js parameter to cpp: spline2 (RSpline)
+  
+RSpline a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RSpline(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsAS(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsAS";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsAX
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsAX
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RArc(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RExplodable_ptr(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: arc1 (RArc)
+  
+RArc a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RArc(handler, a1);
+        
+  // convert js parameter to cpp: explodable2 (RExplodable)
+  
+
+          // non copyable:
+          RExplodable*
+         a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RExplodable_ptr(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsAX(
+              a1_cpp
+    , *a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsAX";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsCC
+    // Source: RShape
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsCC
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RCircle(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RCircle(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: circle1 (RCircle)
+  
+RCircle a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RCircle(handler, a1);
+        
+  // convert js parameter to cpp: circle2 (RCircle)
+  
+RCircle a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RCircle(handler, a2);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsCC(
+              a1_cpp
+    , a2_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsCC";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsCE
+    // Source: RShape
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsCE
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RCircle(handler, a1
+  )
+
+   && RJSHelper_qcad::is_REllipse(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: circle1 (RCircle)
+  
+RCircle a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RCircle(handler, a1);
+        
+  // convert js parameter to cpp: ellipse2 (REllipse)
+  
+REllipse a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a2);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsCE(
+              a1_cpp
+    , a2_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsCE";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsCS
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsCS
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RCircle(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RSpline(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: circle1 (RCircle)
+  
+RCircle a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RCircle(handler, a1);
+        
+  // convert js parameter to cpp: spline2 (RSpline)
+  
+RSpline a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RSpline(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsCS(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsCS";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsCX
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsCX
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RCircle(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RExplodable_ptr(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: circle1 (RCircle)
+  
+RCircle a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RCircle(handler, a1);
+        
+  // convert js parameter to cpp: explodable2 (RExplodable)
+  
+
+          // non copyable:
+          RExplodable*
+         a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RExplodable_ptr(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsCX(
+              a1_cpp
+    , *a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsCX";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsEE
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsEE
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_REllipse(handler, a1
+  )
+
+   && RJSHelper_qcad::is_REllipse(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: ellipse1 (REllipse)
+  
+REllipse a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a1);
+        
+  // convert js parameter to cpp: ellipse2 (REllipse)
+  
+REllipse a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsEE(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_REllipse(handler, a1
+  )
+
+   && RJSHelper_qcad::is_REllipse(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: ellipse1 (REllipse)
+  
+REllipse a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a1);
+        
+  // convert js parameter to cpp: ellipse2 (REllipse)
+  
+REllipse a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a2);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsEE(
+              a1_cpp
+    , a2_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsEE";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsES
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsES
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_REllipse(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RSpline(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: ellipse1 (REllipse)
+  
+REllipse a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a1);
+        
+  // convert js parameter to cpp: spline2 (RSpline)
+  
+RSpline a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RSpline(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsES(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsES";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsEX
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsEX
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_REllipse(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RExplodable_ptr(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: ellipse1 (REllipse)
+  
+REllipse a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a1);
+        
+  // convert js parameter to cpp: explodable2 (RExplodable)
+  
+
+          // non copyable:
+          RExplodable*
+         a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RExplodable_ptr(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsEX(
+              a1_cpp
+    , *a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsEX";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsSX
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsSX
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RSpline(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RExplodable_ptr(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: spline1 (RSpline)
+  
+RSpline a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RSpline(handler, a1);
+        
+  // convert js parameter to cpp: explodable2 (RExplodable)
+  
+
+          // non copyable:
+          RExplodable*
+         a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RExplodable_ptr(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsSX(
+              a1_cpp
+    , *a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsSX";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsSS
+    // Source: RShape
+    // Static: true
+    // Parameters: 5
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsSS
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RSpline(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RSpline(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a4
+    , true
+  
+  )
+
+   && RJSHelper::is_double(handler, a5
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: spline1 (RSpline)
+  
+RSpline a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RSpline(handler, a1);
+        
+  // convert js parameter to cpp: spline2 (RSpline)
+  
+RSpline a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RSpline(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+  // convert js parameter to cpp: same (bool)
+  
+bool a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = false;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+          }
+        
+  // convert js parameter to cpp: tolerance (double)
+  
+double a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = RS::PointTolerance;
+          }
+          else {
+            a5_cpp = RJSHelper::js2cpp_double(handler, a5);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsSS(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsSS";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPointsXX
+    // Source: RShape
+    // Static: true
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getIntersectionPointsXX
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RExplodable_ptr(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RExplodable_ptr(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a4
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: explodable1 (RExplodable)
+  
+
+          // non copyable:
+          RExplodable*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RExplodable_ptr(handler, a1);
+        
+  // convert js parameter to cpp: explodable2 (RExplodable)
+  
+
+          // non copyable:
+          RExplodable*
+         a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RExplodable_ptr(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+  // convert js parameter to cpp: same (bool)
+  
+bool a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = false;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<RVector> res = 
+                
+                // call static member function:
+                RShape::getIntersectionPointsXX(
+              *a1_cpp
+    , *a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+            );
+          
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPointsXX";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getOffsetLines
+    // Source: RShape
+    // Static: true
+    // Parameters: 5
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getOffsetLines
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+   && RJSHelper::is_double(handler, a2
+  )
+
+   && RJSHelper::is_int(handler, a3
+  )
+
+   && RJSHelper_qcad::is_RS_Side(handler, a4
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a5
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shape (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+  // convert js parameter to cpp: distance (double)
+  
+double a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_double(handler, a2);
+        
+  // convert js parameter to cpp: number (int)
+  
+int a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
+        
+  // convert js parameter to cpp: side (RS::Side)
+  
+RS::Side a4_cpp;
+
+      a4_cpp = RJSHelper_qcad::js2cpp_RS_Side(handler, a4);
+        
+  // convert js parameter to cpp: position (RVector)
+  
+RVector a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = RVector::invalid;
+          }
+          else {
+            a5_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a5);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<QSharedPointer<RShape>> res = 
+                
+                // call static member function:
+                RShape::getOffsetLines(
+              *a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    
+            );
+          
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getOffsetLines";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getOffsetArcs
+    // Source: RShape
+    // Static: true
+    // Parameters: 5
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getOffsetArcs
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+   && RJSHelper::is_double(handler, a2
+  )
+
+   && RJSHelper::is_int(handler, a3
+  )
+
+   && RJSHelper_qcad::is_RS_Side(handler, a4
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a5
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shape (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+  // convert js parameter to cpp: distance (double)
+  
+double a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_double(handler, a2);
+        
+  // convert js parameter to cpp: number (int)
+  
+int a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_int(handler, a3);
+        
+  // convert js parameter to cpp: side (RS::Side)
+  
+RS::Side a4_cpp;
+
+      a4_cpp = RJSHelper_qcad::js2cpp_RS_Side(handler, a4);
+        
+  // convert js parameter to cpp: position (RVector)
+  
+RVector a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = RVector::invalid;
+          }
+          else {
+            a5_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a5);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<QSharedPointer<RShape>> res = 
+                
+                // call static member function:
+                RShape::getOffsetArcs(
+              *a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    
+            );
+          
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getOffsetArcs";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getReversedShapeList
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getReversedShapeList
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QList_QSharedPointer_RShape(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shapes (QList<QSharedPointer<RShape>>)
+  
+QList<QSharedPointer<RShape>> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QList_QSharedPointer_RShape(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<QSharedPointer<RShape>> res = 
+                
+                // call static member function:
+                RShape::getReversedShapeList(
+              a1_cpp
+    
+            );
+          
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getReversedShapeList";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: trim
+    // Source: RShape
+    // Static: true
+    // Parameters: 6
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::trim
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5, 
+  const QJSValue& 
+  a6
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+   && RJSHelper_qcad::is_RShape_ptr(handler, a3
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a4
+  )
+
+   && RJSHelper::is_bool(handler, a5
+  )
+
+   && RJSHelper::is_bool(handler, a6
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: trimShape (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+  // convert js parameter to cpp: trimClickPos (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+  // convert js parameter to cpp: limitingShape (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a3_cpp;
+
+      a3_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a3);
+        
+  // convert js parameter to cpp: limitingClickPos (RVector)
+  
+RVector a4_cpp;
+
+      a4_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a4);
+        
+  // convert js parameter to cpp: trimBoth (bool)
+  
+bool a5_cpp;
+
+      a5_cpp = RJSHelper::js2cpp_bool(handler, a5);
+        
+  // convert js parameter to cpp: samePolyline (bool)
+  
+bool a6_cpp;
+
+      a6_cpp = RJSHelper::js2cpp_bool(handler, a6);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<QSharedPointer<RShape>> res = 
+                
+                // call static member function:
+                RShape::trim(
+              *a1_cpp
+    , a2_cpp
+    , *a3_cpp
+    , a4_cpp
+    , a5_cpp
+    , a6_cpp
+    
+            );
+          
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for trim";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: roundCorners
+    // Source: RShape
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::roundCorners
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QList_QSharedPointer_RShape(handler, a1
+  )
+
+   && RJSHelper::is_double(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shapes (QList<QSharedPointer<RShape>>)
+  
+QList<QSharedPointer<RShape>> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QList_QSharedPointer_RShape(handler, a1);
+        
+  // convert js parameter to cpp: radius (double)
+  
+double a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_double(handler, a2);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<QSharedPointer<RShape>> res = 
+                
+                // call static member function:
+                RShape::roundCorners(
+              a1_cpp
+    , a2_cpp
+    
+            );
+          
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for roundCorners";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: roundShapes
+    // Source: RShape
+    // Static: true
+    // Parameters: 8
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::roundShapes
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5, 
+  const QJSValue& 
+  a6, 
+  const QJSValue& 
+  a7, 
+  const QJSValue& 
+  a8
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QSharedPointer_RShape(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+   && RJSHelper_qcad::is_QSharedPointer_RShape(handler, a3
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a4
+  )
+
+   && RJSHelper::is_bool(handler, a5
+  )
+
+   && RJSHelper::is_bool(handler, a6
+  )
+
+   && RJSHelper::is_double(handler, a7
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a8
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shape1 (QSharedPointer<RShape>)
+  
+QSharedPointer<RShape> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_RShape(handler, a1);
+        
+  // convert js parameter to cpp: clickPos1 (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+  // convert js parameter to cpp: shape2 (QSharedPointer<RShape>)
+  
+QSharedPointer<RShape> a3_cpp;
+
+      a3_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_RShape(handler, a3);
+        
+  // convert js parameter to cpp: clickPos2 (RVector)
+  
+RVector a4_cpp;
+
+      a4_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a4);
+        
+  // convert js parameter to cpp: trim (bool)
+  
+bool a5_cpp;
+
+      a5_cpp = RJSHelper::js2cpp_bool(handler, a5);
+        
+  // convert js parameter to cpp: samePolyline (bool)
+  
+bool a6_cpp;
+
+      a6_cpp = RJSHelper::js2cpp_bool(handler, a6);
+        
+  // convert js parameter to cpp: radius (double)
+  
+double a7_cpp;
+
+      a7_cpp = RJSHelper::js2cpp_double(handler, a7);
+        
+  // convert js parameter to cpp: pos (RVector)
+  
+RVector a8_cpp;
+
+      a8_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a8);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<QSharedPointer<RShape>> res = 
+                
+                // call static member function:
+                RShape::roundShapes(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    , a6_cpp
+    , a7_cpp
+    , a8_cpp
+    
+            );
+          
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for roundShapes";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: xLineToRay
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::xLineToRay
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QSharedPointer_RShape(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shape (QSharedPointer<RShape>)
+  
+QSharedPointer<RShape> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_RShape(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QSharedPointer<RShape> res = 
+                
+                // call static member function:
+                RShape::xLineToRay(
+              a1_cpp
+    
+            );
+          
+            // return type: QSharedPointer<RShape>
+
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for xLineToRay";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: rayToLine
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::rayToLine
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QSharedPointer_RShape(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shape (QSharedPointer<RShape>)
+  
+QSharedPointer<RShape> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_RShape(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QSharedPointer<RShape> res = 
+                
+                // call static member function:
+                RShape::rayToLine(
+              a1_cpp
+    
+            );
+          
+            // return type: QSharedPointer<RShape>
+
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for rayToLine";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: scaleArc
+    // Source: RShape
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::scaleArc
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shape (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+  // convert js parameter to cpp: scaleFactors (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+  // convert js parameter to cpp: center (RVector)
+  
+RVector a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = RDEFAULT_RVECTOR;
+          }
+          else {
+            a3_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a3);
+          }
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QSharedPointer<RShape> res = 
+                
+                // call static member function:
+                RShape::scaleArc(
+              *a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QSharedPointer<RShape>
+
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for scaleArc";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: ellipseToArcCircleEllipse
+    // Source: RShape
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::ellipseToArcCircleEllipse
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_REllipse(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: ellipse (REllipse)
+  
+REllipse a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_REllipse(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QSharedPointer<RShape> res = 
+                
+                // call static member function:
+                RShape::ellipseToArcCircleEllipse(
+              a1_cpp
+    
+            );
+          
+            // return type: QSharedPointer<RShape>
+
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for ellipseToArcCircleEllipse";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getErrorCode
+    // Source: RShape
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_WrapperSingleton::getErrorCode
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            int res = 
+                
+                // call static member function:
+                RShape::getErrorCode(
+              
+            );
+          
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getErrorCode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     void RTextLabel_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RTextLabel_Wrapper>("org.qcad", 1, 0, "RTextLabel_Wrapper");
@@ -41,6 +4432,15 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RTextLabel_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RTextLabel_BaseJs", mob);
+      
+        // singleton wrapper:
+        QJSValue mos = engine->newQMetaObject(&RTextLabel_WrapperSingleton::staticMetaObject);
+        engine->globalObject().setProperty("RTextLabel_WrapperSingleton", mos);
+
+        // create instance of singleton wrapper for static functions:
+        RTextLabel_WrapperSingleton * s = new RTextLabel_WrapperSingleton(handler);
+        engine->globalObject().setProperty("RTextLabel_WrapperSingletonInstance", engine->newQObject(s));
+        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RTextLabel.js";
       QFile scriptFile(fileName);
@@ -114,6 +4514,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTextLabel";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
@@ -285,6 +4686,3405 @@ QVariant a3_cpp;
 
     // non-static functions:
     
+    // Class: RTextLabel
+    // Function: isValid
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::isValid
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->isValid(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isValid";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isInterpolated
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::isInterpolated
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->isInterpolated(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isInterpolated";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getClosestPointOnShape
+    // Source: RShape
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getClosestPointOnShape
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper::is_bool(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_double(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: p (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = true;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
+        
+  // convert js parameter to cpp: strictRange (double)
+  
+double a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = RMAXDOUBLE;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_double(handler, a3);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RVector res = 
+                    
+                w->getClosestPointOnShape(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getClosestPointOnShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: to2D
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::to2D
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                
+                w->to2D(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for to2D";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: equals
+    // Source: RShape
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::equals
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+   && RJSHelper::is_double(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: other (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+  // convert js parameter to cpp: tolerance (double)
+  
+double a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = RS::PointTolerance;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_double(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->equals(
+                  *a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for equals";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntProperties
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getIntProperties
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<int> res = 
+                    
+                w->getIntProperties(
+                  
+                );
+              
+            // return type: QList<int>
+
+            return RJSHelper::cpp2js_QList_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntProperties";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getDoubleProperties
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getDoubleProperties
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<double> res = 
+                    
+                w->getDoubleProperties(
+                  
+                );
+              
+            // return type: QList<double>
+
+            return RJSHelper::cpp2js_QList_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getDoubleProperties";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getBoolProperties
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getBoolProperties
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<bool> res = 
+                    
+                w->getBoolProperties(
+                  
+                );
+              
+            // return type: QList<bool>
+
+            return RJSHelper::cpp2js_QList_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getBoolProperties";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getDistanceTo
+    // Source: RShape
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getDistanceTo
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper::is_bool(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_double(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: point (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = true;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
+        
+  // convert js parameter to cpp: strictRange (double)
+  
+double a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = RMAXDOUBLE;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_double(handler, a3);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                double res = 
+                    
+                w->getDistanceTo(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getDistanceTo";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getMaxDistanceTo
+    // Source: RShape
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getMaxDistanceTo
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QList_RVector(handler, a1
+  )
+
+   && RJSHelper::is_bool(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_double(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: points (QList<RVector>)
+  
+QList<RVector> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QList_RVector(handler, a1);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = true;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
+        
+  // convert js parameter to cpp: strictRange (double)
+  
+double a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = RMAXDOUBLE;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_double(handler, a3);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                double res = 
+                    
+                w->getMaxDistanceTo(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getMaxDistanceTo";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isOnShape
+    // Source: RShape
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::isOnShape
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper::is_bool(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_double(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: point (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = true;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
+        
+  // convert js parameter to cpp: tolerance (double)
+  
+double a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = RDEFAULT_TOLERANCE_1E_MIN4;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_double(handler, a3);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->isOnShape(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isOnShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: filterOnShape
+    // Source: RShape
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::filterOnShape
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QList_RVector(handler, a1
+  )
+
+   && RJSHelper::is_bool(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_double(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: pointList (QList<RVector>)
+  
+QList<RVector> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QList_RVector(handler, a1);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = true;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
+        
+  // convert js parameter to cpp: tolerance (double)
+  
+double a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = RDEFAULT_TOLERANCE_1E_MIN4;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_double(handler, a3);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<RVector> res = 
+                    
+                w->filterOnShape(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for filterOnShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getVectorFromEndpointTo
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getVectorFromEndpointTo
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: point (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RVector res = 
+                    
+                w->getVectorFromEndpointTo(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getVectorFromEndpointTo";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getArcReferencePoints
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getArcReferencePoints
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<RVector> res = 
+                    
+                w->getArcReferencePoints(
+                  
+                );
+              
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getArcReferencePoints";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getPointOnShape
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getPointOnShape
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RVector res = 
+                    
+                w->getPointOnShape(
+                  
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getPointOnShape";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getPointWithDistanceToStart
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getPointWithDistanceToStart
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: distance (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RVector res = 
+                    
+                w->getPointWithDistanceToStart(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getPointWithDistanceToStart";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getPointWithDistanceToEnd
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getPointWithDistanceToEnd
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: distance (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RVector res = 
+                    
+                w->getPointWithDistanceToEnd(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getPointWithDistanceToEnd";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getAngleAtPoint
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getAngleAtPoint
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: pos (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                double res = 
+                    
+                w->getAngleAtPoint(
+                  a1_cpp
+    
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getAngleAtPoint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getPointAtPercent
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getPointAtPercent
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: p (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RVector res = 
+                    
+                w->getPointAtPercent(
+                  a1_cpp
+    
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getPointAtPercent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getAngleAtPercent
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getAngleAtPercent
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: p (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                double res = 
+                    
+                w->getAngleAtPercent(
+                  a1_cpp
+    
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getAngleAtPercent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: intersectsWith
+    // Source: RShape
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::intersectsWith
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+   && RJSHelper::is_bool(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: other (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = true;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->intersectsWith(
+                  *a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for intersectsWith";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getIntersectionPoints
+    // Source: RShape
+    // Static: false
+    // Parameters: 5
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getIntersectionPoints
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4, 
+  const QJSValue& 
+  a5
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RShape_ptr(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a4
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a5
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: shape1 (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+  // convert js parameter to cpp: shape2 (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a2);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = true;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+  // convert js parameter to cpp: same (bool)
+  
+bool a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = false;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+          }
+        
+  // convert js parameter to cpp: force (bool)
+  
+bool a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = false;
+          }
+          else {
+            a5_cpp = RJSHelper::js2cpp_bool(handler, a5);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<RVector> res = 
+                    
+                w->getIntersectionPoints(
+                  *a1_cpp
+    , *a2_cpp
+    , a3_cpp
+    , a4_cpp
+    , a5_cpp
+    
+                );
+              
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RShape_ptr(handler, a1
+  )
+
+   && RJSHelper::is_bool(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a4
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: other (RShape)
+  
+
+          // non copyable:
+          RShape*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RShape_ptr(handler, a1);
+        
+  // convert js parameter to cpp: limited (bool)
+  
+bool a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = true;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
+        
+  // convert js parameter to cpp: same (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = false;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+  // convert js parameter to cpp: force (bool)
+  
+bool a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = false;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_bool(handler, a4);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<RVector> res = 
+                    
+                w->getIntersectionPoints(
+                  *a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+                );
+              
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getIntersectionPoints";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getSelfIntersectionPoints
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getSelfIntersectionPoints
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: tolerance (double)
+  
+double a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = RS::PointTolerance;
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<RVector> res = 
+                    
+                w->getSelfIntersectionPoints(
+                  a1_cpp
+    
+                );
+              
+            // return type: QList<RVector>
+
+            return RJSHelper_qcad::cpp2js_QList_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getSelfIntersectionPoints";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: isDirected
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::isDirected
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->isDirected(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isDirected";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getDirection1
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getDirection1
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                double res = 
+                    
+                w->getDirection1(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getDirection1";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getDirection2
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getDirection2
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                double res = 
+                    
+                w->getDirection2(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getDirection2";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getSideOfPoint
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getSideOfPoint
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: point (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RS::Side res = 
+                    
+                w->getSideOfPoint(
+                  a1_cpp
+    
+                );
+              
+            // return type: RS::Side
+
+            return RJSHelper_qcad::cpp2js_RS_Side(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getSideOfPoint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getStartPoint
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getStartPoint
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RVector res = 
+                    
+                w->getStartPoint(
+                  
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getStartPoint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getEndPoint
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getEndPoint
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RVector res = 
+                    
+                w->getEndPoint(
+                  
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getEndPoint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getMiddlePoint
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getMiddlePoint
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RVector res = 
+                    
+                w->getMiddlePoint(
+                  
+                );
+              
+            // return type: RVector
+
+            return RJSHelper_qcad::cpp2js_RVector(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getMiddlePoint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: reverse
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::reverse
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->reverse(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for reverse";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: trimStartPoint
+    // Source: RShape
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::trimStartPoint
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: trimPoint (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: clickPoint (RVector)
+  
+RVector a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = RVector::invalid;
+          }
+          else {
+            a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+          }
+        
+  // convert js parameter to cpp: extend (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = false;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->trimStartPoint(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: trimDist (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->trimStartPoint(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for trimStartPoint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: trimEndPoint
+    // Source: RShape
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::trimEndPoint
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: trimPoint (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: clickPoint (RVector)
+  
+RVector a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = RVector::invalid;
+          }
+          else {
+            a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+          }
+        
+  // convert js parameter to cpp: extend (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = false;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->trimEndPoint(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: trimDist (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->trimEndPoint(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for trimEndPoint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getTrimEnd
+    // Source: RShape
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getTrimEnd
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: trimPoint (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: clickPoint (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                RS::Ending res = 
+                    
+                w->getTrimEnd(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: RS::Ending
+
+            return RJSHelper_qcad::cpp2js_RS_Ending(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getTrimEnd";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getDistanceFromStart
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getDistanceFromStart
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: p (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                double res = 
+                    
+                w->getDistanceFromStart(
+                  a1_cpp
+    
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getDistanceFromStart";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getDistancesFromStart
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getDistancesFromStart
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: p (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<double> res = 
+                    
+                w->getDistancesFromStart(
+                  a1_cpp
+    
+                );
+              
+            // return type: QList<double>
+
+            return RJSHelper::cpp2js_QList_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getDistancesFromStart";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: stretch
+    // Source: RShape
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::stretch
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RBox(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: area (RBox)
+  
+RBox a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RBox(handler, a1);
+        
+  // convert js parameter to cpp: offset (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->stretch(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RPolyline(handler, a1
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: area (RPolyline)
+  
+RPolyline a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RPolyline(handler, a1);
+        
+  // convert js parameter to cpp: offset (RVector)
+  
+RVector a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                bool res = 
+                    
+                w->stretch(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for stretch";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: getOffsetShapes
+    // Source: RShape
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::getOffsetShapes
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3, 
+  const QJSValue& 
+  a4
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+   && RJSHelper::is_int(handler, a2
+  )
+
+   && RJSHelper_qcad::is_RS_Side(handler, a3
+  )
+
+   && RJSHelper_qcad::is_RVector(handler, a4
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: distance (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+  // convert js parameter to cpp: number (int)
+  
+int a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_int(handler, a2);
+        
+  // convert js parameter to cpp: side (RS::Side)
+  
+RS::Side a3_cpp;
+
+      a3_cpp = RJSHelper_qcad::js2cpp_RS_Side(handler, a3);
+        
+  // convert js parameter to cpp: position (RVector)
+  
+RVector a4_cpp;
+
+      
+          if (a4.isUndefined()) {
+            a4_cpp = RVector::invalid;
+          }
+          else {
+            a4_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a4);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<QSharedPointer<RShape>> res = 
+                    
+                w->getOffsetShapes(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    , a4_cpp
+    
+                );
+              
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getOffsetShapes";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: splitAt
+    // Source: RShape
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::splitAt
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QList_RVector(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: points (QList<RVector>)
+  
+QList<RVector> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QList_RVector(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                QList<QSharedPointer<RShape>> res = 
+                    
+                w->splitAt(
+                  a1_cpp
+    
+                );
+              
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for splitAt";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RTextLabel
+    // Function: dump
+    // Source: RShape
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RTextLabel_Wrapper::dump
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RTextLabel* w = getWrapped();
+                
+                w->dump(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for dump";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     // Class: RTextLabel
     // Function: getShapeType
     // Source: RPoint
@@ -1848,19 +9648,17 @@ QTransform a1_cpp;
             
                 // call function of C++ class:
                 RTextLabel* w = getWrapped();
-                RTextLabel* res = 
+                QSharedPointer<RShape> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RTextLabel*
+            // return type: QSharedPointer<RShape>
 
-            return RJSHelper_qcad::cpp2js_RTextLabel(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
               handler, 
               // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper_qcad::cpp2js_RTextLabel:
                   res
                 
               );

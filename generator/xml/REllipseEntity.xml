@@ -66,7 +66,7 @@ xmlns:qc="http://qcad.org/namespaces/xsl" filename="REllipseEntity.h">
       </variant>
     </function>
     <function name="clone">
-      <variant return-type="REllipseEntity*" virtual="true" const="true"
+      <variant return-type="QSharedPointer&lt;RObject&gt;" virtual="true" const="true"
       access="public">
         <parameters />
       </variant>

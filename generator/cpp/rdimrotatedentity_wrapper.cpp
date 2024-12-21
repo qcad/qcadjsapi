@@ -11387,17 +11387,17 @@ RS::KnownVariable a1_cpp;
             
                 // call function of C++ class:
                 RDimRotatedEntity* w = getWrapped();
-                RDimRotatedEntity* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RDimRotatedEntity*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RDimRotatedEntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

@@ -213,6 +213,7 @@ int a3_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RExportListenerAdapter";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

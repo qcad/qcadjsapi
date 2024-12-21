@@ -267,6 +267,7 @@ double a1_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RSolidData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
@@ -3755,19 +3756,17 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 RSolidData* w = getWrapped();
-                RPolyline* res = 
+                QSharedPointer<RShape> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RPolyline*
+            // return type: QSharedPointer<RShape>
 
-            return RJSHelper_qcad::cpp2js_RPolyline(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
               handler, 
               // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper_qcad::cpp2js_RPolyline:
                   res
                 
               );

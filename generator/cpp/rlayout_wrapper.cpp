@@ -3043,17 +3043,17 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 RLayout* w = getWrapped();
-                RLayout* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RLayout*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RLayout(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

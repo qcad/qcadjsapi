@@ -204,6 +204,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RHatchData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

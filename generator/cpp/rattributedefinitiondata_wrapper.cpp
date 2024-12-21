@@ -480,6 +480,7 @@ double a3_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RAttributeDefinitionData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

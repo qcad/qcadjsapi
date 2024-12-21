@@ -158,6 +158,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimAlignedData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

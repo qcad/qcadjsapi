@@ -1685,27 +1685,6 @@ Ray = REllipse::Ray,
     // non-static functions:
     
     // Class: REllipse
-    // Function: cloneToSharedPointer
-    // Source: RShape
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cloneToSharedPointer
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: REllipse
     // Function: isInterpolated
     // Source: RShape
     // Static: false

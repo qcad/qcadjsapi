@@ -484,17 +484,17 @@ QString a2_cpp;
             
                 // call function of C++ class:
                 RObject* w = getWrapped();
-                RObject* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RObject*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RObject(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

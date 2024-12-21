@@ -11807,17 +11807,17 @@ RVector a1_cpp;
             
                 // call function of C++ class:
                 RDimAngular2LEntity* w = getWrapped();
-                RDimAngular2LEntity* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RDimAngular2LEntity*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RDimAngular2LEntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

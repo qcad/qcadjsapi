@@ -4694,66 +4694,9 @@ REllipse a1_cpp;
             
                 // call function of C++ class:
                 RShape* w = getWrapped();
-                RShape* res = 
-                    
-                w->clone(
-                  
-                );
-              
-            // return type: RShape*
-
-            return RJSHelper_qcad::cpp2js_RShape(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for clone";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RShape
-    // Function: cloneToSharedPointer
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RShape_Wrapper::cloneToSharedPointer
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RShape* w = getWrapped();
                 QSharedPointer<RShape> res = 
                     
-                w->cloneToSharedPointer(
+                w->clone(
                   
                 );
               
@@ -4768,7 +4711,7 @@ REllipse a1_cpp;
             
   }
 
-                  qWarning() << "no matching function variant found for cloneToSharedPointer";
+                  qWarning() << "no matching function variant found for clone";
                   handler.trace();
                   return QJSValue();
                 

@@ -1657,27 +1657,6 @@ Ray = RSpline::Ray,
     // non-static functions:
     
     // Class: RSpline
-    // Function: cloneToSharedPointer
-    // Source: RShape
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cloneToSharedPointer
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RSpline
     // Function: getClosestPointOnShape
     // Source: RShape
     // Static: false

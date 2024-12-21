@@ -725,6 +725,8 @@
         
           #include "rtextbasedentity_wrapper.h"
         
+          #include "rshape_wrapper.h"
+        
           #include "rpoint_wrapper.h"
         
           #include "rentitydata_wrapper.h"

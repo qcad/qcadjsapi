@@ -4782,6 +4782,7 @@ RVector a4_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of REllipse";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
@@ -4988,63 +4989,6 @@ bool a6_cpp;
 
     // non-static functions:
     
-    // Class: REllipse
-    // Function: cloneToSharedPointer
-    // Source: RShape
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              REllipse_Wrapper::cloneToSharedPointer
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                REllipse* w = getWrapped();
-                QSharedPointer<RShape> res = 
-                    
-                w->cloneToSharedPointer(
-                  
-                );
-              
-            // return type: QSharedPointer<RShape>
-
-            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for cloneToSharedPointer";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     // Class: REllipse
     // Function: isInterpolated
     // Source: RShape
@@ -7333,19 +7277,17 @@ RVector a2_cpp;
             
                 // call function of C++ class:
                 REllipse* w = getWrapped();
-                REllipse* res = 
+                QSharedPointer<RShape> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: REllipse*
+            // return type: QSharedPointer<RShape>
 
-            return RJSHelper_qcad::cpp2js_REllipse(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
               handler, 
               // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper_qcad::cpp2js_REllipse:
                   res
                 
               );

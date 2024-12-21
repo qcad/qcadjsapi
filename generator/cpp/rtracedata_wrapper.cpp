@@ -103,6 +103,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTraceData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

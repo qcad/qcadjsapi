@@ -4910,6 +4910,7 @@ bool a5_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RArc";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
@@ -5210,63 +5211,6 @@ bool a5_cpp;
 
     // non-static functions:
     
-    // Class: RArc
-    // Function: cloneToSharedPointer
-    // Source: RShape
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RArc_Wrapper::cloneToSharedPointer
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RArc* w = getWrapped();
-                QSharedPointer<RShape> res = 
-                    
-                w->cloneToSharedPointer(
-                  
-                );
-              
-            // return type: QSharedPointer<RShape>
-
-            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for cloneToSharedPointer";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     // Class: RArc
     // Function: isInterpolated
     // Source: RShape
@@ -7355,19 +7299,17 @@ RVector a1_cpp;
             
                 // call function of C++ class:
                 RArc* w = getWrapped();
-                RArc* res = 
+                QSharedPointer<RShape> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RArc*
+            // return type: QSharedPointer<RShape>
 
-            return RJSHelper_qcad::cpp2js_RArc(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
               handler, 
               // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper_qcad::cpp2js_RArc:
                   res
                 
               );

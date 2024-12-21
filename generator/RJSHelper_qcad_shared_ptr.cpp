@@ -725,6 +725,8 @@
         
           #include "rtextbasedentity_wrapper.h"
         
+          #include "rshape_wrapper.h"
+        
           #include "rpoint_wrapper.h"
         
           #include "rentitydata_wrapper.h"
@@ -1790,7 +1792,8 @@
               //return QSharedPointer<REntity>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<REntity>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<REntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<REntity>();
                 
           }
       }
@@ -1966,7 +1969,8 @@
               //return QSharedPointer<RShape>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RShape>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RShape>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RShape>();
                 
           }
       }
@@ -2024,7 +2028,8 @@
               //return QSharedPointer<RArc>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RArc>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RArc>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RArc>();
                 
           }
       }
@@ -2082,7 +2087,8 @@
               //return QSharedPointer<RCircle>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RCircle>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RCircle>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RCircle>();
                 
           }
       }
@@ -2140,7 +2146,8 @@
               //return QSharedPointer<REllipse>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<REllipse>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<REllipse>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<REllipse>();
                 
           }
       }
@@ -2198,7 +2205,8 @@
               //return QSharedPointer<RLine>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RLine>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RLine>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RLine>();
                 
           }
       }
@@ -2256,7 +2264,8 @@
               //return QSharedPointer<RPoint>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RPoint>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RPoint>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RPoint>();
                 
           }
       }
@@ -2314,7 +2323,8 @@
               //return QSharedPointer<RRay>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RRay>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RRay>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RRay>();
                 
           }
       }
@@ -2372,7 +2382,8 @@
               //return QSharedPointer<RSpline>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RSpline>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RSpline>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RSpline>();
                 
           }
       }
@@ -2430,7 +2441,8 @@
               //return QSharedPointer<RTriangle>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RTriangle>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RTriangle>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RTriangle>();
                 
           }
       }
@@ -2488,7 +2500,8 @@
               //return QSharedPointer<RXLine>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RXLine>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RXLine>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RXLine>();
                 
           }
       }
@@ -2546,7 +2559,8 @@
               //return QSharedPointer<RTextLabel>(wrapper->getWrapped());
               
                   // create clone on the fly:
-                  return QSharedPointer<RTextLabel>(wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RTextLabel>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RTextLabel>();
                 
           }
       }

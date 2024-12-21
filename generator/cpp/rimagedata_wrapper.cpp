@@ -158,6 +158,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RImageData";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

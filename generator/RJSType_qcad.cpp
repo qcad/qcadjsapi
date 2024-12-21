@@ -168,6 +168,8 @@
                 ,
                 RJSType_RSpline::getIdStatic()
                 ,
+                RJSType_RTextLabel::getIdStatic()
+                ,
                 RJSType_RTriangle::getIdStatic()
                 ,
                 RJSType_RXLine::getIdStatic()

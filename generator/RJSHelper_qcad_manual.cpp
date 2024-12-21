@@ -725,6 +725,8 @@
         
           #include "rtextbasedentity_wrapper.h"
         
+          #include "rshape_wrapper.h"
+        
           #include "rpoint_wrapper.h"
         
           #include "rentitydata_wrapper.h"
@@ -3098,6 +3100,9 @@
               RTextBasedEntity_Wrapper::registerBasecaster_RTextBasedEntity(new RJSBasecaster_RTextEntity_RTextBasedEntity());
             
             // registration of base casters that cast RTextLabel to base classes:
+            
+              // registration of base casters that casts RTextLabel to RShape:
+              RShape_Wrapper::registerBasecaster_RShape(new RJSBasecaster_RTextLabel_RShape());
             
               // registration of base casters that casts RTextLabel to RPoint:
               RPoint_Wrapper::registerBasecaster_RPoint(new RJSBasecaster_RTextLabel_RPoint());

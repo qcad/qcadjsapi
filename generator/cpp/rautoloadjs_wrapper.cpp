@@ -213,6 +213,7 @@ QString a1_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RAutoLoadJs";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

@@ -725,6 +725,8 @@
         
           #include "rtextbasedentity_wrapper.h"
         
+          #include "rshape_wrapper.h"
+        
           #include "rpoint_wrapper.h"
         
           #include "rentitydata_wrapper.h"
@@ -1364,8 +1366,6 @@
   // ------------------------------------
   
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RObject(RJSApi& handler, const QSharedPointer<RObject>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RObject_Wrapper* ret = new RObject_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RObject('__GOT_WRAPPER__', wrapper);");
@@ -1442,6 +1442,9 @@
               }
             }
           
+
+          QJSEngine* engine = handler.getEngine();
+          RObject_Wrapper* ret = new RObject_Wrapper(handler, v);
 
           // JS: new RObject('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RObject");
@@ -1527,8 +1530,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RObject>((RObject*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RObject>((RObject*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RObject>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RObject>();
                 
           }
       }
@@ -1542,14 +1546,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RArcEntity(RJSApi& handler, const QSharedPointer<RArcEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RArcEntity_Wrapper* ret = new RArcEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RArcEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RArcEntity_Wrapper* ret = new RArcEntity_Wrapper(handler, v);
 
           // JS: new RArcEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RArcEntity");
@@ -1587,8 +1592,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RArcEntity>((RArcEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RArcEntity>((RArcEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RArcEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RArcEntity>();
                 
           }
       }
@@ -1602,14 +1608,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RAttributeDefinitionEntity(RJSApi& handler, const QSharedPointer<RAttributeDefinitionEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RAttributeDefinitionEntity_Wrapper* ret = new RAttributeDefinitionEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RAttributeDefinitionEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RAttributeDefinitionEntity_Wrapper* ret = new RAttributeDefinitionEntity_Wrapper(handler, v);
 
           // JS: new RAttributeDefinitionEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RAttributeDefinitionEntity");
@@ -1647,8 +1654,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RAttributeDefinitionEntity>((RAttributeDefinitionEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RAttributeDefinitionEntity>((RAttributeDefinitionEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RAttributeDefinitionEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RAttributeDefinitionEntity>();
                 
           }
       }
@@ -1662,14 +1670,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RAttributeEntity(RJSApi& handler, const QSharedPointer<RAttributeEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RAttributeEntity_Wrapper* ret = new RAttributeEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RAttributeEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RAttributeEntity_Wrapper* ret = new RAttributeEntity_Wrapper(handler, v);
 
           // JS: new RAttributeEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RAttributeEntity");
@@ -1707,8 +1716,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RAttributeEntity>((RAttributeEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RAttributeEntity>((RAttributeEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RAttributeEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RAttributeEntity>();
                 
           }
       }
@@ -1722,14 +1732,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RBlock(RJSApi& handler, const QSharedPointer<RBlock>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RBlock_Wrapper* ret = new RBlock_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RBlock('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RBlock_Wrapper* ret = new RBlock_Wrapper(handler, v);
 
           // JS: new RBlock('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RBlock");
@@ -1767,8 +1778,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RBlock>((RBlock*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RBlock>((RBlock*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RBlock>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RBlock>();
                 
           }
       }
@@ -1782,14 +1794,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RBlockReferenceEntity(RJSApi& handler, const QSharedPointer<RBlockReferenceEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RBlockReferenceEntity_Wrapper* ret = new RBlockReferenceEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RBlockReferenceEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RBlockReferenceEntity_Wrapper* ret = new RBlockReferenceEntity_Wrapper(handler, v);
 
           // JS: new RBlockReferenceEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RBlockReferenceEntity");
@@ -1827,8 +1840,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RBlockReferenceEntity>((RBlockReferenceEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RBlockReferenceEntity>((RBlockReferenceEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RBlockReferenceEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RBlockReferenceEntity>();
                 
           }
       }
@@ -1842,14 +1856,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RCircleEntity(RJSApi& handler, const QSharedPointer<RCircleEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RCircleEntity_Wrapper* ret = new RCircleEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RCircleEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RCircleEntity_Wrapper* ret = new RCircleEntity_Wrapper(handler, v);
 
           // JS: new RCircleEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RCircleEntity");
@@ -1887,8 +1902,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RCircleEntity>((RCircleEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RCircleEntity>((RCircleEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RCircleEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RCircleEntity>();
                 
           }
       }
@@ -1902,14 +1918,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimAlignedEntity(RJSApi& handler, const QSharedPointer<RDimAlignedEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimAlignedEntity_Wrapper* ret = new RDimAlignedEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAlignedEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimAlignedEntity_Wrapper* ret = new RDimAlignedEntity_Wrapper(handler, v);
 
           // JS: new RDimAlignedEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAlignedEntity");
@@ -1947,8 +1964,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimAlignedEntity>((RDimAlignedEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimAlignedEntity>((RDimAlignedEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimAlignedEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimAlignedEntity>();
                 
           }
       }
@@ -1962,14 +1980,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimAngular2LEntity(RJSApi& handler, const QSharedPointer<RDimAngular2LEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimAngular2LEntity_Wrapper* ret = new RDimAngular2LEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAngular2LEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimAngular2LEntity_Wrapper* ret = new RDimAngular2LEntity_Wrapper(handler, v);
 
           // JS: new RDimAngular2LEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAngular2LEntity");
@@ -2007,8 +2026,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimAngular2LEntity>((RDimAngular2LEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimAngular2LEntity>((RDimAngular2LEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimAngular2LEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimAngular2LEntity>();
                 
           }
       }
@@ -2022,14 +2042,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimAngular3PEntity(RJSApi& handler, const QSharedPointer<RDimAngular3PEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimAngular3PEntity_Wrapper* ret = new RDimAngular3PEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAngular3PEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimAngular3PEntity_Wrapper* ret = new RDimAngular3PEntity_Wrapper(handler, v);
 
           // JS: new RDimAngular3PEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAngular3PEntity");
@@ -2067,8 +2088,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimAngular3PEntity>((RDimAngular3PEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimAngular3PEntity>((RDimAngular3PEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimAngular3PEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimAngular3PEntity>();
                 
           }
       }
@@ -2082,14 +2104,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimAngularData(RJSApi& handler, const QSharedPointer<RDimAngularData>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimAngularData_Wrapper* ret = new RDimAngularData_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAngularData('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimAngularData_Wrapper* ret = new RDimAngularData_Wrapper(handler, v);
 
           // JS: new RDimAngularData('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAngularData");
@@ -2141,8 +2164,6 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimAngularEntity(RJSApi& handler, const QSharedPointer<RDimAngularEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimAngularEntity_Wrapper* ret = new RDimAngularEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimAngularEntity('__GOT_WRAPPER__', wrapper);");
@@ -2170,6 +2191,9 @@
               }
             }
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimAngularEntity_Wrapper* ret = new RDimAngularEntity_Wrapper(handler, v);
 
           // JS: new RDimAngularEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimAngularEntity");
@@ -2227,8 +2251,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimAngularEntity>((RDimAngularEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimAngularEntity>((RDimAngularEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimAngularEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimAngularEntity>();
                 
           }
       }
@@ -2242,14 +2267,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimArcLengthEntity(RJSApi& handler, const QSharedPointer<RDimArcLengthEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimArcLengthEntity_Wrapper* ret = new RDimArcLengthEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimArcLengthEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimArcLengthEntity_Wrapper* ret = new RDimArcLengthEntity_Wrapper(handler, v);
 
           // JS: new RDimArcLengthEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimArcLengthEntity");
@@ -2287,8 +2313,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimArcLengthEntity>((RDimArcLengthEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimArcLengthEntity>((RDimArcLengthEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimArcLengthEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimArcLengthEntity>();
                 
           }
       }
@@ -2302,14 +2329,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimDiametricEntity(RJSApi& handler, const QSharedPointer<RDimDiametricEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimDiametricEntity_Wrapper* ret = new RDimDiametricEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimDiametricEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimDiametricEntity_Wrapper* ret = new RDimDiametricEntity_Wrapper(handler, v);
 
           // JS: new RDimDiametricEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimDiametricEntity");
@@ -2347,8 +2375,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimDiametricEntity>((RDimDiametricEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimDiametricEntity>((RDimDiametricEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimDiametricEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimDiametricEntity>();
                 
           }
       }
@@ -2362,8 +2391,6 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimLinearEntity(RJSApi& handler, const QSharedPointer<RDimLinearEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimLinearEntity_Wrapper* ret = new RDimLinearEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimLinearEntity('__GOT_WRAPPER__', wrapper);");
@@ -2384,6 +2411,9 @@
               }
             }
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimLinearEntity_Wrapper* ret = new RDimLinearEntity_Wrapper(handler, v);
 
           // JS: new RDimLinearEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimLinearEntity");
@@ -2437,8 +2467,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimLinearEntity>((RDimLinearEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimLinearEntity>((RDimLinearEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimLinearEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimLinearEntity>();
                 
           }
       }
@@ -2452,14 +2483,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimOrdinateEntity(RJSApi& handler, const QSharedPointer<RDimOrdinateEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimOrdinateEntity_Wrapper* ret = new RDimOrdinateEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimOrdinateEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimOrdinateEntity_Wrapper* ret = new RDimOrdinateEntity_Wrapper(handler, v);
 
           // JS: new RDimOrdinateEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimOrdinateEntity");
@@ -2497,8 +2529,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimOrdinateEntity>((RDimOrdinateEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimOrdinateEntity>((RDimOrdinateEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimOrdinateEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimOrdinateEntity>();
                 
           }
       }
@@ -2512,14 +2545,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimRadialEntity(RJSApi& handler, const QSharedPointer<RDimRadialEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimRadialEntity_Wrapper* ret = new RDimRadialEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimRadialEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimRadialEntity_Wrapper* ret = new RDimRadialEntity_Wrapper(handler, v);
 
           // JS: new RDimRadialEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimRadialEntity");
@@ -2557,8 +2591,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimRadialEntity>((RDimRadialEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimRadialEntity>((RDimRadialEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimRadialEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimRadialEntity>();
                 
           }
       }
@@ -2572,14 +2607,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimRotatedEntity(RJSApi& handler, const QSharedPointer<RDimRotatedEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimRotatedEntity_Wrapper* ret = new RDimRotatedEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimRotatedEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimRotatedEntity_Wrapper* ret = new RDimRotatedEntity_Wrapper(handler, v);
 
           // JS: new RDimRotatedEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimRotatedEntity");
@@ -2617,8 +2653,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimRotatedEntity>((RDimRotatedEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimRotatedEntity>((RDimRotatedEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimRotatedEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimRotatedEntity>();
                 
           }
       }
@@ -2632,14 +2669,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimStyle(RJSApi& handler, const QSharedPointer<RDimStyle>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimStyle_Wrapper* ret = new RDimStyle_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimStyle('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimStyle_Wrapper* ret = new RDimStyle_Wrapper(handler, v);
 
           // JS: new RDimStyle('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimStyle");
@@ -2677,8 +2715,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimStyle>((RDimStyle*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimStyle>((RDimStyle*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimStyle>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimStyle>();
                 
           }
       }
@@ -2692,8 +2731,6 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDimensionEntity(RJSApi& handler, const QSharedPointer<RDimensionEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDimensionEntity_Wrapper* ret = new RDimensionEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDimensionEntity('__GOT_WRAPPER__', wrapper);");
@@ -2770,6 +2807,9 @@
               }
             }
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDimensionEntity_Wrapper* ret = new RDimensionEntity_Wrapper(handler, v);
 
           // JS: new RDimensionEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDimensionEntity");
@@ -2855,8 +2895,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDimensionEntity>((RDimensionEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDimensionEntity>((RDimensionEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDimensionEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDimensionEntity>();
                 
           }
       }
@@ -2870,14 +2911,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RDocumentVariables(RJSApi& handler, const QSharedPointer<RDocumentVariables>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RDocumentVariables_Wrapper* ret = new RDocumentVariables_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RDocumentVariables('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RDocumentVariables_Wrapper* ret = new RDocumentVariables_Wrapper(handler, v);
 
           // JS: new RDocumentVariables('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RDocumentVariables");
@@ -2915,8 +2957,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RDocumentVariables>((RDocumentVariables*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RDocumentVariables>((RDocumentVariables*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RDocumentVariables>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RDocumentVariables>();
                 
           }
       }
@@ -2930,14 +2973,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_REllipseEntity(RJSApi& handler, const QSharedPointer<REllipseEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          REllipseEntity_Wrapper* ret = new REllipseEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new REllipseEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          REllipseEntity_Wrapper* ret = new REllipseEntity_Wrapper(handler, v);
 
           // JS: new REllipseEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("REllipseEntity");
@@ -2975,8 +3019,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<REllipseEntity>((REllipseEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<REllipseEntity>((REllipseEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<REllipseEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<REllipseEntity>();
                 
           }
       }
@@ -2990,14 +3035,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RFaceEntity(RJSApi& handler, const QSharedPointer<RFaceEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RFaceEntity_Wrapper* ret = new RFaceEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RFaceEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RFaceEntity_Wrapper* ret = new RFaceEntity_Wrapper(handler, v);
 
           // JS: new RFaceEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RFaceEntity");
@@ -3035,8 +3081,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RFaceEntity>((RFaceEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RFaceEntity>((RFaceEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RFaceEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RFaceEntity>();
                 
           }
       }
@@ -3050,14 +3097,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RHatchEntity(RJSApi& handler, const QSharedPointer<RHatchEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RHatchEntity_Wrapper* ret = new RHatchEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RHatchEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RHatchEntity_Wrapper* ret = new RHatchEntity_Wrapper(handler, v);
 
           // JS: new RHatchEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RHatchEntity");
@@ -3095,8 +3143,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RHatchEntity>((RHatchEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RHatchEntity>((RHatchEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RHatchEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RHatchEntity>();
                 
           }
       }
@@ -3110,14 +3159,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RImageEntity(RJSApi& handler, const QSharedPointer<RImageEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RImageEntity_Wrapper* ret = new RImageEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RImageEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RImageEntity_Wrapper* ret = new RImageEntity_Wrapper(handler, v);
 
           // JS: new RImageEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RImageEntity");
@@ -3155,8 +3205,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RImageEntity>((RImageEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RImageEntity>((RImageEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RImageEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RImageEntity>();
                 
           }
       }
@@ -3170,14 +3221,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RLayer(RJSApi& handler, const QSharedPointer<RLayer>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RLayer_Wrapper* ret = new RLayer_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLayer('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RLayer_Wrapper* ret = new RLayer_Wrapper(handler, v);
 
           // JS: new RLayer('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLayer");
@@ -3215,8 +3267,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RLayer>((RLayer*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RLayer>((RLayer*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RLayer>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RLayer>();
                 
           }
       }
@@ -3230,14 +3283,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RLayerState(RJSApi& handler, const QSharedPointer<RLayerState>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RLayerState_Wrapper* ret = new RLayerState_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLayerState('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RLayerState_Wrapper* ret = new RLayerState_Wrapper(handler, v);
 
           // JS: new RLayerState('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLayerState");
@@ -3275,8 +3329,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RLayerState>((RLayerState*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RLayerState>((RLayerState*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RLayerState>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RLayerState>();
                 
           }
       }
@@ -3290,14 +3345,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RLayout(RJSApi& handler, const QSharedPointer<RLayout>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RLayout_Wrapper* ret = new RLayout_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLayout('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RLayout_Wrapper* ret = new RLayout_Wrapper(handler, v);
 
           // JS: new RLayout('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLayout");
@@ -3335,8 +3391,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RLayout>((RLayout*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RLayout>((RLayout*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RLayout>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RLayout>();
                 
           }
       }
@@ -3350,14 +3407,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RLeaderEntity(RJSApi& handler, const QSharedPointer<RLeaderEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RLeaderEntity_Wrapper* ret = new RLeaderEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLeaderEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RLeaderEntity_Wrapper* ret = new RLeaderEntity_Wrapper(handler, v);
 
           // JS: new RLeaderEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLeaderEntity");
@@ -3395,8 +3453,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RLeaderEntity>((RLeaderEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RLeaderEntity>((RLeaderEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RLeaderEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RLeaderEntity>();
                 
           }
       }
@@ -3410,14 +3469,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RLineEntity(RJSApi& handler, const QSharedPointer<RLineEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RLineEntity_Wrapper* ret = new RLineEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLineEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RLineEntity_Wrapper* ret = new RLineEntity_Wrapper(handler, v);
 
           // JS: new RLineEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLineEntity");
@@ -3455,8 +3515,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RLineEntity>((RLineEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RLineEntity>((RLineEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RLineEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RLineEntity>();
                 
           }
       }
@@ -3470,14 +3531,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RLinetype(RJSApi& handler, const QSharedPointer<RLinetype>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RLinetype_Wrapper* ret = new RLinetype_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RLinetype('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RLinetype_Wrapper* ret = new RLinetype_Wrapper(handler, v);
 
           // JS: new RLinetype('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RLinetype");
@@ -3515,8 +3577,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RLinetype>((RLinetype*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RLinetype>((RLinetype*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RLinetype>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RLinetype>();
                 
           }
       }
@@ -3530,14 +3593,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RPointEntity(RJSApi& handler, const QSharedPointer<RPointEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RPointEntity_Wrapper* ret = new RPointEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RPointEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RPointEntity_Wrapper* ret = new RPointEntity_Wrapper(handler, v);
 
           // JS: new RPointEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RPointEntity");
@@ -3575,8 +3639,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RPointEntity>((RPointEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RPointEntity>((RPointEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RPointEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RPointEntity>();
                 
           }
       }
@@ -3590,14 +3655,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RPolyline(RJSApi& handler, const QSharedPointer<RPolyline>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RPolyline_Wrapper* ret = new RPolyline_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RPolyline('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RPolyline_Wrapper* ret = new RPolyline_Wrapper(handler, v);
 
           // JS: new RPolyline('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RPolyline");
@@ -3635,8 +3701,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RPolyline>((RPolyline*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RPolyline>((RPolyline*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RPolyline>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RPolyline>();
                 
           }
       }
@@ -3650,14 +3717,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RPolylineEntity(RJSApi& handler, const QSharedPointer<RPolylineEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RPolylineEntity_Wrapper* ret = new RPolylineEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RPolylineEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RPolylineEntity_Wrapper* ret = new RPolylineEntity_Wrapper(handler, v);
 
           // JS: new RPolylineEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RPolylineEntity");
@@ -3695,8 +3763,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RPolylineEntity>((RPolylineEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RPolylineEntity>((RPolylineEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RPolylineEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RPolylineEntity>();
                 
           }
       }
@@ -3710,14 +3779,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RRayEntity(RJSApi& handler, const QSharedPointer<RRayEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RRayEntity_Wrapper* ret = new RRayEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RRayEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RRayEntity_Wrapper* ret = new RRayEntity_Wrapper(handler, v);
 
           // JS: new RRayEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RRayEntity");
@@ -3755,8 +3825,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RRayEntity>((RRayEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RRayEntity>((RRayEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RRayEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RRayEntity>();
                 
           }
       }
@@ -3770,14 +3841,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RSolidEntity(RJSApi& handler, const QSharedPointer<RSolidEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RSolidEntity_Wrapper* ret = new RSolidEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RSolidEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RSolidEntity_Wrapper* ret = new RSolidEntity_Wrapper(handler, v);
 
           // JS: new RSolidEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RSolidEntity");
@@ -3815,8 +3887,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RSolidEntity>((RSolidEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RSolidEntity>((RSolidEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RSolidEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RSolidEntity>();
                 
           }
       }
@@ -3830,14 +3903,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RSplineEntity(RJSApi& handler, const QSharedPointer<RSplineEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RSplineEntity_Wrapper* ret = new RSplineEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RSplineEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RSplineEntity_Wrapper* ret = new RSplineEntity_Wrapper(handler, v);
 
           // JS: new RSplineEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RSplineEntity");
@@ -3875,8 +3949,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RSplineEntity>((RSplineEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RSplineEntity>((RSplineEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RSplineEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RSplineEntity>();
                 
           }
       }
@@ -3890,14 +3965,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTextEntity(RJSApi& handler, const QSharedPointer<RTextEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RTextEntity_Wrapper* ret = new RTextEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RTextEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RTextEntity_Wrapper* ret = new RTextEntity_Wrapper(handler, v);
 
           // JS: new RTextEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RTextEntity");
@@ -3935,8 +4011,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RTextEntity>((RTextEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RTextEntity>((RTextEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RTextEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RTextEntity>();
                 
           }
       }
@@ -3950,8 +4027,6 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTextBasedEntity(RJSApi& handler, const QSharedPointer<RTextBasedEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RTextBasedEntity_Wrapper* ret = new RTextBasedEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RTextBasedEntity('__GOT_WRAPPER__', wrapper);");
@@ -3979,6 +4054,9 @@
               }
             }
           
+
+          QJSEngine* engine = handler.getEngine();
+          RTextBasedEntity_Wrapper* ret = new RTextBasedEntity_Wrapper(handler, v);
 
           // JS: new RTextBasedEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RTextBasedEntity");
@@ -4036,8 +4114,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RTextBasedEntity>((RTextBasedEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RTextBasedEntity>((RTextBasedEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RTextBasedEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RTextBasedEntity>();
                 
           }
       }
@@ -4051,14 +4130,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RToleranceEntity(RJSApi& handler, const QSharedPointer<RToleranceEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RToleranceEntity_Wrapper* ret = new RToleranceEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RToleranceEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RToleranceEntity_Wrapper* ret = new RToleranceEntity_Wrapper(handler, v);
 
           // JS: new RToleranceEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RToleranceEntity");
@@ -4096,8 +4176,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RToleranceEntity>((RToleranceEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RToleranceEntity>((RToleranceEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RToleranceEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RToleranceEntity>();
                 
           }
       }
@@ -4111,14 +4192,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RTraceEntity(RJSApi& handler, const QSharedPointer<RTraceEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RTraceEntity_Wrapper* ret = new RTraceEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RTraceEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RTraceEntity_Wrapper* ret = new RTraceEntity_Wrapper(handler, v);
 
           // JS: new RTraceEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RTraceEntity");
@@ -4156,8 +4238,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RTraceEntity>((RTraceEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RTraceEntity>((RTraceEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RTraceEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RTraceEntity>();
                 
           }
       }
@@ -4171,14 +4254,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RUcs(RJSApi& handler, const QSharedPointer<RUcs>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RUcs_Wrapper* ret = new RUcs_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RUcs('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RUcs_Wrapper* ret = new RUcs_Wrapper(handler, v);
 
           // JS: new RUcs('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RUcs");
@@ -4216,8 +4300,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RUcs>((RUcs*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RUcs>((RUcs*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RUcs>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RUcs>();
                 
           }
       }
@@ -4231,14 +4316,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RView(RJSApi& handler, const QSharedPointer<RView>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RView_Wrapper* ret = new RView_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RView('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RView_Wrapper* ret = new RView_Wrapper(handler, v);
 
           // JS: new RView('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RView");
@@ -4276,8 +4362,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RView>((RView*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RView>((RView*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RView>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RView>();
                 
           }
       }
@@ -4291,14 +4378,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RViewportEntity(RJSApi& handler, const QSharedPointer<RViewportEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RViewportEntity_Wrapper* ret = new RViewportEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RViewportEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RViewportEntity_Wrapper* ret = new RViewportEntity_Wrapper(handler, v);
 
           // JS: new RViewportEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RViewportEntity");
@@ -4336,8 +4424,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RViewportEntity>((RViewportEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RViewportEntity>((RViewportEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RViewportEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RViewportEntity>();
                 
           }
       }
@@ -4351,14 +4440,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RWipeoutEntity(RJSApi& handler, const QSharedPointer<RWipeoutEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RWipeoutEntity_Wrapper* ret = new RWipeoutEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RWipeoutEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RWipeoutEntity_Wrapper* ret = new RWipeoutEntity_Wrapper(handler, v);
 
           // JS: new RWipeoutEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RWipeoutEntity");
@@ -4396,8 +4486,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RWipeoutEntity>((RWipeoutEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RWipeoutEntity>((RWipeoutEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RWipeoutEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RWipeoutEntity>();
                 
           }
       }
@@ -4411,14 +4502,15 @@
       }
     
       QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RXLineEntity(RJSApi& handler, const QSharedPointer<RXLineEntity>& v) {
-          QJSEngine* engine = handler.getEngine();
-          RXLineEntity_Wrapper* ret = new RXLineEntity_Wrapper(handler, v);
 
           //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
           //return engine->evaluate("new RXLineEntity('__GOT_WRAPPER__', wrapper);");
 
           // attempt to downcast to specific type (non-copyable shared pointer):
           
+
+          QJSEngine* engine = handler.getEngine();
+          RXLineEntity_Wrapper* ret = new RXLineEntity_Wrapper(handler, v);
 
           // JS: new RXLineEntity('__GOT_WRAPPER__', wrapper)
           QJSValue cl = engine->globalObject().property("RXLineEntity");
@@ -4456,8 +4548,9 @@
 
               
                   // create clone on the fly:
-                  return QSharedPointer<RXLineEntity>((RXLineEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RXLineEntity>((RXLineEntity*)wrapper->getWrapped()->clone());
                   //return QSharedPointer<RXLineEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RXLineEntity>();
                 
           }
       }

@@ -2347,6 +2347,7 @@ char a5_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RUnit";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

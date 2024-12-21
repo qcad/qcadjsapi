@@ -6933,6 +6933,19 @@
           
           // implementation of base casters that cast RTextLabel to base classes:
           
+            // implementation of base casters that casts RTextLabel to RShape
+            class RJSBasecaster_RTextLabel_RShape : public RJSBasecaster_RShape {
+            public:
+              virtual RShape* castToBase(int t, void* vp) {
+                if (t==RJSType_RTextLabel::getIdStatic()) {
+                  return (RShape*)(RTextLabel*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
             // implementation of base casters that casts RTextLabel to RPoint
             class RJSBasecaster_RTextLabel_RPoint : public RJSBasecaster_RPoint {
             public:

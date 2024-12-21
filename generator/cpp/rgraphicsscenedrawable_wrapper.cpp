@@ -507,6 +507,7 @@ RVector a1_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RGraphicsSceneDrawable";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

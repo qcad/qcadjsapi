@@ -1616,27 +1616,6 @@ Ray = RShape::Ray,
               ;
             
     // Class: RShape
-    // Function: cloneToSharedPointer
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cloneToSharedPointer
-              (
-
-                
-              )
-              
-                const
-              
-              ;
-            
-    // Class: RShape
     // Function: isInterpolated
     // Source: 
     // Static: false

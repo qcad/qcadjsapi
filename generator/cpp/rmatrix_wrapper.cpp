@@ -798,6 +798,7 @@ double a6_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RMatrix";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

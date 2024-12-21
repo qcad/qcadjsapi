@@ -11807,17 +11807,17 @@ RVector a1_cpp;
             
                 // call function of C++ class:
                 RDimArcLengthEntity* w = getWrapped();
-                RDimArcLengthEntity* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RDimArcLengthEntity*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RDimArcLengthEntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

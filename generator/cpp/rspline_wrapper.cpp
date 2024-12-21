@@ -4718,6 +4718,7 @@ double a3_cpp;
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RSpline";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
@@ -4914,63 +4915,6 @@ RSpline a1_cpp;
 
     // non-static functions:
     
-    // Class: RSpline
-    // Function: cloneToSharedPointer
-    // Source: RShape
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RSpline_Wrapper::cloneToSharedPointer
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RSpline* w = getWrapped();
-                QSharedPointer<RShape> res = 
-                    
-                w->cloneToSharedPointer(
-                  
-                );
-              
-            // return type: QSharedPointer<RShape>
-
-            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for cloneToSharedPointer";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     // Class: RSpline
     // Function: getClosestPointOnShape
     // Source: RShape
@@ -6812,19 +6756,17 @@ RVector a4_cpp;
             
                 // call function of C++ class:
                 RSpline* w = getWrapped();
-                RSpline* res = 
+                QSharedPointer<RShape> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RSpline*
+            // return type: QSharedPointer<RShape>
 
-            return RJSHelper_qcad::cpp2js_RSpline(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RShape(
               handler, 
               // non-copyable: false
-                  // return type is pointer, type is copyable:
-                  // call pointer implementation of RJSHelper_qcad::cpp2js_RSpline:
                   res
                 
               );

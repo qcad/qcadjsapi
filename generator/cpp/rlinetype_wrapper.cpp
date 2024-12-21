@@ -3110,17 +3110,17 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 RLinetype* w = getWrapped();
-                RLinetype* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RLinetype*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RLinetype(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

@@ -103,6 +103,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTranslation";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

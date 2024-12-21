@@ -107,6 +107,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RBox";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             

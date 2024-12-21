@@ -11668,17 +11668,17 @@ QString a1_cpp;
             
                 // call function of C++ class:
                 RAttributeDefinitionEntity* w = getWrapped();
-                RAttributeDefinitionEntity* res = 
+                QSharedPointer<RObject> res = 
                     
                 w->clone(
                   
                 );
               
-            // return type: RAttributeDefinitionEntity*
+            // return type: QSharedPointer<RObject>
 
-            return RJSHelper_qcad::cpp2js_RAttributeDefinitionEntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RObject(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );

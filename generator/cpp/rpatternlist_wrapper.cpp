@@ -103,6 +103,7 @@
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPatternList";
                   delete wrapped;
+                  wrapped = nullptr;
                 
             }
             
