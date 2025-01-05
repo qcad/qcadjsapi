@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RClickReferencePointOperation_Wrapper::RClickReferencePointOperation_Wrapper(RJSApi& h, RClickReferencePointOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RClickReferencePointOperation_Wrapper::RClickReferencePointOperation_Wrapper(RJSApi& h, RClickReferencePointOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RClickReferencePointOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RClickReferencePointOperation_Wrapper"));
               //setObjectName("RClickReferencePointOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -178,12 +186,12 @@ RVector a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RClickReferencePointOperation(
-                a1_cpp
+              wrapped = new RClickReferencePointOperation(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -200,14 +208,18 @@ RVector a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RClickReferencePointOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

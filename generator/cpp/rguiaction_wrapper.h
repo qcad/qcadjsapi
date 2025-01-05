@@ -4037,12 +4037,13 @@ HighPriority = RGuiAction::HighPriority,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -4078,27 +4079,30 @@ HighPriority = RGuiAction::HighPriority,
 
         // get wrapped object:
         RGuiAction* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RGuiAction* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -4106,7 +4110,8 @@ HighPriority = RGuiAction::HighPriority,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -4118,9 +4123,10 @@ HighPriority = RGuiAction::HighPriority,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -4135,9 +4141,10 @@ HighPriority = RGuiAction::HighPriority,
         
 
         private:
-        // wrapped object:
-        RGuiAction* wrapped;
 
+        
+          // wrapped object:
+          RGuiAction* wrapped;
         
 
         bool wrappedCreated;

@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RDimOrdinateData_Wrapper::RDimOrdinateData_Wrapper(RJSApi& h, RDimOrdinateData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimOrdinateData_Wrapper::RDimOrdinateData_Wrapper(RJSApi& h, RDimOrdinateData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimOrdinateData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimOrdinateData_Wrapper"));
               //setObjectName("RDimOrdinateData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimOrdinateData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -260,14 +269,14 @@ RVector a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimOrdinateData(
-                *a1_cpp
+              wrapped = new RDimOrdinateData(
+                  *a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -286,11 +295,11 @@ RVector a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimOrdinateData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RDimOrdinateData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -309,14 +318,18 @@ RVector a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimOrdinateData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

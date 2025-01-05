@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnap_Wrapper::RSnap_Wrapper(RJSApi& h, RSnap* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnap_Wrapper::RSnap_Wrapper(RJSApi& h, RSnap* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnap_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnap_Wrapper"));
               //setObjectName("RSnap_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,18 +170,18 @@ RSnap_Wrapper::RSnap_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnap_Base(
-              handler
+                wrapped = new RSnap_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((RSnap_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((RSnap_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((RSnap_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((RSnap_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -186,7 +194,9 @@ RSnap_Wrapper::RSnap_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnap";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

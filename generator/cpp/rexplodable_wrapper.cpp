@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RExplodable_Wrapper::RExplodable_Wrapper(RJSApi& h, RExplodable* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RExplodable_Wrapper::RExplodable_Wrapper(RJSApi& h, RExplodable* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RExplodable_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RExplodable_Wrapper"));
               //setObjectName("RExplodable_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

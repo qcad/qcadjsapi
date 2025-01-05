@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RMoveSelectionOperation_Wrapper::RMoveSelectionOperation_Wrapper(RJSApi& h, RMoveSelectionOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMoveSelectionOperation_Wrapper::RMoveSelectionOperation_Wrapper(RJSApi& h, RMoveSelectionOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMoveSelectionOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMoveSelectionOperation_Wrapper"));
               //setObjectName("RMoveSelectionOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -189,13 +197,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RMoveSelectionOperation(
-                a1_cpp
+              wrapped = new RMoveSelectionOperation(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -213,14 +221,18 @@ RVector a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMoveSelectionOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapRestriction_Wrapper::RSnapRestriction_Wrapper(RJSApi& h, RSnapRestriction* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapRestriction_Wrapper::RSnapRestriction_Wrapper(RJSApi& h, RSnapRestriction* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapRestriction_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapRestriction_Wrapper"));
               //setObjectName("RSnapRestriction_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

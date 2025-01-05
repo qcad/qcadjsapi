@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RToleranceData_Wrapper::RToleranceData_Wrapper(RJSApi& h, RToleranceData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RToleranceData_Wrapper::RToleranceData_Wrapper(RJSApi& h, RToleranceData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RToleranceData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RToleranceData_Wrapper"));
               //setObjectName("RToleranceData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RToleranceData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -219,11 +228,11 @@ RToleranceData_Wrapper::RToleranceData_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RToleranceData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RToleranceData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -236,7 +245,9 @@ RToleranceData_Wrapper::RToleranceData_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RToleranceData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

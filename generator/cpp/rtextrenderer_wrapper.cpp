@@ -161,11 +161,19 @@
 
     
       // special constructor to wrap existing object:
-      RTextRenderer_Wrapper::RTextRenderer_Wrapper(RJSApi& h, RTextRenderer* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTextRenderer_Wrapper::RTextRenderer_Wrapper(RJSApi& h, RTextRenderer* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTextRenderer_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTextRenderer_Wrapper"));
               //setObjectName("RTextRenderer_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -187,9 +195,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTextRenderer";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -306,15 +315,15 @@ double a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTextRenderer(
-                a1_cpp
+              wrapped = new RTextRenderer(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -334,14 +343,18 @@ double a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTextRenderer";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -2479,29 +2479,6 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
               ;
             
     // Class: RDocumentInterface
-    // Function: addEntityToPreview
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addEntityToPreview
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RDocumentInterface
     // Function: addDrawableToPreview
     // Source: 
     // Static: false
@@ -3660,12 +3637,13 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -3701,27 +3679,30 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
 
         // get wrapped object:
         RDocumentInterface* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RDocumentInterface* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -3729,7 +3710,8 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -3741,9 +3723,10 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -3758,9 +3741,10 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
         
 
         private:
-        // wrapped object:
-        RDocumentInterface* wrapped;
 
+        
+          // wrapped object:
+          RDocumentInterface* wrapped;
         
 
         bool wrappedCreated;

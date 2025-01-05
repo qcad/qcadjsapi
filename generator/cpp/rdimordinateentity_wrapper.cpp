@@ -753,18 +753,26 @@ bool a5_cpp;
 
     
       // special constructor to wrap existing object:
-      RDimOrdinateEntity_Wrapper::RDimOrdinateEntity_Wrapper(RJSApi& h, RDimOrdinateEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimOrdinateEntity_Wrapper::RDimOrdinateEntity_Wrapper(RJSApi& h, RDimOrdinateEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimOrdinateEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimOrdinateEntity_Wrapper"));
               //setObjectName("RDimOrdinateEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RDimOrdinateEntity_Wrapper::RDimOrdinateEntity_Wrapper(RJSApi& h, QSharedPointer<RDimOrdinateEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RDimOrdinateEntity_Wrapper::RDimOrdinateEntity_Wrapper(RJSApi& h, QSharedPointer<RDimOrdinateEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RDimOrdinateEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimOrdinateEntity_Wrapper"));
               //setObjectName("RDimOrdinateEntity_Wrapper");
@@ -882,13 +890,13 @@ RDimOrdinateData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimOrdinateEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RDimOrdinateEntity>(new RDimOrdinateEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -906,14 +914,14 @@ RDimOrdinateData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimOrdinateEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

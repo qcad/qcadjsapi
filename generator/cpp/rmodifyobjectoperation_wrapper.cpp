@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RModifyObjectOperation_Wrapper::RModifyObjectOperation_Wrapper(RJSApi& h, RModifyObjectOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RModifyObjectOperation_Wrapper::RModifyObjectOperation_Wrapper(RJSApi& h, RModifyObjectOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RModifyObjectOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RModifyObjectOperation_Wrapper"));
               //setObjectName("RModifyObjectOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -197,13 +205,13 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RModifyObjectOperation(
-                a1_cpp
+              wrapped = new RModifyObjectOperation(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -221,14 +229,18 @@ bool a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RModifyObjectOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapOnEntity_Wrapper::RSnapOnEntity_Wrapper(RJSApi& h, RSnapOnEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapOnEntity_Wrapper::RSnapOnEntity_Wrapper(RJSApi& h, RSnapOnEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapOnEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapOnEntity_Wrapper"));
               //setObjectName("RSnapOnEntity_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RSnapOnEntity_Wrapper::RSnapOnEntity_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnapOnEntity(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSnapOnEntity(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RSnapOnEntity_Wrapper::RSnapOnEntity_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnapOnEntity";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

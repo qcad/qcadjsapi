@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapPerpendicular_Wrapper::RSnapPerpendicular_Wrapper(RJSApi& h, RSnapPerpendicular* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapPerpendicular_Wrapper::RSnapPerpendicular_Wrapper(RJSApi& h, RSnapPerpendicular* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapPerpendicular_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapPerpendicular_Wrapper"));
               //setObjectName("RSnapPerpendicular_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RSnapPerpendicular_Wrapper::RSnapPerpendicular_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnapPerpendicular(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSnapPerpendicular(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RSnapPerpendicular_Wrapper::RSnapPerpendicular_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnapPerpendicular";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

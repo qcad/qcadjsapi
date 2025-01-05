@@ -323,18 +323,26 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RLayerState_Wrapper::RLayerState_Wrapper(RJSApi& h, RLayerState* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RLayerState_Wrapper::RLayerState_Wrapper(RJSApi& h, RLayerState* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RLayerState_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLayerState_Wrapper"));
               //setObjectName("RLayerState_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RLayerState_Wrapper::RLayerState_Wrapper(RJSApi& h, QSharedPointer<RLayerState> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RLayerState_Wrapper::RLayerState_Wrapper(RJSApi& h, QSharedPointer<RLayerState> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RLayerState_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLayerState_Wrapper"));
               //setObjectName("RLayerState_Wrapper");
@@ -452,13 +460,13 @@ QString a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLayerState(
-                a1_cpp
+              spWrapped = QSharedPointer<RLayerState>(new RLayerState(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -477,11 +485,11 @@ QString a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLayerState(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RLayerState>(new RLayerState(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -499,14 +507,14 @@ QString a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RLayerState";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

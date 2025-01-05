@@ -3412,12 +3412,6 @@ Ray = RTriangle::Ray,
         
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
             
               if (!spWrapped.isNull()) {
                 spWrapped = nullptr;
@@ -3457,11 +3451,8 @@ Ray = RTriangle::Ray,
 
         // get wrapped object:
         RTriangle* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -3470,11 +3461,8 @@ Ray = RTriangle::Ray,
 
         // get wrapped object (const):
         RTriangle* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -3483,11 +3471,8 @@ Ray = RTriangle::Ray,
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -3500,10 +3485,10 @@ Ray = RTriangle::Ray,
           if (!spWrapped.isNull()) {
             return spWrapped;
           }
-          if (wrapped!=nullptr) {
-            qWarning() << "wrapper does not wrap a QSharedPointer<RTriangle> but a regular pointer";
-            return QSharedPointer<RTriangle>();
-          }
+          //if (wrapped!=nullptr) {
+          //  qWarning() << "wrapper does not wrap a QSharedPointer<RTriangle> but a regular pointer";
+          //  return QSharedPointer<RTriangle>();
+          //}
           return QSharedPointer<RTriangle>();
         }
 
@@ -3513,9 +3498,8 @@ Ray = RTriangle::Ray,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
           
-            || (!spWrapped.isNull() && spWrapped.data()!=nullptr)
+            return (!spWrapped.isNull() && spWrapped.data()!=nullptr);
           
           ;
         }
@@ -3527,9 +3511,6 @@ Ray = RTriangle::Ray,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
           
             if (!spWrapped.isNull() && spWrapped.data()!=nullptr) {
               return (unsigned long long int)spWrapped.data();
@@ -3548,8 +3529,6 @@ Ray = RTriangle::Ray,
         
 
         private:
-        // wrapped object:
-        RTriangle* wrapped;
 
         
           // wrapped object as shared pointer:

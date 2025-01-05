@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RWipeoutData_Wrapper::RWipeoutData_Wrapper(RJSApi& h, RWipeoutData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RWipeoutData_Wrapper::RWipeoutData_Wrapper(RJSApi& h, RWipeoutData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RWipeoutData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RWipeoutData_Wrapper"));
               //setObjectName("RWipeoutData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RWipeoutData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -235,12 +244,12 @@ RPolyline a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RWipeoutData(
-                a1_cpp
+              wrapped = new RWipeoutData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -259,11 +268,11 @@ RPolyline a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RWipeoutData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RWipeoutData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -280,14 +289,18 @@ RPolyline a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RWipeoutData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

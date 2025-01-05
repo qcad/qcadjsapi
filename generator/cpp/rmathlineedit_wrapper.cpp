@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RMathLineEdit_Wrapper::RMathLineEdit_Wrapper(RJSApi& h, RMathLineEdit* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMathLineEdit_Wrapper::RMathLineEdit_Wrapper(RJSApi& h, RMathLineEdit* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMathLineEdit_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMathLineEdit_Wrapper"));
               //setObjectName("RMathLineEdit_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -565,21 +573,21 @@ RMathLineEdit_Wrapper::RMathLineEdit_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RMathLineEdit_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RMathLineEdit_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RMathLineEdit_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RMathLineEdit_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RMathLineEdit_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RMathLineEdit_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -596,14 +604,18 @@ RMathLineEdit_Wrapper::RMathLineEdit_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMathLineEdit";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

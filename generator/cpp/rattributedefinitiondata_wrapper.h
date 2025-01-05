@@ -2357,12 +2357,13 @@ UpsideDown = RAttributeDefinitionData::UpsideDown,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -2398,27 +2399,30 @@ UpsideDown = RAttributeDefinitionData::UpsideDown,
 
         // get wrapped object:
         RAttributeDefinitionData* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RAttributeDefinitionData* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -2426,7 +2430,8 @@ UpsideDown = RAttributeDefinitionData::UpsideDown,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -2438,9 +2443,10 @@ UpsideDown = RAttributeDefinitionData::UpsideDown,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -2455,9 +2461,10 @@ UpsideDown = RAttributeDefinitionData::UpsideDown,
         
 
         private:
-        // wrapped object:
-        RAttributeDefinitionData* wrapped;
 
+        
+          // wrapped object:
+          RAttributeDefinitionData* wrapped;
         
 
         bool wrappedCreated;

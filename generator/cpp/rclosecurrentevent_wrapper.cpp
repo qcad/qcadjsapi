@@ -156,11 +156,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RCloseCurrentEvent_Wrapper::RCloseCurrentEvent_Wrapper(RJSApi& h, RCloseCurrentEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCloseCurrentEvent_Wrapper::RCloseCurrentEvent_Wrapper(RJSApi& h, RCloseCurrentEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCloseCurrentEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCloseCurrentEvent_Wrapper"));
               //setObjectName("RCloseCurrentEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -242,11 +250,11 @@ RCloseCurrentEvent_Wrapper::RCloseCurrentEvent_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RCloseCurrentEvent(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RCloseCurrentEvent(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -259,7 +267,9 @@ RCloseCurrentEvent_Wrapper::RCloseCurrentEvent_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RCloseCurrentEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

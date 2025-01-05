@@ -379,11 +379,19 @@ bool a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RPropertyEditor_Wrapper::RPropertyEditor_Wrapper(RJSApi& h, RPropertyEditor* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPropertyEditor_Wrapper::RPropertyEditor_Wrapper(RJSApi& h, RPropertyEditor* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPropertyEditor_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPropertyEditor_Wrapper"));
               //setObjectName("RPropertyEditor_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -485,18 +493,18 @@ RPropertyEditor_Wrapper::RPropertyEditor_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RPropertyEditor_Base(
-              handler
+                wrapped = new RPropertyEditor_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((RPropertyEditor_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((RPropertyEditor_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((RPropertyEditor_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((RPropertyEditor_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -509,7 +517,9 @@ RPropertyEditor_Wrapper::RPropertyEditor_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RPropertyEditor";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

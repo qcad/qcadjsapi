@@ -3256,12 +3256,13 @@ CurveToDataElement = RPainterPath::CurveToDataElement,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -3297,27 +3298,30 @@ CurveToDataElement = RPainterPath::CurveToDataElement,
 
         // get wrapped object:
         RPainterPath* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RPainterPath* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -3325,7 +3329,8 @@ CurveToDataElement = RPainterPath::CurveToDataElement,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -3337,9 +3342,10 @@ CurveToDataElement = RPainterPath::CurveToDataElement,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -3354,9 +3360,10 @@ CurveToDataElement = RPainterPath::CurveToDataElement,
         
 
         private:
-        // wrapped object:
-        RPainterPath* wrapped;
 
+        
+          // wrapped object:
+          RPainterPath* wrapped;
         
 
         bool wrappedCreated;

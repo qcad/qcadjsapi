@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapIntersection_Wrapper::RSnapIntersection_Wrapper(RJSApi& h, RSnapIntersection* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapIntersection_Wrapper::RSnapIntersection_Wrapper(RJSApi& h, RSnapIntersection* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapIntersection_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapIntersection_Wrapper"));
               //setObjectName("RSnapIntersection_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RSnapIntersection_Wrapper::RSnapIntersection_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnapIntersection(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSnapIntersection(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RSnapIntersection_Wrapper::RSnapIntersection_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnapIntersection";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

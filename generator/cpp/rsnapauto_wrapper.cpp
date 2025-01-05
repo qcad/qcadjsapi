@@ -1389,11 +1389,19 @@ bool a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RSnapAuto_Wrapper::RSnapAuto_Wrapper(RJSApi& h, RSnapAuto* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapAuto_Wrapper::RSnapAuto_Wrapper(RJSApi& h, RSnapAuto* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapAuto_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapAuto_Wrapper"));
               //setObjectName("RSnapAuto_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1475,11 +1483,11 @@ RSnapAuto_Wrapper::RSnapAuto_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnapAuto(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSnapAuto(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1492,7 +1500,9 @@ RSnapAuto_Wrapper::RSnapAuto_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnapAuto";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

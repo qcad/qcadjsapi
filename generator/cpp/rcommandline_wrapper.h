@@ -7348,12 +7348,13 @@ PasswordEchoOnEdit = RCommandLine::PasswordEchoOnEdit,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -7389,27 +7390,30 @@ PasswordEchoOnEdit = RCommandLine::PasswordEchoOnEdit,
 
         // get wrapped object:
         RCommandLine* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RCommandLine* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -7428,7 +7432,8 @@ PasswordEchoOnEdit = RCommandLine::PasswordEchoOnEdit,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -7440,9 +7445,10 @@ PasswordEchoOnEdit = RCommandLine::PasswordEchoOnEdit,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -7464,9 +7470,10 @@ PasswordEchoOnEdit = RCommandLine::PasswordEchoOnEdit,
         
 
         private:
-        // wrapped object:
-        RCommandLine* wrapped;
 
+        
+          // wrapped object:
+          RCommandLine* wrapped;
         
 
         bool wrappedCreated;

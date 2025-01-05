@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RFocusListenerAdapter_Wrapper::RFocusListenerAdapter_Wrapper(RJSApi& h, RFocusListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFocusListenerAdapter_Wrapper::RFocusListenerAdapter_Wrapper(RJSApi& h, RFocusListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFocusListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFocusListenerAdapter_Wrapper"));
               //setObjectName("RFocusListenerAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -299,18 +307,18 @@ RFocusListenerAdapter_Wrapper::RFocusListenerAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFocusListenerAdapter_Base(
-              handler
+                wrapped = new RFocusListenerAdapter_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((RFocusListenerAdapter_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((RFocusListenerAdapter_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((RFocusListenerAdapter_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((RFocusListenerAdapter_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -323,7 +331,9 @@ RFocusListenerAdapter_Wrapper::RFocusListenerAdapter_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RFocusListenerAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

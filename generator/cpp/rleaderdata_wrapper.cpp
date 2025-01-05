@@ -240,11 +240,19 @@ double a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RLeaderData_Wrapper::RLeaderData_Wrapper(RJSApi& h, RLeaderData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RLeaderData_Wrapper::RLeaderData_Wrapper(RJSApi& h, RLeaderData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RLeaderData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLeaderData_Wrapper"));
               //setObjectName("RLeaderData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -266,9 +274,10 @@ double a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RLeaderData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -355,13 +364,13 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLeaderData(
-                a1_cpp
+              wrapped = new RLeaderData(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -380,11 +389,11 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLeaderData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RLeaderData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -402,14 +411,18 @@ bool a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RLeaderData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

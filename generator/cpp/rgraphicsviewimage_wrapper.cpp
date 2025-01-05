@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RGraphicsViewImage_Wrapper::RGraphicsViewImage_Wrapper(RJSApi& h, RGraphicsViewImage* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RGraphicsViewImage_Wrapper::RGraphicsViewImage_Wrapper(RJSApi& h, RGraphicsViewImage* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RGraphicsViewImage_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RGraphicsViewImage_Wrapper"));
               //setObjectName("RGraphicsViewImage_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -340,12 +348,12 @@ RGraphicsViewImage_Wrapper::RGraphicsViewImage_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RGraphicsViewImage(
-                a1_cpp
+              wrapped = new RGraphicsViewImage(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -362,14 +370,18 @@ RGraphicsViewImage_Wrapper::RGraphicsViewImage_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RGraphicsViewImage";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

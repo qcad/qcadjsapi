@@ -156,11 +156,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RCoordinateEvent_Wrapper::RCoordinateEvent_Wrapper(RJSApi& h, RCoordinateEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCoordinateEvent_Wrapper::RCoordinateEvent_Wrapper(RJSApi& h, RCoordinateEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCoordinateEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCoordinateEvent_Wrapper"));
               //setObjectName("RCoordinateEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -286,14 +294,14 @@ RVector a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCoordinateEvent(
-                a1_cpp
+              wrapped = new RCoordinateEvent(
+                  a1_cpp
     , *a2_cpp
     , *a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -312,14 +320,18 @@ RVector a1_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RCoordinateEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

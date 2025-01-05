@@ -318,11 +318,19 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RPropertyTypeId_Wrapper::RPropertyTypeId_Wrapper(RJSApi& h, RPropertyTypeId* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPropertyTypeId_Wrapper::RPropertyTypeId_Wrapper(RJSApi& h, RPropertyTypeId* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPropertyTypeId_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPropertyTypeId_Wrapper"));
               //setObjectName("RPropertyTypeId_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -344,9 +352,10 @@ QString a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPropertyTypeId";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -433,13 +442,13 @@ QString a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyTypeId(
-                a1_cpp
+              wrapped = new RPropertyTypeId(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -472,12 +481,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyTypeId(
-                a1_cpp
+              wrapped = new RPropertyTypeId(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -510,12 +519,12 @@ RPropertyTypeId a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyTypeId(
-                a1_cpp
+              wrapped = new RPropertyTypeId(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -556,12 +565,12 @@ int a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyTypeId(
-                a1_cpp
+              wrapped = new RPropertyTypeId(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -579,14 +588,18 @@ int a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPropertyTypeId";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

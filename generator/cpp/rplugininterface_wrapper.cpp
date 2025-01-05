@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RPluginInterface_Wrapper::RPluginInterface_Wrapper(RJSApi& h, RPluginInterface* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPluginInterface_Wrapper::RPluginInterface_Wrapper(RJSApi& h, RPluginInterface* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPluginInterface_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPluginInterface_Wrapper"));
               //setObjectName("RPluginInterface_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPluginInterface";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

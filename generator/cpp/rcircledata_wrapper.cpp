@@ -293,11 +293,19 @@ RVector a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RCircleData_Wrapper::RCircleData_Wrapper(RJSApi& h, RCircleData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCircleData_Wrapper::RCircleData_Wrapper(RJSApi& h, RCircleData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCircleData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCircleData_Wrapper"));
               //setObjectName("RCircleData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -319,9 +327,10 @@ RVector a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RCircleData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -408,13 +417,13 @@ double a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCircleData(
-                a1_cpp
+              wrapped = new RCircleData(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -447,12 +456,12 @@ RCircle a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCircleData(
-                a1_cpp
+              wrapped = new RCircleData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -471,11 +480,11 @@ RCircle a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCircleData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RCircleData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -493,14 +502,18 @@ RCircle a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RCircleData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

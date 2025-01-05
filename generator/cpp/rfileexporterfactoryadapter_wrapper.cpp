@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RFileExporterFactoryAdapter_Wrapper::RFileExporterFactoryAdapter_Wrapper(RJSApi& h, RFileExporterFactoryAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFileExporterFactoryAdapter_Wrapper::RFileExporterFactoryAdapter_Wrapper(RJSApi& h, RFileExporterFactoryAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFileExporterFactoryAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFileExporterFactoryAdapter_Wrapper"));
               //setObjectName("RFileExporterFactoryAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RFileExporterFactoryAdapter_Wrapper::RFileExporterFactoryAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFileExporterFactoryAdapter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RFileExporterFactoryAdapter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RFileExporterFactoryAdapter_Wrapper::RFileExporterFactoryAdapter_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RFileExporterFactoryAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

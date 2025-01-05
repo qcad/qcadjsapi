@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RLayerListenerAdapter_Wrapper::RLayerListenerAdapter_Wrapper(RJSApi& h, RLayerListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RLayerListenerAdapter_Wrapper::RLayerListenerAdapter_Wrapper(RJSApi& h, RLayerListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RLayerListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLayerListenerAdapter_Wrapper"));
               //setObjectName("RLayerListenerAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -340,12 +348,12 @@ RLayerListenerAdapter_Wrapper::RLayerListenerAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RLayerListenerAdapter(
-                a1_cpp
+              wrapped = new RLayerListenerAdapter(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -362,14 +370,18 @@ RLayerListenerAdapter_Wrapper::RLayerListenerAdapter_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RLayerListenerAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RLeaderEntity_Wrapper::RLeaderEntity_Wrapper(RJSApi& h, RLeaderEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RLeaderEntity_Wrapper::RLeaderEntity_Wrapper(RJSApi& h, RLeaderEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RLeaderEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLeaderEntity_Wrapper"));
               //setObjectName("RLeaderEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RLeaderEntity_Wrapper::RLeaderEntity_Wrapper(RJSApi& h, QSharedPointer<RLeaderEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RLeaderEntity_Wrapper::RLeaderEntity_Wrapper(RJSApi& h, QSharedPointer<RLeaderEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RLeaderEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLeaderEntity_Wrapper"));
               //setObjectName("RLeaderEntity_Wrapper");
@@ -687,13 +695,13 @@ RLeaderData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLeaderEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RLeaderEntity>(new RLeaderEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,12 +737,12 @@ RLeaderData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLeaderEntity(
-                *a1_cpp
+              spWrapped = QSharedPointer<RLeaderEntity>(new RLeaderEntity(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -752,14 +760,14 @@ RLeaderData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RLeaderEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

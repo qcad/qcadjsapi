@@ -753,18 +753,26 @@ bool a5_cpp;
 
     
       // special constructor to wrap existing object:
-      RDimAngular2LEntity_Wrapper::RDimAngular2LEntity_Wrapper(RJSApi& h, RDimAngular2LEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimAngular2LEntity_Wrapper::RDimAngular2LEntity_Wrapper(RJSApi& h, RDimAngular2LEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimAngular2LEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimAngular2LEntity_Wrapper"));
               //setObjectName("RDimAngular2LEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RDimAngular2LEntity_Wrapper::RDimAngular2LEntity_Wrapper(RJSApi& h, QSharedPointer<RDimAngular2LEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RDimAngular2LEntity_Wrapper::RDimAngular2LEntity_Wrapper(RJSApi& h, QSharedPointer<RDimAngular2LEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RDimAngular2LEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimAngular2LEntity_Wrapper"));
               //setObjectName("RDimAngular2LEntity_Wrapper");
@@ -882,13 +890,13 @@ RDimAngular2LData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimAngular2LEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RDimAngular2LEntity>(new RDimAngular2LEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -906,14 +914,14 @@ RDimAngular2LData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimAngular2LEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

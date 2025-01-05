@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RPolylineEntity_Wrapper::RPolylineEntity_Wrapper(RJSApi& h, RPolylineEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPolylineEntity_Wrapper::RPolylineEntity_Wrapper(RJSApi& h, RPolylineEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPolylineEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPolylineEntity_Wrapper"));
               //setObjectName("RPolylineEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RPolylineEntity_Wrapper::RPolylineEntity_Wrapper(RJSApi& h, QSharedPointer<RPolylineEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RPolylineEntity_Wrapper::RPolylineEntity_Wrapper(RJSApi& h, QSharedPointer<RPolylineEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RPolylineEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPolylineEntity_Wrapper"));
               //setObjectName("RPolylineEntity_Wrapper");
@@ -687,13 +695,13 @@ RPolylineData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPolylineEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RPolylineEntity>(new RPolylineEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,12 +737,12 @@ RPolylineData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPolylineEntity(
-                *a1_cpp
+              spWrapped = QSharedPointer<RPolylineEntity>(new RPolylineEntity(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -752,14 +760,14 @@ RPolylineData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPolylineEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

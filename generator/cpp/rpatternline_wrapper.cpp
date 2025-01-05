@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RPatternLine_Wrapper::RPatternLine_Wrapper(RJSApi& h, RPatternLine* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPatternLine_Wrapper::RPatternLine_Wrapper(RJSApi& h, RPatternLine* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPatternLine_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPatternLine_Wrapper"));
               //setObjectName("RPatternLine_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPatternLine";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -164,11 +173,11 @@ RPatternLine_Wrapper::RPatternLine_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RPatternLine(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RPatternLine(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -181,7 +190,9 @@ RPatternLine_Wrapper::RPatternLine_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RPatternLine";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

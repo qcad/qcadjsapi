@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RDimLinearData_Wrapper::RDimLinearData_Wrapper(RJSApi& h, RDimLinearData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimLinearData_Wrapper::RDimLinearData_Wrapper(RJSApi& h, RDimLinearData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimLinearData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimLinearData_Wrapper"));
               //setObjectName("RDimLinearData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimLinearData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -260,14 +269,14 @@ RVector a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimLinearData(
-                *a1_cpp
+              wrapped = new RDimLinearData(
+                  *a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -311,12 +320,12 @@ RVector a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimLinearData(
-                a1_cpp
+              wrapped = new RDimLinearData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -335,14 +344,18 @@ RVector a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimLinearData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RCommandLine_Wrapper::RCommandLine_Wrapper(RJSApi& h, RCommandLine* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCommandLine_Wrapper::RCommandLine_Wrapper(RJSApi& h, RCommandLine* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCommandLine_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCommandLine_Wrapper"));
               //setObjectName("RCommandLine_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -572,21 +580,21 @@ RCommandLine_Wrapper::RCommandLine_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RCommandLine_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RCommandLine_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RCommandLine_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RCommandLine_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RCommandLine_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RCommandLine_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -603,14 +611,18 @@ RCommandLine_Wrapper::RCommandLine_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RCommandLine";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

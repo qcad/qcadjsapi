@@ -1855,11 +1855,19 @@ double a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RColor_Wrapper::RColor_Wrapper(RJSApi& h, RColor* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RColor_Wrapper::RColor_Wrapper(RJSApi& h, RColor* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RColor_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RColor_Wrapper"));
               //setObjectName("RColor_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1881,9 +1889,10 @@ double a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RColor";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -2019,16 +2028,16 @@ RColor::Mode a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RColor(
-                a1_cpp
+              wrapped = new RColor(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2078,13 +2087,13 @@ RColor::Mode a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RColor(
-                a1_cpp
+              wrapped = new RColor(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2117,12 +2126,12 @@ RColor::Mode a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RColor(
-                a1_cpp
+              wrapped = new RColor(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2141,11 +2150,11 @@ RColor::Mode a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RColor(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RColor(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2166,14 +2175,18 @@ RColor::Mode a1_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RColor";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -4810,11 +4810,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RSingleApplication_Wrapper::RSingleApplication_Wrapper(RJSApi& h, RSingleApplication* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSingleApplication_Wrapper::RSingleApplication_Wrapper(RJSApi& h, RSingleApplication* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSingleApplication_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSingleApplication_Wrapper"));
               //setObjectName("RSingleApplication_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

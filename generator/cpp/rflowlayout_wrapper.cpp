@@ -266,11 +266,19 @@ QSize a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RFlowLayout_Wrapper::RFlowLayout_Wrapper(RJSApi& h, RFlowLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFlowLayout_Wrapper::RFlowLayout_Wrapper(RJSApi& h, RFlowLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFlowLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFlowLayout_Wrapper"));
               //setObjectName("RFlowLayout_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -450,24 +458,24 @@ int a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RFlowLayout_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RFlowLayout_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RFlowLayout_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RFlowLayout_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RFlowLayout_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RFlowLayout_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -542,23 +550,23 @@ int a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RFlowLayout_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RFlowLayout_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RFlowLayout_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RFlowLayout_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RFlowLayout_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RFlowLayout_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -578,14 +586,18 @@ int a3_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RFlowLayout";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RCoordinateListener_Wrapper::RCoordinateListener_Wrapper(RJSApi& h, RCoordinateListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCoordinateListener_Wrapper::RCoordinateListener_Wrapper(RJSApi& h, RCoordinateListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCoordinateListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCoordinateListener_Wrapper"));
               //setObjectName("RCoordinateListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RMdiArea_Wrapper::RMdiArea_Wrapper(RJSApi& h, RMdiArea* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMdiArea_Wrapper::RMdiArea_Wrapper(RJSApi& h, RMdiArea* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMdiArea_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMdiArea_Wrapper"));
               //setObjectName("RMdiArea_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -502,21 +510,21 @@ RMdiArea_Wrapper::RMdiArea_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RMdiArea_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RMdiArea_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RMdiArea_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RMdiArea_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RMdiArea_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RMdiArea_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -533,14 +541,18 @@ RMdiArea_Wrapper::RMdiArea_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMdiArea";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

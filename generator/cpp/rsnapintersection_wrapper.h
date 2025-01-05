@@ -393,12 +393,13 @@ CoordinatePolar = RSnapIntersection::CoordinatePolar,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -434,27 +435,30 @@ CoordinatePolar = RSnapIntersection::CoordinatePolar,
 
         // get wrapped object:
         RSnapIntersection* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RSnapIntersection* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -462,7 +466,8 @@ CoordinatePolar = RSnapIntersection::CoordinatePolar,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -474,9 +479,10 @@ CoordinatePolar = RSnapIntersection::CoordinatePolar,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -491,9 +497,10 @@ CoordinatePolar = RSnapIntersection::CoordinatePolar,
         
 
         private:
-        // wrapped object:
-        RSnapIntersection* wrapped;
 
+        
+          // wrapped object:
+          RSnapIntersection* wrapped;
         
 
         bool wrappedCreated;

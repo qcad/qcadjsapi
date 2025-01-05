@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RInputEvent_Wrapper::RInputEvent_Wrapper(RJSApi& h, RInputEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RInputEvent_Wrapper::RInputEvent_Wrapper(RJSApi& h, RInputEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RInputEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RInputEvent_Wrapper"));
               //setObjectName("RInputEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -225,15 +233,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RInputEvent(
-                a1_cpp
+              wrapped = new RInputEvent(
+                  a1_cpp
     , *a2_cpp
     , *a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -253,14 +261,18 @@ qreal a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RInputEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

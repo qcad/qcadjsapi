@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RViewFocusListener_Wrapper::RViewFocusListener_Wrapper(RJSApi& h, RViewFocusListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RViewFocusListener_Wrapper::RViewFocusListener_Wrapper(RJSApi& h, RViewFocusListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RViewFocusListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RViewFocusListener_Wrapper"));
               //setObjectName("RViewFocusListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

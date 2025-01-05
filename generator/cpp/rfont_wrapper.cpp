@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RFont_Wrapper::RFont_Wrapper(RJSApi& h, RFont* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFont_Wrapper::RFont_Wrapper(RJSApi& h, RFont* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFont_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFont_Wrapper"));
               //setObjectName("RFont_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RFont";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -180,12 +189,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RFont(
-                a1_cpp
+              wrapped = new RFont(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -204,11 +213,11 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RFont(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RFont(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -225,14 +234,18 @@ QString a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RFont";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

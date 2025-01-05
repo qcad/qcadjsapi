@@ -323,18 +323,26 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RUcs_Wrapper::RUcs_Wrapper(RJSApi& h, RUcs* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RUcs_Wrapper::RUcs_Wrapper(RJSApi& h, RUcs* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RUcs_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RUcs_Wrapper"));
               //setObjectName("RUcs_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RUcs_Wrapper::RUcs_Wrapper(RJSApi& h, QSharedPointer<RUcs> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RUcs_Wrapper::RUcs_Wrapper(RJSApi& h, QSharedPointer<RUcs> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RUcs_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RUcs_Wrapper"));
               //setObjectName("RUcs_Wrapper");
@@ -485,16 +493,16 @@ RVector a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RUcs(
-                a1_cpp
+              spWrapped = QSharedPointer<RUcs>(new RUcs(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -513,11 +521,11 @@ RVector a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RUcs(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RUcs>(new RUcs(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -538,14 +546,14 @@ RVector a5_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RUcs";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

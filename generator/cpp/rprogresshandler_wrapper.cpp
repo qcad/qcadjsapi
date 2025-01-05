@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RProgressHandler_Wrapper::RProgressHandler_Wrapper(RJSApi& h, RProgressHandler* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RProgressHandler_Wrapper::RProgressHandler_Wrapper(RJSApi& h, RProgressHandler* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RProgressHandler_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RProgressHandler_Wrapper"));
               //setObjectName("RProgressHandler_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

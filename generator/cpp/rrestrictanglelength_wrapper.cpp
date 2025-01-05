@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RRestrictAngleLength_Wrapper::RRestrictAngleLength_Wrapper(RJSApi& h, RRestrictAngleLength* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RRestrictAngleLength_Wrapper::RRestrictAngleLength_Wrapper(RJSApi& h, RRestrictAngleLength* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RRestrictAngleLength_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RRestrictAngleLength_Wrapper"));
               //setObjectName("RRestrictAngleLength_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -227,25 +235,25 @@ double a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RRestrictAngleLength_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RRestrictAngleLength_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RRestrictAngleLength_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RRestrictAngleLength_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RRestrictAngleLength_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RRestrictAngleLength_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -289,21 +297,21 @@ double a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RRestrictAngleLength_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RRestrictAngleLength_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RRestrictAngleLength_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RRestrictAngleLength_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RRestrictAngleLength_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RRestrictAngleLength_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -324,14 +332,18 @@ double a5_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RRestrictAngleLength";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RPainterPathSource_Wrapper::RPainterPathSource_Wrapper(RJSApi& h, RPainterPathSource* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPainterPathSource_Wrapper::RPainterPathSource_Wrapper(RJSApi& h, RPainterPathSource* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPainterPathSource_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPainterPathSource_Wrapper"));
               //setObjectName("RPainterPathSource_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

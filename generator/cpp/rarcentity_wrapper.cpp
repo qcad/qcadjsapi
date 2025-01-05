@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RArcEntity_Wrapper::RArcEntity_Wrapper(RJSApi& h, RArcEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RArcEntity_Wrapper::RArcEntity_Wrapper(RJSApi& h, RArcEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RArcEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RArcEntity_Wrapper"));
               //setObjectName("RArcEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RArcEntity_Wrapper::RArcEntity_Wrapper(RJSApi& h, QSharedPointer<RArcEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RArcEntity_Wrapper::RArcEntity_Wrapper(RJSApi& h, QSharedPointer<RArcEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RArcEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RArcEntity_Wrapper"));
               //setObjectName("RArcEntity_Wrapper");
@@ -687,13 +695,13 @@ RArcData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RArcEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RArcEntity>(new RArcEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,12 +737,12 @@ RArcData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RArcEntity(
-                *a1_cpp
+              spWrapped = QSharedPointer<RArcEntity>(new RArcEntity(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -752,14 +760,14 @@ RArcData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RArcEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

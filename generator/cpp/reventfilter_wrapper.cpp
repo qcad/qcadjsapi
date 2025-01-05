@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      REventFilter_Wrapper::REventFilter_Wrapper(RJSApi& h, REventFilter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      REventFilter_Wrapper::REventFilter_Wrapper(RJSApi& h, REventFilter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("REventFilter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("REventFilter_Wrapper"));
               //setObjectName("REventFilter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -335,13 +343,13 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new REventFilter(
-                a1_cpp
+              wrapped = new REventFilter(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -359,14 +367,18 @@ bool a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for REventFilter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

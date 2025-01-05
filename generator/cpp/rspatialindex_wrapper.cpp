@@ -286,11 +286,19 @@ qint64 a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RSpatialIndex_Wrapper::RSpatialIndex_Wrapper(RJSApi& h, RSpatialIndex* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSpatialIndex_Wrapper::RSpatialIndex_Wrapper(RJSApi& h, RSpatialIndex* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSpatialIndex_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSpatialIndex_Wrapper"));
               //setObjectName("RSpatialIndex_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

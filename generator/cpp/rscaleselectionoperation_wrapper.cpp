@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RScaleSelectionOperation_Wrapper::RScaleSelectionOperation_Wrapper(RJSApi& h, RScaleSelectionOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RScaleSelectionOperation_Wrapper::RScaleSelectionOperation_Wrapper(RJSApi& h, RScaleSelectionOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RScaleSelectionOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RScaleSelectionOperation_Wrapper"));
               //setObjectName("RScaleSelectionOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -189,13 +197,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RScaleSelectionOperation(
-                a1_cpp
+              wrapped = new RScaleSelectionOperation(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -237,13 +245,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RScaleSelectionOperation(
-                a1_cpp
+              wrapped = new RScaleSelectionOperation(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -261,14 +269,18 @@ RVector a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RScaleSelectionOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

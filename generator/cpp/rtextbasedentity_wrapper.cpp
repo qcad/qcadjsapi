@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RTextBasedEntity_Wrapper::RTextBasedEntity_Wrapper(RJSApi& h, RTextBasedEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTextBasedEntity_Wrapper::RTextBasedEntity_Wrapper(RJSApi& h, RTextBasedEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTextBasedEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTextBasedEntity_Wrapper"));
               //setObjectName("RTextBasedEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RTextBasedEntity_Wrapper::RTextBasedEntity_Wrapper(RJSApi& h, QSharedPointer<RTextBasedEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RTextBasedEntity_Wrapper::RTextBasedEntity_Wrapper(RJSApi& h, QSharedPointer<RTextBasedEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RTextBasedEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTextBasedEntity_Wrapper"));
               //setObjectName("RTextBasedEntity_Wrapper");

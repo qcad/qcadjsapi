@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RFileImporterAdapter_Wrapper::RFileImporterAdapter_Wrapper(RJSApi& h, RFileImporterAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFileImporterAdapter_Wrapper::RFileImporterAdapter_Wrapper(RJSApi& h, RFileImporterAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFileImporterAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFileImporterAdapter_Wrapper"));
               //setObjectName("RFileImporterAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -225,23 +233,23 @@ RFileImporterAdapter_Wrapper::RFileImporterAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFileImporterAdapter_Base(
-              handler
-              
-                ,
-              *a1_cpp
+                wrapped = new RFileImporterAdapter_Base(
+                  handler
+                  
+                    ,
+                  *a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RFileImporterAdapter_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RFileImporterAdapter_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RFileImporterAdapter_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RFileImporterAdapter_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -260,18 +268,18 @@ RFileImporterAdapter_Wrapper::RFileImporterAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFileImporterAdapter_Base(
-              handler
+                wrapped = new RFileImporterAdapter_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((RFileImporterAdapter_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((RFileImporterAdapter_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((RFileImporterAdapter_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((RFileImporterAdapter_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -290,14 +298,18 @@ RFileImporterAdapter_Wrapper::RFileImporterAdapter_Wrapper
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RFileImporterAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

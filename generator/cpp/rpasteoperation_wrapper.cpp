@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RPasteOperation_Wrapper::RPasteOperation_Wrapper(RJSApi& h, RPasteOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPasteOperation_Wrapper::RPasteOperation_Wrapper(RJSApi& h, RPasteOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPasteOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPasteOperation_Wrapper"));
               //setObjectName("RPasteOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -181,12 +189,12 @@ RPasteOperation_Wrapper::RPasteOperation_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RPasteOperation(
-                *a1_cpp
+              wrapped = new RPasteOperation(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -203,14 +211,18 @@ RPasteOperation_Wrapper::RPasteOperation_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPasteOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

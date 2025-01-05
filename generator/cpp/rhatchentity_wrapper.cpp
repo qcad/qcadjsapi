@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RHatchEntity_Wrapper::RHatchEntity_Wrapper(RJSApi& h, RHatchEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RHatchEntity_Wrapper::RHatchEntity_Wrapper(RJSApi& h, RHatchEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RHatchEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RHatchEntity_Wrapper"));
               //setObjectName("RHatchEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RHatchEntity_Wrapper::RHatchEntity_Wrapper(RJSApi& h, QSharedPointer<RHatchEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RHatchEntity_Wrapper::RHatchEntity_Wrapper(RJSApi& h, QSharedPointer<RHatchEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RHatchEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RHatchEntity_Wrapper"));
               //setObjectName("RHatchEntity_Wrapper");
@@ -687,13 +695,13 @@ RHatchData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RHatchEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RHatchEntity>(new RHatchEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -711,14 +719,14 @@ RHatchData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RHatchEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

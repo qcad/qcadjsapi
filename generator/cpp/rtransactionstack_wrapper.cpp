@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RTransactionStack_Wrapper::RTransactionStack_Wrapper(RJSApi& h, RTransactionStack* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTransactionStack_Wrapper::RTransactionStack_Wrapper(RJSApi& h, RTransactionStack* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTransactionStack_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTransactionStack_Wrapper"));
               //setObjectName("RTransactionStack_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -181,12 +189,12 @@ RTransactionStack_Wrapper::RTransactionStack_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RTransactionStack(
-                *a1_cpp
+              wrapped = new RTransactionStack(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -203,14 +211,18 @@ RTransactionStack_Wrapper::RTransactionStack_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTransactionStack";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

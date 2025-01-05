@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RFaceData_Wrapper::RFaceData_Wrapper(RJSApi& h, RFaceData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFaceData_Wrapper::RFaceData_Wrapper(RJSApi& h, RFaceData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFaceData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFaceData_Wrapper"));
               //setObjectName("RFaceData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RFaceData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -213,15 +222,15 @@ RVector a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RFaceData(
-                a1_cpp
+              wrapped = new RFaceData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -240,11 +249,11 @@ RVector a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RFaceData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RFaceData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -264,14 +273,18 @@ RVector a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RFaceData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RImportListenerAdapter_Wrapper::RImportListenerAdapter_Wrapper(RJSApi& h, RImportListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RImportListenerAdapter_Wrapper::RImportListenerAdapter_Wrapper(RJSApi& h, RImportListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RImportListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RImportListenerAdapter_Wrapper"));
               //setObjectName("RImportListenerAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -212,9 +220,10 @@ int a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RImportListenerAdapter";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

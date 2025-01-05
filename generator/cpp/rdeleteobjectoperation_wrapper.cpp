@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RDeleteObjectOperation_Wrapper::RDeleteObjectOperation_Wrapper(RJSApi& h, RDeleteObjectOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDeleteObjectOperation_Wrapper::RDeleteObjectOperation_Wrapper(RJSApi& h, RDeleteObjectOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDeleteObjectOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDeleteObjectOperation_Wrapper"));
               //setObjectName("RDeleteObjectOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -197,13 +205,13 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDeleteObjectOperation(
-                a1_cpp
+              wrapped = new RDeleteObjectOperation(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -221,14 +229,18 @@ bool a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDeleteObjectOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -251,11 +251,19 @@ bool a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RFileCache_Wrapper::RFileCache_Wrapper(RJSApi& h, RFileCache* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFileCache_Wrapper::RFileCache_Wrapper(RJSApi& h, RFileCache* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFileCache_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFileCache_Wrapper"));
               //setObjectName("RFileCache_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -277,9 +285,10 @@ bool a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RFileCache";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -339,11 +348,11 @@ RFileCache_Wrapper::RFileCache_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFileCache(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RFileCache(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -356,7 +365,9 @@ RFileCache_Wrapper::RFileCache_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RFileCache";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RXLineData_Wrapper::RXLineData_Wrapper(RJSApi& h, RXLineData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RXLineData_Wrapper::RXLineData_Wrapper(RJSApi& h, RXLineData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RXLineData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RXLineData_Wrapper"));
               //setObjectName("RXLineData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RXLineData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -246,13 +255,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RXLineData(
-                a1_cpp
+              wrapped = new RXLineData(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -285,12 +294,12 @@ RXLine a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RXLineData(
-                a1_cpp
+              wrapped = new RXLineData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -309,11 +318,11 @@ RXLine a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RXLineData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RXLineData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -331,14 +340,18 @@ RXLine a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RXLineData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

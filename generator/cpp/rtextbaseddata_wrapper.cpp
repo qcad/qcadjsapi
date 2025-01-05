@@ -499,11 +499,19 @@ double a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RTextBasedData_Wrapper::RTextBasedData_Wrapper(RJSApi& h, RTextBasedData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTextBasedData_Wrapper::RTextBasedData_Wrapper(RJSApi& h, RTextBasedData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTextBasedData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTextBasedData_Wrapper"));
               //setObjectName("RTextBasedData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -525,9 +533,10 @@ double a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTextBasedData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -757,8 +766,8 @@ bool a15_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTextBasedData(
-                a1_cpp
+              wrapped = new RTextBasedData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -774,9 +783,9 @@ bool a15_cpp;
     , a14_cpp
     , a15_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -820,12 +829,12 @@ bool a15_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTextBasedData(
-                a1_cpp
+              wrapped = new RTextBasedData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -856,14 +865,18 @@ bool a15_cpp;
    && a15.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTextBasedData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -802,12 +802,13 @@ WorkingSet = RGraphicsSceneDrawable::WorkingSet,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -843,27 +844,30 @@ WorkingSet = RGraphicsSceneDrawable::WorkingSet,
 
         // get wrapped object:
         RGraphicsSceneDrawable* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RGraphicsSceneDrawable* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -871,7 +875,8 @@ WorkingSet = RGraphicsSceneDrawable::WorkingSet,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -883,9 +888,10 @@ WorkingSet = RGraphicsSceneDrawable::WorkingSet,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -900,9 +906,10 @@ WorkingSet = RGraphicsSceneDrawable::WorkingSet,
         
 
         private:
-        // wrapped object:
-        RGraphicsSceneDrawable* wrapped;
 
+        
+          // wrapped object:
+          RGraphicsSceneDrawable* wrapped;
         
 
         bool wrappedCreated;

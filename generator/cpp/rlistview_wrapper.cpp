@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RListView_Wrapper::RListView_Wrapper(RJSApi& h, RListView* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RListView_Wrapper::RListView_Wrapper(RJSApi& h, RListView* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RListView_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RListView_Wrapper"));
               //setObjectName("RListView_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -579,21 +587,21 @@ RListView_Wrapper::RListView_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RListView_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RListView_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RListView_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RListView_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RListView_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RListView_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -610,14 +618,18 @@ RListView_Wrapper::RListView_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RListView";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

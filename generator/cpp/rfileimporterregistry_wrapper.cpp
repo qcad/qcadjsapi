@@ -508,11 +508,19 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RFileImporterRegistry_Wrapper::RFileImporterRegistry_Wrapper(RJSApi& h, RFileImporterRegistry* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFileImporterRegistry_Wrapper::RFileImporterRegistry_Wrapper(RJSApi& h, RFileImporterRegistry* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFileImporterRegistry_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFileImporterRegistry_Wrapper"));
               //setObjectName("RFileImporterRegistry_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -534,9 +542,10 @@ QString a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RFileImporterRegistry";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -596,11 +605,11 @@ RFileImporterRegistry_Wrapper::RFileImporterRegistry_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFileImporterRegistry(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RFileImporterRegistry(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -613,7 +622,9 @@ RFileImporterRegistry_Wrapper::RFileImporterRegistry_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RFileImporterRegistry";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

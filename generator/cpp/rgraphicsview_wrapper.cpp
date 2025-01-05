@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RGraphicsView_Wrapper::RGraphicsView_Wrapper(RJSApi& h, RGraphicsView* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RGraphicsView_Wrapper::RGraphicsView_Wrapper(RJSApi& h, RGraphicsView* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RGraphicsView_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RGraphicsView_Wrapper"));
               //setObjectName("RGraphicsView_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

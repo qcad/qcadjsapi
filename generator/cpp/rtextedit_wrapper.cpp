@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RTextEdit_Wrapper::RTextEdit_Wrapper(RJSApi& h, RTextEdit* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTextEdit_Wrapper::RTextEdit_Wrapper(RJSApi& h, RTextEdit* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTextEdit_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTextEdit_Wrapper"));
               //setObjectName("RTextEdit_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -580,21 +588,21 @@ RTextEdit_Wrapper::RTextEdit_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RTextEdit_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RTextEdit_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RTextEdit_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RTextEdit_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RTextEdit_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RTextEdit_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -611,14 +619,18 @@ RTextEdit_Wrapper::RTextEdit_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTextEdit";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -148,11 +148,19 @@ RS::KnownVariable a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RMemoryStorage_Wrapper::RMemoryStorage_Wrapper(RJSApi& h, RMemoryStorage* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMemoryStorage_Wrapper::RMemoryStorage_Wrapper(RJSApi& h, RMemoryStorage* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMemoryStorage_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMemoryStorage_Wrapper"));
               //setObjectName("RMemoryStorage_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -234,11 +242,11 @@ RMemoryStorage_Wrapper::RMemoryStorage_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RMemoryStorage(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RMemoryStorage(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -251,7 +259,9 @@ RMemoryStorage_Wrapper::RMemoryStorage_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RMemoryStorage";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -174,11 +174,19 @@
 
     
       // special constructor to wrap existing object:
-      RDocumentInterface_Wrapper::RDocumentInterface_Wrapper(RJSApi& h, RDocumentInterface* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDocumentInterface_Wrapper::RDocumentInterface_Wrapper(RJSApi& h, RDocumentInterface* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDocumentInterface_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDocumentInterface_Wrapper"));
               //setObjectName("RDocumentInterface_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -279,12 +287,12 @@ RDocumentInterface_Wrapper::RDocumentInterface_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RDocumentInterface(
-                *a1_cpp
+              wrapped = new RDocumentInterface(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -301,14 +309,18 @@ RDocumentInterface_Wrapper::RDocumentInterface_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDocumentInterface";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -7149,73 +7161,6 @@ QList<qreal> a6_cpp;
   }
 
                   qWarning() << "no matching function variant found for addAuxShapeToPreview";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: RDocumentInterface
-    // Function: addEntityToPreview
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RDocumentInterface_Wrapper::addEntityToPreview
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper_qcad::is_REntity_ptr(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: entity (REntity)
-  
-
-          // non copyable:
-          REntity*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_REntity_ptr(handler, a1);
-        
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                RDocumentInterface* w = getWrapped();
-                
-                w->addEntityToPreview(
-                  *a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for addEntityToPreview";
                   handler.trace();
                   return QJSValue();
                 

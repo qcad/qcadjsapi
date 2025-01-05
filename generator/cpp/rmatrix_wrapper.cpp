@@ -771,11 +771,19 @@ double a6_cpp;
 
     
       // special constructor to wrap existing object:
-      RMatrix_Wrapper::RMatrix_Wrapper(RJSApi& h, RMatrix* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMatrix_Wrapper::RMatrix_Wrapper(RJSApi& h, RMatrix* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMatrix_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMatrix_Wrapper"));
               //setObjectName("RMatrix_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -797,9 +805,10 @@ double a6_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RMatrix";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -886,13 +895,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RMatrix(
-                a1_cpp
+              wrapped = new RMatrix(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -925,12 +934,12 @@ RMatrix a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RMatrix(
-                a1_cpp
+              wrapped = new RMatrix(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -949,11 +958,11 @@ RMatrix a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RMatrix(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RMatrix(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -971,14 +980,18 @@ RMatrix a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMatrix";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

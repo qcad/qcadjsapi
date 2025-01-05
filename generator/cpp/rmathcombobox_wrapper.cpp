@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RMathComboBox_Wrapper::RMathComboBox_Wrapper(RJSApi& h, RMathComboBox* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMathComboBox_Wrapper::RMathComboBox_Wrapper(RJSApi& h, RMathComboBox* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMathComboBox_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMathComboBox_Wrapper"));
               //setObjectName("RMathComboBox_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -551,21 +559,21 @@ RMathComboBox_Wrapper::RMathComboBox_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RMathComboBox_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RMathComboBox_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RMathComboBox_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RMathComboBox_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RMathComboBox_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RMathComboBox_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -582,14 +590,18 @@ RMathComboBox_Wrapper::RMathComboBox_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMathComboBox";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

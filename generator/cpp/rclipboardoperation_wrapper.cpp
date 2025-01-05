@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RClipboardOperation_Wrapper::RClipboardOperation_Wrapper(RJSApi& h, RClipboardOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RClipboardOperation_Wrapper::RClipboardOperation_Wrapper(RJSApi& h, RClipboardOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RClipboardOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RClipboardOperation_Wrapper"));
               //setObjectName("RClipboardOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RClipboardOperation_Wrapper::RClipboardOperation_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RClipboardOperation(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RClipboardOperation(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RClipboardOperation_Wrapper::RClipboardOperation_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RClipboardOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

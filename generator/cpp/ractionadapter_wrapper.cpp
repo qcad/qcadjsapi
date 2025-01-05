@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RActionAdapter_Wrapper::RActionAdapter_Wrapper(RJSApi& h, RActionAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RActionAdapter_Wrapper::RActionAdapter_Wrapper(RJSApi& h, RActionAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RActionAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RActionAdapter_Wrapper"));
               //setObjectName("RActionAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -189,21 +197,21 @@ RActionAdapter_Wrapper::RActionAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RActionAdapter_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RActionAdapter_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RActionAdapter_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RActionAdapter_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RActionAdapter_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RActionAdapter_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -220,14 +228,18 @@ RActionAdapter_Wrapper::RActionAdapter_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RActionAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

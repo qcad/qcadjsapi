@@ -298,11 +298,19 @@ qreal a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RTransformOp_Wrapper::RTransformOp_Wrapper(RJSApi& h, RTransformOp* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTransformOp_Wrapper::RTransformOp_Wrapper(RJSApi& h, RTransformOp* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTransformOp_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTransformOp_Wrapper"));
               //setObjectName("RTransformOp_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -384,11 +392,11 @@ RTransformOp_Wrapper::RTransformOp_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RTransformOp(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RTransformOp(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -401,7 +409,9 @@ RTransformOp_Wrapper::RTransformOp_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RTransformOp";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

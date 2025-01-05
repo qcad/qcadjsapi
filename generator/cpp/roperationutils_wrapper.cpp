@@ -165,11 +165,19 @@ bool a2_cpp;
 
     
       // special constructor to wrap existing object:
-      ROperationUtils_Wrapper::ROperationUtils_Wrapper(RJSApi& h, ROperationUtils* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      ROperationUtils_Wrapper::ROperationUtils_Wrapper(RJSApi& h, ROperationUtils* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("ROperationUtils_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("ROperationUtils_Wrapper"));
               //setObjectName("ROperationUtils_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -191,9 +199,10 @@ bool a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of ROperationUtils";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

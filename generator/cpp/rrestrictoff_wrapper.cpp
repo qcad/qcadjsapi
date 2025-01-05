@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RRestrictOff_Wrapper::RRestrictOff_Wrapper(RJSApi& h, RRestrictOff* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RRestrictOff_Wrapper::RRestrictOff_Wrapper(RJSApi& h, RRestrictOff* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RRestrictOff_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RRestrictOff_Wrapper"));
               //setObjectName("RRestrictOff_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -189,12 +197,12 @@ RRestrictOff_Wrapper::RRestrictOff_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RRestrictOff(
-                a1_cpp
+              wrapped = new RRestrictOff(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -211,14 +219,18 @@ RRestrictOff_Wrapper::RRestrictOff_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RRestrictOff";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

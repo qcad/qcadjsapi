@@ -4476,18 +4476,26 @@ REllipse a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RShape_Wrapper::RShape_Wrapper(RJSApi& h, RShape* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RShape_Wrapper::RShape_Wrapper(RJSApi& h, RShape* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RShape_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RShape_Wrapper"));
               //setObjectName("RShape_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RShape_Wrapper::RShape_Wrapper(RJSApi& h, QSharedPointer<RShape> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RShape_Wrapper::RShape_Wrapper(RJSApi& h, QSharedPointer<RShape> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RShape_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RShape_Wrapper"));
               //setObjectName("RShape_Wrapper");

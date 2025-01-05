@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RDimDiametricData_Wrapper::RDimDiametricData_Wrapper(RJSApi& h, RDimDiametricData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimDiametricData_Wrapper::RDimDiametricData_Wrapper(RJSApi& h, RDimDiametricData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimDiametricData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimDiametricData_Wrapper"));
               //setObjectName("RDimDiametricData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimDiametricData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -249,13 +258,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimDiametricData(
-                *a1_cpp
+              wrapped = new RDimDiametricData(
+                  *a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -274,11 +283,11 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimDiametricData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RDimDiametricData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -296,14 +305,18 @@ RVector a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimDiametricData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

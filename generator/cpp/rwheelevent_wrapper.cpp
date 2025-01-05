@@ -156,11 +156,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RWheelEvent_Wrapper::RWheelEvent_Wrapper(RJSApi& h, RWheelEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RWheelEvent_Wrapper::RWheelEvent_Wrapper(RJSApi& h, RWheelEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RWheelEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RWheelEvent_Wrapper"));
               //setObjectName("RWheelEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -330,8 +338,8 @@ Qt::Orientation a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RWheelEvent(
-                a1_cpp
+              wrapped = new RWheelEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -339,9 +347,9 @@ Qt::Orientation a5_cpp;
     , *a6_cpp
     , *a7_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -364,14 +372,18 @@ Qt::Orientation a5_cpp;
    && a7.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RWheelEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

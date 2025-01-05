@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RNewDocumentListener_Wrapper::RNewDocumentListener_Wrapper(RJSApi& h, RNewDocumentListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RNewDocumentListener_Wrapper::RNewDocumentListener_Wrapper(RJSApi& h, RNewDocumentListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RNewDocumentListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RNewDocumentListener_Wrapper"));
               //setObjectName("RNewDocumentListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      REllipseEntity_Wrapper::REllipseEntity_Wrapper(RJSApi& h, REllipseEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      REllipseEntity_Wrapper::REllipseEntity_Wrapper(RJSApi& h, REllipseEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("REllipseEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("REllipseEntity_Wrapper"));
               //setObjectName("REllipseEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        REllipseEntity_Wrapper::REllipseEntity_Wrapper(RJSApi& h, QSharedPointer<REllipseEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        REllipseEntity_Wrapper::REllipseEntity_Wrapper(RJSApi& h, QSharedPointer<REllipseEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("REllipseEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("REllipseEntity_Wrapper"));
               //setObjectName("REllipseEntity_Wrapper");
@@ -687,13 +695,13 @@ REllipseData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new REllipseEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<REllipseEntity>(new REllipseEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -711,14 +719,14 @@ REllipseData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for REllipseEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

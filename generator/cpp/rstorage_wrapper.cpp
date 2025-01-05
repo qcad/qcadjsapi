@@ -148,11 +148,19 @@ RS::KnownVariable a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RStorage_Wrapper::RStorage_Wrapper(RJSApi& h, RStorage* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RStorage_Wrapper::RStorage_Wrapper(RJSApi& h, RStorage* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RStorage_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RStorage_Wrapper"));
               //setObjectName("RStorage_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

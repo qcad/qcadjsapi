@@ -230,7 +230,7 @@ RFileExporterAdapter_Base
     // implementation of virtual public function
     // calls JS implementation if available
     virtual void exportBlock(
-      RBlock& a1
+      QSharedPointer<RBlock> a1
     )
     
     ;
@@ -239,7 +239,7 @@ RFileExporterAdapter_Base
       // implementation of virtual public function
       // always calls super implementation
       virtual void exportBlockSup(
-        RBlock& a1
+        QSharedPointer<RBlock> a1
       )
       
       {

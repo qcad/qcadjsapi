@@ -186,11 +186,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RAutoLoadJs_Wrapper::RAutoLoadJs_Wrapper(RJSApi& h, RAutoLoadJs* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RAutoLoadJs_Wrapper::RAutoLoadJs_Wrapper(RJSApi& h, RAutoLoadJs* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RAutoLoadJs_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RAutoLoadJs_Wrapper"));
               //setObjectName("RAutoLoadJs_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -212,9 +220,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RAutoLoadJs";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -274,11 +283,11 @@ RAutoLoadJs_Wrapper::RAutoLoadJs_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RAutoLoadJs(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RAutoLoadJs(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -291,7 +300,9 @@ RAutoLoadJs_Wrapper::RAutoLoadJs_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RAutoLoadJs";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

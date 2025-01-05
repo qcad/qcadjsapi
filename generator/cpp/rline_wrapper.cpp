@@ -4480,18 +4480,26 @@ REllipse a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RLine_Wrapper::RLine_Wrapper(RJSApi& h, RLine* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RLine_Wrapper::RLine_Wrapper(RJSApi& h, RLine* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RLine_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLine_Wrapper"));
               //setObjectName("RLine_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RLine_Wrapper::RLine_Wrapper(RJSApi& h, QSharedPointer<RLine> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RLine_Wrapper::RLine_Wrapper(RJSApi& h, QSharedPointer<RLine> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RLine_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLine_Wrapper"));
               //setObjectName("RLine_Wrapper");
@@ -4517,9 +4525,7 @@ REllipse a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RLine";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -4628,15 +4634,15 @@ double a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLine(
-                a1_cpp
+              spWrapped = QSharedPointer<RLine>(new RLine(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4687,14 +4693,14 @@ double a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLine(
-                a1_cpp
+              spWrapped = QSharedPointer<RLine>(new RLine(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4736,13 +4742,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLine(
-                a1_cpp
+              spWrapped = QSharedPointer<RLine>(new RLine(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4761,11 +4767,11 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLine(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RLine>(new RLine(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4785,14 +4791,14 @@ RVector a2_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RLine";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

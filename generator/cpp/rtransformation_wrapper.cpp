@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RTransformation_Wrapper::RTransformation_Wrapper(RJSApi& h, RTransformation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTransformation_Wrapper::RTransformation_Wrapper(RJSApi& h, RTransformation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTransformation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTransformation_Wrapper"));
               //setObjectName("RTransformation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTransformation";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -164,11 +173,11 @@ RTransformation_Wrapper::RTransformation_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RTransformation(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RTransformation(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -181,7 +190,9 @@ RTransformation_Wrapper::RTransformation_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RTransformation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

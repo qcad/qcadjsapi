@@ -8370,11 +8370,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RSettings_Wrapper::RSettings_Wrapper(RJSApi& h, RSettings* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSettings_Wrapper::RSettings_Wrapper(RJSApi& h, RSettings* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSettings_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSettings_Wrapper"));
               //setObjectName("RSettings_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -8396,9 +8404,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RSettings";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -8458,11 +8467,11 @@ RSettings_Wrapper::RSettings_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSettings(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSettings(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -8475,7 +8484,9 @@ RSettings_Wrapper::RSettings_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSettings";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RRestrictHorizontal_Wrapper::RRestrictHorizontal_Wrapper(RJSApi& h, RRestrictHorizontal* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RRestrictHorizontal_Wrapper::RRestrictHorizontal_Wrapper(RJSApi& h, RRestrictHorizontal* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RRestrictHorizontal_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RRestrictHorizontal_Wrapper"));
               //setObjectName("RRestrictHorizontal_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -189,12 +197,12 @@ RRestrictHorizontal_Wrapper::RRestrictHorizontal_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RRestrictHorizontal(
-                a1_cpp
+              wrapped = new RRestrictHorizontal(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -211,14 +219,18 @@ RRestrictHorizontal_Wrapper::RRestrictHorizontal_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RRestrictHorizontal";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

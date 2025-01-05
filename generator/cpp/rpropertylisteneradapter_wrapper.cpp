@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RPropertyListenerAdapter_Wrapper::RPropertyListenerAdapter_Wrapper(RJSApi& h, RPropertyListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPropertyListenerAdapter_Wrapper::RPropertyListenerAdapter_Wrapper(RJSApi& h, RPropertyListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPropertyListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPropertyListenerAdapter_Wrapper"));
               //setObjectName("RPropertyListenerAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

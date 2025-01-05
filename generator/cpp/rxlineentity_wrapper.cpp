@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RXLineEntity_Wrapper::RXLineEntity_Wrapper(RJSApi& h, RXLineEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RXLineEntity_Wrapper::RXLineEntity_Wrapper(RJSApi& h, RXLineEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RXLineEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RXLineEntity_Wrapper"));
               //setObjectName("RXLineEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RXLineEntity_Wrapper::RXLineEntity_Wrapper(RJSApi& h, QSharedPointer<RXLineEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RXLineEntity_Wrapper::RXLineEntity_Wrapper(RJSApi& h, QSharedPointer<RXLineEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RXLineEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RXLineEntity_Wrapper"));
               //setObjectName("RXLineEntity_Wrapper");
@@ -687,13 +695,13 @@ RXLineData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RXLineEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RXLineEntity>(new RXLineEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -711,14 +719,14 @@ RXLineData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RXLineEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

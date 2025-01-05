@@ -4872,18 +4872,26 @@ bool a5_cpp;
 
     
       // special constructor to wrap existing object:
-      RArc_Wrapper::RArc_Wrapper(RJSApi& h, RArc* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RArc_Wrapper::RArc_Wrapper(RJSApi& h, RArc* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RArc_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RArc_Wrapper"));
               //setObjectName("RArc_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RArc_Wrapper::RArc_Wrapper(RJSApi& h, QSharedPointer<RArc> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RArc_Wrapper::RArc_Wrapper(RJSApi& h, QSharedPointer<RArc> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RArc_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RArc_Wrapper"));
               //setObjectName("RArc_Wrapper");
@@ -4909,9 +4917,7 @@ bool a5_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RArc";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -5050,17 +5056,17 @@ bool a6_cpp;
         // construct wrapper:
 
         
-            wrapped = new RArc(
-                a1_cpp
+              spWrapped = QSharedPointer<RArc>(new RArc(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     , a6_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5137,16 +5143,16 @@ bool a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RArc(
-                a1_cpp
+              spWrapped = QSharedPointer<RArc>(new RArc(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5165,11 +5171,11 @@ bool a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RArc(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RArc>(new RArc(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -5191,14 +5197,14 @@ bool a5_cpp;
    && a6.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RArc";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

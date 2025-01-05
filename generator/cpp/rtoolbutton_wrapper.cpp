@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RToolButton_Wrapper::RToolButton_Wrapper(RJSApi& h, RToolButton* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RToolButton_Wrapper::RToolButton_Wrapper(RJSApi& h, RToolButton* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RToolButton_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RToolButton_Wrapper"));
               //setObjectName("RToolButton_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -496,21 +504,21 @@ RToolButton_Wrapper::RToolButton_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RToolButton_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RToolButton_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RToolButton_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RToolButton_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RToolButton_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RToolButton_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -527,14 +535,18 @@ RToolButton_Wrapper::RToolButton_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RToolButton";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

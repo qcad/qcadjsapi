@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RRulerQt_Wrapper::RRulerQt_Wrapper(RJSApi& h, RRulerQt* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RRulerQt_Wrapper::RRulerQt_Wrapper(RJSApi& h, RRulerQt* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RRulerQt_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RRulerQt_Wrapper"));
               //setObjectName("RRulerQt_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -495,21 +503,21 @@ RRulerQt_Wrapper::RRulerQt_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RRulerQt_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RRulerQt_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RRulerQt_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RRulerQt_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RRulerQt_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RRulerQt_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -526,14 +534,18 @@ RRulerQt_Wrapper::RRulerQt_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RRulerQt";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

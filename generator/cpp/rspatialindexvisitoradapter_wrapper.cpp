@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSpatialIndexVisitorAdapter_Wrapper::RSpatialIndexVisitorAdapter_Wrapper(RJSApi& h, RSpatialIndexVisitorAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSpatialIndexVisitorAdapter_Wrapper::RSpatialIndexVisitorAdapter_Wrapper(RJSApi& h, RSpatialIndexVisitorAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSpatialIndexVisitorAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSpatialIndexVisitorAdapter_Wrapper"));
               //setObjectName("RSpatialIndexVisitorAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RSpatialIndexVisitorAdapter_Wrapper::RSpatialIndexVisitorAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSpatialIndexVisitorAdapter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSpatialIndexVisitorAdapter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RSpatialIndexVisitorAdapter_Wrapper::RSpatialIndexVisitorAdapter_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSpatialIndexVisitorAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

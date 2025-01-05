@@ -2490,11 +2490,19 @@ double a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RVector_Wrapper::RVector_Wrapper(RJSApi& h, RVector* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RVector_Wrapper::RVector_Wrapper(RJSApi& h, RVector* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RVector_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RVector_Wrapper"));
               //setObjectName("RVector_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2516,9 +2524,10 @@ double a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RVector";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -2643,15 +2652,15 @@ bool a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RVector(
-                a1_cpp
+              wrapped = new RVector(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2684,12 +2693,12 @@ QList<double> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RVector(
-                a1_cpp
+              wrapped = new RVector(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2708,11 +2717,11 @@ QList<double> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RVector(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RVector(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2732,14 +2741,18 @@ QList<double> a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RVector";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

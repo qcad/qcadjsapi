@@ -286,11 +286,19 @@ qint64 a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RSpatialIndexNavel_Wrapper::RSpatialIndexNavel_Wrapper(RJSApi& h, RSpatialIndexNavel* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSpatialIndexNavel_Wrapper::RSpatialIndexNavel_Wrapper(RJSApi& h, RSpatialIndexNavel* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSpatialIndexNavel_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSpatialIndexNavel_Wrapper"));
               //setObjectName("RSpatialIndexNavel_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -372,11 +380,11 @@ RSpatialIndexNavel_Wrapper::RSpatialIndexNavel_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSpatialIndexNavel(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSpatialIndexNavel(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -389,7 +397,9 @@ RSpatialIndexNavel_Wrapper::RSpatialIndexNavel_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSpatialIndexNavel";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

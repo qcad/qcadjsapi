@@ -869,11 +869,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RDebug_Wrapper::RDebug_Wrapper(RJSApi& h, RDebug* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDebug_Wrapper::RDebug_Wrapper(RJSApi& h, RDebug* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDebug_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDebug_Wrapper"));
               //setObjectName("RDebug_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -895,9 +903,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDebug";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

@@ -523,11 +523,19 @@ bool a5_cpp;
 
     
       // special constructor to wrap existing object:
-      RArcData_Wrapper::RArcData_Wrapper(RJSApi& h, RArcData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RArcData_Wrapper::RArcData_Wrapper(RJSApi& h, RArcData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RArcData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RArcData_Wrapper"));
               //setObjectName("RArcData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -549,9 +557,10 @@ bool a5_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RArcData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -679,16 +688,16 @@ bool a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RArcData(
-                a1_cpp
+              wrapped = new RArcData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -721,12 +730,12 @@ RArc a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RArcData(
-                a1_cpp
+              wrapped = new RArcData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -745,11 +754,11 @@ RArc a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RArcData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RArcData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -770,14 +779,18 @@ RArc a1_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RArcData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

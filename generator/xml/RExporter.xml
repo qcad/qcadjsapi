@@ -199,7 +199,7 @@
       </variant>
     </function>
     <function name="getBlockRefOrEntity">
-      <variant return-type="REntity*" virtual="true" access="public">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" virtual="true" access="public">
         <parameters />
       </variant>
     </function>
@@ -209,7 +209,7 @@
       </variant>
     </function>
     <function name="getEntity">
-      <variant return-type="REntity*" virtual="true" access="public">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" virtual="true" access="public">
         <parameters />
       </variant>
       <!--
@@ -219,12 +219,12 @@
       -->
     </function>
     <function name="getCurrentBlockRef">
-      <variant return-type="REntity*" virtual="true" const="true" access="public">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" virtual="true" const="true" access="public">
         <parameters />
       </variant>
     </function>
     <function name="getCurrentViewport">
-      <variant return-type="RViewportEntity*" virtual="true" const="true" access="public">
+      <variant return-type="QSharedPointer&lt;RViewportEntity&gt;" virtual="true" const="true" access="public">
         <parameters />
       </variant>
     </function>
@@ -317,7 +317,7 @@
     <function name="exportLayer">
       <variant return-type="void" virtual="true" access="public">
         <parameters>
-          <parameter const="false" type="RLayer" modifier="&amp;" name="" />
+          <parameter const="false" type="QSharedPointer&lt;RLayer&gt;" modifier="" name="" />
         </parameters>
       </variant>
       <variant return-type="void" virtual="true" access="public">
@@ -329,14 +329,14 @@
     <function name="exportLayerState">
       <variant return-type="void" virtual="true" access="public">
         <parameters>
-          <parameter const="false" type="RLayerState" modifier="&amp;" name="" />
+          <parameter const="false" type="QSharedPointer&lt;RLayerState&gt;" modifier="" name="" />
         </parameters>
       </variant>
     </function>
     <function name="exportBlock">
       <variant return-type="void" virtual="true" overridable="true" access="public">
         <parameters>
-          <parameter const="false" type="RBlock" modifier="&amp;" name="" />
+          <parameter const="false" type="QSharedPointer&lt;RBlock&gt;" modifier="" name="" />
         </parameters>
       </variant>
       <variant return-type="void" virtual="true" overridable="true" access="public">
@@ -348,7 +348,7 @@
     <function name="exportView">
       <variant return-type="void" virtual="true" access="public">
         <parameters>
-          <parameter const="false" type="RView" modifier="&amp;" name="" />
+          <parameter const="false" type="QSharedPointer&lt;RView&gt;" modifier="" name="" />
         </parameters>
       </variant>
       <variant return-type="void" virtual="true" access="public">
@@ -360,7 +360,7 @@
     <function name="exportLinetype">
       <variant return-type="void" virtual="true" access="public">
         <parameters>
-          <parameter const="false" type="RLinetype" modifier="&amp;" name="" />
+          <parameter const="false" type="QSharedPointer&lt;RLinetype&gt;" modifier="" name="" />
         </parameters>
       </variant>
     </function>
@@ -387,7 +387,7 @@
     <function name="exportEntity">
       <variant return-type="void" virtual="true" access="public">
         <parameters>
-          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="" name="entity" />
           <parameter const="false" type="bool" modifier="" name="preview" default="false" />
           <parameter const="false" type="bool" modifier="" name="allBlocks" default="true" />
           <parameter const="false" type="bool" modifier="" name="forceSelected" default="false" />
@@ -404,14 +404,14 @@
     <function name="getEntityLayer">
       <variant return-type="QSharedPointer&lt;RLayer&gt;" virtual="true" access="public">
         <parameters>
-          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="" name="entity" />
         </parameters>
       </variant>
     </function>
     <function name="isVisible">
       <variant return-type="bool" virtual="true" access="public">
         <parameters>
-          <parameter const="false" type="REntity" modifier="&amp;" name="entity" />
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="" name="entity" />
         </parameters>
       </variant>
     </function>
@@ -714,7 +714,7 @@
     <function name="pushEntity">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="false" type="REntity" modifier="*" name="e" />
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="" name="e" />
         </parameters>
       </variant>
     </function>

@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RViewportEntity_Wrapper::RViewportEntity_Wrapper(RJSApi& h, RViewportEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RViewportEntity_Wrapper::RViewportEntity_Wrapper(RJSApi& h, RViewportEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RViewportEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RViewportEntity_Wrapper"));
               //setObjectName("RViewportEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RViewportEntity_Wrapper::RViewportEntity_Wrapper(RJSApi& h, QSharedPointer<RViewportEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RViewportEntity_Wrapper::RViewportEntity_Wrapper(RJSApi& h, QSharedPointer<RViewportEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RViewportEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RViewportEntity_Wrapper"));
               //setObjectName("RViewportEntity_Wrapper");
@@ -687,13 +695,13 @@ RViewportData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RViewportEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RViewportEntity>(new RViewportEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -711,14 +719,14 @@ RViewportData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RViewportEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

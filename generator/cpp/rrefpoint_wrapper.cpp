@@ -2632,11 +2632,19 @@ RRefPoint::Flags a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RRefPoint_Wrapper::RRefPoint_Wrapper(RJSApi& h, RRefPoint* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RRefPoint_Wrapper::RRefPoint_Wrapper(RJSApi& h, RRefPoint* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RRefPoint_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RRefPoint_Wrapper"));
               //setObjectName("RRefPoint_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2658,9 +2666,10 @@ RRefPoint::Flags a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RRefPoint";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -2785,15 +2794,15 @@ bool a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RRefPoint(
-                a1_cpp
+              wrapped = new RRefPoint(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2835,13 +2844,13 @@ RRefPoint::Flags a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RRefPoint(
-                a1_cpp
+              wrapped = new RRefPoint(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2874,12 +2883,12 @@ RVector a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RRefPoint(
-                a1_cpp
+              wrapped = new RRefPoint(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2898,11 +2907,11 @@ RVector a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RRefPoint(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RRefPoint(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2922,14 +2931,18 @@ RVector a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RRefPoint";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

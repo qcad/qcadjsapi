@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapReference_Wrapper::RSnapReference_Wrapper(RJSApi& h, RSnapReference* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapReference_Wrapper::RSnapReference_Wrapper(RJSApi& h, RSnapReference* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapReference_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapReference_Wrapper"));
               //setObjectName("RSnapReference_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,18 +170,18 @@ RSnapReference_Wrapper::RSnapReference_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnapReference_Base(
-              handler
+                wrapped = new RSnapReference_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((RSnapReference_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((RSnapReference_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((RSnapReference_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((RSnapReference_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -186,7 +194,9 @@ RSnapReference_Wrapper::RSnapReference_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnapReference";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

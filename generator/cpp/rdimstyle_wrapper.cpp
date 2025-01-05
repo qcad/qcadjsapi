@@ -864,18 +864,26 @@ RS::KnownVariableType a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RDimStyle_Wrapper::RDimStyle_Wrapper(RJSApi& h, RDimStyle* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimStyle_Wrapper::RDimStyle_Wrapper(RJSApi& h, RDimStyle* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimStyle_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimStyle_Wrapper"));
               //setObjectName("RDimStyle_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RDimStyle_Wrapper::RDimStyle_Wrapper(RJSApi& h, QSharedPointer<RDimStyle> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RDimStyle_Wrapper::RDimStyle_Wrapper(RJSApi& h, QSharedPointer<RDimStyle> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RDimStyle_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimStyle_Wrapper"));
               //setObjectName("RDimStyle_Wrapper");
@@ -982,12 +990,12 @@ RDimStyle_Wrapper::RDimStyle_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RDimStyle(
-                a1_cpp
+              spWrapped = QSharedPointer<RDimStyle>(new RDimStyle(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1006,11 +1014,11 @@ RDimStyle_Wrapper::RDimStyle_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RDimStyle(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RDimStyle>(new RDimStyle(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1027,14 +1035,14 @@ RDimStyle_Wrapper::RDimStyle_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimStyle";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

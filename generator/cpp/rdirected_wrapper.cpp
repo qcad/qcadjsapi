@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RDirected_Wrapper::RDirected_Wrapper(RJSApi& h, RDirected* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDirected_Wrapper::RDirected_Wrapper(RJSApi& h, RDirected* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDirected_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDirected_Wrapper"));
               //setObjectName("RDirected_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

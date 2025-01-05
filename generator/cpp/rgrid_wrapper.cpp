@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RGrid_Wrapper::RGrid_Wrapper(RJSApi& h, RGrid* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RGrid_Wrapper::RGrid_Wrapper(RJSApi& h, RGrid* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RGrid_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RGrid_Wrapper"));
               //setObjectName("RGrid_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

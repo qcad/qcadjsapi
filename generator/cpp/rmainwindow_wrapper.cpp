@@ -261,11 +261,19 @@
 
     
       // special constructor to wrap existing object:
-      RMainWindow_Wrapper::RMainWindow_Wrapper(RJSApi& h, RMainWindow* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMainWindow_Wrapper::RMainWindow_Wrapper(RJSApi& h, RMainWindow* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMainWindow_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMainWindow_Wrapper"));
               //setObjectName("RMainWindow_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

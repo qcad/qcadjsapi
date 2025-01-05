@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RPointEntity_Wrapper::RPointEntity_Wrapper(RJSApi& h, RPointEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPointEntity_Wrapper::RPointEntity_Wrapper(RJSApi& h, RPointEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPointEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPointEntity_Wrapper"));
               //setObjectName("RPointEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RPointEntity_Wrapper::RPointEntity_Wrapper(RJSApi& h, QSharedPointer<RPointEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RPointEntity_Wrapper::RPointEntity_Wrapper(RJSApi& h, QSharedPointer<RPointEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RPointEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPointEntity_Wrapper"));
               //setObjectName("RPointEntity_Wrapper");
@@ -687,13 +695,13 @@ RPointData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPointEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RPointEntity>(new RPointEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,12 +737,12 @@ RPointData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPointEntity(
-                *a1_cpp
+              spWrapped = QSharedPointer<RPointEntity>(new RPointEntity(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -752,14 +760,14 @@ RPointData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPointEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RTransaction_Wrapper::RTransaction_Wrapper(RJSApi& h, RTransaction* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTransaction_Wrapper::RTransaction_Wrapper(RJSApi& h, RTransaction* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTransaction_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTransaction_Wrapper"));
               //setObjectName("RTransaction_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTransaction";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -213,14 +222,14 @@ bool a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTransaction(
-                *a1_cpp
+              wrapped = new RTransaction(
+                  *a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -256,12 +265,12 @@ bool a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTransaction(
-                *a1_cpp
+              wrapped = new RTransaction(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -280,11 +289,11 @@ bool a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTransaction(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RTransaction(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -303,14 +312,18 @@ bool a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTransaction";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

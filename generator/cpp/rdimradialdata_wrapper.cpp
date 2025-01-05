@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RDimRadialData_Wrapper::RDimRadialData_Wrapper(RJSApi& h, RDimRadialData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimRadialData_Wrapper::RDimRadialData_Wrapper(RJSApi& h, RDimRadialData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimRadialData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimRadialData_Wrapper"));
               //setObjectName("RDimRadialData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimRadialData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -249,13 +258,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimRadialData(
-                *a1_cpp
+              wrapped = new RDimRadialData(
+                  *a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -274,11 +283,11 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimRadialData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RDimRadialData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -296,14 +305,18 @@ RVector a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimRadialData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

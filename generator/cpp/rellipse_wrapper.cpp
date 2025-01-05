@@ -4744,18 +4744,26 @@ RVector a4_cpp;
 
     
       // special constructor to wrap existing object:
-      REllipse_Wrapper::REllipse_Wrapper(RJSApi& h, REllipse* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      REllipse_Wrapper::REllipse_Wrapper(RJSApi& h, REllipse* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("REllipse_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("REllipse_Wrapper"));
               //setObjectName("REllipse_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        REllipse_Wrapper::REllipse_Wrapper(RJSApi& h, QSharedPointer<REllipse> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        REllipse_Wrapper::REllipse_Wrapper(RJSApi& h, QSharedPointer<REllipse> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("REllipse_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("REllipse_Wrapper"));
               //setObjectName("REllipse_Wrapper");
@@ -4781,9 +4789,7 @@ RVector a4_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of REllipse";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -4914,17 +4920,17 @@ bool a6_cpp;
         // construct wrapper:
 
         
-            wrapped = new REllipse(
-                a1_cpp
+              spWrapped = QSharedPointer<REllipse>(new REllipse(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     , a6_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4943,11 +4949,11 @@ bool a6_cpp;
         // construct wrapper:
 
         
-            wrapped = new REllipse(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<REllipse>(new REllipse(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4969,14 +4975,14 @@ bool a6_cpp;
    && a6.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for REllipse";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

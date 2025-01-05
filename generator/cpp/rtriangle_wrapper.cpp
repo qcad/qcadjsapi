@@ -4567,18 +4567,26 @@ double a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RTriangle_Wrapper::RTriangle_Wrapper(RJSApi& h, RTriangle* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTriangle_Wrapper::RTriangle_Wrapper(RJSApi& h, RTriangle* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTriangle_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTriangle_Wrapper"));
               //setObjectName("RTriangle_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RTriangle_Wrapper::RTriangle_Wrapper(RJSApi& h, QSharedPointer<RTriangle> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RTriangle_Wrapper::RTriangle_Wrapper(RJSApi& h, QSharedPointer<RTriangle> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RTriangle_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTriangle_Wrapper"));
               //setObjectName("RTriangle_Wrapper");
@@ -4604,9 +4612,7 @@ double a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTriangle";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -4704,14 +4710,14 @@ RVector a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTriangle(
-                a1_cpp
+              spWrapped = QSharedPointer<RTriangle>(new RTriangle(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4730,11 +4736,11 @@ RVector a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTriangle(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RTriangle>(new RTriangle(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4753,14 +4759,14 @@ RVector a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTriangle";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -136,11 +136,19 @@
 
     
       // special constructor to wrap existing object:
-      RDocument_Wrapper::RDocument_Wrapper(RJSApi& h, RDocument* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDocument_Wrapper::RDocument_Wrapper(RJSApi& h, RDocument* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDocument_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDocument_Wrapper"));
               //setObjectName("RDocument_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -274,14 +282,14 @@ bool a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDocument(
-                *a1_cpp
+              wrapped = new RDocument(
+                  *a1_cpp
     , *a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -300,14 +308,18 @@ bool a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDocument";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

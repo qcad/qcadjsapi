@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RCopyOperation_Wrapper::RCopyOperation_Wrapper(RJSApi& h, RCopyOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCopyOperation_Wrapper::RCopyOperation_Wrapper(RJSApi& h, RCopyOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCopyOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCopyOperation_Wrapper"));
               //setObjectName("RCopyOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -192,13 +200,13 @@ RVector a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCopyOperation(
-                a1_cpp
+              wrapped = new RCopyOperation(
+                  a1_cpp
     , *a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -216,14 +224,18 @@ RVector a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RCopyOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

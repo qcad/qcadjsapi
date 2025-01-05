@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      REntityPickEvent_Wrapper::REntityPickEvent_Wrapper(RJSApi& h, REntityPickEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      REntityPickEvent_Wrapper::REntityPickEvent_Wrapper(RJSApi& h, REntityPickEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("REntityPickEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("REntityPickEvent_Wrapper"));
               //setObjectName("REntityPickEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -217,15 +225,15 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new REntityPickEvent(
-                a1_cpp
+              wrapped = new REntityPickEvent(
+                  a1_cpp
     , a2_cpp
     , *a3_cpp
     , *a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -245,14 +253,18 @@ RVector a2_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for REntityPickEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

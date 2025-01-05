@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RInterTransactionListenerAdapter_Wrapper::RInterTransactionListenerAdapter_Wrapper(RJSApi& h, RInterTransactionListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RInterTransactionListenerAdapter_Wrapper::RInterTransactionListenerAdapter_Wrapper(RJSApi& h, RInterTransactionListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RInterTransactionListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RInterTransactionListenerAdapter_Wrapper"));
               //setObjectName("RInterTransactionListenerAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -299,11 +307,11 @@ RInterTransactionListenerAdapter_Wrapper::RInterTransactionListenerAdapter_Wrapp
         // construct wrapper:
 
         
-            wrapped = new RInterTransactionListenerAdapter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RInterTransactionListenerAdapter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -316,7 +324,9 @@ RInterTransactionListenerAdapter_Wrapper::RInterTransactionListenerAdapter_Wrapp
 
 
                   qWarning() << "no matching constructor variant found for RInterTransactionListenerAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RViewFocusListenerAdapter_Wrapper::RViewFocusListenerAdapter_Wrapper(RJSApi& h, RViewFocusListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RViewFocusListenerAdapter_Wrapper::RViewFocusListenerAdapter_Wrapper(RJSApi& h, RViewFocusListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RViewFocusListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RViewFocusListenerAdapter_Wrapper"));
               //setObjectName("RViewFocusListenerAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,18 +170,18 @@ RViewFocusListenerAdapter_Wrapper::RViewFocusListenerAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RViewFocusListenerAdapter_Base(
-              handler
+                wrapped = new RViewFocusListenerAdapter_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((RViewFocusListenerAdapter_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((RViewFocusListenerAdapter_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((RViewFocusListenerAdapter_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((RViewFocusListenerAdapter_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -186,7 +194,9 @@ RViewFocusListenerAdapter_Wrapper::RViewFocusListenerAdapter_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RViewFocusListenerAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

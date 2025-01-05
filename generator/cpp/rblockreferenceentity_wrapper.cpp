@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RBlockReferenceEntity_Wrapper::RBlockReferenceEntity_Wrapper(RJSApi& h, RBlockReferenceEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RBlockReferenceEntity_Wrapper::RBlockReferenceEntity_Wrapper(RJSApi& h, RBlockReferenceEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RBlockReferenceEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RBlockReferenceEntity_Wrapper"));
               //setObjectName("RBlockReferenceEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RBlockReferenceEntity_Wrapper::RBlockReferenceEntity_Wrapper(RJSApi& h, QSharedPointer<RBlockReferenceEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RBlockReferenceEntity_Wrapper::RBlockReferenceEntity_Wrapper(RJSApi& h, QSharedPointer<RBlockReferenceEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RBlockReferenceEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RBlockReferenceEntity_Wrapper"));
               //setObjectName("RBlockReferenceEntity_Wrapper");
@@ -687,13 +695,13 @@ RBlockReferenceData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBlockReferenceEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RBlockReferenceEntity>(new RBlockReferenceEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,12 +737,12 @@ RBlockReferenceData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBlockReferenceEntity(
-                *a1_cpp
+              spWrapped = QSharedPointer<RBlockReferenceEntity>(new RBlockReferenceEntity(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -752,14 +760,14 @@ RBlockReferenceData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RBlockReferenceEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

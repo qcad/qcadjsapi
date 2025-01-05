@@ -3976,12 +3976,6 @@
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
             
               if (!spWrapped.isNull()) {
                 spWrapped = nullptr;
@@ -4021,11 +4015,8 @@
 
         // get wrapped object:
         RImageEntity* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4034,11 +4025,8 @@
 
         // get wrapped object (const):
         RImageEntity* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4047,11 +4035,8 @@
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4064,10 +4049,10 @@
           if (!spWrapped.isNull()) {
             return spWrapped;
           }
-          if (wrapped!=nullptr) {
-            qWarning() << "wrapper does not wrap a QSharedPointer<RImageEntity> but a regular pointer";
-            return QSharedPointer<RImageEntity>();
-          }
+          //if (wrapped!=nullptr) {
+          //  qWarning() << "wrapper does not wrap a QSharedPointer<RImageEntity> but a regular pointer";
+          //  return QSharedPointer<RImageEntity>();
+          //}
           return QSharedPointer<RImageEntity>();
         }
 
@@ -4077,9 +4062,8 @@
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
           
-            || (!spWrapped.isNull() && spWrapped.data()!=nullptr)
+            return (!spWrapped.isNull() && spWrapped.data()!=nullptr);
           
           ;
         }
@@ -4091,9 +4075,6 @@
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
           
             if (!spWrapped.isNull() && spWrapped.data()!=nullptr) {
               return (unsigned long long int)spWrapped.data();
@@ -4112,8 +4093,6 @@
         
 
         private:
-        // wrapped object:
-        RImageEntity* wrapped;
 
         
           // wrapped object as shared pointer:

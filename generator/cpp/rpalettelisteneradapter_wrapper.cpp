@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RPaletteListenerAdapter_Wrapper::RPaletteListenerAdapter_Wrapper(RJSApi& h, RPaletteListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPaletteListenerAdapter_Wrapper::RPaletteListenerAdapter_Wrapper(RJSApi& h, RPaletteListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPaletteListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPaletteListenerAdapter_Wrapper"));
               //setObjectName("RPaletteListenerAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -326,12 +334,12 @@ RPaletteListenerAdapter_Wrapper::RPaletteListenerAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RPaletteListenerAdapter(
-                a1_cpp
+              wrapped = new RPaletteListenerAdapter(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -348,14 +356,18 @@ RPaletteListenerAdapter_Wrapper::RPaletteListenerAdapter_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPaletteListenerAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

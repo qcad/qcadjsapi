@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RDimensionData_Wrapper::RDimensionData_Wrapper(RJSApi& h, RDimensionData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimensionData_Wrapper::RDimensionData_Wrapper(RJSApi& h, RDimensionData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimensionData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimensionData_Wrapper"));
               //setObjectName("RDimensionData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -321,8 +329,8 @@ double a9_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimensionData(
-                a1_cpp
+              wrapped = new RDimensionData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -332,9 +340,9 @@ double a9_cpp;
     , a8_cpp
     , a9_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -378,12 +386,12 @@ double a9_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimensionData(
-                a1_cpp
+              wrapped = new RDimensionData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -408,14 +416,18 @@ double a9_cpp;
    && a9.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimensionData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

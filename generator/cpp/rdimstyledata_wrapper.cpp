@@ -539,11 +539,19 @@ RS::KnownVariable a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RDimStyleData_Wrapper::RDimStyleData_Wrapper(RJSApi& h, RDimStyleData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimStyleData_Wrapper::RDimStyleData_Wrapper(RJSApi& h, RDimStyleData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimStyleData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimStyleData_Wrapper"));
               //setObjectName("RDimStyleData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -565,9 +573,10 @@ RS::KnownVariable a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimStyleData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -651,12 +660,12 @@ bool a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimStyleData(
-                a1_cpp
+              wrapped = new RDimStyleData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -673,14 +682,18 @@ bool a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimStyleData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

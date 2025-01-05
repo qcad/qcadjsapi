@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RCircleEntity_Wrapper::RCircleEntity_Wrapper(RJSApi& h, RCircleEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCircleEntity_Wrapper::RCircleEntity_Wrapper(RJSApi& h, RCircleEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCircleEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCircleEntity_Wrapper"));
               //setObjectName("RCircleEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RCircleEntity_Wrapper::RCircleEntity_Wrapper(RJSApi& h, QSharedPointer<RCircleEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RCircleEntity_Wrapper::RCircleEntity_Wrapper(RJSApi& h, QSharedPointer<RCircleEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RCircleEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCircleEntity_Wrapper"));
               //setObjectName("RCircleEntity_Wrapper");
@@ -687,13 +695,13 @@ RCircleData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCircleEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RCircleEntity>(new RCircleEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,12 +737,12 @@ RCircleData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCircleEntity(
-                *a1_cpp
+              spWrapped = QSharedPointer<RCircleEntity>(new RCircleEntity(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -752,14 +760,14 @@ RCircleData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RCircleEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

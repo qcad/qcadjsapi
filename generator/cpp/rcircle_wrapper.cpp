@@ -4642,18 +4642,26 @@ RVector a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RCircle_Wrapper::RCircle_Wrapper(RJSApi& h, RCircle* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCircle_Wrapper::RCircle_Wrapper(RJSApi& h, RCircle* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCircle_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCircle_Wrapper"));
               //setObjectName("RCircle_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RCircle_Wrapper::RCircle_Wrapper(RJSApi& h, QSharedPointer<RCircle> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RCircle_Wrapper::RCircle_Wrapper(RJSApi& h, QSharedPointer<RCircle> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RCircle_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCircle_Wrapper"));
               //setObjectName("RCircle_Wrapper");
@@ -4679,9 +4687,7 @@ RVector a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RCircle";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -4779,14 +4785,14 @@ double a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCircle(
-                a1_cpp
+              spWrapped = QSharedPointer<RCircle>(new RCircle(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4828,13 +4834,13 @@ double a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCircle(
-                a1_cpp
+              spWrapped = QSharedPointer<RCircle>(new RCircle(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4853,11 +4859,11 @@ double a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCircle(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RCircle>(new RCircle(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4876,14 +4882,14 @@ double a2_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RCircle";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

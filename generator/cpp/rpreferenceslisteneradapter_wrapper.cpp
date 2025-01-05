@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RPreferencesListenerAdapter_Wrapper::RPreferencesListenerAdapter_Wrapper(RJSApi& h, RPreferencesListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPreferencesListenerAdapter_Wrapper::RPreferencesListenerAdapter_Wrapper(RJSApi& h, RPreferencesListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPreferencesListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPreferencesListenerAdapter_Wrapper"));
               //setObjectName("RPreferencesListenerAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -299,11 +307,11 @@ RPreferencesListenerAdapter_Wrapper::RPreferencesListenerAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RPreferencesListenerAdapter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RPreferencesListenerAdapter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -316,7 +324,9 @@ RPreferencesListenerAdapter_Wrapper::RPreferencesListenerAdapter_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RPreferencesListenerAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

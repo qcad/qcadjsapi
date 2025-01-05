@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RCommandEvent_Wrapper::RCommandEvent_Wrapper(RJSApi& h, RCommandEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCommandEvent_Wrapper::RCommandEvent_Wrapper(RJSApi& h, RCommandEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCommandEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCommandEvent_Wrapper"));
               //setObjectName("RCommandEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -178,12 +186,12 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCommandEvent(
-                a1_cpp
+              wrapped = new RCommandEvent(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -200,14 +208,18 @@ QString a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RCommandEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

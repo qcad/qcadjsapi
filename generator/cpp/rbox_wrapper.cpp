@@ -80,11 +80,19 @@
 
     
       // special constructor to wrap existing object:
-      RBox_Wrapper::RBox_Wrapper(RJSApi& h, RBox* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RBox_Wrapper::RBox_Wrapper(RJSApi& h, RBox* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RBox_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RBox_Wrapper"));
               //setObjectName("RBox_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -106,9 +114,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RBox";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -217,15 +226,15 @@ double a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBox(
-                a1_cpp
+              wrapped = new RBox(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -276,14 +285,14 @@ double a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBox(
-                a1_cpp
+              wrapped = new RBox(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -325,13 +334,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBox(
-                a1_cpp
+              wrapped = new RBox(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -373,13 +382,13 @@ double a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBox(
-                a1_cpp
+              wrapped = new RBox(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -412,12 +421,12 @@ QRectF a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBox(
-                a1_cpp
+              wrapped = new RBox(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -436,11 +445,11 @@ QRectF a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBox(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RBox(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -460,14 +469,18 @@ QRectF a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RBox";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

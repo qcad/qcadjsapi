@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RAttributeDefinitionEntity_Wrapper::RAttributeDefinitionEntity_Wrapper(RJSApi& h, RAttributeDefinitionEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RAttributeDefinitionEntity_Wrapper::RAttributeDefinitionEntity_Wrapper(RJSApi& h, RAttributeDefinitionEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RAttributeDefinitionEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RAttributeDefinitionEntity_Wrapper"));
               //setObjectName("RAttributeDefinitionEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RAttributeDefinitionEntity_Wrapper::RAttributeDefinitionEntity_Wrapper(RJSApi& h, QSharedPointer<RAttributeDefinitionEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RAttributeDefinitionEntity_Wrapper::RAttributeDefinitionEntity_Wrapper(RJSApi& h, QSharedPointer<RAttributeDefinitionEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RAttributeDefinitionEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RAttributeDefinitionEntity_Wrapper"));
               //setObjectName("RAttributeDefinitionEntity_Wrapper");
@@ -687,13 +695,13 @@ RAttributeDefinitionData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RAttributeDefinitionEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RAttributeDefinitionEntity>(new RAttributeDefinitionEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -711,14 +719,14 @@ RAttributeDefinitionData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RAttributeDefinitionEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

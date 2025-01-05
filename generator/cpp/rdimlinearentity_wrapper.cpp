@@ -753,18 +753,26 @@ bool a5_cpp;
 
     
       // special constructor to wrap existing object:
-      RDimLinearEntity_Wrapper::RDimLinearEntity_Wrapper(RJSApi& h, RDimLinearEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimLinearEntity_Wrapper::RDimLinearEntity_Wrapper(RJSApi& h, RDimLinearEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimLinearEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimLinearEntity_Wrapper"));
               //setObjectName("RDimLinearEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RDimLinearEntity_Wrapper::RDimLinearEntity_Wrapper(RJSApi& h, QSharedPointer<RDimLinearEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RDimLinearEntity_Wrapper::RDimLinearEntity_Wrapper(RJSApi& h, QSharedPointer<RDimLinearEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RDimLinearEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimLinearEntity_Wrapper"));
               //setObjectName("RDimLinearEntity_Wrapper");

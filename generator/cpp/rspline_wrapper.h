@@ -4706,12 +4706,6 @@ Ray = RSpline::Ray,
         
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
             
               if (!spWrapped.isNull()) {
                 spWrapped = nullptr;
@@ -4751,11 +4745,8 @@ Ray = RSpline::Ray,
 
         // get wrapped object:
         RSpline* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4764,11 +4755,8 @@ Ray = RSpline::Ray,
 
         // get wrapped object (const):
         RSpline* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4777,11 +4765,8 @@ Ray = RSpline::Ray,
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4794,10 +4779,10 @@ Ray = RSpline::Ray,
           if (!spWrapped.isNull()) {
             return spWrapped;
           }
-          if (wrapped!=nullptr) {
-            qWarning() << "wrapper does not wrap a QSharedPointer<RSpline> but a regular pointer";
-            return QSharedPointer<RSpline>();
-          }
+          //if (wrapped!=nullptr) {
+          //  qWarning() << "wrapper does not wrap a QSharedPointer<RSpline> but a regular pointer";
+          //  return QSharedPointer<RSpline>();
+          //}
           return QSharedPointer<RSpline>();
         }
 
@@ -4807,9 +4792,8 @@ Ray = RSpline::Ray,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
           
-            || (!spWrapped.isNull() && spWrapped.data()!=nullptr)
+            return (!spWrapped.isNull() && spWrapped.data()!=nullptr);
           
           ;
         }
@@ -4821,9 +4805,6 @@ Ray = RSpline::Ray,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
           
             if (!spWrapped.isNull() && spWrapped.data()!=nullptr) {
               return (unsigned long long int)spWrapped.data();
@@ -4842,8 +4823,6 @@ Ray = RSpline::Ray,
         
 
         private:
-        // wrapped object:
-        RSpline* wrapped;
 
         
           // wrapped object as shared pointer:

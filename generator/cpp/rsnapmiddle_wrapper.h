@@ -395,12 +395,13 @@ CoordinatePolar = RSnapMiddle::CoordinatePolar,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -436,27 +437,30 @@ CoordinatePolar = RSnapMiddle::CoordinatePolar,
 
         // get wrapped object:
         RSnapMiddle* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RSnapMiddle* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -464,7 +468,8 @@ CoordinatePolar = RSnapMiddle::CoordinatePolar,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -476,9 +481,10 @@ CoordinatePolar = RSnapMiddle::CoordinatePolar,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -493,9 +499,10 @@ CoordinatePolar = RSnapMiddle::CoordinatePolar,
         
 
         private:
-        // wrapped object:
-        RSnapMiddle* wrapped;
 
+        
+          // wrapped object:
+          RSnapMiddle* wrapped;
         
 
         bool wrappedCreated;

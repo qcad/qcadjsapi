@@ -4480,18 +4480,26 @@ REllipse a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RPoint_Wrapper::RPoint_Wrapper(RJSApi& h, RPoint* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPoint_Wrapper::RPoint_Wrapper(RJSApi& h, RPoint* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPoint_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPoint_Wrapper"));
               //setObjectName("RPoint_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RPoint_Wrapper::RPoint_Wrapper(RJSApi& h, QSharedPointer<RPoint> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RPoint_Wrapper::RPoint_Wrapper(RJSApi& h, QSharedPointer<RPoint> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RPoint_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPoint_Wrapper"));
               //setObjectName("RPoint_Wrapper");
@@ -4517,9 +4525,7 @@ REllipse a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPoint";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -4606,13 +4612,13 @@ double a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPoint(
-                a1_cpp
+              spWrapped = QSharedPointer<RPoint>(new RPoint(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4645,12 +4651,12 @@ RVector a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPoint(
-                a1_cpp
+              spWrapped = QSharedPointer<RPoint>(new RPoint(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4669,11 +4675,11 @@ RVector a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPoint(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RPoint>(new RPoint(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4691,14 +4697,14 @@ RVector a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPoint";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

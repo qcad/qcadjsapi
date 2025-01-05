@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RMixedOperation_Wrapper::RMixedOperation_Wrapper(RJSApi& h, RMixedOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMixedOperation_Wrapper::RMixedOperation_Wrapper(RJSApi& h, RMixedOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMixedOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMixedOperation_Wrapper"));
               //setObjectName("RMixedOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -186,12 +194,12 @@ bool a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RMixedOperation(
-                a1_cpp
+              wrapped = new RMixedOperation(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -208,14 +216,18 @@ bool a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMixedOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

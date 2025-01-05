@@ -2320,11 +2320,19 @@ char a5_cpp;
 
     
       // special constructor to wrap existing object:
-      RUnit_Wrapper::RUnit_Wrapper(RJSApi& h, RUnit* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RUnit_Wrapper::RUnit_Wrapper(RJSApi& h, RUnit* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RUnit_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RUnit_Wrapper"));
               //setObjectName("RUnit_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2346,9 +2354,10 @@ char a5_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RUnit";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -2408,11 +2417,11 @@ RUnit_Wrapper::RUnit_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RUnit(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RUnit(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2425,7 +2434,9 @@ RUnit_Wrapper::RUnit_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RUnit";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

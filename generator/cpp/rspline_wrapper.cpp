@@ -4680,18 +4680,26 @@ double a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RSpline_Wrapper::RSpline_Wrapper(RJSApi& h, RSpline* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSpline_Wrapper::RSpline_Wrapper(RJSApi& h, RSpline* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSpline_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSpline_Wrapper"));
               //setObjectName("RSpline_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RSpline_Wrapper::RSpline_Wrapper(RJSApi& h, QSharedPointer<RSpline> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RSpline_Wrapper::RSpline_Wrapper(RJSApi& h, QSharedPointer<RSpline> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RSpline_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSpline_Wrapper"));
               //setObjectName("RSpline_Wrapper");
@@ -4717,9 +4725,7 @@ double a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RSpline";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -4806,13 +4812,13 @@ int a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RSpline(
-                a1_cpp
+              spWrapped = QSharedPointer<RSpline>(new RSpline(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4845,12 +4851,12 @@ RSpline a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RSpline(
-                a1_cpp
+              spWrapped = QSharedPointer<RSpline>(new RSpline(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4869,11 +4875,11 @@ RSpline a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RSpline(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RSpline>(new RSpline(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4891,14 +4897,14 @@ RSpline a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RSpline";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapCenter_Wrapper::RSnapCenter_Wrapper(RJSApi& h, RSnapCenter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapCenter_Wrapper::RSnapCenter_Wrapper(RJSApi& h, RSnapCenter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapCenter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapCenter_Wrapper"));
               //setObjectName("RSnapCenter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RSnapCenter_Wrapper::RSnapCenter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnapCenter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSnapCenter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RSnapCenter_Wrapper::RSnapCenter_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnapCenter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

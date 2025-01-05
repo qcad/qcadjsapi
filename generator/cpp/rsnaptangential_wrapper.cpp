@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapTangential_Wrapper::RSnapTangential_Wrapper(RJSApi& h, RSnapTangential* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapTangential_Wrapper::RSnapTangential_Wrapper(RJSApi& h, RSnapTangential* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapTangential_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapTangential_Wrapper"));
               //setObjectName("RSnapTangential_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RSnapTangential_Wrapper::RSnapTangential_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnapTangential(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSnapTangential(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RSnapTangential_Wrapper::RSnapTangential_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnapTangential";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -1462,12 +1462,13 @@ MaxUser = RMouseEvent::MaxUser,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1503,27 +1504,30 @@ MaxUser = RMouseEvent::MaxUser,
 
         // get wrapped object:
         RMouseEvent* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RMouseEvent* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1531,7 +1535,8 @@ MaxUser = RMouseEvent::MaxUser,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1543,9 +1548,10 @@ MaxUser = RMouseEvent::MaxUser,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1560,9 +1566,10 @@ MaxUser = RMouseEvent::MaxUser,
         
 
         private:
-        // wrapped object:
-        RMouseEvent* wrapped;
 
+        
+          // wrapped object:
+          RMouseEvent* wrapped;
         
 
         bool wrappedCreated;

@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RTraceEntity_Wrapper::RTraceEntity_Wrapper(RJSApi& h, RTraceEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTraceEntity_Wrapper::RTraceEntity_Wrapper(RJSApi& h, RTraceEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTraceEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTraceEntity_Wrapper"));
               //setObjectName("RTraceEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RTraceEntity_Wrapper::RTraceEntity_Wrapper(RJSApi& h, QSharedPointer<RTraceEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RTraceEntity_Wrapper::RTraceEntity_Wrapper(RJSApi& h, QSharedPointer<RTraceEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RTraceEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTraceEntity_Wrapper"));
               //setObjectName("RTraceEntity_Wrapper");
@@ -687,13 +695,13 @@ RTraceData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTraceEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RTraceEntity>(new RTraceEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -711,14 +719,14 @@ RTraceData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTraceEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

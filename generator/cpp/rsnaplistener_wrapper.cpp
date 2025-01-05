@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapListener_Wrapper::RSnapListener_Wrapper(RJSApi& h, RSnapListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapListener_Wrapper::RSnapListener_Wrapper(RJSApi& h, RSnapListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapListener_Wrapper"));
               //setObjectName("RSnapListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

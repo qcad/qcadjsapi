@@ -323,18 +323,26 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RLayout_Wrapper::RLayout_Wrapper(RJSApi& h, RLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RLayout_Wrapper::RLayout_Wrapper(RJSApi& h, RLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLayout_Wrapper"));
               //setObjectName("RLayout_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RLayout_Wrapper::RLayout_Wrapper(RJSApi& h, QSharedPointer<RLayout> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RLayout_Wrapper::RLayout_Wrapper(RJSApi& h, QSharedPointer<RLayout> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLayout_Wrapper"));
               //setObjectName("RLayout_Wrapper");
@@ -452,13 +460,13 @@ QString a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLayout(
-                a1_cpp
+              spWrapped = QSharedPointer<RLayout>(new RLayout(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -477,11 +485,11 @@ QString a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLayout(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RLayout>(new RLayout(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -499,14 +507,14 @@ QString a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RLayout";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

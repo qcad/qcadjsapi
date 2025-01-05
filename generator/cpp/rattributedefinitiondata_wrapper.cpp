@@ -453,11 +453,19 @@ double a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RAttributeDefinitionData_Wrapper::RAttributeDefinitionData_Wrapper(RJSApi& h, RAttributeDefinitionData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RAttributeDefinitionData_Wrapper::RAttributeDefinitionData_Wrapper(RJSApi& h, RAttributeDefinitionData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RAttributeDefinitionData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RAttributeDefinitionData_Wrapper"));
               //setObjectName("RAttributeDefinitionData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -479,9 +487,10 @@ double a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RAttributeDefinitionData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -579,14 +588,14 @@ QString a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RAttributeDefinitionData(
-                a1_cpp
+              wrapped = new RAttributeDefinitionData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -605,11 +614,11 @@ QString a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RAttributeDefinitionData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RAttributeDefinitionData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -628,14 +637,18 @@ QString a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RAttributeDefinitionData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

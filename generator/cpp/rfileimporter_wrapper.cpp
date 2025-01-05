@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RFileImporter_Wrapper::RFileImporter_Wrapper(RJSApi& h, RFileImporter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFileImporter_Wrapper::RFileImporter_Wrapper(RJSApi& h, RFileImporter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFileImporter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFileImporter_Wrapper"));
               //setObjectName("RFileImporter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

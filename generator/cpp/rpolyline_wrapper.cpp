@@ -4589,18 +4589,26 @@ double a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RPolyline_Wrapper::RPolyline_Wrapper(RJSApi& h, RPolyline* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPolyline_Wrapper::RPolyline_Wrapper(RJSApi& h, RPolyline* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPolyline_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPolyline_Wrapper"));
               //setObjectName("RPolyline_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RPolyline_Wrapper::RPolyline_Wrapper(RJSApi& h, QSharedPointer<RPolyline> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RPolyline_Wrapper::RPolyline_Wrapper(RJSApi& h, QSharedPointer<RPolyline> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RPolyline_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPolyline_Wrapper"));
               //setObjectName("RPolyline_Wrapper");
@@ -4626,9 +4634,7 @@ double a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPolyline";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -4715,13 +4721,13 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPolyline(
-                a1_cpp
+              spWrapped = QSharedPointer<RPolyline>(new RPolyline(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4754,12 +4760,12 @@ QList<QSharedPointer<RShape>> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPolyline(
-                a1_cpp
+              spWrapped = QSharedPointer<RPolyline>(new RPolyline(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4778,11 +4784,11 @@ QList<QSharedPointer<RShape>> a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPolyline(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RPolyline>(new RPolyline(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4800,14 +4806,14 @@ QList<QSharedPointer<RShape>> a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPolyline";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RExportListener_Wrapper::RExportListener_Wrapper(RJSApi& h, RExportListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RExportListener_Wrapper::RExportListener_Wrapper(RJSApi& h, RExportListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RExportListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RExportListener_Wrapper"));
               //setObjectName("RExportListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RExportListener";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

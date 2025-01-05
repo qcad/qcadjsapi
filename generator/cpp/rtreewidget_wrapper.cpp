@@ -401,11 +401,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RTreeWidget_Wrapper::RTreeWidget_Wrapper(RJSApi& h, RTreeWidget* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTreeWidget_Wrapper::RTreeWidget_Wrapper(RJSApi& h, RTreeWidget* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTreeWidget_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTreeWidget_Wrapper"));
               //setObjectName("RTreeWidget_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -646,21 +654,21 @@ RTreeWidget_Wrapper::RTreeWidget_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RTreeWidget_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RTreeWidget_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RTreeWidget_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RTreeWidget_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RTreeWidget_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RTreeWidget_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -677,14 +685,18 @@ RTreeWidget_Wrapper::RTreeWidget_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTreeWidget";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

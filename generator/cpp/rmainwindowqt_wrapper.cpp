@@ -531,11 +531,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RMainWindowQt_Wrapper::RMainWindowQt_Wrapper(RJSApi& h, RMainWindowQt* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMainWindowQt_Wrapper::RMainWindowQt_Wrapper(RJSApi& h, RMainWindowQt* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMainWindowQt_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMainWindowQt_Wrapper"));
               //setObjectName("RMainWindowQt_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -851,22 +859,22 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RMainWindowQt_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RMainWindowQt_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RMainWindowQt_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RMainWindowQt_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RMainWindowQt_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RMainWindowQt_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -884,14 +892,18 @@ bool a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMainWindowQt";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

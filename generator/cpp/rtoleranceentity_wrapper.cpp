@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RToleranceEntity_Wrapper::RToleranceEntity_Wrapper(RJSApi& h, RToleranceEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RToleranceEntity_Wrapper::RToleranceEntity_Wrapper(RJSApi& h, RToleranceEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RToleranceEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RToleranceEntity_Wrapper"));
               //setObjectName("RToleranceEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RToleranceEntity_Wrapper::RToleranceEntity_Wrapper(RJSApi& h, QSharedPointer<RToleranceEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RToleranceEntity_Wrapper::RToleranceEntity_Wrapper(RJSApi& h, QSharedPointer<RToleranceEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RToleranceEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RToleranceEntity_Wrapper"));
               //setObjectName("RToleranceEntity_Wrapper");
@@ -687,13 +695,13 @@ RToleranceData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RToleranceEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RToleranceEntity>(new RToleranceEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,12 +737,12 @@ RToleranceData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RToleranceEntity(
-                *a1_cpp
+              spWrapped = QSharedPointer<RToleranceEntity>(new RToleranceEntity(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -752,14 +760,14 @@ RToleranceData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RToleranceEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

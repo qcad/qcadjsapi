@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RKeyListenerAdapter_Wrapper::RKeyListenerAdapter_Wrapper(RJSApi& h, RKeyListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RKeyListenerAdapter_Wrapper::RKeyListenerAdapter_Wrapper(RJSApi& h, RKeyListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RKeyListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RKeyListenerAdapter_Wrapper"));
               //setObjectName("RKeyListenerAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -299,11 +307,11 @@ RKeyListenerAdapter_Wrapper::RKeyListenerAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RKeyListenerAdapter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RKeyListenerAdapter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -316,7 +324,9 @@ RKeyListenerAdapter_Wrapper::RKeyListenerAdapter_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RKeyListenerAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

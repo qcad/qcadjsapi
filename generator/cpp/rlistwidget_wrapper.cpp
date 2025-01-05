@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RListWidget_Wrapper::RListWidget_Wrapper(RJSApi& h, RListWidget* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RListWidget_Wrapper::RListWidget_Wrapper(RJSApi& h, RListWidget* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RListWidget_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RListWidget_Wrapper"));
               //setObjectName("RListWidget_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -579,21 +587,21 @@ RListWidget_Wrapper::RListWidget_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RListWidget_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RListWidget_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RListWidget_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RListWidget_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RListWidget_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RListWidget_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -610,14 +618,18 @@ RListWidget_Wrapper::RListWidget_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RListWidget";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

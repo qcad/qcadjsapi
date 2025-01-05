@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RViewListener_Wrapper::RViewListener_Wrapper(RJSApi& h, RViewListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RViewListener_Wrapper::RViewListener_Wrapper(RJSApi& h, RViewListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RViewListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RViewListener_Wrapper"));
               //setObjectName("RViewListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RViewListener";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

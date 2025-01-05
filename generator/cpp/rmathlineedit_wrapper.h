@@ -7576,12 +7576,13 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -7617,27 +7618,30 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
 
         // get wrapped object:
         RMathLineEdit* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RMathLineEdit* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -7656,7 +7660,8 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -7668,9 +7673,10 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -7692,9 +7698,10 @@ PasswordEchoOnEdit = RMathLineEdit::PasswordEchoOnEdit,
         
 
         private:
-        // wrapped object:
-        RMathLineEdit* wrapped;
 
+        
+          // wrapped object:
+          RMathLineEdit* wrapped;
         
 
         bool wrappedCreated;

@@ -472,11 +472,19 @@ qreal a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RTransform_Wrapper::RTransform_Wrapper(RJSApi& h, RTransform* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTransform_Wrapper::RTransform_Wrapper(RJSApi& h, RTransform* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTransform_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTransform_Wrapper"));
               //setObjectName("RTransform_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -498,9 +506,10 @@ qreal a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTransform";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -560,11 +569,11 @@ RTransform_Wrapper::RTransform_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RTransform(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RTransform(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -577,7 +586,9 @@ RTransform_Wrapper::RTransform_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RTransform";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

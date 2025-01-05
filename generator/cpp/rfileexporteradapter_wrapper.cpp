@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RFileExporterAdapter_Wrapper::RFileExporterAdapter_Wrapper(RJSApi& h, RFileExporterAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFileExporterAdapter_Wrapper::RFileExporterAdapter_Wrapper(RJSApi& h, RFileExporterAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFileExporterAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFileExporterAdapter_Wrapper"));
               //setObjectName("RFileExporterAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -225,23 +233,23 @@ RFileExporterAdapter_Wrapper::RFileExporterAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFileExporterAdapter_Base(
-              handler
-              
-                ,
-              *a1_cpp
+                wrapped = new RFileExporterAdapter_Base(
+                  handler
+                  
+                    ,
+                  *a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RFileExporterAdapter_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RFileExporterAdapter_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RFileExporterAdapter_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RFileExporterAdapter_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -260,18 +268,18 @@ RFileExporterAdapter_Wrapper::RFileExporterAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFileExporterAdapter_Base(
-              handler
+                wrapped = new RFileExporterAdapter_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((RFileExporterAdapter_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((RFileExporterAdapter_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((RFileExporterAdapter_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((RFileExporterAdapter_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -290,14 +298,18 @@ RFileExporterAdapter_Wrapper::RFileExporterAdapter_Wrapper
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RFileExporterAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
@@ -2105,7 +2117,7 @@ RLinetypePattern a1_cpp;
             
                 // call function of C++ class:
                 RFileExporterAdapter* w = getWrapped();
-                REntity* res = 
+                QSharedPointer<REntity> res = 
                     
                 w->getBlockRefOrEntity(
                   
@@ -2113,11 +2125,11 @@ RLinetypePattern a1_cpp;
               
                 //setRecFlag(false);
               
-            // return type: REntity*
+            // return type: QSharedPointer<REntity>
 
-            return RJSHelper_qcad::cpp2js_REntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_REntity(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );
@@ -2223,7 +2235,7 @@ RLinetypePattern a1_cpp;
             
                 // call function of C++ class:
                 RFileExporterAdapter* w = getWrapped();
-                REntity* res = 
+                QSharedPointer<REntity> res = 
                     
                 w->getEntity(
                   
@@ -2231,11 +2243,11 @@ RLinetypePattern a1_cpp;
               
                 //setRecFlag(false);
               
-            // return type: REntity*
+            // return type: QSharedPointer<REntity>
 
-            return RJSHelper_qcad::cpp2js_REntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_REntity(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );
@@ -2284,7 +2296,7 @@ RLinetypePattern a1_cpp;
             
                 // call function of C++ class:
                 RFileExporterAdapter* w = getWrapped();
-                REntity* res = 
+                QSharedPointer<REntity> res = 
                     
                 w->getCurrentBlockRef(
                   
@@ -2292,11 +2304,11 @@ RLinetypePattern a1_cpp;
               
                 //setRecFlag(false);
               
-            // return type: REntity*
+            // return type: QSharedPointer<REntity>
 
-            return RJSHelper_qcad::cpp2js_REntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_REntity(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );
@@ -2345,7 +2357,7 @@ RLinetypePattern a1_cpp;
             
                 // call function of C++ class:
                 RFileExporterAdapter* w = getWrapped();
-                RViewportEntity* res = 
+                QSharedPointer<RViewportEntity> res = 
                     
                 w->getCurrentViewport(
                   
@@ -2353,11 +2365,11 @@ RLinetypePattern a1_cpp;
               
                 //setRecFlag(false);
               
-            // return type: RViewportEntity*
+            // return type: QSharedPointer<RViewportEntity>
 
-            return RJSHelper_qcad::cpp2js_RViewportEntity(
+            return RJSHelper_qcad::cpp2js_QSharedPointer_RViewportEntity(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );
@@ -3153,7 +3165,7 @@ QString a3_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper_qcad::is_RLayer_ptr(handler, a1
+        RJSHelper_qcad::is_QSharedPointer_RLayer(handler, a1
   )
 
   
@@ -3161,14 +3173,11 @@ QString a3_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp:  (RLayer)
+  // convert js parameter to cpp:  (QSharedPointer<RLayer>)
   
+QSharedPointer<RLayer> a1_cpp;
 
-          // non copyable:
-          RLayer*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_RLayer_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_RLayer(handler, a1);
         
 
     // call function:
@@ -3189,7 +3198,7 @@ QString a3_cpp;
                 RFileExporterAdapter* w = getWrapped();
                 
                 w->exportLayer(
-                  *a1_cpp
+                  a1_cpp
     
                 );
               
@@ -3269,7 +3278,7 @@ RLayer::Id a1_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper_qcad::is_RLayerState_ptr(handler, a1
+        RJSHelper_qcad::is_QSharedPointer_RLayerState(handler, a1
   )
 
   
@@ -3277,14 +3286,11 @@ RLayer::Id a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp:  (RLayerState)
+  // convert js parameter to cpp:  (QSharedPointer<RLayerState>)
   
+QSharedPointer<RLayerState> a1_cpp;
 
-          // non copyable:
-          RLayerState*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_RLayerState_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_RLayerState(handler, a1);
         
 
     // call function:
@@ -3305,7 +3311,7 @@ RLayer::Id a1_cpp;
                 RFileExporterAdapter* w = getWrapped();
                 
                 w->exportLayerState(
-                  *a1_cpp
+                  a1_cpp
     
                 );
               
@@ -3343,7 +3349,7 @@ RLayer::Id a1_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper_qcad::is_RBlock_ptr(handler, a1
+        RJSHelper_qcad::is_QSharedPointer_RBlock(handler, a1
   )
 
   
@@ -3351,14 +3357,11 @@ RLayer::Id a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp:  (RBlock)
+  // convert js parameter to cpp:  (QSharedPointer<RBlock>)
   
+QSharedPointer<RBlock> a1_cpp;
 
-          // non copyable:
-          RBlock*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_RBlock_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_RBlock(handler, a1);
         
 
     // call function:
@@ -3392,7 +3395,7 @@ RLayer::Id a1_cpp;
                     if (wrappedCreated) {
                       
                       wb->exportBlockSup(
-                        *a1_cpp
+                        a1_cpp
     
                       );
                     }
@@ -3403,7 +3406,7 @@ RLayer::Id a1_cpp;
                     else {
                       
                       wb->exportBlock(
-                        *a1_cpp
+                        a1_cpp
     
                       );
                     }
@@ -3509,7 +3512,7 @@ RBlock::Id a1_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper_qcad::is_RView_ptr(handler, a1
+        RJSHelper_qcad::is_QSharedPointer_RView(handler, a1
   )
 
   
@@ -3517,14 +3520,11 @@ RBlock::Id a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp:  (RView)
+  // convert js parameter to cpp:  (QSharedPointer<RView>)
   
+QSharedPointer<RView> a1_cpp;
 
-          // non copyable:
-          RView*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_RView_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_RView(handler, a1);
         
 
     // call function:
@@ -3545,7 +3545,7 @@ RBlock::Id a1_cpp;
                 RFileExporterAdapter* w = getWrapped();
                 
                 w->exportView(
-                  *a1_cpp
+                  a1_cpp
     
                 );
               
@@ -3625,7 +3625,7 @@ RView::Id a1_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper_qcad::is_RLinetype_ptr(handler, a1
+        RJSHelper_qcad::is_QSharedPointer_RLinetype(handler, a1
   )
 
   
@@ -3633,14 +3633,11 @@ RView::Id a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp:  (RLinetype)
+  // convert js parameter to cpp:  (QSharedPointer<RLinetype>)
   
+QSharedPointer<RLinetype> a1_cpp;
 
-          // non copyable:
-          RLinetype*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_RLinetype_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_RLinetype(handler, a1);
         
 
     // call function:
@@ -3661,7 +3658,7 @@ RView::Id a1_cpp;
                 RFileExporterAdapter* w = getWrapped();
                 
                 w->exportLinetype(
-                  *a1_cpp
+                  a1_cpp
     
                 );
               
@@ -3956,7 +3953,7 @@ RBox a1_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper_qcad::is_REntity_ptr(handler, a1
+        RJSHelper_qcad::is_QSharedPointer_REntity(handler, a1
   )
 
    && RJSHelper::is_bool(handler, a2
@@ -3979,14 +3976,11 @@ RBox a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: entity (REntity)
+  // convert js parameter to cpp: entity (QSharedPointer<REntity>)
   
+QSharedPointer<REntity> a1_cpp;
 
-          // non copyable:
-          REntity*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_REntity_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_REntity(handler, a1);
         
   // convert js parameter to cpp: preview (bool)
   
@@ -4043,7 +4037,7 @@ bool a4_cpp;
                 RFileExporterAdapter* w = getWrapped();
                 
                 w->exportEntity(
-                  *a1_cpp
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -4162,7 +4156,7 @@ bool a3_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper_qcad::is_REntity_ptr(handler, a1
+        RJSHelper_qcad::is_QSharedPointer_REntity(handler, a1
   )
 
   
@@ -4170,14 +4164,11 @@ bool a3_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: entity (REntity)
+  // convert js parameter to cpp: entity (QSharedPointer<REntity>)
   
+QSharedPointer<REntity> a1_cpp;
 
-          // non copyable:
-          REntity*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_REntity_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_REntity(handler, a1);
         
 
     // call function:
@@ -4199,7 +4190,7 @@ bool a3_cpp;
                 QSharedPointer<RLayer> res = 
                     
                 w->getEntityLayer(
-                  *a1_cpp
+                  a1_cpp
     
                 );
               
@@ -4241,7 +4232,7 @@ bool a3_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper_qcad::is_REntity_ptr(handler, a1
+        RJSHelper_qcad::is_QSharedPointer_REntity(handler, a1
   )
 
   
@@ -4249,14 +4240,11 @@ bool a3_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: entity (REntity)
+  // convert js parameter to cpp: entity (QSharedPointer<REntity>)
   
+QSharedPointer<REntity> a1_cpp;
 
-          // non copyable:
-          REntity*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_REntity_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_REntity(handler, a1);
         
 
     // call function:
@@ -4278,7 +4266,7 @@ bool a3_cpp;
                 bool res = 
                     
                 w->isVisible(
-                  *a1_cpp
+                  a1_cpp
     
                 );
               
@@ -7229,9 +7217,7 @@ RVector a2_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper_qcad::is_REntity_ptr(handler, a1
-    , true
-  
+        RJSHelper_qcad::is_QSharedPointer_REntity(handler, a1
   )
 
   
@@ -7239,14 +7225,11 @@ RVector a2_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: e (REntity)
+  // convert js parameter to cpp: e (QSharedPointer<REntity>)
   
+QSharedPointer<REntity> a1_cpp;
 
-          // pointer:
-          REntity*
-         a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_REntity_ptr(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_REntity(handler, a1);
         
 
     // call function:

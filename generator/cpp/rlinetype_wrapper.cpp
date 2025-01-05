@@ -323,18 +323,26 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RLinetype_Wrapper::RLinetype_Wrapper(RJSApi& h, RLinetype* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RLinetype_Wrapper::RLinetype_Wrapper(RJSApi& h, RLinetype* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RLinetype_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLinetype_Wrapper"));
               //setObjectName("RLinetype_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RLinetype_Wrapper::RLinetype_Wrapper(RJSApi& h, QSharedPointer<RLinetype> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RLinetype_Wrapper::RLinetype_Wrapper(RJSApi& h, QSharedPointer<RLinetype> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RLinetype_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLinetype_Wrapper"));
               //setObjectName("RLinetype_Wrapper");
@@ -452,13 +460,13 @@ RLinetypePattern a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLinetype(
-                a1_cpp
+              spWrapped = QSharedPointer<RLinetype>(new RLinetype(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -502,12 +510,12 @@ RLinetypePattern a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLinetype(
-                a1_cpp
+              spWrapped = QSharedPointer<RLinetype>(new RLinetype(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -543,12 +551,12 @@ RLinetypePattern a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLinetype(
-                *a1_cpp
+              spWrapped = QSharedPointer<RLinetype>(new RLinetype(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -566,14 +574,14 @@ RLinetypePattern a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RLinetype";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

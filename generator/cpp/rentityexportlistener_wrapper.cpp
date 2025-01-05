@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      REntityExportListener_Wrapper::REntityExportListener_Wrapper(RJSApi& h, REntityExportListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      REntityExportListener_Wrapper::REntityExportListener_Wrapper(RJSApi& h, REntityExportListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("REntityExportListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("REntityExportListener_Wrapper"));
               //setObjectName("REntityExportListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

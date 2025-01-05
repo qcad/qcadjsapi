@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RMoveReferencePointOperation_Wrapper::RMoveReferencePointOperation_Wrapper(RJSApi& h, RMoveReferencePointOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMoveReferencePointOperation_Wrapper::RMoveReferencePointOperation_Wrapper(RJSApi& h, RMoveReferencePointOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMoveReferencePointOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMoveReferencePointOperation_Wrapper"));
               //setObjectName("RMoveReferencePointOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -200,14 +208,14 @@ Qt::KeyboardModifiers a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RMoveReferencePointOperation(
-                a1_cpp
+              wrapped = new RMoveReferencePointOperation(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -226,14 +234,18 @@ Qt::KeyboardModifiers a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMoveReferencePointOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

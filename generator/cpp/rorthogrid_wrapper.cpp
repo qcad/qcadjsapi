@@ -250,11 +250,19 @@ RS::LinearFormat a1_cpp;
 
     
       // special constructor to wrap existing object:
-      ROrthoGrid_Wrapper::ROrthoGrid_Wrapper(RJSApi& h, ROrthoGrid* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      ROrthoGrid_Wrapper::ROrthoGrid_Wrapper(RJSApi& h, ROrthoGrid* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("ROrthoGrid_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("ROrthoGrid_Wrapper"));
               //setObjectName("ROrthoGrid_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -355,12 +363,12 @@ ROrthoGrid_Wrapper::ROrthoGrid_Wrapper
         // construct wrapper:
 
         
-            wrapped = new ROrthoGrid(
-                *a1_cpp
+              wrapped = new ROrthoGrid(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -377,14 +385,18 @@ ROrthoGrid_Wrapper::ROrthoGrid_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for ROrthoGrid";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

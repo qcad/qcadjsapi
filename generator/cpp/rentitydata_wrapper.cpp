@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      REntityData_Wrapper::REntityData_Wrapper(RJSApi& h, REntityData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      REntityData_Wrapper::REntityData_Wrapper(RJSApi& h, REntityData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("REntityData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("REntityData_Wrapper"));
               //setObjectName("REntityData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

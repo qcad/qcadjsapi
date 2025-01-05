@@ -468,11 +468,19 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RFontList_Wrapper::RFontList_Wrapper(RJSApi& h, RFontList* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFontList_Wrapper::RFontList_Wrapper(RJSApi& h, RFontList* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFontList_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFontList_Wrapper"));
               //setObjectName("RFontList_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -494,9 +502,10 @@ QString a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RFontList";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -556,11 +565,11 @@ RFontList_Wrapper::RFontList_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFontList(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RFontList(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -573,7 +582,9 @@ RFontList_Wrapper::RFontList_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RFontList";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

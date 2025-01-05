@@ -7428,12 +7428,13 @@ AdjustToMinimumContentsLengthWithIcon = RMathComboBox::AdjustToMinimumContentsLe
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -7469,27 +7470,30 @@ AdjustToMinimumContentsLengthWithIcon = RMathComboBox::AdjustToMinimumContentsLe
 
         // get wrapped object:
         RMathComboBox* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RMathComboBox* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -7508,7 +7512,8 @@ AdjustToMinimumContentsLengthWithIcon = RMathComboBox::AdjustToMinimumContentsLe
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -7520,9 +7525,10 @@ AdjustToMinimumContentsLengthWithIcon = RMathComboBox::AdjustToMinimumContentsLe
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -7544,9 +7550,10 @@ AdjustToMinimumContentsLengthWithIcon = RMathComboBox::AdjustToMinimumContentsLe
         
 
         private:
-        // wrapped object:
-        RMathComboBox* wrapped;
 
+        
+          // wrapped object:
+          RMathComboBox* wrapped;
         
 
         bool wrappedCreated;

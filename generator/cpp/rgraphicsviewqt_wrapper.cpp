@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RGraphicsViewQt_Wrapper::RGraphicsViewQt_Wrapper(RJSApi& h, RGraphicsViewQt* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RGraphicsViewQt_Wrapper::RGraphicsViewQt_Wrapper(RJSApi& h, RGraphicsViewQt* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RGraphicsViewQt_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RGraphicsViewQt_Wrapper"));
               //setObjectName("RGraphicsViewQt_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -528,22 +536,22 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RGraphicsViewQt_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RGraphicsViewQt_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RGraphicsViewQt_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RGraphicsViewQt_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RGraphicsViewQt_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RGraphicsViewQt_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -561,14 +569,18 @@ bool a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RGraphicsViewQt";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

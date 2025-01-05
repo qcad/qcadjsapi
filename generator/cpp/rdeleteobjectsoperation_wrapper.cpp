@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RDeleteObjectsOperation_Wrapper::RDeleteObjectsOperation_Wrapper(RJSApi& h, RDeleteObjectsOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDeleteObjectsOperation_Wrapper::RDeleteObjectsOperation_Wrapper(RJSApi& h, RDeleteObjectsOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDeleteObjectsOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDeleteObjectsOperation_Wrapper"));
               //setObjectName("RDeleteObjectsOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -197,13 +205,13 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDeleteObjectsOperation(
-                a1_cpp
+              wrapped = new RDeleteObjectsOperation(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -244,12 +252,12 @@ bool a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDeleteObjectsOperation(
-                a1_cpp
+              wrapped = new RDeleteObjectsOperation(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -267,14 +275,18 @@ bool a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDeleteObjectsOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

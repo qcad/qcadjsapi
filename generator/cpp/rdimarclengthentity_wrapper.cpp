@@ -753,18 +753,26 @@ bool a5_cpp;
 
     
       // special constructor to wrap existing object:
-      RDimArcLengthEntity_Wrapper::RDimArcLengthEntity_Wrapper(RJSApi& h, RDimArcLengthEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimArcLengthEntity_Wrapper::RDimArcLengthEntity_Wrapper(RJSApi& h, RDimArcLengthEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimArcLengthEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimArcLengthEntity_Wrapper"));
               //setObjectName("RDimArcLengthEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RDimArcLengthEntity_Wrapper::RDimArcLengthEntity_Wrapper(RJSApi& h, QSharedPointer<RDimArcLengthEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RDimArcLengthEntity_Wrapper::RDimArcLengthEntity_Wrapper(RJSApi& h, QSharedPointer<RDimArcLengthEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RDimArcLengthEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimArcLengthEntity_Wrapper"));
               //setObjectName("RDimArcLengthEntity_Wrapper");
@@ -882,13 +890,13 @@ RDimArcLengthData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimArcLengthEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RDimArcLengthEntity>(new RDimArcLengthEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -906,14 +914,14 @@ RDimArcLengthData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimArcLengthEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

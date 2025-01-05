@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RWidget_Wrapper::RWidget_Wrapper(RJSApi& h, RWidget* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RWidget_Wrapper::RWidget_Wrapper(RJSApi& h, RWidget* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RWidget_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RWidget_Wrapper"));
               //setObjectName("RWidget_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -495,21 +503,21 @@ RWidget_Wrapper::RWidget_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RWidget_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RWidget_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RWidget_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RWidget_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RWidget_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RWidget_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -526,14 +534,18 @@ RWidget_Wrapper::RWidget_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RWidget";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

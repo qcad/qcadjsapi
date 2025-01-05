@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RPointData_Wrapper::RPointData_Wrapper(RJSApi& h, RPointData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPointData_Wrapper::RPointData_Wrapper(RJSApi& h, RPointData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPointData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPointData_Wrapper"));
               //setObjectName("RPointData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPointData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -235,12 +244,12 @@ RVector a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPointData(
-                a1_cpp
+              wrapped = new RPointData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -259,11 +268,11 @@ RVector a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPointData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RPointData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -280,14 +289,18 @@ RVector a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPointData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

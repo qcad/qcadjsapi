@@ -240,11 +240,19 @@ double a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RPolylineData_Wrapper::RPolylineData_Wrapper(RJSApi& h, RPolylineData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPolylineData_Wrapper::RPolylineData_Wrapper(RJSApi& h, RPolylineData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPolylineData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPolylineData_Wrapper"));
               //setObjectName("RPolylineData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -266,9 +274,10 @@ double a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPolylineData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -344,12 +353,12 @@ RPolyline a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPolylineData(
-                a1_cpp
+              wrapped = new RPolylineData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -368,11 +377,11 @@ RPolyline a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPolylineData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RPolylineData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -389,14 +398,18 @@ RPolyline a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPolylineData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

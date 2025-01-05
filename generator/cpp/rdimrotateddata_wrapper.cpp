@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RDimRotatedData_Wrapper::RDimRotatedData_Wrapper(RJSApi& h, RDimRotatedData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimRotatedData_Wrapper::RDimRotatedData_Wrapper(RJSApi& h, RDimRotatedData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimRotatedData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimRotatedData_Wrapper"));
               //setObjectName("RDimRotatedData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimRotatedData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -271,15 +280,15 @@ double a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimRotatedData(
-                *a1_cpp
+              wrapped = new RDimRotatedData(
+                  *a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -298,11 +307,11 @@ double a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimRotatedData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RDimRotatedData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -322,14 +331,18 @@ double a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimRotatedData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

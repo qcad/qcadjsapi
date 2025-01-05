@@ -10081,12 +10081,13 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -10122,27 +10123,30 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
 
         // get wrapped object:
         RMainWindowQt* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RMainWindowQt* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -10161,7 +10165,8 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -10173,9 +10178,10 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -10197,9 +10203,10 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
         
 
         private:
-        // wrapped object:
-        RMainWindowQt* wrapped;
 
+        
+          // wrapped object:
+          RMainWindowQt* wrapped;
         
 
         bool wrappedCreated;

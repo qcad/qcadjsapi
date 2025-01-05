@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RAddObjectsOperation_Wrapper::RAddObjectsOperation_Wrapper(RJSApi& h, RAddObjectsOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RAddObjectsOperation_Wrapper::RAddObjectsOperation_Wrapper(RJSApi& h, RAddObjectsOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RAddObjectsOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RAddObjectsOperation_Wrapper"));
               //setObjectName("RAddObjectsOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -216,14 +224,14 @@ bool a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RAddObjectsOperation(
-                a1_cpp
+              wrapped = new RAddObjectsOperation(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -264,12 +272,12 @@ bool a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RAddObjectsOperation(
-                a1_cpp
+              wrapped = new RAddObjectsOperation(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -288,14 +296,18 @@ bool a1_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RAddObjectsOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RImporter_Wrapper::RImporter_Wrapper(RJSApi& h, RImporter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RImporter_Wrapper::RImporter_Wrapper(RJSApi& h, RImporter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RImporter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RImporter_Wrapper"));
               //setObjectName("RImporter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -181,12 +189,12 @@ RImporter_Wrapper::RImporter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RImporter(
-                *a1_cpp
+              wrapped = new RImporter(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -205,11 +213,11 @@ RImporter_Wrapper::RImporter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RImporter(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RImporter(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -226,14 +234,18 @@ RImporter_Wrapper::RImporter_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RImporter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

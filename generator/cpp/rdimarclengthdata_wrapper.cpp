@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RDimArcLengthData_Wrapper::RDimArcLengthData_Wrapper(RJSApi& h, RDimArcLengthData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimArcLengthData_Wrapper::RDimArcLengthData_Wrapper(RJSApi& h, RDimArcLengthData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimArcLengthData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimArcLengthData_Wrapper"));
               //setObjectName("RDimArcLengthData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimArcLengthData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -271,15 +280,15 @@ RVector a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimArcLengthData(
-                *a1_cpp
+              wrapped = new RDimArcLengthData(
+                  *a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -298,11 +307,11 @@ RVector a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimArcLengthData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RDimArcLengthData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -322,14 +331,18 @@ RVector a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimArcLengthData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

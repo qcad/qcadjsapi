@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RGraphicsViewWorker_Wrapper::RGraphicsViewWorker_Wrapper(RJSApi& h, RGraphicsViewWorker* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RGraphicsViewWorker_Wrapper::RGraphicsViewWorker_Wrapper(RJSApi& h, RGraphicsViewWorker* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RGraphicsViewWorker_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RGraphicsViewWorker_Wrapper"));
               //setObjectName("RGraphicsViewWorker_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

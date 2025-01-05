@@ -240,11 +240,19 @@ double a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RSolidData_Wrapper::RSolidData_Wrapper(RJSApi& h, RSolidData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSolidData_Wrapper::RSolidData_Wrapper(RJSApi& h, RSolidData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSolidData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSolidData_Wrapper"));
               //setObjectName("RSolidData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -266,9 +274,10 @@ double a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RSolidData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -377,15 +386,15 @@ RVector a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RSolidData(
-                a1_cpp
+              wrapped = new RSolidData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -436,14 +445,14 @@ RVector a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RSolidData(
-                a1_cpp
+              wrapped = new RSolidData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -476,12 +485,12 @@ RTriangle a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RSolidData(
-                a1_cpp
+              wrapped = new RSolidData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -500,11 +509,11 @@ RTriangle a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RSolidData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSolidData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -524,14 +533,18 @@ RTriangle a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RSolidData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RDimAngular2LData_Wrapper::RDimAngular2LData_Wrapper(RJSApi& h, RDimAngular2LData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimAngular2LData_Wrapper::RDimAngular2LData_Wrapper(RJSApi& h, RDimAngular2LData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimAngular2LData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimAngular2LData_Wrapper"));
               //setObjectName("RDimAngular2LData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDimAngular2LData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -282,16 +291,16 @@ RVector a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimAngular2LData(
-                *a1_cpp
+              wrapped = new RDimAngular2LData(
+                  *a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -310,11 +319,11 @@ RVector a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimAngular2LData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RDimAngular2LData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -335,14 +344,18 @@ RVector a5_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimAngular2LData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

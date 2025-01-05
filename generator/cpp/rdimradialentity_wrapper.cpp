@@ -753,18 +753,26 @@ bool a5_cpp;
 
     
       // special constructor to wrap existing object:
-      RDimRadialEntity_Wrapper::RDimRadialEntity_Wrapper(RJSApi& h, RDimRadialEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimRadialEntity_Wrapper::RDimRadialEntity_Wrapper(RJSApi& h, RDimRadialEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimRadialEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimRadialEntity_Wrapper"));
               //setObjectName("RDimRadialEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RDimRadialEntity_Wrapper::RDimRadialEntity_Wrapper(RJSApi& h, QSharedPointer<RDimRadialEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RDimRadialEntity_Wrapper::RDimRadialEntity_Wrapper(RJSApi& h, QSharedPointer<RDimRadialEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RDimRadialEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimRadialEntity_Wrapper"));
               //setObjectName("RDimRadialEntity_Wrapper");
@@ -882,13 +890,13 @@ RDimRadialData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimRadialEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RDimRadialEntity>(new RDimRadialEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -906,14 +914,14 @@ RDimRadialData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimRadialEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

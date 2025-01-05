@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RChangePropertyOperation_Wrapper::RChangePropertyOperation_Wrapper(RJSApi& h, RChangePropertyOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RChangePropertyOperation_Wrapper::RChangePropertyOperation_Wrapper(RJSApi& h, RChangePropertyOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RChangePropertyOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RChangePropertyOperation_Wrapper"));
               //setObjectName("RChangePropertyOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -227,15 +235,15 @@ bool a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RChangePropertyOperation(
-                a1_cpp
+              wrapped = new RChangePropertyOperation(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -288,13 +296,13 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RChangePropertyOperation(
-                *a1_cpp
+              wrapped = new RChangePropertyOperation(
+                  *a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -314,14 +322,18 @@ bool a2_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RChangePropertyOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -10662,12 +10662,13 @@ InternalMove = RTreeWidget::InternalMove,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -10703,27 +10704,30 @@ InternalMove = RTreeWidget::InternalMove,
 
         // get wrapped object:
         RTreeWidget* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RTreeWidget* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -10742,7 +10746,8 @@ InternalMove = RTreeWidget::InternalMove,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -10754,9 +10759,10 @@ InternalMove = RTreeWidget::InternalMove,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -10778,9 +10784,10 @@ InternalMove = RTreeWidget::InternalMove,
         
 
         private:
-        // wrapped object:
-        RTreeWidget* wrapped;
 
+        
+          // wrapped object:
+          RTreeWidget* wrapped;
         
 
         bool wrappedCreated;

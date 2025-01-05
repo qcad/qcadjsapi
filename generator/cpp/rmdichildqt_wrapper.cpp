@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RMdiChildQt_Wrapper::RMdiChildQt_Wrapper(RJSApi& h, RMdiChildQt* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMdiChildQt_Wrapper::RMdiChildQt_Wrapper(RJSApi& h, RMdiChildQt* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMdiChildQt_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMdiChildQt_Wrapper"));
               //setObjectName("RMdiChildQt_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -530,21 +538,21 @@ RMdiChildQt_Wrapper::RMdiChildQt_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RMdiChildQt_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RMdiChildQt_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RMdiChildQt_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RMdiChildQt_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RMdiChildQt_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RMdiChildQt_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -561,14 +569,18 @@ RMdiChildQt_Wrapper::RMdiChildQt_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMdiChildQt";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

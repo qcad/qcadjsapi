@@ -6130,12 +6130,13 @@ Shape_Mask = RRulerQt::Shape_Mask,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -6171,27 +6172,30 @@ Shape_Mask = RRulerQt::Shape_Mask,
 
         // get wrapped object:
         RRulerQt* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RRulerQt* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -6210,7 +6214,8 @@ Shape_Mask = RRulerQt::Shape_Mask,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -6222,9 +6227,10 @@ Shape_Mask = RRulerQt::Shape_Mask,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -6246,9 +6252,10 @@ Shape_Mask = RRulerQt::Shape_Mask,
         
 
         private:
-        // wrapped object:
-        RRulerQt* wrapped;
 
+        
+          // wrapped object:
+          RRulerQt* wrapped;
         
 
         bool wrappedCreated;

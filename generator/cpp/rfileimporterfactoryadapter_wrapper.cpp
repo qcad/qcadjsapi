@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RFileImporterFactoryAdapter_Wrapper::RFileImporterFactoryAdapter_Wrapper(RJSApi& h, RFileImporterFactoryAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFileImporterFactoryAdapter_Wrapper::RFileImporterFactoryAdapter_Wrapper(RJSApi& h, RFileImporterFactoryAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFileImporterFactoryAdapter_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFileImporterFactoryAdapter_Wrapper"));
               //setObjectName("RFileImporterFactoryAdapter_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,18 +170,18 @@ RFileImporterFactoryAdapter_Wrapper::RFileImporterFactoryAdapter_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFileImporterFactoryAdapter_Base(
-              handler
+                wrapped = new RFileImporterFactoryAdapter_Base(
+                  handler
+                  
+                );
+                wrappedCreated = true;
+
+                // set handler for wrapped base object:
+                //((RFileImporterFactoryAdapter_Base*)wrapped)->setHandler(handler);
+
+                // store self to call into JS:
+                ((RFileImporterFactoryAdapter_Base*)wrapped)->self = handler.getSelf();
               
-            );
-            wrappedCreated = true;
-
-            // set handler for wrapped base object:
-            //((RFileImporterFactoryAdapter_Base*)wrapped)->setHandler(handler);
-
-            // store self to call into JS:
-            ((RFileImporterFactoryAdapter_Base*)wrapped)->self = handler.getSelf();
-          
 
         // signal forwarding:
         // TODO
@@ -186,7 +194,9 @@ RFileImporterFactoryAdapter_Wrapper::RFileImporterFactoryAdapter_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RFileImporterFactoryAdapter";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

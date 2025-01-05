@@ -7086,12 +7086,13 @@ AdjustToMinimumContentsLengthWithIcon = RComboBox::AdjustToMinimumContentsLength
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -7127,27 +7128,30 @@ AdjustToMinimumContentsLengthWithIcon = RComboBox::AdjustToMinimumContentsLength
 
         // get wrapped object:
         RComboBox* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RComboBox* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -7155,7 +7159,8 @@ AdjustToMinimumContentsLengthWithIcon = RComboBox::AdjustToMinimumContentsLength
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -7167,9 +7172,10 @@ AdjustToMinimumContentsLengthWithIcon = RComboBox::AdjustToMinimumContentsLength
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -7184,9 +7190,10 @@ AdjustToMinimumContentsLengthWithIcon = RComboBox::AdjustToMinimumContentsLength
         
 
         private:
-        // wrapped object:
-        RComboBox* wrapped;
 
+        
+          // wrapped object:
+          RComboBox* wrapped;
         
 
         bool wrappedCreated;

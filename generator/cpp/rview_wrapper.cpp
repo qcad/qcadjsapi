@@ -323,18 +323,26 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RView_Wrapper::RView_Wrapper(RJSApi& h, RView* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RView_Wrapper::RView_Wrapper(RJSApi& h, RView* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RView_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RView_Wrapper"));
               //setObjectName("RView_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RView_Wrapper::RView_Wrapper(RJSApi& h, QSharedPointer<RView> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RView_Wrapper::RView_Wrapper(RJSApi& h, QSharedPointer<RView> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RView_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RView_Wrapper"));
               //setObjectName("RView_Wrapper");
@@ -485,16 +493,16 @@ double a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RView(
-                a1_cpp
+              spWrapped = QSharedPointer<RView>(new RView(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     , a5_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -513,11 +521,11 @@ double a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RView(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RView>(new RView(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -538,14 +546,14 @@ double a5_cpp;
    && a5.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RView";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

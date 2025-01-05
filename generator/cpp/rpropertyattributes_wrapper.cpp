@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RPropertyAttributes_Wrapper::RPropertyAttributes_Wrapper(RJSApi& h, RPropertyAttributes* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPropertyAttributes_Wrapper::RPropertyAttributes_Wrapper(RJSApi& h, RPropertyAttributes* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPropertyAttributes_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPropertyAttributes_Wrapper"));
               //setObjectName("RPropertyAttributes_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPropertyAttributes";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -180,12 +189,12 @@ RPropertyAttributes::Options a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyAttributes(
-                a1_cpp
+              wrapped = new RPropertyAttributes(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -204,11 +213,11 @@ RPropertyAttributes::Options a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyAttributes(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RPropertyAttributes(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -225,14 +234,18 @@ RPropertyAttributes::Options a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPropertyAttributes";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

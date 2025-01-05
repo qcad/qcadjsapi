@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RMouseCoordinateListener_Wrapper::RMouseCoordinateListener_Wrapper(RJSApi& h, RMouseCoordinateListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMouseCoordinateListener_Wrapper::RMouseCoordinateListener_Wrapper(RJSApi& h, RMouseCoordinateListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMouseCoordinateListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMouseCoordinateListener_Wrapper"));
               //setObjectName("RMouseCoordinateListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapGrid_Wrapper::RSnapGrid_Wrapper(RJSApi& h, RSnapGrid* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapGrid_Wrapper::RSnapGrid_Wrapper(RJSApi& h, RSnapGrid* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapGrid_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapGrid_Wrapper"));
               //setObjectName("RSnapGrid_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RSnapGrid_Wrapper::RSnapGrid_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnapGrid(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSnapGrid(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RSnapGrid_Wrapper::RSnapGrid_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnapGrid";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

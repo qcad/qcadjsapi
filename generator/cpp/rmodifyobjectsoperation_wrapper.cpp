@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RModifyObjectsOperation_Wrapper::RModifyObjectsOperation_Wrapper(RJSApi& h, RModifyObjectsOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RModifyObjectsOperation_Wrapper::RModifyObjectsOperation_Wrapper(RJSApi& h, RModifyObjectsOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RModifyObjectsOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RModifyObjectsOperation_Wrapper"));
               //setObjectName("RModifyObjectsOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -197,13 +205,13 @@ bool a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RModifyObjectsOperation(
-                a1_cpp
+              wrapped = new RModifyObjectsOperation(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -244,12 +252,12 @@ bool a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RModifyObjectsOperation(
-                a1_cpp
+              wrapped = new RModifyObjectsOperation(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -267,14 +275,18 @@ bool a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RModifyObjectsOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

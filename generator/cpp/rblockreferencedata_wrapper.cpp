@@ -177,11 +177,19 @@
 
     
       // special constructor to wrap existing object:
-      RBlockReferenceData_Wrapper::RBlockReferenceData_Wrapper(RJSApi& h, RBlockReferenceData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RBlockReferenceData_Wrapper::RBlockReferenceData_Wrapper(RJSApi& h, RBlockReferenceData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RBlockReferenceData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RBlockReferenceData_Wrapper"));
               //setObjectName("RBlockReferenceData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -203,9 +211,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RBlockReferenceData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -409,8 +418,8 @@ double a9_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBlockReferenceData(
-                a1_cpp
+              wrapped = new RBlockReferenceData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -420,9 +429,9 @@ double a9_cpp;
     , a8_cpp
     , a9_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -441,11 +450,11 @@ double a9_cpp;
         // construct wrapper:
 
         
-            wrapped = new RBlockReferenceData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RBlockReferenceData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -470,14 +479,18 @@ double a9_cpp;
    && a9.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RBlockReferenceData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -480,11 +480,19 @@ RVector a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RGraphicsSceneDrawable_Wrapper::RGraphicsSceneDrawable_Wrapper(RJSApi& h, RGraphicsSceneDrawable* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RGraphicsSceneDrawable_Wrapper::RGraphicsSceneDrawable_Wrapper(RJSApi& h, RGraphicsSceneDrawable* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RGraphicsSceneDrawable_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RGraphicsSceneDrawable_Wrapper"));
               //setObjectName("RGraphicsSceneDrawable_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -506,9 +514,10 @@ RVector a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RGraphicsSceneDrawable";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -603,13 +612,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RGraphicsSceneDrawable(
-                a1_cpp
+              wrapped = new RGraphicsSceneDrawable(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -659,13 +668,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RGraphicsSceneDrawable(
-                a1_cpp
+              wrapped = new RGraphicsSceneDrawable(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -715,13 +724,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RGraphicsSceneDrawable(
-                a1_cpp
+              wrapped = new RGraphicsSceneDrawable(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -771,13 +780,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RGraphicsSceneDrawable(
-                a1_cpp
+              wrapped = new RGraphicsSceneDrawable(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -810,12 +819,12 @@ RGraphicsSceneDrawable a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RGraphicsSceneDrawable(
-                a1_cpp
+              wrapped = new RGraphicsSceneDrawable(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -834,11 +843,11 @@ RGraphicsSceneDrawable a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RGraphicsSceneDrawable(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RGraphicsSceneDrawable(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -856,14 +865,18 @@ RGraphicsSceneDrawable a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RGraphicsSceneDrawable";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

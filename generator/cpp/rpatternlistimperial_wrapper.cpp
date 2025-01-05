@@ -272,11 +272,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RPatternListImperial_Wrapper::RPatternListImperial_Wrapper(RJSApi& h, RPatternListImperial* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPatternListImperial_Wrapper::RPatternListImperial_Wrapper(RJSApi& h, RPatternListImperial* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPatternListImperial_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPatternListImperial_Wrapper"));
               //setObjectName("RPatternListImperial_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -298,9 +306,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPatternListImperial";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

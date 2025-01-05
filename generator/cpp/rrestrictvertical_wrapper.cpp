@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RRestrictVertical_Wrapper::RRestrictVertical_Wrapper(RJSApi& h, RRestrictVertical* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RRestrictVertical_Wrapper::RRestrictVertical_Wrapper(RJSApi& h, RRestrictVertical* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RRestrictVertical_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RRestrictVertical_Wrapper"));
               //setObjectName("RRestrictVertical_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -183,12 +191,12 @@ RRestrictVertical_Wrapper::RRestrictVertical_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RRestrictVertical(
-                a1_cpp
+              wrapped = new RRestrictVertical(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -205,14 +213,18 @@ RRestrictVertical_Wrapper::RRestrictVertical_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RRestrictVertical";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

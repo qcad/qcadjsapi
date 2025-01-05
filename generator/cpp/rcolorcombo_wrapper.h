@@ -7292,12 +7292,13 @@ AdjustToMinimumContentsLengthWithIcon = RColorCombo::AdjustToMinimumContentsLeng
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -7333,27 +7334,30 @@ AdjustToMinimumContentsLengthWithIcon = RColorCombo::AdjustToMinimumContentsLeng
 
         // get wrapped object:
         RColorCombo* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RColorCombo* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -7372,7 +7376,8 @@ AdjustToMinimumContentsLengthWithIcon = RColorCombo::AdjustToMinimumContentsLeng
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -7384,9 +7389,10 @@ AdjustToMinimumContentsLengthWithIcon = RColorCombo::AdjustToMinimumContentsLeng
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -7408,9 +7414,10 @@ AdjustToMinimumContentsLengthWithIcon = RColorCombo::AdjustToMinimumContentsLeng
         
 
         private:
-        // wrapped object:
-        RColorCombo* wrapped;
 
+        
+          // wrapped object:
+          RColorCombo* wrapped;
         
 
         bool wrappedCreated;

@@ -2578,12 +2578,13 @@ BlackWhite = RGraphicsView::BlackWhite,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -2619,27 +2620,30 @@ BlackWhite = RGraphicsView::BlackWhite,
 
         // get wrapped object:
         RGraphicsView* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RGraphicsView* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -2647,7 +2651,8 @@ BlackWhite = RGraphicsView::BlackWhite,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -2659,9 +2664,10 @@ BlackWhite = RGraphicsView::BlackWhite,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -2676,9 +2682,10 @@ BlackWhite = RGraphicsView::BlackWhite,
         
 
         private:
-        // wrapped object:
-        RGraphicsView* wrapped;
 
+        
+          // wrapped object:
+          RGraphicsView* wrapped;
         
 
         bool wrappedCreated;

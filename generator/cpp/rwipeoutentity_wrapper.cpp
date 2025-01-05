@@ -558,18 +558,26 @@ RS::EntityType a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RWipeoutEntity_Wrapper::RWipeoutEntity_Wrapper(RJSApi& h, RWipeoutEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RWipeoutEntity_Wrapper::RWipeoutEntity_Wrapper(RJSApi& h, RWipeoutEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RWipeoutEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RWipeoutEntity_Wrapper"));
               //setObjectName("RWipeoutEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RWipeoutEntity_Wrapper::RWipeoutEntity_Wrapper(RJSApi& h, QSharedPointer<RWipeoutEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RWipeoutEntity_Wrapper::RWipeoutEntity_Wrapper(RJSApi& h, QSharedPointer<RWipeoutEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RWipeoutEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RWipeoutEntity_Wrapper"));
               //setObjectName("RWipeoutEntity_Wrapper");
@@ -687,13 +695,13 @@ RWipeoutData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RWipeoutEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RWipeoutEntity>(new RWipeoutEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -729,12 +737,12 @@ RWipeoutData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RWipeoutEntity(
-                *a1_cpp
+              spWrapped = QSharedPointer<RWipeoutEntity>(new RWipeoutEntity(
+                  *a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -752,14 +760,14 @@ RWipeoutData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RWipeoutEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

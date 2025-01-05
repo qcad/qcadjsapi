@@ -295,11 +295,19 @@ QPoint a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RMouseEvent_Wrapper::RMouseEvent_Wrapper(RJSApi& h, RMouseEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMouseEvent_Wrapper::RMouseEvent_Wrapper(RJSApi& h, RMouseEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMouseEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMouseEvent_Wrapper"));
               //setObjectName("RMouseEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -469,8 +477,8 @@ Qt::KeyboardModifiers a5_cpp;
         // construct wrapper:
 
         
-            wrapped = new RMouseEvent(
-                a1_cpp
+              wrapped = new RMouseEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -478,9 +486,9 @@ Qt::KeyboardModifiers a5_cpp;
     , *a6_cpp
     , *a7_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -557,15 +565,15 @@ qreal a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RMouseEvent(
-                *a1_cpp
+              wrapped = new RMouseEvent(
+                  *a1_cpp
     , *a2_cpp
     , *a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -588,14 +596,18 @@ qreal a4_cpp;
    && a7.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RMouseEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RFontChooserWidget_Wrapper::RFontChooserWidget_Wrapper(RJSApi& h, RFontChooserWidget* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFontChooserWidget_Wrapper::RFontChooserWidget_Wrapper(RJSApi& h, RFontChooserWidget* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFontChooserWidget_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFontChooserWidget_Wrapper"));
               //setObjectName("RFontChooserWidget_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -502,21 +510,21 @@ RFontChooserWidget_Wrapper::RFontChooserWidget_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFontChooserWidget_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RFontChooserWidget_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RFontChooserWidget_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RFontChooserWidget_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RFontChooserWidget_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RFontChooserWidget_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -533,14 +541,18 @@ RFontChooserWidget_Wrapper::RFontChooserWidget_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RFontChooserWidget";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

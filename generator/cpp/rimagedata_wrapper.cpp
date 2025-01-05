@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RImageData_Wrapper::RImageData_Wrapper(RJSApi& h, RImageData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RImageData_Wrapper::RImageData_Wrapper(RJSApi& h, RImageData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RImageData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RImageData_Wrapper"));
               //setObjectName("RImageData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RImageData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -301,8 +310,8 @@ int a7_cpp;
         // construct wrapper:
 
         
-            wrapped = new RImageData(
-                a1_cpp
+              wrapped = new RImageData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
@@ -310,9 +319,9 @@ int a7_cpp;
     , a6_cpp
     , a7_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -345,12 +354,12 @@ RImageData a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RImageData(
-                a1_cpp
+              wrapped = new RImageData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -369,11 +378,11 @@ RImageData a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RImageData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RImageData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -396,14 +405,18 @@ RImageData a1_cpp;
    && a7.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RImageData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

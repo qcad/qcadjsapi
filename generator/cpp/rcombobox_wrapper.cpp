@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RComboBox_Wrapper::RComboBox_Wrapper(RJSApi& h, RComboBox* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RComboBox_Wrapper::RComboBox_Wrapper(RJSApi& h, RComboBox* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RComboBox_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RComboBox_Wrapper"));
               //setObjectName("RComboBox_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -551,12 +559,12 @@ RComboBox_Wrapper::RComboBox_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RComboBox(
-                a1_cpp
+              wrapped = new RComboBox(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -573,14 +581,18 @@ RComboBox_Wrapper::RComboBox_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RComboBox";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

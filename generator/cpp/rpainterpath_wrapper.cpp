@@ -424,11 +424,19 @@ QList<RPainterPath> a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RPainterPath_Wrapper::RPainterPath_Wrapper(RJSApi& h, RPainterPath* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPainterPath_Wrapper::RPainterPath_Wrapper(RJSApi& h, RPainterPath* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPainterPath_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPainterPath_Wrapper"));
               //setObjectName("RPainterPath_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -450,9 +458,10 @@ QList<RPainterPath> a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPainterPath";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -528,12 +537,12 @@ QPainterPath a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPainterPath(
-                a1_cpp
+              wrapped = new RPainterPath(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -566,12 +575,12 @@ RPainterPath a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPainterPath(
-                a1_cpp
+              wrapped = new RPainterPath(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -590,11 +599,11 @@ RPainterPath a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPainterPath(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RPainterPath(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -611,14 +620,18 @@ RPainterPath a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPainterPath";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

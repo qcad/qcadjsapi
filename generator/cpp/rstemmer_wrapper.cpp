@@ -160,11 +160,19 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RStemmer_Wrapper::RStemmer_Wrapper(RJSApi& h, RStemmer* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RStemmer_Wrapper::RStemmer_Wrapper(RJSApi& h, RStemmer* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RStemmer_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RStemmer_Wrapper"));
               //setObjectName("RStemmer_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -186,9 +194,10 @@ QString a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RStemmer";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

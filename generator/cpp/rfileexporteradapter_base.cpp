@@ -449,7 +449,7 @@ weight
     }
 
   void RFileExporterAdapter_Base::exportBlock(
-      RBlock& a1
+      QSharedPointer<RBlock> a1
     ) 
     
     {
@@ -467,11 +467,10 @@ weight
         QJSValueList args;
         
 
-  args << RJSHelper_qcad::cpp2js_RBlock(
+  args << RJSHelper_qcad::cpp2js_QSharedPointer_RBlock(
     handler, 
-    // non-copyable: true
-
-        &a1
+    // non-copyable: false
+a1
   );
 
 

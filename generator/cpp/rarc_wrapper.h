@@ -3992,12 +3992,6 @@ Ray = RArc::Ray,
         
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
             
               if (!spWrapped.isNull()) {
                 spWrapped = nullptr;
@@ -4037,11 +4031,8 @@ Ray = RArc::Ray,
 
         // get wrapped object:
         RArc* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4050,11 +4041,8 @@ Ray = RArc::Ray,
 
         // get wrapped object (const):
         RArc* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4063,11 +4051,8 @@ Ray = RArc::Ray,
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4080,10 +4065,10 @@ Ray = RArc::Ray,
           if (!spWrapped.isNull()) {
             return spWrapped;
           }
-          if (wrapped!=nullptr) {
-            qWarning() << "wrapper does not wrap a QSharedPointer<RArc> but a regular pointer";
-            return QSharedPointer<RArc>();
-          }
+          //if (wrapped!=nullptr) {
+          //  qWarning() << "wrapper does not wrap a QSharedPointer<RArc> but a regular pointer";
+          //  return QSharedPointer<RArc>();
+          //}
           return QSharedPointer<RArc>();
         }
 
@@ -4093,9 +4078,8 @@ Ray = RArc::Ray,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
           
-            || (!spWrapped.isNull() && spWrapped.data()!=nullptr)
+            return (!spWrapped.isNull() && spWrapped.data()!=nullptr);
           
           ;
         }
@@ -4107,9 +4091,6 @@ Ray = RArc::Ray,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
           
             if (!spWrapped.isNull() && spWrapped.data()!=nullptr) {
               return (unsigned long long int)spWrapped.data();
@@ -4128,8 +4109,6 @@ Ray = RArc::Ray,
         
 
         private:
-        // wrapped object:
-        RArc* wrapped;
 
         
           // wrapped object as shared pointer:

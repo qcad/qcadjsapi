@@ -461,12 +461,13 @@ AngleLength = RRestrictAngleLength::AngleLength,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -502,27 +503,30 @@ AngleLength = RRestrictAngleLength::AngleLength,
 
         // get wrapped object:
         RRestrictAngleLength* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RRestrictAngleLength* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -541,7 +545,8 @@ AngleLength = RRestrictAngleLength::AngleLength,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -553,9 +558,10 @@ AngleLength = RRestrictAngleLength::AngleLength,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -577,9 +583,10 @@ AngleLength = RRestrictAngleLength::AngleLength,
         
 
         private:
-        // wrapped object:
-        RRestrictAngleLength* wrapped;
 
+        
+          // wrapped object:
+          RRestrictAngleLength* wrapped;
         
 
         bool wrappedCreated;

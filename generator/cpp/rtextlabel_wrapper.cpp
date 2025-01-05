@@ -4476,18 +4476,26 @@ REllipse a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RTextLabel_Wrapper::RTextLabel_Wrapper(RJSApi& h, RTextLabel* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTextLabel_Wrapper::RTextLabel_Wrapper(RJSApi& h, RTextLabel* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTextLabel_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTextLabel_Wrapper"));
               //setObjectName("RTextLabel_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RTextLabel_Wrapper::RTextLabel_Wrapper(RJSApi& h, QSharedPointer<RTextLabel> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RTextLabel_Wrapper::RTextLabel_Wrapper(RJSApi& h, QSharedPointer<RTextLabel> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RTextLabel_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTextLabel_Wrapper"));
               //setObjectName("RTextLabel_Wrapper");
@@ -4513,9 +4521,7 @@ REllipse a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTextLabel";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -4621,14 +4627,14 @@ QVariant a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTextLabel(
-                a1_cpp
+              spWrapped = QSharedPointer<RTextLabel>(new RTextLabel(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4647,11 +4653,11 @@ QVariant a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTextLabel(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RTextLabel>(new RTextLabel(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -4670,14 +4676,14 @@ QVariant a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTextLabel";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

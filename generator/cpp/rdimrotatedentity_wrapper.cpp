@@ -753,18 +753,26 @@ bool a5_cpp;
 
     
       // special constructor to wrap existing object:
-      RDimRotatedEntity_Wrapper::RDimRotatedEntity_Wrapper(RJSApi& h, RDimRotatedEntity* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimRotatedEntity_Wrapper::RDimRotatedEntity_Wrapper(RJSApi& h, RDimRotatedEntity* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimRotatedEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimRotatedEntity_Wrapper"));
               //setObjectName("RDimRotatedEntity_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RDimRotatedEntity_Wrapper::RDimRotatedEntity_Wrapper(RJSApi& h, QSharedPointer<RDimRotatedEntity> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RDimRotatedEntity_Wrapper::RDimRotatedEntity_Wrapper(RJSApi& h, QSharedPointer<RDimRotatedEntity> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RDimRotatedEntity_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimRotatedEntity_Wrapper"));
               //setObjectName("RDimRotatedEntity_Wrapper");
@@ -882,13 +890,13 @@ RDimRotatedData a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDimRotatedEntity(
-                a1_cpp
+              spWrapped = QSharedPointer<RDimRotatedEntity>(new RDimRotatedEntity(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -906,14 +914,14 @@ RDimRotatedData a2_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDimRotatedEntity";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

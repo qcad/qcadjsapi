@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RPatternList_Wrapper::RPatternList_Wrapper(RJSApi& h, RPatternList* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPatternList_Wrapper::RPatternList_Wrapper(RJSApi& h, RPatternList* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPatternList_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPatternList_Wrapper"));
               //setObjectName("RPatternList_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPatternList";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

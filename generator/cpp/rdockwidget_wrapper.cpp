@@ -363,11 +363,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RDockWidget_Wrapper::RDockWidget_Wrapper(RJSApi& h, RDockWidget* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDockWidget_Wrapper::RDockWidget_Wrapper(RJSApi& h, RDockWidget* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDockWidget_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDockWidget_Wrapper"));
               //setObjectName("RDockWidget_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -582,23 +590,23 @@ Qt::WindowFlags a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDockWidget_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RDockWidget_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RDockWidget_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RDockWidget_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RDockWidget_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RDockWidget_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -659,22 +667,22 @@ Qt::WindowFlags a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDockWidget_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RDockWidget_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RDockWidget_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RDockWidget_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RDockWidget_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RDockWidget_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -693,14 +701,18 @@ Qt::WindowFlags a2_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDockWidget";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

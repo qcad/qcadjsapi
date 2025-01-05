@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RColorCombo_Wrapper::RColorCombo_Wrapper(RJSApi& h, RColorCombo* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RColorCombo_Wrapper::RColorCombo_Wrapper(RJSApi& h, RColorCombo* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RColorCombo_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RColorCombo_Wrapper"));
               //setObjectName("RColorCombo_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -558,21 +566,21 @@ RColorCombo_Wrapper::RColorCombo_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RColorCombo_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RColorCombo_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RColorCombo_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RColorCombo_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RColorCombo_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RColorCombo_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -589,14 +597,18 @@ RColorCombo_Wrapper::RColorCombo_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RColorCombo";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RLineweightCombo_Wrapper::RLineweightCombo_Wrapper(RJSApi& h, RLineweightCombo* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RLineweightCombo_Wrapper::RLineweightCombo_Wrapper(RJSApi& h, RLineweightCombo* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RLineweightCombo_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLineweightCombo_Wrapper"));
               //setObjectName("RLineweightCombo_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -551,21 +559,21 @@ RLineweightCombo_Wrapper::RLineweightCombo_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RLineweightCombo_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RLineweightCombo_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RLineweightCombo_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RLineweightCombo_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RLineweightCombo_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RLineweightCombo_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -582,14 +590,18 @@ RLineweightCombo_Wrapper::RLineweightCombo_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RLineweightCombo";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

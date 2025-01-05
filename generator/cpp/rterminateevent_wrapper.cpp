@@ -156,11 +156,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RTerminateEvent_Wrapper::RTerminateEvent_Wrapper(RJSApi& h, RTerminateEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTerminateEvent_Wrapper::RTerminateEvent_Wrapper(RJSApi& h, RTerminateEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTerminateEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTerminateEvent_Wrapper"));
               //setObjectName("RTerminateEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -242,11 +250,11 @@ RTerminateEvent_Wrapper::RTerminateEvent_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RTerminateEvent(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RTerminateEvent(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -259,7 +267,9 @@ RTerminateEvent_Wrapper::RTerminateEvent_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RTerminateEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

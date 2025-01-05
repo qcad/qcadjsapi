@@ -156,11 +156,19 @@ int a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RPropertyEvent_Wrapper::RPropertyEvent_Wrapper(RJSApi& h, RPropertyEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPropertyEvent_Wrapper::RPropertyEvent_Wrapper(RJSApi& h, RPropertyEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPropertyEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPropertyEvent_Wrapper"));
               //setObjectName("RPropertyEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -288,14 +296,14 @@ RS::EntityType a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyEvent(
-                a1_cpp
+              wrapped = new RPropertyEvent(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -314,11 +322,11 @@ RS::EntityType a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyEvent(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RPropertyEvent(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -337,14 +345,18 @@ RS::EntityType a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPropertyEvent";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

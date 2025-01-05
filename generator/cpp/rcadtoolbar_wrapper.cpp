@@ -355,11 +355,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RCadToolBar_Wrapper::RCadToolBar_Wrapper(RJSApi& h, RCadToolBar* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RCadToolBar_Wrapper::RCadToolBar_Wrapper(RJSApi& h, RCadToolBar* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RCadToolBar_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RCadToolBar_Wrapper"));
               //setObjectName("RCadToolBar_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -562,22 +570,22 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RCadToolBar_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RCadToolBar_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RCadToolBar_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RCadToolBar_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RCadToolBar_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RCadToolBar_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -595,14 +603,18 @@ QString a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RCadToolBar";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

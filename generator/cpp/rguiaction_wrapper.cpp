@@ -1910,11 +1910,19 @@ QStringList a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RGuiAction_Wrapper::RGuiAction_Wrapper(RJSApi& h, RGuiAction* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RGuiAction_Wrapper::RGuiAction_Wrapper(RJSApi& h, RGuiAction* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RGuiAction_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RGuiAction_Wrapper"));
               //setObjectName("RGuiAction_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2089,13 +2097,13 @@ QString a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RGuiAction(
-                a1_cpp
+              wrapped = new RGuiAction(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2113,14 +2121,18 @@ QString a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RGuiAction";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

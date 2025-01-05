@@ -2827,11 +2827,19 @@ QString a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RMath_Wrapper::RMath_Wrapper(RJSApi& h, RMath* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RMath_Wrapper::RMath_Wrapper(RJSApi& h, RMath* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RMath_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RMath_Wrapper"));
               //setObjectName("RMath_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -2853,9 +2861,10 @@ QString a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RMath";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -2915,11 +2924,11 @@ RMath_Wrapper::RMath_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RMath(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RMath(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -2932,7 +2941,9 @@ RMath_Wrapper::RMath_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RMath";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RImportListener_Wrapper::RImportListener_Wrapper(RJSApi& h, RImportListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RImportListener_Wrapper::RImportListener_Wrapper(RJSApi& h, RImportListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RImportListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RImportListener_Wrapper"));
               //setObjectName("RImportListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapEntityBase_Wrapper::RSnapEntityBase_Wrapper(RJSApi& h, RSnapEntityBase* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapEntityBase_Wrapper::RSnapEntityBase_Wrapper(RJSApi& h, RSnapEntityBase* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapEntityBase_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapEntityBase_Wrapper"));
               //setObjectName("RSnapEntityBase_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

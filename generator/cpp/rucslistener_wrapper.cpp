@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RUcsListener_Wrapper::RUcsListener_Wrapper(RJSApi& h, RUcsListener* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RUcsListener_Wrapper::RUcsListener_Wrapper(RJSApi& h, RUcsListener* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RUcsListener_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RUcsListener_Wrapper"));
               //setObjectName("RUcsListener_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

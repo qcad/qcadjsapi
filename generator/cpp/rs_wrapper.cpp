@@ -1667,11 +1667,19 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RS_Wrapper::RS_Wrapper(RJSApi& h, RS* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RS_Wrapper::RS_Wrapper(RJSApi& h, RS* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RS_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RS_Wrapper"));
               //setObjectName("RS_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1693,9 +1701,10 @@ QString a2_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RS";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1755,11 +1764,11 @@ RS_Wrapper::RS_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RS(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RS(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1772,7 +1781,9 @@ RS_Wrapper::RS_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RS";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

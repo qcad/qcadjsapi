@@ -177,11 +177,19 @@
 
     
       // special constructor to wrap existing object:
-      RHatchData_Wrapper::RHatchData_Wrapper(RJSApi& h, RHatchData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RHatchData_Wrapper::RHatchData_Wrapper(RJSApi& h, RHatchData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RHatchData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RHatchData_Wrapper"));
               //setObjectName("RHatchData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -203,9 +211,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RHatchData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -314,15 +323,15 @@ QString a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RHatchData(
-                a1_cpp
+              wrapped = new RHatchData(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -355,12 +364,12 @@ RHatchData a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RHatchData(
-                a1_cpp
+              wrapped = new RHatchData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -379,11 +388,11 @@ RHatchData a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RHatchData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RHatchData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -403,14 +412,18 @@ RHatchData a1_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RHatchData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

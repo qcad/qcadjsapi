@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RTabletEvent_Wrapper::RTabletEvent_Wrapper(RJSApi& h, RTabletEvent* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTabletEvent_Wrapper::RTabletEvent_Wrapper(RJSApi& h, RTabletEvent* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTabletEvent_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTabletEvent_Wrapper"));
               //setObjectName("RTabletEvent_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();

@@ -323,18 +323,26 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RDocumentVariables_Wrapper::RDocumentVariables_Wrapper(RJSApi& h, RDocumentVariables* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDocumentVariables_Wrapper::RDocumentVariables_Wrapper(RJSApi& h, RDocumentVariables* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDocumentVariables_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDocumentVariables_Wrapper"));
               //setObjectName("RDocumentVariables_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RDocumentVariables_Wrapper::RDocumentVariables_Wrapper(RJSApi& h, QSharedPointer<RDocumentVariables> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RDocumentVariables_Wrapper::RDocumentVariables_Wrapper(RJSApi& h, QSharedPointer<RDocumentVariables> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RDocumentVariables_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDocumentVariables_Wrapper"));
               //setObjectName("RDocumentVariables_Wrapper");
@@ -441,12 +449,12 @@ RDocumentVariables_Wrapper::RDocumentVariables_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RDocumentVariables(
-                a1_cpp
+              spWrapped = QSharedPointer<RDocumentVariables>(new RDocumentVariables(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -463,14 +471,14 @@ RDocumentVariables_Wrapper::RDocumentVariables_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDocumentVariables";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

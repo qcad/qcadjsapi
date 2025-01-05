@@ -1069,11 +1069,19 @@ RColor a1_cpp;
 
     
       // special constructor to wrap existing object:
-      RDxfServices_Wrapper::RDxfServices_Wrapper(RJSApi& h, RDxfServices* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDxfServices_Wrapper::RDxfServices_Wrapper(RJSApi& h, RDxfServices* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDxfServices_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDxfServices_Wrapper"));
               //setObjectName("RDxfServices_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -1095,9 +1103,10 @@ RColor a1_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RDxfServices";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -1157,11 +1166,11 @@ RDxfServices_Wrapper::RDxfServices_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RDxfServices(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RDxfServices(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -1174,7 +1183,9 @@ RDxfServices_Wrapper::RDxfServices_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RDxfServices";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

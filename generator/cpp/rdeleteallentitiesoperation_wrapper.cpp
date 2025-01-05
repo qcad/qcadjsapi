@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RDeleteAllEntitiesOperation_Wrapper::RDeleteAllEntitiesOperation_Wrapper(RJSApi& h, RDeleteAllEntitiesOperation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDeleteAllEntitiesOperation_Wrapper::RDeleteAllEntitiesOperation_Wrapper(RJSApi& h, RDeleteAllEntitiesOperation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDeleteAllEntitiesOperation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDeleteAllEntitiesOperation_Wrapper"));
               //setObjectName("RDeleteAllEntitiesOperation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -186,12 +194,12 @@ bool a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RDeleteAllEntitiesOperation(
-                a1_cpp
+              wrapped = new RDeleteAllEntitiesOperation(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -208,14 +216,18 @@ bool a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RDeleteAllEntitiesOperation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,18 +76,26 @@
 
     
       // special constructor to wrap existing object:
-      RTextLayout_Wrapper::RTextLayout_Wrapper(RJSApi& h, RTextLayout* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTextLayout_Wrapper::RTextLayout_Wrapper(RJSApi& h, RTextLayout* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTextLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTextLayout_Wrapper"));
               //setObjectName("RTextLayout_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RTextLayout_Wrapper::RTextLayout_Wrapper(RJSApi& h, QSharedPointer<RTextLayout> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RTextLayout_Wrapper::RTextLayout_Wrapper(RJSApi& h, QSharedPointer<RTextLayout> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RTextLayout_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTextLayout_Wrapper"));
               //setObjectName("RTextLayout_Wrapper");
@@ -113,9 +121,7 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTextLayout";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
             }
             
           }
@@ -213,14 +219,14 @@ QColor a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTextLayout(
-                a1_cpp
+              spWrapped = QSharedPointer<RTextLayout>(new RTextLayout(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -262,13 +268,13 @@ QColor a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTextLayout(
-                a1_cpp
+              spWrapped = QSharedPointer<RTextLayout>(new RTextLayout(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -287,11 +293,11 @@ QColor a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTextLayout(
-                
-            );
-            wrappedCreated = true;
-          
+              spWrapped = QSharedPointer<RTextLayout>(new RTextLayout(
+                  
+              ));
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -310,14 +316,14 @@ QColor a2_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTextLayout";
-                  wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

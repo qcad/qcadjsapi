@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RPropertyChange_Wrapper::RPropertyChange_Wrapper(RJSApi& h, RPropertyChange* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RPropertyChange_Wrapper::RPropertyChange_Wrapper(RJSApi& h, RPropertyChange* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RPropertyChange_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RPropertyChange_Wrapper"));
               //setObjectName("RPropertyChange_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RPropertyChange";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -202,14 +211,14 @@ QVariant a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyChange(
-                a1_cpp
+              wrapped = new RPropertyChange(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -228,11 +237,11 @@ QVariant a3_cpp;
         // construct wrapper:
 
         
-            wrapped = new RPropertyChange(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RPropertyChange(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -251,14 +260,18 @@ QVariant a3_cpp;
    && a3.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RPropertyChange";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RTranslation_Wrapper::RTranslation_Wrapper(RJSApi& h, RTranslation* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RTranslation_Wrapper::RTranslation_Wrapper(RJSApi& h, RTranslation* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RTranslation_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RTranslation_Wrapper"));
               //setObjectName("RTranslation_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -102,9 +110,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RTranslation";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -237,15 +246,15 @@ RVector a4_cpp;
         // construct wrapper:
 
         
-            wrapped = new RTranslation(
-                a1_cpp
+              wrapped = new RTranslation(
+                  a1_cpp
     , a2_cpp
     , a3_cpp
     , a4_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -265,14 +274,18 @@ RVector a4_cpp;
    && a4.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RTranslation";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -327,11 +327,19 @@ double a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RSplineData_Wrapper::RSplineData_Wrapper(RJSApi& h, RSplineData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSplineData_Wrapper::RSplineData_Wrapper(RJSApi& h, RSplineData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSplineData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSplineData_Wrapper"));
               //setObjectName("RSplineData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -353,9 +361,10 @@ double a3_cpp;
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RSplineData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -431,12 +440,12 @@ RSpline a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RSplineData(
-                a1_cpp
+              wrapped = new RSplineData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -455,11 +464,11 @@ RSpline a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RSplineData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSplineData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -476,14 +485,18 @@ RSpline a1_cpp;
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RSplineData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

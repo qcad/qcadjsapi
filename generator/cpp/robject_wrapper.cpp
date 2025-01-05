@@ -323,18 +323,26 @@ QString a2_cpp;
 
     
       // special constructor to wrap existing object:
-      RObject_Wrapper::RObject_Wrapper(RJSApi& h, RObject* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RObject_Wrapper::RObject_Wrapper(RJSApi& h, RObject* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RObject_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RObject_Wrapper"));
               //setObjectName("RObject_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RObject_Wrapper::RObject_Wrapper(RJSApi& h, QSharedPointer<RObject> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RObject_Wrapper::RObject_Wrapper(RJSApi& h, QSharedPointer<RObject> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RObject_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RObject_Wrapper"));
               //setObjectName("RObject_Wrapper");

@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RViewportData_Wrapper::RViewportData_Wrapper(RJSApi& h, RViewportData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RViewportData_Wrapper::RViewportData_Wrapper(RJSApi& h, RViewportData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RViewportData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RViewportData_Wrapper"));
               //setObjectName("RViewportData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RViewportData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -219,11 +228,11 @@ RViewportData_Wrapper::RViewportData_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RViewportData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RViewportData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -236,7 +245,9 @@ RViewportData_Wrapper::RViewportData_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RViewportData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

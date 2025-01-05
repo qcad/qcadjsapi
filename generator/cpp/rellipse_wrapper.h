@@ -4194,12 +4194,6 @@ Ray = REllipse::Ray,
         
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
             
               if (!spWrapped.isNull()) {
                 spWrapped = nullptr;
@@ -4239,11 +4233,8 @@ Ray = REllipse::Ray,
 
         // get wrapped object:
         REllipse* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4252,11 +4243,8 @@ Ray = REllipse::Ray,
 
         // get wrapped object (const):
         REllipse* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4265,11 +4253,8 @@ Ray = REllipse::Ray,
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
           
-            else if (!spWrapped.isNull()) {
+            if (!spWrapped.isNull()) {
               return spWrapped.data();
             }
           
@@ -4282,10 +4267,10 @@ Ray = REllipse::Ray,
           if (!spWrapped.isNull()) {
             return spWrapped;
           }
-          if (wrapped!=nullptr) {
-            qWarning() << "wrapper does not wrap a QSharedPointer<REllipse> but a regular pointer";
-            return QSharedPointer<REllipse>();
-          }
+          //if (wrapped!=nullptr) {
+          //  qWarning() << "wrapper does not wrap a QSharedPointer<REllipse> but a regular pointer";
+          //  return QSharedPointer<REllipse>();
+          //}
           return QSharedPointer<REllipse>();
         }
 
@@ -4295,9 +4280,8 @@ Ray = REllipse::Ray,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
           
-            || (!spWrapped.isNull() && spWrapped.data()!=nullptr)
+            return (!spWrapped.isNull() && spWrapped.data()!=nullptr);
           
           ;
         }
@@ -4309,9 +4293,6 @@ Ray = REllipse::Ray,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
           
             if (!spWrapped.isNull() && spWrapped.data()!=nullptr) {
               return (unsigned long long int)spWrapped.data();
@@ -4330,8 +4311,6 @@ Ray = REllipse::Ray,
         
 
         private:
-        // wrapped object:
-        REllipse* wrapped;
 
         
           // wrapped object as shared pointer:

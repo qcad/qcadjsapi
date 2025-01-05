@@ -131,18 +131,26 @@
 
     
       // special constructor to wrap existing object:
-      RDimAngularData_Wrapper::RDimAngularData_Wrapper(RJSApi& h, RDimAngularData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RDimAngularData_Wrapper::RDimAngularData_Wrapper(RJSApi& h, RDimAngularData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RDimAngularData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimAngularData_Wrapper"));
               //setObjectName("RDimAngularData_Wrapper");
               //setHandler(h);
+
+              
+                spWrapped.reset(o);
+              
 
               // signal forwarding:
               initConnections();
             }
           
         // special constructor to wrap existing object from shared pointer:
-        RDimAngularData_Wrapper::RDimAngularData_Wrapper(RJSApi& h, QSharedPointer<RDimAngularData> o) : RJSWrapperObj(h), wrapped(nullptr), spWrapped(o), wrappedCreated(false) {
+        RDimAngularData_Wrapper::RDimAngularData_Wrapper(RJSApi& h, QSharedPointer<RDimAngularData> o) : RJSWrapperObj(h), spWrapped(o), wrappedCreated(false) {
               //RDebug::incCounter(QString("RDimAngularData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RDimAngularData_Wrapper"));
               //setObjectName("RDimAngularData_Wrapper");

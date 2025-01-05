@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RToolMatrixItemDelegate_Wrapper::RToolMatrixItemDelegate_Wrapper(RJSApi& h, RToolMatrixItemDelegate* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RToolMatrixItemDelegate_Wrapper::RToolMatrixItemDelegate_Wrapper(RJSApi& h, RToolMatrixItemDelegate* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RToolMatrixItemDelegate_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RToolMatrixItemDelegate_Wrapper"));
               //setObjectName("RToolMatrixItemDelegate_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -350,22 +358,22 @@ RToolMatrixItemDelegate_Wrapper::RToolMatrixItemDelegate_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RToolMatrixItemDelegate_Base(
-              handler
-              
-                ,
-              a1_cpp
+                wrapped = new RToolMatrixItemDelegate_Base(
+                  handler
+                  
+                    ,
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
+                );
+                wrappedCreated = true;
 
-            // set handler for wrapped base object:
-            //((RToolMatrixItemDelegate_Base*)wrapped)->setHandler(handler);
+                // set handler for wrapped base object:
+                //((RToolMatrixItemDelegate_Base*)wrapped)->setHandler(handler);
 
-            // store self to call into JS:
-            ((RToolMatrixItemDelegate_Base*)wrapped)->self = handler.getSelf();
-          
+                // store self to call into JS:
+                ((RToolMatrixItemDelegate_Base*)wrapped)->self = handler.getSelf();
+              
 
         // signal forwarding:
         // TODO
@@ -383,14 +391,18 @@ RToolMatrixItemDelegate_Wrapper::RToolMatrixItemDelegate_Wrapper
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RToolMatrixItemDelegate";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

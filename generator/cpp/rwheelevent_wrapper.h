@@ -1509,12 +1509,13 @@ MaxUser = RWheelEvent::MaxUser,
             
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
+            
+              if (wrapped!=nullptr) {
                 
-              wrapped = nullptr;
-            }
+                    delete wrapped;
+                  
+                wrapped = nullptr;
+              }
             
           }
         
@@ -1550,27 +1551,30 @@ MaxUser = RWheelEvent::MaxUser,
 
         // get wrapped object:
         RWheelEvent* getWrapped() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object (const):
         RWheelEvent* getWrapped() const {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
 
         // get wrapped object as void*:
         virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
-            return wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return wrapped;
+            }
           
           return nullptr;
         }
@@ -1578,7 +1582,8 @@ MaxUser = RWheelEvent::MaxUser,
         
 
         bool hasWrapped() const {
-          return wrapped!=nullptr 
+          
+            return wrapped!=nullptr 
           
           ;
         }
@@ -1590,9 +1595,10 @@ MaxUser = RWheelEvent::MaxUser,
 
         Q_INVOKABLE
         unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
-            return (unsigned long long int)wrapped;
-          }
+          
+            if (wrapped!=nullptr) {
+              return (unsigned long long int)wrapped;
+            }
           
           return (unsigned long long int)0;
         }
@@ -1607,9 +1613,10 @@ MaxUser = RWheelEvent::MaxUser,
         
 
         private:
-        // wrapped object:
-        RWheelEvent* wrapped;
 
+        
+          // wrapped object:
+          RWheelEvent* wrapped;
         
 
         bool wrappedCreated;

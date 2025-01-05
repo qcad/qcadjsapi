@@ -186,11 +186,19 @@ int a3_cpp;
 
     
       // special constructor to wrap existing object:
-      RFileSystemModel_Wrapper::RFileSystemModel_Wrapper(RJSApi& h, RFileSystemModel* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RFileSystemModel_Wrapper::RFileSystemModel_Wrapper(RJSApi& h, RFileSystemModel* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RFileSystemModel_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RFileSystemModel_Wrapper"));
               //setObjectName("RFileSystemModel_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -333,12 +341,12 @@ RFileSystemModel_Wrapper::RFileSystemModel_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RFileSystemModel(
-                a1_cpp
+              wrapped = new RFileSystemModel(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -355,14 +363,18 @@ RFileSystemModel_Wrapper::RFileSystemModel_Wrapper
                       a1.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RFileSystemModel";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

@@ -717,6 +717,7 @@
         </parameters>
       </variant>
     </function>
+    <!--
     <function name="addEntityToPreview">
       <variant return-type="void" access="public">
         <parameters>
@@ -724,6 +725,7 @@
         </parameters>
       </variant>
     </function>
+    -->
     <function name="addDrawableToPreview">
       <variant return-type="void" access="public">
         <parameters>

@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RRayData_Wrapper::RRayData_Wrapper(RJSApi& h, RRayData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RRayData_Wrapper::RRayData_Wrapper(RJSApi& h, RRayData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RRayData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RRayData_Wrapper"));
               //setObjectName("RRayData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RRayData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -246,13 +255,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RRayData(
-                a1_cpp
+              wrapped = new RRayData(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -285,12 +294,12 @@ RRay a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RRayData(
-                a1_cpp
+              wrapped = new RRayData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -309,11 +318,11 @@ RRay a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RRayData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RRayData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -331,14 +340,18 @@ RRay a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RRayData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

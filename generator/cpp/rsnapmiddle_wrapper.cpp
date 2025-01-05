@@ -76,11 +76,19 @@
 
     
       // special constructor to wrap existing object:
-      RSnapMiddle_Wrapper::RSnapMiddle_Wrapper(RJSApi& h, RSnapMiddle* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RSnapMiddle_Wrapper::RSnapMiddle_Wrapper(RJSApi& h, RSnapMiddle* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RSnapMiddle_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RSnapMiddle_Wrapper"));
               //setObjectName("RSnapMiddle_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -162,11 +170,11 @@ RSnapMiddle_Wrapper::RSnapMiddle_Wrapper
         // construct wrapper:
 
         
-            wrapped = new RSnapMiddle(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RSnapMiddle(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -179,7 +187,9 @@ RSnapMiddle_Wrapper::RSnapMiddle_Wrapper
 
 
                   qWarning() << "no matching constructor variant found for RSnapMiddle";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 

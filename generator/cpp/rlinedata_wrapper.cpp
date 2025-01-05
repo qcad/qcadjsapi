@@ -131,11 +131,19 @@
 
     
       // special constructor to wrap existing object:
-      RLineData_Wrapper::RLineData_Wrapper(RJSApi& h, RLineData* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+      RLineData_Wrapper::RLineData_Wrapper(RJSApi& h, RLineData* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
               //RDebug::incCounter(QString("RLineData_Wrapper_") + handler.getEngine()->objectName());
               //RDebug::incCounter(QString("RLineData_Wrapper"));
               //setObjectName("RLineData_Wrapper");
               //setHandler(h);
+
+              
 
               // signal forwarding:
               initConnections();
@@ -157,9 +165,10 @@
               
                   // delete wrapped object (copyable, JS ownership)
                   //qDebug() << "deleting instance of RLineData";
-                  delete wrapped;
-                  wrapped = nullptr;
-                
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }
@@ -246,13 +255,13 @@ RVector a2_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLineData(
-                a1_cpp
+              wrapped = new RLineData(
+                  a1_cpp
     , a2_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -285,12 +294,12 @@ RLine a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLineData(
-                a1_cpp
+              wrapped = new RLineData(
+                  a1_cpp
     
-            );
-            wrappedCreated = true;
-          
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -309,11 +318,11 @@ RLine a1_cpp;
         // construct wrapper:
 
         
-            wrapped = new RLineData(
-                
-            );
-            wrappedCreated = true;
-          
+              wrapped = new RLineData(
+                  
+              );
+              wrappedCreated = true;
+            
 
         // signal forwarding:
         // TODO
@@ -331,14 +340,18 @@ RLine a1_cpp;
    && a2.isUndefined()
   
                       ) {
-                      wrapped = nullptr;
+                      
+                        wrapped = nullptr;
+                      
                       wrappedCreated = false;
                       return;
                     }
                   
 
                   qWarning() << "no matching constructor variant found for RLineData";
-                  wrapped = nullptr;
+                  
+                    wrapped = nullptr;
+                  
                   wrappedCreated = false;
                   handler.trace();
                 
