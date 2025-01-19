@@ -153,35 +153,6 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
       // static functions:
       
 
-        // static function 
-        RToolMatrixItemDelegate.tr = function() 
-          
-        {
-          //print("JS: RToolMatrixItemDelegate.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RToolMatrixItemDelegate_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RToolMatrixItemDelegate);
-  }
-
-  
-  else {
-    
-        print("RToolMatrixItemDelegate.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

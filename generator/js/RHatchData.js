@@ -185,34 +185,6 @@
       
 
         // static function 
-        RHatchData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RHatchData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RHatchData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RHatchData);
-  }
-
-  
-  else {
-    
-        print("RHatchData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         RHatchData.hasProxy = function() 
           
         {

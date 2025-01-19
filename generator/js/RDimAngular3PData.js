@@ -166,34 +166,6 @@
       // static functions:
       
 
-        // static function 
-        RDimAngular3PData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RDimAngular3PData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RDimAngular3PData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RDimAngular3PData);
-  }
-
-  
-  else {
-    
-        print("RDimAngular3PData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

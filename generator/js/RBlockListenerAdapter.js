@@ -141,35 +141,6 @@
       // static functions:
       
 
-        // static function 
-        RBlockListenerAdapter.tr = function() 
-          
-        {
-          //print("JS: RBlockListenerAdapter.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RBlockListenerAdapter_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RBlockListenerAdapter);
-  }
-
-  
-  else {
-    
-        print("RBlockListenerAdapter.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

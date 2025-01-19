@@ -306,35 +306,6 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        RTerminateEvent.registerEventType = function() 
-          
-        {
-          //print("JS: RTerminateEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return RTerminateEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RTerminateEvent);
-  }
-
-  
-  else {
-    
-        print("RTerminateEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

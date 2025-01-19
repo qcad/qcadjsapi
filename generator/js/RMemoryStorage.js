@@ -132,34 +132,6 @@
       // static functions:
       
 
-        // static function 
-        RMemoryStorage.getKnownVariableName = function() 
-          
-        {
-          //print("JS: RMemoryStorage.getKnownVariableName");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return RMemoryStorage_WrapperSingletonInstance.getKnownVariableName(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RMemoryStorage);
-  }
-
-  
-  else {
-    
-        print("RMemoryStorage.getKnownVariableName(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

@@ -166,34 +166,6 @@
       // static functions:
       
 
-        // static function 
-        RDimAlignedData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RDimAlignedData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RDimAlignedData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RDimAlignedData);
-  }
-
-  
-  else {
-    
-        print("RDimAlignedData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

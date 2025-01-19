@@ -300,35 +300,6 @@
       
 
         // static function 
-        RPropertyEditor.tr = function() 
-          
-        {
-          //print("JS: RPropertyEditor.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RPropertyEditor_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RPropertyEditor);
-  }
-
-  
-  else {
-    
-        print("RPropertyEditor.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         RPropertyEditor.getInstance = function() 
           
         {

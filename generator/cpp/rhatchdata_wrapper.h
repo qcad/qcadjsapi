@@ -44,25 +44,6 @@
       // static functions:
       
     // Class: RHatchData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getDefaultDrawOrder
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RHatchData
     // Function: hasProxy
     // Source: 
     // Static: true

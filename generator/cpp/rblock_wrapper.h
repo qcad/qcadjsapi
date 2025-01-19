@@ -282,64 +282,6 @@
       // static functions:
       
     // Class: RBlock
-    // Function: setCustomPropertyAttributes
-    // Source: RObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCustomPropertyAttributes
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RBlock
-    // Function: getCustomPropertyAttributes
-    // Source: RObject
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getCustomPropertyAttributes
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: RBlock
     // Function: init
     // Source: 
     // Static: true

@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RImageData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RImageData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RImageData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RImageData_Wrapper>("org.qcad", 1, 0, "RImageData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RImageData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RImageData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RImageData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RImageData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RImageData_WrapperSingleton * s = new RImageData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RImageData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RImageData.js";
       QFile scriptFile(fileName);

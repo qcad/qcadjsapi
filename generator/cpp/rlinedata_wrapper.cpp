@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RLineData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RLineData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RLineData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RLineData_Wrapper>("org.qcad", 1, 0, "RLineData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RLineData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RLineData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RLineData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RLineData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RLineData_WrapperSingleton * s = new RLineData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RLineData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RLineData.js";
       QFile scriptFile(fileName);

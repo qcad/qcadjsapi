@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RDimRotatedData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RDimRotatedData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RDimRotatedData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RDimRotatedData_Wrapper>("org.qcad", 1, 0, "RDimRotatedData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RDimRotatedData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RDimRotatedData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RDimRotatedData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RDimRotatedData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RDimRotatedData_WrapperSingleton * s = new RDimRotatedData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RDimRotatedData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RDimRotatedData.js";
       QFile scriptFile(fileName);

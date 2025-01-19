@@ -184,34 +184,6 @@
       // static functions:
       
 
-        // static function 
-        RImageData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RImageData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RImageData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RImageData);
-  }
-
-  
-  else {
-    
-        print("RImageData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

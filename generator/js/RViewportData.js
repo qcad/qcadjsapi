@@ -136,34 +136,6 @@
       // static functions:
       
 
-        // static function 
-        RViewportData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RViewportData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RViewportData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RViewportData);
-  }
-
-  
-  else {
-    
-        print("RViewportData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

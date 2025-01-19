@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RDimAngular2LData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RDimAngular2LData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RDimAngular2LData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RDimAngular2LData_Wrapper>("org.qcad", 1, 0, "RDimAngular2LData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RDimAngular2LData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RDimAngular2LData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RDimAngular2LData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RDimAngular2LData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RDimAngular2LData_WrapperSingleton * s = new RDimAngular2LData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RDimAngular2LData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RDimAngular2LData.js";
       QFile scriptFile(fileName);

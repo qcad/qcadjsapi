@@ -326,35 +326,6 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        RWheelEvent.registerEventType = function() 
-          
-        {
-          //print("JS: RWheelEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return RWheelEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RWheelEvent);
-  }
-
-  
-  else {
-    
-        print("RWheelEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

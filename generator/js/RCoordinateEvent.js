@@ -310,35 +310,6 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        RCoordinateEvent.registerEventType = function() 
-          
-        {
-          //print("JS: RCoordinateEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return RCoordinateEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RCoordinateEvent);
-  }
-
-  
-  else {
-    
-        print("RCoordinateEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

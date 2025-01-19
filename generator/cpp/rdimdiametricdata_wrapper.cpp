@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RDimDiametricData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RDimDiametricData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RDimDiametricData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RDimDiametricData_Wrapper>("org.qcad", 1, 0, "RDimDiametricData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RDimDiametricData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RDimDiametricData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RDimDiametricData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RDimDiametricData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RDimDiametricData_WrapperSingleton * s = new RDimDiametricData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RDimDiametricData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RDimDiametricData.js";
       QFile scriptFile(fileName);

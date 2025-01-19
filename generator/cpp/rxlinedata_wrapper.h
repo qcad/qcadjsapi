@@ -19,58 +19,6 @@
       
         #include "RXLineData.h"
       
-      // singleton class wrapper for static functions:
-      class QCADJSAPI_EXPORT 
-     RXLineData_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      RXLineData_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: RXLineData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getDefaultDrawOrder
-              (
-
-                
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static RXLineData_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RXLineData

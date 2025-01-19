@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RToleranceData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RToleranceData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RToleranceData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RToleranceData_Wrapper>("org.qcad", 1, 0, "RToleranceData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RToleranceData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RToleranceData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RToleranceData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RToleranceData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RToleranceData_WrapperSingleton * s = new RToleranceData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RToleranceData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RToleranceData.js";
       QFile scriptFile(fileName);

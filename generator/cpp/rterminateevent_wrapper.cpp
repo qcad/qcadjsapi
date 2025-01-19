@@ -13,77 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RTerminateEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RTerminateEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RTerminateEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RTerminateEvent_Wrapper>("org.qcad", 1, 0, "RTerminateEvent_Wrapper");
@@ -112,15 +41,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RTerminateEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RTerminateEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RTerminateEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RTerminateEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RTerminateEvent_WrapperSingleton * s = new RTerminateEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RTerminateEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RTerminateEvent.js";
       QFile scriptFile(fileName);

@@ -46,25 +46,6 @@
       // static functions:
       
     // Class: RTextBasedData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getDefaultDrawOrder
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RTextBasedData
     // Function: getRtti
     // Source: 
     // Static: true

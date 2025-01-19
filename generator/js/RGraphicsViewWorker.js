@@ -103,35 +103,6 @@
       // static functions:
       
 
-        // static function 
-        RGraphicsViewWorker.tr = function() 
-          
-        {
-          //print("JS: RGraphicsViewWorker.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RGraphicsViewWorker_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RGraphicsViewWorker);
-  }
-
-  
-  else {
-    
-        print("RGraphicsViewWorker.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

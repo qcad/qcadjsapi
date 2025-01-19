@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RRayData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RRayData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RRayData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RRayData_Wrapper>("org.qcad", 1, 0, "RRayData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RRayData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RRayData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RRayData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RRayData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RRayData_WrapperSingleton * s = new RRayData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RRayData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RRayData.js";
       QFile scriptFile(fileName);

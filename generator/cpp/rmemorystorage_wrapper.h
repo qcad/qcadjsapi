@@ -19,62 +19,6 @@
       
         #include "RMemoryStorage.h"
       
-      // singleton class wrapper for static functions:
-      class QCADJSAPI_EXPORT 
-     RMemoryStorage_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      RMemoryStorage_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: RMemoryStorage
-    // Function: getKnownVariableName
-    // Source: RStorage
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getKnownVariableName
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static RMemoryStorage_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RMemoryStorage

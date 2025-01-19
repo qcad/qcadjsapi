@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RViewportData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RViewportData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RViewportData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RViewportData_Wrapper>("org.qcad", 1, 0, "RViewportData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RViewportData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RViewportData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RViewportData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RViewportData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RViewportData_WrapperSingleton * s = new RViewportData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RViewportData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RViewportData.js";
       QFile scriptFile(fileName);

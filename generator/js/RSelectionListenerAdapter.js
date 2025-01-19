@@ -139,35 +139,6 @@
       // static functions:
       
 
-        // static function 
-        RSelectionListenerAdapter.tr = function() 
-          
-        {
-          //print("JS: RSelectionListenerAdapter.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RSelectionListenerAdapter_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RSelectionListenerAdapter);
-  }
-
-  
-  else {
-    
-        print("RSelectionListenerAdapter.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

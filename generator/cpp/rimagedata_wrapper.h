@@ -19,58 +19,6 @@
       
         #include "RImageData.h"
       
-      // singleton class wrapper for static functions:
-      class QCADJSAPI_EXPORT 
-     RImageData_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      RImageData_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: RImageData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getDefaultDrawOrder
-              (
-
-                
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static RImageData_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RImageData

@@ -160,34 +160,6 @@
       
 
         // static function 
-        RBlockReferenceData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RBlockReferenceData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RBlockReferenceData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RBlockReferenceData);
-  }
-
-  
-  else {
-    
-        print("RBlockReferenceData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         RBlockReferenceData.getRtti = function() 
           
         {

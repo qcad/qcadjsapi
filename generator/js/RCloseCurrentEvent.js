@@ -306,35 +306,6 @@ RCloseCurrentEvent.MaxUser = RCloseCurrentEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        RCloseCurrentEvent.registerEventType = function() 
-          
-        {
-          //print("JS: RCloseCurrentEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return RCloseCurrentEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RCloseCurrentEvent);
-  }
-
-  
-  else {
-    
-        print("RCloseCurrentEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

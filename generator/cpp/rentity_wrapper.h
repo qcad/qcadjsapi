@@ -366,64 +366,6 @@
       // static functions:
       
     // Class: REntity
-    // Function: setCustomPropertyAttributes
-    // Source: RObject
-    // Static: true
-    // Parameters: 3
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCustomPropertyAttributes
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: REntity
-    // Function: getCustomPropertyAttributes
-    // Source: RObject
-    // Static: true
-    // Parameters: 2
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getCustomPropertyAttributes
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-    // Class: REntity
     // Function: getRtti
     // Source: 
     // Static: true

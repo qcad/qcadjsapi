@@ -19,62 +19,6 @@
       
         #include "RTerminateEvent.h"
       
-      // singleton class wrapper for static functions:
-      class QCADJSAPI_EXPORT 
-     RTerminateEvent_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      RTerminateEvent_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: RTerminateEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  registerEventType
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static RTerminateEvent_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RTerminateEvent

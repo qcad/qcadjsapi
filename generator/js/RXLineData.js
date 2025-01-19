@@ -188,34 +188,6 @@
       // static functions:
       
 
-        // static function 
-        RXLineData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RXLineData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RXLineData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RXLineData);
-  }
-
-  
-  else {
-    
-        print("RXLineData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

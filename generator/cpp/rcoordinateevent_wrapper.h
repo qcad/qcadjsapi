@@ -23,62 +23,6 @@
       
         #include "RCoordinateEvent.h"
       
-      // singleton class wrapper for static functions:
-      class QCADJSAPI_EXPORT 
-     RCoordinateEvent_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
-
-      // constants:
-      
-
-      // static properties:
-      
-
-      public:
-      //Q_INVOKABLE 
-      RCoordinateEvent_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
-          handler(h)
-          
-          {}
-
-      
-
-      // static functions:
-      
-    // Class: RCoordinateEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  registerEventType
-              (
-
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static RCoordinateEvent_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
     // static functions implementation in singleton wrapper:
     
     // wrapper class for RCoordinateEvent

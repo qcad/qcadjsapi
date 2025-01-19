@@ -13,77 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RPropertyEvent
-    // Function: registerEventType
-    // Source: QEvent
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RPropertyEvent_WrapperSingleton::registerEventType
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_int(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: hint (int)
-  
-int a1_cpp;
-
-      
-          if (a1.isUndefined()) {
-            a1_cpp = -1;
-          }
-          else {
-            a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-          }
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                QEvent::registerEventType(
-              a1_cpp
-    
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for registerEventType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RPropertyEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RPropertyEvent_Wrapper>("org.qcad", 1, 0, "RPropertyEvent_Wrapper");
@@ -112,15 +41,6 @@ int a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RPropertyEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RPropertyEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RPropertyEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RPropertyEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RPropertyEvent_WrapperSingleton * s = new RPropertyEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RPropertyEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RPropertyEvent.js";
       QFile scriptFile(fileName);

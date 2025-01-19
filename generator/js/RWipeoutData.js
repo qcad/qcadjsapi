@@ -162,34 +162,6 @@
       // static functions:
       
 
-        // static function 
-        RWipeoutData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RWipeoutData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RWipeoutData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RWipeoutData);
-  }
-
-  
-  else {
-    
-        print("RWipeoutData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

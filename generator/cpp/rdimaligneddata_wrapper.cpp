@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RDimAlignedData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RDimAlignedData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RDimAlignedData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RDimAlignedData_Wrapper>("org.qcad", 1, 0, "RDimAlignedData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RDimAlignedData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RDimAlignedData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RDimAlignedData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RDimAlignedData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RDimAlignedData_WrapperSingleton * s = new RDimAlignedData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RDimAlignedData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RDimAlignedData.js";
       QFile scriptFile(fileName);

@@ -133,35 +133,6 @@
       // static functions:
       
 
-        // static function 
-        RToolOptionEventFilter.tr = function() 
-          
-        {
-          //print("JS: RToolOptionEventFilter.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RToolOptionEventFilter_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RToolOptionEventFilter);
-  }
-
-  
-  else {
-    
-        print("RToolOptionEventFilter.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

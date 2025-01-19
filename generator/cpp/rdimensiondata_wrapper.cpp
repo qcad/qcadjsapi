@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RDimensionData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RDimensionData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RDimensionData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RDimensionData_Wrapper>("org.qcad", 1, 0, "RDimensionData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RDimensionData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RDimensionData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RDimensionData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RDimensionData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RDimensionData_WrapperSingleton * s = new RDimensionData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RDimensionData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RDimensionData.js";
       QFile scriptFile(fileName);

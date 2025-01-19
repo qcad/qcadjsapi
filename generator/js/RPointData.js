@@ -162,34 +162,6 @@
       // static functions:
       
 
-        // static function 
-        RPointData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RPointData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RPointData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RPointData);
-  }
-
-  
-  else {
-    
-        print("RPointData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

@@ -140,35 +140,6 @@
       // static functions:
       
 
-        // static function 
-        RTransactionListenerAdapter.tr = function() 
-          
-        {
-          //print("JS: RTransactionListenerAdapter.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RTransactionListenerAdapter_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RTransactionListenerAdapter);
-  }
-
-  
-  else {
-    
-        print("RTransactionListenerAdapter.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

@@ -166,34 +166,6 @@
       // static functions:
       
 
-        // static function 
-        RDimRotatedData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RDimRotatedData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RDimRotatedData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RDimRotatedData);
-  }
-
-  
-  else {
-    
-        print("RDimRotatedData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

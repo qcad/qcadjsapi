@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RDimRadialData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RDimRadialData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RDimRadialData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RDimRadialData_Wrapper>("org.qcad", 1, 0, "RDimRadialData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RDimRadialData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RDimRadialData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RDimRadialData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RDimRadialData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RDimRadialData_WrapperSingleton * s = new RDimRadialData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RDimRadialData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RDimRadialData.js";
       QFile scriptFile(fileName);

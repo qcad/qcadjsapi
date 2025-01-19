@@ -166,34 +166,6 @@
       // static functions:
       
 
-        // static function 
-        RDimArcLengthData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RDimArcLengthData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RDimArcLengthData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RDimArcLengthData);
-  }
-
-  
-  else {
-    
-        print("RDimArcLengthData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

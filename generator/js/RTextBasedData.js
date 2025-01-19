@@ -174,34 +174,6 @@ RTextBasedData.UpsideDown = RTextBasedData_Wrapper.UpsideDown;
       
 
         // static function 
-        RTextBasedData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RTextBasedData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RTextBasedData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RTextBasedData);
-  }
-
-  
-  else {
-    
-        print("RTextBasedData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         RTextBasedData.getRtti = function() 
           
         {

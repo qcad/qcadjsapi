@@ -162,34 +162,6 @@
       // static functions:
       
 
-        // static function 
-        RDimDiametricData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RDimDiametricData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RDimDiametricData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RDimDiametricData);
-  }
-
-  
-  else {
-    
-        print("RDimDiametricData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

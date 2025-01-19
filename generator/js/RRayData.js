@@ -188,34 +188,6 @@
       // static functions:
       
 
-        // static function 
-        RRayData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RRayData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RRayData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RRayData);
-  }
-
-  
-  else {
-    
-        print("RRayData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

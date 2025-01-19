@@ -354,35 +354,6 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
       
 
         // static function 
-        RMouseEvent.registerEventType = function() 
-          
-        {
-          //print("JS: RMouseEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return RMouseEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RMouseEvent);
-  }
-
-  
-  else {
-    
-        print("RMouseEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
         RMouseEvent.hasMouseMoved = function() 
           
         {

@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RPointData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RPointData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RPointData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RPointData_Wrapper>("org.qcad", 1, 0, "RPointData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RPointData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RPointData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RPointData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RPointData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RPointData_WrapperSingleton * s = new RPointData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RPointData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RPointData.js";
       QFile scriptFile(fileName);

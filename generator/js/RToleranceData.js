@@ -132,34 +132,6 @@
       // static functions:
       
 
-        // static function 
-        RToleranceData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RToleranceData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RToleranceData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RToleranceData);
-  }
-
-  
-  else {
-    
-        print("RToleranceData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

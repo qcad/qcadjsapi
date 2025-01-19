@@ -113,35 +113,6 @@
       // static functions:
       
 
-        // static function 
-        RExportListenerAdapter.tr = function() 
-          
-        {
-          //print("JS: RExportListenerAdapter.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RExportListenerAdapter_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RExportListenerAdapter);
-  }
-
-  
-  else {
-    
-        print("RExportListenerAdapter.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

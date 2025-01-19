@@ -162,34 +162,6 @@
       // static functions:
       
 
-        // static function 
-        RDimOrdinateData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RDimOrdinateData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RDimOrdinateData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RDimOrdinateData);
-  }
-
-  
-  else {
-    
-        print("RDimOrdinateData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

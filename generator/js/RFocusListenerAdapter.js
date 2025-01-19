@@ -169,35 +169,6 @@
       // static functions:
       
 
-        // static function 
-        RFocusListenerAdapter.tr = function() 
-          
-        {
-          //print("JS: RFocusListenerAdapter.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RFocusListenerAdapter_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RFocusListenerAdapter);
-  }
-
-  
-  else {
-    
-        print("RFocusListenerAdapter.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

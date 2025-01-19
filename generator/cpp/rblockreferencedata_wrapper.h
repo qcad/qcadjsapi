@@ -48,25 +48,6 @@
       // static functions:
       
     // Class: RBlockReferenceData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  getDefaultDrawOrder
-              (
-
-                
-              )
-              
-              ;
-            
-    // Class: RBlockReferenceData
     // Function: getRtti
     // Source: 
     // Static: true

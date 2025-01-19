@@ -13,69 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RMemoryStorage
-    // Function: getKnownVariableName
-    // Source: RStorage
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RMemoryStorage_WrapperSingleton::getKnownVariableName
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper_qcad::is_RS_KnownVariable(handler, a1
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: n (RS::KnownVariable)
-  
-RS::KnownVariable a1_cpp;
-
-      a1_cpp = RJSHelper_qcad::js2cpp_RS_KnownVariable(handler, a1);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            QString res = 
-                
-                // call static member function:
-                RStorage::getKnownVariableName(
-              a1_cpp
-    
-            );
-          
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getKnownVariableName";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RMemoryStorage_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RMemoryStorage_Wrapper>("org.qcad", 1, 0, "RMemoryStorage_Wrapper");
@@ -104,15 +41,6 @@ RS::KnownVariable a1_cpp;
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RMemoryStorage_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RMemoryStorage_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RMemoryStorage_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RMemoryStorage_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RMemoryStorage_WrapperSingleton * s = new RMemoryStorage_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RMemoryStorage_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RMemoryStorage.js";
       QFile scriptFile(fileName);

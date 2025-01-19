@@ -159,34 +159,6 @@
       // static functions:
       
 
-        // static function 
-        RDimensionData.getDefaultDrawOrder = function() 
-          
-        {
-          //print("JS: RDimensionData.getDefaultDrawOrder");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return RDimensionData_WrapperSingletonInstance.getDefaultDrawOrder(
-                  
-                );
-              
-
-        //copyProperties(this, wrapper, RDimensionData);
-  }
-
-  
-  else {
-    
-        print("RDimensionData.getDefaultDrawOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

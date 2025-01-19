@@ -111,35 +111,6 @@
       // static functions:
       
 
-        // static function 
-        RImportListenerAdapter.tr = function() 
-          
-        {
-          //print("JS: RImportListenerAdapter.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return RImportListenerAdapter_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
-
-        //copyProperties(this, wrapper, RImportListenerAdapter);
-  }
-
-  
-  else {
-    
-        print("RImportListenerAdapter.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 

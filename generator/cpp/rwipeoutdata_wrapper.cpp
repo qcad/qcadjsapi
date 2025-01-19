@@ -13,52 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RWipeoutData
-    // Function: getDefaultDrawOrder
-    // Source: REntityData
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              RWipeoutData_WrapperSingleton::getDefaultDrawOrder
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            int res = 
-                
-                // call static member function:
-                REntityData::getDefaultDrawOrder(
-              
-            );
-          
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for getDefaultDrawOrder";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RWipeoutData_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RWipeoutData_Wrapper>("org.qcad", 1, 0, "RWipeoutData_Wrapper");
@@ -87,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RWipeoutData_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RWipeoutData_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RWipeoutData_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RWipeoutData_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RWipeoutData_WrapperSingleton * s = new RWipeoutData_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RWipeoutData_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RWipeoutData.js";
       QFile scriptFile(fileName);

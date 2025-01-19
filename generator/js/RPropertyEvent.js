@@ -333,35 +333,6 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
       // static functions:
       
 
-        // static function 
-        RPropertyEvent.registerEventType = function() 
-          
-        {
-          //print("JS: RPropertyEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return RPropertyEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, RPropertyEvent);
-  }
-
-  
-  else {
-    
-        print("RPropertyEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
       // constants:
       
 
