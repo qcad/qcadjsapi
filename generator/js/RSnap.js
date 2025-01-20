@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RSnap);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RSnap);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -156,7 +156,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
                 // call highest level JS implementation:
                 //return this.snapBase(
                 
-                    return this.snapSuper(
+                    return this.__PROXY__.snapSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -188,7 +188,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
                 
-                    return this.showUiOptionsSuper(
+                    return this.__PROXY__.showUiOptionsSuper(
                   
                 );
               
@@ -220,7 +220,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
                 
-                    return this.hideUiOptionsSuper(
+                    return this.__PROXY__.hideUiOptionsSuper(
                   
                 );
               
@@ -237,6 +237,70 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
   }
   
       };
+    
+        // function 
+        RSnap.prototype.suspendEvent = function(...args) 
+          
+        {
+          //print("JS: RSnap.prototype.suspendEvent");
+          return this.__PROXY__.suspendEvent(...args);
+        };
+    
+        // function 
+        RSnap.prototype.finishEvent = function(...args) 
+          
+        {
+          //print("JS: RSnap.prototype.finishEvent");
+          return this.__PROXY__.finishEvent(...args);
+        };
+    
+        // function 
+        RSnap.prototype.getEntityIds = function(...args) 
+          
+        {
+          //print("JS: RSnap.prototype.getEntityIds");
+          return this.__PROXY__.getEntityIds(...args);
+        };
+    
+        // function 
+        RSnap.prototype.getStatus = function(...args) 
+          
+        {
+          //print("JS: RSnap.prototype.getStatus");
+          return this.__PROXY__.getStatus(...args);
+        };
+    
+        // function 
+        RSnap.prototype.setStatus = function(...args) 
+          
+        {
+          //print("JS: RSnap.prototype.setStatus");
+          return this.__PROXY__.setStatus(...args);
+        };
+    
+        // function 
+        RSnap.prototype.getLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnap.prototype.getLastSnap");
+          return this.__PROXY__.getLastSnap(...args);
+        };
+    
+        // function 
+        RSnap.prototype.setLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnap.prototype.setLastSnap");
+          return this.__PROXY__.setLastSnap(...args);
+        };
+    
+        // function 
+        RSnap.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RSnap.prototype.reset");
+          return this.__PROXY__.reset(...args);
+        };
     
 
       // static functions:
@@ -258,4 +322,7 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
       //  return this.wrapper.destr();
       //};
 
+      RSnap.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

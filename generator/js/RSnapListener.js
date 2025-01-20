@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RSnapListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -95,6 +95,14 @@
 
       // functions:
       
+        // function 
+        RSnapListener.prototype.updateSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapListener.prototype.updateSnap");
+          return this.__PROXY__.updateSnap(...args);
+        };
+    
 
       // static functions:
       
@@ -115,4 +123,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RSnapListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

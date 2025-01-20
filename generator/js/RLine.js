@@ -168,7 +168,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'startPoint', {
                   get() {
-                      return this.__PROXY__.getStartPoint();
+                      
+                          return this.__PROXY__.getStartPoint();
+                        
                   },
                   
                     set(value) {
@@ -182,7 +184,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'endPoint', {
                   get() {
-                      return this.__PROXY__.getEndPoint();
+                      
+                          return this.__PROXY__.getEndPoint();
+                        
                   },
                   
                     set(value) {

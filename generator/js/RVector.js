@@ -143,7 +143,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'x', {
                   get() {
-                      return this.__PROXY__.getX();
+                      
+                          return this.__PROXY__.getX();
+                        
                   },
                   
                     set(value) {
@@ -157,7 +159,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'y', {
                   get() {
-                      return this.__PROXY__.getY();
+                      
+                          return this.__PROXY__.getY();
+                        
                   },
                   
                     set(value) {
@@ -171,7 +175,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'z', {
                   get() {
-                      return this.__PROXY__.getZ();
+                      
+                          return this.__PROXY__.getZ();
+                        
                   },
                   
                     set(value) {
@@ -185,7 +191,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'valid', {
                   get() {
-                      return this.__PROXY__.isValid();
+                      
+                          return this.__PROXY__.isValid();
+                        
                   },
                   
                   enumerable: true,

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RSnapRestriction);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -95,6 +95,14 @@
 
       // functions:
       
+        // function 
+        RSnapRestriction.prototype.restrictSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapRestriction.prototype.restrictSnap");
+          return this.__PROXY__.restrictSnap(...args);
+        };
+    
       // function 
       RSnapRestriction.prototype.showUiOptions = function() 
         
@@ -109,7 +117,7 @@
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
                 
-                    return this.showUiOptionsSuper(
+                    return this.__PROXY__.showUiOptionsSuper(
                   
                 );
               
@@ -141,7 +149,7 @@
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
                 
-                    return this.hideUiOptionsSuper(
+                    return this.__PROXY__.hideUiOptionsSuper(
                   
                 );
               
@@ -158,6 +166,22 @@
   }
   
       };
+    
+        // function 
+        RSnapRestriction.prototype.getLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapRestriction.prototype.getLastSnap");
+          return this.__PROXY__.getLastSnap(...args);
+        };
+    
+        // function 
+        RSnapRestriction.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RSnapRestriction.prototype.reset");
+          return this.__PROXY__.reset(...args);
+        };
     
 
       // static functions:
@@ -179,4 +203,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RSnapRestriction.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

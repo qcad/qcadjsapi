@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnapAuto.h">
   <class_decl name="RMouseEvent" />
   <class_decl name="RGraphicsView" />
-  <class name="RSnapAuto" ownership="cpp">
+  <class name="RSnapAuto" ownership="cpp" proxy="true">
     <super_list>
       <super name="RSnap" />
     </super_list>

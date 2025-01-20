@@ -220,7 +220,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'c1', {
                   get() {
-                      return this.__PROXY__.getCorner1();
+                      
+                          return this.__PROXY__.getCorner1();
+                        
                   },
                   
                     set(value) {
@@ -234,7 +236,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'c2', {
                   get() {
-                      return this.__PROXY__.getCorner2();
+                      
+                          return this.__PROXY__.getCorner2();
+                        
                   },
                   
                     set(value) {

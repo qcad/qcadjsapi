@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnapEntityBase.h">
   <class_decl name="RMouseEvent" />
-  <class name="RSnapEntityBase" ownership="cpp">
+  <class name="RSnapEntityBase" ownership="cpp" proxy="true">
     <super_list>
       <super name="RSnap" />
     </super_list>

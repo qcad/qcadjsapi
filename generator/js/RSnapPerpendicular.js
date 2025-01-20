@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RSnapPerpendicular);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RSnapPerpendicular);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -163,7 +163,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
                 
-                    return this.showUiOptionsSuper(
+                    return this.__PROXY__.showUiOptionsSuper(
                   
                 );
               
@@ -195,7 +195,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
                 
-                    return this.hideUiOptionsSuper(
+                    return this.__PROXY__.hideUiOptionsSuper(
                   
                 );
               
@@ -212,6 +212,78 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
   }
   
       };
+    
+        // function 
+        RSnapPerpendicular.prototype.suspendEvent = function(...args) 
+          
+        {
+          //print("JS: RSnapPerpendicular.prototype.suspendEvent");
+          return this.__PROXY__.suspendEvent(...args);
+        };
+    
+        // function 
+        RSnapPerpendicular.prototype.finishEvent = function(...args) 
+          
+        {
+          //print("JS: RSnapPerpendicular.prototype.finishEvent");
+          return this.__PROXY__.finishEvent(...args);
+        };
+    
+        // function 
+        RSnapPerpendicular.prototype.getEntityIds = function(...args) 
+          
+        {
+          //print("JS: RSnapPerpendicular.prototype.getEntityIds");
+          return this.__PROXY__.getEntityIds(...args);
+        };
+    
+        // function 
+        RSnapPerpendicular.prototype.getStatus = function(...args) 
+          
+        {
+          //print("JS: RSnapPerpendicular.prototype.getStatus");
+          return this.__PROXY__.getStatus(...args);
+        };
+    
+        // function 
+        RSnapPerpendicular.prototype.setStatus = function(...args) 
+          
+        {
+          //print("JS: RSnapPerpendicular.prototype.setStatus");
+          return this.__PROXY__.setStatus(...args);
+        };
+    
+        // function 
+        RSnapPerpendicular.prototype.getLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapPerpendicular.prototype.getLastSnap");
+          return this.__PROXY__.getLastSnap(...args);
+        };
+    
+        // function 
+        RSnapPerpendicular.prototype.setLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapPerpendicular.prototype.setLastSnap");
+          return this.__PROXY__.setLastSnap(...args);
+        };
+    
+        // function 
+        RSnapPerpendicular.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RSnapPerpendicular.prototype.reset");
+          return this.__PROXY__.reset(...args);
+        };
+    
+        // function 
+        RSnapPerpendicular.prototype.snap = function(...args) 
+          
+        {
+          //print("JS: RSnapPerpendicular.prototype.snap");
+          return this.__PROXY__.snap(...args);
+        };
     
 
       // static functions:
@@ -233,4 +305,7 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
       //  return this.wrapper.destr();
       //};
 
+      RSnapPerpendicular.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

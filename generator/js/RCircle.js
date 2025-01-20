@@ -142,7 +142,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'center', {
                   get() {
-                      return this.__PROXY__.getCenter();
+                      
+                          return this.__PROXY__.getCenter();
+                        
                   },
                   
                     set(value) {
@@ -156,7 +158,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'radius', {
                   get() {
-                      return this.__PROXY__.getRadius();
+                      
+                          return this.__PROXY__.getRadius();
+                        
                   },
                   
                     set(value) {

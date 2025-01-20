@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnapGrid.h">
   <class_decl name="RGraphicsView" />
   <class_decl name="RMouseEvent" />
-  <class name="RSnapGrid" ownership="cpp">
+  <class name="RSnapGrid" ownership="cpp" proxy="true">
     <super_list>
       <super name="RSnap" />
     </super_list>

@@ -90,7 +90,9 @@
               // define property setters/getters:
               Object.defineProperty(this, 'position', {
                   get() {
-                      return this.__PROXY__.getPosition();
+                      
+                          return this.__PROXY__.getPosition();
+                        
                   },
                   
                     set(value) {

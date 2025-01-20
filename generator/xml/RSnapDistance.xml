@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnapDistance.h">
   <class_decl name="RGraphicsView" />
   <class_decl name="RMouseEvent" />
-  <class name="RSnapDistance" ownership="cpp" inheritable="true">
+  <class name="RSnapDistance" ownership="cpp" inheritable="true" proxy="true">
     <super_list>
       <super name="RSnap" />
       <super name="RSnapEntityBase" />

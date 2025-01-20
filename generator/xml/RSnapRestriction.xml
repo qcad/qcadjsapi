@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RSnapRestriction.h">
   <class_decl name="RDocumentInterface" />
-  <class name="RSnapRestriction" ownership="cpp" inheritable="true">
+  <class name="RSnapRestriction" ownership="cpp" inheritable="true" proxy="true">
     <function name="restrictSnap">
       <variant return-type="RVector" virtual="true" access="public">
         <parameters>

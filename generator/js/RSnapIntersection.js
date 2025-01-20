@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RSnapIntersection);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RSnapIntersection);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -159,7 +159,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
                 
-                    return this.showUiOptionsSuper(
+                    return this.__PROXY__.showUiOptionsSuper(
                   
                 );
               
@@ -191,7 +191,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
                 
-                    return this.hideUiOptionsSuper(
+                    return this.__PROXY__.hideUiOptionsSuper(
                   
                 );
               
@@ -208,6 +208,78 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
   }
   
       };
+    
+        // function 
+        RSnapIntersection.prototype.suspendEvent = function(...args) 
+          
+        {
+          //print("JS: RSnapIntersection.prototype.suspendEvent");
+          return this.__PROXY__.suspendEvent(...args);
+        };
+    
+        // function 
+        RSnapIntersection.prototype.finishEvent = function(...args) 
+          
+        {
+          //print("JS: RSnapIntersection.prototype.finishEvent");
+          return this.__PROXY__.finishEvent(...args);
+        };
+    
+        // function 
+        RSnapIntersection.prototype.getEntityIds = function(...args) 
+          
+        {
+          //print("JS: RSnapIntersection.prototype.getEntityIds");
+          return this.__PROXY__.getEntityIds(...args);
+        };
+    
+        // function 
+        RSnapIntersection.prototype.getStatus = function(...args) 
+          
+        {
+          //print("JS: RSnapIntersection.prototype.getStatus");
+          return this.__PROXY__.getStatus(...args);
+        };
+    
+        // function 
+        RSnapIntersection.prototype.setStatus = function(...args) 
+          
+        {
+          //print("JS: RSnapIntersection.prototype.setStatus");
+          return this.__PROXY__.setStatus(...args);
+        };
+    
+        // function 
+        RSnapIntersection.prototype.getLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapIntersection.prototype.getLastSnap");
+          return this.__PROXY__.getLastSnap(...args);
+        };
+    
+        // function 
+        RSnapIntersection.prototype.setLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapIntersection.prototype.setLastSnap");
+          return this.__PROXY__.setLastSnap(...args);
+        };
+    
+        // function 
+        RSnapIntersection.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RSnapIntersection.prototype.reset");
+          return this.__PROXY__.reset(...args);
+        };
+    
+        // function 
+        RSnapIntersection.prototype.snap = function(...args) 
+          
+        {
+          //print("JS: RSnapIntersection.prototype.snap");
+          return this.__PROXY__.snap(...args);
+        };
     
 
       // static functions:
@@ -229,4 +301,7 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
       //  return this.wrapper.destr();
       //};
 
+      RSnapIntersection.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

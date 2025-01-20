@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RSnapAuto);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RSnapAuto);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -172,7 +172,7 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
                 
-                    return this.showUiOptionsSuper(
+                    return this.__PROXY__.showUiOptionsSuper(
                   
                 );
               
@@ -204,7 +204,7 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
                 
-                    return this.hideUiOptionsSuper(
+                    return this.__PROXY__.hideUiOptionsSuper(
                   
                 );
               
@@ -221,6 +221,278 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
   }
   
       };
+    
+        // function 
+        RSnapAuto.prototype.suspendEvent = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.suspendEvent");
+          return this.__PROXY__.suspendEvent(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.finishEvent = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.finishEvent");
+          return this.__PROXY__.finishEvent(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getEntityIds = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getEntityIds");
+          return this.__PROXY__.getEntityIds(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getStatus = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getStatus");
+          return this.__PROXY__.getStatus(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setStatus = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setStatus");
+          return this.__PROXY__.setStatus(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getLastSnap");
+          return this.__PROXY__.getLastSnap(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setLastSnap");
+          return this.__PROXY__.setLastSnap(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.snap = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.snap");
+          return this.__PROXY__.snap(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.init = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.init");
+          return this.__PROXY__.init(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getModes = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getModes");
+          return this.__PROXY__.getModes(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setModes = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setModes");
+          return this.__PROXY__.setModes(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setMode = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setMode");
+          return this.__PROXY__.setMode(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getMode = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getMode");
+          return this.__PROXY__.getMode(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setIntersections = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setIntersections");
+          return this.__PROXY__.setIntersections(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getIntersections = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getIntersections");
+          return this.__PROXY__.getIntersections(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setEndPoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setEndPoints");
+          return this.__PROXY__.setEndPoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getEndPoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getEndPoints");
+          return this.__PROXY__.getEndPoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setMiddlePoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setMiddlePoints");
+          return this.__PROXY__.setMiddlePoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getMiddlePoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getMiddlePoints");
+          return this.__PROXY__.getMiddlePoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setCenterPoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setCenterPoints");
+          return this.__PROXY__.setCenterPoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getCenterPoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getCenterPoints");
+          return this.__PROXY__.getCenterPoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setPerpendicular = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setPerpendicular");
+          return this.__PROXY__.setPerpendicular(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getPerpendicular = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getPerpendicular");
+          return this.__PROXY__.getPerpendicular(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setTangential = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setTangential");
+          return this.__PROXY__.setTangential(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getTangential = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getTangential");
+          return this.__PROXY__.getTangential(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setReferencePoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setReferencePoints");
+          return this.__PROXY__.setReferencePoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getReferencePoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getReferencePoints");
+          return this.__PROXY__.getReferencePoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setGridPoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setGridPoints");
+          return this.__PROXY__.setGridPoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getGridPoints = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getGridPoints");
+          return this.__PROXY__.getGridPoints(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setPointsOnEntity = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setPointsOnEntity");
+          return this.__PROXY__.setPointsOnEntity(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getPointsOnEntity = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getPointsOnEntity");
+          return this.__PROXY__.getPointsOnEntity(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.setFreePositioning = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.setFreePositioning");
+          return this.__PROXY__.setFreePositioning(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.getFreePositioning = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.getFreePositioning");
+          return this.__PROXY__.getFreePositioning(...args);
+        };
+    
+        // function 
+        RSnapAuto.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RSnapAuto.prototype.reset");
+          return this.__PROXY__.reset(...args);
+        };
     
 
       // static functions:
@@ -943,4 +1215,7 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
       //  return this.wrapper.destr();
       //};
 
+      RSnapAuto.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       
