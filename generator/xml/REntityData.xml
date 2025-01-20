@@ -4,7 +4,7 @@
   <class_decl name="RDocument" />
   <class_decl name="REntity" />
   <class_decl name="RExporter" />
-  <class name="REntityData" ownership="cpp">
+  <class name="REntityData" ownership="cpp" proxy="true">
     <class_decl name="REntity" />
     <!--
     <constructor>

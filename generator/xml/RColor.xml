@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RColor.h">
-  <class name="RColor" variant-conversion="true">
+  <class name="RColor" variant-conversion="true" proxy="true">
     <super_list>
       <super name="QColor" />
     </super_list>

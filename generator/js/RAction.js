@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RAction);
+              
+                  copyProperties(this, wrapper, RAction);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RAction.prototype = new RAction_BaseJs(engine);
@@ -101,12 +101,12 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
 
       // functions:
       
-        // function 
-        RAction.prototype.isOverride = function() 
-          
-        {
-          //print("JS: RAction.prototype.isOverride");
-          
+      // function 
+      RAction.prototype.isOverride = function() 
+        
+      {
+        //print("JS: RAction.prototype.isOverride");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -114,7 +114,8 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
                 //return this.wrapper.isOverride(
                 // call highest level JS implementation:
                 //return this.isOverrideBase(
-                return this.isOverrideSuper(
+                
+                    return this.isOverrideSuper(
                   
                 );
               
@@ -130,14 +131,14 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RAction.prototype.getDocument = function() 
-          
-        {
-          //print("JS: RAction.prototype.getDocument");
-          
+      };
+    
+      // function 
+      RAction.prototype.getDocument = function() 
+        
+      {
+        //print("JS: RAction.prototype.getDocument");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -145,7 +146,8 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
                 //return this.wrapper.getDocument(
                 // call highest level JS implementation:
                 //return this.getDocumentBase(
-                return this.getDocumentSuper(
+                
+                    return this.getDocumentSuper(
                   
                 );
               
@@ -161,14 +163,14 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RAction.prototype.getDocumentInterface = function() 
-          
-        {
-          //print("JS: RAction.prototype.getDocumentInterface");
-          
+      };
+    
+      // function 
+      RAction.prototype.getDocumentInterface = function() 
+        
+      {
+        //print("JS: RAction.prototype.getDocumentInterface");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -176,7 +178,8 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
                 //return this.wrapper.getDocumentInterface(
                 // call highest level JS implementation:
                 //return this.getDocumentInterfaceBase(
-                return this.getDocumentInterfaceSuper(
+                
+                    return this.getDocumentInterfaceSuper(
                   
                 );
               
@@ -192,14 +195,14 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RAction.prototype.setDocumentInterface = function() 
-          
-        {
-          //print("JS: RAction.prototype.setDocumentInterface");
-          
+      };
+    
+      // function 
+      RAction.prototype.setDocumentInterface = function() 
+        
+      {
+        //print("JS: RAction.prototype.setDocumentInterface");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -207,7 +210,8 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
                 //return this.wrapper.setDocumentInterface(
                 // call highest level JS implementation:
                 //return this.setDocumentInterfaceBase(
-                return this.setDocumentInterfaceSuper(
+                
+                    return this.setDocumentInterfaceSuper(
                   arguments[0]
                 );
               
@@ -223,14 +227,14 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RAction.prototype.entityPickEventPreview = function() 
-          
-        {
-          //print("JS: RAction.prototype.entityPickEventPreview");
-          
+      };
+    
+      // function 
+      RAction.prototype.entityPickEventPreview = function() 
+        
+      {
+        //print("JS: RAction.prototype.entityPickEventPreview");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -238,7 +242,8 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
                 //return this.wrapper.entityPickEventPreview(
                 // call highest level JS implementation:
                 //return this.entityPickEventPreviewBase(
-                return this.entityPickEventPreviewSuper(
+                
+                    return this.entityPickEventPreviewSuper(
                   arguments[0]
                 );
               
@@ -254,8 +259,8 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -275,4 +280,5 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
       //RAction.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

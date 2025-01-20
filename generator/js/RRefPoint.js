@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RRefPoint);
+              
+                  copyProperties(this, wrapper, RRefPoint);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RRefPoint);
+            copyProperties(this, wrapper, RRefPoint);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RRefPoint);
+            copyProperties(this, wrapper, RRefPoint);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -103,8 +105,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RRefPoint);
+            copyProperties(this, wrapper, RRefPoint);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -129,8 +131,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RRefPoint);
+            copyProperties(this, wrapper, RRefPoint);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -161,12 +163,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RRefPoint.prototype = new RRefPoint_BaseJs(engine);
@@ -289,4 +289,5 @@ RRefPoint.nanVector =
       //RRefPoint.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

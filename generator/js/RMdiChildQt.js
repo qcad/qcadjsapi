@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RMdiChildQt);
+              
+                  copyProperties(this, wrapper, RMdiChildQt);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RMdiChildQt);
+            copyProperties(this, wrapper, RMdiChildQt);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["windowStateChanged(Qt::WindowStates,Qt::WindowStates)"] = Object.getPrototypeOf(this).windowStateChanged;
@@ -97,8 +98,12 @@
   
     this["modifiedStatusChanged(RMdiChildQt*)"] = Object.getPrototypeOf(this).modifiedStatusChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RMdiChildQt.prototype = new RMdiChildQt_BaseJs(engine);
@@ -170,4 +175,5 @@
       //RMdiChildQt.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

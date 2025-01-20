@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RFileImporterFactoryAdapter);
+              
+                  copyProperties(this, wrapper, RFileImporterFactoryAdapter);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RFileImporterFactoryAdapter);
+            copyProperties(this, wrapper, RFileImporterFactoryAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RFileImporterFactoryAdapter.prototype = new RFileImporterFactoryAdapter_BaseJs(engine);
@@ -128,12 +128,12 @@
 
       // functions:
       
-        // function 
-        RFileImporterFactoryAdapter.prototype.getFilterStrings = function() 
-          
-        {
-          //print("JS: RFileImporterFactoryAdapter.prototype.getFilterStrings");
-          
+      // function 
+      RFileImporterFactoryAdapter.prototype.getFilterStrings = function() 
+        
+      {
+        //print("JS: RFileImporterFactoryAdapter.prototype.getFilterStrings");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -141,7 +141,8 @@
                 //return this.wrapper.getFilterStrings(
                 // call highest level JS implementation:
                 //return this.getFilterStringsBase(
-                return this.getFilterStringsSuper(
+                
+                    return this.getFilterStringsSuper(
                   
                 );
               
@@ -157,14 +158,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileImporterFactoryAdapter.prototype.canImport = function() 
-          
-        {
-          //print("JS: RFileImporterFactoryAdapter.prototype.canImport");
-          
+      };
+    
+      // function 
+      RFileImporterFactoryAdapter.prototype.canImport = function() 
+        
+      {
+        //print("JS: RFileImporterFactoryAdapter.prototype.canImport");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -173,7 +174,8 @@
                 //return this.wrapper.canImport(
                 // call highest level JS implementation:
                 //return this.canImportBase(
-                return this.canImportSuper(
+                
+                    return this.canImportSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -189,14 +191,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileImporterFactoryAdapter.prototype.instantiate = function() 
-          
-        {
-          //print("JS: RFileImporterFactoryAdapter.prototype.instantiate");
-          
+      };
+    
+      // function 
+      RFileImporterFactoryAdapter.prototype.instantiate = function() 
+        
+      {
+        //print("JS: RFileImporterFactoryAdapter.prototype.instantiate");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 3) {
     
@@ -205,7 +207,8 @@
                 //return this.wrapper.instantiate(
                 // call highest level JS implementation:
                 //return this.instantiateBase(
-                return this.instantiateSuper(
+                
+                    return this.instantiateSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -221,8 +224,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -242,4 +245,5 @@
       //RFileImporterFactoryAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

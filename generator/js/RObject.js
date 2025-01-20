@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RObject);
+              
+                  copyProperties(this, wrapper, RObject);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RObject.prototype = new RObject_BaseJs(engine);
@@ -289,4 +289,5 @@ RObject.PropertyInvisible =
       //RObject.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

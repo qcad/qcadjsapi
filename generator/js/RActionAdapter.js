@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RActionAdapter);
+              
+                  copyProperties(this, wrapper, RActionAdapter);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RActionAdapter);
+            copyProperties(this, wrapper, RActionAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RActionAdapter.prototype = new RActionAdapter_BaseJs(engine);
@@ -135,12 +135,12 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
 
       // functions:
       
-        // function 
-        RActionAdapter.prototype.isOverride = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.isOverride");
-          
+      // function 
+      RActionAdapter.prototype.isOverride = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.isOverride");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -148,7 +148,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.isOverride(
                 // call highest level JS implementation:
                 //return this.isOverrideBase(
-                return this.isOverrideSuper(
+                
+                    return this.isOverrideSuper(
                   
                 );
               
@@ -164,14 +165,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.getDocument = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.getDocument");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.getDocument = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.getDocument");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -179,7 +180,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.getDocument(
                 // call highest level JS implementation:
                 //return this.getDocumentBase(
-                return this.getDocumentSuper(
+                
+                    return this.getDocumentSuper(
                   
                 );
               
@@ -195,14 +197,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.getDocumentInterface = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.getDocumentInterface");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.getDocumentInterface = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.getDocumentInterface");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -210,7 +212,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.getDocumentInterface(
                 // call highest level JS implementation:
                 //return this.getDocumentInterfaceBase(
-                return this.getDocumentInterfaceSuper(
+                
+                    return this.getDocumentInterfaceSuper(
                   
                 );
               
@@ -226,14 +229,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.setDocumentInterface = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.setDocumentInterface");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.setDocumentInterface = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.setDocumentInterface");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -241,7 +244,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.setDocumentInterface(
                 // call highest level JS implementation:
                 //return this.setDocumentInterfaceBase(
-                return this.setDocumentInterfaceSuper(
+                
+                    return this.setDocumentInterfaceSuper(
                   arguments[0]
                 );
               
@@ -257,14 +261,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.beginEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.beginEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.beginEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.beginEvent");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -272,7 +276,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.beginEvent(
                 // call highest level JS implementation:
                 //return this.beginEventBase(
-                return this.beginEventSuper(
+                
+                    return this.beginEventSuper(
                   
                 );
               
@@ -288,14 +293,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.setGraphicsView = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.setGraphicsView");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.setGraphicsView = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.setGraphicsView");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -303,7 +308,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.setGraphicsView(
                 // call highest level JS implementation:
                 //return this.setGraphicsViewBase(
-                return this.setGraphicsViewSuper(
+                
+                    return this.setGraphicsViewSuper(
                   arguments[0]
                 );
               
@@ -319,14 +325,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.finishEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.finishEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.finishEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.finishEvent");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -334,7 +340,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.finishEvent(
                 // call highest level JS implementation:
                 //return this.finishEventBase(
-                return this.finishEventSuper(
+                
+                    return this.finishEventSuper(
                   
                 );
               
@@ -350,14 +357,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.enterEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.enterEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.enterEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.enterEvent");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -365,7 +372,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.enterEvent(
                 // call highest level JS implementation:
                 //return this.enterEventBase(
-                return this.enterEventSuper(
+                
+                    return this.enterEventSuper(
                   
                 );
               
@@ -381,14 +389,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.suspendEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.suspendEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.suspendEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.suspendEvent");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -396,7 +404,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.suspendEvent(
                 // call highest level JS implementation:
                 //return this.suspendEventBase(
-                return this.suspendEventSuper(
+                
+                    return this.suspendEventSuper(
                   
                 );
               
@@ -412,14 +421,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.resumeEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.resumeEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.resumeEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.resumeEvent");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -427,7 +436,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.resumeEvent(
                 // call highest level JS implementation:
                 //return this.resumeEventBase(
-                return this.resumeEventSuper(
+                
+                    return this.resumeEventSuper(
                   
                 );
               
@@ -443,14 +453,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.escapeEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.escapeEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.escapeEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.escapeEvent");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -458,7 +468,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.escapeEvent(
                 // call highest level JS implementation:
                 //return this.escapeEventBase(
-                return this.escapeEventSuper(
+                
+                    return this.escapeEventSuper(
                   
                 );
               
@@ -474,14 +485,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.keyPressEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.keyPressEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.keyPressEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.keyPressEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -489,7 +500,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.keyPressEvent(
                 // call highest level JS implementation:
                 //return this.keyPressEventBase(
-                return this.keyPressEventSuper(
+                
+                    return this.keyPressEventSuper(
                   arguments[0]
                 );
               
@@ -505,14 +517,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.keyReleaseEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.keyReleaseEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.keyReleaseEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.keyReleaseEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -520,7 +532,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.keyReleaseEvent(
                 // call highest level JS implementation:
                 //return this.keyReleaseEventBase(
-                return this.keyReleaseEventSuper(
+                
+                    return this.keyReleaseEventSuper(
                   arguments[0]
                 );
               
@@ -536,14 +549,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.mousePressEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.mousePressEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.mousePressEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.mousePressEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -551,7 +564,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.mousePressEvent(
                 // call highest level JS implementation:
                 //return this.mousePressEventBase(
-                return this.mousePressEventSuper(
+                
+                    return this.mousePressEventSuper(
                   arguments[0]
                 );
               
@@ -567,14 +581,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.mouseMoveEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.mouseMoveEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.mouseMoveEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.mouseMoveEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -582,7 +596,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.mouseMoveEvent(
                 // call highest level JS implementation:
                 //return this.mouseMoveEventBase(
-                return this.mouseMoveEventSuper(
+                
+                    return this.mouseMoveEventSuper(
                   arguments[0]
                 );
               
@@ -598,14 +613,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.mouseReleaseEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.mouseReleaseEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.mouseReleaseEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.mouseReleaseEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -613,7 +628,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.mouseReleaseEvent(
                 // call highest level JS implementation:
                 //return this.mouseReleaseEventBase(
-                return this.mouseReleaseEventSuper(
+                
+                    return this.mouseReleaseEventSuper(
                   arguments[0]
                 );
               
@@ -629,14 +645,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.mouseDoubleClickEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.mouseDoubleClickEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.mouseDoubleClickEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.mouseDoubleClickEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -644,7 +660,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.mouseDoubleClickEvent(
                 // call highest level JS implementation:
                 //return this.mouseDoubleClickEventBase(
-                return this.mouseDoubleClickEventSuper(
+                
+                    return this.mouseDoubleClickEventSuper(
                   arguments[0]
                 );
               
@@ -660,14 +677,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.wheelEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.wheelEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.wheelEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.wheelEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -675,7 +692,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.wheelEvent(
                 // call highest level JS implementation:
                 //return this.wheelEventBase(
-                return this.wheelEventSuper(
+                
+                    return this.wheelEventSuper(
                   arguments[0]
                 );
               
@@ -691,14 +709,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.tabletEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.tabletEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.tabletEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.tabletEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -706,7 +724,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.tabletEvent(
                 // call highest level JS implementation:
                 //return this.tabletEventBase(
-                return this.tabletEventSuper(
+                
+                    return this.tabletEventSuper(
                   arguments[0]
                 );
               
@@ -722,14 +741,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.swipeGestureEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.swipeGestureEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.swipeGestureEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.swipeGestureEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -737,7 +756,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.swipeGestureEvent(
                 // call highest level JS implementation:
                 //return this.swipeGestureEventBase(
-                return this.swipeGestureEventSuper(
+                
+                    return this.swipeGestureEventSuper(
                   arguments[0]
                 );
               
@@ -753,14 +773,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.panGestureEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.panGestureEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.panGestureEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.panGestureEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -768,7 +788,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.panGestureEvent(
                 // call highest level JS implementation:
                 //return this.panGestureEventBase(
-                return this.panGestureEventSuper(
+                
+                    return this.panGestureEventSuper(
                   arguments[0]
                 );
               
@@ -784,14 +805,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.pinchGestureEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.pinchGestureEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.pinchGestureEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.pinchGestureEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -799,7 +820,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.pinchGestureEvent(
                 // call highest level JS implementation:
                 //return this.pinchGestureEventBase(
-                return this.pinchGestureEventSuper(
+                
+                    return this.pinchGestureEventSuper(
                   arguments[0]
                 );
               
@@ -815,14 +837,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.commandEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.commandEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.commandEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.commandEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -830,7 +852,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.commandEvent(
                 // call highest level JS implementation:
                 //return this.commandEventBase(
-                return this.commandEventSuper(
+                
+                    return this.commandEventSuper(
                   arguments[0]
                 );
               
@@ -846,14 +869,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.commandEventPreview = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.commandEventPreview");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.commandEventPreview = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.commandEventPreview");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -861,7 +884,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.commandEventPreview(
                 // call highest level JS implementation:
                 //return this.commandEventPreviewBase(
-                return this.commandEventPreviewSuper(
+                
+                    return this.commandEventPreviewSuper(
                   arguments[0]
                 );
               
@@ -877,14 +901,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.coordinateEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.coordinateEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.coordinateEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.coordinateEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -892,7 +916,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.coordinateEvent(
                 // call highest level JS implementation:
                 //return this.coordinateEventBase(
-                return this.coordinateEventSuper(
+                
+                    return this.coordinateEventSuper(
                   arguments[0]
                 );
               
@@ -908,14 +933,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.coordinateEventPreview = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.coordinateEventPreview");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.coordinateEventPreview = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.coordinateEventPreview");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -923,7 +948,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.coordinateEventPreview(
                 // call highest level JS implementation:
                 //return this.coordinateEventPreviewBase(
-                return this.coordinateEventPreviewSuper(
+                
+                    return this.coordinateEventPreviewSuper(
                   arguments[0]
                 );
               
@@ -939,14 +965,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.entityPickEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.entityPickEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.entityPickEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.entityPickEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -954,7 +980,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.entityPickEvent(
                 // call highest level JS implementation:
                 //return this.entityPickEventBase(
-                return this.entityPickEventSuper(
+                
+                    return this.entityPickEventSuper(
                   arguments[0]
                 );
               
@@ -970,14 +997,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.entityPickEventPreview = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.entityPickEventPreview");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.entityPickEventPreview = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.entityPickEventPreview");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -985,7 +1012,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.entityPickEventPreview(
                 // call highest level JS implementation:
                 //return this.entityPickEventPreviewBase(
-                return this.entityPickEventPreviewSuper(
+                
+                    return this.entityPickEventPreviewSuper(
                   arguments[0]
                 );
               
@@ -1001,14 +1029,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.propertyChangeEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.propertyChangeEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.propertyChangeEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.propertyChangeEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -1016,7 +1044,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.propertyChangeEvent(
                 // call highest level JS implementation:
                 //return this.propertyChangeEventBase(
-                return this.propertyChangeEventSuper(
+                
+                    return this.propertyChangeEventSuper(
                   arguments[0]
                 );
               
@@ -1032,14 +1061,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.zoomChangeEvent = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.zoomChangeEvent");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.zoomChangeEvent = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.zoomChangeEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -1047,7 +1076,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.zoomChangeEvent(
                 // call highest level JS implementation:
                 //return this.zoomChangeEventBase(
-                return this.zoomChangeEventSuper(
+                
+                    return this.zoomChangeEventSuper(
                   arguments[0]
                 );
               
@@ -1063,14 +1093,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.updatePreview = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.updatePreview");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.updatePreview = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.updatePreview");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -1078,7 +1108,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.updatePreview(
                 // call highest level JS implementation:
                 //return this.updatePreviewBase(
-                return this.updatePreviewSuper(
+                
+                    return this.updatePreviewSuper(
                   
                 );
               
@@ -1094,14 +1125,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RActionAdapter.prototype.applyOperation = function() 
-          
-        {
-          //print("JS: RActionAdapter.prototype.applyOperation");
-          
+      };
+    
+      // function 
+      RActionAdapter.prototype.applyOperation = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.applyOperation");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -1109,7 +1140,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 //return this.wrapper.applyOperation(
                 // call highest level JS implementation:
                 //return this.applyOperationBase(
-                return this.applyOperationSuper(
+                
+                    return this.applyOperationSuper(
                   
                 );
               
@@ -1125,8 +1157,8 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -1146,4 +1178,5 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
       //RActionAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

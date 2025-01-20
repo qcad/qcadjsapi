@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RGraphicsViewQt);
+              
+                  copyProperties(this, wrapper, RGraphicsViewQt);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RGraphicsViewQt);
+            copyProperties(this, wrapper, RGraphicsViewQt);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,18 +85,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["drop(QDropEvent*)"] = Object.getPrototypeOf(this).drop;
   
     this["dragEnter(QDragEnterEvent*)"] = Object.getPrototypeOf(this).dragEnter;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RGraphicsViewQt.prototype = new RGraphicsViewQt_BaseJs(engine);
@@ -139,12 +144,12 @@
 
       // functions:
       
-        // function 
-        RGraphicsViewQt.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RGraphicsViewQt.prototype.actionEvent");
-          
+      // function 
+      RGraphicsViewQt.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: RGraphicsViewQt.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -152,7 +157,8 @@
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -168,14 +174,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsViewQt.prototype.resizeEvent = function() 
-          
-        {
-          //print("JS: RGraphicsViewQt.prototype.resizeEvent");
-          
+      };
+    
+      // function 
+      RGraphicsViewQt.prototype.resizeEvent = function() 
+        
+      {
+        //print("JS: RGraphicsViewQt.prototype.resizeEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -183,7 +189,8 @@
                 //return this.wrapper.resizeEvent(
                 // call highest level JS implementation:
                 //return this.resizeEventBase(
-                return this.resizeEventSuper(
+                
+                    return this.resizeEventSuper(
                   arguments[0]
                 );
               
@@ -199,8 +206,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -220,4 +227,5 @@
       //RGraphicsViewQt.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

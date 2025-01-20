@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RRay.h">
   <class_decl name="RBox" />
   <class_decl name="RPolyline" />
-  <class name="RRay" sharedpointer="true">
+  <class name="RRay" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RShape" downcast="true" />
       <super name="RXLine" />

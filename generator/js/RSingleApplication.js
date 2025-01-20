@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSingleApplication);
+              
+                  copyProperties(this, wrapper, RSingleApplication);
+                
             //}
           }
           else {
@@ -53,10 +55,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["screenAdded(QScreen*)"] = Object.getPrototypeOf(this).screenAdded;
   
     this["screenRemoved(QScreen*)"] = Object.getPrototypeOf(this).screenRemoved;
@@ -79,8 +80,12 @@
   
     this["fileOpenRequestReceived(QString)"] = Object.getPrototypeOf(this).fileOpenRequestReceived;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RSingleApplication.prototype = new RSingleApplication_BaseJs(engine);
@@ -180,4 +185,5 @@
       //RSingleApplication.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

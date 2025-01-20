@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RPropertyEditor);
+              
+                  copyProperties(this, wrapper, RPropertyEditor);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RPropertyEditor);
+            copyProperties(this, wrapper, RPropertyEditor);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RPropertyEditor.prototype = new RPropertyEditor_BaseJs(engine);
@@ -136,12 +136,12 @@
 
       // functions:
       
-        // function 
-        RPropertyEditor.prototype.updateFromDocument = function() 
-          
-        {
-          //print("JS: RPropertyEditor.prototype.updateFromDocument");
-          
+      // function 
+      RPropertyEditor.prototype.updateFromDocument = function() 
+        
+      {
+        //print("JS: RPropertyEditor.prototype.updateFromDocument");
+        
       if (arguments.length >= 2 &&
           arguments.length <= 5) {
     
@@ -150,7 +150,8 @@
                 //return this.wrapper.updateFromDocument(
                 // call highest level JS implementation:
                 //return this.updateFromDocumentBase(
-                return this.updateFromDocumentSuper(
+                
+                    return this.updateFromDocumentSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
                 );
               
@@ -166,14 +167,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RPropertyEditor.prototype.updateFromDocumentNow = function() 
-          
-        {
-          //print("JS: RPropertyEditor.prototype.updateFromDocumentNow");
-          
+      };
+    
+      // function 
+      RPropertyEditor.prototype.updateFromDocumentNow = function() 
+        
+      {
+        //print("JS: RPropertyEditor.prototype.updateFromDocumentNow");
+        
       if (arguments.length >= 2 &&
           arguments.length <= 5) {
     
@@ -182,7 +183,8 @@
                 //return this.wrapper.updateFromDocumentNow(
                 // call highest level JS implementation:
                 //return this.updateFromDocumentNowBase(
-                return this.updateFromDocumentNowSuper(
+                
+                    return this.updateFromDocumentNowSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
                 );
               
@@ -198,14 +200,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RPropertyEditor.prototype.updateFromObject = function() 
-          
-        {
-          //print("JS: RPropertyEditor.prototype.updateFromObject");
-          
+      };
+    
+      // function 
+      RPropertyEditor.prototype.updateFromObject = function() 
+        
+      {
+        //print("JS: RPropertyEditor.prototype.updateFromObject");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -214,7 +216,8 @@
                 //return this.wrapper.updateFromObject(
                 // call highest level JS implementation:
                 //return this.updateFromObjectBase(
-                return this.updateFromObjectSuper(
+                
+                    return this.updateFromObjectSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -230,14 +233,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RPropertyEditor.prototype.clearEditor = function() 
-          
-        {
-          //print("JS: RPropertyEditor.prototype.clearEditor");
-          
+      };
+    
+      // function 
+      RPropertyEditor.prototype.clearEditor = function() 
+        
+      {
+        //print("JS: RPropertyEditor.prototype.clearEditor");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -245,7 +248,8 @@
                 //return this.wrapper.clearEditor(
                 // call highest level JS implementation:
                 //return this.clearEditorBase(
-                return this.clearEditorSuper(
+                
+                    return this.clearEditorSuper(
                   
                 );
               
@@ -261,14 +265,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RPropertyEditor.prototype.updateGui = function() 
-          
-        {
-          //print("JS: RPropertyEditor.prototype.updateGui");
-          
+      };
+    
+      // function 
+      RPropertyEditor.prototype.updateGui = function() 
+        
+      {
+        //print("JS: RPropertyEditor.prototype.updateGui");
+        
       if (arguments.length >= 0 &&
           arguments.length <= 1) {
     
@@ -277,7 +281,8 @@
                 //return this.wrapper.updateGui(
                 // call highest level JS implementation:
                 //return this.updateGuiBase(
-                return this.updateGuiSuper(
+                
+                    return this.updateGuiSuper(
                   arguments[0]
                 );
               
@@ -293,8 +298,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -398,4 +403,5 @@
       //RPropertyEditor.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

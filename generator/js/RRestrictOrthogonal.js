@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RRestrictOrthogonal);
+              
+                  copyProperties(this, wrapper, RRestrictOrthogonal);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RRestrictOrthogonal);
+            copyProperties(this, wrapper, RRestrictOrthogonal);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RRestrictOrthogonal.prototype = new RRestrictOrthogonal_BaseJs(engine);
@@ -128,12 +128,12 @@
 
       // functions:
       
-        // function 
-        RRestrictOrthogonal.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RRestrictOrthogonal.prototype.showUiOptions");
-          
+      // function 
+      RRestrictOrthogonal.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RRestrictOrthogonal.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -141,7 +141,8 @@
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -157,14 +158,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RRestrictOrthogonal.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RRestrictOrthogonal.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RRestrictOrthogonal.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RRestrictOrthogonal.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -172,7 +173,8 @@
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -188,8 +190,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -209,4 +211,5 @@
       //RRestrictOrthogonal.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -3,7 +3,7 @@
 filename="RBlockReferenceData.h">
   <class_decl name="RDocument" />
   <class_decl name="RExporter" />
-  <class name="RBlockReferenceData">
+  <class name="RBlockReferenceData" proxy="true">
     <super_list>
       <super name="REntityData" />
     </super_list>

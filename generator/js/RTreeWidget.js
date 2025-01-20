@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RTreeWidget);
+              
+                  copyProperties(this, wrapper, RTreeWidget);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RTreeWidget);
+            copyProperties(this, wrapper, RTreeWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
@@ -117,8 +118,12 @@
   
     this["contextMenuRequested(QTreeWidgetItem*,int)"] = Object.getPrototypeOf(this).contextMenuRequested;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RTreeWidget.prototype = new RTreeWidget_BaseJs(engine);
@@ -248,12 +253,12 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
 
       // functions:
       
-        // function 
-        RTreeWidget.prototype.mousePressEvent = function() 
-          
-        {
-          //print("JS: RTreeWidget.prototype.mousePressEvent");
-          
+      // function 
+      RTreeWidget.prototype.mousePressEvent = function() 
+        
+      {
+        //print("JS: RTreeWidget.prototype.mousePressEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -261,7 +266,8 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
                 //return this.wrapper.mousePressEvent(
                 // call highest level JS implementation:
                 //return this.mousePressEventBase(
-                return this.mousePressEventSuper(
+                
+                    return this.mousePressEventSuper(
                   arguments[0]
                 );
               
@@ -277,14 +283,14 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RTreeWidget.prototype.mouseReleaseEvent = function() 
-          
-        {
-          //print("JS: RTreeWidget.prototype.mouseReleaseEvent");
-          
+      };
+    
+      // function 
+      RTreeWidget.prototype.mouseReleaseEvent = function() 
+        
+      {
+        //print("JS: RTreeWidget.prototype.mouseReleaseEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -292,7 +298,8 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
                 //return this.wrapper.mouseReleaseEvent(
                 // call highest level JS implementation:
                 //return this.mouseReleaseEventBase(
-                return this.mouseReleaseEventSuper(
+                
+                    return this.mouseReleaseEventSuper(
                   arguments[0]
                 );
               
@@ -308,14 +315,14 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RTreeWidget.prototype.mouseMoveEvent = function() 
-          
-        {
-          //print("JS: RTreeWidget.prototype.mouseMoveEvent");
-          
+      };
+    
+      // function 
+      RTreeWidget.prototype.mouseMoveEvent = function() 
+        
+      {
+        //print("JS: RTreeWidget.prototype.mouseMoveEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -323,7 +330,8 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
                 //return this.wrapper.mouseMoveEvent(
                 // call highest level JS implementation:
                 //return this.mouseMoveEventBase(
-                return this.mouseMoveEventSuper(
+                
+                    return this.mouseMoveEventSuper(
                   arguments[0]
                 );
               
@@ -339,14 +347,14 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RTreeWidget.prototype.resizeEvent = function() 
-          
-        {
-          //print("JS: RTreeWidget.prototype.resizeEvent");
-          
+      };
+    
+      // function 
+      RTreeWidget.prototype.resizeEvent = function() 
+        
+      {
+        //print("JS: RTreeWidget.prototype.resizeEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -354,7 +362,8 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
                 //return this.wrapper.resizeEvent(
                 // call highest level JS implementation:
                 //return this.resizeEventBase(
-                return this.resizeEventSuper(
+                
+                    return this.resizeEventSuper(
                   arguments[0]
                 );
               
@@ -370,8 +379,8 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -391,4 +400,5 @@ RTreeWidget.InternalMove = RTreeWidget_Wrapper.InternalMove;
       //RTreeWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

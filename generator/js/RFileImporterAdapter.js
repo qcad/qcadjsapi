@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RFileImporterAdapter);
+              
+                  copyProperties(this, wrapper, RFileImporterAdapter);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RFileImporterAdapter);
+            copyProperties(this, wrapper, RFileImporterAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RFileImporterAdapter);
+            copyProperties(this, wrapper, RFileImporterAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -109,12 +111,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RFileImporterAdapter.prototype = new RFileImporterAdapter_BaseJs(engine);
@@ -159,12 +159,12 @@
 
       // functions:
       
-        // function 
-        RFileImporterAdapter.prototype.importFile = function() 
-          
-        {
-          //print("JS: RFileImporterAdapter.prototype.importFile");
-          
+      // function 
+      RFileImporterAdapter.prototype.importFile = function() 
+        
+      {
+        //print("JS: RFileImporterAdapter.prototype.importFile");
+        
       if (arguments.length >= 2 &&
           arguments.length <= 3) {
     
@@ -173,7 +173,8 @@
                 //return this.wrapper.importFile(
                 // call highest level JS implementation:
                 //return this.importFileBase(
-                return this.importFileSuper(
+                
+                    return this.importFileSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -189,8 +190,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -210,4 +211,5 @@
       //RFileImporterAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

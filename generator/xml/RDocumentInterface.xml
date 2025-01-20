@@ -10,7 +10,7 @@
   <class_decl name="RSnapRestriction" />
   <class_decl name="RTransaction" />
   <class_decl name="RWheelEvent" />
-  <class name="RDocumentInterface" ownership="cpp">
+  <class name="RDocumentInterface" ownership="cpp" proxy="true">
     <constructor>
       <variant>
         <parameters>

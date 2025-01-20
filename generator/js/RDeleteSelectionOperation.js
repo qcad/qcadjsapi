@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RDeleteSelectionOperation);
+              
+                  copyProperties(this, wrapper, RDeleteSelectionOperation);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RDeleteSelectionOperation);
+            copyProperties(this, wrapper, RDeleteSelectionOperation);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RDeleteSelectionOperation.prototype = new RDeleteSelectionOperation_BaseJs(engine);
@@ -151,4 +151,5 @@
       //RDeleteSelectionOperation.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

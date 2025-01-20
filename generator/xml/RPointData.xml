@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPointData.h">
-  <class name="RPointData">
+  <class name="RPointData" proxy="true">
     <super_list>
       <super name="REntityData" />
       <super name="RPoint" />

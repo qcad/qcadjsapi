@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLayout.h">
   <class_decl name="RDocument" />
   <class_decl name="RTransaction" />
-  <class name="RLayout" sharedpointer="true">
+  <class name="RLayout" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RObject" downcast="true" />
     </super_list>

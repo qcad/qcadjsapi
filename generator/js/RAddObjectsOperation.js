@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RAddObjectsOperation);
+              
+                  copyProperties(this, wrapper, RAddObjectsOperation);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RAddObjectsOperation);
+            copyProperties(this, wrapper, RAddObjectsOperation);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RAddObjectsOperation);
+            copyProperties(this, wrapper, RAddObjectsOperation);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,12 +112,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RAddObjectsOperation.prototype = new RAddObjectsOperation_BaseJs(engine);
@@ -182,4 +182,5 @@ RAddObjectsOperation.Delete = RAddObjectsOperation_Wrapper.Delete;
       //RAddObjectsOperation.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

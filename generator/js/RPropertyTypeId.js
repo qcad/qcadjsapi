@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RPropertyTypeId);
+              
+                  copyProperties(this, wrapper, RPropertyTypeId);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RPropertyTypeId);
+            copyProperties(this, wrapper, RPropertyTypeId);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RPropertyTypeId);
+            copyProperties(this, wrapper, RPropertyTypeId);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -102,8 +104,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RPropertyTypeId);
+            copyProperties(this, wrapper, RPropertyTypeId);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -129,8 +131,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RPropertyTypeId);
+            copyProperties(this, wrapper, RPropertyTypeId);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -161,12 +163,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RPropertyTypeId.prototype = new RPropertyTypeId_BaseJs(engine);
@@ -307,4 +307,5 @@
       //RPropertyTypeId.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

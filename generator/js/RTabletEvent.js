@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RTabletEvent);
+              
+                  copyProperties(this, wrapper, RTabletEvent);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RTabletEvent.prototype = new RTabletEvent_BaseJs(engine);
@@ -114,4 +114,5 @@
       //RTabletEvent.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RImportListenerAdapter);
+              
+                  copyProperties(this, wrapper, RImportListenerAdapter);
+                
             //}
           }
           else {
@@ -53,16 +55,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["preImport(RDocumentInterface*)"] = Object.getPrototypeOf(this).preImport;
   
     this["postImport(RDocumentInterface*)"] = Object.getPrototypeOf(this).postImport;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RImportListenerAdapter.prototype = new RImportListenerAdapter_BaseJs(engine);
@@ -126,4 +131,5 @@
       //RImportListenerAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

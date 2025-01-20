@@ -5,7 +5,7 @@
   <class_decl name="RBlockReferenceEntity" />
   <class_decl name="RExporter" />
   <class_decl name="RViewportData" />
-  <class name="REntity" ownership="cpp" sharedpointer="true">
+  <class name="REntity" ownership="cpp" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RObject" downcast="true" />
     </super_list>

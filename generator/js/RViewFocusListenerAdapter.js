@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RViewFocusListenerAdapter);
+              
+                  copyProperties(this, wrapper, RViewFocusListenerAdapter);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RViewFocusListenerAdapter);
+            copyProperties(this, wrapper, RViewFocusListenerAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RViewFocusListenerAdapter.prototype = new RViewFocusListenerAdapter_BaseJs(engine);
@@ -128,12 +128,12 @@
 
       // functions:
       
-        // function 
-        RViewFocusListenerAdapter.prototype.updateFocus = function() 
-          
-        {
-          //print("JS: RViewFocusListenerAdapter.prototype.updateFocus");
-          
+      // function 
+      RViewFocusListenerAdapter.prototype.updateFocus = function() 
+        
+      {
+        //print("JS: RViewFocusListenerAdapter.prototype.updateFocus");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -141,7 +141,8 @@
                 //return this.wrapper.updateFocus(
                 // call highest level JS implementation:
                 //return this.updateFocusBase(
-                return this.updateFocusSuper(
+                
+                    return this.updateFocusSuper(
                   arguments[0]
                 );
               
@@ -157,8 +158,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -178,4 +179,5 @@
       //RViewFocusListenerAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

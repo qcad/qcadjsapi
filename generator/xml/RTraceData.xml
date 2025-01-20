@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTraceData.h">
-  <class name="RTraceData">
+  <class name="RTraceData" proxy="true">
     <super_list>
       <super name="RSolidData" />
     </super_list>

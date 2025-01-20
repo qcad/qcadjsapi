@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RVector);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RVector);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RVector);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -103,8 +105,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RVector);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -135,12 +137,62 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+              // define property setters/getters:
+              Object.defineProperty(this, 'x', {
+                  get() {
+                      return this.__PROXY__.getX();
+                  },
+                  
+                    set(value) {
+                        this.__PROXY__.setX(value);
+                    },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
+              // define property setters/getters:
+              Object.defineProperty(this, 'y', {
+                  get() {
+                      return this.__PROXY__.getY();
+                  },
+                  
+                    set(value) {
+                        this.__PROXY__.setY(value);
+                    },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
+              // define property setters/getters:
+              Object.defineProperty(this, 'z', {
+                  get() {
+                      return this.__PROXY__.getZ();
+                  },
+                  
+                    set(value) {
+                        this.__PROXY__.setZ(value);
+                    },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
+              // define property setters/getters:
+              Object.defineProperty(this, 'valid', {
+                  get() {
+                      return this.__PROXY__.isValid();
+                  },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
+
       }
 
       //RVector.prototype = new RVector_BaseJs(engine);
@@ -177,6 +229,846 @@
 
       // functions:
       
+        // function 
+        RVector.prototype.set = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.set");
+          return this.__PROXY__.set(...args);
+        };
+    
+        // function 
+        RVector.prototype.setPolar = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.setPolar");
+          return this.__PROXY__.setPolar(...args);
+        };
+    
+        // function 
+        RVector.prototype.get2D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.get2D");
+          return this.__PROXY__.get2D(...args);
+        };
+    
+        // function 
+        RVector.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.isValid");
+          return this.__PROXY__.isValid(...args);
+        };
+    
+        // function 
+        RVector.prototype.isZero = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.isZero");
+          return this.__PROXY__.isZero(...args);
+        };
+    
+        // function 
+        RVector.prototype.isSane = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.isSane");
+          return this.__PROXY__.isSane(...args);
+        };
+    
+        // function 
+        RVector.prototype.isNaN = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.isNaN");
+          return this.__PROXY__.isNaN(...args);
+        };
+    
+        // function 
+        RVector.prototype.isInside = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.isInside");
+          return this.__PROXY__.isInside(...args);
+        };
+    
+        // function 
+        RVector.prototype.equalsFuzzy = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.equalsFuzzy");
+          return this.__PROXY__.equalsFuzzy(...args);
+        };
+    
+        // function 
+        RVector.prototype.equalsFuzzy2D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.equalsFuzzy2D");
+          return this.__PROXY__.equalsFuzzy2D(...args);
+        };
+    
+        // function 
+        RVector.prototype.getDistanceTo = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getDistanceTo");
+          return this.__PROXY__.getDistanceTo(...args);
+        };
+    
+        // function 
+        RVector.prototype.getDistanceTo2D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getDistanceTo2D");
+          return this.__PROXY__.getDistanceTo2D(...args);
+        };
+    
+        // function 
+        RVector.prototype.setAngle = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.setAngle");
+          return this.__PROXY__.setAngle(...args);
+        };
+    
+        // function 
+        RVector.prototype.getAngle = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getAngle");
+          return this.__PROXY__.getAngle(...args);
+        };
+    
+        // function 
+        RVector.prototype.getAngleToPlaneXY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getAngleToPlaneXY");
+          return this.__PROXY__.getAngleToPlaneXY(...args);
+        };
+    
+        // function 
+        RVector.prototype.getAngleTo = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getAngleTo");
+          return this.__PROXY__.getAngleTo(...args);
+        };
+    
+        // function 
+        RVector.prototype.setMagnitude2D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.setMagnitude2D");
+          return this.__PROXY__.setMagnitude2D(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMagnitude = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMagnitude");
+          return this.__PROXY__.getMagnitude(...args);
+        };
+    
+        // function 
+        RVector.prototype.getSquaredMagnitude = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getSquaredMagnitude");
+          return this.__PROXY__.getSquaredMagnitude(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMagnitude2D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMagnitude2D");
+          return this.__PROXY__.getMagnitude2D(...args);
+        };
+    
+        // function 
+        RVector.prototype.getLerp = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getLerp");
+          return this.__PROXY__.getLerp(...args);
+        };
+    
+        // function 
+        RVector.prototype.getUnitVector = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getUnitVector");
+          return this.__PROXY__.getUnitVector(...args);
+        };
+    
+        // function 
+        RVector.prototype.setX = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.setX");
+          return this.__PROXY__.setX(...args);
+        };
+    
+        // function 
+        RVector.prototype.getX = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getX");
+          return this.__PROXY__.getX(...args);
+        };
+    
+        // function 
+        RVector.prototype.setY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.setY");
+          return this.__PROXY__.setY(...args);
+        };
+    
+        // function 
+        RVector.prototype.getY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getY");
+          return this.__PROXY__.getY(...args);
+        };
+    
+        // function 
+        RVector.prototype.setZ = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.setZ");
+          return this.__PROXY__.setZ(...args);
+        };
+    
+        // function 
+        RVector.prototype.getZ = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getZ");
+          return this.__PROXY__.getZ(...args);
+        };
+    
+        // function 
+        RVector.prototype.isInWindow = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.isInWindow");
+          return this.__PROXY__.isInWindow(...args);
+        };
+    
+        // function 
+        RVector.prototype.move = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.move");
+          return this.__PROXY__.move(...args);
+        };
+    
+        // function 
+        RVector.prototype.moveList = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.moveList");
+          return this.__PROXY__.moveList(...args);
+        };
+    
+        // function 
+        RVector.prototype.rotate = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.rotate");
+          return this.__PROXY__.rotate(...args);
+        };
+    
+        // function 
+        RVector.prototype.getRotated = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getRotated");
+          return this.__PROXY__.getRotated(...args);
+        };
+    
+        // function 
+        RVector.prototype.rotate3D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.rotate3D");
+          return this.__PROXY__.rotate3D(...args);
+        };
+    
+        // function 
+        RVector.prototype.rotateList = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.rotateList");
+          return this.__PROXY__.rotateList(...args);
+        };
+    
+        // function 
+        RVector.prototype.scale = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.scale");
+          return this.__PROXY__.scale(...args);
+        };
+    
+        // function 
+        RVector.prototype.getScaled = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getScaled");
+          return this.__PROXY__.getScaled(...args);
+        };
+    
+        // function 
+        RVector.prototype.scaleList = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.scaleList");
+          return this.__PROXY__.scaleList(...args);
+        };
+    
+        // function 
+        RVector.prototype.mirror = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.mirror");
+          return this.__PROXY__.mirror(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMirrored = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMirrored");
+          return this.__PROXY__.getMirrored(...args);
+        };
+    
+        // function 
+        RVector.prototype.flipHorizontal = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.flipHorizontal");
+          return this.__PROXY__.flipHorizontal(...args);
+        };
+    
+        // function 
+        RVector.prototype.flipVertical = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.flipVertical");
+          return this.__PROXY__.flipVertical(...args);
+        };
+    
+        // function 
+        RVector.prototype.stretch = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.stretch");
+          return this.__PROXY__.stretch(...args);
+        };
+    
+        // function 
+        RVector.prototype.isoProject = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.isoProject");
+          return this.__PROXY__.isoProject(...args);
+        };
+    
+        // function 
+        RVector.prototype.axonometricProjection = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.axonometricProjection");
+          return this.__PROXY__.axonometricProjection(...args);
+        };
+    
+        // function 
+        RVector.prototype.obliqueProjection = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.obliqueProjection");
+          return this.__PROXY__.obliqueProjection(...args);
+        };
+    
+        // function 
+        RVector.prototype.transform = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.transform");
+          return this.__PROXY__.transform(...args);
+        };
+    
+        // function 
+        RVector.prototype.transform2DM = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.transform2DM");
+          return this.__PROXY__.transform2DM(...args);
+        };
+    
+        // function 
+        RVector.prototype.transform2D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.transform2D");
+          return this.__PROXY__.transform2D(...args);
+        };
+    
+        // function 
+        RVector.prototype.getTransformed = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getTransformed");
+          return this.__PROXY__.getTransformed(...args);
+        };
+    
+        // function 
+        RVector.prototype.getTransformed2DM = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getTransformed2DM");
+          return this.__PROXY__.getTransformed2DM(...args);
+        };
+    
+        // function 
+        RVector.prototype.getTransformed2D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getTransformed2D");
+          return this.__PROXY__.getTransformed2D(...args);
+        };
+    
+        // function 
+        RVector.prototype.getDividedComponents = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getDividedComponents");
+          return this.__PROXY__.getDividedComponents(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMultipliedComponents = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMultipliedComponents");
+          return this.__PROXY__.getMultipliedComponents(...args);
+        };
+    
+        // function 
+        RVector.prototype.getClosest = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getClosest");
+          return this.__PROXY__.getClosest(...args);
+        };
+    
+        // function 
+        RVector.prototype.getClosest2D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getClosest2D");
+          return this.__PROXY__.getClosest2D(...args);
+        };
+    
+        // function 
+        RVector.prototype.getClosestDistance = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getClosestDistance");
+          return this.__PROXY__.getClosestDistance(...args);
+        };
+    
+        // function 
+        RVector.prototype.getClosestIndex = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getClosestIndex");
+          return this.__PROXY__.getClosestIndex(...args);
+        };
+    
+        // function 
+        RVector.prototype.getClosestIndex2D = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getClosestIndex2D");
+          return this.__PROXY__.getClosestIndex2D(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_add = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_add");
+          return this.__PROXY__.operator_add(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_subtract = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_subtract");
+          return this.__PROXY__.operator_subtract(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_multiply = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_multiply");
+          return this.__PROXY__.operator_multiply(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_divide = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_divide");
+          return this.__PROXY__.operator_divide(...args);
+        };
+    
+        // function 
+        RVector.prototype.getNegated = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getNegated");
+          return this.__PROXY__.getNegated(...args);
+        };
+    
+        // function 
+        RVector.prototype.getAbsolute = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getAbsolute");
+          return this.__PROXY__.getAbsolute(...args);
+        };
+    
+        // function 
+        RVector.prototype.dot = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.dot");
+          return this.__PROXY__.dot(...args);
+        };
+    
+        // function 
+        RVector.prototype.normalize = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.normalize");
+          return this.__PROXY__.normalize(...args);
+        };
+    
+        // function 
+        RVector.prototype.getNormalized = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getNormalized");
+          return this.__PROXY__.getNormalized(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_add_assign = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_add_assign");
+          return this.__PROXY__.operator_add_assign(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_subtract_assign = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_subtract_assign");
+          return this.__PROXY__.operator_subtract_assign(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_multiply_assign = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_multiply_assign");
+          return this.__PROXY__.operator_multiply_assign(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_divide_assign = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_divide_assign");
+          return this.__PROXY__.operator_divide_assign(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_equal = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_equal");
+          return this.__PROXY__.operator_equal(...args);
+        };
+    
+        // function 
+        RVector.prototype.operator_unequal = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.operator_unequal");
+          return this.__PROXY__.operator_unequal(...args);
+        };
+    
+        // function 
+        RVector.prototype.getFloor = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getFloor");
+          return this.__PROXY__.getFloor(...args);
+        };
+    
+        // function 
+        RVector.prototype.getCeil = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getCeil");
+          return this.__PROXY__.getCeil(...args);
+        };
+    
+        // function 
+        RVector.prototype.lteXY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.lteXY");
+          return this.__PROXY__.lteXY(...args);
+        };
+    
+        // function 
+        RVector.prototype.gteXY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.gteXY");
+          return this.__PROXY__.gteXY(...args);
+        };
+    
+        // function 
+        RVector.prototype.copy = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.copy");
+          return this.__PROXY__.copy(...args);
+        };
+    
+        // function 
+        RVector.prototype.containsFuzzy = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.containsFuzzy");
+          return this.__PROXY__.containsFuzzy(...args);
+        };
+    
+        // function 
+        RVector.prototype.findFirstFuzzy = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.findFirstFuzzy");
+          return this.__PROXY__.findFirstFuzzy(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMinimum = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMinimum");
+          return this.__PROXY__.getMinimum(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMaximum = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMaximum");
+          return this.__PROXY__.getMaximum(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMinimumX = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMinimumX");
+          return this.__PROXY__.getMinimumX(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMaximumX = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMaximumX");
+          return this.__PROXY__.getMaximumX(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMinimumY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMinimumY");
+          return this.__PROXY__.getMinimumY(...args);
+        };
+    
+        // function 
+        RVector.prototype.getMaximumY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getMaximumY");
+          return this.__PROXY__.getMaximumY(...args);
+        };
+    
+        // function 
+        RVector.prototype.getAverage = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getAverage");
+          return this.__PROXY__.getAverage(...args);
+        };
+    
+        // function 
+        RVector.prototype.getUnion = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getUnion");
+          return this.__PROXY__.getUnion(...args);
+        };
+    
+        // function 
+        RVector.prototype.getUnique = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getUnique");
+          return this.__PROXY__.getUnique(...args);
+        };
+    
+        // function 
+        RVector.prototype.getXList = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getXList");
+          return this.__PROXY__.getXList(...args);
+        };
+    
+        // function 
+        RVector.prototype.getYList = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getYList");
+          return this.__PROXY__.getYList(...args);
+        };
+    
+        // function 
+        RVector.prototype.getZList = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getZList");
+          return this.__PROXY__.getZList(...args);
+        };
+    
+        // function 
+        RVector.prototype.getCrossProduct = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getCrossProduct");
+          return this.__PROXY__.getCrossProduct(...args);
+        };
+    
+        // function 
+        RVector.prototype.getDotProduct = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getDotProduct");
+          return this.__PROXY__.getDotProduct(...args);
+        };
+    
+        // function 
+        RVector.prototype.createPolar = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.createPolar");
+          return this.__PROXY__.createPolar(...args);
+        };
+    
+        // function 
+        RVector.prototype.lessThanX = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.lessThanX");
+          return this.__PROXY__.lessThanX(...args);
+        };
+    
+        // function 
+        RVector.prototype.greaterThanX = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.greaterThanX");
+          return this.__PROXY__.greaterThanX(...args);
+        };
+    
+        // function 
+        RVector.prototype.lessThanY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.lessThanY");
+          return this.__PROXY__.lessThanY(...args);
+        };
+    
+        // function 
+        RVector.prototype.greaterThanY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.greaterThanY");
+          return this.__PROXY__.greaterThanY(...args);
+        };
+    
+        // function 
+        RVector.prototype.lessThanEqualXY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.lessThanEqualXY");
+          return this.__PROXY__.lessThanEqualXY(...args);
+        };
+    
+        // function 
+        RVector.prototype.greaterThanEqualXY = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.greaterThanEqualXY");
+          return this.__PROXY__.greaterThanEqualXY(...args);
+        };
+    
+        // function 
+        RVector.prototype.getSortedByDistance = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getSortedByDistance");
+          return this.__PROXY__.getSortedByDistance(...args);
+        };
+    
+        // function 
+        RVector.prototype.getSortedLeftRightTopBottom = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getSortedLeftRightTopBottom");
+          return this.__PROXY__.getSortedLeftRightTopBottom(...args);
+        };
+    
+        // function 
+        RVector.prototype.getSortedByAngle = function(...args) 
+          
+        {
+          //print("JS: RVector.prototype.getSortedByAngle");
+          return this.__PROXY__.getSortedByAngle(...args);
+        };
+    
 
       // static functions:
       
@@ -1090,4 +1982,8 @@ RVector.nanVector =
       //RVector.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      RVector.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

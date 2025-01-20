@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RDockWidget);
+              
+                  copyProperties(this, wrapper, RDockWidget);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RDockWidget);
+            copyProperties(this, wrapper, RDockWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RDockWidget);
+            copyProperties(this, wrapper, RDockWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,10 +112,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["featuresChanged(QDockWidget::DockWidgetFeatures)"] = Object.getPrototypeOf(this).featuresChanged;
@@ -126,8 +127,12 @@
   
     this["dockLocationChanged(Qt::DockWidgetArea)"] = Object.getPrototypeOf(this).dockLocationChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RDockWidget.prototype = new RDockWidget_BaseJs(engine);
@@ -204,4 +209,5 @@ RDockWidget.Reserved = RDockWidget_Wrapper.Reserved;
       //RDockWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

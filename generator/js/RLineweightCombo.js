@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RLineweightCombo);
+              
+                  copyProperties(this, wrapper, RLineweightCombo);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RLineweightCombo);
+            copyProperties(this, wrapper, RLineweightCombo);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["editTextChanged(QString)"] = Object.getPrototypeOf(this).editTextChanged;
@@ -105,8 +106,12 @@
   
     this["valueChanged(RLineweight::Lineweight)"] = Object.getPrototypeOf(this).valueChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RLineweightCombo.prototype = new RLineweightCombo_BaseJs(engine);
@@ -188,4 +193,5 @@ RLineweightCombo.AdjustToMinimumContentsLengthWithIcon = RLineweightCombo_Wrappe
       //RLineweightCombo.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RCharacterWidget);
+              
+                  copyProperties(this, wrapper, RCharacterWidget);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RCharacterWidget);
+            copyProperties(this, wrapper, RCharacterWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,16 +85,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["characterSelected(QString)"] = Object.getPrototypeOf(this).characterSelected;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RCharacterWidget.prototype = new RCharacterWidget_BaseJs(engine);
@@ -137,12 +142,12 @@
 
       // functions:
       
-        // function 
-        RCharacterWidget.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RCharacterWidget.prototype.actionEvent");
-          
+      // function 
+      RCharacterWidget.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: RCharacterWidget.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -150,7 +155,8 @@
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -166,8 +172,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -187,4 +193,5 @@
       //RCharacterWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RRestrictAngleLength);
+              
+                  copyProperties(this, wrapper, RRestrictAngleLength);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RRestrictAngleLength);
+            copyProperties(this, wrapper, RRestrictAngleLength);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RRestrictAngleLength);
+            copyProperties(this, wrapper, RRestrictAngleLength);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -109,12 +111,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RRestrictAngleLength.prototype = new RRestrictAngleLength_BaseJs(engine);
@@ -161,12 +161,12 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
 
       // functions:
       
-        // function 
-        RRestrictAngleLength.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RRestrictAngleLength.prototype.showUiOptions");
-          
+      // function 
+      RRestrictAngleLength.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RRestrictAngleLength.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -174,7 +174,8 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -190,14 +191,14 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RRestrictAngleLength.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RRestrictAngleLength.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RRestrictAngleLength.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RRestrictAngleLength.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -205,7 +206,8 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -221,8 +223,8 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -242,4 +244,5 @@ RRestrictAngleLength.AngleLength = RRestrictAngleLength_Wrapper.AngleLength;
       //RRestrictAngleLength.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

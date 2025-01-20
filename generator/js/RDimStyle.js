@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RDimStyle);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RDimStyle);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -76,8 +78,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RDimStyle);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -108,12 +110,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RDimStyle.prototype = new RDimStyle_BaseJs(engine);
@@ -158,6 +158,542 @@
 
       // functions:
       
+        // function 
+        RDimStyle.prototype.mustAlwaysClone = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.mustAlwaysClone");
+          return this.__PROXY__.mustAlwaysClone(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getDocument = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getDocument");
+          return this.__PROXY__.getDocument(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setDocument = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setDocument");
+          return this.__PROXY__.setDocument(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setFlag = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setFlag");
+          return this.__PROXY__.setFlag(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getFlag = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getFlag");
+          return this.__PROXY__.getFlag(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getId = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getId");
+          return this.__PROXY__.getId(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getHandle = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getHandle");
+          return this.__PROXY__.getHandle(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.isProtected = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.isProtected");
+          return this.__PROXY__.isProtected(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setProtected = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setProtected");
+          return this.__PROXY__.setProtected(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.isInvisible = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.isInvisible");
+          return this.__PROXY__.isInvisible(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setInvisible = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setInvisible");
+          return this.__PROXY__.setInvisible(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.isSelected = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.isSelected");
+          return this.__PROXY__.isSelected(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setSelected = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setSelected");
+          return this.__PROXY__.setSelected(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.isUndone = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.isUndone");
+          return this.__PROXY__.isUndone(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.isWorkingSet = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.isWorkingSet");
+          return this.__PROXY__.isWorkingSet(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setWorkingSet = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setWorkingSet");
+          return this.__PROXY__.setWorkingSet(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getPropertyTypeIds = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getPropertyTypeIds");
+          return this.__PROXY__.getPropertyTypeIds(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getCustomPropertyTypeIds = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getCustomPropertyTypeIds");
+          return this.__PROXY__.getCustomPropertyTypeIds(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.hasPropertyType = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.hasPropertyType");
+          return this.__PROXY__.hasPropertyType(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.hasCustomProperties = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.hasCustomProperties");
+          return this.__PROXY__.hasCustomProperties(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.hasCustomProperty = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.hasCustomProperty");
+          return this.__PROXY__.hasCustomProperty(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getCustomProperty = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getCustomProperty");
+          return this.__PROXY__.getCustomProperty(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getCustomDoubleProperty = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getCustomDoubleProperty");
+          return this.__PROXY__.getCustomDoubleProperty(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getCustomIntProperty = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getCustomIntProperty");
+          return this.__PROXY__.getCustomIntProperty(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getCustomBoolProperty = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getCustomBoolProperty");
+          return this.__PROXY__.getCustomBoolProperty(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setCustomProperty = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setCustomProperty");
+          return this.__PROXY__.setCustomProperty(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.removeCustomProperty = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.removeCustomProperty");
+          return this.__PROXY__.removeCustomProperty(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getCustomPropertyTitles = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getCustomPropertyTitles");
+          return this.__PROXY__.getCustomPropertyTitles(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getCustomPropertyKeys = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getCustomPropertyKeys");
+          return this.__PROXY__.getCustomPropertyKeys(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.copyCustomPropertiesFrom = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.copyCustomPropertiesFrom");
+          return this.__PROXY__.copyCustomPropertiesFrom(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getComplexity = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getComplexity");
+          return this.__PROXY__.getComplexity(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setAutoUpdatesBlocked = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setAutoUpdatesBlocked");
+          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.dump = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.dump");
+          return this.__PROXY__.dump(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.validate = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.validate");
+          return this.__PROXY__.validate(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.print = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.print");
+          return this.__PROXY__.print(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setUndone = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setUndone");
+          return this.__PROXY__.setUndone(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setId = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setId");
+          return this.__PROXY__.setId(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setHandle = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setHandle");
+          return this.__PROXY__.setHandle(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setMemberFlag = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setMemberFlag");
+          return this.__PROXY__.setMemberFlag(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.initFromSettings = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.initFromSettings");
+          return this.__PROXY__.initFromSettings(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.hasOverride = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.hasOverride");
+          return this.__PROXY__.hasOverride(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.isValid");
+          return this.__PROXY__.isValid(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.clear");
+          return this.__PROXY__.clear(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getVariant = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getVariant");
+          return this.__PROXY__.getVariant(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setVariant = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setVariant");
+          return this.__PROXY__.setVariant(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getDouble = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getDouble");
+          return this.__PROXY__.getDouble(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setDouble = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setDouble");
+          return this.__PROXY__.setDouble(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.removeDouble = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.removeDouble");
+          return this.__PROXY__.removeDouble(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getInt = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getInt");
+          return this.__PROXY__.getInt(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setInt = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setInt");
+          return this.__PROXY__.setInt(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.removeInt = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.removeInt");
+          return this.__PROXY__.removeInt(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getBool = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getBool");
+          return this.__PROXY__.getBool(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setBool = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setBool");
+          return this.__PROXY__.setBool(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.removeBool = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.removeBool");
+          return this.__PROXY__.removeBool(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getColor = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getColor");
+          return this.__PROXY__.getColor(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setColor = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setColor");
+          return this.__PROXY__.setColor(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.removeColor = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.removeColor");
+          return this.__PROXY__.removeColor(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.init = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.init");
+          return this.__PROXY__.init(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.initDimX = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.initDimX");
+          return this.__PROXY__.initDimX(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getRtti = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getRtti");
+          return this.__PROXY__.getRtti(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getType = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getType");
+          return this.__PROXY__.getType(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.clone");
+          return this.__PROXY__.clone(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.updateDocumentVariables = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.updateDocumentVariables");
+          return this.__PROXY__.updateDocumentVariables(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.updateFromDocumentVariables = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.updateFromDocumentVariables");
+          return this.__PROXY__.updateFromDocumentVariables(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.getProperty = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.getProperty");
+          return this.__PROXY__.getProperty(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.setProperty");
+          return this.__PROXY__.setProperty(...args);
+        };
+    
+        // function 
+        RDimStyle.prototype.hasProxy = function(...args) 
+          
+        {
+          //print("JS: RDimStyle.prototype.hasProxy");
+          return this.__PROXY__.hasProxy(...args);
+        };
+    
 
       // static functions:
       
@@ -307,4 +843,8 @@ RDimStyle.PropertyInvisible =
       //RDimStyle.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      RDimStyle.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

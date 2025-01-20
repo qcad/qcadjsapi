@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RCommandLine);
+              
+                  copyProperties(this, wrapper, RCommandLine);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RCommandLine);
+            copyProperties(this, wrapper, RCommandLine);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["textChanged(QString)"] = Object.getPrototypeOf(this).textChanged;
@@ -99,8 +100,12 @@
   
     this["completeCommand(QString)"] = Object.getPrototypeOf(this).completeCommand;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RCommandLine.prototype = new RCommandLine_BaseJs(engine);
@@ -178,4 +183,5 @@ RCommandLine.PasswordEchoOnEdit = RCommandLine_Wrapper.PasswordEchoOnEdit;
       //RCommandLine.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

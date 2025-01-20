@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RComboBox);
+              
+                  copyProperties(this, wrapper, RComboBox);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RComboBox);
+            copyProperties(this, wrapper, RComboBox);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["editTextChanged(QString)"] = Object.getPrototypeOf(this).editTextChanged;
@@ -103,8 +104,12 @@
   
     this["currentTextChanged(QString)"] = Object.getPrototypeOf(this).currentTextChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RComboBox.prototype = new RComboBox_BaseJs(engine);
@@ -186,4 +191,5 @@ RComboBox.AdjustToMinimumContentsLengthWithIcon = RComboBox_Wrapper.AdjustToMini
       //RComboBox.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

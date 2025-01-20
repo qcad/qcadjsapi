@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDimAngularData.h">
-  <class name="RDimAngularData" sharedpointer="true">
+  <class name="RDimAngularData" sharedpointer="true" proxy="true">
     <super_list>
       <super name="REntityData" />
       <super name="RDimensionData" />

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RTransaction);
+              
+                  copyProperties(this, wrapper, RTransaction);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RTransaction);
+            copyProperties(this, wrapper, RTransaction);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -77,8 +79,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RTransaction);
+            copyProperties(this, wrapper, RTransaction);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -103,8 +105,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RTransaction);
+            copyProperties(this, wrapper, RTransaction);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -135,12 +137,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RTransaction.prototype = new RTransaction_BaseJs(engine);
@@ -207,4 +207,5 @@ RTransaction.Redo = RTransaction_Wrapper.Redo;
       //RTransaction.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

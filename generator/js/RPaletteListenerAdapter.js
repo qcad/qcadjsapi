@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RPaletteListenerAdapter);
+              
+                  copyProperties(this, wrapper, RPaletteListenerAdapter);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RPaletteListenerAdapter);
+            copyProperties(this, wrapper, RPaletteListenerAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,15 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
+            }
+          
         }
+
+        
+
       }
 
       //RPaletteListenerAdapter.prototype = new RPaletteListenerAdapter_BaseJs(engine);
@@ -152,4 +157,5 @@
       //RPaletteListenerAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RCircleEntity.h">
   <class_decl name="RDocument" />
   <class_decl name="RExporter" />
-  <class name="RCircleEntity" ownership="cpp" sharedpointer="true">
+  <class name="RCircleEntity" ownership="cpp" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RObject" />
       <super name="REntity" downcast="true" />

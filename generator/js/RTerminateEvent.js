@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RTerminateEvent);
+              
+                  copyProperties(this, wrapper, RTerminateEvent);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RTerminateEvent);
+            copyProperties(this, wrapper, RTerminateEvent);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RTerminateEvent.prototype = new RTerminateEvent_BaseJs(engine);
@@ -321,4 +321,5 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
       //RTerminateEvent.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

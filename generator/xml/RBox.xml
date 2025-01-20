@@ -3,7 +3,7 @@
   <class_decl name="RLine" />
   <class_decl name="RTriangle" />
   <class_decl name="RPolyline" />
-  <class name="RBox">
+  <class name="RBox" proxy="true">
     <constructor>
       <variant>
         <parameters />

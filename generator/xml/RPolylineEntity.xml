@@ -4,7 +4,7 @@
   <class_decl name="RExporter" />
   <class_decl name="RArc" />
   <class_decl name="RLine" />
-  <class name="RPolylineEntity" ownership="cpp" sharedpointer="true">
+  <class name="RPolylineEntity" ownership="cpp" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RObject" />
       <super name="REntity" downcast="true" />

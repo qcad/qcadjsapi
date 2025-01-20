@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RDeleteObjectsOperation);
+              
+                  copyProperties(this, wrapper, RDeleteObjectsOperation);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RDeleteObjectsOperation);
+            copyProperties(this, wrapper, RDeleteObjectsOperation);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -78,8 +80,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RDeleteObjectsOperation);
+            copyProperties(this, wrapper, RDeleteObjectsOperation);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -110,12 +112,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RDeleteObjectsOperation.prototype = new RDeleteObjectsOperation_BaseJs(engine);
@@ -175,4 +175,5 @@
       //RDeleteObjectsOperation.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

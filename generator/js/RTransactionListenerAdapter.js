@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RTransactionListenerAdapter);
+              
+                  copyProperties(this, wrapper, RTransactionListenerAdapter);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RTransactionListenerAdapter);
+            copyProperties(this, wrapper, RTransactionListenerAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,16 +84,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["transactionUpdated(RDocument*,RTransaction*)"] = Object.getPrototypeOf(this).transactionUpdated;
   
     this["currentBlockSet(RDocument*)"] = Object.getPrototypeOf(this).currentBlockSet;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RTransactionListenerAdapter.prototype = new RTransactionListenerAdapter_BaseJs(engine);
@@ -155,4 +160,5 @@
       //RTransactionListenerAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

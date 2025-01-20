@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSnapIntersection);
+              
+                  copyProperties(this, wrapper, RSnapIntersection);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RSnapIntersection);
+            copyProperties(this, wrapper, RSnapIntersection);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSnapIntersection.prototype = new RSnapIntersection_BaseJs(engine);
@@ -145,12 +145,12 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
 
       // functions:
       
-        // function 
-        RSnapIntersection.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RSnapIntersection.prototype.showUiOptions");
-          
+      // function 
+      RSnapIntersection.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RSnapIntersection.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -158,7 +158,8 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -174,14 +175,14 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnapIntersection.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RSnapIntersection.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RSnapIntersection.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RSnapIntersection.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -189,7 +190,8 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -205,8 +207,8 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -226,4 +228,5 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
       //RSnapIntersection.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

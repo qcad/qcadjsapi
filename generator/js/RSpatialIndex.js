@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSpatialIndex);
+              
+                  copyProperties(this, wrapper, RSpatialIndex);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSpatialIndex.prototype = new RSpatialIndex_BaseJs(engine);
@@ -198,4 +198,5 @@
       //RSpatialIndex.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RTextRenderer);
+              
+                  copyProperties(this, wrapper, RTextRenderer);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RTextRenderer);
+            copyProperties(this, wrapper, RTextRenderer);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,12 +85,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RTextRenderer.prototype = new RTextRenderer_BaseJs(engine);
@@ -410,4 +410,5 @@ RTextRenderer.chDiameter =
       //RTextRenderer.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

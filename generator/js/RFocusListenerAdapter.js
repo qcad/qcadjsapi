@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RFocusListenerAdapter);
+              
+                  copyProperties(this, wrapper, RFocusListenerAdapter);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RFocusListenerAdapter);
+            copyProperties(this, wrapper, RFocusListenerAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,14 +84,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["focusUpdated(RDocumentInterface*)"] = Object.getPrototypeOf(this).focusUpdated;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RFocusListenerAdapter.prototype = new RFocusListenerAdapter_BaseJs(engine);
@@ -134,12 +139,12 @@
 
       // functions:
       
-        // function 
-        RFocusListenerAdapter.prototype.updateFocus = function() 
-          
-        {
-          //print("JS: RFocusListenerAdapter.prototype.updateFocus");
-          
+      // function 
+      RFocusListenerAdapter.prototype.updateFocus = function() 
+        
+      {
+        //print("JS: RFocusListenerAdapter.prototype.updateFocus");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -147,7 +152,8 @@
                 //return this.wrapper.updateFocus(
                 // call highest level JS implementation:
                 //return this.updateFocusBase(
-                return this.updateFocusSuper(
+                
+                    return this.updateFocusSuper(
                   arguments[0]
                 );
               
@@ -163,8 +169,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -184,4 +190,5 @@
       //RFocusListenerAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

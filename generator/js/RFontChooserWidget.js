@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RFontChooserWidget);
+              
+                  copyProperties(this, wrapper, RFontChooserWidget);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RFontChooserWidget);
+            copyProperties(this, wrapper, RFontChooserWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,16 +85,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["valueChanged(QFont)"] = Object.getPrototypeOf(this).valueChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RFontChooserWidget.prototype = new RFontChooserWidget_BaseJs(engine);
@@ -156,4 +161,5 @@
       //RFontChooserWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

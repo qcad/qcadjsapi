@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RPainterPathSource);
+              
+                  copyProperties(this, wrapper, RPainterPathSource);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RPainterPathSource.prototype = new RPainterPathSource_BaseJs(engine);
@@ -114,4 +114,5 @@
       //RPainterPathSource.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

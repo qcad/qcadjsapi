@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RListWidget);
+              
+                  copyProperties(this, wrapper, RListWidget);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RListWidget);
+            copyProperties(this, wrapper, RListWidget);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
@@ -121,8 +122,12 @@
   
     this["iconClicked(int,QListWidgetItem*)"] = Object.getPrototypeOf(this).iconClicked;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RListWidget.prototype = new RListWidget_BaseJs(engine);
@@ -269,12 +274,12 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
 
       // functions:
       
-        // function 
-        RListWidget.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RListWidget.prototype.actionEvent");
-          
+      // function 
+      RListWidget.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: RListWidget.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -282,7 +287,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -298,14 +304,14 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RListWidget.prototype.contextMenuEvent = function() 
-          
-        {
-          //print("JS: RListWidget.prototype.contextMenuEvent");
-          
+      };
+    
+      // function 
+      RListWidget.prototype.contextMenuEvent = function() 
+        
+      {
+        //print("JS: RListWidget.prototype.contextMenuEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -313,7 +319,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
                 //return this.wrapper.contextMenuEvent(
                 // call highest level JS implementation:
                 //return this.contextMenuEventBase(
-                return this.contextMenuEventSuper(
+                
+                    return this.contextMenuEventSuper(
                   arguments[0]
                 );
               
@@ -329,8 +336,8 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -350,4 +357,5 @@ RListWidget.IconMode = RListWidget_Wrapper.IconMode;
       //RListWidget.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

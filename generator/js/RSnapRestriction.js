@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSnapRestriction);
+              
+                  copyProperties(this, wrapper, RSnapRestriction);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSnapRestriction.prototype = new RSnapRestriction_BaseJs(engine);
@@ -95,12 +95,12 @@
 
       // functions:
       
-        // function 
-        RSnapRestriction.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RSnapRestriction.prototype.showUiOptions");
-          
+      // function 
+      RSnapRestriction.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RSnapRestriction.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -108,7 +108,8 @@
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -124,14 +125,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnapRestriction.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RSnapRestriction.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RSnapRestriction.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RSnapRestriction.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -139,7 +140,8 @@
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -155,8 +157,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -176,4 +178,5 @@
       //RSnapRestriction.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

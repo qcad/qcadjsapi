@@ -161,13 +161,13 @@
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
-QJSValue RLine_Wrapper::RLine_Wrapper_constructor
+RLine_Wrapper::RLine_Wrapper
                 
               (
                 
                   // RJSApi:
-                  //QObject* h
-                  //,
+                  QObject* h
+                  ,
   const QJSValue& 
   a1, 
   const QJSValue& 
@@ -178,7 +178,7 @@ QJSValue RLine_Wrapper::RLine_Wrapper_constructor
   a4
               ) 
               
-                //: RJSWrapperObj(*(RJSApi*)h)
+                : RJSWrapperObj(*(RJSApi*)h)
               
               {
                 
@@ -248,153 +248,153 @@ double a4_cpp;
         // TODO
         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
         initConnections();
-        return QJSValue();
+        return;
 
       
   }
 
       // check parameter types:
-//       if (
-//         RJSHelper_qcad::is_RVector(handler, a1
-//   )
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
 
-//    && RJSHelper::is_double(handler, a2
-//   )
+   && RJSHelper::is_double(handler, a2
+  )
 
-//    && RJSHelper::is_double(handler, a3
-//   )
+   && RJSHelper::is_double(handler, a3
+  )
 
   
-//       ) {
+      ) {
     
-//       // prepare parameters:
+      // prepare parameters:
     
-//   // convert js parameter to cpp: startPoint (RVector)
+  // convert js parameter to cpp: startPoint (RVector)
   
-// RVector a1_cpp;
+RVector a1_cpp;
 
-//       a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
         
-//   // convert js parameter to cpp: angle (double)
+  // convert js parameter to cpp: angle (double)
   
-// double a2_cpp;
+double a2_cpp;
 
-//       a2_cpp = RJSHelper::js2cpp_double(handler, a2);
+      a2_cpp = RJSHelper::js2cpp_double(handler, a2);
         
-//   // convert js parameter to cpp: distance (double)
+  // convert js parameter to cpp: distance (double)
   
-// double a3_cpp;
+double a3_cpp;
 
-//       a3_cpp = RJSHelper::js2cpp_double(handler, a3);
+      a3_cpp = RJSHelper::js2cpp_double(handler, a3);
         
 
-//     // call function:
+    // call function:
     
-//         // construct wrapper:
+        // construct wrapper:
 
         
-//               spWrapped = QSharedPointer<RLine>(new RLine(
-//                   a1_cpp
-//     , a2_cpp
-//     , a3_cpp
+              spWrapped = QSharedPointer<RLine>(new RLine(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
     
-//               ));
-//               wrappedCreated = true;
+              ));
+              wrappedCreated = true;
             
 
-//         // signal forwarding:
-//         // TODO
-//         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
-//         initConnections();
-//         return;
+        // signal forwarding:
+        // TODO
+        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
+        initConnections();
+        return;
 
       
-//   }
+  }
 
-//       // check parameter types:
-//       if (
-//         RJSHelper_qcad::is_RVector(handler, a1
-//   )
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
 
-//    && RJSHelper_qcad::is_RVector(handler, a2
-//   )
+   && RJSHelper_qcad::is_RVector(handler, a2
+  )
 
   
-//       ) {
+      ) {
     
-//       // prepare parameters:
+      // prepare parameters:
     
-//   // convert js parameter to cpp: startPoint (RVector)
+  // convert js parameter to cpp: startPoint (RVector)
   
-// RVector a1_cpp;
+RVector a1_cpp;
 
-//       a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
         
-//   // convert js parameter to cpp: endPoint (RVector)
+  // convert js parameter to cpp: endPoint (RVector)
   
-// RVector a2_cpp;
+RVector a2_cpp;
 
-//       a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
+      a2_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a2);
         
 
-//     // call function:
+    // call function:
     
-//         // construct wrapper:
+        // construct wrapper:
 
         
-//               spWrapped = QSharedPointer<RLine>(new RLine(
-//                   a1_cpp
-//     , a2_cpp
+              spWrapped = QSharedPointer<RLine>(new RLine(
+                  a1_cpp
+    , a2_cpp
     
-//               ));
-//               wrappedCreated = true;
+              ));
+              wrappedCreated = true;
             
 
-//         // signal forwarding:
-//         // TODO
-//         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
-//         initConnections();
-//         return;
+        // signal forwarding:
+        // TODO
+        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
+        initConnections();
+        return;
 
       
-//   }
+  }
 
-//       {
+      {
     
 
-//     // call function:
+    // call function:
     
-//         // construct wrapper:
+        // construct wrapper:
 
         
-//               spWrapped = QSharedPointer<RLine>(new RLine(
+              spWrapped = QSharedPointer<RLine>(new RLine(
                   
-//               ));
-//               wrappedCreated = true;
+              ));
+              wrappedCreated = true;
             
 
-//         // signal forwarding:
-//         // TODO
-//         //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
-//         initConnections();
-//         return;
+        // signal forwarding:
+        // TODO
+        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
+        initConnections();
+        return;
 
       
-//   }
+  }
 
-//                     // no constructor without arguments defined
-//                     // allow constructor for prototype objects without args:
-//                     if (
-//                       a1.isUndefined()
-//    && a2.isUndefined()
-//    && a3.isUndefined()
-//    && a4.isUndefined()
+                    // no constructor without arguments defined
+                    // allow constructor for prototype objects without args:
+                    if (
+                      a1.isUndefined()
+   && a2.isUndefined()
+   && a3.isUndefined()
+   && a4.isUndefined()
   
-//                       ) {
+                      ) {
                       
-//                       wrappedCreated = false;
-//                       return;
-//                     }
+                      wrappedCreated = false;
+                      return;
+                    }
                   
 
                   qWarning() << "no matching constructor variant found for RLine";

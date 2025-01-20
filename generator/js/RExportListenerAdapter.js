@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RExportListenerAdapter);
+              
+                  copyProperties(this, wrapper, RExportListenerAdapter);
+                
             //}
           }
           else {
@@ -53,18 +55,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["preExport(RDocumentInterface*)"] = Object.getPrototypeOf(this).preExport;
   
     this["postExport(RDocumentInterface*)"] = Object.getPrototypeOf(this).postExport;
   
     this["endOfExport(RExporter*)"] = Object.getPrototypeOf(this).endOfExport;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RExportListenerAdapter.prototype = new RExportListenerAdapter_BaseJs(engine);
@@ -128,4 +133,5 @@
       //RExportListenerAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

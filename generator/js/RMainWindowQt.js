@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RMainWindowQt);
+              
+                  copyProperties(this, wrapper, RMainWindowQt);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RMainWindowQt);
+            copyProperties(this, wrapper, RMainWindowQt);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
@@ -125,8 +126,12 @@
   
     this["toolBarContextMenu(QMenu*)"] = Object.getPrototypeOf(this).toolBarContextMenu;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RMainWindowQt.prototype = new RMainWindowQt_BaseJs(engine);
@@ -234,4 +239,5 @@ RMainWindowQt.GroupedDragging = RMainWindowQt_Wrapper.GroupedDragging;
       //RMainWindowQt.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

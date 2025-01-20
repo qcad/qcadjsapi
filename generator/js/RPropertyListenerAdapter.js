@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RPropertyListenerAdapter);
+              
+                  copyProperties(this, wrapper, RPropertyListenerAdapter);
+                
             //}
           }
           else {
@@ -53,16 +55,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["updatedFromDocument(RDocument*,bool,RS::EntityType,bool,bool)"] = Object.getPrototypeOf(this).updatedFromDocument;
   
     this["updatedFromObject(RObject*,RDocument*)"] = Object.getPrototypeOf(this).updatedFromObject;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RPropertyListenerAdapter.prototype = new RPropertyListenerAdapter_BaseJs(engine);
@@ -107,12 +112,12 @@
 
       // functions:
       
-        // function 
-        RPropertyListenerAdapter.prototype.updateFromDocument = function() 
-          
-        {
-          //print("JS: RPropertyListenerAdapter.prototype.updateFromDocument");
-          
+      // function 
+      RPropertyListenerAdapter.prototype.updateFromDocument = function() 
+        
+      {
+        //print("JS: RPropertyListenerAdapter.prototype.updateFromDocument");
+        
       if (arguments.length >= 2 &&
           arguments.length <= 5) {
     
@@ -121,7 +126,8 @@
                 //return this.wrapper.updateFromDocument(
                 // call highest level JS implementation:
                 //return this.updateFromDocumentBase(
-                return this.updateFromDocumentSuper(
+                
+                    return this.updateFromDocumentSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
                 );
               
@@ -137,14 +143,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RPropertyListenerAdapter.prototype.updateFromObject = function() 
-          
-        {
-          //print("JS: RPropertyListenerAdapter.prototype.updateFromObject");
-          
+      };
+    
+      // function 
+      RPropertyListenerAdapter.prototype.updateFromObject = function() 
+        
+      {
+        //print("JS: RPropertyListenerAdapter.prototype.updateFromObject");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -153,7 +159,8 @@
                 //return this.wrapper.updateFromObject(
                 // call highest level JS implementation:
                 //return this.updateFromObjectBase(
-                return this.updateFromObjectSuper(
+                
+                    return this.updateFromObjectSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -169,14 +176,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RPropertyListenerAdapter.prototype.clearEditor = function() 
-          
-        {
-          //print("JS: RPropertyListenerAdapter.prototype.clearEditor");
-          
+      };
+    
+      // function 
+      RPropertyListenerAdapter.prototype.clearEditor = function() 
+        
+      {
+        //print("JS: RPropertyListenerAdapter.prototype.clearEditor");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -184,7 +191,8 @@
                 //return this.wrapper.clearEditor(
                 // call highest level JS implementation:
                 //return this.clearEditorBase(
-                return this.clearEditorSuper(
+                
+                    return this.clearEditorSuper(
                   
                 );
               
@@ -200,8 +208,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -221,4 +229,5 @@
       //RPropertyListenerAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

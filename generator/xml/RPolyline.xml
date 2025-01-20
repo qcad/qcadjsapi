@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPolyline.h">
   <class_decl name="RBox" />
   <class_decl name="RLine" />
-  <class name="RPolyline" sharedpointer="true">
+  <class name="RPolyline" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RShape" downcast="true" />
       <super name="RExplodable" />

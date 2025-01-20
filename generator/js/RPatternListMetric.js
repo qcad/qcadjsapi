@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RPatternListMetric);
+              
+                  copyProperties(this, wrapper, RPatternListMetric);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RPatternListMetric.prototype = new RPatternListMetric_BaseJs(engine);
@@ -230,4 +230,5 @@
       //RPatternListMetric.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

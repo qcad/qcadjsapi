@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RFileExporter);
+              
+                  copyProperties(this, wrapper, RFileExporter);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RFileExporter.prototype = new RFileExporter_BaseJs(engine);
@@ -99,12 +99,12 @@
 
       // functions:
       
-        // function 
-        RFileExporter.prototype.getDocument = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.getDocument");
-          
+      // function 
+      RFileExporter.prototype.getDocument = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.getDocument");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -112,7 +112,8 @@
                 //return this.wrapper.getDocument(
                 // call highest level JS implementation:
                 //return this.getDocumentBase(
-                return this.getDocumentSuper(
+                
+                    return this.getDocumentSuper(
                   
                 );
               
@@ -128,14 +129,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.setColor = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.setColor");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.setColor = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.setColor");
+        
       if (arguments.length >= 3 &&
           arguments.length <= 4) {
     
@@ -144,7 +145,8 @@
                 //return this.wrapper.setColor(
                 // call highest level JS implementation:
                 //return this.setColorBase(
-                return this.setColorSuper(
+                
+                    return this.setColorSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3]
                 );
               
@@ -162,7 +164,8 @@
                 //return this.wrapper.setColor(
                 // call highest level JS implementation:
                 //return this.setColorBase(
-                return this.setColorSuper(
+                
+                    return this.setColorSuper(
                   arguments[0]
                 );
               
@@ -178,14 +181,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.setLineweight = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.setLineweight");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.setLineweight = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.setLineweight");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -193,7 +196,8 @@
                 //return this.wrapper.setLineweight(
                 // call highest level JS implementation:
                 //return this.setLineweightBase(
-                return this.setLineweightSuper(
+                
+                    return this.setLineweightSuper(
                   arguments[0]
                 );
               
@@ -209,14 +213,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.startExport = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.startExport");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.startExport = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.startExport");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -224,7 +228,8 @@
                 //return this.wrapper.startExport(
                 // call highest level JS implementation:
                 //return this.startExportBase(
-                return this.startExportSuper(
+                
+                    return this.startExportSuper(
                   
                 );
               
@@ -240,14 +245,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.endExport = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.endExport");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.endExport = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.endExport");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -255,7 +260,8 @@
                 //return this.wrapper.endExport(
                 // call highest level JS implementation:
                 //return this.endExportBase(
-                return this.endExportSuper(
+                
+                    return this.endExportSuper(
                   
                 );
               
@@ -271,14 +277,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportBlock = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportBlock");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportBlock = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportBlock");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -286,7 +292,8 @@
                 //return this.wrapper.exportBlock(
                 // call highest level JS implementation:
                 //return this.exportBlockBase(
-                return this.exportBlockSuper(
+                
+                    return this.exportBlockSuper(
                   arguments[0]
                 );
               
@@ -304,7 +311,8 @@
                 //return this.wrapper.exportBlock(
                 // call highest level JS implementation:
                 //return this.exportBlockBase(
-                return this.exportBlockSuper(
+                
+                    return this.exportBlockSuper(
                   arguments[0]
                 );
               
@@ -320,14 +328,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportEntities = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportEntities");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportEntities = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportEntities");
+        
       if (arguments.length >= 0 &&
           arguments.length <= 3) {
     
@@ -336,7 +344,8 @@
                 //return this.wrapper.exportEntities(
                 // call highest level JS implementation:
                 //return this.exportEntitiesBase(
-                return this.exportEntitiesSuper(
+                
+                    return this.exportEntitiesSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -352,14 +361,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.endEntity = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.endEntity");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.endEntity = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.endEntity");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -367,7 +376,8 @@
                 //return this.wrapper.endEntity(
                 // call highest level JS implementation:
                 //return this.endEntityBase(
-                return this.endEntitySuper(
+                
+                    return this.endEntitySuper(
                   
                 );
               
@@ -383,14 +393,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportCurrentEntity = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportCurrentEntity");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportCurrentEntity = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportCurrentEntity");
+        
       if (arguments.length >= 0 &&
           arguments.length <= 2) {
     
@@ -399,7 +409,8 @@
                 //return this.wrapper.exportCurrentEntity(
                 // call highest level JS implementation:
                 //return this.exportCurrentEntityBase(
-                return this.exportCurrentEntitySuper(
+                
+                    return this.exportCurrentEntitySuper(
                   arguments[0], arguments[1]
                 );
               
@@ -415,14 +426,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportShape = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportShape");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportShape = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportShape");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -430,7 +441,8 @@
                 //return this.wrapper.exportShape(
                 // call highest level JS implementation:
                 //return this.exportShapeBase(
-                return this.exportShapeSuper(
+                
+                    return this.exportShapeSuper(
                   arguments[0]
                 );
               
@@ -446,14 +458,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportLine = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportLine");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportLine = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportLine");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -462,7 +474,8 @@
                 //return this.wrapper.exportLine(
                 // call highest level JS implementation:
                 //return this.exportLineBase(
-                return this.exportLineSuper(
+                
+                    return this.exportLineSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -478,14 +491,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportLineSegment = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportLineSegment");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportLineSegment = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportLineSegment");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -494,7 +507,8 @@
                 //return this.wrapper.exportLineSegment(
                 // call highest level JS implementation:
                 //return this.exportLineSegmentBase(
-                return this.exportLineSegmentSuper(
+                
+                    return this.exportLineSegmentSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -510,14 +524,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportPoint = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportPoint");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportPoint = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportPoint");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -525,7 +539,8 @@
                 //return this.wrapper.exportPoint(
                 // call highest level JS implementation:
                 //return this.exportPointBase(
-                return this.exportPointSuper(
+                
+                    return this.exportPointSuper(
                   arguments[0]
                 );
               
@@ -541,14 +556,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportCircle = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportCircle");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportCircle = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportCircle");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -556,7 +571,8 @@
                 //return this.wrapper.exportCircle(
                 // call highest level JS implementation:
                 //return this.exportCircleBase(
-                return this.exportCircleSuper(
+                
+                    return this.exportCircleSuper(
                   arguments[0]
                 );
               
@@ -572,14 +588,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportArc = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportArc");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportArc = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportArc");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -588,7 +604,8 @@
                 //return this.wrapper.exportArc(
                 // call highest level JS implementation:
                 //return this.exportArcBase(
-                return this.exportArcSuper(
+                
+                    return this.exportArcSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -604,14 +621,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportArcSegment = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportArcSegment");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportArcSegment = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportArcSegment");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -620,7 +637,8 @@
                 //return this.wrapper.exportArcSegment(
                 // call highest level JS implementation:
                 //return this.exportArcSegmentBase(
-                return this.exportArcSegmentSuper(
+                
+                    return this.exportArcSegmentSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -636,14 +654,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportEllipse = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportEllipse");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportEllipse = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportEllipse");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -652,7 +670,8 @@
                 //return this.wrapper.exportEllipse(
                 // call highest level JS implementation:
                 //return this.exportEllipseBase(
-                return this.exportEllipseSuper(
+                
+                    return this.exportEllipseSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -668,14 +687,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportPolyline = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportPolyline");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportPolyline = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportPolyline");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 3) {
     
@@ -684,7 +703,8 @@
                 //return this.wrapper.exportPolyline(
                 // call highest level JS implementation:
                 //return this.exportPolylineBase(
-                return this.exportPolylineSuper(
+                
+                    return this.exportPolylineSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -700,14 +720,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportSpline = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportSpline");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportSpline = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportSpline");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -716,7 +736,8 @@
                 //return this.wrapper.exportSpline(
                 // call highest level JS implementation:
                 //return this.exportSplineBase(
-                return this.exportSplineSuper(
+                
+                    return this.exportSplineSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -732,14 +753,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportPainterPaths = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportPainterPaths");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportPainterPaths = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportPainterPaths");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -748,7 +769,8 @@
                 //return this.wrapper.exportPainterPaths(
                 // call highest level JS implementation:
                 //return this.exportPainterPathsBase(
-                return this.exportPainterPathsSuper(
+                
+                    return this.exportPainterPathsSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -764,14 +786,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportImage = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportImage");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportImage = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportImage");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -780,7 +802,8 @@
                 //return this.wrapper.exportImage(
                 // call highest level JS implementation:
                 //return this.exportImageBase(
-                return this.exportImageSuper(
+                
+                    return this.exportImageSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -796,14 +819,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportText = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportText");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportText = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportText");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -812,7 +835,8 @@
                 //return this.wrapper.exportText(
                 // call highest level JS implementation:
                 //return this.exportTextBase(
-                return this.exportTextSuper(
+                
+                    return this.exportTextSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -828,14 +852,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportTransform = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportTransform");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportTransform = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportTransform");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -843,7 +867,8 @@
                 //return this.wrapper.exportTransform(
                 // call highest level JS implementation:
                 //return this.exportTransformBase(
-                return this.exportTransformSuper(
+                
+                    return this.exportTransformSuper(
                   arguments[0]
                 );
               
@@ -859,14 +884,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportEndTransform = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportEndTransform");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportEndTransform = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportEndTransform");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -874,7 +899,8 @@
                 //return this.wrapper.exportEndTransform(
                 // call highest level JS implementation:
                 //return this.exportEndTransformBase(
-                return this.exportEndTransformSuper(
+                
+                    return this.exportEndTransformSuper(
                   
                 );
               
@@ -890,14 +916,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportTriangle = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportTriangle");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportTriangle = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportTriangle");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -905,7 +931,8 @@
                 //return this.wrapper.exportTriangle(
                 // call highest level JS implementation:
                 //return this.exportTriangleBase(
-                return this.exportTriangleSuper(
+                
+                    return this.exportTriangleSuper(
                   arguments[0]
                 );
               
@@ -921,14 +948,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.getLineTypePatternScale = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.getLineTypePatternScale");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.getLineTypePatternScale = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.getLineTypePatternScale");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -936,7 +963,8 @@
                 //return this.wrapper.getLineTypePatternScale(
                 // call highest level JS implementation:
                 //return this.getLineTypePatternScaleBase(
-                return this.getLineTypePatternScaleSuper(
+                
+                    return this.getLineTypePatternScaleSuper(
                   arguments[0]
                 );
               
@@ -952,14 +980,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.isTextRenderedAsText = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.isTextRenderedAsText");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.isTextRenderedAsText = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.isTextRenderedAsText");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -967,7 +995,8 @@
                 //return this.wrapper.isTextRenderedAsText(
                 // call highest level JS implementation:
                 //return this.isTextRenderedAsTextBase(
-                return this.isTextRenderedAsTextSuper(
+                
+                    return this.isTextRenderedAsTextSuper(
                   
                 );
               
@@ -983,14 +1012,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporter.prototype.exportFile = function() 
-          
-        {
-          //print("JS: RFileExporter.prototype.exportFile");
-          
+      };
+    
+      // function 
+      RFileExporter.prototype.exportFile = function() 
+        
+      {
+        //print("JS: RFileExporter.prototype.exportFile");
+        
       if (arguments.length >= 2 &&
           arguments.length <= 3) {
     
@@ -999,7 +1028,8 @@
                 //return this.wrapper.exportFile(
                 // call highest level JS implementation:
                 //return this.exportFileBase(
-                return this.exportFileSuper(
+                
+                    return this.exportFileSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -1015,8 +1045,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -1036,4 +1066,5 @@
       //RFileExporter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

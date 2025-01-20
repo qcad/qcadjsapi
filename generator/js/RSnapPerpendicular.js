@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSnapPerpendicular);
+              
+                  copyProperties(this, wrapper, RSnapPerpendicular);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RSnapPerpendicular);
+            copyProperties(this, wrapper, RSnapPerpendicular);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSnapPerpendicular.prototype = new RSnapPerpendicular_BaseJs(engine);
@@ -149,12 +149,12 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
 
       // functions:
       
-        // function 
-        RSnapPerpendicular.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RSnapPerpendicular.prototype.showUiOptions");
-          
+      // function 
+      RSnapPerpendicular.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RSnapPerpendicular.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -162,7 +162,8 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -178,14 +179,14 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnapPerpendicular.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RSnapPerpendicular.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RSnapPerpendicular.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RSnapPerpendicular.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -193,7 +194,8 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -209,8 +211,8 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -230,4 +232,5 @@ RSnapPerpendicular.CoordinatePolar = RSnapPerpendicular_Wrapper.CoordinatePolar;
       //RSnapPerpendicular.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

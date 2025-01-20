@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RToolMatrixItemDelegate);
+              
+                  copyProperties(this, wrapper, RToolMatrixItemDelegate);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RToolMatrixItemDelegate);
+            copyProperties(this, wrapper, RToolMatrixItemDelegate);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,18 +84,21 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["commitData(QWidget*)"] = Object.getPrototypeOf(this).commitData;
   
     this["closeEditor(QWidget*,QAbstractItemDelegate::EndEditHint)"] = Object.getPrototypeOf(this).closeEditor;
   
     this["sizeHintChanged(QModelIndex)"] = Object.getPrototypeOf(this).sizeHintChanged;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RToolMatrixItemDelegate.prototype = new RToolMatrixItemDelegate_BaseJs(engine);
@@ -168,4 +173,5 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
       //RToolMatrixItemDelegate.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

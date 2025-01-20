@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RDxfServices);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RDxfServices);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RDxfServices.prototype = new RDxfServices_BaseJs(engine);
@@ -131,6 +131,326 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
 
       // functions:
       
+        // function 
+        RDxfServices.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.reset");
+          return this.__PROXY__.reset(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getSafeBlockName = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getSafeBlockName");
+          return this.__PROXY__.getSafeBlockName(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.fixBlockName = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.fixBlockName");
+          return this.__PROXY__.fixBlockName(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.fixLayerName = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.fixLayerName");
+          return this.__PROXY__.fixLayerName(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.fixFontName = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.fixFontName");
+          return this.__PROXY__.fixFontName(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.fixVersion2String = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.fixVersion2String");
+          return this.__PROXY__.fixVersion2String(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.fixDimensionLabel = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.fixDimensionLabel");
+          return this.__PROXY__.fixDimensionLabel(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.detectVersion2Format = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.detectVersion2Format");
+          return this.__PROXY__.detectVersion2Format(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.hasDIMZIN = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.hasDIMZIN");
+          return this.__PROXY__.hasDIMZIN(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.hasDIMAZIN = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.hasDIMAZIN");
+          return this.__PROXY__.hasDIMAZIN(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.hasInvalidEllipse = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.hasInvalidEllipse");
+          return this.__PROXY__.hasInvalidEllipse(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getVersion2Compatibility = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getVersion2Compatibility");
+          return this.__PROXY__.getVersion2Compatibility(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getVersion3_1Compatibility = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getVersion3_1Compatibility");
+          return this.__PROXY__.getVersion3_1Compatibility(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getMajorVersion = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getMajorVersion");
+          return this.__PROXY__.getMajorVersion(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getMinorVersion = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getMinorVersion");
+          return this.__PROXY__.getMinorVersion(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getPatchVersion = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getPatchVersion");
+          return this.__PROXY__.getPatchVersion(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getVersion2LayerName = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getVersion2LayerName");
+          return this.__PROXY__.getVersion2LayerName(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getVersionBlockName = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getVersionBlockName");
+          return this.__PROXY__.getVersionBlockName(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getVersion2Font = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getVersion2Font");
+          return this.__PROXY__.getVersion2Font(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getVersion2DimensionLabel = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getVersion2DimensionLabel");
+          return this.__PROXY__.getVersion2DimensionLabel(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.collectVersion2Info = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.collectVersion2Info");
+          return this.__PROXY__.collectVersion2Info(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getVersion2PatternAngle = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getVersion2PatternAngle");
+          return this.__PROXY__.getVersion2PatternAngle(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getVersion2PatternScale = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getVersion2PatternScale");
+          return this.__PROXY__.getVersion2PatternScale(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getVersion2PatternName = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getVersion2PatternName");
+          return this.__PROXY__.getVersion2PatternName(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.fixVersion2HatchData = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.fixVersion2HatchData");
+          return this.__PROXY__.fixVersion2HatchData(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.numberToColor24 = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.numberToColor24");
+          return this.__PROXY__.numberToColor24(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.numberToWeight = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.numberToWeight");
+          return this.__PROXY__.numberToWeight(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.widthToNumber = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.widthToNumber");
+          return this.__PROXY__.widthToNumber(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.colorToNumber24 = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.colorToNumber24");
+          return this.__PROXY__.colorToNumber24(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.stringToVariable = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.stringToVariable");
+          return this.__PROXY__.stringToVariable(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.variableToString = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.variableToString");
+          return this.__PROXY__.variableToString(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getCodeForVariable = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getCodeForVariable");
+          return this.__PROXY__.getCodeForVariable(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getTypeForVariable = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getTypeForVariable");
+          return this.__PROXY__.getTypeForVariable(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.isVariable2D = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.isVariable2D");
+          return this.__PROXY__.isVariable2D(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.escapeUnicode = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.escapeUnicode");
+          return this.__PROXY__.escapeUnicode(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.parseUnicode = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.parseUnicode");
+          return this.__PROXY__.parseUnicode(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.autoFixLinetypePattern = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.autoFixLinetypePattern");
+          return this.__PROXY__.autoFixLinetypePattern(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getFileQCADVersion = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getFileQCADVersion");
+          return this.__PROXY__.getFileQCADVersion(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.initAci = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.initAci");
+          return this.__PROXY__.initAci(...args);
+        };
+    
+        // function 
+        RDxfServices.prototype.getAci = function(...args) 
+          
+        {
+          //print("JS: RDxfServices.prototype.getAci");
+          return this.__PROXY__.getAci(...args);
+        };
+    
 
       // static functions:
       
@@ -598,4 +918,8 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
       //RDxfServices.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      RDxfServices.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

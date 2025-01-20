@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSnapEntityBase);
+              
+                  copyProperties(this, wrapper, RSnapEntityBase);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSnapEntityBase.prototype = new RSnapEntityBase_BaseJs(engine);
@@ -116,12 +116,12 @@ RSnapEntityBase.CoordinatePolar = RSnapEntityBase_Wrapper.CoordinatePolar;
 
       // functions:
       
-        // function 
-        RSnapEntityBase.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RSnapEntityBase.prototype.showUiOptions");
-          
+      // function 
+      RSnapEntityBase.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RSnapEntityBase.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -129,7 +129,8 @@ RSnapEntityBase.CoordinatePolar = RSnapEntityBase_Wrapper.CoordinatePolar;
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -145,14 +146,14 @@ RSnapEntityBase.CoordinatePolar = RSnapEntityBase_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnapEntityBase.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RSnapEntityBase.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RSnapEntityBase.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RSnapEntityBase.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -160,7 +161,8 @@ RSnapEntityBase.CoordinatePolar = RSnapEntityBase_Wrapper.CoordinatePolar;
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -176,8 +178,8 @@ RSnapEntityBase.CoordinatePolar = RSnapEntityBase_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -197,4 +199,5 @@ RSnapEntityBase.CoordinatePolar = RSnapEntityBase_Wrapper.CoordinatePolar;
       //RSnapEntityBase.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

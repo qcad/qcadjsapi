@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RFileExporterFactoryAdapter);
+              
+                  copyProperties(this, wrapper, RFileExporterFactoryAdapter);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RFileExporterFactoryAdapter);
+            copyProperties(this, wrapper, RFileExporterFactoryAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RFileExporterFactoryAdapter.prototype = new RFileExporterFactoryAdapter_BaseJs(engine);
@@ -128,12 +128,12 @@
 
       // functions:
       
-        // function 
-        RFileExporterFactoryAdapter.prototype.getFilterStrings = function() 
-          
-        {
-          //print("JS: RFileExporterFactoryAdapter.prototype.getFilterStrings");
-          
+      // function 
+      RFileExporterFactoryAdapter.prototype.getFilterStrings = function() 
+        
+      {
+        //print("JS: RFileExporterFactoryAdapter.prototype.getFilterStrings");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -141,7 +141,8 @@
                 //return this.wrapper.getFilterStrings(
                 // call highest level JS implementation:
                 //return this.getFilterStringsBase(
-                return this.getFilterStringsSuper(
+                
+                    return this.getFilterStringsSuper(
                   
                 );
               
@@ -157,14 +158,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporterFactoryAdapter.prototype.canExport = function() 
-          
-        {
-          //print("JS: RFileExporterFactoryAdapter.prototype.canExport");
-          
+      };
+    
+      // function 
+      RFileExporterFactoryAdapter.prototype.canExport = function() 
+        
+      {
+        //print("JS: RFileExporterFactoryAdapter.prototype.canExport");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -173,7 +174,8 @@
                 //return this.wrapper.canExport(
                 // call highest level JS implementation:
                 //return this.canExportBase(
-                return this.canExportSuper(
+                
+                    return this.canExportSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -189,14 +191,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RFileExporterFactoryAdapter.prototype.instantiate = function() 
-          
-        {
-          //print("JS: RFileExporterFactoryAdapter.prototype.instantiate");
-          
+      };
+    
+      // function 
+      RFileExporterFactoryAdapter.prototype.instantiate = function() 
+        
+      {
+        //print("JS: RFileExporterFactoryAdapter.prototype.instantiate");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -204,7 +206,8 @@
                 //return this.wrapper.instantiate(
                 // call highest level JS implementation:
                 //return this.instantiateBase(
-                return this.instantiateSuper(
+                
+                    return this.instantiateSuper(
                   arguments[0]
                 );
               
@@ -220,8 +223,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -241,4 +244,5 @@
       //RFileExporterFactoryAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

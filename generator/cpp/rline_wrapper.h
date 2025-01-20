@@ -139,49 +139,26 @@ Ray = RLine::Ray,
         void initConnections();
       
 
+  // constructors:
+  
+    // Class: RLine
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 4
+    // preceding Parameters: -1
 
-
-
-
-              // ###
               public:
-              Q_INVOKABLE
+              Q_INVOKABLE 
               RLine_Wrapper
-
-              (
-                  // RJSApi:
-                      QObject* h) : RJSWrapperObj(*(RJSApi*)h) {
-
-                  // create NULL ptr wrapper
-
-              }
-
-
-
-
-
-
-              // constructors:
-
-              // Class: RLine
-              // Function:
-              // Source:
-              // Static: false
-              // Parameters: 4
-              // preceding Parameters: -1
-
-              public:
-              Q_INVOKABLE
-              QJSValue
-              RLine_Wrapper_constructor
                 
               (
 
                 
                   // RJSApi:
-                  //QObject* h
+                  QObject* h
                   
-                  //,
+                  ,
                   
   const QJSValue& 
   a1

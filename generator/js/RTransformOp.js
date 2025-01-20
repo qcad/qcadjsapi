@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RTransformOp);
+              
+                  copyProperties(this, wrapper, RTransformOp);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RTransformOp);
+            copyProperties(this, wrapper, RTransformOp);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RTransformOp.prototype = new RTransformOp_BaseJs(engine);
@@ -232,4 +232,5 @@ RTransformOp.Rotation = RTransformOp_Wrapper.Rotation;
       //RTransformOp.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

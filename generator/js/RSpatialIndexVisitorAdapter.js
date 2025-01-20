@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSpatialIndexVisitorAdapter);
+              
+                  copyProperties(this, wrapper, RSpatialIndexVisitorAdapter);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RSpatialIndexVisitorAdapter);
+            copyProperties(this, wrapper, RSpatialIndexVisitorAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSpatialIndexVisitorAdapter.prototype = new RSpatialIndexVisitorAdapter_BaseJs(engine);
@@ -128,12 +128,12 @@
 
       // functions:
       
-        // function 
-        RSpatialIndexVisitorAdapter.prototype.visitData = function() 
-          
-        {
-          //print("JS: RSpatialIndexVisitorAdapter.prototype.visitData");
-          
+      // function 
+      RSpatialIndexVisitorAdapter.prototype.visitData = function() 
+        
+      {
+        //print("JS: RSpatialIndexVisitorAdapter.prototype.visitData");
+        
       if (arguments.length == 8) {
     
                 // calling wrapper:
@@ -141,7 +141,8 @@
                 //return this.wrapper.visitData(
                 // call highest level JS implementation:
                 //return this.visitDataBase(
-                return this.visitDataSuper(
+                
+                    return this.visitDataSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6], arguments[7]
                 );
               
@@ -157,14 +158,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSpatialIndexVisitorAdapter.prototype.visitNode = function() 
-          
-        {
-          //print("JS: RSpatialIndexVisitorAdapter.prototype.visitNode");
-          
+      };
+    
+      // function 
+      RSpatialIndexVisitorAdapter.prototype.visitNode = function() 
+        
+      {
+        //print("JS: RSpatialIndexVisitorAdapter.prototype.visitNode");
+        
       if (arguments.length == 6) {
     
                 // calling wrapper:
@@ -172,7 +173,8 @@
                 //return this.wrapper.visitNode(
                 // call highest level JS implementation:
                 //return this.visitNodeBase(
-                return this.visitNodeSuper(
+                
+                    return this.visitNodeSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]
                 );
               
@@ -188,8 +190,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -209,4 +211,5 @@
       //RSpatialIndexVisitorAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

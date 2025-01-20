@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RGraphicsSceneQt);
+              
+                  copyProperties(this, wrapper, RGraphicsSceneQt);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RGraphicsSceneQt);
+            copyProperties(this, wrapper, RGraphicsSceneQt);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RGraphicsSceneQt.prototype = new RGraphicsSceneQt_BaseJs(engine);
@@ -132,12 +132,12 @@
 
       // functions:
       
-        // function 
-        RGraphicsSceneQt.prototype.getDocument = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.getDocument");
-          
+      // function 
+      RGraphicsSceneQt.prototype.getDocument = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.getDocument");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -145,7 +145,8 @@
                 //return this.wrapper.getDocument(
                 // call highest level JS implementation:
                 //return this.getDocumentBase(
-                return this.getDocumentSuper(
+                
+                    return this.getDocumentSuper(
                   
                 );
               
@@ -161,14 +162,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.setColor = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.setColor");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.setColor = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.setColor");
+        
       if (arguments.length >= 3 &&
           arguments.length <= 4) {
     
@@ -177,7 +178,8 @@
                 //return this.wrapper.setColor(
                 // call highest level JS implementation:
                 //return this.setColorBase(
-                return this.setColorSuper(
+                
+                    return this.setColorSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3]
                 );
               
@@ -195,7 +197,8 @@
                 //return this.wrapper.setColor(
                 // call highest level JS implementation:
                 //return this.setColorBase(
-                return this.setColorSuper(
+                
+                    return this.setColorSuper(
                   arguments[0]
                 );
               
@@ -211,14 +214,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.setLineweight = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.setLineweight");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.setLineweight = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.setLineweight");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -226,7 +229,8 @@
                 //return this.wrapper.setLineweight(
                 // call highest level JS implementation:
                 //return this.setLineweightBase(
-                return this.setLineweightSuper(
+                
+                    return this.setLineweightSuper(
                   arguments[0]
                 );
               
@@ -242,14 +246,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.startExport = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.startExport");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.startExport = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.startExport");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -257,7 +261,8 @@
                 //return this.wrapper.startExport(
                 // call highest level JS implementation:
                 //return this.startExportBase(
-                return this.startExportSuper(
+                
+                    return this.startExportSuper(
                   
                 );
               
@@ -273,14 +278,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.endExport = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.endExport");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.endExport = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.endExport");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -288,7 +293,8 @@
                 //return this.wrapper.endExport(
                 // call highest level JS implementation:
                 //return this.endExportBase(
-                return this.endExportSuper(
+                
+                    return this.endExportSuper(
                   
                 );
               
@@ -304,14 +310,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.exportBlock = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.exportBlock");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.exportBlock = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.exportBlock");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -319,7 +325,8 @@
                 //return this.wrapper.exportBlock(
                 // call highest level JS implementation:
                 //return this.exportBlockBase(
-                return this.exportBlockSuper(
+                
+                    return this.exportBlockSuper(
                   arguments[0]
                 );
               
@@ -337,7 +344,8 @@
                 //return this.wrapper.exportBlock(
                 // call highest level JS implementation:
                 //return this.exportBlockBase(
-                return this.exportBlockSuper(
+                
+                    return this.exportBlockSuper(
                   arguments[0]
                 );
               
@@ -353,14 +361,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.endEntity = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.endEntity");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.endEntity = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.endEntity");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -368,7 +376,8 @@
                 //return this.wrapper.endEntity(
                 // call highest level JS implementation:
                 //return this.endEntityBase(
-                return this.endEntitySuper(
+                
+                    return this.endEntitySuper(
                   
                 );
               
@@ -384,14 +393,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.exportShape = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.exportShape");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.exportShape = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.exportShape");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -399,7 +408,8 @@
                 //return this.wrapper.exportShape(
                 // call highest level JS implementation:
                 //return this.exportShapeBase(
-                return this.exportShapeSuper(
+                
+                    return this.exportShapeSuper(
                   arguments[0]
                 );
               
@@ -415,14 +425,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.exportCircle = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.exportCircle");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.exportCircle = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.exportCircle");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -430,7 +440,8 @@
                 //return this.wrapper.exportCircle(
                 // call highest level JS implementation:
                 //return this.exportCircleBase(
-                return this.exportCircleSuper(
+                
+                    return this.exportCircleSuper(
                   arguments[0]
                 );
               
@@ -446,14 +457,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.exportEllipse = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.exportEllipse");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.exportEllipse = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.exportEllipse");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -462,7 +473,8 @@
                 //return this.wrapper.exportEllipse(
                 // call highest level JS implementation:
                 //return this.exportEllipseBase(
-                return this.exportEllipseSuper(
+                
+                    return this.exportEllipseSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -478,14 +490,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.isTextRenderedAsText = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.isTextRenderedAsText");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.isTextRenderedAsText = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.isTextRenderedAsText");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -493,7 +505,8 @@
                 //return this.wrapper.isTextRenderedAsText(
                 // call highest level JS implementation:
                 //return this.isTextRenderedAsTextBase(
-                return this.isTextRenderedAsTextSuper(
+                
+                    return this.isTextRenderedAsTextSuper(
                   
                 );
               
@@ -509,14 +522,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsSceneQt.prototype.exportCurrentEntity = function() 
-          
-        {
-          //print("JS: RGraphicsSceneQt.prototype.exportCurrentEntity");
-          
+      };
+    
+      // function 
+      RGraphicsSceneQt.prototype.exportCurrentEntity = function() 
+        
+      {
+        //print("JS: RGraphicsSceneQt.prototype.exportCurrentEntity");
+        
       if (arguments.length >= 0 &&
           arguments.length <= 2) {
     
@@ -525,7 +538,8 @@
                 //return this.wrapper.exportCurrentEntity(
                 // call highest level JS implementation:
                 //return this.exportCurrentEntityBase(
-                return this.exportCurrentEntitySuper(
+                
+                    return this.exportCurrentEntitySuper(
                   arguments[0], arguments[1]
                 );
               
@@ -541,8 +555,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -562,4 +576,5 @@
       //RGraphicsSceneQt.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

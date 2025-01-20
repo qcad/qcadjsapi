@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RPreferencesListenerAdapter);
+              
+                  copyProperties(this, wrapper, RPreferencesListenerAdapter);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RPreferencesListenerAdapter);
+            copyProperties(this, wrapper, RPreferencesListenerAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,14 +84,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["preferencesUpdated(RDocumentInterface*)"] = Object.getPrototypeOf(this).preferencesUpdated;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RPreferencesListenerAdapter.prototype = new RPreferencesListenerAdapter_BaseJs(engine);
@@ -153,4 +158,5 @@
       //RPreferencesListenerAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

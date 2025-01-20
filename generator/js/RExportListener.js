@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RExportListener);
+              
+                  copyProperties(this, wrapper, RExportListener);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RExportListener.prototype = new RExportListener_BaseJs(engine);
@@ -114,4 +114,5 @@
       //RExportListener.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

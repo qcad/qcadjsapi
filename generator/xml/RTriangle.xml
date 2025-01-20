@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RTriangle.h">
   <class_decl name="RBox" />
   <class_decl name="RLine" />
-  <class name="RTriangle" sharedpointer="true">
+  <class name="RTriangle" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RShape" downcast="true" />
       <super name="RExplodable" />

@@ -3,7 +3,7 @@
 xmlns:qc="http://qcad.org/namespaces/xsl" filename="REllipseEntity.h">
   <class_decl name="RDocument" />
   <class_decl name="RExporter" />
-  <class name="REllipseEntity" ownership="cpp" sharedpointer="true">
+  <class name="REllipseEntity" ownership="cpp" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RObject" />
       <super name="REntity" downcast="true" />

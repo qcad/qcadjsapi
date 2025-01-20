@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLeaderData.h">
-  <class name="RLeaderData">
+  <class name="RLeaderData" proxy="true">
     <super_list>
       <super name="REntityData" />
       <super name="RPolyline" />

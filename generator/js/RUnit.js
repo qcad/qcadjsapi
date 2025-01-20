@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RUnit);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RUnit);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RUnit.prototype = new RUnit_BaseJs(engine);
@@ -124,6 +124,134 @@
 
       // functions:
       
+        // function 
+        RUnit.prototype.formatLinear = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.formatLinear");
+          return this.__PROXY__.formatLinear(...args);
+        };
+    
+        // function 
+        RUnit.prototype.formatScientific = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.formatScientific");
+          return this.__PROXY__.formatScientific(...args);
+        };
+    
+        // function 
+        RUnit.prototype.formatDecimal = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.formatDecimal");
+          return this.__PROXY__.formatDecimal(...args);
+        };
+    
+        // function 
+        RUnit.prototype.formatEngineering = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.formatEngineering");
+          return this.__PROXY__.formatEngineering(...args);
+        };
+    
+        // function 
+        RUnit.prototype.formatArchitectural = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.formatArchitectural");
+          return this.__PROXY__.formatArchitectural(...args);
+        };
+    
+        // function 
+        RUnit.prototype.formatFractional = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.formatFractional");
+          return this.__PROXY__.formatFractional(...args);
+        };
+    
+        // function 
+        RUnit.prototype.formatAngle = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.formatAngle");
+          return this.__PROXY__.formatAngle(...args);
+        };
+    
+        // function 
+        RUnit.prototype.isMetric = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.isMetric");
+          return this.__PROXY__.isMetric(...args);
+        };
+    
+        // function 
+        RUnit.prototype.convert = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.convert");
+          return this.__PROXY__.convert(...args);
+        };
+    
+        // function 
+        RUnit.prototype.getFactorToM = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.getFactorToM");
+          return this.__PROXY__.getFactorToM(...args);
+        };
+    
+        // function 
+        RUnit.prototype.parseUnit = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.parseUnit");
+          return this.__PROXY__.parseUnit(...args);
+        };
+    
+        // function 
+        RUnit.prototype.unitToSymbol = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.unitToSymbol");
+          return this.__PROXY__.unitToSymbol(...args);
+        };
+    
+        // function 
+        RUnit.prototype.unitToName = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.unitToName");
+          return this.__PROXY__.unitToName(...args);
+        };
+    
+        // function 
+        RUnit.prototype.getLabel = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.getLabel");
+          return this.__PROXY__.getLabel(...args);
+        };
+    
+        // function 
+        RUnit.prototype.doubleToString = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.doubleToString");
+          return this.__PROXY__.doubleToString(...args);
+        };
+    
+        // function 
+        RUnit.prototype.doubleToStringDec = function(...args) 
+          
+        {
+          //print("JS: RUnit.prototype.doubleToStringDec");
+          return this.__PROXY__.doubleToStringDec(...args);
+        };
+    
 
       // static functions:
       
@@ -632,4 +760,8 @@
       //RUnit.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      RUnit.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

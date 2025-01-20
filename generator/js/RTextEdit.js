@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RTextEdit);
+              
+                  copyProperties(this, wrapper, RTextEdit);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RTextEdit);
+            copyProperties(this, wrapper, RTextEdit);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,10 +84,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["undoAvailable(bool)"] = Object.getPrototypeOf(this).undoAvailable;
@@ -106,8 +107,12 @@
   
     this["anchorClicked(QUrl)"] = Object.getPrototypeOf(this).anchorClicked;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RTextEdit.prototype = new RTextEdit_BaseJs(engine);
@@ -202,12 +207,12 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
 
       // functions:
       
-        // function 
-        RTextEdit.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RTextEdit.prototype.actionEvent");
-          
+      // function 
+      RTextEdit.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: RTextEdit.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -215,7 +220,8 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -231,8 +237,8 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -252,4 +258,5 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
       //RTextEdit.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

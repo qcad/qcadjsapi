@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RViewListenerAdapter);
+              
+                  copyProperties(this, wrapper, RViewListenerAdapter);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RViewListenerAdapter);
+            copyProperties(this, wrapper, RViewListenerAdapter);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,14 +85,17 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["viewsUpdated(RDocumentInterface*)"] = Object.getPrototypeOf(this).viewsUpdated;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RViewListenerAdapter.prototype = new RViewListenerAdapter_BaseJs(engine);
@@ -154,4 +159,5 @@
       //RViewListenerAdapter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

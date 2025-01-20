@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RExporter);
+              
+                  copyProperties(this, wrapper, RExporter);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RExporter.prototype = new RExporter_BaseJs(engine);
@@ -95,12 +95,12 @@
 
       // functions:
       
-        // function 
-        RExporter.prototype.getDocument = function() 
-          
-        {
-          //print("JS: RExporter.prototype.getDocument");
-          
+      // function 
+      RExporter.prototype.getDocument = function() 
+        
+      {
+        //print("JS: RExporter.prototype.getDocument");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -108,7 +108,8 @@
                 //return this.wrapper.getDocument(
                 // call highest level JS implementation:
                 //return this.getDocumentBase(
-                return this.getDocumentSuper(
+                
+                    return this.getDocumentSuper(
                   
                 );
               
@@ -124,14 +125,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.setColor = function() 
-          
-        {
-          //print("JS: RExporter.prototype.setColor");
-          
+      };
+    
+      // function 
+      RExporter.prototype.setColor = function() 
+        
+      {
+        //print("JS: RExporter.prototype.setColor");
+        
       if (arguments.length >= 3 &&
           arguments.length <= 4) {
     
@@ -140,7 +141,8 @@
                 //return this.wrapper.setColor(
                 // call highest level JS implementation:
                 //return this.setColorBase(
-                return this.setColorSuper(
+                
+                    return this.setColorSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3]
                 );
               
@@ -158,7 +160,8 @@
                 //return this.wrapper.setColor(
                 // call highest level JS implementation:
                 //return this.setColorBase(
-                return this.setColorSuper(
+                
+                    return this.setColorSuper(
                   arguments[0]
                 );
               
@@ -174,14 +177,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.setLineweight = function() 
-          
-        {
-          //print("JS: RExporter.prototype.setLineweight");
-          
+      };
+    
+      // function 
+      RExporter.prototype.setLineweight = function() 
+        
+      {
+        //print("JS: RExporter.prototype.setLineweight");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -189,7 +192,8 @@
                 //return this.wrapper.setLineweight(
                 // call highest level JS implementation:
                 //return this.setLineweightBase(
-                return this.setLineweightSuper(
+                
+                    return this.setLineweightSuper(
                   arguments[0]
                 );
               
@@ -205,14 +209,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.startExport = function() 
-          
-        {
-          //print("JS: RExporter.prototype.startExport");
-          
+      };
+    
+      // function 
+      RExporter.prototype.startExport = function() 
+        
+      {
+        //print("JS: RExporter.prototype.startExport");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -220,7 +224,8 @@
                 //return this.wrapper.startExport(
                 // call highest level JS implementation:
                 //return this.startExportBase(
-                return this.startExportSuper(
+                
+                    return this.startExportSuper(
                   
                 );
               
@@ -236,14 +241,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.endExport = function() 
-          
-        {
-          //print("JS: RExporter.prototype.endExport");
-          
+      };
+    
+      // function 
+      RExporter.prototype.endExport = function() 
+        
+      {
+        //print("JS: RExporter.prototype.endExport");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -251,7 +256,8 @@
                 //return this.wrapper.endExport(
                 // call highest level JS implementation:
                 //return this.endExportBase(
-                return this.endExportSuper(
+                
+                    return this.endExportSuper(
                   
                 );
               
@@ -267,14 +273,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportBlock = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportBlock");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportBlock = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportBlock");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -282,7 +288,8 @@
                 //return this.wrapper.exportBlock(
                 // call highest level JS implementation:
                 //return this.exportBlockBase(
-                return this.exportBlockSuper(
+                
+                    return this.exportBlockSuper(
                   arguments[0]
                 );
               
@@ -300,7 +307,8 @@
                 //return this.wrapper.exportBlock(
                 // call highest level JS implementation:
                 //return this.exportBlockBase(
-                return this.exportBlockSuper(
+                
+                    return this.exportBlockSuper(
                   arguments[0]
                 );
               
@@ -316,14 +324,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportEntities = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportEntities");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportEntities = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportEntities");
+        
       if (arguments.length >= 0 &&
           arguments.length <= 3) {
     
@@ -332,7 +340,8 @@
                 //return this.wrapper.exportEntities(
                 // call highest level JS implementation:
                 //return this.exportEntitiesBase(
-                return this.exportEntitiesSuper(
+                
+                    return this.exportEntitiesSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -348,14 +357,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.endEntity = function() 
-          
-        {
-          //print("JS: RExporter.prototype.endEntity");
-          
+      };
+    
+      // function 
+      RExporter.prototype.endEntity = function() 
+        
+      {
+        //print("JS: RExporter.prototype.endEntity");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -363,7 +372,8 @@
                 //return this.wrapper.endEntity(
                 // call highest level JS implementation:
                 //return this.endEntityBase(
-                return this.endEntitySuper(
+                
+                    return this.endEntitySuper(
                   
                 );
               
@@ -379,14 +389,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportCurrentEntity = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportCurrentEntity");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportCurrentEntity = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportCurrentEntity");
+        
       if (arguments.length >= 0 &&
           arguments.length <= 2) {
     
@@ -395,7 +405,8 @@
                 //return this.wrapper.exportCurrentEntity(
                 // call highest level JS implementation:
                 //return this.exportCurrentEntityBase(
-                return this.exportCurrentEntitySuper(
+                
+                    return this.exportCurrentEntitySuper(
                   arguments[0], arguments[1]
                 );
               
@@ -411,14 +422,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportShape = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportShape");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportShape = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportShape");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -426,7 +437,8 @@
                 //return this.wrapper.exportShape(
                 // call highest level JS implementation:
                 //return this.exportShapeBase(
-                return this.exportShapeSuper(
+                
+                    return this.exportShapeSuper(
                   arguments[0]
                 );
               
@@ -442,14 +454,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportLine = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportLine");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportLine = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportLine");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -458,7 +470,8 @@
                 //return this.wrapper.exportLine(
                 // call highest level JS implementation:
                 //return this.exportLineBase(
-                return this.exportLineSuper(
+                
+                    return this.exportLineSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -474,14 +487,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportLineSegment = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportLineSegment");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportLineSegment = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportLineSegment");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -490,7 +503,8 @@
                 //return this.wrapper.exportLineSegment(
                 // call highest level JS implementation:
                 //return this.exportLineSegmentBase(
-                return this.exportLineSegmentSuper(
+                
+                    return this.exportLineSegmentSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -506,14 +520,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportPoint = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportPoint");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportPoint = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportPoint");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -521,7 +535,8 @@
                 //return this.wrapper.exportPoint(
                 // call highest level JS implementation:
                 //return this.exportPointBase(
-                return this.exportPointSuper(
+                
+                    return this.exportPointSuper(
                   arguments[0]
                 );
               
@@ -537,14 +552,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportCircle = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportCircle");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportCircle = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportCircle");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -552,7 +567,8 @@
                 //return this.wrapper.exportCircle(
                 // call highest level JS implementation:
                 //return this.exportCircleBase(
-                return this.exportCircleSuper(
+                
+                    return this.exportCircleSuper(
                   arguments[0]
                 );
               
@@ -568,14 +584,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportArc = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportArc");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportArc = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportArc");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -584,7 +600,8 @@
                 //return this.wrapper.exportArc(
                 // call highest level JS implementation:
                 //return this.exportArcBase(
-                return this.exportArcSuper(
+                
+                    return this.exportArcSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -600,14 +617,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportArcSegment = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportArcSegment");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportArcSegment = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportArcSegment");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -616,7 +633,8 @@
                 //return this.wrapper.exportArcSegment(
                 // call highest level JS implementation:
                 //return this.exportArcSegmentBase(
-                return this.exportArcSegmentSuper(
+                
+                    return this.exportArcSegmentSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -632,14 +650,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportEllipse = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportEllipse");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportEllipse = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportEllipse");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -648,7 +666,8 @@
                 //return this.wrapper.exportEllipse(
                 // call highest level JS implementation:
                 //return this.exportEllipseBase(
-                return this.exportEllipseSuper(
+                
+                    return this.exportEllipseSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -664,14 +683,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportPolyline = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportPolyline");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportPolyline = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportPolyline");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 3) {
     
@@ -680,7 +699,8 @@
                 //return this.wrapper.exportPolyline(
                 // call highest level JS implementation:
                 //return this.exportPolylineBase(
-                return this.exportPolylineSuper(
+                
+                    return this.exportPolylineSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -696,14 +716,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportSpline = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportSpline");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportSpline = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportSpline");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -712,7 +732,8 @@
                 //return this.wrapper.exportSpline(
                 // call highest level JS implementation:
                 //return this.exportSplineBase(
-                return this.exportSplineSuper(
+                
+                    return this.exportSplineSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -728,14 +749,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportPainterPaths = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportPainterPaths");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportPainterPaths = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportPainterPaths");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -744,7 +765,8 @@
                 //return this.wrapper.exportPainterPaths(
                 // call highest level JS implementation:
                 //return this.exportPainterPathsBase(
-                return this.exportPainterPathsSuper(
+                
+                    return this.exportPainterPathsSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -760,14 +782,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportImage = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportImage");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportImage = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportImage");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -776,7 +798,8 @@
                 //return this.wrapper.exportImage(
                 // call highest level JS implementation:
                 //return this.exportImageBase(
-                return this.exportImageSuper(
+                
+                    return this.exportImageSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -792,14 +815,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportText = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportText");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportText = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportText");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -808,7 +831,8 @@
                 //return this.wrapper.exportText(
                 // call highest level JS implementation:
                 //return this.exportTextBase(
-                return this.exportTextSuper(
+                
+                    return this.exportTextSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -824,14 +848,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportTransform = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportTransform");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportTransform = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportTransform");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -839,7 +863,8 @@
                 //return this.wrapper.exportTransform(
                 // call highest level JS implementation:
                 //return this.exportTransformBase(
-                return this.exportTransformSuper(
+                
+                    return this.exportTransformSuper(
                   arguments[0]
                 );
               
@@ -855,14 +880,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportEndTransform = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportEndTransform");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportEndTransform = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportEndTransform");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -870,7 +895,8 @@
                 //return this.wrapper.exportEndTransform(
                 // call highest level JS implementation:
                 //return this.exportEndTransformBase(
-                return this.exportEndTransformSuper(
+                
+                    return this.exportEndTransformSuper(
                   
                 );
               
@@ -886,14 +912,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.exportTriangle = function() 
-          
-        {
-          //print("JS: RExporter.prototype.exportTriangle");
-          
+      };
+    
+      // function 
+      RExporter.prototype.exportTriangle = function() 
+        
+      {
+        //print("JS: RExporter.prototype.exportTriangle");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -901,7 +927,8 @@
                 //return this.wrapper.exportTriangle(
                 // call highest level JS implementation:
                 //return this.exportTriangleBase(
-                return this.exportTriangleSuper(
+                
+                    return this.exportTriangleSuper(
                   arguments[0]
                 );
               
@@ -917,14 +944,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.getLineTypePatternScale = function() 
-          
-        {
-          //print("JS: RExporter.prototype.getLineTypePatternScale");
-          
+      };
+    
+      // function 
+      RExporter.prototype.getLineTypePatternScale = function() 
+        
+      {
+        //print("JS: RExporter.prototype.getLineTypePatternScale");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -932,7 +959,8 @@
                 //return this.wrapper.getLineTypePatternScale(
                 // call highest level JS implementation:
                 //return this.getLineTypePatternScaleBase(
-                return this.getLineTypePatternScaleSuper(
+                
+                    return this.getLineTypePatternScaleSuper(
                   arguments[0]
                 );
               
@@ -948,14 +976,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RExporter.prototype.isTextRenderedAsText = function() 
-          
-        {
-          //print("JS: RExporter.prototype.isTextRenderedAsText");
-          
+      };
+    
+      // function 
+      RExporter.prototype.isTextRenderedAsText = function() 
+        
+      {
+        //print("JS: RExporter.prototype.isTextRenderedAsText");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -963,7 +991,8 @@
                 //return this.wrapper.isTextRenderedAsText(
                 // call highest level JS implementation:
                 //return this.isTextRenderedAsTextBase(
-                return this.isTextRenderedAsTextSuper(
+                
+                    return this.isTextRenderedAsTextSuper(
                   
                 );
               
@@ -979,8 +1008,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -1000,4 +1029,5 @@
       //RExporter.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RDocument.h">
   <class_decl name="RVector" />
   <class_decl name="RStorage" />
-  <class name="RDocument" ownership="cpp">
+  <class name="RDocument" ownership="cpp" proxy="true">
     <!--
     <super_list>
       <super name="RRequireHeap" />

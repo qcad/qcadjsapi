@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RFileSystemModel);
+              
+                  copyProperties(this, wrapper, RFileSystemModel);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RFileSystemModel);
+            copyProperties(this, wrapper, RFileSystemModel);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,16 +85,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["headerDataChanged(Qt::Orientation,int,int)"] = Object.getPrototypeOf(this).headerDataChanged;
   
     this["rowsInserted(QModelIndex,int,int)"] = Object.getPrototypeOf(this).rowsInserted;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RFileSystemModel.prototype = new RFileSystemModel_BaseJs(engine);
@@ -176,4 +181,5 @@ RFileSystemModel.DontUseCustomDirectoryIcons = RFileSystemModel_Wrapper.DontUseC
       //RFileSystemModel.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

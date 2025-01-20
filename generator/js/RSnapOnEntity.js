@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSnapOnEntity);
+              
+                  this.__PROXY__ = wrapper;
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RSnapOnEntity);
+            this.__PROXY__ = wrapper;
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSnapOnEntity.prototype = new RSnapOnEntity_BaseJs(engine);
@@ -149,12 +149,12 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
 
       // functions:
       
-        // function 
-        RSnapOnEntity.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RSnapOnEntity.prototype.showUiOptions");
-          
+      // function 
+      RSnapOnEntity.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RSnapOnEntity.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -162,7 +162,8 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.__PROXY__.showUiOptionsSuper(
                   
                 );
               
@@ -178,14 +179,14 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnapOnEntity.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RSnapOnEntity.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RSnapOnEntity.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RSnapOnEntity.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -193,7 +194,8 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.__PROXY__.hideUiOptionsSuper(
                   
                 );
               
@@ -209,8 +211,80 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
     console.trace();
   }
   
+      };
+    
+        // function 
+        RSnapOnEntity.prototype.suspendEvent = function(...args) 
+          
+        {
+          //print("JS: RSnapOnEntity.prototype.suspendEvent");
+          return this.__PROXY__.suspendEvent(...args);
         };
-      
+    
+        // function 
+        RSnapOnEntity.prototype.finishEvent = function(...args) 
+          
+        {
+          //print("JS: RSnapOnEntity.prototype.finishEvent");
+          return this.__PROXY__.finishEvent(...args);
+        };
+    
+        // function 
+        RSnapOnEntity.prototype.getEntityIds = function(...args) 
+          
+        {
+          //print("JS: RSnapOnEntity.prototype.getEntityIds");
+          return this.__PROXY__.getEntityIds(...args);
+        };
+    
+        // function 
+        RSnapOnEntity.prototype.getStatus = function(...args) 
+          
+        {
+          //print("JS: RSnapOnEntity.prototype.getStatus");
+          return this.__PROXY__.getStatus(...args);
+        };
+    
+        // function 
+        RSnapOnEntity.prototype.setStatus = function(...args) 
+          
+        {
+          //print("JS: RSnapOnEntity.prototype.setStatus");
+          return this.__PROXY__.setStatus(...args);
+        };
+    
+        // function 
+        RSnapOnEntity.prototype.getLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapOnEntity.prototype.getLastSnap");
+          return this.__PROXY__.getLastSnap(...args);
+        };
+    
+        // function 
+        RSnapOnEntity.prototype.setLastSnap = function(...args) 
+          
+        {
+          //print("JS: RSnapOnEntity.prototype.setLastSnap");
+          return this.__PROXY__.setLastSnap(...args);
+        };
+    
+        // function 
+        RSnapOnEntity.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RSnapOnEntity.prototype.reset");
+          return this.__PROXY__.reset(...args);
+        };
+    
+        // function 
+        RSnapOnEntity.prototype.snap = function(...args) 
+          
+        {
+          //print("JS: RSnapOnEntity.prototype.snap");
+          return this.__PROXY__.snap(...args);
+        };
+    
 
       // static functions:
       
@@ -230,4 +304,8 @@ RSnapOnEntity.CoordinatePolar = RSnapOnEntity_Wrapper.CoordinatePolar;
       //RSnapOnEntity.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      RSnapOnEntity.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
+      

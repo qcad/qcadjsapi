@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSnapAuto);
+              
+                  copyProperties(this, wrapper, RSnapAuto);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RSnapAuto);
+            copyProperties(this, wrapper, RSnapAuto);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSnapAuto.prototype = new RSnapAuto_BaseJs(engine);
@@ -158,12 +158,12 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
 
       // functions:
       
-        // function 
-        RSnapAuto.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RSnapAuto.prototype.showUiOptions");
-          
+      // function 
+      RSnapAuto.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RSnapAuto.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -171,7 +171,8 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -187,14 +188,14 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnapAuto.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RSnapAuto.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RSnapAuto.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RSnapAuto.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -202,7 +203,8 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -218,8 +220,8 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -940,4 +942,5 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
       //RSnapAuto.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

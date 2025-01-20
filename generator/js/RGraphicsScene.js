@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RGraphicsScene);
+              
+                  copyProperties(this, wrapper, RGraphicsScene);
+                
             //}
           }
           else {
@@ -53,12 +55,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RGraphicsScene.prototype = new RGraphicsScene_BaseJs(engine);
@@ -99,12 +99,12 @@
 
       // functions:
       
-        // function 
-        RGraphicsScene.prototype.getDocument = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.getDocument");
-          
+      // function 
+      RGraphicsScene.prototype.getDocument = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.getDocument");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -112,7 +112,8 @@
                 //return this.wrapper.getDocument(
                 // call highest level JS implementation:
                 //return this.getDocumentBase(
-                return this.getDocumentSuper(
+                
+                    return this.getDocumentSuper(
                   
                 );
               
@@ -128,14 +129,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.setColor = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.setColor");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.setColor = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.setColor");
+        
       if (arguments.length >= 3 &&
           arguments.length <= 4) {
     
@@ -144,7 +145,8 @@
                 //return this.wrapper.setColor(
                 // call highest level JS implementation:
                 //return this.setColorBase(
-                return this.setColorSuper(
+                
+                    return this.setColorSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3]
                 );
               
@@ -162,7 +164,8 @@
                 //return this.wrapper.setColor(
                 // call highest level JS implementation:
                 //return this.setColorBase(
-                return this.setColorSuper(
+                
+                    return this.setColorSuper(
                   arguments[0]
                 );
               
@@ -178,14 +181,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.setLineweight = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.setLineweight");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.setLineweight = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.setLineweight");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -193,7 +196,8 @@
                 //return this.wrapper.setLineweight(
                 // call highest level JS implementation:
                 //return this.setLineweightBase(
-                return this.setLineweightSuper(
+                
+                    return this.setLineweightSuper(
                   arguments[0]
                 );
               
@@ -209,14 +213,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.startExport = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.startExport");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.startExport = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.startExport");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -224,7 +228,8 @@
                 //return this.wrapper.startExport(
                 // call highest level JS implementation:
                 //return this.startExportBase(
-                return this.startExportSuper(
+                
+                    return this.startExportSuper(
                   
                 );
               
@@ -240,14 +245,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.endExport = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.endExport");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.endExport = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.endExport");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -255,7 +260,8 @@
                 //return this.wrapper.endExport(
                 // call highest level JS implementation:
                 //return this.endExportBase(
-                return this.endExportSuper(
+                
+                    return this.endExportSuper(
                   
                 );
               
@@ -271,14 +277,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportBlock = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportBlock");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportBlock = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportBlock");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -286,7 +292,8 @@
                 //return this.wrapper.exportBlock(
                 // call highest level JS implementation:
                 //return this.exportBlockBase(
-                return this.exportBlockSuper(
+                
+                    return this.exportBlockSuper(
                   arguments[0]
                 );
               
@@ -304,7 +311,8 @@
                 //return this.wrapper.exportBlock(
                 // call highest level JS implementation:
                 //return this.exportBlockBase(
-                return this.exportBlockSuper(
+                
+                    return this.exportBlockSuper(
                   arguments[0]
                 );
               
@@ -320,14 +328,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportEntities = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportEntities");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportEntities = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportEntities");
+        
       if (arguments.length >= 0 &&
           arguments.length <= 3) {
     
@@ -336,7 +344,8 @@
                 //return this.wrapper.exportEntities(
                 // call highest level JS implementation:
                 //return this.exportEntitiesBase(
-                return this.exportEntitiesSuper(
+                
+                    return this.exportEntitiesSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -352,14 +361,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.endEntity = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.endEntity");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.endEntity = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.endEntity");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -367,7 +376,8 @@
                 //return this.wrapper.endEntity(
                 // call highest level JS implementation:
                 //return this.endEntityBase(
-                return this.endEntitySuper(
+                
+                    return this.endEntitySuper(
                   
                 );
               
@@ -383,14 +393,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportShape = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportShape");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportShape = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportShape");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -398,7 +408,8 @@
                 //return this.wrapper.exportShape(
                 // call highest level JS implementation:
                 //return this.exportShapeBase(
-                return this.exportShapeSuper(
+                
+                    return this.exportShapeSuper(
                   arguments[0]
                 );
               
@@ -414,14 +425,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportLine = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportLine");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportLine = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportLine");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -430,7 +441,8 @@
                 //return this.wrapper.exportLine(
                 // call highest level JS implementation:
                 //return this.exportLineBase(
-                return this.exportLineSuper(
+                
+                    return this.exportLineSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -446,14 +458,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportLineSegment = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportLineSegment");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportLineSegment = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportLineSegment");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -462,7 +474,8 @@
                 //return this.wrapper.exportLineSegment(
                 // call highest level JS implementation:
                 //return this.exportLineSegmentBase(
-                return this.exportLineSegmentSuper(
+                
+                    return this.exportLineSegmentSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -478,14 +491,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportPoint = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportPoint");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportPoint = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportPoint");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -493,7 +506,8 @@
                 //return this.wrapper.exportPoint(
                 // call highest level JS implementation:
                 //return this.exportPointBase(
-                return this.exportPointSuper(
+                
+                    return this.exportPointSuper(
                   arguments[0]
                 );
               
@@ -509,14 +523,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportCircle = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportCircle");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportCircle = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportCircle");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -524,7 +538,8 @@
                 //return this.wrapper.exportCircle(
                 // call highest level JS implementation:
                 //return this.exportCircleBase(
-                return this.exportCircleSuper(
+                
+                    return this.exportCircleSuper(
                   arguments[0]
                 );
               
@@ -540,14 +555,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportArc = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportArc");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportArc = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportArc");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -556,7 +571,8 @@
                 //return this.wrapper.exportArc(
                 // call highest level JS implementation:
                 //return this.exportArcBase(
-                return this.exportArcSuper(
+                
+                    return this.exportArcSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -572,14 +588,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportArcSegment = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportArcSegment");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportArcSegment = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportArcSegment");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -588,7 +604,8 @@
                 //return this.wrapper.exportArcSegment(
                 // call highest level JS implementation:
                 //return this.exportArcSegmentBase(
-                return this.exportArcSegmentSuper(
+                
+                    return this.exportArcSegmentSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -604,14 +621,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportEllipse = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportEllipse");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportEllipse = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportEllipse");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -620,7 +637,8 @@
                 //return this.wrapper.exportEllipse(
                 // call highest level JS implementation:
                 //return this.exportEllipseBase(
-                return this.exportEllipseSuper(
+                
+                    return this.exportEllipseSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -636,14 +654,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportPolyline = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportPolyline");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportPolyline = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportPolyline");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 3) {
     
@@ -652,7 +670,8 @@
                 //return this.wrapper.exportPolyline(
                 // call highest level JS implementation:
                 //return this.exportPolylineBase(
-                return this.exportPolylineSuper(
+                
+                    return this.exportPolylineSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -668,14 +687,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportSpline = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportSpline");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportSpline = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportSpline");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -684,7 +703,8 @@
                 //return this.wrapper.exportSpline(
                 // call highest level JS implementation:
                 //return this.exportSplineBase(
-                return this.exportSplineSuper(
+                
+                    return this.exportSplineSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -700,14 +720,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportPainterPaths = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportPainterPaths");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportPainterPaths = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportPainterPaths");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -716,7 +736,8 @@
                 //return this.wrapper.exportPainterPaths(
                 // call highest level JS implementation:
                 //return this.exportPainterPathsBase(
-                return this.exportPainterPathsSuper(
+                
+                    return this.exportPainterPathsSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -732,14 +753,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportImage = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportImage");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportImage = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportImage");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -748,7 +769,8 @@
                 //return this.wrapper.exportImage(
                 // call highest level JS implementation:
                 //return this.exportImageBase(
-                return this.exportImageSuper(
+                
+                    return this.exportImageSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -764,14 +786,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportText = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportText");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportText = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportText");
+        
       if (arguments.length >= 1 &&
           arguments.length <= 2) {
     
@@ -780,7 +802,8 @@
                 //return this.wrapper.exportText(
                 // call highest level JS implementation:
                 //return this.exportTextBase(
-                return this.exportTextSuper(
+                
+                    return this.exportTextSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -796,14 +819,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportTransform = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportTransform");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportTransform = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportTransform");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -811,7 +834,8 @@
                 //return this.wrapper.exportTransform(
                 // call highest level JS implementation:
                 //return this.exportTransformBase(
-                return this.exportTransformSuper(
+                
+                    return this.exportTransformSuper(
                   arguments[0]
                 );
               
@@ -827,14 +851,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportEndTransform = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportEndTransform");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportEndTransform = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportEndTransform");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -842,7 +866,8 @@
                 //return this.wrapper.exportEndTransform(
                 // call highest level JS implementation:
                 //return this.exportEndTransformBase(
-                return this.exportEndTransformSuper(
+                
+                    return this.exportEndTransformSuper(
                   
                 );
               
@@ -858,14 +883,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportTriangle = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportTriangle");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportTriangle = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportTriangle");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -873,7 +898,8 @@
                 //return this.wrapper.exportTriangle(
                 // call highest level JS implementation:
                 //return this.exportTriangleBase(
-                return this.exportTriangleSuper(
+                
+                    return this.exportTriangleSuper(
                   arguments[0]
                 );
               
@@ -889,14 +915,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.getLineTypePatternScale = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.getLineTypePatternScale");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.getLineTypePatternScale = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.getLineTypePatternScale");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -904,7 +930,8 @@
                 //return this.wrapper.getLineTypePatternScale(
                 // call highest level JS implementation:
                 //return this.getLineTypePatternScaleBase(
-                return this.getLineTypePatternScaleSuper(
+                
+                    return this.getLineTypePatternScaleSuper(
                   arguments[0]
                 );
               
@@ -920,14 +947,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.isTextRenderedAsText = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.isTextRenderedAsText");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.isTextRenderedAsText = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.isTextRenderedAsText");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -935,7 +962,8 @@
                 //return this.wrapper.isTextRenderedAsText(
                 // call highest level JS implementation:
                 //return this.isTextRenderedAsTextBase(
-                return this.isTextRenderedAsTextSuper(
+                
+                    return this.isTextRenderedAsTextSuper(
                   
                 );
               
@@ -951,14 +979,14 @@
     console.trace();
   }
   
-        };
-      
-        // function 
-        RGraphicsScene.prototype.exportCurrentEntity = function() 
-          
-        {
-          //print("JS: RGraphicsScene.prototype.exportCurrentEntity");
-          
+      };
+    
+      // function 
+      RGraphicsScene.prototype.exportCurrentEntity = function() 
+        
+      {
+        //print("JS: RGraphicsScene.prototype.exportCurrentEntity");
+        
       if (arguments.length >= 0 &&
           arguments.length <= 2) {
     
@@ -967,7 +995,8 @@
                 //return this.wrapper.exportCurrentEntity(
                 // call highest level JS implementation:
                 //return this.exportCurrentEntityBase(
-                return this.exportCurrentEntitySuper(
+                
+                    return this.exportCurrentEntitySuper(
                   arguments[0], arguments[1]
                 );
               
@@ -983,8 +1012,8 @@
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -1004,4 +1033,5 @@
       //RGraphicsScene.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSnap);
+              
+                  copyProperties(this, wrapper, RSnap);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RSnap);
+            copyProperties(this, wrapper, RSnap);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSnap.prototype = new RSnap_BaseJs(engine);
@@ -141,12 +141,12 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
 
       // functions:
       
-        // function 
-        RSnap.prototype.snap = function() 
-          
-        {
-          //print("JS: RSnap.prototype.snap");
-          
+      // function 
+      RSnap.prototype.snap = function() 
+        
+      {
+        //print("JS: RSnap.prototype.snap");
+        
       if (arguments.length >= 2 &&
           arguments.length <= 3) {
     
@@ -155,7 +155,8 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
                 //return this.wrapper.snap(
                 // call highest level JS implementation:
                 //return this.snapBase(
-                return this.snapSuper(
+                
+                    return this.snapSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -171,14 +172,14 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnap.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RSnap.prototype.showUiOptions");
-          
+      };
+    
+      // function 
+      RSnap.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RSnap.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -186,7 +187,8 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -202,14 +204,14 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnap.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RSnap.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RSnap.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RSnap.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -217,7 +219,8 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -233,8 +236,8 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -254,4 +257,5 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
       //RSnap.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

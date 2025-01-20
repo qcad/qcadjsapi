@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RLinetype.h">
   <class_decl name="RDocument" />
   <class_decl name="RTransaction" />
-  <class name="RLinetype" sharedpointer="true">
+  <class name="RLinetype" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RObject" downcast="true" />
     </super_list>

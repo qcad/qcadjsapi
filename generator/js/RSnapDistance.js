@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSnapDistance);
+              
+                  copyProperties(this, wrapper, RSnapDistance);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RSnapDistance);
+            copyProperties(this, wrapper, RSnapDistance);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSnapDistance.prototype = new RSnapDistance_BaseJs(engine);
@@ -149,12 +149,12 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
 
       // functions:
       
-        // function 
-        RSnapDistance.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RSnapDistance.prototype.showUiOptions");
-          
+      // function 
+      RSnapDistance.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RSnapDistance.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -162,7 +162,8 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -178,14 +179,14 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnapDistance.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RSnapDistance.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RSnapDistance.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RSnapDistance.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -193,7 +194,8 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -209,8 +211,8 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -230,4 +232,5 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
       //RSnapDistance.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

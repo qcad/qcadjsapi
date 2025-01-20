@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RGraphicsViewImage);
+              
+                  copyProperties(this, wrapper, RGraphicsViewImage);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RGraphicsViewImage);
+            copyProperties(this, wrapper, RGraphicsViewImage);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,16 +85,19 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["updateSnapInfo(RGraphicsViewWorker*,RSnap*,RSnapRestriction*)"] = Object.getPrototypeOf(this).updateSnapInfo;
   
     this["updateTextLabel(RGraphicsViewWorker*,RTextLabel)"] = Object.getPrototypeOf(this).updateTextLabel;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RGraphicsViewImage.prototype = new RGraphicsViewImage_BaseJs(engine);
@@ -161,4 +166,5 @@ RGraphicsViewImage.BlackWhite = RGraphicsViewImage_Wrapper.BlackWhite;
       //RGraphicsViewImage.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RSnapGrid);
+              
+                  copyProperties(this, wrapper, RSnapGrid);
+                
             //}
           }
           else {
@@ -50,8 +52,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RSnapGrid);
+            copyProperties(this, wrapper, RSnapGrid);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -82,12 +84,10 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
         }
+
+        
+
       }
 
       //RSnapGrid.prototype = new RSnapGrid_BaseJs(engine);
@@ -145,12 +145,12 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
 
       // functions:
       
-        // function 
-        RSnapGrid.prototype.showUiOptions = function() 
-          
-        {
-          //print("JS: RSnapGrid.prototype.showUiOptions");
-          
+      // function 
+      RSnapGrid.prototype.showUiOptions = function() 
+        
+      {
+        //print("JS: RSnapGrid.prototype.showUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -158,7 +158,8 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
                 //return this.wrapper.showUiOptions(
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
-                return this.showUiOptionsSuper(
+                
+                    return this.showUiOptionsSuper(
                   
                 );
               
@@ -174,14 +175,14 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
-        // function 
-        RSnapGrid.prototype.hideUiOptions = function() 
-          
-        {
-          //print("JS: RSnapGrid.prototype.hideUiOptions");
-          
+      };
+    
+      // function 
+      RSnapGrid.prototype.hideUiOptions = function() 
+        
+      {
+        //print("JS: RSnapGrid.prototype.hideUiOptions");
+        
       if (arguments.length == 0) {
     
                 // calling wrapper:
@@ -189,7 +190,8 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
                 //return this.wrapper.hideUiOptions(
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
-                return this.hideUiOptionsSuper(
+                
+                    return this.hideUiOptionsSuper(
                   
                 );
               
@@ -205,8 +207,8 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -226,4 +228,5 @@ RSnapGrid.CoordinatePolar = RSnapGrid_Wrapper.CoordinatePolar;
       //RSnapGrid.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      

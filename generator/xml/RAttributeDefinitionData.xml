@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl"
 filename="RAttributeDefinitionData.h">
-  <class name="RAttributeDefinitionData">
+  <class name="RAttributeDefinitionData" proxy="true">
     <super_list>
       <super name="RTextBasedData" />
     </super_list>

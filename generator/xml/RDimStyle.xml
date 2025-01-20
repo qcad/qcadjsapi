@@ -3,7 +3,7 @@
   <class_decl name="RDocument" />
   <class_decl name="REntityData" />
   <class_decl name="RExporter" />
-  <class name="RDimStyle" ownership="cpp" sharedpointer="true">
+  <class name="RDimStyle" ownership="cpp" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RObject" downcast="true" />
       <super name="RDimStyleData" />

@@ -26,7 +26,9 @@
             }
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, RListView);
+              
+                  copyProperties(this, wrapper, RListView);
+                
             //}
           }
           else {
@@ -51,8 +53,8 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-
-        copyProperties(this, wrapper, RListView);
+            copyProperties(this, wrapper, RListView);
+          
 
         //this.setWrapper(this.wrapper);
 
@@ -83,10 +85,9 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
+            // signal aliases:
+            if (Object.getPrototypeOf(this)!=null) {
+              
     this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
   
     this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
@@ -123,8 +124,12 @@
   
     this["signalToolTipRequested(QHelpEvent*)"] = Object.getPrototypeOf(this).signalToolTipRequested;
   
-          }
+            }
+          
         }
+
+        
+
       }
 
       //RListView.prototype = new RListView_BaseJs(engine);
@@ -267,12 +272,12 @@ RListView.IconMode = RListView_Wrapper.IconMode;
 
       // functions:
       
-        // function 
-        RListView.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: RListView.prototype.actionEvent");
-          
+      // function 
+      RListView.prototype.actionEvent = function() 
+        
+      {
+        //print("JS: RListView.prototype.actionEvent");
+        
       if (arguments.length == 1) {
     
                 // calling wrapper:
@@ -280,7 +285,8 @@ RListView.IconMode = RListView_Wrapper.IconMode;
                 //return this.wrapper.actionEvent(
                 // call highest level JS implementation:
                 //return this.actionEventBase(
-                return this.actionEventSuper(
+                
+                    return this.actionEventSuper(
                   arguments[0]
                 );
               
@@ -296,8 +302,8 @@ RListView.IconMode = RListView_Wrapper.IconMode;
     console.trace();
   }
   
-        };
-      
+      };
+    
 
       // static functions:
       
@@ -317,4 +323,5 @@ RListView.IconMode = RListView_Wrapper.IconMode;
       //RListView.prototype.destr = function() {
       //  return this.wrapper.destr();
       //};
-    
+
+      
