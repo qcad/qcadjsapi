@@ -8622,8 +8622,6 @@ RObject::Id a2_cpp;
   )
 
    && RJSHelper_qcad::is_QList_RBox(handler, a2
-    , true
-  
   )
 
   
@@ -8641,13 +8639,7 @@ QSharedPointer<REntity> a1_cpp;
   
 QList<RBox> a2_cpp;
 
-      
-          if (a2.isUndefined()) {
-            a2_cpp = RDEFAULT_QLIST_RBOX;
-          }
-          else {
-            a2_cpp = RJSHelper_qcad::js2cpp_QList_RBox(handler, a2);
-          }
+      a2_cpp = RJSHelper_qcad::js2cpp_QList_RBox(handler, a2);
         
 
     // call function:
