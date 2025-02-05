@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RActionAdapter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RActionAdapter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -135,6 +135,30 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
 
       // functions:
       
+        // function 
+        RActionAdapter.prototype.terminate = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.terminate");
+          return this.__PROXY__.terminate(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.isTerminated = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.isTerminated");
+          return this.__PROXY__.isTerminated(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.setOverride = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.setOverride");
+          return this.__PROXY__.setOverride(...args);
+        };
+    
       // function 
       RActionAdapter.prototype.isOverride = function() 
         
@@ -149,7 +173,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.isOverrideBase(
                 
-                    return this.isOverrideSuper(
+                    return this.__PROXY__.isOverrideSuper(
                   
                 );
               
@@ -167,6 +191,78 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
   
       };
     
+        // function 
+        RActionAdapter.prototype.setNoState = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.setNoState");
+          return this.__PROXY__.setNoState(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.hasNoState = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.hasNoState");
+          return this.__PROXY__.hasNoState(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.setUniqueGroup = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.setUniqueGroup");
+          return this.__PROXY__.setUniqueGroup(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.getUniqueGroup = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.getUniqueGroup");
+          return this.__PROXY__.getUniqueGroup(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.setOverrideBase = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.setOverrideBase");
+          return this.__PROXY__.setOverrideBase(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.getOverrideBase = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.getOverrideBase");
+          return this.__PROXY__.getOverrideBase(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.getGuiAction = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.getGuiAction");
+          return this.__PROXY__.getGuiAction(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.setGuiAction = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.setGuiAction");
+          return this.__PROXY__.setGuiAction(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.getGraphicsScenes = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.getGraphicsScenes");
+          return this.__PROXY__.getGraphicsScenes(...args);
+        };
+    
       // function 
       RActionAdapter.prototype.getDocument = function() 
         
@@ -181,7 +277,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.getDocumentBase(
                 
-                    return this.getDocumentSuper(
+                    return this.__PROXY__.getDocumentSuper(
                   
                 );
               
@@ -213,7 +309,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.getDocumentInterfaceBase(
                 
-                    return this.getDocumentInterfaceSuper(
+                    return this.__PROXY__.getDocumentInterfaceSuper(
                   
                 );
               
@@ -231,6 +327,14 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
   
       };
     
+        // function 
+        RActionAdapter.prototype.getStorage = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.getStorage");
+          return this.__PROXY__.getStorage(...args);
+        };
+    
       // function 
       RActionAdapter.prototype.setDocumentInterface = function() 
         
@@ -245,7 +349,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.setDocumentInterfaceBase(
                 
-                    return this.setDocumentInterfaceSuper(
+                    return this.__PROXY__.setDocumentInterfaceSuper(
                   arguments[0]
                 );
               
@@ -263,6 +367,30 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
   
       };
     
+        // function 
+        RActionAdapter.prototype.setClickMode = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.setClickMode");
+          return this.__PROXY__.setClickMode(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.getClickMode = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.getClickMode");
+          return this.__PROXY__.getClickMode(...args);
+        };
+    
+        // function 
+        RActionAdapter.prototype.snap = function(...args) 
+          
+        {
+          //print("JS: RActionAdapter.prototype.snap");
+          return this.__PROXY__.snap(...args);
+        };
+    
       // function 
       RActionAdapter.prototype.beginEvent = function() 
         
@@ -277,7 +405,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.beginEventBase(
                 
-                    return this.beginEventSuper(
+                    return this.__PROXY__.beginEventSuper(
                   
                 );
               
@@ -309,7 +437,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.setGraphicsViewBase(
                 
-                    return this.setGraphicsViewSuper(
+                    return this.__PROXY__.setGraphicsViewSuper(
                   arguments[0]
                 );
               
@@ -341,7 +469,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.finishEventBase(
                 
-                    return this.finishEventSuper(
+                    return this.__PROXY__.finishEventSuper(
                   
                 );
               
@@ -373,7 +501,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.enterEventBase(
                 
-                    return this.enterEventSuper(
+                    return this.__PROXY__.enterEventSuper(
                   
                 );
               
@@ -405,7 +533,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.suspendEventBase(
                 
-                    return this.suspendEventSuper(
+                    return this.__PROXY__.suspendEventSuper(
                   
                 );
               
@@ -437,7 +565,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.resumeEventBase(
                 
-                    return this.resumeEventSuper(
+                    return this.__PROXY__.resumeEventSuper(
                   
                 );
               
@@ -469,7 +597,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.escapeEventBase(
                 
-                    return this.escapeEventSuper(
+                    return this.__PROXY__.escapeEventSuper(
                   
                 );
               
@@ -501,7 +629,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.keyPressEventBase(
                 
-                    return this.keyPressEventSuper(
+                    return this.__PROXY__.keyPressEventSuper(
                   arguments[0]
                 );
               
@@ -533,7 +661,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.keyReleaseEventBase(
                 
-                    return this.keyReleaseEventSuper(
+                    return this.__PROXY__.keyReleaseEventSuper(
                   arguments[0]
                 );
               
@@ -565,7 +693,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.mousePressEventBase(
                 
-                    return this.mousePressEventSuper(
+                    return this.__PROXY__.mousePressEventSuper(
                   arguments[0]
                 );
               
@@ -597,7 +725,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.mouseMoveEventBase(
                 
-                    return this.mouseMoveEventSuper(
+                    return this.__PROXY__.mouseMoveEventSuper(
                   arguments[0]
                 );
               
@@ -629,7 +757,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.mouseReleaseEventBase(
                 
-                    return this.mouseReleaseEventSuper(
+                    return this.__PROXY__.mouseReleaseEventSuper(
                   arguments[0]
                 );
               
@@ -661,7 +789,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.mouseDoubleClickEventBase(
                 
-                    return this.mouseDoubleClickEventSuper(
+                    return this.__PROXY__.mouseDoubleClickEventSuper(
                   arguments[0]
                 );
               
@@ -693,7 +821,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.wheelEventBase(
                 
-                    return this.wheelEventSuper(
+                    return this.__PROXY__.wheelEventSuper(
                   arguments[0]
                 );
               
@@ -725,7 +853,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.tabletEventBase(
                 
-                    return this.tabletEventSuper(
+                    return this.__PROXY__.tabletEventSuper(
                   arguments[0]
                 );
               
@@ -757,7 +885,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.swipeGestureEventBase(
                 
-                    return this.swipeGestureEventSuper(
+                    return this.__PROXY__.swipeGestureEventSuper(
                   arguments[0]
                 );
               
@@ -789,7 +917,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.panGestureEventBase(
                 
-                    return this.panGestureEventSuper(
+                    return this.__PROXY__.panGestureEventSuper(
                   arguments[0]
                 );
               
@@ -821,7 +949,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.pinchGestureEventBase(
                 
-                    return this.pinchGestureEventSuper(
+                    return this.__PROXY__.pinchGestureEventSuper(
                   arguments[0]
                 );
               
@@ -853,7 +981,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.commandEventBase(
                 
-                    return this.commandEventSuper(
+                    return this.__PROXY__.commandEventSuper(
                   arguments[0]
                 );
               
@@ -885,7 +1013,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.commandEventPreviewBase(
                 
-                    return this.commandEventPreviewSuper(
+                    return this.__PROXY__.commandEventPreviewSuper(
                   arguments[0]
                 );
               
@@ -917,7 +1045,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.coordinateEventBase(
                 
-                    return this.coordinateEventSuper(
+                    return this.__PROXY__.coordinateEventSuper(
                   arguments[0]
                 );
               
@@ -949,7 +1077,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.coordinateEventPreviewBase(
                 
-                    return this.coordinateEventPreviewSuper(
+                    return this.__PROXY__.coordinateEventPreviewSuper(
                   arguments[0]
                 );
               
@@ -981,7 +1109,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.entityPickEventBase(
                 
-                    return this.entityPickEventSuper(
+                    return this.__PROXY__.entityPickEventSuper(
                   arguments[0]
                 );
               
@@ -1013,7 +1141,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.entityPickEventPreviewBase(
                 
-                    return this.entityPickEventPreviewSuper(
+                    return this.__PROXY__.entityPickEventPreviewSuper(
                   arguments[0]
                 );
               
@@ -1045,7 +1173,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.propertyChangeEventBase(
                 
-                    return this.propertyChangeEventSuper(
+                    return this.__PROXY__.propertyChangeEventSuper(
                   arguments[0]
                 );
               
@@ -1077,7 +1205,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.zoomChangeEventBase(
                 
-                    return this.zoomChangeEventSuper(
+                    return this.__PROXY__.zoomChangeEventSuper(
                   arguments[0]
                 );
               
@@ -1109,7 +1237,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.updatePreviewBase(
                 
-                    return this.updatePreviewSuper(
+                    return this.__PROXY__.updatePreviewSuper(
                   
                 );
               
@@ -1141,7 +1269,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
                 // call highest level JS implementation:
                 //return this.applyOperationBase(
                 
-                    return this.applyOperationSuper(
+                    return this.__PROXY__.applyOperationSuper(
                   
                 );
               
@@ -1179,4 +1307,7 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
       //  return this.wrapper.destr();
       //};
 
+      RActionAdapter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

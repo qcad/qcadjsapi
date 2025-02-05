@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPropertyTypeId);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPropertyTypeId);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPropertyTypeId);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPropertyTypeId);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -131,7 +131,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPropertyTypeId);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -203,6 +203,118 @@
 
       // functions:
       
+        // function 
+        RPropertyTypeId.prototype.getId = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.getId");
+          return this.__PROXY__.getId(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.setId = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.setId");
+          return this.__PROXY__.setId(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.getCustomPropertyTitle = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.getCustomPropertyTitle");
+          return this.__PROXY__.getCustomPropertyTitle(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.setCustomPropertyTitle = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.setCustomPropertyTitle");
+          return this.__PROXY__.setCustomPropertyTitle(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.getCustomPropertyName = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.getCustomPropertyName");
+          return this.__PROXY__.getCustomPropertyName(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.setCustomPropertyName = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.setCustomPropertyName");
+          return this.__PROXY__.setCustomPropertyName(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.isValid");
+          return this.__PROXY__.isValid(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.isCustom = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.isCustom");
+          return this.__PROXY__.isCustom(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.generateId = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.generateId");
+          return this.__PROXY__.generateId(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.getPropertyTypeIds = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.getPropertyTypeIds");
+          return this.__PROXY__.getPropertyTypeIds(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.hasPropertyType = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.hasPropertyType");
+          return this.__PROXY__.hasPropertyType(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.getPropertyGroupTitle = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.getPropertyGroupTitle");
+          return this.__PROXY__.getPropertyGroupTitle(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.getPropertyTitle = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.getPropertyTitle");
+          return this.__PROXY__.getPropertyTitle(...args);
+        };
+    
+        // function 
+        RPropertyTypeId.prototype.getPropertyTypeId = function(...args) 
+          
+        {
+          //print("JS: RPropertyTypeId.prototype.getPropertyTypeId");
+          return this.__PROXY__.getPropertyTypeId(...args);
+        };
+    
 
       // static functions:
       
@@ -308,4 +420,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPropertyTypeId.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       
