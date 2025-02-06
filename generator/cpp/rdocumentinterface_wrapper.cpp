@@ -731,6 +731,75 @@ RDocumentInterface_Wrapper::RDocumentInterface_Wrapper
               }
             
     // Class: RDocumentInterface
+    // Function: removeCoordinateListener
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDocumentInterface_Wrapper::removeCoordinateListener
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RCoordinateListener_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: l (RCoordinateListener)
+  
+
+          // pointer:
+          RCoordinateListener*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RCoordinateListener_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocumentInterface* w = getWrapped();
+                
+                w->removeCoordinateListener(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for removeCoordinateListener";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDocumentInterface
     // Function: notifyCoordinateListeners
     // Source: 
     // Static: false

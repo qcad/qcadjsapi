@@ -190,6 +190,14 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
         };
     
         // function 
+        RDocumentInterface.prototype.removeCoordinateListener = function(...args) 
+          
+        {
+          //print("JS: RDocumentInterface.prototype.removeCoordinateListener");
+          return this.__PROXY__.removeCoordinateListener(...args);
+        };
+    
+        // function 
         RDocumentInterface.prototype.notifyCoordinateListeners = function(...args) 
           
         {

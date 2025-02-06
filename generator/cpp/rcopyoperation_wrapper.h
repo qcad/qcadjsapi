@@ -867,6 +867,29 @@
               ;
             
     // Class: RCopyOperation
+    // Function: setCustomEntityType
+    // Source: RClipboardOperation
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCustomEntityType
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RCopyOperation
     // Function: apply
     // Source: 
     // Static: false

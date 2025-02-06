@@ -147,6 +147,7 @@
       <key>EntityTolerance</key>
       <key>EntityWipeout</key>
       <key>EntityXRef</key>
+      <key>EntityCustom</key>
       <key>EntityUser</key>
     </enum>
     <enum name="ProjectionRenderingHint">

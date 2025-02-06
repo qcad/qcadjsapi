@@ -64,6 +64,13 @@
         </parameters>
       </variant>
     </function>
+    <function name="removeCoordinateListener">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RCoordinateListener" modifier="*" name="l" />
+        </parameters>
+      </variant>
+    </function>
     <function name="notifyCoordinateListeners">
       <variant return-type="void" access="public">
         <parameters />

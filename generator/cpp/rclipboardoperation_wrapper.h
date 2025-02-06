@@ -883,6 +883,29 @@
               
               ;
             
+    // Class: RClipboardOperation
+    // Function: setCustomEntityType
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setCustomEntityType
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             

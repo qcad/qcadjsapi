@@ -8667,6 +8667,47 @@ QList<RBox> a2_cpp;
           
   }
 
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QSharedPointer_REntity(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: entity (QSharedPointer<REntity>)
+  
+QSharedPointer<REntity> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_REntity(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocument* w = getWrapped();
+                
+                w->removeFromSpatialIndex(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
                   qWarning() << "no matching function variant found for removeFromSpatialIndex";
                   handler.trace();
                   return QJSValue();

@@ -219,5 +219,12 @@
         </parameters>
       </variant>
     </function>
+    <function name="setCustomEntityType">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RS::EntityType" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
   </class>
 </unit>

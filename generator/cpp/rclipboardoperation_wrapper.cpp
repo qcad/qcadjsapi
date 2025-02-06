@@ -2473,6 +2473,70 @@ bool a1_cpp;
                 
               }
             
+    // Class: RClipboardOperation
+    // Function: setCustomEntityType
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RClipboardOperation_Wrapper::setCustomEntityType
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RS_EntityType(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: t (RS::EntityType)
+  
+RS::EntityType a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RS_EntityType(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RClipboardOperation* w = getWrapped();
+                
+                w->setCustomEntityType(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setCustomEntityType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
 
   // member functions for static properties, forward to static function
   

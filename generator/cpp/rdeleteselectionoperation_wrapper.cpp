@@ -2379,6 +2379,70 @@ bool a1_cpp;
               }
             
     // Class: RDeleteSelectionOperation
+    // Function: setCustomEntityType
+    // Source: RClipboardOperation
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDeleteSelectionOperation_Wrapper::setCustomEntityType
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RS_EntityType(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: t (RS::EntityType)
+  
+RS::EntityType a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RS_EntityType(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDeleteSelectionOperation* w = getWrapped();
+                
+                w->setCustomEntityType(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setCustomEntityType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDeleteSelectionOperation
     // Function: apply
     // Source: 
     // Static: false

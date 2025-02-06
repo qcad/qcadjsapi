@@ -375,6 +375,29 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
               ;
             
     // Class: RDocumentInterface
+    // Function: removeCoordinateListener
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  removeCoordinateListener
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RDocumentInterface
     // Function: notifyCoordinateListeners
     // Source: 
     // Static: false

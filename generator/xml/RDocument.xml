@@ -867,6 +867,11 @@
       <variant return-type="void" virtual="true" access="public">
         <parameters>
           <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="" name="entity" />
+        </parameters>
+      </variant>
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="" name="entity" />
           <parameter const="true" type="QList&lt;RBox&gt;" modifier="&amp;" name="boundingBoxes" />
         </parameters>
       </variant>
