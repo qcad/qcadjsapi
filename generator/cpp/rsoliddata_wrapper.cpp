@@ -11124,6 +11124,61 @@ double a1_cpp;
               }
             
     // Class: RSolidData
+    // Function: insertVerticesAtSelfIntersections
+    // Source: RPolyline
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSolidData_Wrapper::insertVerticesAtSelfIntersections
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RSolidData* w = getWrapped();
+                bool res = 
+                    
+                w->insertVerticesAtSelfIntersections(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for insertVerticesAtSelfIntersections";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSolidData
     // Function: getBaseAngle
     // Source: RPolyline
     // Static: false

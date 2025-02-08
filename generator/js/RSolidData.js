@@ -1435,6 +1435,14 @@
         };
     
         // function 
+        RSolidData.prototype.insertVerticesAtSelfIntersections = function(...args) 
+          
+        {
+          //print("JS: RSolidData.prototype.insertVerticesAtSelfIntersections");
+          return this.__PROXY__.insertVerticesAtSelfIntersections(...args);
+        };
+    
+        // function 
         RSolidData.prototype.getBaseAngle = function(...args) 
           
         {

@@ -912,6 +912,11 @@
         <parameters />
       </variant>
     </function>
+    <function name="insertVerticesAtSelfIntersections">
+      <variant return-type="bool" const="false" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="getBaseAngle">
       <variant return-type="double" const="true" access="public">
         <parameters />

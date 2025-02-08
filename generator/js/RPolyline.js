@@ -1414,6 +1414,14 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
         };
     
         // function 
+        RPolyline.prototype.insertVerticesAtSelfIntersections = function(...args) 
+          
+        {
+          //print("JS: RPolyline.prototype.insertVerticesAtSelfIntersections");
+          return this.__PROXY__.insertVerticesAtSelfIntersections(...args);
+        };
+    
+        // function 
         RPolyline.prototype.getBaseAngle = function(...args) 
           
         {

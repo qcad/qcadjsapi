@@ -3758,6 +3758,25 @@
               ;
             
     // Class: RSolidData
+    // Function: insertVerticesAtSelfIntersections
+    // Source: RPolyline
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertVerticesAtSelfIntersections
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RSolidData
     // Function: getBaseAngle
     // Source: RPolyline
     // Static: false

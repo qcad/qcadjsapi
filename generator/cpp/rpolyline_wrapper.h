@@ -3914,6 +3914,25 @@ Ray = RPolyline::Ray,
               ;
             
     // Class: RPolyline
+    // Function: insertVerticesAtSelfIntersections
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertVerticesAtSelfIntersections
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RPolyline
     // Function: getBaseAngle
     // Source: 
     // Static: false

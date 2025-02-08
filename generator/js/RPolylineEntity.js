@@ -1183,6 +1183,14 @@
         };
     
         // function 
+        RPolylineEntity.prototype.insertVerticesAtSelfIntersections = function(...args) 
+          
+        {
+          //print("JS: RPolylineEntity.prototype.insertVerticesAtSelfIntersections");
+          return this.__PROXY__.insertVerticesAtSelfIntersections(...args);
+        };
+    
+        // function 
         RPolylineEntity.prototype.getVertexAt = function(...args) 
           
         {

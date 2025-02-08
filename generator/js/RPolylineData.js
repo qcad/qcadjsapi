@@ -1127,6 +1127,14 @@
         };
     
         // function 
+        RPolylineData.prototype.insertVerticesAtSelfIntersections = function(...args) 
+          
+        {
+          //print("JS: RPolylineData.prototype.insertVerticesAtSelfIntersections");
+          return this.__PROXY__.insertVerticesAtSelfIntersections(...args);
+        };
+    
+        // function 
         RPolylineData.prototype.getBaseAngle = function(...args) 
           
         {

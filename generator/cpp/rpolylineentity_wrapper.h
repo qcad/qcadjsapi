@@ -3750,6 +3750,25 @@
               ;
             
     // Class: RPolylineEntity
+    // Function: insertVerticesAtSelfIntersections
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertVerticesAtSelfIntersections
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RPolylineEntity
     // Function: getVertexAt
     // Source: 
     // Static: false

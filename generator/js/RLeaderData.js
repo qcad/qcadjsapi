@@ -1535,6 +1535,14 @@
         };
     
         // function 
+        RLeaderData.prototype.insertVerticesAtSelfIntersections = function(...args) 
+          
+        {
+          //print("JS: RLeaderData.prototype.insertVerticesAtSelfIntersections");
+          return this.__PROXY__.insertVerticesAtSelfIntersections(...args);
+        };
+    
+        // function 
         RLeaderData.prototype.getBaseAngle = function(...args) 
           
         {

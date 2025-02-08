@@ -176,6 +176,11 @@
         </parameters>
       </variant>
     </function>
+    <function name="insertVerticesAtSelfIntersections">
+      <variant return-type="bool" const="false" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="getVertexAt">
       <variant return-type="RVector" const="true" access="public">
         <parameters>
