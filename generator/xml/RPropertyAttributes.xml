@@ -117,18 +117,23 @@ filename="RPropertyAttributes.h">
       </variant>
     </function>
     <function name="getChoices">
-      <variant return-type="QSet&lt;QString&gt;" const="true" access="public">
+      <variant return-type="QStringList" const="true" access="public">
         <parameters />
       </variant>
     </function>
     <function name="setChoices">
       <variant return-type="void" access="public">
         <parameters>
-          <parameter const="false" type="QSet&lt;QString&gt;" modifier="" name="choices" />
+          <parameter const="true" type="QStringList" modifier="&amp;" name="choices" />
         </parameters>
       </variant>
     </function>
     <function name="hasChoices">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getStoreIndex">
       <variant return-type="bool" access="public">
         <parameters />
       </variant>

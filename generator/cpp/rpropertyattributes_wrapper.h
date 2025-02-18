@@ -573,6 +573,25 @@
               ;
             
     // Class: RPropertyAttributes
+    // Function: getStoreIndex
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getStoreIndex
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RPropertyAttributes
     // Function: isRichText
     // Source: 
     // Static: false

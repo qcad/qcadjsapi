@@ -1330,15 +1330,15 @@ bool a1_cpp;
             
                 // call function of C++ class:
                 RPropertyAttributes* w = getWrapped();
-                QSet<QString> res = 
+                QStringList res = 
                     
                 w->getChoices(
                   
                 );
               
-            // return type: QSet<QString>
+            // return type: QStringList
 
-            return RJSHelper::cpp2js_QSet_QString(
+            return RJSHelper::cpp2js_QStringList(
               handler, 
               // non-copyable: false
                   res
@@ -1372,7 +1372,7 @@ bool a1_cpp;
                 
       // check parameter types:
       if (
-        RJSHelper::is_QSet_QString(handler, a1
+        RJSHelper::is_QStringList(handler, a1
   )
 
   
@@ -1380,11 +1380,11 @@ bool a1_cpp;
     
       // prepare parameters:
     
-  // convert js parameter to cpp: choices (QSet<QString>)
+  // convert js parameter to cpp: choices (QStringList)
   
-QSet<QString> a1_cpp;
+QStringList a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QSet_QString(handler, a1);
+      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
         
 
     // call function:
@@ -1467,6 +1467,61 @@ QSet<QString> a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for hasChoices";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPropertyAttributes
+    // Function: getStoreIndex
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPropertyAttributes_Wrapper::getStoreIndex
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPropertyAttributes* w = getWrapped();
+                bool res = 
+                    
+                w->getStoreIndex(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getStoreIndex";
                   handler.trace();
                   return QJSValue();
                 
