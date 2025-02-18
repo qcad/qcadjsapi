@@ -85,3 +85,5 @@ Testing
 # Temporary XML files
 xml_auto
 meta_types
+CMakeLists.txt.user.*
+CMakeCache.txt.prev
