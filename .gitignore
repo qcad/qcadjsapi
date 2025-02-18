@@ -81,7 +81,7 @@ tmp
 .qtc_clangd
 qtcsettings.cmake
 Testing
-meta_types
 
 # Temporary XML files
 xml_auto
+meta_types
