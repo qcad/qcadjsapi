@@ -3609,6 +3609,29 @@
               ;
             
     // Class: RLeaderEntity
+    // Function: insertVertexAt
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  insertVertexAt
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RLeaderEntity
     // Function: getVertexAt
     // Source: 
     // Static: false
@@ -3797,6 +3820,31 @@
       = QJSValue()
     
               )
+              
+              ;
+            
+    // Class: RLeaderEntity
+    // Function: getClosestSegment
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getClosestSegment
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
               
               ;
             

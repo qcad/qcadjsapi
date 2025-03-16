@@ -296,7 +296,7 @@ RFileExporterAdapter_Base
     // implementation of virtual public function
     // calls JS implementation if available
     virtual void endEntity(
-      
+      bool a1
     )
     
     ;
@@ -305,12 +305,12 @@ RFileExporterAdapter_Base
       // implementation of virtual public function
       // always calls super implementation
       virtual void endEntitySup(
-        
+        bool a1
       )
       
       {
         RFileExporterAdapter::endEntity(
-          
+          a1
         );
       }
     

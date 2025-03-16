@@ -424,7 +424,9 @@
     </function>
     <function name="endEntity">
       <variant return-type="void" virtual="true" overridable="true" access="public">
-        <parameters />
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="" />
+        </parameters>
       </variant>
     </function>
     <function name="exportCurrentEntity">

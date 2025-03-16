@@ -1159,7 +1159,7 @@
     // Function: endEntity
     // Source: RExporter
     // Static: false
-    // Parameters: 0
+    // Parameters: 1
     // preceding Parameters: -1
 
               public:
@@ -1173,6 +1173,10 @@
               (
 
                 
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
               )
               
               ;

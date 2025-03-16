@@ -153,6 +153,13 @@
         </parameters>
       </variant>
     </function>
+    <function name="insertVertexAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="vertex" />
+        </parameters>
+      </variant>
+    </function>
     <function name="getVertexAt">
       <variant return-type="RVector" const="true" access="public">
         <parameters>
@@ -204,6 +211,13 @@
         <parameters>
           <parameter const="false" type="int" modifier="" name="i" />
           <parameter const="false" type="double" modifier="" name="b" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getClosestSegment">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="point" />
         </parameters>
       </variant>
     </function>

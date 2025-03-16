@@ -4361,7 +4361,7 @@ bool a1_cpp;
     // Function: endEntity
     // Source: RExporter
     // Static: false
-    // Parameters: 0
+    // Parameters: 1
     // preceding Parameters: -1
 
                 QJSValue 
@@ -4371,12 +4371,28 @@ bool a1_cpp;
                     
               (
                 
+  const QJSValue& 
+  a1
               ) 
               
               {
                 
-      {
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
     
+      // prepare parameters:
+    
+  // convert js parameter to cpp:  (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
 
     // call function:
     
@@ -4409,7 +4425,8 @@ bool a1_cpp;
                     if (wrappedCreated) {
                       
                       wb->endEntitySup(
-                        
+                        a1_cpp
+    
                       );
                     }
 
@@ -4419,7 +4436,8 @@ bool a1_cpp;
                     else {
                       
                       wb->endEntity(
-                        
+                        a1_cpp
+    
                       );
                     }
                   

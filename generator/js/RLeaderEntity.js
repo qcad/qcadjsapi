@@ -1191,6 +1191,14 @@
         };
     
         // function 
+        RLeaderEntity.prototype.insertVertexAt = function(...args) 
+          
+        {
+          //print("JS: RLeaderEntity.prototype.insertVertexAt");
+          return this.__PROXY__.insertVertexAt(...args);
+        };
+    
+        // function 
         RLeaderEntity.prototype.getVertexAt = function(...args) 
           
         {
@@ -1252,6 +1260,14 @@
         {
           //print("JS: RLeaderEntity.prototype.setBulgeAt");
           return this.__PROXY__.setBulgeAt(...args);
+        };
+    
+        // function 
+        RLeaderEntity.prototype.getClosestSegment = function(...args) 
+          
+        {
+          //print("JS: RLeaderEntity.prototype.getClosestSegment");
+          return this.__PROXY__.getClosestSegment(...args);
         };
     
         // function 

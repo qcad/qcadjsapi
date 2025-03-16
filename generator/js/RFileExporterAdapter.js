@@ -429,7 +429,7 @@
       {
         //print("JS: RFileExporterAdapter.prototype.endEntity");
         
-      if (arguments.length == 0) {
+      if (arguments.length == 1) {
     
                 // calling wrapper:
                 self = this;
@@ -438,7 +438,7 @@
                 //return this.endEntityBase(
                 
                     return this.endEntitySuper(
-                  
+                  arguments[0]
                 );
               
 

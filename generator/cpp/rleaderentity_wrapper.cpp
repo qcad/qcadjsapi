@@ -9607,6 +9607,70 @@ RVector a2_cpp;
               }
             
     // Class: RLeaderEntity
+    // Function: insertVertexAt
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RLeaderEntity_Wrapper::insertVertexAt
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: vertex (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RLeaderEntity* w = getWrapped();
+                
+                w->insertVertexAt(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for insertVertexAt";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RLeaderEntity
     // Function: getVertexAt
     // Source: 
     // Static: false
@@ -10143,6 +10207,80 @@ double a2_cpp;
   }
 
                   qWarning() << "no matching function variant found for setBulgeAt";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RLeaderEntity
+    // Function: getClosestSegment
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RLeaderEntity_Wrapper::getClosestSegment
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: point (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RLeaderEntity* w = getWrapped();
+                int res = 
+                    
+                w->getClosestSegment(
+                  a1_cpp
+    
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getClosestSegment";
                   handler.trace();
                   return QJSValue();
                 

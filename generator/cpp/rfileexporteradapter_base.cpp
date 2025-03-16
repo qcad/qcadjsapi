@@ -673,7 +673,7 @@ invisible
     }
 
   void RFileExporterAdapter_Base::endEntity(
-      
+      bool a1
     ) 
     
     {
@@ -690,6 +690,13 @@ invisible
       if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
         
+
+  args << RJSHelper::cpp2js_bool(
+    handler, 
+    // non-copyable: false
+a1
+  );
+
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
@@ -730,7 +737,7 @@ invisible
       
           // call implementation of original class:
           return RFileExporterAdapter::endEntity(
-            
+            a1
           );
         
     }
