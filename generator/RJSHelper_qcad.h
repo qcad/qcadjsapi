@@ -347,6 +347,18 @@
           virtual RDimDiametricEntity* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class RDimensionData:
+        class RJSBasecaster_RDimensionData {
+        public:
+          virtual RDimensionData* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class RDimensionEntity:
+        class RJSBasecaster_RDimensionEntity {
+        public:
+          virtual RDimensionEntity* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class RDimLinearData:
         class RJSBasecaster_RDimLinearData {
         public:
@@ -405,18 +417,6 @@
         class RJSBasecaster_RDimStyleData {
         public:
           virtual RDimStyleData* castToBase(int t, void* vp) = 0;
-        };
-      
-        // Base class for basecasters that can cast void* to base class RDimensionData:
-        class RJSBasecaster_RDimensionData {
-        public:
-          virtual RDimensionData* castToBase(int t, void* vp) = 0;
-        };
-      
-        // Base class for basecasters that can cast void* to base class RDimensionEntity:
-        class RJSBasecaster_RDimensionEntity {
-        public:
-          virtual RDimensionEntity* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class RDirected:
@@ -515,6 +515,12 @@
           virtual RExplodable* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class RExporter:
+        class RJSBasecaster_RExporter {
+        public:
+          virtual RExporter* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class RExportListener:
         class RJSBasecaster_RExportListener {
         public:
@@ -525,12 +531,6 @@
         class RJSBasecaster_RExportListenerAdapter {
         public:
           virtual RExportListenerAdapter* castToBase(int t, void* vp) = 0;
-        };
-      
-        // Base class for basecasters that can cast void* to base class RExporter:
-        class RJSBasecaster_RExporter {
-        public:
-          virtual RExporter* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class RFaceData:
@@ -731,6 +731,12 @@
           virtual RImageEntity* castToBase(int t, void* vp) = 0;
         };
       
+        // Base class for basecasters that can cast void* to base class RImporter:
+        class RJSBasecaster_RImporter {
+        public:
+          virtual RImporter* castToBase(int t, void* vp) = 0;
+        };
+      
         // Base class for basecasters that can cast void* to base class RImportListener:
         class RJSBasecaster_RImportListener {
         public:
@@ -741,12 +747,6 @@
         class RJSBasecaster_RImportListenerAdapter {
         public:
           virtual RImportListenerAdapter* castToBase(int t, void* vp) = 0;
-        };
-      
-        // Base class for basecasters that can cast void* to base class RImporter:
-        class RJSBasecaster_RImporter {
-        public:
-          virtual RImporter* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class RInputEvent:
@@ -1613,16 +1613,16 @@
           virtual RTransform* castToBase(int t, void* vp) = 0;
         };
       
-        // Base class for basecasters that can cast void* to base class RTransformOp:
-        class RJSBasecaster_RTransformOp {
-        public:
-          virtual RTransformOp* castToBase(int t, void* vp) = 0;
-        };
-      
         // Base class for basecasters that can cast void* to base class RTransformation:
         class RJSBasecaster_RTransformation {
         public:
           virtual RTransformation* castToBase(int t, void* vp) = 0;
+        };
+      
+        // Base class for basecasters that can cast void* to base class RTransformOp:
+        class RJSBasecaster_RTransformOp {
+        public:
+          virtual RTransformOp* castToBase(int t, void* vp) = 0;
         };
       
         // Base class for basecasters that can cast void* to base class RTranslation:
@@ -3172,6 +3172,49 @@
               }
             };
           
+          // implementation of base casters that cast RDimensionData to base classes:
+          
+            // implementation of base casters that casts RDimensionData to REntityData
+            class RJSBasecaster_RDimensionData_REntityData : public RJSBasecaster_REntityData {
+            public:
+              virtual REntityData* castToBase(int t, void* vp) {
+                if (t==RJSType_RDimensionData::getIdStatic()) {
+                  return (REntityData*)(RDimensionData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+          // implementation of base casters that cast RDimensionEntity to base classes:
+          
+            // implementation of base casters that casts RDimensionEntity to RObject
+            class RJSBasecaster_RDimensionEntity_RObject : public RJSBasecaster_RObject {
+            public:
+              virtual RObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RDimensionEntity::getIdStatic()) {
+                  return (RObject*)(RDimensionEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RDimensionEntity to REntity
+            class RJSBasecaster_RDimensionEntity_REntity : public RJSBasecaster_REntity {
+            public:
+              virtual REntity* castToBase(int t, void* vp) {
+                if (t==RJSType_RDimensionEntity::getIdStatic()) {
+                  return (REntity*)(RDimensionEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
           // implementation of base casters that cast RDimLinearData to base classes:
           
             // implementation of base casters that casts RDimLinearData to REntityData
@@ -3504,49 +3547,6 @@
           
           // implementation of base casters that cast RDimStyleData to base classes:
           
-          // implementation of base casters that cast RDimensionData to base classes:
-          
-            // implementation of base casters that casts RDimensionData to REntityData
-            class RJSBasecaster_RDimensionData_REntityData : public RJSBasecaster_REntityData {
-            public:
-              virtual REntityData* castToBase(int t, void* vp) {
-                if (t==RJSType_RDimensionData::getIdStatic()) {
-                  return (REntityData*)(RDimensionData*)vp;
-                }
-                else {
-                  return nullptr;
-                }
-              }
-            };
-          
-          // implementation of base casters that cast RDimensionEntity to base classes:
-          
-            // implementation of base casters that casts RDimensionEntity to RObject
-            class RJSBasecaster_RDimensionEntity_RObject : public RJSBasecaster_RObject {
-            public:
-              virtual RObject* castToBase(int t, void* vp) {
-                if (t==RJSType_RDimensionEntity::getIdStatic()) {
-                  return (RObject*)(RDimensionEntity*)vp;
-                }
-                else {
-                  return nullptr;
-                }
-              }
-            };
-          
-            // implementation of base casters that casts RDimensionEntity to REntity
-            class RJSBasecaster_RDimensionEntity_REntity : public RJSBasecaster_REntity {
-            public:
-              virtual REntity* castToBase(int t, void* vp) {
-                if (t==RJSType_RDimensionEntity::getIdStatic()) {
-                  return (REntity*)(RDimensionEntity*)vp;
-                }
-                else {
-                  return nullptr;
-                }
-              }
-            };
-          
           // implementation of base casters that cast RDirected to base classes:
           
           // implementation of base casters that cast RDockWidget to base classes:
@@ -3748,6 +3748,8 @@
           
           // implementation of base casters that cast RExplodable to base classes:
           
+          // implementation of base casters that cast RExporter to base classes:
+          
           // implementation of base casters that cast RExportListener to base classes:
           
           // implementation of base casters that cast RExportListenerAdapter to base classes:
@@ -3777,8 +3779,6 @@
                 }
               }
             };
-          
-          // implementation of base casters that cast RExporter to base classes:
           
           // implementation of base casters that cast RFaceData to base classes:
           
@@ -4366,6 +4366,8 @@
               }
             };
           
+          // implementation of base casters that cast RImporter to base classes:
+          
           // implementation of base casters that cast RImportListener to base classes:
           
           // implementation of base casters that cast RImportListenerAdapter to base classes:
@@ -4395,8 +4397,6 @@
                 }
               }
             };
-          
-          // implementation of base casters that cast RImporter to base classes:
           
           // implementation of base casters that cast RInputEvent to base classes:
           
@@ -7195,9 +7195,9 @@
               }
             };
           
-          // implementation of base casters that cast RTransformOp to base classes:
-          
           // implementation of base casters that cast RTransformation to base classes:
+          
+          // implementation of base casters that cast RTransformOp to base classes:
           
           // implementation of base casters that cast RTranslation to base classes:
           

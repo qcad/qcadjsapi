@@ -315,6 +315,16 @@
         
           #include "rdimensionentity_wrapper.h"
         
+        #include "rdimensiondata_wrapper.h"
+        
+          #include "rentitydata_wrapper.h"
+        
+        #include "rdimensionentity_wrapper.h"
+        
+          #include "robject_wrapper.h"
+        
+          #include "rentity_wrapper.h"
+        
         #include "rdimlineardata_wrapper.h"
         
           #include "rentitydata_wrapper.h"
@@ -383,16 +393,6 @@
         
         #include "rdimstyledata_wrapper.h"
         
-        #include "rdimensiondata_wrapper.h"
-        
-          #include "rentitydata_wrapper.h"
-        
-        #include "rdimensionentity_wrapper.h"
-        
-          #include "robject_wrapper.h"
-        
-          #include "rentity_wrapper.h"
-        
         #include "rdirected_wrapper.h"
         
         #include "rdockwidget_wrapper.h"
@@ -451,6 +451,8 @@
         
         #include "rexplodable_wrapper.h"
         
+        #include "rexporter_wrapper.h"
+        
         #include "rexportlistener_wrapper.h"
         
         #include "rexportlisteneradapter_wrapper.h"
@@ -458,8 +460,6 @@
           #include "qobject_wrapper.h"
         
           #include "rexportlistener_wrapper.h"
-        
-        #include "rexporter_wrapper.h"
         
         #include "rfacedata_wrapper.h"
         
@@ -607,6 +607,8 @@
         
           #include "rentity_wrapper.h"
         
+        #include "rimporter_wrapper.h"
+        
         #include "rimportlistener_wrapper.h"
         
         #include "rimportlisteneradapter_wrapper.h"
@@ -614,8 +616,6 @@
           #include "qobject_wrapper.h"
         
           #include "rimportlistener_wrapper.h"
-        
-        #include "rimporter_wrapper.h"
         
         #include "rinputevent_wrapper.h"
         
@@ -1291,9 +1291,9 @@
         
           #include "qtransform_wrapper.h"
         
-        #include "rtransformop_wrapper.h"
-        
         #include "rtransformation_wrapper.h"
+        
+        #include "rtransformop_wrapper.h"
         
         #include "rtranslation_wrapper.h"
         
@@ -1499,6 +1499,13 @@
             }
           
             {
+              QSharedPointer<RDimensionEntity> s = v.dynamicCast<RDimensionEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RDimensionEntity(handler, s);
+              }
+            }
+          
+            {
               QSharedPointer<RDimLinearEntity> s = v.dynamicCast<RDimLinearEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimLinearEntity(handler, s);
@@ -1523,13 +1530,6 @@
               QSharedPointer<RDimRotatedEntity> s = v.dynamicCast<RDimRotatedEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimRotatedEntity(handler, s);
-              }
-            }
-          
-            {
-              QSharedPointer<RDimensionEntity> s = v.dynamicCast<RDimensionEntity>();
-              if (!s.isNull()) {
-                return cpp2js_QSharedPointer_RDimensionEntity(handler, s);
               }
             }
           
@@ -1728,6 +1728,10 @@
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimDiametricEntity(handler, v);
                 }
               
+                if (RJSType_RDimensionEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimensionEntity(handler, v);
+                }
+              
                 if (RJSType_RDimLinearEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimLinearEntity(handler, v);
                 }
@@ -1742,10 +1746,6 @@
               
                 if (RJSType_RDimRotatedEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRotatedEntity(handler, v);
-                }
-              
-                if (RJSType_RDimensionEntity::isOfType(t)) {
-                  return RJSHelper_qcad::js2cpp_QSharedPointer_RDimensionEntity(handler, v);
                 }
               
                 if (RJSType_REllipseEntity::isOfType(t)) {

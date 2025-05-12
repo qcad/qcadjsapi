@@ -191,7 +191,7 @@ double a3_cpp;
     // Function: createTangential
     // Source: 
     // Static: true
-    // Parameters: 4
+    // Parameters: 5
     // preceding Parameters: -1
 
                 QJSValue 
@@ -205,7 +205,9 @@ double a3_cpp;
   const QJSValue& 
   a3, 
   const QJSValue& 
-  a4
+  a4, 
+  const QJSValue& 
+  a5
               ) 
               
               {
@@ -222,6 +224,11 @@ double a3_cpp;
   )
 
    && RJSHelper::is_double(handler, a4
+  )
+
+   && RJSHelper::is_bool(handler, a5
+    , true
+  
   )
 
   
@@ -253,6 +260,18 @@ double a4_cpp;
 
       a4_cpp = RJSHelper::js2cpp_double(handler, a4);
         
+  // convert js parameter to cpp: autoRadius (bool)
+  
+bool a5_cpp;
+
+      
+          if (a5.isUndefined()) {
+            a5_cpp = false;
+          }
+          else {
+            a5_cpp = RJSHelper::js2cpp_bool(handler, a5);
+          }
+        
 
     // call function:
     
@@ -266,6 +285,7 @@ double a4_cpp;
     , a2_cpp
     , a3_cpp
     , a4_cpp
+    , a5_cpp
     
             );
           

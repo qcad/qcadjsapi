@@ -315,6 +315,16 @@
         
           #include "rdimensionentity_wrapper.h"
         
+        #include "rdimensiondata_wrapper.h"
+        
+          #include "rentitydata_wrapper.h"
+        
+        #include "rdimensionentity_wrapper.h"
+        
+          #include "robject_wrapper.h"
+        
+          #include "rentity_wrapper.h"
+        
         #include "rdimlineardata_wrapper.h"
         
           #include "rentitydata_wrapper.h"
@@ -383,16 +393,6 @@
         
         #include "rdimstyledata_wrapper.h"
         
-        #include "rdimensiondata_wrapper.h"
-        
-          #include "rentitydata_wrapper.h"
-        
-        #include "rdimensionentity_wrapper.h"
-        
-          #include "robject_wrapper.h"
-        
-          #include "rentity_wrapper.h"
-        
         #include "rdirected_wrapper.h"
         
         #include "rdockwidget_wrapper.h"
@@ -451,6 +451,8 @@
         
         #include "rexplodable_wrapper.h"
         
+        #include "rexporter_wrapper.h"
+        
         #include "rexportlistener_wrapper.h"
         
         #include "rexportlisteneradapter_wrapper.h"
@@ -458,8 +460,6 @@
           #include "qobject_wrapper.h"
         
           #include "rexportlistener_wrapper.h"
-        
-        #include "rexporter_wrapper.h"
         
         #include "rfacedata_wrapper.h"
         
@@ -607,6 +607,8 @@
         
           #include "rentity_wrapper.h"
         
+        #include "rimporter_wrapper.h"
+        
         #include "rimportlistener_wrapper.h"
         
         #include "rimportlisteneradapter_wrapper.h"
@@ -614,8 +616,6 @@
           #include "qobject_wrapper.h"
         
           #include "rimportlistener_wrapper.h"
-        
-        #include "rimporter_wrapper.h"
         
         #include "rinputevent_wrapper.h"
         
@@ -1291,9 +1291,9 @@
         
           #include "qtransform_wrapper.h"
         
-        #include "rtransformop_wrapper.h"
-        
         #include "rtransformation_wrapper.h"
+        
+        #include "rtransformop_wrapper.h"
         
         #include "rtranslation_wrapper.h"
         
@@ -1819,6 +1819,9 @@
           // downcasters from QQmlEngine to ...
           
 
+          // downcasters from QRhiWidget to ...
+          
+
           // downcasters from QTextBrowser to ...
           
 
@@ -2056,6 +2059,8 @@
               RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RToolOptionEventFilter());
             
             // downcasters from QQmlEngine to ...
+            
+            // downcasters from QRhiWidget to ...
             
             // downcasters from QTextBrowser to ...
             
@@ -2506,6 +2511,19 @@
               // registration of base casters that casts RDimDiametricEntity to RDimensionEntity:
               RDimensionEntity_Wrapper::registerBasecaster_RDimensionEntity(new RJSBasecaster_RDimDiametricEntity_RDimensionEntity());
             
+            // registration of base casters that cast RDimensionData to base classes:
+            
+              // registration of base casters that casts RDimensionData to REntityData:
+              REntityData_Wrapper::registerBasecaster_REntityData(new RJSBasecaster_RDimensionData_REntityData());
+            
+            // registration of base casters that cast RDimensionEntity to base classes:
+            
+              // registration of base casters that casts RDimensionEntity to RObject:
+              RObject_Wrapper::registerBasecaster_RObject(new RJSBasecaster_RDimensionEntity_RObject());
+            
+              // registration of base casters that casts RDimensionEntity to REntity:
+              REntity_Wrapper::registerBasecaster_REntity(new RJSBasecaster_RDimensionEntity_REntity());
+            
             // registration of base casters that cast RDimLinearData to base classes:
             
               // registration of base casters that casts RDimLinearData to REntityData:
@@ -2598,19 +2616,6 @@
             
             // registration of base casters that cast RDimStyleData to base classes:
             
-            // registration of base casters that cast RDimensionData to base classes:
-            
-              // registration of base casters that casts RDimensionData to REntityData:
-              REntityData_Wrapper::registerBasecaster_REntityData(new RJSBasecaster_RDimensionData_REntityData());
-            
-            // registration of base casters that cast RDimensionEntity to base classes:
-            
-              // registration of base casters that casts RDimensionEntity to RObject:
-              RObject_Wrapper::registerBasecaster_RObject(new RJSBasecaster_RDimensionEntity_RObject());
-            
-              // registration of base casters that casts RDimensionEntity to REntity:
-              REntity_Wrapper::registerBasecaster_REntity(new RJSBasecaster_RDimensionEntity_REntity());
-            
             // registration of base casters that cast RDirected to base classes:
             
             // registration of base casters that cast RDockWidget to base classes:
@@ -2682,6 +2687,8 @@
             
             // registration of base casters that cast RExplodable to base classes:
             
+            // registration of base casters that cast RExporter to base classes:
+            
             // registration of base casters that cast RExportListener to base classes:
             
             // registration of base casters that cast RExportListenerAdapter to base classes:
@@ -2691,8 +2698,6 @@
             
               // registration of base casters that casts RExportListenerAdapter to RExportListener:
               RExportListener_Wrapper::registerBasecaster_RExportListener(new RJSBasecaster_RExportListenerAdapter_RExportListener());
-            
-            // registration of base casters that cast RExporter to base classes:
             
             // registration of base casters that cast RFaceData to base classes:
             
@@ -2880,6 +2885,8 @@
               // registration of base casters that casts RImageEntity to REntity:
               REntity_Wrapper::registerBasecaster_REntity(new RJSBasecaster_RImageEntity_REntity());
             
+            // registration of base casters that cast RImporter to base classes:
+            
             // registration of base casters that cast RImportListener to base classes:
             
             // registration of base casters that cast RImportListenerAdapter to base classes:
@@ -2889,8 +2896,6 @@
             
               // registration of base casters that casts RImportListenerAdapter to RImportListener:
               RImportListener_Wrapper::registerBasecaster_RImportListener(new RJSBasecaster_RImportListenerAdapter_RImportListener());
-            
-            // registration of base casters that cast RImporter to base classes:
             
             // registration of base casters that cast RInputEvent to base classes:
             
@@ -3759,9 +3764,9 @@
               // registration of base casters that casts RTransform to QTransform:
               QTransform_Wrapper::registerBasecaster_QTransform(new RJSBasecaster_RTransform_QTransform());
             
-            // registration of base casters that cast RTransformOp to base classes:
-            
             // registration of base casters that cast RTransformation to base classes:
+            
+            // registration of base casters that cast RTransformOp to base classes:
             
             // registration of base casters that cast RTranslation to base classes:
             

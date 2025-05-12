@@ -315,6 +315,16 @@
         
           #include "rdimensionentity_wrapper.h"
         
+        #include "rdimensiondata_wrapper.h"
+        
+          #include "rentitydata_wrapper.h"
+        
+        #include "rdimensionentity_wrapper.h"
+        
+          #include "robject_wrapper.h"
+        
+          #include "rentity_wrapper.h"
+        
         #include "rdimlineardata_wrapper.h"
         
           #include "rentitydata_wrapper.h"
@@ -383,16 +393,6 @@
         
         #include "rdimstyledata_wrapper.h"
         
-        #include "rdimensiondata_wrapper.h"
-        
-          #include "rentitydata_wrapper.h"
-        
-        #include "rdimensionentity_wrapper.h"
-        
-          #include "robject_wrapper.h"
-        
-          #include "rentity_wrapper.h"
-        
         #include "rdirected_wrapper.h"
         
         #include "rdockwidget_wrapper.h"
@@ -451,6 +451,8 @@
         
         #include "rexplodable_wrapper.h"
         
+        #include "rexporter_wrapper.h"
+        
         #include "rexportlistener_wrapper.h"
         
         #include "rexportlisteneradapter_wrapper.h"
@@ -458,8 +460,6 @@
           #include "qobject_wrapper.h"
         
           #include "rexportlistener_wrapper.h"
-        
-        #include "rexporter_wrapper.h"
         
         #include "rfacedata_wrapper.h"
         
@@ -607,6 +607,8 @@
         
           #include "rentity_wrapper.h"
         
+        #include "rimporter_wrapper.h"
+        
         #include "rimportlistener_wrapper.h"
         
         #include "rimportlisteneradapter_wrapper.h"
@@ -614,8 +616,6 @@
           #include "qobject_wrapper.h"
         
           #include "rimportlistener_wrapper.h"
-        
-        #include "rimporter_wrapper.h"
         
         #include "rinputevent_wrapper.h"
         
@@ -1291,9 +1291,9 @@
         
           #include "qtransform_wrapper.h"
         
-        #include "rtransformop_wrapper.h"
-        
         #include "rtransformation_wrapper.h"
+        
+        #include "rtransformop_wrapper.h"
         
         #include "rtranslation_wrapper.h"
         

@@ -110,6 +110,7 @@
           <parameter const="true" type="RVector" modifier="&amp;" name="pos" />
           <parameter const="false" type="double" modifier="" name="direction" />
           <parameter const="false" type="double" modifier="" name="radius" />
+          <parameter const="false" type="bool" modifier="" name="autoRadius" default="false" />
         </parameters>
       </variant>
     </function>
