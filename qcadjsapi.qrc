@@ -54,6 +54,8 @@
     <file alias="generator/js/RDimArcLengthEntity.js">generator/js/RDimArcLengthEntity.js</file>
     <file alias="generator/js/RDimDiametricData.js">generator/js/RDimDiametricData.js</file>
     <file alias="generator/js/RDimDiametricEntity.js">generator/js/RDimDiametricEntity.js</file>
+    <file alias="generator/js/RDimensionData.js">generator/js/RDimensionData.js</file>
+    <file alias="generator/js/RDimensionEntity.js">generator/js/RDimensionEntity.js</file>
     <file alias="generator/js/RDimLinearData.js">generator/js/RDimLinearData.js</file>
     <file alias="generator/js/RDimLinearEntity.js">generator/js/RDimLinearEntity.js</file>
     <file alias="generator/js/RDimOrdinateData.js">generator/js/RDimOrdinateData.js</file>
@@ -64,8 +66,6 @@
     <file alias="generator/js/RDimRotatedEntity.js">generator/js/RDimRotatedEntity.js</file>
     <file alias="generator/js/RDimStyle.js">generator/js/RDimStyle.js</file>
     <file alias="generator/js/RDimStyleData.js">generator/js/RDimStyleData.js</file>
-    <file alias="generator/js/RDimensionData.js">generator/js/RDimensionData.js</file>
-    <file alias="generator/js/RDimensionEntity.js">generator/js/RDimensionEntity.js</file>
     <file alias="generator/js/RDirected.js">generator/js/RDirected.js</file>
     <file alias="generator/js/RDockWidget.js">generator/js/RDockWidget.js</file>
     <file alias="generator/js/RDocument.js">generator/js/RDocument.js</file>
@@ -82,9 +82,9 @@
     <file alias="generator/js/REventFilter.js">generator/js/REventFilter.js</file>
     <file alias="generator/js/REventHandler.js">generator/js/REventHandler.js</file>
     <file alias="generator/js/RExplodable.js">generator/js/RExplodable.js</file>
+    <file alias="generator/js/RExporter.js">generator/js/RExporter.js</file>
     <file alias="generator/js/RExportListener.js">generator/js/RExportListener.js</file>
     <file alias="generator/js/RExportListenerAdapter.js">generator/js/RExportListenerAdapter.js</file>
-    <file alias="generator/js/RExporter.js">generator/js/RExporter.js</file>
     <file alias="generator/js/RFaceData.js">generator/js/RFaceData.js</file>
     <file alias="generator/js/RFaceEntity.js">generator/js/RFaceEntity.js</file>
     <file alias="generator/js/RFileCache.js">generator/js/RFileCache.js</file>
@@ -118,9 +118,9 @@
     <file alias="generator/js/RHatchEntity.js">generator/js/RHatchEntity.js</file>
     <file alias="generator/js/RImageData.js">generator/js/RImageData.js</file>
     <file alias="generator/js/RImageEntity.js">generator/js/RImageEntity.js</file>
+    <file alias="generator/js/RImporter.js">generator/js/RImporter.js</file>
     <file alias="generator/js/RImportListener.js">generator/js/RImportListener.js</file>
     <file alias="generator/js/RImportListenerAdapter.js">generator/js/RImportListenerAdapter.js</file>
-    <file alias="generator/js/RImporter.js">generator/js/RImporter.js</file>
     <file alias="generator/js/RInputEvent.js">generator/js/RInputEvent.js</file>
     <file alias="generator/js/RInterTransactionListener.js">generator/js/RInterTransactionListener.js</file>
     <file alias="generator/js/RInterTransactionListenerAdapter.js">generator/js/RInterTransactionListenerAdapter.js</file>
@@ -265,8 +265,8 @@
     <file alias="generator/js/RTransactionListenerAdapter.js">generator/js/RTransactionListenerAdapter.js</file>
     <file alias="generator/js/RTransactionStack.js">generator/js/RTransactionStack.js</file>
     <file alias="generator/js/RTransform.js">generator/js/RTransform.js</file>
-    <file alias="generator/js/RTransformOp.js">generator/js/RTransformOp.js</file>
     <file alias="generator/js/RTransformation.js">generator/js/RTransformation.js</file>
+    <file alias="generator/js/RTransformOp.js">generator/js/RTransformOp.js</file>
     <file alias="generator/js/RTranslation.js">generator/js/RTranslation.js</file>
     <file alias="generator/js/RTreeWidget.js">generator/js/RTreeWidget.js</file>
     <file alias="generator/js/RTriangle.js">generator/js/RTriangle.js</file>
