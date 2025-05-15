@@ -531,8 +531,6 @@ public:
     }
 };
 
-QQmlApplicationEngine* RScriptHandlerJs::mainEngine = NULL;
-
 
 RScriptHandlerJs::RScriptHandlerJs() : rjsapi(NULL), engine(NULL) {
 
@@ -644,14 +642,6 @@ void RScriptHandlerJs::init(bool main) {
     RSingleApplication_Wrapper* app = new RSingleApplication_Wrapper(*rjsapi, dynamic_cast<RSingleApplication*>(qApp), false);
     global.setProperty("qApp", engine->newQObject(app));
     QQmlEngine::setObjectOwnership(app, QQmlEngine::CppOwnership);
-
-    if (main) {
-        mainEngine = engine;
-    }
-    else {
-        global.setProperty("mainEngine", engine->newQObject(mainEngine));
-        QQmlEngine::setObjectOwnership(mainEngine, QQmlEngine::CppOwnership);
-    }
 
     /*
     {

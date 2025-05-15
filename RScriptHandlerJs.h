@@ -101,8 +101,6 @@ public slots:
 
 private:
     RJSApi* rjsapi;
-    //QJSEngine* engine;
-    static QQmlApplicationEngine* mainEngine;
     QQmlApplicationEngine* engine;
     RJSTools* tools;
 
