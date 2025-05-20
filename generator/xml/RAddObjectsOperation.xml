@@ -12,6 +12,7 @@
       <key>GeometryOnly</key>
       <key>Delete</key>
     </enum>
+    <!--
     <class name="RModifiedObjects">
       <constructor>
         <variant>
@@ -100,6 +101,7 @@
         </variant>
       </function>
     </class>
+    -->
     <constructor>
       <variant>
         <parameters>

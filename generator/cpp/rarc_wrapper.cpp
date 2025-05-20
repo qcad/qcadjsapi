@@ -224,9 +224,11 @@ double a3_cpp;
   )
 
    && RJSHelper::is_double(handler, a4
+    , true
+  
   )
 
-   && RJSHelper::is_bool(handler, a5
+   && RJSHelper::is_double(handler, a5
     , true
   
   )
@@ -258,18 +260,24 @@ double a3_cpp;
   
 double a4_cpp;
 
-      a4_cpp = RJSHelper::js2cpp_double(handler, a4);
+      
+          if (a4.isUndefined()) {
+            a4_cpp = 0.0;
+          }
+          else {
+            a4_cpp = RJSHelper::js2cpp_double(handler, a4);
+          }
         
-  // convert js parameter to cpp: autoRadius (bool)
+  // convert js parameter to cpp: sweep (double)
   
-bool a5_cpp;
+double a5_cpp;
 
       
           if (a5.isUndefined()) {
-            a5_cpp = false;
+            a5_cpp = 0.0;
           }
           else {
-            a5_cpp = RJSHelper::js2cpp_bool(handler, a5);
+            a5_cpp = RJSHelper::js2cpp_double(handler, a5);
           }
         
 

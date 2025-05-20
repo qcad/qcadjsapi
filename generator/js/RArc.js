@@ -1109,7 +1109,7 @@ RArc.Ray = RArc_Wrapper.Ray;
         {
           //print("JS: RArc.createTangential");
           
-      if (arguments.length >= 4 &&
+      if (arguments.length >= 3 &&
           arguments.length <= 5) {
     
                 // calling static wrapper:

@@ -79,6 +79,8 @@
                 ,
                 RJSType_RDimDiametricEntity::getIdStatic()
                 ,
+                RJSType_RDimensionEntity::getIdStatic()
+                ,
                 RJSType_RDimLinearEntity::getIdStatic()
                 ,
                 RJSType_RDimOrdinateEntity::getIdStatic()
@@ -86,8 +88,6 @@
                 RJSType_RDimRadialEntity::getIdStatic()
                 ,
                 RJSType_RDimRotatedEntity::getIdStatic()
-                ,
-                RJSType_RDimensionEntity::getIdStatic()
                 ,
                 RJSType_REllipseEntity::getIdStatic()
                 ,
@@ -519,6 +519,8 @@
                 ,
                 RJSType_RDimDiametricEntity::getIdStatic()
                 ,
+                RJSType_RDimensionEntity::getIdStatic()
+                ,
                 RJSType_RDimLinearEntity::getIdStatic()
                 ,
                 RJSType_RDimOrdinateEntity::getIdStatic()
@@ -528,8 +530,6 @@
                 RJSType_RDimRotatedEntity::getIdStatic()
                 ,
                 RJSType_RDimStyle::getIdStatic()
-                ,
-                RJSType_RDimensionEntity::getIdStatic()
                 ,
                 RJSType_RDocumentVariables::getIdStatic()
                 ,
@@ -4611,6 +4611,8 @@
                 ,
                 RJSType_RDimDiametricData::getIdStatic()
                 ,
+                RJSType_RDimensionData::getIdStatic()
+                ,
                 RJSType_RDimLinearData::getIdStatic()
                 ,
                 RJSType_RDimOrdinateData::getIdStatic()
@@ -4618,8 +4620,6 @@
                 RJSType_RDimRadialData::getIdStatic()
                 ,
                 RJSType_RDimRotatedData::getIdStatic()
-                ,
-                RJSType_RDimensionData::getIdStatic()
                 ,
                 RJSType_REllipseData::getIdStatic()
                 ,
