@@ -294,7 +294,6 @@
     #include "RUcsListener.h"
     #include "RUnit.h"
     #include "RVector.h"
-    #include "RVersion.h"
     #include "RView.h"
     #include "RViewFocusListener.h"
     #include "RViewFocusListenerAdapter.h"
