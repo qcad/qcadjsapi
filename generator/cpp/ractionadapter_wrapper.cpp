@@ -1639,6 +1639,92 @@ bool a2_cpp;
               }
             
     // Class: RActionAdapter
+    // Function: getState
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RActionAdapter_Wrapper:: 
+                      // function is public, virtual and overridable, this function can be called from JS implementation to call implementation of super class: 
+                      getStateSuper
+                    
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of RActionAdapter_Base class as 
+                // function has postfix inheritable class, overridable function):
+                RActionAdapter_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "RActionAdapter::getState: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                int res;
+                    
+                    // this is the wrapper that created the object
+                    // call the base class implementation as this function was 
+                    // called from the JS implementation of the same function to call
+                    // the base class implementation
+                    if (wrappedCreated) {
+                      res =
+                      wb->getStateSup(
+                        
+                      );
+                    }
+
+                    // this is a wrapper that was created for an existing object
+                    // call the JS implementation as this function was 
+                    // called from another JS function
+                    else {
+                      res =
+                      wb->getState(
+                        
+                      );
+                    }
+                  
+                //setRecFlag(false);
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getState";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RActionAdapter
     // Function: beginEvent
     // Source: 
     // Static: false

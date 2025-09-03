@@ -597,6 +597,28 @@ PickingDisabled = RActionAdapter::PickingDisabled,
               ;
             
     // Class: RActionAdapter
+    // Function: getState
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                   
+                      // function is public, virtual and overridable, this function can be called from JS implementation to call implementation of super class: 
+                      getStateSuper
+                    
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RActionAdapter
     // Function: beginEvent
     // Source: 
     // Static: false

@@ -24,6 +24,11 @@
         </parameters>
       </variant>
     </constructor>
+    <function name="getState">
+      <variant return-type="int" virtual="true" overridable="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="beginEvent">
       <variant return-type="void" virtual="true" overridable="true" access="public">
         <parameters />

@@ -450,6 +450,25 @@ PickingDisabled = RAction::PickingDisabled,
               ;
             
     // Class: RAction
+    // Function: getState
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getState
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RAction
     // Function: beginEvent
     // Source: 
     // Static: false

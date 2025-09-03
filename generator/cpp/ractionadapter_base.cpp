@@ -278,6 +278,68 @@ di
         
     }
 
+  int RActionAdapter_Base::getState(
+      
+    ) 
+    
+    {
+
+      //qDebug() << "RActionAdapter_Base::getState()";
+
+      // make sure we don't call same function (recursion):
+      // only call JS function implementation
+
+      QJSEngine* engine = handler.getEngine();
+
+      //QJSValue f = self.prototype().property("getState");
+      QJSValue f = self.property("getState");
+      if (f.isCallable() /*&& !recFlag*/) {
+        QJSValueList args;
+        
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        //engine->evaluate("__self__.getState();");
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.getState.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+        // does not provide back trace in case of error:
+        //QJSValue res = f.callWithInstance(self, args);
+        //if (res.isError()) {
+        //  qWarning() << "Error while calling getState:" << res.toString();
+        //  engine->throwError("exception in: RActionAdapter::getState:" + res.toString());
+        //}
+
+        
+            return RJSHelper::js2cpp_int(handler, res);
+          
+      }
+
+      //if (!recFlag) {
+        // function not implemented in JS: exception
+        engine->throwError(QString("function not implemented in JS class: RActionAdapter::getState"));
+      //}
+
+      
+          // call implementation of original class:
+          return RActionAdapter::getState(
+            
+          );
+        
+    }
+
   void RActionAdapter_Base::beginEvent(
       
     ) 

@@ -350,6 +350,14 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
         };
     
         // function 
+        RAction.prototype.getState = function(...args) 
+          
+        {
+          //print("JS: RAction.prototype.getState");
+          return this.__PROXY__.getState(...args);
+        };
+    
+        // function 
         RAction.prototype.beginEvent = function(...args) 
           
         {

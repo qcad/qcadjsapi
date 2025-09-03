@@ -1016,6 +1016,61 @@ RAction::ClickMode a1_cpp;
               }
             
     // Class: RAction
+    // Function: getState
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RAction_Wrapper::getState
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RAction* w = getWrapped();
+                int res = 
+                    
+                w->getState(
+                  
+                );
+              
+            // return type: int
+
+            return RJSHelper::cpp2js_int(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getState";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RAction
     // Function: beginEvent
     // Source: 
     // Static: false

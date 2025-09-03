@@ -392,6 +392,38 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
         };
     
       // function 
+      RActionAdapter.prototype.getState = function() 
+        
+      {
+        //print("JS: RActionAdapter.prototype.getState");
+        
+      if (arguments.length == 0) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.getState(
+                // call highest level JS implementation:
+                //return this.getStateBase(
+                
+                    return this.__PROXY__.getStateSuper(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RActionAdapter);
+  }
+
+  
+  else {
+    
+        print("RActionAdapter.getState(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+      };
+    
+      // function 
       RActionAdapter.prototype.beginEvent = function() 
         
       {

@@ -28,1729 +28,1729 @@
         public:
           virtual RAction* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RActionAdapter:
         class RJSBasecaster_RActionAdapter {
         public:
           virtual RActionAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RAddObjectOperation:
         class RJSBasecaster_RAddObjectOperation {
         public:
           virtual RAddObjectOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RAddObjectsOperation:
         class RJSBasecaster_RAddObjectsOperation {
         public:
           virtual RAddObjectsOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RArc:
         class RJSBasecaster_RArc {
         public:
           virtual RArc* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RArcData:
         class RJSBasecaster_RArcData {
         public:
           virtual RArcData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RArcEntity:
         class RJSBasecaster_RArcEntity {
         public:
           virtual RArcEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RAttributeData:
         class RJSBasecaster_RAttributeData {
         public:
           virtual RAttributeData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RAttributeDefinitionData:
         class RJSBasecaster_RAttributeDefinitionData {
         public:
           virtual RAttributeDefinitionData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RAttributeDefinitionEntity:
         class RJSBasecaster_RAttributeDefinitionEntity {
         public:
           virtual RAttributeDefinitionEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RAttributeEntity:
         class RJSBasecaster_RAttributeEntity {
         public:
           virtual RAttributeEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RAutoLoadJs:
         class RJSBasecaster_RAutoLoadJs {
         public:
           virtual RAutoLoadJs* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RBlock:
         class RJSBasecaster_RBlock {
         public:
           virtual RBlock* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RBlockListener:
         class RJSBasecaster_RBlockListener {
         public:
           virtual RBlockListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RBlockListenerAdapter:
         class RJSBasecaster_RBlockListenerAdapter {
         public:
           virtual RBlockListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RBlockReferenceData:
         class RJSBasecaster_RBlockReferenceData {
         public:
           virtual RBlockReferenceData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RBlockReferenceEntity:
         class RJSBasecaster_RBlockReferenceEntity {
         public:
           virtual RBlockReferenceEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RBox:
         class RJSBasecaster_RBox {
         public:
           virtual RBox* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCadToolBar:
         class RJSBasecaster_RCadToolBar {
         public:
           virtual RCadToolBar* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCadToolBarPanel:
         class RJSBasecaster_RCadToolBarPanel {
         public:
           virtual RCadToolBarPanel* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RChangePropertyOperation:
         class RJSBasecaster_RChangePropertyOperation {
         public:
           virtual RChangePropertyOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCharacterWidget:
         class RJSBasecaster_RCharacterWidget {
         public:
           virtual RCharacterWidget* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCircle:
         class RJSBasecaster_RCircle {
         public:
           virtual RCircle* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCircleData:
         class RJSBasecaster_RCircleData {
         public:
           virtual RCircleData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCircleEntity:
         class RJSBasecaster_RCircleEntity {
         public:
           virtual RCircleEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RClickReferencePointOperation:
         class RJSBasecaster_RClickReferencePointOperation {
         public:
           virtual RClickReferencePointOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RClipboardOperation:
         class RJSBasecaster_RClipboardOperation {
         public:
           virtual RClipboardOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCloseCurrentEvent:
         class RJSBasecaster_RCloseCurrentEvent {
         public:
           virtual RCloseCurrentEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RColor:
         class RJSBasecaster_RColor {
         public:
           virtual RColor* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RColorCombo:
         class RJSBasecaster_RColorCombo {
         public:
           virtual RColorCombo* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RComboBox:
         class RJSBasecaster_RComboBox {
         public:
           virtual RComboBox* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCommandEvent:
         class RJSBasecaster_RCommandEvent {
         public:
           virtual RCommandEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCommandLine:
         class RJSBasecaster_RCommandLine {
         public:
           virtual RCommandLine* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCoordinateEvent:
         class RJSBasecaster_RCoordinateEvent {
         public:
           virtual RCoordinateEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCoordinateListener:
         class RJSBasecaster_RCoordinateListener {
         public:
           virtual RCoordinateListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCoordinateListenerAdapter:
         class RJSBasecaster_RCoordinateListenerAdapter {
         public:
           virtual RCoordinateListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RCopyOperation:
         class RJSBasecaster_RCopyOperation {
         public:
           virtual RCopyOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDebug:
         class RJSBasecaster_RDebug {
         public:
           virtual RDebug* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDeleteAllEntitiesOperation:
         class RJSBasecaster_RDeleteAllEntitiesOperation {
         public:
           virtual RDeleteAllEntitiesOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDeleteObjectOperation:
         class RJSBasecaster_RDeleteObjectOperation {
         public:
           virtual RDeleteObjectOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDeleteObjectsOperation:
         class RJSBasecaster_RDeleteObjectsOperation {
         public:
           virtual RDeleteObjectsOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDeleteSelectionOperation:
         class RJSBasecaster_RDeleteSelectionOperation {
         public:
           virtual RDeleteSelectionOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimAlignedData:
         class RJSBasecaster_RDimAlignedData {
         public:
           virtual RDimAlignedData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimAlignedEntity:
         class RJSBasecaster_RDimAlignedEntity {
         public:
           virtual RDimAlignedEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimAngular2LData:
         class RJSBasecaster_RDimAngular2LData {
         public:
           virtual RDimAngular2LData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimAngular2LEntity:
         class RJSBasecaster_RDimAngular2LEntity {
         public:
           virtual RDimAngular2LEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimAngular3PData:
         class RJSBasecaster_RDimAngular3PData {
         public:
           virtual RDimAngular3PData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimAngular3PEntity:
         class RJSBasecaster_RDimAngular3PEntity {
         public:
           virtual RDimAngular3PEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimAngularData:
         class RJSBasecaster_RDimAngularData {
         public:
           virtual RDimAngularData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimAngularEntity:
         class RJSBasecaster_RDimAngularEntity {
         public:
           virtual RDimAngularEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimArcLengthData:
         class RJSBasecaster_RDimArcLengthData {
         public:
           virtual RDimArcLengthData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimArcLengthEntity:
         class RJSBasecaster_RDimArcLengthEntity {
         public:
           virtual RDimArcLengthEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimDiametricData:
         class RJSBasecaster_RDimDiametricData {
         public:
           virtual RDimDiametricData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimDiametricEntity:
         class RJSBasecaster_RDimDiametricEntity {
         public:
           virtual RDimDiametricEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimensionData:
         class RJSBasecaster_RDimensionData {
         public:
           virtual RDimensionData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimensionEntity:
         class RJSBasecaster_RDimensionEntity {
         public:
           virtual RDimensionEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimLinearData:
         class RJSBasecaster_RDimLinearData {
         public:
           virtual RDimLinearData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimLinearEntity:
         class RJSBasecaster_RDimLinearEntity {
         public:
           virtual RDimLinearEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimOrdinateData:
         class RJSBasecaster_RDimOrdinateData {
         public:
           virtual RDimOrdinateData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimOrdinateEntity:
         class RJSBasecaster_RDimOrdinateEntity {
         public:
           virtual RDimOrdinateEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimRadialData:
         class RJSBasecaster_RDimRadialData {
         public:
           virtual RDimRadialData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimRadialEntity:
         class RJSBasecaster_RDimRadialEntity {
         public:
           virtual RDimRadialEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimRotatedData:
         class RJSBasecaster_RDimRotatedData {
         public:
           virtual RDimRotatedData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimRotatedEntity:
         class RJSBasecaster_RDimRotatedEntity {
         public:
           virtual RDimRotatedEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimStyle:
         class RJSBasecaster_RDimStyle {
         public:
           virtual RDimStyle* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDimStyleData:
         class RJSBasecaster_RDimStyleData {
         public:
           virtual RDimStyleData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDirected:
         class RJSBasecaster_RDirected {
         public:
           virtual RDirected* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDockWidget:
         class RJSBasecaster_RDockWidget {
         public:
           virtual RDockWidget* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDocument:
         class RJSBasecaster_RDocument {
         public:
           virtual RDocument* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDocumentInterface:
         class RJSBasecaster_RDocumentInterface {
         public:
           virtual RDocumentInterface* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDocumentVariables:
         class RJSBasecaster_RDocumentVariables {
         public:
           virtual RDocumentVariables* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RDxfServices:
         class RJSBasecaster_RDxfServices {
         public:
           virtual RDxfServices* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class REllipse:
         class RJSBasecaster_REllipse {
         public:
           virtual REllipse* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class REllipseData:
         class RJSBasecaster_REllipseData {
         public:
           virtual REllipseData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class REllipseEntity:
         class RJSBasecaster_REllipseEntity {
         public:
           virtual REllipseEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class REntity:
         class RJSBasecaster_REntity {
         public:
           virtual REntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class REntityData:
         class RJSBasecaster_REntityData {
         public:
           virtual REntityData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class REntityExportListener:
         class RJSBasecaster_REntityExportListener {
         public:
           virtual REntityExportListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class REntityPickEvent:
         class RJSBasecaster_REntityPickEvent {
         public:
           virtual REntityPickEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class REventFilter:
         class RJSBasecaster_REventFilter {
         public:
           virtual REventFilter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class REventHandler:
         class RJSBasecaster_REventHandler {
         public:
           virtual REventHandler* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RExplodable:
         class RJSBasecaster_RExplodable {
         public:
           virtual RExplodable* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RExporter:
         class RJSBasecaster_RExporter {
         public:
           virtual RExporter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RExportListener:
         class RJSBasecaster_RExportListener {
         public:
           virtual RExportListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RExportListenerAdapter:
         class RJSBasecaster_RExportListenerAdapter {
         public:
           virtual RExportListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFaceData:
         class RJSBasecaster_RFaceData {
         public:
           virtual RFaceData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFaceEntity:
         class RJSBasecaster_RFaceEntity {
         public:
           virtual RFaceEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileCache:
         class RJSBasecaster_RFileCache {
         public:
           virtual RFileCache* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileExporter:
         class RJSBasecaster_RFileExporter {
         public:
           virtual RFileExporter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileExporterAdapter:
         class RJSBasecaster_RFileExporterAdapter {
         public:
           virtual RFileExporterAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileExporterFactory:
         class RJSBasecaster_RFileExporterFactory {
         public:
           virtual RFileExporterFactory* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileExporterFactoryAdapter:
         class RJSBasecaster_RFileExporterFactoryAdapter {
         public:
           virtual RFileExporterFactoryAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileExporterRegistry:
         class RJSBasecaster_RFileExporterRegistry {
         public:
           virtual RFileExporterRegistry* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileImporter:
         class RJSBasecaster_RFileImporter {
         public:
           virtual RFileImporter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileImporterAdapter:
         class RJSBasecaster_RFileImporterAdapter {
         public:
           virtual RFileImporterAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileImporterFactory:
         class RJSBasecaster_RFileImporterFactory {
         public:
           virtual RFileImporterFactory* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileImporterFactoryAdapter:
         class RJSBasecaster_RFileImporterFactoryAdapter {
         public:
           virtual RFileImporterFactoryAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileImporterRegistry:
         class RJSBasecaster_RFileImporterRegistry {
         public:
           virtual RFileImporterRegistry* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFileSystemModel:
         class RJSBasecaster_RFileSystemModel {
         public:
           virtual RFileSystemModel* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFlowLayout:
         class RJSBasecaster_RFlowLayout {
         public:
           virtual RFlowLayout* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFocusListener:
         class RJSBasecaster_RFocusListener {
         public:
           virtual RFocusListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFocusListenerAdapter:
         class RJSBasecaster_RFocusListenerAdapter {
         public:
           virtual RFocusListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFont:
         class RJSBasecaster_RFont {
         public:
           virtual RFont* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFontChooserWidget:
         class RJSBasecaster_RFontChooserWidget {
         public:
           virtual RFontChooserWidget* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RFontList:
         class RJSBasecaster_RFontList {
         public:
           virtual RFontList* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RGraphicsScene:
         class RJSBasecaster_RGraphicsScene {
         public:
           virtual RGraphicsScene* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RGraphicsSceneDrawable:
         class RJSBasecaster_RGraphicsSceneDrawable {
         public:
           virtual RGraphicsSceneDrawable* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RGraphicsSceneQt:
         class RJSBasecaster_RGraphicsSceneQt {
         public:
           virtual RGraphicsSceneQt* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RGraphicsView:
         class RJSBasecaster_RGraphicsView {
         public:
           virtual RGraphicsView* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RGraphicsViewImage:
         class RJSBasecaster_RGraphicsViewImage {
         public:
           virtual RGraphicsViewImage* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RGraphicsViewQt:
         class RJSBasecaster_RGraphicsViewQt {
         public:
           virtual RGraphicsViewQt* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RGraphicsViewWorker:
         class RJSBasecaster_RGraphicsViewWorker {
         public:
           virtual RGraphicsViewWorker* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RGrid:
         class RJSBasecaster_RGrid {
         public:
           virtual RGrid* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RGuiAction:
         class RJSBasecaster_RGuiAction {
         public:
           virtual RGuiAction* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RHatchData:
         class RJSBasecaster_RHatchData {
         public:
           virtual RHatchData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RHatchEntity:
         class RJSBasecaster_RHatchEntity {
         public:
           virtual RHatchEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RImageData:
         class RJSBasecaster_RImageData {
         public:
           virtual RImageData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RImageEntity:
         class RJSBasecaster_RImageEntity {
         public:
           virtual RImageEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RImporter:
         class RJSBasecaster_RImporter {
         public:
           virtual RImporter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RImportListener:
         class RJSBasecaster_RImportListener {
         public:
           virtual RImportListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RImportListenerAdapter:
         class RJSBasecaster_RImportListenerAdapter {
         public:
           virtual RImportListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RInputEvent:
         class RJSBasecaster_RInputEvent {
         public:
           virtual RInputEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RInterTransactionListener:
         class RJSBasecaster_RInterTransactionListener {
         public:
           virtual RInterTransactionListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RInterTransactionListenerAdapter:
         class RJSBasecaster_RInterTransactionListenerAdapter {
         public:
           virtual RInterTransactionListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RKeyListener:
         class RJSBasecaster_RKeyListener {
         public:
           virtual RKeyListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RKeyListenerAdapter:
         class RJSBasecaster_RKeyListenerAdapter {
         public:
           virtual RKeyListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLayer:
         class RJSBasecaster_RLayer {
         public:
           virtual RLayer* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLayerListener:
         class RJSBasecaster_RLayerListener {
         public:
           virtual RLayerListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLayerListenerAdapter:
         class RJSBasecaster_RLayerListenerAdapter {
         public:
           virtual RLayerListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLayerState:
         class RJSBasecaster_RLayerState {
         public:
           virtual RLayerState* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLayout:
         class RJSBasecaster_RLayout {
         public:
           virtual RLayout* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLeaderData:
         class RJSBasecaster_RLeaderData {
         public:
           virtual RLeaderData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLeaderEntity:
         class RJSBasecaster_RLeaderEntity {
         public:
           virtual RLeaderEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLine:
         class RJSBasecaster_RLine {
         public:
           virtual RLine* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLineData:
         class RJSBasecaster_RLineData {
         public:
           virtual RLineData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLineEntity:
         class RJSBasecaster_RLineEntity {
         public:
           virtual RLineEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLinetype:
         class RJSBasecaster_RLinetype {
         public:
           virtual RLinetype* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLinetypeCombo:
         class RJSBasecaster_RLinetypeCombo {
         public:
           virtual RLinetypeCombo* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLinetypePattern:
         class RJSBasecaster_RLinetypePattern {
         public:
           virtual RLinetypePattern* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLineweight:
         class RJSBasecaster_RLineweight {
         public:
           virtual RLineweight* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RLineweightCombo:
         class RJSBasecaster_RLineweightCombo {
         public:
           virtual RLineweightCombo* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RListView:
         class RJSBasecaster_RListView {
         public:
           virtual RListView* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RListWidget:
         class RJSBasecaster_RListWidget {
         public:
           virtual RListWidget* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMainWindow:
         class RJSBasecaster_RMainWindow {
         public:
           virtual RMainWindow* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMainWindowQt:
         class RJSBasecaster_RMainWindowQt {
         public:
           virtual RMainWindowQt* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMath:
         class RJSBasecaster_RMath {
         public:
           virtual RMath* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMathComboBox:
         class RJSBasecaster_RMathComboBox {
         public:
           virtual RMathComboBox* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMathLineEdit:
         class RJSBasecaster_RMathLineEdit {
         public:
           virtual RMathLineEdit* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMatrix:
         class RJSBasecaster_RMatrix {
         public:
           virtual RMatrix* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMdiArea:
         class RJSBasecaster_RMdiArea {
         public:
           virtual RMdiArea* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMdiChildQt:
         class RJSBasecaster_RMdiChildQt {
         public:
           virtual RMdiChildQt* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMemoryStorage:
         class RJSBasecaster_RMemoryStorage {
         public:
           virtual RMemoryStorage* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMessageHandler:
         class RJSBasecaster_RMessageHandler {
         public:
           virtual RMessageHandler* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMixedOperation:
         class RJSBasecaster_RMixedOperation {
         public:
           virtual RMixedOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RModifiedListener:
         class RJSBasecaster_RModifiedListener {
         public:
           virtual RModifiedListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RModifyObjectOperation:
         class RJSBasecaster_RModifyObjectOperation {
         public:
           virtual RModifyObjectOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RModifyObjectsOperation:
         class RJSBasecaster_RModifyObjectsOperation {
         public:
           virtual RModifyObjectsOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMouseCoordinateListener:
         class RJSBasecaster_RMouseCoordinateListener {
         public:
           virtual RMouseCoordinateListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMouseEvent:
         class RJSBasecaster_RMouseEvent {
         public:
           virtual RMouseEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMoveReferencePointOperation:
         class RJSBasecaster_RMoveReferencePointOperation {
         public:
           virtual RMoveReferencePointOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RMoveSelectionOperation:
         class RJSBasecaster_RMoveSelectionOperation {
         public:
           virtual RMoveSelectionOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RNewDocumentListener:
         class RJSBasecaster_RNewDocumentListener {
         public:
           virtual RNewDocumentListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RObject:
         class RJSBasecaster_RObject {
         public:
           virtual RObject* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class ROperation:
         class RJSBasecaster_ROperation {
         public:
           virtual ROperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class ROperationUtils:
         class RJSBasecaster_ROperationUtils {
         public:
           virtual ROperationUtils* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class ROrthoGrid:
         class RJSBasecaster_ROrthoGrid {
         public:
           virtual ROrthoGrid* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPainterPath:
         class RJSBasecaster_RPainterPath {
         public:
           virtual RPainterPath* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPainterPathSource:
         class RJSBasecaster_RPainterPathSource {
         public:
           virtual RPainterPathSource* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPaletteListener:
         class RJSBasecaster_RPaletteListener {
         public:
           virtual RPaletteListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPaletteListenerAdapter:
         class RJSBasecaster_RPaletteListenerAdapter {
         public:
           virtual RPaletteListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPasteOperation:
         class RJSBasecaster_RPasteOperation {
         public:
           virtual RPasteOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPattern:
         class RJSBasecaster_RPattern {
         public:
           virtual RPattern* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPatternLine:
         class RJSBasecaster_RPatternLine {
         public:
           virtual RPatternLine* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPatternList:
         class RJSBasecaster_RPatternList {
         public:
           virtual RPatternList* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPatternListImperial:
         class RJSBasecaster_RPatternListImperial {
         public:
           virtual RPatternListImperial* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPatternListMetric:
         class RJSBasecaster_RPatternListMetric {
         public:
           virtual RPatternListMetric* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPenListener:
         class RJSBasecaster_RPenListener {
         public:
           virtual RPenListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPenListenerAdapter:
         class RJSBasecaster_RPenListenerAdapter {
         public:
           virtual RPenListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPluginInfo:
         class RJSBasecaster_RPluginInfo {
         public:
           virtual RPluginInfo* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPluginInterface:
         class RJSBasecaster_RPluginInterface {
         public:
           virtual RPluginInterface* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPluginLoader:
         class RJSBasecaster_RPluginLoader {
         public:
           virtual RPluginLoader* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPoint:
         class RJSBasecaster_RPoint {
         public:
           virtual RPoint* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPointData:
         class RJSBasecaster_RPointData {
         public:
           virtual RPointData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPointEntity:
         class RJSBasecaster_RPointEntity {
         public:
           virtual RPointEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPolyline:
         class RJSBasecaster_RPolyline {
         public:
           virtual RPolyline* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPolylineData:
         class RJSBasecaster_RPolylineData {
         public:
           virtual RPolylineData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPolylineEntity:
         class RJSBasecaster_RPolylineEntity {
         public:
           virtual RPolylineEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPreferencesListener:
         class RJSBasecaster_RPreferencesListener {
         public:
           virtual RPreferencesListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPreferencesListenerAdapter:
         class RJSBasecaster_RPreferencesListenerAdapter {
         public:
           virtual RPreferencesListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RProgressHandler:
         class RJSBasecaster_RProgressHandler {
         public:
           virtual RProgressHandler* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPropertyAttributes:
         class RJSBasecaster_RPropertyAttributes {
         public:
           virtual RPropertyAttributes* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPropertyChange:
         class RJSBasecaster_RPropertyChange {
         public:
           virtual RPropertyChange* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPropertyEditor:
         class RJSBasecaster_RPropertyEditor {
         public:
           virtual RPropertyEditor* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPropertyEvent:
         class RJSBasecaster_RPropertyEvent {
         public:
           virtual RPropertyEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPropertyListener:
         class RJSBasecaster_RPropertyListener {
         public:
           virtual RPropertyListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPropertyListenerAdapter:
         class RJSBasecaster_RPropertyListenerAdapter {
         public:
           virtual RPropertyListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RPropertyTypeId:
         class RJSBasecaster_RPropertyTypeId {
         public:
           virtual RPropertyTypeId* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRay:
         class RJSBasecaster_RRay {
         public:
           virtual RRay* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRayData:
         class RJSBasecaster_RRayData {
         public:
           virtual RRayData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRayEntity:
         class RJSBasecaster_RRayEntity {
         public:
           virtual RRayEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRefPoint:
         class RJSBasecaster_RRefPoint {
         public:
           virtual RRefPoint* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRestrictAngleLength:
         class RJSBasecaster_RRestrictAngleLength {
         public:
           virtual RRestrictAngleLength* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRestrictHorizontal:
         class RJSBasecaster_RRestrictHorizontal {
         public:
           virtual RRestrictHorizontal* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRestrictOff:
         class RJSBasecaster_RRestrictOff {
         public:
           virtual RRestrictOff* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRestrictOrthogonal:
         class RJSBasecaster_RRestrictOrthogonal {
         public:
           virtual RRestrictOrthogonal* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRestrictVertical:
         class RJSBasecaster_RRestrictVertical {
         public:
           virtual RRestrictVertical* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRuler:
         class RJSBasecaster_RRuler {
         public:
           virtual RRuler* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RRulerQt:
         class RJSBasecaster_RRulerQt {
         public:
           virtual RRulerQt* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RS:
         class RJSBasecaster_RS {
         public:
           virtual RS* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RScaleSelectionOperation:
         class RJSBasecaster_RScaleSelectionOperation {
         public:
           virtual RScaleSelectionOperation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSelectionListener:
         class RJSBasecaster_RSelectionListener {
         public:
           virtual RSelectionListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSelectionListenerAdapter:
         class RJSBasecaster_RSelectionListenerAdapter {
         public:
           virtual RSelectionListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSettings:
         class RJSBasecaster_RSettings {
         public:
           virtual RSettings* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RShape:
         class RJSBasecaster_RShape {
         public:
           virtual RShape* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSingleApplication:
         class RJSBasecaster_RSingleApplication {
         public:
           virtual RSingleApplication* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnap:
         class RJSBasecaster_RSnap {
         public:
           virtual RSnap* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapAuto:
         class RJSBasecaster_RSnapAuto {
         public:
           virtual RSnapAuto* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapCenter:
         class RJSBasecaster_RSnapCenter {
         public:
           virtual RSnapCenter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapDistance:
         class RJSBasecaster_RSnapDistance {
         public:
           virtual RSnapDistance* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapEnd:
         class RJSBasecaster_RSnapEnd {
         public:
           virtual RSnapEnd* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapEntityBase:
         class RJSBasecaster_RSnapEntityBase {
         public:
           virtual RSnapEntityBase* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapFree:
         class RJSBasecaster_RSnapFree {
         public:
           virtual RSnapFree* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapGrid:
         class RJSBasecaster_RSnapGrid {
         public:
           virtual RSnapGrid* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapIntersection:
         class RJSBasecaster_RSnapIntersection {
         public:
           virtual RSnapIntersection* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapListener:
         class RJSBasecaster_RSnapListener {
         public:
           virtual RSnapListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapMiddle:
         class RJSBasecaster_RSnapMiddle {
         public:
           virtual RSnapMiddle* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapOnEntity:
         class RJSBasecaster_RSnapOnEntity {
         public:
           virtual RSnapOnEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapPerpendicular:
         class RJSBasecaster_RSnapPerpendicular {
         public:
           virtual RSnapPerpendicular* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapReference:
         class RJSBasecaster_RSnapReference {
         public:
           virtual RSnapReference* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapRestriction:
         class RJSBasecaster_RSnapRestriction {
         public:
           virtual RSnapRestriction* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSnapTangential:
         class RJSBasecaster_RSnapTangential {
         public:
           virtual RSnapTangential* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSolidData:
         class RJSBasecaster_RSolidData {
         public:
           virtual RSolidData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSolidEntity:
         class RJSBasecaster_RSolidEntity {
         public:
           virtual RSolidEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSpatialIndex:
         class RJSBasecaster_RSpatialIndex {
         public:
           virtual RSpatialIndex* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSpatialIndexNavel:
         class RJSBasecaster_RSpatialIndexNavel {
         public:
           virtual RSpatialIndexNavel* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSpatialIndexSimple:
         class RJSBasecaster_RSpatialIndexSimple {
         public:
           virtual RSpatialIndexSimple* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSpatialIndexVisitor:
         class RJSBasecaster_RSpatialIndexVisitor {
         public:
           virtual RSpatialIndexVisitor* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSpatialIndexVisitorAdapter:
         class RJSBasecaster_RSpatialIndexVisitorAdapter {
         public:
           virtual RSpatialIndexVisitorAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSpline:
         class RJSBasecaster_RSpline {
         public:
           virtual RSpline* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSplineData:
         class RJSBasecaster_RSplineData {
         public:
           virtual RSplineData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RSplineEntity:
         class RJSBasecaster_RSplineEntity {
         public:
           virtual RSplineEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RStemmer:
         class RJSBasecaster_RStemmer {
         public:
           virtual RStemmer* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RStorage:
         class RJSBasecaster_RStorage {
         public:
           virtual RStorage* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTabletEvent:
         class RJSBasecaster_RTabletEvent {
         public:
           virtual RTabletEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTerminateEvent:
         class RJSBasecaster_RTerminateEvent {
         public:
           virtual RTerminateEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTextBasedData:
         class RJSBasecaster_RTextBasedData {
         public:
           virtual RTextBasedData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTextBasedEntity:
         class RJSBasecaster_RTextBasedEntity {
         public:
           virtual RTextBasedEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTextData:
         class RJSBasecaster_RTextData {
         public:
           virtual RTextData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTextEdit:
         class RJSBasecaster_RTextEdit {
         public:
           virtual RTextEdit* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTextEntity:
         class RJSBasecaster_RTextEntity {
         public:
           virtual RTextEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTextLabel:
         class RJSBasecaster_RTextLabel {
         public:
           virtual RTextLabel* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTextLayout:
         class RJSBasecaster_RTextLayout {
         public:
           virtual RTextLayout* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTextRenderer:
         class RJSBasecaster_RTextRenderer {
         public:
           virtual RTextRenderer* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RToleranceData:
         class RJSBasecaster_RToleranceData {
         public:
           virtual RToleranceData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RToleranceEntity:
         class RJSBasecaster_RToleranceEntity {
         public:
           virtual RToleranceEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RToolButton:
         class RJSBasecaster_RToolButton {
         public:
           virtual RToolButton* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RToolMatrixItemDelegate:
         class RJSBasecaster_RToolMatrixItemDelegate {
         public:
           virtual RToolMatrixItemDelegate* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RToolOptionEventFilter:
         class RJSBasecaster_RToolOptionEventFilter {
         public:
           virtual RToolOptionEventFilter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTraceData:
         class RJSBasecaster_RTraceData {
         public:
           virtual RTraceData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTraceEntity:
         class RJSBasecaster_RTraceEntity {
         public:
           virtual RTraceEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTransaction:
         class RJSBasecaster_RTransaction {
         public:
           virtual RTransaction* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTransactionListener:
         class RJSBasecaster_RTransactionListener {
         public:
           virtual RTransactionListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTransactionListenerAdapter:
         class RJSBasecaster_RTransactionListenerAdapter {
         public:
           virtual RTransactionListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTransactionStack:
         class RJSBasecaster_RTransactionStack {
         public:
           virtual RTransactionStack* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTransform:
         class RJSBasecaster_RTransform {
         public:
           virtual RTransform* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTransformation:
         class RJSBasecaster_RTransformation {
         public:
           virtual RTransformation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTransformOp:
         class RJSBasecaster_RTransformOp {
         public:
           virtual RTransformOp* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTranslation:
         class RJSBasecaster_RTranslation {
         public:
           virtual RTranslation* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTreeWidget:
         class RJSBasecaster_RTreeWidget {
         public:
           virtual RTreeWidget* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RTriangle:
         class RJSBasecaster_RTriangle {
         public:
           virtual RTriangle* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RUcs:
         class RJSBasecaster_RUcs {
         public:
           virtual RUcs* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RUcsListener:
         class RJSBasecaster_RUcsListener {
         public:
           virtual RUcsListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RUnit:
         class RJSBasecaster_RUnit {
         public:
           virtual RUnit* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RVector:
         class RJSBasecaster_RVector {
         public:
           virtual RVector* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RView:
         class RJSBasecaster_RView {
         public:
           virtual RView* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RViewFocusListener:
         class RJSBasecaster_RViewFocusListener {
         public:
           virtual RViewFocusListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RViewFocusListenerAdapter:
         class RJSBasecaster_RViewFocusListenerAdapter {
         public:
           virtual RViewFocusListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RViewListener:
         class RJSBasecaster_RViewListener {
         public:
           virtual RViewListener* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RViewListenerAdapter:
         class RJSBasecaster_RViewListenerAdapter {
         public:
           virtual RViewListenerAdapter* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RViewportData:
         class RJSBasecaster_RViewportData {
         public:
           virtual RViewportData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RViewportEntity:
         class RJSBasecaster_RViewportEntity {
         public:
           virtual RViewportEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RWheelEvent:
         class RJSBasecaster_RWheelEvent {
         public:
           virtual RWheelEvent* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RWidget:
         class RJSBasecaster_RWidget {
         public:
           virtual RWidget* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RWipeoutData:
         class RJSBasecaster_RWipeoutData {
         public:
           virtual RWipeoutData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RWipeoutEntity:
         class RJSBasecaster_RWipeoutEntity {
         public:
           virtual RWipeoutEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RXLine:
         class RJSBasecaster_RXLine {
         public:
           virtual RXLine* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RXLineData:
         class RJSBasecaster_RXLineData {
         public:
           virtual RXLineData* castToBase(int t, void* vp) = 0;
         };
-      
+        
         // Base class for basecasters that can cast void* to base class RXLineEntity:
         class RJSBasecaster_RXLineEntity {
         public:
           virtual RXLineEntity* castToBase(int t, void* vp) = 0;
         };
-      
+        
           // implementation of base casters that cast RAction to base classes:
           
           // implementation of base casters that cast RActionAdapter to base classes:

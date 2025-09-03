@@ -164,6 +164,30 @@ RActionAdapter_Base
     public:
     // implementation of virtual public function
     // calls JS implementation if available
+    virtual int getState(
+      
+    )
+    
+    ;
+
+    
+      // implementation of virtual public function
+      // always calls super implementation
+      virtual int getStateSup(
+        
+      )
+      
+      {
+        
+          return
+        RActionAdapter::getState(
+          
+        );
+      }
+    
+    public:
+    // implementation of virtual public function
+    // calls JS implementation if available
     virtual void beginEvent(
       
     )
