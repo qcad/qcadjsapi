@@ -562,6 +562,25 @@
               ;
             
     // Class: RBlockListenerAdapter
+    // Function: updateXRef
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  updateXRef
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RBlockListenerAdapter
     // Function: setCurrentBlock
     // Source: 
     // Static: false
@@ -622,6 +641,25 @@
               public slots:
               void blocksUpdatedEmitter(
                 RDocumentInterface* documentInterface
+              );
+            
+    // Class: RBlockListenerAdapter
+    // Function: xRefUpdated
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void xRefUpdated(
+                
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void xRefUpdatedEmitter(
+                
               );
             
     // Class: RBlockListenerAdapter

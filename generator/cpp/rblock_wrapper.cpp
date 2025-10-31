@@ -3743,6 +3743,63 @@ RLayout::Id a1_cpp;
               }
             
     // Class: RBlock
+    // Function: isXRef
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RBlock_Wrapper::isXRef
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RBlock* w = getWrapped();
+                bool res = 
+                    
+                w->isXRef(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isXRef";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RBlock
     // Function: getProperty
     // Source: 
     // Static: false

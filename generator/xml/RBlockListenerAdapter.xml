@@ -20,6 +20,11 @@ filename="RBlockListenerAdapter.h">
         </parameters>
       </variant>
     </function>
+    <function name="updateXRef">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="setCurrentBlock">
       <variant return-type="void" virtual="true" access="public">
         <parameters>
@@ -37,6 +42,11 @@ filename="RBlockListenerAdapter.h">
         <parameters>
           <parameter const="false" type="RDocumentInterface" modifier="*" name="documentInterface" />
         </parameters>
+      </variant>
+    </function>
+    <function name="xRefUpdated">
+      <variant return-type="void" access="public" signal="true">
+        <parameters />
       </variant>
     </function>
     <function name="currentBlockSet">

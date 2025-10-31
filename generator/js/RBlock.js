@@ -603,6 +603,14 @@
         };
     
         // function 
+        RBlock.prototype.isXRef = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.isXRef");
+          return this.__PROXY__.isXRef(...args);
+        };
+    
+        // function 
         RBlock.prototype.getProperty = function(...args) 
           
         {

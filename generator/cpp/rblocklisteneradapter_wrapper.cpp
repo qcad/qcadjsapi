@@ -154,6 +154,13 @@
 
   connect(
     getWrapped(), 
+    SIGNAL(xRefUpdated()), 
+    this, 
+    SLOT(xRefUpdatedEmitter())
+  );
+
+  connect(
+    getWrapped(), 
     SIGNAL(currentBlockSet(RDocumentInterface*)), 
     this, 
     SLOT(currentBlockSetEmitter(RDocumentInterface*))
@@ -1556,6 +1563,53 @@ QVariant a2_cpp;
               }
             
     // Class: RBlockListenerAdapter
+    // Function: updateXRef
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RBlockListenerAdapter_Wrapper::updateXRef
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RBlockListenerAdapter* w = getWrapped();
+                
+                w->updateXRef(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for updateXRef";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RBlockListenerAdapter
     // Function: setCurrentBlock
     // Source: 
     // Static: false
@@ -1697,6 +1751,26 @@ QVariant a2_cpp;
 
                 emit blocksUpdated(
                   a1_js
+                );
+              }
+            
+    // Class: RBlockListenerAdapter
+    // Function: xRefUpdated
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RBlockListenerAdapter_Wrapper::xRefUpdatedEmitter(
+                
+              ) {
+                // convert cpp parameters to js:
+                
+
+                emit xRefUpdated(
+                  
                 );
               }
             
