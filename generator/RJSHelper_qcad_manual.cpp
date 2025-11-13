@@ -399,6 +399,8 @@
         
           #include "rmoveselectionoperation_wrapper.h"
         
+          #include "rmultioperation_wrapper.h"
+        
           #include "rnewdocumentlistener_wrapper.h"
         
           #include "roperationutils_wrapper.h"
@@ -2431,6 +2433,11 @@
             
               // registration of base casters that casts RMoveSelectionOperation to ROperation:
               ROperation_Wrapper::registerBasecaster_ROperation(new RJSBasecaster_RMoveSelectionOperation_ROperation());
+            
+            // registration of base casters that cast RMultiOperation to base classes:
+            
+              // registration of base casters that casts RMultiOperation to ROperation:
+              ROperation_Wrapper::registerBasecaster_ROperation(new RJSBasecaster_RMultiOperation_ROperation());
             
             // registration of base casters that cast RNewDocumentListener to base classes:
             

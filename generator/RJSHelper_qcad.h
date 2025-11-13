@@ -989,6 +989,12 @@
           virtual RMoveSelectionOperation* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class RMultiOperation:
+        class RJSBasecaster_RMultiOperation {
+        public:
+          virtual RMultiOperation* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class RNewDocumentListener:
         class RJSBasecaster_RNewDocumentListener {
         public:
@@ -5375,6 +5381,21 @@
               }
             };
           
+          // implementation of base casters that cast RMultiOperation to base classes:
+          
+            // implementation of base casters that casts RMultiOperation to ROperation
+            class RJSBasecaster_RMultiOperation_ROperation : public RJSBasecaster_ROperation {
+            public:
+              virtual ROperation* castToBase(int t, void* vp) {
+                if (t==RJSType_RMultiOperation::getIdStatic()) {
+                  return (ROperation*)(RMultiOperation*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
           // implementation of base casters that cast RNewDocumentListener to base classes:
           
           // implementation of base casters that cast RObject to base classes:
@@ -9146,6 +9167,10 @@
       static QJSValue cpp2js_RMoveSelectionOperation(RJSApi& handler, RMoveSelectionOperation* v);
       static RMoveSelectionOperation* js2cpp_RMoveSelectionOperation_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RMoveSelectionOperation_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RMultiOperation(RJSApi& handler, RMultiOperation* v);
+      static RMultiOperation* js2cpp_RMultiOperation_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RMultiOperation_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RNewDocumentListener(RJSApi& handler, RNewDocumentListener* v);
       static RNewDocumentListener* js2cpp_RNewDocumentListener_ptr(RJSApi& handler, const QJSValue& v);

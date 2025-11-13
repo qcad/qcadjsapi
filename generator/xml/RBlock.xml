@@ -142,6 +142,48 @@
         <parameters />
       </variant>
     </function>
+    <function name="isFromXRef">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setXRefFileName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getXRefFileName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFullXRefFilePath">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isXRefLoaded">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="loadXRef">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getXRefLayerNames">
+      <variant return-type="QSet&lt;QString&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getXRefBlockNames">
+      <variant return-type="QSet&lt;QString&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="getProperty">
       <variant return-type="QPair&lt;QVariant,RPropertyAttributes&gt;" virtual="true" access="public">
         <parameters>

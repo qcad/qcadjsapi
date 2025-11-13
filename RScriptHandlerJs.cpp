@@ -431,6 +431,7 @@
 #include "generator/cpp/rtransform_wrapper.h"
 #include "generator/cpp/rtransformop_wrapper.h"
 #include "generator/cpp/rfilesystemmodel_wrapper.h"
+#include "generator/cpp/rmultioperation_wrapper.h"
 //#include "generator/cpp/rhelpbrowser_wrapper.h"
 //#include "generator/cpp/rproj_wrapper.h"
 //#include "generator/cpp/rtracebitmap_wrapper.h"
@@ -1027,6 +1028,7 @@ void RScriptHandlerJs::init(bool main) {
     //RGraphicsViewSkia_Wrapper::init(*rjsapi);
     RImportListenerAdapter_Wrapper::init(*rjsapi);
     RExportListenerAdapter_Wrapper::init(*rjsapi);
+    RMultiOperation_Wrapper::init(*rjsapi);
 
 //#ifdef RNEST
 //    RNester_Wrapper::init(*rjsapi);

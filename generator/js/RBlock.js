@@ -611,6 +611,70 @@
         };
     
         // function 
+        RBlock.prototype.isFromXRef = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.isFromXRef");
+          return this.__PROXY__.isFromXRef(...args);
+        };
+    
+        // function 
+        RBlock.prototype.setXRefFileName = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.setXRefFileName");
+          return this.__PROXY__.setXRefFileName(...args);
+        };
+    
+        // function 
+        RBlock.prototype.getXRefFileName = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.getXRefFileName");
+          return this.__PROXY__.getXRefFileName(...args);
+        };
+    
+        // function 
+        RBlock.prototype.getFullXRefFilePath = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.getFullXRefFilePath");
+          return this.__PROXY__.getFullXRefFilePath(...args);
+        };
+    
+        // function 
+        RBlock.prototype.isXRefLoaded = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.isXRefLoaded");
+          return this.__PROXY__.isXRefLoaded(...args);
+        };
+    
+        // function 
+        RBlock.prototype.loadXRef = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.loadXRef");
+          return this.__PROXY__.loadXRef(...args);
+        };
+    
+        // function 
+        RBlock.prototype.getXRefLayerNames = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.getXRefLayerNames");
+          return this.__PROXY__.getXRefLayerNames(...args);
+        };
+    
+        // function 
+        RBlock.prototype.getXRefBlockNames = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.getXRefBlockNames");
+          return this.__PROXY__.getXRefBlockNames(...args);
+        };
+    
+        // function 
         RBlock.prototype.getProperty = function(...args) 
           
         {

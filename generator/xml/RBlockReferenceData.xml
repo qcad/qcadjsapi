@@ -311,6 +311,13 @@ filename="RBlockReferenceData.h">
         </parameters>
       </variant>
     </function>
+    <function name="getTransformed">
+      <variant return-type="QSharedPointer&lt;REntity&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="QSharedPointer&lt;REntity&gt;" modifier="&amp;" name="entity" />
+        </parameters>
+      </variant>
+    </function>
     <function name="getTransform">
       <variant return-type="RTransform" const="true" access="public">
         <parameters />

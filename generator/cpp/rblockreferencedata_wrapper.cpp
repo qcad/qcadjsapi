@@ -7261,6 +7261,80 @@ QSharedPointer<REntity> a1_cpp;
               }
             
     // Class: RBlockReferenceData
+    // Function: getTransformed
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RBlockReferenceData_Wrapper::getTransformed
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_QSharedPointer_REntity(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: entity (QSharedPointer<REntity>)
+  
+QSharedPointer<REntity> a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_QSharedPointer_REntity(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RBlockReferenceData* w = getWrapped();
+                QSharedPointer<REntity> res = 
+                    
+                w->getTransformed(
+                  a1_cpp
+    
+                );
+              
+            // return type: QSharedPointer<REntity>
+
+            return RJSHelper_qcad::cpp2js_QSharedPointer_REntity(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getTransformed";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RBlockReferenceData
     // Function: getTransform
     // Source: 
     // Static: false

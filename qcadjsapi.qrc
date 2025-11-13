@@ -161,6 +161,7 @@
     <file alias="generator/js/RMouseEvent.js">generator/js/RMouseEvent.js</file>
     <file alias="generator/js/RMoveReferencePointOperation.js">generator/js/RMoveReferencePointOperation.js</file>
     <file alias="generator/js/RMoveSelectionOperation.js">generator/js/RMoveSelectionOperation.js</file>
+    <file alias="generator/js/RMultiOperation.js">generator/js/RMultiOperation.js</file>
     <file alias="generator/js/RNewDocumentListener.js">generator/js/RNewDocumentListener.js</file>
     <file alias="generator/js/RObject.js">generator/js/RObject.js</file>
     <file alias="generator/js/ROperation.js">generator/js/ROperation.js</file>

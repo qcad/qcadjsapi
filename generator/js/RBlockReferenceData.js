@@ -908,6 +908,14 @@
         };
     
         // function 
+        RBlockReferenceData.prototype.getTransformed = function(...args) 
+          
+        {
+          //print("JS: RBlockReferenceData.prototype.getTransformed");
+          return this.__PROXY__.getTransformed(...args);
+        };
+    
+        // function 
         RBlockReferenceData.prototype.getTransform = function(...args) 
           
         {

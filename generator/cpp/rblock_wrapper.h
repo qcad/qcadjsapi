@@ -1650,6 +1650,174 @@
               ;
             
     // Class: RBlock
+    // Function: isFromXRef
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isFromXRef
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RBlock
+    // Function: setXRefFileName
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setXRefFileName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RBlock
+    // Function: getXRefFileName
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getXRefFileName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RBlock
+    // Function: getFullXRefFilePath
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getFullXRefFilePath
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RBlock
+    // Function: isXRefLoaded
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isXRefLoaded
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RBlock
+    // Function: loadXRef
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  loadXRef
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RBlock
+    // Function: getXRefLayerNames
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getXRefLayerNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RBlock
+    // Function: getXRefBlockNames
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getXRefBlockNames
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RBlock
     // Function: getProperty
     // Source: 
     // Static: false

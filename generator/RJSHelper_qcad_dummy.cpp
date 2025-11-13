@@ -399,6 +399,8 @@
         
           #include "rmoveselectionoperation_wrapper.h"
         
+          #include "rmultioperation_wrapper.h"
+        
           #include "rnewdocumentlistener_wrapper.h"
         
           #include "roperationutils_wrapper.h"

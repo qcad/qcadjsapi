@@ -2448,6 +2448,31 @@
               ;
             
     // Class: RBlockReferenceData
+    // Function: getTransformed
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getTransformed
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RBlockReferenceData
     // Function: getTransform
     // Source: 
     // Static: false

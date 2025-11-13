@@ -399,6 +399,8 @@
         
           #include "rmoveselectionoperation_wrapper.h"
         
+          #include "rmultioperation_wrapper.h"
+        
           #include "rnewdocumentlistener_wrapper.h"
         
           #include "roperationutils_wrapper.h"
@@ -7899,6 +7901,80 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_RMoveSelectionOperation::getIdStatic())).toBool();
       }
     
+      QJSValue RJSHelper_qcad::cpp2js_RMultiOperation(RJSApi& handler, RMultiOperation* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          RMultiOperation_Wrapper* ret = new RMultiOperation_Wrapper(handler, v, false);
+
+          // JS: new RMultiOperation('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RMultiOperation");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RMultiOperation is undefined. Use RMultiOperation_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RMultiOperation('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RMultiOperation(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      RMultiOperation* RJSHelper_qcad::js2cpp_RMultiOperation_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RMultiOperation: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RMultiOperation_Wrapper* wrapper = qobject_cast<RMultiOperation_Wrapper*>(obj);
+          //RMultiOperation_Wrapper* wrapper = dynamic_cast<RMultiOperation_Wrapper*>(obj);
+          //RMultiOperation_Wrapper* wrapper = (RMultiOperation_Wrapper*)(obj);
+          //RMultiOperation_Wrapper* wrapper = getWrapper<RMultiOperation_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RMultiOperation_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_RMultiOperation(wrapper);
+          return RMultiOperation_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RMultiOperation_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RMultiOperation: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_RMultiOperation::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper_qcad::cpp2js_RNewDocumentListener(RJSApi& handler, RNewDocumentListener* v) {
 
           
@@ -8199,6 +8275,14 @@
                 RMoveSelectionOperation* o = dynamic_cast<RMoveSelectionOperation*>(v);
                 if (o!=nullptr) {
                     return RJSHelper_qcad::cpp2js_RMoveSelectionOperation(handler, o);
+                }
+            }
+          
+            // downcast to RMultiOperation:
+            {
+                RMultiOperation* o = dynamic_cast<RMultiOperation*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RMultiOperation(handler, o);
                 }
             }
           

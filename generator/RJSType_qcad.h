@@ -6418,6 +6418,40 @@
       };
     
       class QCADJSAPI_EXPORT 
+      RJSType_RMultiOperation : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "RMultiOperation";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_RMultiOperation();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+            // return true if the given type is derived from type
+            // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+            Q_INVOKABLE
+            static bool isOfType(int otherType);
+          
+
+      private:
+          static int id;
+      };
+    
+      class QCADJSAPI_EXPORT 
       RJSType_RNewDocumentListener : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE

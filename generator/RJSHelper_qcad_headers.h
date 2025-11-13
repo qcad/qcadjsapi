@@ -161,6 +161,7 @@
     #include "RMouseEvent.h"
     #include "RMoveReferencePointOperation.h"
     #include "RMoveSelectionOperation.h"
+    #include "RMultiOperation.h"
     #include "RNavigationAction.h"
     #include "RNewDocumentListener.h"
     #include "RNonCopyable.h"

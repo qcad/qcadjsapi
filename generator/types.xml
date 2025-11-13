@@ -344,6 +344,7 @@
     <type>RMouseEvent</type>
     <type>RMoveReferencePointOperation</type>
     <type>RMoveSelectionOperation</type>
+    <type>RMultiOperation</type>
     <type>RNewDocumentListener</type>
     <type>RObject</type>
     <type>ROperation</type>

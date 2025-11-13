@@ -323,6 +323,8 @@
 #include "generator/cpp/rmovereferencepointoperation_wrapper.h"
 #include "generator/cpp/rmoveselectionoperation_base.h"
 #include "generator/cpp/rmoveselectionoperation_wrapper.h"
+#include "generator/cpp/rmultioperation_base.h"
+#include "generator/cpp/rmultioperation_wrapper.h"
 #include "generator/cpp/rnewdocumentlistener_base.h"
 #include "generator/cpp/rnewdocumentlistener_wrapper.h"
 #include "generator/cpp/robject_base.h"

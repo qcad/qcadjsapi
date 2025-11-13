@@ -5529,6 +5529,33 @@
             return derrivedTypes.contains(otherType);
         }
       
+      int RJSType_RMultiOperation::id = -1;
+
+      int RJSType_RMultiOperation::getId() const {
+          return RJSType_RMultiOperation::getIdStatic();
+      }
+
+      int RJSType_RMultiOperation::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RMultiOperation());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RMultiOperation::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
       int RJSType_RNewDocumentListener::id = -1;
 
       int RJSType_RNewDocumentListener::getId() const {
@@ -5606,6 +5633,8 @@
                 RJSType_RMoveReferencePointOperation::getIdStatic()
                 ,
                 RJSType_RMoveSelectionOperation::getIdStatic()
+                ,
+                RJSType_RMultiOperation::getIdStatic()
                 ,
                 RJSType_RPasteOperation::getIdStatic()
                 ,

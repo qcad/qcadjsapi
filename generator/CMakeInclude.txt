@@ -325,6 +325,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rmovereferencepointoperation_wrapper.h
     generator/cpp/rmoveselectionoperation_base.h
     generator/cpp/rmoveselectionoperation_wrapper.h
+    generator/cpp/rmultioperation_base.h
+    generator/cpp/rmultioperation_wrapper.h
     generator/cpp/rnewdocumentlistener_base.h
     generator/cpp/rnewdocumentlistener_wrapper.h
     generator/cpp/robject_base.h
@@ -901,6 +903,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rmovereferencepointoperation_wrapper.cpp
     generator/cpp/rmoveselectionoperation_base.cpp
     generator/cpp/rmoveselectionoperation_wrapper.cpp
+    generator/cpp/rmultioperation_base.cpp
+    generator/cpp/rmultioperation_wrapper.cpp
     generator/cpp/rnewdocumentlistener_base.cpp
     generator/cpp/rnewdocumentlistener_wrapper.cpp
     generator/cpp/robject_base.cpp
