@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RMultiOperation.h">
+  <class name="RMultiOperation" ownership="cpp">
+    <super_list>
+      <super name="ROperation" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="undoable" default="true" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="addOperation">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="ROperation" modifier="*" name="op" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="apply">
+      <variant return-type="RTransaction" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="RDocument" modifier="&amp;" name="document" />
+          <parameter const="false" type="bool" modifier="" name="preview" default="false" />
+        </parameters>
+      </variant>
+    </function>
+  </class>
+</unit>
