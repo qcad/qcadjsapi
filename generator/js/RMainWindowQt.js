@@ -114,6 +114,8 @@
   
     this["userCommand(QString,bool)"] = Object.getPrototypeOf(this).userCommand;
   
+    this["reloadXRefsSignal(RDocumentInterface*,QSet<QString>)"] = Object.getPrototypeOf(this).reloadXRefsSignal;
+  
     this["contextMenu(int,RVector)"] = Object.getPrototypeOf(this).contextMenu;
   
     this["editResourceBlock(int,RVector)"] = Object.getPrototypeOf(this).editResourceBlock;

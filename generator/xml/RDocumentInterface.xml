@@ -1096,6 +1096,20 @@
         </parameters>
       </variant>
     </function>
+    <function name="loadXRefs">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSet&lt;QString&gt;" modifier="&amp;" name="paths" default="QSet&lt;QString&gt;()" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="bindXRef">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RBlock" modifier="*" name="block" />
+        </parameters>
+      </variant>
+    </function>
     <function name="handleClickEvent" />
     <function name="previewClickEvent" />
   </class>

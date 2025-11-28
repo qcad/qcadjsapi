@@ -3950,6 +3950,27 @@
               
               ;
             
+    // Class: RBlockReferenceEntity
+    // Function: isXRef
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isXRef
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             

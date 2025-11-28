@@ -3,6 +3,7 @@ project(qcadjsapi VERSION 1.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOMOC ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Sql Svg Xml PrintSupport Qml UiTools QuickWidgets Core5Compat)
 qt_standard_project_setup()
@@ -71,6 +72,7 @@ qt_add_library(qcadjsapi SHARED
     RJSApiPlugin.cpp RJSApiPlugin.h
     RScriptHandlerJs.cpp RScriptHandlerJs.h
     ${SOURCES}
+    ${SOURCES_MOC}
 )
 
 include(generator/CMakeInclude.txt)

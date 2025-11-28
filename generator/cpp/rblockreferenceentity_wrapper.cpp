@@ -10526,6 +10526,63 @@ RVector a1_cpp;
                 
               }
             
+    // Class: RBlockReferenceEntity
+    // Function: isXRef
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RBlockReferenceEntity_Wrapper::isXRef
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RBlockReferenceEntity* w = getWrapped();
+                bool res = 
+                    
+                w->isXRef(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isXRef";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
 
   // member functions for static properties, forward to static function
   

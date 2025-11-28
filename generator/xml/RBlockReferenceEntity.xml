@@ -258,6 +258,11 @@ filename="RBlockReferenceEntity.h">
         </parameters>
       </variant>
     </function>
+    <function name="isXRef">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <!--
     <function name="print">
       <variant return-type="void" virtual="true" const="true" access="public">

@@ -1294,6 +1294,14 @@
           return this.__PROXY__.mapToBlock(...args);
         };
     
+        // function 
+        RBlockReferenceEntity.prototype.isXRef = function(...args) 
+          
+        {
+          //print("JS: RBlockReferenceEntity.prototype.isXRef");
+          return this.__PROXY__.isXRef(...args);
+        };
+    
 
       // static functions:
       

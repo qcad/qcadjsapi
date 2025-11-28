@@ -10645,6 +10645,147 @@ QString a2_cpp;
                 
               }
             
+    // Class: RDocumentInterface
+    // Function: loadXRefs
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDocumentInterface_Wrapper::loadXRefs
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QSet_QString(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: paths (QSet<QString>)
+  
+QSet<QString> a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QSet<QString>();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QSet_QString(handler, a1);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocumentInterface* w = getWrapped();
+                
+                w->loadXRefs(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for loadXRefs";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDocumentInterface
+    // Function: bindXRef
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDocumentInterface_Wrapper::bindXRef
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RBlock_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: block (RBlock)
+  
+
+          // pointer:
+          RBlock*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RBlock_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocumentInterface* w = getWrapped();
+                
+                w->bindXRef(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for bindXRef";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
 
   // member functions for static properties, forward to static function
   

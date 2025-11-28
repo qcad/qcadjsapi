@@ -1390,6 +1390,22 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
         };
     
         // function 
+        RDocumentInterface.prototype.loadXRefs = function(...args) 
+          
+        {
+          //print("JS: RDocumentInterface.prototype.loadXRefs");
+          return this.__PROXY__.loadXRefs(...args);
+        };
+    
+        // function 
+        RDocumentInterface.prototype.bindXRef = function(...args) 
+          
+        {
+          //print("JS: RDocumentInterface.prototype.bindXRef");
+          return this.__PROXY__.bindXRef(...args);
+        };
+    
+        // function 
         RDocumentInterface.prototype.handleClickEvent = function(...args) 
           
         {

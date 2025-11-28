@@ -307,6 +307,13 @@
 
   connect(
     getWrapped(), 
+    SIGNAL(reloadXRefsSignal(RDocumentInterface*, const QSet<QString>&)), 
+    this, 
+    SLOT(reloadXRefsSignalEmitter(RDocumentInterface*, const QSet<QString>&))
+  );
+
+  connect(
+    getWrapped(), 
     SIGNAL(contextMenu(int, const RVector&)), 
     this, 
     SLOT(contextMenuEmitter(int, const RVector&))
@@ -28465,6 +28472,44 @@ int a1_cpp;
 
 
                 emit userCommand(
+                  a1_js, a2_js
+                );
+              }
+            
+    // Class: RMainWindowQt
+    // Function: reloadXRefsSignal
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RMainWindowQt_Wrapper::reloadXRefsSignalEmitter(
+                RDocumentInterface* di, const QSet<QString>& dirtyXRefPaths
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: di (RDocumentInterface)
+  
+
+
+  QJSValue a1_js = RJSHelper_qcad::cpp2js_RDocumentInterface(
+    handler, 
+    di
+  );
+
+  // parameter: dirtyXRefPaths (QSet<QString>)
+  
+
+
+  QJSValue a2_js = RJSHelper::cpp2js_QSet_QString(
+    handler, 
+    dirtyXRefPaths
+  );
+
+
+                emit reloadXRefsSignal(
                   a1_js, a2_js
                 );
               }

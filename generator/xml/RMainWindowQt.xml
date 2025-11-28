@@ -389,6 +389,14 @@
         </parameters>
       </variant>
     </function>
+    <function name="reloadXRefsSignal">
+      <variant return-type="void" access="public" signal="true">
+        <parameters>
+          <parameter const="false" type="RDocumentInterface" modifier="*" name="di" />
+          <parameter const="true" type="QSet&lt;QString&gt;" modifier="&amp;" name="dirtyXRefPaths" />
+        </parameters>
+      </variant>
+    </function>
     <function name="contextMenu">
       <variant return-type="void" access="public" signal="true">
         <parameters>

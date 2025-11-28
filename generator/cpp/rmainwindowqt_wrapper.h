@@ -9551,6 +9551,29 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
               );
             
     // Class: RMainWindowQt
+    // Function: reloadXRefsSignal
+    // Source: 
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void reloadXRefsSignal(
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void reloadXRefsSignalEmitter(
+                RDocumentInterface* di, const QSet<QString>& dirtyXRefPaths
+              );
+            
+    // Class: RMainWindowQt
     // Function: contextMenu
     // Source: 
     // Static: false
