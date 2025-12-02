@@ -9570,7 +9570,7 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
               // called when signal is emitted from wrapped class:
               public slots:
               void reloadXRefsSignalEmitter(
-                RDocumentInterface* di, const QSet<QString>& dirtyXRefPaths
+                RDocumentInterface* di, const QStringList& dirtyXRefPaths
               );
             
     // Class: RMainWindowQt

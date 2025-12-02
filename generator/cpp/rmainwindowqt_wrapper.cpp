@@ -307,9 +307,9 @@
 
   connect(
     getWrapped(), 
-    SIGNAL(reloadXRefsSignal(RDocumentInterface*, const QSet<QString>&)), 
+    SIGNAL(reloadXRefsSignal(RDocumentInterface*, const QStringList&)), 
     this, 
-    SLOT(reloadXRefsSignalEmitter(RDocumentInterface*, const QSet<QString>&))
+    SLOT(reloadXRefsSignalEmitter(RDocumentInterface*, const QStringList&))
   );
 
   connect(
@@ -28486,7 +28486,7 @@ int a1_cpp;
               // signal emitter: called when signal is emitted from wrapped object:
               void 
               RMainWindowQt_Wrapper::reloadXRefsSignalEmitter(
-                RDocumentInterface* di, const QSet<QString>& dirtyXRefPaths
+                RDocumentInterface* di, const QStringList& dirtyXRefPaths
               ) {
                 // convert cpp parameters to js:
                 
@@ -28499,11 +28499,11 @@ int a1_cpp;
     di
   );
 
-  // parameter: dirtyXRefPaths (QSet<QString>)
+  // parameter: dirtyXRefPaths (QStringList)
   
 
 
-  QJSValue a2_js = RJSHelper::cpp2js_QSet_QString(
+  QJSValue a2_js = RJSHelper::cpp2js_QStringList(
     handler, 
     dirtyXRefPaths
   );
