@@ -23,7 +23,7 @@ RPluginInfo RJSApiPlugin::getPluginInfo() {
     ret.set("Name", "QCAD");
     ret.set("Description", "QJSEngine bindings for QCAD.");
     ret.set("License", "GPLv3");
-    ret.set("URL", "http://www.qcad.org");
+    ret.set("URL", "https://qcad.org");
     return ret;
 }
 
