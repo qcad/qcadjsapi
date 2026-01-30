@@ -614,7 +614,9 @@ void RScriptHandlerJs::init(bool main) {
 
     //RVector_Wrapper::init(*rjsapi);
 
-    engine->installExtensions(QJSEngine::AllExtensions);
+    // already installed by RJSApi:
+    //engine->installExtensions(QJSEngine::AllExtensions);
+
     QJSValue global = engine->globalObject();
 
     /*
