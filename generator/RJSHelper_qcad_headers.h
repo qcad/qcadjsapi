@@ -231,7 +231,7 @@
     #include "RSettings.h"
     #include "RShape.h"
     #include "RShapeProxy.h"
-    #include "RShapesExporter.h"
+    #include "RLinetypePatternExporter.h"
     #include "RSingleApplication.h"
     #include "RSingleton.h"
     #include "RSnap.h"
