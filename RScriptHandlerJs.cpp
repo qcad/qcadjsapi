@@ -29,158 +29,6 @@
 #include "RJSWrapperObj.h"
 #include "RJSTools.h"
 
-/*
-#include "generated/cpp/qdir_wrapper.h"
-#include "generated/cpp/qdiriterator_wrapper.h"
-#include "generated/cpp/qdatetime_wrapper.h"
-#include "generated/cpp/qcoreevent_wrapper.h"
-#include "generated/cpp/qfileinfo_wrapper.h"
-#include "generated/cpp/qfile_wrapper.h"
-#include "generated/cpp/qwidget_wrapper.h"
-#include "generated/cpp/qcoreapplication_wrapper.h"
-#include "generated/cpp/qpoint_wrapper.h"
-#include "generated/cpp/qmainwindow_wrapper.h"
-#include "generated/cpp/qmenubar_wrapper.h"
-#include "generated/cpp/qmenu_wrapper.h"
-#include "generated/cpp/qaction_wrapper.h"
-#include "generated/cpp/qpainter_wrapper.h"
-#include "generated/cpp/qpixmap_wrapper.h"
-#include "generated/cpp/qiodevice_wrapper.h"
-#include "generated/cpp/qiodevicebase_wrapper.h"
-#include "generated/cpp/qsplashscreen_wrapper.h"
-#include "generated/cpp/quiloader_wrapper.h"
-#include "generated/cpp/qspinbox_wrapper.h"
-#include "generated/cpp/qcombobox_wrapper.h"
-#include "generated/cpp/qfontcombobox_wrapper.h"
-#include "generated/cpp/qtoolbutton_wrapper.h"
-#include "generated/cpp/qobject_wrapper.h"
-#include "generated/cpp/qbuffer_wrapper.h"
-#include "generated/cpp/qvariant_wrapper.h"
-#include "generated/cpp/qnamespace_wrapper.h"
-#include "generated/cpp/qevent_wrapper.h"
-#include "generated/cpp/qlocale_wrapper.h"
-#include "generated/cpp/qabstractitemmodel_wrapper.h"
-#include "generated/cpp/qtranslator_wrapper.h"
-#include "generated/cpp/qlabel_wrapper.h"
-#include "generated/cpp/qtextbrowser_wrapper.h"
-#include "generated/cpp/qgroupbox_wrapper.h"
-#include "generated/cpp/qpushbutton_wrapper.h"
-#include "generated/cpp/qdialogbuttonbox_wrapper.h"
-#include "generated/cpp/qframe_wrapper.h"
-#include "generated/cpp/qformlayout_wrapper.h"
-#include "generated/cpp/qsize_wrapper.h"
-#include "generated/cpp/qprinter_wrapper.h"
-#include "generated/cpp/qdialog_wrapper.h"
-#include "generated/cpp/qprogressdialog_wrapper.h"
-#include "generated/cpp/qpagesize_wrapper.h"
-#include "generated/cpp/qpagelayout_wrapper.h"
-#include "generated/cpp/qabstractbutton_wrapper.h"
-#include "generated/cpp/qsettings_wrapper.h"
-#include "generated/cpp/qicon_wrapper.h"
-#include "generated/cpp/qtoolbar_wrapper.h"
-#include "generated/cpp/qstackedlayout_wrapper.h"
-#include "generated/cpp/qheaderview_wrapper.h"
-#include "generated/cpp/qabstractitemview_wrapper.h"
-#include "generated/cpp/qpalette_wrapper.h"
-#include "generated/cpp/qcolor_wrapper.h"
-#include "generated/cpp/qrect_wrapper.h"
-#include "generated/cpp/qrectf_wrapper.h"
-#include "generated/cpp/qregion_wrapper.h"
-#include "generated/cpp/qlayout_wrapper.h"
-#include "generated/cpp/qlineedit_wrapper.h"
-#include "generated/cpp/qsizepolicy_wrapper.h"
-#include "generated/cpp/qlayoutitem_wrapper.h"
-#include "generated/cpp/qtreewidgetitem_wrapper.h"
-#include "generated/cpp/qboxlayout_wrapper.h"
-#include "generated/cpp/qtimer_wrapper.h"
-#include "generated/cpp/qkeysequence_wrapper.h"
-#include "generated/cpp/qcheckbox_wrapper.h"
-#include "generated/cpp/qtextcursor_wrapper.h"
-#include "generated/cpp/qsplitter_wrapper.h"
-#include "generated/cpp/qstatusbar_wrapper.h"
-#include "generated/cpp/qmdiarea_wrapper.h"
-#include "generated/cpp/qtabbar_wrapper.h"
-#include "generated/cpp/qtabwidget_wrapper.h"
-#include "generated/cpp/qfont_wrapper.h"
-#include "generated/cpp/qmdisubwindow_wrapper.h"
-#include "generated/cpp/qscrollbar_wrapper.h"
-#include "generated/cpp/qmodelindex_wrapper.h"
-#include "generated/cpp/qdockwidget_wrapper.h"
-#include "generated/cpp/qdesktopservices_wrapper.h"
-#include "generated/cpp/qurl_wrapper.h"
-#include "generated/cpp/qplaintextedit_wrapper.h"
-#include "generated/cpp/qtextstream_wrapper.h"
-#include "generated/cpp/qstringconverter_wrapper.h"
-#include "generated/cpp/qwidgetaction_wrapper.h"
-#include "generated/cpp/qdoublespinbox_wrapper.h"
-#include "generated/cpp/qradiobutton_wrapper.h"
-#include "generated/cpp/qbuttongroup_wrapper.h"
-#include "generated/cpp/qslider_wrapper.h"
-#include "generated/cpp/qlistwidget_wrapper.h"
-#include "generated/cpp/qfiledialog_wrapper.h"
-#include "generated/cpp/qmessagebox_wrapper.h"
-#include "generated/cpp/qfontmetrics_wrapper.h"
-#include "generated/cpp/qtime_wrapper.h"
-#include "generated/cpp/qprocess_wrapper.h"
-#include "generated/cpp/qkeyevent_wrapper.h"
-#include "generated/cpp/qbitmap_wrapper.h"
-#include "generated/cpp/qcursor_wrapper.h"
-#include "generated/cpp/qimagereader_wrapper.h"
-#include "generated/cpp/qbytearray_wrapper.h"
-#include "generated/cpp/qinputevent_wrapper.h"
-#include "generated/cpp/qbrush_wrapper.h"
-#include "generated/cpp/qguiapplication_wrapper.h"
-#include "generated/cpp/qtransform_wrapper.h"
-#include "generated/cpp/qxml_wrapper.h"
-#include "generated/cpp/qpinchgesture_wrapper.h"
-#include "generated/cpp/qimagewriter_wrapper.h"
-#include "generated/cpp/qimage_wrapper.h"
-#include "generated/cpp/qapplication_wrapper.h"
-#include "generated/cpp/qvalidator_wrapper.h"
-#include "generated/cpp/qtreewidget_wrapper.h"
-#include "generated/cpp/qshortcut_wrapper.h"
-#include "generated/cpp/qclipboard_wrapper.h"
-#include "generated/cpp/qmimedata_wrapper.h"
-#include "generated/cpp/qtextedit_wrapper.h"
-#include "generated/cpp/qtextformat_wrapper.h"
-#include "generated/cpp/qtextdocument_wrapper.h"
-#include "generated/cpp/qdom_wrapper.h"
-#include "generated/cpp/qgridlayout_wrapper.h"
-#include "generated/cpp/qpen_wrapper.h"
-#include "generated/cpp/qabstractscrollarea_wrapper.h"
-#include "generated/cpp/qxmlstream_wrapper.h"
-#include "generated/cpp/qurlquery_wrapper.h"
-#include "generated/cpp/qvariant_wrapper.h"
-#include "generated/cpp/qprogressbar_wrapper.h"
-#include "generated/cpp/qregularexpression_wrapper.h"
-#include "generated/cpp/qstackedwidget_wrapper.h"
-#include "generated/cpp/qstandarditemmodel_wrapper.h"
-#include "generated/cpp/qfontdatabase_wrapper.h"
-#include "generated/cpp/qabstractitemdelegate_wrapper.h"
-#include "generated/cpp/qitemdelegate_wrapper.h"
-#include "generated/cpp/qlistview_wrapper.h"
-#include "generated/cpp/qline_wrapper.h"
-#include "generated/cpp/qprintdialog_wrapper.h"
-#include "generated/cpp/qpainterpath_wrapper.h"
-#include "generated/cpp/qitemselectionmodel_wrapper.h"
-#include "generated/cpp/qtablewidget_wrapper.h"
-#include "generated/cpp/qtableview_wrapper.h"
-#include "generated/cpp/qscrollarea_wrapper.h"
-#include "generated/cpp/qeventloop_wrapper.h"
-#include "generated/cpp/qpangesture_wrapper.h"
-#include "generated/cpp/qtreeview_wrapper.h"
-#include "generated/cpp/qfileiconprovider_wrapper.h"
-#include "generated/cpp/qdrag_wrapper.h"
-#include "generated/cpp/qtooltip_wrapper.h"
-#include "generated/cpp/qdoublevalidator_wrapper.h"
-#include "generated/cpp/qsortfilterproxymodel_wrapper.h"
-#include "generated/cpp/qitemdelegate_wrapper.h"
-#include "generated/cpp/qeasingcurve_wrapper.h"
-#include "generated/cpp/qsvgrenderer_wrapper.h"
-#include "generated/cpp/qquickwidget_wrapper.h"
-#include "generated/cpp/qgraphicseffect_wrapper.h"
-*/
-
 #include "generator/cpp/rvector_wrapper.h"
 #include "generator/cpp/rmainwindowqt_wrapper.h"
 #include "generator/cpp/rsettings_wrapper.h"
@@ -206,7 +54,6 @@
 #include "generator/cpp/ractionadapter_wrapper.h"
 #include "generator/cpp/rcolor_wrapper.h"
 #include "generator/cpp/runit_wrapper.h"
-//#include "generator/cpp/rjstype_wrapper.h"
 #include "generator/cpp/rtreewidget_wrapper.h"
 #include "generator/cpp/rwidget_wrapper.h"
 #include "generator/cpp/rguiaction_wrapper.h"
@@ -233,7 +80,6 @@
 #include "generator/cpp/rtoolbutton_wrapper.h"
 #include "generator/cpp/rcoordinatelisteneradapter_wrapper.h"
 #include "generator/cpp/rspatialindexnavel_wrapper.h"
-//#include "generator/cpp/rspatialindexpro_wrapper.h"
 #include "generator/cpp/rmdichildqt_wrapper.h"
 #include "generator/cpp/rorthogrid_wrapper.h"
 #include "generator/cpp/rrulerqt_wrapper.h"
@@ -432,10 +278,6 @@
 #include "generator/cpp/rtransformop_wrapper.h"
 #include "generator/cpp/rfilesystemmodel_wrapper.h"
 #include "generator/cpp/rmultioperation_wrapper.h"
-//#include "generator/cpp/rhelpbrowser_wrapper.h"
-//#include "generator/cpp/rproj_wrapper.h"
-//#include "generator/cpp/rtracebitmap_wrapper.h"
-//#include "generator/cpp/rpolygonoffset_wrapper.h"
 #include "generator/cpp/rtoolmatrixitemdelegate_wrapper.h"
 #include "generator/cpp/rspatialindexvisitoradapter_wrapper.h"
 #include "generator/cpp/rwipeoutentity_wrapper.h"
@@ -443,15 +285,8 @@
 #include "generator/cpp/rstemmer_wrapper.h"
 #include "generator/cpp/rimportlisteneradapter_wrapper.h"
 #include "generator/cpp/rexportlisteneradapter_wrapper.h"
-//#include "generator/cpp/rgraphicsviewskia_wrapper.h"
 
 #include "RSettingsBridge.h"
-
-/*
-#ifdef RNEST
-#include "generator/cpp/rnester_wrapper.h"
-#endif
-*/
 
 
 class RJSQVariantConverter_qcad : public RJSQVariantConverter {
@@ -1027,19 +862,11 @@ void RScriptHandlerJs::init(bool main) {
     RTransform_Wrapper::init(*rjsapi);
     RTransformOp_Wrapper::init(*rjsapi);
     RFileSystemModel_Wrapper::init(*rjsapi);
-    //RProj_Wrapper::init(*rjsapi);
-    //RPolygonOffset_Wrapper::init(*rjsapi);
-    //RTraceBitmap_Wrapper::init(*rjsapi);
     RToolMatrixItemDelegate_Wrapper::init(*rjsapi);
     RSpatialIndexVisitorAdapter_Wrapper::init(*rjsapi);
-    //RGraphicsViewSkia_Wrapper::init(*rjsapi);
     RImportListenerAdapter_Wrapper::init(*rjsapi);
     RExportListenerAdapter_Wrapper::init(*rjsapi);
     RMultiOperation_Wrapper::init(*rjsapi);
-
-//#ifdef RNEST
-//    RNester_Wrapper::init(*rjsapi);
-//#endif
 
     RArcEntity_Wrapper::init(*rjsapi);
     RAttributeDefinitionEntity_Wrapper::init(*rjsapi);
@@ -1138,7 +965,6 @@ void RScriptHandlerJs::init(bool main) {
     RSnapPerpendicular_Wrapper::init(*rjsapi);
     RSnapReference_Wrapper::init(*rjsapi);
     RSnapTangential_Wrapper::init(*rjsapi);
-    //RHelpBrowser_Wrapper::init(*rjsapi);
 
     RStemmer_Wrapper::init(*rjsapi);
 
