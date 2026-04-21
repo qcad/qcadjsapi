@@ -5327,7 +5327,7 @@ bool a1_cpp;
     // Function: addRecentFile
     // Source: 
     // Static: true
-    // Parameters: 1
+    // Parameters: 2
     // preceding Parameters: -1
 
                 QJSValue 
@@ -5335,7 +5335,9 @@ bool a1_cpp;
               (
                 
   const QJSValue& 
-  a1
+  a1, 
+  const QJSValue& 
+  a2
               ) 
               
               {
@@ -5343,6 +5345,11 @@ bool a1_cpp;
       // check parameter types:
       if (
         RJSHelper::is_QString(handler, a1
+  )
+
+   && RJSHelper::is_QImage(handler, a2
+    , true
+  
   )
 
   
@@ -5356,6 +5363,18 @@ QString a1_cpp;
 
       a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
         
+  // convert js parameter to cpp: thumbnail (QImage)
+  
+QImage a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = QImage();
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_QImage(handler, a2);
+          }
+        
 
     // call function:
     
@@ -5365,6 +5384,7 @@ QString a1_cpp;
                 // call static member function:
                 RSettings::addRecentFile(
               a1_cpp
+    , a2_cpp
     
             );
           
@@ -5512,6 +5532,69 @@ QString a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for clearRecentFiles";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSettings
+    // Function: getThumbnailFilePath
+    // Source: 
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::getThumbnailFilePath
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: fileName (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QString res = 
+                
+                // call static member function:
+                RSettings::getThumbnailFilePath(
+              a1_cpp
+    
+            );
+          
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getThumbnailFilePath";
                   handler.trace();
                   return QJSValue();
                 
@@ -8293,6 +8376,52 @@ QString a1_cpp;
   }
 
                   qWarning() << "no matching function variant found for getOpenGLMessages";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSettings
+    // Function: useQml
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::useQml
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RSettings::useQml(
+              
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for useQml";
                   handler.trace();
                   return QJSValue();
                 

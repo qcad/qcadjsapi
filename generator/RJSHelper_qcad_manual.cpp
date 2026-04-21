@@ -1068,6 +1068,12 @@
 
           // downcasters from QQmlEngine to ...
           
+            #ifdef QT_QUICKWIDGETS_LIB
+
+          // downcasters from QQuickWidget to ...
+          
+            #endif
+          
 
           // downcasters from QRhiWidget to ...
           
@@ -1309,6 +1315,11 @@
               RJSHelper::registerDowncaster_QObject(new RJSDowncaster_QObject_RToolOptionEventFilter());
             
             // downcasters from QQmlEngine to ...
+            
+              #ifdef QT_QUICKWIDGETS_LIB
+            // downcasters from QQuickWidget to ...
+            
+              #endif
             
             // downcasters from QRhiWidget to ...
             

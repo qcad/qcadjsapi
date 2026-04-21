@@ -10786,6 +10786,112 @@ QSet<QString> a1_cpp;
                 
               }
             
+    // Class: RDocumentInterface
+    // Function: updateThumbnail
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDocumentInterface_Wrapper::updateThumbnail
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocumentInterface* w = getWrapped();
+                
+                w->updateThumbnail(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for updateThumbnail";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDocumentInterface
+    // Function: getThumbnail
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDocumentInterface_Wrapper::getThumbnail
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocumentInterface* w = getWrapped();
+                QImage res = 
+                    
+                w->getThumbnail(
+                  
+                );
+              
+            // return type: QImage
+
+            return RJSHelper::cpp2js_QImage(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getThumbnail";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
 
   // member functions for static properties, forward to static function
   

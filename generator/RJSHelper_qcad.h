@@ -11,10 +11,18 @@
       #include <QtGui>
       #include <QtWidgets>
       #include <QtXml>
+      #ifdef QT_QUICK_LIB
       #include <QtQuick>
+      #endif
+      #ifdef QT_QUICKWIDGETS_LIB
       #include <QtQuickWidgets>
+      #endif
+      #ifdef QT_PRINTSUPPORT_LIB
       #include <QtPrintSupport>
+      #endif
+      #ifdef QT_CORE5COMPAT_LIB
       #include <QtCore5Compat>
+      #endif
       #include <QtSvg>
       #include <QtUiTools>
 

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RTransformOp);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTransformOp);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -87,6 +87,42 @@
         }
 
         
+              // define property setters/getters:
+              Object.defineProperty(this, 'type', {
+                  get() {
+                      
+                          return this.__PROXY__.getType();
+                        
+                  },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
+              // define property setters/getters:
+              Object.defineProperty(this, 'd1', {
+                  get() {
+                      
+                          return this.__PROXY__.getD1();
+                        
+                  },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
+              // define property setters/getters:
+              Object.defineProperty(this, 'd2', {
+                  get() {
+                      
+                          return this.__PROXY__.getD2();
+                        
+                  },
+                  
+                  enumerable: true,
+                  configurable: true
+              });
+            
 
       }
 
@@ -129,6 +165,54 @@ RTransformOp.Rotation = RTransformOp_Wrapper.Rotation;
 
       // functions:
       
+        // function 
+        RTransformOp.prototype.createTranslation = function(...args) 
+          
+        {
+          //print("JS: RTransformOp.prototype.createTranslation");
+          return this.__PROXY__.createTranslation(...args);
+        };
+    
+        // function 
+        RTransformOp.prototype.createScale = function(...args) 
+          
+        {
+          //print("JS: RTransformOp.prototype.createScale");
+          return this.__PROXY__.createScale(...args);
+        };
+    
+        // function 
+        RTransformOp.prototype.createRotation = function(...args) 
+          
+        {
+          //print("JS: RTransformOp.prototype.createRotation");
+          return this.__PROXY__.createRotation(...args);
+        };
+    
+        // function 
+        RTransformOp.prototype.getType = function(...args) 
+          
+        {
+          //print("JS: RTransformOp.prototype.getType");
+          return this.__PROXY__.getType(...args);
+        };
+    
+        // function 
+        RTransformOp.prototype.getD1 = function(...args) 
+          
+        {
+          //print("JS: RTransformOp.prototype.getD1");
+          return this.__PROXY__.getD1(...args);
+        };
+    
+        // function 
+        RTransformOp.prototype.getD2 = function(...args) 
+          
+        {
+          //print("JS: RTransformOp.prototype.getD2");
+          return this.__PROXY__.getD2(...args);
+        };
+    
 
       // static functions:
       
@@ -233,4 +317,7 @@ RTransformOp.Rotation = RTransformOp_Wrapper.Rotation;
       //  return this.wrapper.destr();
       //};
 
+      RTransformOp.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

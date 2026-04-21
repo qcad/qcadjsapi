@@ -1406,6 +1406,22 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
         };
     
         // function 
+        RDocumentInterface.prototype.updateThumbnail = function(...args) 
+          
+        {
+          //print("JS: RDocumentInterface.prototype.updateThumbnail");
+          return this.__PROXY__.updateThumbnail(...args);
+        };
+    
+        // function 
+        RDocumentInterface.prototype.getThumbnail = function(...args) 
+          
+        {
+          //print("JS: RDocumentInterface.prototype.getThumbnail");
+          return this.__PROXY__.getThumbnail(...args);
+        };
+    
+        // function 
         RDocumentInterface.prototype.handleClickEvent = function(...args) 
           
         {

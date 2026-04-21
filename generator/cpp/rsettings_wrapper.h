@@ -2159,7 +2159,7 @@
     // Function: addRecentFile
     // Source: 
     // Static: true
-    // Parameters: 1
+    // Parameters: 2
     // preceding Parameters: -1
 
               public:
@@ -2172,6 +2172,10 @@
                 
   const QJSValue& 
   a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
       = QJSValue()
     
               )
@@ -2235,6 +2239,29 @@
               (
 
                 
+              )
+              
+              ;
+            
+    // Class: RSettings
+    // Function: getThumbnailFilePath
+    // Source: 
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getThumbnailFilePath
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
               )
               
               ;
@@ -3332,6 +3359,25 @@
               
                   QJSValue 
                   getOpenGLMessages
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RSettings
+    // Function: useQml
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  useQml
               (
 
                 

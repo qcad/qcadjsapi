@@ -75,7 +75,7 @@ qreal a2_cpp;
 
             return RJSHelper_qcad::cpp2js_RTransformOp(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );
@@ -150,7 +150,7 @@ qreal a2_cpp;
 
             return RJSHelper_qcad::cpp2js_RTransformOp(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );
@@ -213,7 +213,7 @@ qreal a1_cpp;
 
             return RJSHelper_qcad::cpp2js_RTransformOp(
               handler, 
-              // non-copyable: true
+              // non-copyable: false
                   res
                 
               );
@@ -330,9 +330,12 @@ qreal a1_cpp;
             
             if (wrappedCreated) {
               
-                  // never delete wrapped object (non-copyable, CPP ownership or private destructor)
-                  //qDebug() << "NOT deleting instance of RTransformOp";
-                
+                  // delete wrapped object (copyable, JS ownership)
+                  //qDebug() << "deleting instance of RTransformOp";
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
             }
             
           }

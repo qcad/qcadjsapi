@@ -90,6 +90,7 @@ target_include_directories(qcadjsapi PRIVATE
     ../qcad/src/3rdparty/stemmer/include
     ../qcad/src/3rdparty/dxflib/src
     ../qcad/src/core
+    ../qcad/src/core/bridges
     ../qcad/src/core/math
     ../qcad/src/customwidgets
     ../qcad/src/entity

@@ -1110,6 +1110,16 @@
         </parameters>
       </variant>
     </function>
+    <function name="updateThumbnail">
+      <variant return-type="void" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getThumbnail">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="handleClickEvent" />
     <function name="previewClickEvent" />
   </class>

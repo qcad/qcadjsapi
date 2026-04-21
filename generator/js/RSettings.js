@@ -2943,11 +2943,12 @@
         {
           //print("JS: RSettings.addRecentFile");
           
-      if (arguments.length == 1) {
+      if (arguments.length >= 1 &&
+          arguments.length <= 2) {
     
                 // calling static wrapper:
                 return RSettings_WrapperSingletonInstance.addRecentFile(
-                  arguments[0]
+                  arguments[0], arguments[1]
                 );
               
 
@@ -3042,6 +3043,34 @@
   else {
     
         print("RSettings.clearRecentFiles(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RSettings.getThumbnailFilePath = function() 
+          
+        {
+          //print("JS: RSettings.getThumbnailFilePath");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.getThumbnailFilePath(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.getThumbnailFilePath(): wrong number / type of arguments");
       
     console.trace();
   }
@@ -4509,20 +4538,30 @@
       
 
         // static function 
-        RSettings.isInitialized = function() 
+        RSettings.useQml = function() 
           
         {
-          //print("JS: RSettings.isInitialized");
+          //print("JS: RSettings.useQml");
           
-        };
-      
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.useQml(
+                  
+                );
+              
 
-        // static function 
-        RSettings.shortenRecentFiles = function() 
-          
-        {
-          //print("JS: RSettings.shortenRecentFiles");
-          
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.useQml(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
         };
       
 

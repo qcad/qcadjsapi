@@ -586,9 +586,10 @@
       </variant>
     </function>
     <function name="addRecentFile" static="true">
-      <variant return-type="void" access="public">
+      <variant return-type="void" static="true" access="public">
         <parameters>
           <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+          <parameter const="true" type="QImage" modifier="&amp;" name="thumbnail" default="QImage()" />
         </parameters>
       </variant>
     </function>
@@ -607,6 +608,13 @@
     <function name="clearRecentFiles" static="true">
       <variant return-type="void" access="public">
         <parameters />
+      </variant>
+    </function>
+    <function name="getThumbnailFilePath" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="fileName" />
+        </parameters>
       </variant>
     </function>
     <function name="getColor" static="true">
@@ -914,7 +922,10 @@
         <parameters />
       </variant>
     </function>
-    <function name="isInitialized" static="true" />
-    <function name="shortenRecentFiles" static="true" />
+    <function name="useQml" static="true">
+      <variant return-type="bool" access="public">
+        <parameters />
+      </variant>
+    </function>
   </class>
 </unit>

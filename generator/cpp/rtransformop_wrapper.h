@@ -365,7 +365,7 @@ Rotation = RTransformOp::Rotation,
         Q_INVOKABLE
         virtual bool isCppOwnership() const {
           
-              return true;
+              return false;
             
         }
 

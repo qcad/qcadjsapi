@@ -3704,6 +3704,48 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
               
               ;
             
+    // Class: RDocumentInterface
+    // Function: updateThumbnail
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  updateThumbnail
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RDocumentInterface
+    // Function: getThumbnail
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getThumbnail
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
           // destroy function for non-copyable objects:
           Q_INVOKABLE void destr() {
             

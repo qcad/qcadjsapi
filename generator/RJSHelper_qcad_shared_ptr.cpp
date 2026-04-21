@@ -677,238 +677,238 @@
                 return cpp2js_QSharedPointer_RArcEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RAttributeDefinitionEntity> s = v.dynamicCast<RAttributeDefinitionEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RAttributeDefinitionEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RAttributeEntity> s = v.dynamicCast<RAttributeEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RAttributeEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RBlockReferenceEntity> s = v.dynamicCast<RBlockReferenceEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RBlockReferenceEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RCircleEntity> s = v.dynamicCast<RCircleEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RCircleEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimAlignedEntity> s = v.dynamicCast<RDimAlignedEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimAlignedEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimAngular2LEntity> s = v.dynamicCast<RDimAngular2LEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimAngular2LEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimAngular3PEntity> s = v.dynamicCast<RDimAngular3PEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimAngular3PEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimAngularEntity> s = v.dynamicCast<RDimAngularEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimAngularEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimArcLengthEntity> s = v.dynamicCast<RDimArcLengthEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimArcLengthEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimDiametricEntity> s = v.dynamicCast<RDimDiametricEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimDiametricEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimensionEntity> s = v.dynamicCast<RDimensionEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimensionEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimLinearEntity> s = v.dynamicCast<RDimLinearEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimLinearEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimOrdinateEntity> s = v.dynamicCast<RDimOrdinateEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimOrdinateEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimRadialEntity> s = v.dynamicCast<RDimRadialEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimRadialEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimRotatedEntity> s = v.dynamicCast<RDimRotatedEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimRotatedEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<REllipseEntity> s = v.dynamicCast<REllipseEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_REllipseEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RFaceEntity> s = v.dynamicCast<RFaceEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RFaceEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RHatchEntity> s = v.dynamicCast<RHatchEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RHatchEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RImageEntity> s = v.dynamicCast<RImageEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RImageEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RLeaderEntity> s = v.dynamicCast<RLeaderEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RLeaderEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RLineEntity> s = v.dynamicCast<RLineEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RLineEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RPointEntity> s = v.dynamicCast<RPointEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RPointEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RPolylineEntity> s = v.dynamicCast<RPolylineEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RPolylineEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RRayEntity> s = v.dynamicCast<RRayEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RRayEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RSolidEntity> s = v.dynamicCast<RSolidEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RSolidEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RSplineEntity> s = v.dynamicCast<RSplineEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RSplineEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RTextBasedEntity> s = v.dynamicCast<RTextBasedEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RTextBasedEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RTextEntity> s = v.dynamicCast<RTextEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RTextEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RToleranceEntity> s = v.dynamicCast<RToleranceEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RToleranceEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RTraceEntity> s = v.dynamicCast<RTraceEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RTraceEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RViewportEntity> s = v.dynamicCast<RViewportEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RViewportEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RWipeoutEntity> s = v.dynamicCast<RWipeoutEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RWipeoutEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RXLineEntity> s = v.dynamicCast<RXLineEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RXLineEntity(handler, s);
               }
             }
-          
+            
 
           QJSEngine* engine = handler.getEngine();
           REntity_Wrapper* ret = new REntity_Wrapper(handler, v);
@@ -937,139 +937,139 @@
                 if (RJSType_RArcEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RArcEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RAttributeDefinitionEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeDefinitionEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RAttributeEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RBlockReferenceEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RBlockReferenceEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RCircleEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RCircleEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimAlignedEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAlignedEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimAngular2LEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular2LEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimAngular3PEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular3PEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimAngularEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngularEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimArcLengthEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimArcLengthEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimDiametricEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimDiametricEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimensionEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimensionEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimLinearEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimLinearEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimOrdinateEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimOrdinateEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimRadialEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRadialEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RDimRotatedEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RDimRotatedEntity(handler, v);
                 }
-              
+                
                 if (RJSType_REllipseEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_REllipseEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RFaceEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RFaceEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RHatchEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RHatchEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RImageEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RImageEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RLeaderEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLeaderEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RLineEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLineEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RPointEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RPointEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RPolylineEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RPolylineEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RRayEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RRayEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RSolidEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RSolidEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RSplineEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RSplineEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RTextBasedEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RTextBasedEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RTextEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RTextEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RToleranceEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RToleranceEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RTraceEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RTraceEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RViewportEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RViewportEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RWipeoutEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RWipeoutEntity(handler, v);
                 }
-              
+                
                 if (RJSType_RXLineEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RXLineEntity(handler, v);
                 }
-              
+                
             }
           REntity_Wrapper* wrapper = getWrapper<REntity_Wrapper>(v);
           if (wrapper==nullptr) {
@@ -1118,70 +1118,70 @@
                 return cpp2js_QSharedPointer_RArc(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RCircle> s = v.dynamicCast<RCircle>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RCircle(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<REllipse> s = v.dynamicCast<REllipse>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_REllipse(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RLine> s = v.dynamicCast<RLine>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RLine(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RPoint> s = v.dynamicCast<RPoint>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RPoint(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RPolyline> s = v.dynamicCast<RPolyline>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RPolyline(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RRay> s = v.dynamicCast<RRay>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RRay(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RSpline> s = v.dynamicCast<RSpline>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RSpline(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RTriangle> s = v.dynamicCast<RTriangle>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RTriangle(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RXLine> s = v.dynamicCast<RXLine>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RXLine(handler, s);
               }
             }
-          
+            
 
           QJSEngine* engine = handler.getEngine();
           RShape_Wrapper* ret = new RShape_Wrapper(handler, v);
@@ -1210,43 +1210,43 @@
                 if (RJSType_RArc::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RArc(handler, v);
                 }
-              
+                
                 if (RJSType_RCircle::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RCircle(handler, v);
                 }
-              
+                
                 if (RJSType_REllipse::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_REllipse(handler, v);
                 }
-              
+                
                 if (RJSType_RLine::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RLine(handler, v);
                 }
-              
+                
                 if (RJSType_RPoint::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RPoint(handler, v);
                 }
-              
+                
                 if (RJSType_RPolyline::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RPolyline(handler, v);
                 }
-              
+                
                 if (RJSType_RRay::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RRay(handler, v);
                 }
-              
+                
                 if (RJSType_RSpline::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RSpline(handler, v);
                 }
-              
+                
                 if (RJSType_RTriangle::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RTriangle(handler, v);
                 }
-              
+                
                 if (RJSType_RXLine::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RXLine(handler, v);
                 }
-              
+                
             }
           RShape_Wrapper* wrapper = getWrapper<RShape_Wrapper>(v);
           if (wrapper==nullptr) {

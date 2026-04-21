@@ -445,6 +445,8 @@
 #include "generator/cpp/rexportlisteneradapter_wrapper.h"
 //#include "generator/cpp/rgraphicsviewskia_wrapper.h"
 
+#include "RSettingsBridge.h"
+
 /*
 #ifdef RNEST
 #include "generator/cpp/rnester_wrapper.h"
@@ -483,6 +485,9 @@ public:
         }
         if (v.canConvert<RPropertyTypeId>()) {
             return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, v.value<RPropertyTypeId>());
+        }
+        if (v.canConvert<RLinetypePattern>()) {
+            return RJSHelper_qcad::cpp2js_RLinetypePattern(handler, v.value<RLinetypePattern>());
         }
 
         return QJSValue();
@@ -1144,6 +1149,9 @@ void RScriptHandlerJs::init(bool main) {
 
     //RJSHelper::registerQVariantConverter(new RJSQVariantConverter_RColor());
     RJSHelper::registerQVariantConverter(new RJSQVariantConverter_qcad());
+
+    QQmlContext* context = engine->rootContext();
+    context->setContextProperty("RSettingsBridge", RSettingsBridge::instance());
 
     // give plugins a chance to initialize their script extensions:
     RPluginLoader::initScriptExtensions(*this);

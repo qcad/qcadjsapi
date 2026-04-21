@@ -678,70 +678,70 @@
                 return cpp2js_QSharedPointer_RBlock(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimStyle> s = v.dynamicCast<RDimStyle>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimStyle(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDocumentVariables> s = v.dynamicCast<RDocumentVariables>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDocumentVariables(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<REntity> s = v.dynamicCast<REntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_REntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RLayer> s = v.dynamicCast<RLayer>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RLayer(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RLayerState> s = v.dynamicCast<RLayerState>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RLayerState(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RLayout> s = v.dynamicCast<RLayout>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RLayout(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RLinetype> s = v.dynamicCast<RLinetype>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RLinetype(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RUcs> s = v.dynamicCast<RUcs>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RUcs(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RView> s = v.dynamicCast<RView>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RView(handler, s);
               }
             }
-          
+            
 
           QJSEngine* engine = handler.getEngine();
           RObject_Wrapper* ret = new RObject_Wrapper(handler, v);
@@ -1476,21 +1476,21 @@
                 return cpp2js_QSharedPointer_RDimAngular2LEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimAngular3PEntity> s = v.dynamicCast<RDimAngular3PEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimAngular3PEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimArcLengthEntity> s = v.dynamicCast<RDimArcLengthEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimArcLengthEntity(handler, s);
               }
             }
-          
+            
 
           QJSEngine* engine = handler.getEngine();
           RDimAngularEntity_Wrapper* ret = new RDimAngularEntity_Wrapper(handler, v);
@@ -1703,14 +1703,14 @@
                 return cpp2js_QSharedPointer_RDimAlignedEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimRotatedEntity> s = v.dynamicCast<RDimRotatedEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimRotatedEntity(handler, s);
               }
             }
-          
+            
 
           QJSEngine* engine = handler.getEngine();
           RDimLinearEntity_Wrapper* ret = new RDimLinearEntity_Wrapper(handler, v);
@@ -2043,70 +2043,70 @@
                 return cpp2js_QSharedPointer_RDimAlignedEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimAngular2LEntity> s = v.dynamicCast<RDimAngular2LEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimAngular2LEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimAngular3PEntity> s = v.dynamicCast<RDimAngular3PEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimAngular3PEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimAngularEntity> s = v.dynamicCast<RDimAngularEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimAngularEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimArcLengthEntity> s = v.dynamicCast<RDimArcLengthEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimArcLengthEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimDiametricEntity> s = v.dynamicCast<RDimDiametricEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimDiametricEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimLinearEntity> s = v.dynamicCast<RDimLinearEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimLinearEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimOrdinateEntity> s = v.dynamicCast<RDimOrdinateEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimOrdinateEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimRadialEntity> s = v.dynamicCast<RDimRadialEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimRadialEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RDimRotatedEntity> s = v.dynamicCast<RDimRotatedEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RDimRotatedEntity(handler, s);
               }
             }
-          
+            
 
           QJSEngine* engine = handler.getEngine();
           RDimensionEntity_Wrapper* ret = new RDimensionEntity_Wrapper(handler, v);
@@ -3339,21 +3339,21 @@
                 return cpp2js_QSharedPointer_RAttributeDefinitionEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RAttributeEntity> s = v.dynamicCast<RAttributeEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RAttributeEntity(handler, s);
               }
             }
-          
+            
             {
               QSharedPointer<RTextEntity> s = v.dynamicCast<RTextEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RTextEntity(handler, s);
               }
             }
-          
+            
 
           QJSEngine* engine = handler.getEngine();
           RTextBasedEntity_Wrapper* ret = new RTextBasedEntity_Wrapper(handler, v);

@@ -5714,7 +5714,7 @@
                     return RJSHelper_qcad::cpp2js_RCadToolBarPanel(handler, o);
                 }
             }
-          RWidget_Wrapper* ret = nullptr;
+            RWidget_Wrapper* ret = nullptr;
           bool existing = false;
           if (v) {
               // look up existing wrapper:
