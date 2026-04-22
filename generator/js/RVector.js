@@ -942,11 +942,11 @@
         };
     
         // function 
-        RVector.prototype.getUnion = function(...args) 
+        RVector.prototype.getIntersection = function(...args) 
           
         {
-          //print("JS: RVector.prototype.getUnion");
-          return this.__PROXY__.getUnion(...args);
+          //print("JS: RVector.prototype.getIntersection");
+          return this.__PROXY__.getIntersection(...args);
         };
     
         // function 
@@ -1492,16 +1492,16 @@
       
 
         // static function 
-        RVector.getUnion = function() 
+        RVector.getIntersection = function() 
           
         {
-          //print("JS: RVector.getUnion");
+          //print("JS: RVector.getIntersection");
           
       if (arguments.length >= 2 &&
           arguments.length <= 3) {
     
                 // calling static wrapper:
-                return RVector_WrapperSingletonInstance.getUnion(
+                return RVector_WrapperSingletonInstance.getIntersection(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -1512,7 +1512,7 @@
   
   else {
     
-        print("RVector.getUnion(): wrong number / type of arguments");
+        print("RVector.getIntersection(): wrong number / type of arguments");
       
     console.trace();
   }

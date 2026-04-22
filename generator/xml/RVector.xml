@@ -678,7 +678,7 @@
         </parameters>
       </variant>
     </function>
-    <function name="getUnion" static="true">
+    <function name="getIntersection" static="true">
       <variant return-type="QList&lt;RVector&gt;" static="true" access="public">
         <parameters>
           <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vectorsA" />

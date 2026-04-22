@@ -419,7 +419,7 @@
               ;
             
     // Class: RVector
-    // Function: getUnion
+    // Function: getIntersection
     // Source: 
     // Static: true
     // Parameters: 3
@@ -429,7 +429,7 @@
               Q_INVOKABLE 
               
                   QJSValue 
-                  getUnion
+                  getIntersection
               (
 
                 

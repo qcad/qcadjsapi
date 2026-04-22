@@ -1152,14 +1152,14 @@ QList<RVector> a1_cpp;
               }
             
     // Class: RVector
-    // Function: getUnion
+    // Function: getIntersection
     // Source: 
     // Static: true
     // Parameters: 3
     // preceding Parameters: -1
 
                 QJSValue 
-              RVector_WrapperSingleton::getUnion
+              RVector_WrapperSingleton::getIntersection
               (
                 
   const QJSValue& 
@@ -1222,7 +1222,7 @@ double a3_cpp;
             QList<RVector> res = 
                 
                 // call static member function:
-                RVector::getUnion(
+                RVector::getIntersection(
               a1_cpp
     , a2_cpp
     , a3_cpp
@@ -1240,7 +1240,7 @@ double a3_cpp;
             
   }
 
-                  qWarning() << "no matching function variant found for getUnion";
+                  qWarning() << "no matching function variant found for getIntersection";
                   handler.trace();
                   return QJSValue();
                 
