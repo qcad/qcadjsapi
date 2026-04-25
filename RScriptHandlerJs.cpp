@@ -787,7 +787,6 @@ void RScriptHandlerJs::init(bool main) {
 
     // eval auto load scripts:
     QStringList files = RAutoLoadJs::getAutoLoadFiles();
-    qDebug() << "auto load files:" << files;
     for (int i=0; i<files.size(); i++) {
         doScript(files[i]);
     }
