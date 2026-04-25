@@ -379,7 +379,7 @@ RScriptHandlerJs::RScriptHandlerJs() : rjsapi(NULL), engine(NULL) {
 
 
 RScriptHandlerJs::~RScriptHandlerJs() {
-    qDebug() << "RScriptHandlerJs::~RScriptHandlerJs";
+    // qDebug() << "RScriptHandlerJs::~RScriptHandlerJs";
     //if (engine->hasUncaughtException()) {
     //    qWarning() << "At least one uncaught exception:";
     //}
@@ -388,10 +388,10 @@ RScriptHandlerJs::~RScriptHandlerJs() {
 //        qWarning() << "Deleting script engine that is still evaluating.";
 //    }
     // collect garbage... (objects are scheduled for removal, not removed):
-    qDebug() << "collect garbage...";
+    // qDebug() << "collect garbage...";
     engine->collectGarbage();
     //QCoreApplication::processEvents();
-    qDebug() << "collect garbage: DONE";
+    // qDebug() << "collect garbage: DONE";
 
     //QVariant v = engine->property("__to_delete__");
     //RMdiArea_Wrapper* w = v.value<RMdiArea_Wrapper*>();
@@ -400,7 +400,7 @@ RScriptHandlerJs::~RScriptHandlerJs() {
     RDebug::printCounters();
 
     // delete wrappers:
-    qDebug() << "deleting wrappers (" + engine->objectName() + "): " << wrappers.size();
+    // qDebug() << "deleting wrappers (" + engine->objectName() + "): " << wrappers.size();
     // TODO: crashes:
     //QtConcurrent::blockingMap(RS::toList<RJSWrapperObj*>(wrappers), RScriptHandlerJs::deleteWrapper);
     QSetIterator<RJSWrapperObj*> i(wrappers);
@@ -415,33 +415,33 @@ RScriptHandlerJs::~RScriptHandlerJs() {
         delete wrapper;
     }
     wrappers.clear();
-    qDebug() << "deleting wrappers: DONE" ;
+    // qDebug() << "deleting wrappers: DONE" ;
 
-    qDebug() << "collect garbage...";
+    // qDebug() << "collect garbage...";
     engine->collectGarbage();
     // objects are deleted here:
     if (RSettings::isGuiEnabled()) {
         QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
     }
-    qDebug() << "collect garbage: DONE";
+    // qDebug() << "collect garbage: DONE";
 
     delete rjsapi;
 
-    qDebug() << "delete engine:" << (unsigned long long int)engine << "...";
+    // qDebug() << "delete engine:" << (unsigned long long int)engine << "...";
     delete engine;
     engine = nullptr;
-    qDebug() << "delete engine:" << (unsigned long long int)engine << " DONE";
+    // qDebug() << "delete engine:" << (unsigned long long int)engine << " DONE";
 }
 
 void RScriptHandlerJs::deleteWrapper(RJSWrapperObj* wrapper) {
-    qDebug() << "deleting wrapper: " << (unsigned long long int)wrapper;
+    // qDebug() << "deleting wrapper: " << (unsigned long long int)wrapper;
     delete wrapper;
 }
 
 void RScriptHandlerJs::init(bool main) {
     //static int counter = 0;
 
-    qDebug() << "RScriptHandlerJs::init";
+    //qDebug() << "RScriptHandlerJs::init";
 
     // TODO: use QQmlApplicationEngine to allow mixing QML / JS:
     //engine = new QJSEngine();
@@ -450,7 +450,7 @@ void RScriptHandlerJs::init(bool main) {
     rjsapi = new RJSApi(engine);
     tools = rjsapi->getTools();
 
-    qDebug() << "script engine:" << engine->objectName();
+    //qDebug() << "script engine:" << engine->objectName();
 
     //RVector_Wrapper::init(*rjsapi);
 
@@ -485,224 +485,6 @@ void RScriptHandlerJs::init(bool main) {
     RSingleApplication_Wrapper* app = new RSingleApplication_Wrapper(*rjsapi, dynamic_cast<RSingleApplication*>(qApp), false);
     global.setProperty("qApp", engine->newQObject(app));
     QQmlEngine::setObjectOwnership(app, QQmlEngine::CppOwnership);
-
-    /*
-    {
-        QString fileName = ":copyproperties.js";
-        QFile scriptFile(fileName);
-        if (scriptFile.open(QIODevice::ReadOnly)) {
-            QTextStream stream(&scriptFile);
-            QString contents = stream.readAll();
-            scriptFile.close();
-            QJSValue result = engine->evaluate(contents, fileName);
-            if (result.isError()) {
-                qWarning()
-                        << "Uncaught exception at line"
-                        << result.property("lineNumber").toInt()
-                        << ":" << result.toString();
-            }
-        }
-    }
-    */
-
-    //RJSType* t = new RJSType();
-    //global.setProperty("RJSType", engine->newQObject(t));
-
-    /*
-    Qt_Wrapper::init(*this);
-    QCoreApplication_Wrapper::init(*this);
-    QDir_Wrapper::init(*this);
-    QDirIterator_Wrapper::init(*this);
-    QFileInfo_Wrapper::init(*this);
-    QFile_Wrapper::init(*this);
-    QMouseEvent_Wrapper::init(*this);
-    QPaintEvent_Wrapper::init(*this);
-    QResizeEvent_Wrapper::init(*this);
-    QWidget_Wrapper::init(*this);
-    QPoint_Wrapper::init(*this);
-    QPointF_Wrapper::init(*this);
-    QDateTime_Wrapper::init(*this);
-    QMainWindow_Wrapper::init(*this);
-    QMenuBar_Wrapper::init(*this);
-    QMenu_Wrapper::init(*this);
-    QAction_Wrapper::init(*this);
-    QPainter_Wrapper::init(*this);
-    QIODevice_Wrapper::init(*this);
-    QIODeviceBase_Wrapper::init(*this);
-    QPixmap_Wrapper::init(*this);
-    QSplashScreen_Wrapper::init(*this);
-    QUiLoader_Wrapper::init(*this);
-    QSpinBox_Wrapper::init(*this);
-    QComboBox_Wrapper::init(*this);
-    QFontComboBox_Wrapper::init(*this);
-    QToolButton_Wrapper::init(*this);
-    QObject_Wrapper::init(*this);
-    QBuffer_Wrapper::init(*this);
-    QVariant_Wrapper::init(*this);
-    QEvent_Wrapper::init(*this);
-    QLocale_Wrapper::init(*this);
-    QAbstractItemModel_Wrapper::init(*this);
-    QTranslator_Wrapper::init(*this);
-    QLabel_Wrapper::init(*this);
-    QTextBrowser_Wrapper::init(*this);
-    QTextEdit_Wrapper::init(*this);
-    QGroupBox_Wrapper::init(*this);
-    QDialogButtonBox_Wrapper::init(*this);
-    QPushButton_Wrapper::init(*this);
-    QFrame_Wrapper::init(*this);
-    QFormLayout_Wrapper::init(*this);
-    QSize_Wrapper::init(*this);
-    QSizeF_Wrapper::init(*this);
-    QPrinter_Wrapper::init(*this);
-    QDialog_Wrapper::init(*this);
-    QProgressDialog_Wrapper::init(*this);
-    QPageSize_Wrapper::init(*this);
-    QPageLayout_Wrapper::init(*this);
-    QAbstractButton_Wrapper::init(*this);
-    QSettings_Wrapper::init(*this);
-    QIcon_Wrapper::init(*this);
-    QToolBar_Wrapper::init(*this);
-    QStackedLayout_Wrapper::init(*this);
-    QHeaderView_Wrapper::init(*this);
-    QAbstractItemView_Wrapper::init(*this);
-    QPalette_Wrapper::init(*this);
-    QColor_Wrapper::init(*this);
-    QRect_Wrapper::init(*this);
-    QRectF_Wrapper::init(*this);
-    QRegion_Wrapper::init(*this);
-    QLayout_Wrapper::init(*this);
-    QLayoutItem_Wrapper::init(*this);
-    QWidgetItem_Wrapper::init(*this);
-    QLineEdit_Wrapper::init(*this);
-    QSizePolicy_Wrapper::init(*this);
-    QTreeWidgetItem_Wrapper::init(*this);
-    QVBoxLayout_Wrapper::init(*this);
-    QHBoxLayout_Wrapper::init(*this);
-    QTimer_Wrapper::init(*this);
-    QKeySequence_Wrapper::init(*this);
-    QCheckBox_Wrapper::init(*this);
-    //QCoreApplication_Wrapper::init(*this);
-    QTextCursor_Wrapper::init(*this);
-    QSplitter_Wrapper::init(*this);
-    QStatusBar_Wrapper::init(*this);
-    QMdiArea_Wrapper::init(*this);
-    QTabBar_Wrapper::init(*this);
-    QTabWidget_Wrapper::init(*this);
-    QFont_Wrapper::init(*this);
-    QMdiSubWindow_Wrapper::init(*this);
-    QScrollBar_Wrapper::init(*this);
-    QModelIndex_Wrapper::init(*this);
-    QDockWidget_Wrapper::init(*this);
-    QDesktopServices_Wrapper::init(*this);
-    QUrl_Wrapper::init(*this);
-    QPlainTextEdit_Wrapper::init(*this);
-    QTextStream_Wrapper::init(*this);
-    QStringConverter_Wrapper::init(*this);
-    QWidgetAction_Wrapper::init(*this);
-    QDoubleSpinBox_Wrapper::init(*this);
-    QRadioButton_Wrapper::init(*this);
-    QButtonGroup_Wrapper::init(*this);
-    QSlider_Wrapper::init(*this);
-    QListWidget_Wrapper::init(*this);
-    QListWidgetItem_Wrapper::init(*this);
-    QFileDialog_Wrapper::init(*this);
-    QMessageBox_Wrapper::init(*this);
-    QFontMetrics_Wrapper::init(*this);
-    QFontMetricsF_Wrapper::init(*this);
-    QTime_Wrapper::init(*this);
-    QProcess_Wrapper::init(*this);
-    QProcessEnvironment_Wrapper::init(*this);
-    QBitmap_Wrapper::init(*this);
-    QCursor_Wrapper::init(*this);
-    QImageReader_Wrapper::init(*this);
-    QByteArray_Wrapper::init(*this);
-    QKeyEvent_Wrapper::init(*this);
-    QInputEvent_Wrapper::init(*this);
-    QBrush_Wrapper::init(*this);
-    QGradient_Wrapper::init(*this);
-    QLinearGradient_Wrapper::init(*this);
-    QGuiApplication_Wrapper::init(*this);
-    QTransform_Wrapper::init(*this);
-    QXmlContentHandler_Wrapper::init(*this);
-    QXmlDTDHandler_Wrapper::init(*this);
-    QXmlDeclHandler_Wrapper::init(*this);
-    QXmlDefaultHandler_Wrapper::init(*this);
-    QXmlEntityResolver_Wrapper::init(*this);
-    QXmlErrorHandler_Wrapper::init(*this);
-    QXmlInputSource_Wrapper::init(*this);
-    QXmlLexicalHandler_Wrapper::init(*this);
-    QXmlLocator_Wrapper::init(*this);
-    QXmlParseException_Wrapper::init(*this);
-    QXmlReader_Wrapper::init(*this);
-    QXmlSimpleReader_Wrapper::init(*this);
-    QXmlAttributes_Wrapper::init(*this);
-    QPinchGesture_Wrapper::init(*this);
-    QImageWriter_Wrapper::init(*this);
-    QImage_Wrapper::init(*this);
-    QApplication_Wrapper::init(*this);
-    QContextMenuEvent_Wrapper::init(*this);
-    QValidator_Wrapper::init(*this);
-    QRegularExpressionValidator_Wrapper::init(*this);
-    QTreeWidget_Wrapper::init(*this);
-    QShortcut_Wrapper::init(*this);
-    QClipboard_Wrapper::init(*this);
-    QMimeData_Wrapper::init(*this);
-    QTextCharFormat_Wrapper::init(*this);
-    QTextDocument_Wrapper::init(*this);
-    QDomDocument_Wrapper::init(*this);
-    QDomElement_Wrapper::init(*this);
-    QDomNode_Wrapper::init(*this);
-    QDomText_Wrapper::init(*this);
-    QDomNodeList_Wrapper::init(*this);
-    QGridLayout_Wrapper::init(*this);
-    QPen_Wrapper::init(*this);
-    QKeyCombination_Wrapper::init(*this);
-    QAbstractScrollArea_Wrapper::init(*this);
-    QXmlStreamWriter_Wrapper::init(*this);
-    QBoxLayout_Wrapper::init(*this);
-    QUrlQuery_Wrapper::init(*this);
-    QVariant_Wrapper::init(*this);
-    QProgressBar_Wrapper::init(*this);
-    QRegularExpression_Wrapper::init(*this);
-    QStackedWidget_Wrapper::init(*this);
-    QStandardItemModel_Wrapper::init(*this);
-    QAbstractListModel_Wrapper::init(*this);
-    QFontDatabase_Wrapper::init(*this);
-    QItemDelegate_Wrapper::init(*this);
-    QAbstractItemDelegate_Wrapper::init(*this);
-    QListView_Wrapper::init(*this);
-    QStandardItem_Wrapper::init(*this);
-    QLine_Wrapper::init(*this);
-    QLineF_Wrapper::init(*this);
-    QPrintDialog_Wrapper::init(*this);
-    QPainterPath_Wrapper::init(*this);
-    QItemSelection_Wrapper::init(*this);
-    QItemSelectionModel_Wrapper::init(*this);
-    QTableWidget_Wrapper::init(*this);
-    QTableView_Wrapper::init(*this);
-    QTableWidgetItem_Wrapper::init(*this);
-    QScrollArea_Wrapper::init(*this);
-    QEventLoop_Wrapper::init(*this);
-    QPanGesture_Wrapper::init(*this);
-    QTreeView_Wrapper::init(*this);
-    QFileIconProvider_Wrapper::init(*this);
-    QHelpEvent_Wrapper::init(*this);
-    QDrag_Wrapper::init(*this);
-    QToolTip_Wrapper::init(*this);
-    QDragEnterEvent_Wrapper::init(*this);
-    QDropEvent_Wrapper::init(*this);
-    QDoubleValidator_Wrapper::init(*this);
-    QSortFilterProxyModel_Wrapper::init(*this);
-    QItemDelegate_Wrapper::init(*this);
-    QActionEvent_Wrapper::init(*this);
-    QEasingCurve_Wrapper::init(*this);
-    QSvgRenderer_Wrapper::init(*this);
-    QStringEncoder_Wrapper::init(*this);
-    QStringDecoder_Wrapper::init(*this);
-    QXmlStreamReader_Wrapper::init(*this);
-    QQuickWidget_Wrapper::init(*this);
-    QGraphicsBlurEffect_Wrapper::init(*this);
-    */
 
     RS_Wrapper::init(*rjsapi);
     //RJSType_Wrapper::init(*rjsapi);
