@@ -34,5 +34,13 @@
       </variant>
       -->
     </constructor>
+
+    <function name="isHighResMouse" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QWheelEvent" modifier="*" name="e" />
+        </parameters>
+      </variant>
+    </function>
   </class>
 </unit>

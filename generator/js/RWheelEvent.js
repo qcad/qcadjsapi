@@ -326,6 +326,34 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
       // static functions:
       
 
+        // static function 
+        RWheelEvent.isHighResMouse = function() 
+          
+        {
+          //print("JS: RWheelEvent.isHighResMouse");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RWheelEvent_WrapperSingletonInstance.isHighResMouse(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RWheelEvent);
+  }
+
+  
+  else {
+    
+        print("RWheelEvent.isHighResMouse(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 
