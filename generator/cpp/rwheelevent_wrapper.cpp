@@ -13,74 +13,6 @@
     
     // static functions implementation in singleton wrapper:
     
-    // Class: RWheelEvent
-    // Function: isHighResMouse
-    // Source: 
-    // Static: true
-    // Parameters: 1
-    // preceding Parameters: -1
-
-                QJSValue 
-              RWheelEvent_WrapperSingleton::isHighResMouse
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
-        RJSHelper::is_QWheelEvent_ptr(handler, a1
-    , true
-  
-  )
-
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: e (QWheelEvent)
-  
-
-          // pointer:
-          QWheelEvent*
-         a1_cpp;
-
-      a1_cpp = RJSHelper::js2cpp_QWheelEvent_ptr(handler, a1);
-        
-
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            bool res = 
-                
-                // call static member function:
-                RWheelEvent::isHighResMouse(
-              a1_cpp
-    
-            );
-          
-            // return type: bool
-
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for isHighResMouse";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
     void RWheelEvent_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RWheelEvent_Wrapper>("org.qcad", 1, 0, "RWheelEvent_Wrapper");
@@ -109,15 +41,6 @@
         // JS base class:
         //QJSValue mob = engine->newQMetaObject(&RWheelEvent_BaseJs::staticMetaObject);
         //engine->globalObject().setProperty("RWheelEvent_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&RWheelEvent_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("RWheelEvent_WrapperSingleton", mos);
-
-        // create instance of singleton wrapper for static functions:
-        RWheelEvent_WrapperSingleton * s = new RWheelEvent_WrapperSingleton(handler);
-        engine->globalObject().setProperty("RWheelEvent_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
       
       QString fileName = ":generator/js/RWheelEvent.js";
       QFile scriptFile(fileName);

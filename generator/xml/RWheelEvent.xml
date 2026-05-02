@@ -35,6 +35,7 @@
       -->
     </constructor>
 
+    <!--
     <function name="isHighResMouse" static="true">
       <variant return-type="bool" static="true" access="public">
         <parameters>
@@ -42,5 +43,6 @@
         </parameters>
       </variant>
     </function>
+    -->
   </class>
 </unit>
