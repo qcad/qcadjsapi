@@ -112,9 +112,9 @@ target_include_directories(qcadjsapi PRIVATE
     .
 )
 
-set_target_properties(qcadjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ../qcad/plugins)
-set_target_properties(qcadjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ../qcad/plugins)
-set_target_properties(qcadjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ../qcad/plugins)
+set_target_properties(qcadjsapi PROPERTIES LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../qcad/plugins)
+set_target_properties(qcadjsapi PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../qcad/plugins)
+set_target_properties(qcadjsapi PROPERTIES ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/../qcad/plugins)
 
 target_compile_definitions(qcadjsapi PRIVATE
     QCADJSAPI_LIBRARY

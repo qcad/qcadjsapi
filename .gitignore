@@ -87,3 +87,4 @@ xml_auto
 meta_types
 CMakeLists.txt.user.*
 CMakeCache.txt.prev
+build
