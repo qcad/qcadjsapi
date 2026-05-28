@@ -163,6 +163,7 @@
     <file alias="generator/js/RMoveSelectionOperation.js">generator/js/RMoveSelectionOperation.js</file>
     <file alias="generator/js/RMultiOperation.js">generator/js/RMultiOperation.js</file>
     <file alias="generator/js/RNewDocumentListener.js">generator/js/RNewDocumentListener.js</file>
+    <file alias="generator/js/RNewDocumentListenerAdapter.js">generator/js/RNewDocumentListenerAdapter.js</file>
     <file alias="generator/js/RObject.js">generator/js/RObject.js</file>
     <file alias="generator/js/ROperation.js">generator/js/ROperation.js</file>
     <file alias="generator/js/ROperationUtils.js">generator/js/ROperationUtils.js</file>

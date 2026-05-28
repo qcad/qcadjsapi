@@ -403,6 +403,8 @@
         
           #include "rnewdocumentlistener_wrapper.h"
         
+          #include "rnewdocumentlisteneradapter_wrapper.h"
+        
           #include "roperationutils_wrapper.h"
         
           #include "rorthogrid_wrapper.h"
@@ -4232,6 +4234,111 @@
           //return v.isObject() || (v.isNumber() && v.toInt()==0);
 
           return fun.call(QJSValueList() << QJSValue(RJSType_RMdiChildQt::getIdStatic())).toBool();
+      }
+
+    
+      QJSValue RJSHelper_qcad::cpp2js_RNewDocumentListenerAdapter(RJSApi& handler, RNewDocumentListenerAdapter* v) {
+          RNewDocumentListenerAdapter_Wrapper* ret = nullptr;
+          bool existing = false;
+          if (v) {
+              // look up existing wrapper:
+              QVariant var = getWrapperProperty(handler, *v);
+              //qDebug() << "existing wrapper QVariant:" << var;
+              ret = var.value<RNewDocumentListenerAdapter_Wrapper*>();
+              if (ret==nullptr) {
+                  if (var.isValid()) {
+                      qWarning() << "RJSHelper_qcad::cpp2js_RNewDocumentListenerAdapter: invalid wrapper attached to QObject: " << var.typeName();
+                      QObject_Wrapper* ow = var.value<QObject_Wrapper*>();
+                      delete ow;
+                  }
+                  // create new wrapper:
+                  //qDebug() << "creating new wrapper for " << (long int)v;
+                  ret = new RNewDocumentListenerAdapter_Wrapper(handler, v, false);
+                  QVariant varNew = QVariant::fromValue(ret);
+                  setWrapperProperty(handler, *v, varNew);
+              }
+              else {
+                  existing = true;
+              }
+          }
+          else {
+              // wrapper for nullptr:
+              ret = new RNewDocumentListenerAdapter_Wrapper(handler, nullptr, false);
+          }
+
+          QJSEngine* engine = handler.getEngine();
+
+          // JS: new RNewDocumentListenerAdapter('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RNewDocumentListenerAdapter");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RNewDocumentListenerAdapter is undefined. Use RNewDocumentListenerAdapter_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(existing));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("__wrapper__", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RNewDocumentListenerAdapter('__GOT_WRAPPER__', __wrapper__);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RNewDocumentListenerAdapter(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RNewDocumentListenerAdapter(RJSApi& handler, const RNewDocumentListenerAdapter* v) {
+          return RJSHelper_qcad::cpp2js_RNewDocumentListenerAdapter(handler, const_cast<RNewDocumentListenerAdapter*>(v));
+      }
+
+      RNewDocumentListenerAdapter* RJSHelper_qcad::js2cpp_RNewDocumentListenerAdapter_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RNewDocumentListenerAdapter: not a QObject";
+              return nullptr;
+          }
+          //RNewDocumentListenerAdapter_Wrapper* wrapper = getWrapper<RNewDocumentListenerAdapter_Wrapper>(v);
+          QObject* obj = jwrapper.toQObject();
+          //RNewDocumentListenerAdapter_Wrapper* wrapper = qobject_cast<RNewDocumentListenerAdapter_Wrapper*>(obj);
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RNewDocumentListenerAdapter_Wrapper* wrapper = dynamic_cast<RNewDocumentListenerAdapter_Wrapper*>(obj);
+          //RNewDocumentListenerAdapter_Wrapper* wrapper = (RNewDocumentListenerAdapter_Wrapper*)obj;
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RNewDocumentListenerAdapter: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return (RNewDocumentListenerAdapter*)wrapper->getWrappedVoid();
+          //return getWrapped_RNewDocumentListenerAdapter(wrapper);
+          return RNewDocumentListenerAdapter_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RNewDocumentListenerAdapter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getObjectType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RNewDocumentListenerAdapter: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+          //return fun.call(RJSType::RNewDocumentListenerAdapter_Type);
+          //return fun.call().toInt()==RJSType::RNewDocumentListenerAdapter_Type;
+          //return v.isObject() || (v.isNumber() && v.toInt()==0);
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RNewDocumentListenerAdapter::getIdStatic())).toBool();
       }
 
     

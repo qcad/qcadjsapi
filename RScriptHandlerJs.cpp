@@ -285,6 +285,7 @@
 #include "generator/cpp/rstemmer_wrapper.h"
 #include "generator/cpp/rimportlisteneradapter_wrapper.h"
 #include "generator/cpp/rexportlisteneradapter_wrapper.h"
+#include "generator/cpp/rnewdocumentlisteneradapter_wrapper.h"
 
 #include "RSettingsBridge.h"
 
@@ -648,6 +649,7 @@ void RScriptHandlerJs::init(bool main) {
     RSpatialIndexVisitorAdapter_Wrapper::init(*rjsapi);
     RImportListenerAdapter_Wrapper::init(*rjsapi);
     RExportListenerAdapter_Wrapper::init(*rjsapi);
+    RNewDocumentListenerAdapter_Wrapper::init(*rjsapi);
     RMultiOperation_Wrapper::init(*rjsapi);
 
     RArcEntity_Wrapper::init(*rjsapi);

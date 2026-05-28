@@ -403,6 +403,8 @@
         
           #include "rnewdocumentlistener_wrapper.h"
         
+          #include "rnewdocumentlisteneradapter_wrapper.h"
+        
           #include "roperationutils_wrapper.h"
         
           #include "rorthogrid_wrapper.h"
@@ -2451,6 +2453,14 @@
               ROperation_Wrapper::registerBasecaster_ROperation(new RJSBasecaster_RMultiOperation_ROperation());
             
             // registration of base casters that cast RNewDocumentListener to base classes:
+            
+            // registration of base casters that cast RNewDocumentListenerAdapter to base classes:
+            
+              // registration of base casters that casts RNewDocumentListenerAdapter to QObject:
+              QObject_Wrapper::registerBasecaster_QObject(new RJSBasecaster_RNewDocumentListenerAdapter_QObject());
+            
+              // registration of base casters that casts RNewDocumentListenerAdapter to RNewDocumentListener:
+              RNewDocumentListener_Wrapper::registerBasecaster_RNewDocumentListener(new RJSBasecaster_RNewDocumentListenerAdapter_RNewDocumentListener());
             
             // registration of base casters that cast RObject to base classes:
             

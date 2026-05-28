@@ -403,6 +403,8 @@
         
           #include "rnewdocumentlistener_wrapper.h"
         
+          #include "rnewdocumentlisteneradapter_wrapper.h"
+        
           #include "roperationutils_wrapper.h"
         
           #include "rorthogrid_wrapper.h"

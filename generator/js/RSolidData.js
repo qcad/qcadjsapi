@@ -1059,6 +1059,14 @@
         };
     
         // function 
+        RSolidData.prototype.splitMajorArcs = function(...args) 
+          
+        {
+          //print("JS: RSolidData.prototype.splitMajorArcs");
+          return this.__PROXY__.splitMajorArcs(...args);
+        };
+    
+        // function 
         RSolidData.prototype.contains = function(...args) 
           
         {

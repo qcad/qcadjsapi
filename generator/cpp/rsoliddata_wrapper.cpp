@@ -7726,6 +7726,63 @@ double a1_cpp;
               }
             
     // Class: RSolidData
+    // Function: splitMajorArcs
+    // Source: RPolyline
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSolidData_Wrapper::splitMajorArcs
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RSolidData* w = getWrapped();
+                RPolyline res = 
+                    
+                w->splitMajorArcs(
+                  
+                );
+              
+            // return type: RPolyline
+
+            return RJSHelper_qcad::cpp2js_RPolyline(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for splitMajorArcs";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSolidData
     // Function: contains
     // Source: RPolyline
     // Static: false

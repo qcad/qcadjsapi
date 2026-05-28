@@ -164,6 +164,7 @@
     #include "RMultiOperation.h"
     #include "RNavigationAction.h"
     #include "RNewDocumentListener.h"
+    #include "RNewDocumentListenerAdapter.h"
     #include "RNonCopyable.h"
     #include "RObject.h"
     #include "ROperation.h"

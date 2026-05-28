@@ -783,6 +783,14 @@
         };
     
         // function 
+        RPolylineData.prototype.splitMajorArcs = function(...args) 
+          
+        {
+          //print("JS: RPolylineData.prototype.splitMajorArcs");
+          return this.__PROXY__.splitMajorArcs(...args);
+        };
+    
+        // function 
         RPolylineData.prototype.contains = function(...args) 
           
         {

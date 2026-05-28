@@ -449,6 +449,7 @@
     <type>RMathLineEdit</type>
     <type>RMdiArea</type>
     <type>RMdiChildQt</type>
+    <type>RNewDocumentListenerAdapter</type>
     <type>RPaletteListenerAdapter</type>
     <type>RPenListenerAdapter</type>
     <type>RPreferencesListenerAdapter</type>

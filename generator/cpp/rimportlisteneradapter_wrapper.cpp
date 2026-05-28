@@ -177,6 +177,61 @@
 
   // constructors:
   
+    // Class: RImportListenerAdapter
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+RImportListenerAdapter_Wrapper::RImportListenerAdapter_Wrapper
+                
+              (
+                
+                  // RJSApi:
+                  QObject* h
+                  
+              ) 
+              
+                : RJSWrapperObj(*(RJSApi*)h)
+              
+              {
+                
+                  //RDebug::incCounter(QString("RImportListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
+                  //RDebug::incCounter(QString("RImportListenerAdapter_Wrapper"));
+                
+      {
+    
+
+    // call function:
+    
+        // construct wrapper:
+
+        
+              wrapped = new RImportListenerAdapter(
+                  
+              );
+              wrappedCreated = true;
+            
+
+        // signal forwarding:
+        // TODO
+        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
+        initConnections();
+        return;
+
+      
+  }
+
+
+                  qWarning() << "no matching constructor variant found for RImportListenerAdapter";
+                  
+                    wrapped = nullptr;
+                  
+                  wrappedCreated = false;
+                  handler.trace();
+                
+              }
+            
 
     // non-static functions:
     

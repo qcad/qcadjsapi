@@ -438,6 +438,11 @@
         </parameters>
       </variant>
     </function>
+    <function name="splitMajorArcs">
+      <variant return-type="RPolyline" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="contains">
       <variant return-type="bool" const="true" access="public">
         <parameters>

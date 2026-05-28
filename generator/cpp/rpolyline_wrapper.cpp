@@ -6742,6 +6742,63 @@ double a1_cpp;
               }
             
     // Class: RPolyline
+    // Function: splitMajorArcs
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RPolyline_Wrapper::splitMajorArcs
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RPolyline* w = getWrapped();
+                RPolyline res = 
+                    
+                w->splitMajorArcs(
+                  
+                );
+              
+            // return type: RPolyline
+
+            return RJSHelper_qcad::cpp2js_RPolyline(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for splitMajorArcs";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RPolyline
     // Function: contains
     // Source: 
     // Static: false

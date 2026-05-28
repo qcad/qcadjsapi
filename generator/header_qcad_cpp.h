@@ -327,6 +327,8 @@
 #include "generator/cpp/rmultioperation_wrapper.h"
 #include "generator/cpp/rnewdocumentlistener_base.h"
 #include "generator/cpp/rnewdocumentlistener_wrapper.h"
+#include "generator/cpp/rnewdocumentlisteneradapter_base.h"
+#include "generator/cpp/rnewdocumentlisteneradapter_wrapper.h"
 #include "generator/cpp/robject_base.h"
 #include "generator/cpp/robject_wrapper.h"
 #include "generator/cpp/roperation_base.h"

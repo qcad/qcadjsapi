@@ -1055,6 +1055,14 @@
         };
     
         // function 
+        RLeaderData.prototype.splitMajorArcs = function(...args) 
+          
+        {
+          //print("JS: RLeaderData.prototype.splitMajorArcs");
+          return this.__PROXY__.splitMajorArcs(...args);
+        };
+    
+        // function 
         RLeaderData.prototype.contains = function(...args) 
           
         {

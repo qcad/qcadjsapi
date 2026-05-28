@@ -1009,6 +1009,12 @@
           virtual RNewDocumentListener* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class RNewDocumentListenerAdapter:
+        class RJSBasecaster_RNewDocumentListenerAdapter {
+        public:
+          virtual RNewDocumentListenerAdapter* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class RObject:
         class RJSBasecaster_RObject {
         public:
@@ -5406,6 +5412,34 @@
           
           // implementation of base casters that cast RNewDocumentListener to base classes:
           
+          // implementation of base casters that cast RNewDocumentListenerAdapter to base classes:
+          
+            // implementation of base casters that casts RNewDocumentListenerAdapter to QObject
+            class RJSBasecaster_RNewDocumentListenerAdapter_QObject : public RJSBasecaster_QObject {
+            public:
+              virtual QObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RNewDocumentListenerAdapter::getIdStatic()) {
+                  return (QObject*)(RNewDocumentListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RNewDocumentListenerAdapter to RNewDocumentListener
+            class RJSBasecaster_RNewDocumentListenerAdapter_RNewDocumentListener : public RJSBasecaster_RNewDocumentListener {
+            public:
+              virtual RNewDocumentListener* castToBase(int t, void* vp) {
+                if (t==RJSType_RNewDocumentListenerAdapter::getIdStatic()) {
+                  return (RNewDocumentListener*)(RNewDocumentListenerAdapter*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
           // implementation of base casters that cast RObject to base classes:
           
           // implementation of base casters that cast ROperation to base classes:
@@ -9621,6 +9655,11 @@
       static QJSValue cpp2js_RMdiChildQt(RJSApi& handler, const RMdiChildQt* v);
       static RMdiChildQt* js2cpp_RMdiChildQt_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RMdiChildQt_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RNewDocumentListenerAdapter(RJSApi& handler, RNewDocumentListenerAdapter* v);
+      static QJSValue cpp2js_RNewDocumentListenerAdapter(RJSApi& handler, const RNewDocumentListenerAdapter* v);
+      static RNewDocumentListenerAdapter* js2cpp_RNewDocumentListenerAdapter_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RNewDocumentListenerAdapter_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RPaletteListenerAdapter(RJSApi& handler, RPaletteListenerAdapter* v);
       static QJSValue cpp2js_RPaletteListenerAdapter(RJSApi& handler, const RPaletteListenerAdapter* v);

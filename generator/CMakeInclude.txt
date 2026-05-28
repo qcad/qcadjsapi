@@ -329,6 +329,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rmultioperation_wrapper.h
     generator/cpp/rnewdocumentlistener_base.h
     generator/cpp/rnewdocumentlistener_wrapper.h
+    generator/cpp/rnewdocumentlisteneradapter_base.h
+    generator/cpp/rnewdocumentlisteneradapter_wrapper.h
     generator/cpp/robject_base.h
     generator/cpp/robject_wrapper.h
     generator/cpp/roperation_base.h
@@ -907,6 +909,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rmultioperation_wrapper.cpp
     generator/cpp/rnewdocumentlistener_base.cpp
     generator/cpp/rnewdocumentlistener_wrapper.cpp
+    generator/cpp/rnewdocumentlisteneradapter_base.cpp
+    generator/cpp/rnewdocumentlisteneradapter_wrapper.cpp
     generator/cpp/robject_base.cpp
     generator/cpp/robject_wrapper.cpp
     generator/cpp/roperation_base.cpp

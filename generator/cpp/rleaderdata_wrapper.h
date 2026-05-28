@@ -2753,6 +2753,27 @@
               ;
             
     // Class: RLeaderData
+    // Function: splitMajorArcs
+    // Source: RPolyline
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  splitMajorArcs
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RLeaderData
     // Function: contains
     // Source: RPolyline
     // Static: false

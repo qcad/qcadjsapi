@@ -108,6 +108,27 @@
 
   // constructors:
   
+    // Class: RExportListenerAdapter
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              RExportListenerAdapter_Wrapper
+                
+              (
+
+                
+                  // RJSApi:
+                  QObject* h
+                  
+              )
+              
+              ;
+            
 
     // non-static functions:
     

@@ -5,6 +5,11 @@
       <super name="QObject" />
       <super name="RImportListener" />
     </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
     <function name="preImportEvent">
       <variant return-type="void" virtual="true" access="public">
         <parameters>

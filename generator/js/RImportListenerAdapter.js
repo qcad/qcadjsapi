@@ -39,8 +39,37 @@
         }
         else {
           
-              qWarning("RImportListenerAdapter.js: No constructor found for class RImportListenerAdapter");
-            
+      if (arguments.length == 0) {
+    
+            self = this;
+            wrapper = new RImportListenerAdapter_Wrapper(
+              // RJSApi:
+              handler
+              
+              ////this.setWrapper(this.wrapper);
+              //Object.setPrototypeOf(this, wrapper);
+            );
+            //wrapper.__WRAPPER__ = true;
+            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+          
+            copyProperties(this, wrapper, RImportListenerAdapter);
+          
+
+        //this.setWrapper(this.wrapper);
+
+      
+
+        //copyProperties(this, wrapper, RImportListenerAdapter);
+  }
+
+  
+  else {
+    
+        print("RImportListenerAdapter(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
         }
 
         //self = this;

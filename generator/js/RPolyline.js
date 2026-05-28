@@ -870,6 +870,14 @@ RPolyline.Ray = RPolyline_Wrapper.Ray;
         };
     
         // function 
+        RPolyline.prototype.splitMajorArcs = function(...args) 
+          
+        {
+          //print("JS: RPolyline.prototype.splitMajorArcs");
+          return this.__PROXY__.splitMajorArcs(...args);
+        };
+    
+        // function 
         RPolyline.prototype.contains = function(...args) 
           
         {

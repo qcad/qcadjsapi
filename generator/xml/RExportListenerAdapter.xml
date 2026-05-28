@@ -5,6 +5,11 @@
       <super name="QObject" />
       <super name="RExportListener" />
     </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
     <function name="preExportEvent">
       <variant return-type="void" virtual="true" access="public">
         <parameters>

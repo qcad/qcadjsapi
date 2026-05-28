@@ -5577,6 +5577,8 @@
             static QSet<int> derrivedTypes = {
               getIdStatic(),
               
+                RJSType_RNewDocumentListenerAdapter::getIdStatic()
+                
             };
 
             // check for derived types:
@@ -7970,6 +7972,33 @@
 
       
         bool RJSType_RMdiChildQt::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
+      int RJSType_RNewDocumentListenerAdapter::id = -1;
+
+      int RJSType_RNewDocumentListenerAdapter::getId() const {
+          return RJSType_RNewDocumentListenerAdapter::getIdStatic();
+      }
+
+      int RJSType_RNewDocumentListenerAdapter::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RNewDocumentListenerAdapter());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RNewDocumentListenerAdapter::isOfType(int otherType) {
             // initialize list of derrived types:
             
             static QSet<int> derrivedTypes = {

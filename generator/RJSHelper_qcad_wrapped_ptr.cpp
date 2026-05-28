@@ -403,6 +403,8 @@
         
           #include "rnewdocumentlistener_wrapper.h"
         
+          #include "rnewdocumentlisteneradapter_wrapper.h"
+        
           #include "roperationutils_wrapper.h"
         
           #include "rorthogrid_wrapper.h"
@@ -7977,6 +7979,14 @@
     
       QJSValue RJSHelper_qcad::cpp2js_RNewDocumentListener(RJSApi& handler, RNewDocumentListener* v) {
 
+          
+            // downcast to RNewDocumentListenerAdapter:
+            {
+                RNewDocumentListenerAdapter* o = dynamic_cast<RNewDocumentListenerAdapter*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RNewDocumentListenerAdapter(handler, o);
+                }
+            }
           
 
           QJSEngine* engine = handler.getEngine();
