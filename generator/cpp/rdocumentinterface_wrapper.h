@@ -2128,7 +2128,7 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
     // Function: getClosestEntity
     // Source: 
     // Static: false
-    // Parameters: 5
+    // Parameters: 6
     // preceding Parameters: -1
 
               public:
@@ -2157,6 +2157,10 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
     , 
   const QJSValue& 
   a5
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a6
       = QJSValue()
     
               )

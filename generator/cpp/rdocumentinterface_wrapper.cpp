@@ -6057,7 +6057,7 @@ RS::OrthoMode a3_cpp;
     // Function: getClosestEntity
     // Source: 
     // Static: false
-    // Parameters: 5
+    // Parameters: 6
     // preceding Parameters: -1
 
                 QJSValue 
@@ -6073,7 +6073,9 @@ RS::OrthoMode a3_cpp;
   const QJSValue& 
   a4, 
   const QJSValue& 
-  a5
+  a5, 
+  const QJSValue& 
+  a6
               ) 
               
               {
@@ -6097,6 +6099,11 @@ RS::OrthoMode a3_cpp;
   )
 
    && RJSHelper::is_bool(handler, a5
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a6
     , true
   
   )
@@ -6154,6 +6161,18 @@ bool a5_cpp;
             a5_cpp = RJSHelper::js2cpp_bool(handler, a5);
           }
         
+  // convert js parameter to cpp: snappable (bool)
+  
+bool a6_cpp;
+
+      
+          if (a6.isUndefined()) {
+            a6_cpp = false;
+          }
+          else {
+            a6_cpp = RJSHelper::js2cpp_bool(handler, a6);
+          }
+        
 
     // call function:
     
@@ -6177,6 +6196,7 @@ bool a5_cpp;
     , a3_cpp
     , a4_cpp
     , a5_cpp
+    , a6_cpp
     
                 );
               

@@ -311,6 +311,7 @@
           default="RDEFAULT_QLIST_RS_ENTITYTYPE" />
           <parameter const="false" type="bool" modifier="" name="selectedOnly" default="false" />
           <parameter const="false" type="RLayer::Id" modifier="" name="layerId" default="RLayer::INVALID_ID" />
+          <parameter const="false" type="bool" modifier="" name="snappable" default="false" />
         </parameters>
       </variant>
     </function>

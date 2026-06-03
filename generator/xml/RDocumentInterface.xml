@@ -622,6 +622,7 @@
           <parameter const="false" type="double" modifier="" name="strictRange" default="RMAXDOUBLE" />
           <parameter const="false" type="bool" modifier="" name="includeLockedLayers" default="true" />
           <parameter const="false" type="bool" modifier="" name="selectedOnly" default="false" />
+          <parameter const="false" type="bool" modifier="" name="snappable" default="false" />
         </parameters>
       </variant>
     </function>

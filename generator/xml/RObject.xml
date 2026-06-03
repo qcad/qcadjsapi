@@ -2,7 +2,7 @@
 <unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RObject.h">
   <class_decl name="RDocument" />
   <class_decl name="RTransaction" />
-  <class name="RObject" ownership="cpp" sharedpointer="true">
+  <class name="RObject" ownership="cpp" sharedpointer="true" proxy="true">
 
     <!--
     <constant name="INVALID_ID" type="RObject::Id" value="RObject::INVALID_ID" />

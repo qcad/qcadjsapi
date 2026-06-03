@@ -1,0 +1,1590 @@
+
+  // Auto generated
+  
+  // include header:
+  //#include "RNewDocumentListenerAdapterwrapper.h"
+  //#include "header_cpp.h"
+  
+    #include "rnewdocumentlisteneradapter_wrapper.h"
+
+  
+      // list of registered base casters for this wrapper class:
+      QList<RJSBasecaster_RNewDocumentListenerAdapter*> RNewDocumentListenerAdapter_Wrapper::basecasters_RNewDocumentListenerAdapter;
+    
+    // static functions implementation in singleton wrapper:
+    
+    void RNewDocumentListenerAdapter_Wrapper::init(RJSApi& handler) {
+      
+        //qmlRegisterType<RNewDocumentListenerAdapter_Wrapper>("org.qcad", 1, 0, "RNewDocumentListenerAdapter_Wrapper");
+        qmlRegisterInterface<RNewDocumentListenerAdapter_Wrapper>("RNewDocumentListenerAdapter_Wrapper", 1);
+      
+
+      QJSEngine* engine = handler.getEngine();
+
+      
+          // make type scriptable for JS files:
+          QJSValue global = engine->globalObject();
+          RJSType_RNewDocumentListenerAdapter* t = new RJSType_RNewDocumentListenerAdapter();
+          global.setProperty("RJSType_RNewDocumentListenerAdapter", engine->newQObject(t));
+
+          // initialize ID for this type:
+          RJSType_RNewDocumentListenerAdapter::getIdStatic();
+
+          
+
+      // wrapper:
+      QJSValue mo = engine->newQMetaObject(&RNewDocumentListenerAdapter_Wrapper::staticMetaObject);
+      engine->globalObject().setProperty("RNewDocumentListenerAdapter_Wrapper", mo);
+
+
+      
+        // JS base class:
+        //QJSValue mob = engine->newQMetaObject(&RNewDocumentListenerAdapter_BaseJs::staticMetaObject);
+        //engine->globalObject().setProperty("RNewDocumentListenerAdapter_BaseJs", mob);
+      
+      QString fileName = ":generator/js/RNewDocumentListenerAdapter.js";
+      QFile scriptFile(fileName);
+      if (!scriptFile.open(QIODevice::ReadOnly)) {
+        qWarning() << "JS script wrapper file not found:" << fileName;
+        return;
+      }
+      QTextStream stream(&scriptFile);
+      QString contents = stream.readAll();
+      scriptFile.close();
+
+      //qDebug() << "Evaluating file: " << fileName;
+      QJSValue result = engine->evaluate(contents, fileName);
+      if (result.isError()) {
+          qWarning()
+              << "Uncaught exception at line"
+              << result.property("lineNumber").toInt()
+              << ":" << result.toString();
+      }
+    }
+  
+    /*
+    // special constructor used as prototype:
+    RNewDocumentListenerAdapter_Wrapper::RNewDocumentListenerAdapter_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
+            //setObjectName("RNewDocumentListenerAdapter_Wrapper");
+            setEngine(e);
+
+            // signal forwarding:
+            //initConnections();
+          }
+        
+    */
+
+    
+      // special constructor to wrap existing object:
+      RNewDocumentListenerAdapter_Wrapper::RNewDocumentListenerAdapter_Wrapper(RJSApi& h, RNewDocumentListenerAdapter* o, bool wrappedCreated) : RJSWrapperObj(h), 
+
+            
+            wrapped(o), 
+            
+
+            wrappedCreated(wrappedCreated) {
+              //RDebug::incCounter(QString("RNewDocumentListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
+              //RDebug::incCounter(QString("RNewDocumentListenerAdapter_Wrapper"));
+              //setObjectName("RNewDocumentListenerAdapter_Wrapper");
+              //setHandler(h);
+
+              
+
+              // signal forwarding:
+              initConnections();
+            }
+          
+
+      // destructor:
+      RNewDocumentListenerAdapter_Wrapper::~RNewDocumentListenerAdapter_Wrapper() {
+            //RDebug::decCounter(QString("RNewDocumentListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
+            //RDebug::decCounter(QString("RNewDocumentListenerAdapter_Wrapper"));
+
+            //qDebug() << "RNewDocumentListenerAdapter_Wrapper::~RNewDocumentListenerAdapter_Wrapper";
+
+            // tell script handler that this wrapper no longer exists:
+            handler.unregisterWrapper(*this);
+
+            
+            if (wrappedCreated) {
+              
+                  // delete wrapped object (copyable, JS ownership)
+                  //qDebug() << "deleting instance of RNewDocumentListenerAdapter";
+                  
+                    delete wrapped;
+                    wrapped = nullptr;
+                  
+            }
+            
+          }
+        
+    // initialization of signal forwarding
+    
+        void RNewDocumentListenerAdapter_Wrapper::initConnections() {
+
+          //setObjectName("RNewDocumentListenerAdapter_Wrapper");
+
+          // tell script handler that this wrapper needs to be deleted if the engine is deleted:
+          handler.registerWrapper(*this);
+
+          
+              // wrapped object is a QObject and not a wrapper for a null pointer:
+              // wrapper is managed by the QObject as child:
+              if (hasWrapped()) {
+                QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
+              }
+            
+
+          if (hasWrapped()) {
+            
+                // set parent of wrapper to wrapped:
+                // wrapper can be looked up for object:
+                QVariant vThis = QVariant::fromValue(this);
+                getWrapped()->setProperty("__wrapper__",  vThis);
+
+                // make sure wrapper is deleted when object is deleted:
+                // make sure wrapper stays alive as long as the wrapped stays alive::
+                QObject::setParent(getWrapped());
+              
+            // set up signal forwarding:
+            
+  connect(
+    getWrapped(), 
+    SIGNAL(newDocument(RDocument*, RTransaction*, bool)), 
+    this, 
+    SLOT(newDocumentEmitter(RDocument*, RTransaction*, bool))
+  );
+
+              /*
+              connect(
+                getWrapped(),
+                SIGNAL(destroyed(QObject*)),
+                &handler,
+                SLOT(slotDestroyed(QObject*))
+              );
+              */
+            
+          }
+        }
+      
+
+  // constructors:
+  
+    // Class: RNewDocumentListenerAdapter
+    // Function: 
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+RNewDocumentListenerAdapter_Wrapper::RNewDocumentListenerAdapter_Wrapper
+                
+              (
+                
+                  // RJSApi:
+                  QObject* h
+                  
+              ) 
+              
+                : RJSWrapperObj(*(RJSApi*)h)
+              
+              {
+                
+                  //RDebug::incCounter(QString("RNewDocumentListenerAdapter_Wrapper_") + handler.getEngine()->objectName());
+                  //RDebug::incCounter(QString("RNewDocumentListenerAdapter_Wrapper"));
+                
+      {
+    
+
+    // call function:
+    
+        // construct wrapper:
+
+        
+              wrapped = new RNewDocumentListenerAdapter(
+                  
+              );
+              wrappedCreated = true;
+            
+
+        // signal forwarding:
+        // TODO
+        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
+        initConnections();
+        return;
+
+      
+  }
+
+
+                  qWarning() << "no matching constructor variant found for RNewDocumentListenerAdapter";
+                  
+                    wrapped = nullptr;
+                  
+                  wrappedCreated = false;
+                  handler.trace();
+                
+              }
+            
+
+    // non-static functions:
+    
+    // Class: RNewDocumentListenerAdapter
+    // Function: objectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::objectName
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                QString res = 
+                    
+                w->objectName(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for objectName";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: setObjectName
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::setObjectName
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: name (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->setObjectName(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setObjectName";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: isWidgetType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::isWidgetType
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                bool res = 
+                    
+                w->isWidgetType(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isWidgetType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: isWindowType
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::isWindowType
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                bool res = 
+                    
+                w->isWindowType(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isWindowType";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: signalsBlocked
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::signalsBlocked
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                bool res = 
+                    
+                w->signalsBlocked(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for signalsBlocked";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: blockSignals
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::blockSignals
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: b (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                bool res = 
+                    
+                w->blockSignals(
+                  a1_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for blockSignals";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: findChild
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::findChild
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_Qt_FindChildOptions(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: aName (QString)
+  
+QString a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = QString();
+          }
+          else {
+            a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+          }
+        
+  // convert js parameter to cpp: options (Qt::FindChildOptions)
+  
+Qt::FindChildOptions a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = Qt::FindChildrenRecursively;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_Qt_FindChildOptions(handler, a2);
+          }
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                QObject* res = 
+                    
+                w->findChild<QObject*>(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: QObject*
+
+            return RJSHelper::cpp2js_QObject(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for findChild";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: children
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::children
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                      // return type is reference:
+                      // use pointer instead 3:
+                      const QObjectList* res =
+                    &
+                w->children(
+                  
+                );
+              
+            // return type: const QObjectList&
+
+            return RJSHelper::cpp2js_QObjectList(
+              handler, 
+              // non-copyable: false
+                  // return type is reference, type is copyable:
+                  // convert pointer back to reference:
+                  *res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for children";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: setParent
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::setParent
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: parent (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->setParent(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setParent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: installEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::installEventFilter
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: filterObj (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->installEventFilter(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for installEventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: removeEventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::removeEventFilter
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: obj (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->removeEventFilter(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for removeEventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: dumpObjectTree
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::dumpObjectTree
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->dumpObjectTree(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->dumpObjectTree(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for dumpObjectTree";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: dumpObjectInfo
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::dumpObjectInfo
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->dumpObjectInfo(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->dumpObjectInfo(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for dumpObjectInfo";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: setProperty
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::setProperty
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_char_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QVariant(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: name (char)
+  
+
+      // char pointer string:
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      const char* a1_cpp = a1_ba.constData();
+    
+  // convert js parameter to cpp: value (QVariant)
+  
+QVariant a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QVariant(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                bool res = 
+                    
+                w->setProperty(
+                  a1_cpp
+    , a2_cpp
+    
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for setProperty";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: property
+    // Source: QObject
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::property
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_char_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: name (char)
+  
+
+      // char pointer string:
+      QByteArray a1_ba = RJSHelper::js2cpp_char_ptr(handler, a1).toLocal8Bit();
+      const char* a1_cpp = a1_ba.constData();
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                QVariant res = 
+                    
+                w->property(
+                  a1_cpp
+    
+                );
+              
+            // return type: QVariant
+
+            return RJSHelper::cpp2js_QVariant(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for property";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: dynamicPropertyNames
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::dynamicPropertyNames
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                QList<QByteArray> res = 
+                    
+                w->dynamicPropertyNames(
+                  
+                );
+              
+            // return type: QList<QByteArray>
+
+            return RJSHelper::cpp2js_QList_QByteArray(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for dynamicPropertyNames";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: parent
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::parent
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                QObject* res = 
+                    
+                w->parent(
+                  
+                );
+              
+            // return type: QObject*
+
+            return RJSHelper::cpp2js_QObject(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for parent";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: deleteLater
+    // Source: QObject
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::deleteLater
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->deleteLater(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for deleteLater";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: updateNewDocumentListener
+    // Source: 
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RNewDocumentListenerAdapter_Wrapper::updateNewDocumentListener
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RDocument_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper_qcad::is_RTransaction_ptr(handler, a2
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: document (RDocument)
+  
+
+          // pointer:
+          RDocument*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RDocument_ptr(handler, a1);
+        
+  // convert js parameter to cpp: transaction (RTransaction)
+  
+
+          // pointer:
+          RTransaction*
+         a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_RTransaction_ptr(handler, a2);
+        
+  // convert js parameter to cpp: beforeLoad (bool)
+  
+bool a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RNewDocumentListenerAdapter* w = getWrapped();
+                
+                w->updateNewDocumentListener(
+                  a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for updateNewDocumentListener";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RNewDocumentListenerAdapter
+    // Function: newDocument
+    // Source: 
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RNewDocumentListenerAdapter_Wrapper::newDocumentEmitter(
+                RDocument* document, RTransaction* transaction, bool beforeLoad
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: document (RDocument)
+  
+
+
+  QJSValue a1_js = RJSHelper_qcad::cpp2js_RDocument(
+    handler, 
+    document
+  );
+
+  // parameter: transaction (RTransaction)
+  
+
+
+  QJSValue a2_js = RJSHelper_qcad::cpp2js_RTransaction(
+    handler, 
+    transaction
+  );
+
+  // parameter: beforeLoad (bool)
+  
+
+
+  QJSValue a3_js = RJSHelper::cpp2js_bool(
+    handler, 
+    beforeLoad
+  );
+
+
+                emit newDocument(
+                  a1_js, a2_js, a3_js
+                );
+              }
+            
+
+  // member functions for static properties, forward to static function
+  
+
+
+  // protected overwritten functions / events and their public invokable counterparts:
+  
+    #include "moc_rnewdocumentlisteneradapter_wrapper.cpp"
+  

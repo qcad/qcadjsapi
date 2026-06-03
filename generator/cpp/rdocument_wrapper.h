@@ -1077,7 +1077,7 @@
     // Function: queryIntersectedEntitiesXY
     // Source: 
     // Static: false
-    // Parameters: 7
+    // Parameters: 8
     // preceding Parameters: -1
 
               public:
@@ -1114,6 +1114,10 @@
     , 
   const QJSValue& 
   a7
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a8
       = QJSValue()
     
               )

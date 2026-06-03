@@ -3143,7 +3143,7 @@ bool a2_cpp;
     // Function: queryIntersectedEntitiesXY
     // Source: 
     // Static: false
-    // Parameters: 7
+    // Parameters: 8
     // preceding Parameters: -1
 
                 QJSValue 
@@ -3163,7 +3163,9 @@ bool a2_cpp;
   const QJSValue& 
   a6, 
   const QJSValue& 
-  a7
+  a7, 
+  const QJSValue& 
+  a8
               ) 
               
                 const
@@ -3201,6 +3203,11 @@ bool a2_cpp;
   )
 
    && RJSHelper_qcad::is_RLayer_Id(handler, a7
+    , true
+  
+  )
+
+   && RJSHelper::is_bool(handler, a8
     , true
   
   )
@@ -3288,6 +3295,18 @@ RLayer::Id a7_cpp;
             a7_cpp = RJSHelper_qcad::js2cpp_RLayer_Id(handler, a7);
           }
         
+  // convert js parameter to cpp: snappable (bool)
+  
+bool a8_cpp;
+
+      
+          if (a8.isUndefined()) {
+            a8_cpp = false;
+          }
+          else {
+            a8_cpp = RJSHelper::js2cpp_bool(handler, a8);
+          }
+        
 
     // call function:
     
@@ -3313,6 +3332,7 @@ RLayer::Id a7_cpp;
     , a5_cpp
     , a6_cpp
     , a7_cpp
+    , a8_cpp
     
                 );
               
