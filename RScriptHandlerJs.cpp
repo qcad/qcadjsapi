@@ -135,6 +135,7 @@
 #include "generator/cpp/rgraphicsscene_wrapper.h"
 #include "generator/cpp/rfileimporterfactoryadapter_wrapper.h"
 #include "generator/cpp/rfileimporteradapter_wrapper.h"
+#include "generator/cpp/rfileexporter_wrapper.h"
 #include "generator/cpp/rfileexporteradapter_wrapper.h"
 #include "generator/cpp/rpoint_wrapper.h"
 #include "generator/cpp/rmessagehandler_wrapper.h"
@@ -172,6 +173,7 @@
 #include "generator/cpp/rlineentity_wrapper.h"
 #include "generator/cpp/rpointentity_wrapper.h"
 #include "generator/cpp/rpolylineentity_wrapper.h"
+#include "generator/cpp/rpropertychange_wrapper.h"
 #include "generator/cpp/rrayentity_wrapper.h"
 #include "generator/cpp/rsolidentity_wrapper.h"
 #include "generator/cpp/rsplineentity_wrapper.h"
@@ -594,6 +596,7 @@ void RScriptHandlerJs::init(bool main) {
     RGraphicsScene_Wrapper::init(*rjsapi);
     RFileImporterFactoryAdapter_Wrapper::init(*rjsapi);
     RFileImporterAdapter_Wrapper::init(*rjsapi);
+    RFileExporter_Wrapper::init(*rjsapi);
     RFileExporterAdapter_Wrapper::init(*rjsapi);
     RPoint_Wrapper::init(*rjsapi);
     RMessageHandler_Wrapper::init(*rjsapi);
@@ -729,6 +732,7 @@ void RScriptHandlerJs::init(bool main) {
     RLayout_Wrapper::init(*rjsapi);
     RTextRenderer_Wrapper::init(*rjsapi);
     RLayerState_Wrapper::init(*rjsapi);
+    RPropertyChange_Wrapper::init(*rjsapi);
 
     RRestrictAngleLength_Wrapper::init(*rjsapi);
     RRestrictHorizontal_Wrapper::init(*rjsapi);
