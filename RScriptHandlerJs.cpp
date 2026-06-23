@@ -243,6 +243,7 @@
 #include "generator/cpp/rpropertyattributes_wrapper.h"
 #include "generator/cpp/rpropertyevent_wrapper.h"
 #include "generator/cpp/rpainterpath_wrapper.h"
+#include "generator/cpp/rpainterpathdevice_wrapper.h"
 #include "generator/cpp/rtransactionlisteneradapter_wrapper.h"
 #include "generator/cpp/rintertransactionlisteneradapter_wrapper.h"
 #include "generator/cpp/rlayout_wrapper.h"
@@ -258,6 +259,7 @@
 #include "generator/cpp/rfileexporterfactoryadapter_wrapper.h"
 #include "generator/cpp/rcharacterwidget_wrapper.h"
 #include "generator/cpp/rsnapend_wrapper.h"
+#include "generator/cpp/rsnapselection_wrapper.h"
 #include "generator/cpp/rrestrictanglelength_wrapper.h"
 #include "generator/cpp/rrestricthorizontal_wrapper.h"
 #include "generator/cpp/rrestrictoff_wrapper.h"
@@ -635,6 +637,7 @@ void RScriptHandlerJs::init(bool main) {
     RPropertyEvent_Wrapper::init(*rjsapi);
     RPreferencesListenerAdapter_Wrapper::init(*rjsapi);
     RPainterPath_Wrapper::init(*rjsapi);
+    RPainterPathDevice_Wrapper::init(*rjsapi);
     RTransactionListenerAdapter_Wrapper::init(*rjsapi);
     RInterTransactionListenerAdapter_Wrapper::init(*rjsapi);
     RKeyListenerAdapter_Wrapper::init(*rjsapi);
@@ -753,6 +756,7 @@ void RScriptHandlerJs::init(bool main) {
     RSnapPerpendicular_Wrapper::init(*rjsapi);
     RSnapReference_Wrapper::init(*rjsapi);
     RSnapTangential_Wrapper::init(*rjsapi);
+    RSnapSelection_Wrapper::init(*rjsapi);
 
     RStemmer_Wrapper::init(*rjsapi);
 

@@ -1045,6 +1045,12 @@
           virtual RPainterPath* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class RPainterPathDevice:
+        class RJSBasecaster_RPainterPathDevice {
+        public:
+          virtual RPainterPathDevice* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class RPainterPathSource:
         class RJSBasecaster_RPainterPathSource {
         public:
@@ -1421,6 +1427,12 @@
         class RJSBasecaster_RSnapRestriction {
         public:
           virtual RSnapRestriction* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class RSnapSelection:
+        class RJSBasecaster_RSnapSelection {
+        public:
+          virtual RSnapSelection* castToBase(int t, void* vp) = 0;
         };
         
         // Base class for basecasters that can cast void* to base class RSnapTangential:
@@ -5476,6 +5488,21 @@
               }
             };
           
+          // implementation of base casters that cast RPainterPathDevice to base classes:
+          
+            // implementation of base casters that casts RPainterPathDevice to QPaintDevice
+            class RJSBasecaster_RPainterPathDevice_QPaintDevice : public RJSBasecaster_QPaintDevice {
+            public:
+              virtual QPaintDevice* castToBase(int t, void* vp) {
+                if (t==RJSType_RPainterPathDevice::getIdStatic()) {
+                  return (QPaintDevice*)(RPainterPathDevice*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
           // implementation of base casters that cast RPainterPathSource to base classes:
           
           // implementation of base casters that cast RPaletteListener to base classes:
@@ -6550,6 +6577,21 @@
             };
           
           // implementation of base casters that cast RSnapRestriction to base classes:
+          
+          // implementation of base casters that cast RSnapSelection to base classes:
+          
+            // implementation of base casters that casts RSnapSelection to RSnap
+            class RJSBasecaster_RSnapSelection_RSnap : public RJSBasecaster_RSnap {
+            public:
+              virtual RSnap* castToBase(int t, void* vp) {
+                if (t==RJSType_RSnapSelection::getIdStatic()) {
+                  return (RSnap*)(RSnapSelection*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
           
           // implementation of base casters that cast RSnapTangential to base classes:
           
@@ -8866,6 +8908,10 @@
   // wrapped pointer types:
   // ----------------------
   
+      static QJSValue cpp2js_RPainterPathDevice(RJSApi& handler, RPainterPathDevice* v);
+      static RPainterPathDevice* js2cpp_RPainterPathDevice_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RPainterPathDevice_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_RPainterPathSource(RJSApi& handler, RPainterPathSource* v);
       static RPainterPathSource* js2cpp_RPainterPathSource_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RPainterPathSource_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -9341,6 +9387,10 @@
       static QJSValue cpp2js_RSnapGrid(RJSApi& handler, RSnapGrid* v);
       static RSnapGrid* js2cpp_RSnapGrid_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RSnapGrid_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RSnapSelection(RJSApi& handler, RSnapSelection* v);
+      static RSnapSelection* js2cpp_RSnapSelection_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RSnapSelection_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RSnapIntersection(RJSApi& handler, RSnapIntersection* v);
       static RSnapIntersection* js2cpp_RSnapIntersection_ptr(RJSApi& handler, const QJSValue& v);

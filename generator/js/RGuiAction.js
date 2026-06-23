@@ -890,6 +890,35 @@ RGuiAction.HighPriority = RGuiAction_Wrapper.HighPriority;
         };
       
 
+        // static function 
+        RGuiAction.getIconPath = function() 
+          
+        {
+          //print("JS: RGuiAction.getIconPath");
+          
+      if (arguments.length >= 1 &&
+          arguments.length <= 2) {
+    
+                // calling static wrapper:
+                return RGuiAction_WrapperSingletonInstance.getIconPath(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RGuiAction);
+  }
+
+  
+  else {
+    
+        print("RGuiAction.getIconPath(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

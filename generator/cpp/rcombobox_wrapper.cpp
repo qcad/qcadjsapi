@@ -18310,6 +18310,63 @@ int a3_cpp;
               }
             
     // Class: RComboBox
+    // Function: view
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RComboBox_Wrapper::view
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RComboBox* w = getWrapped();
+                QAbstractItemView* res = 
+                    
+                w->view(
+                  
+                );
+              
+            // return type: QAbstractItemView*
+
+            return RJSHelper::cpp2js_QAbstractItemView(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for view";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RComboBox
     // Function: sizeHint
     // Source: QComboBox
     // Static: false

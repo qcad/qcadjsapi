@@ -1595,6 +1595,93 @@ QString a2_cpp;
                 
               }
             
+    // Class: RS
+    // Function: getImageFilePath
+    // Source: 
+    // Static: true
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RS_WrapperSingleton::getImageFilePath
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+   && RJSHelper::is_QString(handler, a2
+  )
+
+   && RJSHelper::is_QByteArray(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: docFileName (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+  // convert js parameter to cpp: importedFileName (QString)
+  
+QString a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+        
+  // convert js parameter to cpp: imageData (QByteArray)
+  
+QByteArray a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QByteArray(handler, a3);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QString res = 
+                
+                // call static member function:
+                RS::getImageFilePath(
+              a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+            );
+          
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getImageFilePath";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     void RS_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RS_Wrapper>("org.qcad", 1, 0, "RS_Wrapper");

@@ -3935,6 +3935,29 @@
               ;
             
     // Class: RArcEntity
+    // Function: setSweep
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setSweep
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RArcEntity
     // Function: getTrimEnd
     // Source: 
     // Static: false

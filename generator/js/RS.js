@@ -1356,6 +1356,34 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
         };
       
 
+        // static function 
+        RS.getImageFilePath = function() 
+          
+        {
+          //print("JS: RS.getImageFilePath");
+          
+      if (arguments.length == 3) {
+    
+                // calling static wrapper:
+                return RS_WrapperSingletonInstance.getImageFilePath(
+                  arguments[0], arguments[1], arguments[2]
+                );
+              
+
+        //copyProperties(this, wrapper, RS);
+  }
+
+  
+  else {
+    
+        print("RS.getImageFilePath(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

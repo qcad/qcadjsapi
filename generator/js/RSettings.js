@@ -4565,6 +4565,34 @@
         };
       
 
+        // static function 
+        RSettings.getWidgetSelectionColor = function() 
+          
+        {
+          //print("JS: RSettings.getWidgetSelectionColor");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.getWidgetSelectionColor(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.getWidgetSelectionColor(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
       // constants:
       
 

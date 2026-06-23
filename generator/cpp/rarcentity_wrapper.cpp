@@ -10280,6 +10280,70 @@ RVector a1_cpp;
               }
             
     // Class: RArcEntity
+    // Function: setSweep
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RArcEntity_Wrapper::setSweep
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RArcEntity* w = getWrapped();
+                
+                w->setSweep(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setSweep";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RArcEntity
     // Function: getTrimEnd
     // Source: 
     // Static: false

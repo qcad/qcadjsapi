@@ -795,5 +795,14 @@
         </parameters>
       </variant>
     </function>
+    <function name="getImageFilePath" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="docFileName" />
+          <parameter const="true" type="QString" modifier="&amp;" name="importedFileName" />
+          <parameter const="true" type="QByteArray" modifier="&amp;" name="imageData" />
+        </parameters>
+      </variant>
+    </function>
   </class>
 </unit>

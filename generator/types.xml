@@ -258,6 +258,7 @@
   </wrapped>
 
   <wrapped_ptr>
+    <type>RPainterPathDevice</type>
     <type>RPainterPathSource</type>
     <type>RShape</type>
     <type>RAction</type>
@@ -377,6 +378,7 @@
     <type>RSnapEntityBase</type>
     <type>RSnapFree</type>
     <type>RSnapGrid</type>
+    <type>RSnapSelection</type>
     <type>RSnapIntersection</type>
     <type>RSnapListener</type>
     <type>RSnapMiddle</type>

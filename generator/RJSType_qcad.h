@@ -4582,6 +4582,40 @@
 
   
       class QCADJSAPI_EXPORT 
+      RJSType_RPainterPathDevice : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "RPainterPathDevice";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_RPainterPathDevice();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+            // return true if the given type is derived from type
+            // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+            Q_INVOKABLE
+            static bool isOfType(int otherType);
+          
+
+      private:
+          static int id;
+      };
+    
+      class QCADJSAPI_EXPORT 
       RJSType_RPainterPathSource : public RJSTypeEnum {
           Q_OBJECT
           QML_INTERFACE
@@ -7387,6 +7421,40 @@
 
           //RJSTypeEnum* create() {
           //    return new RJSType_RSnapGrid();
+          //}
+
+          Q_INVOKABLE
+          static int getIdStatic();
+
+          
+            // return true if the given type is derived from type
+            // e.g. RJSType_RShape::isOfType(RJSType_RLine::getIdStatic()) returns true since RLine is derived from RShape:
+            Q_INVOKABLE
+            static bool isOfType(int otherType);
+          
+
+      private:
+          static int id;
+      };
+    
+      class QCADJSAPI_EXPORT 
+      RJSType_RSnapSelection : public RJSTypeEnum {
+          Q_OBJECT
+          QML_INTERFACE
+
+          Q_PROPERTY(int id READ getIdStatic)
+
+      public:
+          Q_INVOKABLE
+          int getId() const;
+
+          Q_INVOKABLE
+          QString getName() const {
+              return "RSnapSelection";
+          }
+
+          //RJSTypeEnum* create() {
+          //    return new RJSType_RSnapSelection();
           //}
 
           Q_INVOKABLE

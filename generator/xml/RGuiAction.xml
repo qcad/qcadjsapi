@@ -674,6 +674,14 @@
         <parameters />
       </variant>
     </function>
+    <function name="getIconPath" static="true">
+      <variant return-type="QString" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="iconFile" />
+          <parameter const="false" type="bool" modifier="" name="inverse" default="false" />
+        </parameters>
+      </variant>
+    </function>
     <function name="slotTrigger">
       <variant return-type="bool" access="public">
         <parameters>

@@ -6589,6 +6589,27 @@ AdjustToMinimumContentsLengthWithIcon = RColorCombo::AdjustToMinimumContentsLeng
               ;
             
     // Class: RColorCombo
+    // Function: view
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  view
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RColorCombo
     // Function: sizeHint
     // Source: QComboBox
     // Static: false

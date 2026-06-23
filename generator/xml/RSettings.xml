@@ -927,5 +927,12 @@
         <parameters />
       </variant>
     </function>
+    <function name="getWidgetSelectionColor" static="true">
+      <variant return-type="QColor" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="QWidget" modifier="*" name="w" />
+        </parameters>
+      </variant>
+    </function>
   </class>
 </unit>

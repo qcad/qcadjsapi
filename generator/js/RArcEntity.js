@@ -1271,6 +1271,14 @@
         };
     
         // function 
+        RArcEntity.prototype.setSweep = function(...args) 
+          
+        {
+          //print("JS: RArcEntity.prototype.setSweep");
+          return this.__PROXY__.setSweep(...args);
+        };
+    
+        // function 
         RArcEntity.prototype.getTrimEnd = function(...args) 
           
         {

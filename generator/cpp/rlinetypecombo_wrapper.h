@@ -6577,6 +6577,27 @@ AdjustToMinimumContentsLengthWithIcon = RLinetypeCombo::AdjustToMinimumContentsL
               ;
             
     // Class: RLinetypeCombo
+    // Function: view
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  view
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RLinetypeCombo
     // Function: sizeHint
     // Source: QComboBox
     // Static: false

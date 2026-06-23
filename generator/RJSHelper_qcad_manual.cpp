@@ -413,6 +413,10 @@
         
           #include "qpainterpath_wrapper.h"
         
+          #include "rpainterpathdevice_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
           #include "rpainterpathsource_wrapper.h"
         
           #include "rpalettelistener_wrapper.h"
@@ -543,6 +547,8 @@
         
           #include "rsnapreference_wrapper.h"
         
+          #include "rsnapselection_wrapper.h"
+        
           #include "rsnaptangential_wrapper.h"
         
           #include "rsolidentity_wrapper.h"
@@ -622,8 +628,6 @@
           #include "rtranslation_wrapper.h"
         
           #include "rtreewidget_wrapper.h"
-        
-          #include "qpaintdevice_wrapper.h"
         
           #include "qtreeview_wrapper.h"
         
@@ -2478,6 +2482,11 @@
               // registration of base casters that casts RPainterPath to QPainterPath:
               QPainterPath_Wrapper::registerBasecaster_QPainterPath(new RJSBasecaster_RPainterPath_QPainterPath());
             
+            // registration of base casters that cast RPainterPathDevice to base classes:
+            
+              // registration of base casters that casts RPainterPathDevice to QPaintDevice:
+              QPaintDevice_Wrapper::registerBasecaster_QPaintDevice(new RJSBasecaster_RPainterPathDevice_QPaintDevice());
+            
             // registration of base casters that cast RPainterPathSource to base classes:
             
             // registration of base casters that cast RPaletteListener to base classes:
@@ -2822,6 +2831,11 @@
               RSnapEntityBase_Wrapper::registerBasecaster_RSnapEntityBase(new RJSBasecaster_RSnapReference_RSnapEntityBase());
             
             // registration of base casters that cast RSnapRestriction to base classes:
+            
+            // registration of base casters that cast RSnapSelection to base classes:
+            
+              // registration of base casters that casts RSnapSelection to RSnap:
+              RSnap_Wrapper::registerBasecaster_RSnap(new RJSBasecaster_RSnapSelection_RSnap());
             
             // registration of base casters that cast RSnapTangential to base classes:
             

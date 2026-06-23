@@ -413,6 +413,10 @@
         
           #include "qpainterpath_wrapper.h"
         
+          #include "rpainterpathdevice_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
           #include "rpainterpathsource_wrapper.h"
         
           #include "rpalettelistener_wrapper.h"
@@ -543,6 +547,8 @@
         
           #include "rsnapreference_wrapper.h"
         
+          #include "rsnapselection_wrapper.h"
+        
           #include "rsnaptangential_wrapper.h"
         
           #include "rsolidentity_wrapper.h"
@@ -623,8 +629,6 @@
         
           #include "rtreewidget_wrapper.h"
         
-          #include "qpaintdevice_wrapper.h"
-        
           #include "qtreeview_wrapper.h"
         
           #include "qtreewidget_wrapper.h"
@@ -667,6 +671,80 @@
   // wrapped pointer types:
   // ----------------------
   
+      QJSValue RJSHelper_qcad::cpp2js_RPainterPathDevice(RJSApi& handler, RPainterPathDevice* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          RPainterPathDevice_Wrapper* ret = new RPainterPathDevice_Wrapper(handler, v, false);
+
+          // JS: new RPainterPathDevice('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RPainterPathDevice");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RPainterPathDevice is undefined. Use RPainterPathDevice_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RPainterPathDevice('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RPainterPathDevice(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      RPainterPathDevice* RJSHelper_qcad::js2cpp_RPainterPathDevice_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RPainterPathDevice: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RPainterPathDevice_Wrapper* wrapper = qobject_cast<RPainterPathDevice_Wrapper*>(obj);
+          //RPainterPathDevice_Wrapper* wrapper = dynamic_cast<RPainterPathDevice_Wrapper*>(obj);
+          //RPainterPathDevice_Wrapper* wrapper = (RPainterPathDevice_Wrapper*)(obj);
+          //RPainterPathDevice_Wrapper* wrapper = getWrapper<RPainterPathDevice_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RPainterPathDevice_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_RPainterPathDevice(wrapper);
+          return RPainterPathDevice_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RPainterPathDevice_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RPainterPathDevice: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_RPainterPathDevice::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper_qcad::cpp2js_RPainterPathSource(RJSApi& handler, RPainterPathSource* v) {
 
           
@@ -10028,6 +10106,14 @@
                 }
             }
           
+            // downcast to RSnapSelection:
+            {
+                RSnapSelection* o = dynamic_cast<RSnapSelection*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RSnapSelection(handler, o);
+                }
+            }
+          
 
           QJSEngine* engine = handler.getEngine();
           RSnap_Wrapper* ret = new RSnap_Wrapper(handler, v, false);
@@ -10679,6 +10765,80 @@
               return false;
           }
           return fun.call(QJSValueList() << QJSValue(RJSType_RSnapGrid::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper_qcad::cpp2js_RSnapSelection(RJSApi& handler, RSnapSelection* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          RSnapSelection_Wrapper* ret = new RSnapSelection_Wrapper(handler, v, false);
+
+          // JS: new RSnapSelection('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RSnapSelection");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RSnapSelection is undefined. Use RSnapSelection_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RSnapSelection('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RSnapSelection(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      RSnapSelection* RJSHelper_qcad::js2cpp_RSnapSelection_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RSnapSelection: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RSnapSelection_Wrapper* wrapper = qobject_cast<RSnapSelection_Wrapper*>(obj);
+          //RSnapSelection_Wrapper* wrapper = dynamic_cast<RSnapSelection_Wrapper*>(obj);
+          //RSnapSelection_Wrapper* wrapper = (RSnapSelection_Wrapper*)(obj);
+          //RSnapSelection_Wrapper* wrapper = getWrapper<RSnapSelection_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RSnapSelection_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_RSnapSelection(wrapper);
+          return RSnapSelection_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RSnapSelection_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RSnapSelection: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_RSnapSelection::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper_qcad::cpp2js_RSnapIntersection(RJSApi& handler, RSnapIntersection* v) {

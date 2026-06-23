@@ -413,6 +413,10 @@
         
           #include "qpainterpath_wrapper.h"
         
+          #include "rpainterpathdevice_wrapper.h"
+        
+          #include "qpaintdevice_wrapper.h"
+        
           #include "rpainterpathsource_wrapper.h"
         
           #include "rpalettelistener_wrapper.h"
@@ -543,6 +547,8 @@
         
           #include "rsnapreference_wrapper.h"
         
+          #include "rsnapselection_wrapper.h"
+        
           #include "rsnaptangential_wrapper.h"
         
           #include "rsolidentity_wrapper.h"
@@ -622,8 +628,6 @@
           #include "rtranslation_wrapper.h"
         
           #include "rtreewidget_wrapper.h"
-        
-          #include "qpaintdevice_wrapper.h"
         
           #include "qtreeview_wrapper.h"
         

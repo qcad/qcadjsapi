@@ -229,6 +229,13 @@
         <parameters />
       </variant>
     </function>
+    <function name="setSweep">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
     <function name="getTrimEnd">
       <variant return-type="RS::Ending" access="public">
         <parameters>

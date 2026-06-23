@@ -8427,6 +8427,74 @@ QString a1_cpp;
                 
               }
             
+    // Class: RSettings
+    // Function: getWidgetSelectionColor
+    // Source: 
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::getWidgetSelectionColor
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: w (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QColor res = 
+                
+                // call static member function:
+                RSettings::getWidgetSelectionColor(
+              a1_cpp
+    
+            );
+          
+            // return type: QColor
+
+            return RJSHelper::cpp2js_QColor(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getWidgetSelectionColor";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
     void RSettings_Wrapper::init(RJSApi& handler) {
       
         //qmlRegisterType<RSettings_Wrapper>("org.qcad", 1, 0, "RSettings_Wrapper");

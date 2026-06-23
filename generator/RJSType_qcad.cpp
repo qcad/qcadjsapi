@@ -3901,6 +3901,33 @@
       
 
   
+      int RJSType_RPainterPathDevice::id = -1;
+
+      int RJSType_RPainterPathDevice::getId() const {
+          return RJSType_RPainterPathDevice::getIdStatic();
+      }
+
+      int RJSType_RPainterPathDevice::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RPainterPathDevice());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RPainterPathDevice::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
       int RJSType_RPainterPathSource::id = -1;
 
       int RJSType_RPainterPathSource::getId() const {
@@ -6201,6 +6228,8 @@
                 ,
                 RJSType_RSnapReference::getIdStatic()
                 ,
+                RJSType_RSnapSelection::getIdStatic()
+                ,
                 RJSType_RSnapTangential::getIdStatic()
                 
             };
@@ -6403,6 +6432,33 @@
 
       
         bool RJSType_RSnapGrid::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
+      int RJSType_RSnapSelection::id = -1;
+
+      int RJSType_RSnapSelection::getId() const {
+          return RJSType_RSnapSelection::getIdStatic();
+      }
+
+      int RJSType_RSnapSelection::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RSnapSelection());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RSnapSelection::isOfType(int otherType) {
             // initialize list of derrived types:
             
             static QSet<int> derrivedTypes = {

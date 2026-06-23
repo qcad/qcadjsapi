@@ -6574,6 +6574,27 @@ AdjustToMinimumContentsLengthWithIcon = RComboBox::AdjustToMinimumContentsLength
               ;
             
     // Class: RComboBox
+    // Function: view
+    // Source: QComboBox
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  view
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RComboBox
     // Function: sizeHint
     // Source: QComboBox
     // Static: false
