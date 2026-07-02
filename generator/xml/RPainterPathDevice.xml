@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPainterPathDevice.h">
+  <class name="RPainterPathDevice" ownership="cpp" proxy="true">
+    <super_list>
+      <super name="QPaintDevice" />
+    </super_list>
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+    </constructor>
+    <function name="setStrokePolygon">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getPainterPaths">
+      <variant return-type="QList&lt;RPainterPath&gt;" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setSize">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QSize" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setDpi">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="paintEngine" ignore="true"/>
+    <!--
+    <function name="paintEngine">
+      <variant return-type="QPaintEngine*" const="true" access="protected">
+        <parameters />
+      </variant>
+    </function>
+    <function name="metric">
+      <variant return-type="int" virtual="true" const="true" access="protected">
+        <parameters>
+          <parameter const="false" type="QPaintDevice::PaintDeviceMetric" modifier="" name="metric" />
+        </parameters>
+      </variant>
+    </function>
+    -->
+  </class>
+</unit>
