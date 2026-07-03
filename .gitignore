@@ -88,3 +88,4 @@ meta_types
 CMakeLists.txt.user.*
 CMakeCache.txt.prev
 build
+deployment_log
