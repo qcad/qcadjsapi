@@ -1380,6 +1380,34 @@ RShape.Ray = RShape_Wrapper.Ray;
       
 
         // static function 
+        RShape.getInnerMostContour = function() 
+          
+        {
+          //print("JS: RShape.getInnerMostContour");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RShape_WrapperSingletonInstance.getInnerMostContour(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RShape);
+  }
+
+  
+  else {
+    
+        print("RShape.getInnerMostContour(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RShape.xLineToRay = function() 
           
         {

@@ -4072,6 +4072,81 @@ RVector a8_cpp;
               }
             
     // Class: RShape
+    // Function: getInnerMostContour
+    // Source: 
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RShape_WrapperSingleton::getInnerMostContour
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RVector(handler, a1
+  )
+
+   && RJSHelper_qcad::is_QList_QSharedPointer_RShape(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: position (RVector)
+  
+RVector a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RVector(handler, a1);
+        
+  // convert js parameter to cpp: shapes (QList<QSharedPointer<RShape>>)
+  
+QList<QSharedPointer<RShape>> a2_cpp;
+
+      a2_cpp = RJSHelper_qcad::js2cpp_QList_QSharedPointer_RShape(handler, a2);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QList<QSharedPointer<RShape>> res = 
+                
+                // call static member function:
+                RShape::getInnerMostContour(
+              a1_cpp
+    , a2_cpp
+    
+            );
+          
+            // return type: QList<QSharedPointer<RShape>>
+
+            return RJSHelper_qcad::cpp2js_QList_QSharedPointer_RShape(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getInnerMostContour";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RShape
     // Function: xLineToRay
     // Source: 
     // Static: true

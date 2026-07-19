@@ -904,6 +904,14 @@
         </parameters>
       </variant>
     </function>
+    <function name="getInnerMostContour" static="true">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" static="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="position" />
+          <parameter const="true" type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" modifier="&amp;" name="shapes" />
+        </parameters>
+      </variant>
+    </function>
     <function name="xLineToRay" static="true">
       <variant return-type="QSharedPointer&lt;RShape&gt;" access="public">
         <parameters>

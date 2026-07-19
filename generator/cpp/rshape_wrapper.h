@@ -1316,6 +1316,33 @@
               ;
             
     // Class: RShape
+    // Function: getInnerMostContour
+    // Source: 
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getInnerMostContour
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RShape
     // Function: xLineToRay
     // Source: 
     // Static: true
