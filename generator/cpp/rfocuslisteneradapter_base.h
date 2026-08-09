@@ -62,6 +62,28 @@ RFocusListenerAdapter_Base
     
       // protected overwritten functions / events and their public invokable counterparts:
       
+    protected:
+    // implementation of protected function
+    // calls JS implementation if available
+    virtual bool eventFilter(
+      QObject* watched, QEvent* event
+    );
+  
+    public:
+    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
+    // TODO: convert arguments to QJSValue:
+    Q_INVOKABLE virtual bool eventFilterPublic(
+      QObject* watched, QEvent* event
+    ) {
+      //qDebug() << "RFocusListenerAdapter_Base::eventFilterPublic()";
+      
+        // TODO: convert return value to QJSValue:
+        return
+      RFocusListenerAdapter::eventFilter(
+        watched, event
+      );
+    }
+  
 
       // public virtual overwritten functions / events:
       

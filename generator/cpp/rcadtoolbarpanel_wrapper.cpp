@@ -297,6 +297,114 @@ bool a2_cpp;
     // non-static functions:
     
     // Class: RCadToolBarPanel
+    // Function: eventFilter
+    // Source: QObject
+    // Static: false
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RCadToolBarPanel_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      eventFilterSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QObject_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QEvent_ptr(handler, a2
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: watched (QObject)
+  
+
+          // pointer:
+          QObject*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QObject_ptr(handler, a1);
+        
+  // convert js parameter to cpp: event (QEvent)
+  
+
+          // pointer:
+          QEvent*
+         a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QEvent_ptr(handler, a2);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of RCadToolBarPanel_Base class as 
+                // function has postfix inheritable class, overridable function):
+                RCadToolBarPanel_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "RCadToolBarPanel::eventFilter: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                bool res;
+                    res =
+                    wb->eventFilterPublic(
+                      a1_cpp
+    , a2_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for eventFilter";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RCadToolBarPanel
     // Function: objectName
     // Source: QObject
     // Static: false

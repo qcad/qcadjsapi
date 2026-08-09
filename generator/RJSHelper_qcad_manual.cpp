@@ -333,6 +333,12 @@
         
           #include "rlineweightcombo_wrapper.h"
         
+          #include "rlinkedstorage_wrapper.h"
+        
+          #include "rstorage_wrapper.h"
+        
+          #include "rmemorystorage_wrapper.h"
+        
           #include "rlistview_wrapper.h"
         
           #include "qframe_wrapper.h"
@@ -370,10 +376,6 @@
           #include "rmodifiedlistener_wrapper.h"
         
           #include "qmdisubwindow_wrapper.h"
-        
-          #include "rmemorystorage_wrapper.h"
-        
-          #include "rstorage_wrapper.h"
         
           #include "rmessagehandler_wrapper.h"
         
@@ -2278,6 +2280,14 @@
             
               // registration of base casters that casts RLineweightCombo to QComboBox:
               QComboBox_Wrapper::registerBasecaster_QComboBox(new RJSBasecaster_RLineweightCombo_QComboBox());
+            
+            // registration of base casters that cast RLinkedStorage to base classes:
+            
+              // registration of base casters that casts RLinkedStorage to RStorage:
+              RStorage_Wrapper::registerBasecaster_RStorage(new RJSBasecaster_RLinkedStorage_RStorage());
+            
+              // registration of base casters that casts RLinkedStorage to RMemoryStorage:
+              RMemoryStorage_Wrapper::registerBasecaster_RMemoryStorage(new RJSBasecaster_RLinkedStorage_RMemoryStorage());
             
             // registration of base casters that cast RListView to base classes:
             

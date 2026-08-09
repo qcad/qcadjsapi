@@ -877,6 +877,12 @@
           virtual RLineweightCombo* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class RLinkedStorage:
+        class RJSBasecaster_RLinkedStorage {
+        public:
+          virtual RLinkedStorage* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class RListView:
         class RJSBasecaster_RListView {
         public:
@@ -4788,6 +4794,34 @@
               virtual QComboBox* castToBase(int t, void* vp) {
                 if (t==RJSType_RLineweightCombo::getIdStatic()) {
                   return (QComboBox*)(RLineweightCombo*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+          // implementation of base casters that cast RLinkedStorage to base classes:
+          
+            // implementation of base casters that casts RLinkedStorage to RStorage
+            class RJSBasecaster_RLinkedStorage_RStorage : public RJSBasecaster_RStorage {
+            public:
+              virtual RStorage* castToBase(int t, void* vp) {
+                if (t==RJSType_RLinkedStorage::getIdStatic()) {
+                  return (RStorage*)(RLinkedStorage*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RLinkedStorage to RMemoryStorage
+            class RJSBasecaster_RLinkedStorage_RMemoryStorage : public RJSBasecaster_RMemoryStorage {
+            public:
+              virtual RMemoryStorage* castToBase(int t, void* vp) {
+                if (t==RJSType_RLinkedStorage::getIdStatic()) {
+                  return (RMemoryStorage*)(RLinkedStorage*)vp;
                 }
                 else {
                   return nullptr;
@@ -9207,6 +9241,10 @@
       static QJSValue cpp2js_RLeaderEntity(RJSApi& handler, RLeaderEntity* v);
       static RLeaderEntity* js2cpp_RLeaderEntity_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RLeaderEntity_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RLinkedStorage(RJSApi& handler, RLinkedStorage* v);
+      static RLinkedStorage* js2cpp_RLinkedStorage_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RLinkedStorage_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RLineEntity(RJSApi& handler, RLineEntity* v);
       static RLineEntity* js2cpp_RLineEntity_ptr(RJSApi& handler, const QJSValue& v);

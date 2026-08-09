@@ -141,6 +141,7 @@
     <file alias="generator/js/RLinetypePattern.js">generator/js/RLinetypePattern.js</file>
     <file alias="generator/js/RLineweight.js">generator/js/RLineweight.js</file>
     <file alias="generator/js/RLineweightCombo.js">generator/js/RLineweightCombo.js</file>
+    <file alias="generator/js/RLinkedStorage.js">generator/js/RLinkedStorage.js</file>
     <file alias="generator/js/RListView.js">generator/js/RListView.js</file>
     <file alias="generator/js/RListWidget.js">generator/js/RListWidget.js</file>
     <file alias="generator/js/RMainWindow.js">generator/js/RMainWindow.js</file>

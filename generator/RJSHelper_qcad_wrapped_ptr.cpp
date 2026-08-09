@@ -333,6 +333,12 @@
         
           #include "rlineweightcombo_wrapper.h"
         
+          #include "rlinkedstorage_wrapper.h"
+        
+          #include "rstorage_wrapper.h"
+        
+          #include "rmemorystorage_wrapper.h"
+        
           #include "rlistview_wrapper.h"
         
           #include "qframe_wrapper.h"
@@ -370,10 +376,6 @@
           #include "rmodifiedlistener_wrapper.h"
         
           #include "qmdisubwindow_wrapper.h"
-        
-          #include "rmemorystorage_wrapper.h"
-        
-          #include "rstorage_wrapper.h"
         
           #include "rmessagehandler_wrapper.h"
         
@@ -7093,6 +7095,80 @@
           return fun.call(QJSValueList() << QJSValue(RJSType_RLeaderEntity::getIdStatic())).toBool();
       }
     
+      QJSValue RJSHelper_qcad::cpp2js_RLinkedStorage(RJSApi& handler, RLinkedStorage* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          RLinkedStorage_Wrapper* ret = new RLinkedStorage_Wrapper(handler, v, false);
+
+          // JS: new RLinkedStorage('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RLinkedStorage");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RLinkedStorage is undefined. Use RLinkedStorage_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RLinkedStorage('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RLinkedStorage(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      RLinkedStorage* RJSHelper_qcad::js2cpp_RLinkedStorage_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RLinkedStorage: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RLinkedStorage_Wrapper* wrapper = qobject_cast<RLinkedStorage_Wrapper*>(obj);
+          //RLinkedStorage_Wrapper* wrapper = dynamic_cast<RLinkedStorage_Wrapper*>(obj);
+          //RLinkedStorage_Wrapper* wrapper = (RLinkedStorage_Wrapper*)(obj);
+          //RLinkedStorage_Wrapper* wrapper = getWrapper<RLinkedStorage_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RLinkedStorage_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_RLinkedStorage(wrapper);
+          return RLinkedStorage_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RLinkedStorage_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RLinkedStorage: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_RLinkedStorage::getIdStatic())).toBool();
+      }
+    
       QJSValue RJSHelper_qcad::cpp2js_RLineEntity(RJSApi& handler, RLineEntity* v) {
 
           
@@ -7317,6 +7393,14 @@
     
       QJSValue RJSHelper_qcad::cpp2js_RMemoryStorage(RJSApi& handler, RMemoryStorage* v) {
 
+          
+            // downcast to RLinkedStorage:
+            {
+                RLinkedStorage* o = dynamic_cast<RLinkedStorage*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RLinkedStorage(handler, o);
+                }
+            }
           
 
           QJSEngine* engine = handler.getEngine();

@@ -1961,6 +1961,123 @@ bool a1_cpp;
               }
             
     // Class: RToolMatrixItemDelegate
+    // Function: createEditor
+    // Source: QItemDelegate
+    // Static: false
+    // Parameters: 3
+    // preceding Parameters: -1
+
+                QJSValue 
+              RToolMatrixItemDelegate_Wrapper:: 
+                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
+                      createEditorSuper
+                    
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2, 
+  const QJSValue& 
+  a3
+              ) 
+              
+                const
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+    , true
+  
+  )
+
+   && RJSHelper::is_QStyleOptionViewItem(handler, a2
+  )
+
+   && RJSHelper::is_QModelIndex(handler, a3
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: parent (QWidget)
+  
+
+          // pointer:
+          QWidget*
+         a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        
+  // convert js parameter to cpp: option (QStyleOptionViewItem)
+  
+QStyleOptionViewItem a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QStyleOptionViewItem(handler, a2);
+        
+  // convert js parameter to cpp: index (QModelIndex)
+  
+QModelIndex a3_cpp;
+
+      a3_cpp = RJSHelper::js2cpp_QModelIndex(handler, a3);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of RToolMatrixItemDelegate_Base class as 
+                // function has postfix inheritable class, overridable function):
+                RToolMatrixItemDelegate_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "RToolMatrixItemDelegate::createEditor: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                QWidget* res;
+                    res =
+                    wb->createEditorPublic(
+                      a1_cpp
+    , a2_cpp
+    , a3_cpp
+    
+                    );
+                  
+                //setRecFlag(false);
+              
+            // return type: QWidget*
+
+            return RJSHelper::cpp2js_QWidget(
+              handler, 
+              // non-copyable: true
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for createEditor";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RToolMatrixItemDelegate
     // Function: setEditorData
     // Source: QItemDelegate
     // Static: false

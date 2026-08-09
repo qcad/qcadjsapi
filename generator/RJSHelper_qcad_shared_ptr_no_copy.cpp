@@ -333,6 +333,12 @@
         
           #include "rlineweightcombo_wrapper.h"
         
+          #include "rlinkedstorage_wrapper.h"
+        
+          #include "rstorage_wrapper.h"
+        
+          #include "rmemorystorage_wrapper.h"
+        
           #include "rlistview_wrapper.h"
         
           #include "qframe_wrapper.h"
@@ -370,10 +376,6 @@
           #include "rmodifiedlistener_wrapper.h"
         
           #include "qmdisubwindow_wrapper.h"
-        
-          #include "rmemorystorage_wrapper.h"
-        
-          #include "rstorage_wrapper.h"
         
           #include "rmessagehandler_wrapper.h"
         

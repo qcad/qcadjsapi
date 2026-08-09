@@ -285,6 +285,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rlineweight_wrapper.h
     generator/cpp/rlineweightcombo_base.h
     generator/cpp/rlineweightcombo_wrapper.h
+    generator/cpp/rlinkedstorage_base.h
+    generator/cpp/rlinkedstorage_wrapper.h
     generator/cpp/rlistview_base.h
     generator/cpp/rlistview_wrapper.h
     generator/cpp/rlistwidget_base.h
@@ -869,6 +871,8 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rlineweight_wrapper.cpp
     generator/cpp/rlineweightcombo_base.cpp
     generator/cpp/rlineweightcombo_wrapper.cpp
+    generator/cpp/rlinkedstorage_base.cpp
+    generator/cpp/rlinkedstorage_wrapper.cpp
     generator/cpp/rlistview_base.cpp
     generator/cpp/rlistview_wrapper.cpp
     generator/cpp/rlistwidget_base.cpp

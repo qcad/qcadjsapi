@@ -283,6 +283,8 @@
 #include "generator/cpp/rlineweight_wrapper.h"
 #include "generator/cpp/rlineweightcombo_base.h"
 #include "generator/cpp/rlineweightcombo_wrapper.h"
+#include "generator/cpp/rlinkedstorage_base.h"
+#include "generator/cpp/rlinkedstorage_wrapper.h"
 #include "generator/cpp/rlistview_base.h"
 #include "generator/cpp/rlistview_wrapper.h"
 #include "generator/cpp/rlistwidget_base.h"

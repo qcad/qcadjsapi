@@ -34,6 +34,7 @@
 #include "generator/cpp/rsettings_wrapper.h"
 #include "generator/cpp/rspatialindexsimple_wrapper.h"
 #include "generator/cpp/rmemorystorage_wrapper.h"
+#include "generator/cpp/rlinkedstorage_wrapper.h"
 #include "generator/cpp/rdocument_wrapper.h"
 #include "generator/cpp/rpluginloader_wrapper.h"
 #include "generator/cpp/rs_wrapper.h"
@@ -500,6 +501,7 @@ void RScriptHandlerJs::init(bool main) {
     RSettings_Wrapper::init(*rjsapi);
     RSpatialIndexSimple_Wrapper::init(*rjsapi);
     RMemoryStorage_Wrapper::init(*rjsapi);
+    RLinkedStorage_Wrapper::init(*rjsapi);
     RVector_Wrapper::init(*rjsapi);
     RFont_Wrapper::init(*rjsapi);
     RFontList_Wrapper::init(*rjsapi);

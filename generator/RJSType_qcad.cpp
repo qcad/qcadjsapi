@@ -5282,6 +5282,33 @@
             return derrivedTypes.contains(otherType);
         }
       
+      int RJSType_RLinkedStorage::id = -1;
+
+      int RJSType_RLinkedStorage::getId() const {
+          return RJSType_RLinkedStorage::getIdStatic();
+      }
+
+      int RJSType_RLinkedStorage::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RLinkedStorage());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RLinkedStorage::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
       int RJSType_RMainWindow::id = -1;
 
       int RJSType_RMainWindow::getId() const {

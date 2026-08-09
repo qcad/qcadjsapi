@@ -333,6 +333,7 @@
     <type>RLayerState</type>
     <type>RLayout</type>
     <type>RLeaderEntity</type>
+    <type>RLinkedStorage</type>
     <type>RLineEntity</type>
     <type>RLinetype</type>
     <type>RMainWindow</type>
