@@ -10405,6 +10405,957 @@ int a1_cpp;
               }
             
     // Class: RHatchEntity
+    // Function: isGradient
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::isGradient
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                bool res = 
+                    
+                w->isGradient(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for isGradient";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: clearGradient
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::clearGradient
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                
+                w->clearGradient(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for clearGradient";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: getGradientName
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::getGradientName
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                QString res = 
+                    
+                w->getGradientName(
+                  
+                );
+              
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getGradientName";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: setGradientName
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::setGradientName
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: n (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                
+                w->setGradientName(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setGradientName";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: getGradientColor1
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::getGradientColor1
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                RColor res = 
+                    
+                w->getGradientColor1(
+                  
+                );
+              
+            // return type: RColor
+
+            return RJSHelper_qcad::cpp2js_RColor(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getGradientColor1";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: setGradientColor1
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::setGradientColor1
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RColor(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: c (RColor)
+  
+RColor a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RColor(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                
+                w->setGradientColor1(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setGradientColor1";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: getGradientColor2
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::getGradientColor2
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                RColor res = 
+                    
+                w->getGradientColor2(
+                  
+                );
+              
+            // return type: RColor
+
+            return RJSHelper_qcad::cpp2js_RColor(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getGradientColor2";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: setGradientColor2
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::setGradientColor2
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RColor(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: c (RColor)
+  
+RColor a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RColor(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                
+                w->setGradientColor2(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setGradientColor2";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: getGradientAngle
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::getGradientAngle
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                double res = 
+                    
+                w->getGradientAngle(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getGradientAngle";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: setGradientAngle
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::setGradientAngle
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: a (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                
+                w->setGradientAngle(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setGradientAngle";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: getGradientShift
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::getGradientShift
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                double res = 
+                    
+                w->getGradientShift(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getGradientShift";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: setGradientShift
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::setGradientShift
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: s (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                
+                w->setGradientShift(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setGradientShift";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: getGradientOneColorMode
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::getGradientOneColorMode
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                bool res = 
+                    
+                w->getGradientOneColorMode(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getGradientOneColorMode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: setGradientOneColorMode
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::setGradientOneColorMode
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: on (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                
+                w->setGradientOneColorMode(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setGradientOneColorMode";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: getGradientTint
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::getGradientTint
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                double res = 
+                    
+                w->getGradientTint(
+                  
+                );
+              
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getGradientTint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
+    // Function: setGradientTint
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RHatchEntity_Wrapper::setGradientTint
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_double(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: t (double)
+  
+double a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RHatchEntity* w = getWrapped();
+                
+                w->setGradientTint(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setGradientTint";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RHatchEntity
     // Function: clearCustomPattern
     // Source: 
     // Static: false

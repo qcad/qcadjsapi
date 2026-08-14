@@ -44,6 +44,29 @@
       // static functions:
       
     // Class: RHatchData
+    // Function: normalizeGradientName
+    // Source: 
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  normalizeGradientName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchData
     // Function: hasProxy
     // Source: 
     // Static: true
@@ -2302,6 +2325,354 @@
               
                   QJSValue 
                   setTransparency
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: isGradient
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isGradient
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: clearGradient
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clearGradient
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: getGradientName
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: setGradientName
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: getGradientColor1
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientColor1
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: setGradientColor1
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientColor1
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: getGradientColor2
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientColor2
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: setGradientColor2
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientColor2
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: getGradientAngle
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientAngle
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: setGradientAngle
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientAngle
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: getGradientShift
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientShift
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: setGradientShift
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientShift
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: getGradientOneColorMode
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientOneColorMode
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: setGradientOneColorMode
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientOneColorMode
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: getGradientTint
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientTint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchData
+    // Function: setGradientTint
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientTint
               (
 
                 

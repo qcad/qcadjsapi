@@ -293,6 +293,62 @@
   Q_PROPERTY(
     
     QJSValue
+     PropertyGradientName
+        // auto generated read function for public static properties:
+         READ  getPropertyGradientName
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     PropertyGradientColor1
+        // auto generated read function for public static properties:
+         READ  getPropertyGradientColor1
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     PropertyGradientColor2
+        // auto generated read function for public static properties:
+         READ  getPropertyGradientColor2
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     PropertyGradientAngle
+        // auto generated read function for public static properties:
+         READ  getPropertyGradientAngle
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     PropertyGradientShift
+        // auto generated read function for public static properties:
+         READ  getPropertyGradientShift
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     PropertyGradientOneColorMode
+        // auto generated read function for public static properties:
+         READ  getPropertyGradientOneColorMode
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
+     PropertyGradientTint
+        // auto generated read function for public static properties:
+         READ  getPropertyGradientTint
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      PropertyVertexNX
         // auto generated read function for public static properties:
          READ  getPropertyVertexNX
@@ -514,6 +570,41 @@
   // auto generated read function for public static property PropertyOriginY:
   Q_INVOKABLE QJSValue getPropertyOriginY() {
     return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RHatchEntity::PropertyOriginY);
+  }
+
+  // auto generated read function for public static property PropertyGradientName:
+  Q_INVOKABLE QJSValue getPropertyGradientName() {
+    return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RHatchEntity::PropertyGradientName);
+  }
+
+  // auto generated read function for public static property PropertyGradientColor1:
+  Q_INVOKABLE QJSValue getPropertyGradientColor1() {
+    return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RHatchEntity::PropertyGradientColor1);
+  }
+
+  // auto generated read function for public static property PropertyGradientColor2:
+  Q_INVOKABLE QJSValue getPropertyGradientColor2() {
+    return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RHatchEntity::PropertyGradientColor2);
+  }
+
+  // auto generated read function for public static property PropertyGradientAngle:
+  Q_INVOKABLE QJSValue getPropertyGradientAngle() {
+    return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RHatchEntity::PropertyGradientAngle);
+  }
+
+  // auto generated read function for public static property PropertyGradientShift:
+  Q_INVOKABLE QJSValue getPropertyGradientShift() {
+    return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RHatchEntity::PropertyGradientShift);
+  }
+
+  // auto generated read function for public static property PropertyGradientOneColorMode:
+  Q_INVOKABLE QJSValue getPropertyGradientOneColorMode() {
+    return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RHatchEntity::PropertyGradientOneColorMode);
+  }
+
+  // auto generated read function for public static property PropertyGradientTint:
+  Q_INVOKABLE QJSValue getPropertyGradientTint() {
+    return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RHatchEntity::PropertyGradientTint);
   }
 
   // auto generated read function for public static property PropertyVertexNX:
@@ -3989,6 +4080,354 @@
               
                   QJSValue 
                   setTransparency
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: isGradient
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isGradient
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: clearGradient
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  clearGradient
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: getGradientName
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientName
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: setGradientName
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientName
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: getGradientColor1
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientColor1
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: setGradientColor1
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientColor1
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: getGradientColor2
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientColor2
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: setGradientColor2
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientColor2
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: getGradientAngle
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientAngle
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: setGradientAngle
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientAngle
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: getGradientShift
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientShift
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: setGradientShift
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientShift
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: getGradientOneColorMode
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientOneColorMode
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: setGradientOneColorMode
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientOneColorMode
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: getGradientTint
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGradientTint
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RHatchEntity
+    // Function: setGradientTint
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setGradientTint
               (
 
                 

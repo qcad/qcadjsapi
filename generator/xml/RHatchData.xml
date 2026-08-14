@@ -251,6 +251,107 @@
         </parameters>
       </variant>
     </function>
+    <function name="normalizeGradientName" static="true">
+      <variant return-type="QString" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isGradient">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clearGradient">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getGradientName">
+      <variant return-type="QString" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGradientName">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="n" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGradientColor1">
+      <variant return-type="RColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGradientColor1">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGradientColor2">
+      <variant return-type="RColor" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGradientColor2">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RColor" modifier="&amp;" name="c" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGradientAngle">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGradientAngle">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="a" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGradientShift">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGradientShift">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="s" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGradientOneColorMode">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGradientOneColorMode">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getGradientTint">
+      <variant return-type="double" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setGradientTint">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="t" />
+        </parameters>
+      </variant>
+    </function>
     <function name="clearCustomPattern">
       <variant return-type="void" access="public">
         <parameters />

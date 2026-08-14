@@ -5359,6 +5359,8 @@
             static QSet<int> derrivedTypes = {
               getIdStatic(),
               
+                RJSType_RLinkedStorage::getIdStatic()
+                
             };
 
             // check for derived types:
@@ -6831,6 +6833,8 @@
             static QSet<int> derrivedTypes = {
               getIdStatic(),
               
+                RJSType_RLinkedStorage::getIdStatic()
+                ,
                 RJSType_RMemoryStorage::getIdStatic()
                 
             };

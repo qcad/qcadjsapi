@@ -893,6 +893,142 @@
         };
     
         // function 
+        RHatchData.prototype.normalizeGradientName = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.normalizeGradientName");
+          return this.__PROXY__.normalizeGradientName(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.isGradient = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.isGradient");
+          return this.__PROXY__.isGradient(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.clearGradient = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.clearGradient");
+          return this.__PROXY__.clearGradient(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.getGradientName = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.getGradientName");
+          return this.__PROXY__.getGradientName(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.setGradientName = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.setGradientName");
+          return this.__PROXY__.setGradientName(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.getGradientColor1 = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.getGradientColor1");
+          return this.__PROXY__.getGradientColor1(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.setGradientColor1 = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.setGradientColor1");
+          return this.__PROXY__.setGradientColor1(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.getGradientColor2 = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.getGradientColor2");
+          return this.__PROXY__.getGradientColor2(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.setGradientColor2 = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.setGradientColor2");
+          return this.__PROXY__.setGradientColor2(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.getGradientAngle = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.getGradientAngle");
+          return this.__PROXY__.getGradientAngle(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.setGradientAngle = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.setGradientAngle");
+          return this.__PROXY__.setGradientAngle(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.getGradientShift = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.getGradientShift");
+          return this.__PROXY__.getGradientShift(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.setGradientShift = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.setGradientShift");
+          return this.__PROXY__.setGradientShift(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.getGradientOneColorMode = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.getGradientOneColorMode");
+          return this.__PROXY__.getGradientOneColorMode(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.setGradientOneColorMode = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.setGradientOneColorMode");
+          return this.__PROXY__.setGradientOneColorMode(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.getGradientTint = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.getGradientTint");
+          return this.__PROXY__.getGradientTint(...args);
+        };
+    
+        // function 
+        RHatchData.prototype.setGradientTint = function(...args) 
+          
+        {
+          //print("JS: RHatchData.prototype.setGradientTint");
+          return this.__PROXY__.setGradientTint(...args);
+        };
+    
+        // function 
         RHatchData.prototype.clearCustomPattern = function(...args) 
           
         {
@@ -1030,6 +1166,34 @@
     
 
       // static functions:
+      
+
+        // static function 
+        RHatchData.normalizeGradientName = function() 
+          
+        {
+          //print("JS: RHatchData.normalizeGradientName");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RHatchData_WrapperSingletonInstance.normalizeGradientName(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RHatchData);
+  }
+
+  
+  else {
+    
+        print("RHatchData.normalizeGradientName(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
       
 
         // static function 

@@ -1269,6 +1269,134 @@
         };
     
         // function 
+        RHatchEntity.prototype.isGradient = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.isGradient");
+          return this.__PROXY__.isGradient(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.clearGradient = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.clearGradient");
+          return this.__PROXY__.clearGradient(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.getGradientName = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.getGradientName");
+          return this.__PROXY__.getGradientName(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.setGradientName = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.setGradientName");
+          return this.__PROXY__.setGradientName(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.getGradientColor1 = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.getGradientColor1");
+          return this.__PROXY__.getGradientColor1(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.setGradientColor1 = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.setGradientColor1");
+          return this.__PROXY__.setGradientColor1(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.getGradientColor2 = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.getGradientColor2");
+          return this.__PROXY__.getGradientColor2(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.setGradientColor2 = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.setGradientColor2");
+          return this.__PROXY__.setGradientColor2(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.getGradientAngle = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.getGradientAngle");
+          return this.__PROXY__.getGradientAngle(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.setGradientAngle = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.setGradientAngle");
+          return this.__PROXY__.setGradientAngle(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.getGradientShift = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.getGradientShift");
+          return this.__PROXY__.getGradientShift(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.setGradientShift = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.setGradientShift");
+          return this.__PROXY__.setGradientShift(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.getGradientOneColorMode = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.getGradientOneColorMode");
+          return this.__PROXY__.getGradientOneColorMode(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.setGradientOneColorMode = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.setGradientOneColorMode");
+          return this.__PROXY__.setGradientOneColorMode(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.getGradientTint = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.getGradientTint");
+          return this.__PROXY__.getGradientTint(...args);
+        };
+    
+        // function 
+        RHatchEntity.prototype.setGradientTint = function(...args) 
+          
+        {
+          //print("JS: RHatchEntity.prototype.setGradientTint");
+          return this.__PROXY__.setGradientTint(...args);
+        };
+    
+        // function 
         RHatchEntity.prototype.clearCustomPattern = function(...args) 
           
         {
@@ -1480,6 +1608,20 @@ RHatchEntity.PropertyOriginX =
   RHatchEntity_WrapperSingletonInstance.PropertyOriginX;
 RHatchEntity.PropertyOriginY = 
   RHatchEntity_WrapperSingletonInstance.PropertyOriginY;
+RHatchEntity.PropertyGradientName = 
+  RHatchEntity_WrapperSingletonInstance.PropertyGradientName;
+RHatchEntity.PropertyGradientColor1 = 
+  RHatchEntity_WrapperSingletonInstance.PropertyGradientColor1;
+RHatchEntity.PropertyGradientColor2 = 
+  RHatchEntity_WrapperSingletonInstance.PropertyGradientColor2;
+RHatchEntity.PropertyGradientAngle = 
+  RHatchEntity_WrapperSingletonInstance.PropertyGradientAngle;
+RHatchEntity.PropertyGradientShift = 
+  RHatchEntity_WrapperSingletonInstance.PropertyGradientShift;
+RHatchEntity.PropertyGradientOneColorMode = 
+  RHatchEntity_WrapperSingletonInstance.PropertyGradientOneColorMode;
+RHatchEntity.PropertyGradientTint = 
+  RHatchEntity_WrapperSingletonInstance.PropertyGradientTint;
 RHatchEntity.PropertyVertexNX = 
   RHatchEntity_WrapperSingletonInstance.PropertyVertexNX;
 RHatchEntity.PropertyVertexNY = 
