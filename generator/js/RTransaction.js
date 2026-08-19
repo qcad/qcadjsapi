@@ -184,6 +184,7 @@ RTransaction.SaveWorkingSet = RTransaction_Wrapper.SaveWorkingSet;
 RTransaction.ChangeDocumentSetting = RTransaction_Wrapper.ChangeDocumentSetting;
 RTransaction.Undo = RTransaction_Wrapper.Undo;
 RTransaction.Redo = RTransaction_Wrapper.Redo;
+RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatusChange;
 
 
       // functions:

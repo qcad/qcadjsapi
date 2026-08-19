@@ -92,6 +92,7 @@ SaveWorkingSet = RTransaction::SaveWorkingSet,
 ChangeDocumentSetting = RTransaction::ChangeDocumentSetting,
 Undo = RTransaction::Undo,
 Redo = RTransaction::Redo,
+LayerCollapseStatusChange = RTransaction::LayerCollapseStatusChange,
 
   };
   Q_ENUM(Type)

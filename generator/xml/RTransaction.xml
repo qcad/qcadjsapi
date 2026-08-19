@@ -42,6 +42,7 @@
       <key>ChangeDocumentSetting</key>
       <key>Undo</key>
       <key>Redo</key>
+      <key>LayerCollapseStatusChange</key>
     </enum>
     <function name="setRecordAffectedObjects">
       <variant return-type="void" access="public">
