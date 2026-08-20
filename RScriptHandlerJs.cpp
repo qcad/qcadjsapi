@@ -61,6 +61,7 @@
 #include "generator/cpp/rdockwidget_wrapper.h"
 #include "generator/cpp/rflowlayout_wrapper.h"
 #include "generator/cpp/rviewfocuslisteneradapter_wrapper.h"
+#include "generator/cpp/rblocklistener_wrapper.h"
 #include "generator/cpp/rblocklisteneradapter_wrapper.h"
 #include "generator/cpp/rcommandline_wrapper.h"
 #include "generator/cpp/rmathlineedit_wrapper.h"
@@ -251,6 +252,7 @@
 #include "generator/cpp/rkeylisteneradapter_wrapper.h"
 #include "generator/cpp/rtextrenderer_wrapper.h"
 #include "generator/cpp/rgraphicsscenedrawable_wrapper.h"
+#include "generator/cpp/rpreferenceslistener_wrapper.h"
 #include "generator/cpp/rpreferenceslisteneradapter_wrapper.h"
 #include "generator/cpp/rlayerstate_wrapper.h"
 #include "generator/cpp/rviewlisteneradapter_wrapper.h"
@@ -291,6 +293,47 @@
 #include "generator/cpp/rimportlisteneradapter_wrapper.h"
 #include "generator/cpp/rexportlisteneradapter_wrapper.h"
 #include "generator/cpp/rnewdocumentlisteneradapter_wrapper.h"
+#include "generator/cpp/rmodifiedlistener_wrapper.h"
+#include "generator/cpp/rcoordinatelistener_wrapper.h"
+#include "generator/cpp/rdimstyledata_wrapper.h"
+#include "generator/cpp/rdirected_wrapper.h"
+#include "generator/cpp/rentityexportlistener_wrapper.h"
+#include "generator/cpp/rexplodable_wrapper.h"
+#include "generator/cpp/rexporter_wrapper.h"
+#include "generator/cpp/rexportlistener_wrapper.h"
+#include "generator/cpp/rfileexporterfactory_wrapper.h"
+#include "generator/cpp/rfileimporter_wrapper.h"
+#include "generator/cpp/rfileimporterfactory_wrapper.h"
+#include "generator/cpp/rfocuslistener_wrapper.h"
+#include "generator/cpp/rimporter_wrapper.h"
+#include "generator/cpp/rimportlistener_wrapper.h"
+#include "generator/cpp/rinputevent_wrapper.h"
+#include "generator/cpp/rintertransactionlistener_wrapper.h"
+#include "generator/cpp/rkeylistener_wrapper.h"
+#include "generator/cpp/rlayerlistener_wrapper.h"
+#include "generator/cpp/rmainwindow_wrapper.h"
+#include "generator/cpp/rmousecoordinatelistener_wrapper.h"
+#include "generator/cpp/rnewdocumentlistener_wrapper.h"
+#include "generator/cpp/roperation_wrapper.h"
+#include "generator/cpp/rpainterpathsource_wrapper.h"
+#include "generator/cpp/rpalettelistener_wrapper.h"
+#include "generator/cpp/rpatternline_wrapper.h"
+#include "generator/cpp/rpenlistener_wrapper.h"
+#include "generator/cpp/rpropertylistener_wrapper.h"
+#include "generator/cpp/rruler_wrapper.h"
+#include "generator/cpp/rselectionlistener_wrapper.h"
+#include "generator/cpp/rsnaplistener_wrapper.h"
+#include "generator/cpp/rspatialindex_wrapper.h"
+#include "generator/cpp/rspatialindexvisitor_wrapper.h"
+#include "generator/cpp/rtabletevent_wrapper.h"
+#include "generator/cpp/rterminateevent_wrapper.h"
+#include "generator/cpp/rtextlayout_wrapper.h"
+#include "generator/cpp/rtransactionlistener_wrapper.h"
+#include "generator/cpp/rtransactionstack_wrapper.h"
+#include "generator/cpp/rucs_wrapper.h"
+#include "generator/cpp/rucslistener_wrapper.h"
+#include "generator/cpp/rviewfocuslistener_wrapper.h"
+#include "generator/cpp/rviewlistener_wrapper.h"
 
 #include "RSettingsBridge.h"
 
@@ -659,6 +702,9 @@ void RScriptHandlerJs::init(bool main) {
     RExportListenerAdapter_Wrapper::init(*rjsapi);
     RNewDocumentListenerAdapter_Wrapper::init(*rjsapi);
     RMultiOperation_Wrapper::init(*rjsapi);
+    RModifiedListener_Wrapper::init(*rjsapi);
+    RPreferencesListener_Wrapper::init(*rjsapi);
+    RBlockListener_Wrapper::init(*rjsapi);
 
     RArcEntity_Wrapper::init(*rjsapi);
     RAttributeDefinitionEntity_Wrapper::init(*rjsapi);
@@ -761,6 +807,47 @@ void RScriptHandlerJs::init(bool main) {
     RSnapSelection_Wrapper::init(*rjsapi);
 
     RStemmer_Wrapper::init(*rjsapi);
+
+    RCoordinateListener_Wrapper::init(*rjsapi);
+    RDimStyleData_Wrapper::init(*rjsapi);
+    RDirected_Wrapper::init(*rjsapi);
+    REntityExportListener_Wrapper::init(*rjsapi);
+    RExplodable_Wrapper::init(*rjsapi);
+    RExporter_Wrapper::init(*rjsapi);
+    RExportListener_Wrapper::init(*rjsapi);
+    RFileExporterFactory_Wrapper::init(*rjsapi);
+    RFileImporter_Wrapper::init(*rjsapi);
+    RFileImporterFactory_Wrapper::init(*rjsapi);
+    RFocusListener_Wrapper::init(*rjsapi);
+    RImporter_Wrapper::init(*rjsapi);
+    RImportListener_Wrapper::init(*rjsapi);
+    RInputEvent_Wrapper::init(*rjsapi);
+    RInterTransactionListener_Wrapper::init(*rjsapi);
+    RKeyListener_Wrapper::init(*rjsapi);
+    RLayerListener_Wrapper::init(*rjsapi);
+    RMainWindow_Wrapper::init(*rjsapi);
+    RMouseCoordinateListener_Wrapper::init(*rjsapi);
+    RNewDocumentListener_Wrapper::init(*rjsapi);
+    ROperation_Wrapper::init(*rjsapi);
+    RPainterPathSource_Wrapper::init(*rjsapi);
+    RPaletteListener_Wrapper::init(*rjsapi);
+    RPatternLine_Wrapper::init(*rjsapi);
+    RPenListener_Wrapper::init(*rjsapi);
+    RPropertyListener_Wrapper::init(*rjsapi);
+    RRuler_Wrapper::init(*rjsapi);
+    RSelectionListener_Wrapper::init(*rjsapi);
+    RSnapListener_Wrapper::init(*rjsapi);
+    RSpatialIndex_Wrapper::init(*rjsapi);
+    RSpatialIndexVisitor_Wrapper::init(*rjsapi);
+    RTabletEvent_Wrapper::init(*rjsapi);
+    RTerminateEvent_Wrapper::init(*rjsapi);
+    RTextLayout_Wrapper::init(*rjsapi);
+    RTransactionListener_Wrapper::init(*rjsapi);
+    RTransactionStack_Wrapper::init(*rjsapi);
+    RUcs_Wrapper::init(*rjsapi);
+    RUcsListener_Wrapper::init(*rjsapi);
+    RViewFocusListener_Wrapper::init(*rjsapi);
+    RViewListener_Wrapper::init(*rjsapi);
 
     // init downcasts:
     RJSHelper_qcad::registerDowncasters();
