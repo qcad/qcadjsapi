@@ -39,6 +39,18 @@
         <parameters />
       </variant>
     </function>
+    <function name="setLinkedEntityQueriesEnabled">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getLinkedEntityQueriesEnabled">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="queryAllObjects">
       <variant return-type="QSet&lt;RObject::Id&gt;" virtual="true" const="true" access="public">
         <parameters />

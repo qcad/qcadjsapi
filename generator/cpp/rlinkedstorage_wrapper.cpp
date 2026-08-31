@@ -8757,6 +8757,127 @@ REntity::Id a2_cpp;
               }
             
     // Class: RLinkedStorage
+    // Function: setLinkedEntityQueriesEnabled
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RLinkedStorage_Wrapper::setLinkedEntityQueriesEnabled
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_bool(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: on (bool)
+  
+bool a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RLinkedStorage* w = getWrapped();
+                
+                w->setLinkedEntityQueriesEnabled(
+                  a1_cpp
+    
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setLinkedEntityQueriesEnabled";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RLinkedStorage
+    // Function: getLinkedEntityQueriesEnabled
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RLinkedStorage_Wrapper::getLinkedEntityQueriesEnabled
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RLinkedStorage* w = getWrapped();
+                bool res = 
+                    
+                w->getLinkedEntityQueriesEnabled(
+                  
+                );
+              
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getLinkedEntityQueriesEnabled";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RLinkedStorage
     // Function: queryAllObjects
     // Source: 
     // Static: false

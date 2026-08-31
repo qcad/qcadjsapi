@@ -23,6 +23,9 @@
       #ifdef QT_CORE5COMPAT_LIB
       #include <QtCore5Compat>
       #endif
+      #ifdef QT_SQL_LIB
+      #include <QtSql>
+      #endif
       #include <QtSvg>
       #include <QtUiTools>
 
