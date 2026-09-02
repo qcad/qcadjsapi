@@ -818,6 +818,19 @@
             }
           RObject_Wrapper* wrapper = getWrapper<RObject_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RObject* o = RObject_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RObject>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RObject: no wrapper";
               handler.trace();
               return QSharedPointer<RObject>();
@@ -880,6 +893,19 @@
 
           RArcEntity_Wrapper* wrapper = getWrapper<RArcEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RArcEntity* o = RArcEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RArcEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RArcEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RArcEntity>();
@@ -942,6 +968,19 @@
 
           RAttributeDefinitionEntity_Wrapper* wrapper = getWrapper<RAttributeDefinitionEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RAttributeDefinitionEntity* o = RAttributeDefinitionEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RAttributeDefinitionEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RAttributeDefinitionEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RAttributeDefinitionEntity>();
@@ -1004,6 +1043,19 @@
 
           RAttributeEntity_Wrapper* wrapper = getWrapper<RAttributeEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RAttributeEntity* o = RAttributeEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RAttributeEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RAttributeEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RAttributeEntity>();
@@ -1066,6 +1118,19 @@
 
           RBlock_Wrapper* wrapper = getWrapper<RBlock_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RBlock* o = RBlock_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RBlock>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RBlock: no wrapper";
               handler.trace();
               return QSharedPointer<RBlock>();
@@ -1128,6 +1193,19 @@
 
           RBlockReferenceEntity_Wrapper* wrapper = getWrapper<RBlockReferenceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RBlockReferenceEntity* o = RBlockReferenceEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RBlockReferenceEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RBlockReferenceEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RBlockReferenceEntity>();
@@ -1190,6 +1268,19 @@
 
           RCircleEntity_Wrapper* wrapper = getWrapper<RCircleEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RCircleEntity* o = RCircleEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RCircleEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RCircleEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RCircleEntity>();
@@ -1252,6 +1343,19 @@
 
           RDimAlignedEntity_Wrapper* wrapper = getWrapper<RDimAlignedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimAlignedEntity* o = RDimAlignedEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimAlignedEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimAlignedEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimAlignedEntity>();
@@ -1314,6 +1418,19 @@
 
           RDimAngular2LEntity_Wrapper* wrapper = getWrapper<RDimAngular2LEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimAngular2LEntity* o = RDimAngular2LEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimAngular2LEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimAngular2LEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimAngular2LEntity>();
@@ -1376,6 +1493,19 @@
 
           RDimAngular3PEntity_Wrapper* wrapper = getWrapper<RDimAngular3PEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimAngular3PEntity* o = RDimAngular3PEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimAngular3PEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimAngular3PEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimAngular3PEntity>();
@@ -1438,6 +1568,7 @@
 
           RDimAngularData_Wrapper* wrapper = getWrapper<RDimAngularData_Wrapper>(v);
           if (wrapper==nullptr) {
+              
               qWarning() << "js2cpp_QSharedPointer_RDimAngularData: no wrapper";
               handler.trace();
               return QSharedPointer<RDimAngularData>();
@@ -1539,6 +1670,19 @@
             }
           RDimAngularEntity_Wrapper* wrapper = getWrapper<RDimAngularEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimAngularEntity* o = RDimAngularEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimAngularEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimAngularEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimAngularEntity>();
@@ -1601,6 +1745,19 @@
 
           RDimArcLengthEntity_Wrapper* wrapper = getWrapper<RDimArcLengthEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimArcLengthEntity* o = RDimArcLengthEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimArcLengthEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimArcLengthEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimArcLengthEntity>();
@@ -1663,6 +1820,19 @@
 
           RDimDiametricEntity_Wrapper* wrapper = getWrapper<RDimDiametricEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimDiametricEntity* o = RDimDiametricEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimDiametricEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimDiametricEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimDiametricEntity>();
@@ -1755,6 +1925,19 @@
             }
           RDimLinearEntity_Wrapper* wrapper = getWrapper<RDimLinearEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimLinearEntity* o = RDimLinearEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimLinearEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimLinearEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimLinearEntity>();
@@ -1817,6 +2000,19 @@
 
           RDimOrdinateEntity_Wrapper* wrapper = getWrapper<RDimOrdinateEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimOrdinateEntity* o = RDimOrdinateEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimOrdinateEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimOrdinateEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimOrdinateEntity>();
@@ -1879,6 +2075,19 @@
 
           RDimRadialEntity_Wrapper* wrapper = getWrapper<RDimRadialEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimRadialEntity* o = RDimRadialEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimRadialEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimRadialEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimRadialEntity>();
@@ -1941,6 +2150,19 @@
 
           RDimRotatedEntity_Wrapper* wrapper = getWrapper<RDimRotatedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimRotatedEntity* o = RDimRotatedEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimRotatedEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimRotatedEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimRotatedEntity>();
@@ -2003,6 +2225,19 @@
 
           RDimStyle_Wrapper* wrapper = getWrapper<RDimStyle_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimStyle* o = RDimStyle_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimStyle>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimStyle: no wrapper";
               handler.trace();
               return QSharedPointer<RDimStyle>();
@@ -2183,6 +2418,19 @@
             }
           RDimensionEntity_Wrapper* wrapper = getWrapper<RDimensionEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDimensionEntity* o = RDimensionEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDimensionEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDimensionEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RDimensionEntity>();
@@ -2245,6 +2493,19 @@
 
           RDocumentVariables_Wrapper* wrapper = getWrapper<RDocumentVariables_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RDocumentVariables* o = RDocumentVariables_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RDocumentVariables>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RDocumentVariables: no wrapper";
               handler.trace();
               return QSharedPointer<RDocumentVariables>();
@@ -2307,6 +2568,19 @@
 
           REllipseEntity_Wrapper* wrapper = getWrapper<REllipseEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      REllipseEntity* o = REllipseEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<REllipseEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_REllipseEntity: no wrapper";
               handler.trace();
               return QSharedPointer<REllipseEntity>();
@@ -2369,6 +2643,19 @@
 
           RFaceEntity_Wrapper* wrapper = getWrapper<RFaceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RFaceEntity* o = RFaceEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RFaceEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RFaceEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RFaceEntity>();
@@ -2431,6 +2718,19 @@
 
           RHatchEntity_Wrapper* wrapper = getWrapper<RHatchEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RHatchEntity* o = RHatchEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RHatchEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RHatchEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RHatchEntity>();
@@ -2493,6 +2793,19 @@
 
           RImageEntity_Wrapper* wrapper = getWrapper<RImageEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RImageEntity* o = RImageEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RImageEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RImageEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RImageEntity>();
@@ -2555,6 +2868,19 @@
 
           RLayer_Wrapper* wrapper = getWrapper<RLayer_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RLayer* o = RLayer_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RLayer>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RLayer: no wrapper";
               handler.trace();
               return QSharedPointer<RLayer>();
@@ -2617,6 +2943,19 @@
 
           RLayerState_Wrapper* wrapper = getWrapper<RLayerState_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RLayerState* o = RLayerState_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RLayerState>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RLayerState: no wrapper";
               handler.trace();
               return QSharedPointer<RLayerState>();
@@ -2679,6 +3018,19 @@
 
           RLayout_Wrapper* wrapper = getWrapper<RLayout_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RLayout* o = RLayout_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RLayout>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RLayout: no wrapper";
               handler.trace();
               return QSharedPointer<RLayout>();
@@ -2741,6 +3093,19 @@
 
           RLeaderEntity_Wrapper* wrapper = getWrapper<RLeaderEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RLeaderEntity* o = RLeaderEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RLeaderEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RLeaderEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RLeaderEntity>();
@@ -2803,6 +3168,19 @@
 
           RLineEntity_Wrapper* wrapper = getWrapper<RLineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RLineEntity* o = RLineEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RLineEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RLineEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RLineEntity>();
@@ -2865,6 +3243,19 @@
 
           RLinetype_Wrapper* wrapper = getWrapper<RLinetype_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RLinetype* o = RLinetype_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RLinetype>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RLinetype: no wrapper";
               handler.trace();
               return QSharedPointer<RLinetype>();
@@ -2927,6 +3318,19 @@
 
           RPointEntity_Wrapper* wrapper = getWrapper<RPointEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RPointEntity* o = RPointEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RPointEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RPointEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RPointEntity>();
@@ -2989,6 +3393,19 @@
 
           RPolyline_Wrapper* wrapper = getWrapper<RPolyline_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RPolyline* o = RPolyline_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RPolyline>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RPolyline: no wrapper";
               handler.trace();
               return QSharedPointer<RPolyline>();
@@ -3051,6 +3468,19 @@
 
           RPolylineEntity_Wrapper* wrapper = getWrapper<RPolylineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RPolylineEntity* o = RPolylineEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RPolylineEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RPolylineEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RPolylineEntity>();
@@ -3113,6 +3543,19 @@
 
           RRayEntity_Wrapper* wrapper = getWrapper<RRayEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RRayEntity* o = RRayEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RRayEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RRayEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RRayEntity>();
@@ -3175,6 +3618,19 @@
 
           RSolidEntity_Wrapper* wrapper = getWrapper<RSolidEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RSolidEntity* o = RSolidEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RSolidEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RSolidEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RSolidEntity>();
@@ -3237,6 +3693,19 @@
 
           RSplineEntity_Wrapper* wrapper = getWrapper<RSplineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RSplineEntity* o = RSplineEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RSplineEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RSplineEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RSplineEntity>();
@@ -3299,6 +3768,19 @@
 
           RTextEntity_Wrapper* wrapper = getWrapper<RTextEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RTextEntity* o = RTextEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RTextEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RTextEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RTextEntity>();
@@ -3402,6 +3884,19 @@
             }
           RTextBasedEntity_Wrapper* wrapper = getWrapper<RTextBasedEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RTextBasedEntity* o = RTextBasedEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RTextBasedEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RTextBasedEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RTextBasedEntity>();
@@ -3464,6 +3959,19 @@
 
           RToleranceEntity_Wrapper* wrapper = getWrapper<RToleranceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RToleranceEntity* o = RToleranceEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RToleranceEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RToleranceEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RToleranceEntity>();
@@ -3526,6 +4034,19 @@
 
           RTraceEntity_Wrapper* wrapper = getWrapper<RTraceEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RTraceEntity* o = RTraceEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RTraceEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RTraceEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RTraceEntity>();
@@ -3588,6 +4109,19 @@
 
           RUcs_Wrapper* wrapper = getWrapper<RUcs_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RUcs* o = RUcs_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RUcs>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RUcs: no wrapper";
               handler.trace();
               return QSharedPointer<RUcs>();
@@ -3650,6 +4184,19 @@
 
           RView_Wrapper* wrapper = getWrapper<RView_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RView* o = RView_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RView>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RView: no wrapper";
               handler.trace();
               return QSharedPointer<RView>();
@@ -3712,6 +4259,19 @@
 
           RViewportEntity_Wrapper* wrapper = getWrapper<RViewportEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RViewportEntity* o = RViewportEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RViewportEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RViewportEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RViewportEntity>();
@@ -3774,6 +4334,19 @@
 
           RWipeoutEntity_Wrapper* wrapper = getWrapper<RWipeoutEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RWipeoutEntity* o = RWipeoutEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RWipeoutEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RWipeoutEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RWipeoutEntity>();
@@ -3836,6 +4409,19 @@
 
           RXLineEntity_Wrapper* wrapper = getWrapper<RXLineEntity_Wrapper>(v);
           if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RXLineEntity* o = RXLineEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RXLineEntity>();
+                      }
+                  }
+              }
+              
               qWarning() << "js2cpp_QSharedPointer_RXLineEntity: no wrapper";
               handler.trace();
               return QSharedPointer<RXLineEntity>();

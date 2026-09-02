@@ -1444,6 +1444,8 @@ RBlockReferenceEntity.PropertyDrawOrder =
   RBlockReferenceEntity_WrapperSingletonInstance.PropertyDrawOrder;
 RBlockReferenceEntity.PropertyReferencedBlock = 
   RBlockReferenceEntity_WrapperSingletonInstance.PropertyReferencedBlock;
+RBlockReferenceEntity.PropertyXRef = 
+  RBlockReferenceEntity_WrapperSingletonInstance.PropertyXRef;
 RBlockReferenceEntity.PropertyPositionX = 
   RBlockReferenceEntity_WrapperSingletonInstance.PropertyPositionX;
 RBlockReferenceEntity.PropertyPositionY = 

@@ -237,6 +237,14 @@
   Q_PROPERTY(
     
     QJSValue
+     PropertyXRef
+        // auto generated read function for public static properties:
+         READ  getPropertyXRef
+  )
+
+  Q_PROPERTY(
+    
+    QJSValue
      PropertyPositionX
         // auto generated read function for public static properties:
          READ  getPropertyPositionX
@@ -455,6 +463,11 @@
   // auto generated read function for public static property PropertyReferencedBlock:
   Q_INVOKABLE QJSValue getPropertyReferencedBlock() {
     return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RBlockReferenceEntity::PropertyReferencedBlock);
+  }
+
+  // auto generated read function for public static property PropertyXRef:
+  Q_INVOKABLE QJSValue getPropertyXRef() {
+    return RJSHelper_qcad::cpp2js_RPropertyTypeId(handler, RBlockReferenceEntity::PropertyXRef);
   }
 
   // auto generated read function for public static property PropertyPositionX:

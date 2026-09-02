@@ -22,6 +22,7 @@ filename="RBlockReferenceEntity.h">
     <property static="true" type="RPropertyTypeId" name="PropertyDisplayedColor" />
     <property static="true" type="RPropertyTypeId" name="PropertyDrawOrder" />
     <property static="true" type="RPropertyTypeId" name="PropertyReferencedBlock" />
+    <property static="true" type="RPropertyTypeId" name="PropertyXRef" />
     <property static="true" type="RPropertyTypeId" name="PropertyPositionX" />
     <property static="true" type="RPropertyTypeId" name="PropertyPositionY" />
     <property static="true" type="RPropertyTypeId" name="PropertyPositionZ" />
