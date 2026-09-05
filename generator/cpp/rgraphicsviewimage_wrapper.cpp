@@ -9242,6 +9242,63 @@ RBox a2_cpp;
               }
             
     // Class: RGraphicsViewImage
+    // Function: getGraphicsBufferWithPreview
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RGraphicsViewImage_Wrapper::getGraphicsBufferWithPreview
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RGraphicsViewImage* w = getWrapped();
+                QImage res = 
+                    
+                w->getGraphicsBufferWithPreview(
+                  
+                );
+              
+            // return type: QImage
+
+            return RJSHelper::cpp2js_QImage(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getGraphicsBufferWithPreview";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RGraphicsViewImage
     // Function: getTransform
     // Source: 
     // Static: false

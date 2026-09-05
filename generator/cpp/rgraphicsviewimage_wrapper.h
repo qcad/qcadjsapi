@@ -3236,6 +3236,27 @@ BlackWhite = RGraphicsViewImage::BlackWhite,
               ;
             
     // Class: RGraphicsViewImage
+    // Function: getGraphicsBufferWithPreview
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getGraphicsBufferWithPreview
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RGraphicsViewImage
     // Function: getTransform
     // Source: 
     // Static: false

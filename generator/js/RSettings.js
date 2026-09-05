@@ -3418,6 +3418,90 @@
       
 
         // static function 
+        RSettings.setDefaultValue = function() 
+          
+        {
+          //print("JS: RSettings.setDefaultValue");
+          
+      if (arguments.length == 2) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.setDefaultValue(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.setDefaultValue(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RSettings.getDefaultValue = function() 
+          
+        {
+          //print("JS: RSettings.getDefaultValue");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.getDefaultValue(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.getDefaultValue(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RSettings.hasDefaultValue = function() 
+          
+        {
+          //print("JS: RSettings.hasDefaultValue");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.hasDefaultValue(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.hasDefaultValue(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RSettings.setApplicationNameOverride = function() 
           
         {

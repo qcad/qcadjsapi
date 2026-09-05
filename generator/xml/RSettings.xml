@@ -712,6 +712,28 @@
         </parameters>
       </variant>
     </function>
+    <function name="setDefaultValue" static="true">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+          <parameter const="true" type="QVariant" modifier="&amp;" name="value" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getDefaultValue" static="true">
+      <variant return-type="QVariant" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasDefaultValue" static="true">
+      <variant return-type="bool" access="public">
+        <parameters>
+          <parameter const="true" type="QString" modifier="&amp;" name="key" />
+        </parameters>
+      </variant>
+    </function>
     <function name="setApplicationNameOverride" static="true">
       <variant return-type="void" access="public">
         <parameters>

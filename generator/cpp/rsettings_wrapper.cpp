@@ -6497,6 +6497,199 @@ QString a1_cpp;
               }
             
     // Class: RSettings
+    // Function: setDefaultValue
+    // Source: 
+    // Static: true
+    // Parameters: 2
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::setDefaultValue
+              (
+                
+  const QJSValue& 
+  a1, 
+  const QJSValue& 
+  a2
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+   && RJSHelper::is_QVariant(handler, a2
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: key (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+  // convert js parameter to cpp: value (QVariant)
+  
+QVariant a2_cpp;
+
+      a2_cpp = RJSHelper::js2cpp_QVariant(handler, a2);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            
+                // call static member function:
+                RSettings::setDefaultValue(
+              a1_cpp
+    , a2_cpp
+    
+            );
+          
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for setDefaultValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSettings
+    // Function: getDefaultValue
+    // Source: 
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::getDefaultValue
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: key (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QVariant res = 
+                
+                // call static member function:
+                RSettings::getDefaultValue(
+              a1_cpp
+    
+            );
+          
+            // return type: QVariant
+
+            return RJSHelper::cpp2js_QVariant(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getDefaultValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSettings
+    // Function: hasDefaultValue
+    // Source: 
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::hasDefaultValue
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper::is_QString(handler, a1
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: key (QString)
+  
+QString a1_cpp;
+
+      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+        
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            bool res = 
+                
+                // call static member function:
+                RSettings::hasDefaultValue(
+              a1_cpp
+    
+            );
+          
+            // return type: bool
+
+            return RJSHelper::cpp2js_bool(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for hasDefaultValue";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSettings
     // Function: setApplicationNameOverride
     // Source: 
     // Static: true

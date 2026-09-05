@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_AUTOMOC ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Sql Svg Xml PrintSupport Qml UiTools QuickWidgets Core5Compat)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Sql Svg Xml PrintSupport Qml UiTools QuickWidgets Core5Compat Help)
 qt_standard_project_setup()
 
 qt_add_resources(SOURCES qcadjsapi.qrc)
@@ -136,6 +136,7 @@ target_link_libraries(qcadjsapi PRIVATE
     Qt::PrintSupport
     Qt::Core5Compat
     Qt::QuickWidgets
+    Qt::Help
     qcadcore
     qcadentity
     qcadgui

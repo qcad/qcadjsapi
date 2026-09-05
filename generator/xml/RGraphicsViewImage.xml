@@ -480,6 +480,11 @@
         <parameters />
       </variant>
     </function>
+    <function name="getGraphicsBufferWithPreview">
+      <variant return-type="QImage" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="getTransform">
       <variant return-type="QTransform" const="true" access="public">
         <parameters />
