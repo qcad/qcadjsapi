@@ -7278,6 +7278,52 @@ bool a1_cpp;
               }
             
     // Class: RSettings
+    // Function: getScreenBasedLineweightScaleFactor
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::getScreenBasedLineweightScaleFactor
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            double res = 
+                
+                // call static member function:
+                RSettings::getScreenBasedLineweightScaleFactor(
+              
+            );
+          
+            // return type: double
+
+            return RJSHelper::cpp2js_double(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getScreenBasedLineweightScaleFactor";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSettings
     // Function: getUseSecondarySelectionColor
     // Source: 
     // Static: true

@@ -802,6 +802,11 @@
         <parameters />
       </variant>
     </function>
+    <function name="getScreenBasedLineweightScaleFactor" static="true">
+      <variant return-type="double" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="getUseSecondarySelectionColor" static="true">
       <variant return-type="bool" access="public">
         <parameters />

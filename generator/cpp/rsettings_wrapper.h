@@ -2904,6 +2904,25 @@
               ;
             
     // Class: RSettings
+    // Function: getScreenBasedLineweightScaleFactor
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getScreenBasedLineweightScaleFactor
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RSettings
     // Function: getUseSecondarySelectionColor
     // Source: 
     // Static: true

@@ -3838,6 +3838,34 @@
       
 
         // static function 
+        RSettings.getScreenBasedLineweightScaleFactor = function() 
+          
+        {
+          //print("JS: RSettings.getScreenBasedLineweightScaleFactor");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.getScreenBasedLineweightScaleFactor(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.getScreenBasedLineweightScaleFactor(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RSettings.getUseSecondarySelectionColor = function() 
           
         {
