@@ -390,6 +390,14 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
         };
     
         // function 
+        RDocumentInterface.prototype.checkDirtyXRefs = function(...args) 
+          
+        {
+          //print("JS: RDocumentInterface.prototype.checkDirtyXRefs");
+          return this.__PROXY__.checkDirtyXRefs(...args);
+        };
+    
+        // function 
         RDocumentInterface.prototype.setClickMode = function(...args) 
           
         {

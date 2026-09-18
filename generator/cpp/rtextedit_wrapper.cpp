@@ -24293,7 +24293,10 @@ QStringList a1_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              RTextEdit_Wrapper::loadResource
+              RTextEdit_Wrapper:: 
+                      // function is public, virtual and overridable, this function can be called from JS implementation to call implementation of super class: 
+                      loadResourceSuper
+                    
               (
                 
   const QJSValue& 
@@ -24344,16 +24347,42 @@ QUrl a2_cpp;
             // non-static member function:
             // call function of wrapped object:
             
-                // call function of C++ class:
-                RTextEdit* w = getWrapped();
-                QVariant res = 
+                // call function of RTextEdit_Base class as 
+                // function has postfix inheritable class, overridable function):
+                RTextEdit_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "RTextEdit::loadResource: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                QVariant res;
                     
-                w->loadResource(
-                  a1_cpp
+                    // this is the wrapper that created the object
+                    // call the base class implementation as this function was 
+                    // called from the JS implementation of the same function to call
+                    // the base class implementation
+                    if (wrappedCreated) {
+                      res =
+                      wb->loadResourceSup(
+                        a1_cpp
     , a2_cpp
     
-                );
-              
+                      );
+                    }
+
+                    // this is a wrapper that was created for an existing object
+                    // call the JS implementation as this function was 
+                    // called from another JS function
+                    else {
+                      res =
+                      wb->loadResource(
+                        a1_cpp
+    , a2_cpp
+    
+                      );
+                    }
+                  
                 //setRecFlag(false);
               
             // return type: QVariant

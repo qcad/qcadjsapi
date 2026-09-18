@@ -1776,6 +1776,25 @@
               ;
             
     // Class: RBlock
+    // Function: unloadXRef
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  unloadXRef
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RBlock
     // Function: getXRefLayerNames
     // Source: 
     // Static: false

@@ -422,7 +422,7 @@ public:
 };
 
 
-RScriptHandlerJs::RScriptHandlerJs() : rjsapi(NULL), engine(NULL) {
+RScriptHandlerJs::RScriptHandlerJs() : rjsapi(NULL), autoLoading(false), engine(NULL) {
 
 }
 
@@ -886,9 +886,11 @@ void RScriptHandlerJs::init(bool main) {
 
     // eval auto load scripts:
     QStringList files = RAutoLoadJs::getAutoLoadFiles();
+    autoLoading = true;
     for (int i=0; i<files.size(); i++) {
         doScript(files[i]);
     }
+    autoLoading = false;
 
     // give plugins a chance to initialize their script extensions:
     //RPluginLoader::initScriptExtensions(*engine);
@@ -954,6 +956,10 @@ void RScriptHandlerJs::doScript(const QString& scriptFile, const QStringList& ar
     }
 
     QString contents = RFileCache::getContents(scriptFile, false);
+    // auto load scripts are library code (like includes), not scripts
+    // run by the user (tools, autostart):
+    emit rjsapi->preprocessSource(scriptFile, contents, autoLoading);
+
     QStringList trace;
     QJSValue result = engine->evaluate(contents, scriptFile, 1, &trace);
 

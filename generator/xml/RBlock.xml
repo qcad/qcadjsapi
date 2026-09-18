@@ -174,6 +174,11 @@
         <parameters />
       </variant>
     </function>
+    <function name="unloadXRef">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="getXRefLayerNames">
       <variant return-type="QSet&lt;QString&gt;" const="true" access="public">
         <parameters />

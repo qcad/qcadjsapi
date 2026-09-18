@@ -912,6 +912,25 @@ IoErrorGeneralImportUrlError = RDocumentInterface::IoErrorGeneralImportUrlError,
               ;
             
     // Class: RDocumentInterface
+    // Function: checkDirtyXRefs
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  checkDirtyXRefs
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RDocumentInterface
     // Function: setClickMode
     // Source: 
     // Static: false

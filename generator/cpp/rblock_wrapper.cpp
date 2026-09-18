@@ -4147,6 +4147,53 @@ QString a1_cpp;
               }
             
     // Class: RBlock
+    // Function: unloadXRef
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RBlock_Wrapper::unloadXRef
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RBlock* w = getWrapped();
+                
+                w->unloadXRef(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for unloadXRef";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RBlock
     // Function: getXRefLayerNames
     // Source: 
     // Static: false

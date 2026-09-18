@@ -26,6 +26,15 @@
       #ifdef QT_SQL_LIB
       #include <QtSql>
       #endif
+      #ifdef QT_HELP_LIB
+      #include <QtHelp>
+      #endif
+      #ifdef QT_POSITIONING_LIB
+      #include <QtPositioning>
+      #endif
+      #ifdef QT_LOCATION_LIB
+      #include "RJSGeoJson.h"
+      #endif
       #include <QtSvg>
       #include <QtUiTools>
 

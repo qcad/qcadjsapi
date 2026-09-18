@@ -126,7 +126,7 @@ RTextEdit_Base
     // calls JS implementation if available
     QMargins viewportMargins(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -170,7 +170,7 @@ RTextEdit_Base
     // calls JS implementation if available
     virtual QSize viewportSizeHint(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -247,6 +247,30 @@ RTextEdit_Base
 
       // public virtual overwritten functions / events:
       
+    public:
+    // implementation of virtual public function
+    // calls JS implementation if available
+    virtual QVariant loadResource(
+      int type, const QUrl& name
+    )
+    
+    ;
+
+    
+      // implementation of virtual public function
+      // always calls super implementation
+      virtual QVariant loadResourceSup(
+        int type, const QUrl& name
+      )
+      
+      {
+        
+          return
+        RTextEdit::loadResource(
+          type, name
+        );
+      }
+    
 
       // public pure-virtual functions:
       

@@ -2315,6 +2315,53 @@ bool a1_cpp;
               }
             
     // Class: RDocumentInterface
+    // Function: checkDirtyXRefs
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RDocumentInterface_Wrapper::checkDirtyXRefs
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RDocumentInterface* w = getWrapped();
+                
+                w->checkDirtyXRefs(
+                  
+                );
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for checkDirtyXRefs";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RDocumentInterface
     // Function: setClickMode
     // Source: 
     // Static: false

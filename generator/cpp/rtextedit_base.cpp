@@ -201,7 +201,7 @@ margins
 
   QMargins RTextEdit_Base::viewportMargins(
       
-    ) {
+    ) const {
 
       //qDebug() << "RTextEdit_Base::viewportMargins()";
 
@@ -306,7 +306,7 @@ a1
 
   QSize RTextEdit_Base::viewportSizeHint(
       
-    ) {
+    ) const {
 
       //qDebug() << "RTextEdit_Base::viewportSizeHint()";
 
@@ -515,7 +515,83 @@ e
   
 
       // public virtual overwritten functions / events:
+      QVariant RTextEdit_Base::loadResource(
+      int type, const QUrl& name
+    ) 
+    
+    {
+
+      //qDebug() << "RTextEdit_Base::loadResource()";
+
+      // make sure we don't call same function (recursion):
+      // only call JS function implementation
+
+      QJSEngine* engine = handler.getEngine();
+
+      //QJSValue f = self.prototype().property("loadResource");
+      QJSValue f = self.property("loadResource");
+      if (f.isCallable() /*&& !recFlag*/) {
+        QJSValueList args;
+        
+
+  args << RJSHelper::cpp2js_int(
+    handler, 
+    // non-copyable: false
+type
+  );
+
+
+  args << RJSHelper::cpp2js_QUrl(
+    handler, 
+    // non-copyable: false
+name
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        //engine->evaluate("__self__.loadResource();");
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.loadResource.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+        // does not provide back trace in case of error:
+        //QJSValue res = f.callWithInstance(self, args);
+        //if (res.isError()) {
+        //  qWarning() << "Error while calling loadResource:" << res.toString();
+        //  engine->throwError("exception in: RTextEdit::loadResource:" + res.toString());
+        //}
+
+        
+            return RJSHelper::js2cpp_QVariant(handler, res);
+          
+      }
+
+      //if (!recFlag) {
+        // function not implemented in JS: exception
+        engine->throwError(QString("function not implemented in JS class: RTextEdit::loadResource"));
+      //}
+
       
+          // call implementation of original class:
+          return RTextEdit::loadResource(
+            type, name
+          );
+        
+    }
+
+  
 
       // public pure-virtual functions:
       

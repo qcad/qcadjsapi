@@ -21,7 +21,7 @@
       // protected overwritten functions / events and their public invokable counterparts:
       QWidget* RToolMatrixItemDelegate_Base::createEditor(
       QWidget* parent, const QStyleOptionViewItem& option, const QModelIndex& index
-    ) {
+    ) const {
 
       //qDebug() << "RToolMatrixItemDelegate_Base::createEditor()";
 

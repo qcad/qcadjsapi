@@ -201,7 +201,7 @@ margins
 
   QMargins RListWidget_Base::viewportMargins(
       
-    ) {
+    ) const {
 
       //qDebug() << "RListWidget_Base::viewportMargins()";
 
@@ -463,218 +463,6 @@ a1
       }
     }
 
-  void RListWidget_Base::pressed(
-      const QModelIndex& index
-    ) {
-
-      //qDebug() << "RListWidget_Base::pressed()";
-
-      //QJSValue f = self.prototype().property("pressed");
-      QJSValue f = self.property("pressed");
-      if (f.isCallable() /*&& !recFlag*/) {
-        
-
-
-        QJSEngine* engine = handler.getEngine();
-
-        QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QModelIndex(
-    handler, 
-    // non-copyable: false
-index
-  );
-
-
-        QJSValue argsValue = engine->newArray(args.length());
-        for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
-        }
-
-        engine->globalObject().setProperty("__self__", self);
-        engine->globalObject().setProperty("__args__", argsValue);
-        QStringList trace;
-        QJSValue res = engine->evaluate("__self__.pressed.apply(__self__, __args__);", "", 1, &trace);
-
-        if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
-        }
-
-
-        
-            return;
-          
-      }
-      else {
-        RListWidget::pressed(
-          index
-        );
-      }
-    }
-
-  void RListWidget_Base::clicked(
-      const QModelIndex& index
-    ) {
-
-      //qDebug() << "RListWidget_Base::clicked()";
-
-      //QJSValue f = self.prototype().property("clicked");
-      QJSValue f = self.property("clicked");
-      if (f.isCallable() /*&& !recFlag*/) {
-        
-
-
-        QJSEngine* engine = handler.getEngine();
-
-        QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QModelIndex(
-    handler, 
-    // non-copyable: false
-index
-  );
-
-
-        QJSValue argsValue = engine->newArray(args.length());
-        for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
-        }
-
-        engine->globalObject().setProperty("__self__", self);
-        engine->globalObject().setProperty("__args__", argsValue);
-        QStringList trace;
-        QJSValue res = engine->evaluate("__self__.clicked.apply(__self__, __args__);", "", 1, &trace);
-
-        if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
-        }
-
-
-        
-            return;
-          
-      }
-      else {
-        RListWidget::clicked(
-          index
-        );
-      }
-    }
-
-  void RListWidget_Base::activated(
-      const QModelIndex& index
-    ) {
-
-      //qDebug() << "RListWidget_Base::activated()";
-
-      //QJSValue f = self.prototype().property("activated");
-      QJSValue f = self.property("activated");
-      if (f.isCallable() /*&& !recFlag*/) {
-        
-
-
-        QJSEngine* engine = handler.getEngine();
-
-        QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QModelIndex(
-    handler, 
-    // non-copyable: false
-index
-  );
-
-
-        QJSValue argsValue = engine->newArray(args.length());
-        for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
-        }
-
-        engine->globalObject().setProperty("__self__", self);
-        engine->globalObject().setProperty("__args__", argsValue);
-        QStringList trace;
-        QJSValue res = engine->evaluate("__self__.activated.apply(__self__, __args__);", "", 1, &trace);
-
-        if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
-        }
-
-
-        
-            return;
-          
-      }
-      else {
-        RListWidget::activated(
-          index
-        );
-      }
-    }
-
-  void RListWidget_Base::entered(
-      const QModelIndex& index
-    ) {
-
-      //qDebug() << "RListWidget_Base::entered()";
-
-      //QJSValue f = self.prototype().property("entered");
-      QJSValue f = self.property("entered");
-      if (f.isCallable() /*&& !recFlag*/) {
-        
-
-
-        QJSEngine* engine = handler.getEngine();
-
-        QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QModelIndex(
-    handler, 
-    // non-copyable: false
-index
-  );
-
-
-        QJSValue argsValue = engine->newArray(args.length());
-        for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
-        }
-
-        engine->globalObject().setProperty("__self__", self);
-        engine->globalObject().setProperty("__args__", argsValue);
-        QStringList trace;
-        QJSValue res = engine->evaluate("__self__.entered.apply(__self__, __args__);", "", 1, &trace);
-
-        if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
-        }
-
-
-        
-            return;
-          
-      }
-      else {
-        RListWidget::entered(
-          index
-        );
-      }
-    }
-
   void RListWidget_Base::viewportEntered(
       
     ) {
@@ -896,7 +684,7 @@ height
 
   QSize RListWidget_Base::contentsSize(
       
-    ) {
+    ) const {
 
       //qDebug() << "RListWidget_Base::contentsSize()";
 
@@ -1358,7 +1146,7 @@ e
 
   int RListWidget_Base::horizontalOffset(
       
-    ) {
+    ) const {
 
       //qDebug() << "RListWidget_Base::horizontalOffset()";
 
@@ -1407,7 +1195,7 @@ e
 
   int RListWidget_Base::verticalOffset(
       
-    ) {
+    ) const {
 
       //qDebug() << "RListWidget_Base::verticalOffset()";
 
@@ -1456,7 +1244,7 @@ e
 
   QRect RListWidget_Base::rectForIndex(
       const QModelIndex& index
-    ) {
+    ) const {
 
       //qDebug() << "RListWidget_Base::rectForIndex()";
 
@@ -1618,7 +1406,7 @@ index
 
   bool RListWidget_Base::isIndexHidden(
       const QModelIndex& index
-    ) {
+    ) const {
 
       //qDebug() << "RListWidget_Base::isIndexHidden()";
 
@@ -1734,7 +1522,7 @@ previous
 
   QSize RListWidget_Base::viewportSizeHint(
       
-    ) {
+    ) const {
 
       //qDebug() << "RListWidget_Base::viewportSizeHint()";
 

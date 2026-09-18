@@ -659,6 +659,14 @@
         };
     
         // function 
+        RBlock.prototype.unloadXRef = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.unloadXRef");
+          return this.__PROXY__.unloadXRef(...args);
+        };
+    
+        // function 
         RBlock.prototype.getXRefLayerNames = function(...args) 
           
         {

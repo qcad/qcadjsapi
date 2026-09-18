@@ -861,6 +861,12 @@
             };
 
           
+            #ifdef QT_HELP_LIB
+
+          // downcasters from QHelpEngineCore to ...
+          
+            #endif
+          
 
           // downcasters from QItemDelegate to ...
           
@@ -1259,6 +1265,11 @@
             
               // downcasters from QFrame to RRulerQt
               RJSHelper::registerDowncaster_QFrame(new RJSDowncaster_QFrame_RRulerQt());
+            
+              #ifdef QT_HELP_LIB
+            // downcasters from QHelpEngineCore to ...
+            
+              #endif
             
             // downcasters from QItemDelegate to ...
             

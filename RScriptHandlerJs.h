@@ -107,6 +107,11 @@ private:
     // list of wrappers created for this script handler:
     // deleted when script handler is deleted:
     QSet<RJSWrapperObj*> wrappers;
+
+    // true while the auto load scripts run (init), see doScript.
+    // (appended last: keeps the offsets of the members above stable for
+    // plugins compiled against the inline accessors of this header)
+    bool autoLoading;
 };
 
 Q_DECLARE_METATYPE(RScriptHandlerJs*)

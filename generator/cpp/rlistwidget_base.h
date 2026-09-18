@@ -126,7 +126,7 @@ RListWidget_Base
     // calls JS implementation if available
     QMargins viewportMargins(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -225,82 +225,6 @@ RListWidget_Base
     protected:
     // implementation of protected function
     // calls JS implementation if available
-    void pressed(
-      const QModelIndex& index
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE void pressedPublic(
-      const QModelIndex& index
-    ) {
-      //qDebug() << "RListWidget_Base::pressedPublic()";
-      RListWidget::pressed(
-        index
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    void clicked(
-      const QModelIndex& index
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE void clickedPublic(
-      const QModelIndex& index
-    ) {
-      //qDebug() << "RListWidget_Base::clickedPublic()";
-      RListWidget::clicked(
-        index
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    void activated(
-      const QModelIndex& index
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE void activatedPublic(
-      const QModelIndex& index
-    ) {
-      //qDebug() << "RListWidget_Base::activatedPublic()";
-      RListWidget::activated(
-        index
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
-    void entered(
-      const QModelIndex& index
-    );
-  
-    public:
-    // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
-    // TODO: convert arguments to QJSValue:
-    Q_INVOKABLE void enteredPublic(
-      const QModelIndex& index
-    ) {
-      //qDebug() << "RListWidget_Base::enteredPublic()";
-      RListWidget::entered(
-        index
-      );
-    }
-  
-    protected:
-    // implementation of protected function
-    // calls JS implementation if available
     void viewportEntered(
       
     );
@@ -379,7 +303,7 @@ RListWidget_Base
     // calls JS implementation if available
     QSize contentsSize(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -534,7 +458,7 @@ RListWidget_Base
     // calls JS implementation if available
     int horizontalOffset(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -556,7 +480,7 @@ RListWidget_Base
     // calls JS implementation if available
     int verticalOffset(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -578,7 +502,7 @@ RListWidget_Base
     // calls JS implementation if available
     QRect rectForIndex(
       const QModelIndex& index
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -638,7 +562,7 @@ RListWidget_Base
     // calls JS implementation if available
     bool isIndexHidden(
       const QModelIndex& index
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
@@ -679,7 +603,7 @@ RListWidget_Base
     // calls JS implementation if available
     QSize viewportSizeHint(
       
-    );
+    ) const;
   
     public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):

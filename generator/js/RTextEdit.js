@@ -239,6 +239,38 @@ RTextEdit.AutoAll = RTextEdit_Wrapper.AutoAll;
   
       };
     
+      // function 
+      RTextEdit.prototype.loadResource = function() 
+        
+      {
+        //print("JS: RTextEdit.prototype.loadResource");
+        
+      if (arguments.length == 2) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.loadResource(
+                // call highest level JS implementation:
+                //return this.loadResourceBase(
+                
+                    return this.loadResourceSuper(
+                  arguments[0], arguments[1]
+                );
+              
+
+        //copyProperties(this, wrapper, RTextEdit);
+  }
+
+  
+  else {
+    
+        print("RTextEdit.loadResource(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+      };
+    
 
       // static functions:
       

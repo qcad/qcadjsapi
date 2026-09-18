@@ -231,6 +231,11 @@
         <parameters />
       </variant>
     </function>
+    <function name="checkDirtyXRefs">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="setClickMode">
       <variant return-type="void" access="public">
         <parameters>

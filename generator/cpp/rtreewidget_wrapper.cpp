@@ -154,9 +154,37 @@
 
   connect(
     getWrapped(), 
+    SIGNAL(pressed(const QModelIndex&)), 
+    this, 
+    SLOT(pressedEmitter(const QModelIndex&))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(clicked(const QModelIndex&)), 
+    this, 
+    SLOT(clickedEmitter(const QModelIndex&))
+  );
+
+  connect(
+    getWrapped(), 
     SIGNAL(doubleClicked(const QModelIndex&)), 
     this, 
     SLOT(doubleClickedEmitter(const QModelIndex&))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(activated(const QModelIndex&)), 
+    this, 
+    SLOT(activatedEmitter(const QModelIndex&))
+  );
+
+  connect(
+    getWrapped(), 
+    SIGNAL(entered(const QModelIndex&)), 
+    this, 
+    SLOT(enteredEmitter(const QModelIndex&))
   );
 
   connect(
@@ -21845,6 +21873,64 @@ QModelIndex a1_cpp;
               }
             
     // Class: RTreeWidget
+    // Function: pressed
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RTreeWidget_Wrapper::pressedEmitter(
+                const QModelIndex& index
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: index (QModelIndex)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QModelIndex(
+    handler, 
+    index
+  );
+
+
+                emit pressed(
+                  a1_js
+                );
+              }
+            
+    // Class: RTreeWidget
+    // Function: clicked
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RTreeWidget_Wrapper::clickedEmitter(
+                const QModelIndex& index
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: index (QModelIndex)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QModelIndex(
+    handler, 
+    index
+  );
+
+
+                emit clicked(
+                  a1_js
+                );
+              }
+            
+    // Class: RTreeWidget
     // Function: doubleClicked
     // Source: QAbstractItemView
     // Static: false
@@ -21869,6 +21955,64 @@ QModelIndex a1_cpp;
 
 
                 emit doubleClicked(
+                  a1_js
+                );
+              }
+            
+    // Class: RTreeWidget
+    // Function: activated
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RTreeWidget_Wrapper::activatedEmitter(
+                const QModelIndex& index
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: index (QModelIndex)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QModelIndex(
+    handler, 
+    index
+  );
+
+
+                emit activated(
+                  a1_js
+                );
+              }
+            
+    // Class: RTreeWidget
+    // Function: entered
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal emitter: called when signal is emitted from wrapped object:
+              void 
+              RTreeWidget_Wrapper::enteredEmitter(
+                const QModelIndex& index
+              ) {
+                // convert cpp parameters to js:
+                
+  // parameter: index (QModelIndex)
+  
+
+
+  QJSValue a1_js = RJSHelper::cpp2js_QModelIndex(
+    handler, 
+    index
+  );
+
+
+                emit entered(
                   a1_js
                 );
               }

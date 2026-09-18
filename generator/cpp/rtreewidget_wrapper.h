@@ -7662,6 +7662,48 @@ InternalMove = RTreeWidget::InternalMove,
               ;
             
     // Class: RTreeWidget
+    // Function: pressed
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void pressed(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void pressedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: RTreeWidget
+    // Function: clicked
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void clicked(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void clickedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: RTreeWidget
     // Function: doubleClicked
     // Source: QAbstractItemView
     // Static: false
@@ -7679,6 +7721,48 @@ InternalMove = RTreeWidget::InternalMove,
               // called when signal is emitted from wrapped class:
               public slots:
               void doubleClickedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: RTreeWidget
+    // Function: activated
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void activated(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void activatedEmitter(
+                const QModelIndex& index
+              );
+            
+    // Class: RTreeWidget
+    // Function: entered
+    // Source: QAbstractItemView
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              // signal forwarded from wrapped class:
+              signals:
+              void entered(
+                
+  const QJSValue& 
+  a1
+              );
+
+              // called when signal is emitted from wrapped class:
+              public slots:
+              void enteredEmitter(
                 const QModelIndex& index
               );
             
