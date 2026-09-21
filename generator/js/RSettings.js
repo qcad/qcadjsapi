@@ -3978,6 +3978,34 @@
       
 
         // static function 
+        RSettings.setAllowMouseMoveInterruptionsOverride = function() 
+          
+        {
+          //print("JS: RSettings.setAllowMouseMoveInterruptionsOverride");
+          
+      if (arguments.length == 1) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.setAllowMouseMoveInterruptionsOverride(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.setAllowMouseMoveInterruptionsOverride(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RSettings.getAllowMouseMoveInterruptions = function() 
           
         {

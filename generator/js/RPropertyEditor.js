@@ -268,6 +268,38 @@
       };
     
       // function 
+      RPropertyEditor.prototype.getFixedCustomPropertyNames = function() 
+        
+      {
+        //print("JS: RPropertyEditor.prototype.getFixedCustomPropertyNames");
+        
+      if (arguments.length == 1) {
+    
+                // calling wrapper:
+                self = this;
+                //return this.wrapper.getFixedCustomPropertyNames(
+                // call highest level JS implementation:
+                //return this.getFixedCustomPropertyNamesBase(
+                
+                    return this.getFixedCustomPropertyNamesSuper(
+                  arguments[0]
+                );
+              
+
+        //copyProperties(this, wrapper, RPropertyEditor);
+  }
+
+  
+  else {
+    
+        print("RPropertyEditor.getFixedCustomPropertyNames(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+      };
+    
+      // function 
       RPropertyEditor.prototype.updateGui = function() 
         
       {

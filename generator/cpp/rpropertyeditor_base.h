@@ -254,6 +254,30 @@ RPropertyEditor_Base
         );
       }
     
+    public:
+    // implementation of virtual public function
+    // calls JS implementation if available
+    virtual QStringList getFixedCustomPropertyNames(
+      const QList<RS::EntityType>& objectTypes
+    )
+    
+    ;
+
+    
+      // implementation of virtual public function
+      // always calls super implementation
+      virtual QStringList getFixedCustomPropertyNamesSup(
+        const QList<RS::EntityType>& objectTypes
+      )
+      
+      {
+        
+          return
+        RPropertyEditor::getFixedCustomPropertyNames(
+          objectTypes
+        );
+      }
+    
 
       // public pure-virtual functions:
       

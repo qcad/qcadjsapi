@@ -2386,7 +2386,10 @@ bool a5_cpp;
     // preceding Parameters: -1
 
                 QJSValue 
-              RPropertyEditor_Wrapper::getFixedCustomPropertyNames
+              RPropertyEditor_Wrapper:: 
+                      // function is public, virtual and overridable, this function can be called from JS implementation to call implementation of super class: 
+                      getFixedCustomPropertyNamesSuper
+                    
               (
                 
   const QJSValue& 
@@ -2426,15 +2429,40 @@ QList<RS::EntityType> a1_cpp;
             // non-static member function:
             // call function of wrapped object:
             
-                // call function of C++ class:
-                RPropertyEditor* w = getWrapped();
-                QStringList res = 
+                // call function of RPropertyEditor_Base class as 
+                // function has postfix inheritable class, overridable function):
+                RPropertyEditor_Base* wb = getWrappedBase();
+                if (wb==nullptr) {
+                  qWarning() << "RPropertyEditor::getFixedCustomPropertyNames: using base but wrapper is not of type of base class";
+                  handler.trace();
+                  return QJSValue();
+                }
+
+                QStringList res;
                     
-                w->getFixedCustomPropertyNames(
-                  a1_cpp
+                    // this is the wrapper that created the object
+                    // call the base class implementation as this function was 
+                    // called from the JS implementation of the same function to call
+                    // the base class implementation
+                    if (wrappedCreated) {
+                      res =
+                      wb->getFixedCustomPropertyNamesSup(
+                        a1_cpp
     
-                );
-              
+                      );
+                    }
+
+                    // this is a wrapper that was created for an existing object
+                    // call the JS implementation as this function was 
+                    // called from another JS function
+                    else {
+                      res =
+                      wb->getFixedCustomPropertyNames(
+                        a1_cpp
+    
+                      );
+                    }
+                  
                 //setRecFlag(false);
               
             // return type: QStringList

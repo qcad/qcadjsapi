@@ -827,6 +827,13 @@
         <parameters />
       </variant>
     </function>
+    <function name="setAllowMouseMoveInterruptionsOverride" static="true">
+      <variant return-type="void" static="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
     <function name="getAllowMouseMoveInterruptions" static="true">
       <variant return-type="bool" access="public">
         <parameters />

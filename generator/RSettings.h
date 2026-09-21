@@ -1,0 +1,1 @@
+/Users/andrew/data/QCAD4/qcad/src/core/RSettings.h

@@ -687,6 +687,75 @@ document
         
     }
 
+  QStringList RPropertyEditor_Base::getFixedCustomPropertyNames(
+      const QList<RS::EntityType>& objectTypes
+    ) 
+    
+    {
+
+      //qDebug() << "RPropertyEditor_Base::getFixedCustomPropertyNames()";
+
+      // make sure we don't call same function (recursion):
+      // only call JS function implementation
+
+      QJSEngine* engine = handler.getEngine();
+
+      //QJSValue f = self.prototype().property("getFixedCustomPropertyNames");
+      QJSValue f = self.property("getFixedCustomPropertyNames");
+      if (f.isCallable() /*&& !recFlag*/) {
+        QJSValueList args;
+        
+
+  args << RJSHelper_qcad::cpp2js_QList_RS_EntityType(
+    handler, 
+    // non-copyable: false
+objectTypes
+  );
+
+
+        QJSValue argsValue = engine->newArray(args.length());
+        for (int i=0; i<args.length(); i++) {
+          argsValue.setProperty(i, args[i]);
+        }
+
+        engine->globalObject().setProperty("__self__", self);
+        engine->globalObject().setProperty("__args__", argsValue);
+        //engine->evaluate("__self__.getFixedCustomPropertyNames();");
+        QStringList trace;
+        QJSValue res = engine->evaluate("__self__.getFixedCustomPropertyNames.apply(__self__, __args__);", "", 1, &trace);
+
+        if (res.isError()) {
+          qWarning() << "exception: " << res.toString();
+          for (int i=0; i<trace.length(); i++) {
+            qWarning() << trace[i];
+          }
+        }
+
+        // does not provide back trace in case of error:
+        //QJSValue res = f.callWithInstance(self, args);
+        //if (res.isError()) {
+        //  qWarning() << "Error while calling getFixedCustomPropertyNames:" << res.toString();
+        //  engine->throwError("exception in: RPropertyEditor::getFixedCustomPropertyNames:" + res.toString());
+        //}
+
+        
+            return RJSHelper::js2cpp_QStringList(handler, res);
+          
+      }
+
+      //if (!recFlag) {
+        // function not implemented in JS: exception
+        engine->throwError(QString("function not implemented in JS class: RPropertyEditor::getFixedCustomPropertyNames"));
+      //}
+
+      
+          // call implementation of original class:
+          return RPropertyEditor::getFixedCustomPropertyNames(
+            objectTypes
+          );
+        
+    }
+
   
 
       // public pure-virtual functions:

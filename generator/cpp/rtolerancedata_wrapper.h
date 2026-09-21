@@ -1665,6 +1665,27 @@
               ;
             
     // Class: RToleranceData
+    // Function: getFields
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getFields
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RToleranceData
     // Function: getText
     // Source: 
     // Static: false

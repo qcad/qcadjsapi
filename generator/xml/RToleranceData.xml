@@ -43,13 +43,11 @@
         </parameters>
       </variant>
     </function>
-    <!--
     <function name="getFields">
       <variant return-type="QList&lt;QStringList&gt;" const="true" access="public">
         <parameters />
       </variant>
     </function>
-    -->
     <function name="getText">
       <variant return-type="QString" const="true" access="public">
         <parameters />

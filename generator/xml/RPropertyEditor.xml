@@ -52,7 +52,7 @@
       </variant>
     </function>
     <function name="getFixedCustomPropertyNames">
-      <variant return-type="QStringList" virtual="true" access="public">
+      <variant return-type="QStringList" virtual="true" overridable="true" access="public">
         <parameters>
           <parameter const="true" type="QList&lt;RS::EntityType&gt;" modifier="&amp;" name="objectTypes" />
         </parameters>

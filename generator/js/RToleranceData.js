@@ -641,6 +641,14 @@
         };
     
         // function 
+        RToleranceData.prototype.getFields = function(...args) 
+          
+        {
+          //print("JS: RToleranceData.prototype.getFields");
+          return this.__PROXY__.getFields(...args);
+        };
+    
+        // function 
         RToleranceData.prototype.getText = function(...args) 
           
         {

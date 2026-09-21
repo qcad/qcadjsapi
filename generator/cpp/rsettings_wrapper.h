@@ -2999,6 +2999,29 @@
               ;
             
     // Class: RSettings
+    // Function: setAllowMouseMoveInterruptionsOverride
+    // Source: 
+    // Static: true
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setAllowMouseMoveInterruptionsOverride
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RSettings
     // Function: getAllowMouseMoveInterruptions
     // Source: 
     // Static: true

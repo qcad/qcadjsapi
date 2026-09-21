@@ -818,7 +818,10 @@
               Q_INVOKABLE 
               
                   QJSValue 
-                  getFixedCustomPropertyNames
+                   
+                      // function is public, virtual and overridable, this function can be called from JS implementation to call implementation of super class: 
+                      getFixedCustomPropertyNamesSuper
+                    
               (
 
                 

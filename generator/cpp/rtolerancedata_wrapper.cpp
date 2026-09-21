@@ -4895,6 +4895,63 @@ RVector a1_cpp;
               }
             
     // Class: RToleranceData
+    // Function: getFields
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RToleranceData_Wrapper::getFields
+              (
+                
+              ) 
+              
+                const
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RToleranceData* w = getWrapped();
+                QList<QStringList> res = 
+                    
+                w->getFields(
+                  
+                );
+              
+            // return type: QList<QStringList>
+
+            return RJSHelper::cpp2js_QList_QStringList(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getFields";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RToleranceData
     // Function: getText
     // Source: 
     // Static: false
