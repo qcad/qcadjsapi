@@ -2780,6 +2780,8 @@ RLayer::Id a2_cpp;
   )
 
    && RJSHelper::is_QVariant(handler, a2
+    , true
+  
   )
 
    && RJSHelper_qcad::is_RS_MetaType(handler, a3

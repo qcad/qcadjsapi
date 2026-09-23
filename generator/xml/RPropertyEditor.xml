@@ -88,7 +88,7 @@
       <variant return-type="void" access="public">
         <parameters>
           <parameter const="false" type="RPropertyTypeId" modifier="" name="propertyTypeId" />
-          <parameter const="false" type="QVariant" modifier="" name="propertyValue" />
+          <parameter const="false" type="QVariant" modifier="" name="propertyValue" accept-undefined="true" />
           <parameter const="false" type="RS::MetaType" modifier="" name="typeHint" default="RS::UnknownType" />
         </parameters>
       </variant>
