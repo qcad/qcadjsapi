@@ -74,6 +74,18 @@
         </parameters>
       </variant>
     </function>
+    <function name="isOwnedByReference">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setOwnedByReference">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="on" />
+        </parameters>
+      </variant>
+    </function>
     <function name="isAnonymous">
       <variant return-type="bool" const="true" access="public">
         <parameters />

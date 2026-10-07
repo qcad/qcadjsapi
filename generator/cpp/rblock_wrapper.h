@@ -1390,6 +1390,50 @@
               ;
             
     // Class: RBlock
+    // Function: isOwnedByReference
+    // Source: 
+    // Static: false
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  isOwnedByReference
+              (
+
+                
+              )
+              
+                const
+              
+              ;
+            
+    // Class: RBlock
+    // Function: setOwnedByReference
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  setOwnedByReference
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RBlock
     // Function: isAnonymous
     // Source: 
     // Static: false

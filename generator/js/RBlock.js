@@ -515,6 +515,22 @@
         };
     
         // function 
+        RBlock.prototype.isOwnedByReference = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.isOwnedByReference");
+          return this.__PROXY__.isOwnedByReference(...args);
+        };
+    
+        // function 
+        RBlock.prototype.setOwnedByReference = function(...args) 
+          
+        {
+          //print("JS: RBlock.prototype.setOwnedByReference");
+          return this.__PROXY__.setOwnedByReference(...args);
+        };
+    
+        // function 
         RBlock.prototype.isAnonymous = function(...args) 
           
         {
