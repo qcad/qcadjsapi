@@ -191,6 +191,8 @@
     <file alias="generator/js/RPolyline.js">generator/js/RPolyline.js</file>
     <file alias="generator/js/RPolylineData.js">generator/js/RPolylineData.js</file>
     <file alias="generator/js/RPolylineEntity.js">generator/js/RPolylineEntity.js</file>
+    <file alias="generator/js/RPolyMeshData.js">generator/js/RPolyMeshData.js</file>
+    <file alias="generator/js/RPolyMeshEntity.js">generator/js/RPolyMeshEntity.js</file>
     <file alias="generator/js/RPreferencesListener.js">generator/js/RPreferencesListener.js</file>
     <file alias="generator/js/RPreferencesListenerAdapter.js">generator/js/RPreferencesListenerAdapter.js</file>
     <file alias="generator/js/RProgressHandler.js">generator/js/RProgressHandler.js</file>

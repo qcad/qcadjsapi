@@ -151,6 +151,7 @@
   <class name="RExplodable" />
   <class name="RExporter" />
   <class name="RFaceEntity" />
+  <class name="RPolyMeshEntity" />
   <class name="RFileExporter" />
   <class name="RFileExporterFactory" />
   <class name="RFileImporter" />

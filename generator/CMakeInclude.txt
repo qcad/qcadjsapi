@@ -385,6 +385,10 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rpolylinedata_wrapper.h
     generator/cpp/rpolylineentity_base.h
     generator/cpp/rpolylineentity_wrapper.h
+    generator/cpp/rpolymeshdata_base.h
+    generator/cpp/rpolymeshdata_wrapper.h
+    generator/cpp/rpolymeshentity_base.h
+    generator/cpp/rpolymeshentity_wrapper.h
     generator/cpp/rpreferenceslistener_base.h
     generator/cpp/rpreferenceslistener_wrapper.h
     generator/cpp/rpreferenceslisteneradapter_base.h
@@ -971,6 +975,10 @@ target_sources(qcadjsapi PUBLIC
     generator/cpp/rpolylinedata_wrapper.cpp
     generator/cpp/rpolylineentity_base.cpp
     generator/cpp/rpolylineentity_wrapper.cpp
+    generator/cpp/rpolymeshdata_base.cpp
+    generator/cpp/rpolymeshdata_wrapper.cpp
+    generator/cpp/rpolymeshentity_base.cpp
+    generator/cpp/rpolymeshentity_wrapper.cpp
     generator/cpp/rpreferenceslistener_base.cpp
     generator/cpp/rpreferenceslistener_wrapper.cpp
     generator/cpp/rpreferenceslisteneradapter_base.cpp

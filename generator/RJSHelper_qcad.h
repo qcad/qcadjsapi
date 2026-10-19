@@ -1189,6 +1189,18 @@
           virtual RPolylineEntity* castToBase(int t, void* vp) = 0;
         };
         
+        // Base class for basecasters that can cast void* to base class RPolyMeshData:
+        class RJSBasecaster_RPolyMeshData {
+        public:
+          virtual RPolyMeshData* castToBase(int t, void* vp) = 0;
+        };
+        
+        // Base class for basecasters that can cast void* to base class RPolyMeshEntity:
+        class RJSBasecaster_RPolyMeshEntity {
+        public:
+          virtual RPolyMeshEntity* castToBase(int t, void* vp) = 0;
+        };
+        
         // Base class for basecasters that can cast void* to base class RPreferencesListener:
         class RJSBasecaster_RPreferencesListener {
         public:
@@ -5836,6 +5848,49 @@
               }
             };
           
+          // implementation of base casters that cast RPolyMeshData to base classes:
+          
+            // implementation of base casters that casts RPolyMeshData to REntityData
+            class RJSBasecaster_RPolyMeshData_REntityData : public RJSBasecaster_REntityData {
+            public:
+              virtual REntityData* castToBase(int t, void* vp) {
+                if (t==RJSType_RPolyMeshData::getIdStatic()) {
+                  return (REntityData*)(RPolyMeshData*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+          // implementation of base casters that cast RPolyMeshEntity to base classes:
+          
+            // implementation of base casters that casts RPolyMeshEntity to RObject
+            class RJSBasecaster_RPolyMeshEntity_RObject : public RJSBasecaster_RObject {
+            public:
+              virtual RObject* castToBase(int t, void* vp) {
+                if (t==RJSType_RPolyMeshEntity::getIdStatic()) {
+                  return (RObject*)(RPolyMeshEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
+            // implementation of base casters that casts RPolyMeshEntity to REntity
+            class RJSBasecaster_RPolyMeshEntity_REntity : public RJSBasecaster_REntity {
+            public:
+              virtual REntity* castToBase(int t, void* vp) {
+                if (t==RJSType_RPolyMeshEntity::getIdStatic()) {
+                  return (REntity*)(RPolyMeshEntity*)vp;
+                }
+                else {
+                  return nullptr;
+                }
+              }
+            };
+          
           // implementation of base casters that cast RPreferencesListener to base classes:
           
           // implementation of base casters that cast RPreferencesListenerAdapter to base classes:
@@ -8004,6 +8059,10 @@
       static RFaceEntity::Id js2cpp_RFaceEntity_Id(RJSApi& handler, const QJSValue& v);
       static bool is_RFaceEntity_Id(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_RPolyMeshEntity_Id(RJSApi& handler, RPolyMeshEntity::Id v);
+      static RPolyMeshEntity::Id js2cpp_RPolyMeshEntity_Id(RJSApi& handler, const QJSValue& v);
+      static bool is_RPolyMeshEntity_Id(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_RGraphicsSceneDrawable_Mode(RJSApi& handler, RGraphicsSceneDrawable::Mode v);
       static RGraphicsSceneDrawable::Mode js2cpp_RGraphicsSceneDrawable_Mode(RJSApi& handler, const QJSValue& v);
       static bool is_RGraphicsSceneDrawable_Mode(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -8424,6 +8483,10 @@
       static QSharedPointer<RFaceEntity> js2cpp_QSharedPointer_RFaceEntity(RJSApi& handler, const QJSValue& v);
       static bool is_QSharedPointer_RFaceEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
+      static QJSValue cpp2js_QSharedPointer_RPolyMeshEntity(RJSApi& handler, const QSharedPointer<RPolyMeshEntity>& v);
+      static QSharedPointer<RPolyMeshEntity> js2cpp_QSharedPointer_RPolyMeshEntity(RJSApi& handler, const QJSValue& v);
+      static bool is_QSharedPointer_RPolyMeshEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
       static QJSValue cpp2js_QSharedPointer_RHatchEntity(RJSApi& handler, const QSharedPointer<RHatchEntity>& v);
       static QSharedPointer<RHatchEntity> js2cpp_QSharedPointer_RHatchEntity(RJSApi& handler, const QJSValue& v);
       static bool is_QSharedPointer_RHatchEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
@@ -8639,6 +8702,11 @@
       static QJSValue cpp2js_RFaceData(RJSApi& handler, const RFaceData& v);
       static RFaceData js2cpp_RFaceData(RJSApi& handler, const QJSValue& v);
       static bool is_RFaceData(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RPolyMeshData(RJSApi& handler, const RPolyMeshData* v);
+      static QJSValue cpp2js_RPolyMeshData(RJSApi& handler, const RPolyMeshData& v);
+      static RPolyMeshData js2cpp_RPolyMeshData(RJSApi& handler, const QJSValue& v);
+      static bool is_RPolyMeshData(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RFileCache(RJSApi& handler, const RFileCache* v);
       static QJSValue cpp2js_RFileCache(RJSApi& handler, const RFileCache& v);
@@ -9169,6 +9237,10 @@
       static QJSValue cpp2js_RFaceEntity(RJSApi& handler, RFaceEntity* v);
       static RFaceEntity* js2cpp_RFaceEntity_ptr(RJSApi& handler, const QJSValue& v);
       static bool is_RFaceEntity_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_RPolyMeshEntity(RJSApi& handler, RPolyMeshEntity* v);
+      static RPolyMeshEntity* js2cpp_RPolyMeshEntity_ptr(RJSApi& handler, const QJSValue& v);
+      static bool is_RPolyMeshEntity_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_RFileExporter(RJSApi& handler, RFileExporter* v);
       static RFileExporter* js2cpp_RFileExporter_ptr(RJSApi& handler, const QJSValue& v);
@@ -9855,6 +9927,10 @@
       static QJSValue cpp2js_QList_RColor(RJSApi& handler, const QList<RColor>& v);
       static QList<RColor> js2cpp_QList_RColor(RJSApi& handler, const QJSValue& v);
       static bool is_QList_RColor(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
+    
+      static QJSValue cpp2js_QList_RPolyMeshData(RJSApi& handler, const QList<RPolyMeshData>& v);
+      static QList<RPolyMeshData> js2cpp_QList_RPolyMeshData(RJSApi& handler, const QJSValue& v);
+      static bool is_QList_RPolyMeshData(RJSApi& handler, const QJSValue& v, bool acceptUndefined = false);
     
       static QJSValue cpp2js_QList_REntity_Id(RJSApi& handler, const QList<REntity::Id>& v);
       static QList<REntity::Id> js2cpp_QList_REntity_Id(RJSApi& handler, const QJSValue& v);

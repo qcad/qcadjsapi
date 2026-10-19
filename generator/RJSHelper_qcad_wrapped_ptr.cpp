@@ -457,6 +457,10 @@
         
           #include "rpolylineentity_wrapper.h"
         
+          #include "rpolymeshdata_wrapper.h"
+        
+          #include "rpolymeshentity_wrapper.h"
+        
           #include "rpreferenceslistener_wrapper.h"
         
           #include "rpreferenceslisteneradapter_wrapper.h"
@@ -4640,6 +4644,14 @@
                 }
             }
           
+            // downcast to RPolyMeshEntity:
+            {
+                RPolyMeshEntity* o = dynamic_cast<RPolyMeshEntity*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RPolyMeshEntity(handler, o);
+                }
+            }
+          
             // downcast to RRayEntity:
             {
                 RRayEntity* o = dynamic_cast<RRayEntity*>(v);
@@ -4823,6 +4835,14 @@
                 RImageData* o = dynamic_cast<RImageData*>(v);
                 if (o!=nullptr) {
                     return RJSHelper_qcad::cpp2js_RImageData(handler, o);
+                }
+            }
+          
+            // downcast to RPolyMeshData:
+            {
+                RPolyMeshData* o = dynamic_cast<RPolyMeshData*>(v);
+                if (o!=nullptr) {
+                    return RJSHelper_qcad::cpp2js_RPolyMeshData(handler, o);
                 }
             }
           
@@ -5395,6 +5415,80 @@
               return false;
           }
           return fun.call(QJSValueList() << QJSValue(RJSType_RFaceEntity::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper_qcad::cpp2js_RPolyMeshEntity(RJSApi& handler, RPolyMeshEntity* v) {
+
+          
+
+          QJSEngine* engine = handler.getEngine();
+          RPolyMeshEntity_Wrapper* ret = new RPolyMeshEntity_Wrapper(handler, v, false);
+
+          // JS: new RPolyMeshEntity('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RPolyMeshEntity");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RPolyMeshEntity is undefined. Use RPolyMeshEntity_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RPolyMeshEntity('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RPolyMeshEntity(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+
+          //return engine->newQObject(ret);
+      }
+
+      RPolyMeshEntity* RJSHelper_qcad::js2cpp_RPolyMeshEntity_ptr(RJSApi& handler, const QJSValue& v) {
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (jwrapper.isNumber() && jwrapper.toInt()==0) {
+              // 0 is allowed for pointers (null ptr):
+              return nullptr;
+          }
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RPolyMeshEntity: not a QObject";
+              return nullptr;
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          //RPolyMeshEntity_Wrapper* wrapper = qobject_cast<RPolyMeshEntity_Wrapper*>(obj);
+          //RPolyMeshEntity_Wrapper* wrapper = dynamic_cast<RPolyMeshEntity_Wrapper*>(obj);
+          //RPolyMeshEntity_Wrapper* wrapper = (RPolyMeshEntity_Wrapper*)(obj);
+          //RPolyMeshEntity_Wrapper* wrapper = getWrapper<RPolyMeshEntity_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RPolyMeshEntity_ptr: no wrapper";
+              handler.trace();
+              return nullptr;
+          }
+          //return getWrapped_RPolyMeshEntity(wrapper);
+          return RPolyMeshEntity_Wrapper::getWrappedBase(wrapper);
+          //return wrapper->getWrapped();
+      }
+
+      bool RJSHelper_qcad::is_RPolyMeshEntity_ptr(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          if (v.isNumber()) {
+              return v.toInt()==0;
+          }
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RPolyMeshEntity: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              // type is for example string, number, etc.:
+              return false;
+          }
+          return fun.call(QJSValueList() << QJSValue(RJSType_RPolyMeshEntity::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper_qcad::cpp2js_RFileExporter(RJSApi& handler, RFileExporter* v) {

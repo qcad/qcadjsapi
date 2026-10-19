@@ -457,6 +457,10 @@
         
           #include "rpolylineentity_wrapper.h"
         
+          #include "rpolymeshdata_wrapper.h"
+        
+          #include "rpolymeshentity_wrapper.h"
+        
           #include "rpreferenceslistener_wrapper.h"
         
           #include "rpreferenceslisteneradapter_wrapper.h"
@@ -2688,6 +2692,81 @@
               return acceptUndefined;
           }
           //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RFaceEntity_Type;
+          return !v.isUndefined();
+      }
+    
+      QJSValue RJSHelper_qcad::cpp2js_QSharedPointer_RPolyMeshEntity(RJSApi& handler, const QSharedPointer<RPolyMeshEntity>& v) {
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //return engine->evaluate("new RPolyMeshEntity('__GOT_WRAPPER__', wrapper);");
+
+          // attempt to downcast to specific type (non-copyable shared pointer):
+          
+
+          QJSEngine* engine = handler.getEngine();
+          RPolyMeshEntity_Wrapper* ret = new RPolyMeshEntity_Wrapper(handler, v);
+
+          // JS: new RPolyMeshEntity('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RPolyMeshEntity");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RPolyMeshEntity is undefined. Use RPolyMeshEntity_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          return cl.callAsConstructor(args);
+      }
+
+      QSharedPointer<RPolyMeshEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RPolyMeshEntity(RJSApi& handler, const QJSValue& v) {
+
+          RPolyMeshEntity_Wrapper* wrapper = getWrapper<RPolyMeshEntity_Wrapper>(v);
+          if (wrapper==nullptr) {
+              
+              // wrapper from another module (e.g. a plugin entity type):
+              // extract through the registered basecasters and clone on the fly:
+              {
+                  RJSWrapper* rw = getWrapperRJSWrapper(v);
+                  if (rw!=nullptr) {
+                      RPolyMeshEntity* o = RPolyMeshEntity_Wrapper::getWrappedBase(rw);
+                      if (o!=nullptr) {
+                          return o->clone().dynamicCast<RPolyMeshEntity>();
+                      }
+                  }
+              }
+              
+              qWarning() << "js2cpp_QSharedPointer_RPolyMeshEntity: no wrapper";
+              handler.trace();
+              return QSharedPointer<RPolyMeshEntity>();
+          }
+          //return QSharedPointer<RPolyMeshEntity>(getWrapped_RPolyMeshEntity(wrapper));
+          if (wrapper->hasWrappedSp()) {
+              return wrapper->getWrappedSp();
+          }
+          else if (wrapper->getWrapped()==nullptr) {
+              return QSharedPointer<RPolyMeshEntity>();
+          }
+          else {
+              // wrapper of normal pointer, create QSharedPointer on the fly over clone of object:
+              //return QSharedPointer<RPolyMeshEntity>(wrapper->getWrappedClone());
+              //return QSharedPointer<RPolyMeshEntity>(wrapper->getWrapped()->clone());
+              //qWarning() << "js2cpp_QSharedPointer_RPolyMeshEntity: object cannot be cloned";
+              //return QSharedPointer<RPolyMeshEntity>();
+
+              
+                  // create clone on the fly:
+                  //return QSharedPointer<RPolyMeshEntity>((RPolyMeshEntity*)wrapper->getWrapped()->clone());
+                  //return QSharedPointer<RPolyMeshEntity>(wrapper->getWrapped()->clone());
+                  return wrapper->getWrapped()->clone().dynamicCast<RPolyMeshEntity>();
+                
+          }
+      }
+
+      bool RJSHelper_qcad::is_QSharedPointer_RPolyMeshEntity(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //return v.property("getType").call().toInt()==RJSType::QSharedPointer_RPolyMeshEntity_Type;
           return !v.isUndefined();
       }
     

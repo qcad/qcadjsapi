@@ -457,6 +457,10 @@
         
           #include "rpolylineentity_wrapper.h"
         
+          #include "rpolymeshdata_wrapper.h"
+        
+          #include "rpolymeshentity_wrapper.h"
+        
           #include "rpreferenceslistener_wrapper.h"
         
           #include "rpreferenceslisteneradapter_wrapper.h"
@@ -3455,6 +3459,122 @@
           }
 
           return fun.call(QJSValueList() << QJSValue(RJSType_RFaceData::getIdStatic())).toBool();
+      }
+    
+      QJSValue RJSHelper_qcad::cpp2js_RPolyMeshData(RJSApi& handler, const RPolyMeshData* v) {
+          QJSEngine* engine = handler.getEngine();
+          RPolyMeshData_Wrapper* ret;
+
+          if (v==nullptr) {
+              ret = new RPolyMeshData_Wrapper(handler, nullptr, false);
+          }
+          else {
+              // wrapper takes ownership of RPolyMeshData object:
+              ret = new RPolyMeshData_Wrapper(handler, new RPolyMeshData(*v), true);
+          }
+
+          // JS: new RPolyMeshData('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RPolyMeshData");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RPolyMeshData is undefined. Use RPolyMeshData_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RPolyMeshData('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RPolyMeshData(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      QJSValue RJSHelper_qcad::cpp2js_RPolyMeshData(RJSApi& handler, const RPolyMeshData& v) {
+          QJSEngine* engine = handler.getEngine();
+          // wrapper takes ownership of the RPolyMeshData object:
+          RPolyMeshData_Wrapper* ret = new RPolyMeshData_Wrapper(handler, new RPolyMeshData(v), true);
+
+          // JS: new RPolyMeshData('__GOT_WRAPPER__', wrapper)
+          QJSValue cl = engine->globalObject().property("RPolyMeshData");
+          if (cl.isUndefined()) {
+              qWarning() << "Class RPolyMeshData is undefined. Use RPolyMeshData_Wrapper::init().";
+          }
+          QJSValueList args;
+          args.append(QJSValue("__GOT_WRAPPER__"));
+          args.append(QJSValue(false));
+          args.append(engine->newQObject(ret));
+          QJSValue r = cl.callAsConstructor(args);
+
+          //engine->globalObject().setProperty("wrapper", engine->newQObject(ret));
+          //QJSValue r = engine->evaluate("new RPolyMeshData('__GOT_WRAPPER__', wrapper);");
+
+          if (r.isError()) {
+              qWarning()
+                      << "Uncaught exception in new RPolyMeshData(wrapper)"
+                      << ":" << r.toString();
+          }
+          return r;
+      }
+
+      RPolyMeshData RJSHelper_qcad::js2cpp_RPolyMeshData(RJSApi& handler, const QJSValue& v) {
+          /*
+          RPolyMeshData_Wrapper* wrapper = getWrapper<RPolyMeshData_Wrapper>(v);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RPolyMeshData: no wrapper";
+              handler.trace();
+              Q_ASSERT(false);
+              return RPolyMeshData();
+          }
+          //return *(RPolyMeshData*)wrapper->getWrappedVoid();
+          RPolyMeshData* ret = wrapper->getWrapped();
+          if (ret==nullptr) {
+              qWarning() << "js2cpp_RPolyMeshData: wrapped pointer is NULL";
+              return RPolyMeshData();
+          }
+          return *ret;
+          */
+
+          QJSValue jwrapper = getWrapperQJSValue(v);
+          if (!jwrapper.isQObject()) {
+              //qWarning() << "js2cpp_RPolyMeshData: not a QObject";
+              return RPolyMeshData();
+          }
+          QObject* obj = jwrapper.toQObject();
+          RJSWrapper* wrapper = dynamic_cast<RJSWrapper*>(obj);
+          if (wrapper==nullptr) {
+              qWarning() << "js2cpp_RPolyMeshData_ptr: no wrapper";
+              handler.trace();
+              return RPolyMeshData();
+          }
+          //RPolyMeshData* ret = getWrapped_RPolyMeshData(wrapper);
+          RPolyMeshData* ret = RPolyMeshData_Wrapper::getWrappedBase(wrapper);
+          if (ret==nullptr) {
+              return RPolyMeshData();
+          }
+          return *ret;
+      }
+
+      bool RJSHelper_qcad::is_RPolyMeshData(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          //QJSValue fun = v.property("getType");
+          QJSValue fun = v.property("isOfObjectType");
+          if (fun.isUndefined() || !fun.isCallable()) {
+              //qDebug() << "RJSHelper_qcad::is_RPolyMeshData: cannot get type of JS object";
+              //engine->evaluate("console.trace()");
+              //return v.isObject();
+              // type is for example string, number, etc.:
+              return false;
+          }
+
+          return fun.call(QJSValueList() << QJSValue(RJSType_RPolyMeshData::getIdStatic())).toBool();
       }
     
       QJSValue RJSHelper_qcad::cpp2js_RFileCache(RJSApi& handler, const RFileCache* v) {

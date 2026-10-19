@@ -169,6 +169,7 @@
 #include "generator/cpp/rdimensionentity_wrapper.h"
 #include "generator/cpp/rellipseentity_wrapper.h"
 #include "generator/cpp/rfaceentity_wrapper.h"
+#include "generator/cpp/rpolymeshentity_wrapper.h"
 #include "generator/cpp/rhatchentity_wrapper.h"
 #include "generator/cpp/rimageentity_wrapper.h"
 #include "generator/cpp/rleaderentity_wrapper.h"
@@ -203,6 +204,7 @@
 #include "generator/cpp/rdimensiondata_wrapper.h"
 #include "generator/cpp/rellipsedata_wrapper.h"
 #include "generator/cpp/rfacedata_wrapper.h"
+#include "generator/cpp/rpolymeshdata_wrapper.h"
 #include "generator/cpp/rhatchdata_wrapper.h"
 #include "generator/cpp/rimagedata_wrapper.h"
 #include "generator/cpp/rleaderdata_wrapper.h"
@@ -724,6 +726,7 @@ void RScriptHandlerJs::init(bool main) {
     RDimensionEntity_Wrapper::init(*rjsapi);
     REllipseEntity_Wrapper::init(*rjsapi);
     RFaceEntity_Wrapper::init(*rjsapi);
+    RPolyMeshEntity_Wrapper::init(*rjsapi);
     RHatchEntity_Wrapper::init(*rjsapi);
     RImageEntity_Wrapper::init(*rjsapi);
     RLeaderEntity_Wrapper::init(*rjsapi);
@@ -759,6 +762,7 @@ void RScriptHandlerJs::init(bool main) {
     RDimensionData_Wrapper::init(*rjsapi);
     REllipseData_Wrapper::init(*rjsapi);
     RFaceData_Wrapper::init(*rjsapi);
+    RPolyMeshData_Wrapper::init(*rjsapi);
     RHatchData_Wrapper::init(*rjsapi);
     RImageData_Wrapper::init(*rjsapi);
     RLeaderData_Wrapper::init(*rjsapi);

@@ -72,6 +72,8 @@
     #include "RExportListener.h"
     #include "RExportListenerAdapter.h"
     #include "RFaceEntity.h"
+    #include "RPolyMeshData.h"
+    #include "RPolyMeshEntity.h"
     #include "RFileCache.h"
     #include "RFileExporter.h"
     #include "RFileExporterAdapter.h"

@@ -105,6 +105,8 @@
                 ,
                 RJSType_RPolylineEntity::getIdStatic()
                 ,
+                RJSType_RPolyMeshEntity::getIdStatic()
+                ,
                 RJSType_RRayEntity::getIdStatic()
                 ,
                 RJSType_RSolidEntity::getIdStatic()
@@ -558,6 +560,8 @@
                 RJSType_RPointEntity::getIdStatic()
                 ,
                 RJSType_RPolylineEntity::getIdStatic()
+                ,
+                RJSType_RPolyMeshEntity::getIdStatic()
                 ,
                 RJSType_RRayEntity::getIdStatic()
                 ,
@@ -1208,6 +1212,33 @@
 
       
         bool RJSType_RFaceEntity::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
+      int RJSType_RPolyMeshEntity::id = -1;
+
+      int RJSType_RPolyMeshEntity::getId() const {
+          return RJSType_RPolyMeshEntity::getIdStatic();
+      }
+
+      int RJSType_RPolyMeshEntity::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RPolyMeshEntity());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RPolyMeshEntity::isOfType(int otherType) {
             // initialize list of derrived types:
             
             static QSet<int> derrivedTypes = {
@@ -2412,6 +2443,33 @@
 
       
         bool RJSType_RFaceData::isOfType(int otherType) {
+            // initialize list of derrived types:
+            
+            static QSet<int> derrivedTypes = {
+              getIdStatic(),
+              
+            };
+
+            // check for derived types:
+            return derrivedTypes.contains(otherType);
+        }
+      
+      int RJSType_RPolyMeshData::id = -1;
+
+      int RJSType_RPolyMeshData::getId() const {
+          return RJSType_RPolyMeshData::getIdStatic();
+      }
+
+      int RJSType_RPolyMeshData::getIdStatic() {
+          if (id<0) {
+              id = RJSTypeEnum::reserve(new RJSType_RPolyMeshData());
+          }
+          return id;
+      }
+
+
+      
+        bool RJSType_RPolyMeshData::isOfType(int otherType) {
             // initialize list of derrived types:
             
             static QSet<int> derrivedTypes = {
@@ -4661,6 +4719,8 @@
                 RJSType_RPointData::getIdStatic()
                 ,
                 RJSType_RPolylineData::getIdStatic()
+                ,
+                RJSType_RPolyMeshData::getIdStatic()
                 ,
                 RJSType_RRayData::getIdStatic()
                 ,

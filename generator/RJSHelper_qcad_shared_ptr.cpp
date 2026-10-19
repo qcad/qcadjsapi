@@ -457,6 +457,10 @@
         
           #include "rpolylineentity_wrapper.h"
         
+          #include "rpolymeshdata_wrapper.h"
+        
+          #include "rpolymeshentity_wrapper.h"
+        
           #include "rpreferenceslistener_wrapper.h"
         
           #include "rpreferenceslisteneradapter_wrapper.h"
@@ -848,6 +852,13 @@
             }
             
             {
+              QSharedPointer<RPolyMeshEntity> s = v.dynamicCast<RPolyMeshEntity>();
+              if (!s.isNull()) {
+                return cpp2js_QSharedPointer_RPolyMeshEntity(handler, s);
+              }
+            }
+            
+            {
               QSharedPointer<RRayEntity> s = v.dynamicCast<RRayEntity>();
               if (!s.isNull()) {
                 return cpp2js_QSharedPointer_RRayEntity(handler, s);
@@ -1036,6 +1047,10 @@
                 
                 if (RJSType_RPolylineEntity::isOfType(t)) {
                   return RJSHelper_qcad::js2cpp_QSharedPointer_RPolylineEntity(handler, v);
+                }
+                
+                if (RJSType_RPolyMeshEntity::isOfType(t)) {
+                  return RJSHelper_qcad::js2cpp_QSharedPointer_RPolyMeshEntity(handler, v);
                 }
                 
                 if (RJSType_RRayEntity::isOfType(t)) {

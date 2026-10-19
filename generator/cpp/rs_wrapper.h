@@ -911,6 +911,7 @@ EntityViewport = RS::EntityViewport,
 EntityTolerance = RS::EntityTolerance,
 EntityWipeout = RS::EntityWipeout,
 EntityXRef = RS::EntityXRef,
+EntityPolyMesh = RS::EntityPolyMesh,
 EntityCustom = RS::EntityCustom,
 EntityUser = RS::EntityUser,
 

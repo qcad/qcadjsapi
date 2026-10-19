@@ -457,6 +457,10 @@
         
           #include "rpolylineentity_wrapper.h"
         
+          #include "rpolymeshdata_wrapper.h"
+        
+          #include "rpolymeshentity_wrapper.h"
+        
           #include "rpreferenceslistener_wrapper.h"
         
           #include "rpreferenceslisteneradapter_wrapper.h"
@@ -815,6 +819,43 @@
       }
 
       bool RJSHelper_qcad::is_QList_RColor(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+          if (v.isUndefined() || v.isNull()) {
+              return acceptUndefined;
+          }
+          return v.isArray();
+      }
+    
+      QJSValue RJSHelper_qcad::cpp2js_QList_RPolyMeshData(RJSApi& handler, const QList<RPolyMeshData>& v) {
+          QJSEngine* engine = handler.getEngine();
+          QJSValue ret = engine->newArray((uint)v.length());
+          for (int i=0; i<v.length(); i++) {
+              QJSValue jv = RJSHelper_qcad::cpp2js_RPolyMeshData(handler, v.at(i));
+              // prevent undefined values from C++ (e.g. QObjects that are not included in result):
+              if (!jv.isUndefined()) {
+                  ret.setProperty((quint32)i, jv);
+              }
+          }
+          return ret;
+      }
+
+      QList<RPolyMeshData> RJSHelper_qcad::js2cpp_QList_RPolyMeshData(RJSApi& handler, const QJSValue& v) {
+          //return engine->fromScriptValue<QList<RPolyMeshData>>(v);
+          QList<RPolyMeshData> ret;
+
+          if (!v.isArray()) {
+              qWarning() << "js2cpp_QList_RPolyMeshData: value is not an array";
+              return ret;
+          }
+
+          const int length = v.property("length").toInt();
+          for (int i=0; i<length; ++i) {
+              ret.append(js2cpp_RPolyMeshData(handler, v.property(i)));
+          }
+
+          return ret;
+      }
+
+      bool RJSHelper_qcad::is_QList_RPolyMeshData(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
           if (v.isUndefined() || v.isNull()) {
               return acceptUndefined;
           }

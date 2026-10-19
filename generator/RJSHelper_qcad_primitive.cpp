@@ -457,6 +457,10 @@
         
           #include "rpolylineentity_wrapper.h"
         
+          #include "rpolymeshdata_wrapper.h"
+        
+          #include "rpolymeshentity_wrapper.h"
+        
           #include "rpreferenceslistener_wrapper.h"
         
           #include "rpreferenceslisteneradapter_wrapper.h"
@@ -1302,6 +1306,28 @@
       }
 
       bool RJSHelper_qcad::is_RFaceEntity_Id(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
+        if (v.isUndefined() || v.isNull()) {
+          return acceptUndefined;
+        }
+        return v.isNumber();
+      }
+    
+      QJSValue RJSHelper_qcad::cpp2js_RPolyMeshEntity_Id(RJSApi& handler, RPolyMeshEntity::Id v) {
+        return QJSValue(v);
+      }
+
+      RPolyMeshEntity::Id RJSHelper_qcad::js2cpp_RPolyMeshEntity_Id(RJSApi& handler, const QJSValue& v) {
+        if (!v.isNumber()) {
+          return 
+            (RPolyMeshEntity::Id)0
+          ;
+        }
+        return 
+        (RPolyMeshEntity::Id)
+      v.toInt();
+      }
+
+      bool RJSHelper_qcad::is_RPolyMeshEntity_Id(RJSApi& handler, const QJSValue& v, bool acceptUndefined) {
         if (v.isUndefined() || v.isNull()) {
           return acceptUndefined;
         }

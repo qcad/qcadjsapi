@@ -457,6 +457,10 @@
         
           #include "rpolylineentity_wrapper.h"
         
+          #include "rpolymeshdata_wrapper.h"
+        
+          #include "rpolymeshentity_wrapper.h"
+        
           #include "rpreferenceslistener_wrapper.h"
         
           #include "rpreferenceslisteneradapter_wrapper.h"
@@ -2604,6 +2608,19 @@
             
               // registration of base casters that casts RPolylineEntity to REntity:
               REntity_Wrapper::registerBasecaster_REntity(new RJSBasecaster_RPolylineEntity_REntity());
+            
+            // registration of base casters that cast RPolyMeshData to base classes:
+            
+              // registration of base casters that casts RPolyMeshData to REntityData:
+              REntityData_Wrapper::registerBasecaster_REntityData(new RJSBasecaster_RPolyMeshData_REntityData());
+            
+            // registration of base casters that cast RPolyMeshEntity to base classes:
+            
+              // registration of base casters that casts RPolyMeshEntity to RObject:
+              RObject_Wrapper::registerBasecaster_RObject(new RJSBasecaster_RPolyMeshEntity_RObject());
+            
+              // registration of base casters that casts RPolyMeshEntity to REntity:
+              REntity_Wrapper::registerBasecaster_REntity(new RJSBasecaster_RPolyMeshEntity_REntity());
             
             // registration of base casters that cast RPreferencesListener to base classes:
             

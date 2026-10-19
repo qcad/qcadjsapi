@@ -34,6 +34,7 @@
     <type>REllipseEntity::Id</type>
     <type>REntity::Id</type>
     <type>RFaceEntity::Id</type>
+    <type>RPolyMeshEntity::Id</type>
     <type>RGraphicsSceneDrawable::Mode</type>
     <type>RGraphicsSceneDrawable::Type</type>
     <type>RGraphicsView::ColorMode</type>
@@ -143,6 +144,7 @@
     <type>RDocumentVariables</type>
     <type>REllipseEntity</type>
     <type>RFaceEntity</type>
+    <type>RPolyMeshEntity</type>
     <type>RHatchEntity</type>
     <type>RImageEntity</type>
     <type>RLayer</type>
@@ -193,6 +195,7 @@
     <type>REllipse</type>
     <type>REllipseData</type>
     <type>RFaceData</type>
+    <type>RPolyMeshData</type>
     <type>RFileCache</type>
     <type>RFileExporterAdapter</type>
     <type>RFileExporterFactoryAdapter</type>
@@ -312,6 +315,7 @@
     <type>RExportListener</type>
     <type>RExporter</type>
     <type>RFaceEntity</type>
+    <type>RPolyMeshEntity</type>
     <type>RFileExporter</type>
     <type>RFileExporterFactory</type>
     <type>RFileImporter</type>
@@ -475,6 +479,7 @@
     <type>QList&lt;RBlock::Id&gt;</type>
     <type>QList&lt;RBox&gt;</type>
     <type>QList&lt;RColor&gt;</type>
+    <type>QList&lt;RPolyMeshData&gt;</type>
     <type>QList&lt;REntity::Id&gt;</type>
     <type>QList&lt;RGraphicsSceneDrawable&gt;</type>
     <type>QList&lt;RLayer::Id&gt;</type>

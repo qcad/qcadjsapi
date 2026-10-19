@@ -1,0 +1,305 @@
+<?xml version="1.0"?>
+<unit xmlns="http://qcad.org/namespaces/src" xmlns:qc="http://qcad.org/namespaces/xsl" filename="RPolyMeshData.h">
+  <class_decl name="RDocument" />
+  <class_decl name="RLine" />
+  <class_decl name="RPolyline" />
+  <class_decl name="RRefPoint" />
+  <class_decl name="RShape" />
+  <class_decl name="RTriangle" />
+  <class name="RPolyMeshData" proxy="true">
+    <super_list>
+      <super name="REntityData" />
+    </super_list>
+    <class_decl name="RPolyMeshEntity" />
+    <constructor>
+      <variant>
+        <parameters />
+      </variant>
+      <variant>
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="vertices" />
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="faces" />
+        </parameters>
+      </variant>
+    </constructor>
+    <function name="getType">
+      <variant return-type="RS::EntityType" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isValid">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="isSane">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="cloneOnChange">
+      <variant return-type="bool" virtual="true" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="clear">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVertices">
+      <variant return-type="QList&lt;RVector&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setVertices">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;RVector&gt;" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="countVertices">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getVertexAt">
+      <variant return-type="RVector" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setVertexAt">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addVertex">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="v" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFaces">
+      <variant return-type="QList&lt;int&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setFaces">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="f" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="countFaces">
+      <variant return-type="int" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getFace">
+      <variant return-type="QList&lt;int&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getFaceVertexCount">
+      <variant return-type="int" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="index" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addFace">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;int&gt;" modifier="&amp;" name="indices" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addTriangle">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v1" />
+          <parameter const="false" type="int" modifier="" name="v2" />
+          <parameter const="false" type="int" modifier="" name="v3" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="addQuad">
+      <variant return-type="int" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="v1" />
+          <parameter const="false" type="int" modifier="" name="v2" />
+          <parameter const="false" type="int" modifier="" name="v3" />
+          <parameter const="false" type="int" modifier="" name="v4" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isTriangleMesh">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="hasHiddenEdges">
+      <variant return-type="bool" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="getHiddenEdges">
+      <variant return-type="QList&lt;bool&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setHiddenEdges">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="QList&lt;bool&gt;" modifier="&amp;" name="h" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="isEdgeHidden">
+      <variant return-type="bool" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="faceIndex" />
+          <parameter const="false" type="int" modifier="" name="edgeIndex" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="setEdgeHidden">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="faceIndex" />
+          <parameter const="false" type="int" modifier="" name="edgeIndex" />
+          <parameter const="false" type="bool" modifier="" name="hidden" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="append">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyMeshData" modifier="&amp;" name="other" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getTriangles">
+      <variant return-type="QList&lt;RTriangle&gt;" const="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="split">
+      <variant return-type="QList&lt;RPolyMeshData&gt;" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="int" modifier="" name="maxVertices" />
+          <parameter const="false" type="int" modifier="" name="maxFaces" />
+          <parameter const="false" type="int" modifier="" name="maxFaceVertices" default="4" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getBoundingBox">
+      <variant return-type="RBox" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="bool" modifier="" name="ignoreEmpty" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="to2D">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="setZ">
+      <variant return-type="void" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="z" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getShapes">
+      <variant return-type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="true" type="RBox" modifier="&amp;" name="queryBox" default="RDEFAULT_RBOX" />
+          <parameter const="false" type="bool" modifier="" name="ignoreComplex" default="false" />
+          <parameter const="false" type="bool" modifier="" name="segment" default="false" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="getReferencePoints">
+      <variant return-type="QList&lt;RRefPoint&gt;" virtual="true" const="true" access="public">
+        <parameters>
+          <parameter const="false" type="RS::ProjectionRenderingHint" modifier="" name="hint" default="RS::RenderTop" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="moveReferencePoint">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="referencePoint" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="targetPoint" />
+          <parameter const="false" type="Qt::KeyboardModifiers" modifier="" name="modifiers" default="Qt::NoModifier" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="move">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="rotate">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="false" type="double" modifier="" name="rotation" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="scale">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RVector" modifier="&amp;" name="scaleFactors" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="center" default="RDEFAULT_RVECTOR" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="mirror">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RLine" modifier="&amp;" name="axis" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="flipHorizontal">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="flipVertical">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="stretch">
+      <variant return-type="bool" virtual="true" access="public">
+        <parameters>
+          <parameter const="true" type="RPolyline" modifier="&amp;" name="area" />
+          <parameter const="true" type="RVector" modifier="&amp;" name="offset" />
+        </parameters>
+      </variant>
+    </function>
+    <function name="hasProxy" static="true">
+      <variant return-type="bool" static="true" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="updateFaceIndex" />
+  </class>
+</unit>
