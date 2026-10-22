@@ -1329,11 +1329,12 @@ RShape.Ray = RShape_Wrapper.Ray;
         {
           //print("JS: RShape.roundCorners");
           
-      if (arguments.length == 2) {
+      if (arguments.length >= 2 &&
+          arguments.length <= 3) {
     
                 // calling static wrapper:
                 return RShape_WrapperSingletonInstance.roundCorners(
-                  arguments[0], arguments[1]
+                  arguments[0], arguments[1], arguments[2]
                 );
               
 

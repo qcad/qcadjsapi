@@ -1241,7 +1241,7 @@
     // Function: roundCorners
     // Source: 
     // Static: true
-    // Parameters: 2
+    // Parameters: 3
     // preceding Parameters: -1
 
               public:
@@ -1258,6 +1258,10 @@
     , 
   const QJSValue& 
   a2
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a3
       = QJSValue()
     
               )

@@ -887,6 +887,7 @@
         <parameters>
           <parameter const="true" type="QList&lt;QSharedPointer&lt;RShape&gt;&gt;" modifier="&amp;" name="shapes" />
           <parameter const="false" type="double" modifier="" name="radius" />
+          <parameter const="false" type="bool" modifier="" name="inverted" default="false" />
         </parameters>
       </variant>
     </function>

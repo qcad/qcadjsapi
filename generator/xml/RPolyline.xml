@@ -966,6 +966,7 @@
       <variant return-type="RPolyline" const="true" access="public">
         <parameters>
           <parameter const="false" type="double" modifier="" name="radius" />
+          <parameter const="false" type="bool" modifier="" name="inverted" default="false" />
         </parameters>
       </variant>
     </function>

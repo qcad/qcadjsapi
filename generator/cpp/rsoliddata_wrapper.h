@@ -3951,7 +3951,7 @@
     // Function: roundAllCorners
     // Source: RPolyline
     // Static: false
-    // Parameters: 1
+    // Parameters: 2
     // preceding Parameters: -1
 
               public:
@@ -3964,6 +3964,10 @@
                 
   const QJSValue& 
   a1
+      = QJSValue()
+    , 
+  const QJSValue& 
+  a2
       = QJSValue()
     
               )

@@ -14473,7 +14473,7 @@ double a1_cpp;
     // Function: roundAllCorners
     // Source: 
     // Static: false
-    // Parameters: 1
+    // Parameters: 2
     // preceding Parameters: -1
 
                 QJSValue 
@@ -14481,7 +14481,9 @@ double a1_cpp;
               (
                 
   const QJSValue& 
-  a1
+  a1, 
+  const QJSValue& 
+  a2
               ) 
               
               {
@@ -14489,6 +14491,11 @@ double a1_cpp;
       // check parameter types:
       if (
         RJSHelper::is_double(handler, a1
+  )
+
+   && RJSHelper::is_bool(handler, a2
+    , true
+  
   )
 
   
@@ -14501,6 +14508,18 @@ double a1_cpp;
 double a1_cpp;
 
       a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+        
+  // convert js parameter to cpp: inverted (bool)
+  
+bool a2_cpp;
+
+      
+          if (a2.isUndefined()) {
+            a2_cpp = false;
+          }
+          else {
+            a2_cpp = RJSHelper::js2cpp_bool(handler, a2);
+          }
         
 
     // call function:
@@ -14521,6 +14540,7 @@ double a1_cpp;
                     
                 w->roundAllCorners(
                   a1_cpp
+    , a2_cpp
     
                 );
               

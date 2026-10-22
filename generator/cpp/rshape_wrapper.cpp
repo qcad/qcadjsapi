@@ -3853,7 +3853,7 @@ bool a6_cpp;
     // Function: roundCorners
     // Source: 
     // Static: true
-    // Parameters: 2
+    // Parameters: 3
     // preceding Parameters: -1
 
                 QJSValue 
@@ -3863,7 +3863,9 @@ bool a6_cpp;
   const QJSValue& 
   a1, 
   const QJSValue& 
-  a2
+  a2, 
+  const QJSValue& 
+  a3
               ) 
               
               {
@@ -3874,6 +3876,11 @@ bool a6_cpp;
   )
 
    && RJSHelper::is_double(handler, a2
+  )
+
+   && RJSHelper::is_bool(handler, a3
+    , true
+  
   )
 
   
@@ -3893,6 +3900,18 @@ double a2_cpp;
 
       a2_cpp = RJSHelper::js2cpp_double(handler, a2);
         
+  // convert js parameter to cpp: inverted (bool)
+  
+bool a3_cpp;
+
+      
+          if (a3.isUndefined()) {
+            a3_cpp = false;
+          }
+          else {
+            a3_cpp = RJSHelper::js2cpp_bool(handler, a3);
+          }
+        
 
     // call function:
     
@@ -3904,6 +3923,7 @@ double a2_cpp;
                 RShape::roundCorners(
               a1_cpp
     , a2_cpp
+    , a3_cpp
     
             );
           
