@@ -193,6 +193,13 @@
         </parameters>
       </variant>
     </function>
+    <function name="prependExportListener">
+      <variant return-type="void" access="public">
+        <parameters>
+          <parameter const="false" type="RExportListener" modifier="*" name="l" />
+        </parameters>
+      </variant>
+    </function>
     <function name="removeExportListener">
       <variant return-type="void" access="public">
         <parameters>

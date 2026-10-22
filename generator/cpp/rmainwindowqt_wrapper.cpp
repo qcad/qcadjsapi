@@ -17110,6 +17110,79 @@ RS::EntityType a3_cpp;
               }
             
     // Class: RMainWindowQt
+    // Function: prependExportListener
+    // Source: RMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+                QJSValue 
+              RMainWindowQt_Wrapper::prependExportListener
+              (
+                
+  const QJSValue& 
+  a1
+              ) 
+              
+              {
+                
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RExportListener_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
+    
+      // prepare parameters:
+    
+  // convert js parameter to cpp: l (RExportListener)
+  
+
+          // pointer:
+          RExportListener*
+         a1_cpp;
+
+      a1_cpp = RJSHelper_qcad::js2cpp_RExportListener_ptr(handler, a1);
+        
+
+    // call function:
+    
+          if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
+          }
+
+          
+            //setRecFlag(true);
+          
+            // non-static member function:
+            // call function of wrapped object:
+            
+                // call function of C++ class:
+                RMainWindowQt* w = getWrapped();
+                
+                w->prependExportListener(
+                  a1_cpp
+    
+                );
+              
+                //setRecFlag(false);
+              
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for prependExportListener";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RMainWindowQt
     // Function: removeExportListener
     // Source: RMainWindow
     // Static: false

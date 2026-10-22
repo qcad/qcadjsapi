@@ -5802,6 +5802,29 @@ GroupedDragging = RMainWindowQt::GroupedDragging,
               ;
             
     // Class: RMainWindowQt
+    // Function: prependExportListener
+    // Source: RMainWindow
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  prependExportListener
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindowQt
     // Function: removeExportListener
     // Source: RMainWindow
     // Static: false

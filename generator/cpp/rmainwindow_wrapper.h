@@ -696,6 +696,29 @@
               ;
             
     // Class: RMainWindow
+    // Function: prependExportListener
+    // Source: 
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  prependExportListener
+              (
+
+                
+  const QJSValue& 
+  a1
+      = QJSValue()
+    
+              )
+              
+              ;
+            
+    // Class: RMainWindow
     // Function: removeExportListener
     // Source: 
     // Static: false
