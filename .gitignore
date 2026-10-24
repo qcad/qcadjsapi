@@ -5,6 +5,7 @@ plugins
 .qt
 .qtc
 .qtc_clangd
+.qtcreator
 .qtcreator_build
 .claude
 deployment_log
