@@ -9,3 +9,4 @@ plugins
 .qtcreator_build
 .claude
 deployment_log
+.DS_Store
