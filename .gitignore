@@ -2,6 +2,9 @@ debug
 release
 build
 plugins
+.qt
+.qtc
+.qtc_clangd
 .qtcreator_build
 .claude
 deployment_log
