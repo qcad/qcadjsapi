@@ -11,6 +11,44 @@ set(CMAKE_AUTOMOC ON)
 find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Sql Svg Xml PrintSupport Qml UiTools QuickWidgets Core5Compat Help)
 qt_standard_project_setup()
 
+# Regenerate qcadjsapi.qrc from the current files on disk at build time, wrapped
+# in a dedicated custom target (qcadjsapi_qrc) rather than attached to the
+# qcadjsapi library target.
+#
+# This decoupling is what avoids a dependency cycle. qt_add_resources() below
+# registers each .qrc as a configure-time dependency (CMAKE_LIST_FILES), and
+# cmake_autogen records all of those in its depfile, so qcadjsapi_autogen ends
+# up depending on the .qrc files. If the command that *produces* the .qrc were
+# attached to qcadjsapi, CMake would also give it an order-only dependency on
+# qcadjsapi_autogen, closing the loop. Owning the producer with a separate
+# target (no AUTOGEN) breaks the forward edge.
+#
+# The extra, never-created output forces the command to run on every build;
+# update_qrc.sh only rewrites a .qrc when its content actually changed (via its
+# diff check), so rcc is only re-invoked when there is a real change.
+#
+# The .qrc files are only regenerated on macOS. On Windows the shell script
+# cannot be executed (it gets opened with the associated text editor instead)
+# and on Linux it is not needed; on those platforms the checked-in .qrc files
+# are used as-is.
+if(APPLE)
+    add_custom_command(
+        OUTPUT
+            ${CMAKE_CURRENT_SOURCE_DIR}/qcadjsapi.qrc
+            ${CMAKE_CURRENT_BINARY_DIR}/update_qrc_always_run
+        COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/update_qrc.sh qcad
+        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+        COMMENT "Updating qcadjsapi.qrc"
+        VERBATIM
+    )
+
+    add_custom_target(qcadjsapi_qrc
+        DEPENDS
+            ${CMAKE_CURRENT_SOURCE_DIR}/qcadjsapi.qrc
+            ${CMAKE_CURRENT_BINARY_DIR}/update_qrc_always_run
+    )
+endif()
+
 qt_add_resources(SOURCES qcadjsapi.qrc)
 
 if(MSVC)
@@ -77,6 +115,12 @@ qt_add_library(qcadjsapi SHARED
     ${SOURCES}
     ${SOURCES_MOC}
 )
+
+# Ensure the .qrc files are regenerated before this target's resources are
+# compiled (the rcc command also depends on the .qrc files directly).
+if(APPLE)
+    add_dependencies(qcadjsapi qcadjsapi_qrc)
+endif()
 
 include(generator/CMakeInclude.txt)
 
