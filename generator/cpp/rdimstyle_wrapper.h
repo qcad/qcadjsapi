@@ -19,6 +19,8 @@
       
         #include "RExporter.h"
       
+        #include "RTransaction.h"
+      
     #include <QQmlEngine>
     
         #include "RJSType_qcad.h"
