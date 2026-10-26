@@ -4267,19 +4267,46 @@ RS::KnownVariable a1_cpp;
     // Function: updateDocumentVariables
     // Source: 
     // Static: false
-    // Parameters: 0
+    // Parameters: 1
     // preceding Parameters: -1
 
                 QJSValue 
               RDimStyle_Wrapper::updateDocumentVariables
               (
                 
+  const QJSValue& 
+  a1
               ) 
               
               {
                 
-      {
+      // check parameter types:
+      if (
+        RJSHelper_qcad::is_RTransaction_ptr(handler, a1
+    , true
+  
+  )
+
+  
+      ) {
     
+      // prepare parameters:
+    
+  // convert js parameter to cpp: transaction (RTransaction)
+  
+
+          // pointer:
+          RTransaction*
+         a1_cpp;
+
+      
+          if (a1.isUndefined()) {
+            a1_cpp = NULL;
+          }
+          else {
+            a1_cpp = RJSHelper_qcad::js2cpp_RTransaction_ptr(handler, a1);
+          }
+        
 
     // call function:
     
@@ -4297,7 +4324,8 @@ RS::KnownVariable a1_cpp;
                 RDimStyle* w = getWrapped();
                 
                 w->updateDocumentVariables(
-                  
+                  a1_cpp
+    
                 );
               
             return QJSValue();

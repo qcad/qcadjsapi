@@ -3,6 +3,7 @@
   <class_decl name="RDocument" />
   <class_decl name="REntityData" />
   <class_decl name="RExporter" />
+  <class_decl name="RTransaction" />
   <class name="RDimStyle" ownership="cpp" sharedpointer="true" proxy="true">
     <super_list>
       <super name="RObject" downcast="true" />
@@ -49,7 +50,9 @@
     </function>
     <function name="updateDocumentVariables">
       <variant return-type="void" access="public">
-        <parameters />
+        <parameters>
+          <parameter const="false" type="RTransaction" modifier="*" name="transaction" default="NULL" />
+        </parameters>
       </variant>
     </function>
     <function name="updateFromDocumentVariables">
