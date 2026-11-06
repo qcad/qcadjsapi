@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RLayerListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RLayerListener.prototype = new RLayerListener_BaseJs(engine);
       //RLayerListener.prototype = new RLayerListener_Wrapper(engine);
       RLayerListener.prototype = new Object();
+
 
       RLayerListener.prototype.toString = function() {
           //return "RLayerListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,48 @@
 
       // functions:
       
+        // function 
+        RLayerListener.prototype.updateLayers = function(...args) 
+          
+        {
+          //print("JS: RLayerListener.prototype.updateLayers");
+          
+              return this.__PROXY__.updateLayers(...args);
+            
+        };
+    
+        // function 
+        RLayerListener.prototype.setCurrentLayer = function(...args) 
+          
+        {
+          //print("JS: RLayerListener.prototype.setCurrentLayer");
+          
+              return this.__PROXY__.setCurrentLayer(...args);
+            
+        };
+    
+        // function 
+        RLayerListener.prototype.clearLayers = function(...args) 
+          
+        {
+          //print("JS: RLayerListener.prototype.clearLayers");
+          
+              return this.__PROXY__.clearLayers(...args);
+            
+        };
+    
 
       // static functions:
+      RLayerListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RLayerListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RLayerListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +156,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RLayerListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

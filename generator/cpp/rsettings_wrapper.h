@@ -3383,6 +3383,44 @@
               ;
             
     // Class: RSettings
+    // Function: getAppearance
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  getAppearance
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RSettings
+    // Function: applyAppearance
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+              public:
+              Q_INVOKABLE 
+              
+                  QJSValue 
+                  applyAppearance
+              (
+
+                
+              )
+              
+              ;
+            
+    // Class: RSettings
     // Function: hasCustomStyleSheet
     // Source: 
     // Static: true

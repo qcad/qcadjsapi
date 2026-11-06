@@ -10635,6 +10635,13 @@ double a1_cpp;
               RGraphicsViewImage_Wrapper::viewportChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RGraphicsViewImage_Wrapper::staticMetaObject.indexOfSignal("viewportChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RGraphicsViewImage_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -10655,6 +10662,13 @@ double a1_cpp;
               RGraphicsViewImage_Wrapper::updateSnapInfoEmitter(
                 RGraphicsViewWorker* painter, RSnap* snap, RSnapRestriction* restriction
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RGraphicsViewImage_Wrapper::staticMetaObject.indexOfSignal("updateSnapInfo(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RGraphicsViewImage_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: painter (RGraphicsViewWorker)
@@ -10702,6 +10716,13 @@ double a1_cpp;
               RGraphicsViewImage_Wrapper::updateTextLabelEmitter(
                 RGraphicsViewWorker* painter, const RTextLabel& textLabel
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RGraphicsViewImage_Wrapper::staticMetaObject.indexOfSignal("updateTextLabel(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RGraphicsViewImage_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: painter (RGraphicsViewWorker)

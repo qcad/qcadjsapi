@@ -15888,6 +15888,13 @@ bool a1_cpp;
               RMathComboBox_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMathComboBox_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMathComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -20232,6 +20239,13 @@ QString a1_cpp;
               RMathComboBox_Wrapper::editTextChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMathComboBox_Wrapper::staticMetaObject.indexOfSignal("editTextChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMathComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20261,6 +20275,13 @@ QString a1_cpp;
               RMathComboBox_Wrapper::activatedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMathComboBox_Wrapper::staticMetaObject.indexOfSignal("activated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMathComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20290,6 +20311,13 @@ QString a1_cpp;
               RMathComboBox_Wrapper::textActivatedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMathComboBox_Wrapper::staticMetaObject.indexOfSignal("textActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMathComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20319,6 +20347,13 @@ QString a1_cpp;
               RMathComboBox_Wrapper::highlightedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMathComboBox_Wrapper::staticMetaObject.indexOfSignal("highlighted(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMathComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20348,6 +20383,13 @@ QString a1_cpp;
               RMathComboBox_Wrapper::textHighlightedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMathComboBox_Wrapper::staticMetaObject.indexOfSignal("textHighlighted(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMathComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20377,6 +20419,13 @@ QString a1_cpp;
               RMathComboBox_Wrapper::currentIndexChangedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMathComboBox_Wrapper::staticMetaObject.indexOfSignal("currentIndexChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMathComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20406,6 +20455,13 @@ QString a1_cpp;
               RMathComboBox_Wrapper::currentTextChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMathComboBox_Wrapper::staticMetaObject.indexOfSignal("currentTextChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMathComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -21418,6 +21474,13 @@ QString a2_cpp;
               RMathComboBox_Wrapper::valueChangedEmitter(
                 double value, const QString& error
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMathComboBox_Wrapper::staticMetaObject.indexOfSignal("valueChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMathComboBox_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: value (double)

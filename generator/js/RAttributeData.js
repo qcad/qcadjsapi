@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RAttributeData.prototype = new RAttributeData_BaseJs(engine);
       //RAttributeData.prototype = new RAttributeData_Wrapper(engine);
       RAttributeData.prototype = new Object();
+
 
       RAttributeData.prototype.toString = function() {
           //return "RAttributeData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -173,7 +174,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -181,7 +184,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -189,7 +194,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -197,7 +204,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -205,7 +214,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -213,7 +224,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -221,7 +234,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -229,7 +244,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -237,7 +254,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -245,7 +264,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -253,7 +274,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -261,7 +284,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -269,7 +294,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -277,7 +304,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -285,7 +314,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -293,7 +324,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -301,7 +334,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -309,7 +344,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -317,7 +354,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -325,7 +364,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -333,7 +374,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -341,7 +384,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -349,7 +394,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -357,7 +404,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -365,7 +414,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -373,7 +424,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -381,7 +434,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -389,7 +444,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -397,7 +454,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -405,7 +464,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -413,7 +474,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -421,7 +484,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -429,7 +494,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -437,7 +504,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -445,7 +514,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -453,7 +524,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -461,7 +534,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -469,7 +544,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -477,7 +554,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -485,7 +564,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -493,7 +574,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -501,7 +584,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -509,7 +594,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -517,7 +604,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setFlag");
-          return this.__PROXY__.setFlag(...args);
+          
+              return this.__PROXY__.setFlag(...args);
+            
         };
     
         // function 
@@ -525,7 +614,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getFlag");
-          return this.__PROXY__.getFlag(...args);
+          
+              return this.__PROXY__.getFlag(...args);
+            
         };
     
         // function 
@@ -533,7 +624,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -541,7 +634,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -549,7 +644,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -557,7 +654,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getRotatedBoundingBox");
-          return this.__PROXY__.getRotatedBoundingBox(...args);
+          
+              return this.__PROXY__.getRotatedBoundingBox(...args);
+            
         };
     
         // function 
@@ -565,7 +664,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getWidth");
-          return this.__PROXY__.getWidth(...args);
+          
+              return this.__PROXY__.getWidth(...args);
+            
         };
     
         // function 
@@ -573,7 +674,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getHeight");
-          return this.__PROXY__.getHeight(...args);
+          
+              return this.__PROXY__.getHeight(...args);
+            
         };
     
         // function 
@@ -581,7 +684,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.sync");
-          return this.__PROXY__.sync(...args);
+          
+              return this.__PROXY__.sync(...args);
+            
         };
     
         // function 
@@ -589,7 +694,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -597,7 +704,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -605,7 +714,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -613,7 +724,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -621,7 +734,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -629,7 +744,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -637,7 +754,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -645,7 +764,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getPosition");
-          return this.__PROXY__.getPosition(...args);
+          
+              return this.__PROXY__.getPosition(...args);
+            
         };
     
         // function 
@@ -653,7 +774,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setPosition");
-          return this.__PROXY__.setPosition(...args);
+          
+              return this.__PROXY__.setPosition(...args);
+            
         };
     
         // function 
@@ -661,7 +784,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getAlignmentPoint");
-          return this.__PROXY__.getAlignmentPoint(...args);
+          
+              return this.__PROXY__.getAlignmentPoint(...args);
+            
         };
     
         // function 
@@ -669,7 +794,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setAlignmentPoint");
-          return this.__PROXY__.setAlignmentPoint(...args);
+          
+              return this.__PROXY__.setAlignmentPoint(...args);
+            
         };
     
         // function 
@@ -677,7 +804,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setText");
-          return this.__PROXY__.setText(...args);
+          
+              return this.__PROXY__.setText(...args);
+            
         };
     
         // function 
@@ -685,7 +814,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getFontName");
-          return this.__PROXY__.getFontName(...args);
+          
+              return this.__PROXY__.getFontName(...args);
+            
         };
     
         // function 
@@ -693,7 +824,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setFontName");
-          return this.__PROXY__.setFontName(...args);
+          
+              return this.__PROXY__.setFontName(...args);
+            
         };
     
         // function 
@@ -701,7 +834,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getFontFile");
-          return this.__PROXY__.getFontFile(...args);
+          
+              return this.__PROXY__.getFontFile(...args);
+            
         };
     
         // function 
@@ -709,7 +844,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setFontFile");
-          return this.__PROXY__.setFontFile(...args);
+          
+              return this.__PROXY__.setFontFile(...args);
+            
         };
     
         // function 
@@ -717,7 +854,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isBold");
-          return this.__PROXY__.isBold(...args);
+          
+              return this.__PROXY__.isBold(...args);
+            
         };
     
         // function 
@@ -725,7 +864,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setBold");
-          return this.__PROXY__.setBold(...args);
+          
+              return this.__PROXY__.setBold(...args);
+            
         };
     
         // function 
@@ -733,7 +874,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isItalic");
-          return this.__PROXY__.isItalic(...args);
+          
+              return this.__PROXY__.isItalic(...args);
+            
         };
     
         // function 
@@ -741,7 +884,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setItalic");
-          return this.__PROXY__.setItalic(...args);
+          
+              return this.__PROXY__.setItalic(...args);
+            
         };
     
         // function 
@@ -749,7 +894,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getTextHeight");
-          return this.__PROXY__.getTextHeight(...args);
+          
+              return this.__PROXY__.getTextHeight(...args);
+            
         };
     
         // function 
@@ -757,7 +904,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setTextHeight");
-          return this.__PROXY__.setTextHeight(...args);
+          
+              return this.__PROXY__.setTextHeight(...args);
+            
         };
     
         // function 
@@ -765,7 +914,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getTextWidth");
-          return this.__PROXY__.getTextWidth(...args);
+          
+              return this.__PROXY__.getTextWidth(...args);
+            
         };
     
         // function 
@@ -773,7 +924,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setTextWidth");
-          return this.__PROXY__.setTextWidth(...args);
+          
+              return this.__PROXY__.setTextWidth(...args);
+            
         };
     
         // function 
@@ -781,7 +934,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setVAlign");
-          return this.__PROXY__.setVAlign(...args);
+          
+              return this.__PROXY__.setVAlign(...args);
+            
         };
     
         // function 
@@ -789,7 +944,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getVAlign");
-          return this.__PROXY__.getVAlign(...args);
+          
+              return this.__PROXY__.getVAlign(...args);
+            
         };
     
         // function 
@@ -797,7 +954,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setHAlign");
-          return this.__PROXY__.setHAlign(...args);
+          
+              return this.__PROXY__.setHAlign(...args);
+            
         };
     
         // function 
@@ -805,7 +964,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getHAlign");
-          return this.__PROXY__.getHAlign(...args);
+          
+              return this.__PROXY__.getHAlign(...args);
+            
         };
     
         // function 
@@ -813,7 +974,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setDrawingDirection");
-          return this.__PROXY__.setDrawingDirection(...args);
+          
+              return this.__PROXY__.setDrawingDirection(...args);
+            
         };
     
         // function 
@@ -821,7 +984,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getDrawingDirection");
-          return this.__PROXY__.getDrawingDirection(...args);
+          
+              return this.__PROXY__.getDrawingDirection(...args);
+            
         };
     
         // function 
@@ -829,7 +994,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setLineSpacingStyle");
-          return this.__PROXY__.setLineSpacingStyle(...args);
+          
+              return this.__PROXY__.setLineSpacingStyle(...args);
+            
         };
     
         // function 
@@ -837,7 +1004,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getLineSpacingStyle");
-          return this.__PROXY__.getLineSpacingStyle(...args);
+          
+              return this.__PROXY__.getLineSpacingStyle(...args);
+            
         };
     
         // function 
@@ -845,7 +1014,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setLineSpacingFactor");
-          return this.__PROXY__.setLineSpacingFactor(...args);
+          
+              return this.__PROXY__.setLineSpacingFactor(...args);
+            
         };
     
         // function 
@@ -853,7 +1024,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getLineSpacingFactor");
-          return this.__PROXY__.getLineSpacingFactor(...args);
+          
+              return this.__PROXY__.getLineSpacingFactor(...args);
+            
         };
     
         // function 
@@ -861,7 +1034,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setAngle");
-          return this.__PROXY__.setAngle(...args);
+          
+              return this.__PROXY__.setAngle(...args);
+            
         };
     
         // function 
@@ -869,7 +1044,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getAngle");
-          return this.__PROXY__.getAngle(...args);
+          
+              return this.__PROXY__.getAngle(...args);
+            
         };
     
         // function 
@@ -877,7 +1054,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setXScale");
-          return this.__PROXY__.setXScale(...args);
+          
+              return this.__PROXY__.setXScale(...args);
+            
         };
     
         // function 
@@ -885,7 +1064,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getXScale");
-          return this.__PROXY__.getXScale(...args);
+          
+              return this.__PROXY__.getXScale(...args);
+            
         };
     
         // function 
@@ -893,7 +1074,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setSimple");
-          return this.__PROXY__.setSimple(...args);
+          
+              return this.__PROXY__.setSimple(...args);
+            
         };
     
         // function 
@@ -901,7 +1084,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isSimple");
-          return this.__PROXY__.isSimple(...args);
+          
+              return this.__PROXY__.isSimple(...args);
+            
         };
     
         // function 
@@ -909,7 +1094,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setBackward");
-          return this.__PROXY__.setBackward(...args);
+          
+              return this.__PROXY__.setBackward(...args);
+            
         };
     
         // function 
@@ -917,7 +1104,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isBackward");
-          return this.__PROXY__.isBackward(...args);
+          
+              return this.__PROXY__.isBackward(...args);
+            
         };
     
         // function 
@@ -925,7 +1114,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setUpsideDown");
-          return this.__PROXY__.setUpsideDown(...args);
+          
+              return this.__PROXY__.setUpsideDown(...args);
+            
         };
     
         // function 
@@ -933,7 +1124,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isUpsideDown");
-          return this.__PROXY__.isUpsideDown(...args);
+          
+              return this.__PROXY__.isUpsideDown(...args);
+            
         };
     
         // function 
@@ -941,7 +1134,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setDimensionLabel");
-          return this.__PROXY__.setDimensionLabel(...args);
+          
+              return this.__PROXY__.setDimensionLabel(...args);
+            
         };
     
         // function 
@@ -949,7 +1144,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isDimensionLabel");
-          return this.__PROXY__.isDimensionLabel(...args);
+          
+              return this.__PROXY__.isDimensionLabel(...args);
+            
         };
     
         // function 
@@ -957,7 +1154,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -965,7 +1164,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setHighlighted");
-          return this.__PROXY__.setHighlighted(...args);
+          
+              return this.__PROXY__.setHighlighted(...args);
+            
         };
     
         // function 
@@ -973,7 +1174,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isHighlighted");
-          return this.__PROXY__.isHighlighted(...args);
+          
+              return this.__PROXY__.isHighlighted(...args);
+            
         };
     
         // function 
@@ -981,7 +1184,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -989,7 +1194,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -997,7 +1204,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -1005,7 +1214,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -1013,7 +1224,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -1021,7 +1234,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -1029,7 +1244,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -1037,7 +1254,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getText");
-          return this.__PROXY__.getText(...args);
+          
+              return this.__PROXY__.getText(...args);
+            
         };
     
         // function 
@@ -1045,7 +1264,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getPlainText");
-          return this.__PROXY__.getPlainText(...args);
+          
+              return this.__PROXY__.getPlainText(...args);
+            
         };
     
         // function 
@@ -1053,7 +1274,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getEscapedText");
-          return this.__PROXY__.getEscapedText(...args);
+          
+              return this.__PROXY__.getEscapedText(...args);
+            
         };
     
         // function 
@@ -1061,7 +1284,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getMainFont");
-          return this.__PROXY__.getMainFont(...args);
+          
+              return this.__PROXY__.getMainFont(...args);
+            
         };
     
         // function 
@@ -1069,7 +1294,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -1077,7 +1304,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isDirty");
-          return this.__PROXY__.isDirty(...args);
+          
+              return this.__PROXY__.isDirty(...args);
+            
         };
     
         // function 
@@ -1085,7 +1314,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getPainterPaths");
-          return this.__PROXY__.getPainterPaths(...args);
+          
+              return this.__PROXY__.getPainterPaths(...args);
+            
         };
     
         // function 
@@ -1093,7 +1324,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -1101,7 +1334,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getExploded");
-          return this.__PROXY__.getExploded(...args);
+          
+              return this.__PROXY__.getExploded(...args);
+            
         };
     
         // function 
@@ -1109,7 +1344,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -1117,7 +1354,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -1125,7 +1364,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getTextLayouts");
-          return this.__PROXY__.getTextLayouts(...args);
+          
+              return this.__PROXY__.getTextLayouts(...args);
+            
         };
     
         // function 
@@ -1133,7 +1374,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getSimpleTextBlocks");
-          return this.__PROXY__.getSimpleTextBlocks(...args);
+          
+              return this.__PROXY__.getSimpleTextBlocks(...args);
+            
         };
     
         // function 
@@ -1141,7 +1384,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -1149,7 +1394,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -1157,7 +1404,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getRenderedText");
-          return this.__PROXY__.getRenderedText(...args);
+          
+              return this.__PROXY__.getRenderedText(...args);
+            
         };
     
         // function 
@@ -1165,7 +1414,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getTag");
-          return this.__PROXY__.getTag(...args);
+          
+              return this.__PROXY__.getTag(...args);
+            
         };
     
         // function 
@@ -1173,7 +1424,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setTag");
-          return this.__PROXY__.setTag(...args);
+          
+              return this.__PROXY__.setTag(...args);
+            
         };
     
         // function 
@@ -1181,7 +1434,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.isInvisible");
-          return this.__PROXY__.isInvisible(...args);
+          
+              return this.__PROXY__.isInvisible(...args);
+            
         };
     
         // function 
@@ -1189,7 +1444,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.setInvisible");
-          return this.__PROXY__.setInvisible(...args);
+          
+              return this.__PROXY__.setInvisible(...args);
+            
         };
     
         // function 
@@ -1197,7 +1454,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -1205,7 +1464,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -1213,7 +1474,9 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -1221,11 +1484,23 @@ RAttributeData.UpsideDown = RAttributeData_Wrapper.UpsideDown;
           
         {
           //print("JS: RAttributeData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
 
       // static functions:
+      RAttributeData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RAttributeData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RAttributeData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

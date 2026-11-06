@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RMessageHandler);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RMessageHandler.prototype = new RMessageHandler_BaseJs(engine);
       //RMessageHandler.prototype = new RMessageHandler_Wrapper(engine);
       RMessageHandler.prototype = new Object();
+
 
       RMessageHandler.prototype.toString = function() {
           //return "RMessageHandler [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,58 @@
 
       // functions:
       
+        // function 
+        RMessageHandler.prototype.handleUserMessage = function(...args) 
+          
+        {
+          //print("JS: RMessageHandler.prototype.handleUserMessage");
+          
+              return this.__PROXY__.handleUserMessage(...args);
+            
+        };
+    
+        // function 
+        RMessageHandler.prototype.handleUserInfo = function(...args) 
+          
+        {
+          //print("JS: RMessageHandler.prototype.handleUserInfo");
+          
+              return this.__PROXY__.handleUserInfo(...args);
+            
+        };
+    
+        // function 
+        RMessageHandler.prototype.handleUserWarning = function(...args) 
+          
+        {
+          //print("JS: RMessageHandler.prototype.handleUserWarning");
+          
+              return this.__PROXY__.handleUserWarning(...args);
+            
+        };
+    
+        // function 
+        RMessageHandler.prototype.handleUserCommand = function(...args) 
+          
+        {
+          //print("JS: RMessageHandler.prototype.handleUserCommand");
+          
+              return this.__PROXY__.handleUserCommand(...args);
+            
+        };
+    
 
       // static functions:
+      RMessageHandler.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RMessageHandler.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RMessageHandler.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +166,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RMessageHandler.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

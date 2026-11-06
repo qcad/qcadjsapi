@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPropertyListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPropertyListener.prototype = new RPropertyListener_BaseJs(engine);
       //RPropertyListener.prototype = new RPropertyListener_Wrapper(engine);
       RPropertyListener.prototype = new Object();
+
 
       RPropertyListener.prototype.toString = function() {
           //return "RPropertyListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -110,7 +111,7 @@
                 // call highest level JS implementation:
                 //return this.updateFromDocumentBase(
                 
-                    return this.updateFromDocumentSuper(
+                    return this.__PROXY__.updateFromDocumentSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
                 );
               
@@ -143,7 +144,7 @@
                 // call highest level JS implementation:
                 //return this.updateFromObjectBase(
                 
-                    return this.updateFromObjectSuper(
+                    return this.__PROXY__.updateFromObjectSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -175,7 +176,7 @@
                 // call highest level JS implementation:
                 //return this.clearEditorBase(
                 
-                    return this.clearEditorSuper(
+                    return this.__PROXY__.clearEditorSuper(
                   
                 );
               
@@ -195,6 +196,16 @@
     
 
       // static functions:
+      RPropertyListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPropertyListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPropertyListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -213,4 +224,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPropertyListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

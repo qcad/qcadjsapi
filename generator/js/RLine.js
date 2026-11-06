@@ -162,47 +162,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
-              // define property setters/getters:
-              Object.defineProperty(this, 'startPoint', {
-                  get() {
-                      
-                          return this.__PROXY__.getStartPoint();
-                        
-                  },
-                  
-                    set(value) {
-                        this.__PROXY__.setStartPoint(value);
-                    },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
-              // define property setters/getters:
-              Object.defineProperty(this, 'endPoint', {
-                  get() {
-                      
-                          return this.__PROXY__.getEndPoint();
-                        
-                  },
-                  
-                    set(value) {
-                        this.__PROXY__.setEndPoint(value);
-                    },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
 
       }
 
       //RLine.prototype = new RLine_BaseJs(engine);
       //RLine.prototype = new RLine_Wrapper(engine);
       RLine.prototype = new Object();
+
 
       RLine.prototype.toString = function() {
           //return "RLine [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -256,7 +225,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.isInterpolated");
-          return this.__PROXY__.isInterpolated(...args);
+          
+              return this.__PROXY__.isInterpolated(...args);
+            
         };
     
         // function 
@@ -264,7 +235,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getClosestPointOnShape");
-          return this.__PROXY__.getClosestPointOnShape(...args);
+          
+              return this.__PROXY__.getClosestPointOnShape(...args);
+            
         };
     
         // function 
@@ -272,7 +245,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -280,7 +255,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.equals");
-          return this.__PROXY__.equals(...args);
+          
+              return this.__PROXY__.equals(...args);
+            
         };
     
         // function 
@@ -288,7 +265,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getIntProperties");
-          return this.__PROXY__.getIntProperties(...args);
+          
+              return this.__PROXY__.getIntProperties(...args);
+            
         };
     
         // function 
@@ -296,7 +275,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getDoubleProperties");
-          return this.__PROXY__.getDoubleProperties(...args);
+          
+              return this.__PROXY__.getDoubleProperties(...args);
+            
         };
     
         // function 
@@ -304,7 +285,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getBoolProperties");
-          return this.__PROXY__.getBoolProperties(...args);
+          
+              return this.__PROXY__.getBoolProperties(...args);
+            
         };
     
         // function 
@@ -312,7 +295,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -320,7 +305,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getMaxDistanceTo");
-          return this.__PROXY__.getMaxDistanceTo(...args);
+          
+              return this.__PROXY__.getMaxDistanceTo(...args);
+            
         };
     
         // function 
@@ -328,7 +315,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.isOnShape");
-          return this.__PROXY__.isOnShape(...args);
+          
+              return this.__PROXY__.isOnShape(...args);
+            
         };
     
         // function 
@@ -336,7 +325,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.filterOnShape");
-          return this.__PROXY__.filterOnShape(...args);
+          
+              return this.__PROXY__.filterOnShape(...args);
+            
         };
     
         // function 
@@ -344,7 +335,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getVectorFromEndpointTo");
-          return this.__PROXY__.getVectorFromEndpointTo(...args);
+          
+              return this.__PROXY__.getVectorFromEndpointTo(...args);
+            
         };
     
         // function 
@@ -352,7 +345,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -360,7 +355,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getPointOnShape");
-          return this.__PROXY__.getPointOnShape(...args);
+          
+              return this.__PROXY__.getPointOnShape(...args);
+            
         };
     
         // function 
@@ -368,7 +365,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getPointWithDistanceToStart");
-          return this.__PROXY__.getPointWithDistanceToStart(...args);
+          
+              return this.__PROXY__.getPointWithDistanceToStart(...args);
+            
         };
     
         // function 
@@ -376,7 +375,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getPointWithDistanceToEnd");
-          return this.__PROXY__.getPointWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -384,7 +385,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getAngleAtPoint");
-          return this.__PROXY__.getAngleAtPoint(...args);
+          
+              return this.__PROXY__.getAngleAtPoint(...args);
+            
         };
     
         // function 
@@ -392,7 +395,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getPointAtPercent");
-          return this.__PROXY__.getPointAtPercent(...args);
+          
+              return this.__PROXY__.getPointAtPercent(...args);
+            
         };
     
         // function 
@@ -400,7 +405,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getAngleAtPercent");
-          return this.__PROXY__.getAngleAtPercent(...args);
+          
+              return this.__PROXY__.getAngleAtPercent(...args);
+            
         };
     
         // function 
@@ -408,7 +415,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -416,7 +425,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -424,7 +435,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getSelfIntersectionPoints");
-          return this.__PROXY__.getSelfIntersectionPoints(...args);
+          
+              return this.__PROXY__.getSelfIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -432,7 +445,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getDistancesFromStart");
-          return this.__PROXY__.getDistancesFromStart(...args);
+          
+              return this.__PROXY__.getDistancesFromStart(...args);
+            
         };
     
         // function 
@@ -440,7 +455,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.dump");
-          return this.__PROXY__.dump(...args);
+          
+              return this.__PROXY__.dump(...args);
+            
         };
     
         // function 
@@ -448,7 +465,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getShapeType");
-          return this.__PROXY__.getShapeType(...args);
+          
+              return this.__PROXY__.getShapeType(...args);
+            
         };
     
         // function 
@@ -456,7 +475,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -464,7 +485,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.isDirected");
-          return this.__PROXY__.isDirected(...args);
+          
+              return this.__PROXY__.isDirected(...args);
+            
         };
     
         // function 
@@ -472,7 +495,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -480,7 +505,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getVectorProperties");
-          return this.__PROXY__.getVectorProperties(...args);
+          
+              return this.__PROXY__.getVectorProperties(...args);
+            
         };
     
         // function 
@@ -488,7 +515,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -496,7 +525,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -504,7 +535,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -512,7 +545,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -520,7 +555,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -528,7 +565,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -536,7 +575,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getPointCloud");
-          return this.__PROXY__.getPointCloud(...args);
+          
+              return this.__PROXY__.getPointCloud(...args);
+            
         };
     
         // function 
@@ -544,7 +585,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getAngleAt");
-          return this.__PROXY__.getAngleAt(...args);
+          
+              return this.__PROXY__.getAngleAt(...args);
+            
         };
     
         // function 
@@ -552,7 +595,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -560,7 +605,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getStartPoint");
-          return this.__PROXY__.getStartPoint(...args);
+          
+              return this.__PROXY__.getStartPoint(...args);
+            
         };
     
         // function 
@@ -568,7 +615,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.setStartPoint");
-          return this.__PROXY__.setStartPoint(...args);
+          
+              return this.__PROXY__.setStartPoint(...args);
+            
         };
     
         // function 
@@ -576,7 +625,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getEndPoint");
-          return this.__PROXY__.getEndPoint(...args);
+          
+              return this.__PROXY__.getEndPoint(...args);
+            
         };
     
         // function 
@@ -584,7 +635,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.setEndPoint");
-          return this.__PROXY__.setEndPoint(...args);
+          
+              return this.__PROXY__.setEndPoint(...args);
+            
         };
     
         // function 
@@ -592,7 +645,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getMiddlePoint");
-          return this.__PROXY__.getMiddlePoint(...args);
+          
+              return this.__PROXY__.getMiddlePoint(...args);
+            
         };
     
         // function 
@@ -600,7 +655,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getLength");
-          return this.__PROXY__.getLength(...args);
+          
+              return this.__PROXY__.getLength(...args);
+            
         };
     
         // function 
@@ -608,7 +665,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getAngle");
-          return this.__PROXY__.getAngle(...args);
+          
+              return this.__PROXY__.getAngle(...args);
+            
         };
     
         // function 
@@ -616,7 +675,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.setLength");
-          return this.__PROXY__.setLength(...args);
+          
+              return this.__PROXY__.setLength(...args);
+            
         };
     
         // function 
@@ -624,7 +685,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.setAngle");
-          return this.__PROXY__.setAngle(...args);
+          
+              return this.__PROXY__.setAngle(...args);
+            
         };
     
         // function 
@@ -632,7 +695,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.isParallel");
-          return this.__PROXY__.isParallel(...args);
+          
+              return this.__PROXY__.isParallel(...args);
+            
         };
     
         // function 
@@ -640,7 +705,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.isVertical");
-          return this.__PROXY__.isVertical(...args);
+          
+              return this.__PROXY__.isVertical(...args);
+            
         };
     
         // function 
@@ -648,7 +715,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.isHorizontal");
-          return this.__PROXY__.isHorizontal(...args);
+          
+              return this.__PROXY__.isHorizontal(...args);
+            
         };
     
         // function 
@@ -656,7 +725,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getDirection1");
-          return this.__PROXY__.getDirection1(...args);
+          
+              return this.__PROXY__.getDirection1(...args);
+            
         };
     
         // function 
@@ -664,7 +735,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getDirection2");
-          return this.__PROXY__.getDirection2(...args);
+          
+              return this.__PROXY__.getDirection2(...args);
+            
         };
     
         // function 
@@ -672,7 +745,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getSideOfPoint");
-          return this.__PROXY__.getSideOfPoint(...args);
+          
+              return this.__PROXY__.getSideOfPoint(...args);
+            
         };
     
         // function 
@@ -680,7 +755,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.clipToXY");
-          return this.__PROXY__.clipToXY(...args);
+          
+              return this.__PROXY__.clipToXY(...args);
+            
         };
     
         // function 
@@ -688,7 +765,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -696,7 +775,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -704,7 +785,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -712,7 +795,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -720,7 +805,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -728,7 +815,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -736,7 +825,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.reverse");
-          return this.__PROXY__.reverse(...args);
+          
+              return this.__PROXY__.reverse(...args);
+            
         };
     
         // function 
@@ -744,7 +835,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -752,7 +845,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.moveTo");
-          return this.__PROXY__.moveTo(...args);
+          
+              return this.__PROXY__.moveTo(...args);
+            
         };
     
         // function 
@@ -760,7 +855,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getTransformed");
-          return this.__PROXY__.getTransformed(...args);
+          
+              return this.__PROXY__.getTransformed(...args);
+            
         };
     
         // function 
@@ -768,7 +865,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getTrimEnd");
-          return this.__PROXY__.getTrimEnd(...args);
+          
+              return this.__PROXY__.getTrimEnd(...args);
+            
         };
     
         // function 
@@ -776,7 +875,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.trimStartPoint");
-          return this.__PROXY__.trimStartPoint(...args);
+          
+              return this.__PROXY__.trimStartPoint(...args);
+            
         };
     
         // function 
@@ -784,7 +885,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.trimEndPoint");
-          return this.__PROXY__.trimEndPoint(...args);
+          
+              return this.__PROXY__.trimEndPoint(...args);
+            
         };
     
         // function 
@@ -792,7 +895,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getDistanceFromStart");
-          return this.__PROXY__.getDistanceFromStart(...args);
+          
+              return this.__PROXY__.getDistanceFromStart(...args);
+            
         };
     
         // function 
@@ -800,7 +905,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.getOffsetShapes");
-          return this.__PROXY__.getOffsetShapes(...args);
+          
+              return this.__PROXY__.getOffsetShapes(...args);
+            
         };
     
         // function 
@@ -808,7 +915,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.splitAt");
-          return this.__PROXY__.splitAt(...args);
+          
+              return this.__PROXY__.splitAt(...args);
+            
         };
     
         // function 
@@ -816,7 +925,9 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.print");
-          return this.__PROXY__.print(...args);
+          
+              return this.__PROXY__.print(...args);
+            
         };
     
         // function 
@@ -824,11 +935,53 @@ RLine.Ray = RLine_Wrapper.Ray;
           
         {
           //print("JS: RLine.prototype.copy");
-          return this.__PROXY__.copy(...args);
+          
+              return this.__PROXY__.copy(...args);
+            
         };
     
 
       // static functions:
+      
+          Object.defineProperty(RLine.prototype, 'startPoint', {
+              get: function() {
+                  
+                      return this.__PROXY__.getStartPoint();
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setStartPoint(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(RLine.prototype, 'endPoint', {
+              get: function() {
+                  
+                      return this.__PROXY__.getEndPoint();
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setEndPoint(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        RLine.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RLine.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RLine.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

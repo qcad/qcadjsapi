@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSnapAuto.prototype = new RSnapAuto_BaseJs(engine);
       //RSnapAuto.prototype = new RSnapAuto_Wrapper(engine);
       RSnapAuto.prototype = new Object();
+
 
       RSnapAuto.prototype.toString = function() {
           //return "RSnapAuto [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -227,7 +228,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.suspendEvent");
-          return this.__PROXY__.suspendEvent(...args);
+          
+              return this.__PROXY__.suspendEvent(...args);
+            
         };
     
         // function 
@@ -235,7 +238,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.finishEvent");
-          return this.__PROXY__.finishEvent(...args);
+          
+              return this.__PROXY__.finishEvent(...args);
+            
         };
     
         // function 
@@ -243,7 +248,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getEntityIds");
-          return this.__PROXY__.getEntityIds(...args);
+          
+              return this.__PROXY__.getEntityIds(...args);
+            
         };
     
         // function 
@@ -251,7 +258,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getStatus");
-          return this.__PROXY__.getStatus(...args);
+          
+              return this.__PROXY__.getStatus(...args);
+            
         };
     
         // function 
@@ -259,7 +268,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setStatus");
-          return this.__PROXY__.setStatus(...args);
+          
+              return this.__PROXY__.setStatus(...args);
+            
         };
     
         // function 
@@ -267,7 +278,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getLastSnap");
-          return this.__PROXY__.getLastSnap(...args);
+          
+              return this.__PROXY__.getLastSnap(...args);
+            
         };
     
         // function 
@@ -275,7 +288,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setLastSnap");
-          return this.__PROXY__.setLastSnap(...args);
+          
+              return this.__PROXY__.setLastSnap(...args);
+            
         };
     
         // function 
@@ -283,7 +298,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.snap");
-          return this.__PROXY__.snap(...args);
+          
+              return this.__PROXY__.snap(...args);
+            
         };
     
         // function 
@@ -291,7 +308,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.init");
-          return this.__PROXY__.init(...args);
+          
+              return this.__PROXY__.init(...args);
+            
         };
     
         // function 
@@ -299,7 +318,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getModes");
-          return this.__PROXY__.getModes(...args);
+          
+              return this.__PROXY__.getModes(...args);
+            
         };
     
         // function 
@@ -307,7 +328,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setModes");
-          return this.__PROXY__.setModes(...args);
+          
+              return this.__PROXY__.setModes(...args);
+            
         };
     
         // function 
@@ -315,7 +338,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setMode");
-          return this.__PROXY__.setMode(...args);
+          
+              return this.__PROXY__.setMode(...args);
+            
         };
     
         // function 
@@ -323,7 +348,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getMode");
-          return this.__PROXY__.getMode(...args);
+          
+              return this.__PROXY__.getMode(...args);
+            
         };
     
         // function 
@@ -331,7 +358,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setIntersections");
-          return this.__PROXY__.setIntersections(...args);
+          
+              return this.__PROXY__.setIntersections(...args);
+            
         };
     
         // function 
@@ -339,7 +368,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getIntersections");
-          return this.__PROXY__.getIntersections(...args);
+          
+              return this.__PROXY__.getIntersections(...args);
+            
         };
     
         // function 
@@ -347,7 +378,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setEndPoints");
-          return this.__PROXY__.setEndPoints(...args);
+          
+              return this.__PROXY__.setEndPoints(...args);
+            
         };
     
         // function 
@@ -355,7 +388,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -363,7 +398,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setMiddlePoints");
-          return this.__PROXY__.setMiddlePoints(...args);
+          
+              return this.__PROXY__.setMiddlePoints(...args);
+            
         };
     
         // function 
@@ -371,7 +408,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -379,7 +418,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setCenterPoints");
-          return this.__PROXY__.setCenterPoints(...args);
+          
+              return this.__PROXY__.setCenterPoints(...args);
+            
         };
     
         // function 
@@ -387,7 +428,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -395,7 +438,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setPerpendicular");
-          return this.__PROXY__.setPerpendicular(...args);
+          
+              return this.__PROXY__.setPerpendicular(...args);
+            
         };
     
         // function 
@@ -403,7 +448,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getPerpendicular");
-          return this.__PROXY__.getPerpendicular(...args);
+          
+              return this.__PROXY__.getPerpendicular(...args);
+            
         };
     
         // function 
@@ -411,7 +458,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setTangential");
-          return this.__PROXY__.setTangential(...args);
+          
+              return this.__PROXY__.setTangential(...args);
+            
         };
     
         // function 
@@ -419,7 +468,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getTangential");
-          return this.__PROXY__.getTangential(...args);
+          
+              return this.__PROXY__.getTangential(...args);
+            
         };
     
         // function 
@@ -427,7 +478,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setReferencePoints");
-          return this.__PROXY__.setReferencePoints(...args);
+          
+              return this.__PROXY__.setReferencePoints(...args);
+            
         };
     
         // function 
@@ -435,7 +488,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -443,7 +498,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setGridPoints");
-          return this.__PROXY__.setGridPoints(...args);
+          
+              return this.__PROXY__.setGridPoints(...args);
+            
         };
     
         // function 
@@ -451,7 +508,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getGridPoints");
-          return this.__PROXY__.getGridPoints(...args);
+          
+              return this.__PROXY__.getGridPoints(...args);
+            
         };
     
         // function 
@@ -459,7 +518,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setPointsOnEntity");
-          return this.__PROXY__.setPointsOnEntity(...args);
+          
+              return this.__PROXY__.setPointsOnEntity(...args);
+            
         };
     
         // function 
@@ -467,7 +528,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getPointsOnEntity");
-          return this.__PROXY__.getPointsOnEntity(...args);
+          
+              return this.__PROXY__.getPointsOnEntity(...args);
+            
         };
     
         // function 
@@ -475,7 +538,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.setFreePositioning");
-          return this.__PROXY__.setFreePositioning(...args);
+          
+              return this.__PROXY__.setFreePositioning(...args);
+            
         };
     
         // function 
@@ -483,7 +548,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.getFreePositioning");
-          return this.__PROXY__.getFreePositioning(...args);
+          
+              return this.__PROXY__.getFreePositioning(...args);
+            
         };
     
         // function 
@@ -491,7 +558,9 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
           
         {
           //print("JS: RSnapAuto.prototype.reset");
-          return this.__PROXY__.reset(...args);
+          
+              return this.__PROXY__.reset(...args);
+            
         };
     
 
@@ -1197,6 +1266,16 @@ RSnapAuto.FreePositioning = RSnapAuto_Wrapper.FreePositioning;
   }
   
         };
+      RSnapAuto.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSnapAuto.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSnapAuto.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

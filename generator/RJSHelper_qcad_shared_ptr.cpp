@@ -933,15 +933,9 @@
           REntity_Wrapper* ret = new REntity_Wrapper(handler, v);
 
           // JS: new REntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("REntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class REntity is undefined. Use REntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new REntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_REntity::getIdStatic(), "REntity", ret);
       }
 
       QSharedPointer<REntity> RJSHelper_qcad::js2cpp_QSharedPointer_REntity(RJSApi& handler, const QJSValue& v) {
@@ -1223,15 +1217,9 @@
           RShape_Wrapper* ret = new RShape_Wrapper(handler, v);
 
           // JS: new RShape('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RShape");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RShape is undefined. Use RShape_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RShape('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RShape::getIdStatic(), "RShape", ret);
       }
 
       QSharedPointer<RShape> RJSHelper_qcad::js2cpp_QSharedPointer_RShape(RJSApi& handler, const QJSValue& v) {
@@ -1343,15 +1331,9 @@
           RArc_Wrapper* ret = new RArc_Wrapper(handler, v);
 
           // JS: new RArc('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RArc");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RArc is undefined. Use RArc_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RArc('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RArc::getIdStatic(), "RArc", ret);
       }
 
       QSharedPointer<RArc> RJSHelper_qcad::js2cpp_QSharedPointer_RArc(RJSApi& handler, const QJSValue& v) {
@@ -1415,15 +1397,9 @@
           RCircle_Wrapper* ret = new RCircle_Wrapper(handler, v);
 
           // JS: new RCircle('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RCircle");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RCircle is undefined. Use RCircle_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RCircle('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RCircle::getIdStatic(), "RCircle", ret);
       }
 
       QSharedPointer<RCircle> RJSHelper_qcad::js2cpp_QSharedPointer_RCircle(RJSApi& handler, const QJSValue& v) {
@@ -1487,15 +1463,9 @@
           REllipse_Wrapper* ret = new REllipse_Wrapper(handler, v);
 
           // JS: new REllipse('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("REllipse");
-          if (cl.isUndefined()) {
-              qWarning() << "Class REllipse is undefined. Use REllipse_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new REllipse('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_REllipse::getIdStatic(), "REllipse", ret);
       }
 
       QSharedPointer<REllipse> RJSHelper_qcad::js2cpp_QSharedPointer_REllipse(RJSApi& handler, const QJSValue& v) {
@@ -1559,15 +1529,9 @@
           RLine_Wrapper* ret = new RLine_Wrapper(handler, v);
 
           // JS: new RLine('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RLine");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RLine is undefined. Use RLine_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RLine('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RLine::getIdStatic(), "RLine", ret);
       }
 
       QSharedPointer<RLine> RJSHelper_qcad::js2cpp_QSharedPointer_RLine(RJSApi& handler, const QJSValue& v) {
@@ -1631,15 +1595,9 @@
           RPoint_Wrapper* ret = new RPoint_Wrapper(handler, v);
 
           // JS: new RPoint('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RPoint");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RPoint is undefined. Use RPoint_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RPoint('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RPoint::getIdStatic(), "RPoint", ret);
       }
 
       QSharedPointer<RPoint> RJSHelper_qcad::js2cpp_QSharedPointer_RPoint(RJSApi& handler, const QJSValue& v) {
@@ -1703,15 +1661,9 @@
           RRay_Wrapper* ret = new RRay_Wrapper(handler, v);
 
           // JS: new RRay('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RRay");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RRay is undefined. Use RRay_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RRay('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RRay::getIdStatic(), "RRay", ret);
       }
 
       QSharedPointer<RRay> RJSHelper_qcad::js2cpp_QSharedPointer_RRay(RJSApi& handler, const QJSValue& v) {
@@ -1775,15 +1727,9 @@
           RSpline_Wrapper* ret = new RSpline_Wrapper(handler, v);
 
           // JS: new RSpline('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RSpline");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RSpline is undefined. Use RSpline_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RSpline('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RSpline::getIdStatic(), "RSpline", ret);
       }
 
       QSharedPointer<RSpline> RJSHelper_qcad::js2cpp_QSharedPointer_RSpline(RJSApi& handler, const QJSValue& v) {
@@ -1847,15 +1793,9 @@
           RTriangle_Wrapper* ret = new RTriangle_Wrapper(handler, v);
 
           // JS: new RTriangle('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RTriangle");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RTriangle is undefined. Use RTriangle_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RTriangle('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RTriangle::getIdStatic(), "RTriangle", ret);
       }
 
       QSharedPointer<RTriangle> RJSHelper_qcad::js2cpp_QSharedPointer_RTriangle(RJSApi& handler, const QJSValue& v) {
@@ -1919,15 +1859,9 @@
           RXLine_Wrapper* ret = new RXLine_Wrapper(handler, v);
 
           // JS: new RXLine('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RXLine");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RXLine is undefined. Use RXLine_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RXLine('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RXLine::getIdStatic(), "RXLine", ret);
       }
 
       QSharedPointer<RXLine> RJSHelper_qcad::js2cpp_QSharedPointer_RXLine(RJSApi& handler, const QJSValue& v) {
@@ -1991,15 +1925,9 @@
           RTextLabel_Wrapper* ret = new RTextLabel_Wrapper(handler, v);
 
           // JS: new RTextLabel('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RTextLabel");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RTextLabel is undefined. Use RTextLabel_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RTextLabel('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RTextLabel::getIdStatic(), "RTextLabel", ret);
       }
 
       QSharedPointer<RTextLabel> RJSHelper_qcad::js2cpp_QSharedPointer_RTextLabel(RJSApi& handler, const QJSValue& v) {

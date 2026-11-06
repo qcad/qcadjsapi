@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RModifyObjectsOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RModifyObjectsOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RModifyObjectsOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -112,15 +112,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RModifyObjectsOperation.prototype = new RModifyObjectsOperation_BaseJs(engine);
       //RModifyObjectsOperation.prototype = new RModifyObjectsOperation_Wrapper(engine);
       RModifyObjectsOperation.prototype = new Object();
+
 
       RModifyObjectsOperation.prototype.toString = function() {
           //return "RModifyObjectsOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -167,8 +168,248 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
 
       // functions:
       
+        // function 
+        RModifyObjectsOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.replaceObject = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.replaceObject");
+          
+              return this.__PROXY__.replaceObject(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.getObject = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.getObject");
+          
+              return this.__PROXY__.getObject(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.endCycle = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.endCycle");
+          
+              return this.__PROXY__.endCycle(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.addObject = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.addObject");
+          
+              return this.__PROXY__.addObject(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.deleteObject = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.deleteObject");
+          
+              return this.__PROXY__.deleteObject(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.getPreviewCounter = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.getPreviewCounter");
+          
+              return this.__PROXY__.getPreviewCounter(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.setLimitPreview = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.setLimitPreview");
+          
+              return this.__PROXY__.setLimitPreview(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectsOperation.prototype.transformSelection = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectsOperation.prototype.transformSelection");
+          
+              return this.__PROXY__.transformSelection(...args);
+            
+        };
+    
 
       // static functions:
+      RModifyObjectsOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RModifyObjectsOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RModifyObjectsOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -187,4 +428,7 @@ RModifyObjectsOperation.Delete = RModifyObjectsOperation_Wrapper.Delete;
       //  return this.wrapper.destr();
       //};
 
+      RModifyObjectsOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

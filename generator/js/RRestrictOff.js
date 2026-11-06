@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RRestrictOff);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RRestrictOff);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RRestrictOff.prototype = new RRestrictOff_BaseJs(engine);
       //RRestrictOff.prototype = new RRestrictOff_Wrapper(engine);
       RRestrictOff.prototype = new Object();
+
 
       RRestrictOff.prototype.toString = function() {
           //return "RRestrictOff [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -143,7 +144,7 @@
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
                 
-                    return this.showUiOptionsSuper(
+                    return this.__PROXY__.showUiOptionsSuper(
                   
                 );
               
@@ -175,7 +176,7 @@
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
                 
-                    return this.hideUiOptionsSuper(
+                    return this.__PROXY__.hideUiOptionsSuper(
                   
                 );
               
@@ -193,8 +194,48 @@
   
       };
     
+        // function 
+        RRestrictOff.prototype.getLastSnap = function(...args) 
+          
+        {
+          //print("JS: RRestrictOff.prototype.getLastSnap");
+          
+              return this.__PROXY__.getLastSnap(...args);
+            
+        };
+    
+        // function 
+        RRestrictOff.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RRestrictOff.prototype.reset");
+          
+              return this.__PROXY__.reset(...args);
+            
+        };
+    
+        // function 
+        RRestrictOff.prototype.restrictSnap = function(...args) 
+          
+        {
+          //print("JS: RRestrictOff.prototype.restrictSnap");
+          
+              return this.__PROXY__.restrictSnap(...args);
+            
+        };
+    
 
       // static functions:
+      RRestrictOff.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RRestrictOff.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RRestrictOff.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -213,4 +254,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RRestrictOff.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

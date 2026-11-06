@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RGrid);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RGrid.prototype = new RGrid_BaseJs(engine);
       //RGrid.prototype = new RGrid_Wrapper(engine);
       RGrid.prototype = new Object();
+
 
       RGrid.prototype.toString = function() {
           //return "RGrid [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,158 @@
 
       // functions:
       
+        // function 
+        RGrid.prototype.clearCache = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.clearCache");
+          
+              return this.__PROXY__.clearCache(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.snapToGrid = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.snapToGrid");
+          
+              return this.__PROXY__.snapToGrid(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.update = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.update");
+          
+              return this.__PROXY__.update(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.paint = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.paint");
+          
+              return this.__PROXY__.paint(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.paintMetaGrid = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.paintMetaGrid");
+          
+              return this.__PROXY__.paintMetaGrid(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.paintCursor = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.paintCursor");
+          
+              return this.__PROXY__.paintCursor(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.paintRuler = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.paintRuler");
+          
+              return this.__PROXY__.paintRuler(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.getInfoText = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.getInfoText");
+          
+              return this.__PROXY__.getInfoText(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.isIsometric = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.isIsometric");
+          
+              return this.__PROXY__.isIsometric(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.getProjection = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.getProjection");
+          
+              return this.__PROXY__.getProjection(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.getViewportNumber = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.getViewportNumber");
+          
+              return this.__PROXY__.getViewportNumber(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.getDocument = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.getDocument");
+          
+              return this.__PROXY__.getDocument(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.setVisible = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.setVisible");
+          
+              return this.__PROXY__.setVisible(...args);
+            
+        };
+    
+        // function 
+        RGrid.prototype.isVisible = function(...args) 
+          
+        {
+          //print("JS: RGrid.prototype.isVisible");
+          
+              return this.__PROXY__.isVisible(...args);
+            
+        };
+    
 
       // static functions:
+      RGrid.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RGrid.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RGrid.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +266,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RGrid.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

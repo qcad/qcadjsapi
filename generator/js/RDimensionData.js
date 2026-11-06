@@ -111,15 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RDimensionData.prototype = new RDimensionData_BaseJs(engine);
       //RDimensionData.prototype = new RDimensionData_Wrapper(engine);
       RDimensionData.prototype = new Object();
+
 
       RDimensionData.prototype.toString = function() {
           //return "RDimensionData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -160,7 +161,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -168,7 +171,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -176,7 +181,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -184,7 +191,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -192,7 +201,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -200,7 +211,9 @@
           
         {
           //print("JS: RDimensionData.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -208,7 +221,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -216,7 +231,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -224,7 +241,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -232,7 +251,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -240,7 +261,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -248,7 +271,9 @@
           
         {
           //print("JS: RDimensionData.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -256,7 +281,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -264,7 +291,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -272,7 +301,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -280,7 +311,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -288,7 +321,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -296,7 +331,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -304,7 +341,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -312,7 +351,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -320,7 +361,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -328,7 +371,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -336,7 +381,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -344,7 +391,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -352,7 +401,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -360,7 +411,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -368,7 +421,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -376,7 +431,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -384,7 +441,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -392,7 +451,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -400,7 +461,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -408,7 +471,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -416,7 +481,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -424,7 +491,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -432,7 +501,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -440,7 +511,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -448,7 +521,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -456,7 +531,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -464,7 +541,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -472,7 +551,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -480,7 +561,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -488,7 +571,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -496,7 +581,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -504,7 +591,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -512,7 +601,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -520,7 +611,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -528,7 +621,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -536,7 +631,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -544,7 +641,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -552,7 +651,9 @@
           
         {
           //print("JS: RDimensionData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -560,7 +661,9 @@
           
         {
           //print("JS: RDimensionData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -568,7 +671,9 @@
           
         {
           //print("JS: RDimensionData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -576,7 +681,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -584,7 +691,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -592,7 +701,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -600,7 +711,9 @@
           
         {
           //print("JS: RDimensionData.prototype.render");
-          return this.__PROXY__.render(...args);
+          
+              return this.__PROXY__.render(...args);
+            
         };
     
         // function 
@@ -608,7 +721,9 @@
           
         {
           //print("JS: RDimensionData.prototype.updateBoundingBox");
-          return this.__PROXY__.updateBoundingBox(...args);
+          
+              return this.__PROXY__.updateBoundingBox(...args);
+            
         };
     
         // function 
@@ -616,7 +731,9 @@
           
         {
           //print("JS: RDimensionData.prototype.updateTextPositionCenter");
-          return this.__PROXY__.updateTextPositionCenter(...args);
+          
+              return this.__PROXY__.updateTextPositionCenter(...args);
+            
         };
     
         // function 
@@ -624,7 +741,9 @@
           
         {
           //print("JS: RDimensionData.prototype.updateTextPositionSide");
-          return this.__PROXY__.updateTextPositionSide(...args);
+          
+              return this.__PROXY__.updateTextPositionSide(...args);
+            
         };
     
         // function 
@@ -632,7 +751,9 @@
           
         {
           //print("JS: RDimensionData.prototype.updateTextData");
-          return this.__PROXY__.updateTextData(...args);
+          
+              return this.__PROXY__.updateTextData(...args);
+            
         };
     
         // function 
@@ -640,7 +761,9 @@
           
         {
           //print("JS: RDimensionData.prototype.updateShapes");
-          return this.__PROXY__.updateShapes(...args);
+          
+              return this.__PROXY__.updateShapes(...args);
+            
         };
     
         // function 
@@ -648,7 +771,9 @@
           
         {
           //print("JS: RDimensionData.prototype.updateArrowPos1");
-          return this.__PROXY__.updateArrowPos1(...args);
+          
+              return this.__PROXY__.updateArrowPos1(...args);
+            
         };
     
         // function 
@@ -656,7 +781,9 @@
           
         {
           //print("JS: RDimensionData.prototype.updateArrowPos2");
-          return this.__PROXY__.updateArrowPos2(...args);
+          
+              return this.__PROXY__.updateArrowPos2(...args);
+            
         };
     
         // function 
@@ -664,7 +791,9 @@
           
         {
           //print("JS: RDimensionData.prototype.clearStyleOverrides");
-          return this.__PROXY__.clearStyleOverrides(...args);
+          
+              return this.__PROXY__.clearStyleOverrides(...args);
+            
         };
     
         // function 
@@ -672,7 +801,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -680,7 +811,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -688,7 +821,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -696,7 +831,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -704,7 +841,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDefinitionPoint");
-          return this.__PROXY__.setDefinitionPoint(...args);
+          
+              return this.__PROXY__.setDefinitionPoint(...args);
+            
         };
     
         // function 
@@ -712,7 +851,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDefinitionPoint");
-          return this.__PROXY__.getDefinitionPoint(...args);
+          
+              return this.__PROXY__.getDefinitionPoint(...args);
+            
         };
     
         // function 
@@ -720,7 +861,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setText");
-          return this.__PROXY__.setText(...args);
+          
+              return this.__PROXY__.setText(...args);
+            
         };
     
         // function 
@@ -728,7 +871,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getText");
-          return this.__PROXY__.getText(...args);
+          
+              return this.__PROXY__.getText(...args);
+            
         };
     
         // function 
@@ -736,7 +881,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setUpperTolerance");
-          return this.__PROXY__.setUpperTolerance(...args);
+          
+              return this.__PROXY__.setUpperTolerance(...args);
+            
         };
     
         // function 
@@ -744,7 +891,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setLowerTolerance");
-          return this.__PROXY__.setLowerTolerance(...args);
+          
+              return this.__PROXY__.setLowerTolerance(...args);
+            
         };
     
         // function 
@@ -752,7 +901,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setTextPosition");
-          return this.__PROXY__.setTextPosition(...args);
+          
+              return this.__PROXY__.setTextPosition(...args);
+            
         };
     
         // function 
@@ -760,7 +911,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getTextPosition");
-          return this.__PROXY__.getTextPosition(...args);
+          
+              return this.__PROXY__.getTextPosition(...args);
+            
         };
     
         // function 
@@ -768,7 +921,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setFontName");
-          return this.__PROXY__.setFontName(...args);
+          
+              return this.__PROXY__.setFontName(...args);
+            
         };
     
         // function 
@@ -776,7 +931,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getFontName");
-          return this.__PROXY__.getFontName(...args);
+          
+              return this.__PROXY__.getFontName(...args);
+            
         };
     
         // function 
@@ -784,7 +941,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimBlockName");
-          return this.__PROXY__.setDimBlockName(...args);
+          
+              return this.__PROXY__.setDimBlockName(...args);
+            
         };
     
         // function 
@@ -792,7 +951,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimBlockName");
-          return this.__PROXY__.getDimBlockName(...args);
+          
+              return this.__PROXY__.getDimBlockName(...args);
+            
         };
     
         // function 
@@ -800,7 +961,9 @@
           
         {
           //print("JS: RDimensionData.prototype.hasOverrides");
-          return this.__PROXY__.hasOverrides(...args);
+          
+              return this.__PROXY__.hasOverrides(...args);
+            
         };
     
         // function 
@@ -808,7 +971,9 @@
           
         {
           //print("JS: RDimensionData.prototype.hasOverride");
-          return this.__PROXY__.hasOverride(...args);
+          
+              return this.__PROXY__.hasOverride(...args);
+            
         };
     
         // function 
@@ -816,7 +981,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getOverrides");
-          return this.__PROXY__.getOverrides(...args);
+          
+              return this.__PROXY__.getOverrides(...args);
+            
         };
     
         // function 
@@ -824,7 +991,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimXVariant");
-          return this.__PROXY__.setDimXVariant(...args);
+          
+              return this.__PROXY__.setDimXVariant(...args);
+            
         };
     
         // function 
@@ -832,7 +1001,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimXDouble");
-          return this.__PROXY__.setDimXDouble(...args);
+          
+              return this.__PROXY__.setDimXDouble(...args);
+            
         };
     
         // function 
@@ -840,7 +1011,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimXInt");
-          return this.__PROXY__.setDimXInt(...args);
+          
+              return this.__PROXY__.setDimXInt(...args);
+            
         };
     
         // function 
@@ -848,7 +1021,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimXBool");
-          return this.__PROXY__.setDimXBool(...args);
+          
+              return this.__PROXY__.setDimXBool(...args);
+            
         };
     
         // function 
@@ -856,7 +1031,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimXColor");
-          return this.__PROXY__.setDimXColor(...args);
+          
+              return this.__PROXY__.setDimXColor(...args);
+            
         };
     
         // function 
@@ -864,7 +1041,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimXVariant");
-          return this.__PROXY__.getDimXVariant(...args);
+          
+              return this.__PROXY__.getDimXVariant(...args);
+            
         };
     
         // function 
@@ -872,7 +1051,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getVariantOverride");
-          return this.__PROXY__.getVariantOverride(...args);
+          
+              return this.__PROXY__.getVariantOverride(...args);
+            
         };
     
         // function 
@@ -880,7 +1061,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimXDouble");
-          return this.__PROXY__.getDimXDouble(...args);
+          
+              return this.__PROXY__.getDimXDouble(...args);
+            
         };
     
         // function 
@@ -888,7 +1071,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDoubleOverride");
-          return this.__PROXY__.getDoubleOverride(...args);
+          
+              return this.__PROXY__.getDoubleOverride(...args);
+            
         };
     
         // function 
@@ -896,7 +1081,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimXInt");
-          return this.__PROXY__.getDimXInt(...args);
+          
+              return this.__PROXY__.getDimXInt(...args);
+            
         };
     
         // function 
@@ -904,7 +1091,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getIntOverride");
-          return this.__PROXY__.getIntOverride(...args);
+          
+              return this.__PROXY__.getIntOverride(...args);
+            
         };
     
         // function 
@@ -912,7 +1101,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimXBool");
-          return this.__PROXY__.getDimXBool(...args);
+          
+              return this.__PROXY__.getDimXBool(...args);
+            
         };
     
         // function 
@@ -920,7 +1111,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getBoolOverride");
-          return this.__PROXY__.getBoolOverride(...args);
+          
+              return this.__PROXY__.getBoolOverride(...args);
+            
         };
     
         // function 
@@ -928,7 +1121,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimXColor");
-          return this.__PROXY__.getDimXColor(...args);
+          
+              return this.__PROXY__.getDimXColor(...args);
+            
         };
     
         // function 
@@ -936,7 +1131,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getColorOverride");
-          return this.__PROXY__.getColorOverride(...args);
+          
+              return this.__PROXY__.getColorOverride(...args);
+            
         };
     
         // function 
@@ -944,7 +1141,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimlfac");
-          return this.__PROXY__.getDimlfac(...args);
+          
+              return this.__PROXY__.getDimlfac(...args);
+            
         };
     
         // function 
@@ -952,7 +1151,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimlfac");
-          return this.__PROXY__.setDimlfac(...args);
+          
+              return this.__PROXY__.setDimlfac(...args);
+            
         };
     
         // function 
@@ -960,7 +1161,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getLinearFactor");
-          return this.__PROXY__.getLinearFactor(...args);
+          
+              return this.__PROXY__.getLinearFactor(...args);
+            
         };
     
         // function 
@@ -968,7 +1171,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setLinearFactor");
-          return this.__PROXY__.setLinearFactor(...args);
+          
+              return this.__PROXY__.setLinearFactor(...args);
+            
         };
     
         // function 
@@ -976,7 +1181,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimscale");
-          return this.__PROXY__.getDimscale(...args);
+          
+              return this.__PROXY__.getDimscale(...args);
+            
         };
     
         // function 
@@ -984,7 +1191,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimscale");
-          return this.__PROXY__.setDimscale(...args);
+          
+              return this.__PROXY__.setDimscale(...args);
+            
         };
     
         // function 
@@ -992,7 +1201,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isArrow1Flipped");
-          return this.__PROXY__.isArrow1Flipped(...args);
+          
+              return this.__PROXY__.isArrow1Flipped(...args);
+            
         };
     
         // function 
@@ -1000,7 +1211,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setArrow1Flipped");
-          return this.__PROXY__.setArrow1Flipped(...args);
+          
+              return this.__PROXY__.setArrow1Flipped(...args);
+            
         };
     
         // function 
@@ -1008,7 +1221,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isArrow2Flipped");
-          return this.__PROXY__.isArrow2Flipped(...args);
+          
+              return this.__PROXY__.isArrow2Flipped(...args);
+            
         };
     
         // function 
@@ -1016,7 +1231,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setArrow2Flipped");
-          return this.__PROXY__.setArrow2Flipped(...args);
+          
+              return this.__PROXY__.setArrow2Flipped(...args);
+            
         };
     
         // function 
@@ -1024,7 +1241,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isExtLineFix");
-          return this.__PROXY__.isExtLineFix(...args);
+          
+              return this.__PROXY__.isExtLineFix(...args);
+            
         };
     
         // function 
@@ -1032,7 +1251,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setExtLineFix");
-          return this.__PROXY__.setExtLineFix(...args);
+          
+              return this.__PROXY__.setExtLineFix(...args);
+            
         };
     
         // function 
@@ -1040,7 +1261,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getExtLineFixLength");
-          return this.__PROXY__.getExtLineFixLength(...args);
+          
+              return this.__PROXY__.getExtLineFixLength(...args);
+            
         };
     
         // function 
@@ -1048,7 +1271,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setExtLineFixLength");
-          return this.__PROXY__.setExtLineFixLength(...args);
+          
+              return this.__PROXY__.setExtLineFixLength(...args);
+            
         };
     
         // function 
@@ -1056,7 +1281,9 @@
           
         {
           //print("JS: RDimensionData.prototype.adjustExtensionLineFixLength");
-          return this.__PROXY__.adjustExtensionLineFixLength(...args);
+          
+              return this.__PROXY__.adjustExtensionLineFixLength(...args);
+            
         };
     
         // function 
@@ -1064,7 +1291,9 @@
           
         {
           //print("JS: RDimensionData.prototype.hasSpaceForArrows");
-          return this.__PROXY__.hasSpaceForArrows(...args);
+          
+              return this.__PROXY__.hasSpaceForArrows(...args);
+            
         };
     
         // function 
@@ -1072,7 +1301,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -1080,7 +1311,9 @@
           
         {
           //print("JS: RDimensionData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -1088,7 +1321,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -1096,7 +1331,9 @@
           
         {
           //print("JS: RDimensionData.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -1104,7 +1341,9 @@
           
         {
           //print("JS: RDimensionData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -1112,7 +1351,9 @@
           
         {
           //print("JS: RDimensionData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -1120,7 +1361,9 @@
           
         {
           //print("JS: RDimensionData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -1128,7 +1371,9 @@
           
         {
           //print("JS: RDimensionData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -1136,7 +1381,9 @@
           
         {
           //print("JS: RDimensionData.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -1144,7 +1391,9 @@
           
         {
           //print("JS: RDimensionData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -1152,7 +1401,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimexo");
-          return this.__PROXY__.getDimexo(...args);
+          
+              return this.__PROXY__.getDimexo(...args);
+            
         };
     
         // function 
@@ -1160,7 +1411,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimexo");
-          return this.__PROXY__.setDimexo(...args);
+          
+              return this.__PROXY__.setDimexo(...args);
+            
         };
     
         // function 
@@ -1168,7 +1421,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimexe");
-          return this.__PROXY__.getDimexe(...args);
+          
+              return this.__PROXY__.getDimexe(...args);
+            
         };
     
         // function 
@@ -1176,7 +1431,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimexe");
-          return this.__PROXY__.setDimexe(...args);
+          
+              return this.__PROXY__.setDimexe(...args);
+            
         };
     
         // function 
@@ -1184,7 +1441,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimasz");
-          return this.__PROXY__.getDimasz(...args);
+          
+              return this.__PROXY__.getDimasz(...args);
+            
         };
     
         // function 
@@ -1192,7 +1451,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimasz");
-          return this.__PROXY__.setDimasz(...args);
+          
+              return this.__PROXY__.setDimasz(...args);
+            
         };
     
         // function 
@@ -1200,7 +1461,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimdli");
-          return this.__PROXY__.getDimdli(...args);
+          
+              return this.__PROXY__.getDimdli(...args);
+            
         };
     
         // function 
@@ -1208,7 +1471,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimdli");
-          return this.__PROXY__.setDimdli(...args);
+          
+              return this.__PROXY__.setDimdli(...args);
+            
         };
     
         // function 
@@ -1216,7 +1481,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimgap");
-          return this.__PROXY__.getDimgap(...args);
+          
+              return this.__PROXY__.getDimgap(...args);
+            
         };
     
         // function 
@@ -1224,7 +1491,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimgap");
-          return this.__PROXY__.setDimgap(...args);
+          
+              return this.__PROXY__.setDimgap(...args);
+            
         };
     
         // function 
@@ -1232,7 +1501,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimtxt");
-          return this.__PROXY__.getDimtxt(...args);
+          
+              return this.__PROXY__.getDimtxt(...args);
+            
         };
     
         // function 
@@ -1240,7 +1511,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimtxt");
-          return this.__PROXY__.setDimtxt(...args);
+          
+              return this.__PROXY__.setDimtxt(...args);
+            
         };
     
         // function 
@@ -1248,7 +1521,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimlunit");
-          return this.__PROXY__.getDimlunit(...args);
+          
+              return this.__PROXY__.getDimlunit(...args);
+            
         };
     
         // function 
@@ -1256,7 +1531,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimlunit");
-          return this.__PROXY__.setDimlunit(...args);
+          
+              return this.__PROXY__.setDimlunit(...args);
+            
         };
     
         // function 
@@ -1264,7 +1541,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimjust");
-          return this.__PROXY__.getDimjust(...args);
+          
+              return this.__PROXY__.getDimjust(...args);
+            
         };
     
         // function 
@@ -1272,7 +1551,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimtad");
-          return this.__PROXY__.getDimtad(...args);
+          
+              return this.__PROXY__.getDimtad(...args);
+            
         };
     
         // function 
@@ -1280,7 +1561,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimtad");
-          return this.__PROXY__.setDimtad(...args);
+          
+              return this.__PROXY__.setDimtad(...args);
+            
         };
     
         // function 
@@ -1288,7 +1571,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimtih");
-          return this.__PROXY__.getDimtih(...args);
+          
+              return this.__PROXY__.getDimtih(...args);
+            
         };
     
         // function 
@@ -1296,7 +1581,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimtih");
-          return this.__PROXY__.setDimtih(...args);
+          
+              return this.__PROXY__.setDimtih(...args);
+            
         };
     
         // function 
@@ -1304,7 +1591,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimtsz");
-          return this.__PROXY__.getDimtsz(...args);
+          
+              return this.__PROXY__.getDimtsz(...args);
+            
         };
     
         // function 
@@ -1312,7 +1601,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimtsz");
-          return this.__PROXY__.setDimtsz(...args);
+          
+              return this.__PROXY__.setDimtsz(...args);
+            
         };
     
         // function 
@@ -1320,7 +1611,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimzin");
-          return this.__PROXY__.getDimzin(...args);
+          
+              return this.__PROXY__.getDimzin(...args);
+            
         };
     
         // function 
@@ -1328,7 +1621,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimzin");
-          return this.__PROXY__.setDimzin(...args);
+          
+              return this.__PROXY__.setDimzin(...args);
+            
         };
     
         // function 
@@ -1336,7 +1631,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimaunit");
-          return this.__PROXY__.getDimaunit(...args);
+          
+              return this.__PROXY__.getDimaunit(...args);
+            
         };
     
         // function 
@@ -1344,7 +1641,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimaunit");
-          return this.__PROXY__.setDimaunit(...args);
+          
+              return this.__PROXY__.setDimaunit(...args);
+            
         };
     
         // function 
@@ -1352,7 +1651,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimadec");
-          return this.__PROXY__.getDimadec(...args);
+          
+              return this.__PROXY__.getDimadec(...args);
+            
         };
     
         // function 
@@ -1360,7 +1661,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimadec");
-          return this.__PROXY__.setDimadec(...args);
+          
+              return this.__PROXY__.setDimadec(...args);
+            
         };
     
         // function 
@@ -1368,7 +1671,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimdec");
-          return this.__PROXY__.getDimdec(...args);
+          
+              return this.__PROXY__.getDimdec(...args);
+            
         };
     
         // function 
@@ -1376,7 +1681,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimdec");
-          return this.__PROXY__.setDimdec(...args);
+          
+              return this.__PROXY__.setDimdec(...args);
+            
         };
     
         // function 
@@ -1384,7 +1691,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimazin");
-          return this.__PROXY__.getDimazin(...args);
+          
+              return this.__PROXY__.getDimazin(...args);
+            
         };
     
         // function 
@@ -1392,7 +1701,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimazin");
-          return this.__PROXY__.setDimazin(...args);
+          
+              return this.__PROXY__.setDimazin(...args);
+            
         };
     
         // function 
@@ -1400,7 +1711,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimdsep");
-          return this.__PROXY__.getDimdsep(...args);
+          
+              return this.__PROXY__.getDimdsep(...args);
+            
         };
     
         // function 
@@ -1408,7 +1721,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimdsep");
-          return this.__PROXY__.setDimdsep(...args);
+          
+              return this.__PROXY__.setDimdsep(...args);
+            
         };
     
         // function 
@@ -1416,7 +1731,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimclrt");
-          return this.__PROXY__.getDimclrt(...args);
+          
+              return this.__PROXY__.getDimclrt(...args);
+            
         };
     
         // function 
@@ -1424,7 +1741,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setDimclrt");
-          return this.__PROXY__.setDimclrt(...args);
+          
+              return this.__PROXY__.setDimclrt(...args);
+            
         };
     
         // function 
@@ -1432,7 +1751,9 @@
           
         {
           //print("JS: RDimensionData.prototype.useArchTick");
-          return this.__PROXY__.useArchTick(...args);
+          
+              return this.__PROXY__.useArchTick(...args);
+            
         };
     
         // function 
@@ -1440,7 +1761,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimblk");
-          return this.__PROXY__.getDimblk(...args);
+          
+              return this.__PROXY__.getDimblk(...args);
+            
         };
     
         // function 
@@ -1448,7 +1771,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimblkName");
-          return this.__PROXY__.getDimblkName(...args);
+          
+              return this.__PROXY__.getDimblkName(...args);
+            
         };
     
         // function 
@@ -1456,7 +1781,9 @@
           
         {
           //print("JS: RDimensionData.prototype.isDimXScaled");
-          return this.__PROXY__.isDimXScaled(...args);
+          
+              return this.__PROXY__.isDimXScaled(...args);
+            
         };
     
         // function 
@@ -1464,7 +1791,9 @@
           
         {
           //print("JS: RDimensionData.prototype.hasCustomTextPosition");
-          return this.__PROXY__.hasCustomTextPosition(...args);
+          
+              return this.__PROXY__.hasCustomTextPosition(...args);
+            
         };
     
         // function 
@@ -1472,7 +1801,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setCustomTextPosition");
-          return this.__PROXY__.setCustomTextPosition(...args);
+          
+              return this.__PROXY__.setCustomTextPosition(...args);
+            
         };
     
         // function 
@@ -1480,7 +1811,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getLineSpacingStyle");
-          return this.__PROXY__.getLineSpacingStyle(...args);
+          
+              return this.__PROXY__.getLineSpacingStyle(...args);
+            
         };
     
         // function 
@@ -1488,7 +1821,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getLineSpacingFactor");
-          return this.__PROXY__.getLineSpacingFactor(...args);
+          
+              return this.__PROXY__.getLineSpacingFactor(...args);
+            
         };
     
         // function 
@@ -1496,7 +1831,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getTextRotation");
-          return this.__PROXY__.getTextRotation(...args);
+          
+              return this.__PROXY__.getTextRotation(...args);
+            
         };
     
         // function 
@@ -1504,7 +1841,9 @@
           
         {
           //print("JS: RDimensionData.prototype.setTextRotation");
-          return this.__PROXY__.setTextRotation(...args);
+          
+              return this.__PROXY__.setTextRotation(...args);
+            
         };
     
         // function 
@@ -1512,7 +1851,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getTextData");
-          return this.__PROXY__.getTextData(...args);
+          
+              return this.__PROXY__.getTextData(...args);
+            
         };
     
         // function 
@@ -1520,7 +1861,9 @@
           
         {
           //print("JS: RDimensionData.prototype.initTextData");
-          return this.__PROXY__.initTextData(...args);
+          
+              return this.__PROXY__.initTextData(...args);
+            
         };
     
         // function 
@@ -1528,7 +1871,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getMeasurement");
-          return this.__PROXY__.getMeasurement(...args);
+          
+              return this.__PROXY__.getMeasurement(...args);
+            
         };
     
         // function 
@@ -1536,7 +1881,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getMeasuredValue");
-          return this.__PROXY__.getMeasuredValue(...args);
+          
+              return this.__PROXY__.getMeasuredValue(...args);
+            
         };
     
         // function 
@@ -1544,7 +1891,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getAutoLabel");
-          return this.__PROXY__.getAutoLabel(...args);
+          
+              return this.__PROXY__.getAutoLabel(...args);
+            
         };
     
         // function 
@@ -1552,7 +1901,9 @@
           
         {
           //print("JS: RDimensionData.prototype.formatLabel");
-          return this.__PROXY__.formatLabel(...args);
+          
+              return this.__PROXY__.formatLabel(...args);
+            
         };
     
         // function 
@@ -1560,7 +1911,9 @@
           
         {
           //print("JS: RDimensionData.prototype.formatAngleLabel");
-          return this.__PROXY__.formatAngleLabel(...args);
+          
+              return this.__PROXY__.formatAngleLabel(...args);
+            
         };
     
         // function 
@@ -1568,7 +1921,9 @@
           
         {
           //print("JS: RDimensionData.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -1576,7 +1931,9 @@
           
         {
           //print("JS: RDimensionData.prototype.getDimensionBlockReference");
-          return this.__PROXY__.getDimensionBlockReference(...args);
+          
+              return this.__PROXY__.getDimensionBlockReference(...args);
+            
         };
     
         // function 
@@ -1584,7 +1941,9 @@
           
         {
           //print("JS: RDimensionData.prototype.hasDimensionBlockReference");
-          return this.__PROXY__.hasDimensionBlockReference(...args);
+          
+              return this.__PROXY__.hasDimensionBlockReference(...args);
+            
         };
     
         // function 
@@ -1592,11 +1951,23 @@
           
         {
           //print("JS: RDimensionData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
 
       // static functions:
+      RDimensionData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RDimensionData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RDimensionData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

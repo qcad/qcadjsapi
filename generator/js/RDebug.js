@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RDebug);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RDebug.prototype = new RDebug_BaseJs(engine);
       //RDebug.prototype = new RDebug_Wrapper(engine);
       RDebug.prototype = new Object();
+
 
       RDebug.prototype.toString = function() {
           //return "RDebug [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,6 +96,126 @@
 
       // functions:
       
+        // function 
+        RDebug.prototype.printBacktrace = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.printBacktrace");
+          
+              return this.__PROXY__.printBacktrace(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.startTimer = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.startTimer");
+          
+              return this.__PROXY__.startTimer(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.stopTimer = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.stopTimer");
+          
+              return this.__PROXY__.stopTimer(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.timeStamp = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.timeStamp");
+          
+              return this.__PROXY__.timeStamp(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.hexDump = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.hexDump");
+          
+              return this.__PROXY__.hexDump(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.incCounter = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.incCounter");
+          
+              return this.__PROXY__.incCounter(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.decCounter = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.decCounter");
+          
+              return this.__PROXY__.decCounter(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.getCounter = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.getCounter");
+          
+              return this.__PROXY__.getCounter(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.printCounter = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.printCounter");
+          
+              return this.__PROXY__.printCounter(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.printCounters = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.printCounters");
+          
+              return this.__PROXY__.printCounters(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.setPrefix = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.setPrefix");
+          
+              return this.__PROXY__.setPrefix(...args);
+            
+        };
+    
+        // function 
+        RDebug.prototype.getPrefix = function(...args) 
+          
+        {
+          //print("JS: RDebug.prototype.getPrefix");
+          
+              return this.__PROXY__.getPrefix(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -455,6 +576,16 @@
   }
   
         };
+      RDebug.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RDebug.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RDebug.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -473,4 +604,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RDebug.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

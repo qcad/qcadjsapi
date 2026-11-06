@@ -1553,6 +1553,13 @@ QVariant a2_cpp;
               RCoordinateListenerAdapter_Wrapper::coordinateUpdatedEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCoordinateListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("coordinateUpdated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCoordinateListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)

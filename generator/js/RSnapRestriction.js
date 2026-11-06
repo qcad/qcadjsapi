@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSnapRestriction.prototype = new RSnapRestriction_BaseJs(engine);
       //RSnapRestriction.prototype = new RSnapRestriction_Wrapper(engine);
       RSnapRestriction.prototype = new Object();
+
 
       RSnapRestriction.prototype.toString = function() {
           //return "RSnapRestriction [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -100,7 +101,9 @@
           
         {
           //print("JS: RSnapRestriction.prototype.restrictSnap");
-          return this.__PROXY__.restrictSnap(...args);
+          
+              return this.__PROXY__.restrictSnap(...args);
+            
         };
     
       // function 
@@ -172,7 +175,9 @@
           
         {
           //print("JS: RSnapRestriction.prototype.getLastSnap");
-          return this.__PROXY__.getLastSnap(...args);
+          
+              return this.__PROXY__.getLastSnap(...args);
+            
         };
     
         // function 
@@ -180,11 +185,23 @@
           
         {
           //print("JS: RSnapRestriction.prototype.reset");
-          return this.__PROXY__.reset(...args);
+          
+              return this.__PROXY__.reset(...args);
+            
         };
     
 
       // static functions:
+      RSnapRestriction.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSnapRestriction.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSnapRestriction.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

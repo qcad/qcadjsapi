@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RRuler);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RRuler.prototype = new RRuler_BaseJs(engine);
       //RRuler.prototype = new RRuler_Wrapper(engine);
       RRuler.prototype = new Object();
+
 
       RRuler.prototype.toString = function() {
           //return "RRuler [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,78 @@
 
       // functions:
       
+        // function 
+        RRuler.prototype.setGraphicsView = function(...args) 
+          
+        {
+          //print("JS: RRuler.prototype.setGraphicsView");
+          
+              return this.__PROXY__.setGraphicsView(...args);
+            
+        };
+    
+        // function 
+        RRuler.prototype.getOrientation = function(...args) 
+          
+        {
+          //print("JS: RRuler.prototype.getOrientation");
+          
+              return this.__PROXY__.getOrientation(...args);
+            
+        };
+    
+        // function 
+        RRuler.prototype.setOrientation = function(...args) 
+          
+        {
+          //print("JS: RRuler.prototype.setOrientation");
+          
+              return this.__PROXY__.setOrientation(...args);
+            
+        };
+    
+        // function 
+        RRuler.prototype.paintTick = function(...args) 
+          
+        {
+          //print("JS: RRuler.prototype.paintTick");
+          
+              return this.__PROXY__.paintTick(...args);
+            
+        };
+    
+        // function 
+        RRuler.prototype.getFont = function(...args) 
+          
+        {
+          //print("JS: RRuler.prototype.getFont");
+          
+              return this.__PROXY__.getFont(...args);
+            
+        };
+    
+        // function 
+        RRuler.prototype.updateViewport = function(...args) 
+          
+        {
+          //print("JS: RRuler.prototype.updateViewport");
+          
+              return this.__PROXY__.updateViewport(...args);
+            
+        };
+    
 
       // static functions:
+      RRuler.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RRuler.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RRuler.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +186,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RRuler.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

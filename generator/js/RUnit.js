@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RUnit.prototype = new RUnit_BaseJs(engine);
       //RUnit.prototype = new RUnit_Wrapper(engine);
       RUnit.prototype = new Object();
+
 
       RUnit.prototype.toString = function() {
           //return "RUnit [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -129,7 +130,9 @@
           
         {
           //print("JS: RUnit.prototype.formatLinear");
-          return this.__PROXY__.formatLinear(...args);
+          
+              return this.__PROXY__.formatLinear(...args);
+            
         };
     
         // function 
@@ -137,7 +140,9 @@
           
         {
           //print("JS: RUnit.prototype.formatScientific");
-          return this.__PROXY__.formatScientific(...args);
+          
+              return this.__PROXY__.formatScientific(...args);
+            
         };
     
         // function 
@@ -145,7 +150,9 @@
           
         {
           //print("JS: RUnit.prototype.formatDecimal");
-          return this.__PROXY__.formatDecimal(...args);
+          
+              return this.__PROXY__.formatDecimal(...args);
+            
         };
     
         // function 
@@ -153,7 +160,9 @@
           
         {
           //print("JS: RUnit.prototype.formatEngineering");
-          return this.__PROXY__.formatEngineering(...args);
+          
+              return this.__PROXY__.formatEngineering(...args);
+            
         };
     
         // function 
@@ -161,7 +170,9 @@
           
         {
           //print("JS: RUnit.prototype.formatArchitectural");
-          return this.__PROXY__.formatArchitectural(...args);
+          
+              return this.__PROXY__.formatArchitectural(...args);
+            
         };
     
         // function 
@@ -169,7 +180,9 @@
           
         {
           //print("JS: RUnit.prototype.formatFractional");
-          return this.__PROXY__.formatFractional(...args);
+          
+              return this.__PROXY__.formatFractional(...args);
+            
         };
     
         // function 
@@ -177,7 +190,9 @@
           
         {
           //print("JS: RUnit.prototype.formatAngle");
-          return this.__PROXY__.formatAngle(...args);
+          
+              return this.__PROXY__.formatAngle(...args);
+            
         };
     
         // function 
@@ -185,7 +200,9 @@
           
         {
           //print("JS: RUnit.prototype.isMetric");
-          return this.__PROXY__.isMetric(...args);
+          
+              return this.__PROXY__.isMetric(...args);
+            
         };
     
         // function 
@@ -193,7 +210,9 @@
           
         {
           //print("JS: RUnit.prototype.convert");
-          return this.__PROXY__.convert(...args);
+          
+              return this.__PROXY__.convert(...args);
+            
         };
     
         // function 
@@ -201,7 +220,9 @@
           
         {
           //print("JS: RUnit.prototype.getFactorToM");
-          return this.__PROXY__.getFactorToM(...args);
+          
+              return this.__PROXY__.getFactorToM(...args);
+            
         };
     
         // function 
@@ -209,7 +230,9 @@
           
         {
           //print("JS: RUnit.prototype.parseUnit");
-          return this.__PROXY__.parseUnit(...args);
+          
+              return this.__PROXY__.parseUnit(...args);
+            
         };
     
         // function 
@@ -217,7 +240,9 @@
           
         {
           //print("JS: RUnit.prototype.unitToSymbol");
-          return this.__PROXY__.unitToSymbol(...args);
+          
+              return this.__PROXY__.unitToSymbol(...args);
+            
         };
     
         // function 
@@ -225,7 +250,9 @@
           
         {
           //print("JS: RUnit.prototype.unitToName");
-          return this.__PROXY__.unitToName(...args);
+          
+              return this.__PROXY__.unitToName(...args);
+            
         };
     
         // function 
@@ -233,7 +260,9 @@
           
         {
           //print("JS: RUnit.prototype.getLabel");
-          return this.__PROXY__.getLabel(...args);
+          
+              return this.__PROXY__.getLabel(...args);
+            
         };
     
         // function 
@@ -241,7 +270,9 @@
           
         {
           //print("JS: RUnit.prototype.doubleToString");
-          return this.__PROXY__.doubleToString(...args);
+          
+              return this.__PROXY__.doubleToString(...args);
+            
         };
     
         // function 
@@ -249,7 +280,9 @@
           
         {
           //print("JS: RUnit.prototype.doubleToStringDec");
-          return this.__PROXY__.doubleToStringDec(...args);
+          
+              return this.__PROXY__.doubleToStringDec(...args);
+            
         };
     
 
@@ -743,6 +776,16 @@
   }
   
         };
+      RUnit.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RUnit.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RUnit.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

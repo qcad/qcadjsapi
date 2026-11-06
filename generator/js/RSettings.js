@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RSettings);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RSettings);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSettings.prototype = new RSettings_BaseJs(engine);
       //RSettings.prototype = new RSettings_Wrapper(engine);
       RSettings.prototype = new Object();
+
 
       RSettings.prototype.toString = function() {
           //return "RSettings [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,1666 @@
 
       // functions:
       
+        // function 
+        RSettings.prototype.uninit = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.uninit");
+          
+              return this.__PROXY__.uninit(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setNoWrite = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setNoWrite");
+          
+              return this.__PROXY__.setNoWrite(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getAppId = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getAppId");
+          
+              return this.__PROXY__.getAppId(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getDevicePixelRatio = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getDevicePixelRatio");
+          
+              return this.__PROXY__.getDevicePixelRatio(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getLocale = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getLocale");
+          
+              return this.__PROXY__.getLocale(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.loadTranslations = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.loadTranslations");
+          
+              return this.__PROXY__.loadTranslations(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.translate = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.translate");
+          
+              return this.__PROXY__.translate(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getOriginalArguments = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getOriginalArguments");
+          
+              return this.__PROXY__.getOriginalArguments(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setOriginalArguments = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setOriginalArguments");
+          
+              return this.__PROXY__.setOriginalArguments(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getArgument = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getArgument");
+          
+              return this.__PROXY__.getArgument(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getArguments = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getArguments");
+          
+              return this.__PROXY__.getArguments(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getIntArgument = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getIntArgument");
+          
+              return this.__PROXY__.getIntArgument(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getIntListArgument = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getIntListArgument");
+          
+              return this.__PROXY__.getIntListArgument(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getFloatArgument = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getFloatArgument");
+          
+              return this.__PROXY__.getFloatArgument(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getColorArgument = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getColorArgument");
+          
+              return this.__PROXY__.getColorArgument(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getVectorArgument = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getVectorArgument");
+          
+              return this.__PROXY__.getVectorArgument(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getBoxArgument = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getBoxArgument");
+          
+              return this.__PROXY__.getBoxArgument(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.testArgument = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.testArgument");
+          
+              return this.__PROXY__.testArgument(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isDeployed = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isDeployed");
+          
+              return this.__PROXY__.isDeployed(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getApplicationPath = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getApplicationPath");
+          
+              return this.__PROXY__.getApplicationPath(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPluginPaths = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPluginPaths");
+          
+              return this.__PROXY__.getPluginPaths(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPluginPath = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPluginPath");
+          
+              return this.__PROXY__.getPluginPath(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getThemePath = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getThemePath");
+          
+              return this.__PROXY__.getThemePath(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getStandardLocation = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getStandardLocation");
+          
+              return this.__PROXY__.getStandardLocation(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getCacheLocation = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getCacheLocation");
+          
+              return this.__PROXY__.getCacheLocation(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getDataLocation = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getDataLocation");
+          
+              return this.__PROXY__.getDataLocation(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getTempLocation = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getTempLocation");
+          
+              return this.__PROXY__.getTempLocation(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getDesktopLocation = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getDesktopLocation");
+          
+              return this.__PROXY__.getDesktopLocation(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getDocumentsLocation = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getDocumentsLocation");
+          
+              return this.__PROXY__.getDocumentsLocation(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getHomeLocation = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getHomeLocation");
+          
+              return this.__PROXY__.getHomeLocation(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPluginsLocation = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPluginsLocation");
+          
+              return this.__PROXY__.getPluginsLocation(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isGuiEnabled = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isGuiEnabled");
+          
+              return this.__PROXY__.isGuiEnabled(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isDebuggerEnabled = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isDebuggerEnabled");
+          
+              return this.__PROXY__.isDebuggerEnabled(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.hasQuitFlag = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.hasQuitFlag");
+          
+              return this.__PROXY__.hasQuitFlag(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setQuitFlag = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setQuitFlag");
+          
+              return this.__PROXY__.setQuitFlag(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getFileName = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getFileName");
+          
+              return this.__PROXY__.getFileName(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPath = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPath");
+          
+              return this.__PROXY__.getPath(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getLaunchPath = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getLaunchPath");
+          
+              return this.__PROXY__.getLaunchPath(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setLaunchPath = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setLaunchPath");
+          
+              return this.__PROXY__.setLaunchPath(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setRulerFont = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setRulerFont");
+          
+              return this.__PROXY__.setRulerFont(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getRulerFont = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getRulerFont");
+          
+              return this.__PROXY__.getRulerFont(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setSnapLabelFont = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setSnapLabelFont");
+          
+              return this.__PROXY__.setSnapLabelFont(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getSnapLabelFont = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getSnapLabelFont");
+          
+              return this.__PROXY__.getSnapLabelFont(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getInfoLabelFont = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getInfoLabelFont");
+          
+              return this.__PROXY__.getInfoLabelFont(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getStatusBarFont = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getStatusBarFont");
+          
+              return this.__PROXY__.getStatusBarFont(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getSelectionColor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getSelectionColor");
+          
+              return this.__PROXY__.getSelectionColor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getReferencePointColor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getReferencePointColor");
+          
+              return this.__PROXY__.getReferencePointColor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getStartReferencePointColor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getStartReferencePointColor");
+          
+              return this.__PROXY__.getStartReferencePointColor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getEndReferencePointColor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getEndReferencePointColor");
+          
+              return this.__PROXY__.getEndReferencePointColor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getSecondaryReferencePointColor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getSecondaryReferencePointColor");
+          
+              return this.__PROXY__.getSecondaryReferencePointColor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getTertiaryReferencePointColor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getTertiaryReferencePointColor");
+          
+              return this.__PROXY__.getTertiaryReferencePointColor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getHighResolutionGraphicsView = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getHighResolutionGraphicsView");
+          
+              return this.__PROXY__.getHighResolutionGraphicsView(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getAutoScaleGrid = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getAutoScaleGrid");
+          
+              return this.__PROXY__.getAutoScaleGrid(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getAutoScaleMetaGrid = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getAutoScaleMetaGrid");
+          
+              return this.__PROXY__.getAutoScaleMetaGrid(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getAutoScalePatterns = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getAutoScalePatterns");
+          
+              return this.__PROXY__.getAutoScalePatterns(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getAutoZoomOnLoad = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getAutoZoomOnLoad");
+          
+              return this.__PROXY__.getAutoZoomOnLoad(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getColorCorrection = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getColorCorrection");
+          
+              return this.__PROXY__.getColorCorrection(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getColorCorrectionDisableForPrinting = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getColorCorrectionDisableForPrinting");
+          
+              return this.__PROXY__.getColorCorrectionDisableForPrinting(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getColorThreshold = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getColorThreshold");
+          
+              return this.__PROXY__.getColorThreshold(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getFadingFactor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getFadingFactor");
+          
+              return this.__PROXY__.getFadingFactor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getTextHeightThreshold = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getTextHeightThreshold");
+          
+              return this.__PROXY__.getTextHeightThreshold(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getArcAngleLengthThreshold = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getArcAngleLengthThreshold");
+          
+              return this.__PROXY__.getArcAngleLengthThreshold(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getMinArcAngleStep = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getMinArcAngleStep");
+          
+              return this.__PROXY__.getMinArcAngleStep(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getDashThreshold = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getDashThreshold");
+          
+              return this.__PROXY__.getDashThreshold(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getQtVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getQtVersion");
+          
+              return this.__PROXY__.getQtVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getQtVersionString = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getQtVersionString");
+          
+              return this.__PROXY__.getQtVersionString(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isQt = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isQt");
+          
+              return this.__PROXY__.isQt(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getCompilerVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getCompilerVersion");
+          
+              return this.__PROXY__.getCompilerVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getOSVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getOSVersion");
+          
+              return this.__PROXY__.getOSVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getReleaseDate = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getReleaseDate");
+          
+              return this.__PROXY__.getReleaseDate(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getVersionString = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getVersionString");
+          
+              return this.__PROXY__.getVersionString(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getNumericalVersionString = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getNumericalVersionString");
+          
+              return this.__PROXY__.getNumericalVersionString(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getMajorVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getMajorVersion");
+          
+              return this.__PROXY__.getMajorVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getMinorVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getMinorVersion");
+          
+              return this.__PROXY__.getMinorVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getRevisionVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getRevisionVersion");
+          
+              return this.__PROXY__.getRevisionVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getBuildVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getBuildVersion");
+          
+              return this.__PROXY__.getBuildVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getRevisionString = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getRevisionString");
+          
+              return this.__PROXY__.getRevisionString(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setFirstStart = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setFirstStart");
+          
+              return this.__PROXY__.setFirstStart(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isFirstStart = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isFirstStart");
+          
+              return this.__PROXY__.isFirstStart(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setNewVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setNewVersion");
+          
+              return this.__PROXY__.setNewVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isNewVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isNewVersion");
+          
+              return this.__PROXY__.isNewVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setPreviousVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setPreviousVersion");
+          
+              return this.__PROXY__.setPreviousVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getCurrentVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getCurrentVersion");
+          
+              return this.__PROXY__.getCurrentVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPreviousVersion = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPreviousVersion");
+          
+              return this.__PROXY__.getPreviousVersion(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isUpdated = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isUpdated");
+          
+              return this.__PROXY__.isUpdated(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getSnapRange = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getSnapRange");
+          
+              return this.__PROXY__.getSnapRange(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPickRange = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPickRange");
+          
+              return this.__PROXY__.getPickRange(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getZeroWeightWeight = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getZeroWeightWeight");
+          
+              return this.__PROXY__.getZeroWeightWeight(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPreviewEntities = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPreviewEntities");
+          
+              return this.__PROXY__.getPreviewEntities(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getLimitZoomAndScroll = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getLimitZoomAndScroll");
+          
+              return this.__PROXY__.getLimitZoomAndScroll(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getShowCrosshair = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getShowCrosshair");
+          
+              return this.__PROXY__.getShowCrosshair(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setShowCrosshair = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setShowCrosshair");
+          
+              return this.__PROXY__.setShowCrosshair(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getShowLargeCrosshair = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getShowLargeCrosshair");
+          
+              return this.__PROXY__.getShowLargeCrosshair(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setShowLargeCrosshair = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setShowLargeCrosshair");
+          
+              return this.__PROXY__.setShowLargeCrosshair(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getShowLargeOriginAxis = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getShowLargeOriginAxis");
+          
+              return this.__PROXY__.getShowLargeOriginAxis(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setShowLargeOriginAxis = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setShowLargeOriginAxis");
+          
+              return this.__PROXY__.setShowLargeOriginAxis(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getConcurrentDrawing = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getConcurrentDrawing");
+          
+              return this.__PROXY__.getConcurrentDrawing(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setConcurrentDrawing = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setConcurrentDrawing");
+          
+              return this.__PROXY__.setConcurrentDrawing(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getNumberLocale = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getNumberLocale");
+          
+              return this.__PROXY__.getNumberLocale(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.initRecentFiles = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.initRecentFiles");
+          
+              return this.__PROXY__.initRecentFiles(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.addRecentFile = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.addRecentFile");
+          
+              return this.__PROXY__.addRecentFile(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.removeRecentFile = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.removeRecentFile");
+          
+              return this.__PROXY__.removeRecentFile(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getRecentFiles = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getRecentFiles");
+          
+              return this.__PROXY__.getRecentFiles(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.clearRecentFiles = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.clearRecentFiles");
+          
+              return this.__PROXY__.clearRecentFiles(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getThumbnailFilePath = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getThumbnailFilePath");
+          
+              return this.__PROXY__.getThumbnailFilePath(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getColor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getColor");
+          
+              return this.__PROXY__.getColor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.hasValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.hasValue");
+          
+              return this.__PROXY__.hasValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getValue");
+          
+              return this.__PROXY__.getValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getColorValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getColorValue");
+          
+              return this.__PROXY__.getColorValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getBoolValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getBoolValue");
+          
+              return this.__PROXY__.getBoolValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getDoubleValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getDoubleValue");
+          
+              return this.__PROXY__.getDoubleValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getIntValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getIntValue");
+          
+              return this.__PROXY__.getIntValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getStringValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getStringValue");
+          
+              return this.__PROXY__.getStringValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getStringListValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getStringListValue");
+          
+              return this.__PROXY__.getStringListValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getCharValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getCharValue");
+          
+              return this.__PROXY__.getCharValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setValue");
+          
+              return this.__PROXY__.setValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.removeValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.removeValue");
+          
+              return this.__PROXY__.removeValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setDefaultValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setDefaultValue");
+          
+              return this.__PROXY__.setDefaultValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getDefaultValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getDefaultValue");
+          
+              return this.__PROXY__.getDefaultValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.hasDefaultValue = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.hasDefaultValue");
+          
+              return this.__PROXY__.hasDefaultValue(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setApplicationNameOverride = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setApplicationNameOverride");
+          
+              return this.__PROXY__.setApplicationNameOverride(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getApplicationNameOverride = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getApplicationNameOverride");
+          
+              return this.__PROXY__.getApplicationNameOverride(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.hasApplicationNameOverride = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.hasApplicationNameOverride");
+          
+              return this.__PROXY__.hasApplicationNameOverride(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getAllKeys = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getAllKeys");
+          
+              return this.__PROXY__.getAllKeys(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getQSettings = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getQSettings");
+          
+              return this.__PROXY__.getQSettings(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.resetCache = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.resetCache");
+          
+              return this.__PROXY__.resetCache(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setXDataEnabled = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setXDataEnabled");
+          
+              return this.__PROXY__.setXDataEnabled(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isXDataEnabled = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isXDataEnabled");
+          
+              return this.__PROXY__.isXDataEnabled(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setNextVersionEnabled = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setNextVersionEnabled");
+          
+              return this.__PROXY__.setNextVersionEnabled(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isNextVersionEnabled = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isNextVersionEnabled");
+          
+              return this.__PROXY__.isNextVersionEnabled(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getAutoScaleLinetypePatterns = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getAutoScaleLinetypePatterns");
+          
+              return this.__PROXY__.getAutoScaleLinetypePatterns(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getApplyLineweightToPoints = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getApplyLineweightToPoints");
+          
+              return this.__PROXY__.getApplyLineweightToPoints(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getScreenBasedLineweightScaleFactor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getScreenBasedLineweightScaleFactor");
+          
+              return this.__PROXY__.getScreenBasedLineweightScaleFactor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getUseSecondarySelectionColor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getUseSecondarySelectionColor");
+          
+              return this.__PROXY__.getUseSecondarySelectionColor(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getUseSolidLineSelection = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getUseSolidLineSelection");
+          
+              return this.__PROXY__.getUseSolidLineSelection(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getMouseThreshold = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getMouseThreshold");
+          
+              return this.__PROXY__.getMouseThreshold(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPositionByMousePress = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPositionByMousePress");
+          
+              return this.__PROXY__.getPositionByMousePress(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.setAllowMouseMoveInterruptionsOverride = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.setAllowMouseMoveInterruptionsOverride");
+          
+              return this.__PROXY__.setAllowMouseMoveInterruptionsOverride(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getAllowMouseMoveInterruptions = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getAllowMouseMoveInterruptions");
+          
+              return this.__PROXY__.getAllowMouseMoveInterruptions(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isTextRenderedAsText = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isTextRenderedAsText");
+          
+              return this.__PROXY__.isTextRenderedAsText(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isLayer0CompatibilityOn = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isLayer0CompatibilityOn");
+          
+              return this.__PROXY__.isLayer0CompatibilityOn(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getSelectBlockWithAttribute = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getSelectBlockWithAttribute");
+          
+              return this.__PROXY__.getSelectBlockWithAttribute(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getHideAttributeWithBlock = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getHideAttributeWithBlock");
+          
+              return this.__PROXY__.getHideAttributeWithBlock(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getImportRecomputedDimBlocks = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getImportRecomputedDimBlocks");
+          
+              return this.__PROXY__.getImportRecomputedDimBlocks(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getIgnoreBlockReferencePoint = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getIgnoreBlockReferencePoint");
+          
+              return this.__PROXY__.getIgnoreBlockReferencePoint(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getIgnoreAllReferencePoints = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getIgnoreAllReferencePoints");
+          
+              return this.__PROXY__.getIgnoreAllReferencePoints(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getReferencePointSize = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getReferencePointSize");
+          
+              return this.__PROXY__.getReferencePointSize(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getReferencePointShape = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getReferencePointShape");
+          
+              return this.__PROXY__.getReferencePointShape(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getMaxReferencePointEntities = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getMaxReferencePointEntities");
+          
+              return this.__PROXY__.getMaxReferencePointEntities(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getMaxReferencePointEntitiesDisplay = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getMaxReferencePointEntitiesDisplay");
+          
+              return this.__PROXY__.getMaxReferencePointEntitiesDisplay(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPropertyEditorShowOnRequest = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPropertyEditorShowOnRequest");
+          
+              return this.__PROXY__.getPropertyEditorShowOnRequest(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getSimpleTextAlignLeft = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getSimpleTextAlignLeft");
+          
+              return this.__PROXY__.getSimpleTextAlignLeft(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPolarCoordinateSeparator = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPolarCoordinateSeparator");
+          
+              return this.__PROXY__.getPolarCoordinateSeparator(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getCartesianCoordinateSeparator = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getCartesianCoordinateSeparator");
+          
+              return this.__PROXY__.getCartesianCoordinateSeparator(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getRelativeCoordinatePrefix = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getRelativeCoordinatePrefix");
+          
+              return this.__PROXY__.getRelativeCoordinatePrefix(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.isDarkMode = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.isDarkMode");
+          
+              return this.__PROXY__.isDarkMode(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.hasDarkGuiBackground = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.hasDarkGuiBackground");
+          
+              return this.__PROXY__.hasDarkGuiBackground(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getAppearance = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getAppearance");
+          
+              return this.__PROXY__.getAppearance(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.applyAppearance = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.applyAppearance");
+          
+              return this.__PROXY__.applyAppearance(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.hasCustomStyleSheet = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.hasCustomStyleSheet");
+          
+              return this.__PROXY__.hasCustomStyleSheet(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getPrinterNames = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getPrinterNames");
+          
+              return this.__PROXY__.getPrinterNames(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getDefaultPrinterName = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getDefaultPrinterName");
+          
+              return this.__PROXY__.getDefaultPrinterName(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.appendOpenGLMessage = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.appendOpenGLMessage");
+          
+              return this.__PROXY__.appendOpenGLMessage(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getOpenGLMessages = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getOpenGLMessages");
+          
+              return this.__PROXY__.getOpenGLMessages(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.useQml = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.useQml");
+          
+              return this.__PROXY__.useQml(...args);
+            
+        };
+    
+        // function 
+        RSettings.prototype.getWidgetSelectionColor = function(...args) 
+          
+        {
+          //print("JS: RSettings.prototype.getWidgetSelectionColor");
+          
+              return this.__PROXY__.getWidgetSelectionColor(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -4538,6 +6199,62 @@
       
 
         // static function 
+        RSettings.getAppearance = function() 
+          
+        {
+          //print("JS: RSettings.getAppearance");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.getAppearance(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.getAppearance(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
+        RSettings.applyAppearance = function() 
+          
+        {
+          //print("JS: RSettings.applyAppearance");
+          
+      if (arguments.length == 0) {
+    
+                // calling static wrapper:
+                return RSettings_WrapperSingletonInstance.applyAppearance(
+                  
+                );
+              
+
+        //copyProperties(this, wrapper, RSettings);
+  }
+
+  
+  else {
+    
+        print("RSettings.applyAppearance(): wrong number / type of arguments");
+      
+    console.trace();
+  }
+  
+        };
+      
+
+        // static function 
         RSettings.hasCustomStyleSheet = function() 
           
         {
@@ -4731,6 +6448,16 @@
   }
   
         };
+      RSettings.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSettings.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSettings.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -4749,4 +6476,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RSettings.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

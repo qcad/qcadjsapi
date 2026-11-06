@@ -15833,6 +15833,13 @@ bool a1_cpp;
               RToolButton_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RToolButton_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RToolButton_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17026,6 +17033,13 @@ Qt::ToolButtonStyle a1_cpp;
               RToolButton_Wrapper::triggeredEmitter(
                 QAction* a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RToolButton_Wrapper::staticMetaObject.indexOfSignal("triggered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RToolButton_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QAction)

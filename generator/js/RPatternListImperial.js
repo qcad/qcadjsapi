@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPatternListImperial);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPatternListImperial.prototype = new RPatternListImperial_BaseJs(engine);
       //RPatternListImperial.prototype = new RPatternListImperial_Wrapper(engine);
       RPatternListImperial.prototype = new Object();
+
 
       RPatternListImperial.prototype.toString = function() {
           //return "RPatternListImperial [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -99,6 +100,46 @@
 
       // functions:
       
+        // function 
+        RPatternListImperial.prototype.init = function(...args) 
+          
+        {
+          //print("JS: RPatternListImperial.prototype.init");
+          
+              return this.__PROXY__.init(...args);
+            
+        };
+    
+        // function 
+        RPatternListImperial.prototype.uninit = function(...args) 
+          
+        {
+          //print("JS: RPatternListImperial.prototype.uninit");
+          
+              return this.__PROXY__.uninit(...args);
+            
+        };
+    
+        // function 
+        RPatternListImperial.prototype.getNames = function(...args) 
+          
+        {
+          //print("JS: RPatternListImperial.prototype.getNames");
+          
+              return this.__PROXY__.getNames(...args);
+            
+        };
+    
+        // function 
+        RPatternListImperial.prototype.get = function(...args) 
+          
+        {
+          //print("JS: RPatternListImperial.prototype.get");
+          
+              return this.__PROXY__.get(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -213,6 +254,16 @@
   }
   
         };
+      RPatternListImperial.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPatternListImperial.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPatternListImperial.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -231,4 +282,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPatternListImperial.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

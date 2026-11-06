@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, REntityPickEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, REntityPickEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //REntityPickEvent.prototype = new REntityPickEvent_BaseJs(engine);
       //REntityPickEvent.prototype = new REntityPickEvent_Wrapper(engine);
       REntityPickEvent.prototype = new Object();
+
 
       REntityPickEvent.prototype.toString = function() {
           //return "REntityPickEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -128,8 +129,138 @@
 
       // functions:
       
+        // function 
+        REntityPickEvent.prototype.getModelPosition = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.getModelPosition");
+          
+              return this.__PROXY__.getModelPosition(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.setModelPosition = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.setModelPosition");
+          
+              return this.__PROXY__.setModelPosition(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.getCursorPosition = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.getCursorPosition");
+          
+              return this.__PROXY__.getCursorPosition(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.setCursorPosition = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.setCursorPosition");
+          
+              return this.__PROXY__.setCursorPosition(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.getScreenPosition = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.getScreenPosition");
+          
+              return this.__PROXY__.getScreenPosition(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.setScreenPosition = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.setScreenPosition");
+          
+              return this.__PROXY__.setScreenPosition(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.getGraphicsView = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.getGraphicsView");
+          
+              return this.__PROXY__.getGraphicsView(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.getGraphicsScene = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.getGraphicsScene");
+          
+              return this.__PROXY__.getGraphicsScene(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.getEntityId = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.getEntityId");
+          
+              return this.__PROXY__.getEntityId(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.setModifiers = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.setModifiers");
+          
+              return this.__PROXY__.setModifiers(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.getModifiers = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.getModifiers");
+          
+              return this.__PROXY__.getModifiers(...args);
+            
+        };
+    
+        // function 
+        REntityPickEvent.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: REntityPickEvent.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
 
       // static functions:
+      REntityPickEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      REntityPickEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      REntityPickEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -148,4 +279,7 @@
       //  return this.wrapper.destr();
       //};
 
+      REntityPickEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

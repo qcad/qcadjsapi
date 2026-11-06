@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPatternList);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPatternList.prototype = new RPatternList_BaseJs(engine);
       //RPatternList.prototype = new RPatternList_Wrapper(engine);
       RPatternList.prototype = new Object();
+
 
       RPatternList.prototype.toString = function() {
           //return "RPatternList [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -97,6 +98,16 @@
       
 
       // static functions:
+      RPatternList.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPatternList.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPatternList.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +126,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPatternList.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -84,31 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
-              // define property setters/getters:
-              Object.defineProperty(this, 'position', {
-                  get() {
-                      
-                          return this.__PROXY__.getPosition();
-                        
-                  },
-                  
-                    set(value) {
-                        this.__PROXY__.setPosition(value);
-                    },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
 
       }
 
       //RViewportData.prototype = new RViewportData_BaseJs(engine);
       //RViewportData.prototype = new RViewportData_Wrapper(engine);
       RViewportData.prototype = new Object();
+
 
       RViewportData.prototype.toString = function() {
           //return "RViewportData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -153,7 +138,9 @@
           
         {
           //print("JS: RViewportData.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -161,7 +148,9 @@
           
         {
           //print("JS: RViewportData.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -169,7 +158,9 @@
           
         {
           //print("JS: RViewportData.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -177,7 +168,9 @@
           
         {
           //print("JS: RViewportData.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -185,7 +178,9 @@
           
         {
           //print("JS: RViewportData.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -193,7 +188,9 @@
           
         {
           //print("JS: RViewportData.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -201,7 +198,9 @@
           
         {
           //print("JS: RViewportData.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -209,7 +208,9 @@
           
         {
           //print("JS: RViewportData.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -217,7 +218,9 @@
           
         {
           //print("JS: RViewportData.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -225,7 +228,9 @@
           
         {
           //print("JS: RViewportData.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -233,7 +238,9 @@
           
         {
           //print("JS: RViewportData.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -241,7 +248,9 @@
           
         {
           //print("JS: RViewportData.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -249,7 +258,9 @@
           
         {
           //print("JS: RViewportData.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -257,7 +268,9 @@
           
         {
           //print("JS: RViewportData.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -265,7 +278,9 @@
           
         {
           //print("JS: RViewportData.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -273,7 +288,9 @@
           
         {
           //print("JS: RViewportData.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -281,7 +298,9 @@
           
         {
           //print("JS: RViewportData.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -289,7 +308,9 @@
           
         {
           //print("JS: RViewportData.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -297,7 +318,9 @@
           
         {
           //print("JS: RViewportData.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -305,7 +328,9 @@
           
         {
           //print("JS: RViewportData.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -313,7 +338,9 @@
           
         {
           //print("JS: RViewportData.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -321,7 +348,9 @@
           
         {
           //print("JS: RViewportData.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -329,7 +358,9 @@
           
         {
           //print("JS: RViewportData.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -337,7 +368,9 @@
           
         {
           //print("JS: RViewportData.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -345,7 +378,9 @@
           
         {
           //print("JS: RViewportData.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -353,7 +388,9 @@
           
         {
           //print("JS: RViewportData.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -361,7 +398,9 @@
           
         {
           //print("JS: RViewportData.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -369,7 +408,9 @@
           
         {
           //print("JS: RViewportData.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -377,7 +418,9 @@
           
         {
           //print("JS: RViewportData.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -385,7 +428,9 @@
           
         {
           //print("JS: RViewportData.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -393,7 +438,9 @@
           
         {
           //print("JS: RViewportData.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -401,7 +448,9 @@
           
         {
           //print("JS: RViewportData.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -409,7 +458,9 @@
           
         {
           //print("JS: RViewportData.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -417,7 +468,9 @@
           
         {
           //print("JS: RViewportData.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -425,7 +478,9 @@
           
         {
           //print("JS: RViewportData.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -433,7 +488,9 @@
           
         {
           //print("JS: RViewportData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -441,7 +498,9 @@
           
         {
           //print("JS: RViewportData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -449,7 +508,9 @@
           
         {
           //print("JS: RViewportData.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -457,7 +518,9 @@
           
         {
           //print("JS: RViewportData.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -465,7 +528,9 @@
           
         {
           //print("JS: RViewportData.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -473,7 +538,9 @@
           
         {
           //print("JS: RViewportData.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -481,7 +548,9 @@
           
         {
           //print("JS: RViewportData.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -489,7 +558,9 @@
           
         {
           //print("JS: RViewportData.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -497,7 +568,9 @@
           
         {
           //print("JS: RViewportData.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -505,7 +578,9 @@
           
         {
           //print("JS: RViewportData.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -513,7 +588,9 @@
           
         {
           //print("JS: RViewportData.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -521,7 +598,9 @@
           
         {
           //print("JS: RViewportData.prototype.getShapeType");
-          return this.__PROXY__.getShapeType(...args);
+          
+              return this.__PROXY__.getShapeType(...args);
+            
         };
     
         // function 
@@ -529,7 +608,9 @@
           
         {
           //print("JS: RViewportData.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -537,7 +618,9 @@
           
         {
           //print("JS: RViewportData.prototype.getVectorProperties");
-          return this.__PROXY__.getVectorProperties(...args);
+          
+              return this.__PROXY__.getVectorProperties(...args);
+            
         };
     
         // function 
@@ -545,7 +628,9 @@
           
         {
           //print("JS: RViewportData.prototype.getPosition");
-          return this.__PROXY__.getPosition(...args);
+          
+              return this.__PROXY__.getPosition(...args);
+            
         };
     
         // function 
@@ -553,7 +638,9 @@
           
         {
           //print("JS: RViewportData.prototype.setPosition");
-          return this.__PROXY__.setPosition(...args);
+          
+              return this.__PROXY__.setPosition(...args);
+            
         };
     
         // function 
@@ -561,7 +648,9 @@
           
         {
           //print("JS: RViewportData.prototype.getLength");
-          return this.__PROXY__.getLength(...args);
+          
+              return this.__PROXY__.getLength(...args);
+            
         };
     
         // function 
@@ -569,7 +658,9 @@
           
         {
           //print("JS: RViewportData.prototype.getPointCloud");
-          return this.__PROXY__.getPointCloud(...args);
+          
+              return this.__PROXY__.getPointCloud(...args);
+            
         };
     
         // function 
@@ -577,7 +668,9 @@
           
         {
           //print("JS: RViewportData.prototype.getAngleAt");
-          return this.__PROXY__.getAngleAt(...args);
+          
+              return this.__PROXY__.getAngleAt(...args);
+            
         };
     
         // function 
@@ -585,7 +678,9 @@
           
         {
           //print("JS: RViewportData.prototype.getTransformed");
-          return this.__PROXY__.getTransformed(...args);
+          
+              return this.__PROXY__.getTransformed(...args);
+            
         };
     
         // function 
@@ -593,7 +688,9 @@
           
         {
           //print("JS: RViewportData.prototype.print");
-          return this.__PROXY__.print(...args);
+          
+              return this.__PROXY__.print(...args);
+            
         };
     
         // function 
@@ -601,7 +698,9 @@
           
         {
           //print("JS: RViewportData.prototype.copy");
-          return this.__PROXY__.copy(...args);
+          
+              return this.__PROXY__.copy(...args);
+            
         };
     
         // function 
@@ -609,7 +708,9 @@
           
         {
           //print("JS: RViewportData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -617,7 +718,9 @@
           
         {
           //print("JS: RViewportData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -625,7 +728,9 @@
           
         {
           //print("JS: RViewportData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -633,7 +738,9 @@
           
         {
           //print("JS: RViewportData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -641,7 +748,9 @@
           
         {
           //print("JS: RViewportData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -649,7 +758,9 @@
           
         {
           //print("JS: RViewportData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -657,7 +768,9 @@
           
         {
           //print("JS: RViewportData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -665,7 +778,9 @@
           
         {
           //print("JS: RViewportData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -673,7 +788,9 @@
           
         {
           //print("JS: RViewportData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -681,7 +798,9 @@
           
         {
           //print("JS: RViewportData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -689,7 +808,9 @@
           
         {
           //print("JS: RViewportData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -697,7 +818,9 @@
           
         {
           //print("JS: RViewportData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -705,7 +828,9 @@
           
         {
           //print("JS: RViewportData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -713,7 +838,9 @@
           
         {
           //print("JS: RViewportData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -721,7 +848,9 @@
           
         {
           //print("JS: RViewportData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -729,7 +858,9 @@
           
         {
           //print("JS: RViewportData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -737,7 +868,9 @@
           
         {
           //print("JS: RViewportData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -745,7 +878,9 @@
           
         {
           //print("JS: RViewportData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -753,7 +888,9 @@
           
         {
           //print("JS: RViewportData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -761,7 +898,9 @@
           
         {
           //print("JS: RViewportData.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -769,7 +908,9 @@
           
         {
           //print("JS: RViewportData.prototype.getViewportId");
-          return this.__PROXY__.getViewportId(...args);
+          
+              return this.__PROXY__.getViewportId(...args);
+            
         };
     
         // function 
@@ -777,7 +918,9 @@
           
         {
           //print("JS: RViewportData.prototype.setViewportId");
-          return this.__PROXY__.setViewportId(...args);
+          
+              return this.__PROXY__.setViewportId(...args);
+            
         };
     
         // function 
@@ -785,7 +928,9 @@
           
         {
           //print("JS: RViewportData.prototype.getStatus");
-          return this.__PROXY__.getStatus(...args);
+          
+              return this.__PROXY__.getStatus(...args);
+            
         };
     
         // function 
@@ -793,7 +938,9 @@
           
         {
           //print("JS: RViewportData.prototype.setStatus");
-          return this.__PROXY__.setStatus(...args);
+          
+              return this.__PROXY__.setStatus(...args);
+            
         };
     
         // function 
@@ -801,7 +948,9 @@
           
         {
           //print("JS: RViewportData.prototype.getCenter");
-          return this.__PROXY__.getCenter(...args);
+          
+              return this.__PROXY__.getCenter(...args);
+            
         };
     
         // function 
@@ -809,7 +958,9 @@
           
         {
           //print("JS: RViewportData.prototype.setCenter");
-          return this.__PROXY__.setCenter(...args);
+          
+              return this.__PROXY__.setCenter(...args);
+            
         };
     
         // function 
@@ -817,7 +968,9 @@
           
         {
           //print("JS: RViewportData.prototype.getViewCenter");
-          return this.__PROXY__.getViewCenter(...args);
+          
+              return this.__PROXY__.getViewCenter(...args);
+            
         };
     
         // function 
@@ -825,7 +978,9 @@
           
         {
           //print("JS: RViewportData.prototype.setViewCenter");
-          return this.__PROXY__.setViewCenter(...args);
+          
+              return this.__PROXY__.setViewCenter(...args);
+            
         };
     
         // function 
@@ -833,7 +988,9 @@
           
         {
           //print("JS: RViewportData.prototype.getViewTarget");
-          return this.__PROXY__.getViewTarget(...args);
+          
+              return this.__PROXY__.getViewTarget(...args);
+            
         };
     
         // function 
@@ -841,7 +998,9 @@
           
         {
           //print("JS: RViewportData.prototype.setViewTarget");
-          return this.__PROXY__.setViewTarget(...args);
+          
+              return this.__PROXY__.setViewTarget(...args);
+            
         };
     
         // function 
@@ -849,7 +1008,9 @@
           
         {
           //print("JS: RViewportData.prototype.getWidth");
-          return this.__PROXY__.getWidth(...args);
+          
+              return this.__PROXY__.getWidth(...args);
+            
         };
     
         // function 
@@ -857,7 +1018,9 @@
           
         {
           //print("JS: RViewportData.prototype.setWidth");
-          return this.__PROXY__.setWidth(...args);
+          
+              return this.__PROXY__.setWidth(...args);
+            
         };
     
         // function 
@@ -865,7 +1028,9 @@
           
         {
           //print("JS: RViewportData.prototype.getHeight");
-          return this.__PROXY__.getHeight(...args);
+          
+              return this.__PROXY__.getHeight(...args);
+            
         };
     
         // function 
@@ -873,7 +1038,9 @@
           
         {
           //print("JS: RViewportData.prototype.setHeight");
-          return this.__PROXY__.setHeight(...args);
+          
+              return this.__PROXY__.setHeight(...args);
+            
         };
     
         // function 
@@ -881,7 +1048,9 @@
           
         {
           //print("JS: RViewportData.prototype.getScale");
-          return this.__PROXY__.getScale(...args);
+          
+              return this.__PROXY__.getScale(...args);
+            
         };
     
         // function 
@@ -889,7 +1058,9 @@
           
         {
           //print("JS: RViewportData.prototype.setScale");
-          return this.__PROXY__.setScale(...args);
+          
+              return this.__PROXY__.setScale(...args);
+            
         };
     
         // function 
@@ -897,7 +1068,9 @@
           
         {
           //print("JS: RViewportData.prototype.getRotation");
-          return this.__PROXY__.getRotation(...args);
+          
+              return this.__PROXY__.getRotation(...args);
+            
         };
     
         // function 
@@ -905,7 +1078,9 @@
           
         {
           //print("JS: RViewportData.prototype.setRotation");
-          return this.__PROXY__.setRotation(...args);
+          
+              return this.__PROXY__.setRotation(...args);
+            
         };
     
         // function 
@@ -913,7 +1088,9 @@
           
         {
           //print("JS: RViewportData.prototype.isOverall");
-          return this.__PROXY__.isOverall(...args);
+          
+              return this.__PROXY__.isOverall(...args);
+            
         };
     
         // function 
@@ -921,7 +1098,9 @@
           
         {
           //print("JS: RViewportData.prototype.setOverall");
-          return this.__PROXY__.setOverall(...args);
+          
+              return this.__PROXY__.setOverall(...args);
+            
         };
     
         // function 
@@ -929,7 +1108,9 @@
           
         {
           //print("JS: RViewportData.prototype.isOff");
-          return this.__PROXY__.isOff(...args);
+          
+              return this.__PROXY__.isOff(...args);
+            
         };
     
         // function 
@@ -937,7 +1118,9 @@
           
         {
           //print("JS: RViewportData.prototype.setOff");
-          return this.__PROXY__.setOff(...args);
+          
+              return this.__PROXY__.setOff(...args);
+            
         };
     
         // function 
@@ -945,7 +1128,9 @@
           
         {
           //print("JS: RViewportData.prototype.getViewOffset");
-          return this.__PROXY__.getViewOffset(...args);
+          
+              return this.__PROXY__.getViewOffset(...args);
+            
         };
     
         // function 
@@ -953,7 +1138,9 @@
           
         {
           //print("JS: RViewportData.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -961,7 +1148,9 @@
           
         {
           //print("JS: RViewportData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -969,7 +1158,9 @@
           
         {
           //print("JS: RViewportData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -977,7 +1168,9 @@
           
         {
           //print("JS: RViewportData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -985,7 +1178,9 @@
           
         {
           //print("JS: RViewportData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -993,7 +1188,9 @@
           
         {
           //print("JS: RViewportData.prototype.getEdges");
-          return this.__PROXY__.getEdges(...args);
+          
+              return this.__PROXY__.getEdges(...args);
+            
         };
     
         // function 
@@ -1001,7 +1198,9 @@
           
         {
           //print("JS: RViewportData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -1009,7 +1208,9 @@
           
         {
           //print("JS: RViewportData.prototype.getFrozenLayerIds");
-          return this.__PROXY__.getFrozenLayerIds(...args);
+          
+              return this.__PROXY__.getFrozenLayerIds(...args);
+            
         };
     
         // function 
@@ -1017,11 +1218,38 @@
           
         {
           //print("JS: RViewportData.prototype.setFrozenLayerIds");
-          return this.__PROXY__.setFrozenLayerIds(...args);
+          
+              return this.__PROXY__.setFrozenLayerIds(...args);
+            
         };
     
 
       // static functions:
+      
+          Object.defineProperty(RViewportData.prototype, 'position', {
+              get: function() {
+                  
+                      return this.__PROXY__.getPosition();
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setPosition(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        RViewportData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RViewportData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RViewportData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

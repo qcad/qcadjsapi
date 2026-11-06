@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RTextLayout);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTextLayout);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTextLayout);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -104,7 +104,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTextLayout);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RTextLayout.prototype = new RTextLayout_BaseJs(engine);
       //RTextLayout.prototype = new RTextLayout_Wrapper(engine);
       RTextLayout.prototype = new Object();
+
 
       RTextLayout.prototype.toString = function() {
           //return "RTextLayout [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -176,8 +177,148 @@
 
       // functions:
       
+        // function 
+        RTextLayout.prototype.isEmpty = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.isEmpty");
+          
+              return this.__PROXY__.isEmpty(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.isTTF = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.isTTF");
+          
+              return this.__PROXY__.isTTF(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.hasPainterPath = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.hasPainterPath");
+          
+              return this.__PROXY__.hasPainterPath(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.getLayout = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.getLayout");
+          
+              return this.__PROXY__.getLayout(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.getTransform = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.getTransform");
+          
+              return this.__PROXY__.getTransform(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.getColor = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.getColor");
+          
+              return this.__PROXY__.getColor(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.getFont = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.getFont");
+          
+              return this.__PROXY__.getFont(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.isBold = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.isBold");
+          
+              return this.__PROXY__.isBold(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.isItalic = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.isItalic");
+          
+              return this.__PROXY__.isItalic(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.isUnderline = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.isUnderline");
+          
+              return this.__PROXY__.isUnderline(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.getHeight = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.getHeight");
+          
+              return this.__PROXY__.getHeight(...args);
+            
+        };
+    
+        // function 
+        RTextLayout.prototype.getBoundingBox = function(...args) 
+          
+        {
+          //print("JS: RTextLayout.prototype.getBoundingBox");
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
+        };
+    
 
       // static functions:
+      RTextLayout.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RTextLayout.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RTextLayout.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -196,4 +337,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RTextLayout.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

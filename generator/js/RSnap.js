@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSnap.prototype = new RSnap_BaseJs(engine);
       //RSnap.prototype = new RSnap_Wrapper(engine);
       RSnap.prototype = new Object();
+
 
       RSnap.prototype.toString = function() {
           //return "RSnap [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -243,7 +244,9 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnap.prototype.suspendEvent");
-          return this.__PROXY__.suspendEvent(...args);
+          
+              return this.__PROXY__.suspendEvent(...args);
+            
         };
     
         // function 
@@ -251,7 +254,9 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnap.prototype.finishEvent");
-          return this.__PROXY__.finishEvent(...args);
+          
+              return this.__PROXY__.finishEvent(...args);
+            
         };
     
         // function 
@@ -259,7 +264,9 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnap.prototype.getEntityIds");
-          return this.__PROXY__.getEntityIds(...args);
+          
+              return this.__PROXY__.getEntityIds(...args);
+            
         };
     
         // function 
@@ -267,7 +274,9 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnap.prototype.getStatus");
-          return this.__PROXY__.getStatus(...args);
+          
+              return this.__PROXY__.getStatus(...args);
+            
         };
     
         // function 
@@ -275,7 +284,9 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnap.prototype.setStatus");
-          return this.__PROXY__.setStatus(...args);
+          
+              return this.__PROXY__.setStatus(...args);
+            
         };
     
         // function 
@@ -283,7 +294,9 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnap.prototype.getLastSnap");
-          return this.__PROXY__.getLastSnap(...args);
+          
+              return this.__PROXY__.getLastSnap(...args);
+            
         };
     
         // function 
@@ -291,7 +304,9 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnap.prototype.setLastSnap");
-          return this.__PROXY__.setLastSnap(...args);
+          
+              return this.__PROXY__.setLastSnap(...args);
+            
         };
     
         // function 
@@ -299,11 +314,23 @@ RSnap.CoordinatePolar = RSnap_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnap.prototype.reset");
-          return this.__PROXY__.reset(...args);
+          
+              return this.__PROXY__.reset(...args);
+            
         };
     
 
       // static functions:
+      RSnap.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSnap.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSnap.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

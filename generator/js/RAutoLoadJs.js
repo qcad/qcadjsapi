@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RAutoLoadJs);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RAutoLoadJs);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RAutoLoadJs.prototype = new RAutoLoadJs_BaseJs(engine);
       //RAutoLoadJs.prototype = new RAutoLoadJs_Wrapper(engine);
       RAutoLoadJs.prototype = new Object();
+
 
       RAutoLoadJs.prototype.toString = function() {
           //return "RAutoLoadJs [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,26 @@
 
       // functions:
       
+        // function 
+        RAutoLoadJs.prototype.addAutoLoadFile = function(...args) 
+          
+        {
+          //print("JS: RAutoLoadJs.prototype.addAutoLoadFile");
+          
+              return this.__PROXY__.addAutoLoadFile(...args);
+            
+        };
+    
+        // function 
+        RAutoLoadJs.prototype.getAutoLoadFiles = function(...args) 
+          
+        {
+          //print("JS: RAutoLoadJs.prototype.getAutoLoadFiles");
+          
+              return this.__PROXY__.getAutoLoadFiles(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -182,6 +203,16 @@
   }
   
         };
+      RAutoLoadJs.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RAutoLoadJs.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RAutoLoadJs.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -200,4 +231,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RAutoLoadJs.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

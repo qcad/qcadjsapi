@@ -15720,6 +15720,13 @@ bool a1_cpp;
               RListWidget_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -21910,6 +21917,13 @@ QModelIndex a1_cpp;
               RListWidget_Wrapper::pressedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("pressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -21939,6 +21953,13 @@ QModelIndex a1_cpp;
               RListWidget_Wrapper::clickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("clicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -21968,6 +21989,13 @@ QModelIndex a1_cpp;
               RListWidget_Wrapper::doubleClickedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("doubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -21997,6 +22025,13 @@ QModelIndex a1_cpp;
               RListWidget_Wrapper::activatedEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("activated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22026,6 +22061,13 @@ QModelIndex a1_cpp;
               RListWidget_Wrapper::enteredEmitter(
                 const QModelIndex& index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("entered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (QModelIndex)
@@ -22055,6 +22097,13 @@ QModelIndex a1_cpp;
               RListWidget_Wrapper::viewportEnteredEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("viewportEntered()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -22075,6 +22124,13 @@ QModelIndex a1_cpp;
               RListWidget_Wrapper::iconSizeChangedEmitter(
                 const QSize& size
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("iconSizeChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: size (QSize)
@@ -28540,6 +28596,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::itemPressedEmitter(
                 QListWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("itemPressed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QListWidgetItem)
@@ -28569,6 +28632,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::itemClickedEmitter(
                 QListWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("itemClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QListWidgetItem)
@@ -28598,6 +28668,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::itemDoubleClickedEmitter(
                 QListWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("itemDoubleClicked(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QListWidgetItem)
@@ -28627,6 +28704,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::itemActivatedEmitter(
                 QListWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("itemActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QListWidgetItem)
@@ -28656,6 +28740,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::itemEnteredEmitter(
                 QListWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("itemEntered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QListWidgetItem)
@@ -28685,6 +28776,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::itemChangedEmitter(
                 QListWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("itemChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: item (QListWidgetItem)
@@ -28714,6 +28812,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::currentItemChangedEmitter(
                 QListWidgetItem* current, QListWidgetItem* previous
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("currentItemChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: current (QListWidgetItem)
@@ -28752,6 +28857,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::currentTextChangedEmitter(
                 const QString& currentText
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("currentTextChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: currentText (QString)
@@ -28781,6 +28893,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::currentRowChangedEmitter(
                 int currentRow
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("currentRowChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: currentRow (int)
@@ -28810,6 +28929,13 @@ QAbstractItemView::ScrollHint a2_cpp;
               RListWidget_Wrapper::itemSelectionChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("itemSelectionChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -29230,6 +29356,13 @@ int a1_cpp;
               RListWidget_Wrapper::iconClickedEmitter(
                 int x, QListWidgetItem* item
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RListWidget_Wrapper::staticMetaObject.indexOfSignal("iconClicked(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RListWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: x (int)

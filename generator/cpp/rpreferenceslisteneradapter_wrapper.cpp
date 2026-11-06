@@ -1512,6 +1512,13 @@ QVariant a2_cpp;
               RPreferencesListenerAdapter_Wrapper::preferencesUpdatedEmitter(
                 RDocumentInterface* di
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RPreferencesListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("preferencesUpdated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RPreferencesListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: di (RDocumentInterface)

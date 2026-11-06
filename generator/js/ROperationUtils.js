@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, ROperationUtils);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //ROperationUtils.prototype = new ROperationUtils_BaseJs(engine);
       //ROperationUtils.prototype = new ROperationUtils_Wrapper(engine);
       ROperationUtils.prototype = new Object();
+
 
       ROperationUtils.prototype.toString = function() {
           //return "ROperationUtils [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,6 +96,16 @@
 
       // functions:
       
+        // function 
+        ROperationUtils.prototype.normalizeDrawOrder = function(...args) 
+          
+        {
+          //print("JS: ROperationUtils.prototype.normalizeDrawOrder");
+          
+              return this.__PROXY__.normalizeDrawOrder(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -126,6 +137,16 @@
   }
   
         };
+      ROperationUtils.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      ROperationUtils.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      ROperationUtils.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -144,4 +165,7 @@
       //  return this.wrapper.destr();
       //};
 
+      ROperationUtils.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

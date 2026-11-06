@@ -1553,6 +1553,13 @@ QVariant a2_cpp;
               RSelectionListenerAdapter_Wrapper::selectionChangedEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RSelectionListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("selectionChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RSelectionListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RFocusListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RFocusListener.prototype = new RFocusListener_BaseJs(engine);
       //RFocusListener.prototype = new RFocusListener_Wrapper(engine);
       RFocusListener.prototype = new Object();
+
 
       RFocusListener.prototype.toString = function() {
           //return "RFocusListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -109,7 +110,7 @@
                 // call highest level JS implementation:
                 //return this.updateFocusBase(
                 
-                    return this.updateFocusSuper(
+                    return this.__PROXY__.updateFocusSuper(
                   arguments[0]
                 );
               
@@ -129,6 +130,16 @@
     
 
       // static functions:
+      RFocusListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RFocusListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RFocusListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -147,4 +158,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RFocusListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

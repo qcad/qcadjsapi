@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RMouseCoordinateListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RMouseCoordinateListener.prototype = new RMouseCoordinateListener_BaseJs(engine);
       //RMouseCoordinateListener.prototype = new RMouseCoordinateListener_Wrapper(engine);
       RMouseCoordinateListener.prototype = new Object();
+
 
       RMouseCoordinateListener.prototype.toString = function() {
           //return "RMouseCoordinateListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,28 @@
 
       // functions:
       
+        // function 
+        RMouseCoordinateListener.prototype.setCoordinate = function(...args) 
+          
+        {
+          //print("JS: RMouseCoordinateListener.prototype.setCoordinate");
+          
+              return this.__PROXY__.setCoordinate(...args);
+            
+        };
+    
 
       // static functions:
+      RMouseCoordinateListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RMouseCoordinateListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RMouseCoordinateListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +136,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RMouseCoordinateListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

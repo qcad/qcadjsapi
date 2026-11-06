@@ -163,15 +163,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPropertyTypeId.prototype = new RPropertyTypeId_BaseJs(engine);
       //RPropertyTypeId.prototype = new RPropertyTypeId_Wrapper(engine);
       RPropertyTypeId.prototype = new Object();
+
 
       RPropertyTypeId.prototype.toString = function() {
           //return "RPropertyTypeId [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -208,7 +209,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.getId");
-          return this.__PROXY__.getId(...args);
+          
+              return this.__PROXY__.getId(...args);
+            
         };
     
         // function 
@@ -216,7 +219,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.setId");
-          return this.__PROXY__.setId(...args);
+          
+              return this.__PROXY__.setId(...args);
+            
         };
     
         // function 
@@ -224,7 +229,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.getCustomPropertyTitle");
-          return this.__PROXY__.getCustomPropertyTitle(...args);
+          
+              return this.__PROXY__.getCustomPropertyTitle(...args);
+            
         };
     
         // function 
@@ -232,7 +239,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.setCustomPropertyTitle");
-          return this.__PROXY__.setCustomPropertyTitle(...args);
+          
+              return this.__PROXY__.setCustomPropertyTitle(...args);
+            
         };
     
         // function 
@@ -240,7 +249,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.getCustomPropertyName");
-          return this.__PROXY__.getCustomPropertyName(...args);
+          
+              return this.__PROXY__.getCustomPropertyName(...args);
+            
         };
     
         // function 
@@ -248,7 +259,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.setCustomPropertyName");
-          return this.__PROXY__.setCustomPropertyName(...args);
+          
+              return this.__PROXY__.setCustomPropertyName(...args);
+            
         };
     
         // function 
@@ -256,7 +269,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -264,7 +279,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.isCustom");
-          return this.__PROXY__.isCustom(...args);
+          
+              return this.__PROXY__.isCustom(...args);
+            
         };
     
         // function 
@@ -272,7 +289,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.generateId");
-          return this.__PROXY__.generateId(...args);
+          
+              return this.__PROXY__.generateId(...args);
+            
         };
     
         // function 
@@ -280,7 +299,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.getPropertyTypeIds");
-          return this.__PROXY__.getPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -288,7 +309,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.hasPropertyType");
-          return this.__PROXY__.hasPropertyType(...args);
+          
+              return this.__PROXY__.hasPropertyType(...args);
+            
         };
     
         // function 
@@ -296,7 +319,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.getPropertyGroupTitle");
-          return this.__PROXY__.getPropertyGroupTitle(...args);
+          
+              return this.__PROXY__.getPropertyGroupTitle(...args);
+            
         };
     
         // function 
@@ -304,7 +329,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.getPropertyTitle");
-          return this.__PROXY__.getPropertyTitle(...args);
+          
+              return this.__PROXY__.getPropertyTitle(...args);
+            
         };
     
         // function 
@@ -312,7 +339,9 @@
           
         {
           //print("JS: RPropertyTypeId.prototype.getPropertyTypeId");
-          return this.__PROXY__.getPropertyTypeId(...args);
+          
+              return this.__PROXY__.getPropertyTypeId(...args);
+            
         };
     
 
@@ -402,6 +431,16 @@
   }
   
         };
+      RPropertyTypeId.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPropertyTypeId.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPropertyTypeId.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

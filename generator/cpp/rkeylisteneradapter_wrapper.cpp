@@ -1512,6 +1512,13 @@ QVariant a2_cpp;
               RKeyListenerAdapter_Wrapper::keyPressEventEmitter(
                 QKeyEvent* event
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RKeyListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("keyPressEvent(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RKeyListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: event (QKeyEvent)

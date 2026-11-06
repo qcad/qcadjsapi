@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RModifiedListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RModifiedListener.prototype = new RModifiedListener_BaseJs(engine);
       //RModifiedListener.prototype = new RModifiedListener_Wrapper(engine);
       RModifiedListener.prototype = new Object();
+
 
       RModifiedListener.prototype.toString = function() {
           //return "RModifiedListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,28 @@
 
       // functions:
       
+        // function 
+        RModifiedListener.prototype.updateModifiedListener = function(...args) 
+          
+        {
+          //print("JS: RModifiedListener.prototype.updateModifiedListener");
+          
+              return this.__PROXY__.updateModifiedListener(...args);
+            
+        };
+    
 
       // static functions:
+      RModifiedListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RModifiedListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RModifiedListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +136,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RModifiedListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

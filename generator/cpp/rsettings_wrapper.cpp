@@ -8437,6 +8437,90 @@ bool a1_cpp;
               }
             
     // Class: RSettings
+    // Function: getAppearance
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::getAppearance
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            QString res = 
+                
+                // call static member function:
+                RSettings::getAppearance(
+              
+            );
+          
+            // return type: QString
+
+            return RJSHelper::cpp2js_QString(
+              handler, 
+              // non-copyable: false
+                  res
+                
+              );
+            
+  }
+
+                  qWarning() << "no matching function variant found for getAppearance";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSettings
+    // Function: applyAppearance
+    // Source: 
+    // Static: true
+    // Parameters: 0
+    // preceding Parameters: -1
+
+                QJSValue 
+              RSettings_WrapperSingleton::applyAppearance
+              (
+                
+              ) 
+              
+              {
+                
+      {
+    
+
+    // call function:
+    
+            // static member function:
+            // call base class static function:
+            
+                // call static member function:
+                RSettings::applyAppearance(
+              
+            );
+          
+            return QJSValue();
+          
+  }
+
+                  qWarning() << "no matching function variant found for applyAppearance";
+                  handler.trace();
+                  return QJSValue();
+                
+              }
+            
+    // Class: RSettings
     // Function: hasCustomStyleSheet
     // Source: 
     // Static: true

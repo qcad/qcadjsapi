@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RSpatialIndex);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSpatialIndex.prototype = new RSpatialIndex_BaseJs(engine);
       //RSpatialIndex.prototype = new RSpatialIndex_Wrapper(engine);
       RSpatialIndex.prototype = new Object();
+
 
       RSpatialIndex.prototype.toString = function() {
           //return "RSpatialIndex [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,6 +96,96 @@
 
       // functions:
       
+        // function 
+        RSpatialIndex.prototype.getSIId = function(...args) 
+          
+        {
+          //print("JS: RSpatialIndex.prototype.getSIId");
+          
+              return this.__PROXY__.getSIId(...args);
+            
+        };
+    
+        // function 
+        RSpatialIndex.prototype.getId = function(...args) 
+          
+        {
+          //print("JS: RSpatialIndex.prototype.getId");
+          
+              return this.__PROXY__.getId(...args);
+            
+        };
+    
+        // function 
+        RSpatialIndex.prototype.getPos = function(...args) 
+          
+        {
+          //print("JS: RSpatialIndex.prototype.getPos");
+          
+              return this.__PROXY__.getPos(...args);
+            
+        };
+    
+        // function 
+        RSpatialIndex.prototype.create = function(...args) 
+          
+        {
+          //print("JS: RSpatialIndex.prototype.create");
+          
+              return this.__PROXY__.create(...args);
+            
+        };
+    
+        // function 
+        RSpatialIndex.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: RSpatialIndex.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        RSpatialIndex.prototype.bulkLoadSimple = function(...args) 
+          
+        {
+          //print("JS: RSpatialIndex.prototype.bulkLoadSimple");
+          
+              return this.__PROXY__.bulkLoadSimple(...args);
+            
+        };
+    
+        // function 
+        RSpatialIndex.prototype.addToIndex = function(...args) 
+          
+        {
+          //print("JS: RSpatialIndex.prototype.addToIndex");
+          
+              return this.__PROXY__.addToIndex(...args);
+            
+        };
+    
+        // function 
+        RSpatialIndex.prototype.removeFromIndex = function(...args) 
+          
+        {
+          //print("JS: RSpatialIndex.prototype.removeFromIndex");
+          
+              return this.__PROXY__.removeFromIndex(...args);
+            
+        };
+    
+        // function 
+        RSpatialIndex.prototype.queryContainedIds = function(...args) 
+          
+        {
+          //print("JS: RSpatialIndex.prototype.queryContainedIds");
+          
+              return this.__PROXY__.queryContainedIds(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -181,6 +272,16 @@
   }
   
         };
+      RSpatialIndex.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSpatialIndex.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSpatialIndex.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -199,4 +300,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RSpatialIndex.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

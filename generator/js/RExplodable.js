@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RExplodable);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RExplodable.prototype = new RExplodable_BaseJs(engine);
       //RExplodable.prototype = new RExplodable_Wrapper(engine);
       RExplodable.prototype = new Object();
+
 
       RExplodable.prototype.toString = function() {
           //return "RExplodable [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -97,6 +98,16 @@
       
 
       // static functions:
+      RExplodable.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RExplodable.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RExplodable.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +126,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RExplodable.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -15867,6 +15867,13 @@ bool a1_cpp;
               RMdiChildQt_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMdiChildQt_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMdiChildQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -17100,6 +17107,13 @@ int a1_cpp;
               RMdiChildQt_Wrapper::windowStateChangedEmitter(
                 Qt::WindowStates oldState, Qt::WindowStates newState
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMdiChildQt_Wrapper::staticMetaObject.indexOfSignal("windowStateChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMdiChildQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: oldState (Qt::WindowStates)
@@ -17138,6 +17152,13 @@ int a1_cpp;
               RMdiChildQt_Wrapper::aboutToActivateEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMdiChildQt_Wrapper::staticMetaObject.indexOfSignal("aboutToActivate()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMdiChildQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -17744,6 +17765,13 @@ int a1_cpp;
               RMdiChildQt_Wrapper::closeRequestedEmitter(
                 RMdiChildQt* mdiChild
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMdiChildQt_Wrapper::staticMetaObject.indexOfSignal("closeRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMdiChildQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: mdiChild (RMdiChildQt)
@@ -17773,6 +17801,13 @@ int a1_cpp;
               RMdiChildQt_Wrapper::closeAcceptedEmitter(
                 RMdiChildQt* mdiChild
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMdiChildQt_Wrapper::staticMetaObject.indexOfSignal("closeAccepted(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMdiChildQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: mdiChild (RMdiChildQt)
@@ -17802,6 +17837,13 @@ int a1_cpp;
               RMdiChildQt_Wrapper::modifiedStatusChangedEmitter(
                 RMdiChildQt* mdiChild
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMdiChildQt_Wrapper::staticMetaObject.indexOfSignal("modifiedStatusChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMdiChildQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: mdiChild (RMdiChildQt)

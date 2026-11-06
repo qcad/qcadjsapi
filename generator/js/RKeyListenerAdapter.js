@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RKeyListenerAdapter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RKeyListenerAdapter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,22 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["keyPressEvent(QKeyEvent*)"] = Object.getPrototypeOf(this).keyPressEvent;
-  
-            }
-          
+
         }
 
-        
 
       }
 
       //RKeyListenerAdapter.prototype = new RKeyListenerAdapter_BaseJs(engine);
       //RKeyListenerAdapter.prototype = new RKeyListenerAdapter_Wrapper(engine);
       RKeyListenerAdapter.prototype = new Object();
+
 
       RKeyListenerAdapter.prototype.toString = function() {
           //return "RKeyListenerAdapter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -139,8 +133,223 @@
 
       // functions:
       
+        // function 
+        RKeyListenerAdapter.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.children = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.property = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        RKeyListenerAdapter.prototype.keyPressed = function(...args) 
+          
+        {
+          //print("JS: RKeyListenerAdapter.prototype.keyPressed");
+          
+              return this.__PROXY__.keyPressed(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(RKeyListenerAdapter.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(RKeyListenerAdapter.prototype, 'keyPressEvent', {
+            get: function() { return this.__PROXY__.keyPressEvent; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RKeyListenerAdapter.prototype, 'keyPressEvent(QKeyEvent*)', {
+              get: function() { return this.__PROXY__.keyPressEvent; },
+              configurable: true
+          });
+        RKeyListenerAdapter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RKeyListenerAdapter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RKeyListenerAdapter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -159,4 +368,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RKeyListenerAdapter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RFileImporterAdapter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RFileImporterAdapter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RFileImporterAdapter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -111,15 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RFileImporterAdapter.prototype = new RFileImporterAdapter_BaseJs(engine);
       //RFileImporterAdapter.prototype = new RFileImporterAdapter_Wrapper(engine);
       RFileImporterAdapter.prototype = new Object();
+
 
       RFileImporterAdapter.prototype.toString = function() {
           //return "RFileImporterAdapter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -159,6 +160,96 @@
 
       // functions:
       
+        // function 
+        RFileImporterAdapter.prototype.startImport = function(...args) 
+          
+        {
+          //print("JS: RFileImporterAdapter.prototype.startImport");
+          
+              return this.__PROXY__.startImport(...args);
+            
+        };
+    
+        // function 
+        RFileImporterAdapter.prototype.endImport = function(...args) 
+          
+        {
+          //print("JS: RFileImporterAdapter.prototype.endImport");
+          
+              return this.__PROXY__.endImport(...args);
+            
+        };
+    
+        // function 
+        RFileImporterAdapter.prototype.importObjectP = function(...args) 
+          
+        {
+          //print("JS: RFileImporterAdapter.prototype.importObjectP");
+          
+              return this.__PROXY__.importObjectP(...args);
+            
+        };
+    
+        // function 
+        RFileImporterAdapter.prototype.importObject = function(...args) 
+          
+        {
+          //print("JS: RFileImporterAdapter.prototype.importObject");
+          
+              return this.__PROXY__.importObject(...args);
+            
+        };
+    
+        // function 
+        RFileImporterAdapter.prototype.setCurrentBlockId = function(...args) 
+          
+        {
+          //print("JS: RFileImporterAdapter.prototype.setCurrentBlockId");
+          
+              return this.__PROXY__.setCurrentBlockId(...args);
+            
+        };
+    
+        // function 
+        RFileImporterAdapter.prototype.getCurrentBlockId = function(...args) 
+          
+        {
+          //print("JS: RFileImporterAdapter.prototype.getCurrentBlockId");
+          
+              return this.__PROXY__.getCurrentBlockId(...args);
+            
+        };
+    
+        // function 
+        RFileImporterAdapter.prototype.getDocument = function(...args) 
+          
+        {
+          //print("JS: RFileImporterAdapter.prototype.getDocument");
+          
+              return this.__PROXY__.getDocument(...args);
+            
+        };
+    
+        // function 
+        RFileImporterAdapter.prototype.setDocument = function(...args) 
+          
+        {
+          //print("JS: RFileImporterAdapter.prototype.setDocument");
+          
+              return this.__PROXY__.setDocument(...args);
+            
+        };
+    
+        // function 
+        RFileImporterAdapter.prototype.setKnownVariable = function(...args) 
+          
+        {
+          //print("JS: RFileImporterAdapter.prototype.setKnownVariable");
+          
+              return this.__PROXY__.setKnownVariable(...args);
+            
+        };
+    
       // function 
       RFileImporterAdapter.prototype.importFile = function() 
         
@@ -174,7 +265,7 @@
                 // call highest level JS implementation:
                 //return this.importFileBase(
                 
-                    return this.importFileSuper(
+                    return this.__PROXY__.importFileSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -194,6 +285,16 @@
     
 
       // static functions:
+      RFileImporterAdapter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RFileImporterAdapter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RFileImporterAdapter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -212,4 +313,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RFileImporterAdapter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

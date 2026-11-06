@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RMultiOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RMultiOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RMultiOperation.prototype = new RMultiOperation_BaseJs(engine);
       //RMultiOperation.prototype = new RMultiOperation_Wrapper(engine);
       RMultiOperation.prototype = new Object();
+
 
       RMultiOperation.prototype.toString = function() {
           //return "RMultiOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -129,8 +130,168 @@
 
       // functions:
       
+        // function 
+        RMultiOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.addOperation = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.addOperation");
+          
+              return this.__PROXY__.addOperation(...args);
+            
+        };
+    
+        // function 
+        RMultiOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RMultiOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
 
       // static functions:
+      RMultiOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RMultiOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RMultiOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -149,4 +310,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RMultiOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

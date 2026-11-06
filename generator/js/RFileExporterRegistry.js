@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RFileExporterRegistry);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RFileExporterRegistry);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RFileExporterRegistry.prototype = new RFileExporterRegistry_BaseJs(engine);
       //RFileExporterRegistry.prototype = new RFileExporterRegistry_Wrapper(engine);
       RFileExporterRegistry.prototype = new Object();
+
 
       RFileExporterRegistry.prototype.toString = function() {
           //return "RFileExporterRegistry [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,46 @@
 
       // functions:
       
+        // function 
+        RFileExporterRegistry.prototype.registerFileExporter = function(...args) 
+          
+        {
+          //print("JS: RFileExporterRegistry.prototype.registerFileExporter");
+          
+              return this.__PROXY__.registerFileExporter(...args);
+            
+        };
+    
+        // function 
+        RFileExporterRegistry.prototype.unregisterFileExporter = function(...args) 
+          
+        {
+          //print("JS: RFileExporterRegistry.prototype.unregisterFileExporter");
+          
+              return this.__PROXY__.unregisterFileExporter(...args);
+            
+        };
+    
+        // function 
+        RFileExporterRegistry.prototype.getFileExporter = function(...args) 
+          
+        {
+          //print("JS: RFileExporterRegistry.prototype.getFileExporter");
+          
+              return this.__PROXY__.getFileExporter(...args);
+            
+        };
+    
+        // function 
+        RFileExporterRegistry.prototype.getFilterStrings = function(...args) 
+          
+        {
+          //print("JS: RFileExporterRegistry.prototype.getFilterStrings");
+          
+              return this.__PROXY__.getFilterStrings(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -239,6 +280,16 @@
   }
   
         };
+      RFileExporterRegistry.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RFileExporterRegistry.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RFileExporterRegistry.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -257,4 +308,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RFileExporterRegistry.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

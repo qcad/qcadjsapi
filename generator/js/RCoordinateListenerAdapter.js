@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RCoordinateListenerAdapter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RCoordinateListenerAdapter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,22 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["coordinateUpdated(RDocumentInterface*)"] = Object.getPrototypeOf(this).coordinateUpdated;
-  
-            }
-          
+
         }
 
-        
 
       }
 
       //RCoordinateListenerAdapter.prototype = new RCoordinateListenerAdapter_BaseJs(engine);
       //RCoordinateListenerAdapter.prototype = new RCoordinateListenerAdapter_Wrapper(engine);
       RCoordinateListenerAdapter.prototype = new Object();
+
 
       RCoordinateListenerAdapter.prototype.toString = function() {
           //return "RCoordinateListenerAdapter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -140,8 +134,223 @@
 
       // functions:
       
+        // function 
+        RCoordinateListenerAdapter.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.children = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.property = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        RCoordinateListenerAdapter.prototype.updateCoordinate = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListenerAdapter.prototype.updateCoordinate");
+          
+              return this.__PROXY__.updateCoordinate(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(RCoordinateListenerAdapter.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(RCoordinateListenerAdapter.prototype, 'coordinateUpdated', {
+            get: function() { return this.__PROXY__.coordinateUpdated; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RCoordinateListenerAdapter.prototype, 'coordinateUpdated(RDocumentInterface*)', {
+              get: function() { return this.__PROXY__.coordinateUpdated; },
+              configurable: true
+          });
+        RCoordinateListenerAdapter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RCoordinateListenerAdapter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RCoordinateListenerAdapter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -160,4 +369,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RCoordinateListenerAdapter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPattern);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPattern);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPattern);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPattern.prototype = new RPattern_BaseJs(engine);
       //RPattern.prototype = new RPattern_Wrapper(engine);
       RPattern.prototype = new Object();
+
 
       RPattern.prototype.toString = function() {
           //return "RPattern [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -150,8 +151,138 @@
 
       // functions:
       
+        // function 
+        RPattern.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.hasDots = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.hasDots");
+          
+              return this.__PROXY__.hasDots(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.clear = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.clear");
+          
+              return this.__PROXY__.clear(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.getFileName = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.getFileName");
+          
+              return this.__PROXY__.getFileName(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.getName = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.getName");
+          
+              return this.__PROXY__.getName(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.getDescription = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.getDescription");
+          
+              return this.__PROXY__.getDescription(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.isLoaded = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.isLoaded");
+          
+              return this.__PROXY__.isLoaded(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.load = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.load");
+          
+              return this.__PROXY__.load(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.getPatternLines = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.getPatternLines");
+          
+              return this.__PROXY__.getPatternLines(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.addPatternLine = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.addPatternLine");
+          
+              return this.__PROXY__.addPatternLine(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.scale = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.scale");
+          
+              return this.__PROXY__.scale(...args);
+            
+        };
+    
+        // function 
+        RPattern.prototype.rotate = function(...args) 
+          
+        {
+          //print("JS: RPattern.prototype.rotate");
+          
+              return this.__PROXY__.rotate(...args);
+            
+        };
+    
 
       // static functions:
+      RPattern.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPattern.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPattern.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -170,4 +301,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPattern.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

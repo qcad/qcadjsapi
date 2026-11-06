@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RImportListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RImportListener.prototype = new RImportListener_BaseJs(engine);
       //RImportListener.prototype = new RImportListener_Wrapper(engine);
       RImportListener.prototype = new Object();
+
 
       RImportListener.prototype.toString = function() {
           //return "RImportListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,38 @@
 
       // functions:
       
+        // function 
+        RImportListener.prototype.preImportEvent = function(...args) 
+          
+        {
+          //print("JS: RImportListener.prototype.preImportEvent");
+          
+              return this.__PROXY__.preImportEvent(...args);
+            
+        };
+    
+        // function 
+        RImportListener.prototype.postImportEvent = function(...args) 
+          
+        {
+          //print("JS: RImportListener.prototype.postImportEvent");
+          
+              return this.__PROXY__.postImportEvent(...args);
+            
+        };
+    
 
       // static functions:
+      RImportListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RImportListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RImportListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +146,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RImportListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RFileImporterRegistry);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RFileImporterRegistry);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RFileImporterRegistry.prototype = new RFileImporterRegistry_BaseJs(engine);
       //RFileImporterRegistry.prototype = new RFileImporterRegistry_Wrapper(engine);
       RFileImporterRegistry.prototype = new Object();
+
 
       RFileImporterRegistry.prototype.toString = function() {
           //return "RFileImporterRegistry [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,76 @@
 
       // functions:
       
+        // function 
+        RFileImporterRegistry.prototype.registerFileImporter = function(...args) 
+          
+        {
+          //print("JS: RFileImporterRegistry.prototype.registerFileImporter");
+          
+              return this.__PROXY__.registerFileImporter(...args);
+            
+        };
+    
+        // function 
+        RFileImporterRegistry.prototype.unregisterFileImporter = function(...args) 
+          
+        {
+          //print("JS: RFileImporterRegistry.prototype.unregisterFileImporter");
+          
+              return this.__PROXY__.unregisterFileImporter(...args);
+            
+        };
+    
+        // function 
+        RFileImporterRegistry.prototype.getFileImporter = function(...args) 
+          
+        {
+          //print("JS: RFileImporterRegistry.prototype.getFileImporter");
+          
+              return this.__PROXY__.getFileImporter(...args);
+            
+        };
+    
+        // function 
+        RFileImporterRegistry.prototype.getFilterStrings = function(...args) 
+          
+        {
+          //print("JS: RFileImporterRegistry.prototype.getFilterStrings");
+          
+              return this.__PROXY__.getFilterStrings(...args);
+            
+        };
+    
+        // function 
+        RFileImporterRegistry.prototype.hasFileImporter = function(...args) 
+          
+        {
+          //print("JS: RFileImporterRegistry.prototype.hasFileImporter");
+          
+              return this.__PROXY__.hasFileImporter(...args);
+            
+        };
+    
+        // function 
+        RFileImporterRegistry.prototype.getFilterExtensions = function(...args) 
+          
+        {
+          //print("JS: RFileImporterRegistry.prototype.getFilterExtensions");
+          
+              return this.__PROXY__.getFilterExtensions(...args);
+            
+        };
+    
+        // function 
+        RFileImporterRegistry.prototype.getFilterExtensionPatterns = function(...args) 
+          
+        {
+          //print("JS: RFileImporterRegistry.prototype.getFilterExtensionPatterns");
+          
+              return this.__PROXY__.getFilterExtensionPatterns(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -322,6 +393,16 @@
   }
   
         };
+      RFileImporterRegistry.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RFileImporterRegistry.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RFileImporterRegistry.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -340,4 +421,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RFileImporterRegistry.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

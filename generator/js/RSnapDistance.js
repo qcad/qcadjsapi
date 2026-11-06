@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSnapDistance.prototype = new RSnapDistance_BaseJs(engine);
       //RSnapDistance.prototype = new RSnapDistance_Wrapper(engine);
       RSnapDistance.prototype = new Object();
+
 
       RSnapDistance.prototype.toString = function() {
           //return "RSnapDistance [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -154,7 +155,9 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.suspendEvent");
-          return this.__PROXY__.suspendEvent(...args);
+          
+              return this.__PROXY__.suspendEvent(...args);
+            
         };
     
         // function 
@@ -162,7 +165,9 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.finishEvent");
-          return this.__PROXY__.finishEvent(...args);
+          
+              return this.__PROXY__.finishEvent(...args);
+            
         };
     
         // function 
@@ -170,7 +175,9 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.getEntityIds");
-          return this.__PROXY__.getEntityIds(...args);
+          
+              return this.__PROXY__.getEntityIds(...args);
+            
         };
     
         // function 
@@ -178,7 +185,9 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.getStatus");
-          return this.__PROXY__.getStatus(...args);
+          
+              return this.__PROXY__.getStatus(...args);
+            
         };
     
         // function 
@@ -186,7 +195,9 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.setStatus");
-          return this.__PROXY__.setStatus(...args);
+          
+              return this.__PROXY__.setStatus(...args);
+            
         };
     
         // function 
@@ -194,7 +205,9 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.getLastSnap");
-          return this.__PROXY__.getLastSnap(...args);
+          
+              return this.__PROXY__.getLastSnap(...args);
+            
         };
     
         // function 
@@ -202,7 +215,9 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.setLastSnap");
-          return this.__PROXY__.setLastSnap(...args);
+          
+              return this.__PROXY__.setLastSnap(...args);
+            
         };
     
         // function 
@@ -210,7 +225,9 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.reset");
-          return this.__PROXY__.reset(...args);
+          
+              return this.__PROXY__.reset(...args);
+            
         };
     
         // function 
@@ -218,7 +235,9 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.snap");
-          return this.__PROXY__.snap(...args);
+          
+              return this.__PROXY__.snap(...args);
+            
         };
     
       // function 
@@ -290,11 +309,23 @@ RSnapDistance.CoordinatePolar = RSnapDistance_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapDistance.prototype.setDistance");
-          return this.__PROXY__.setDistance(...args);
+          
+              return this.__PROXY__.setDistance(...args);
+            
         };
     
 
       // static functions:
+      RSnapDistance.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSnapDistance.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSnapDistance.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

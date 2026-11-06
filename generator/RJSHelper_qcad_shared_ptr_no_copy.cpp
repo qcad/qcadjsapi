@@ -759,15 +759,9 @@
           RObject_Wrapper* ret = new RObject_Wrapper(handler, v);
 
           // JS: new RObject('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RObject");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RObject is undefined. Use RObject_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RObject('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RObject::getIdStatic(), "RObject", ret);
       }
 
       QSharedPointer<RObject> RJSHelper_qcad::js2cpp_QSharedPointer_RObject(RJSApi& handler, const QJSValue& v) {
@@ -882,15 +876,9 @@
           RArcEntity_Wrapper* ret = new RArcEntity_Wrapper(handler, v);
 
           // JS: new RArcEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RArcEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RArcEntity is undefined. Use RArcEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RArcEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RArcEntity::getIdStatic(), "RArcEntity", ret);
       }
 
       QSharedPointer<RArcEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RArcEntity(RJSApi& handler, const QJSValue& v) {
@@ -957,15 +945,9 @@
           RAttributeDefinitionEntity_Wrapper* ret = new RAttributeDefinitionEntity_Wrapper(handler, v);
 
           // JS: new RAttributeDefinitionEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RAttributeDefinitionEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RAttributeDefinitionEntity is undefined. Use RAttributeDefinitionEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RAttributeDefinitionEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RAttributeDefinitionEntity::getIdStatic(), "RAttributeDefinitionEntity", ret);
       }
 
       QSharedPointer<RAttributeDefinitionEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeDefinitionEntity(RJSApi& handler, const QJSValue& v) {
@@ -1032,15 +1014,9 @@
           RAttributeEntity_Wrapper* ret = new RAttributeEntity_Wrapper(handler, v);
 
           // JS: new RAttributeEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RAttributeEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RAttributeEntity is undefined. Use RAttributeEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RAttributeEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RAttributeEntity::getIdStatic(), "RAttributeEntity", ret);
       }
 
       QSharedPointer<RAttributeEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RAttributeEntity(RJSApi& handler, const QJSValue& v) {
@@ -1107,15 +1083,9 @@
           RBlock_Wrapper* ret = new RBlock_Wrapper(handler, v);
 
           // JS: new RBlock('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RBlock");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RBlock is undefined. Use RBlock_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RBlock('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RBlock::getIdStatic(), "RBlock", ret);
       }
 
       QSharedPointer<RBlock> RJSHelper_qcad::js2cpp_QSharedPointer_RBlock(RJSApi& handler, const QJSValue& v) {
@@ -1182,15 +1152,9 @@
           RBlockReferenceEntity_Wrapper* ret = new RBlockReferenceEntity_Wrapper(handler, v);
 
           // JS: new RBlockReferenceEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RBlockReferenceEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RBlockReferenceEntity is undefined. Use RBlockReferenceEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RBlockReferenceEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RBlockReferenceEntity::getIdStatic(), "RBlockReferenceEntity", ret);
       }
 
       QSharedPointer<RBlockReferenceEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RBlockReferenceEntity(RJSApi& handler, const QJSValue& v) {
@@ -1257,15 +1221,9 @@
           RCircleEntity_Wrapper* ret = new RCircleEntity_Wrapper(handler, v);
 
           // JS: new RCircleEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RCircleEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RCircleEntity is undefined. Use RCircleEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RCircleEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RCircleEntity::getIdStatic(), "RCircleEntity", ret);
       }
 
       QSharedPointer<RCircleEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RCircleEntity(RJSApi& handler, const QJSValue& v) {
@@ -1332,15 +1290,9 @@
           RDimAlignedEntity_Wrapper* ret = new RDimAlignedEntity_Wrapper(handler, v);
 
           // JS: new RDimAlignedEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimAlignedEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimAlignedEntity is undefined. Use RDimAlignedEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimAlignedEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimAlignedEntity::getIdStatic(), "RDimAlignedEntity", ret);
       }
 
       QSharedPointer<RDimAlignedEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAlignedEntity(RJSApi& handler, const QJSValue& v) {
@@ -1407,15 +1359,9 @@
           RDimAngular2LEntity_Wrapper* ret = new RDimAngular2LEntity_Wrapper(handler, v);
 
           // JS: new RDimAngular2LEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimAngular2LEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimAngular2LEntity is undefined. Use RDimAngular2LEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimAngular2LEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimAngular2LEntity::getIdStatic(), "RDimAngular2LEntity", ret);
       }
 
       QSharedPointer<RDimAngular2LEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular2LEntity(RJSApi& handler, const QJSValue& v) {
@@ -1482,15 +1428,9 @@
           RDimAngular3PEntity_Wrapper* ret = new RDimAngular3PEntity_Wrapper(handler, v);
 
           // JS: new RDimAngular3PEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimAngular3PEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimAngular3PEntity is undefined. Use RDimAngular3PEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimAngular3PEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimAngular3PEntity::getIdStatic(), "RDimAngular3PEntity", ret);
       }
 
       QSharedPointer<RDimAngular3PEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngular3PEntity(RJSApi& handler, const QJSValue& v) {
@@ -1557,15 +1497,9 @@
           RDimAngularData_Wrapper* ret = new RDimAngularData_Wrapper(handler, v);
 
           // JS: new RDimAngularData('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimAngularData");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimAngularData is undefined. Use RDimAngularData_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimAngularData('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimAngularData::getIdStatic(), "RDimAngularData", ret);
       }
 
       QSharedPointer<RDimAngularData> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngularData(RJSApi& handler, const QJSValue& v) {
@@ -1639,15 +1573,9 @@
           RDimAngularEntity_Wrapper* ret = new RDimAngularEntity_Wrapper(handler, v);
 
           // JS: new RDimAngularEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimAngularEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimAngularEntity is undefined. Use RDimAngularEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimAngularEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimAngularEntity::getIdStatic(), "RDimAngularEntity", ret);
       }
 
       QSharedPointer<RDimAngularEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimAngularEntity(RJSApi& handler, const QJSValue& v) {
@@ -1734,15 +1662,9 @@
           RDimArcLengthEntity_Wrapper* ret = new RDimArcLengthEntity_Wrapper(handler, v);
 
           // JS: new RDimArcLengthEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimArcLengthEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimArcLengthEntity is undefined. Use RDimArcLengthEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimArcLengthEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimArcLengthEntity::getIdStatic(), "RDimArcLengthEntity", ret);
       }
 
       QSharedPointer<RDimArcLengthEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimArcLengthEntity(RJSApi& handler, const QJSValue& v) {
@@ -1809,15 +1731,9 @@
           RDimDiametricEntity_Wrapper* ret = new RDimDiametricEntity_Wrapper(handler, v);
 
           // JS: new RDimDiametricEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimDiametricEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimDiametricEntity is undefined. Use RDimDiametricEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimDiametricEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimDiametricEntity::getIdStatic(), "RDimDiametricEntity", ret);
       }
 
       QSharedPointer<RDimDiametricEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimDiametricEntity(RJSApi& handler, const QJSValue& v) {
@@ -1898,15 +1814,9 @@
           RDimLinearEntity_Wrapper* ret = new RDimLinearEntity_Wrapper(handler, v);
 
           // JS: new RDimLinearEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimLinearEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimLinearEntity is undefined. Use RDimLinearEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimLinearEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimLinearEntity::getIdStatic(), "RDimLinearEntity", ret);
       }
 
       QSharedPointer<RDimLinearEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimLinearEntity(RJSApi& handler, const QJSValue& v) {
@@ -1989,15 +1899,9 @@
           RDimOrdinateEntity_Wrapper* ret = new RDimOrdinateEntity_Wrapper(handler, v);
 
           // JS: new RDimOrdinateEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimOrdinateEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimOrdinateEntity is undefined. Use RDimOrdinateEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimOrdinateEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimOrdinateEntity::getIdStatic(), "RDimOrdinateEntity", ret);
       }
 
       QSharedPointer<RDimOrdinateEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimOrdinateEntity(RJSApi& handler, const QJSValue& v) {
@@ -2064,15 +1968,9 @@
           RDimRadialEntity_Wrapper* ret = new RDimRadialEntity_Wrapper(handler, v);
 
           // JS: new RDimRadialEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimRadialEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimRadialEntity is undefined. Use RDimRadialEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimRadialEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimRadialEntity::getIdStatic(), "RDimRadialEntity", ret);
       }
 
       QSharedPointer<RDimRadialEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimRadialEntity(RJSApi& handler, const QJSValue& v) {
@@ -2139,15 +2037,9 @@
           RDimRotatedEntity_Wrapper* ret = new RDimRotatedEntity_Wrapper(handler, v);
 
           // JS: new RDimRotatedEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimRotatedEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimRotatedEntity is undefined. Use RDimRotatedEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimRotatedEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimRotatedEntity::getIdStatic(), "RDimRotatedEntity", ret);
       }
 
       QSharedPointer<RDimRotatedEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimRotatedEntity(RJSApi& handler, const QJSValue& v) {
@@ -2214,15 +2106,9 @@
           RDimStyle_Wrapper* ret = new RDimStyle_Wrapper(handler, v);
 
           // JS: new RDimStyle('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimStyle");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimStyle is undefined. Use RDimStyle_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimStyle('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimStyle::getIdStatic(), "RDimStyle", ret);
       }
 
       QSharedPointer<RDimStyle> RJSHelper_qcad::js2cpp_QSharedPointer_RDimStyle(RJSApi& handler, const QJSValue& v) {
@@ -2359,15 +2245,9 @@
           RDimensionEntity_Wrapper* ret = new RDimensionEntity_Wrapper(handler, v);
 
           // JS: new RDimensionEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDimensionEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDimensionEntity is undefined. Use RDimensionEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDimensionEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDimensionEntity::getIdStatic(), "RDimensionEntity", ret);
       }
 
       QSharedPointer<RDimensionEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RDimensionEntity(RJSApi& handler, const QJSValue& v) {
@@ -2482,15 +2362,9 @@
           RDocumentVariables_Wrapper* ret = new RDocumentVariables_Wrapper(handler, v);
 
           // JS: new RDocumentVariables('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RDocumentVariables");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RDocumentVariables is undefined. Use RDocumentVariables_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RDocumentVariables('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RDocumentVariables::getIdStatic(), "RDocumentVariables", ret);
       }
 
       QSharedPointer<RDocumentVariables> RJSHelper_qcad::js2cpp_QSharedPointer_RDocumentVariables(RJSApi& handler, const QJSValue& v) {
@@ -2557,15 +2431,9 @@
           REllipseEntity_Wrapper* ret = new REllipseEntity_Wrapper(handler, v);
 
           // JS: new REllipseEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("REllipseEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class REllipseEntity is undefined. Use REllipseEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new REllipseEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_REllipseEntity::getIdStatic(), "REllipseEntity", ret);
       }
 
       QSharedPointer<REllipseEntity> RJSHelper_qcad::js2cpp_QSharedPointer_REllipseEntity(RJSApi& handler, const QJSValue& v) {
@@ -2632,15 +2500,9 @@
           RFaceEntity_Wrapper* ret = new RFaceEntity_Wrapper(handler, v);
 
           // JS: new RFaceEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RFaceEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RFaceEntity is undefined. Use RFaceEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RFaceEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RFaceEntity::getIdStatic(), "RFaceEntity", ret);
       }
 
       QSharedPointer<RFaceEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RFaceEntity(RJSApi& handler, const QJSValue& v) {
@@ -2707,15 +2569,9 @@
           RPolyMeshEntity_Wrapper* ret = new RPolyMeshEntity_Wrapper(handler, v);
 
           // JS: new RPolyMeshEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RPolyMeshEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RPolyMeshEntity is undefined. Use RPolyMeshEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RPolyMeshEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RPolyMeshEntity::getIdStatic(), "RPolyMeshEntity", ret);
       }
 
       QSharedPointer<RPolyMeshEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RPolyMeshEntity(RJSApi& handler, const QJSValue& v) {
@@ -2782,15 +2638,9 @@
           RHatchEntity_Wrapper* ret = new RHatchEntity_Wrapper(handler, v);
 
           // JS: new RHatchEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RHatchEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RHatchEntity is undefined. Use RHatchEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RHatchEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RHatchEntity::getIdStatic(), "RHatchEntity", ret);
       }
 
       QSharedPointer<RHatchEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RHatchEntity(RJSApi& handler, const QJSValue& v) {
@@ -2857,15 +2707,9 @@
           RImageEntity_Wrapper* ret = new RImageEntity_Wrapper(handler, v);
 
           // JS: new RImageEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RImageEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RImageEntity is undefined. Use RImageEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RImageEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RImageEntity::getIdStatic(), "RImageEntity", ret);
       }
 
       QSharedPointer<RImageEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RImageEntity(RJSApi& handler, const QJSValue& v) {
@@ -2932,15 +2776,9 @@
           RLayer_Wrapper* ret = new RLayer_Wrapper(handler, v);
 
           // JS: new RLayer('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RLayer");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RLayer is undefined. Use RLayer_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RLayer('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RLayer::getIdStatic(), "RLayer", ret);
       }
 
       QSharedPointer<RLayer> RJSHelper_qcad::js2cpp_QSharedPointer_RLayer(RJSApi& handler, const QJSValue& v) {
@@ -3007,15 +2845,9 @@
           RLayerState_Wrapper* ret = new RLayerState_Wrapper(handler, v);
 
           // JS: new RLayerState('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RLayerState");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RLayerState is undefined. Use RLayerState_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RLayerState('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RLayerState::getIdStatic(), "RLayerState", ret);
       }
 
       QSharedPointer<RLayerState> RJSHelper_qcad::js2cpp_QSharedPointer_RLayerState(RJSApi& handler, const QJSValue& v) {
@@ -3082,15 +2914,9 @@
           RLayout_Wrapper* ret = new RLayout_Wrapper(handler, v);
 
           // JS: new RLayout('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RLayout");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RLayout is undefined. Use RLayout_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RLayout('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RLayout::getIdStatic(), "RLayout", ret);
       }
 
       QSharedPointer<RLayout> RJSHelper_qcad::js2cpp_QSharedPointer_RLayout(RJSApi& handler, const QJSValue& v) {
@@ -3157,15 +2983,9 @@
           RLeaderEntity_Wrapper* ret = new RLeaderEntity_Wrapper(handler, v);
 
           // JS: new RLeaderEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RLeaderEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RLeaderEntity is undefined. Use RLeaderEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RLeaderEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RLeaderEntity::getIdStatic(), "RLeaderEntity", ret);
       }
 
       QSharedPointer<RLeaderEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RLeaderEntity(RJSApi& handler, const QJSValue& v) {
@@ -3232,15 +3052,9 @@
           RLineEntity_Wrapper* ret = new RLineEntity_Wrapper(handler, v);
 
           // JS: new RLineEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RLineEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RLineEntity is undefined. Use RLineEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RLineEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RLineEntity::getIdStatic(), "RLineEntity", ret);
       }
 
       QSharedPointer<RLineEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RLineEntity(RJSApi& handler, const QJSValue& v) {
@@ -3307,15 +3121,9 @@
           RLinetype_Wrapper* ret = new RLinetype_Wrapper(handler, v);
 
           // JS: new RLinetype('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RLinetype");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RLinetype is undefined. Use RLinetype_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RLinetype('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RLinetype::getIdStatic(), "RLinetype", ret);
       }
 
       QSharedPointer<RLinetype> RJSHelper_qcad::js2cpp_QSharedPointer_RLinetype(RJSApi& handler, const QJSValue& v) {
@@ -3382,15 +3190,9 @@
           RPointEntity_Wrapper* ret = new RPointEntity_Wrapper(handler, v);
 
           // JS: new RPointEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RPointEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RPointEntity is undefined. Use RPointEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RPointEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RPointEntity::getIdStatic(), "RPointEntity", ret);
       }
 
       QSharedPointer<RPointEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RPointEntity(RJSApi& handler, const QJSValue& v) {
@@ -3457,15 +3259,9 @@
           RPolyline_Wrapper* ret = new RPolyline_Wrapper(handler, v);
 
           // JS: new RPolyline('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RPolyline");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RPolyline is undefined. Use RPolyline_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RPolyline('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RPolyline::getIdStatic(), "RPolyline", ret);
       }
 
       QSharedPointer<RPolyline> RJSHelper_qcad::js2cpp_QSharedPointer_RPolyline(RJSApi& handler, const QJSValue& v) {
@@ -3532,15 +3328,9 @@
           RPolylineEntity_Wrapper* ret = new RPolylineEntity_Wrapper(handler, v);
 
           // JS: new RPolylineEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RPolylineEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RPolylineEntity is undefined. Use RPolylineEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RPolylineEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RPolylineEntity::getIdStatic(), "RPolylineEntity", ret);
       }
 
       QSharedPointer<RPolylineEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RPolylineEntity(RJSApi& handler, const QJSValue& v) {
@@ -3607,15 +3397,9 @@
           RRayEntity_Wrapper* ret = new RRayEntity_Wrapper(handler, v);
 
           // JS: new RRayEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RRayEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RRayEntity is undefined. Use RRayEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RRayEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RRayEntity::getIdStatic(), "RRayEntity", ret);
       }
 
       QSharedPointer<RRayEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RRayEntity(RJSApi& handler, const QJSValue& v) {
@@ -3682,15 +3466,9 @@
           RSolidEntity_Wrapper* ret = new RSolidEntity_Wrapper(handler, v);
 
           // JS: new RSolidEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RSolidEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RSolidEntity is undefined. Use RSolidEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RSolidEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RSolidEntity::getIdStatic(), "RSolidEntity", ret);
       }
 
       QSharedPointer<RSolidEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RSolidEntity(RJSApi& handler, const QJSValue& v) {
@@ -3757,15 +3535,9 @@
           RSplineEntity_Wrapper* ret = new RSplineEntity_Wrapper(handler, v);
 
           // JS: new RSplineEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RSplineEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RSplineEntity is undefined. Use RSplineEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RSplineEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RSplineEntity::getIdStatic(), "RSplineEntity", ret);
       }
 
       QSharedPointer<RSplineEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RSplineEntity(RJSApi& handler, const QJSValue& v) {
@@ -3832,15 +3604,9 @@
           RTextEntity_Wrapper* ret = new RTextEntity_Wrapper(handler, v);
 
           // JS: new RTextEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RTextEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RTextEntity is undefined. Use RTextEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RTextEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RTextEntity::getIdStatic(), "RTextEntity", ret);
       }
 
       QSharedPointer<RTextEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RTextEntity(RJSApi& handler, const QJSValue& v) {
@@ -3928,15 +3694,9 @@
           RTextBasedEntity_Wrapper* ret = new RTextBasedEntity_Wrapper(handler, v);
 
           // JS: new RTextBasedEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RTextBasedEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RTextBasedEntity is undefined. Use RTextBasedEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RTextBasedEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RTextBasedEntity::getIdStatic(), "RTextBasedEntity", ret);
       }
 
       QSharedPointer<RTextBasedEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RTextBasedEntity(RJSApi& handler, const QJSValue& v) {
@@ -4023,15 +3783,9 @@
           RToleranceEntity_Wrapper* ret = new RToleranceEntity_Wrapper(handler, v);
 
           // JS: new RToleranceEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RToleranceEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RToleranceEntity is undefined. Use RToleranceEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RToleranceEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RToleranceEntity::getIdStatic(), "RToleranceEntity", ret);
       }
 
       QSharedPointer<RToleranceEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RToleranceEntity(RJSApi& handler, const QJSValue& v) {
@@ -4098,15 +3852,9 @@
           RTraceEntity_Wrapper* ret = new RTraceEntity_Wrapper(handler, v);
 
           // JS: new RTraceEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RTraceEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RTraceEntity is undefined. Use RTraceEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RTraceEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RTraceEntity::getIdStatic(), "RTraceEntity", ret);
       }
 
       QSharedPointer<RTraceEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RTraceEntity(RJSApi& handler, const QJSValue& v) {
@@ -4173,15 +3921,9 @@
           RUcs_Wrapper* ret = new RUcs_Wrapper(handler, v);
 
           // JS: new RUcs('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RUcs");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RUcs is undefined. Use RUcs_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RUcs('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RUcs::getIdStatic(), "RUcs", ret);
       }
 
       QSharedPointer<RUcs> RJSHelper_qcad::js2cpp_QSharedPointer_RUcs(RJSApi& handler, const QJSValue& v) {
@@ -4248,15 +3990,9 @@
           RView_Wrapper* ret = new RView_Wrapper(handler, v);
 
           // JS: new RView('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RView");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RView is undefined. Use RView_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RView('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RView::getIdStatic(), "RView", ret);
       }
 
       QSharedPointer<RView> RJSHelper_qcad::js2cpp_QSharedPointer_RView(RJSApi& handler, const QJSValue& v) {
@@ -4323,15 +4059,9 @@
           RViewportEntity_Wrapper* ret = new RViewportEntity_Wrapper(handler, v);
 
           // JS: new RViewportEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RViewportEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RViewportEntity is undefined. Use RViewportEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RViewportEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RViewportEntity::getIdStatic(), "RViewportEntity", ret);
       }
 
       QSharedPointer<RViewportEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RViewportEntity(RJSApi& handler, const QJSValue& v) {
@@ -4398,15 +4128,9 @@
           RWipeoutEntity_Wrapper* ret = new RWipeoutEntity_Wrapper(handler, v);
 
           // JS: new RWipeoutEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RWipeoutEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RWipeoutEntity is undefined. Use RWipeoutEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RWipeoutEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RWipeoutEntity::getIdStatic(), "RWipeoutEntity", ret);
       }
 
       QSharedPointer<RWipeoutEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RWipeoutEntity(RJSApi& handler, const QJSValue& v) {
@@ -4473,15 +4197,9 @@
           RXLineEntity_Wrapper* ret = new RXLineEntity_Wrapper(handler, v);
 
           // JS: new RXLineEntity('__GOT_WRAPPER__', wrapper)
-          QJSValue cl = engine->globalObject().property("RXLineEntity");
-          if (cl.isUndefined()) {
-              qWarning() << "Class RXLineEntity is undefined. Use RXLineEntity_Wrapper::init().";
-          }
-          QJSValueList args;
-          args.append(QJSValue("__GOT_WRAPPER__"));
-          args.append(QJSValue(false));
-          args.append(engine->newQObject(ret));
-          return cl.callAsConstructor(args);
+          // create the JS object with the wrapper attached as __PROXY__
+          // (C++ equivalent of new RXLineEntity('__GOT_WRAPPER__', wrapper)):
+          return handler.newProxyObject(RJSType_RXLineEntity::getIdStatic(), "RXLineEntity", ret);
       }
 
       QSharedPointer<RXLineEntity> RJSHelper_qcad::js2cpp_QSharedPointer_RXLineEntity(RJSApi& handler, const QJSValue& v) {

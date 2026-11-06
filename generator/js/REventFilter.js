@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, REventFilter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, REventFilter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //REventFilter.prototype = new REventFilter_BaseJs(engine);
       //REventFilter.prototype = new REventFilter_Wrapper(engine);
       REventFilter.prototype = new Object();
+
 
       REventFilter.prototype.toString = function() {
           //return "REventFilter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -129,8 +130,213 @@
 
       // functions:
       
+        // function 
+        REventFilter.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.children = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.property = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        REventFilter.prototype.eventFilter = function(...args) 
+          
+        {
+          //print("JS: REventFilter.prototype.eventFilter");
+          
+              return this.__PROXY__.eventFilter(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(REventFilter.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        REventFilter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      REventFilter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      REventFilter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -149,4 +355,7 @@
       //  return this.wrapper.destr();
       //};
 
+      REventFilter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

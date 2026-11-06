@@ -1737,6 +1737,13 @@ QVariant a2_cpp;
               RBlockListenerAdapter_Wrapper::blocksUpdatedEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RBlockListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("blocksUpdated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RBlockListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)
@@ -1766,6 +1773,13 @@ QVariant a2_cpp;
               RBlockListenerAdapter_Wrapper::xRefUpdatedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RBlockListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("xRefUpdated()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RBlockListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -1786,6 +1800,13 @@ QVariant a2_cpp;
               RBlockListenerAdapter_Wrapper::currentBlockSetEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RBlockListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("currentBlockSet(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RBlockListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)
@@ -1815,6 +1836,13 @@ QVariant a2_cpp;
               RBlockListenerAdapter_Wrapper::blocksClearedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RBlockListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("blocksCleared()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RBlockListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

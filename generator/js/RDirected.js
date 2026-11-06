@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RDirected);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RDirected.prototype = new RDirected_BaseJs(engine);
       //RDirected.prototype = new RDirected_Wrapper(engine);
       RDirected.prototype = new Object();
+
 
       RDirected.prototype.toString = function() {
           //return "RDirected [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -97,6 +98,16 @@
       
 
       // static functions:
+      RDirected.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RDirected.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RDirected.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +126,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RDirected.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RTextData.prototype = new RTextData_BaseJs(engine);
       //RTextData.prototype = new RTextData_Wrapper(engine);
       RTextData.prototype = new Object();
+
 
       RTextData.prototype.toString = function() {
           //return "RTextData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -199,7 +200,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -207,7 +210,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -215,7 +220,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -223,7 +230,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -231,7 +240,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -239,7 +250,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -247,7 +260,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -255,7 +270,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -263,7 +280,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -271,7 +290,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -279,7 +300,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -287,7 +310,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -295,7 +320,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -303,7 +330,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -311,7 +340,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -319,7 +350,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -327,7 +360,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -335,7 +370,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -343,7 +380,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -351,7 +390,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -359,7 +400,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -367,7 +410,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -375,7 +420,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -383,7 +430,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -391,7 +440,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -399,7 +450,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -407,7 +460,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -415,7 +470,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -423,7 +480,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -431,7 +490,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -439,7 +500,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -447,7 +510,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -455,7 +520,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -463,7 +530,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -471,7 +540,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -479,7 +550,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -487,7 +560,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -495,7 +570,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -503,7 +580,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -511,7 +590,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -519,7 +600,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -527,7 +610,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -535,7 +620,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -543,7 +630,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -551,7 +640,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -559,7 +650,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -567,7 +660,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setFlag");
-          return this.__PROXY__.setFlag(...args);
+          
+              return this.__PROXY__.setFlag(...args);
+            
         };
     
         // function 
@@ -575,7 +670,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getFlag");
-          return this.__PROXY__.getFlag(...args);
+          
+              return this.__PROXY__.getFlag(...args);
+            
         };
     
         // function 
@@ -583,7 +680,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -591,7 +690,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -599,7 +700,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -607,7 +710,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getRotatedBoundingBox");
-          return this.__PROXY__.getRotatedBoundingBox(...args);
+          
+              return this.__PROXY__.getRotatedBoundingBox(...args);
+            
         };
     
         // function 
@@ -615,7 +720,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getWidth");
-          return this.__PROXY__.getWidth(...args);
+          
+              return this.__PROXY__.getWidth(...args);
+            
         };
     
         // function 
@@ -623,7 +730,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getHeight");
-          return this.__PROXY__.getHeight(...args);
+          
+              return this.__PROXY__.getHeight(...args);
+            
         };
     
         // function 
@@ -631,7 +740,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.sync");
-          return this.__PROXY__.sync(...args);
+          
+              return this.__PROXY__.sync(...args);
+            
         };
     
         // function 
@@ -639,7 +750,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -647,7 +760,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -655,7 +770,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -663,7 +780,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -671,7 +790,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -679,7 +800,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -687,7 +810,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -695,7 +820,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getPosition");
-          return this.__PROXY__.getPosition(...args);
+          
+              return this.__PROXY__.getPosition(...args);
+            
         };
     
         // function 
@@ -703,7 +830,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setPosition");
-          return this.__PROXY__.setPosition(...args);
+          
+              return this.__PROXY__.setPosition(...args);
+            
         };
     
         // function 
@@ -711,7 +840,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getAlignmentPoint");
-          return this.__PROXY__.getAlignmentPoint(...args);
+          
+              return this.__PROXY__.getAlignmentPoint(...args);
+            
         };
     
         // function 
@@ -719,7 +850,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setAlignmentPoint");
-          return this.__PROXY__.setAlignmentPoint(...args);
+          
+              return this.__PROXY__.setAlignmentPoint(...args);
+            
         };
     
         // function 
@@ -727,7 +860,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setText");
-          return this.__PROXY__.setText(...args);
+          
+              return this.__PROXY__.setText(...args);
+            
         };
     
         // function 
@@ -735,7 +870,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getFontName");
-          return this.__PROXY__.getFontName(...args);
+          
+              return this.__PROXY__.getFontName(...args);
+            
         };
     
         // function 
@@ -743,7 +880,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setFontName");
-          return this.__PROXY__.setFontName(...args);
+          
+              return this.__PROXY__.setFontName(...args);
+            
         };
     
         // function 
@@ -751,7 +890,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getFontFile");
-          return this.__PROXY__.getFontFile(...args);
+          
+              return this.__PROXY__.getFontFile(...args);
+            
         };
     
         // function 
@@ -759,7 +900,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setFontFile");
-          return this.__PROXY__.setFontFile(...args);
+          
+              return this.__PROXY__.setFontFile(...args);
+            
         };
     
         // function 
@@ -767,7 +910,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isBold");
-          return this.__PROXY__.isBold(...args);
+          
+              return this.__PROXY__.isBold(...args);
+            
         };
     
         // function 
@@ -775,7 +920,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setBold");
-          return this.__PROXY__.setBold(...args);
+          
+              return this.__PROXY__.setBold(...args);
+            
         };
     
         // function 
@@ -783,7 +930,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isItalic");
-          return this.__PROXY__.isItalic(...args);
+          
+              return this.__PROXY__.isItalic(...args);
+            
         };
     
         // function 
@@ -791,7 +940,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setItalic");
-          return this.__PROXY__.setItalic(...args);
+          
+              return this.__PROXY__.setItalic(...args);
+            
         };
     
         // function 
@@ -799,7 +950,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getTextHeight");
-          return this.__PROXY__.getTextHeight(...args);
+          
+              return this.__PROXY__.getTextHeight(...args);
+            
         };
     
         // function 
@@ -807,7 +960,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setTextHeight");
-          return this.__PROXY__.setTextHeight(...args);
+          
+              return this.__PROXY__.setTextHeight(...args);
+            
         };
     
         // function 
@@ -815,7 +970,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getTextWidth");
-          return this.__PROXY__.getTextWidth(...args);
+          
+              return this.__PROXY__.getTextWidth(...args);
+            
         };
     
         // function 
@@ -823,7 +980,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setTextWidth");
-          return this.__PROXY__.setTextWidth(...args);
+          
+              return this.__PROXY__.setTextWidth(...args);
+            
         };
     
         // function 
@@ -831,7 +990,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setVAlign");
-          return this.__PROXY__.setVAlign(...args);
+          
+              return this.__PROXY__.setVAlign(...args);
+            
         };
     
         // function 
@@ -839,7 +1000,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getVAlign");
-          return this.__PROXY__.getVAlign(...args);
+          
+              return this.__PROXY__.getVAlign(...args);
+            
         };
     
         // function 
@@ -847,7 +1010,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setHAlign");
-          return this.__PROXY__.setHAlign(...args);
+          
+              return this.__PROXY__.setHAlign(...args);
+            
         };
     
         // function 
@@ -855,7 +1020,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getHAlign");
-          return this.__PROXY__.getHAlign(...args);
+          
+              return this.__PROXY__.getHAlign(...args);
+            
         };
     
         // function 
@@ -863,7 +1030,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setDrawingDirection");
-          return this.__PROXY__.setDrawingDirection(...args);
+          
+              return this.__PROXY__.setDrawingDirection(...args);
+            
         };
     
         // function 
@@ -871,7 +1040,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getDrawingDirection");
-          return this.__PROXY__.getDrawingDirection(...args);
+          
+              return this.__PROXY__.getDrawingDirection(...args);
+            
         };
     
         // function 
@@ -879,7 +1050,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setLineSpacingStyle");
-          return this.__PROXY__.setLineSpacingStyle(...args);
+          
+              return this.__PROXY__.setLineSpacingStyle(...args);
+            
         };
     
         // function 
@@ -887,7 +1060,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getLineSpacingStyle");
-          return this.__PROXY__.getLineSpacingStyle(...args);
+          
+              return this.__PROXY__.getLineSpacingStyle(...args);
+            
         };
     
         // function 
@@ -895,7 +1070,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setLineSpacingFactor");
-          return this.__PROXY__.setLineSpacingFactor(...args);
+          
+              return this.__PROXY__.setLineSpacingFactor(...args);
+            
         };
     
         // function 
@@ -903,7 +1080,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getLineSpacingFactor");
-          return this.__PROXY__.getLineSpacingFactor(...args);
+          
+              return this.__PROXY__.getLineSpacingFactor(...args);
+            
         };
     
         // function 
@@ -911,7 +1090,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setAngle");
-          return this.__PROXY__.setAngle(...args);
+          
+              return this.__PROXY__.setAngle(...args);
+            
         };
     
         // function 
@@ -919,7 +1100,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getAngle");
-          return this.__PROXY__.getAngle(...args);
+          
+              return this.__PROXY__.getAngle(...args);
+            
         };
     
         // function 
@@ -927,7 +1110,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setXScale");
-          return this.__PROXY__.setXScale(...args);
+          
+              return this.__PROXY__.setXScale(...args);
+            
         };
     
         // function 
@@ -935,7 +1120,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getXScale");
-          return this.__PROXY__.getXScale(...args);
+          
+              return this.__PROXY__.getXScale(...args);
+            
         };
     
         // function 
@@ -943,7 +1130,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setSimple");
-          return this.__PROXY__.setSimple(...args);
+          
+              return this.__PROXY__.setSimple(...args);
+            
         };
     
         // function 
@@ -951,7 +1140,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isSimple");
-          return this.__PROXY__.isSimple(...args);
+          
+              return this.__PROXY__.isSimple(...args);
+            
         };
     
         // function 
@@ -959,7 +1150,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setBackward");
-          return this.__PROXY__.setBackward(...args);
+          
+              return this.__PROXY__.setBackward(...args);
+            
         };
     
         // function 
@@ -967,7 +1160,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isBackward");
-          return this.__PROXY__.isBackward(...args);
+          
+              return this.__PROXY__.isBackward(...args);
+            
         };
     
         // function 
@@ -975,7 +1170,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setUpsideDown");
-          return this.__PROXY__.setUpsideDown(...args);
+          
+              return this.__PROXY__.setUpsideDown(...args);
+            
         };
     
         // function 
@@ -983,7 +1180,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isUpsideDown");
-          return this.__PROXY__.isUpsideDown(...args);
+          
+              return this.__PROXY__.isUpsideDown(...args);
+            
         };
     
         // function 
@@ -991,7 +1190,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setDimensionLabel");
-          return this.__PROXY__.setDimensionLabel(...args);
+          
+              return this.__PROXY__.setDimensionLabel(...args);
+            
         };
     
         // function 
@@ -999,7 +1200,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isDimensionLabel");
-          return this.__PROXY__.isDimensionLabel(...args);
+          
+              return this.__PROXY__.isDimensionLabel(...args);
+            
         };
     
         // function 
@@ -1007,7 +1210,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -1015,7 +1220,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.setHighlighted");
-          return this.__PROXY__.setHighlighted(...args);
+          
+              return this.__PROXY__.setHighlighted(...args);
+            
         };
     
         // function 
@@ -1023,7 +1230,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isHighlighted");
-          return this.__PROXY__.isHighlighted(...args);
+          
+              return this.__PROXY__.isHighlighted(...args);
+            
         };
     
         // function 
@@ -1031,7 +1240,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -1039,7 +1250,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -1047,7 +1260,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -1055,7 +1270,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -1063,7 +1280,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -1071,7 +1290,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -1079,7 +1300,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -1087,7 +1310,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -1095,7 +1320,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getText");
-          return this.__PROXY__.getText(...args);
+          
+              return this.__PROXY__.getText(...args);
+            
         };
     
         // function 
@@ -1103,7 +1330,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getRenderedText");
-          return this.__PROXY__.getRenderedText(...args);
+          
+              return this.__PROXY__.getRenderedText(...args);
+            
         };
     
         // function 
@@ -1111,7 +1340,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getPlainText");
-          return this.__PROXY__.getPlainText(...args);
+          
+              return this.__PROXY__.getPlainText(...args);
+            
         };
     
         // function 
@@ -1119,7 +1350,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getEscapedText");
-          return this.__PROXY__.getEscapedText(...args);
+          
+              return this.__PROXY__.getEscapedText(...args);
+            
         };
     
         // function 
@@ -1127,7 +1360,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getMainFont");
-          return this.__PROXY__.getMainFont(...args);
+          
+              return this.__PROXY__.getMainFont(...args);
+            
         };
     
         // function 
@@ -1135,7 +1370,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -1143,7 +1380,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.isDirty");
-          return this.__PROXY__.isDirty(...args);
+          
+              return this.__PROXY__.isDirty(...args);
+            
         };
     
         // function 
@@ -1151,7 +1390,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getPainterPaths");
-          return this.__PROXY__.getPainterPaths(...args);
+          
+              return this.__PROXY__.getPainterPaths(...args);
+            
         };
     
         // function 
@@ -1159,7 +1400,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -1167,7 +1410,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getExploded");
-          return this.__PROXY__.getExploded(...args);
+          
+              return this.__PROXY__.getExploded(...args);
+            
         };
     
         // function 
@@ -1175,7 +1420,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -1183,7 +1430,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -1191,7 +1440,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getTextLayouts");
-          return this.__PROXY__.getTextLayouts(...args);
+          
+              return this.__PROXY__.getTextLayouts(...args);
+            
         };
     
         // function 
@@ -1199,7 +1450,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getSimpleTextBlocks");
-          return this.__PROXY__.getSimpleTextBlocks(...args);
+          
+              return this.__PROXY__.getSimpleTextBlocks(...args);
+            
         };
     
         // function 
@@ -1207,7 +1460,9 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -1215,11 +1470,23 @@ RTextData.UpsideDown = RTextData_Wrapper.UpsideDown;
           
         {
           //print("JS: RTextData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
 
       // static functions:
+      RTextData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RTextData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RTextData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

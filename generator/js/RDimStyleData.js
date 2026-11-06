@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RDimStyleData.prototype = new RDimStyleData_BaseJs(engine);
       //RDimStyleData.prototype = new RDimStyleData_Wrapper(engine);
       RDimStyleData.prototype = new Object();
+
 
       RDimStyleData.prototype.toString = function() {
           //return "RDimStyleData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -130,7 +131,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.init");
-          return this.__PROXY__.init(...args);
+          
+              return this.__PROXY__.init(...args);
+            
         };
     
         // function 
@@ -138,7 +141,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.initDefaults");
-          return this.__PROXY__.initDefaults(...args);
+          
+              return this.__PROXY__.initDefaults(...args);
+            
         };
     
         // function 
@@ -146,7 +151,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getVariantDefault");
-          return this.__PROXY__.getVariantDefault(...args);
+          
+              return this.__PROXY__.getVariantDefault(...args);
+            
         };
     
         // function 
@@ -154,7 +161,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getDoubleDefault");
-          return this.__PROXY__.getDoubleDefault(...args);
+          
+              return this.__PROXY__.getDoubleDefault(...args);
+            
         };
     
         // function 
@@ -162,7 +171,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getIntDefault");
-          return this.__PROXY__.getIntDefault(...args);
+          
+              return this.__PROXY__.getIntDefault(...args);
+            
         };
     
         // function 
@@ -170,7 +181,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getBoolDefault");
-          return this.__PROXY__.getBoolDefault(...args);
+          
+              return this.__PROXY__.getBoolDefault(...args);
+            
         };
     
         // function 
@@ -178,7 +191,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getColorDefault");
-          return this.__PROXY__.getColorDefault(...args);
+          
+              return this.__PROXY__.getColorDefault(...args);
+            
         };
     
         // function 
@@ -186,7 +201,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.initFromSettings");
-          return this.__PROXY__.initFromSettings(...args);
+          
+              return this.__PROXY__.initFromSettings(...args);
+            
         };
     
         // function 
@@ -194,7 +211,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.hasOverride");
-          return this.__PROXY__.hasOverride(...args);
+          
+              return this.__PROXY__.hasOverride(...args);
+            
         };
     
         // function 
@@ -202,7 +221,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -210,7 +231,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.clear");
-          return this.__PROXY__.clear(...args);
+          
+              return this.__PROXY__.clear(...args);
+            
         };
     
         // function 
@@ -218,7 +241,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getVariableType");
-          return this.__PROXY__.getVariableType(...args);
+          
+              return this.__PROXY__.getVariableType(...args);
+            
         };
     
         // function 
@@ -226,7 +251,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getVariant");
-          return this.__PROXY__.getVariant(...args);
+          
+              return this.__PROXY__.getVariant(...args);
+            
         };
     
         // function 
@@ -234,7 +261,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.setVariant");
-          return this.__PROXY__.setVariant(...args);
+          
+              return this.__PROXY__.setVariant(...args);
+            
         };
     
         // function 
@@ -242,7 +271,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getDouble");
-          return this.__PROXY__.getDouble(...args);
+          
+              return this.__PROXY__.getDouble(...args);
+            
         };
     
         // function 
@@ -250,7 +281,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.setDouble");
-          return this.__PROXY__.setDouble(...args);
+          
+              return this.__PROXY__.setDouble(...args);
+            
         };
     
         // function 
@@ -258,7 +291,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.removeDouble");
-          return this.__PROXY__.removeDouble(...args);
+          
+              return this.__PROXY__.removeDouble(...args);
+            
         };
     
         // function 
@@ -266,7 +301,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getInt");
-          return this.__PROXY__.getInt(...args);
+          
+              return this.__PROXY__.getInt(...args);
+            
         };
     
         // function 
@@ -274,7 +311,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.setInt");
-          return this.__PROXY__.setInt(...args);
+          
+              return this.__PROXY__.setInt(...args);
+            
         };
     
         // function 
@@ -282,7 +321,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.removeInt");
-          return this.__PROXY__.removeInt(...args);
+          
+              return this.__PROXY__.removeInt(...args);
+            
         };
     
         // function 
@@ -290,7 +331,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getBool");
-          return this.__PROXY__.getBool(...args);
+          
+              return this.__PROXY__.getBool(...args);
+            
         };
     
         // function 
@@ -298,7 +341,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.setBool");
-          return this.__PROXY__.setBool(...args);
+          
+              return this.__PROXY__.setBool(...args);
+            
         };
     
         // function 
@@ -306,7 +351,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.removeBool");
-          return this.__PROXY__.removeBool(...args);
+          
+              return this.__PROXY__.removeBool(...args);
+            
         };
     
         // function 
@@ -314,7 +361,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -322,7 +371,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -330,7 +381,9 @@
           
         {
           //print("JS: RDimStyleData.prototype.removeColor");
-          return this.__PROXY__.removeColor(...args);
+          
+              return this.__PROXY__.removeColor(...args);
+            
         };
     
 
@@ -559,6 +612,16 @@
   }
   
         };
+      RDimStyleData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RDimStyleData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RDimStyleData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

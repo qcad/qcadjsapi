@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RModifyObjectOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RModifyObjectOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RModifyObjectOperation.prototype = new RModifyObjectOperation_BaseJs(engine);
       //RModifyObjectOperation.prototype = new RModifyObjectOperation_Wrapper(engine);
       RModifyObjectOperation.prototype = new Object();
+
 
       RModifyObjectOperation.prototype.toString = function() {
           //return "RModifyObjectOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -133,8 +134,158 @@
 
       // functions:
       
+        // function 
+        RModifyObjectOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RModifyObjectOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RModifyObjectOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
 
       // static functions:
+      RModifyObjectOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RModifyObjectOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RModifyObjectOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -153,4 +304,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RModifyObjectOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

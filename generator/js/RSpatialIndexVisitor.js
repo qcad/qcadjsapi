@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RSpatialIndexVisitor);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSpatialIndexVisitor.prototype = new RSpatialIndexVisitor_BaseJs(engine);
       //RSpatialIndexVisitor.prototype = new RSpatialIndexVisitor_Wrapper(engine);
       RSpatialIndexVisitor.prototype = new Object();
+
 
       RSpatialIndexVisitor.prototype.toString = function() {
           //return "RSpatialIndexVisitor [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -97,6 +98,16 @@
       
 
       // static functions:
+      RSpatialIndexVisitor.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSpatialIndexVisitor.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSpatialIndexVisitor.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +126,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RSpatialIndexVisitor.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

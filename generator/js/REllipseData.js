@@ -137,15 +137,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //REllipseData.prototype = new REllipseData_BaseJs(engine);
       //REllipseData.prototype = new REllipseData_Wrapper(engine);
       REllipseData.prototype = new Object();
+
 
       REllipseData.prototype.toString = function() {
           //return "REllipseData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -190,7 +191,9 @@
           
         {
           //print("JS: REllipseData.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -198,7 +201,9 @@
           
         {
           //print("JS: REllipseData.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -206,7 +211,9 @@
           
         {
           //print("JS: REllipseData.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -214,7 +221,9 @@
           
         {
           //print("JS: REllipseData.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -222,7 +231,9 @@
           
         {
           //print("JS: REllipseData.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -230,7 +241,9 @@
           
         {
           //print("JS: REllipseData.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -238,7 +251,9 @@
           
         {
           //print("JS: REllipseData.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -246,7 +261,9 @@
           
         {
           //print("JS: REllipseData.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -254,7 +271,9 @@
           
         {
           //print("JS: REllipseData.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -262,7 +281,9 @@
           
         {
           //print("JS: REllipseData.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -270,7 +291,9 @@
           
         {
           //print("JS: REllipseData.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -278,7 +301,9 @@
           
         {
           //print("JS: REllipseData.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -286,7 +311,9 @@
           
         {
           //print("JS: REllipseData.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -294,7 +321,9 @@
           
         {
           //print("JS: REllipseData.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -302,7 +331,9 @@
           
         {
           //print("JS: REllipseData.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -310,7 +341,9 @@
           
         {
           //print("JS: REllipseData.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -318,7 +351,9 @@
           
         {
           //print("JS: REllipseData.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -326,7 +361,9 @@
           
         {
           //print("JS: REllipseData.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -334,7 +371,9 @@
           
         {
           //print("JS: REllipseData.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -342,7 +381,9 @@
           
         {
           //print("JS: REllipseData.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -350,7 +391,9 @@
           
         {
           //print("JS: REllipseData.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -358,7 +401,9 @@
           
         {
           //print("JS: REllipseData.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -366,7 +411,9 @@
           
         {
           //print("JS: REllipseData.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -374,7 +421,9 @@
           
         {
           //print("JS: REllipseData.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -382,7 +431,9 @@
           
         {
           //print("JS: REllipseData.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -390,7 +441,9 @@
           
         {
           //print("JS: REllipseData.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -398,7 +451,9 @@
           
         {
           //print("JS: REllipseData.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -406,7 +461,9 @@
           
         {
           //print("JS: REllipseData.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -414,7 +471,9 @@
           
         {
           //print("JS: REllipseData.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -422,7 +481,9 @@
           
         {
           //print("JS: REllipseData.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -430,7 +491,9 @@
           
         {
           //print("JS: REllipseData.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -438,7 +501,9 @@
           
         {
           //print("JS: REllipseData.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -446,7 +511,9 @@
           
         {
           //print("JS: REllipseData.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -454,7 +521,9 @@
           
         {
           //print("JS: REllipseData.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -462,7 +531,9 @@
           
         {
           //print("JS: REllipseData.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -470,7 +541,9 @@
           
         {
           //print("JS: REllipseData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -478,7 +551,9 @@
           
         {
           //print("JS: REllipseData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -486,7 +561,9 @@
           
         {
           //print("JS: REllipseData.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -494,7 +571,9 @@
           
         {
           //print("JS: REllipseData.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -502,7 +581,9 @@
           
         {
           //print("JS: REllipseData.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -510,7 +591,9 @@
           
         {
           //print("JS: REllipseData.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -518,7 +601,9 @@
           
         {
           //print("JS: REllipseData.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -526,7 +611,9 @@
           
         {
           //print("JS: REllipseData.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -534,7 +621,9 @@
           
         {
           //print("JS: REllipseData.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -542,7 +631,9 @@
           
         {
           //print("JS: REllipseData.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -550,7 +641,9 @@
           
         {
           //print("JS: REllipseData.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -558,7 +651,9 @@
           
         {
           //print("JS: REllipseData.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -566,7 +661,9 @@
           
         {
           //print("JS: REllipseData.prototype.getShapeType");
-          return this.__PROXY__.getShapeType(...args);
+          
+              return this.__PROXY__.getShapeType(...args);
+            
         };
     
         // function 
@@ -574,7 +671,9 @@
           
         {
           //print("JS: REllipseData.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -582,7 +681,9 @@
           
         {
           //print("JS: REllipseData.prototype.isDirected");
-          return this.__PROXY__.isDirected(...args);
+          
+              return this.__PROXY__.isDirected(...args);
+            
         };
     
         // function 
@@ -590,7 +691,9 @@
           
         {
           //print("JS: REllipseData.prototype.getVectorProperties");
-          return this.__PROXY__.getVectorProperties(...args);
+          
+              return this.__PROXY__.getVectorProperties(...args);
+            
         };
     
         // function 
@@ -598,7 +701,9 @@
           
         {
           //print("JS: REllipseData.prototype.getDoubleProperties");
-          return this.__PROXY__.getDoubleProperties(...args);
+          
+              return this.__PROXY__.getDoubleProperties(...args);
+            
         };
     
         // function 
@@ -606,7 +711,9 @@
           
         {
           //print("JS: REllipseData.prototype.getBoolProperties");
-          return this.__PROXY__.getBoolProperties(...args);
+          
+              return this.__PROXY__.getBoolProperties(...args);
+            
         };
     
         // function 
@@ -614,7 +721,9 @@
           
         {
           //print("JS: REllipseData.prototype.getPointCloud");
-          return this.__PROXY__.getPointCloud(...args);
+          
+              return this.__PROXY__.getPointCloud(...args);
+            
         };
     
         // function 
@@ -622,7 +731,9 @@
           
         {
           //print("JS: REllipseData.prototype.moveStartPoint");
-          return this.__PROXY__.moveStartPoint(...args);
+          
+              return this.__PROXY__.moveStartPoint(...args);
+            
         };
     
         // function 
@@ -630,7 +741,9 @@
           
         {
           //print("JS: REllipseData.prototype.moveEndPoint");
-          return this.__PROXY__.moveEndPoint(...args);
+          
+              return this.__PROXY__.moveEndPoint(...args);
+            
         };
     
         // function 
@@ -638,7 +751,9 @@
           
         {
           //print("JS: REllipseData.prototype.setCenter");
-          return this.__PROXY__.setCenter(...args);
+          
+              return this.__PROXY__.setCenter(...args);
+            
         };
     
         // function 
@@ -646,7 +761,9 @@
           
         {
           //print("JS: REllipseData.prototype.setMajorPoint");
-          return this.__PROXY__.setMajorPoint(...args);
+          
+              return this.__PROXY__.setMajorPoint(...args);
+            
         };
     
         // function 
@@ -654,7 +771,9 @@
           
         {
           //print("JS: REllipseData.prototype.switchMajorMinor");
-          return this.__PROXY__.switchMajorMinor(...args);
+          
+              return this.__PROXY__.switchMajorMinor(...args);
+            
         };
     
         // function 
@@ -662,7 +781,9 @@
           
         {
           //print("JS: REllipseData.prototype.setRatio");
-          return this.__PROXY__.setRatio(...args);
+          
+              return this.__PROXY__.setRatio(...args);
+            
         };
     
         // function 
@@ -670,7 +791,9 @@
           
         {
           //print("JS: REllipseData.prototype.setStartParam");
-          return this.__PROXY__.setStartParam(...args);
+          
+              return this.__PROXY__.setStartParam(...args);
+            
         };
     
         // function 
@@ -678,7 +801,9 @@
           
         {
           //print("JS: REllipseData.prototype.setEndParam");
-          return this.__PROXY__.setEndParam(...args);
+          
+              return this.__PROXY__.setEndParam(...args);
+            
         };
     
         // function 
@@ -686,7 +811,9 @@
           
         {
           //print("JS: REllipseData.prototype.getStartAngle");
-          return this.__PROXY__.getStartAngle(...args);
+          
+              return this.__PROXY__.getStartAngle(...args);
+            
         };
     
         // function 
@@ -694,7 +821,9 @@
           
         {
           //print("JS: REllipseData.prototype.setStartAngle");
-          return this.__PROXY__.setStartAngle(...args);
+          
+              return this.__PROXY__.setStartAngle(...args);
+            
         };
     
         // function 
@@ -702,7 +831,9 @@
           
         {
           //print("JS: REllipseData.prototype.angleToParam");
-          return this.__PROXY__.angleToParam(...args);
+          
+              return this.__PROXY__.angleToParam(...args);
+            
         };
     
         // function 
@@ -710,7 +841,9 @@
           
         {
           //print("JS: REllipseData.prototype.getEndAngle");
-          return this.__PROXY__.getEndAngle(...args);
+          
+              return this.__PROXY__.getEndAngle(...args);
+            
         };
     
         // function 
@@ -718,7 +851,9 @@
           
         {
           //print("JS: REllipseData.prototype.setEndAngle");
-          return this.__PROXY__.setEndAngle(...args);
+          
+              return this.__PROXY__.setEndAngle(...args);
+            
         };
     
         // function 
@@ -726,7 +861,9 @@
           
         {
           //print("JS: REllipseData.prototype.getAngleLength");
-          return this.__PROXY__.getAngleLength(...args);
+          
+              return this.__PROXY__.getAngleLength(...args);
+            
         };
     
         // function 
@@ -734,7 +871,9 @@
           
         {
           //print("JS: REllipseData.prototype.isAngleWithinArc");
-          return this.__PROXY__.isAngleWithinArc(...args);
+          
+              return this.__PROXY__.isAngleWithinArc(...args);
+            
         };
     
         // function 
@@ -742,7 +881,9 @@
           
         {
           //print("JS: REllipseData.prototype.isParamWithinArc");
-          return this.__PROXY__.isParamWithinArc(...args);
+          
+              return this.__PROXY__.isParamWithinArc(...args);
+            
         };
     
         // function 
@@ -750,7 +891,9 @@
           
         {
           //print("JS: REllipseData.prototype.isReversed");
-          return this.__PROXY__.isReversed(...args);
+          
+              return this.__PROXY__.isReversed(...args);
+            
         };
     
         // function 
@@ -758,7 +901,9 @@
           
         {
           //print("JS: REllipseData.prototype.setReversed");
-          return this.__PROXY__.setReversed(...args);
+          
+              return this.__PROXY__.setReversed(...args);
+            
         };
     
         // function 
@@ -766,7 +911,9 @@
           
         {
           //print("JS: REllipseData.prototype.getDirection1");
-          return this.__PROXY__.getDirection1(...args);
+          
+              return this.__PROXY__.getDirection1(...args);
+            
         };
     
         // function 
@@ -774,7 +921,9 @@
           
         {
           //print("JS: REllipseData.prototype.getDirection2");
-          return this.__PROXY__.getDirection2(...args);
+          
+              return this.__PROXY__.getDirection2(...args);
+            
         };
     
         // function 
@@ -782,7 +931,9 @@
           
         {
           //print("JS: REllipseData.prototype.getSideOfPoint");
-          return this.__PROXY__.getSideOfPoint(...args);
+          
+              return this.__PROXY__.getSideOfPoint(...args);
+            
         };
     
         // function 
@@ -790,7 +941,9 @@
           
         {
           //print("JS: REllipseData.prototype.getStartPoint");
-          return this.__PROXY__.getStartPoint(...args);
+          
+              return this.__PROXY__.getStartPoint(...args);
+            
         };
     
         // function 
@@ -798,7 +951,9 @@
           
         {
           //print("JS: REllipseData.prototype.getEndPoint");
-          return this.__PROXY__.getEndPoint(...args);
+          
+              return this.__PROXY__.getEndPoint(...args);
+            
         };
     
         // function 
@@ -806,7 +961,9 @@
           
         {
           //print("JS: REllipseData.prototype.getMinorRadius");
-          return this.__PROXY__.getMinorRadius(...args);
+          
+              return this.__PROXY__.getMinorRadius(...args);
+            
         };
     
         // function 
@@ -814,7 +971,9 @@
           
         {
           //print("JS: REllipseData.prototype.setAngle");
-          return this.__PROXY__.setAngle(...args);
+          
+              return this.__PROXY__.setAngle(...args);
+            
         };
     
         // function 
@@ -822,7 +981,9 @@
           
         {
           //print("JS: REllipseData.prototype.isCircular");
-          return this.__PROXY__.isCircular(...args);
+          
+              return this.__PROXY__.isCircular(...args);
+            
         };
     
         // function 
@@ -830,7 +991,9 @@
           
         {
           //print("JS: REllipseData.prototype.getSimpsonLength");
-          return this.__PROXY__.getSimpsonLength(...args);
+          
+              return this.__PROXY__.getSimpsonLength(...args);
+            
         };
     
         // function 
@@ -838,7 +1001,9 @@
           
         {
           //print("JS: REllipseData.prototype.contains");
-          return this.__PROXY__.contains(...args);
+          
+              return this.__PROXY__.contains(...args);
+            
         };
     
         // function 
@@ -846,7 +1011,9 @@
           
         {
           //print("JS: REllipseData.prototype.getAngleAt");
-          return this.__PROXY__.getAngleAt(...args);
+          
+              return this.__PROXY__.getAngleAt(...args);
+            
         };
     
         // function 
@@ -854,7 +1021,9 @@
           
         {
           //print("JS: REllipseData.prototype.getAngleAtPoint");
-          return this.__PROXY__.getAngleAtPoint(...args);
+          
+              return this.__PROXY__.getAngleAtPoint(...args);
+            
         };
     
         // function 
@@ -862,7 +1031,9 @@
           
         {
           //print("JS: REllipseData.prototype.getRadiusAt");
-          return this.__PROXY__.getRadiusAt(...args);
+          
+              return this.__PROXY__.getRadiusAt(...args);
+            
         };
     
         // function 
@@ -870,7 +1041,9 @@
           
         {
           //print("JS: REllipseData.prototype.getMiddlePoint");
-          return this.__PROXY__.getMiddlePoint(...args);
+          
+              return this.__PROXY__.getMiddlePoint(...args);
+            
         };
     
         // function 
@@ -878,7 +1051,9 @@
           
         {
           //print("JS: REllipseData.prototype.getTransformed");
-          return this.__PROXY__.getTransformed(...args);
+          
+              return this.__PROXY__.getTransformed(...args);
+            
         };
     
         // function 
@@ -886,7 +1061,9 @@
           
         {
           //print("JS: REllipseData.prototype.getTrimEnd");
-          return this.__PROXY__.getTrimEnd(...args);
+          
+              return this.__PROXY__.getTrimEnd(...args);
+            
         };
     
         // function 
@@ -894,7 +1071,9 @@
           
         {
           //print("JS: REllipseData.prototype.trimStartPoint");
-          return this.__PROXY__.trimStartPoint(...args);
+          
+              return this.__PROXY__.trimStartPoint(...args);
+            
         };
     
         // function 
@@ -902,7 +1081,9 @@
           
         {
           //print("JS: REllipseData.prototype.trimEndPoint");
-          return this.__PROXY__.trimEndPoint(...args);
+          
+              return this.__PROXY__.trimEndPoint(...args);
+            
         };
     
         // function 
@@ -910,7 +1091,9 @@
           
         {
           //print("JS: REllipseData.prototype.correctMajorMinor");
-          return this.__PROXY__.correctMajorMinor(...args);
+          
+              return this.__PROXY__.correctMajorMinor(...args);
+            
         };
     
         // function 
@@ -918,7 +1101,9 @@
           
         {
           //print("JS: REllipseData.prototype.getBoxCorners");
-          return this.__PROXY__.getBoxCorners(...args);
+          
+              return this.__PROXY__.getBoxCorners(...args);
+            
         };
     
         // function 
@@ -926,7 +1111,9 @@
           
         {
           //print("JS: REllipseData.prototype.getTangents");
-          return this.__PROXY__.getTangents(...args);
+          
+              return this.__PROXY__.getTangents(...args);
+            
         };
     
         // function 
@@ -934,7 +1121,9 @@
           
         {
           //print("JS: REllipseData.prototype.approximateWithSplines");
-          return this.__PROXY__.approximateWithSplines(...args);
+          
+              return this.__PROXY__.approximateWithSplines(...args);
+            
         };
     
         // function 
@@ -942,7 +1131,9 @@
           
         {
           //print("JS: REllipseData.prototype.approximateWithArcs");
-          return this.__PROXY__.approximateWithArcs(...args);
+          
+              return this.__PROXY__.approximateWithArcs(...args);
+            
         };
     
         // function 
@@ -950,7 +1141,9 @@
           
         {
           //print("JS: REllipseData.prototype.getOffsetShapes");
-          return this.__PROXY__.getOffsetShapes(...args);
+          
+              return this.__PROXY__.getOffsetShapes(...args);
+            
         };
     
         // function 
@@ -958,7 +1151,9 @@
           
         {
           //print("JS: REllipseData.prototype.splitAt");
-          return this.__PROXY__.splitAt(...args);
+          
+              return this.__PROXY__.splitAt(...args);
+            
         };
     
         // function 
@@ -966,7 +1161,9 @@
           
         {
           //print("JS: REllipseData.prototype.copy");
-          return this.__PROXY__.copy(...args);
+          
+              return this.__PROXY__.copy(...args);
+            
         };
     
         // function 
@@ -974,7 +1171,9 @@
           
         {
           //print("JS: REllipseData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -982,7 +1181,9 @@
           
         {
           //print("JS: REllipseData.prototype.getEllipse");
-          return this.__PROXY__.getEllipse(...args);
+          
+              return this.__PROXY__.getEllipse(...args);
+            
         };
     
         // function 
@@ -990,7 +1191,9 @@
           
         {
           //print("JS: REllipseData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -998,7 +1201,9 @@
           
         {
           //print("JS: REllipseData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -1006,7 +1211,9 @@
           
         {
           //print("JS: REllipseData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -1014,7 +1221,9 @@
           
         {
           //print("JS: REllipseData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -1022,7 +1231,9 @@
           
         {
           //print("JS: REllipseData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -1030,7 +1241,9 @@
           
         {
           //print("JS: REllipseData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -1038,7 +1251,9 @@
           
         {
           //print("JS: REllipseData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -1046,7 +1261,9 @@
           
         {
           //print("JS: REllipseData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -1054,7 +1271,9 @@
           
         {
           //print("JS: REllipseData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -1062,7 +1281,9 @@
           
         {
           //print("JS: REllipseData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -1070,7 +1291,9 @@
           
         {
           //print("JS: REllipseData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -1078,7 +1301,9 @@
           
         {
           //print("JS: REllipseData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -1086,7 +1311,9 @@
           
         {
           //print("JS: REllipseData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -1094,7 +1321,9 @@
           
         {
           //print("JS: REllipseData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -1102,7 +1331,9 @@
           
         {
           //print("JS: REllipseData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -1110,7 +1341,9 @@
           
         {
           //print("JS: REllipseData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -1118,7 +1351,9 @@
           
         {
           //print("JS: REllipseData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -1126,7 +1361,9 @@
           
         {
           //print("JS: REllipseData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -1134,7 +1371,9 @@
           
         {
           //print("JS: REllipseData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -1142,7 +1381,9 @@
           
         {
           //print("JS: REllipseData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -1150,7 +1391,9 @@
           
         {
           //print("JS: REllipseData.prototype.getFoci");
-          return this.__PROXY__.getFoci(...args);
+          
+              return this.__PROXY__.getFoci(...args);
+            
         };
     
         // function 
@@ -1158,7 +1401,9 @@
           
         {
           //print("JS: REllipseData.prototype.getCenter");
-          return this.__PROXY__.getCenter(...args);
+          
+              return this.__PROXY__.getCenter(...args);
+            
         };
     
         // function 
@@ -1166,7 +1411,9 @@
           
         {
           //print("JS: REllipseData.prototype.getMajorRadius");
-          return this.__PROXY__.getMajorRadius(...args);
+          
+              return this.__PROXY__.getMajorRadius(...args);
+            
         };
     
         // function 
@@ -1174,7 +1421,9 @@
           
         {
           //print("JS: REllipseData.prototype.getMajorPoint");
-          return this.__PROXY__.getMajorPoint(...args);
+          
+              return this.__PROXY__.getMajorPoint(...args);
+            
         };
     
         // function 
@@ -1182,7 +1431,9 @@
           
         {
           //print("JS: REllipseData.prototype.getMinorPoint");
-          return this.__PROXY__.getMinorPoint(...args);
+          
+              return this.__PROXY__.getMinorPoint(...args);
+            
         };
     
         // function 
@@ -1190,7 +1441,9 @@
           
         {
           //print("JS: REllipseData.prototype.setMinorPoint");
-          return this.__PROXY__.setMinorPoint(...args);
+          
+              return this.__PROXY__.setMinorPoint(...args);
+            
         };
     
         // function 
@@ -1198,7 +1451,9 @@
           
         {
           //print("JS: REllipseData.prototype.getRatio");
-          return this.__PROXY__.getRatio(...args);
+          
+              return this.__PROXY__.getRatio(...args);
+            
         };
     
         // function 
@@ -1206,7 +1461,9 @@
           
         {
           //print("JS: REllipseData.prototype.getAngle");
-          return this.__PROXY__.getAngle(...args);
+          
+              return this.__PROXY__.getAngle(...args);
+            
         };
     
         // function 
@@ -1214,7 +1471,9 @@
           
         {
           //print("JS: REllipseData.prototype.getStartParam");
-          return this.__PROXY__.getStartParam(...args);
+          
+              return this.__PROXY__.getStartParam(...args);
+            
         };
     
         // function 
@@ -1222,7 +1481,9 @@
           
         {
           //print("JS: REllipseData.prototype.getEndParam");
-          return this.__PROXY__.getEndParam(...args);
+          
+              return this.__PROXY__.getEndParam(...args);
+            
         };
     
         // function 
@@ -1230,7 +1491,9 @@
           
         {
           //print("JS: REllipseData.prototype.isFullEllipse");
-          return this.__PROXY__.isFullEllipse(...args);
+          
+              return this.__PROXY__.isFullEllipse(...args);
+            
         };
     
         // function 
@@ -1238,7 +1501,9 @@
           
         {
           //print("JS: REllipseData.prototype.getParamTo");
-          return this.__PROXY__.getParamTo(...args);
+          
+              return this.__PROXY__.getParamTo(...args);
+            
         };
     
         // function 
@@ -1246,7 +1511,9 @@
           
         {
           //print("JS: REllipseData.prototype.getLength");
-          return this.__PROXY__.getLength(...args);
+          
+              return this.__PROXY__.getLength(...args);
+            
         };
     
         // function 
@@ -1254,7 +1521,9 @@
           
         {
           //print("JS: REllipseData.prototype.getSweep");
-          return this.__PROXY__.getSweep(...args);
+          
+              return this.__PROXY__.getSweep(...args);
+            
         };
     
         // function 
@@ -1262,7 +1531,9 @@
           
         {
           //print("JS: REllipseData.prototype.getPointAt");
-          return this.__PROXY__.getPointAt(...args);
+          
+              return this.__PROXY__.getPointAt(...args);
+            
         };
     
         // function 
@@ -1270,7 +1541,9 @@
           
         {
           //print("JS: REllipseData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -1278,7 +1551,9 @@
           
         {
           //print("JS: REllipseData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -1286,7 +1561,9 @@
           
         {
           //print("JS: REllipseData.prototype.reverse");
-          return this.__PROXY__.reverse(...args);
+          
+              return this.__PROXY__.reverse(...args);
+            
         };
     
         // function 
@@ -1294,7 +1571,9 @@
           
         {
           //print("JS: REllipseData.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -1302,11 +1581,23 @@
           
         {
           //print("JS: REllipseData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
 
       // static functions:
+      REllipseData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      REllipseData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      REllipseData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

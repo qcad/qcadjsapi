@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RS);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RS);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RS.prototype = new RS_BaseJs(engine);
       //RS.prototype = new RS_Wrapper(engine);
       RS.prototype = new Object();
+
 
       RS.prototype.toString = function() {
           //return "RS [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -637,6 +638,266 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
 
       // functions:
       
+        // function 
+        RS.prototype.compare = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.compare");
+          
+              return this.__PROXY__.compare(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getCpuCores = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getCpuCores");
+          
+              return this.__PROXY__.getCpuCores(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getIdealThreadCount = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getIdealThreadCount");
+          
+              return this.__PROXY__.getIdealThreadCount(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getBuildCpuArchitecture = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getBuildCpuArchitecture");
+          
+              return this.__PROXY__.getBuildCpuArchitecture(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getHostId = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getHostId");
+          
+              return this.__PROXY__.getHostId(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getSystemId = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getSystemId");
+          
+              return this.__PROXY__.getSystemId(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getWindowManagerId = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getWindowManagerId");
+          
+              return this.__PROXY__.getWindowManagerId(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.showInFileManager = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.showInFileManager");
+          
+              return this.__PROXY__.showInFileManager(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getDirectoryList = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getDirectoryList");
+          
+              return this.__PROXY__.getDirectoryList(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getFileList = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getFileList");
+          
+              return this.__PROXY__.getFileList(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getFontList = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getFontList");
+          
+              return this.__PROXY__.getFontList(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getPatternList = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getPatternList");
+          
+              return this.__PROXY__.getPatternList(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getLinetypeList = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getLinetypeList");
+          
+              return this.__PROXY__.getLinetypeList(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.sortAlphanumerical = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.sortAlphanumerical");
+          
+              return this.__PROXY__.sortAlphanumerical(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.compareChunkify = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.compareChunkify");
+          
+              return this.__PROXY__.compareChunkify(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.compareAlphanumerical = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.compareAlphanumerical");
+          
+              return this.__PROXY__.compareAlphanumerical(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.lessThanAlphanumerical = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.lessThanAlphanumerical");
+          
+              return this.__PROXY__.lessThanAlphanumerical(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getFontFamily = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getFontFamily");
+          
+              return this.__PROXY__.getFontFamily(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getPageSizeId = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getPageSizeId");
+          
+              return this.__PROXY__.getPageSizeId(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getPageSize = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getPageSize");
+          
+              return this.__PROXY__.getPageSize(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.setUtf8Codec = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.setUtf8Codec");
+          
+              return this.__PROXY__.setUtf8Codec(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.escape = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.escape");
+          
+              return this.__PROXY__.escape(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getScreenCount = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getScreenCount");
+          
+              return this.__PROXY__.getScreenCount(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getAvailableGeometry = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getAvailableGeometry");
+          
+              return this.__PROXY__.getAvailableGeometry(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.convert = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.convert");
+          
+              return this.__PROXY__.convert(...args);
+            
+        };
+    
+        // function 
+        RS.prototype.getImageFilePath = function(...args) 
+          
+        {
+          //print("JS: RS.prototype.getImageFilePath");
+          
+              return this.__PROXY__.getImageFilePath(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -1383,6 +1644,16 @@ RS.OutInBounce = RS_Wrapper.OutInBounce;
   }
   
         };
+      RS.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RS.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RS.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -1409,4 +1680,7 @@ RS.Landscape =
       //  return this.wrapper.destr();
       //};
 
+      RS.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

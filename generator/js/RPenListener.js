@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPenListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPenListener.prototype = new RPenListener_BaseJs(engine);
       //RPenListener.prototype = new RPenListener_Wrapper(engine);
       RPenListener.prototype = new Object();
+
 
       RPenListener.prototype.toString = function() {
           //return "RPenListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,38 @@
 
       // functions:
       
+        // function 
+        RPenListener.prototype.updatePen = function(...args) 
+          
+        {
+          //print("JS: RPenListener.prototype.updatePen");
+          
+              return this.__PROXY__.updatePen(...args);
+            
+        };
+    
+        // function 
+        RPenListener.prototype.clearPen = function(...args) 
+          
+        {
+          //print("JS: RPenListener.prototype.clearPen");
+          
+              return this.__PROXY__.clearPen(...args);
+            
+        };
+    
 
       // static functions:
+      RPenListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPenListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPenListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +146,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPenListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RTranslation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTranslation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RTranslation.prototype = new RTranslation_BaseJs(engine);
       //RTranslation.prototype = new RTranslation_Wrapper(engine);
       RTranslation.prototype = new Object();
+
 
       RTranslation.prototype.toString = function() {
           //return "RTranslation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -131,6 +132,16 @@
       
 
       // static functions:
+      RTranslation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RTranslation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RTranslation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -149,4 +160,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RTranslation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

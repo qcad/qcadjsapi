@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RFileCache);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RFileCache);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RFileCache.prototype = new RFileCache_BaseJs(engine);
       //RFileCache.prototype = new RFileCache_Wrapper(engine);
       RFileCache.prototype = new Object();
+
 
       RFileCache.prototype.toString = function() {
           //return "RFileCache [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,26 @@
 
       // functions:
       
+        // function 
+        RFileCache.prototype.getContents = function(...args) 
+          
+        {
+          //print("JS: RFileCache.prototype.getContents");
+          
+              return this.__PROXY__.getContents(...args);
+            
+        };
+    
+        // function 
+        RFileCache.prototype.getBuffer = function(...args) 
+          
+        {
+          //print("JS: RFileCache.prototype.getBuffer");
+          
+              return this.__PROXY__.getBuffer(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -184,6 +205,16 @@
   }
   
         };
+      RFileCache.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RFileCache.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RFileCache.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -202,4 +233,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RFileCache.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

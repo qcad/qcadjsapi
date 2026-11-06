@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPreferencesListenerAdapter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPreferencesListenerAdapter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,22 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["preferencesUpdated(RDocumentInterface*)"] = Object.getPrototypeOf(this).preferencesUpdated;
-  
-            }
-          
+
         }
 
-        
 
       }
 
       //RPreferencesListenerAdapter.prototype = new RPreferencesListenerAdapter_BaseJs(engine);
       //RPreferencesListenerAdapter.prototype = new RPreferencesListenerAdapter_Wrapper(engine);
       RPreferencesListenerAdapter.prototype = new Object();
+
 
       RPreferencesListenerAdapter.prototype.toString = function() {
           //return "RPreferencesListenerAdapter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -139,8 +133,223 @@
 
       // functions:
       
+        // function 
+        RPreferencesListenerAdapter.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.children = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.property = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        RPreferencesListenerAdapter.prototype.updatePreferences = function(...args) 
+          
+        {
+          //print("JS: RPreferencesListenerAdapter.prototype.updatePreferences");
+          
+              return this.__PROXY__.updatePreferences(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(RPreferencesListenerAdapter.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(RPreferencesListenerAdapter.prototype, 'preferencesUpdated', {
+            get: function() { return this.__PROXY__.preferencesUpdated; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RPreferencesListenerAdapter.prototype, 'preferencesUpdated(RDocumentInterface*)', {
+              get: function() { return this.__PROXY__.preferencesUpdated; },
+              configurable: true
+          });
+        RPreferencesListenerAdapter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPreferencesListenerAdapter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPreferencesListenerAdapter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -159,4 +368,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPreferencesListenerAdapter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RViewFocusListenerAdapter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RViewFocusListenerAdapter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RViewFocusListenerAdapter.prototype = new RViewFocusListenerAdapter_BaseJs(engine);
       //RViewFocusListenerAdapter.prototype = new RViewFocusListenerAdapter_Wrapper(engine);
       RViewFocusListenerAdapter.prototype = new Object();
+
 
       RViewFocusListenerAdapter.prototype.toString = function() {
           //return "RViewFocusListenerAdapter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -142,7 +143,7 @@
                 // call highest level JS implementation:
                 //return this.updateFocusBase(
                 
-                    return this.updateFocusSuper(
+                    return this.__PROXY__.updateFocusSuper(
                   arguments[0]
                 );
               
@@ -162,6 +163,16 @@
     
 
       // static functions:
+      RViewFocusListenerAdapter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RViewFocusListenerAdapter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RViewFocusListenerAdapter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -180,4 +191,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RViewFocusListenerAdapter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

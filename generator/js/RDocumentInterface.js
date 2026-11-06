@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RDocumentInterface.prototype = new RDocumentInterface_BaseJs(engine);
       //RDocumentInterface.prototype = new RDocumentInterface_Wrapper(engine);
       RDocumentInterface.prototype = new Object();
+
 
       RDocumentInterface.prototype.toString = function() {
           //return "RDocumentInterface [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -138,7 +139,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.clearCaches");
-          return this.__PROXY__.clearCaches(...args);
+          
+              return this.__PROXY__.clearCaches(...args);
+            
         };
     
         // function 
@@ -146,7 +149,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -154,7 +159,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getStorage");
-          return this.__PROXY__.getStorage(...args);
+          
+              return this.__PROXY__.getStorage(...args);
+            
         };
     
         // function 
@@ -162,7 +169,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getGraphicsScenes");
-          return this.__PROXY__.getGraphicsScenes(...args);
+          
+              return this.__PROXY__.getGraphicsScenes(...args);
+            
         };
     
         // function 
@@ -170,7 +179,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getGraphicsViewWithFocus");
-          return this.__PROXY__.getGraphicsViewWithFocus(...args);
+          
+              return this.__PROXY__.getGraphicsViewWithFocus(...args);
+            
         };
     
         // function 
@@ -178,7 +189,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getGraphicsSceneWithFocus");
-          return this.__PROXY__.getGraphicsSceneWithFocus(...args);
+          
+              return this.__PROXY__.getGraphicsSceneWithFocus(...args);
+            
         };
     
         // function 
@@ -186,7 +199,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.addCoordinateListener");
-          return this.__PROXY__.addCoordinateListener(...args);
+          
+              return this.__PROXY__.addCoordinateListener(...args);
+            
         };
     
         // function 
@@ -194,7 +209,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.removeCoordinateListener");
-          return this.__PROXY__.removeCoordinateListener(...args);
+          
+              return this.__PROXY__.removeCoordinateListener(...args);
+            
         };
     
         // function 
@@ -202,7 +219,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.notifyCoordinateListeners");
-          return this.__PROXY__.notifyCoordinateListeners(...args);
+          
+              return this.__PROXY__.notifyCoordinateListeners(...args);
+            
         };
     
         // function 
@@ -210,7 +229,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.addLayerListener");
-          return this.__PROXY__.addLayerListener(...args);
+          
+              return this.__PROXY__.addLayerListener(...args);
+            
         };
     
         // function 
@@ -218,7 +239,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.removeLayerListener");
-          return this.__PROXY__.removeLayerListener(...args);
+          
+              return this.__PROXY__.removeLayerListener(...args);
+            
         };
     
         // function 
@@ -226,7 +249,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.notifyLayerListeners");
-          return this.__PROXY__.notifyLayerListeners(...args);
+          
+              return this.__PROXY__.notifyLayerListeners(...args);
+            
         };
     
         // function 
@@ -234,7 +259,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.addBlockListener");
-          return this.__PROXY__.addBlockListener(...args);
+          
+              return this.__PROXY__.addBlockListener(...args);
+            
         };
     
         // function 
@@ -242,7 +269,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.removeBlockListener");
-          return this.__PROXY__.removeBlockListener(...args);
+          
+              return this.__PROXY__.removeBlockListener(...args);
+            
         };
     
         // function 
@@ -250,7 +279,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.notifyBlockListeners");
-          return this.__PROXY__.notifyBlockListeners(...args);
+          
+              return this.__PROXY__.notifyBlockListeners(...args);
+            
         };
     
         // function 
@@ -258,7 +289,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.addTransactionListener");
-          return this.__PROXY__.addTransactionListener(...args);
+          
+              return this.__PROXY__.addTransactionListener(...args);
+            
         };
     
         // function 
@@ -266,7 +299,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.removeTransactionListener");
-          return this.__PROXY__.removeTransactionListener(...args);
+          
+              return this.__PROXY__.removeTransactionListener(...args);
+            
         };
     
         // function 
@@ -274,7 +309,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.notifyTransactionListeners");
-          return this.__PROXY__.notifyTransactionListeners(...args);
+          
+              return this.__PROXY__.notifyTransactionListeners(...args);
+            
         };
     
         // function 
@@ -282,7 +319,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.clear");
-          return this.__PROXY__.clear(...args);
+          
+              return this.__PROXY__.clear(...args);
+            
         };
     
         // function 
@@ -290,7 +329,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.isScriptRunning");
-          return this.__PROXY__.isScriptRunning(...args);
+          
+              return this.__PROXY__.isScriptRunning(...args);
+            
         };
     
         // function 
@@ -298,7 +339,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setDefaultAction");
-          return this.__PROXY__.setDefaultAction(...args);
+          
+              return this.__PROXY__.setDefaultAction(...args);
+            
         };
     
         // function 
@@ -306,7 +349,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getDefaultAction");
-          return this.__PROXY__.getDefaultAction(...args);
+          
+              return this.__PROXY__.getDefaultAction(...args);
+            
         };
     
         // function 
@@ -314,7 +359,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentAction");
-          return this.__PROXY__.setCurrentAction(...args);
+          
+              return this.__PROXY__.setCurrentAction(...args);
+            
         };
     
         // function 
@@ -322,7 +369,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.terminateCurrentAction");
-          return this.__PROXY__.terminateCurrentAction(...args);
+          
+              return this.__PROXY__.terminateCurrentAction(...args);
+            
         };
     
         // function 
@@ -330,7 +379,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.queueAction");
-          return this.__PROXY__.queueAction(...args);
+          
+              return this.__PROXY__.queueAction(...args);
+            
         };
     
         // function 
@@ -338,7 +389,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.killAllActions");
-          return this.__PROXY__.killAllActions(...args);
+          
+              return this.__PROXY__.killAllActions(...args);
+            
         };
     
         // function 
@@ -346,7 +399,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCurrentAction");
-          return this.__PROXY__.getCurrentAction(...args);
+          
+              return this.__PROXY__.getCurrentAction(...args);
+            
         };
     
         // function 
@@ -354,7 +409,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.hasCurrentAction");
-          return this.__PROXY__.hasCurrentAction(...args);
+          
+              return this.__PROXY__.hasCurrentAction(...args);
+            
         };
     
         // function 
@@ -362,7 +419,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCurrentStatefulAction");
-          return this.__PROXY__.getCurrentStatefulAction(...args);
+          
+              return this.__PROXY__.getCurrentStatefulAction(...args);
+            
         };
     
         // function 
@@ -370,7 +429,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.hasCurrentStatefulAction");
-          return this.__PROXY__.hasCurrentStatefulAction(...args);
+          
+              return this.__PROXY__.hasCurrentStatefulAction(...args);
+            
         };
     
         // function 
@@ -378,7 +439,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.suspend");
-          return this.__PROXY__.suspend(...args);
+          
+              return this.__PROXY__.suspend(...args);
+            
         };
     
         // function 
@@ -386,7 +449,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.resume");
-          return this.__PROXY__.resume(...args);
+          
+              return this.__PROXY__.resume(...args);
+            
         };
     
         // function 
@@ -394,7 +459,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.checkDirtyXRefs");
-          return this.__PROXY__.checkDirtyXRefs(...args);
+          
+              return this.__PROXY__.checkDirtyXRefs(...args);
+            
         };
     
         // function 
@@ -402,7 +469,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setClickMode");
-          return this.__PROXY__.setClickMode(...args);
+          
+              return this.__PROXY__.setClickMode(...args);
+            
         };
     
         // function 
@@ -410,7 +479,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getClickMode");
-          return this.__PROXY__.getClickMode(...args);
+          
+              return this.__PROXY__.getClickMode(...args);
+            
         };
     
         // function 
@@ -418,7 +489,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.terminateEvent");
-          return this.__PROXY__.terminateEvent(...args);
+          
+              return this.__PROXY__.terminateEvent(...args);
+            
         };
     
         // function 
@@ -426,7 +499,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.keyPressEvent");
-          return this.__PROXY__.keyPressEvent(...args);
+          
+              return this.__PROXY__.keyPressEvent(...args);
+            
         };
     
         // function 
@@ -434,7 +509,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.keyReleaseEvent");
-          return this.__PROXY__.keyReleaseEvent(...args);
+          
+              return this.__PROXY__.keyReleaseEvent(...args);
+            
         };
     
         // function 
@@ -442,7 +519,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.mouseMoveEvent");
-          return this.__PROXY__.mouseMoveEvent(...args);
+          
+              return this.__PROXY__.mouseMoveEvent(...args);
+            
         };
     
         // function 
@@ -450,7 +529,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.mousePressEvent");
-          return this.__PROXY__.mousePressEvent(...args);
+          
+              return this.__PROXY__.mousePressEvent(...args);
+            
         };
     
         // function 
@@ -458,7 +539,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.mouseReleaseEvent");
-          return this.__PROXY__.mouseReleaseEvent(...args);
+          
+              return this.__PROXY__.mouseReleaseEvent(...args);
+            
         };
     
         // function 
@@ -466,7 +549,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.mouseDoubleClickEvent");
-          return this.__PROXY__.mouseDoubleClickEvent(...args);
+          
+              return this.__PROXY__.mouseDoubleClickEvent(...args);
+            
         };
     
         // function 
@@ -474,7 +559,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.coordinateEvent");
-          return this.__PROXY__.coordinateEvent(...args);
+          
+              return this.__PROXY__.coordinateEvent(...args);
+            
         };
     
         // function 
@@ -482,7 +569,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.coordinateEventPreview");
-          return this.__PROXY__.coordinateEventPreview(...args);
+          
+              return this.__PROXY__.coordinateEventPreview(...args);
+            
         };
     
         // function 
@@ -490,7 +579,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.commandEvent");
-          return this.__PROXY__.commandEvent(...args);
+          
+              return this.__PROXY__.commandEvent(...args);
+            
         };
     
         // function 
@@ -498,7 +589,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.commandEventPreview");
-          return this.__PROXY__.commandEventPreview(...args);
+          
+              return this.__PROXY__.commandEventPreview(...args);
+            
         };
     
         // function 
@@ -506,7 +599,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.wheelEvent");
-          return this.__PROXY__.wheelEvent(...args);
+          
+              return this.__PROXY__.wheelEvent(...args);
+            
         };
     
         // function 
@@ -514,7 +609,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.tabletEvent");
-          return this.__PROXY__.tabletEvent(...args);
+          
+              return this.__PROXY__.tabletEvent(...args);
+            
         };
     
         // function 
@@ -522,7 +619,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.swipeGestureEvent");
-          return this.__PROXY__.swipeGestureEvent(...args);
+          
+              return this.__PROXY__.swipeGestureEvent(...args);
+            
         };
     
         // function 
@@ -530,7 +629,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.panGestureEvent");
-          return this.__PROXY__.panGestureEvent(...args);
+          
+              return this.__PROXY__.panGestureEvent(...args);
+            
         };
     
         // function 
@@ -538,7 +639,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.pinchGestureEvent");
-          return this.__PROXY__.pinchGestureEvent(...args);
+          
+              return this.__PROXY__.pinchGestureEvent(...args);
+            
         };
     
         // function 
@@ -546,7 +649,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.propertyChangeEvent");
-          return this.__PROXY__.propertyChangeEvent(...args);
+          
+              return this.__PROXY__.propertyChangeEvent(...args);
+            
         };
     
         // function 
@@ -554,7 +659,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.ucsSetEvent");
-          return this.__PROXY__.ucsSetEvent(...args);
+          
+              return this.__PROXY__.ucsSetEvent(...args);
+            
         };
     
         // function 
@@ -562,7 +669,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.zoomChangeEvent");
-          return this.__PROXY__.zoomChangeEvent(...args);
+          
+              return this.__PROXY__.zoomChangeEvent(...args);
+            
         };
     
         // function 
@@ -570,7 +679,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.enableUpdates");
-          return this.__PROXY__.enableUpdates(...args);
+          
+              return this.__PROXY__.enableUpdates(...args);
+            
         };
     
         // function 
@@ -578,7 +689,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.disableUpdates");
-          return this.__PROXY__.disableUpdates(...args);
+          
+              return this.__PROXY__.disableUpdates(...args);
+            
         };
     
         // function 
@@ -586,7 +699,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.enableRegeneration");
-          return this.__PROXY__.enableRegeneration(...args);
+          
+              return this.__PROXY__.enableRegeneration(...args);
+            
         };
     
         // function 
@@ -594,7 +709,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.disableRegeneration");
-          return this.__PROXY__.disableRegeneration(...args);
+          
+              return this.__PROXY__.disableRegeneration(...args);
+            
         };
     
         // function 
@@ -602,7 +719,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.enableMouseTracking");
-          return this.__PROXY__.enableMouseTracking(...args);
+          
+              return this.__PROXY__.enableMouseTracking(...args);
+            
         };
     
         // function 
@@ -610,7 +729,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.disableMouseTracking");
-          return this.__PROXY__.disableMouseTracking(...args);
+          
+              return this.__PROXY__.disableMouseTracking(...args);
+            
         };
     
         // function 
@@ -618,7 +739,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setAllowSnapInterruption");
-          return this.__PROXY__.setAllowSnapInterruption(...args);
+          
+              return this.__PROXY__.setAllowSnapInterruption(...args);
+            
         };
     
         // function 
@@ -626,7 +749,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.updateAllEntities");
-          return this.__PROXY__.updateAllEntities(...args);
+          
+              return this.__PROXY__.updateAllEntities(...args);
+            
         };
     
         // function 
@@ -634,7 +759,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.regenerateScenes");
-          return this.__PROXY__.regenerateScenes(...args);
+          
+              return this.__PROXY__.regenerateScenes(...args);
+            
         };
     
         // function 
@@ -642,7 +769,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.updateSelectionStatus");
-          return this.__PROXY__.updateSelectionStatus(...args);
+          
+              return this.__PROXY__.updateSelectionStatus(...args);
+            
         };
     
         // function 
@@ -650,7 +779,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.regenerateViews");
-          return this.__PROXY__.regenerateViews(...args);
+          
+              return this.__PROXY__.regenerateViews(...args);
+            
         };
     
         // function 
@@ -658,7 +789,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.repaintViews");
-          return this.__PROXY__.repaintViews(...args);
+          
+              return this.__PROXY__.repaintViews(...args);
+            
         };
     
         // function 
@@ -666,7 +799,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.registerScene");
-          return this.__PROXY__.registerScene(...args);
+          
+              return this.__PROXY__.registerScene(...args);
+            
         };
     
         // function 
@@ -674,7 +809,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.unregisterScene");
-          return this.__PROXY__.unregisterScene(...args);
+          
+              return this.__PROXY__.unregisterScene(...args);
+            
         };
     
         // function 
@@ -682,7 +819,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCursor");
-          return this.__PROXY__.setCursor(...args);
+          
+              return this.__PROXY__.setCursor(...args);
+            
         };
     
         // function 
@@ -690,7 +829,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.importUrl");
-          return this.__PROXY__.importUrl(...args);
+          
+              return this.__PROXY__.importUrl(...args);
+            
         };
     
         // function 
@@ -698,7 +839,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.importFile");
-          return this.__PROXY__.importFile(...args);
+          
+              return this.__PROXY__.importFile(...args);
+            
         };
     
         // function 
@@ -706,7 +849,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCorrectedFileName");
-          return this.__PROXY__.getCorrectedFileName(...args);
+          
+              return this.__PROXY__.getCorrectedFileName(...args);
+            
         };
     
         // function 
@@ -714,7 +859,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.exportFile");
-          return this.__PROXY__.exportFile(...args);
+          
+              return this.__PROXY__.exportFile(...args);
+            
         };
     
         // function 
@@ -722,7 +869,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.tagState");
-          return this.__PROXY__.tagState(...args);
+          
+              return this.__PROXY__.tagState(...args);
+            
         };
     
         // function 
@@ -730,7 +879,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.undoToTag");
-          return this.__PROXY__.undoToTag(...args);
+          
+              return this.__PROXY__.undoToTag(...args);
+            
         };
     
         // function 
@@ -738,7 +889,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.undo");
-          return this.__PROXY__.undo(...args);
+          
+              return this.__PROXY__.undo(...args);
+            
         };
     
         // function 
@@ -746,7 +899,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.redo");
-          return this.__PROXY__.redo(...args);
+          
+              return this.__PROXY__.redo(...args);
+            
         };
     
         // function 
@@ -754,7 +909,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.flushTransactions");
-          return this.__PROXY__.flushTransactions(...args);
+          
+              return this.__PROXY__.flushTransactions(...args);
+            
         };
     
         // function 
@@ -762,7 +919,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.flushRedo");
-          return this.__PROXY__.flushRedo(...args);
+          
+              return this.__PROXY__.flushRedo(...args);
+            
         };
     
         // function 
@@ -770,7 +929,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setSnap");
-          return this.__PROXY__.setSnap(...args);
+          
+              return this.__PROXY__.setSnap(...args);
+            
         };
     
         // function 
@@ -778,7 +939,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getSnap");
-          return this.__PROXY__.getSnap(...args);
+          
+              return this.__PROXY__.getSnap(...args);
+            
         };
     
         // function 
@@ -786,7 +949,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getSnapStatus");
-          return this.__PROXY__.getSnapStatus(...args);
+          
+              return this.__PROXY__.getSnapStatus(...args);
+            
         };
     
         // function 
@@ -794,7 +959,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setSnapRestriction");
-          return this.__PROXY__.setSnapRestriction(...args);
+          
+              return this.__PROXY__.setSnapRestriction(...args);
+            
         };
     
         // function 
@@ -802,7 +969,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getSnapRestriction");
-          return this.__PROXY__.getSnapRestriction(...args);
+          
+              return this.__PROXY__.getSnapRestriction(...args);
+            
         };
     
         // function 
@@ -810,7 +979,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.snap");
-          return this.__PROXY__.snap(...args);
+          
+              return this.__PROXY__.snap(...args);
+            
         };
     
         // function 
@@ -818,7 +989,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.restrictOrtho");
-          return this.__PROXY__.restrictOrtho(...args);
+          
+              return this.__PROXY__.restrictOrtho(...args);
+            
         };
     
         // function 
@@ -826,7 +999,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getClosestEntity");
-          return this.__PROXY__.getClosestEntity(...args);
+          
+              return this.__PROXY__.getClosestEntity(...args);
+            
         };
     
         // function 
@@ -834,7 +1009,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.highlightEntity");
-          return this.__PROXY__.highlightEntity(...args);
+          
+              return this.__PROXY__.highlightEntity(...args);
+            
         };
     
         // function 
@@ -842,7 +1019,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.highlightReferencePoint");
-          return this.__PROXY__.highlightReferencePoint(...args);
+          
+              return this.__PROXY__.highlightReferencePoint(...args);
+            
         };
     
         // function 
@@ -850,7 +1029,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.selectEntities");
-          return this.__PROXY__.selectEntities(...args);
+          
+              return this.__PROXY__.selectEntities(...args);
+            
         };
     
         // function 
@@ -858,7 +1039,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.selectEntity");
-          return this.__PROXY__.selectEntity(...args);
+          
+              return this.__PROXY__.selectEntity(...args);
+            
         };
     
         // function 
@@ -866,7 +1049,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.deselectEntities");
-          return this.__PROXY__.deselectEntities(...args);
+          
+              return this.__PROXY__.deselectEntities(...args);
+            
         };
     
         // function 
@@ -874,7 +1059,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.deselectEntity");
-          return this.__PROXY__.deselectEntity(...args);
+          
+              return this.__PROXY__.deselectEntity(...args);
+            
         };
     
         // function 
@@ -882,7 +1069,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.selectBoxXY");
-          return this.__PROXY__.selectBoxXY(...args);
+          
+              return this.__PROXY__.selectBoxXY(...args);
+            
         };
     
         // function 
@@ -890,7 +1079,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.selectAll");
-          return this.__PROXY__.selectAll(...args);
+          
+              return this.__PROXY__.selectAll(...args);
+            
         };
     
         // function 
@@ -898,7 +1089,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.deselectAll");
-          return this.__PROXY__.deselectAll(...args);
+          
+              return this.__PROXY__.deselectAll(...args);
+            
         };
     
         // function 
@@ -906,7 +1099,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.clearSelection");
-          return this.__PROXY__.clearSelection(...args);
+          
+              return this.__PROXY__.clearSelection(...args);
+            
         };
     
         // function 
@@ -914,7 +1109,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.hasSelection");
-          return this.__PROXY__.hasSelection(...args);
+          
+              return this.__PROXY__.hasSelection(...args);
+            
         };
     
         // function 
@@ -922,7 +1119,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.addZoomBoxToPreview");
-          return this.__PROXY__.addZoomBoxToPreview(...args);
+          
+              return this.__PROXY__.addZoomBoxToPreview(...args);
+            
         };
     
         // function 
@@ -930,7 +1129,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.addShapeToPreview");
-          return this.__PROXY__.addShapeToPreview(...args);
+          
+              return this.__PROXY__.addShapeToPreview(...args);
+            
         };
     
         // function 
@@ -938,7 +1139,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.addAuxShapeToPreview");
-          return this.__PROXY__.addAuxShapeToPreview(...args);
+          
+              return this.__PROXY__.addAuxShapeToPreview(...args);
+            
         };
     
         // function 
@@ -946,7 +1149,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.addDrawableToPreview");
-          return this.__PROXY__.addDrawableToPreview(...args);
+          
+              return this.__PROXY__.addDrawableToPreview(...args);
+            
         };
     
         // function 
@@ -954,7 +1159,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.beginPreview");
-          return this.__PROXY__.beginPreview(...args);
+          
+              return this.__PROXY__.beginPreview(...args);
+            
         };
     
         // function 
@@ -962,7 +1169,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.endPreview");
-          return this.__PROXY__.endPreview(...args);
+          
+              return this.__PROXY__.endPreview(...args);
+            
         };
     
         // function 
@@ -970,7 +1179,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.clearPreview");
-          return this.__PROXY__.clearPreview(...args);
+          
+              return this.__PROXY__.clearPreview(...args);
+            
         };
     
         // function 
@@ -978,7 +1189,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.isPreviewEmpty");
-          return this.__PROXY__.isPreviewEmpty(...args);
+          
+              return this.__PROXY__.isPreviewEmpty(...args);
+            
         };
     
         // function 
@@ -986,7 +1199,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.keepPreview");
-          return this.__PROXY__.keepPreview(...args);
+          
+              return this.__PROXY__.keepPreview(...args);
+            
         };
     
         // function 
@@ -994,7 +1209,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.showPropertiesOf");
-          return this.__PROXY__.showPropertiesOf(...args);
+          
+              return this.__PROXY__.showPropertiesOf(...args);
+            
         };
     
         // function 
@@ -1002,7 +1219,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.clearProperties");
-          return this.__PROXY__.clearProperties(...args);
+          
+              return this.__PROXY__.clearProperties(...args);
+            
         };
     
         // function 
@@ -1010,7 +1229,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.zoomIn");
-          return this.__PROXY__.zoomIn(...args);
+          
+              return this.__PROXY__.zoomIn(...args);
+            
         };
     
         // function 
@@ -1018,7 +1239,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.zoomOut");
-          return this.__PROXY__.zoomOut(...args);
+          
+              return this.__PROXY__.zoomOut(...args);
+            
         };
     
         // function 
@@ -1026,7 +1249,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.autoZoom");
-          return this.__PROXY__.autoZoom(...args);
+          
+              return this.__PROXY__.autoZoom(...args);
+            
         };
     
         // function 
@@ -1034,7 +1259,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.zoomToSelection");
-          return this.__PROXY__.zoomToSelection(...args);
+          
+              return this.__PROXY__.zoomToSelection(...args);
+            
         };
     
         // function 
@@ -1042,7 +1269,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.zoomTo");
-          return this.__PROXY__.zoomTo(...args);
+          
+              return this.__PROXY__.zoomTo(...args);
+            
         };
     
         // function 
@@ -1050,7 +1279,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.zoomPrevious");
-          return this.__PROXY__.zoomPrevious(...args);
+          
+              return this.__PROXY__.zoomPrevious(...args);
+            
         };
     
         // function 
@@ -1058,7 +1289,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.previewOperation");
-          return this.__PROXY__.previewOperation(...args);
+          
+              return this.__PROXY__.previewOperation(...args);
+            
         };
     
         // function 
@@ -1066,7 +1299,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.applyOperation");
-          return this.__PROXY__.applyOperation(...args);
+          
+              return this.__PROXY__.applyOperation(...args);
+            
         };
     
         // function 
@@ -1074,7 +1309,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.objectChangeEvent");
-          return this.__PROXY__.objectChangeEvent(...args);
+          
+              return this.__PROXY__.objectChangeEvent(...args);
+            
         };
     
         // function 
@@ -1082,7 +1319,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getRelativeZero");
-          return this.__PROXY__.getRelativeZero(...args);
+          
+              return this.__PROXY__.getRelativeZero(...args);
+            
         };
     
         // function 
@@ -1090,7 +1329,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getLastPosition");
-          return this.__PROXY__.getLastPosition(...args);
+          
+              return this.__PROXY__.getLastPosition(...args);
+            
         };
     
         // function 
@@ -1098,7 +1339,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setRelativeZero");
-          return this.__PROXY__.setRelativeZero(...args);
+          
+              return this.__PROXY__.setRelativeZero(...args);
+            
         };
     
         // function 
@@ -1106,7 +1349,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.lockRelativeZero");
-          return this.__PROXY__.lockRelativeZero(...args);
+          
+              return this.__PROXY__.lockRelativeZero(...args);
+            
         };
     
         // function 
@@ -1114,7 +1359,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.unlockRelativeZero");
-          return this.__PROXY__.unlockRelativeZero(...args);
+          
+              return this.__PROXY__.unlockRelativeZero(...args);
+            
         };
     
         // function 
@@ -1122,7 +1369,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.isRelativeZeroLocked");
-          return this.__PROXY__.isRelativeZeroLocked(...args);
+          
+              return this.__PROXY__.isRelativeZeroLocked(...args);
+            
         };
     
         // function 
@@ -1130,7 +1379,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.lockSnap");
-          return this.__PROXY__.lockSnap(...args);
+          
+              return this.__PROXY__.lockSnap(...args);
+            
         };
     
         // function 
@@ -1138,7 +1389,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.unlockSnap");
-          return this.__PROXY__.unlockSnap(...args);
+          
+              return this.__PROXY__.unlockSnap(...args);
+            
         };
     
         // function 
@@ -1146,7 +1399,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.toggleSnapLock");
-          return this.__PROXY__.toggleSnapLock(...args);
+          
+              return this.__PROXY__.toggleSnapLock(...args);
+            
         };
     
         // function 
@@ -1154,7 +1409,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.isSnapLocked");
-          return this.__PROXY__.isSnapLocked(...args);
+          
+              return this.__PROXY__.isSnapLocked(...args);
+            
         };
     
         // function 
@@ -1162,7 +1419,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCursorPosition");
-          return this.__PROXY__.getCursorPosition(...args);
+          
+              return this.__PROXY__.getCursorPosition(...args);
+            
         };
     
         // function 
@@ -1170,7 +1429,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCursorPosition");
-          return this.__PROXY__.setCursorPosition(...args);
+          
+              return this.__PROXY__.setCursorPosition(...args);
+            
         };
     
         // function 
@@ -1178,7 +1439,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCursorOverride");
-          return this.__PROXY__.setCursorOverride(...args);
+          
+              return this.__PROXY__.setCursorOverride(...args);
+            
         };
     
         // function 
@@ -1186,7 +1449,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCursorOverride");
-          return this.__PROXY__.getCursorOverride(...args);
+          
+              return this.__PROXY__.getCursorOverride(...args);
+            
         };
     
         // function 
@@ -1194,7 +1459,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.deleteTerminatedActions");
-          return this.__PROXY__.deleteTerminatedActions(...args);
+          
+              return this.__PROXY__.deleteTerminatedActions(...args);
+            
         };
     
         // function 
@@ -1202,7 +1469,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentColor");
-          return this.__PROXY__.setCurrentColor(...args);
+          
+              return this.__PROXY__.setCurrentColor(...args);
+            
         };
     
         // function 
@@ -1210,7 +1479,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCurrentColor");
-          return this.__PROXY__.getCurrentColor(...args);
+          
+              return this.__PROXY__.getCurrentColor(...args);
+            
         };
     
         // function 
@@ -1218,7 +1489,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentLineweight");
-          return this.__PROXY__.setCurrentLineweight(...args);
+          
+              return this.__PROXY__.setCurrentLineweight(...args);
+            
         };
     
         // function 
@@ -1226,7 +1499,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCurrentLineweight");
-          return this.__PROXY__.getCurrentLineweight(...args);
+          
+              return this.__PROXY__.getCurrentLineweight(...args);
+            
         };
     
         // function 
@@ -1234,7 +1509,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentLinetype");
-          return this.__PROXY__.setCurrentLinetype(...args);
+          
+              return this.__PROXY__.setCurrentLinetype(...args);
+            
         };
     
         // function 
@@ -1242,7 +1519,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentLinetypePattern");
-          return this.__PROXY__.setCurrentLinetypePattern(...args);
+          
+              return this.__PROXY__.setCurrentLinetypePattern(...args);
+            
         };
     
         // function 
@@ -1250,7 +1529,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCurrentLinetypeId");
-          return this.__PROXY__.getCurrentLinetypeId(...args);
+          
+              return this.__PROXY__.getCurrentLinetypeId(...args);
+            
         };
     
         // function 
@@ -1258,7 +1539,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCurrentLinetypePattern");
-          return this.__PROXY__.getCurrentLinetypePattern(...args);
+          
+              return this.__PROXY__.getCurrentLinetypePattern(...args);
+            
         };
     
         // function 
@@ -1266,7 +1549,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentLayer");
-          return this.__PROXY__.setCurrentLayer(...args);
+          
+              return this.__PROXY__.setCurrentLayer(...args);
+            
         };
     
         // function 
@@ -1274,7 +1559,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentBlock");
-          return this.__PROXY__.setCurrentBlock(...args);
+          
+              return this.__PROXY__.setCurrentBlock(...args);
+            
         };
     
         // function 
@@ -1282,7 +1569,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentViewport");
-          return this.__PROXY__.setCurrentViewport(...args);
+          
+              return this.__PROXY__.setCurrentViewport(...args);
+            
         };
     
         // function 
@@ -1290,7 +1579,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.unsetCurrentViewport");
-          return this.__PROXY__.unsetCurrentViewport(...args);
+          
+              return this.__PROXY__.unsetCurrentViewport(...args);
+            
         };
     
         // function 
@@ -1298,7 +1589,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentView");
-          return this.__PROXY__.setCurrentView(...args);
+          
+              return this.__PROXY__.setCurrentView(...args);
+            
         };
     
         // function 
@@ -1306,7 +1599,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setCurrentUcs");
-          return this.__PROXY__.setCurrentUcs(...args);
+          
+              return this.__PROXY__.setCurrentUcs(...args);
+            
         };
     
         // function 
@@ -1314,7 +1609,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getCurrentUcsName");
-          return this.__PROXY__.getCurrentUcsName(...args);
+          
+              return this.__PROXY__.getCurrentUcsName(...args);
+            
         };
     
         // function 
@@ -1322,7 +1619,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getLastKnownViewWithFocus");
-          return this.__PROXY__.getLastKnownViewWithFocus(...args);
+          
+              return this.__PROXY__.getLastKnownViewWithFocus(...args);
+            
         };
     
         // function 
@@ -1330,7 +1629,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setLastKnownViewWithFocus");
-          return this.__PROXY__.setLastKnownViewWithFocus(...args);
+          
+              return this.__PROXY__.setLastKnownViewWithFocus(...args);
+            
         };
     
         // function 
@@ -1338,7 +1639,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getClipboard");
-          return this.__PROXY__.getClipboard(...args);
+          
+              return this.__PROXY__.getClipboard(...args);
+            
         };
     
         // function 
@@ -1346,7 +1649,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.deleteClipboard");
-          return this.__PROXY__.deleteClipboard(...args);
+          
+              return this.__PROXY__.deleteClipboard(...args);
+            
         };
     
         // function 
@@ -1354,7 +1659,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.isClipboard");
-          return this.__PROXY__.isClipboard(...args);
+          
+              return this.__PROXY__.isClipboard(...args);
+            
         };
     
         // function 
@@ -1362,7 +1669,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.isSuspended");
-          return this.__PROXY__.isSuspended(...args);
+          
+              return this.__PROXY__.isSuspended(...args);
+            
         };
     
         // function 
@@ -1370,7 +1679,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.setNotifyListeners");
-          return this.__PROXY__.setNotifyListeners(...args);
+          
+              return this.__PROXY__.setNotifyListeners(...args);
+            
         };
     
         // function 
@@ -1378,7 +1689,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getNotifyListeners");
-          return this.__PROXY__.getNotifyListeners(...args);
+          
+              return this.__PROXY__.getNotifyListeners(...args);
+            
         };
     
         // function 
@@ -1386,7 +1699,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.isDeleting");
-          return this.__PROXY__.isDeleting(...args);
+          
+              return this.__PROXY__.isDeleting(...args);
+            
         };
     
         // function 
@@ -1394,7 +1709,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.eval");
-          return this.__PROXY__.eval(...args);
+          
+              return this.__PROXY__.eval(...args);
+            
         };
     
         // function 
@@ -1402,7 +1719,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.loadXRefs");
-          return this.__PROXY__.loadXRefs(...args);
+          
+              return this.__PROXY__.loadXRefs(...args);
+            
         };
     
         // function 
@@ -1410,7 +1729,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.bindXRef");
-          return this.__PROXY__.bindXRef(...args);
+          
+              return this.__PROXY__.bindXRef(...args);
+            
         };
     
         // function 
@@ -1418,7 +1739,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.updateThumbnail");
-          return this.__PROXY__.updateThumbnail(...args);
+          
+              return this.__PROXY__.updateThumbnail(...args);
+            
         };
     
         // function 
@@ -1426,7 +1749,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.getThumbnail");
-          return this.__PROXY__.getThumbnail(...args);
+          
+              return this.__PROXY__.getThumbnail(...args);
+            
         };
     
         // function 
@@ -1434,7 +1759,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.handleClickEvent");
-          return this.__PROXY__.handleClickEvent(...args);
+          
+              return this.__PROXY__.handleClickEvent(...args);
+            
         };
     
         // function 
@@ -1442,7 +1769,9 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
           
         {
           //print("JS: RDocumentInterface.prototype.previewClickEvent");
-          return this.__PROXY__.previewClickEvent(...args);
+          
+              return this.__PROXY__.previewClickEvent(...args);
+            
         };
     
 
@@ -1503,6 +1832,16 @@ RDocumentInterface.IoErrorGeneralImportUrlError = RDocumentInterface_Wrapper.IoE
   }
   
         };
+      RDocumentInterface.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RDocumentInterface.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RDocumentInterface.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

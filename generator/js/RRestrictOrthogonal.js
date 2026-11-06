@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RRestrictOrthogonal);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RRestrictOrthogonal);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RRestrictOrthogonal.prototype = new RRestrictOrthogonal_BaseJs(engine);
       //RRestrictOrthogonal.prototype = new RRestrictOrthogonal_Wrapper(engine);
       RRestrictOrthogonal.prototype = new Object();
+
 
       RRestrictOrthogonal.prototype.toString = function() {
           //return "RRestrictOrthogonal [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -142,7 +143,7 @@
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
                 
-                    return this.showUiOptionsSuper(
+                    return this.__PROXY__.showUiOptionsSuper(
                   
                 );
               
@@ -174,7 +175,7 @@
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
                 
-                    return this.hideUiOptionsSuper(
+                    return this.__PROXY__.hideUiOptionsSuper(
                   
                 );
               
@@ -192,8 +193,48 @@
   
       };
     
+        // function 
+        RRestrictOrthogonal.prototype.getLastSnap = function(...args) 
+          
+        {
+          //print("JS: RRestrictOrthogonal.prototype.getLastSnap");
+          
+              return this.__PROXY__.getLastSnap(...args);
+            
+        };
+    
+        // function 
+        RRestrictOrthogonal.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RRestrictOrthogonal.prototype.reset");
+          
+              return this.__PROXY__.reset(...args);
+            
+        };
+    
+        // function 
+        RRestrictOrthogonal.prototype.restrictSnap = function(...args) 
+          
+        {
+          //print("JS: RRestrictOrthogonal.prototype.restrictSnap");
+          
+              return this.__PROXY__.restrictSnap(...args);
+            
+        };
+    
 
       // static functions:
+      RRestrictOrthogonal.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RRestrictOrthogonal.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RRestrictOrthogonal.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -212,4 +253,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RRestrictOrthogonal.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

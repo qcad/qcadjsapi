@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RMath);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RMath);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RMath.prototype = new RMath_BaseJs(engine);
       //RMath.prototype = new RMath_Wrapper(engine);
       RMath.prototype = new Object();
+
 
       RMath.prototype.toString = function() {
           //return "RMath [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,386 @@
 
       // functions:
       
+        // function 
+        RMath.prototype.init = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.init");
+          
+              return this.__PROXY__.init(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.uninit = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.uninit");
+          
+              return this.__PROXY__.uninit(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.mround = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.mround");
+          
+              return this.__PROXY__.mround(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.trunc = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.trunc");
+          
+              return this.__PROXY__.trunc(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.pow = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.pow");
+          
+              return this.__PROXY__.pow(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.isNormal = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.isNormal");
+          
+              return this.__PROXY__.isNormal(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.isNaN = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.isNaN");
+          
+              return this.__PROXY__.isNaN(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.isInf = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.isInf");
+          
+              return this.__PROXY__.isInf(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.isSane = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.isSane");
+          
+              return this.__PROXY__.isSane(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.eval = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.eval");
+          
+              return this.__PROXY__.eval(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.getError = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.getError");
+          
+              return this.__PROXY__.getError(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.hasError = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.hasError");
+          
+              return this.__PROXY__.hasError(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.angleToString = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.angleToString");
+          
+              return this.__PROXY__.angleToString(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.trimTrailingZeroes = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.trimTrailingZeroes");
+          
+              return this.__PROXY__.trimTrailingZeroes(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.rad2deg = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.rad2deg");
+          
+              return this.__PROXY__.rad2deg(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.deg2rad = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.deg2rad");
+          
+              return this.__PROXY__.deg2rad(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.rad2gra = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.rad2gra");
+          
+              return this.__PROXY__.rad2gra(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.gra2deg = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.gra2deg");
+          
+              return this.__PROXY__.gra2deg(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.isBetween = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.isBetween");
+          
+              return this.__PROXY__.isBetween(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.getGcd = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.getGcd");
+          
+              return this.__PROXY__.getGcd(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.isAngleBetween = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.isAngleBetween");
+          
+              return this.__PROXY__.isAngleBetween(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.getNormalizedAngle = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.getNormalizedAngle");
+          
+              return this.__PROXY__.getNormalizedAngle(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.getRelativeAngle = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.getRelativeAngle");
+          
+              return this.__PROXY__.getRelativeAngle(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.getAngleDifference = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.getAngleDifference");
+          
+              return this.__PROXY__.getAngleDifference(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.getAngleDifference180 = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.getAngleDifference180");
+          
+              return this.__PROXY__.getAngleDifference180(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.makeAngleReadable = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.makeAngleReadable");
+          
+              return this.__PROXY__.makeAngleReadable(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.isAngleReadable = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.isAngleReadable");
+          
+              return this.__PROXY__.isAngleReadable(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.isSameDirection = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.isSameDirection");
+          
+              return this.__PROXY__.isSameDirection(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.absmod = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.absmod");
+          
+              return this.__PROXY__.absmod(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.toFractionString = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.toFractionString");
+          
+              return this.__PROXY__.toFractionString(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.toFraction = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.toFraction");
+          
+              return this.__PROXY__.toFraction(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.simplify = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.simplify");
+          
+              return this.__PROXY__.simplify(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.fuzzyCompare = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.fuzzyCompare");
+          
+              return this.__PROXY__.fuzzyCompare(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.fuzzyAngleCompare = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.fuzzyAngleCompare");
+          
+              return this.__PROXY__.fuzzyAngleCompare(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.containsFuzzy = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.containsFuzzy");
+          
+              return this.__PROXY__.containsFuzzy(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.parseScale = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.parseScale");
+          
+              return this.__PROXY__.parseScale(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.parseCoordinate = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.parseCoordinate");
+          
+              return this.__PROXY__.parseCoordinate(...args);
+            
+        };
+    
+        // function 
+        RMath.prototype.getMd5Hash = function(...args) 
+          
+        {
+          //print("JS: RMath.prototype.getMd5Hash");
+          
+              return this.__PROXY__.getMd5Hash(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -1198,6 +1579,16 @@
   }
   
         };
+      RMath.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RMath.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RMath.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -1216,4 +1607,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RMath.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

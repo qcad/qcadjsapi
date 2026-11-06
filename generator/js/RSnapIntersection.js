@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSnapIntersection.prototype = new RSnapIntersection_BaseJs(engine);
       //RSnapIntersection.prototype = new RSnapIntersection_Wrapper(engine);
       RSnapIntersection.prototype = new Object();
+
 
       RSnapIntersection.prototype.toString = function() {
           //return "RSnapIntersection [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -214,7 +215,9 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapIntersection.prototype.suspendEvent");
-          return this.__PROXY__.suspendEvent(...args);
+          
+              return this.__PROXY__.suspendEvent(...args);
+            
         };
     
         // function 
@@ -222,7 +225,9 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapIntersection.prototype.finishEvent");
-          return this.__PROXY__.finishEvent(...args);
+          
+              return this.__PROXY__.finishEvent(...args);
+            
         };
     
         // function 
@@ -230,7 +235,9 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapIntersection.prototype.getEntityIds");
-          return this.__PROXY__.getEntityIds(...args);
+          
+              return this.__PROXY__.getEntityIds(...args);
+            
         };
     
         // function 
@@ -238,7 +245,9 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapIntersection.prototype.getStatus");
-          return this.__PROXY__.getStatus(...args);
+          
+              return this.__PROXY__.getStatus(...args);
+            
         };
     
         // function 
@@ -246,7 +255,9 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapIntersection.prototype.setStatus");
-          return this.__PROXY__.setStatus(...args);
+          
+              return this.__PROXY__.setStatus(...args);
+            
         };
     
         // function 
@@ -254,7 +265,9 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapIntersection.prototype.getLastSnap");
-          return this.__PROXY__.getLastSnap(...args);
+          
+              return this.__PROXY__.getLastSnap(...args);
+            
         };
     
         // function 
@@ -262,7 +275,9 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapIntersection.prototype.setLastSnap");
-          return this.__PROXY__.setLastSnap(...args);
+          
+              return this.__PROXY__.setLastSnap(...args);
+            
         };
     
         // function 
@@ -270,7 +285,9 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapIntersection.prototype.reset");
-          return this.__PROXY__.reset(...args);
+          
+              return this.__PROXY__.reset(...args);
+            
         };
     
         // function 
@@ -278,11 +295,23 @@ RSnapIntersection.CoordinatePolar = RSnapIntersection_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapIntersection.prototype.snap");
-          return this.__PROXY__.snap(...args);
+          
+              return this.__PROXY__.snap(...args);
+            
         };
     
 
       // static functions:
+      RSnapIntersection.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSnapIntersection.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSnapIntersection.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

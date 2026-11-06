@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RChangePropertyOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RChangePropertyOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RChangePropertyOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -112,15 +112,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RChangePropertyOperation.prototype = new RChangePropertyOperation_BaseJs(engine);
       //RChangePropertyOperation.prototype = new RChangePropertyOperation_Wrapper(engine);
       RChangePropertyOperation.prototype = new Object();
+
 
       RChangePropertyOperation.prototype.toString = function() {
           //return "RChangePropertyOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -156,8 +157,158 @@
 
       // functions:
       
+        // function 
+        RChangePropertyOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
+        // function 
+        RChangePropertyOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RChangePropertyOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
 
       // static functions:
+      RChangePropertyOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RChangePropertyOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RChangePropertyOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -176,4 +327,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RChangePropertyOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RInterTransactionListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RInterTransactionListener.prototype = new RInterTransactionListener_BaseJs(engine);
       //RInterTransactionListener.prototype = new RInterTransactionListener_Wrapper(engine);
       RInterTransactionListener.prototype = new Object();
+
 
       RInterTransactionListener.prototype.toString = function() {
           //return "RInterTransactionListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,28 @@
 
       // functions:
       
+        // function 
+        RInterTransactionListener.prototype.updateInterTransactionListener = function(...args) 
+          
+        {
+          //print("JS: RInterTransactionListener.prototype.updateInterTransactionListener");
+          
+              return this.__PROXY__.updateInterTransactionListener(...args);
+            
+        };
+    
 
       // static functions:
+      RInterTransactionListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RInterTransactionListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RInterTransactionListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +136,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RInterTransactionListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

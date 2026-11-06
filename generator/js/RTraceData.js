@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RTraceData.prototype = new RTraceData_BaseJs(engine);
       //RTraceData.prototype = new RTraceData_Wrapper(engine);
       RTraceData.prototype = new Object();
+
 
       RTraceData.prototype.toString = function() {
           //return "RTraceData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -159,7 +160,9 @@
           
         {
           //print("JS: RTraceData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -167,7 +170,9 @@
           
         {
           //print("JS: RTraceData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -175,7 +180,9 @@
           
         {
           //print("JS: RTraceData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -183,7 +190,9 @@
           
         {
           //print("JS: RTraceData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -191,7 +200,9 @@
           
         {
           //print("JS: RTraceData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -199,7 +210,9 @@
           
         {
           //print("JS: RTraceData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -207,7 +220,9 @@
           
         {
           //print("JS: RTraceData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -215,7 +230,9 @@
           
         {
           //print("JS: RTraceData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -223,7 +240,9 @@
           
         {
           //print("JS: RTraceData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -231,7 +250,9 @@
           
         {
           //print("JS: RTraceData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -239,7 +260,9 @@
           
         {
           //print("JS: RTraceData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -247,7 +270,9 @@
           
         {
           //print("JS: RTraceData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -255,7 +280,9 @@
           
         {
           //print("JS: RTraceData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -263,7 +290,9 @@
           
         {
           //print("JS: RTraceData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -271,7 +300,9 @@
           
         {
           //print("JS: RTraceData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -279,7 +310,9 @@
           
         {
           //print("JS: RTraceData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -287,7 +320,9 @@
           
         {
           //print("JS: RTraceData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -295,7 +330,9 @@
           
         {
           //print("JS: RTraceData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -303,7 +340,9 @@
           
         {
           //print("JS: RTraceData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -311,7 +350,9 @@
           
         {
           //print("JS: RTraceData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -319,7 +360,9 @@
           
         {
           //print("JS: RTraceData.prototype.getStartPoint");
-          return this.__PROXY__.getStartPoint(...args);
+          
+              return this.__PROXY__.getStartPoint(...args);
+            
         };
     
         // function 
@@ -327,7 +370,9 @@
           
         {
           //print("JS: RTraceData.prototype.getEndPoint");
-          return this.__PROXY__.getEndPoint(...args);
+          
+              return this.__PROXY__.getEndPoint(...args);
+            
         };
     
         // function 
@@ -335,7 +380,9 @@
           
         {
           //print("JS: RTraceData.prototype.getDirection1");
-          return this.__PROXY__.getDirection1(...args);
+          
+              return this.__PROXY__.getDirection1(...args);
+            
         };
     
         // function 
@@ -343,7 +390,9 @@
           
         {
           //print("JS: RTraceData.prototype.getDirection2");
-          return this.__PROXY__.getDirection2(...args);
+          
+              return this.__PROXY__.getDirection2(...args);
+            
         };
     
         // function 
@@ -351,7 +400,9 @@
           
         {
           //print("JS: RTraceData.prototype.reverse");
-          return this.__PROXY__.reverse(...args);
+          
+              return this.__PROXY__.reverse(...args);
+            
         };
     
         // function 
@@ -359,7 +410,9 @@
           
         {
           //print("JS: RTraceData.prototype.getVertexAt");
-          return this.__PROXY__.getVertexAt(...args);
+          
+              return this.__PROXY__.getVertexAt(...args);
+            
         };
     
         // function 
@@ -367,7 +420,9 @@
           
         {
           //print("JS: RTraceData.prototype.countVertices");
-          return this.__PROXY__.countVertices(...args);
+          
+              return this.__PROXY__.countVertices(...args);
+            
         };
     
         // function 
@@ -375,7 +430,9 @@
           
         {
           //print("JS: RTraceData.prototype.getTrimEnd");
-          return this.__PROXY__.getTrimEnd(...args);
+          
+              return this.__PROXY__.getTrimEnd(...args);
+            
         };
     
         // function 
@@ -383,7 +440,9 @@
           
         {
           //print("JS: RTraceData.prototype.trimStartPoint");
-          return this.__PROXY__.trimStartPoint(...args);
+          
+              return this.__PROXY__.trimStartPoint(...args);
+            
         };
     
         // function 
@@ -391,7 +450,9 @@
           
         {
           //print("JS: RTraceData.prototype.trimEndPoint");
-          return this.__PROXY__.trimEndPoint(...args);
+          
+              return this.__PROXY__.trimEndPoint(...args);
+            
         };
     
         // function 
@@ -399,7 +460,9 @@
           
         {
           //print("JS: RTraceData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -407,7 +470,9 @@
           
         {
           //print("JS: RTraceData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -415,7 +480,9 @@
           
         {
           //print("JS: RTraceData.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -423,7 +490,9 @@
           
         {
           //print("JS: RTraceData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -431,7 +500,9 @@
           
         {
           //print("JS: RTraceData.prototype.getGeometry");
-          return this.__PROXY__.getGeometry(...args);
+          
+              return this.__PROXY__.getGeometry(...args);
+            
         };
     
         // function 
@@ -439,11 +510,23 @@
           
         {
           //print("JS: RTraceData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
 
       // static functions:
+      RTraceData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RTraceData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RTraceData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

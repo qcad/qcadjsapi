@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RGraphicsSceneDrawable);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RGraphicsSceneDrawable);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RGraphicsSceneDrawable);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -107,7 +107,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RGraphicsSceneDrawable);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -134,7 +134,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RGraphicsSceneDrawable);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -160,7 +160,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RGraphicsSceneDrawable);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -186,7 +186,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RGraphicsSceneDrawable);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -218,15 +218,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RGraphicsSceneDrawable.prototype = new RGraphicsSceneDrawable_BaseJs(engine);
       //RGraphicsSceneDrawable.prototype = new RGraphicsSceneDrawable_Wrapper(engine);
       RGraphicsSceneDrawable.prototype = new Object();
+
 
       RGraphicsSceneDrawable.prototype.toString = function() {
           //return "RGraphicsSceneDrawable [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -274,6 +275,276 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
 
       // functions:
       
+        // function 
+        RGraphicsSceneDrawable.prototype.createFromPainterPath = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.createFromPainterPath");
+          
+              return this.__PROXY__.createFromPainterPath(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.createFromImage = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.createFromImage");
+          
+              return this.__PROXY__.createFromImage(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.createFromText = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.createFromText");
+          
+              return this.__PROXY__.createFromText(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.createFromTransform = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.createFromTransform");
+          
+              return this.__PROXY__.createFromTransform(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.createEndTransform = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.createEndTransform");
+          
+              return this.__PROXY__.createEndTransform(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.uninit = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.uninit");
+          
+              return this.__PROXY__.uninit(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getType = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getType");
+          
+              return this.__PROXY__.getType(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.isPainterPath = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.isPainterPath");
+          
+              return this.__PROXY__.isPainterPath(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.isText = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.isText");
+          
+              return this.__PROXY__.isText(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.isImage = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.isImage");
+          
+              return this.__PROXY__.isImage(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.setMode = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.setMode");
+          
+              return this.__PROXY__.setMode(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getMode = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getMode");
+          
+              return this.__PROXY__.getMode(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.setNoPlot = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.setNoPlot");
+          
+              return this.__PROXY__.setNoPlot(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getNoPlot = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getNoPlot");
+          
+              return this.__PROXY__.getNoPlot(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.setPixelUnit = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.setPixelUnit");
+          
+              return this.__PROXY__.setPixelUnit(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getPixelUnit = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getPixelUnit");
+          
+              return this.__PROXY__.getPixelUnit(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.setWorkingSet = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.setWorkingSet");
+          
+              return this.__PROXY__.setWorkingSet(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.isWorkingSet = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.isWorkingSet");
+          
+              return this.__PROXY__.isWorkingSet(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getPainterPath = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getPainterPath");
+          
+              return this.__PROXY__.getPainterPath(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getImage = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getImage");
+          
+              return this.__PROXY__.getImage(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getTransform = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getTransform");
+          
+              return this.__PROXY__.getTransform(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getOffset = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getOffset");
+          
+              return this.__PROXY__.getOffset(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.setOffset = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.setOffset");
+          
+              return this.__PROXY__.setOffset(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.getDocument = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.getDocument");
+          
+              return this.__PROXY__.getDocument(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.setSelected = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.setSelected");
+          
+              return this.__PROXY__.setSelected(...args);
+            
+        };
+    
+        // function 
+        RGraphicsSceneDrawable.prototype.setHighlighted = function(...args) 
+          
+        {
+          //print("JS: RGraphicsSceneDrawable.prototype.setHighlighted");
+          
+              return this.__PROXY__.setHighlighted(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -420,6 +691,16 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
   }
   
         };
+      RGraphicsSceneDrawable.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RGraphicsSceneDrawable.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RGraphicsSceneDrawable.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -438,4 +719,7 @@ RGraphicsSceneDrawable.WorkingSet = RGraphicsSceneDrawable_Wrapper.WorkingSet;
       //  return this.wrapper.destr();
       //};
 
+      RGraphicsSceneDrawable.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

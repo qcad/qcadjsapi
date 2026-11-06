@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RImageEntity.prototype = new RImageEntity_BaseJs(engine);
       //RImageEntity.prototype = new RImageEntity_Wrapper(engine);
       RImageEntity.prototype = new Object();
+
 
       RImageEntity.prototype.toString = function() {
           //return "RImageEntity [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -163,7 +164,9 @@
           
         {
           //print("JS: RImageEntity.prototype.mustAlwaysClone");
-          return this.__PROXY__.mustAlwaysClone(...args);
+          
+              return this.__PROXY__.mustAlwaysClone(...args);
+            
         };
     
         // function 
@@ -171,7 +174,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -179,7 +184,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setFlag");
-          return this.__PROXY__.setFlag(...args);
+          
+              return this.__PROXY__.setFlag(...args);
+            
         };
     
         // function 
@@ -187,7 +194,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getFlag");
-          return this.__PROXY__.getFlag(...args);
+          
+              return this.__PROXY__.getFlag(...args);
+            
         };
     
         // function 
@@ -195,7 +204,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getId");
-          return this.__PROXY__.getId(...args);
+          
+              return this.__PROXY__.getId(...args);
+            
         };
     
         // function 
@@ -203,7 +214,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getHandle");
-          return this.__PROXY__.getHandle(...args);
+          
+              return this.__PROXY__.getHandle(...args);
+            
         };
     
         // function 
@@ -211,7 +224,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isProtected");
-          return this.__PROXY__.isProtected(...args);
+          
+              return this.__PROXY__.isProtected(...args);
+            
         };
     
         // function 
@@ -219,7 +234,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setProtected");
-          return this.__PROXY__.setProtected(...args);
+          
+              return this.__PROXY__.setProtected(...args);
+            
         };
     
         // function 
@@ -227,7 +244,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isInvisible");
-          return this.__PROXY__.isInvisible(...args);
+          
+              return this.__PROXY__.isInvisible(...args);
+            
         };
     
         // function 
@@ -235,7 +254,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setInvisible");
-          return this.__PROXY__.setInvisible(...args);
+          
+              return this.__PROXY__.setInvisible(...args);
+            
         };
     
         // function 
@@ -243,7 +264,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isUndone");
-          return this.__PROXY__.isUndone(...args);
+          
+              return this.__PROXY__.isUndone(...args);
+            
         };
     
         // function 
@@ -251,7 +274,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isWorkingSet");
-          return this.__PROXY__.isWorkingSet(...args);
+          
+              return this.__PROXY__.isWorkingSet(...args);
+            
         };
     
         // function 
@@ -259,7 +284,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setWorkingSet");
-          return this.__PROXY__.setWorkingSet(...args);
+          
+              return this.__PROXY__.setWorkingSet(...args);
+            
         };
     
         // function 
@@ -267,7 +294,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getPropertyTypeIds");
-          return this.__PROXY__.getPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -275,7 +304,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getCustomPropertyTypeIds");
-          return this.__PROXY__.getCustomPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getCustomPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -283,7 +314,9 @@
           
         {
           //print("JS: RImageEntity.prototype.hasPropertyType");
-          return this.__PROXY__.hasPropertyType(...args);
+          
+              return this.__PROXY__.hasPropertyType(...args);
+            
         };
     
         // function 
@@ -291,7 +324,9 @@
           
         {
           //print("JS: RImageEntity.prototype.hasCustomProperties");
-          return this.__PROXY__.hasCustomProperties(...args);
+          
+              return this.__PROXY__.hasCustomProperties(...args);
+            
         };
     
         // function 
@@ -299,7 +334,9 @@
           
         {
           //print("JS: RImageEntity.prototype.hasCustomProperty");
-          return this.__PROXY__.hasCustomProperty(...args);
+          
+              return this.__PROXY__.hasCustomProperty(...args);
+            
         };
     
         // function 
@@ -307,7 +344,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getCustomProperty");
-          return this.__PROXY__.getCustomProperty(...args);
+          
+              return this.__PROXY__.getCustomProperty(...args);
+            
         };
     
         // function 
@@ -315,7 +354,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getCustomDoubleProperty");
-          return this.__PROXY__.getCustomDoubleProperty(...args);
+          
+              return this.__PROXY__.getCustomDoubleProperty(...args);
+            
         };
     
         // function 
@@ -323,7 +364,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getCustomIntProperty");
-          return this.__PROXY__.getCustomIntProperty(...args);
+          
+              return this.__PROXY__.getCustomIntProperty(...args);
+            
         };
     
         // function 
@@ -331,7 +374,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getCustomBoolProperty");
-          return this.__PROXY__.getCustomBoolProperty(...args);
+          
+              return this.__PROXY__.getCustomBoolProperty(...args);
+            
         };
     
         // function 
@@ -339,7 +384,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setCustomProperty");
-          return this.__PROXY__.setCustomProperty(...args);
+          
+              return this.__PROXY__.setCustomProperty(...args);
+            
         };
     
         // function 
@@ -347,7 +394,9 @@
           
         {
           //print("JS: RImageEntity.prototype.removeCustomProperty");
-          return this.__PROXY__.removeCustomProperty(...args);
+          
+              return this.__PROXY__.removeCustomProperty(...args);
+            
         };
     
         // function 
@@ -355,7 +404,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getCustomPropertyTitles");
-          return this.__PROXY__.getCustomPropertyTitles(...args);
+          
+              return this.__PROXY__.getCustomPropertyTitles(...args);
+            
         };
     
         // function 
@@ -363,7 +414,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getCustomPropertyKeys");
-          return this.__PROXY__.getCustomPropertyKeys(...args);
+          
+              return this.__PROXY__.getCustomPropertyKeys(...args);
+            
         };
     
         // function 
@@ -371,7 +424,9 @@
           
         {
           //print("JS: RImageEntity.prototype.copyCustomPropertiesFrom");
-          return this.__PROXY__.copyCustomPropertiesFrom(...args);
+          
+              return this.__PROXY__.copyCustomPropertiesFrom(...args);
+            
         };
     
         // function 
@@ -379,7 +434,9 @@
           
         {
           //print("JS: RImageEntity.prototype.dump");
-          return this.__PROXY__.dump(...args);
+          
+              return this.__PROXY__.dump(...args);
+            
         };
     
         // function 
@@ -387,7 +444,9 @@
           
         {
           //print("JS: RImageEntity.prototype.validate");
-          return this.__PROXY__.validate(...args);
+          
+              return this.__PROXY__.validate(...args);
+            
         };
     
         // function 
@@ -395,7 +454,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setUndone");
-          return this.__PROXY__.setUndone(...args);
+          
+              return this.__PROXY__.setUndone(...args);
+            
         };
     
         // function 
@@ -403,7 +464,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setId");
-          return this.__PROXY__.setId(...args);
+          
+              return this.__PROXY__.setId(...args);
+            
         };
     
         // function 
@@ -411,7 +474,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setHandle");
-          return this.__PROXY__.setHandle(...args);
+          
+              return this.__PROXY__.setHandle(...args);
+            
         };
     
         // function 
@@ -419,7 +484,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setMemberFlag");
-          return this.__PROXY__.setMemberFlag(...args);
+          
+              return this.__PROXY__.setMemberFlag(...args);
+            
         };
     
         // function 
@@ -427,7 +494,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -435,7 +504,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -443,7 +514,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -451,7 +524,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -459,7 +534,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -467,7 +544,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -475,7 +554,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -483,7 +564,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -491,7 +574,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -499,7 +584,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isSelectable");
-          return this.__PROXY__.isSelectable(...args);
+          
+              return this.__PROXY__.isSelectable(...args);
+            
         };
     
         // function 
@@ -507,7 +594,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -515,7 +604,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -523,7 +614,9 @@
           
         {
           //print("JS: RImageEntity.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -531,7 +624,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -539,7 +634,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -547,7 +644,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -555,7 +654,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -563,7 +664,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -571,7 +674,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -579,7 +684,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -587,7 +694,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -595,7 +704,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -603,7 +714,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -611,7 +724,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -619,7 +734,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -627,7 +744,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -635,7 +754,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -643,7 +764,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -651,7 +774,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -659,7 +784,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -667,7 +794,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -675,7 +804,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -683,7 +814,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -691,7 +824,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -699,7 +834,9 @@
           
         {
           //print("JS: RImageEntity.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -707,7 +844,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -715,7 +854,9 @@
           
         {
           //print("JS: RImageEntity.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -723,7 +864,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -731,7 +874,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -739,7 +884,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -747,7 +894,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -755,7 +904,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -763,7 +914,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -771,7 +924,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getClosestSimpleShape");
-          return this.__PROXY__.getClosestSimpleShape(...args);
+          
+              return this.__PROXY__.getClosestSimpleShape(...args);
+            
         };
     
         // function 
@@ -779,7 +934,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -787,7 +944,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -795,7 +954,9 @@
           
         {
           //print("JS: RImageEntity.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -803,7 +964,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -811,7 +974,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -819,7 +984,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -827,7 +994,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -835,7 +1004,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -843,7 +1014,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -851,7 +1024,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -859,7 +1034,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -867,7 +1044,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -875,7 +1054,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -883,7 +1064,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -891,7 +1074,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getIntersectionPointsWithShape");
-          return this.__PROXY__.getIntersectionPointsWithShape(...args);
+          
+              return this.__PROXY__.getIntersectionPointsWithShape(...args);
+            
         };
     
         // function 
@@ -899,7 +1084,9 @@
           
         {
           //print("JS: RImageEntity.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -907,7 +1094,9 @@
           
         {
           //print("JS: RImageEntity.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -915,7 +1104,9 @@
           
         {
           //print("JS: RImageEntity.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -923,7 +1114,9 @@
           
         {
           //print("JS: RImageEntity.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -931,7 +1124,9 @@
           
         {
           //print("JS: RImageEntity.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -939,7 +1134,9 @@
           
         {
           //print("JS: RImageEntity.prototype.scaleNonUniform");
-          return this.__PROXY__.scaleNonUniform(...args);
+          
+              return this.__PROXY__.scaleNonUniform(...args);
+            
         };
     
         // function 
@@ -947,7 +1144,9 @@
           
         {
           //print("JS: RImageEntity.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -955,7 +1154,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setViewportContext");
-          return this.__PROXY__.setViewportContext(...args);
+          
+              return this.__PROXY__.setViewportContext(...args);
+            
         };
     
         // function 
@@ -963,7 +1164,9 @@
           
         {
           //print("JS: RImageEntity.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -971,7 +1174,9 @@
           
         {
           //print("JS: RImageEntity.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -979,7 +1184,9 @@
           
         {
           //print("JS: RImageEntity.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -987,7 +1194,9 @@
           
         {
           //print("JS: RImageEntity.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -995,7 +1204,9 @@
           
         {
           //print("JS: RImageEntity.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -1003,7 +1214,9 @@
           
         {
           //print("JS: RImageEntity.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -1011,7 +1224,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -1019,7 +1234,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isVisible");
-          return this.__PROXY__.isVisible(...args);
+          
+              return this.__PROXY__.isVisible(...args);
+            
         };
     
         // function 
@@ -1027,7 +1244,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isEditable");
-          return this.__PROXY__.isEditable(...args);
+          
+              return this.__PROXY__.isEditable(...args);
+            
         };
     
         // function 
@@ -1035,7 +1254,9 @@
           
         {
           //print("JS: RImageEntity.prototype.isInWorkingSet");
-          return this.__PROXY__.isInWorkingSet(...args);
+          
+              return this.__PROXY__.isInWorkingSet(...args);
+            
         };
     
         // function 
@@ -1043,7 +1264,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getComplexity");
-          return this.__PROXY__.getComplexity(...args);
+          
+              return this.__PROXY__.getComplexity(...args);
+            
         };
     
         // function 
@@ -1051,7 +1274,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -1059,7 +1284,9 @@
           
         {
           //print("JS: RImageEntity.prototype.init");
-          return this.__PROXY__.init(...args);
+          
+              return this.__PROXY__.init(...args);
+            
         };
     
         // function 
@@ -1067,7 +1294,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getRtti");
-          return this.__PROXY__.getRtti(...args);
+          
+              return this.__PROXY__.getRtti(...args);
+            
         };
     
         // function 
@@ -1075,7 +1304,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getStaticPropertyTypeIds");
-          return this.__PROXY__.getStaticPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getStaticPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -1083,7 +1314,9 @@
           
         {
           //print("JS: RImageEntity.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -1091,7 +1324,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setProperty");
-          return this.__PROXY__.setProperty(...args);
+          
+              return this.__PROXY__.setProperty(...args);
+            
         };
     
         // function 
@@ -1099,7 +1334,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getProperty");
-          return this.__PROXY__.getProperty(...args);
+          
+              return this.__PROXY__.getProperty(...args);
+            
         };
     
         // function 
@@ -1107,7 +1344,9 @@
           
         {
           //print("JS: RImageEntity.prototype.exportEntity");
-          return this.__PROXY__.exportEntity(...args);
+          
+              return this.__PROXY__.exportEntity(...args);
+            
         };
     
         // function 
@@ -1115,7 +1354,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getData");
-          return this.__PROXY__.getData(...args);
+          
+              return this.__PROXY__.getData(...args);
+            
         };
     
         // function 
@@ -1123,7 +1364,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getFileName");
-          return this.__PROXY__.getFileName(...args);
+          
+              return this.__PROXY__.getFileName(...args);
+            
         };
     
         // function 
@@ -1131,7 +1374,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setFileName");
-          return this.__PROXY__.setFileName(...args);
+          
+              return this.__PROXY__.setFileName(...args);
+            
         };
     
         // function 
@@ -1139,7 +1384,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getInsertionPoint");
-          return this.__PROXY__.getInsertionPoint(...args);
+          
+              return this.__PROXY__.getInsertionPoint(...args);
+            
         };
     
         // function 
@@ -1147,7 +1394,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setInsertionPoint");
-          return this.__PROXY__.setInsertionPoint(...args);
+          
+              return this.__PROXY__.setInsertionPoint(...args);
+            
         };
     
         // function 
@@ -1155,7 +1404,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getUVector");
-          return this.__PROXY__.getUVector(...args);
+          
+              return this.__PROXY__.getUVector(...args);
+            
         };
     
         // function 
@@ -1163,7 +1414,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getVVector");
-          return this.__PROXY__.getVVector(...args);
+          
+              return this.__PROXY__.getVVector(...args);
+            
         };
     
         // function 
@@ -1171,7 +1424,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getBrightness");
-          return this.__PROXY__.getBrightness(...args);
+          
+              return this.__PROXY__.getBrightness(...args);
+            
         };
     
         // function 
@@ -1179,7 +1434,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getContrast");
-          return this.__PROXY__.getContrast(...args);
+          
+              return this.__PROXY__.getContrast(...args);
+            
         };
     
         // function 
@@ -1187,7 +1444,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getFade");
-          return this.__PROXY__.getFade(...args);
+          
+              return this.__PROXY__.getFade(...args);
+            
         };
     
         // function 
@@ -1195,7 +1454,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setWidth");
-          return this.__PROXY__.setWidth(...args);
+          
+              return this.__PROXY__.setWidth(...args);
+            
         };
     
         // function 
@@ -1203,7 +1464,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setHeight");
-          return this.__PROXY__.setHeight(...args);
+          
+              return this.__PROXY__.setHeight(...args);
+            
         };
     
         // function 
@@ -1211,7 +1474,9 @@
           
         {
           //print("JS: RImageEntity.prototype.setAngle");
-          return this.__PROXY__.setAngle(...args);
+          
+              return this.__PROXY__.setAngle(...args);
+            
         };
     
         // function 
@@ -1219,7 +1484,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getWidth");
-          return this.__PROXY__.getWidth(...args);
+          
+              return this.__PROXY__.getWidth(...args);
+            
         };
     
         // function 
@@ -1227,7 +1494,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getHeight");
-          return this.__PROXY__.getHeight(...args);
+          
+              return this.__PROXY__.getHeight(...args);
+            
         };
     
         // function 
@@ -1235,7 +1504,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getPixelWidth");
-          return this.__PROXY__.getPixelWidth(...args);
+          
+              return this.__PROXY__.getPixelWidth(...args);
+            
         };
     
         // function 
@@ -1243,7 +1514,9 @@
           
         {
           //print("JS: RImageEntity.prototype.getPixelHeight");
-          return this.__PROXY__.getPixelHeight(...args);
+          
+              return this.__PROXY__.getPixelHeight(...args);
+            
         };
     
         // function 
@@ -1251,7 +1524,9 @@
           
         {
           //print("JS: RImageEntity.prototype.print");
-          return this.__PROXY__.print(...args);
+          
+              return this.__PROXY__.print(...args);
+            
         };
     
 
@@ -1340,6 +1615,16 @@
   }
   
         };
+      RImageEntity.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RImageEntity.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RImageEntity.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

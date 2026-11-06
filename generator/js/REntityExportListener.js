@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, REntityExportListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //REntityExportListener.prototype = new REntityExportListener_BaseJs(engine);
       //REntityExportListener.prototype = new REntityExportListener_Wrapper(engine);
       REntityExportListener.prototype = new Object();
+
 
       REntityExportListener.prototype.toString = function() {
           //return "REntityExportListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,48 @@
 
       // functions:
       
+        // function 
+        REntityExportListener.prototype.registerCustomProperty = function(...args) 
+          
+        {
+          //print("JS: REntityExportListener.prototype.registerCustomProperty");
+          
+              return this.__PROXY__.registerCustomProperty(...args);
+            
+        };
+    
+        // function 
+        REntityExportListener.prototype.checkCustomProperty = function(...args) 
+          
+        {
+          //print("JS: REntityExportListener.prototype.checkCustomProperty");
+          
+              return this.__PROXY__.checkCustomProperty(...args);
+            
+        };
+    
+        // function 
+        REntityExportListener.prototype.exportEntity = function(...args) 
+          
+        {
+          //print("JS: REntityExportListener.prototype.exportEntity");
+          
+              return this.__PROXY__.exportEntity(...args);
+            
+        };
+    
 
       // static functions:
+      REntityExportListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      REntityExportListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      REntityExportListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +156,7 @@
       //  return this.wrapper.destr();
       //};
 
+      REntityExportListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

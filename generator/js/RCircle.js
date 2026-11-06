@@ -136,47 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
-              // define property setters/getters:
-              Object.defineProperty(this, 'center', {
-                  get() {
-                      
-                          return this.__PROXY__.getCenter();
-                        
-                  },
-                  
-                    set(value) {
-                        this.__PROXY__.setCenter(value);
-                    },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
-              // define property setters/getters:
-              Object.defineProperty(this, 'radius', {
-                  get() {
-                      
-                          return this.__PROXY__.getRadius();
-                        
-                  },
-                  
-                    set(value) {
-                        this.__PROXY__.setRadius(value);
-                    },
-                  
-                  enumerable: true,
-                  configurable: true
-              });
-            
 
       }
 
       //RCircle.prototype = new RCircle_BaseJs(engine);
       //RCircle.prototype = new RCircle_Wrapper(engine);
       RCircle.prototype = new Object();
+
 
       RCircle.prototype.toString = function() {
           //return "RCircle [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -230,7 +199,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.isInterpolated");
-          return this.__PROXY__.isInterpolated(...args);
+          
+              return this.__PROXY__.isInterpolated(...args);
+            
         };
     
         // function 
@@ -238,7 +209,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getClosestPointOnShape");
-          return this.__PROXY__.getClosestPointOnShape(...args);
+          
+              return this.__PROXY__.getClosestPointOnShape(...args);
+            
         };
     
         // function 
@@ -246,7 +219,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -254,7 +229,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.equals");
-          return this.__PROXY__.equals(...args);
+          
+              return this.__PROXY__.equals(...args);
+            
         };
     
         // function 
@@ -262,7 +239,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getIntProperties");
-          return this.__PROXY__.getIntProperties(...args);
+          
+              return this.__PROXY__.getIntProperties(...args);
+            
         };
     
         // function 
@@ -270,7 +249,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getBoolProperties");
-          return this.__PROXY__.getBoolProperties(...args);
+          
+              return this.__PROXY__.getBoolProperties(...args);
+            
         };
     
         // function 
@@ -278,7 +259,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -286,7 +269,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getMaxDistanceTo");
-          return this.__PROXY__.getMaxDistanceTo(...args);
+          
+              return this.__PROXY__.getMaxDistanceTo(...args);
+            
         };
     
         // function 
@@ -294,7 +279,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.isOnShape");
-          return this.__PROXY__.isOnShape(...args);
+          
+              return this.__PROXY__.isOnShape(...args);
+            
         };
     
         // function 
@@ -302,7 +289,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.filterOnShape");
-          return this.__PROXY__.filterOnShape(...args);
+          
+              return this.__PROXY__.filterOnShape(...args);
+            
         };
     
         // function 
@@ -310,7 +299,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getVectorFromEndpointTo");
-          return this.__PROXY__.getVectorFromEndpointTo(...args);
+          
+              return this.__PROXY__.getVectorFromEndpointTo(...args);
+            
         };
     
         // function 
@@ -318,7 +309,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getPointOnShape");
-          return this.__PROXY__.getPointOnShape(...args);
+          
+              return this.__PROXY__.getPointOnShape(...args);
+            
         };
     
         // function 
@@ -326,7 +319,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getPointWithDistanceToStart");
-          return this.__PROXY__.getPointWithDistanceToStart(...args);
+          
+              return this.__PROXY__.getPointWithDistanceToStart(...args);
+            
         };
     
         // function 
@@ -334,7 +329,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getPointWithDistanceToEnd");
-          return this.__PROXY__.getPointWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -342,7 +339,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getAngleAtPoint");
-          return this.__PROXY__.getAngleAtPoint(...args);
+          
+              return this.__PROXY__.getAngleAtPoint(...args);
+            
         };
     
         // function 
@@ -350,7 +349,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getPointAtPercent");
-          return this.__PROXY__.getPointAtPercent(...args);
+          
+              return this.__PROXY__.getPointAtPercent(...args);
+            
         };
     
         // function 
@@ -358,7 +359,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getAngleAtPercent");
-          return this.__PROXY__.getAngleAtPercent(...args);
+          
+              return this.__PROXY__.getAngleAtPercent(...args);
+            
         };
     
         // function 
@@ -366,7 +369,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -374,7 +379,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -382,7 +389,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getSelfIntersectionPoints");
-          return this.__PROXY__.getSelfIntersectionPoints(...args);
+          
+              return this.__PROXY__.getSelfIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -390,7 +399,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.isDirected");
-          return this.__PROXY__.isDirected(...args);
+          
+              return this.__PROXY__.isDirected(...args);
+            
         };
     
         // function 
@@ -398,7 +409,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getDirection1");
-          return this.__PROXY__.getDirection1(...args);
+          
+              return this.__PROXY__.getDirection1(...args);
+            
         };
     
         // function 
@@ -406,7 +419,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getDirection2");
-          return this.__PROXY__.getDirection2(...args);
+          
+              return this.__PROXY__.getDirection2(...args);
+            
         };
     
         // function 
@@ -414,7 +429,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getSideOfPoint");
-          return this.__PROXY__.getSideOfPoint(...args);
+          
+              return this.__PROXY__.getSideOfPoint(...args);
+            
         };
     
         // function 
@@ -422,7 +439,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getStartPoint");
-          return this.__PROXY__.getStartPoint(...args);
+          
+              return this.__PROXY__.getStartPoint(...args);
+            
         };
     
         // function 
@@ -430,7 +449,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getEndPoint");
-          return this.__PROXY__.getEndPoint(...args);
+          
+              return this.__PROXY__.getEndPoint(...args);
+            
         };
     
         // function 
@@ -438,7 +459,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getMiddlePoint");
-          return this.__PROXY__.getMiddlePoint(...args);
+          
+              return this.__PROXY__.getMiddlePoint(...args);
+            
         };
     
         // function 
@@ -446,7 +469,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.reverse");
-          return this.__PROXY__.reverse(...args);
+          
+              return this.__PROXY__.reverse(...args);
+            
         };
     
         // function 
@@ -454,7 +479,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.trimStartPoint");
-          return this.__PROXY__.trimStartPoint(...args);
+          
+              return this.__PROXY__.trimStartPoint(...args);
+            
         };
     
         // function 
@@ -462,7 +489,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.trimEndPoint");
-          return this.__PROXY__.trimEndPoint(...args);
+          
+              return this.__PROXY__.trimEndPoint(...args);
+            
         };
     
         // function 
@@ -470,7 +499,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getTrimEnd");
-          return this.__PROXY__.getTrimEnd(...args);
+          
+              return this.__PROXY__.getTrimEnd(...args);
+            
         };
     
         // function 
@@ -478,7 +509,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getDistanceFromStart");
-          return this.__PROXY__.getDistanceFromStart(...args);
+          
+              return this.__PROXY__.getDistanceFromStart(...args);
+            
         };
     
         // function 
@@ -486,7 +519,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getDistancesFromStart");
-          return this.__PROXY__.getDistancesFromStart(...args);
+          
+              return this.__PROXY__.getDistancesFromStart(...args);
+            
         };
     
         // function 
@@ -494,7 +529,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -502,7 +539,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.dump");
-          return this.__PROXY__.dump(...args);
+          
+              return this.__PROXY__.dump(...args);
+            
         };
     
         // function 
@@ -510,7 +549,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getShapeType");
-          return this.__PROXY__.getShapeType(...args);
+          
+              return this.__PROXY__.getShapeType(...args);
+            
         };
     
         // function 
@@ -518,7 +559,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -526,7 +569,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.createFrom2Points");
-          return this.__PROXY__.createFrom2Points(...args);
+          
+              return this.__PROXY__.createFrom2Points(...args);
+            
         };
     
         // function 
@@ -534,7 +579,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.createFrom3Points");
-          return this.__PROXY__.createFrom3Points(...args);
+          
+              return this.__PROXY__.createFrom3Points(...args);
+            
         };
     
         // function 
@@ -542,7 +589,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.toArc");
-          return this.__PROXY__.toArc(...args);
+          
+              return this.__PROXY__.toArc(...args);
+            
         };
     
         // function 
@@ -550,7 +599,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -558,7 +609,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -566,7 +619,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getVectorProperties");
-          return this.__PROXY__.getVectorProperties(...args);
+          
+              return this.__PROXY__.getVectorProperties(...args);
+            
         };
     
         // function 
@@ -574,7 +629,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getDoubleProperties");
-          return this.__PROXY__.getDoubleProperties(...args);
+          
+              return this.__PROXY__.getDoubleProperties(...args);
+            
         };
     
         // function 
@@ -582,7 +639,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -590,7 +649,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getLength");
-          return this.__PROXY__.getLength(...args);
+          
+              return this.__PROXY__.getLength(...args);
+            
         };
     
         // function 
@@ -598,7 +659,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -606,7 +669,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -614,7 +679,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -622,7 +689,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -630,7 +699,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -638,7 +709,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getPointCloud");
-          return this.__PROXY__.getPointCloud(...args);
+          
+              return this.__PROXY__.getPointCloud(...args);
+            
         };
     
         // function 
@@ -646,7 +719,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getAngleAt");
-          return this.__PROXY__.getAngleAt(...args);
+          
+              return this.__PROXY__.getAngleAt(...args);
+            
         };
     
         // function 
@@ -654,7 +729,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getPointAtAngle");
-          return this.__PROXY__.getPointAtAngle(...args);
+          
+              return this.__PROXY__.getPointAtAngle(...args);
+            
         };
     
         // function 
@@ -662,7 +739,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -670,7 +749,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getCenter");
-          return this.__PROXY__.getCenter(...args);
+          
+              return this.__PROXY__.getCenter(...args);
+            
         };
     
         // function 
@@ -678,7 +759,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.setCenter");
-          return this.__PROXY__.setCenter(...args);
+          
+              return this.__PROXY__.setCenter(...args);
+            
         };
     
         // function 
@@ -686,7 +769,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getRadius");
-          return this.__PROXY__.getRadius(...args);
+          
+              return this.__PROXY__.getRadius(...args);
+            
         };
     
         // function 
@@ -694,7 +779,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.setRadius");
-          return this.__PROXY__.setRadius(...args);
+          
+              return this.__PROXY__.setRadius(...args);
+            
         };
     
         // function 
@@ -702,7 +789,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getDiameter");
-          return this.__PROXY__.getDiameter(...args);
+          
+              return this.__PROXY__.getDiameter(...args);
+            
         };
     
         // function 
@@ -710,7 +799,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.setDiameter");
-          return this.__PROXY__.setDiameter(...args);
+          
+              return this.__PROXY__.setDiameter(...args);
+            
         };
     
         // function 
@@ -718,7 +809,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getCircumference");
-          return this.__PROXY__.getCircumference(...args);
+          
+              return this.__PROXY__.getCircumference(...args);
+            
         };
     
         // function 
@@ -726,7 +819,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.setCircumference");
-          return this.__PROXY__.setCircumference(...args);
+          
+              return this.__PROXY__.setCircumference(...args);
+            
         };
     
         // function 
@@ -734,7 +829,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getArea");
-          return this.__PROXY__.getArea(...args);
+          
+              return this.__PROXY__.getArea(...args);
+            
         };
     
         // function 
@@ -742,7 +839,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.setArea");
-          return this.__PROXY__.setArea(...args);
+          
+              return this.__PROXY__.setArea(...args);
+            
         };
     
         // function 
@@ -750,7 +849,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.contains");
-          return this.__PROXY__.contains(...args);
+          
+              return this.__PROXY__.contains(...args);
+            
         };
     
         // function 
@@ -758,7 +859,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -766,7 +869,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -774,7 +879,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -782,7 +889,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -790,7 +899,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -798,7 +909,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -806,7 +919,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getTransformed");
-          return this.__PROXY__.getTransformed(...args);
+          
+              return this.__PROXY__.getTransformed(...args);
+            
         };
     
         // function 
@@ -814,7 +929,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getTangents");
-          return this.__PROXY__.getTangents(...args);
+          
+              return this.__PROXY__.getTangents(...args);
+            
         };
     
         // function 
@@ -822,7 +939,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.getOffsetShapes");
-          return this.__PROXY__.getOffsetShapes(...args);
+          
+              return this.__PROXY__.getOffsetShapes(...args);
+            
         };
     
         // function 
@@ -830,7 +949,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.splitAt");
-          return this.__PROXY__.splitAt(...args);
+          
+              return this.__PROXY__.splitAt(...args);
+            
         };
     
         // function 
@@ -838,7 +959,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.print");
-          return this.__PROXY__.print(...args);
+          
+              return this.__PROXY__.print(...args);
+            
         };
     
         // function 
@@ -846,7 +969,9 @@ RCircle.Ray = RCircle_Wrapper.Ray;
           
         {
           //print("JS: RCircle.prototype.copy");
-          return this.__PROXY__.copy(...args);
+          
+              return this.__PROXY__.copy(...args);
+            
         };
     
 
@@ -907,6 +1032,46 @@ RCircle.Ray = RCircle_Wrapper.Ray;
   }
   
         };
+      
+          Object.defineProperty(RCircle.prototype, 'center', {
+              get: function() {
+                  
+                      return this.__PROXY__.getCenter();
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setCenter(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(RCircle.prototype, 'radius', {
+              get: function() {
+                  
+                      return this.__PROXY__.getRadius();
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setRadius(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        RCircle.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RCircle.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RCircle.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

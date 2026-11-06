@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RTransactionListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RTransactionListener.prototype = new RTransactionListener_BaseJs(engine);
       //RTransactionListener.prototype = new RTransactionListener_Wrapper(engine);
       RTransactionListener.prototype = new Object();
+
 
       RTransactionListener.prototype.toString = function() {
           //return "RTransactionListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,38 @@
 
       // functions:
       
+        // function 
+        RTransactionListener.prototype.updateTransactionListener = function(...args) 
+          
+        {
+          //print("JS: RTransactionListener.prototype.updateTransactionListener");
+          
+              return this.__PROXY__.updateTransactionListener(...args);
+            
+        };
+    
+        // function 
+        RTransactionListener.prototype.setCurrentBlock = function(...args) 
+          
+        {
+          //print("JS: RTransactionListener.prototype.setCurrentBlock");
+          
+              return this.__PROXY__.setCurrentBlock(...args);
+            
+        };
+    
 
       // static functions:
+      RTransactionListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RTransactionListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RTransactionListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +146,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RTransactionListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RCommandEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RCommandEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RCommandEvent.prototype = new RCommandEvent_BaseJs(engine);
       //RCommandEvent.prototype = new RCommandEvent_Wrapper(engine);
       RCommandEvent.prototype = new Object();
+
 
       RCommandEvent.prototype.toString = function() {
           //return "RCommandEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,8 +125,48 @@
 
       // functions:
       
+        // function 
+        RCommandEvent.prototype.getCommand = function(...args) 
+          
+        {
+          //print("JS: RCommandEvent.prototype.getCommand");
+          
+              return this.__PROXY__.getCommand(...args);
+            
+        };
+    
+        // function 
+        RCommandEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: RCommandEvent.prototype.accept");
+          
+              return this.__PROXY__.accept(...args);
+            
+        };
+    
+        // function 
+        RCommandEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: RCommandEvent.prototype.isAccepted");
+          
+              return this.__PROXY__.isAccepted(...args);
+            
+        };
+    
 
       // static functions:
+      RCommandEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RCommandEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RCommandEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -144,4 +185,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RCommandEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

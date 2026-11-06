@@ -1667,6 +1667,13 @@ QVariant a2_cpp;
               RExportListenerAdapter_Wrapper::preExportEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RExportListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("preExport(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RExportListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)
@@ -1696,6 +1703,13 @@ QVariant a2_cpp;
               RExportListenerAdapter_Wrapper::postExportEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RExportListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("postExport(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RExportListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)
@@ -1725,6 +1739,13 @@ QVariant a2_cpp;
               RExportListenerAdapter_Wrapper::endOfExportEmitter(
                 RExporter* exporter
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RExportListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("endOfExport(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RExportListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: exporter (RExporter)

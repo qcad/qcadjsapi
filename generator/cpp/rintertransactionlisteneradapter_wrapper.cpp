@@ -1541,6 +1541,13 @@ QVariant a2_cpp;
               RInterTransactionListenerAdapter_Wrapper::transactionInProgressEmitter(
                 RDocument* doc, RTransaction* transaction
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RInterTransactionListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("transactionInProgress(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RInterTransactionListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: doc (RDocument)

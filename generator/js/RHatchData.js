@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RHatchData.prototype = new RHatchData_BaseJs(engine);
       //RHatchData.prototype = new RHatchData_Wrapper(engine);
       RHatchData.prototype = new Object();
+
 
       RHatchData.prototype.toString = function() {
           //return "RHatchData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -185,7 +186,9 @@
           
         {
           //print("JS: RHatchData.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -193,7 +196,9 @@
           
         {
           //print("JS: RHatchData.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -201,7 +206,9 @@
           
         {
           //print("JS: RHatchData.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -209,7 +216,9 @@
           
         {
           //print("JS: RHatchData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -217,7 +226,9 @@
           
         {
           //print("JS: RHatchData.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -225,7 +236,9 @@
           
         {
           //print("JS: RHatchData.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -233,7 +246,9 @@
           
         {
           //print("JS: RHatchData.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -241,7 +256,9 @@
           
         {
           //print("JS: RHatchData.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -249,7 +266,9 @@
           
         {
           //print("JS: RHatchData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -257,7 +276,9 @@
           
         {
           //print("JS: RHatchData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -265,7 +286,9 @@
           
         {
           //print("JS: RHatchData.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -273,7 +296,9 @@
           
         {
           //print("JS: RHatchData.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -281,7 +306,9 @@
           
         {
           //print("JS: RHatchData.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -289,7 +316,9 @@
           
         {
           //print("JS: RHatchData.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -297,7 +326,9 @@
           
         {
           //print("JS: RHatchData.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -305,7 +336,9 @@
           
         {
           //print("JS: RHatchData.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -313,7 +346,9 @@
           
         {
           //print("JS: RHatchData.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -321,7 +356,9 @@
           
         {
           //print("JS: RHatchData.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -329,7 +366,9 @@
           
         {
           //print("JS: RHatchData.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -337,7 +376,9 @@
           
         {
           //print("JS: RHatchData.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -345,7 +386,9 @@
           
         {
           //print("JS: RHatchData.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -353,7 +396,9 @@
           
         {
           //print("JS: RHatchData.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -361,7 +406,9 @@
           
         {
           //print("JS: RHatchData.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -369,7 +416,9 @@
           
         {
           //print("JS: RHatchData.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -377,7 +426,9 @@
           
         {
           //print("JS: RHatchData.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -385,7 +436,9 @@
           
         {
           //print("JS: RHatchData.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -393,7 +446,9 @@
           
         {
           //print("JS: RHatchData.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -401,7 +456,9 @@
           
         {
           //print("JS: RHatchData.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -409,7 +466,9 @@
           
         {
           //print("JS: RHatchData.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -417,7 +476,9 @@
           
         {
           //print("JS: RHatchData.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -425,7 +486,9 @@
           
         {
           //print("JS: RHatchData.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -433,7 +496,9 @@
           
         {
           //print("JS: RHatchData.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -441,7 +506,9 @@
           
         {
           //print("JS: RHatchData.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -449,7 +516,9 @@
           
         {
           //print("JS: RHatchData.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -457,7 +526,9 @@
           
         {
           //print("JS: RHatchData.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -465,7 +536,9 @@
           
         {
           //print("JS: RHatchData.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -473,7 +546,9 @@
           
         {
           //print("JS: RHatchData.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -481,7 +556,9 @@
           
         {
           //print("JS: RHatchData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -489,7 +566,9 @@
           
         {
           //print("JS: RHatchData.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -497,7 +576,9 @@
           
         {
           //print("JS: RHatchData.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -505,7 +586,9 @@
           
         {
           //print("JS: RHatchData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -513,7 +596,9 @@
           
         {
           //print("JS: RHatchData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -521,7 +606,9 @@
           
         {
           //print("JS: RHatchData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -529,7 +616,9 @@
           
         {
           //print("JS: RHatchData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -537,7 +626,9 @@
           
         {
           //print("JS: RHatchData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -545,7 +636,9 @@
           
         {
           //print("JS: RHatchData.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -553,7 +646,9 @@
           
         {
           //print("JS: RHatchData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -561,7 +656,9 @@
           
         {
           //print("JS: RHatchData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -569,7 +666,9 @@
           
         {
           //print("JS: RHatchData.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -577,7 +676,9 @@
           
         {
           //print("JS: RHatchData.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -585,7 +686,9 @@
           
         {
           //print("JS: RHatchData.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -593,7 +696,9 @@
           
         {
           //print("JS: RHatchData.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -601,7 +706,9 @@
           
         {
           //print("JS: RHatchData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -609,7 +716,9 @@
           
         {
           //print("JS: RHatchData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -617,7 +726,9 @@
           
         {
           //print("JS: RHatchData.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -625,7 +736,9 @@
           
         {
           //print("JS: RHatchData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -633,7 +746,9 @@
           
         {
           //print("JS: RHatchData.prototype.clearBoundary");
-          return this.__PROXY__.clearBoundary(...args);
+          
+              return this.__PROXY__.clearBoundary(...args);
+            
         };
     
         // function 
@@ -641,7 +756,9 @@
           
         {
           //print("JS: RHatchData.prototype.hasCustomPattern");
-          return this.__PROXY__.hasCustomPattern(...args);
+          
+              return this.__PROXY__.hasCustomPattern(...args);
+            
         };
     
         // function 
@@ -649,7 +766,9 @@
           
         {
           //print("JS: RHatchData.prototype.getCustomPattern");
-          return this.__PROXY__.getCustomPattern(...args);
+          
+              return this.__PROXY__.getCustomPattern(...args);
+            
         };
     
         // function 
@@ -657,7 +776,9 @@
           
         {
           //print("JS: RHatchData.prototype.setCustomPattern");
-          return this.__PROXY__.setCustomPattern(...args);
+          
+              return this.__PROXY__.setCustomPattern(...args);
+            
         };
     
         // function 
@@ -665,7 +786,9 @@
           
         {
           //print("JS: RHatchData.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -673,7 +796,9 @@
           
         {
           //print("JS: RHatchData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -681,7 +806,9 @@
           
         {
           //print("JS: RHatchData.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -689,7 +816,9 @@
           
         {
           //print("JS: RHatchData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -697,7 +826,9 @@
           
         {
           //print("JS: RHatchData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -705,7 +836,9 @@
           
         {
           //print("JS: RHatchData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -713,7 +846,9 @@
           
         {
           //print("JS: RHatchData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -721,7 +856,9 @@
           
         {
           //print("JS: RHatchData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -729,7 +866,9 @@
           
         {
           //print("JS: RHatchData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -737,7 +876,9 @@
           
         {
           //print("JS: RHatchData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -745,7 +886,9 @@
           
         {
           //print("JS: RHatchData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -753,7 +896,9 @@
           
         {
           //print("JS: RHatchData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -761,7 +906,9 @@
           
         {
           //print("JS: RHatchData.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -769,7 +916,9 @@
           
         {
           //print("JS: RHatchData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -777,7 +926,9 @@
           
         {
           //print("JS: RHatchData.prototype.getExploded");
-          return this.__PROXY__.getExploded(...args);
+          
+              return this.__PROXY__.getExploded(...args);
+            
         };
     
         // function 
@@ -785,7 +936,9 @@
           
         {
           //print("JS: RHatchData.prototype.isSolid");
-          return this.__PROXY__.isSolid(...args);
+          
+              return this.__PROXY__.isSolid(...args);
+            
         };
     
         // function 
@@ -793,7 +946,9 @@
           
         {
           //print("JS: RHatchData.prototype.setSolid");
-          return this.__PROXY__.setSolid(...args);
+          
+              return this.__PROXY__.setSolid(...args);
+            
         };
     
         // function 
@@ -801,7 +956,9 @@
           
         {
           //print("JS: RHatchData.prototype.isWinding");
-          return this.__PROXY__.isWinding(...args);
+          
+              return this.__PROXY__.isWinding(...args);
+            
         };
     
         // function 
@@ -809,7 +966,9 @@
           
         {
           //print("JS: RHatchData.prototype.setWinding");
-          return this.__PROXY__.setWinding(...args);
+          
+              return this.__PROXY__.setWinding(...args);
+            
         };
     
         // function 
@@ -817,7 +976,9 @@
           
         {
           //print("JS: RHatchData.prototype.getScale");
-          return this.__PROXY__.getScale(...args);
+          
+              return this.__PROXY__.getScale(...args);
+            
         };
     
         // function 
@@ -825,7 +986,9 @@
           
         {
           //print("JS: RHatchData.prototype.setScale");
-          return this.__PROXY__.setScale(...args);
+          
+              return this.__PROXY__.setScale(...args);
+            
         };
     
         // function 
@@ -833,7 +996,9 @@
           
         {
           //print("JS: RHatchData.prototype.getAngle");
-          return this.__PROXY__.getAngle(...args);
+          
+              return this.__PROXY__.getAngle(...args);
+            
         };
     
         // function 
@@ -841,7 +1006,9 @@
           
         {
           //print("JS: RHatchData.prototype.setAngle");
-          return this.__PROXY__.setAngle(...args);
+          
+              return this.__PROXY__.setAngle(...args);
+            
         };
     
         // function 
@@ -849,7 +1016,9 @@
           
         {
           //print("JS: RHatchData.prototype.getOriginPoint");
-          return this.__PROXY__.getOriginPoint(...args);
+          
+              return this.__PROXY__.getOriginPoint(...args);
+            
         };
     
         // function 
@@ -857,7 +1026,9 @@
           
         {
           //print("JS: RHatchData.prototype.setOriginPoint");
-          return this.__PROXY__.setOriginPoint(...args);
+          
+              return this.__PROXY__.setOriginPoint(...args);
+            
         };
     
         // function 
@@ -865,7 +1036,9 @@
           
         {
           //print("JS: RHatchData.prototype.getPatternName");
-          return this.__PROXY__.getPatternName(...args);
+          
+              return this.__PROXY__.getPatternName(...args);
+            
         };
     
         // function 
@@ -873,7 +1046,9 @@
           
         {
           //print("JS: RHatchData.prototype.setPatternName");
-          return this.__PROXY__.setPatternName(...args);
+          
+              return this.__PROXY__.setPatternName(...args);
+            
         };
     
         // function 
@@ -881,7 +1056,9 @@
           
         {
           //print("JS: RHatchData.prototype.getTransparency");
-          return this.__PROXY__.getTransparency(...args);
+          
+              return this.__PROXY__.getTransparency(...args);
+            
         };
     
         // function 
@@ -889,7 +1066,9 @@
           
         {
           //print("JS: RHatchData.prototype.setTransparency");
-          return this.__PROXY__.setTransparency(...args);
+          
+              return this.__PROXY__.setTransparency(...args);
+            
         };
     
         // function 
@@ -897,7 +1076,9 @@
           
         {
           //print("JS: RHatchData.prototype.normalizeGradientName");
-          return this.__PROXY__.normalizeGradientName(...args);
+          
+              return this.__PROXY__.normalizeGradientName(...args);
+            
         };
     
         // function 
@@ -905,7 +1086,9 @@
           
         {
           //print("JS: RHatchData.prototype.isGradient");
-          return this.__PROXY__.isGradient(...args);
+          
+              return this.__PROXY__.isGradient(...args);
+            
         };
     
         // function 
@@ -913,7 +1096,9 @@
           
         {
           //print("JS: RHatchData.prototype.clearGradient");
-          return this.__PROXY__.clearGradient(...args);
+          
+              return this.__PROXY__.clearGradient(...args);
+            
         };
     
         // function 
@@ -921,7 +1106,9 @@
           
         {
           //print("JS: RHatchData.prototype.getGradientName");
-          return this.__PROXY__.getGradientName(...args);
+          
+              return this.__PROXY__.getGradientName(...args);
+            
         };
     
         // function 
@@ -929,7 +1116,9 @@
           
         {
           //print("JS: RHatchData.prototype.setGradientName");
-          return this.__PROXY__.setGradientName(...args);
+          
+              return this.__PROXY__.setGradientName(...args);
+            
         };
     
         // function 
@@ -937,7 +1126,9 @@
           
         {
           //print("JS: RHatchData.prototype.getGradientColor1");
-          return this.__PROXY__.getGradientColor1(...args);
+          
+              return this.__PROXY__.getGradientColor1(...args);
+            
         };
     
         // function 
@@ -945,7 +1136,9 @@
           
         {
           //print("JS: RHatchData.prototype.setGradientColor1");
-          return this.__PROXY__.setGradientColor1(...args);
+          
+              return this.__PROXY__.setGradientColor1(...args);
+            
         };
     
         // function 
@@ -953,7 +1146,9 @@
           
         {
           //print("JS: RHatchData.prototype.getGradientColor2");
-          return this.__PROXY__.getGradientColor2(...args);
+          
+              return this.__PROXY__.getGradientColor2(...args);
+            
         };
     
         // function 
@@ -961,7 +1156,9 @@
           
         {
           //print("JS: RHatchData.prototype.setGradientColor2");
-          return this.__PROXY__.setGradientColor2(...args);
+          
+              return this.__PROXY__.setGradientColor2(...args);
+            
         };
     
         // function 
@@ -969,7 +1166,9 @@
           
         {
           //print("JS: RHatchData.prototype.getGradientAngle");
-          return this.__PROXY__.getGradientAngle(...args);
+          
+              return this.__PROXY__.getGradientAngle(...args);
+            
         };
     
         // function 
@@ -977,7 +1176,9 @@
           
         {
           //print("JS: RHatchData.prototype.setGradientAngle");
-          return this.__PROXY__.setGradientAngle(...args);
+          
+              return this.__PROXY__.setGradientAngle(...args);
+            
         };
     
         // function 
@@ -985,7 +1186,9 @@
           
         {
           //print("JS: RHatchData.prototype.getGradientShift");
-          return this.__PROXY__.getGradientShift(...args);
+          
+              return this.__PROXY__.getGradientShift(...args);
+            
         };
     
         // function 
@@ -993,7 +1196,9 @@
           
         {
           //print("JS: RHatchData.prototype.setGradientShift");
-          return this.__PROXY__.setGradientShift(...args);
+          
+              return this.__PROXY__.setGradientShift(...args);
+            
         };
     
         // function 
@@ -1001,7 +1206,9 @@
           
         {
           //print("JS: RHatchData.prototype.getGradientOneColorMode");
-          return this.__PROXY__.getGradientOneColorMode(...args);
+          
+              return this.__PROXY__.getGradientOneColorMode(...args);
+            
         };
     
         // function 
@@ -1009,7 +1216,9 @@
           
         {
           //print("JS: RHatchData.prototype.setGradientOneColorMode");
-          return this.__PROXY__.setGradientOneColorMode(...args);
+          
+              return this.__PROXY__.setGradientOneColorMode(...args);
+            
         };
     
         // function 
@@ -1017,7 +1226,9 @@
           
         {
           //print("JS: RHatchData.prototype.getGradientTint");
-          return this.__PROXY__.getGradientTint(...args);
+          
+              return this.__PROXY__.getGradientTint(...args);
+            
         };
     
         // function 
@@ -1025,7 +1236,9 @@
           
         {
           //print("JS: RHatchData.prototype.setGradientTint");
-          return this.__PROXY__.setGradientTint(...args);
+          
+              return this.__PROXY__.setGradientTint(...args);
+            
         };
     
         // function 
@@ -1033,7 +1246,9 @@
           
         {
           //print("JS: RHatchData.prototype.clearCustomPattern");
-          return this.__PROXY__.clearCustomPattern(...args);
+          
+              return this.__PROXY__.clearCustomPattern(...args);
+            
         };
     
         // function 
@@ -1041,7 +1256,9 @@
           
         {
           //print("JS: RHatchData.prototype.newLoop");
-          return this.__PROXY__.newLoop(...args);
+          
+              return this.__PROXY__.newLoop(...args);
+            
         };
     
         // function 
@@ -1049,7 +1266,9 @@
           
         {
           //print("JS: RHatchData.prototype.cancelLoop");
-          return this.__PROXY__.cancelLoop(...args);
+          
+              return this.__PROXY__.cancelLoop(...args);
+            
         };
     
         // function 
@@ -1057,7 +1276,9 @@
           
         {
           //print("JS: RHatchData.prototype.addBoundary");
-          return this.__PROXY__.addBoundary(...args);
+          
+              return this.__PROXY__.addBoundary(...args);
+            
         };
     
         // function 
@@ -1065,7 +1286,9 @@
           
         {
           //print("JS: RHatchData.prototype.addBoundaryShape");
-          return this.__PROXY__.addBoundaryShape(...args);
+          
+              return this.__PROXY__.addBoundaryShape(...args);
+            
         };
     
         // function 
@@ -1073,7 +1296,9 @@
           
         {
           //print("JS: RHatchData.prototype.getBoundaryPath");
-          return this.__PROXY__.getBoundaryPath(...args);
+          
+              return this.__PROXY__.getBoundaryPath(...args);
+            
         };
     
         // function 
@@ -1081,7 +1306,9 @@
           
         {
           //print("JS: RHatchData.prototype.getPainterPaths");
-          return this.__PROXY__.getPainterPaths(...args);
+          
+              return this.__PROXY__.getPainterPaths(...args);
+            
         };
     
         // function 
@@ -1089,7 +1316,9 @@
           
         {
           //print("JS: RHatchData.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -1097,7 +1326,9 @@
           
         {
           //print("JS: RHatchData.prototype.order");
-          return this.__PROXY__.order(...args);
+          
+              return this.__PROXY__.order(...args);
+            
         };
     
         // function 
@@ -1105,7 +1336,9 @@
           
         {
           //print("JS: RHatchData.prototype.getLoopCount");
-          return this.__PROXY__.getLoopCount(...args);
+          
+              return this.__PROXY__.getLoopCount(...args);
+            
         };
     
         // function 
@@ -1113,7 +1346,9 @@
           
         {
           //print("JS: RHatchData.prototype.getLoopBoundary");
-          return this.__PROXY__.getLoopBoundary(...args);
+          
+              return this.__PROXY__.getLoopBoundary(...args);
+            
         };
     
         // function 
@@ -1121,7 +1356,9 @@
           
         {
           //print("JS: RHatchData.prototype.getBoundaryAsPolylines");
-          return this.__PROXY__.getBoundaryAsPolylines(...args);
+          
+              return this.__PROXY__.getBoundaryAsPolylines(...args);
+            
         };
     
         // function 
@@ -1129,7 +1366,9 @@
           
         {
           //print("JS: RHatchData.prototype.autoCloseLoops");
-          return this.__PROXY__.autoCloseLoops(...args);
+          
+              return this.__PROXY__.autoCloseLoops(...args);
+            
         };
     
         // function 
@@ -1137,7 +1376,9 @@
           
         {
           //print("JS: RHatchData.prototype.getComplexity");
-          return this.__PROXY__.getComplexity(...args);
+          
+              return this.__PROXY__.getComplexity(...args);
+            
         };
     
         // function 
@@ -1145,7 +1386,9 @@
           
         {
           //print("JS: RHatchData.prototype.setPattern");
-          return this.__PROXY__.setPattern(...args);
+          
+              return this.__PROXY__.setPattern(...args);
+            
         };
     
         // function 
@@ -1153,7 +1396,9 @@
           
         {
           //print("JS: RHatchData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -1161,7 +1406,9 @@
           
         {
           //print("JS: RHatchData.prototype.hasProxy");
-          return this.__PROXY__.hasProxy(...args);
+          
+              return this.__PROXY__.hasProxy(...args);
+            
         };
     
 
@@ -1222,6 +1469,16 @@
   }
   
         };
+      RHatchData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RHatchData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RHatchData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

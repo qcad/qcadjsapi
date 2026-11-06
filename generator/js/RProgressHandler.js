@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RProgressHandler);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RProgressHandler.prototype = new RProgressHandler_BaseJs(engine);
       //RProgressHandler.prototype = new RProgressHandler_Wrapper(engine);
       RProgressHandler.prototype = new Object();
+
 
       RProgressHandler.prototype.toString = function() {
           //return "RProgressHandler [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,58 @@
 
       // functions:
       
+        // function 
+        RProgressHandler.prototype.setProgress = function(...args) 
+          
+        {
+          //print("JS: RProgressHandler.prototype.setProgress");
+          
+              return this.__PROXY__.setProgress(...args);
+            
+        };
+    
+        // function 
+        RProgressHandler.prototype.setProgressEnd = function(...args) 
+          
+        {
+          //print("JS: RProgressHandler.prototype.setProgressEnd");
+          
+              return this.__PROXY__.setProgressEnd(...args);
+            
+        };
+    
+        // function 
+        RProgressHandler.prototype.setProgressText = function(...args) 
+          
+        {
+          //print("JS: RProgressHandler.prototype.setProgressText");
+          
+              return this.__PROXY__.setProgressText(...args);
+            
+        };
+    
+        // function 
+        RProgressHandler.prototype.setProgressEnabled = function(...args) 
+          
+        {
+          //print("JS: RProgressHandler.prototype.setProgressEnabled");
+          
+              return this.__PROXY__.setProgressEnabled(...args);
+            
+        };
+    
 
       // static functions:
+      RProgressHandler.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RProgressHandler.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RProgressHandler.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +166,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RProgressHandler.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

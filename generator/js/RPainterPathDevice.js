@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPainterPathDevice.prototype = new RPainterPathDevice_BaseJs(engine);
       //RPainterPathDevice.prototype = new RPainterPathDevice_Wrapper(engine);
       RPainterPathDevice.prototype = new Object();
+
 
       RPainterPathDevice.prototype.toString = function() {
           //return "RPainterPathDevice [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -133,7 +134,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.devType");
-          return this.__PROXY__.devType(...args);
+          
+              return this.__PROXY__.devType(...args);
+            
         };
     
         // function 
@@ -141,7 +144,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.paintingActive");
-          return this.__PROXY__.paintingActive(...args);
+          
+              return this.__PROXY__.paintingActive(...args);
+            
         };
     
         // function 
@@ -149,7 +154,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.width");
-          return this.__PROXY__.width(...args);
+          
+              return this.__PROXY__.width(...args);
+            
         };
     
         // function 
@@ -157,7 +164,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.height");
-          return this.__PROXY__.height(...args);
+          
+              return this.__PROXY__.height(...args);
+            
         };
     
         // function 
@@ -165,7 +174,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.widthMM");
-          return this.__PROXY__.widthMM(...args);
+          
+              return this.__PROXY__.widthMM(...args);
+            
         };
     
         // function 
@@ -173,7 +184,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.heightMM");
-          return this.__PROXY__.heightMM(...args);
+          
+              return this.__PROXY__.heightMM(...args);
+            
         };
     
         // function 
@@ -181,7 +194,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.logicalDpiX");
-          return this.__PROXY__.logicalDpiX(...args);
+          
+              return this.__PROXY__.logicalDpiX(...args);
+            
         };
     
         // function 
@@ -189,7 +204,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.logicalDpiY");
-          return this.__PROXY__.logicalDpiY(...args);
+          
+              return this.__PROXY__.logicalDpiY(...args);
+            
         };
     
         // function 
@@ -197,7 +214,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.physicalDpiX");
-          return this.__PROXY__.physicalDpiX(...args);
+          
+              return this.__PROXY__.physicalDpiX(...args);
+            
         };
     
         // function 
@@ -205,7 +224,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.physicalDpiY");
-          return this.__PROXY__.physicalDpiY(...args);
+          
+              return this.__PROXY__.physicalDpiY(...args);
+            
         };
     
         // function 
@@ -213,7 +234,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.devicePixelRatio");
-          return this.__PROXY__.devicePixelRatio(...args);
+          
+              return this.__PROXY__.devicePixelRatio(...args);
+            
         };
     
         // function 
@@ -221,7 +244,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.devicePixelRatioF");
-          return this.__PROXY__.devicePixelRatioF(...args);
+          
+              return this.__PROXY__.devicePixelRatioF(...args);
+            
         };
     
         // function 
@@ -229,7 +254,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.colorCount");
-          return this.__PROXY__.colorCount(...args);
+          
+              return this.__PROXY__.colorCount(...args);
+            
         };
     
         // function 
@@ -237,7 +264,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.depth");
-          return this.__PROXY__.depth(...args);
+          
+              return this.__PROXY__.depth(...args);
+            
         };
     
         // function 
@@ -245,7 +274,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.metric");
-          return this.__PROXY__.metric(...args);
+          
+              return this.__PROXY__.metric(...args);
+            
         };
     
         // function 
@@ -253,7 +284,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.initPainter");
-          return this.__PROXY__.initPainter(...args);
+          
+              return this.__PROXY__.initPainter(...args);
+            
         };
     
         // function 
@@ -261,7 +294,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.redirected");
-          return this.__PROXY__.redirected(...args);
+          
+              return this.__PROXY__.redirected(...args);
+            
         };
     
         // function 
@@ -269,7 +304,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.sharedPainter");
-          return this.__PROXY__.sharedPainter(...args);
+          
+              return this.__PROXY__.sharedPainter(...args);
+            
         };
     
         // function 
@@ -277,7 +314,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.qt_paint_device_metric");
-          return this.__PROXY__.qt_paint_device_metric(...args);
+          
+              return this.__PROXY__.qt_paint_device_metric(...args);
+            
         };
     
         // function 
@@ -285,7 +324,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.setStrokePolygon");
-          return this.__PROXY__.setStrokePolygon(...args);
+          
+              return this.__PROXY__.setStrokePolygon(...args);
+            
         };
     
         // function 
@@ -293,7 +334,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.getPainterPaths");
-          return this.__PROXY__.getPainterPaths(...args);
+          
+              return this.__PROXY__.getPainterPaths(...args);
+            
         };
     
         // function 
@@ -301,7 +344,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.setSize");
-          return this.__PROXY__.setSize(...args);
+          
+              return this.__PROXY__.setSize(...args);
+            
         };
     
         // function 
@@ -309,7 +354,9 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.setDpi");
-          return this.__PROXY__.setDpi(...args);
+          
+              return this.__PROXY__.setDpi(...args);
+            
         };
     
         // function 
@@ -317,11 +364,23 @@
           
         {
           //print("JS: RPainterPathDevice.prototype.paintEngine");
-          return this.__PROXY__.paintEngine(...args);
+          
+              return this.__PROXY__.paintEngine(...args);
+            
         };
     
 
       // static functions:
+      RPainterPathDevice.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPainterPathDevice.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPainterPathDevice.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

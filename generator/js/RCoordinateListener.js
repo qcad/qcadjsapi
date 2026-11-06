@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RCoordinateListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RCoordinateListener.prototype = new RCoordinateListener_BaseJs(engine);
       //RCoordinateListener.prototype = new RCoordinateListener_Wrapper(engine);
       RCoordinateListener.prototype = new Object();
+
 
       RCoordinateListener.prototype.toString = function() {
           //return "RCoordinateListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,28 @@
 
       // functions:
       
+        // function 
+        RCoordinateListener.prototype.updateCoordinate = function(...args) 
+          
+        {
+          //print("JS: RCoordinateListener.prototype.updateCoordinate");
+          
+              return this.__PROXY__.updateCoordinate(...args);
+            
+        };
+    
 
       // static functions:
+      RCoordinateListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RCoordinateListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RCoordinateListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +136,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RCoordinateListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

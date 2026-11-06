@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RClipboardOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RClipboardOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RClipboardOperation.prototype = new RClipboardOperation_BaseJs(engine);
       //RClipboardOperation.prototype = new RClipboardOperation_Wrapper(engine);
       RClipboardOperation.prototype = new Object();
+
 
       RClipboardOperation.prototype.toString = function() {
           //return "RClipboardOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -128,8 +129,288 @@
 
       // functions:
       
+        // function 
+        RClipboardOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.copy = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.copy");
+          
+              return this.__PROXY__.copy(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.copyEntity = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.copyEntity");
+          
+              return this.__PROXY__.copyEntity(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.copyEntityBlock = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.copyEntityBlock");
+          
+              return this.__PROXY__.copyEntityBlock(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.copyBlock = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.copyBlock");
+          
+              return this.__PROXY__.copyBlock(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.copyEntityLayer = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.copyEntityLayer");
+          
+              return this.__PROXY__.copyEntityLayer(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.copyLayer = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.copyLayer");
+          
+              return this.__PROXY__.copyLayer(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.copyEntityLinetype = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.copyEntityLinetype");
+          
+              return this.__PROXY__.copyEntityLinetype(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.copyLinetype = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.copyLinetype");
+          
+              return this.__PROXY__.copyLinetype(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setCopyEmptyBlocks = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setCopyEmptyBlocks");
+          
+              return this.__PROXY__.setCopyEmptyBlocks(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setCopyAllLayers = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setCopyAllLayers");
+          
+              return this.__PROXY__.setCopyAllLayers(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setKeepSelection = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setKeepSelection");
+          
+              return this.__PROXY__.setKeepSelection(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setBlockOwnership = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setBlockOwnership");
+          
+              return this.__PROXY__.setBlockOwnership(...args);
+            
+        };
+    
+        // function 
+        RClipboardOperation.prototype.setCustomEntityType = function(...args) 
+          
+        {
+          //print("JS: RClipboardOperation.prototype.setCustomEntityType");
+          
+              return this.__PROXY__.setCustomEntityType(...args);
+            
+        };
+    
 
       // static functions:
+      RClipboardOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RClipboardOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RClipboardOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -148,4 +429,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RClipboardOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

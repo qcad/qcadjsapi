@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RExportListenerAdapter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RExportListenerAdapter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,26 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["preExport(RDocumentInterface*)"] = Object.getPrototypeOf(this).preExport;
-  
-    this["postExport(RDocumentInterface*)"] = Object.getPrototypeOf(this).postExport;
-  
-    this["endOfExport(RExporter*)"] = Object.getPrototypeOf(this).endOfExport;
-  
-            }
-          
+
         }
 
-        
 
       }
 
       //RExportListenerAdapter.prototype = new RExportListenerAdapter_BaseJs(engine);
       //RExportListenerAdapter.prototype = new RExportListenerAdapter_Wrapper(engine);
       RExportListenerAdapter.prototype = new Object();
+
 
       RExportListenerAdapter.prototype.toString = function() {
           //return "RExportListenerAdapter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -143,8 +133,263 @@
 
       // functions:
       
+        // function 
+        RExportListenerAdapter.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.children = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.property = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.preExportEvent = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.preExportEvent");
+          
+              return this.__PROXY__.preExportEvent(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.postExportEvent = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.postExportEvent");
+          
+              return this.__PROXY__.postExportEvent(...args);
+            
+        };
+    
+        // function 
+        RExportListenerAdapter.prototype.endOfExportEvent = function(...args) 
+          
+        {
+          //print("JS: RExportListenerAdapter.prototype.endOfExportEvent");
+          
+              return this.__PROXY__.endOfExportEvent(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(RExportListenerAdapter.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(RExportListenerAdapter.prototype, 'preExport', {
+            get: function() { return this.__PROXY__.preExport; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RExportListenerAdapter.prototype, 'preExport(RDocumentInterface*)', {
+              get: function() { return this.__PROXY__.preExport; },
+              configurable: true
+          });
+        
+        Object.defineProperty(RExportListenerAdapter.prototype, 'postExport', {
+            get: function() { return this.__PROXY__.postExport; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RExportListenerAdapter.prototype, 'postExport(RDocumentInterface*)', {
+              get: function() { return this.__PROXY__.postExport; },
+              configurable: true
+          });
+        
+        Object.defineProperty(RExportListenerAdapter.prototype, 'endOfExport', {
+            get: function() { return this.__PROXY__.endOfExport; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RExportListenerAdapter.prototype, 'endOfExport(RExporter*)', {
+              get: function() { return this.__PROXY__.endOfExport; },
+              configurable: true
+          });
+        RExportListenerAdapter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RExportListenerAdapter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RExportListenerAdapter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -163,4 +408,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RExportListenerAdapter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

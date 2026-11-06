@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RStemmer);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RStemmer.prototype = new RStemmer_BaseJs(engine);
       //RStemmer.prototype = new RStemmer_Wrapper(engine);
       RStemmer.prototype = new Object();
+
 
       RStemmer.prototype.toString = function() {
           //return "RStemmer [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,6 +96,16 @@
 
       // functions:
       
+        // function 
+        RStemmer.prototype.stem = function(...args) 
+          
+        {
+          //print("JS: RStemmer.prototype.stem");
+          
+              return this.__PROXY__.stem(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -125,6 +136,16 @@
   }
   
         };
+      RStemmer.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RStemmer.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RStemmer.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -143,4 +164,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RStemmer.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

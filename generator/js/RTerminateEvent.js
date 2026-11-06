@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RTerminateEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTerminateEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RTerminateEvent.prototype = new RTerminateEvent_BaseJs(engine);
       //RTerminateEvent.prototype = new RTerminateEvent_Wrapper(engine);
       RTerminateEvent.prototype = new Object();
+
 
       RTerminateEvent.prototype.toString = function() {
           //return "RTerminateEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -302,8 +303,128 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        RTerminateEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.spontaneous");
+          
+              return this.__PROXY__.spontaneous(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.setAccepted");
+          
+              return this.__PROXY__.setAccepted(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.isAccepted");
+          
+              return this.__PROXY__.isAccepted(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.accept");
+          
+              return this.__PROXY__.accept(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.ignore");
+          
+              return this.__PROXY__.ignore(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.isInputEvent");
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.isPointerEvent");
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.isSinglePointEvent");
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.clone");
+          
+              return this.__PROXY__.clone(...args);
+            
+        };
+    
+        // function 
+        RTerminateEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: RTerminateEvent.prototype.setSpontaneous");
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
+        };
+    
 
       // static functions:
+      RTerminateEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RTerminateEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RTerminateEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -322,4 +443,7 @@ RTerminateEvent.MaxUser = RTerminateEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      RTerminateEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

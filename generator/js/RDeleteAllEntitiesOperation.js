@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RDeleteAllEntitiesOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RDeleteAllEntitiesOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RDeleteAllEntitiesOperation.prototype = new RDeleteAllEntitiesOperation_BaseJs(engine);
       //RDeleteAllEntitiesOperation.prototype = new RDeleteAllEntitiesOperation_Wrapper(engine);
       RDeleteAllEntitiesOperation.prototype = new Object();
+
 
       RDeleteAllEntitiesOperation.prototype.toString = function() {
           //return "RDeleteAllEntitiesOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -129,8 +130,158 @@
 
       // functions:
       
+        // function 
+        RDeleteAllEntitiesOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
+        // function 
+        RDeleteAllEntitiesOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RDeleteAllEntitiesOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
 
       // static functions:
+      RDeleteAllEntitiesOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RDeleteAllEntitiesOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RDeleteAllEntitiesOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -149,4 +300,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RDeleteAllEntitiesOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

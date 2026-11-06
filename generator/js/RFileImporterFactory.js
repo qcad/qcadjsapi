@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RFileImporterFactory);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RFileImporterFactory.prototype = new RFileImporterFactory_BaseJs(engine);
       //RFileImporterFactory.prototype = new RFileImporterFactory_Wrapper(engine);
       RFileImporterFactory.prototype = new Object();
+
 
       RFileImporterFactory.prototype.toString = function() {
           //return "RFileImporterFactory [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,48 @@
 
       // functions:
       
+        // function 
+        RFileImporterFactory.prototype.getFilterStrings = function(...args) 
+          
+        {
+          //print("JS: RFileImporterFactory.prototype.getFilterStrings");
+          
+              return this.__PROXY__.getFilterStrings(...args);
+            
+        };
+    
+        // function 
+        RFileImporterFactory.prototype.canImport = function(...args) 
+          
+        {
+          //print("JS: RFileImporterFactory.prototype.canImport");
+          
+              return this.__PROXY__.canImport(...args);
+            
+        };
+    
+        // function 
+        RFileImporterFactory.prototype.instantiate = function(...args) 
+          
+        {
+          //print("JS: RFileImporterFactory.prototype.instantiate");
+          
+              return this.__PROXY__.instantiate(...args);
+            
+        };
+    
 
       // static functions:
+      RFileImporterFactory.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RFileImporterFactory.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RFileImporterFactory.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +156,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RFileImporterFactory.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

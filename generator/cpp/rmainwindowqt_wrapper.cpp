@@ -15948,6 +15948,13 @@ bool a1_cpp;
               RMainWindowQt_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -25233,6 +25240,13 @@ bool a1_cpp;
               RMainWindowQt_Wrapper::iconSizeChangedEmitter(
                 const QSize& iconSize
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("iconSizeChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: iconSize (QSize)
@@ -25262,6 +25276,13 @@ bool a1_cpp;
               RMainWindowQt_Wrapper::toolButtonStyleChangedEmitter(
                 Qt::ToolButtonStyle toolButtonStyle
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("toolButtonStyleChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: toolButtonStyle (Qt::ToolButtonStyle)
@@ -25291,6 +25312,13 @@ bool a1_cpp;
               RMainWindowQt_Wrapper::tabifiedDockWidgetActivatedEmitter(
                 QDockWidget* dockWidget
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("tabifiedDockWidgetActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: dockWidget (QDockWidget)
@@ -28215,6 +28243,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::commandPromptEmitter(
                 const QString& text
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("commandPrompt(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: text (QString)
@@ -28244,6 +28279,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::leftMouseTipEmitter(
                 const QString& message
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("leftMouseTip(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: message (QString)
@@ -28273,6 +28315,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::rightMouseTipEmitter(
                 const QString& message
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("rightMouseTip(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: message (QString)
@@ -28302,6 +28351,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::progressEmitter(
                 int value
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("progress(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: value (int)
@@ -28331,6 +28387,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::progressEndEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("progressEnd()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -28351,6 +28414,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::progressTextEmitter(
                 const QString& label
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("progressText(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: label (QString)
@@ -28380,6 +28450,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::progressCanceledEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("progressCanceled()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -28400,6 +28477,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::userMessageEmitter(
                 const QString& message, bool escape
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("userMessage(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: message (QString)
@@ -28438,6 +28522,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::userInfoEmitter(
                 const QString& message, bool escape
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("userInfo(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: message (QString)
@@ -28476,6 +28567,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::userWarningEmitter(
                 const QString& message, bool messageBox, bool escape
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("userWarning(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: message (QString)
@@ -28523,6 +28621,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::userCommandEmitter(
                 const QString& message, bool escape
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("userCommand(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: message (QString)
@@ -28561,6 +28666,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::reloadXRefsSignalEmitter(
                 RDocumentInterface* di, const QStringList& dirtyXRefPaths
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("reloadXRefsSignal(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: di (RDocumentInterface)
@@ -28599,6 +28711,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::contextMenuEmitter(
                 int entityId, const RVector& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("contextMenu(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: entityId (int)
@@ -28637,6 +28756,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::editResourceBlockEmitter(
                 int entityId, const RVector& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("editResourceBlock(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: entityId (int)
@@ -28675,6 +28801,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::escapeEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("escape()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -28695,6 +28828,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::dropEmitter(
                 QDropEvent* event
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("drop(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: event (QDropEvent)
@@ -28724,6 +28864,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::dragEnterEmitter(
                 QDragEnterEvent* event
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("dragEnter(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: event (QDragEnterEvent)
@@ -28753,6 +28900,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::resumedTabEmitter(
                 RMdiChildQt* mdiChild
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("resumedTab(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: mdiChild (RMdiChildQt)
@@ -28782,6 +28936,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::closeRequestedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("closeRequested()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -28802,6 +28963,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::enterPressedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("enterPressed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -28822,6 +28990,13 @@ int a1_cpp;
               RMainWindowQt_Wrapper::toolBarContextMenuEmitter(
                 QMenu* menu
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RMainWindowQt_Wrapper::staticMetaObject.indexOfSignal("toolBarContextMenu(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RMainWindowQt_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: menu (QMenu)

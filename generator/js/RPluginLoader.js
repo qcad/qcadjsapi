@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPluginLoader);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPluginLoader);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPluginLoader.prototype = new RPluginLoader_BaseJs(engine);
       //RPluginLoader.prototype = new RPluginLoader_Wrapper(engine);
       RPluginLoader.prototype = new Object();
+
 
       RPluginLoader.prototype.toString = function() {
           //return "RPluginLoader [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,156 @@
 
       // functions:
       
+        // function 
+        RPluginLoader.prototype.getPluginSuffix = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.getPluginSuffix");
+          
+              return this.__PROXY__.getPluginSuffix(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.getPluginFiles = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.getPluginFiles");
+          
+              return this.__PROXY__.getPluginFiles(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.loadPlugins = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.loadPlugins");
+          
+              return this.__PROXY__.loadPlugins(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.unloadPlugins = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.unloadPlugins");
+          
+              return this.__PROXY__.unloadPlugins(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.loadPlugin = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.loadPlugin");
+          
+              return this.__PROXY__.loadPlugin(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.unloadPlugin = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.unloadPlugin");
+          
+              return this.__PROXY__.unloadPlugin(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.postInitPlugins = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.postInitPlugins");
+          
+              return this.__PROXY__.postInitPlugins(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.postInitPlugin = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.postInitPlugin");
+          
+              return this.__PROXY__.postInitPlugin(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.initTranslations = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.initTranslations");
+          
+              return this.__PROXY__.initTranslations(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.countPlugins = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.countPlugins");
+          
+              return this.__PROXY__.countPlugins(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.getPluginInfo = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.getPluginInfo");
+          
+              return this.__PROXY__.getPluginInfo(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.getPluginsPath = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.getPluginsPath");
+          
+              return this.__PROXY__.getPluginsPath(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.hasPlugin = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.hasPlugin");
+          
+              return this.__PROXY__.hasPlugin(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.checkPluginLicenses = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.checkPluginLicenses");
+          
+              return this.__PROXY__.checkPluginLicenses(...args);
+            
+        };
+    
+        // function 
+        RPluginLoader.prototype.checkPluginLicense = function(...args) 
+          
+        {
+          //print("JS: RPluginLoader.prototype.checkPluginLicense");
+          
+              return this.__PROXY__.checkPluginLicense(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -577,6 +728,16 @@
   }
   
         };
+      RPluginLoader.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPluginLoader.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPluginLoader.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -595,4 +756,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPluginLoader.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

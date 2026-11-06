@@ -16008,6 +16008,13 @@ bool a1_cpp;
               RCharacterWidget_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCharacterWidget_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCharacterWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -16885,6 +16892,13 @@ bool a1_cpp;
               RCharacterWidget_Wrapper::characterSelectedEmitter(
                 const QString& character
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCharacterWidget_Wrapper::staticMetaObject.indexOfSignal("characterSelected(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCharacterWidget_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: character (QString)

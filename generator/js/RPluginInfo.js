@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPluginInfo);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPluginInfo);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPluginInfo.prototype = new RPluginInfo_BaseJs(engine);
       //RPluginInfo.prototype = new RPluginInfo_Wrapper(engine);
       RPluginInfo.prototype = new Object();
+
 
       RPluginInfo.prototype.toString = function() {
           //return "RPluginInfo [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,8 +125,48 @@
 
       // functions:
       
+        // function 
+        RPluginInfo.prototype.set = function(...args) 
+          
+        {
+          //print("JS: RPluginInfo.prototype.set");
+          
+              return this.__PROXY__.set(...args);
+            
+        };
+    
+        // function 
+        RPluginInfo.prototype.get = function(...args) 
+          
+        {
+          //print("JS: RPluginInfo.prototype.get");
+          
+              return this.__PROXY__.get(...args);
+            
+        };
+    
+        // function 
+        RPluginInfo.prototype.getKeys = function(...args) 
+          
+        {
+          //print("JS: RPluginInfo.prototype.getKeys");
+          
+              return this.__PROXY__.getKeys(...args);
+            
+        };
+    
 
       // static functions:
+      RPluginInfo.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPluginInfo.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPluginInfo.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -144,4 +185,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPluginInfo.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

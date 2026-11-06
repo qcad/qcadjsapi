@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RAction.prototype = new RAction_BaseJs(engine);
       //RAction.prototype = new RAction_Wrapper(engine);
       RAction.prototype = new Object();
+
 
       RAction.prototype.toString = function() {
           //return "RAction [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -106,7 +107,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.terminate");
-          return this.__PROXY__.terminate(...args);
+          
+              return this.__PROXY__.terminate(...args);
+            
         };
     
         // function 
@@ -114,7 +117,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.isTerminated");
-          return this.__PROXY__.isTerminated(...args);
+          
+              return this.__PROXY__.isTerminated(...args);
+            
         };
     
         // function 
@@ -122,7 +127,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.setOverride");
-          return this.__PROXY__.setOverride(...args);
+          
+              return this.__PROXY__.setOverride(...args);
+            
         };
     
       // function 
@@ -162,7 +169,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.setNoState");
-          return this.__PROXY__.setNoState(...args);
+          
+              return this.__PROXY__.setNoState(...args);
+            
         };
     
         // function 
@@ -170,7 +179,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.hasNoState");
-          return this.__PROXY__.hasNoState(...args);
+          
+              return this.__PROXY__.hasNoState(...args);
+            
         };
     
         // function 
@@ -178,7 +189,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.setUniqueGroup");
-          return this.__PROXY__.setUniqueGroup(...args);
+          
+              return this.__PROXY__.setUniqueGroup(...args);
+            
         };
     
         // function 
@@ -186,7 +199,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.getUniqueGroup");
-          return this.__PROXY__.getUniqueGroup(...args);
+          
+              return this.__PROXY__.getUniqueGroup(...args);
+            
         };
     
         // function 
@@ -194,7 +209,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.setOverrideBase");
-          return this.__PROXY__.setOverrideBase(...args);
+          
+              return this.__PROXY__.setOverrideBase(...args);
+            
         };
     
         // function 
@@ -202,7 +219,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.getOverrideBase");
-          return this.__PROXY__.getOverrideBase(...args);
+          
+              return this.__PROXY__.getOverrideBase(...args);
+            
         };
     
         // function 
@@ -210,7 +229,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.getGuiAction");
-          return this.__PROXY__.getGuiAction(...args);
+          
+              return this.__PROXY__.getGuiAction(...args);
+            
         };
     
         // function 
@@ -218,7 +239,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.setGuiAction");
-          return this.__PROXY__.setGuiAction(...args);
+          
+              return this.__PROXY__.setGuiAction(...args);
+            
         };
     
         // function 
@@ -226,7 +249,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.getGraphicsScenes");
-          return this.__PROXY__.getGraphicsScenes(...args);
+          
+              return this.__PROXY__.getGraphicsScenes(...args);
+            
         };
     
       // function 
@@ -298,7 +323,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.getStorage");
-          return this.__PROXY__.getStorage(...args);
+          
+              return this.__PROXY__.getStorage(...args);
+            
         };
     
       // function 
@@ -338,7 +365,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.setClickMode");
-          return this.__PROXY__.setClickMode(...args);
+          
+              return this.__PROXY__.setClickMode(...args);
+            
         };
     
         // function 
@@ -346,7 +375,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.getClickMode");
-          return this.__PROXY__.getClickMode(...args);
+          
+              return this.__PROXY__.getClickMode(...args);
+            
         };
     
         // function 
@@ -354,7 +385,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.getState");
-          return this.__PROXY__.getState(...args);
+          
+              return this.__PROXY__.getState(...args);
+            
         };
     
         // function 
@@ -362,7 +395,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.beginEvent");
-          return this.__PROXY__.beginEvent(...args);
+          
+              return this.__PROXY__.beginEvent(...args);
+            
         };
     
         // function 
@@ -370,7 +405,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.setGraphicsView");
-          return this.__PROXY__.setGraphicsView(...args);
+          
+              return this.__PROXY__.setGraphicsView(...args);
+            
         };
     
         // function 
@@ -378,7 +415,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.finishEvent");
-          return this.__PROXY__.finishEvent(...args);
+          
+              return this.__PROXY__.finishEvent(...args);
+            
         };
     
         // function 
@@ -386,7 +425,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.enterEvent");
-          return this.__PROXY__.enterEvent(...args);
+          
+              return this.__PROXY__.enterEvent(...args);
+            
         };
     
         // function 
@@ -394,7 +435,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.suspendEvent");
-          return this.__PROXY__.suspendEvent(...args);
+          
+              return this.__PROXY__.suspendEvent(...args);
+            
         };
     
         // function 
@@ -402,7 +445,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.resumeEvent");
-          return this.__PROXY__.resumeEvent(...args);
+          
+              return this.__PROXY__.resumeEvent(...args);
+            
         };
     
         // function 
@@ -410,7 +455,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.escapeEvent");
-          return this.__PROXY__.escapeEvent(...args);
+          
+              return this.__PROXY__.escapeEvent(...args);
+            
         };
     
         // function 
@@ -418,7 +465,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.keyPressEvent");
-          return this.__PROXY__.keyPressEvent(...args);
+          
+              return this.__PROXY__.keyPressEvent(...args);
+            
         };
     
         // function 
@@ -426,7 +475,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.keyReleaseEvent");
-          return this.__PROXY__.keyReleaseEvent(...args);
+          
+              return this.__PROXY__.keyReleaseEvent(...args);
+            
         };
     
         // function 
@@ -434,7 +485,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.mousePressEvent");
-          return this.__PROXY__.mousePressEvent(...args);
+          
+              return this.__PROXY__.mousePressEvent(...args);
+            
         };
     
         // function 
@@ -442,7 +495,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.mouseMoveEvent");
-          return this.__PROXY__.mouseMoveEvent(...args);
+          
+              return this.__PROXY__.mouseMoveEvent(...args);
+            
         };
     
         // function 
@@ -450,7 +505,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.mouseReleaseEvent");
-          return this.__PROXY__.mouseReleaseEvent(...args);
+          
+              return this.__PROXY__.mouseReleaseEvent(...args);
+            
         };
     
         // function 
@@ -458,7 +515,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.mouseDoubleClickEvent");
-          return this.__PROXY__.mouseDoubleClickEvent(...args);
+          
+              return this.__PROXY__.mouseDoubleClickEvent(...args);
+            
         };
     
         // function 
@@ -466,7 +525,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.wheelEvent");
-          return this.__PROXY__.wheelEvent(...args);
+          
+              return this.__PROXY__.wheelEvent(...args);
+            
         };
     
         // function 
@@ -474,7 +535,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.tabletEvent");
-          return this.__PROXY__.tabletEvent(...args);
+          
+              return this.__PROXY__.tabletEvent(...args);
+            
         };
     
         // function 
@@ -482,7 +545,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.swipeGestureEvent");
-          return this.__PROXY__.swipeGestureEvent(...args);
+          
+              return this.__PROXY__.swipeGestureEvent(...args);
+            
         };
     
         // function 
@@ -490,7 +555,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.panGestureEvent");
-          return this.__PROXY__.panGestureEvent(...args);
+          
+              return this.__PROXY__.panGestureEvent(...args);
+            
         };
     
         // function 
@@ -498,7 +565,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.pinchGestureEvent");
-          return this.__PROXY__.pinchGestureEvent(...args);
+          
+              return this.__PROXY__.pinchGestureEvent(...args);
+            
         };
     
         // function 
@@ -506,7 +575,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.commandEvent");
-          return this.__PROXY__.commandEvent(...args);
+          
+              return this.__PROXY__.commandEvent(...args);
+            
         };
     
         // function 
@@ -514,7 +585,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.commandEventPreview");
-          return this.__PROXY__.commandEventPreview(...args);
+          
+              return this.__PROXY__.commandEventPreview(...args);
+            
         };
     
         // function 
@@ -522,7 +595,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.coordinateEvent");
-          return this.__PROXY__.coordinateEvent(...args);
+          
+              return this.__PROXY__.coordinateEvent(...args);
+            
         };
     
         // function 
@@ -530,7 +605,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.coordinateEventPreview");
-          return this.__PROXY__.coordinateEventPreview(...args);
+          
+              return this.__PROXY__.coordinateEventPreview(...args);
+            
         };
     
         // function 
@@ -538,7 +615,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.entityPickEvent");
-          return this.__PROXY__.entityPickEvent(...args);
+          
+              return this.__PROXY__.entityPickEvent(...args);
+            
         };
     
       // function 
@@ -578,7 +657,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.propertyChangeEvent");
-          return this.__PROXY__.propertyChangeEvent(...args);
+          
+              return this.__PROXY__.propertyChangeEvent(...args);
+            
         };
     
         // function 
@@ -586,7 +667,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.zoomChangeEvent");
-          return this.__PROXY__.zoomChangeEvent(...args);
+          
+              return this.__PROXY__.zoomChangeEvent(...args);
+            
         };
     
         // function 
@@ -594,7 +677,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.updatePreview");
-          return this.__PROXY__.updatePreview(...args);
+          
+              return this.__PROXY__.updatePreview(...args);
+            
         };
     
         // function 
@@ -602,7 +687,9 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.applyOperation");
-          return this.__PROXY__.applyOperation(...args);
+          
+              return this.__PROXY__.applyOperation(...args);
+            
         };
     
         // function 
@@ -610,11 +697,23 @@ RAction.PickingDisabled = RAction_Wrapper.PickingDisabled;
           
         {
           //print("JS: RAction.prototype.snap");
-          return this.__PROXY__.snap(...args);
+          
+              return this.__PROXY__.snap(...args);
+            
         };
     
 
       // static functions:
+      RAction.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RAction.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RAction.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

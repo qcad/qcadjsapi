@@ -1591,6 +1591,13 @@ QVariant a2_cpp;
               RImportListenerAdapter_Wrapper::preImportEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RImportListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("preImport(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RImportListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)
@@ -1620,6 +1627,13 @@ QVariant a2_cpp;
               RImportListenerAdapter_Wrapper::postImportEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RImportListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("postImport(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RImportListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)

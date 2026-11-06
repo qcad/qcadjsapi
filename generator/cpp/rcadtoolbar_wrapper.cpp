@@ -16058,6 +16058,13 @@ bool a1_cpp;
               RCadToolBar_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCadToolBar_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCadToolBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -18513,6 +18520,13 @@ Qt::ToolButtonStyle a1_cpp;
               RCadToolBar_Wrapper::actionTriggeredEmitter(
                 QAction* action
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCadToolBar_Wrapper::staticMetaObject.indexOfSignal("actionTriggered(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCadToolBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: action (QAction)
@@ -18542,6 +18556,13 @@ Qt::ToolButtonStyle a1_cpp;
               RCadToolBar_Wrapper::movableChangedEmitter(
                 bool movable
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCadToolBar_Wrapper::staticMetaObject.indexOfSignal("movableChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCadToolBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: movable (bool)
@@ -18571,6 +18592,13 @@ Qt::ToolButtonStyle a1_cpp;
               RCadToolBar_Wrapper::allowedAreasChangedEmitter(
                 Qt::ToolBarAreas allowedAreas
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCadToolBar_Wrapper::staticMetaObject.indexOfSignal("allowedAreasChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCadToolBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: allowedAreas (Qt::ToolBarAreas)
@@ -18600,6 +18628,13 @@ Qt::ToolButtonStyle a1_cpp;
               RCadToolBar_Wrapper::orientationChangedEmitter(
                 Qt::Orientation orientation
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCadToolBar_Wrapper::staticMetaObject.indexOfSignal("orientationChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCadToolBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: orientation (Qt::Orientation)
@@ -18629,6 +18664,13 @@ Qt::ToolButtonStyle a1_cpp;
               RCadToolBar_Wrapper::iconSizeChangedEmitter(
                 const QSize& iconSize
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCadToolBar_Wrapper::staticMetaObject.indexOfSignal("iconSizeChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCadToolBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: iconSize (QSize)
@@ -18658,6 +18700,13 @@ Qt::ToolButtonStyle a1_cpp;
               RCadToolBar_Wrapper::toolButtonStyleChangedEmitter(
                 Qt::ToolButtonStyle toolButtonStyle
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCadToolBar_Wrapper::staticMetaObject.indexOfSignal("toolButtonStyleChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCadToolBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: toolButtonStyle (Qt::ToolButtonStyle)
@@ -18687,6 +18736,13 @@ Qt::ToolButtonStyle a1_cpp;
               RCadToolBar_Wrapper::topLevelChangedEmitter(
                 bool topLevel
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCadToolBar_Wrapper::staticMetaObject.indexOfSignal("topLevelChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCadToolBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: topLevel (bool)
@@ -18716,6 +18772,13 @@ Qt::ToolButtonStyle a1_cpp;
               RCadToolBar_Wrapper::visibilityChangedEmitter(
                 bool visible
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCadToolBar_Wrapper::staticMetaObject.indexOfSignal("visibilityChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCadToolBar_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: visible (bool)

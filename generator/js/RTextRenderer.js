@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RTextRenderer);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTextRenderer);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RTextRenderer.prototype = new RTextRenderer_BaseJs(engine);
       //RTextRenderer.prototype = new RTextRenderer_Wrapper(engine);
       RTextRenderer.prototype = new Object();
+
 
       RTextRenderer.prototype.toString = function() {
           //return "RTextRenderer [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -129,6 +130,346 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
 
       // functions:
       
+        // function 
+        RTextRenderer.prototype.renderSimple = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.renderSimple");
+          
+              return this.__PROXY__.renderSimple(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.render = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.render");
+          
+              return this.__PROXY__.render(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getPainterPaths = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getPainterPaths");
+          
+              return this.__PROXY__.getPainterPaths(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getTextLayouts = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getTextLayouts");
+          
+              return this.__PROXY__.getTextLayouts(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getBoundingBox = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getBoundingBox");
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getHeight = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getHeight");
+          
+              return this.__PROXY__.getHeight(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getWidth = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getWidth");
+          
+              return this.__PROXY__.getWidth(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getRichText = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getRichText");
+          
+              return this.__PROXY__.getRichText(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.lockForDrawing = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.lockForDrawing");
+          
+              return this.__PROXY__.lockForDrawing(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.unlockForDrawing = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.unlockForDrawing");
+          
+              return this.__PROXY__.unlockForDrawing(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getPainterPathsForBlock = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getPainterPathsForBlock");
+          
+              return this.__PROXY__.getPainterPathsForBlock(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getPainterPathsForBlockTtf = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getPainterPathsForBlockTtf");
+          
+              return this.__PROXY__.getPainterPathsForBlockTtf(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getPainterPathsForBlockCad = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getPainterPathsForBlockCad");
+          
+              return this.__PROXY__.getPainterPathsForBlockCad(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.preparePath = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.preparePath");
+          
+              return this.__PROXY__.preparePath(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.preparePathColor = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.preparePathColor");
+          
+              return this.__PROXY__.preparePathColor(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.preparePathTransform = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.preparePathTransform");
+          
+              return this.__PROXY__.preparePathTransform(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getCharacterRect = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getCharacterRect");
+          
+              return this.__PROXY__.getCharacterRect(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getRichTextForBlock = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getRichTextForBlock");
+          
+              return this.__PROXY__.getRichTextForBlock(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.setBlockFont = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.setBlockFont");
+          
+              return this.__PROXY__.setBlockFont(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getBlockFont = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getBlockFont");
+          
+              return this.__PROXY__.getBlockFont(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.setBlockFontFile = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.setBlockFontFile");
+          
+              return this.__PROXY__.setBlockFontFile(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getBlockFontFile = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getBlockFontFile");
+          
+              return this.__PROXY__.getBlockFontFile(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.setUseCadFont = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.setUseCadFont");
+          
+              return this.__PROXY__.setUseCadFont(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getUseCadFont = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getUseCadFont");
+          
+              return this.__PROXY__.getUseCadFont(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.setBlockBold = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.setBlockBold");
+          
+              return this.__PROXY__.setBlockBold(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getBlockBold = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getBlockBold");
+          
+              return this.__PROXY__.getBlockBold(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.setBlockItalic = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.setBlockItalic");
+          
+              return this.__PROXY__.setBlockItalic(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getBlockItalic = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getBlockItalic");
+          
+              return this.__PROXY__.getBlockItalic(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.setBlockUnderline = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.setBlockUnderline");
+          
+              return this.__PROXY__.setBlockUnderline(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getBlockUnderline = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getBlockUnderline");
+          
+              return this.__PROXY__.getBlockUnderline(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.setBlockHeight = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.setBlockHeight");
+          
+              return this.__PROXY__.setBlockHeight(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getBlockHeight = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getBlockHeight");
+          
+              return this.__PROXY__.getBlockHeight(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.setCurrentFormat = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.setCurrentFormat");
+          
+              return this.__PROXY__.setCurrentFormat(...args);
+            
+        };
+    
+        // function 
+        RTextRenderer.prototype.getCurrentFormat = function(...args) 
+          
+        {
+          //print("JS: RTextRenderer.prototype.getCurrentFormat");
+          
+              return this.__PROXY__.getCurrentFormat(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -187,6 +528,16 @@ RTextRenderer.RichText = RTextRenderer_Wrapper.RichText;
   }
   
         };
+      RTextRenderer.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RTextRenderer.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RTextRenderer.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -411,4 +762,7 @@ RTextRenderer.chDiameter =
       //  return this.wrapper.destr();
       //};
 
+      RTextRenderer.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

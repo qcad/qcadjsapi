@@ -1544,6 +1544,13 @@ bool a3_cpp;
               RNewDocumentListenerAdapter_Wrapper::newDocumentEmitter(
                 RDocument* document, RTransaction* transaction, bool beforeLoad
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RNewDocumentListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("newDocument(QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RNewDocumentListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: document (RDocument)

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RViewListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RViewListener.prototype = new RViewListener_BaseJs(engine);
       //RViewListener.prototype = new RViewListener_Wrapper(engine);
       RViewListener.prototype = new Object();
+
 
       RViewListener.prototype.toString = function() {
           //return "RViewListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,38 @@
 
       // functions:
       
+        // function 
+        RViewListener.prototype.updateViews = function(...args) 
+          
+        {
+          //print("JS: RViewListener.prototype.updateViews");
+          
+              return this.__PROXY__.updateViews(...args);
+            
+        };
+    
+        // function 
+        RViewListener.prototype.clearViews = function(...args) 
+          
+        {
+          //print("JS: RViewListener.prototype.clearViews");
+          
+              return this.__PROXY__.clearViews(...args);
+            
+        };
+    
 
       // static functions:
+      RViewListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RViewListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RViewListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +146,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RViewListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

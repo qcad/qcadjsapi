@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RInputEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RInputEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RInputEvent.prototype = new RInputEvent_BaseJs(engine);
       //RInputEvent.prototype = new RInputEvent_Wrapper(engine);
       RInputEvent.prototype = new Object();
+
 
       RInputEvent.prototype.toString = function() {
           //return "RInputEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -125,8 +126,108 @@
 
       // functions:
       
+        // function 
+        RInputEvent.prototype.getModelPosition = function(...args) 
+          
+        {
+          //print("JS: RInputEvent.prototype.getModelPosition");
+          
+              return this.__PROXY__.getModelPosition(...args);
+            
+        };
+    
+        // function 
+        RInputEvent.prototype.setModelPosition = function(...args) 
+          
+        {
+          //print("JS: RInputEvent.prototype.setModelPosition");
+          
+              return this.__PROXY__.setModelPosition(...args);
+            
+        };
+    
+        // function 
+        RInputEvent.prototype.getCursorPosition = function(...args) 
+          
+        {
+          //print("JS: RInputEvent.prototype.getCursorPosition");
+          
+              return this.__PROXY__.getCursorPosition(...args);
+            
+        };
+    
+        // function 
+        RInputEvent.prototype.setCursorPosition = function(...args) 
+          
+        {
+          //print("JS: RInputEvent.prototype.setCursorPosition");
+          
+              return this.__PROXY__.setCursorPosition(...args);
+            
+        };
+    
+        // function 
+        RInputEvent.prototype.getScreenPosition = function(...args) 
+          
+        {
+          //print("JS: RInputEvent.prototype.getScreenPosition");
+          
+              return this.__PROXY__.getScreenPosition(...args);
+            
+        };
+    
+        // function 
+        RInputEvent.prototype.setScreenPosition = function(...args) 
+          
+        {
+          //print("JS: RInputEvent.prototype.setScreenPosition");
+          
+              return this.__PROXY__.setScreenPosition(...args);
+            
+        };
+    
+        // function 
+        RInputEvent.prototype.getGraphicsView = function(...args) 
+          
+        {
+          //print("JS: RInputEvent.prototype.getGraphicsView");
+          
+              return this.__PROXY__.getGraphicsView(...args);
+            
+        };
+    
+        // function 
+        RInputEvent.prototype.getGraphicsScene = function(...args) 
+          
+        {
+          //print("JS: RInputEvent.prototype.getGraphicsScene");
+          
+              return this.__PROXY__.getGraphicsScene(...args);
+            
+        };
+    
+        // function 
+        RInputEvent.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RInputEvent.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
 
       // static functions:
+      RInputEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RInputEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RInputEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -145,4 +246,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RInputEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

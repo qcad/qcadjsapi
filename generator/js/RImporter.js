@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RImporter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RImporter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RImporter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RImporter.prototype = new RImporter_BaseJs(engine);
       //RImporter.prototype = new RImporter_Wrapper(engine);
       RImporter.prototype = new Object();
+
 
       RImporter.prototype.toString = function() {
           //return "RImporter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -150,8 +151,108 @@
 
       // functions:
       
+        // function 
+        RImporter.prototype.startImport = function(...args) 
+          
+        {
+          //print("JS: RImporter.prototype.startImport");
+          
+              return this.__PROXY__.startImport(...args);
+            
+        };
+    
+        // function 
+        RImporter.prototype.endImport = function(...args) 
+          
+        {
+          //print("JS: RImporter.prototype.endImport");
+          
+              return this.__PROXY__.endImport(...args);
+            
+        };
+    
+        // function 
+        RImporter.prototype.importObjectP = function(...args) 
+          
+        {
+          //print("JS: RImporter.prototype.importObjectP");
+          
+              return this.__PROXY__.importObjectP(...args);
+            
+        };
+    
+        // function 
+        RImporter.prototype.importObject = function(...args) 
+          
+        {
+          //print("JS: RImporter.prototype.importObject");
+          
+              return this.__PROXY__.importObject(...args);
+            
+        };
+    
+        // function 
+        RImporter.prototype.setCurrentBlockId = function(...args) 
+          
+        {
+          //print("JS: RImporter.prototype.setCurrentBlockId");
+          
+              return this.__PROXY__.setCurrentBlockId(...args);
+            
+        };
+    
+        // function 
+        RImporter.prototype.getCurrentBlockId = function(...args) 
+          
+        {
+          //print("JS: RImporter.prototype.getCurrentBlockId");
+          
+              return this.__PROXY__.getCurrentBlockId(...args);
+            
+        };
+    
+        // function 
+        RImporter.prototype.getDocument = function(...args) 
+          
+        {
+          //print("JS: RImporter.prototype.getDocument");
+          
+              return this.__PROXY__.getDocument(...args);
+            
+        };
+    
+        // function 
+        RImporter.prototype.setDocument = function(...args) 
+          
+        {
+          //print("JS: RImporter.prototype.setDocument");
+          
+              return this.__PROXY__.setDocument(...args);
+            
+        };
+    
+        // function 
+        RImporter.prototype.setKnownVariable = function(...args) 
+          
+        {
+          //print("JS: RImporter.prototype.setKnownVariable");
+          
+              return this.__PROXY__.setKnownVariable(...args);
+            
+        };
+    
 
       // static functions:
+      RImporter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RImporter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RImporter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -170,4 +271,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RImporter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

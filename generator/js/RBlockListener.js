@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RBlockListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RBlockListener.prototype = new RBlockListener_BaseJs(engine);
       //RBlockListener.prototype = new RBlockListener_Wrapper(engine);
       RBlockListener.prototype = new Object();
+
 
       RBlockListener.prototype.toString = function() {
           //return "RBlockListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,48 @@
 
       // functions:
       
+        // function 
+        RBlockListener.prototype.updateBlocks = function(...args) 
+          
+        {
+          //print("JS: RBlockListener.prototype.updateBlocks");
+          
+              return this.__PROXY__.updateBlocks(...args);
+            
+        };
+    
+        // function 
+        RBlockListener.prototype.setCurrentBlock = function(...args) 
+          
+        {
+          //print("JS: RBlockListener.prototype.setCurrentBlock");
+          
+              return this.__PROXY__.setCurrentBlock(...args);
+            
+        };
+    
+        // function 
+        RBlockListener.prototype.clearBlocks = function(...args) 
+          
+        {
+          //print("JS: RBlockListener.prototype.clearBlocks");
+          
+              return this.__PROXY__.clearBlocks(...args);
+            
+        };
+    
 
       // static functions:
+      RBlockListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RBlockListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RBlockListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +156,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RBlockListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RToolMatrixItemDelegate);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RToolMatrixItemDelegate);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,26 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["commitData(QWidget*)"] = Object.getPrototypeOf(this).commitData;
-  
-    this["closeEditor(QWidget*,QAbstractItemDelegate::EndEditHint)"] = Object.getPrototypeOf(this).closeEditor;
-  
-    this["sizeHintChanged(QModelIndex)"] = Object.getPrototypeOf(this).sizeHintChanged;
-  
-            }
-          
+
         }
 
-        
 
       }
 
       //RToolMatrixItemDelegate.prototype = new RToolMatrixItemDelegate_BaseJs(engine);
       //RToolMatrixItemDelegate.prototype = new RToolMatrixItemDelegate_Wrapper(engine);
       RToolMatrixItemDelegate.prototype = new Object();
+
 
       RToolMatrixItemDelegate.prototype.toString = function() {
           //return "RToolMatrixItemDelegate [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -154,8 +144,313 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
 
       // functions:
       
+        // function 
+        RToolMatrixItemDelegate.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.children = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.property = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.destroyEditor = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.destroyEditor");
+          
+              return this.__PROXY__.destroyEditor(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.paintingRoles = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.paintingRoles");
+          
+              return this.__PROXY__.paintingRoles(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.hasClipping = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.hasClipping");
+          
+              return this.__PROXY__.hasClipping(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.setClipping = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.setClipping");
+          
+              return this.__PROXY__.setClipping(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.createEditor = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.createEditor");
+          
+              return this.__PROXY__.createEditorSuper(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.setEditorData = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.setEditorData");
+          
+              return this.__PROXY__.setEditorData(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.setModelData = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.setModelData");
+          
+              return this.__PROXY__.setModelData(...args);
+            
+        };
+    
+        // function 
+        RToolMatrixItemDelegate.prototype.eventFilter = function(...args) 
+          
+        {
+          //print("JS: RToolMatrixItemDelegate.prototype.eventFilter");
+          
+              return this.__PROXY__.eventFilter(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(RToolMatrixItemDelegate.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(RToolMatrixItemDelegate.prototype, 'commitData', {
+            get: function() { return this.__PROXY__.commitData; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RToolMatrixItemDelegate.prototype, 'commitData(QWidget*)', {
+              get: function() { return this.__PROXY__.commitData; },
+              configurable: true
+          });
+        
+        Object.defineProperty(RToolMatrixItemDelegate.prototype, 'closeEditor', {
+            get: function() { return this.__PROXY__.closeEditor; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RToolMatrixItemDelegate.prototype, 'closeEditor(QWidget*,QAbstractItemDelegate::EndEditHint)', {
+              get: function() { return this.__PROXY__.closeEditor; },
+              configurable: true
+          });
+        
+        Object.defineProperty(RToolMatrixItemDelegate.prototype, 'sizeHintChanged', {
+            get: function() { return this.__PROXY__.sizeHintChanged; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RToolMatrixItemDelegate.prototype, 'sizeHintChanged(QModelIndex)', {
+              get: function() { return this.__PROXY__.sizeHintChanged; },
+              configurable: true
+          });
+        RToolMatrixItemDelegate.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RToolMatrixItemDelegate.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RToolMatrixItemDelegate.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -174,4 +469,7 @@ RToolMatrixItemDelegate.RevertModelCache = RToolMatrixItemDelegate_Wrapper.Rever
       //  return this.wrapper.destr();
       //};
 
+      RToolMatrixItemDelegate.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

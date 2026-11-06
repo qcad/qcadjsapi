@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPaletteListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPaletteListener.prototype = new RPaletteListener_BaseJs(engine);
       //RPaletteListener.prototype = new RPaletteListener_Wrapper(engine);
       RPaletteListener.prototype = new Object();
+
 
       RPaletteListener.prototype.toString = function() {
           //return "RPaletteListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,28 @@
 
       // functions:
       
+        // function 
+        RPaletteListener.prototype.updatePalette = function(...args) 
+          
+        {
+          //print("JS: RPaletteListener.prototype.updatePalette");
+          
+              return this.__PROXY__.updatePalette(...args);
+            
+        };
+    
 
       // static functions:
+      RPaletteListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPaletteListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPaletteListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +136,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPaletteListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

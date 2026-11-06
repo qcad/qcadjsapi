@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RToleranceData.prototype = new RToleranceData_BaseJs(engine);
       //RToleranceData.prototype = new RToleranceData_Wrapper(engine);
       RToleranceData.prototype = new Object();
+
 
       RToleranceData.prototype.toString = function() {
           //return "RToleranceData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -133,7 +134,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -141,7 +144,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -149,7 +154,9 @@
           
         {
           //print("JS: RToleranceData.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -157,7 +164,9 @@
           
         {
           //print("JS: RToleranceData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -165,7 +174,9 @@
           
         {
           //print("JS: RToleranceData.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -173,7 +184,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -181,7 +194,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -189,7 +204,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -197,7 +214,9 @@
           
         {
           //print("JS: RToleranceData.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -205,7 +224,9 @@
           
         {
           //print("JS: RToleranceData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -213,7 +234,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -221,7 +244,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -229,7 +254,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -237,7 +264,9 @@
           
         {
           //print("JS: RToleranceData.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -245,7 +274,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -253,7 +284,9 @@
           
         {
           //print("JS: RToleranceData.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -261,7 +294,9 @@
           
         {
           //print("JS: RToleranceData.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -269,7 +304,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -277,7 +314,9 @@
           
         {
           //print("JS: RToleranceData.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -285,7 +324,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -293,7 +334,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -301,7 +344,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -309,7 +354,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -317,7 +364,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -325,7 +374,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -333,7 +384,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -341,7 +394,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -349,7 +404,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -357,7 +414,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -365,7 +424,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -373,7 +434,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -381,7 +444,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -389,7 +454,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -397,7 +464,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -405,7 +474,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -413,7 +484,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -421,7 +494,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -429,7 +504,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -437,7 +514,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -445,7 +524,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -453,7 +534,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -461,7 +544,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -469,7 +554,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -477,7 +564,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -485,7 +574,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -493,7 +584,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -501,7 +594,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -509,7 +604,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -517,7 +614,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -525,7 +624,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -533,7 +634,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -541,7 +644,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -549,7 +654,9 @@
           
         {
           //print("JS: RToleranceData.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -557,7 +664,9 @@
           
         {
           //print("JS: RToleranceData.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -565,7 +674,9 @@
           
         {
           //print("JS: RToleranceData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -573,7 +684,9 @@
           
         {
           //print("JS: RToleranceData.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -581,7 +694,9 @@
           
         {
           //print("JS: RToleranceData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -589,7 +704,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -597,7 +714,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -605,7 +724,9 @@
           
         {
           //print("JS: RToleranceData.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -613,7 +734,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getLocation");
-          return this.__PROXY__.getLocation(...args);
+          
+              return this.__PROXY__.getLocation(...args);
+            
         };
     
         // function 
@@ -621,7 +744,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setLocation");
-          return this.__PROXY__.setLocation(...args);
+          
+              return this.__PROXY__.setLocation(...args);
+            
         };
     
         // function 
@@ -629,7 +754,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getDirection");
-          return this.__PROXY__.getDirection(...args);
+          
+              return this.__PROXY__.getDirection(...args);
+            
         };
     
         // function 
@@ -637,7 +764,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setDirection");
-          return this.__PROXY__.setDirection(...args);
+          
+              return this.__PROXY__.setDirection(...args);
+            
         };
     
         // function 
@@ -645,7 +774,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getFields");
-          return this.__PROXY__.getFields(...args);
+          
+              return this.__PROXY__.getFields(...args);
+            
         };
     
         // function 
@@ -653,7 +784,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getText");
-          return this.__PROXY__.getText(...args);
+          
+              return this.__PROXY__.getText(...args);
+            
         };
     
         // function 
@@ -661,7 +794,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setText");
-          return this.__PROXY__.setText(...args);
+          
+              return this.__PROXY__.setText(...args);
+            
         };
     
         // function 
@@ -669,7 +804,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getDimtxt");
-          return this.__PROXY__.getDimtxt(...args);
+          
+              return this.__PROXY__.getDimtxt(...args);
+            
         };
     
         // function 
@@ -677,7 +814,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setDimtxt");
-          return this.__PROXY__.setDimtxt(...args);
+          
+              return this.__PROXY__.setDimtxt(...args);
+            
         };
     
         // function 
@@ -685,7 +824,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getDimscale");
-          return this.__PROXY__.getDimscale(...args);
+          
+              return this.__PROXY__.getDimscale(...args);
+            
         };
     
         // function 
@@ -693,7 +834,9 @@
           
         {
           //print("JS: RToleranceData.prototype.setDimscale");
-          return this.__PROXY__.setDimscale(...args);
+          
+              return this.__PROXY__.setDimscale(...args);
+            
         };
     
         // function 
@@ -701,7 +844,9 @@
           
         {
           //print("JS: RToleranceData.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -709,7 +854,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getCorners");
-          return this.__PROXY__.getCorners(...args);
+          
+              return this.__PROXY__.getCorners(...args);
+            
         };
     
         // function 
@@ -717,7 +864,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getMiddels");
-          return this.__PROXY__.getMiddels(...args);
+          
+              return this.__PROXY__.getMiddels(...args);
+            
         };
     
         // function 
@@ -725,7 +874,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -733,7 +884,9 @@
           
         {
           //print("JS: RToleranceData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -741,7 +894,9 @@
           
         {
           //print("JS: RToleranceData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -749,7 +904,9 @@
           
         {
           //print("JS: RToleranceData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -757,7 +914,9 @@
           
         {
           //print("JS: RToleranceData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -765,7 +924,9 @@
           
         {
           //print("JS: RToleranceData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -773,7 +934,9 @@
           
         {
           //print("JS: RToleranceData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -781,7 +944,9 @@
           
         {
           //print("JS: RToleranceData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -789,7 +954,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getExploded");
-          return this.__PROXY__.getExploded(...args);
+          
+              return this.__PROXY__.getExploded(...args);
+            
         };
     
         // function 
@@ -797,7 +964,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -805,7 +974,9 @@
           
         {
           //print("JS: RToleranceData.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -813,7 +984,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getTextLabels");
-          return this.__PROXY__.getTextLabels(...args);
+          
+              return this.__PROXY__.getTextLabels(...args);
+            
         };
     
         // function 
@@ -821,7 +994,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getFrame");
-          return this.__PROXY__.getFrame(...args);
+          
+              return this.__PROXY__.getFrame(...args);
+            
         };
     
         // function 
@@ -829,7 +1004,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getRows");
-          return this.__PROXY__.getRows(...args);
+          
+              return this.__PROXY__.getRows(...args);
+            
         };
     
         // function 
@@ -837,7 +1014,9 @@
           
         {
           //print("JS: RToleranceData.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -845,11 +1024,23 @@
           
         {
           //print("JS: RToleranceData.prototype.clearStyleOverrides");
-          return this.__PROXY__.clearStyleOverrides(...args);
+          
+              return this.__PROXY__.clearStyleOverrides(...args);
+            
         };
     
 
       // static functions:
+      RToleranceData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RToleranceData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RToleranceData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPatternListMetric);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPatternListMetric.prototype = new RPatternListMetric_BaseJs(engine);
       //RPatternListMetric.prototype = new RPatternListMetric_Wrapper(engine);
       RPatternListMetric.prototype = new Object();
+
 
       RPatternListMetric.prototype.toString = function() {
           //return "RPatternListMetric [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -99,6 +100,46 @@
 
       // functions:
       
+        // function 
+        RPatternListMetric.prototype.init = function(...args) 
+          
+        {
+          //print("JS: RPatternListMetric.prototype.init");
+          
+              return this.__PROXY__.init(...args);
+            
+        };
+    
+        // function 
+        RPatternListMetric.prototype.uninit = function(...args) 
+          
+        {
+          //print("JS: RPatternListMetric.prototype.uninit");
+          
+              return this.__PROXY__.uninit(...args);
+            
+        };
+    
+        // function 
+        RPatternListMetric.prototype.getNames = function(...args) 
+          
+        {
+          //print("JS: RPatternListMetric.prototype.getNames");
+          
+              return this.__PROXY__.getNames(...args);
+            
+        };
+    
+        // function 
+        RPatternListMetric.prototype.get = function(...args) 
+          
+        {
+          //print("JS: RPatternListMetric.prototype.get");
+          
+              return this.__PROXY__.get(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -213,6 +254,16 @@
   }
   
         };
+      RPatternListMetric.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPatternListMetric.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPatternListMetric.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -231,4 +282,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPatternListMetric.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

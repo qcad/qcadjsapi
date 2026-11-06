@@ -164,15 +164,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RColor.prototype = new RColor_BaseJs(engine);
       //RColor.prototype = new RColor_Wrapper(engine);
       RColor.prototype = new Object();
+
 
       RColor.prototype.toString = function() {
           //return "RColor [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -218,7 +219,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.name");
-          return this.__PROXY__.name(...args);
+          
+              return this.__PROXY__.name(...args);
+            
         };
     
         // function 
@@ -226,7 +229,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.spec");
-          return this.__PROXY__.spec(...args);
+          
+              return this.__PROXY__.spec(...args);
+            
         };
     
         // function 
@@ -234,7 +239,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.alpha");
-          return this.__PROXY__.alpha(...args);
+          
+              return this.__PROXY__.alpha(...args);
+            
         };
     
         // function 
@@ -242,7 +249,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setAlpha");
-          return this.__PROXY__.setAlpha(...args);
+          
+              return this.__PROXY__.setAlpha(...args);
+            
         };
     
         // function 
@@ -250,7 +259,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.alphaF");
-          return this.__PROXY__.alphaF(...args);
+          
+              return this.__PROXY__.alphaF(...args);
+            
         };
     
         // function 
@@ -258,7 +269,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setAlphaF");
-          return this.__PROXY__.setAlphaF(...args);
+          
+              return this.__PROXY__.setAlphaF(...args);
+            
         };
     
         // function 
@@ -266,7 +279,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.red");
-          return this.__PROXY__.red(...args);
+          
+              return this.__PROXY__.red(...args);
+            
         };
     
         // function 
@@ -274,7 +289,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.green");
-          return this.__PROXY__.green(...args);
+          
+              return this.__PROXY__.green(...args);
+            
         };
     
         // function 
@@ -282,7 +299,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.blue");
-          return this.__PROXY__.blue(...args);
+          
+              return this.__PROXY__.blue(...args);
+            
         };
     
         // function 
@@ -290,7 +309,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setRed");
-          return this.__PROXY__.setRed(...args);
+          
+              return this.__PROXY__.setRed(...args);
+            
         };
     
         // function 
@@ -298,7 +319,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setGreen");
-          return this.__PROXY__.setGreen(...args);
+          
+              return this.__PROXY__.setGreen(...args);
+            
         };
     
         // function 
@@ -306,7 +329,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setBlue");
-          return this.__PROXY__.setBlue(...args);
+          
+              return this.__PROXY__.setBlue(...args);
+            
         };
     
         // function 
@@ -314,7 +339,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.redF");
-          return this.__PROXY__.redF(...args);
+          
+              return this.__PROXY__.redF(...args);
+            
         };
     
         // function 
@@ -322,7 +349,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.greenF");
-          return this.__PROXY__.greenF(...args);
+          
+              return this.__PROXY__.greenF(...args);
+            
         };
     
         // function 
@@ -330,7 +359,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.blueF");
-          return this.__PROXY__.blueF(...args);
+          
+              return this.__PROXY__.blueF(...args);
+            
         };
     
         // function 
@@ -338,7 +369,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setRedF");
-          return this.__PROXY__.setRedF(...args);
+          
+              return this.__PROXY__.setRedF(...args);
+            
         };
     
         // function 
@@ -346,7 +379,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setGreenF");
-          return this.__PROXY__.setGreenF(...args);
+          
+              return this.__PROXY__.setGreenF(...args);
+            
         };
     
         // function 
@@ -354,7 +389,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setBlueF");
-          return this.__PROXY__.setBlueF(...args);
+          
+              return this.__PROXY__.setBlueF(...args);
+            
         };
     
         // function 
@@ -362,7 +399,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setRgb");
-          return this.__PROXY__.setRgb(...args);
+          
+              return this.__PROXY__.setRgb(...args);
+            
         };
     
         // function 
@@ -370,7 +409,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setRgbF");
-          return this.__PROXY__.setRgbF(...args);
+          
+              return this.__PROXY__.setRgbF(...args);
+            
         };
     
         // function 
@@ -378,7 +419,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hue");
-          return this.__PROXY__.hue(...args);
+          
+              return this.__PROXY__.hue(...args);
+            
         };
     
         // function 
@@ -386,7 +429,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.saturation");
-          return this.__PROXY__.saturation(...args);
+          
+              return this.__PROXY__.saturation(...args);
+            
         };
     
         // function 
@@ -394,7 +439,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hsvHue");
-          return this.__PROXY__.hsvHue(...args);
+          
+              return this.__PROXY__.hsvHue(...args);
+            
         };
     
         // function 
@@ -402,7 +449,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hsvSaturation");
-          return this.__PROXY__.hsvSaturation(...args);
+          
+              return this.__PROXY__.hsvSaturation(...args);
+            
         };
     
         // function 
@@ -410,7 +459,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.value");
-          return this.__PROXY__.value(...args);
+          
+              return this.__PROXY__.value(...args);
+            
         };
     
         // function 
@@ -418,7 +469,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hueF");
-          return this.__PROXY__.hueF(...args);
+          
+              return this.__PROXY__.hueF(...args);
+            
         };
     
         // function 
@@ -426,7 +479,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.saturationF");
-          return this.__PROXY__.saturationF(...args);
+          
+              return this.__PROXY__.saturationF(...args);
+            
         };
     
         // function 
@@ -434,7 +489,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hsvHueF");
-          return this.__PROXY__.hsvHueF(...args);
+          
+              return this.__PROXY__.hsvHueF(...args);
+            
         };
     
         // function 
@@ -442,7 +499,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hsvSaturationF");
-          return this.__PROXY__.hsvSaturationF(...args);
+          
+              return this.__PROXY__.hsvSaturationF(...args);
+            
         };
     
         // function 
@@ -450,7 +509,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.valueF");
-          return this.__PROXY__.valueF(...args);
+          
+              return this.__PROXY__.valueF(...args);
+            
         };
     
         // function 
@@ -458,7 +519,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setHsv");
-          return this.__PROXY__.setHsv(...args);
+          
+              return this.__PROXY__.setHsv(...args);
+            
         };
     
         // function 
@@ -466,7 +529,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setHsvF");
-          return this.__PROXY__.setHsvF(...args);
+          
+              return this.__PROXY__.setHsvF(...args);
+            
         };
     
         // function 
@@ -474,7 +539,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.cyan");
-          return this.__PROXY__.cyan(...args);
+          
+              return this.__PROXY__.cyan(...args);
+            
         };
     
         // function 
@@ -482,7 +549,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.magenta");
-          return this.__PROXY__.magenta(...args);
+          
+              return this.__PROXY__.magenta(...args);
+            
         };
     
         // function 
@@ -490,7 +559,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.yellow");
-          return this.__PROXY__.yellow(...args);
+          
+              return this.__PROXY__.yellow(...args);
+            
         };
     
         // function 
@@ -498,7 +569,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.black");
-          return this.__PROXY__.black(...args);
+          
+              return this.__PROXY__.black(...args);
+            
         };
     
         // function 
@@ -506,7 +579,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.cyanF");
-          return this.__PROXY__.cyanF(...args);
+          
+              return this.__PROXY__.cyanF(...args);
+            
         };
     
         // function 
@@ -514,7 +589,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.magentaF");
-          return this.__PROXY__.magentaF(...args);
+          
+              return this.__PROXY__.magentaF(...args);
+            
         };
     
         // function 
@@ -522,7 +599,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.yellowF");
-          return this.__PROXY__.yellowF(...args);
+          
+              return this.__PROXY__.yellowF(...args);
+            
         };
     
         // function 
@@ -530,7 +609,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.blackF");
-          return this.__PROXY__.blackF(...args);
+          
+              return this.__PROXY__.blackF(...args);
+            
         };
     
         // function 
@@ -538,7 +619,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setCmyk");
-          return this.__PROXY__.setCmyk(...args);
+          
+              return this.__PROXY__.setCmyk(...args);
+            
         };
     
         // function 
@@ -546,7 +629,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setCmykF");
-          return this.__PROXY__.setCmykF(...args);
+          
+              return this.__PROXY__.setCmykF(...args);
+            
         };
     
         // function 
@@ -554,7 +639,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hslHue");
-          return this.__PROXY__.hslHue(...args);
+          
+              return this.__PROXY__.hslHue(...args);
+            
         };
     
         // function 
@@ -562,7 +649,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hslSaturation");
-          return this.__PROXY__.hslSaturation(...args);
+          
+              return this.__PROXY__.hslSaturation(...args);
+            
         };
     
         // function 
@@ -570,7 +659,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.lightness");
-          return this.__PROXY__.lightness(...args);
+          
+              return this.__PROXY__.lightness(...args);
+            
         };
     
         // function 
@@ -578,7 +669,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hslHueF");
-          return this.__PROXY__.hslHueF(...args);
+          
+              return this.__PROXY__.hslHueF(...args);
+            
         };
     
         // function 
@@ -586,7 +679,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.hslSaturationF");
-          return this.__PROXY__.hslSaturationF(...args);
+          
+              return this.__PROXY__.hslSaturationF(...args);
+            
         };
     
         // function 
@@ -594,7 +689,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.lightnessF");
-          return this.__PROXY__.lightnessF(...args);
+          
+              return this.__PROXY__.lightnessF(...args);
+            
         };
     
         // function 
@@ -602,7 +699,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setHsl");
-          return this.__PROXY__.setHsl(...args);
+          
+              return this.__PROXY__.setHsl(...args);
+            
         };
     
         // function 
@@ -610,7 +709,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setHslF");
-          return this.__PROXY__.setHslF(...args);
+          
+              return this.__PROXY__.setHslF(...args);
+            
         };
     
         // function 
@@ -618,7 +719,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.toRgb");
-          return this.__PROXY__.toRgb(...args);
+          
+              return this.__PROXY__.toRgb(...args);
+            
         };
     
         // function 
@@ -626,7 +729,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.toHsv");
-          return this.__PROXY__.toHsv(...args);
+          
+              return this.__PROXY__.toHsv(...args);
+            
         };
     
         // function 
@@ -634,7 +739,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.toCmyk");
-          return this.__PROXY__.toCmyk(...args);
+          
+              return this.__PROXY__.toCmyk(...args);
+            
         };
     
         // function 
@@ -642,7 +749,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.toHsl");
-          return this.__PROXY__.toHsl(...args);
+          
+              return this.__PROXY__.toHsl(...args);
+            
         };
     
         // function 
@@ -650,7 +759,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.toExtendedRgb");
-          return this.__PROXY__.toExtendedRgb(...args);
+          
+              return this.__PROXY__.toExtendedRgb(...args);
+            
         };
     
         // function 
@@ -658,7 +769,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.convertTo");
-          return this.__PROXY__.convertTo(...args);
+          
+              return this.__PROXY__.convertTo(...args);
+            
         };
     
         // function 
@@ -666,7 +779,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.lighter");
-          return this.__PROXY__.lighter(...args);
+          
+              return this.__PROXY__.lighter(...args);
+            
         };
     
         // function 
@@ -674,7 +789,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.darker");
-          return this.__PROXY__.darker(...args);
+          
+              return this.__PROXY__.darker(...args);
+            
         };
     
         // function 
@@ -682,7 +799,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.invalidate");
-          return this.__PROXY__.invalidate(...args);
+          
+              return this.__PROXY__.invalidate(...args);
+            
         };
     
         // function 
@@ -690,7 +809,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setColorFromString");
-          return this.__PROXY__.setColorFromString(...args);
+          
+              return this.__PROXY__.setColorFromString(...args);
+            
         };
     
         // function 
@@ -698,7 +819,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.getCustomColorCode");
-          return this.__PROXY__.getCustomColorCode(...args);
+          
+              return this.__PROXY__.getCustomColorCode(...args);
+            
         };
     
         // function 
@@ -706,7 +829,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.getColorIndex");
-          return this.__PROXY__.getColorIndex(...args);
+          
+              return this.__PROXY__.getColorIndex(...args);
+            
         };
     
         // function 
@@ -714,7 +839,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.removeColor");
-          return this.__PROXY__.removeColor(...args);
+          
+              return this.__PROXY__.removeColor(...args);
+            
         };
     
         // function 
@@ -722,7 +849,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.addColor");
-          return this.__PROXY__.addColor(...args);
+          
+              return this.__PROXY__.addColor(...args);
+            
         };
     
         // function 
@@ -730,7 +859,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.createFromCadIndex");
-          return this.__PROXY__.createFromCadIndex(...args);
+          
+              return this.__PROXY__.createFromCadIndex(...args);
+            
         };
     
         // function 
@@ -738,7 +869,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.createFromCadCustom");
-          return this.__PROXY__.createFromCadCustom(...args);
+          
+              return this.__PROXY__.createFromCadCustom(...args);
+            
         };
     
         // function 
@@ -746,7 +879,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.createFromName");
-          return this.__PROXY__.createFromName(...args);
+          
+              return this.__PROXY__.createFromName(...args);
+            
         };
     
         // function 
@@ -754,7 +889,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.getNameList");
-          return this.__PROXY__.getNameList(...args);
+          
+              return this.__PROXY__.getNameList(...args);
+            
         };
     
         // function 
@@ -762,7 +899,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.getColorList");
-          return this.__PROXY__.getColorList(...args);
+          
+              return this.__PROXY__.getColorList(...args);
+            
         };
     
         // function 
@@ -770,7 +909,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.getIcon");
-          return this.__PROXY__.getIcon(...args);
+          
+              return this.__PROXY__.getIcon(...args);
+            
         };
     
         // function 
@@ -778,7 +919,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -786,7 +929,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.getName");
-          return this.__PROXY__.getName(...args);
+          
+              return this.__PROXY__.getName(...args);
+            
         };
     
         // function 
@@ -794,7 +939,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.isByLayer");
-          return this.__PROXY__.isByLayer(...args);
+          
+              return this.__PROXY__.isByLayer(...args);
+            
         };
     
         // function 
@@ -802,7 +949,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.isByBlock");
-          return this.__PROXY__.isByBlock(...args);
+          
+              return this.__PROXY__.isByBlock(...args);
+            
         };
     
         // function 
@@ -810,7 +959,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.isFixed");
-          return this.__PROXY__.isFixed(...args);
+          
+              return this.__PROXY__.isFixed(...args);
+            
         };
     
         // function 
@@ -818,7 +969,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.toCompat");
-          return this.__PROXY__.toCompat(...args);
+          
+              return this.__PROXY__.toCompat(...args);
+            
         };
     
         // function 
@@ -826,7 +979,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.setCompat");
-          return this.__PROXY__.setCompat(...args);
+          
+              return this.__PROXY__.setCompat(...args);
+            
         };
     
         // function 
@@ -834,7 +989,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.getHighlighted");
-          return this.__PROXY__.getHighlighted(...args);
+          
+              return this.__PROXY__.getHighlighted(...args);
+            
         };
     
         // function 
@@ -842,7 +999,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.getFaded");
-          return this.__PROXY__.getFaded(...args);
+          
+              return this.__PROXY__.getFaded(...args);
+            
         };
     
         // function 
@@ -850,7 +1009,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.reinit");
-          return this.__PROXY__.reinit(...args);
+          
+              return this.__PROXY__.reinit(...args);
+            
         };
     
         // function 
@@ -858,7 +1019,9 @@ RColor.Fixed = RColor_Wrapper.Fixed;
           
         {
           //print("JS: RColor.prototype.equals");
-          return this.__PROXY__.equals(...args);
+          
+              return this.__PROXY__.equals(...args);
+            
         };
     
 
@@ -1204,6 +1367,16 @@ RColor.Fixed = RColor_Wrapper.Fixed;
   }
   
         };
+      RColor.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RColor.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RColor.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

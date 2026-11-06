@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RFileImporterFactoryAdapter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RFileImporterFactoryAdapter);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RFileImporterFactoryAdapter.prototype = new RFileImporterFactoryAdapter_BaseJs(engine);
       //RFileImporterFactoryAdapter.prototype = new RFileImporterFactoryAdapter_Wrapper(engine);
       RFileImporterFactoryAdapter.prototype = new Object();
+
 
       RFileImporterFactoryAdapter.prototype.toString = function() {
           //return "RFileImporterFactoryAdapter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -142,7 +143,7 @@
                 // call highest level JS implementation:
                 //return this.getFilterStringsBase(
                 
-                    return this.getFilterStringsSuper(
+                    return this.__PROXY__.getFilterStringsSuper(
                   
                 );
               
@@ -175,7 +176,7 @@
                 // call highest level JS implementation:
                 //return this.canImportBase(
                 
-                    return this.canImportSuper(
+                    return this.__PROXY__.canImportSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -208,7 +209,7 @@
                 // call highest level JS implementation:
                 //return this.instantiateBase(
                 
-                    return this.instantiateSuper(
+                    return this.__PROXY__.instantiateSuper(
                   arguments[0], arguments[1], arguments[2]
                 );
               
@@ -228,6 +229,16 @@
     
 
       // static functions:
+      RFileImporterFactoryAdapter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RFileImporterFactoryAdapter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RFileImporterFactoryAdapter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -246,4 +257,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RFileImporterFactoryAdapter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

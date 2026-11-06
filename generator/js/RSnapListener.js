@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSnapListener.prototype = new RSnapListener_BaseJs(engine);
       //RSnapListener.prototype = new RSnapListener_Wrapper(engine);
       RSnapListener.prototype = new Object();
+
 
       RSnapListener.prototype.toString = function() {
           //return "RSnapListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -100,11 +101,23 @@
           
         {
           //print("JS: RSnapListener.prototype.updateSnap");
-          return this.__PROXY__.updateSnap(...args);
+          
+              return this.__PROXY__.updateSnap(...args);
+            
         };
     
 
       // static functions:
+      RSnapListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSnapListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSnapListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

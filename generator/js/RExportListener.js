@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RExportListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RExportListener.prototype = new RExportListener_BaseJs(engine);
       //RExportListener.prototype = new RExportListener_Wrapper(engine);
       RExportListener.prototype = new Object();
+
 
       RExportListener.prototype.toString = function() {
           //return "RExportListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,48 @@
 
       // functions:
       
+        // function 
+        RExportListener.prototype.preExportEvent = function(...args) 
+          
+        {
+          //print("JS: RExportListener.prototype.preExportEvent");
+          
+              return this.__PROXY__.preExportEvent(...args);
+            
+        };
+    
+        // function 
+        RExportListener.prototype.postExportEvent = function(...args) 
+          
+        {
+          //print("JS: RExportListener.prototype.postExportEvent");
+          
+              return this.__PROXY__.postExportEvent(...args);
+            
+        };
+    
+        // function 
+        RExportListener.prototype.endOfExportEvent = function(...args) 
+          
+        {
+          //print("JS: RExportListener.prototype.endOfExportEvent");
+          
+              return this.__PROXY__.endOfExportEvent(...args);
+            
+        };
+    
 
       // static functions:
+      RExportListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RExportListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RExportListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +156,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RExportListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

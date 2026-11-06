@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPropertyEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPropertyEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPropertyEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -111,15 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPropertyEvent.prototype = new RPropertyEvent_BaseJs(engine);
       //RPropertyEvent.prototype = new RPropertyEvent_Wrapper(engine);
       RPropertyEvent.prototype = new Object();
+
 
       RPropertyEvent.prototype.toString = function() {
           //return "RPropertyEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -329,8 +330,158 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        RPropertyEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.spontaneous");
+          
+              return this.__PROXY__.spontaneous(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.setAccepted");
+          
+              return this.__PROXY__.setAccepted(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.isAccepted");
+          
+              return this.__PROXY__.isAccepted(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.accept");
+          
+              return this.__PROXY__.accept(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.ignore");
+          
+              return this.__PROXY__.ignore(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.isInputEvent");
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.isPointerEvent");
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.isSinglePointEvent");
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.clone");
+          
+              return this.__PROXY__.clone(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.setSpontaneous");
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.getPropertyTypeId = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.getPropertyTypeId");
+          
+              return this.__PROXY__.getPropertyTypeId(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.getValue = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.getValue");
+          
+              return this.__PROXY__.getValue(...args);
+            
+        };
+    
+        // function 
+        RPropertyEvent.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RPropertyEvent.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
 
       // static functions:
+      RPropertyEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPropertyEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPropertyEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -349,4 +500,7 @@ RPropertyEvent.MaxUser = RPropertyEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      RPropertyEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

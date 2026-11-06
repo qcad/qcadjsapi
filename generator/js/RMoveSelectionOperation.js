@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RMoveSelectionOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RMoveSelectionOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RMoveSelectionOperation.prototype = new RMoveSelectionOperation_BaseJs(engine);
       //RMoveSelectionOperation.prototype = new RMoveSelectionOperation_Wrapper(engine);
       RMoveSelectionOperation.prototype = new Object();
+
 
       RMoveSelectionOperation.prototype.toString = function() {
           //return "RMoveSelectionOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -128,8 +129,158 @@
 
       // functions:
       
+        // function 
+        RMoveSelectionOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
+        // function 
+        RMoveSelectionOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RMoveSelectionOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
 
       // static functions:
+      RMoveSelectionOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RMoveSelectionOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RMoveSelectionOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -148,4 +299,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RMoveSelectionOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RDeleteObjectsOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RDeleteObjectsOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -80,7 +80,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RDeleteObjectsOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -112,15 +112,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RDeleteObjectsOperation.prototype = new RDeleteObjectsOperation_BaseJs(engine);
       //RDeleteObjectsOperation.prototype = new RDeleteObjectsOperation_Wrapper(engine);
       RDeleteObjectsOperation.prototype = new Object();
+
 
       RDeleteObjectsOperation.prototype.toString = function() {
           //return "RDeleteObjectsOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -156,8 +157,168 @@
 
       // functions:
       
+        // function 
+        RDeleteObjectsOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.deleteObject = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.deleteObject");
+          
+              return this.__PROXY__.deleteObject(...args);
+            
+        };
+    
+        // function 
+        RDeleteObjectsOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RDeleteObjectsOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
 
       // static functions:
+      RDeleteObjectsOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RDeleteObjectsOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RDeleteObjectsOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -176,4 +337,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RDeleteObjectsOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RKeyListener);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RKeyListener.prototype = new RKeyListener_BaseJs(engine);
       //RKeyListener.prototype = new RKeyListener_Wrapper(engine);
       RKeyListener.prototype = new Object();
+
 
       RKeyListener.prototype.toString = function() {
           //return "RKeyListener [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -95,8 +96,28 @@
 
       // functions:
       
+        // function 
+        RKeyListener.prototype.keyPressed = function(...args) 
+          
+        {
+          //print("JS: RKeyListener.prototype.keyPressed");
+          
+              return this.__PROXY__.keyPressed(...args);
+            
+        };
+    
 
       // static functions:
+      RKeyListener.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RKeyListener.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RKeyListener.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +136,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RKeyListener.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RMouseEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RMouseEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RMouseEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -111,15 +111,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RMouseEvent.prototype = new RMouseEvent_BaseJs(engine);
       //RMouseEvent.prototype = new RMouseEvent_Wrapper(engine);
       RMouseEvent.prototype = new Object();
+
 
       RMouseEvent.prototype.toString = function() {
           //return "RMouseEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -349,6 +350,506 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        RMouseEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.spontaneous");
+          
+              return this.__PROXY__.spontaneous(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.isAccepted");
+          
+              return this.__PROXY__.isAccepted(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.accept");
+          
+              return this.__PROXY__.accept(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.ignore");
+          
+              return this.__PROXY__.ignore(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.isInputEvent");
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.isPointerEvent");
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.isSinglePointEvent");
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setSpontaneous");
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.modifiers = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.modifiers");
+          
+              return this.__PROXY__.modifiers(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setModifiers = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setModifiers");
+          
+              return this.__PROXY__.setModifiers(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.timestamp = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.timestamp");
+          
+              return this.__PROXY__.timestamp(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setTimestamp = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setTimestamp");
+          
+              return this.__PROXY__.setTimestamp(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.pointCount = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.pointCount");
+          
+              return this.__PROXY__.pointCount(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.point = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.point");
+          
+              return this.__PROXY__.point(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.pointById = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.pointById");
+          
+              return this.__PROXY__.pointById(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.allPointsGrabbed = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.allPointsGrabbed");
+          
+              return this.__PROXY__.allPointsGrabbed(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.allPointsAccepted = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.allPointsAccepted");
+          
+              return this.__PROXY__.allPointsAccepted(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setAccepted");
+          
+              return this.__PROXY__.setAccepted(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.exclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.exclusiveGrabber");
+          
+              return this.__PROXY__.exclusiveGrabber(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setExclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setExclusiveGrabber");
+          
+              return this.__PROXY__.setExclusiveGrabber(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.clearPassiveGrabbers = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.clearPassiveGrabbers");
+          
+              return this.__PROXY__.clearPassiveGrabbers(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.addPassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.addPassiveGrabber");
+          
+              return this.__PROXY__.addPassiveGrabber(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.removePassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.removePassiveGrabber");
+          
+              return this.__PROXY__.removePassiveGrabber(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.position = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.position");
+          
+              return this.__PROXY__.position(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.scenePosition = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.scenePosition");
+          
+              return this.__PROXY__.scenePosition(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.globalPosition = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.globalPosition");
+          
+              return this.__PROXY__.globalPosition(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.isBeginEvent = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.isBeginEvent");
+          
+              return this.__PROXY__.isBeginEvent(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.isUpdateEvent = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.isUpdateEvent");
+          
+              return this.__PROXY__.isUpdateEvent(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.isEndEvent = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.isEndEvent");
+          
+              return this.__PROXY__.isEndEvent(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.exclusivePointGrabber = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.exclusivePointGrabber");
+          
+              return this.__PROXY__.exclusivePointGrabber(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setExclusivePointGrabber = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setExclusivePointGrabber");
+          
+              return this.__PROXY__.setExclusivePointGrabber(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.clone");
+          
+              return this.__PROXY__.clone(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.pos = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.pos");
+          
+              return this.__PROXY__.pos(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.button = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.button");
+          
+              return this.__PROXY__.button(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.buttons = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.buttons");
+          
+              return this.__PROXY__.buttons(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.source = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.source");
+          
+              return this.__PROXY__.source(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.flags = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.flags");
+          
+              return this.__PROXY__.flags(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.getModelPosition = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.getModelPosition");
+          
+              return this.__PROXY__.getModelPosition(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setModelPosition = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setModelPosition");
+          
+              return this.__PROXY__.setModelPosition(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.getCursorPosition = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.getCursorPosition");
+          
+              return this.__PROXY__.getCursorPosition(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setCursorPosition = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setCursorPosition");
+          
+              return this.__PROXY__.setCursorPosition(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.getScreenPosition = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.getScreenPosition");
+          
+              return this.__PROXY__.getScreenPosition(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setScreenPosition = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setScreenPosition");
+          
+              return this.__PROXY__.setScreenPosition(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.getGraphicsView = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.getGraphicsView");
+          
+              return this.__PROXY__.getGraphicsView(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.getGraphicsScene = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.getGraphicsScene");
+          
+              return this.__PROXY__.getGraphicsScene(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.hasMouseMoved = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.hasMouseMoved");
+          
+              return this.__PROXY__.hasMouseMoved(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.resetOriginalMousePos = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.resetOriginalMousePos");
+          
+              return this.__PROXY__.resetOriginalMousePos(...args);
+            
+        };
+    
+        // function 
+        RMouseEvent.prototype.setOriginalMousePos = function(...args) 
+          
+        {
+          //print("JS: RMouseEvent.prototype.setOriginalMousePos");
+          
+              return this.__PROXY__.setOriginalMousePos(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -435,6 +936,16 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
   }
   
         };
+      RMouseEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RMouseEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RMouseEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -453,4 +964,7 @@ RMouseEvent.MaxUser = RMouseEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      RMouseEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

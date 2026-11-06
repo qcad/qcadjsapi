@@ -1707,6 +1707,13 @@ RLayer::Id a2_cpp;
               RLayerListenerAdapter_Wrapper::layersUpdatedEmitter(
                 RDocumentInterface* documentInterface, QList<int> layerIds
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RLayerListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("layersUpdated(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RLayerListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)
@@ -1745,6 +1752,13 @@ RLayer::Id a2_cpp;
               RLayerListenerAdapter_Wrapper::currentLayerSetEmitter(
                 RDocumentInterface* documentInterface, int previousLayerId
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RLayerListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("currentLayerSet(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RLayerListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)
@@ -1783,6 +1797,13 @@ RLayer::Id a2_cpp;
               RLayerListenerAdapter_Wrapper::layersClearedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RLayerListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("layersCleared()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RLayerListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

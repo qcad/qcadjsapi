@@ -1739,6 +1739,13 @@ QVariant a2_cpp;
               RFocusListenerAdapter_Wrapper::focusUpdatedEmitter(
                 RDocumentInterface* di
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RFocusListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("focusUpdated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RFocusListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: di (RDocumentInterface)

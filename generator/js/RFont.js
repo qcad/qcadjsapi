@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RFont);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RFont);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RFont);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RFont.prototype = new RFont_BaseJs(engine);
       //RFont.prototype = new RFont_Wrapper(engine);
       RFont.prototype = new Object();
+
 
       RFont.prototype.toString = function() {
           //return "RFont [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -150,8 +151,188 @@
 
       // functions:
       
+        // function 
+        RFont.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getFileName = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getFileName");
+          
+              return this.__PROXY__.getFileName(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getEncoding = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getEncoding");
+          
+              return this.__PROXY__.getEncoding(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getNames = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getNames");
+          
+              return this.__PROXY__.getNames(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getAuthors = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getAuthors");
+          
+              return this.__PROXY__.getAuthors(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getLetterSpacing = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getLetterSpacing");
+          
+              return this.__PROXY__.getLetterSpacing(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getWordSpacing = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getWordSpacing");
+          
+              return this.__PROXY__.getWordSpacing(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getLineSpacingFactor = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getLineSpacingFactor");
+          
+              return this.__PROXY__.getLineSpacingFactor(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getAuxLinePositions = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getAuxLinePositions");
+          
+              return this.__PROXY__.getAuxLinePositions(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getAuxLinePositionsString = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getAuxLinePositionsString");
+          
+              return this.__PROXY__.getAuxLinePositionsString(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.load = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.load");
+          
+              return this.__PROXY__.load(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.isLoaded = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.isLoaded");
+          
+              return this.__PROXY__.isLoaded(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getGlyphNames = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getGlyphNames");
+          
+              return this.__PROXY__.getGlyphNames(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getGlyph = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getGlyph");
+          
+              return this.__PROXY__.getGlyph(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getShapeNames = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getShapeNames");
+          
+              return this.__PROXY__.getShapeNames(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getShape = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getShape");
+          
+              return this.__PROXY__.getShape(...args);
+            
+        };
+    
+        // function 
+        RFont.prototype.getShapeName = function(...args) 
+          
+        {
+          //print("JS: RFont.prototype.getShapeName");
+          
+              return this.__PROXY__.getShapeName(...args);
+            
+        };
+    
 
       // static functions:
+      RFont.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RFont.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RFont.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -170,4 +351,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RFont.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

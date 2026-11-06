@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPluginInterface);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPluginInterface.prototype = new RPluginInterface_BaseJs(engine);
       //RPluginInterface.prototype = new RPluginInterface_Wrapper(engine);
       RPluginInterface.prototype = new Object();
+
 
       RPluginInterface.prototype.toString = function() {
           //return "RPluginInterface [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -107,6 +108,16 @@ RPluginInterface.AllDone = RPluginInterface_Wrapper.AllDone;
       
 
       // static functions:
+      RPluginInterface.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPluginInterface.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPluginInterface.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -125,4 +136,7 @@ RPluginInterface.AllDone = RPluginInterface_Wrapper.AllDone;
       //  return this.wrapper.destr();
       //};
 
+      RPluginInterface.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

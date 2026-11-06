@@ -15836,6 +15836,13 @@ bool a1_cpp;
               RCommandLine_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -20099,6 +20106,13 @@ QString a1_cpp;
               RCommandLine_Wrapper::textChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("textChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20128,6 +20142,13 @@ QString a1_cpp;
               RCommandLine_Wrapper::textEditedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("textEdited(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20157,6 +20178,13 @@ QString a1_cpp;
               RCommandLine_Wrapper::cursorPositionChangedEmitter(
                 int a1, int a2
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("cursorPositionChanged(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (int)
@@ -20195,6 +20223,13 @@ QString a1_cpp;
               RCommandLine_Wrapper::returnPressedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("returnPressed()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -20215,6 +20250,13 @@ QString a1_cpp;
               RCommandLine_Wrapper::editingFinishedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("editingFinished()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -20235,6 +20277,13 @@ QString a1_cpp;
               RCommandLine_Wrapper::selectionChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("selectionChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -20255,6 +20304,13 @@ QString a1_cpp;
               RCommandLine_Wrapper::inputRejectedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("inputRejected()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -20418,6 +20474,13 @@ Qt::InputMethodQuery a1_cpp;
               RCommandLine_Wrapper::clearHistoryEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("clearHistory()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 
@@ -20438,6 +20501,13 @@ Qt::InputMethodQuery a1_cpp;
               RCommandLine_Wrapper::commandConfirmedEmitter(
                 const QString& command
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("commandConfirmed(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: command (QString)
@@ -20467,6 +20537,13 @@ Qt::InputMethodQuery a1_cpp;
               RCommandLine_Wrapper::completeCommandEmitter(
                 const QString& command
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("completeCommand(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: command (QString)
@@ -20496,6 +20573,13 @@ Qt::InputMethodQuery a1_cpp;
               RCommandLine_Wrapper::escapeEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RCommandLine_Wrapper::staticMetaObject.indexOfSignal("escape()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RCommandLine_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

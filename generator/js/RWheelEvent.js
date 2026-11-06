@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RWheelEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RWheelEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RWheelEvent.prototype = new RWheelEvent_BaseJs(engine);
       //RWheelEvent.prototype = new RWheelEvent_Wrapper(engine);
       RWheelEvent.prototype = new Object();
+
 
       RWheelEvent.prototype.toString = function() {
           //return "RWheelEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -322,8 +323,532 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        RWheelEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.spontaneous");
+          
+              return this.__PROXY__.spontaneous(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.isAccepted");
+          
+              return this.__PROXY__.isAccepted(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.accept");
+          
+              return this.__PROXY__.accept(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.ignore");
+          
+              return this.__PROXY__.ignore(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.isInputEvent");
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.isPointerEvent");
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.isSinglePointEvent");
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.setSpontaneous");
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.modifiers = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.modifiers");
+          
+              return this.__PROXY__.modifiers(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.setModifiers = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.setModifiers");
+          
+              return this.__PROXY__.setModifiers(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.timestamp = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.timestamp");
+          
+              return this.__PROXY__.timestamp(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.setTimestamp = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.setTimestamp");
+          
+              return this.__PROXY__.setTimestamp(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.pointCount = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.pointCount");
+          
+              return this.__PROXY__.pointCount(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.point = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.point");
+          
+              return this.__PROXY__.point(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.pointById = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.pointById");
+          
+              return this.__PROXY__.pointById(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.allPointsGrabbed = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.allPointsGrabbed");
+          
+              return this.__PROXY__.allPointsGrabbed(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.allPointsAccepted = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.allPointsAccepted");
+          
+              return this.__PROXY__.allPointsAccepted(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.setAccepted");
+          
+              return this.__PROXY__.setAccepted(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.exclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.exclusiveGrabber");
+          
+              return this.__PROXY__.exclusiveGrabber(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.setExclusiveGrabber = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.setExclusiveGrabber");
+          
+              return this.__PROXY__.setExclusiveGrabber(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.clearPassiveGrabbers = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.clearPassiveGrabbers");
+          
+              return this.__PROXY__.clearPassiveGrabbers(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.addPassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.addPassiveGrabber");
+          
+              return this.__PROXY__.addPassiveGrabber(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.removePassiveGrabber = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.removePassiveGrabber");
+          
+              return this.__PROXY__.removePassiveGrabber(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.button = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.button");
+          
+              return this.__PROXY__.button(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.buttons = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.buttons");
+          
+              return this.__PROXY__.buttons(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.position = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.position");
+          
+              return this.__PROXY__.position(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.scenePosition = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.scenePosition");
+          
+              return this.__PROXY__.scenePosition(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.globalPosition = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.globalPosition");
+          
+              return this.__PROXY__.globalPosition(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.exclusivePointGrabber = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.exclusivePointGrabber");
+          
+              return this.__PROXY__.exclusivePointGrabber(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.setExclusivePointGrabber = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.setExclusivePointGrabber");
+          
+              return this.__PROXY__.setExclusivePointGrabber(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.clone");
+          
+              return this.__PROXY__.clone(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.isInverted = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.isInverted");
+          
+              return this.__PROXY__.isInverted(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.hasPixelDelta = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.hasPixelDelta");
+          
+              return this.__PROXY__.hasPixelDelta(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.isBeginEvent = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.isBeginEvent");
+          
+              return this.__PROXY__.isBeginEvent(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.isUpdateEvent = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.isUpdateEvent");
+          
+              return this.__PROXY__.isUpdateEvent(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.isEndEvent = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.isEndEvent");
+          
+              return this.__PROXY__.isEndEvent(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.source = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.source");
+          
+              return this.__PROXY__.source(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.getModelPosition = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.getModelPosition");
+          
+              return this.__PROXY__.getModelPosition(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.setModelPosition = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.setModelPosition");
+          
+              return this.__PROXY__.setModelPosition(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.getCursorPosition = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.getCursorPosition");
+          
+              return this.__PROXY__.getCursorPosition(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.setCursorPosition = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.setCursorPosition");
+          
+              return this.__PROXY__.setCursorPosition(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.getScreenPosition = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.getScreenPosition");
+          
+              return this.__PROXY__.getScreenPosition(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.setScreenPosition = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.setScreenPosition");
+          
+              return this.__PROXY__.setScreenPosition(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.getGraphicsView = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.getGraphicsView");
+          
+              return this.__PROXY__.getGraphicsView(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.getGraphicsScene = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.getGraphicsScene");
+          
+              return this.__PROXY__.getGraphicsScene(...args);
+            
+        };
+    
+        // function 
+        RWheelEvent.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RWheelEvent.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
 
       // static functions:
+      
+          Object.defineProperty(RWheelEvent.prototype, 'pixelDelta', {
+              get: function() {
+                  
+                      return this.__PROXY__.pixelDelta;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(RWheelEvent.prototype, 'angleDelta', {
+              get: function() {
+                  
+                      return this.__PROXY__.angleDelta;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(RWheelEvent.prototype, 'phase', {
+              get: function() {
+                  
+                      return this.__PROXY__.phase;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+          Object.defineProperty(RWheelEvent.prototype, 'inverted', {
+              get: function() {
+                  
+                      return this.__PROXY__.inverted;
+                    
+              },
+              
+              enumerable: true,
+              configurable: true
+          });
+        RWheelEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RWheelEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RWheelEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -342,4 +867,7 @@ RWheelEvent.MaxUser = RWheelEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      RWheelEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

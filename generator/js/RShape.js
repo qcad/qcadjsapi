@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RShape);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RShape.prototype = new RShape_BaseJs(engine);
       //RShape.prototype = new RShape_Wrapper(engine);
       RShape.prototype = new Object();
+
 
       RShape.prototype.toString = function() {
           //return "RShape [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -108,6 +109,1096 @@ RShape.Ray = RShape_Wrapper.Ray;
 
       // functions:
       
+        // function 
+        RShape.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getShapeType = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getShapeType");
+          
+              return this.__PROXY__.getShapeType(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isPointShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isPointShape");
+          
+              return this.__PROXY__.isPointShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isLineShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isLineShape");
+          
+              return this.__PROXY__.isLineShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isArcShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isArcShape");
+          
+              return this.__PROXY__.isArcShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isCircleShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isCircleShape");
+          
+              return this.__PROXY__.isCircleShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isEllipseShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isEllipseShape");
+          
+              return this.__PROXY__.isEllipseShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isFullEllipseShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isFullEllipseShape");
+          
+              return this.__PROXY__.isFullEllipseShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isPolylineShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isPolylineShape");
+          
+              return this.__PROXY__.isPolylineShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isSplineShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isSplineShape");
+          
+              return this.__PROXY__.isSplineShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isTriangleShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isTriangleShape");
+          
+              return this.__PROXY__.isTriangleShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isXLineShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isXLineShape");
+          
+              return this.__PROXY__.isXLineShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isRayShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isRayShape");
+          
+              return this.__PROXY__.isRayShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.clone");
+          
+              return this.__PROXY__.clone(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isInterpolated = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isInterpolated");
+          
+              return this.__PROXY__.isInterpolated(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getClosestPointOnShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getClosestPointOnShape");
+          
+              return this.__PROXY__.getClosestPointOnShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getBoundingBox = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getBoundingBox");
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.to2D = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.to2D");
+          
+              return this.__PROXY__.to2D(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.setZ = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.setZ");
+          
+              return this.__PROXY__.setZ(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getLength = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getLength");
+          
+              return this.__PROXY__.getLength(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.equals = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.equals");
+          
+              return this.__PROXY__.equals(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getVectorProperties = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getVectorProperties");
+          
+              return this.__PROXY__.getVectorProperties(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntProperties = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntProperties");
+          
+              return this.__PROXY__.getIntProperties(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getDoubleProperties = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getDoubleProperties");
+          
+              return this.__PROXY__.getDoubleProperties(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getBoolProperties = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getBoolProperties");
+          
+              return this.__PROXY__.getBoolProperties(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getVectorTo = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getVectorTo");
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getDistanceTo = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getDistanceTo");
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getMaxDistanceTo = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getMaxDistanceTo");
+          
+              return this.__PROXY__.getMaxDistanceTo(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isOnShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isOnShape");
+          
+              return this.__PROXY__.isOnShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.filterOnShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.filterOnShape");
+          
+              return this.__PROXY__.filterOnShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getVectorFromEndpointTo = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getVectorFromEndpointTo");
+          
+              return this.__PROXY__.getVectorFromEndpointTo(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getEndPoints = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getEndPoints");
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getMiddlePoints = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getMiddlePoints");
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getCenterPoints = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getCenterPoints");
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getArcReferencePoints = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getArcReferencePoints");
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getPointOnShape = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getPointOnShape");
+          
+              return this.__PROXY__.getPointOnShape(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getPointCloud = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getPointCloud");
+          
+              return this.__PROXY__.getPointCloud(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getPointsWithDistanceToEnd = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getPointsWithDistanceToEnd");
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getPointWithDistanceToStart = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getPointWithDistanceToStart");
+          
+              return this.__PROXY__.getPointWithDistanceToStart(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getPointWithDistanceToEnd = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getPointWithDistanceToEnd");
+          
+              return this.__PROXY__.getPointWithDistanceToEnd(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getAngleAt = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getAngleAt");
+          
+              return this.__PROXY__.getAngleAt(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getAngleAtPoint = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getAngleAtPoint");
+          
+              return this.__PROXY__.getAngleAtPoint(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getPointAtPercent = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getPointAtPercent");
+          
+              return this.__PROXY__.getPointAtPercent(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getAngleAtPercent = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getAngleAtPercent");
+          
+              return this.__PROXY__.getAngleAtPercent(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.intersectsWith = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.intersectsWith");
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPoints = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPoints");
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getSelfIntersectionPoints = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getSelfIntersectionPoints");
+          
+              return this.__PROXY__.getSelfIntersectionPoints(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.isDirected = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.isDirected");
+          
+              return this.__PROXY__.isDirected(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getDirection1 = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getDirection1");
+          
+              return this.__PROXY__.getDirection1(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getDirection2 = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getDirection2");
+          
+              return this.__PROXY__.getDirection2(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getSideOfPoint = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getSideOfPoint");
+          
+              return this.__PROXY__.getSideOfPoint(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getStartPoint = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getStartPoint");
+          
+              return this.__PROXY__.getStartPoint(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getEndPoint = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getEndPoint");
+          
+              return this.__PROXY__.getEndPoint(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getMiddlePoint = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getMiddlePoint");
+          
+              return this.__PROXY__.getMiddlePoint(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.reverse = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.reverse");
+          
+              return this.__PROXY__.reverse(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.trimStartPoint = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.trimStartPoint");
+          
+              return this.__PROXY__.trimStartPoint(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.trimEndPoint = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.trimEndPoint");
+          
+              return this.__PROXY__.trimEndPoint(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getTrimEnd = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getTrimEnd");
+          
+              return this.__PROXY__.getTrimEnd(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getDistanceFromStart = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getDistanceFromStart");
+          
+              return this.__PROXY__.getDistanceFromStart(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getDistancesFromStart = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getDistancesFromStart");
+          
+              return this.__PROXY__.getDistancesFromStart(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.move = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.move");
+          
+              return this.__PROXY__.move(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.rotate = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.rotate");
+          
+              return this.__PROXY__.rotate(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.scale = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.scale");
+          
+              return this.__PROXY__.scale(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.mirror = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.mirror");
+          
+              return this.__PROXY__.mirror(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.flipHorizontal = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.flipHorizontal");
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.flipVertical = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.flipVertical");
+          
+              return this.__PROXY__.flipVertical(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.stretch = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.stretch");
+          
+              return this.__PROXY__.stretch(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getTransformed = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getTransformed");
+          
+              return this.__PROXY__.getTransformed(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getPolylines = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getPolylines");
+          
+              return this.__PROXY__.getPolylines(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getOrderedShapes = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getOrderedShapes");
+          
+              return this.__PROXY__.getOrderedShapes(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsLL = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsLL");
+          
+              return this.__PROXY__.getIntersectionPointsLL(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsLA = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsLA");
+          
+              return this.__PROXY__.getIntersectionPointsLA(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsLC = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsLC");
+          
+              return this.__PROXY__.getIntersectionPointsLC(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsLE = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsLE");
+          
+              return this.__PROXY__.getIntersectionPointsLE(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsLT = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsLT");
+          
+              return this.__PROXY__.getIntersectionPointsLT(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsLS = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsLS");
+          
+              return this.__PROXY__.getIntersectionPointsLS(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsLX = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsLX");
+          
+              return this.__PROXY__.getIntersectionPointsLX(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsAA = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsAA");
+          
+              return this.__PROXY__.getIntersectionPointsAA(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsAC = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsAC");
+          
+              return this.__PROXY__.getIntersectionPointsAC(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsAE = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsAE");
+          
+              return this.__PROXY__.getIntersectionPointsAE(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsAT = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsAT");
+          
+              return this.__PROXY__.getIntersectionPointsAT(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsAS = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsAS");
+          
+              return this.__PROXY__.getIntersectionPointsAS(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsAX = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsAX");
+          
+              return this.__PROXY__.getIntersectionPointsAX(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsCC = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsCC");
+          
+              return this.__PROXY__.getIntersectionPointsCC(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsCE = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsCE");
+          
+              return this.__PROXY__.getIntersectionPointsCE(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsCS = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsCS");
+          
+              return this.__PROXY__.getIntersectionPointsCS(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsCX = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsCX");
+          
+              return this.__PROXY__.getIntersectionPointsCX(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsEE = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsEE");
+          
+              return this.__PROXY__.getIntersectionPointsEE(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsES = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsES");
+          
+              return this.__PROXY__.getIntersectionPointsES(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsEX = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsEX");
+          
+              return this.__PROXY__.getIntersectionPointsEX(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsSX = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsSX");
+          
+              return this.__PROXY__.getIntersectionPointsSX(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsSS = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsSS");
+          
+              return this.__PROXY__.getIntersectionPointsSS(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getIntersectionPointsXX = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getIntersectionPointsXX");
+          
+              return this.__PROXY__.getIntersectionPointsXX(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getOffsetShapes = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getOffsetShapes");
+          
+              return this.__PROXY__.getOffsetShapes(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getOffsetLines = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getOffsetLines");
+          
+              return this.__PROXY__.getOffsetLines(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getOffsetArcs = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getOffsetArcs");
+          
+              return this.__PROXY__.getOffsetArcs(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getReversedShapeList = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getReversedShapeList");
+          
+              return this.__PROXY__.getReversedShapeList(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.splitAt = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.splitAt");
+          
+              return this.__PROXY__.splitAt(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.trim = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.trim");
+          
+              return this.__PROXY__.trim(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.roundCorners = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.roundCorners");
+          
+              return this.__PROXY__.roundCorners(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.roundShapes = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.roundShapes");
+          
+              return this.__PROXY__.roundShapes(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getInnerMostContour = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getInnerMostContour");
+          
+              return this.__PROXY__.getInnerMostContour(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.xLineToRay = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.xLineToRay");
+          
+              return this.__PROXY__.xLineToRay(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.rayToLine = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.rayToLine");
+          
+              return this.__PROXY__.rayToLine(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.scaleArc = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.scaleArc");
+          
+              return this.__PROXY__.scaleArc(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.ellipseToArcCircleEllipse = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.ellipseToArcCircleEllipse");
+          
+              return this.__PROXY__.ellipseToArcCircleEllipse(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.getErrorCode = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.getErrorCode");
+          
+              return this.__PROXY__.getErrorCode(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.dump = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.dump");
+          
+              return this.__PROXY__.dump(...args);
+            
+        };
+    
+        // function 
+        RShape.prototype.print = function(...args) 
+          
+        {
+          //print("JS: RShape.prototype.print");
+          
+              return this.__PROXY__.print(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -1547,6 +2638,16 @@ RShape.Ray = RShape_Wrapper.Ray;
   }
   
         };
+      RShape.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RShape.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RShape.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -1565,4 +2666,7 @@ RShape.Ray = RShape_Wrapper.Ray;
       //  return this.wrapper.destr();
       //};
 
+      RShape.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

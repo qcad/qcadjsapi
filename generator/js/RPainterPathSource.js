@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPainterPathSource);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,15 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPainterPathSource.prototype = new RPainterPathSource_BaseJs(engine);
       //RPainterPathSource.prototype = new RPainterPathSource_Wrapper(engine);
       RPainterPathSource.prototype = new Object();
+
 
       RPainterPathSource.prototype.toString = function() {
           //return "RPainterPathSource [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -97,6 +98,16 @@
       
 
       // static functions:
+      RPainterPathSource.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPainterPathSource.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPainterPathSource.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -115,4 +126,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPainterPathSource.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

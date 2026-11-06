@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RCoordinateEvent);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RCoordinateEvent);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RCoordinateEvent.prototype = new RCoordinateEvent_BaseJs(engine);
       //RCoordinateEvent.prototype = new RCoordinateEvent_Wrapper(engine);
       RCoordinateEvent.prototype = new Object();
+
 
       RCoordinateEvent.prototype.toString = function() {
           //return "RCoordinateEvent [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -306,8 +307,238 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
 
       // functions:
       
+        // function 
+        RCoordinateEvent.prototype.type = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.type");
+          
+              return this.__PROXY__.type(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.spontaneous = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.spontaneous");
+          
+              return this.__PROXY__.spontaneous(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.setAccepted = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.setAccepted");
+          
+              return this.__PROXY__.setAccepted(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.isAccepted = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.isAccepted");
+          
+              return this.__PROXY__.isAccepted(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.accept = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.accept");
+          
+              return this.__PROXY__.accept(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.ignore = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.ignore");
+          
+              return this.__PROXY__.ignore(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.isInputEvent = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.isInputEvent");
+          
+              return this.__PROXY__.isInputEvent(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.isPointerEvent = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.isPointerEvent");
+          
+              return this.__PROXY__.isPointerEvent(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.isSinglePointEvent = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.isSinglePointEvent");
+          
+              return this.__PROXY__.isSinglePointEvent(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.clone = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.clone");
+          
+              return this.__PROXY__.clone(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.setSpontaneous = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.setSpontaneous");
+          
+              return this.__PROXY__.setSpontaneous(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.getModelPosition = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.getModelPosition");
+          
+              return this.__PROXY__.getModelPosition(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.setModelPosition = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.setModelPosition");
+          
+              return this.__PROXY__.setModelPosition(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.getCursorPosition = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.getCursorPosition");
+          
+              return this.__PROXY__.getCursorPosition(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.setCursorPosition = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.setCursorPosition");
+          
+              return this.__PROXY__.setCursorPosition(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.getScreenPosition = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.getScreenPosition");
+          
+              return this.__PROXY__.getScreenPosition(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.setScreenPosition = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.setScreenPosition");
+          
+              return this.__PROXY__.setScreenPosition(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.getGraphicsView = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.getGraphicsView");
+          
+              return this.__PROXY__.getGraphicsView(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.getGraphicsScene = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.getGraphicsScene");
+          
+              return this.__PROXY__.getGraphicsScene(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.isValid = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.isValid");
+          
+              return this.__PROXY__.isValid(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.setModifiers = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.setModifiers");
+          
+              return this.__PROXY__.setModifiers(...args);
+            
+        };
+    
+        // function 
+        RCoordinateEvent.prototype.getModifiers = function(...args) 
+          
+        {
+          //print("JS: RCoordinateEvent.prototype.getModifiers");
+          
+              return this.__PROXY__.getModifiers(...args);
+            
+        };
+    
 
       // static functions:
+      RCoordinateEvent.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RCoordinateEvent.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RCoordinateEvent.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -326,4 +557,7 @@ RCoordinateEvent.MaxUser = RCoordinateEvent_Wrapper.MaxUser;
       //  return this.wrapper.destr();
       //};
 
+      RCoordinateEvent.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

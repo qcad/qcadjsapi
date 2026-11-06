@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RTransactionStack);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTransactionStack);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RTransactionStack.prototype = new RTransactionStack_BaseJs(engine);
       //RTransactionStack.prototype = new RTransactionStack_Wrapper(engine);
       RTransactionStack.prototype = new Object();
+
 
       RTransactionStack.prototype.toString = function() {
           //return "RTransactionStack [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,8 +125,88 @@
 
       // functions:
       
+        // function 
+        RTransactionStack.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RTransactionStack.prototype.reset");
+          
+              return this.__PROXY__.reset(...args);
+            
+        };
+    
+        // function 
+        RTransactionStack.prototype.undo = function(...args) 
+          
+        {
+          //print("JS: RTransactionStack.prototype.undo");
+          
+              return this.__PROXY__.undo(...args);
+            
+        };
+    
+        // function 
+        RTransactionStack.prototype.redo = function(...args) 
+          
+        {
+          //print("JS: RTransactionStack.prototype.redo");
+          
+              return this.__PROXY__.redo(...args);
+            
+        };
+    
+        // function 
+        RTransactionStack.prototype.isUndoAvailable = function(...args) 
+          
+        {
+          //print("JS: RTransactionStack.prototype.isUndoAvailable");
+          
+              return this.__PROXY__.isUndoAvailable(...args);
+            
+        };
+    
+        // function 
+        RTransactionStack.prototype.isRedoAvailable = function(...args) 
+          
+        {
+          //print("JS: RTransactionStack.prototype.isRedoAvailable");
+          
+              return this.__PROXY__.isRedoAvailable(...args);
+            
+        };
+    
+        // function 
+        RTransactionStack.prototype.getUndoableTransactionText = function(...args) 
+          
+        {
+          //print("JS: RTransactionStack.prototype.getUndoableTransactionText");
+          
+              return this.__PROXY__.getUndoableTransactionText(...args);
+            
+        };
+    
+        // function 
+        RTransactionStack.prototype.getRedoableTransactionText = function(...args) 
+          
+        {
+          //print("JS: RTransactionStack.prototype.getRedoableTransactionText");
+          
+              return this.__PROXY__.getRedoableTransactionText(...args);
+            
+        };
+    
 
       // static functions:
+      RTransactionStack.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RTransactionStack.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RTransactionStack.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -144,4 +225,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RTransactionStack.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPropertyChange);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPropertyChange);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RPropertyChange);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RPropertyChange.prototype = new RPropertyChange_BaseJs(engine);
       //RPropertyChange.prototype = new RPropertyChange_Wrapper(engine);
       RPropertyChange.prototype = new Object();
+
 
       RPropertyChange.prototype.toString = function() {
           //return "RPropertyChange [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -150,8 +151,78 @@
 
       // functions:
       
+        // function 
+        RPropertyChange.prototype.setOldValue = function(...args) 
+          
+        {
+          //print("JS: RPropertyChange.prototype.setOldValue");
+          
+              return this.__PROXY__.setOldValue(...args);
+            
+        };
+    
+        // function 
+        RPropertyChange.prototype.getOldValue = function(...args) 
+          
+        {
+          //print("JS: RPropertyChange.prototype.getOldValue");
+          
+              return this.__PROXY__.getOldValue(...args);
+            
+        };
+    
+        // function 
+        RPropertyChange.prototype.setNewValue = function(...args) 
+          
+        {
+          //print("JS: RPropertyChange.prototype.setNewValue");
+          
+              return this.__PROXY__.setNewValue(...args);
+            
+        };
+    
+        // function 
+        RPropertyChange.prototype.getNewValue = function(...args) 
+          
+        {
+          //print("JS: RPropertyChange.prototype.getNewValue");
+          
+              return this.__PROXY__.getNewValue(...args);
+            
+        };
+    
+        // function 
+        RPropertyChange.prototype.setPropertyTypeId = function(...args) 
+          
+        {
+          //print("JS: RPropertyChange.prototype.setPropertyTypeId");
+          
+              return this.__PROXY__.setPropertyTypeId(...args);
+            
+        };
+    
+        // function 
+        RPropertyChange.prototype.getPropertyTypeId = function(...args) 
+          
+        {
+          //print("JS: RPropertyChange.prototype.getPropertyTypeId");
+          
+              return this.__PROXY__.getPropertyTypeId(...args);
+            
+        };
+    
 
       // static functions:
+      RPropertyChange.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPropertyChange.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPropertyChange.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -170,4 +241,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPropertyChange.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

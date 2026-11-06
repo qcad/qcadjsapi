@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSnapFree.prototype = new RSnapFree_BaseJs(engine);
       //RSnapFree.prototype = new RSnapFree_Wrapper(engine);
       RSnapFree.prototype = new Object();
+
 
       RSnapFree.prototype.toString = function() {
           //return "RSnapFree [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -214,7 +215,9 @@ RSnapFree.CoordinatePolar = RSnapFree_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapFree.prototype.suspendEvent");
-          return this.__PROXY__.suspendEvent(...args);
+          
+              return this.__PROXY__.suspendEvent(...args);
+            
         };
     
         // function 
@@ -222,7 +225,9 @@ RSnapFree.CoordinatePolar = RSnapFree_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapFree.prototype.finishEvent");
-          return this.__PROXY__.finishEvent(...args);
+          
+              return this.__PROXY__.finishEvent(...args);
+            
         };
     
         // function 
@@ -230,7 +235,9 @@ RSnapFree.CoordinatePolar = RSnapFree_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapFree.prototype.getEntityIds");
-          return this.__PROXY__.getEntityIds(...args);
+          
+              return this.__PROXY__.getEntityIds(...args);
+            
         };
     
         // function 
@@ -238,7 +245,9 @@ RSnapFree.CoordinatePolar = RSnapFree_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapFree.prototype.getStatus");
-          return this.__PROXY__.getStatus(...args);
+          
+              return this.__PROXY__.getStatus(...args);
+            
         };
     
         // function 
@@ -246,7 +255,9 @@ RSnapFree.CoordinatePolar = RSnapFree_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapFree.prototype.setStatus");
-          return this.__PROXY__.setStatus(...args);
+          
+              return this.__PROXY__.setStatus(...args);
+            
         };
     
         // function 
@@ -254,7 +265,9 @@ RSnapFree.CoordinatePolar = RSnapFree_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapFree.prototype.getLastSnap");
-          return this.__PROXY__.getLastSnap(...args);
+          
+              return this.__PROXY__.getLastSnap(...args);
+            
         };
     
         // function 
@@ -262,7 +275,9 @@ RSnapFree.CoordinatePolar = RSnapFree_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapFree.prototype.setLastSnap");
-          return this.__PROXY__.setLastSnap(...args);
+          
+              return this.__PROXY__.setLastSnap(...args);
+            
         };
     
         // function 
@@ -270,7 +285,9 @@ RSnapFree.CoordinatePolar = RSnapFree_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapFree.prototype.reset");
-          return this.__PROXY__.reset(...args);
+          
+              return this.__PROXY__.reset(...args);
+            
         };
     
         // function 
@@ -278,11 +295,23 @@ RSnapFree.CoordinatePolar = RSnapFree_Wrapper.CoordinatePolar;
           
         {
           //print("JS: RSnapFree.prototype.snap");
-          return this.__PROXY__.snap(...args);
+          
+              return this.__PROXY__.snap(...args);
+            
         };
     
 
       // static functions:
+      RSnapFree.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSnapFree.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSnapFree.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

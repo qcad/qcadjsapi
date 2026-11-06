@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RActionAdapter.prototype = new RActionAdapter_BaseJs(engine);
       //RActionAdapter.prototype = new RActionAdapter_Wrapper(engine);
       RActionAdapter.prototype = new Object();
+
 
       RActionAdapter.prototype.toString = function() {
           //return "RActionAdapter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -140,7 +141,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.terminate");
-          return this.__PROXY__.terminate(...args);
+          
+              return this.__PROXY__.terminate(...args);
+            
         };
     
         // function 
@@ -148,7 +151,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.isTerminated");
-          return this.__PROXY__.isTerminated(...args);
+          
+              return this.__PROXY__.isTerminated(...args);
+            
         };
     
         // function 
@@ -156,7 +161,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.setOverride");
-          return this.__PROXY__.setOverride(...args);
+          
+              return this.__PROXY__.setOverride(...args);
+            
         };
     
       // function 
@@ -196,7 +203,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.setNoState");
-          return this.__PROXY__.setNoState(...args);
+          
+              return this.__PROXY__.setNoState(...args);
+            
         };
     
         // function 
@@ -204,7 +213,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.hasNoState");
-          return this.__PROXY__.hasNoState(...args);
+          
+              return this.__PROXY__.hasNoState(...args);
+            
         };
     
         // function 
@@ -212,7 +223,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.setUniqueGroup");
-          return this.__PROXY__.setUniqueGroup(...args);
+          
+              return this.__PROXY__.setUniqueGroup(...args);
+            
         };
     
         // function 
@@ -220,7 +233,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.getUniqueGroup");
-          return this.__PROXY__.getUniqueGroup(...args);
+          
+              return this.__PROXY__.getUniqueGroup(...args);
+            
         };
     
         // function 
@@ -228,7 +243,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.setOverrideBase");
-          return this.__PROXY__.setOverrideBase(...args);
+          
+              return this.__PROXY__.setOverrideBase(...args);
+            
         };
     
         // function 
@@ -236,7 +253,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.getOverrideBase");
-          return this.__PROXY__.getOverrideBase(...args);
+          
+              return this.__PROXY__.getOverrideBase(...args);
+            
         };
     
         // function 
@@ -244,7 +263,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.getGuiAction");
-          return this.__PROXY__.getGuiAction(...args);
+          
+              return this.__PROXY__.getGuiAction(...args);
+            
         };
     
         // function 
@@ -252,7 +273,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.setGuiAction");
-          return this.__PROXY__.setGuiAction(...args);
+          
+              return this.__PROXY__.setGuiAction(...args);
+            
         };
     
         // function 
@@ -260,7 +283,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.getGraphicsScenes");
-          return this.__PROXY__.getGraphicsScenes(...args);
+          
+              return this.__PROXY__.getGraphicsScenes(...args);
+            
         };
     
       // function 
@@ -332,7 +357,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.getStorage");
-          return this.__PROXY__.getStorage(...args);
+          
+              return this.__PROXY__.getStorage(...args);
+            
         };
     
       // function 
@@ -372,7 +399,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.setClickMode");
-          return this.__PROXY__.setClickMode(...args);
+          
+              return this.__PROXY__.setClickMode(...args);
+            
         };
     
         // function 
@@ -380,7 +409,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.getClickMode");
-          return this.__PROXY__.getClickMode(...args);
+          
+              return this.__PROXY__.getClickMode(...args);
+            
         };
     
         // function 
@@ -388,7 +419,9 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
           
         {
           //print("JS: RActionAdapter.prototype.snap");
-          return this.__PROXY__.snap(...args);
+          
+              return this.__PROXY__.snap(...args);
+            
         };
     
       // function 
@@ -1321,6 +1354,16 @@ RActionAdapter.PickingDisabled = RActionAdapter_Wrapper.PickingDisabled;
     
 
       // static functions:
+      RActionAdapter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RActionAdapter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RActionAdapter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

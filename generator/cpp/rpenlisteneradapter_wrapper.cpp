@@ -1607,6 +1607,13 @@ QVariant a2_cpp;
               RPenListenerAdapter_Wrapper::penUpdatedEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RPenListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("penUpdated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RPenListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)
@@ -1636,6 +1643,13 @@ QVariant a2_cpp;
               RPenListenerAdapter_Wrapper::penClearedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RPenListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("penCleared()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RPenListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

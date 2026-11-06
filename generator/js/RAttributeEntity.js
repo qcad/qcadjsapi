@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RAttributeEntity.prototype = new RAttributeEntity_BaseJs(engine);
       //RAttributeEntity.prototype = new RAttributeEntity_Wrapper(engine);
       RAttributeEntity.prototype = new Object();
+
 
       RAttributeEntity.prototype.toString = function() {
           //return "RAttributeEntity [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -141,7 +142,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.mustAlwaysClone");
-          return this.__PROXY__.mustAlwaysClone(...args);
+          
+              return this.__PROXY__.mustAlwaysClone(...args);
+            
         };
     
         // function 
@@ -149,7 +152,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -157,7 +162,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setFlag");
-          return this.__PROXY__.setFlag(...args);
+          
+              return this.__PROXY__.setFlag(...args);
+            
         };
     
         // function 
@@ -165,7 +172,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getFlag");
-          return this.__PROXY__.getFlag(...args);
+          
+              return this.__PROXY__.getFlag(...args);
+            
         };
     
         // function 
@@ -173,7 +182,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getId");
-          return this.__PROXY__.getId(...args);
+          
+              return this.__PROXY__.getId(...args);
+            
         };
     
         // function 
@@ -181,7 +192,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getHandle");
-          return this.__PROXY__.getHandle(...args);
+          
+              return this.__PROXY__.getHandle(...args);
+            
         };
     
         // function 
@@ -189,7 +202,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isProtected");
-          return this.__PROXY__.isProtected(...args);
+          
+              return this.__PROXY__.isProtected(...args);
+            
         };
     
         // function 
@@ -197,7 +212,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setProtected");
-          return this.__PROXY__.setProtected(...args);
+          
+              return this.__PROXY__.setProtected(...args);
+            
         };
     
         // function 
@@ -205,7 +222,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isUndone");
-          return this.__PROXY__.isUndone(...args);
+          
+              return this.__PROXY__.isUndone(...args);
+            
         };
     
         // function 
@@ -213,7 +232,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isWorkingSet");
-          return this.__PROXY__.isWorkingSet(...args);
+          
+              return this.__PROXY__.isWorkingSet(...args);
+            
         };
     
         // function 
@@ -221,7 +242,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setWorkingSet");
-          return this.__PROXY__.setWorkingSet(...args);
+          
+              return this.__PROXY__.setWorkingSet(...args);
+            
         };
     
         // function 
@@ -229,7 +252,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getPropertyTypeIds");
-          return this.__PROXY__.getPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -237,7 +262,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getCustomPropertyTypeIds");
-          return this.__PROXY__.getCustomPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getCustomPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -245,7 +272,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.hasPropertyType");
-          return this.__PROXY__.hasPropertyType(...args);
+          
+              return this.__PROXY__.hasPropertyType(...args);
+            
         };
     
         // function 
@@ -253,7 +282,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.hasCustomProperties");
-          return this.__PROXY__.hasCustomProperties(...args);
+          
+              return this.__PROXY__.hasCustomProperties(...args);
+            
         };
     
         // function 
@@ -261,7 +292,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.hasCustomProperty");
-          return this.__PROXY__.hasCustomProperty(...args);
+          
+              return this.__PROXY__.hasCustomProperty(...args);
+            
         };
     
         // function 
@@ -269,7 +302,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getCustomProperty");
-          return this.__PROXY__.getCustomProperty(...args);
+          
+              return this.__PROXY__.getCustomProperty(...args);
+            
         };
     
         // function 
@@ -277,7 +312,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getCustomDoubleProperty");
-          return this.__PROXY__.getCustomDoubleProperty(...args);
+          
+              return this.__PROXY__.getCustomDoubleProperty(...args);
+            
         };
     
         // function 
@@ -285,7 +322,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getCustomIntProperty");
-          return this.__PROXY__.getCustomIntProperty(...args);
+          
+              return this.__PROXY__.getCustomIntProperty(...args);
+            
         };
     
         // function 
@@ -293,7 +332,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getCustomBoolProperty");
-          return this.__PROXY__.getCustomBoolProperty(...args);
+          
+              return this.__PROXY__.getCustomBoolProperty(...args);
+            
         };
     
         // function 
@@ -301,7 +342,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setCustomProperty");
-          return this.__PROXY__.setCustomProperty(...args);
+          
+              return this.__PROXY__.setCustomProperty(...args);
+            
         };
     
         // function 
@@ -309,7 +352,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.removeCustomProperty");
-          return this.__PROXY__.removeCustomProperty(...args);
+          
+              return this.__PROXY__.removeCustomProperty(...args);
+            
         };
     
         // function 
@@ -317,7 +362,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getCustomPropertyTitles");
-          return this.__PROXY__.getCustomPropertyTitles(...args);
+          
+              return this.__PROXY__.getCustomPropertyTitles(...args);
+            
         };
     
         // function 
@@ -325,7 +372,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getCustomPropertyKeys");
-          return this.__PROXY__.getCustomPropertyKeys(...args);
+          
+              return this.__PROXY__.getCustomPropertyKeys(...args);
+            
         };
     
         // function 
@@ -333,7 +382,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.copyCustomPropertiesFrom");
-          return this.__PROXY__.copyCustomPropertiesFrom(...args);
+          
+              return this.__PROXY__.copyCustomPropertiesFrom(...args);
+            
         };
     
         // function 
@@ -341,7 +392,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.dump");
-          return this.__PROXY__.dump(...args);
+          
+              return this.__PROXY__.dump(...args);
+            
         };
     
         // function 
@@ -349,7 +402,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.validate");
-          return this.__PROXY__.validate(...args);
+          
+              return this.__PROXY__.validate(...args);
+            
         };
     
         // function 
@@ -357,7 +412,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setUndone");
-          return this.__PROXY__.setUndone(...args);
+          
+              return this.__PROXY__.setUndone(...args);
+            
         };
     
         // function 
@@ -365,7 +422,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setId");
-          return this.__PROXY__.setId(...args);
+          
+              return this.__PROXY__.setId(...args);
+            
         };
     
         // function 
@@ -373,7 +432,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setHandle");
-          return this.__PROXY__.setHandle(...args);
+          
+              return this.__PROXY__.setHandle(...args);
+            
         };
     
         // function 
@@ -381,7 +442,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setMemberFlag");
-          return this.__PROXY__.setMemberFlag(...args);
+          
+              return this.__PROXY__.setMemberFlag(...args);
+            
         };
     
         // function 
@@ -389,7 +452,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -397,7 +462,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -405,7 +472,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -413,7 +482,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -421,7 +492,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -429,7 +502,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -437,7 +512,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -445,7 +522,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -453,7 +532,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -461,7 +542,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -469,7 +552,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -477,7 +562,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -485,7 +572,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -493,7 +582,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -501,7 +592,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -509,7 +602,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -517,7 +612,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -525,7 +622,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -533,7 +632,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -541,7 +642,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -549,7 +652,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -557,7 +662,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -565,7 +672,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -573,7 +682,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -581,7 +692,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -589,7 +702,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -597,7 +712,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -605,7 +722,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -613,7 +732,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -621,7 +742,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -629,7 +752,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -637,7 +762,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -645,7 +772,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -653,7 +782,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -661,7 +792,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -669,7 +802,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -677,7 +812,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -685,7 +822,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -693,7 +832,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -701,7 +842,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -709,7 +852,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -717,7 +862,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getClosestSimpleShape");
-          return this.__PROXY__.getClosestSimpleShape(...args);
+          
+              return this.__PROXY__.getClosestSimpleShape(...args);
+            
         };
     
         // function 
@@ -725,7 +872,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -733,7 +882,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -741,7 +892,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -749,7 +902,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -757,7 +912,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -765,7 +922,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -773,7 +932,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -781,7 +942,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -789,7 +952,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -797,7 +962,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -805,7 +972,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -813,7 +982,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -821,7 +992,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -829,7 +1002,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -837,7 +1012,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getIntersectionPointsWithShape");
-          return this.__PROXY__.getIntersectionPointsWithShape(...args);
+          
+              return this.__PROXY__.getIntersectionPointsWithShape(...args);
+            
         };
     
         // function 
@@ -845,7 +1022,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -853,7 +1032,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -861,7 +1042,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -869,7 +1052,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -877,7 +1062,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -885,7 +1072,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -893,7 +1082,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setViewportContext");
-          return this.__PROXY__.setViewportContext(...args);
+          
+              return this.__PROXY__.setViewportContext(...args);
+            
         };
     
         // function 
@@ -901,7 +1092,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -909,7 +1102,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -917,7 +1112,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -925,7 +1122,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -933,7 +1132,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -941,7 +1142,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -949,7 +1152,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -957,7 +1162,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isVisible");
-          return this.__PROXY__.isVisible(...args);
+          
+              return this.__PROXY__.isVisible(...args);
+            
         };
     
         // function 
@@ -965,7 +1172,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isEditable");
-          return this.__PROXY__.isEditable(...args);
+          
+              return this.__PROXY__.isEditable(...args);
+            
         };
     
         // function 
@@ -973,7 +1182,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isInWorkingSet");
-          return this.__PROXY__.isInWorkingSet(...args);
+          
+              return this.__PROXY__.isInWorkingSet(...args);
+            
         };
     
         // function 
@@ -981,7 +1192,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getComplexity");
-          return this.__PROXY__.getComplexity(...args);
+          
+              return this.__PROXY__.getComplexity(...args);
+            
         };
     
         // function 
@@ -989,7 +1202,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -997,7 +1212,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getRotatedBoundingBox");
-          return this.__PROXY__.getRotatedBoundingBox(...args);
+          
+              return this.__PROXY__.getRotatedBoundingBox(...args);
+            
         };
     
         // function 
@@ -1005,7 +1222,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.scaleNonUniform");
-          return this.__PROXY__.scaleNonUniform(...args);
+          
+              return this.__PROXY__.scaleNonUniform(...args);
+            
         };
     
         // function 
@@ -1013,7 +1232,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getPainterPaths");
-          return this.__PROXY__.getPainterPaths(...args);
+          
+              return this.__PROXY__.getPainterPaths(...args);
+            
         };
     
         // function 
@@ -1021,7 +1242,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -1029,7 +1252,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getExploded");
-          return this.__PROXY__.getExploded(...args);
+          
+              return this.__PROXY__.getExploded(...args);
+            
         };
     
         // function 
@@ -1037,7 +1262,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getTextData");
-          return this.__PROXY__.getTextData(...args);
+          
+              return this.__PROXY__.getTextData(...args);
+            
         };
     
         // function 
@@ -1045,7 +1272,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isBold");
-          return this.__PROXY__.isBold(...args);
+          
+              return this.__PROXY__.isBold(...args);
+            
         };
     
         // function 
@@ -1053,7 +1282,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setBold");
-          return this.__PROXY__.setBold(...args);
+          
+              return this.__PROXY__.setBold(...args);
+            
         };
     
         // function 
@@ -1061,7 +1292,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isItalic");
-          return this.__PROXY__.isItalic(...args);
+          
+              return this.__PROXY__.isItalic(...args);
+            
         };
     
         // function 
@@ -1069,7 +1302,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setItalic");
-          return this.__PROXY__.setItalic(...args);
+          
+              return this.__PROXY__.setItalic(...args);
+            
         };
     
         // function 
@@ -1077,7 +1312,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isBackward");
-          return this.__PROXY__.isBackward(...args);
+          
+              return this.__PROXY__.isBackward(...args);
+            
         };
     
         // function 
@@ -1085,7 +1322,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setBackward");
-          return this.__PROXY__.setBackward(...args);
+          
+              return this.__PROXY__.setBackward(...args);
+            
         };
     
         // function 
@@ -1093,7 +1332,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isUpsideDown");
-          return this.__PROXY__.isUpsideDown(...args);
+          
+              return this.__PROXY__.isUpsideDown(...args);
+            
         };
     
         // function 
@@ -1101,7 +1342,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setUpsideDown");
-          return this.__PROXY__.setUpsideDown(...args);
+          
+              return this.__PROXY__.setUpsideDown(...args);
+            
         };
     
         // function 
@@ -1109,7 +1352,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getPosition");
-          return this.__PROXY__.getPosition(...args);
+          
+              return this.__PROXY__.getPosition(...args);
+            
         };
     
         // function 
@@ -1117,7 +1362,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setPosition");
-          return this.__PROXY__.setPosition(...args);
+          
+              return this.__PROXY__.setPosition(...args);
+            
         };
     
         // function 
@@ -1125,7 +1372,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getAlignmentPoint");
-          return this.__PROXY__.getAlignmentPoint(...args);
+          
+              return this.__PROXY__.getAlignmentPoint(...args);
+            
         };
     
         // function 
@@ -1133,7 +1382,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setAlignmentPoint");
-          return this.__PROXY__.setAlignmentPoint(...args);
+          
+              return this.__PROXY__.setAlignmentPoint(...args);
+            
         };
     
         // function 
@@ -1141,7 +1392,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getTextHeight");
-          return this.__PROXY__.getTextHeight(...args);
+          
+              return this.__PROXY__.getTextHeight(...args);
+            
         };
     
         // function 
@@ -1149,7 +1402,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setTextHeight");
-          return this.__PROXY__.setTextHeight(...args);
+          
+              return this.__PROXY__.setTextHeight(...args);
+            
         };
     
         // function 
@@ -1157,7 +1412,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getTextWidth");
-          return this.__PROXY__.getTextWidth(...args);
+          
+              return this.__PROXY__.getTextWidth(...args);
+            
         };
     
         // function 
@@ -1165,7 +1422,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getWidth");
-          return this.__PROXY__.getWidth(...args);
+          
+              return this.__PROXY__.getWidth(...args);
+            
         };
     
         // function 
@@ -1173,7 +1432,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getHeight");
-          return this.__PROXY__.getHeight(...args);
+          
+              return this.__PROXY__.getHeight(...args);
+            
         };
     
         // function 
@@ -1181,7 +1442,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getVAlign");
-          return this.__PROXY__.getVAlign(...args);
+          
+              return this.__PROXY__.getVAlign(...args);
+            
         };
     
         // function 
@@ -1189,7 +1452,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setVAlign");
-          return this.__PROXY__.setVAlign(...args);
+          
+              return this.__PROXY__.setVAlign(...args);
+            
         };
     
         // function 
@@ -1197,7 +1462,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getHAlign");
-          return this.__PROXY__.getHAlign(...args);
+          
+              return this.__PROXY__.getHAlign(...args);
+            
         };
     
         // function 
@@ -1205,7 +1472,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setHAlign");
-          return this.__PROXY__.setHAlign(...args);
+          
+              return this.__PROXY__.setHAlign(...args);
+            
         };
     
         // function 
@@ -1213,7 +1482,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getFontName");
-          return this.__PROXY__.getFontName(...args);
+          
+              return this.__PROXY__.getFontName(...args);
+            
         };
     
         // function 
@@ -1221,7 +1492,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setFontName");
-          return this.__PROXY__.setFontName(...args);
+          
+              return this.__PROXY__.setFontName(...args);
+            
         };
     
         // function 
@@ -1229,7 +1502,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getFontFile");
-          return this.__PROXY__.getFontFile(...args);
+          
+              return this.__PROXY__.getFontFile(...args);
+            
         };
     
         // function 
@@ -1237,7 +1512,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setDrawingDirection");
-          return this.__PROXY__.setDrawingDirection(...args);
+          
+              return this.__PROXY__.setDrawingDirection(...args);
+            
         };
     
         // function 
@@ -1245,7 +1522,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getDrawingDirection");
-          return this.__PROXY__.getDrawingDirection(...args);
+          
+              return this.__PROXY__.getDrawingDirection(...args);
+            
         };
     
         // function 
@@ -1253,7 +1532,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setLineSpacingStyle");
-          return this.__PROXY__.setLineSpacingStyle(...args);
+          
+              return this.__PROXY__.setLineSpacingStyle(...args);
+            
         };
     
         // function 
@@ -1261,7 +1542,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getLineSpacingStyle");
-          return this.__PROXY__.getLineSpacingStyle(...args);
+          
+              return this.__PROXY__.getLineSpacingStyle(...args);
+            
         };
     
         // function 
@@ -1269,7 +1552,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setLineSpacingFactor");
-          return this.__PROXY__.setLineSpacingFactor(...args);
+          
+              return this.__PROXY__.setLineSpacingFactor(...args);
+            
         };
     
         // function 
@@ -1277,7 +1562,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getLineSpacingFactor");
-          return this.__PROXY__.getLineSpacingFactor(...args);
+          
+              return this.__PROXY__.getLineSpacingFactor(...args);
+            
         };
     
         // function 
@@ -1285,7 +1572,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setAngle");
-          return this.__PROXY__.setAngle(...args);
+          
+              return this.__PROXY__.setAngle(...args);
+            
         };
     
         // function 
@@ -1293,7 +1582,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getAngle");
-          return this.__PROXY__.getAngle(...args);
+          
+              return this.__PROXY__.getAngle(...args);
+            
         };
     
         // function 
@@ -1301,7 +1592,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setXScale");
-          return this.__PROXY__.setXScale(...args);
+          
+              return this.__PROXY__.setXScale(...args);
+            
         };
     
         // function 
@@ -1309,7 +1602,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getXScale");
-          return this.__PROXY__.getXScale(...args);
+          
+              return this.__PROXY__.getXScale(...args);
+            
         };
     
         // function 
@@ -1317,7 +1612,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setSimple");
-          return this.__PROXY__.setSimple(...args);
+          
+              return this.__PROXY__.setSimple(...args);
+            
         };
     
         // function 
@@ -1325,7 +1622,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isSimple");
-          return this.__PROXY__.isSimple(...args);
+          
+              return this.__PROXY__.isSimple(...args);
+            
         };
     
         // function 
@@ -1333,7 +1632,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getEscapedText");
-          return this.__PROXY__.getEscapedText(...args);
+          
+              return this.__PROXY__.getEscapedText(...args);
+            
         };
     
         // function 
@@ -1341,7 +1642,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getPlainText");
-          return this.__PROXY__.getPlainText(...args);
+          
+              return this.__PROXY__.getPlainText(...args);
+            
         };
     
         // function 
@@ -1349,7 +1652,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setText");
-          return this.__PROXY__.setText(...args);
+          
+              return this.__PROXY__.setText(...args);
+            
         };
     
         // function 
@@ -1357,7 +1662,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.sync");
-          return this.__PROXY__.sync(...args);
+          
+              return this.__PROXY__.sync(...args);
+            
         };
     
         // function 
@@ -1365,7 +1672,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getSimpleTextBlocks");
-          return this.__PROXY__.getSimpleTextBlocks(...args);
+          
+              return this.__PROXY__.getSimpleTextBlocks(...args);
+            
         };
     
         // function 
@@ -1373,7 +1682,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.init");
-          return this.__PROXY__.init(...args);
+          
+              return this.__PROXY__.init(...args);
+            
         };
     
         // function 
@@ -1381,7 +1692,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getRtti");
-          return this.__PROXY__.getRtti(...args);
+          
+              return this.__PROXY__.getRtti(...args);
+            
         };
     
         // function 
@@ -1389,7 +1702,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getStaticPropertyTypeIds");
-          return this.__PROXY__.getStaticPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getStaticPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -1397,7 +1712,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -1405,7 +1722,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getData");
-          return this.__PROXY__.getData(...args);
+          
+              return this.__PROXY__.getData(...args);
+            
         };
     
         // function 
@@ -1413,7 +1732,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setData");
-          return this.__PROXY__.setData(...args);
+          
+              return this.__PROXY__.setData(...args);
+            
         };
     
         // function 
@@ -1421,7 +1742,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setProperty");
-          return this.__PROXY__.setProperty(...args);
+          
+              return this.__PROXY__.setProperty(...args);
+            
         };
     
         // function 
@@ -1429,7 +1752,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getProperty");
-          return this.__PROXY__.getProperty(...args);
+          
+              return this.__PROXY__.getProperty(...args);
+            
         };
     
         // function 
@@ -1437,7 +1762,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.exportEntity");
-          return this.__PROXY__.exportEntity(...args);
+          
+              return this.__PROXY__.exportEntity(...args);
+            
         };
     
         // function 
@@ -1445,7 +1772,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.getTag");
-          return this.__PROXY__.getTag(...args);
+          
+              return this.__PROXY__.getTag(...args);
+            
         };
     
         // function 
@@ -1453,7 +1782,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setTag");
-          return this.__PROXY__.setTag(...args);
+          
+              return this.__PROXY__.setTag(...args);
+            
         };
     
         // function 
@@ -1461,7 +1792,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isInvisible");
-          return this.__PROXY__.isInvisible(...args);
+          
+              return this.__PROXY__.isInvisible(...args);
+            
         };
     
         // function 
@@ -1469,7 +1802,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.setInvisible");
-          return this.__PROXY__.setInvisible(...args);
+          
+              return this.__PROXY__.setInvisible(...args);
+            
         };
     
         // function 
@@ -1477,7 +1812,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.isSelectable");
-          return this.__PROXY__.isSelectable(...args);
+          
+              return this.__PROXY__.isSelectable(...args);
+            
         };
     
         // function 
@@ -1485,7 +1822,9 @@
           
         {
           //print("JS: RAttributeEntity.prototype.print");
-          return this.__PROXY__.print(...args);
+          
+              return this.__PROXY__.print(...args);
+            
         };
     
 
@@ -1574,6 +1913,16 @@
   }
   
         };
+      RAttributeEntity.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RAttributeEntity.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RAttributeEntity.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

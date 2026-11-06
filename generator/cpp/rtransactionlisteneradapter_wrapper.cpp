@@ -1611,6 +1611,13 @@ QVariant a2_cpp;
               RTransactionListenerAdapter_Wrapper::transactionUpdatedEmitter(
                 RDocument* document, RTransaction* transaction
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RTransactionListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("transactionUpdated(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RTransactionListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: document (RDocument)
@@ -1649,6 +1656,13 @@ QVariant a2_cpp;
               RTransactionListenerAdapter_Wrapper::currentBlockSetEmitter(
                 RDocument* document
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RTransactionListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("currentBlockSet(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RTransactionListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: document (RDocument)

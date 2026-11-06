@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RMixedOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RMixedOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RMixedOperation.prototype = new RMixedOperation_BaseJs(engine);
       //RMixedOperation.prototype = new RMixedOperation_Wrapper(engine);
       RMixedOperation.prototype = new Object();
+
 
       RMixedOperation.prototype.toString = function() {
           //return "RMixedOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -136,8 +137,208 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
 
       // functions:
       
+        // function 
+        RMixedOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.addObject = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.addObject");
+          
+              return this.__PROXY__.addObject(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.deleteObject = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.deleteObject");
+          
+              return this.__PROXY__.deleteObject(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.endCycle = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.endCycle");
+          
+              return this.__PROXY__.endCycle(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.setMode = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.setMode");
+          
+              return this.__PROXY__.setMode(...args);
+            
+        };
+    
+        // function 
+        RMixedOperation.prototype.getMode = function(...args) 
+          
+        {
+          //print("JS: RMixedOperation.prototype.getMode");
+          
+              return this.__PROXY__.getMode(...args);
+            
+        };
+    
 
       // static functions:
+      RMixedOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RMixedOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RMixedOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -156,4 +357,7 @@ RMixedOperation.EndCycle = RMixedOperation_Wrapper.EndCycle;
       //  return this.wrapper.destr();
       //};
 
+      RMixedOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

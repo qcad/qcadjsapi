@@ -1402,6 +1402,13 @@ QVariant a2_cpp;
               RPropertyListenerAdapter_Wrapper::updatedFromDocumentEmitter(
                 RDocument* document, bool onlyChanges, RS::EntityType entityTypeFilter, bool manual, bool showOnRequest
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RPropertyListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("updatedFromDocument(QJSValue,QJSValue,QJSValue,QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RPropertyListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: document (RDocument)
@@ -1467,6 +1474,13 @@ QVariant a2_cpp;
               RPropertyListenerAdapter_Wrapper::updatedFromObjectEmitter(
                 RObject* object, RDocument* document
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RPropertyListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("updatedFromObject(QJSValue,QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RPropertyListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: object (RObject)
@@ -1505,6 +1519,13 @@ QVariant a2_cpp;
               RPropertyListenerAdapter_Wrapper::clearedEditorEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RPropertyListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("clearedEditor()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RPropertyListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

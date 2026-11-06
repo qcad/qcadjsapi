@@ -929,6 +929,16 @@
         <parameters />
       </variant>
     </function>
+    <function name="getAppearance" static="true">
+      <variant return-type="QString" access="public">
+        <parameters />
+      </variant>
+    </function>
+    <function name="applyAppearance" static="true">
+      <variant return-type="void" access="public">
+        <parameters />
+      </variant>
+    </function>
     <function name="hasCustomStyleSheet" static="true">
       <variant return-type="bool" access="public">
         <parameters />

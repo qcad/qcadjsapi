@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RPropertyListenerAdapter);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -55,24 +55,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
-            // signal aliases:
-            if (Object.getPrototypeOf(this)!=null) {
-              
-    this["updatedFromDocument(RDocument*,bool,RS::EntityType,bool,bool)"] = Object.getPrototypeOf(this).updatedFromDocument;
-  
-    this["updatedFromObject(RObject*,RDocument*)"] = Object.getPrototypeOf(this).updatedFromObject;
-  
-            }
-          
+
         }
 
-        
 
       }
 
       //RPropertyListenerAdapter.prototype = new RPropertyListenerAdapter_BaseJs(engine);
       //RPropertyListenerAdapter.prototype = new RPropertyListenerAdapter_Wrapper(engine);
       RPropertyListenerAdapter.prototype = new Object();
+
 
       RPropertyListenerAdapter.prototype.toString = function() {
           //return "RPropertyListenerAdapter [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -112,6 +104,176 @@
 
       // functions:
       
+        // function 
+        RPropertyListenerAdapter.prototype.setObjectName = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.setObjectName");
+          
+              return this.__PROXY__.setObjectName(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.isWidgetType = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.isWidgetType");
+          
+              return this.__PROXY__.isWidgetType(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.isWindowType = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.isWindowType");
+          
+              return this.__PROXY__.isWindowType(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.signalsBlocked = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.signalsBlocked");
+          
+              return this.__PROXY__.signalsBlocked(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.blockSignals = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.blockSignals");
+          
+              return this.__PROXY__.blockSignals(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.findChild = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.findChild");
+          
+              return this.__PROXY__.findChild(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.children = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.children");
+          
+              return this.__PROXY__.children(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.setParent = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.setParent");
+          
+              return this.__PROXY__.setParent(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.installEventFilter = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.installEventFilter");
+          
+              return this.__PROXY__.installEventFilter(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.removeEventFilter = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.removeEventFilter");
+          
+              return this.__PROXY__.removeEventFilter(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.dumpObjectTree = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.dumpObjectTree");
+          
+              return this.__PROXY__.dumpObjectTree(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.dumpObjectInfo = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.dumpObjectInfo");
+          
+              return this.__PROXY__.dumpObjectInfo(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.setProperty = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.setProperty");
+          
+              return this.__PROXY__.setProperty(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.property = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.property");
+          
+              return this.__PROXY__.property(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.dynamicPropertyNames = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.dynamicPropertyNames");
+          
+              return this.__PROXY__.dynamicPropertyNames(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.parent = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.parent");
+          
+              return this.__PROXY__.parent(...args);
+            
+        };
+    
+        // function 
+        RPropertyListenerAdapter.prototype.deleteLater = function(...args) 
+          
+        {
+          //print("JS: RPropertyListenerAdapter.prototype.deleteLater");
+          
+              return this.__PROXY__.deleteLater(...args);
+            
+        };
+    
       // function 
       RPropertyListenerAdapter.prototype.updateFromDocument = function() 
         
@@ -127,7 +289,7 @@
                 // call highest level JS implementation:
                 //return this.updateFromDocumentBase(
                 
-                    return this.updateFromDocumentSuper(
+                    return this.__PROXY__.updateFromDocumentSuper(
                   arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
                 );
               
@@ -160,7 +322,7 @@
                 // call highest level JS implementation:
                 //return this.updateFromObjectBase(
                 
-                    return this.updateFromObjectSuper(
+                    return this.__PROXY__.updateFromObjectSuper(
                   arguments[0], arguments[1]
                 );
               
@@ -192,7 +354,7 @@
                 // call highest level JS implementation:
                 //return this.clearEditorBase(
                 
-                    return this.clearEditorSuper(
+                    return this.__PROXY__.clearEditorSuper(
                   
                 );
               
@@ -213,6 +375,56 @@
 
       // static functions:
       
+          Object.defineProperty(RPropertyListenerAdapter.prototype, 'objectName', {
+              get: function() {
+                  
+                      return this.__PROXY__.objectName;
+                    
+              },
+              
+                set: function(value) {
+                    this.__PROXY__.setObjectName(value);
+                },
+              
+              enumerable: true,
+              configurable: true
+          });
+        
+        Object.defineProperty(RPropertyListenerAdapter.prototype, 'updatedFromDocument', {
+            get: function() { return this.__PROXY__.updatedFromDocument; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RPropertyListenerAdapter.prototype, 'updatedFromDocument(RDocument*,bool,RS::EntityType,bool,bool)', {
+              get: function() { return this.__PROXY__.updatedFromDocument; },
+              configurable: true
+          });
+        
+        Object.defineProperty(RPropertyListenerAdapter.prototype, 'updatedFromObject', {
+            get: function() { return this.__PROXY__.updatedFromObject; },
+            configurable: true
+        });
+        
+          Object.defineProperty(RPropertyListenerAdapter.prototype, 'updatedFromObject(RObject*,RDocument*)', {
+              get: function() { return this.__PROXY__.updatedFromObject; },
+              configurable: true
+          });
+        
+        Object.defineProperty(RPropertyListenerAdapter.prototype, 'clearedEditor', {
+            get: function() { return this.__PROXY__.clearedEditor; },
+            configurable: true
+        });
+        RPropertyListenerAdapter.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RPropertyListenerAdapter.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RPropertyListenerAdapter.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
+      
 
       // constants:
       
@@ -230,4 +442,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RPropertyListenerAdapter.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

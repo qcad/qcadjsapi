@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RTransaction);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTransaction);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -79,7 +79,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTransaction);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -105,7 +105,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RTransaction);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -137,15 +137,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RTransaction.prototype = new RTransaction_BaseJs(engine);
       //RTransaction.prototype = new RTransaction_Wrapper(engine);
       RTransaction.prototype = new Object();
+
 
       RTransaction.prototype.toString = function() {
           //return "RTransaction [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -189,8 +190,458 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
 
       // functions:
       
+        // function 
+        RTransaction.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setExistingBlockDetectionDisabled = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setExistingBlockDetectionDisabled");
+          
+              return this.__PROXY__.setExistingBlockDetectionDisabled(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setExistingLayerDetectionDisabled = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setExistingLayerDetectionDisabled");
+          
+              return this.__PROXY__.setExistingLayerDetectionDisabled(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setExistingLinetypeDetectionDisabled = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setExistingLinetypeDetectionDisabled");
+          
+              return this.__PROXY__.setExistingLinetypeDetectionDisabled(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setBlockRecursionDetectionDisabled = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setBlockRecursionDetectionDisabled");
+          
+              return this.__PROXY__.setBlockRecursionDetectionDisabled(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setKeepHandles = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setKeepHandles");
+          
+              return this.__PROXY__.setKeepHandles(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.isUndoing = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.isUndoing");
+          
+              return this.__PROXY__.isUndoing(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.isRedoing = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.isRedoing");
+          
+              return this.__PROXY__.isRedoing(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.isUndoable = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.isUndoable");
+          
+              return this.__PROXY__.isUndoable(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.isFailed = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.isFailed");
+          
+              return this.__PROXY__.isFailed(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.redo = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.redo");
+          
+              return this.__PROXY__.redo(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.undo = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.undo");
+          
+              return this.__PROXY__.undo(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.end = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.end");
+          
+              return this.__PROXY__.end(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.updateAffectedBlockReferences = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.updateAffectedBlockReferences");
+          
+              return this.__PROXY__.updateAffectedBlockReferences(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setId = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setId");
+          
+              return this.__PROXY__.setId(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.getId = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.getId");
+          
+              return this.__PROXY__.getId(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setGroup = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setGroup");
+          
+              return this.__PROXY__.setGroup(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.getGroup = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.getGroup");
+          
+              return this.__PROXY__.getGroup(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.overwriteBlock = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.overwriteBlock");
+          
+              return this.__PROXY__.overwriteBlock(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.addObject = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.addObject");
+          
+              return this.__PROXY__.addObject(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.addAffectedObject = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.addAffectedObject");
+          
+              return this.__PROXY__.addAffectedObject(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.addAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.addAffectedObjects");
+          
+              return this.__PROXY__.addAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.deleteObject = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.deleteObject");
+          
+              return this.__PROXY__.deleteObject(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.getAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.getAffectedObjects");
+          
+              return this.__PROXY__.getAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.getStatusChanges = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.getStatusChanges");
+          
+              return this.__PROXY__.getStatusChanges(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.hasStatusChange = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.hasStatusChange");
+          
+              return this.__PROXY__.hasStatusChange(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.getPropertyChanges = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.getPropertyChanges");
+          
+              return this.__PROXY__.getPropertyChanges(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.getNewObjectId = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.getNewObjectId");
+          
+              return this.__PROXY__.getNewObjectId(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.hasOnlyChanges = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.hasOnlyChanges");
+          
+              return this.__PROXY__.hasOnlyChanges(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.fail = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.fail");
+          
+              return this.__PROXY__.fail(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.endCycle = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.endCycle");
+          
+              return this.__PROXY__.endCycle(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.isPreview = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.isPreview");
+          
+              return this.__PROXY__.isPreview(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setTypes = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setTypes");
+          
+              return this.__PROXY__.setTypes(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.getTypes = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.getTypes");
+          
+              return this.__PROXY__.getTypes(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.setType = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.setType");
+          
+              return this.__PROXY__.setType(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.isType = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.isType");
+          
+              return this.__PROXY__.isType(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.addPropertyChange = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.addPropertyChange");
+          
+              return this.__PROXY__.addPropertyChange(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.commit = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.commit");
+          
+              return this.__PROXY__.commit(...args);
+            
+        };
+    
+        // function 
+        RTransaction.prototype.rollback = function(...args) 
+          
+        {
+          //print("JS: RTransaction.prototype.rollback");
+          
+              return this.__PROXY__.rollback(...args);
+            
+        };
+    
 
       // static functions:
+      RTransaction.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RTransaction.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RTransaction.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -209,4 +660,7 @@ RTransaction.LayerCollapseStatusChange = RTransaction_Wrapper.LayerCollapseStatu
       //  return this.wrapper.destr();
       //};
 
+      RTransaction.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

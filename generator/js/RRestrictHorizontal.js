@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RRestrictHorizontal);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -53,7 +53,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RRestrictHorizontal);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -85,15 +85,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RRestrictHorizontal.prototype = new RRestrictHorizontal_BaseJs(engine);
       //RRestrictHorizontal.prototype = new RRestrictHorizontal_Wrapper(engine);
       RRestrictHorizontal.prototype = new Object();
+
 
       RRestrictHorizontal.prototype.toString = function() {
           //return "RRestrictHorizontal [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -147,7 +148,7 @@
                 // call highest level JS implementation:
                 //return this.showUiOptionsBase(
                 
-                    return this.showUiOptionsSuper(
+                    return this.__PROXY__.showUiOptionsSuper(
                   
                 );
               
@@ -179,7 +180,7 @@
                 // call highest level JS implementation:
                 //return this.hideUiOptionsBase(
                 
-                    return this.hideUiOptionsSuper(
+                    return this.__PROXY__.hideUiOptionsSuper(
                   
                 );
               
@@ -197,8 +198,48 @@
   
       };
     
+        // function 
+        RRestrictHorizontal.prototype.getLastSnap = function(...args) 
+          
+        {
+          //print("JS: RRestrictHorizontal.prototype.getLastSnap");
+          
+              return this.__PROXY__.getLastSnap(...args);
+            
+        };
+    
+        // function 
+        RRestrictHorizontal.prototype.reset = function(...args) 
+          
+        {
+          //print("JS: RRestrictHorizontal.prototype.reset");
+          
+              return this.__PROXY__.reset(...args);
+            
+        };
+    
+        // function 
+        RRestrictHorizontal.prototype.restrictSnap = function(...args) 
+          
+        {
+          //print("JS: RRestrictHorizontal.prototype.restrictSnap");
+          
+              return this.__PROXY__.restrictSnap(...args);
+            
+        };
+    
 
       // static functions:
+      RRestrictHorizontal.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RRestrictHorizontal.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RRestrictHorizontal.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -217,4 +258,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RRestrictHorizontal.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

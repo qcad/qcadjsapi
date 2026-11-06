@@ -15895,6 +15895,13 @@ bool a1_cpp;
               RColorCombo_Wrapper::customContextMenuRequestedEmitter(
                 const QPoint& pos
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("customContextMenuRequested(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: pos (QPoint)
@@ -20239,6 +20246,13 @@ QString a1_cpp;
               RColorCombo_Wrapper::editTextChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("editTextChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20268,6 +20282,13 @@ QString a1_cpp;
               RColorCombo_Wrapper::activatedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("activated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20297,6 +20318,13 @@ QString a1_cpp;
               RColorCombo_Wrapper::textActivatedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("textActivated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20326,6 +20354,13 @@ QString a1_cpp;
               RColorCombo_Wrapper::highlightedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("highlighted(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20355,6 +20390,13 @@ QString a1_cpp;
               RColorCombo_Wrapper::textHighlightedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("textHighlighted(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20384,6 +20426,13 @@ QString a1_cpp;
               RColorCombo_Wrapper::currentIndexChangedEmitter(
                 int index
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("currentIndexChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: index (int)
@@ -20413,6 +20462,13 @@ QString a1_cpp;
               RColorCombo_Wrapper::currentTextChangedEmitter(
                 const QString& a1
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("currentTextChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter:  (QString)
@@ -20874,6 +20930,13 @@ bool a1_cpp;
               RColorCombo_Wrapper::valueChangedEmitter(
                 const RColor& color
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("valueChanged(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: color (RColor)
@@ -20903,6 +20966,13 @@ bool a1_cpp;
               RColorCombo_Wrapper::dialogRunningEmitter(
                 bool isRunning
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RColorCombo_Wrapper::staticMetaObject.indexOfSignal("dialogRunning(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RColorCombo_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: isRunning (bool)

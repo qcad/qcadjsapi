@@ -1531,6 +1531,13 @@ QVariant a2_cpp;
               RPaletteListenerAdapter_Wrapper::paletteChangedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RPaletteListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("paletteChanged()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RPaletteListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

@@ -1607,6 +1607,13 @@ QVariant a2_cpp;
               RViewListenerAdapter_Wrapper::viewsUpdatedEmitter(
                 RDocumentInterface* documentInterface
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RViewListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("viewsUpdated(QJSValue)");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RViewListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
   // parameter: documentInterface (RDocumentInterface)
@@ -1636,6 +1643,13 @@ QVariant a2_cpp;
               RViewListenerAdapter_Wrapper::viewsClearedEmitter(
                 
               ) {
+                // skip the (expensive) conversion of the arguments to JS values
+                // if nothing is connected to the forwarded signal:
+                static const int forwardedSignalIndex = RViewListenerAdapter_Wrapper::staticMetaObject.indexOfSignal("viewsCleared()");
+                if (forwardedSignalIndex>=0 && !isSignalConnected(RViewListenerAdapter_Wrapper::staticMetaObject.method(forwardedSignalIndex))) {
+                    return;
+                }
+
                 // convert cpp parameters to js:
                 
 

@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RFontList);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RFontList);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RFontList.prototype = new RFontList_BaseJs(engine);
       //RFontList.prototype = new RFontList_Wrapper(engine);
       RFontList.prototype = new Object();
+
 
       RFontList.prototype.toString = function() {
           //return "RFontList [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -124,6 +125,76 @@
 
       // functions:
       
+        // function 
+        RFontList.prototype.init = function(...args) 
+          
+        {
+          //print("JS: RFontList.prototype.init");
+          
+              return this.__PROXY__.init(...args);
+            
+        };
+    
+        // function 
+        RFontList.prototype.initSubstitutions = function(...args) 
+          
+        {
+          //print("JS: RFontList.prototype.initSubstitutions");
+          
+              return this.__PROXY__.initSubstitutions(...args);
+            
+        };
+    
+        // function 
+        RFontList.prototype.uninit = function(...args) 
+          
+        {
+          //print("JS: RFontList.prototype.uninit");
+          
+              return this.__PROXY__.uninit(...args);
+            
+        };
+    
+        // function 
+        RFontList.prototype.getNames = function(...args) 
+          
+        {
+          //print("JS: RFontList.prototype.getNames");
+          
+              return this.__PROXY__.getNames(...args);
+            
+        };
+    
+        // function 
+        RFontList.prototype.getSubName = function(...args) 
+          
+        {
+          //print("JS: RFontList.prototype.getSubName");
+          
+              return this.__PROXY__.getSubName(...args);
+            
+        };
+    
+        // function 
+        RFontList.prototype.get = function(...args) 
+          
+        {
+          //print("JS: RFontList.prototype.get");
+          
+              return this.__PROXY__.get(...args);
+            
+        };
+    
+        // function 
+        RFontList.prototype.isCadFont = function(...args) 
+          
+        {
+          //print("JS: RFontList.prototype.isCadFont");
+          
+              return this.__PROXY__.isCadFont(...args);
+            
+        };
+    
 
       // static functions:
       
@@ -323,6 +394,16 @@
   }
   
         };
+      RFontList.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RFontList.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RFontList.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -341,4 +422,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RFontList.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       

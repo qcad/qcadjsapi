@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RBlockReferenceEntity.prototype = new RBlockReferenceEntity_BaseJs(engine);
       //RBlockReferenceEntity.prototype = new RBlockReferenceEntity_Wrapper(engine);
       RBlockReferenceEntity.prototype = new Object();
+
 
       RBlockReferenceEntity.prototype.toString = function() {
           //return "RBlockReferenceEntity [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -163,7 +164,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.mustAlwaysClone");
-          return this.__PROXY__.mustAlwaysClone(...args);
+          
+              return this.__PROXY__.mustAlwaysClone(...args);
+            
         };
     
         // function 
@@ -171,7 +174,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -179,7 +184,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setFlag");
-          return this.__PROXY__.setFlag(...args);
+          
+              return this.__PROXY__.setFlag(...args);
+            
         };
     
         // function 
@@ -187,7 +194,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getFlag");
-          return this.__PROXY__.getFlag(...args);
+          
+              return this.__PROXY__.getFlag(...args);
+            
         };
     
         // function 
@@ -195,7 +204,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getId");
-          return this.__PROXY__.getId(...args);
+          
+              return this.__PROXY__.getId(...args);
+            
         };
     
         // function 
@@ -203,7 +214,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getHandle");
-          return this.__PROXY__.getHandle(...args);
+          
+              return this.__PROXY__.getHandle(...args);
+            
         };
     
         // function 
@@ -211,7 +224,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isProtected");
-          return this.__PROXY__.isProtected(...args);
+          
+              return this.__PROXY__.isProtected(...args);
+            
         };
     
         // function 
@@ -219,7 +234,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setProtected");
-          return this.__PROXY__.setProtected(...args);
+          
+              return this.__PROXY__.setProtected(...args);
+            
         };
     
         // function 
@@ -227,7 +244,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isInvisible");
-          return this.__PROXY__.isInvisible(...args);
+          
+              return this.__PROXY__.isInvisible(...args);
+            
         };
     
         // function 
@@ -235,7 +254,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setInvisible");
-          return this.__PROXY__.setInvisible(...args);
+          
+              return this.__PROXY__.setInvisible(...args);
+            
         };
     
         // function 
@@ -243,7 +264,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isUndone");
-          return this.__PROXY__.isUndone(...args);
+          
+              return this.__PROXY__.isUndone(...args);
+            
         };
     
         // function 
@@ -251,7 +274,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isWorkingSet");
-          return this.__PROXY__.isWorkingSet(...args);
+          
+              return this.__PROXY__.isWorkingSet(...args);
+            
         };
     
         // function 
@@ -259,7 +284,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setWorkingSet");
-          return this.__PROXY__.setWorkingSet(...args);
+          
+              return this.__PROXY__.setWorkingSet(...args);
+            
         };
     
         // function 
@@ -267,7 +294,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getCustomPropertyTypeIds");
-          return this.__PROXY__.getCustomPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getCustomPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -275,7 +304,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.hasPropertyType");
-          return this.__PROXY__.hasPropertyType(...args);
+          
+              return this.__PROXY__.hasPropertyType(...args);
+            
         };
     
         // function 
@@ -283,7 +314,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.hasCustomProperties");
-          return this.__PROXY__.hasCustomProperties(...args);
+          
+              return this.__PROXY__.hasCustomProperties(...args);
+            
         };
     
         // function 
@@ -291,7 +324,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.hasCustomProperty");
-          return this.__PROXY__.hasCustomProperty(...args);
+          
+              return this.__PROXY__.hasCustomProperty(...args);
+            
         };
     
         // function 
@@ -299,7 +334,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getCustomProperty");
-          return this.__PROXY__.getCustomProperty(...args);
+          
+              return this.__PROXY__.getCustomProperty(...args);
+            
         };
     
         // function 
@@ -307,7 +344,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getCustomDoubleProperty");
-          return this.__PROXY__.getCustomDoubleProperty(...args);
+          
+              return this.__PROXY__.getCustomDoubleProperty(...args);
+            
         };
     
         // function 
@@ -315,7 +354,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getCustomIntProperty");
-          return this.__PROXY__.getCustomIntProperty(...args);
+          
+              return this.__PROXY__.getCustomIntProperty(...args);
+            
         };
     
         // function 
@@ -323,7 +364,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getCustomBoolProperty");
-          return this.__PROXY__.getCustomBoolProperty(...args);
+          
+              return this.__PROXY__.getCustomBoolProperty(...args);
+            
         };
     
         // function 
@@ -331,7 +374,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setCustomProperty");
-          return this.__PROXY__.setCustomProperty(...args);
+          
+              return this.__PROXY__.setCustomProperty(...args);
+            
         };
     
         // function 
@@ -339,7 +384,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.removeCustomProperty");
-          return this.__PROXY__.removeCustomProperty(...args);
+          
+              return this.__PROXY__.removeCustomProperty(...args);
+            
         };
     
         // function 
@@ -347,7 +394,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getCustomPropertyTitles");
-          return this.__PROXY__.getCustomPropertyTitles(...args);
+          
+              return this.__PROXY__.getCustomPropertyTitles(...args);
+            
         };
     
         // function 
@@ -355,7 +404,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getCustomPropertyKeys");
-          return this.__PROXY__.getCustomPropertyKeys(...args);
+          
+              return this.__PROXY__.getCustomPropertyKeys(...args);
+            
         };
     
         // function 
@@ -363,7 +414,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.copyCustomPropertiesFrom");
-          return this.__PROXY__.copyCustomPropertiesFrom(...args);
+          
+              return this.__PROXY__.copyCustomPropertiesFrom(...args);
+            
         };
     
         // function 
@@ -371,7 +424,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.dump");
-          return this.__PROXY__.dump(...args);
+          
+              return this.__PROXY__.dump(...args);
+            
         };
     
         // function 
@@ -379,7 +434,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.validate");
-          return this.__PROXY__.validate(...args);
+          
+              return this.__PROXY__.validate(...args);
+            
         };
     
         // function 
@@ -387,7 +444,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setUndone");
-          return this.__PROXY__.setUndone(...args);
+          
+              return this.__PROXY__.setUndone(...args);
+            
         };
     
         // function 
@@ -395,7 +454,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setId");
-          return this.__PROXY__.setId(...args);
+          
+              return this.__PROXY__.setId(...args);
+            
         };
     
         // function 
@@ -403,7 +464,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setHandle");
-          return this.__PROXY__.setHandle(...args);
+          
+              return this.__PROXY__.setHandle(...args);
+            
         };
     
         // function 
@@ -411,7 +474,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setMemberFlag");
-          return this.__PROXY__.setMemberFlag(...args);
+          
+              return this.__PROXY__.setMemberFlag(...args);
+            
         };
     
         // function 
@@ -419,7 +484,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -427,7 +494,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -435,7 +504,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -443,7 +514,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -451,7 +524,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -459,7 +534,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -467,7 +544,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -475,7 +554,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -483,7 +564,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -491,7 +574,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isSelectable");
-          return this.__PROXY__.isSelectable(...args);
+          
+              return this.__PROXY__.isSelectable(...args);
+            
         };
     
         // function 
@@ -499,7 +584,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -507,7 +594,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -515,7 +604,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -523,7 +614,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -531,7 +624,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -539,7 +634,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -547,7 +644,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -555,7 +654,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -563,7 +664,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -571,7 +674,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -579,7 +684,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -587,7 +694,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -595,7 +704,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -603,7 +714,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -611,7 +724,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -619,7 +734,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -627,7 +744,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -635,7 +754,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -643,7 +764,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -651,7 +774,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -659,7 +784,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -667,7 +794,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -675,7 +804,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -683,7 +814,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -691,7 +824,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -699,7 +834,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -707,7 +844,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -715,7 +854,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -723,7 +864,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -731,7 +874,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -739,7 +884,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -747,7 +894,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -755,7 +904,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -763,7 +914,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getClosestSimpleShape");
-          return this.__PROXY__.getClosestSimpleShape(...args);
+          
+              return this.__PROXY__.getClosestSimpleShape(...args);
+            
         };
     
         // function 
@@ -771,7 +924,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -779,7 +934,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -787,7 +944,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -795,7 +954,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -803,7 +964,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -811,7 +974,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -819,7 +984,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -827,7 +994,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -835,7 +1004,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -843,7 +1014,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -851,7 +1024,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -859,7 +1034,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -867,7 +1044,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -875,7 +1054,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -883,7 +1064,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getIntersectionPointsWithShape");
-          return this.__PROXY__.getIntersectionPointsWithShape(...args);
+          
+              return this.__PROXY__.getIntersectionPointsWithShape(...args);
+            
         };
     
         // function 
@@ -891,7 +1074,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -899,7 +1084,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -907,7 +1094,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -915,7 +1104,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -923,7 +1114,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -931,7 +1124,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.scaleNonUniform");
-          return this.__PROXY__.scaleNonUniform(...args);
+          
+              return this.__PROXY__.scaleNonUniform(...args);
+            
         };
     
         // function 
@@ -939,7 +1134,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -947,7 +1144,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setViewportContext");
-          return this.__PROXY__.setViewportContext(...args);
+          
+              return this.__PROXY__.setViewportContext(...args);
+            
         };
     
         // function 
@@ -955,7 +1154,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -963,7 +1164,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -971,7 +1174,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -979,7 +1184,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -987,7 +1194,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -995,7 +1204,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -1003,7 +1214,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isVisible");
-          return this.__PROXY__.isVisible(...args);
+          
+              return this.__PROXY__.isVisible(...args);
+            
         };
     
         // function 
@@ -1011,7 +1224,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isEditable");
-          return this.__PROXY__.isEditable(...args);
+          
+              return this.__PROXY__.isEditable(...args);
+            
         };
     
         // function 
@@ -1019,7 +1234,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isInWorkingSet");
-          return this.__PROXY__.isInWorkingSet(...args);
+          
+              return this.__PROXY__.isInWorkingSet(...args);
+            
         };
     
         // function 
@@ -1027,7 +1244,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getComplexity");
-          return this.__PROXY__.getComplexity(...args);
+          
+              return this.__PROXY__.getComplexity(...args);
+            
         };
     
         // function 
@@ -1035,7 +1254,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -1043,7 +1264,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.print");
-          return this.__PROXY__.print(...args);
+          
+              return this.__PROXY__.print(...args);
+            
         };
     
         // function 
@@ -1051,7 +1274,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.init");
-          return this.__PROXY__.init(...args);
+          
+              return this.__PROXY__.init(...args);
+            
         };
     
         // function 
@@ -1059,7 +1284,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getRtti");
-          return this.__PROXY__.getRtti(...args);
+          
+              return this.__PROXY__.getRtti(...args);
+            
         };
     
         // function 
@@ -1067,7 +1294,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getStaticPropertyTypeIds");
-          return this.__PROXY__.getStaticPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getStaticPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -1075,7 +1304,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -1083,7 +1314,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getPropertyTypeIds");
-          return this.__PROXY__.getPropertyTypeIds(...args);
+          
+              return this.__PROXY__.getPropertyTypeIds(...args);
+            
         };
     
         // function 
@@ -1091,7 +1324,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setProperty");
-          return this.__PROXY__.setProperty(...args);
+          
+              return this.__PROXY__.setProperty(...args);
+            
         };
     
         // function 
@@ -1099,7 +1334,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getProperty");
-          return this.__PROXY__.getProperty(...args);
+          
+              return this.__PROXY__.getProperty(...args);
+            
         };
     
         // function 
@@ -1107,7 +1344,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.exportEntity");
-          return this.__PROXY__.exportEntity(...args);
+          
+              return this.__PROXY__.exportEntity(...args);
+            
         };
     
         // function 
@@ -1115,7 +1354,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getData");
-          return this.__PROXY__.getData(...args);
+          
+              return this.__PROXY__.getData(...args);
+            
         };
     
         // function 
@@ -1123,7 +1364,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getPosition");
-          return this.__PROXY__.getPosition(...args);
+          
+              return this.__PROXY__.getPosition(...args);
+            
         };
     
         // function 
@@ -1131,7 +1374,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setPosition");
-          return this.__PROXY__.setPosition(...args);
+          
+              return this.__PROXY__.setPosition(...args);
+            
         };
     
         // function 
@@ -1139,7 +1384,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getScaleFactors");
-          return this.__PROXY__.getScaleFactors(...args);
+          
+              return this.__PROXY__.getScaleFactors(...args);
+            
         };
     
         // function 
@@ -1147,7 +1394,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setScaleFactors");
-          return this.__PROXY__.setScaleFactors(...args);
+          
+              return this.__PROXY__.setScaleFactors(...args);
+            
         };
     
         // function 
@@ -1155,7 +1404,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getRotation");
-          return this.__PROXY__.getRotation(...args);
+          
+              return this.__PROXY__.getRotation(...args);
+            
         };
     
         // function 
@@ -1163,7 +1414,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setRotation");
-          return this.__PROXY__.setRotation(...args);
+          
+              return this.__PROXY__.setRotation(...args);
+            
         };
     
         // function 
@@ -1171,7 +1424,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getColumnCount");
-          return this.__PROXY__.getColumnCount(...args);
+          
+              return this.__PROXY__.getColumnCount(...args);
+            
         };
     
         // function 
@@ -1179,7 +1434,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setColumnCount");
-          return this.__PROXY__.setColumnCount(...args);
+          
+              return this.__PROXY__.setColumnCount(...args);
+            
         };
     
         // function 
@@ -1187,7 +1444,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getRowCount");
-          return this.__PROXY__.getRowCount(...args);
+          
+              return this.__PROXY__.getRowCount(...args);
+            
         };
     
         // function 
@@ -1195,7 +1454,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setRowCount");
-          return this.__PROXY__.setRowCount(...args);
+          
+              return this.__PROXY__.setRowCount(...args);
+            
         };
     
         // function 
@@ -1203,7 +1464,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getColumnSpacing");
-          return this.__PROXY__.getColumnSpacing(...args);
+          
+              return this.__PROXY__.getColumnSpacing(...args);
+            
         };
     
         // function 
@@ -1211,7 +1474,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setColumnSpacing");
-          return this.__PROXY__.setColumnSpacing(...args);
+          
+              return this.__PROXY__.setColumnSpacing(...args);
+            
         };
     
         // function 
@@ -1219,7 +1484,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getRowSpacing");
-          return this.__PROXY__.getRowSpacing(...args);
+          
+              return this.__PROXY__.getRowSpacing(...args);
+            
         };
     
         // function 
@@ -1227,7 +1494,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setRowSpacing");
-          return this.__PROXY__.setRowSpacing(...args);
+          
+              return this.__PROXY__.setRowSpacing(...args);
+            
         };
     
         // function 
@@ -1235,7 +1504,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setReferencedBlockId");
-          return this.__PROXY__.setReferencedBlockId(...args);
+          
+              return this.__PROXY__.setReferencedBlockId(...args);
+            
         };
     
         // function 
@@ -1243,7 +1514,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.setReferencedBlockName");
-          return this.__PROXY__.setReferencedBlockName(...args);
+          
+              return this.__PROXY__.setReferencedBlockName(...args);
+            
         };
     
         // function 
@@ -1251,7 +1524,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getReferencedBlockId");
-          return this.__PROXY__.getReferencedBlockId(...args);
+          
+              return this.__PROXY__.getReferencedBlockId(...args);
+            
         };
     
         // function 
@@ -1259,7 +1534,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.getReferencedBlockName");
-          return this.__PROXY__.getReferencedBlockName(...args);
+          
+              return this.__PROXY__.getReferencedBlockName(...args);
+            
         };
     
         // function 
@@ -1267,7 +1544,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -1275,7 +1554,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.queryEntity");
-          return this.__PROXY__.queryEntity(...args);
+          
+              return this.__PROXY__.queryEntity(...args);
+            
         };
     
         // function 
@@ -1283,7 +1564,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.applyTransformationTo");
-          return this.__PROXY__.applyTransformationTo(...args);
+          
+              return this.__PROXY__.applyTransformationTo(...args);
+            
         };
     
         // function 
@@ -1291,7 +1574,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.mapToBlock");
-          return this.__PROXY__.mapToBlock(...args);
+          
+              return this.__PROXY__.mapToBlock(...args);
+            
         };
     
         // function 
@@ -1299,7 +1584,9 @@
           
         {
           //print("JS: RBlockReferenceEntity.prototype.isXRef");
-          return this.__PROXY__.isXRef(...args);
+          
+              return this.__PROXY__.isXRef(...args);
+            
         };
     
 
@@ -1388,6 +1675,16 @@
   }
   
         };
+      RBlockReferenceEntity.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RBlockReferenceEntity.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RBlockReferenceEntity.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

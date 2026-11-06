@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RSplineData.prototype = new RSplineData_BaseJs(engine);
       //RSplineData.prototype = new RSplineData_Wrapper(engine);
       RSplineData.prototype = new Object();
+
 
       RSplineData.prototype.toString = function() {
           //return "RSplineData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -163,7 +164,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -171,7 +174,9 @@
           
         {
           //print("JS: RSplineData.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -179,7 +184,9 @@
           
         {
           //print("JS: RSplineData.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -187,7 +194,9 @@
           
         {
           //print("JS: RSplineData.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -195,7 +204,9 @@
           
         {
           //print("JS: RSplineData.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -203,7 +214,9 @@
           
         {
           //print("JS: RSplineData.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -211,7 +224,9 @@
           
         {
           //print("JS: RSplineData.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -219,7 +234,9 @@
           
         {
           //print("JS: RSplineData.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -227,7 +244,9 @@
           
         {
           //print("JS: RSplineData.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -235,7 +254,9 @@
           
         {
           //print("JS: RSplineData.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -243,7 +264,9 @@
           
         {
           //print("JS: RSplineData.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -251,7 +274,9 @@
           
         {
           //print("JS: RSplineData.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -259,7 +284,9 @@
           
         {
           //print("JS: RSplineData.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -267,7 +294,9 @@
           
         {
           //print("JS: RSplineData.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -275,7 +304,9 @@
           
         {
           //print("JS: RSplineData.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -283,7 +314,9 @@
           
         {
           //print("JS: RSplineData.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -291,7 +324,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -299,7 +334,9 @@
           
         {
           //print("JS: RSplineData.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -307,7 +344,9 @@
           
         {
           //print("JS: RSplineData.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -315,7 +354,9 @@
           
         {
           //print("JS: RSplineData.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -323,7 +364,9 @@
           
         {
           //print("JS: RSplineData.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -331,7 +374,9 @@
           
         {
           //print("JS: RSplineData.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -339,7 +384,9 @@
           
         {
           //print("JS: RSplineData.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -347,7 +394,9 @@
           
         {
           //print("JS: RSplineData.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -355,7 +404,9 @@
           
         {
           //print("JS: RSplineData.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -363,7 +414,9 @@
           
         {
           //print("JS: RSplineData.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -371,7 +424,9 @@
           
         {
           //print("JS: RSplineData.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -379,7 +434,9 @@
           
         {
           //print("JS: RSplineData.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -387,7 +444,9 @@
           
         {
           //print("JS: RSplineData.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -395,7 +454,9 @@
           
         {
           //print("JS: RSplineData.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -403,7 +464,9 @@
           
         {
           //print("JS: RSplineData.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -411,7 +474,9 @@
           
         {
           //print("JS: RSplineData.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -419,7 +484,9 @@
           
         {
           //print("JS: RSplineData.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -427,7 +494,9 @@
           
         {
           //print("JS: RSplineData.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -435,7 +504,9 @@
           
         {
           //print("JS: RSplineData.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -443,7 +514,9 @@
           
         {
           //print("JS: RSplineData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -451,7 +524,9 @@
           
         {
           //print("JS: RSplineData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -459,7 +534,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -467,7 +544,9 @@
           
         {
           //print("JS: RSplineData.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -475,7 +554,9 @@
           
         {
           //print("JS: RSplineData.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -483,7 +564,9 @@
           
         {
           //print("JS: RSplineData.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -491,7 +574,9 @@
           
         {
           //print("JS: RSplineData.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -499,7 +584,9 @@
           
         {
           //print("JS: RSplineData.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -507,7 +594,9 @@
           
         {
           //print("JS: RSplineData.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -515,7 +604,9 @@
           
         {
           //print("JS: RSplineData.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -523,7 +614,9 @@
           
         {
           //print("JS: RSplineData.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -531,7 +624,9 @@
           
         {
           //print("JS: RSplineData.prototype.getShapeType");
-          return this.__PROXY__.getShapeType(...args);
+          
+              return this.__PROXY__.getShapeType(...args);
+            
         };
     
         // function 
@@ -539,7 +634,9 @@
           
         {
           //print("JS: RSplineData.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -547,7 +644,9 @@
           
         {
           //print("JS: RSplineData.prototype.isDirected");
-          return this.__PROXY__.isDirected(...args);
+          
+              return this.__PROXY__.isDirected(...args);
+            
         };
     
         // function 
@@ -555,7 +654,9 @@
           
         {
           //print("JS: RSplineData.prototype.copySpline");
-          return this.__PROXY__.copySpline(...args);
+          
+              return this.__PROXY__.copySpline(...args);
+            
         };
     
         // function 
@@ -563,7 +664,9 @@
           
         {
           //print("JS: RSplineData.prototype.getVectorProperties");
-          return this.__PROXY__.getVectorProperties(...args);
+          
+              return this.__PROXY__.getVectorProperties(...args);
+            
         };
     
         // function 
@@ -571,7 +674,9 @@
           
         {
           //print("JS: RSplineData.prototype.getIntProperties");
-          return this.__PROXY__.getIntProperties(...args);
+          
+              return this.__PROXY__.getIntProperties(...args);
+            
         };
     
         // function 
@@ -579,7 +684,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDoubleProperties");
-          return this.__PROXY__.getDoubleProperties(...args);
+          
+              return this.__PROXY__.getDoubleProperties(...args);
+            
         };
     
         // function 
@@ -587,7 +694,9 @@
           
         {
           //print("JS: RSplineData.prototype.getBoolProperties");
-          return this.__PROXY__.getBoolProperties(...args);
+          
+              return this.__PROXY__.getBoolProperties(...args);
+            
         };
     
         // function 
@@ -595,7 +704,9 @@
           
         {
           //print("JS: RSplineData.prototype.isInterpolated");
-          return this.__PROXY__.isInterpolated(...args);
+          
+              return this.__PROXY__.isInterpolated(...args);
+            
         };
     
         // function 
@@ -603,7 +714,9 @@
           
         {
           //print("JS: RSplineData.prototype.appendControlPoints");
-          return this.__PROXY__.appendControlPoints(...args);
+          
+              return this.__PROXY__.appendControlPoints(...args);
+            
         };
     
         // function 
@@ -611,7 +724,9 @@
           
         {
           //print("JS: RSplineData.prototype.removeLastControlPoint");
-          return this.__PROXY__.removeLastControlPoint(...args);
+          
+              return this.__PROXY__.removeLastControlPoint(...args);
+            
         };
     
         // function 
@@ -619,7 +734,9 @@
           
         {
           //print("JS: RSplineData.prototype.setControlPoints");
-          return this.__PROXY__.setControlPoints(...args);
+          
+              return this.__PROXY__.setControlPoints(...args);
+            
         };
     
         // function 
@@ -627,7 +744,9 @@
           
         {
           //print("JS: RSplineData.prototype.countControlPoints");
-          return this.__PROXY__.countControlPoints(...args);
+          
+              return this.__PROXY__.countControlPoints(...args);
+            
         };
     
         // function 
@@ -635,7 +754,9 @@
           
         {
           //print("JS: RSplineData.prototype.getControlPointAt");
-          return this.__PROXY__.getControlPointAt(...args);
+          
+              return this.__PROXY__.getControlPointAt(...args);
+            
         };
     
         // function 
@@ -643,7 +764,9 @@
           
         {
           //print("JS: RSplineData.prototype.removeFirstFitPoint");
-          return this.__PROXY__.removeFirstFitPoint(...args);
+          
+              return this.__PROXY__.removeFirstFitPoint(...args);
+            
         };
     
         // function 
@@ -651,7 +774,9 @@
           
         {
           //print("JS: RSplineData.prototype.removeLastFitPoint");
-          return this.__PROXY__.removeLastFitPoint(...args);
+          
+              return this.__PROXY__.removeLastFitPoint(...args);
+            
         };
     
         // function 
@@ -659,7 +784,9 @@
           
         {
           //print("JS: RSplineData.prototype.setFitPoints");
-          return this.__PROXY__.setFitPoints(...args);
+          
+              return this.__PROXY__.setFitPoints(...args);
+            
         };
     
         // function 
@@ -667,7 +794,9 @@
           
         {
           //print("JS: RSplineData.prototype.countFitPoints");
-          return this.__PROXY__.countFitPoints(...args);
+          
+              return this.__PROXY__.countFitPoints(...args);
+            
         };
     
         // function 
@@ -675,7 +804,9 @@
           
         {
           //print("JS: RSplineData.prototype.hasFitPoints");
-          return this.__PROXY__.hasFitPoints(...args);
+          
+              return this.__PROXY__.hasFitPoints(...args);
+            
         };
     
         // function 
@@ -683,7 +814,9 @@
           
         {
           //print("JS: RSplineData.prototype.getFitPointAt");
-          return this.__PROXY__.getFitPointAt(...args);
+          
+              return this.__PROXY__.getFitPointAt(...args);
+            
         };
     
         // function 
@@ -691,7 +824,9 @@
           
         {
           //print("JS: RSplineData.prototype.setKnotVector");
-          return this.__PROXY__.setKnotVector(...args);
+          
+              return this.__PROXY__.setKnotVector(...args);
+            
         };
     
         // function 
@@ -699,7 +834,9 @@
           
         {
           //print("JS: RSplineData.prototype.appendKnot");
-          return this.__PROXY__.appendKnot(...args);
+          
+              return this.__PROXY__.appendKnot(...args);
+            
         };
     
         // function 
@@ -707,7 +844,9 @@
           
         {
           //print("JS: RSplineData.prototype.setWeights");
-          return this.__PROXY__.setWeights(...args);
+          
+              return this.__PROXY__.setWeights(...args);
+            
         };
     
         // function 
@@ -715,7 +854,9 @@
           
         {
           //print("JS: RSplineData.prototype.setDegree");
-          return this.__PROXY__.setDegree(...args);
+          
+              return this.__PROXY__.setDegree(...args);
+            
         };
     
         // function 
@@ -723,7 +864,9 @@
           
         {
           //print("JS: RSplineData.prototype.getOrder");
-          return this.__PROXY__.getOrder(...args);
+          
+              return this.__PROXY__.getOrder(...args);
+            
         };
     
         // function 
@@ -731,7 +874,9 @@
           
         {
           //print("JS: RSplineData.prototype.isGeometricallyClosed");
-          return this.__PROXY__.isGeometricallyClosed(...args);
+          
+              return this.__PROXY__.isGeometricallyClosed(...args);
+            
         };
     
         // function 
@@ -739,7 +884,9 @@
           
         {
           //print("JS: RSplineData.prototype.getSideOfPoint");
-          return this.__PROXY__.getSideOfPoint(...args);
+          
+              return this.__PROXY__.getSideOfPoint(...args);
+            
         };
     
         // function 
@@ -747,7 +894,9 @@
           
         {
           //print("JS: RSplineData.prototype.setTangents");
-          return this.__PROXY__.setTangents(...args);
+          
+              return this.__PROXY__.setTangents(...args);
+            
         };
     
         // function 
@@ -755,7 +904,9 @@
           
         {
           //print("JS: RSplineData.prototype.unsetTangents");
-          return this.__PROXY__.unsetTangents(...args);
+          
+              return this.__PROXY__.unsetTangents(...args);
+            
         };
     
         // function 
@@ -763,7 +914,9 @@
           
         {
           //print("JS: RSplineData.prototype.setTangentAtStart");
-          return this.__PROXY__.setTangentAtStart(...args);
+          
+              return this.__PROXY__.setTangentAtStart(...args);
+            
         };
     
         // function 
@@ -771,7 +924,9 @@
           
         {
           //print("JS: RSplineData.prototype.unsetTangentAtStart");
-          return this.__PROXY__.unsetTangentAtStart(...args);
+          
+              return this.__PROXY__.unsetTangentAtStart(...args);
+            
         };
     
         // function 
@@ -779,7 +934,9 @@
           
         {
           //print("JS: RSplineData.prototype.setTangentAtEnd");
-          return this.__PROXY__.setTangentAtEnd(...args);
+          
+              return this.__PROXY__.setTangentAtEnd(...args);
+            
         };
     
         // function 
@@ -787,7 +944,9 @@
           
         {
           //print("JS: RSplineData.prototype.unsetTangentAtEnd");
-          return this.__PROXY__.unsetTangentAtEnd(...args);
+          
+              return this.__PROXY__.unsetTangentAtEnd(...args);
+            
         };
     
         // function 
@@ -795,7 +954,9 @@
           
         {
           //print("JS: RSplineData.prototype.updateTangentsPeriodic");
-          return this.__PROXY__.updateTangentsPeriodic(...args);
+          
+              return this.__PROXY__.updateTangentsPeriodic(...args);
+            
         };
     
         // function 
@@ -803,7 +964,9 @@
           
         {
           //print("JS: RSplineData.prototype.getMiddlePoint");
-          return this.__PROXY__.getMiddlePoint(...args);
+          
+              return this.__PROXY__.getMiddlePoint(...args);
+            
         };
     
         // function 
@@ -811,7 +974,9 @@
           
         {
           //print("JS: RSplineData.prototype.getPointCloud");
-          return this.__PROXY__.getPointCloud(...args);
+          
+              return this.__PROXY__.getPointCloud(...args);
+            
         };
     
         // function 
@@ -819,7 +984,9 @@
           
         {
           //print("JS: RSplineData.prototype.isOnShape");
-          return this.__PROXY__.isOnShape(...args);
+          
+              return this.__PROXY__.isOnShape(...args);
+            
         };
     
         // function 
@@ -827,7 +994,9 @@
           
         {
           //print("JS: RSplineData.prototype.getTransformed");
-          return this.__PROXY__.getTransformed(...args);
+          
+              return this.__PROXY__.getTransformed(...args);
+            
         };
     
         // function 
@@ -835,7 +1004,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDistanceFromStart");
-          return this.__PROXY__.getDistanceFromStart(...args);
+          
+              return this.__PROXY__.getDistanceFromStart(...args);
+            
         };
     
         // function 
@@ -843,7 +1014,9 @@
           
         {
           //print("JS: RSplineData.prototype.splitAtPoints");
-          return this.__PROXY__.splitAtPoints(...args);
+          
+              return this.__PROXY__.splitAtPoints(...args);
+            
         };
     
         // function 
@@ -851,7 +1024,9 @@
           
         {
           //print("JS: RSplineData.prototype.splitAtParams");
-          return this.__PROXY__.splitAtParams(...args);
+          
+              return this.__PROXY__.splitAtParams(...args);
+            
         };
     
         // function 
@@ -859,7 +1034,9 @@
           
         {
           //print("JS: RSplineData.prototype.getExploded");
-          return this.__PROXY__.getExploded(...args);
+          
+              return this.__PROXY__.getExploded(...args);
+            
         };
     
         // function 
@@ -867,7 +1044,9 @@
           
         {
           //print("JS: RSplineData.prototype.getExplodedBezier");
-          return this.__PROXY__.getExplodedBezier(...args);
+          
+              return this.__PROXY__.getExplodedBezier(...args);
+            
         };
     
         // function 
@@ -875,7 +1054,9 @@
           
         {
           //print("JS: RSplineData.prototype.getExplodedWithSegmentLength");
-          return this.__PROXY__.getExplodedWithSegmentLength(...args);
+          
+              return this.__PROXY__.getExplodedWithSegmentLength(...args);
+            
         };
     
         // function 
@@ -883,7 +1064,9 @@
           
         {
           //print("JS: RSplineData.prototype.getBezierSegments");
-          return this.__PROXY__.getBezierSegments(...args);
+          
+              return this.__PROXY__.getBezierSegments(...args);
+            
         };
     
         // function 
@@ -891,7 +1074,9 @@
           
         {
           //print("JS: RSplineData.prototype.getTDelta");
-          return this.__PROXY__.getTDelta(...args);
+          
+              return this.__PROXY__.getTDelta(...args);
+            
         };
     
         // function 
@@ -899,7 +1084,9 @@
           
         {
           //print("JS: RSplineData.prototype.getTMin");
-          return this.__PROXY__.getTMin(...args);
+          
+              return this.__PROXY__.getTMin(...args);
+            
         };
     
         // function 
@@ -907,7 +1094,9 @@
           
         {
           //print("JS: RSplineData.prototype.getTMax");
-          return this.__PROXY__.getTMax(...args);
+          
+              return this.__PROXY__.getTMax(...args);
+            
         };
     
         // function 
@@ -915,7 +1104,9 @@
           
         {
           //print("JS: RSplineData.prototype.getTAtPoint");
-          return this.__PROXY__.getTAtPoint(...args);
+          
+              return this.__PROXY__.getTAtPoint(...args);
+            
         };
     
         // function 
@@ -923,7 +1114,9 @@
           
         {
           //print("JS: RSplineData.prototype.getTAtDistance");
-          return this.__PROXY__.getTAtDistance(...args);
+          
+              return this.__PROXY__.getTAtDistance(...args);
+            
         };
     
         // function 
@@ -931,7 +1124,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDistanceAtT");
-          return this.__PROXY__.getDistanceAtT(...args);
+          
+              return this.__PROXY__.getDistanceAtT(...args);
+            
         };
     
         // function 
@@ -939,7 +1134,9 @@
           
         {
           //print("JS: RSplineData.prototype.getSegments");
-          return this.__PROXY__.getSegments(...args);
+          
+              return this.__PROXY__.getSegments(...args);
+            
         };
     
         // function 
@@ -947,7 +1144,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDiscontinuities");
-          return this.__PROXY__.getDiscontinuities(...args);
+          
+              return this.__PROXY__.getDiscontinuities(...args);
+            
         };
     
         // function 
@@ -955,7 +1154,9 @@
           
         {
           //print("JS: RSplineData.prototype.updateFromControlPoints");
-          return this.__PROXY__.updateFromControlPoints(...args);
+          
+              return this.__PROXY__.updateFromControlPoints(...args);
+            
         };
     
         // function 
@@ -963,7 +1164,9 @@
           
         {
           //print("JS: RSplineData.prototype.updateFromFitPoints");
-          return this.__PROXY__.updateFromFitPoints(...args);
+          
+              return this.__PROXY__.updateFromFitPoints(...args);
+            
         };
     
         // function 
@@ -971,7 +1174,9 @@
           
         {
           //print("JS: RSplineData.prototype.splitAt");
-          return this.__PROXY__.splitAt(...args);
+          
+              return this.__PROXY__.splitAt(...args);
+            
         };
     
         // function 
@@ -979,7 +1184,9 @@
           
         {
           //print("JS: RSplineData.prototype.isDirty");
-          return this.__PROXY__.isDirty(...args);
+          
+              return this.__PROXY__.isDirty(...args);
+            
         };
     
         // function 
@@ -987,7 +1194,9 @@
           
         {
           //print("JS: RSplineData.prototype.getSelfIntersectionPoints");
-          return this.__PROXY__.getSelfIntersectionPoints(...args);
+          
+              return this.__PROXY__.getSelfIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -995,7 +1204,9 @@
           
         {
           //print("JS: RSplineData.prototype.appendToExploded");
-          return this.__PROXY__.appendToExploded(...args);
+          
+              return this.__PROXY__.appendToExploded(...args);
+            
         };
     
         // function 
@@ -1003,7 +1214,9 @@
           
         {
           //print("JS: RSplineData.prototype.invalidate");
-          return this.__PROXY__.invalidate(...args);
+          
+              return this.__PROXY__.invalidate(...args);
+            
         };
     
         // function 
@@ -1011,7 +1224,9 @@
           
         {
           //print("JS: RSplineData.prototype.updateInternal");
-          return this.__PROXY__.updateInternal(...args);
+          
+              return this.__PROXY__.updateInternal(...args);
+            
         };
     
         // function 
@@ -1019,7 +1234,9 @@
           
         {
           //print("JS: RSplineData.prototype.updateBoundingBox");
-          return this.__PROXY__.updateBoundingBox(...args);
+          
+              return this.__PROXY__.updateBoundingBox(...args);
+            
         };
     
         // function 
@@ -1027,7 +1244,9 @@
           
         {
           //print("JS: RSplineData.prototype.print");
-          return this.__PROXY__.print(...args);
+          
+              return this.__PROXY__.print(...args);
+            
         };
     
         // function 
@@ -1035,7 +1254,9 @@
           
         {
           //print("JS: RSplineData.prototype.copy");
-          return this.__PROXY__.copy(...args);
+          
+              return this.__PROXY__.copy(...args);
+            
         };
     
         // function 
@@ -1043,7 +1264,9 @@
           
         {
           //print("JS: RSplineData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -1051,7 +1274,9 @@
           
         {
           //print("JS: RSplineData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -1059,7 +1284,9 @@
           
         {
           //print("JS: RSplineData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -1067,7 +1294,9 @@
           
         {
           //print("JS: RSplineData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -1075,7 +1304,9 @@
           
         {
           //print("JS: RSplineData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -1083,7 +1314,9 @@
           
         {
           //print("JS: RSplineData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -1091,7 +1324,9 @@
           
         {
           //print("JS: RSplineData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -1099,7 +1334,9 @@
           
         {
           //print("JS: RSplineData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -1107,7 +1344,9 @@
           
         {
           //print("JS: RSplineData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -1115,7 +1354,9 @@
           
         {
           //print("JS: RSplineData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -1123,7 +1364,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -1131,7 +1374,9 @@
           
         {
           //print("JS: RSplineData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -1139,7 +1384,9 @@
           
         {
           //print("JS: RSplineData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -1147,7 +1394,9 @@
           
         {
           //print("JS: RSplineData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -1155,7 +1404,9 @@
           
         {
           //print("JS: RSplineData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -1163,7 +1414,9 @@
           
         {
           //print("JS: RSplineData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -1171,7 +1424,9 @@
           
         {
           //print("JS: RSplineData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -1179,7 +1434,9 @@
           
         {
           //print("JS: RSplineData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -1187,7 +1444,9 @@
           
         {
           //print("JS: RSplineData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -1195,7 +1454,9 @@
           
         {
           //print("JS: RSplineData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -1203,7 +1464,9 @@
           
         {
           //print("JS: RSplineData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -1211,7 +1474,9 @@
           
         {
           //print("JS: RSplineData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -1219,7 +1484,9 @@
           
         {
           //print("JS: RSplineData.prototype.setShape");
-          return this.__PROXY__.setShape(...args);
+          
+              return this.__PROXY__.setShape(...args);
+            
         };
     
         // function 
@@ -1227,7 +1494,9 @@
           
         {
           //print("JS: RSplineData.prototype.appendControlPoint");
-          return this.__PROXY__.appendControlPoint(...args);
+          
+              return this.__PROXY__.appendControlPoint(...args);
+            
         };
     
         // function 
@@ -1235,7 +1504,9 @@
           
         {
           //print("JS: RSplineData.prototype.appendFitPoint");
-          return this.__PROXY__.appendFitPoint(...args);
+          
+              return this.__PROXY__.appendFitPoint(...args);
+            
         };
     
         // function 
@@ -1243,7 +1514,9 @@
           
         {
           //print("JS: RSplineData.prototype.prependFitPoint");
-          return this.__PROXY__.prependFitPoint(...args);
+          
+              return this.__PROXY__.prependFitPoint(...args);
+            
         };
     
         // function 
@@ -1251,7 +1524,9 @@
           
         {
           //print("JS: RSplineData.prototype.insertFitPointAt");
-          return this.__PROXY__.insertFitPointAt(...args);
+          
+              return this.__PROXY__.insertFitPointAt(...args);
+            
         };
     
         // function 
@@ -1259,7 +1534,9 @@
           
         {
           //print("JS: RSplineData.prototype.removeFitPointAt");
-          return this.__PROXY__.removeFitPointAt(...args);
+          
+              return this.__PROXY__.removeFitPointAt(...args);
+            
         };
     
         // function 
@@ -1267,7 +1544,9 @@
           
         {
           //print("JS: RSplineData.prototype.setPeriodic");
-          return this.__PROXY__.setPeriodic(...args);
+          
+              return this.__PROXY__.setPeriodic(...args);
+            
         };
     
         // function 
@@ -1275,7 +1554,9 @@
           
         {
           //print("JS: RSplineData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -1283,7 +1564,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDegree");
-          return this.__PROXY__.getDegree(...args);
+          
+              return this.__PROXY__.getDegree(...args);
+            
         };
     
         // function 
@@ -1291,7 +1574,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDirection1");
-          return this.__PROXY__.getDirection1(...args);
+          
+              return this.__PROXY__.getDirection1(...args);
+            
         };
     
         // function 
@@ -1299,7 +1584,9 @@
           
         {
           //print("JS: RSplineData.prototype.getDirection2");
-          return this.__PROXY__.getDirection2(...args);
+          
+              return this.__PROXY__.getDirection2(...args);
+            
         };
     
         // function 
@@ -1307,7 +1594,9 @@
           
         {
           //print("JS: RSplineData.prototype.getStartPoint");
-          return this.__PROXY__.getStartPoint(...args);
+          
+              return this.__PROXY__.getStartPoint(...args);
+            
         };
     
         // function 
@@ -1315,7 +1604,9 @@
           
         {
           //print("JS: RSplineData.prototype.getEndPoint");
-          return this.__PROXY__.getEndPoint(...args);
+          
+              return this.__PROXY__.getEndPoint(...args);
+            
         };
     
         // function 
@@ -1323,7 +1614,9 @@
           
         {
           //print("JS: RSplineData.prototype.setStartPoint");
-          return this.__PROXY__.setStartPoint(...args);
+          
+              return this.__PROXY__.setStartPoint(...args);
+            
         };
     
         // function 
@@ -1331,7 +1624,9 @@
           
         {
           //print("JS: RSplineData.prototype.setEndPoint");
-          return this.__PROXY__.setEndPoint(...args);
+          
+              return this.__PROXY__.setEndPoint(...args);
+            
         };
     
         // function 
@@ -1339,7 +1634,9 @@
           
         {
           //print("JS: RSplineData.prototype.reverse");
-          return this.__PROXY__.reverse(...args);
+          
+              return this.__PROXY__.reverse(...args);
+            
         };
     
         // function 
@@ -1347,7 +1644,9 @@
           
         {
           //print("JS: RSplineData.prototype.getTrimEnd");
-          return this.__PROXY__.getTrimEnd(...args);
+          
+              return this.__PROXY__.getTrimEnd(...args);
+            
         };
     
         // function 
@@ -1355,7 +1654,9 @@
           
         {
           //print("JS: RSplineData.prototype.trimStartPoint");
-          return this.__PROXY__.trimStartPoint(...args);
+          
+              return this.__PROXY__.trimStartPoint(...args);
+            
         };
     
         // function 
@@ -1363,7 +1664,9 @@
           
         {
           //print("JS: RSplineData.prototype.trimEndPoint");
-          return this.__PROXY__.trimEndPoint(...args);
+          
+              return this.__PROXY__.trimEndPoint(...args);
+            
         };
     
         // function 
@@ -1371,7 +1674,9 @@
           
         {
           //print("JS: RSplineData.prototype.isClosed");
-          return this.__PROXY__.isClosed(...args);
+          
+              return this.__PROXY__.isClosed(...args);
+            
         };
     
         // function 
@@ -1379,7 +1684,9 @@
           
         {
           //print("JS: RSplineData.prototype.isPeriodic");
-          return this.__PROXY__.isPeriodic(...args);
+          
+              return this.__PROXY__.isPeriodic(...args);
+            
         };
     
         // function 
@@ -1387,7 +1694,9 @@
           
         {
           //print("JS: RSplineData.prototype.getTangentAtStart");
-          return this.__PROXY__.getTangentAtStart(...args);
+          
+              return this.__PROXY__.getTangentAtStart(...args);
+            
         };
     
         // function 
@@ -1395,7 +1704,9 @@
           
         {
           //print("JS: RSplineData.prototype.getTangentAtEnd");
-          return this.__PROXY__.getTangentAtEnd(...args);
+          
+              return this.__PROXY__.getTangentAtEnd(...args);
+            
         };
     
         // function 
@@ -1403,7 +1714,9 @@
           
         {
           //print("JS: RSplineData.prototype.getControlPoints");
-          return this.__PROXY__.getControlPoints(...args);
+          
+              return this.__PROXY__.getControlPoints(...args);
+            
         };
     
         // function 
@@ -1411,7 +1724,9 @@
           
         {
           //print("JS: RSplineData.prototype.getControlPointsWrapped");
-          return this.__PROXY__.getControlPointsWrapped(...args);
+          
+              return this.__PROXY__.getControlPointsWrapped(...args);
+            
         };
     
         // function 
@@ -1419,7 +1734,9 @@
           
         {
           //print("JS: RSplineData.prototype.getFitPoints");
-          return this.__PROXY__.getFitPoints(...args);
+          
+              return this.__PROXY__.getFitPoints(...args);
+            
         };
     
         // function 
@@ -1427,7 +1744,9 @@
           
         {
           //print("JS: RSplineData.prototype.getKnotVector");
-          return this.__PROXY__.getKnotVector(...args);
+          
+              return this.__PROXY__.getKnotVector(...args);
+            
         };
     
         // function 
@@ -1435,7 +1754,9 @@
           
         {
           //print("JS: RSplineData.prototype.getActualKnotVector");
-          return this.__PROXY__.getActualKnotVector(...args);
+          
+              return this.__PROXY__.getActualKnotVector(...args);
+            
         };
     
         // function 
@@ -1443,7 +1764,9 @@
           
         {
           //print("JS: RSplineData.prototype.getWeights");
-          return this.__PROXY__.getWeights(...args);
+          
+              return this.__PROXY__.getWeights(...args);
+            
         };
     
         // function 
@@ -1451,7 +1774,9 @@
           
         {
           //print("JS: RSplineData.prototype.getLength");
-          return this.__PROXY__.getLength(...args);
+          
+              return this.__PROXY__.getLength(...args);
+            
         };
     
         // function 
@@ -1459,7 +1784,9 @@
           
         {
           //print("JS: RSplineData.prototype.getPointAt");
-          return this.__PROXY__.getPointAt(...args);
+          
+              return this.__PROXY__.getPointAt(...args);
+            
         };
     
         // function 
@@ -1467,7 +1794,9 @@
           
         {
           //print("JS: RSplineData.prototype.getPointAtDistance");
-          return this.__PROXY__.getPointAtDistance(...args);
+          
+              return this.__PROXY__.getPointAtDistance(...args);
+            
         };
     
         // function 
@@ -1475,7 +1804,9 @@
           
         {
           //print("JS: RSplineData.prototype.getAngleAt");
-          return this.__PROXY__.getAngleAt(...args);
+          
+              return this.__PROXY__.getAngleAt(...args);
+            
         };
     
         // function 
@@ -1483,7 +1814,9 @@
           
         {
           //print("JS: RSplineData.prototype.toPolyline");
-          return this.__PROXY__.toPolyline(...args);
+          
+              return this.__PROXY__.toPolyline(...args);
+            
         };
     
         // function 
@@ -1491,7 +1824,9 @@
           
         {
           //print("JS: RSplineData.prototype.approximateWithArcs");
-          return this.__PROXY__.approximateWithArcs(...args);
+          
+              return this.__PROXY__.approximateWithArcs(...args);
+            
         };
     
         // function 
@@ -1499,7 +1834,9 @@
           
         {
           //print("JS: RSplineData.prototype.simplify");
-          return this.__PROXY__.simplify(...args);
+          
+              return this.__PROXY__.simplify(...args);
+            
         };
     
         // function 
@@ -1507,7 +1844,9 @@
           
         {
           //print("JS: RSplineData.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -1515,7 +1854,9 @@
           
         {
           //print("JS: RSplineData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
         // function 
@@ -1523,11 +1864,23 @@
           
         {
           //print("JS: RSplineData.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
 
       // static functions:
+      RSplineData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RSplineData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RSplineData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

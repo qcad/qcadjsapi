@@ -136,15 +136,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RXLineData.prototype = new RXLineData_BaseJs(engine);
       //RXLineData.prototype = new RXLineData_Wrapper(engine);
       RXLineData.prototype = new Object();
+
 
       RXLineData.prototype.toString = function() {
           //return "RXLineData [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -189,7 +190,9 @@
           
         {
           //print("JS: RXLineData.prototype.getDocument");
-          return this.__PROXY__.getDocument(...args);
+          
+              return this.__PROXY__.getDocument(...args);
+            
         };
     
         // function 
@@ -197,7 +200,9 @@
           
         {
           //print("JS: RXLineData.prototype.setDocument");
-          return this.__PROXY__.setDocument(...args);
+          
+              return this.__PROXY__.setDocument(...args);
+            
         };
     
         // function 
@@ -205,7 +210,9 @@
           
         {
           //print("JS: RXLineData.prototype.isPointType");
-          return this.__PROXY__.isPointType(...args);
+          
+              return this.__PROXY__.isPointType(...args);
+            
         };
     
         // function 
@@ -213,7 +220,9 @@
           
         {
           //print("JS: RXLineData.prototype.isValid");
-          return this.__PROXY__.isValid(...args);
+          
+              return this.__PROXY__.isValid(...args);
+            
         };
     
         // function 
@@ -221,7 +230,9 @@
           
         {
           //print("JS: RXLineData.prototype.isSane");
-          return this.__PROXY__.isSane(...args);
+          
+              return this.__PROXY__.isSane(...args);
+            
         };
     
         // function 
@@ -229,7 +240,9 @@
           
         {
           //print("JS: RXLineData.prototype.getClosestSubEntityId");
-          return this.__PROXY__.getClosestSubEntityId(...args);
+          
+              return this.__PROXY__.getClosestSubEntityId(...args);
+            
         };
     
         // function 
@@ -237,7 +250,9 @@
           
         {
           //print("JS: RXLineData.prototype.getClosestShape");
-          return this.__PROXY__.getClosestShape(...args);
+          
+              return this.__PROXY__.getClosestShape(...args);
+            
         };
     
         // function 
@@ -245,7 +260,9 @@
           
         {
           //print("JS: RXLineData.prototype.copyAttributesFrom");
-          return this.__PROXY__.copyAttributesFrom(...args);
+          
+              return this.__PROXY__.copyAttributesFrom(...args);
+            
         };
     
         // function 
@@ -253,7 +270,9 @@
           
         {
           //print("JS: RXLineData.prototype.to2D");
-          return this.__PROXY__.to2D(...args);
+          
+              return this.__PROXY__.to2D(...args);
+            
         };
     
         // function 
@@ -261,7 +280,9 @@
           
         {
           //print("JS: RXLineData.prototype.getBoundingBoxes");
-          return this.__PROXY__.getBoundingBoxes(...args);
+          
+              return this.__PROXY__.getBoundingBoxes(...args);
+            
         };
     
         // function 
@@ -269,7 +290,9 @@
           
         {
           //print("JS: RXLineData.prototype.getHull");
-          return this.__PROXY__.getHull(...args);
+          
+              return this.__PROXY__.getHull(...args);
+            
         };
     
         // function 
@@ -277,7 +300,9 @@
           
         {
           //print("JS: RXLineData.prototype.isUpdatesEnabled");
-          return this.__PROXY__.isUpdatesEnabled(...args);
+          
+              return this.__PROXY__.isUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -285,7 +310,9 @@
           
         {
           //print("JS: RXLineData.prototype.setUpdatesEnabled");
-          return this.__PROXY__.setUpdatesEnabled(...args);
+          
+              return this.__PROXY__.setUpdatesEnabled(...args);
+            
         };
     
         // function 
@@ -293,7 +320,9 @@
           
         {
           //print("JS: RXLineData.prototype.cloneOnChange");
-          return this.__PROXY__.cloneOnChange(...args);
+          
+              return this.__PROXY__.cloneOnChange(...args);
+            
         };
     
         // function 
@@ -301,7 +330,9 @@
           
         {
           //print("JS: RXLineData.prototype.isSelected");
-          return this.__PROXY__.isSelected(...args);
+          
+              return this.__PROXY__.isSelected(...args);
+            
         };
     
         // function 
@@ -309,7 +340,9 @@
           
         {
           //print("JS: RXLineData.prototype.setSelected");
-          return this.__PROXY__.setSelected(...args);
+          
+              return this.__PROXY__.setSelected(...args);
+            
         };
     
         // function 
@@ -317,7 +350,9 @@
           
         {
           //print("JS: RXLineData.prototype.isSelectedWorkingSet");
-          return this.__PROXY__.isSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.isSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -325,7 +360,9 @@
           
         {
           //print("JS: RXLineData.prototype.setSelectedWorkingSet");
-          return this.__PROXY__.setSelectedWorkingSet(...args);
+          
+              return this.__PROXY__.setSelectedWorkingSet(...args);
+            
         };
     
         // function 
@@ -333,7 +370,9 @@
           
         {
           //print("JS: RXLineData.prototype.getDrawOrder");
-          return this.__PROXY__.getDrawOrder(...args);
+          
+              return this.__PROXY__.getDrawOrder(...args);
+            
         };
     
         // function 
@@ -341,7 +380,9 @@
           
         {
           //print("JS: RXLineData.prototype.setDrawOrder");
-          return this.__PROXY__.setDrawOrder(...args);
+          
+              return this.__PROXY__.setDrawOrder(...args);
+            
         };
     
         // function 
@@ -349,7 +390,9 @@
           
         {
           //print("JS: RXLineData.prototype.setLayerId");
-          return this.__PROXY__.setLayerId(...args);
+          
+              return this.__PROXY__.setLayerId(...args);
+            
         };
     
         // function 
@@ -357,7 +400,9 @@
           
         {
           //print("JS: RXLineData.prototype.getLayerId");
-          return this.__PROXY__.getLayerId(...args);
+          
+              return this.__PROXY__.getLayerId(...args);
+            
         };
     
         // function 
@@ -365,7 +410,9 @@
           
         {
           //print("JS: RXLineData.prototype.setLayerName");
-          return this.__PROXY__.setLayerName(...args);
+          
+              return this.__PROXY__.setLayerName(...args);
+            
         };
     
         // function 
@@ -373,7 +420,9 @@
           
         {
           //print("JS: RXLineData.prototype.getLayerName");
-          return this.__PROXY__.getLayerName(...args);
+          
+              return this.__PROXY__.getLayerName(...args);
+            
         };
     
         // function 
@@ -381,7 +430,9 @@
           
         {
           //print("JS: RXLineData.prototype.setBlockId");
-          return this.__PROXY__.setBlockId(...args);
+          
+              return this.__PROXY__.setBlockId(...args);
+            
         };
     
         // function 
@@ -389,7 +440,9 @@
           
         {
           //print("JS: RXLineData.prototype.getBlockId");
-          return this.__PROXY__.getBlockId(...args);
+          
+              return this.__PROXY__.getBlockId(...args);
+            
         };
     
         // function 
@@ -397,7 +450,9 @@
           
         {
           //print("JS: RXLineData.prototype.setParentId");
-          return this.__PROXY__.setParentId(...args);
+          
+              return this.__PROXY__.setParentId(...args);
+            
         };
     
         // function 
@@ -405,7 +460,9 @@
           
         {
           //print("JS: RXLineData.prototype.getParentId");
-          return this.__PROXY__.getParentId(...args);
+          
+              return this.__PROXY__.getParentId(...args);
+            
         };
     
         // function 
@@ -413,7 +470,9 @@
           
         {
           //print("JS: RXLineData.prototype.getBlockName");
-          return this.__PROXY__.getBlockName(...args);
+          
+              return this.__PROXY__.getBlockName(...args);
+            
         };
     
         // function 
@@ -421,7 +480,9 @@
           
         {
           //print("JS: RXLineData.prototype.setLinetypeId");
-          return this.__PROXY__.setLinetypeId(...args);
+          
+              return this.__PROXY__.setLinetypeId(...args);
+            
         };
     
         // function 
@@ -429,7 +490,9 @@
           
         {
           //print("JS: RXLineData.prototype.getLinetypeId");
-          return this.__PROXY__.getLinetypeId(...args);
+          
+              return this.__PROXY__.getLinetypeId(...args);
+            
         };
     
         // function 
@@ -437,7 +500,9 @@
           
         {
           //print("JS: RXLineData.prototype.setLinetypePattern");
-          return this.__PROXY__.setLinetypePattern(...args);
+          
+              return this.__PROXY__.setLinetypePattern(...args);
+            
         };
     
         // function 
@@ -445,7 +510,9 @@
           
         {
           //print("JS: RXLineData.prototype.getLinetypePattern");
-          return this.__PROXY__.getLinetypePattern(...args);
+          
+              return this.__PROXY__.getLinetypePattern(...args);
+            
         };
     
         // function 
@@ -453,7 +520,9 @@
           
         {
           //print("JS: RXLineData.prototype.setLinetypeScale");
-          return this.__PROXY__.setLinetypeScale(...args);
+          
+              return this.__PROXY__.setLinetypeScale(...args);
+            
         };
     
         // function 
@@ -461,7 +530,9 @@
           
         {
           //print("JS: RXLineData.prototype.getLinetypeScale");
-          return this.__PROXY__.getLinetypeScale(...args);
+          
+              return this.__PROXY__.getLinetypeScale(...args);
+            
         };
     
         // function 
@@ -469,7 +540,9 @@
           
         {
           //print("JS: RXLineData.prototype.getLineweight");
-          return this.__PROXY__.getLineweight(...args);
+          
+              return this.__PROXY__.getLineweight(...args);
+            
         };
     
         // function 
@@ -477,7 +550,9 @@
           
         {
           //print("JS: RXLineData.prototype.setLineweight");
-          return this.__PROXY__.setLineweight(...args);
+          
+              return this.__PROXY__.setLineweight(...args);
+            
         };
     
         // function 
@@ -485,7 +560,9 @@
           
         {
           //print("JS: RXLineData.prototype.setColor");
-          return this.__PROXY__.setColor(...args);
+          
+              return this.__PROXY__.setColor(...args);
+            
         };
     
         // function 
@@ -493,7 +570,9 @@
           
         {
           //print("JS: RXLineData.prototype.getColor");
-          return this.__PROXY__.getColor(...args);
+          
+              return this.__PROXY__.getColor(...args);
+            
         };
     
         // function 
@@ -501,7 +580,9 @@
           
         {
           //print("JS: RXLineData.prototype.getDisplayColor");
-          return this.__PROXY__.getDisplayColor(...args);
+          
+              return this.__PROXY__.getDisplayColor(...args);
+            
         };
     
         // function 
@@ -509,7 +590,9 @@
           
         {
           //print("JS: RXLineData.prototype.getInternalReferencePoints");
-          return this.__PROXY__.getInternalReferencePoints(...args);
+          
+              return this.__PROXY__.getInternalReferencePoints(...args);
+            
         };
     
         // function 
@@ -517,7 +600,9 @@
           
         {
           //print("JS: RXLineData.prototype.getPointOnEntity");
-          return this.__PROXY__.getPointOnEntity(...args);
+          
+              return this.__PROXY__.getPointOnEntity(...args);
+            
         };
     
         // function 
@@ -525,7 +610,9 @@
           
         {
           //print("JS: RXLineData.prototype.getArcReferencePoints");
-          return this.__PROXY__.getArcReferencePoints(...args);
+          
+              return this.__PROXY__.getArcReferencePoints(...args);
+            
         };
     
         // function 
@@ -533,7 +620,9 @@
           
         {
           //print("JS: RXLineData.prototype.getClosestPointOnEntity");
-          return this.__PROXY__.getClosestPointOnEntity(...args);
+          
+              return this.__PROXY__.getClosestPointOnEntity(...args);
+            
         };
     
         // function 
@@ -541,7 +630,9 @@
           
         {
           //print("JS: RXLineData.prototype.getIntersectionPoints");
-          return this.__PROXY__.getIntersectionPoints(...args);
+          
+              return this.__PROXY__.getIntersectionPoints(...args);
+            
         };
     
         // function 
@@ -549,7 +640,9 @@
           
         {
           //print("JS: RXLineData.prototype.getDistanceTo");
-          return this.__PROXY__.getDistanceTo(...args);
+          
+              return this.__PROXY__.getDistanceTo(...args);
+            
         };
     
         // function 
@@ -557,7 +650,9 @@
           
         {
           //print("JS: RXLineData.prototype.isInside");
-          return this.__PROXY__.isInside(...args);
+          
+              return this.__PROXY__.isInside(...args);
+            
         };
     
         // function 
@@ -565,7 +660,9 @@
           
         {
           //print("JS: RXLineData.prototype.isOnEntity");
-          return this.__PROXY__.isOnEntity(...args);
+          
+              return this.__PROXY__.isOnEntity(...args);
+            
         };
     
         // function 
@@ -573,7 +670,9 @@
           
         {
           //print("JS: RXLineData.prototype.intersectsWith");
-          return this.__PROXY__.intersectsWith(...args);
+          
+              return this.__PROXY__.intersectsWith(...args);
+            
         };
     
         // function 
@@ -581,7 +680,9 @@
           
         {
           //print("JS: RXLineData.prototype.clickReferencePoint");
-          return this.__PROXY__.clickReferencePoint(...args);
+          
+              return this.__PROXY__.clickReferencePoint(...args);
+            
         };
     
         // function 
@@ -589,7 +690,9 @@
           
         {
           //print("JS: RXLineData.prototype.scaleVisualProperties");
-          return this.__PROXY__.scaleVisualProperties(...args);
+          
+              return this.__PROXY__.scaleVisualProperties(...args);
+            
         };
     
         // function 
@@ -597,7 +700,9 @@
           
         {
           //print("JS: RXLineData.prototype.flipHorizontal");
-          return this.__PROXY__.flipHorizontal(...args);
+          
+              return this.__PROXY__.flipHorizontal(...args);
+            
         };
     
         // function 
@@ -605,7 +710,9 @@
           
         {
           //print("JS: RXLineData.prototype.flipVertical");
-          return this.__PROXY__.flipVertical(...args);
+          
+              return this.__PROXY__.flipVertical(...args);
+            
         };
     
         // function 
@@ -613,7 +720,9 @@
           
         {
           //print("JS: RXLineData.prototype.update");
-          return this.__PROXY__.update(...args);
+          
+              return this.__PROXY__.update(...args);
+            
         };
     
         // function 
@@ -621,7 +730,9 @@
           
         {
           //print("JS: RXLineData.prototype.setAutoUpdatesBlocked");
-          return this.__PROXY__.setAutoUpdatesBlocked(...args);
+          
+              return this.__PROXY__.setAutoUpdatesBlocked(...args);
+            
         };
     
         // function 
@@ -629,7 +740,9 @@
           
         {
           //print("JS: RXLineData.prototype.getShapeType");
-          return this.__PROXY__.getShapeType(...args);
+          
+              return this.__PROXY__.getShapeType(...args);
+            
         };
     
         // function 
@@ -637,7 +750,9 @@
           
         {
           //print("JS: RXLineData.prototype.getLineShape");
-          return this.__PROXY__.getLineShape(...args);
+          
+              return this.__PROXY__.getLineShape(...args);
+            
         };
     
         // function 
@@ -645,7 +760,9 @@
           
         {
           //print("JS: RXLineData.prototype.clone");
-          return this.__PROXY__.clone(...args);
+          
+              return this.__PROXY__.clone(...args);
+            
         };
     
         // function 
@@ -653,7 +770,9 @@
           
         {
           //print("JS: RXLineData.prototype.isDirected");
-          return this.__PROXY__.isDirected(...args);
+          
+              return this.__PROXY__.isDirected(...args);
+            
         };
     
         // function 
@@ -661,7 +780,9 @@
           
         {
           //print("JS: RXLineData.prototype.getBoundingBox");
-          return this.__PROXY__.getBoundingBox(...args);
+          
+              return this.__PROXY__.getBoundingBox(...args);
+            
         };
     
         // function 
@@ -669,7 +790,9 @@
           
         {
           //print("JS: RXLineData.prototype.setZ");
-          return this.__PROXY__.setZ(...args);
+          
+              return this.__PROXY__.setZ(...args);
+            
         };
     
         // function 
@@ -677,7 +800,9 @@
           
         {
           //print("JS: RXLineData.prototype.getVectorProperties");
-          return this.__PROXY__.getVectorProperties(...args);
+          
+              return this.__PROXY__.getVectorProperties(...args);
+            
         };
     
         // function 
@@ -685,7 +810,9 @@
           
         {
           //print("JS: RXLineData.prototype.getEndPoints");
-          return this.__PROXY__.getEndPoints(...args);
+          
+              return this.__PROXY__.getEndPoints(...args);
+            
         };
     
         // function 
@@ -693,7 +820,9 @@
           
         {
           //print("JS: RXLineData.prototype.getMiddlePoints");
-          return this.__PROXY__.getMiddlePoints(...args);
+          
+              return this.__PROXY__.getMiddlePoints(...args);
+            
         };
     
         // function 
@@ -701,7 +830,9 @@
           
         {
           //print("JS: RXLineData.prototype.getCenterPoints");
-          return this.__PROXY__.getCenterPoints(...args);
+          
+              return this.__PROXY__.getCenterPoints(...args);
+            
         };
     
         // function 
@@ -709,7 +840,9 @@
           
         {
           //print("JS: RXLineData.prototype.getPointsWithDistanceToEnd");
-          return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+          
+              return this.__PROXY__.getPointsWithDistanceToEnd(...args);
+            
         };
     
         // function 
@@ -717,7 +850,9 @@
           
         {
           //print("JS: RXLineData.prototype.getPointCloud");
-          return this.__PROXY__.getPointCloud(...args);
+          
+              return this.__PROXY__.getPointCloud(...args);
+            
         };
     
         // function 
@@ -725,7 +860,9 @@
           
         {
           //print("JS: RXLineData.prototype.getAngleAt");
-          return this.__PROXY__.getAngleAt(...args);
+          
+              return this.__PROXY__.getAngleAt(...args);
+            
         };
     
         // function 
@@ -733,7 +870,9 @@
           
         {
           //print("JS: RXLineData.prototype.getVectorTo");
-          return this.__PROXY__.getVectorTo(...args);
+          
+              return this.__PROXY__.getVectorTo(...args);
+            
         };
     
         // function 
@@ -741,7 +880,9 @@
           
         {
           //print("JS: RXLineData.prototype.setBasePoint");
-          return this.__PROXY__.setBasePoint(...args);
+          
+              return this.__PROXY__.setBasePoint(...args);
+            
         };
     
         // function 
@@ -749,7 +890,9 @@
           
         {
           //print("JS: RXLineData.prototype.getSecondPoint");
-          return this.__PROXY__.getSecondPoint(...args);
+          
+              return this.__PROXY__.getSecondPoint(...args);
+            
         };
     
         // function 
@@ -757,7 +900,9 @@
           
         {
           //print("JS: RXLineData.prototype.setSecondPoint");
-          return this.__PROXY__.setSecondPoint(...args);
+          
+              return this.__PROXY__.setSecondPoint(...args);
+            
         };
     
         // function 
@@ -765,7 +910,9 @@
           
         {
           //print("JS: RXLineData.prototype.setDirectionVector");
-          return this.__PROXY__.setDirectionVector(...args);
+          
+              return this.__PROXY__.setDirectionVector(...args);
+            
         };
     
         // function 
@@ -773,7 +920,9 @@
           
         {
           //print("JS: RXLineData.prototype.getMiddlePoint");
-          return this.__PROXY__.getMiddlePoint(...args);
+          
+              return this.__PROXY__.getMiddlePoint(...args);
+            
         };
     
         // function 
@@ -781,7 +930,9 @@
           
         {
           //print("JS: RXLineData.prototype.getLength");
-          return this.__PROXY__.getLength(...args);
+          
+              return this.__PROXY__.getLength(...args);
+            
         };
     
         // function 
@@ -789,7 +940,9 @@
           
         {
           //print("JS: RXLineData.prototype.setLength");
-          return this.__PROXY__.setLength(...args);
+          
+              return this.__PROXY__.setLength(...args);
+            
         };
     
         // function 
@@ -797,7 +950,9 @@
           
         {
           //print("JS: RXLineData.prototype.setAngle");
-          return this.__PROXY__.setAngle(...args);
+          
+              return this.__PROXY__.setAngle(...args);
+            
         };
     
         // function 
@@ -805,7 +960,9 @@
           
         {
           //print("JS: RXLineData.prototype.getDirection1");
-          return this.__PROXY__.getDirection1(...args);
+          
+              return this.__PROXY__.getDirection1(...args);
+            
         };
     
         // function 
@@ -813,7 +970,9 @@
           
         {
           //print("JS: RXLineData.prototype.getDirection2");
-          return this.__PROXY__.getDirection2(...args);
+          
+              return this.__PROXY__.getDirection2(...args);
+            
         };
     
         // function 
@@ -821,7 +980,9 @@
           
         {
           //print("JS: RXLineData.prototype.getStartPoint");
-          return this.__PROXY__.getStartPoint(...args);
+          
+              return this.__PROXY__.getStartPoint(...args);
+            
         };
     
         // function 
@@ -829,7 +990,9 @@
           
         {
           //print("JS: RXLineData.prototype.getEndPoint");
-          return this.__PROXY__.getEndPoint(...args);
+          
+              return this.__PROXY__.getEndPoint(...args);
+            
         };
     
         // function 
@@ -837,7 +1000,9 @@
           
         {
           //print("JS: RXLineData.prototype.getDistanceFromStart");
-          return this.__PROXY__.getDistanceFromStart(...args);
+          
+              return this.__PROXY__.getDistanceFromStart(...args);
+            
         };
     
         // function 
@@ -845,7 +1010,9 @@
           
         {
           //print("JS: RXLineData.prototype.getClippedLine");
-          return this.__PROXY__.getClippedLine(...args);
+          
+              return this.__PROXY__.getClippedLine(...args);
+            
         };
     
         // function 
@@ -853,7 +1020,9 @@
           
         {
           //print("JS: RXLineData.prototype.move");
-          return this.__PROXY__.move(...args);
+          
+              return this.__PROXY__.move(...args);
+            
         };
     
         // function 
@@ -861,7 +1030,9 @@
           
         {
           //print("JS: RXLineData.prototype.rotate");
-          return this.__PROXY__.rotate(...args);
+          
+              return this.__PROXY__.rotate(...args);
+            
         };
     
         // function 
@@ -869,7 +1040,9 @@
           
         {
           //print("JS: RXLineData.prototype.scale");
-          return this.__PROXY__.scale(...args);
+          
+              return this.__PROXY__.scale(...args);
+            
         };
     
         // function 
@@ -877,7 +1050,9 @@
           
         {
           //print("JS: RXLineData.prototype.mirror");
-          return this.__PROXY__.mirror(...args);
+          
+              return this.__PROXY__.mirror(...args);
+            
         };
     
         // function 
@@ -885,7 +1060,9 @@
           
         {
           //print("JS: RXLineData.prototype.stretch");
-          return this.__PROXY__.stretch(...args);
+          
+              return this.__PROXY__.stretch(...args);
+            
         };
     
         // function 
@@ -893,7 +1070,9 @@
           
         {
           //print("JS: RXLineData.prototype.getTransformed");
-          return this.__PROXY__.getTransformed(...args);
+          
+              return this.__PROXY__.getTransformed(...args);
+            
         };
     
         // function 
@@ -901,7 +1080,9 @@
           
         {
           //print("JS: RXLineData.prototype.getOffsetShapes");
-          return this.__PROXY__.getOffsetShapes(...args);
+          
+              return this.__PROXY__.getOffsetShapes(...args);
+            
         };
     
         // function 
@@ -909,7 +1090,9 @@
           
         {
           //print("JS: RXLineData.prototype.splitAt");
-          return this.__PROXY__.splitAt(...args);
+          
+              return this.__PROXY__.splitAt(...args);
+            
         };
     
         // function 
@@ -917,7 +1100,9 @@
           
         {
           //print("JS: RXLineData.prototype.print");
-          return this.__PROXY__.print(...args);
+          
+              return this.__PROXY__.print(...args);
+            
         };
     
         // function 
@@ -925,7 +1110,9 @@
           
         {
           //print("JS: RXLineData.prototype.copy");
-          return this.__PROXY__.copy(...args);
+          
+              return this.__PROXY__.copy(...args);
+            
         };
     
         // function 
@@ -933,7 +1120,9 @@
           
         {
           //print("JS: RXLineData.prototype.getType");
-          return this.__PROXY__.getType(...args);
+          
+              return this.__PROXY__.getType(...args);
+            
         };
     
         // function 
@@ -941,7 +1130,9 @@
           
         {
           //print("JS: RXLineData.prototype.getXLine");
-          return this.__PROXY__.getXLine(...args);
+          
+              return this.__PROXY__.getXLine(...args);
+            
         };
     
         // function 
@@ -949,7 +1140,9 @@
           
         {
           //print("JS: RXLineData.prototype.getBasePoint");
-          return this.__PROXY__.getBasePoint(...args);
+          
+              return this.__PROXY__.getBasePoint(...args);
+            
         };
     
         // function 
@@ -957,7 +1150,9 @@
           
         {
           //print("JS: RXLineData.prototype.getDirectionVector");
-          return this.__PROXY__.getDirectionVector(...args);
+          
+              return this.__PROXY__.getDirectionVector(...args);
+            
         };
     
         // function 
@@ -965,7 +1160,9 @@
           
         {
           //print("JS: RXLineData.prototype.getAngle");
-          return this.__PROXY__.getAngle(...args);
+          
+              return this.__PROXY__.getAngle(...args);
+            
         };
     
         // function 
@@ -973,7 +1170,9 @@
           
         {
           //print("JS: RXLineData.prototype.hasFixedAngle");
-          return this.__PROXY__.hasFixedAngle(...args);
+          
+              return this.__PROXY__.hasFixedAngle(...args);
+            
         };
     
         // function 
@@ -981,7 +1180,9 @@
           
         {
           //print("JS: RXLineData.prototype.setFixedAngle");
-          return this.__PROXY__.setFixedAngle(...args);
+          
+              return this.__PROXY__.setFixedAngle(...args);
+            
         };
     
         // function 
@@ -989,7 +1190,9 @@
           
         {
           //print("JS: RXLineData.prototype.reverse");
-          return this.__PROXY__.reverse(...args);
+          
+              return this.__PROXY__.reverse(...args);
+            
         };
     
         // function 
@@ -997,7 +1200,9 @@
           
         {
           //print("JS: RXLineData.prototype.getTrimEnd");
-          return this.__PROXY__.getTrimEnd(...args);
+          
+              return this.__PROXY__.getTrimEnd(...args);
+            
         };
     
         // function 
@@ -1005,7 +1210,9 @@
           
         {
           //print("JS: RXLineData.prototype.trimStartPoint");
-          return this.__PROXY__.trimStartPoint(...args);
+          
+              return this.__PROXY__.trimStartPoint(...args);
+            
         };
     
         // function 
@@ -1013,7 +1220,9 @@
           
         {
           //print("JS: RXLineData.prototype.trimEndPoint");
-          return this.__PROXY__.trimEndPoint(...args);
+          
+              return this.__PROXY__.trimEndPoint(...args);
+            
         };
     
         // function 
@@ -1021,7 +1230,9 @@
           
         {
           //print("JS: RXLineData.prototype.getSideOfPoint");
-          return this.__PROXY__.getSideOfPoint(...args);
+          
+              return this.__PROXY__.getSideOfPoint(...args);
+            
         };
     
         // function 
@@ -1029,7 +1240,9 @@
           
         {
           //print("JS: RXLineData.prototype.getReferencePoints");
-          return this.__PROXY__.getReferencePoints(...args);
+          
+              return this.__PROXY__.getReferencePoints(...args);
+            
         };
     
         // function 
@@ -1037,7 +1250,9 @@
           
         {
           //print("JS: RXLineData.prototype.moveReferencePoint");
-          return this.__PROXY__.moveReferencePoint(...args);
+          
+              return this.__PROXY__.moveReferencePoint(...args);
+            
         };
     
         // function 
@@ -1045,7 +1260,9 @@
           
         {
           //print("JS: RXLineData.prototype.castToShape");
-          return this.__PROXY__.castToShape(...args);
+          
+              return this.__PROXY__.castToShape(...args);
+            
         };
     
         // function 
@@ -1053,11 +1270,23 @@
           
         {
           //print("JS: RXLineData.prototype.getShapes");
-          return this.__PROXY__.getShapes(...args);
+          
+              return this.__PROXY__.getShapes(...args);
+            
         };
     
 
       // static functions:
+      RXLineData.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RXLineData.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RXLineData.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

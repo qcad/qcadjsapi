@@ -84,15 +84,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RDxfServices.prototype = new RDxfServices_BaseJs(engine);
       //RDxfServices.prototype = new RDxfServices_Wrapper(engine);
       RDxfServices.prototype = new Object();
+
 
       RDxfServices.prototype.toString = function() {
           //return "RDxfServices [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -136,7 +137,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.reset");
-          return this.__PROXY__.reset(...args);
+          
+              return this.__PROXY__.reset(...args);
+            
         };
     
         // function 
@@ -144,7 +147,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getSafeBlockName");
-          return this.__PROXY__.getSafeBlockName(...args);
+          
+              return this.__PROXY__.getSafeBlockName(...args);
+            
         };
     
         // function 
@@ -152,7 +157,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.fixBlockName");
-          return this.__PROXY__.fixBlockName(...args);
+          
+              return this.__PROXY__.fixBlockName(...args);
+            
         };
     
         // function 
@@ -160,7 +167,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.fixLayerName");
-          return this.__PROXY__.fixLayerName(...args);
+          
+              return this.__PROXY__.fixLayerName(...args);
+            
         };
     
         // function 
@@ -168,7 +177,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.fixFontName");
-          return this.__PROXY__.fixFontName(...args);
+          
+              return this.__PROXY__.fixFontName(...args);
+            
         };
     
         // function 
@@ -176,7 +187,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.fixVersion2String");
-          return this.__PROXY__.fixVersion2String(...args);
+          
+              return this.__PROXY__.fixVersion2String(...args);
+            
         };
     
         // function 
@@ -184,7 +197,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.fixDimensionLabel");
-          return this.__PROXY__.fixDimensionLabel(...args);
+          
+              return this.__PROXY__.fixDimensionLabel(...args);
+            
         };
     
         // function 
@@ -192,7 +207,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.detectVersion2Format");
-          return this.__PROXY__.detectVersion2Format(...args);
+          
+              return this.__PROXY__.detectVersion2Format(...args);
+            
         };
     
         // function 
@@ -200,7 +217,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.hasDIMZIN");
-          return this.__PROXY__.hasDIMZIN(...args);
+          
+              return this.__PROXY__.hasDIMZIN(...args);
+            
         };
     
         // function 
@@ -208,7 +227,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.hasDIMAZIN");
-          return this.__PROXY__.hasDIMAZIN(...args);
+          
+              return this.__PROXY__.hasDIMAZIN(...args);
+            
         };
     
         // function 
@@ -216,7 +237,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.hasInvalidEllipse");
-          return this.__PROXY__.hasInvalidEllipse(...args);
+          
+              return this.__PROXY__.hasInvalidEllipse(...args);
+            
         };
     
         // function 
@@ -224,7 +247,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getVersion2Compatibility");
-          return this.__PROXY__.getVersion2Compatibility(...args);
+          
+              return this.__PROXY__.getVersion2Compatibility(...args);
+            
         };
     
         // function 
@@ -232,7 +257,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getVersion3_1Compatibility");
-          return this.__PROXY__.getVersion3_1Compatibility(...args);
+          
+              return this.__PROXY__.getVersion3_1Compatibility(...args);
+            
         };
     
         // function 
@@ -240,7 +267,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getMajorVersion");
-          return this.__PROXY__.getMajorVersion(...args);
+          
+              return this.__PROXY__.getMajorVersion(...args);
+            
         };
     
         // function 
@@ -248,7 +277,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getMinorVersion");
-          return this.__PROXY__.getMinorVersion(...args);
+          
+              return this.__PROXY__.getMinorVersion(...args);
+            
         };
     
         // function 
@@ -256,7 +287,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getPatchVersion");
-          return this.__PROXY__.getPatchVersion(...args);
+          
+              return this.__PROXY__.getPatchVersion(...args);
+            
         };
     
         // function 
@@ -264,7 +297,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getVersion2LayerName");
-          return this.__PROXY__.getVersion2LayerName(...args);
+          
+              return this.__PROXY__.getVersion2LayerName(...args);
+            
         };
     
         // function 
@@ -272,7 +307,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getVersionBlockName");
-          return this.__PROXY__.getVersionBlockName(...args);
+          
+              return this.__PROXY__.getVersionBlockName(...args);
+            
         };
     
         // function 
@@ -280,7 +317,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getVersion2Font");
-          return this.__PROXY__.getVersion2Font(...args);
+          
+              return this.__PROXY__.getVersion2Font(...args);
+            
         };
     
         // function 
@@ -288,7 +327,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getVersion2DimensionLabel");
-          return this.__PROXY__.getVersion2DimensionLabel(...args);
+          
+              return this.__PROXY__.getVersion2DimensionLabel(...args);
+            
         };
     
         // function 
@@ -296,7 +337,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.collectVersion2Info");
-          return this.__PROXY__.collectVersion2Info(...args);
+          
+              return this.__PROXY__.collectVersion2Info(...args);
+            
         };
     
         // function 
@@ -304,7 +347,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getVersion2PatternAngle");
-          return this.__PROXY__.getVersion2PatternAngle(...args);
+          
+              return this.__PROXY__.getVersion2PatternAngle(...args);
+            
         };
     
         // function 
@@ -312,7 +357,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getVersion2PatternScale");
-          return this.__PROXY__.getVersion2PatternScale(...args);
+          
+              return this.__PROXY__.getVersion2PatternScale(...args);
+            
         };
     
         // function 
@@ -320,7 +367,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getVersion2PatternName");
-          return this.__PROXY__.getVersion2PatternName(...args);
+          
+              return this.__PROXY__.getVersion2PatternName(...args);
+            
         };
     
         // function 
@@ -328,7 +377,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.fixVersion2HatchData");
-          return this.__PROXY__.fixVersion2HatchData(...args);
+          
+              return this.__PROXY__.fixVersion2HatchData(...args);
+            
         };
     
         // function 
@@ -336,7 +387,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.numberToColor24");
-          return this.__PROXY__.numberToColor24(...args);
+          
+              return this.__PROXY__.numberToColor24(...args);
+            
         };
     
         // function 
@@ -344,7 +397,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.numberToWeight");
-          return this.__PROXY__.numberToWeight(...args);
+          
+              return this.__PROXY__.numberToWeight(...args);
+            
         };
     
         // function 
@@ -352,7 +407,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.widthToNumber");
-          return this.__PROXY__.widthToNumber(...args);
+          
+              return this.__PROXY__.widthToNumber(...args);
+            
         };
     
         // function 
@@ -360,7 +417,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.colorToNumber24");
-          return this.__PROXY__.colorToNumber24(...args);
+          
+              return this.__PROXY__.colorToNumber24(...args);
+            
         };
     
         // function 
@@ -368,7 +427,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.stringToVariable");
-          return this.__PROXY__.stringToVariable(...args);
+          
+              return this.__PROXY__.stringToVariable(...args);
+            
         };
     
         // function 
@@ -376,7 +437,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.variableToString");
-          return this.__PROXY__.variableToString(...args);
+          
+              return this.__PROXY__.variableToString(...args);
+            
         };
     
         // function 
@@ -384,7 +447,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getCodeForVariable");
-          return this.__PROXY__.getCodeForVariable(...args);
+          
+              return this.__PROXY__.getCodeForVariable(...args);
+            
         };
     
         // function 
@@ -392,7 +457,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getTypeForVariable");
-          return this.__PROXY__.getTypeForVariable(...args);
+          
+              return this.__PROXY__.getTypeForVariable(...args);
+            
         };
     
         // function 
@@ -400,7 +467,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.isVariable2D");
-          return this.__PROXY__.isVariable2D(...args);
+          
+              return this.__PROXY__.isVariable2D(...args);
+            
         };
     
         // function 
@@ -408,7 +477,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.escapeUnicode");
-          return this.__PROXY__.escapeUnicode(...args);
+          
+              return this.__PROXY__.escapeUnicode(...args);
+            
         };
     
         // function 
@@ -416,7 +487,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.parseUnicode");
-          return this.__PROXY__.parseUnicode(...args);
+          
+              return this.__PROXY__.parseUnicode(...args);
+            
         };
     
         // function 
@@ -424,7 +497,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.autoFixLinetypePattern");
-          return this.__PROXY__.autoFixLinetypePattern(...args);
+          
+              return this.__PROXY__.autoFixLinetypePattern(...args);
+            
         };
     
         // function 
@@ -432,7 +507,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getFileQCADVersion");
-          return this.__PROXY__.getFileQCADVersion(...args);
+          
+              return this.__PROXY__.getFileQCADVersion(...args);
+            
         };
     
         // function 
@@ -440,7 +517,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.initAci");
-          return this.__PROXY__.initAci(...args);
+          
+              return this.__PROXY__.initAci(...args);
+            
         };
     
         // function 
@@ -448,7 +527,9 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
           
         {
           //print("JS: RDxfServices.prototype.getAci");
-          return this.__PROXY__.getAci(...args);
+          
+              return this.__PROXY__.getAci(...args);
+            
         };
     
 
@@ -901,6 +982,16 @@ RDxfServices.Vector = RDxfServices_Wrapper.Vector;
   }
   
         };
+      RDxfServices.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RDxfServices.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RDxfServices.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:

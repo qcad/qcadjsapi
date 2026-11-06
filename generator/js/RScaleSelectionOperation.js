@@ -27,7 +27,7 @@
             //if (arguments[1]!==true) {
               // only copy properties if this is not an existing wrapper:
               
-                  copyProperties(this, wrapper, RScaleSelectionOperation);
+                  this.__PROXY__ = wrapper;
                 
             //}
           }
@@ -52,7 +52,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RScaleSelectionOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -78,7 +78,7 @@
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
           
-            copyProperties(this, wrapper, RScaleSelectionOperation);
+            this.__PROXY__ = wrapper;
           
 
         //this.setWrapper(this.wrapper);
@@ -110,15 +110,16 @@
           // TODO:
           //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
           
+
         }
 
-        
 
       }
 
       //RScaleSelectionOperation.prototype = new RScaleSelectionOperation_BaseJs(engine);
       //RScaleSelectionOperation.prototype = new RScaleSelectionOperation_Wrapper(engine);
       RScaleSelectionOperation.prototype = new Object();
+
 
       RScaleSelectionOperation.prototype.toString = function() {
           //return "RScaleSelectionOperation [JS] [0x" + this.getAddress().toString(16) + "]";
@@ -154,8 +155,158 @@
 
       // functions:
       
+        // function 
+        RScaleSelectionOperation.prototype.getEntityTypeFilter = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.getEntityTypeFilter");
+          
+              return this.__PROXY__.getEntityTypeFilter(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.setRecordAffectedObjects = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.setRecordAffectedObjects");
+          
+              return this.__PROXY__.setRecordAffectedObjects(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.setSpatialIndexDisabled = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.setSpatialIndexDisabled");
+          
+              return this.__PROXY__.setSpatialIndexDisabled(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.setAllowInvisible = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.setAllowInvisible");
+          
+              return this.__PROXY__.setAllowInvisible(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.setAllowAll = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.setAllowAll");
+          
+              return this.__PROXY__.setAllowAll(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.setKeepChildren = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.setKeepChildren");
+          
+              return this.__PROXY__.setKeepChildren(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.setTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.setTransactionGroup");
+          
+              return this.__PROXY__.setTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.getTransactionGroup = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.getTransactionGroup");
+          
+              return this.__PROXY__.getTransactionGroup(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.setText = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.setText");
+          
+              return this.__PROXY__.setText(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.getText = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.getText");
+          
+              return this.__PROXY__.getText(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.getTransactionTypes = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.getTransactionTypes");
+          
+              return this.__PROXY__.getTransactionTypes(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.setTransactionType = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.setTransactionType");
+          
+              return this.__PROXY__.setTransactionType(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.getTransactionType = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.getTransactionType");
+          
+              return this.__PROXY__.getTransactionType(...args);
+            
+        };
+    
+        // function 
+        RScaleSelectionOperation.prototype.apply = function(...args) 
+          
+        {
+          //print("JS: RScaleSelectionOperation.prototype.apply");
+          
+              return this.__PROXY__.apply(...args);
+            
+        };
+    
 
       // static functions:
+      RScaleSelectionOperation.prototype.isNullWrapper = function() {
+        return this.__PROXY__.isNullWrapper();
+      };
+      RScaleSelectionOperation.prototype.getAddress = function() {
+        return this.__PROXY__.getAddress();
+      };
+      RScaleSelectionOperation.prototype.getWrappedType = function() {
+        return this.__PROXY__.getWrappedType();
+      };
+
       
 
       // constants:
@@ -174,4 +325,7 @@
       //  return this.wrapper.destr();
       //};
 
+      RScaleSelectionOperation.prototype.destr = function() {
+          return this.__PROXY__.destr();
+        };
       
